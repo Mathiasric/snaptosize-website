@@ -5,7 +5,7 @@
 // 4) Leave a clean hook for analytics later
 
 const DEMO_URL = "https://huggingface.co/spaces/snaptosize-app/snaptosize";
-const PAY_URL  = "https://buy.stripe.com/test_bJe3cx0yBclJ04y4Fn2Ry00";
+const PAY_URL  = "https://buy.stripe.com/dRm7sM4ou0Ygfpc5L47N600";
 
 // Wire all <a> tags that use our data-href convention
 function wireLinks() {
