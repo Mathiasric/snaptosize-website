@@ -1,53 +1,33 @@
-// SnapToSize landing — minimal JS
-// 1) Single source of truth for Demo + Payment links
-// 2) Auto-wire every CTA in index.html
-// 3) Set footer year
-// 4) Leave a clean hook for analytics later
-
 const DEMO_URL = "https://huggingface.co/spaces/snaptosize-app/snaptosize";
-const PAY_URL  = "https://buy.stripe.com/dRm7sM4ou0Ygfpc5L47N600";
+const PAY_URL_MONTHLY = "https://buy.stripe.com/XXX_MONTHLY"; // bytt til monthly subscription link
+const PAY_URL_YEARLY  = "https://buy.stripe.com/XXX_YEARLY";  // bytt til yearly subscription link
 
-// Wire all <a> tags that use our data-href convention
 function wireLinks() {
   document.querySelectorAll('[data-href="demo"]').forEach((a) => {
-    a.setAttribute("href", DEMO_URL);
-    a.setAttribute("target", "_blank");
-    a.setAttribute("rel", "noopener noreferrer");
+    a.href = DEMO_URL;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
   });
 
-  document.querySelectorAll('[data-href="pay"]').forEach((a) => {
-    a.setAttribute("href", PAY_URL);
-    a.setAttribute("target", "_blank");
-    a.setAttribute("rel", "noopener noreferrer");
+  document.querySelectorAll('[data-href="pay-monthly"]').forEach((a) => {
+    a.href = PAY_URL_MONTHLY;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+  });
+
+  document.querySelectorAll('[data-href="pay-yearly"]').forEach((a) => {
+    a.href = PAY_URL_YEARLY;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
   });
 }
 
-// Footer year
 function setYear() {
   const el = document.getElementById("year");
   if (el) el.textContent = String(new Date().getFullYear());
 }
 
-// Minimal CTA tracking hook (works even without analytics)
-// Later you can swap console.log with Plausible/GA4 events.
-function wireTracking() {
-  document.querySelectorAll("[data-cta]").forEach((el) => {
-    el.addEventListener("click", () => {
-      const evt = el.getAttribute("data-cta"); // "demo" or "pay"
-
-      // Example (Plausible):
-      // if (window.plausible) window.plausible(evt);
-
-      // Example (GA4):
-      // if (window.gtag) window.gtag("event", evt, { page_location: location.href });
-
-      console.log("[CTA]", evt);
-    });
-  });
-}
-
-// Run
 wireLinks();
 setYear();
-wireTracking();
+
 
