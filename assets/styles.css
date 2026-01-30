@@ -96,8 +96,21 @@ h3{ font-size:18px; }
 .brand{
   font-weight: 800;
   letter-spacing: .2px;
+   display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
+.brand-icon{
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.brand-text{
+  font-weight: 800;
+}
 
 .header-cta{
   display:flex;
@@ -360,6 +373,7 @@ details p{
   border-color: rgba(109,93,252,.28);
   box-shadow: 0 22px 70px rgba(109,93,252,.12), 0 22px 70px rgba(42,167,255,.10);
   transform: translateY(-4px);
+   border-width: 2px;
 }
 
 .badge{

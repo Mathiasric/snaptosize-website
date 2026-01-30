@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://Snaptosize.com/sitemap.xml

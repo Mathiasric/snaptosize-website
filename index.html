@@ -7,6 +7,18 @@
   <title>SnapToSize — Etsy-ready print sizes in seconds</title>
   <meta name="description" content="Turn one artwork file into Etsy-ready print-size ZIPs at 300 DPI. No resizing headaches. Try the demo or buy instantly." />
 
+  <!-- Favicons / App icons -->
+<link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+<link rel="icon" href="assets/favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<link rel="manifest" href="assets/favicon/site.webmanifest">
+<meta name="theme-color" content="#f7f7fb">
+
+<meta name="application-name" content="SnapToSize">
+<meta name="apple-mobile-web-app-title" content="SnapToSize">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
   <!-- Open Graph -->
   <meta property="og:title" content="SnapToSize — Etsy-ready print sizes in seconds" />
   <meta property="og:description" content="Generate Etsy-ready print-size ZIPs from a single image. Fast. Clean. Predictable." />
@@ -20,9 +32,19 @@
   <!-- ================= HEADER ================= -->
   <header class="site-header">
     <div class="container header-inner">
-      <div class="brand">
-        SnapToSize
-      </div>
+<a class="brand" href="/">
+  <img
+    src="/assets/favicon/favicon-96x96.png"
+    alt=""
+    class="brand-icon"
+    aria-hidden="true"
+    width="20"
+    height="20"
+    loading="eager"
+  >
+  <span class="brand-text">SnapToSize</span>
+</a>
+
 
       <nav class="header-cta">
        <a class="btn btn--ghost" data-href="demo" data-cta="demo" href="#">Try free</a>
@@ -37,7 +59,7 @@
       <h1>Etsy-ready print sizes in seconds.</h1>
 
       <p class="hero-lead">
-        Upload one artwork file. Download clean, organized print-size exports at 300 DPI — without cutting faces, text, or edges.
+   Upload one artwork file. Download clean, organized print-size exports at 300 DPI — without cropping or cut-off.
       </p>
 
       <div class="hero-cta">
@@ -85,6 +107,51 @@
       </ul>
     </section>
 
+
+    <!-- ================= SUPPORTED PRINT SIZES ================= -->
+<section class="section" id="supported-sizes">
+  <h2>Supported print sizes</h2>
+<p class="hero-micro">
+  Looking for details? See our <a href="/etsy-image-resizer.html">Etsy Image Resizer</a>.
+</p>
+
+  <p class="muted">
+    Generate <strong>25 Etsy-ready print files</strong> from one image.
+    Delivered as <strong>clean ZIPs</strong>, optimized at <strong>300 DPI</strong>.
+  </p>
+
+  <p class="muted">
+  All sizes are exported at 300 DPI with exact pixel dimensions.
+</p>
+<p class="muted">
+  Need exact pixel dimensions and file naming details?
+  <a href="/etsy-print-size-guide.html">View the full print size guide</a>.
+</p>
+
+
+  <ul>
+    <li><strong>5 ZIP files</strong> — grouped by print ratio</li>
+    <li><strong>JPEG output</strong> — quality-optimized for Etsy</li>
+    <li><strong>No cropping</strong> — all edges preserved</li>
+  </ul>
+
+  <details>
+    <summary>View all print sizes</summary>
+
+    <ul>
+      <li><strong>2×3 ratio</strong>: 4×6, 8×12, 10×15, 12×18, 16×24, 20×30 in</li>
+      <li><strong>3×4 ratio</strong>: 6×8, 9×12, 12×16, 15×20, 18×24 in</li>
+      <li><strong>4×5 ratio</strong>: 8×10, 12×15, 16×20, 20×25 in</li>
+      <li><strong>ISO A-series</strong>: A5, A4, A3, A2, A1</li>
+      <li><strong>Extras</strong>: 5×7, 8.5×11, 11×14, 16×20, 20×24 in</li>
+    </ul>
+
+    <p class="muted" style="margin-top:8px">
+      Files are delivered as organized ZIPs (one per ratio), ready for direct Etsy upload.
+    </p>
+  </details>
+</section>
+
     <!-- ================= PRICING ================= -->
     <section class="section" id="pricing">
   <h2>Pricing</h2>
@@ -113,7 +180,7 @@
       <ul class="plan-list">
         <li>Unlimited images</li>
         <li>All print sizes</li>
-        <li>Smart Crop (no detail loss)</li>
+        <li>Exact-size resize (no content cut-off)</li>
         <li>Batch ZIP exports</li>
         <li>No watermark</li>
       </ul>
@@ -123,9 +190,12 @@
 
     <!-- PRO YEARLY -->
     <div class="plan plan--best">
-      <div class="badge">Best value · Save ~30%</div>
+     <div class="badge">Best value · Save $45/year</div>
       <h3>Pro Yearly</h3>
-      <p class="plan-price"><strong>$99/year</strong> <span class="muted">— cancel anytime</span></p>
+  <p class="plan-price">
+  <strong>$99/year</strong>
+  <span class="muted">($8.25/mo billed yearly) — cancel anytime</span>
+</p>
 
       <ul class="plan-list">
         <li>Everything in Pro</li>
@@ -133,7 +203,8 @@
         <li>Fewer payments, same power</li>
       </ul>
 
-      <a class="btn btn--primary" href="#" data-href="pay-yearly" data-cta="pay_yearly">Start Pro Yearly</a>
+      <a class="btn btn--primary" href="#" data-href="pay-yearly" data-cta="pay_yearly">Start Pro Yearly (Save $45)
+</a>
     </div>
   </div>
 </section>
@@ -162,7 +233,7 @@
       <details>
         <summary>Does this crop my artwork?</summary>
         <p>
-          No. SnapToSize preserves all artwork and resizes proportionally.
+           No. SnapToSize does not crop your artwork. Images are resized to exact print dimensions without cutting off edges.
         </p>
       </details>
 
@@ -184,16 +255,24 @@
 
       <div class="final-cta-actions">
         <a href="#" data-href="demo" data-cta="demo">Try the demo</a>
-        <a href="#" data-href="pay" data-cta="pay">Start Pro</a>
+        <a href="#" data-href="pay-yearly" data-cta="pay_yearly">Start Pro Yearly (Save $45)
+</a>
       </div>
     </section>
 
     <!-- ================= FOOTER ================= -->
-    <footer class="site-footer">
-      <p>
-        © <span id="year"></span> SnapToSize. All rights reserved.
-      </p>
-    </footer>
+   <footer class="site-footer">
+  <p>
+    © <span id="year"></span> SnapToSize. All rights reserved.
+  </p>
+
+  <p class="muted">
+    <a href="/">Home</a> ·
+    <a href="/etsy-image-resizer.html">Etsy Image Resizer</a> ·
+    <a href="/etsy-print-size-guide.html">Print Size Guide</a>
+  </p>
+</footer>
+
   </main>
 
   <!-- JS (added next step) -->
