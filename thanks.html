@@ -33,9 +33,28 @@
         Thanks for upgrading. Your Pro access is now active.
       </p>
 
-      <div class="hero-cta">
-        <a href="#" data-href="demo" data-cta="open_app">Start resizing now</a>
-<a class="btn btn--ghost" href="/etsy-print-size-guide.html" data-cta="print_size_guide">Print Size Guide</a>
+  <div class="hero-cta">
+  <a
+    id="open-app"
+    class="btn btn--primary"
+    href="https://snaptosize-app-snaptosize.hf.space/"
+    data-cta="open_app"
+  >
+    Start resizing now
+  </a>
+
+  <a
+    class="btn btn--ghost"
+    href="/etsy-print-size-guide.html"
+    data-cta="print_size_guide"
+  >
+    Print Size Guide
+  </a>
+</div>
+<p class="hero-micro">
+  If you’re not redirected automatically, click “Start resizing now”.
+</p>
+
 
       </div>
 
@@ -54,6 +73,29 @@
     </footer>
   </main>
 
+  
+
   <script src="/assets/main.js" defer></script>
+
+  <script>
+  (function () {
+    const params = new URLSearchParams(window.location.search);
+    const sessionId = params.get("session_id");
+
+    // Sett HF app-urlen din her:
+    const appUrl = "https://snaptosize-app-snaptosize.hf.space/";
+
+    if (sessionId) {
+      // Redirect til app med session_id for auto-unlock
+      window.location.href = `${appUrl}?session_id=${encodeURIComponent(sessionId)}`;
+      return;
+    }
+
+    // Fallback hvis session_id mangler (brukeren kan fortsatt åpne appen manuelt)
+    const el = document.getElementById("open-app");
+    if (el) el.href = appUrl;
+  })();
+</script>
+
 </body>
 </html>
