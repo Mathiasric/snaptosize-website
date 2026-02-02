@@ -1,6 +1,6 @@
 const DEMO_URL = "https://huggingface.co/spaces/snaptosize-app/snaptosize";
-const PAY_URL_MONTHLY = "https://buy.stripe.com/cNi8wQf38cGYb8Wa1k7N601"; // bytt til monthly subscription link
-const PAY_URL_YEARLY  = "https://buy.stripe.com/aFa14o2gmfTael8flE7N602";  // bytt til yearly subscription link
+const PAY_URL_MONTHLY = "https://buy.stripe.com/4gM3cw5sygXeel84H07N603"; // bytt til monthly subscription link
+const PAY_URL_YEARLY  = "https://buy.stripe.com/aFa9AUaMS7mE7WK8Xg7N604";  // bytt til yearly subscription link
 
 function wireLinks() {
   document.querySelectorAll('[data-href="demo"]').forEach((a) => {
