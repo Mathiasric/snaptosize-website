@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Etsy Print Size Guide – Exact Pixels & ZIP Structure (300 DPI)</title>
-<meta name="description" content="Exact Etsy print sizes with pixel dimensions at 300 DPI. Includes ZIP names, orientation rules, and export behavior." />
+<title>Etsy Print Size Guide – Exact Pixels, ZIPs & Orientation (300 DPI)</title>
+<meta name="description" content="Exact SnapToSize print sizes with pixel dimensions at 300 DPI. Includes ZIP names, filename format, portrait/landscape rules, and Etsy 20MB ZIP cap." />
 <meta property="og:url" content="https://snaptosize.com/etsy-print-size-guide.html" />
 <meta property="og:image" content="https://snaptosize.com/assets/og.png" />
 <meta property="og:type" content="article" />
@@ -46,7 +46,7 @@
       </a>
 
       <nav class="header-cta">
-        <a class="btn btn--ghost" href="/etsy-image-resizer.html" data-cta="etsy_resizer_page">Etsy Image Resizer</a>
+        <a class="btn btn--ghost" href="/etsy-image-resizer.html" data-href="resizer" data-cta="etsy_resizer_page">Etsy Image Resizer</a>
  <a class="btn btn--ghost" data-href="demo" data-cta="demo" href="#">
   Try free
 </a>
@@ -78,7 +78,7 @@
 
 
       <div class="hero-cta">
-        <a href="/" data-cta="home">Back home</a>
+      <a class="btn btn--ghost" href="/" data-href="home">Back home</a>
         <a href="#" data-href="demo" data-cta="demo">Try the demo</a>
       </div>
 
@@ -88,133 +88,124 @@
     </section>
 
     <!-- ================= SUMMARY ================= -->
-    <section class="section">
-      <h2>Quick summary</h2>
-      <ul>
-        <li><strong>Total output:</strong> 25 JPG files across 5 ZIPs (when all groups are selected)</li>
-        <li><strong>Groups:</strong> 2×3 (6), 3×4 (5), 4×5 (4), ISO (5), Extras (5)</li>
-        <li><strong>Output format:</strong> JPEG</li>
-        <li><strong>Quality:</strong> optimized for upload (current quality setting: 80)</li>
-        <li><strong>DPI metadata:</strong> 300×300</li>
-        <li><strong>Batch ZIP orientation:</strong> portrait only</li>
-        <li><strong>Single Size Export (Pro):</strong> portrait or landscape (landscape swaps width/height)</li>
-        <li><strong>Cropping:</strong> none — exports preserve edges (exact-size resize)</li>
-        <li><strong>Etsy cap enforced:</strong> 20MB per ZIP (hard stop if exceeded)</li>
-      </ul>
-    </section>
+  <section class="section">
+  <h2>Quick summary</h2>
+  <ul>
+    <li><strong>Total output:</strong> 25 JPG files across 5 ZIPs (when all groups are selected)</li>
+    <li><strong>Groups:</strong> 2×3 (6), 3×4 (5), 4×5 (4), ISO (5), Extras (5)</li>
+    <li><strong>Output format:</strong> JPEG</li>
+    <li><strong>DPI metadata:</strong> 300×300</li>
+    <li><strong>Batch ZIP orientation:</strong> portrait only</li>
+    <li><strong>Single Size Export (Pro):</strong> choose Portrait or Landscape for the same presets (Landscape swaps width/height)</li>
+    <li><strong>Cropping:</strong> none — exports preserve edges (exact-size resize)</li>
+    <li><strong>Etsy cap enforced:</strong> 20MB per ZIP (hard stop if exceeded)</li>
+  </ul>
+</section>
 
-    <!-- ================= ZIP STRUCTURE ================= -->
-    <section class="section">
-      <h2>Batch ZIP structure</h2>
 
-      <p>
-        Batch ZIP creates one ZIP per group:
-      </p>
+<!-- ================= ZIP STRUCTURE ================= -->
+<section class="section">
+  <h2>Batch ZIP structure</h2>
 
-      <ul>
-        <li><code>2x3.zip</code></li>
-        <li><code>3x4.zip</code></li>
-        <li><code>4x5.zip</code></li>
-        <li><code>ISO.zip</code></li>
-        <li><code>EXTRAS.zip</code></li>
-      </ul>
+  <p>
+    Batch ZIP creates one ZIP per group:
+  </p>
 
-      <h3>Filename format inside ZIPs</h3>
-      <p class="muted">
-        Files inside each ZIP are named like:
-      </p>
-      <p>
-        <code>{label}_{pixelWidth}x{pixelHeight}.jpg</code>
-      </p>
+  <ul>
+    <li><code>2x3.zip</code></li>
+    <li><code>3x4.zip</code></li>
+    <li><code>4x5.zip</code></li>
+    <li><code>ISO.zip</code></li>
+    <li><code>EXTRAS.zip</code></li>
+  </ul>
 
-      <p class="muted">
-        Examples:
-        <code>12x18in_3600x5400.jpg</code>,
-        <code>A4_2480x3508.jpg</code>
-      </p>
+  <h3>Filename format inside ZIPs</h3>
+  <p class="muted">
+    Files inside each ZIP are named like:
+  </p>
+  <p>
+    <code>{label}_{pixelWidth}x{pixelHeight}.jpg</code>
+  </p>
 
-      <p class="muted">
-        Note: The “label” is the print size name (or ISO label), and the trailing numbers are the exact export pixels.
-      </p>
-    </section>
+  <p class="muted">
+    Examples:
+    <code>12x18in_3600x5400.jpg</code>,
+    <code>A4_2480x3508.jpg</code>
+  </p>
 
-    <!-- ================= BATCH ZIP PIXELS ================= -->
-    <section class="section" id="pixels">
-      <h2>Batch ZIP exports (portrait pixels)</h2>
-      <p class="muted">
-        Batch ZIP does not include a landscape toggle. It exports the portrait pixel dimensions below.
-        Inch-based sizes are calculated as <strong>inches × 300</strong>.
-        ISO A-sizes use fixed pixel presets.
-      </p>
+  <p class="muted">
+    Note: The “label” is the print size name (or ISO label), and the trailing numbers are the exact export pixels.
+  </p>
+</section>
 
-      <h3>2×3 ratio (ZIP: <code>2x3.zip</code>) — 6 sizes</h3>
-      <ul>
-        <li>4×6 in → 1200×1800 px (file: <code>4x6in_1200x1800.jpg</code>)</li>
-        <li>8×12 in → 2400×3600 px (file: <code>8x12in_2400x3600.jpg</code>)</li>
-        <li>10×15 in → 3000×4500 px (file: <code>10x15in_3000x4500.jpg</code>)</li>
-        <li>12×18 in → 3600×5400 px (file: <code>12x18in_3600x5400.jpg</code>)</li>
-        <li>16×24 in → 4800×7200 px (file: <code>16x24in_4800x7200.jpg</code>)</li>
-        <li>20×30 in → 6000×9000 px (file: <code>20x30in_6000x9000.jpg</code>)</li>
-      </ul>
+<!-- ================= BATCH ZIP PIXELS ================= -->
+<section class="section" id="pixels">
+  <h2>Batch ZIP exports (portrait pixels)</h2>
+  <p class="muted">
+    Batch ZIP does not include a landscape toggle. It exports the portrait pixel dimensions below.
+    Inch-based sizes are calculated as <strong>inches × 300</strong>.
+    ISO A-sizes use fixed pixel presets.
+  </p>
 
-      <h3>3×4 ratio (ZIP: <code>3x4.zip</code>) — 5 sizes</h3>
-      <ul>
-        <li>6×8 in → 1800×2400 px (file: <code>6x8in_1800x2400.jpg</code>)</li>
-        <li>9×12 in → 2700×3600 px (file: <code>9x12in_2700x3600.jpg</code>)</li>
-        <li>12×16 in → 3600×4800 px (file: <code>12x16in_3600x4800.jpg</code>)</li>
-        <li>15×20 in → 4500×6000 px (file: <code>15x20in_4500x6000.jpg</code>)</li>
-        <li>18×24 in → 5400×7200 px (file: <code>18x24in_5400x7200.jpg</code>)</li>
-      </ul>
+  <h3>2×3 ratio (ZIP: <code>2x3.zip</code>) — 6 sizes</h3>
+  <ul>
+    <li>4×6 in → 1200×1800 px (file: <code>4x6in_1200x1800.jpg</code>)</li>
+    <li>8×12 in → 2400×3600 px (file: <code>8x12in_2400x3600.jpg</code>)</li>
+    <li>10×15 in → 3000×4500 px (file: <code>10x15in_3000x4500.jpg</code>)</li>
+    <li>12×18 in → 3600×5400 px (file: <code>12x18in_3600x5400.jpg</code>)</li>
+    <li>16×24 in → 4800×7200 px (file: <code>16x24in_4800x7200.jpg</code>)</li>
+    <li>20×30 in → 6000×9000 px (file: <code>20x30in_6000x9000.jpg</code>)</li>
+  </ul>
 
-      <h3>4×5 ratio (ZIP: <code>4x5.zip</code>) — 4 sizes</h3>
-      <ul>
-        <li>8×10 in → 2400×3000 px (file: <code>8x10in_2400x3000.jpg</code>)</li>
-        <li>12×15 in → 3600×4500 px (file: <code>12x15in_3600x4500.jpg</code>)</li>
-        <li>16×20 in → 4800×6000 px (file: <code>16x20in_4800x6000.jpg</code>)</li>
-        <li>20×25 in → 6000×7500 px (file: <code>20x25in_6000x7500.jpg</code>)</li>
-      </ul>
+  <h3>3×4 ratio (ZIP: <code>3x4.zip</code>) — 5 sizes</h3>
+  <ul>
+    <li>6×8 in → 1800×2400 px (file: <code>6x8in_1800x2400.jpg</code>)</li>
+    <li>9×12 in → 2700×3600 px (file: <code>9x12in_2700x3600.jpg</code>)</li>
+    <li>12×16 in → 3600×4800 px (file: <code>12x16in_3600x4800.jpg</code>)</li>
+    <li>15×20 in → 4500×6000 px (file: <code>15x20in_4500x6000.jpg</code>)</li>
+    <li>18×24 in → 5400×7200 px (file: <code>18x24in_5400x7200.jpg</code>)</li>
+  </ul>
 
-      <h3>ISO A-series (ZIP: <code>ISO.zip</code>) — 5 sizes</h3>
-      <ul>
-        <li>A5 → 1748×2480 px (file: <code>A5_1748x2480.jpg</code>)</li>
-        <li>A4 → 2480×3508 px (file: <code>A4_2480x3508.jpg</code>)</li>
-        <li>A3 → 3508×4961 px (file: <code>A3_3508x4961.jpg</code>)</li>
-        <li>A2 → 4961×7016 px (file: <code>A2_4961x7016.jpg</code>)</li>
-        <li>A1 → 7016×9933 px (file: <code>A1_7016x9933.jpg</code>)</li>
-      </ul>
+  <h3>4×5 ratio (ZIP: <code>4x5.zip</code>) — 4 sizes</h3>
+  <ul>
+    <li>8×10 in → 2400×3000 px (file: <code>8x10in_2400x3000.jpg</code>)</li>
+    <li>12×15 in → 3600×4500 px (file: <code>12x15in_3600x4500.jpg</code>)</li>
+    <li>16×20 in → 4800×6000 px (file: <code>16x20in_4800x6000.jpg</code>)</li>
+    <li>20×25 in → 6000×7500 px (file: <code>20x25in_6000x7500.jpg</code>)</li>
+  </ul>
 
-      <h3>Extras (ZIP: <code>EXTRAS.zip</code>) — 5 sizes</h3>
-      <ul>
-        <li>5×7 in → 1500×2100 px</li>
-        <li>8.5×11 in → 2550×3300 px</li>
-        <li>11×14 in → 3300×4200 px</li>
-        <li>16×20 in → 4800×6000 px</li>
-        <li>20×24 in → 6000×7200 px</li>
-      </ul>
+  <h3>ISO A-series (ZIP: <code>ISO.zip</code>) — 5 sizes</h3>
+  <ul>
+    <li>A5 → 1748×2480 px (file: <code>A5_1748x2480.jpg</code>)</li>
+    <li>A4 → 2480×3508 px (file: <code>A4_2480x3508.jpg</code>)</li>
+    <li>A3 → 3508×4961 px (file: <code>A3_3508x4961.jpg</code>)</li>
+    <li>A2 → 4961×7016 px (file: <code>A2_4961x7016.jpg</code>)</li>
+    <li>A1 → 7016×9933 px (file: <code>A1_7016x9933.jpg</code>)</li>
+  </ul>
 
-      <p class="muted">
-        Note: Extras filenames may differ slightly in label formatting compared to ratio groups,
-        but pixel dimensions are exactly as shown above.
-      </p>
-    </section>
+  <h3>Extras (ZIP: <code>EXTRAS.zip</code>) — 5 sizes</h3>
+  <ul>
+    <li>5×7 in → 1500×2100 px</li>
+    <li>8.5×11 in → 2550×3300 px</li>
+    <li>11×14 in → 3300×4200 px</li>
+    <li>16×20 in → 4800×6000 px</li>
+    <li>20×24 in → 6000×7200 px</li>
+  </ul>
 
-    <!-- ================= ORIENTATION ================= -->
-    <section class="section" id="orientation">
-      <h2>Portrait vs Landscape (Single Size Export — Pro)</h2>
+</section>
 
-      <p>
-        Batch ZIP exports portrait dimensions only.
-        In Pro, <strong>Single Size Export</strong> lets you choose Portrait or Landscape.
-        Landscape simply swaps width and height — including ISO sizes.
-      </p>
+<!-- ================= ORIENTATION ================= -->
+<section class="section" id="orientation">
+  <h2>Portrait vs Landscape (Single Size Export — Pro)</h2>
 
-      <ul>
-        <li>4×6 Portrait → 1200×1800 px</li>
-        <li>4×6 Landscape → 1800×1200 px</li>
-        <li>A4 Portrait → 2480×3508 px</li>
-        <li>A4 Landscape → 3508×2480 px</li>
-      </ul>
-    </section>
+  <p>
+    Batch ZIP exports portrait dimensions only.
+    In Pro, <strong>Single Size Export</strong> lets you choose Portrait or Landscape for the same presets.
+    Landscape simply swaps width and height — including ISO sizes.
+  </p>
+
+</section>
+
 
     <!-- ================= ETSY LIMIT ================= -->
     <section class="section" id="etsy-limit">

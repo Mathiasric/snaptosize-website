@@ -79,47 +79,74 @@
   </header>
 
   <!-- ================= HERO ================= -->
-  <main class="container">
-    <section class="hero">
+ <main class="container">
+  <section class="hero hero--premium">
+    <div class="hero-top">
       <h1>Etsy-ready print sizes in seconds.</h1>
 
       <p class="hero-lead">
-  Upload one artwork. Instantly get all Etsy print sizes — perfectly cropped, 300 DPI, ready to sell.
+        Upload one artwork file. Download clean print-size ZIPs at 300 DPI — <strong>no cropping</strong>, no cut-off edges.
       </p>
 
-      <ul class="muted" style="margin-top:12px">
-  <li>Generates Etsy-ready print sizes from one image</li>
-  <li>Exports 5 ZIP files grouped by ratio</li>
-  <li>Exact 300 DPI pixel dimensions</li>
-  <li>No cropping or cut-off edges</li>
-</ul>
-
-
       <div class="hero-cta">
-        <a href="#" data-href="demo" data-cta="demo">Try the demo</a>
-        <a href="#pricing">See pricing</a>
+        <a href="#" data-href="demo" data-cta="demo">Try free</a>
+        <a href="#pricing" data-href="pricing">See pricing</a>
       </div>
 
       <p class="hero-micro">
-         No signup. 1 free watermarked export (per 24h). Upgrade for unlimited.
+        No signup. 1 free watermarked export (per 24h). Upgrade for unlimited.
       </p>
-    </section>
+    </div>
 
-  <!-- ================= WHAT IT DOES ================= -->
-<section class="section">
-  <h2>What you get (exactly)</h2>
+    <div class="hero-split">
+  <!-- LEFT: VIDEO -->
+  <div class="hero-media" aria-label="Product demo video">
+    <div class="hero-video-frame premium-rainbow">
+     <div class="hero-video-card">
+  <video
+    id="heroVideo"
+    class="hero-video"
+    muted
+    playsinline
+    preload="auto"
+    poster="/assets/poster.jpg"
+    controlslist="nodownload noplaybackrate noremoteplayback"
+  >
+    <source src="/assets/snaptosize-demo.mp4" type="video/mp4" />
+  </video>
 
-  <ul>
-    <li><strong>25 JPG files</strong> total (when all groups are selected)</li>
-    <li><strong>5 ZIP files</strong> (one ZIP per size group)</li>
-    <li><strong>300 DPI</strong> metadata + quality-optimized JPEG output</li>
-    <li><strong>No cropping</strong> — exact-size resize (no cut-off edges)</li>
-  </ul>
+  <!-- Big center play button (YT style) -->
+  <button id="heroPlay" class="hero-video-play" type="button" aria-label="Play video">▶</button>
+</div>
+    </div>
 
-  <p class="muted" style="margin-top:8px">
-    ZIPs are organized by ratio and ready for direct Etsy upload.
-  </p>
-</section>
+    <div class="hero-video-meta">
+      <span>25 files</span>
+      <span>5 ZIPs</span>
+      <span>300 DPI</span>
+      <span>No cropping</span>
+    </div>
+  </div> <!-- ✅ VIKTIG: lukker hero-media -->
+
+  <!-- RIGHT: PROOF -->
+  <aside class="hero-proof" aria-label="What you get">
+    <h3>What you get (exactly)</h3>
+
+    <ul class="proof-list">
+      <li><strong>25 JPG files</strong> total (when all groups are selected)</li>
+      <li><strong>5 ZIP files</strong> (one ZIP per size group)</li>
+      <li><strong>300 DPI</strong> metadata + quality-optimized JPEG output</li>
+      <li><strong>No cropping</strong> — exact-size resize (no cut-off edges)</li>
+      <li>ZIPs are organized by ratio and ready for direct Etsy upload</li>
+    </ul>
+
+    <div class="proof-note">
+      Etsy limit safe: <strong>20MB per ZIP</strong>.
+    </div>
+  </aside>
+</div>
+
+  </section>
 
     <!-- ================= HOW IT WORKS ================= -->
     <section class="section">
@@ -145,49 +172,53 @@
     </section>
 
 
-    <!-- ================= SUPPORTED PRINT SIZES ================= -->
+   <!-- ================= SUPPORTED PRINT SIZES ================= -->
 <section class="section" id="supported-sizes">
   <h2>Supported print sizes</h2>
-<p class="hero-micro">
-  Looking for details? See our <a href="/etsy-image-resizer.html">Etsy Image Resizer</a>.
-</p>
 
-  <p class="muted">
-    Generate <strong>25 Etsy-ready print files</strong> from one image.
-    Delivered as <strong>clean ZIPs</strong>, optimized at <strong>300 DPI</strong>.
+  <p class="hero-micro">
+    Upload once. Get every size you need.
   </p>
 
   <p class="muted">
-  All sizes are exported at 300 DPI with exact pixel dimensions.
-</p>
-<p class="muted">
-  Need exact pixel dimensions and file naming details?
-  <a href="/etsy-print-size-guide.html">View the full print size guide</a>.
-</p>
-
+    Turn one image into <strong>25+ Etsy-ready print files</strong>.
+    Clean ZIPs. Exact dimensions. <strong>300 DPI</strong>.
+  </p>
 
   <ul>
-    <li><strong>5 ZIP files</strong> — grouped by print ratio</li>
-    <li><strong>JPEG output</strong> — quality-optimized for Etsy</li>
-    <li><strong>No cropping</strong> — all edges preserved</li>
+    <li><strong>Batch ZIP exports</strong> — grouped by print ratio</li>
+    <li><strong>Single Size Export</strong> — pick one size when needed</li>
+    <li><strong>Portrait & Landscape</strong> — same sizes, auto-adjusted</li>
+    <li><strong>No cropping</strong> — your composition stays intact</li>
   </ul>
 
+  <p class="muted">
+    Everything is sized, named, and ready for direct Etsy upload.
+  </p>
+
   <details>
-    <summary>View all print sizes</summary>
+    <summary>View all supported print sizes</summary>
 
     <ul>
-      <li><strong>2×3 ratio</strong>: 4×6, 8×12, 10×15, 12×18, 16×24, 20×30 in</li>
-      <li><strong>3×4 ratio</strong>: 6×8, 9×12, 12×16, 15×20, 18×24 in</li>
-      <li><strong>4×5 ratio</strong>: 8×10, 12×15, 16×20, 20×25 in</li>
-      <li><strong>ISO A-series</strong>: A5, A4, A3, A2, A1</li>
-      <li><strong>Extras</strong>: 5×7, 8.5×11, 11×14, 16×20, 20×24 in</li>
+      <li><strong>2×3 ratio:</strong> 4×6, 8×12, 10×15, 12×18, 16×24, 20×30</li>
+      <li><strong>3×4 ratio:</strong> 6×8, 9×12, 12×16, 15×20, 18×24 </li>
+      <li><strong>4×5 ratio:</strong> 8×10, 12×15, 16×20, 20×25</li>
+      <li><strong>ISO:</strong> A5, A4, A3, A2, A1</li>
+      <li><strong>Extras:</strong> 5×7, 8.5×11, 11×14, 11×17, 16×20, 20×24</li>
     </ul>
 
     <p class="muted" style="margin-top:8px">
-      Files are delivered as organized ZIPs (one per ratio), ready for direct Etsy upload.
+      Same presets work in Portrait and Landscape.
+      Landscape files are generated automatically.
     </p>
   </details>
+
+  <p class="muted">
+    Want exact pixel dimensions?
+    <a href="/etsy-print-size-guide.html">View the full print size guide</a>.
+  </p>
 </section>
+
 
 
 <section class="section etsy-story">
@@ -209,12 +240,13 @@
   </p>
 
   <p>
-    <strong>Nordic Crafters</strong>
-  </p>
-
-  <p class="muted" style="margin-top:6px">
-    Etsy seller · Digital prints
-  </p>
+  <strong>
+    <a href="https://nordiccrafters.etsy.com" target="_blank" rel="noopener noreferrer">
+      Nordic Crafters (Etsy shop)
+    </a>
+  </strong>
+</p>
+<p class="muted">Etsy seller · Digital prints</p>
 
   <p class="muted" style="margin-top:10px">
     Built by an active Etsy seller. No support — tool is intentionally simple.
