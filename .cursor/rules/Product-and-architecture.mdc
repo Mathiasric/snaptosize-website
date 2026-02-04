@@ -1,0 +1,23 @@
+---
+alwaysApply: true
+---
+
+You are working on SnapToSize, a paid SaaS for Etsy and digital print sellers.
+
+Core principles:
+- Simplicity beats features
+- Conversion > clever code
+- Product-led growth is the goal
+- No overengineering
+- Prefer small, fast changes that ship
+
+Architecture rules:
+- Keep the app stateless (no user data stored)
+- Stripe is the source of truth for access
+- Avoid auth/login systems
+- Optimize for reliability and low ops cost
+
+If uncertain, choose the option that:
+1) Ships faster
+2) Improves conversion
+3) Reduces complexity

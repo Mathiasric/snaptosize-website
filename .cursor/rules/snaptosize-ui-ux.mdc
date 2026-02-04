@@ -1,0 +1,19 @@
+---
+alwaysApply: true
+---
+
+UI/UX rules for SnapToSize:
+- The app must feel native, not like an embedded tool
+- Minimal UI, no clutter
+- Clear upgrade paths when limits are hit
+- Never block users without explaining why
+- Errors should convert, not frustrate
+
+Design constraints:
+- Prefer clean, neutral, professional tone
+- No playful or gimmicky UI
+- SaaS > hobby project
+- Assume user is busy and slightly impatient
+
+If adding UI:
+- Ask: does this help user reach “download files” faster?

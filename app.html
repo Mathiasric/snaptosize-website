@@ -10,12 +10,16 @@
   <meta property="og:type" content="website" />
   <link rel="canonical" href="https://snaptosize.com/app" />
 
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="dns-prefetch" href="//app.snaptosize.com" />
+  <link rel="preconnect" href="https://app.snaptosize.com" crossorigin />
+
   <!-- Favicons / App icons -->
-  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
-  <link rel="icon" href="assets/favicon/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+  <link rel="icon" href="/assets/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
   <meta name="theme-color" content="#f7f7fb">
 
   <meta name="application-name" content="SnapToSize">
@@ -29,80 +33,66 @@
   <link rel="stylesheet" href="/assets/styles.css" />
 </head>
 
-<body>
+<body class="app-page" style="--app-header-h: 64px;">
   <!-- ================= HEADER ================= -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="/">
-        <img
-          src="/assets/favicon/favicon-96x96.png"
-          alt=""
-          class="brand-icon"
-          aria-hidden="true"
-          width="20"
-          height="20"
-          loading="eager"
-        >
-        <span class="brand-text">SnapToSize</span>
-      </a>
+<a class="brand" href="/">
+  <img
+    src="/assets/favicon/favicon-96x96.png"
+    alt=""
+    class="brand-icon"
+    aria-hidden="true"
+    width="20"
+    height="20"
+    loading="eager"
+  >
+  <span class="brand-text">SnapToSize</span>
+</a>
+
 
       <nav class="header-cta">
-        <a class="btn btn--ghost" data-href="demo" data-cta="demo" href="#">Try free</a>
-        <a class="btn btn--primary" data-href="pay-monthly" data-cta="pay_monthly" href="#">Start Pro</a>
+       <a class="btn btn--ghost" data-href="demo" href="/">Home</a>
+<a class="btn btn--primary" data-href="pay-monthly" href="https://app.snaptosize.com" target="_blank" rel="noopener noreferrer">Open in new tab</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <h1>SnapToSize App</h1>
+  <main class="app-shell-main">
+    <iframe
+      id="app-iframe"
+      class="app-shell-iframe"
+      src="https://app.snaptosize.com"
+      title="SnapToSize App"
+      loading="eager"
+      referrerpolicy="no-referrer-when-downgrade"
+      allow="clipboard-read; clipboard-write"
+    ></iframe>
 
-      <p class="hero-lead">
-        Upload your artwork. Select print size groups. Download Etsy-ready ZIPs.
+    <div class="app-shell-fallback" id="app-fallback" hidden>
+      <h1>App didn’t load</h1>
+      <p class="muted">If your browser blocks embeds, open the app in a new tab.</p>
+      <p style="margin-top:12px">
+        <a class="btn btn--primary" href="https://app.snaptosize.com" target="_blank" rel="noopener noreferrer">Open SnapToSize</a>
       </p>
-
-      <p class="hero-micro">
-        We don’t store your uploads. Files are generated and downloaded instantly.
-      </p>
-    </section>
-
-    <section class="section">
-      <iframe
-        src="https://app.snaptosize.com"
-        class="app-iframe"
-        width="100%"
-        allowfullscreen
-        loading="lazy"
-      ></iframe>
-
-      <p class="hero-micro" style="margin-top: 12px;">
-        If the app doesn’t load here, open it in a new tab.
-      </p>
-
-      <div class="hero-cta" style="margin-top: 10px;">
-        <a href="https://app.snaptosize.com" target="_blank" rel="noopener">Open SnapToSize App in new tab</a>
-      </div>
-    </section>
-
-    <!-- ================= FOOTER ================= -->
-    <footer class="site-footer">
-      <p>
-        © <span id="year"></span> SnapToSize. All rights reserved.
-      </p>
-
-      <p class="muted">
-        <a href="/">Home</a> ·
-        <a href="/etsy-image-resizer.html">Etsy Image Resizer</a> ·
-        <a href="/etsy-print-size-guide.html">Print Size Guide</a>
-      </p>
-
-      <p class="muted">
-        Feedback or ideas? <a href="mailto:support@snaptosize.com">support@snaptosize.com</a>
-      </p>
-    </footer>
+    </div>
   </main>
 
-  <script src="/assets/main.js" defer></script>
+  <script>
+    (function () {
+      const iframe = document.getElementById("app-iframe");
+      const fallback = document.getElementById("app-fallback");
+      let loaded = false;
+
+      iframe.addEventListener("load", () => { loaded = true; });
+
+      setTimeout(() => {
+        if (!loaded) {
+          iframe.style.display = "none";
+          fallback.hidden = false;
+        }
+      }, 3500);
+    })();
+  </script>
 </body>
 </html>
-

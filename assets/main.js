@@ -1,4 +1,4 @@
-const DEMO_URL = "https://huggingface.co/spaces/snaptosize-app/snaptosize";
+const DEMO_URL = "/app";
 const PAY_URL_MONTHLY = "https://buy.stripe.com/4gM3cw5sygXeel84H07N603"; // bytt til monthly subscription link
 const PAY_URL_YEARLY  = "https://buy.stripe.com/aFa9AUaMS7mE7WK8Xg7N604";  // bytt til yearly subscription link
 

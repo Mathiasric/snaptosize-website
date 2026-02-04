@@ -1,0 +1,15 @@
+---
+alwaysApply: true
+---
+
+Monetization rules:
+- Demo must show real value, not crippled value
+- Free tier exists only to trigger upgrade
+- Every hard limit should explain the benefit of Pro
+- Stripe Checkout is the only payment flow
+- No discounts unless explicitly requested
+
+When implementing limits:
+- Be firm but respectful
+- Always show upgrade CTA
+- Avoid silent failures

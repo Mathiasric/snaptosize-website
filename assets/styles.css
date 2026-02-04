@@ -707,6 +707,14 @@ a.btn.btn--ghost[data-href="home"]:hover{
   backdrop-filter: blur(10px);
 }
 
+.app-iframe{
+  border: 0;
+  width: 100%;
+  min-height: 80vh;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
 
 /* ===== Reduced motion ===== */
 @media (prefers-reduced-motion: reduce){
@@ -740,4 +748,53 @@ a.btn.btn--ghost[data-href="home"]:hover{
 @media (max-width: 860px){
   .header-inner{ height:auto; padding: 12px 0; flex-wrap:wrap; }
   .hero h1{ font-size: 36px; }
+}
+
+/* =========================================================
+   /app — full-bleed app shell (isolated)
+========================================================= */
+html, body { height: 100%; }
+
+body.app-page{
+  margin: 0 !important;
+  height: 100vh !important;
+  overflow: hidden !important; /* app owns viewport */
+  background: #0b0b0f; /* avoids white flash behind iframe */
+}
+
+/* Ensure site header on app page stays at top, no scroll */
+body.app-page .site-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+body.app-page .app-shell-main{
+  height: calc(100vh - var(--app-header-h)) !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-top: var(--app-header-h) !important;
+}
+
+body.app-page .app-shell-iframe{
+  height: 100% !important;
+  width: 100% !important;
+  display: block !important;
+  border: 0 !important;
+  background: #0b0b0f;
+}
+
+.app-shell-fallback{
+  height: 100%;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+  padding: 22px;
+  max-width: 720px;
+  margin: 0 auto;
+  color: #e7e7e7;
 }

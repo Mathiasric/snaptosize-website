@@ -1,0 +1,17 @@
+---
+alwaysApply: true
+---
+
+Code style rules:
+- Prefer readable code over abstractions
+- Avoid unnecessary classes
+- Functions > frameworks
+- Explicit > clever
+- If code is only used once, inline it
+
+Do NOT:
+- Add auth systems
+- Add databases unless strictly needed
+- Add background workers unless scaling requires it
+
+This is a lean SaaS, not a platform.
