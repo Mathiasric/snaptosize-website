@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SnapToSize App — Etsy-ready print sizes in seconds</title>
+  <meta name="description" content="Use the SnapToSize app to turn one artwork into Etsy-ready print-size ZIPs at 300 DPI. No cropping, no cut-off edges." />
+  <meta property="og:url" content="https://snaptosize.com/app" />
+  <meta property="og:image" content="https://snaptosize.com/assets/og.png" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://snaptosize.com/app" />
+
+  <!-- Favicons / App icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+  <link rel="icon" href="assets/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <meta name="theme-color" content="#f7f7fb">
+
+  <meta name="application-name" content="SnapToSize">
+  <meta name="apple-mobile-web-app-title" content="SnapToSize">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="SnapToSize App — Etsy-ready print sizes in seconds" />
+  <meta property="og:description" content="Upload your artwork, select print size groups, and download Etsy-ready ZIPs at 300 DPI. No cropping." />
+
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+
+<body>
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img
+          src="/assets/favicon/favicon-96x96.png"
+          alt=""
+          class="brand-icon"
+          aria-hidden="true"
+          width="20"
+          height="20"
+          loading="eager"
+        >
+        <span class="brand-text">SnapToSize</span>
+      </a>
+
+      <nav class="header-cta">
+        <a class="btn btn--ghost" data-href="demo" data-cta="demo" href="#">Try free</a>
+        <a class="btn btn--primary" data-href="pay-monthly" data-cta="pay_monthly" href="#">Start Pro</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>SnapToSize App</h1>
+
+      <p class="hero-lead">
+        Upload your artwork. Select print size groups. Download Etsy-ready ZIPs.
+      </p>
+
+      <p class="hero-micro">
+        We don’t store your uploads. Files are generated and downloaded instantly.
+      </p>
+    </section>
+
+    <section class="section">
+      <iframe
+        src="https://app.snaptosize.com"
+        class="app-iframe"
+        width="100%"
+        allowfullscreen
+        loading="lazy"
+      ></iframe>
+
+      <p class="hero-micro" style="margin-top: 12px;">
+        If the app doesn’t load here, open it in a new tab.
+      </p>
+
+      <div class="hero-cta" style="margin-top: 10px;">
+        <a href="https://app.snaptosize.com" target="_blank" rel="noopener">Open SnapToSize App in new tab</a>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+      <p>
+        © <span id="year"></span> SnapToSize. All rights reserved.
+      </p>
+
+      <p class="muted">
+        <a href="/">Home</a> ·
+        <a href="/etsy-image-resizer.html">Etsy Image Resizer</a> ·
+        <a href="/etsy-print-size-guide.html">Print Size Guide</a>
+      </p>
+
+      <p class="muted">
+        Feedback or ideas? <a href="mailto:support@snaptosize.com">support@snaptosize.com</a>
+      </p>
+    </footer>
+  </main>
+
+  <script src="/assets/main.js" defer></script>
+</body>
+</html>
+
