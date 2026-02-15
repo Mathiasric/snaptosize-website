@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="SnapToSize">
+  <defs>
+    <linearGradient id="aurora" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6D5DFC"></stop>
+      <stop offset="100%" stop-color="#2AA7FF"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="6" y="6" width="52" height="52" rx="14" fill="url(#aurora)"></rect>
+
+  <!-- Inner frame -->
+  <rect x="18" y="18" width="28" height="28" rx="7" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.9"></rect>
+
+  <!-- Corner notches (subtle “resize” cue) -->
+  <path d="M22 26v-4h4" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"></path>
+  <path d="M42 38v4h-4" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"></path>
+</svg>
