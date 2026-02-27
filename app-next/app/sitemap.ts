@@ -13,12 +13,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${baseUrl}/guide`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
       url: `${baseUrl}/sizes`,
       lastModified: new Date(),
       changeFrequency: "monthly",
@@ -31,10 +25,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/guide`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/faq`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/etsy-image-resizer`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/etsy-print-size-guide`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
     },
     {
       url: `${baseUrl}/privacy`,
