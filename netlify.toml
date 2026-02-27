@@ -1,5 +1,7 @@
 [build]
-  publish = "."
+  base = "app-next"
+  publish = "app-next/out"
+  command = "npm run build"
 
 [[headers]]
   for = "/*"
