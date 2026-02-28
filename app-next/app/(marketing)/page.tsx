@@ -4,6 +4,7 @@ import {
   TimeSavedSection,
   AuthoritySection,
   TestimonialsSection,
+  CompositionSection,
   HowItWorksSection,
   TrustSection,
   PricingTeaserSection,
@@ -32,6 +33,7 @@ export default function HomePage() {
       <TimeSavedSection />
       <AuthoritySection />
       <TestimonialsSection />
+      <CompositionSection />
       <HowItWorksSection />
       <TrustSection />
       <PricingTeaserSection />

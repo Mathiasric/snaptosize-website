@@ -3,6 +3,7 @@ export { TimeSavedSection } from "./TimeSavedSection";
 export { AuthoritySection } from "./AuthoritySection";
 export { TestimonialsSection } from "./TestimonialsSection";
 export { PainSection } from "./PainSection";
+export { CompositionSection } from "./CompositionSection";
 export { HowItWorksSection } from "./HowItWorksSection";
 export { WhatYouGetSection } from "./WhatYouGetSection";
 export { PricingTeaserSection } from "./PricingTeaserSection";

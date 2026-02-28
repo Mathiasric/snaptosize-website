@@ -23,7 +23,7 @@ export function TrustSection() {
               Full Etsy Ratio Packs
             </h3>
             <p className="text-sm text-foreground-60 leading-relaxed">
-              Complete 2:3, 3:4, 4:5, ISO — instantly organized.
+              Complete 2:3, 3:4, 4:5, ISO + common print sizes — instantly organized.
             </p>
           </Card>
 
@@ -71,6 +71,20 @@ export function TrustSection() {
             <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
             <div>
               <p className="font-medium">High-quality 300 DPI exports</p>
+            </div>
+          </div>
+
+          <div className="flex items-start gap-3">
+            <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
+            <div>
+              <p className="font-medium">Optimized to stay under Etsy's 20MB upload limit</p>
+            </div>
+          </div>
+
+          <div className="flex items-start gap-3">
+            <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
+            <div>
+              <p className="font-medium">Artwork stays centered in every format</p>
             </div>
           </div>
         </div>
