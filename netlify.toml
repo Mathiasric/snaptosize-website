@@ -1,6 +1,6 @@
 [build]
   base = "app-next"
-  publish = "out"
+  publish = "app-next/out"
   command = "npm run build"
 
 [[headers]]
