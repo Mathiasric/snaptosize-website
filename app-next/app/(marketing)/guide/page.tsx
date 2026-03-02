@@ -9,6 +9,13 @@ export const metadata: Metadata = {
   title: "User Guide",
   description:
     "Learn how to use SnapToSize to create Etsy-ready print files. Step-by-step instructions for Quick Export and Packs.",
+  alternates: { canonical: "https://snaptosize.com/guide" },
+  openGraph: {
+    title: "User Guide | SnapToSize",
+    description:
+      "Step-by-step instructions for Quick Export and Packs. Create Etsy-ready print files.",
+    url: "https://snaptosize.com/guide",
+  },
 };
 
 export default function GuidePage() {

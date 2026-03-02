@@ -8,6 +8,13 @@ export const metadata: Metadata = {
   title: "FAQ — Frequently Asked Questions",
   description:
     "Common questions about SnapToSize: file quality, cropping, commercial use, refunds, and Etsy integration.",
+  alternates: { canonical: "https://snaptosize.com/faq" },
+  openGraph: {
+    title: "FAQ — Frequently Asked Questions | SnapToSize",
+    description:
+      "Common questions about SnapToSize: file quality, cropping, commercial use, refunds, and Etsy integration.",
+    url: "https://snaptosize.com/faq",
+  },
 };
 
 export default function FAQPage() {

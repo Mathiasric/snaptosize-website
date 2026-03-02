@@ -5,6 +5,7 @@ import { Card } from "@/components/Card";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description: "SnapToSize Terms of Service — Rules and guidelines.",
+  alternates: { canonical: "https://snaptosize.com/terms" },
 };
 
 export default function TermsPage() {

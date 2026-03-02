@@ -9,6 +9,13 @@ export const metadata: Metadata = {
   title: "Pricing — Free vs Pro",
   description:
     "SnapToSize pricing: Free plan with 3 Quick Exports and 1 Pack per day. Pro plan at $11.99/month or $97/year for unlimited access.",
+  alternates: { canonical: "https://snaptosize.com/pricing" },
+  openGraph: {
+    title: "Pricing — Free vs Pro | SnapToSize",
+    description:
+      "Free plan with 3 Quick Exports and 1 Pack per day. Pro plan at $11.99/month or $97/year for unlimited access.",
+    url: "https://snaptosize.com/pricing",
+  },
 };
 
 export default function PricingPage() {

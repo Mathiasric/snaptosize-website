@@ -5,6 +5,7 @@ import { Card } from "@/components/Card";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "SnapToSize Privacy Policy — How we handle your data.",
+  alternates: { canonical: "https://snaptosize.com/privacy" },
 };
 
 export default function PrivacyPage() {

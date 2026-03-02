@@ -11,6 +11,26 @@ export const metadata: Metadata = {
   },
   description:
     "Generate all required ratios and download ready-to-upload ZIPs. No Photoshop. No manual resizing. Built for Etsy print sellers.",
+  openGraph: {
+    siteName: "SnapToSize",
+    type: "website",
+    locale: "en_US",
+    images: [
+      {
+        url: "/assets/og.png",
+        width: 1200,
+        height: 630,
+        alt: "SnapToSize — Turn one image into a complete Etsy print set",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SnapToSize — Turn one image into a complete Etsy print set",
+    description:
+      "Generate all required ratios and download ready-to-upload ZIPs. No Photoshop. No manual resizing.",
+    images: ["/assets/og.png"],
+  },
   icons: {
     icon: [
       { url: "/assets/favicon/favicon.svg", type: "image/svg+xml" },

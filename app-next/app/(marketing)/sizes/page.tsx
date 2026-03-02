@@ -7,6 +7,13 @@ export const metadata: Metadata = {
   title: "Etsy Print Sizes & Ratio Guide",
   description:
     "Complete reference for Etsy print sizes organized by ratio: 2:3, 3:4, 4:5, 5:7, and ISO A-series. Includes pixel dimensions at 300 DPI.",
+  alternates: { canonical: "https://snaptosize.com/sizes" },
+  openGraph: {
+    title: "Etsy Print Sizes & Ratio Guide | SnapToSize",
+    description:
+      "Complete reference for Etsy print sizes organized by ratio. Includes pixel dimensions at 300 DPI.",
+    url: "https://snaptosize.com/sizes",
+  },
 };
 
 export default function SizesPage() {
