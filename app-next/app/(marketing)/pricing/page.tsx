@@ -19,8 +19,49 @@ export const metadata: Metadata = {
 };
 
 export default function PricingPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "SnapToSize",
+    url: "https://snaptosize.com/",
+    applicationCategory: "DesignApplication",
+    operatingSystem: "Web",
+    offers: [
+      {
+        "@type": "Offer",
+        name: "Free",
+        price: "0",
+        priceCurrency: "USD",
+        description:
+          "3 Quick Exports per day, 1 Pack per day, watermark on outputs",
+      },
+      {
+        "@type": "Offer",
+        name: "Pro Monthly",
+        price: "11.99",
+        priceCurrency: "USD",
+        billingIncrement: "P1M",
+        description:
+          "Unlimited exports, unlimited packs, no watermark, priority processing",
+      },
+      {
+        "@type": "Offer",
+        name: "Pro Yearly",
+        price: "97",
+        priceCurrency: "USD",
+        billingIncrement: "P1Y",
+        description:
+          "Unlimited exports, unlimited packs, no watermark, priority processing — save 33%",
+      },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section className="pt-16 pb-8 md:pt-24">
         <Container>
           <div className="max-w-3xl mx-auto text-center">

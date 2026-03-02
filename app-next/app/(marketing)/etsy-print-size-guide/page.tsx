@@ -18,8 +18,27 @@ export const metadata: Metadata = {
 };
 
 export default function EtsyPrintSizeGuidePage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline:
+      "Etsy Print Size Guide — Exact Pixels, ZIPs & Orientation (300 DPI)",
+    description:
+      "Exact SnapToSize print sizes with pixel dimensions at 300 DPI. Includes ZIP names, filename format, portrait/landscape rules, and Etsy 20MB ZIP cap.",
+    url: "https://snaptosize.com/etsy-print-size-guide",
+    author: {
+      "@type": "Organization",
+      name: "SnapToSize",
+      url: "https://snaptosize.com",
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* ================= HERO ================= */}
       <section className="hero">
         <h1>Etsy print size guide &mdash; exact pixels + ZIP structure</h1>

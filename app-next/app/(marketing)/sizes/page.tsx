@@ -17,8 +17,26 @@ export const metadata: Metadata = {
 };
 
 export default function SizesPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "Etsy Print Sizes & Ratio Guide",
+    description:
+      "Complete reference for Etsy print sizes organized by ratio: 2:3, 3:4, 4:5, 5:7, and ISO A-series. Includes pixel dimensions at 300 DPI.",
+    url: "https://snaptosize.com/sizes",
+    isPartOf: {
+      "@type": "WebSite",
+      name: "SnapToSize",
+      url: "https://snaptosize.com",
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section className="pt-16 pb-8 md:pt-24">
         <Container>
           <div className="max-w-4xl">

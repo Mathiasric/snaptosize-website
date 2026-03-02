@@ -18,8 +18,67 @@ export const metadata: Metadata = {
 };
 
 export default function FAQPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Does SnapToSize crop my images?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. SnapToSize uses a stretch-only resize policy. Images are resized to exact dimensions without cropping, ensuring your entire composition stays intact.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What file quality and DPI do I get?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "All exports are 300 DPI JPEG files with quality optimization to stay under Etsy's 20MB ZIP limit. The quality fallback chain is: 80 → 76 → 72 → 68 → 64 → 60. Most files export at quality 80.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I use SnapToSize outputs commercially?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, for Pro users. Pro plan outputs have no watermark and can be used commercially without restrictions. Free plan outputs include a watermark and are intended for testing only.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How does the free plan work?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Free users get 3 Quick Exports per day, 1 Pack per day, all ratios and sizes included, with watermark on all outputs. Limits reset daily at midnight UTC.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What's included in Pro?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Pro ($11.99/month or $97/year) includes unlimited Quick Exports, unlimited Packs, all ratios and sizes, no watermark, and priority processing.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I upload SnapToSize files to Etsy?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "In your Etsy listing editor, go to the Digital files section and upload the entire ZIP (Etsy accepts up to 20MB ZIPs) or extract and upload individual JPEGs. SnapToSize ZIPs are designed to stay under Etsy's 20MB limit.",
+        },
+      },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section className="pt-16 pb-8 md:pt-24">
         <Container>
           <div className="max-w-3xl mx-auto">

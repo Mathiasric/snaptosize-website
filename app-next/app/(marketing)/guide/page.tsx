@@ -19,8 +19,37 @@ export const metadata: Metadata = {
 };
 
 export default function GuidePage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "How to use SnapToSize to create Etsy print files",
+    description:
+      "Step-by-step instructions for using SnapToSize Quick Export and Packs to create Etsy-ready print files at 300 DPI.",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Upload your artwork",
+        text: "Upload a high-resolution image (at least 3000px on the shortest side) to SnapToSize.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Choose export type",
+        text: "Select Quick Export for a single size or Pack for a full set of ratio-matched sizes.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Download and upload to Etsy",
+        text: "Download your 300 DPI files or ZIPs and upload them directly to your Etsy listing.",
+      },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section className="pt-16 pb-8 md:pt-24">
         <Container>
           <div className="max-w-3xl">
