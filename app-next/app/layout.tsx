@@ -51,6 +51,22 @@ export const metadata: Metadata = {
   },
 };
 
+const globalJsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "SnapToSize",
+    url: "https://snaptosize.com",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "SnapToSize",
+    url: "https://snaptosize.com",
+    logo: "https://snaptosize.com/assets/favicon/favicon-96x96.png",
+  },
+];
+
 export default function RootLayout({
   children,
 }: {
@@ -58,7 +74,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
-      <body className="min-h-screen">{children}</body>
+      <body className="min-h-screen">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(globalJsonLd) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

@@ -10,7 +10,7 @@ export function HeroSection() {
       <div className="absolute inset-0 z-0">
         <img
           src="/Hero_image.png"
-          alt=""
+          alt="SnapToSize — Turn one image into a complete Etsy print set"
           className="w-full h-full object-cover"
           style={{ filter: 'saturate(1.15) contrast(1.08)' }}
         />
