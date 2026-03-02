@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     ],
   },
   manifest: "/assets/favicon/site.webmanifest",
+  other: {
+    "p:domain_verify": "fc473198d55c3de21e8902ba143db04d",
+  },
 };
 
 export default function RootLayout({
