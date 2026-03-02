@@ -3,6 +3,16 @@
   publish = "out"
   command = "npm run build"
 
+[[redirects]]
+  from = "/etsy-image-resizer"
+  to = "https://snaptosize.com"
+  status = 301
+
+[[redirects]]
+  from = "/etsy-print-size-guide"
+  to = "/sizes"
+  status = 301
+
 [[headers]]
   for = "/*"
   [headers.values]
