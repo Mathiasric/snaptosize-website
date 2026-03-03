@@ -22,10 +22,10 @@ export function Header() {
           <div className="flex items-center gap-6">
             <div className="hidden md:flex items-center gap-6 text-sm">
               <Link
-                href="/sizes"
+                href="/etsy-print-sizes"
                 className="text-foreground-60 transition-colors hover:text-foreground focus-ring"
               >
-                Sizes
+                Print Sizes
               </Link>
               <Link
                 href="/pricing"

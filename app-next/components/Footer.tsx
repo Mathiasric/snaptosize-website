@@ -15,8 +15,13 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/sizes" className="transition-colors hover:text-accent-light">
+                <Link href="/etsy-print-sizes" className="transition-colors hover:text-accent-light">
                   Print Sizes
+                </Link>
+              </li>
+              <li>
+                <Link href="/sizes" className="transition-colors hover:text-accent-light">
+                  All Pack Sizes
                 </Link>
               </li>
               <li>

@@ -4,6 +4,8 @@ import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle } from "lucide-react";
+import Image from "next/image";
+import { FAQAccordion } from "@/components/FAQAccordion";
 
 export const metadata: Metadata = {
   title:
@@ -17,11 +19,27 @@ export const metadata: Metadata = {
     description:
       "Every Etsy print size at 300 DPI. Vertical ratios, pixel dimensions, 20MB limit rules, and packaging best practices for professional sellers.",
     url: "https://snaptosize.com/etsy-print-sizes",
+    images: [
+      {
+        url: "/assets/Hero_OG_etsy-print-sizes.png",
+        width: 1200,
+        height: 630,
+        alt: "Etsy Print Sizes Guide — Complete ratio and size reference",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Etsy Print Sizes Guide — Exact Vertical Ratios + Pixel Dimensions",
+    description:
+      "Every Etsy print size at 300 DPI. Complete reference for professional sellers.",
+    images: ["/assets/Hero_OG_etsy-print-sizes.png"],
   },
 };
 
 export default function EtsyPrintSizesPage() {
-  const jsonLd = {
+  const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
@@ -29,6 +47,8 @@ export default function EtsyPrintSizesPage() {
     description:
       "Complete Etsy print sizes reference with exact pixel dimensions at 300 DPI for every standard vertical ratio.",
     url: "https://snaptosize.com/etsy-print-sizes",
+    datePublished: "2025-02-10",
+    dateModified: "2026-03-03",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -36,91 +56,468 @@ export default function EtsyPrintSizesPage() {
     },
   };
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://snaptosize.com",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Etsy Print Sizes Guide",
+        item: "https://snaptosize.com/etsy-print-sizes",
+      },
+    ],
+  };
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What should I upload to Etsy for digital downloads?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Professional sellers deliver ZIP packs grouped by ratio: 2:3, 3:4, 4:5, ISO A-series, and optional extras. Each ratio pack contains multiple sizes at 300 DPI (small, medium, large). This eliminates 'do you have 8×10?' requests and gives buyers instant choice.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How many files should an Etsy print set include?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A complete set includes 4–5 ratio packs, each covering small to large sizes. Inside each pack: typically 4–8 sizes ranging from small prints to large posters. Buyers get instant choice without hundreds of individual files.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do I avoid cropping across different print ratios?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Resize without cropping. Your full composition stays intact across every ratio — no lost edges, no surprise cut-offs. What buyers see in your listing photos matches exactly what they download. This reduces complaints and refunds.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Why do buyers ask for ISO sizes (A4, A3, A2)?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "ISO A-series sizes are the standard in most of the world (Europe, Australia, Asia). Including ISO sizes reduces messages and increases conversion from international traffic.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "My Etsy download file is over 20MB — what do I do?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Etsy has a 20MB limit per digital file. Group by ratio (one ZIP per ratio keeps file counts manageable) and optimize JPEG quality. SnapToSize auto-optimizes every ZIP to stay under 20MB.",
+        },
+      },
+    ],
+  };
+
   const appUrl = "https://app.snaptosize.com?source=seo_pillar&kind=guide";
+  const packsUrl = "https://app.snaptosize.com/app/packs";
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
       {/* ===== HERO ===== */}
-      <section className="pt-16 pb-8 md:pt-24">
-        <Container>
-          <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
-              Etsy Print Sizes Guide (Exact Vertical Ratios + Pixel Dimensions)
-            </h1>
-            <p className="text-lg text-foreground-60 mb-6">
-              Everything you need to upload print-ready digital files to Etsy
-              &mdash; without cropping, resizing 15 times, or breaking the 20MB
-              limit. This page covers every standard vertical ratio, exact pixel
-              dimensions at 300&nbsp;DPI, and the file packaging rules
-              professional sellers follow.
-            </p>
-            <a href={appUrl} target="_blank" rel="noopener noreferrer">
-              <Button className="text-base px-7 py-3">
-                Generate All Etsy Sizes Instantly
-              </Button>
-            </a>
-          </div>
-        </Container>
+      <section className="relative overflow-hidden h-screen">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/assets/Hero_OG_etsy-print-sizes.png"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            style={{ objectFit: "cover" }}
+            className="z-0"
+          />
+          {/* Left-side gradient overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/25 to-transparent" />
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 pt-16 pb-6 md:pt-20 md:pb-8">
+          <Container>
+            <div className="max-w-[680px]">
+              <h1 className="font-bold tracking-tight mb-6 text-white">
+                <span className="block text-4xl md:text-5xl lg:text-6xl mb-2">
+                  Etsy Print Sizes Guide
+                </span>
+                <span className="block text-2xl md:text-3xl lg:text-4xl font-semibold text-white/95">
+                  Exact ratios + pixel dimensions (300 DPI)
+                </span>
+              </h1>
+              <p className="text-lg text-white/95 mb-6 drop-shadow-md">
+                Complete ratio reference with pixel dimensions at 300&nbsp;DPI
+                and file packaging rules for professional sellers &mdash;
+                without cropping or breaking the 20MB limit.
+              </p>
+
+              <div className="mb-5">
+                <a href={appUrl} target="_blank" rel="noopener noreferrer">
+                  <Button className="text-base px-7 py-3">
+                    Generate All Etsy Sizes Instantly
+                  </Button>
+                </a>
+                <p className="text-sm text-white/85 mt-2">
+                  Free → generate your first complete size pack in minutes.
+                </p>
+              </div>
+
+              {/* Micro-benefit chips */}
+              <div className="flex flex-wrap gap-2.5">
+                <div className="flex items-center gap-2 px-3 py-1.5 rounded-md bg-white/15 backdrop-blur-sm border border-white/25">
+                  <Check className="h-3.5 w-3.5 text-white flex-shrink-0" />
+                  <span className="text-xs text-white font-medium">
+                    Exact ratios (300 DPI)
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 px-3 py-1.5 rounded-md bg-white/15 backdrop-blur-sm border border-white/25">
+                  <Check className="h-3.5 w-3.5 text-white flex-shrink-0" />
+                  <span className="text-xs text-white font-medium">
+                    No cropping / no missing edges
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 px-3 py-1.5 rounded-md bg-white/15 backdrop-blur-sm border border-white/25">
+                  <Check className="h-3.5 w-3.5 text-white flex-shrink-0" />
+                  <span className="text-xs text-white font-medium">
+                    Optimized for Etsy's 20MB limit
+                  </span>
+                </div>
+              </div>
+            </div>
+          </Container>
+        </div>
       </section>
 
       <section className="py-8">
         <Container>
           <div className="max-w-4xl space-y-16">
-            {/* ===== SECTION 1: What Size Should I Upload? ===== */}
+            {/* ===== SECTION 1: What Size Should I Upload? (shortened) ===== */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
                 What Size Should I Upload to Etsy?
               </h2>
               <p className="text-foreground-60 mb-4">
-                Etsy doesn&apos;t have a single &ldquo;correct&rdquo; upload
-                size. Every buyer has a different frame, a different wall, and a
-                different expectation. If you only offer one size, you lose
-                buyers who need a different ratio.
-              </p>
-              <p className="text-foreground-60 mb-4">
-                For vertical wall art &mdash; the most popular category on Etsy
-                &mdash; you need to offer <strong>multiple aspect ratios</strong>
-                . Each ratio has its own set of standard sizes measured in inches,
-                and each size has an exact pixel dimension when exported at
-                300&nbsp;DPI (the print industry standard).
+                There&apos;s no single correct upload size. Buyers have different
+                frames and walls. For vertical wall art, you need{" "}
+                <strong>multiple aspect ratios</strong> &mdash; each with exact
+                pixel dimensions at 300&nbsp;DPI.
               </p>
               <Card accent>
                 <p className="text-sm text-foreground-60">
-                  <strong>What professional sellers do:</strong> They upload
-                  bundled ratio packs &mdash; one ZIP per ratio group &mdash;
-                  containing every standard size in that ratio. This gives
-                  buyers maximum choice and reduces &ldquo;do you have this in
-                  8&times;10?&rdquo; messages to zero.
+                  <strong>What professional sellers do:</strong> Upload bundled{" "}
+                  <Link
+                    href="/pricing"
+                    className="text-foreground-60 hover:underline"
+                  >
+                    ratio packs
+                  </Link>{" "}
+                  &mdash; one ZIP per ratio group &mdash; giving buyers maximum
+                  choice and eliminating &ldquo;do you have this in
+                  8&times;10?&rdquo; messages.
                 </p>
               </Card>
             </div>
 
-            {/* ===== SECTION 2: All Standard Vertical Print Ratios ===== */}
+            {/* ===== SECTION: Why Cropping Ruins Print Sets ===== */}
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                Why Cropping Ruins Print Sets
+              </h2>
+              <p className="text-foreground-60 mb-4">
+                Most resize tools crop to force your artwork into a new ratio.
+                That means parts of your composition disappear &mdash; and what
+                buyers print doesn&apos;t match what they saw in your listing.
+              </p>
+              <ul className="space-y-2 text-foreground-60 mb-8">
+                <li className="flex items-start gap-3">
+                  <AlertTriangle className="h-5 w-5 text-error flex-shrink-0 mt-0.5" />
+                  <span>Carefully positioned edge elements get cut off</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <AlertTriangle className="h-5 w-5 text-error flex-shrink-0 mt-0.5" />
+                  <span>
+                    Different ratios show different compositions of the same art
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <AlertTriangle className="h-5 w-5 text-error flex-shrink-0 mt-0.5" />
+                  <span>
+                    Buyer complaints and returns from unexpected cropping
+                  </span>
+                </li>
+              </ul>
+
+              {/* ===== BLOCK A: Typical crop-to-fit ===== */}
+              <div className="mt-10 mb-12">
+                <div className="flex flex-wrap items-center gap-3 mb-2">
+                  <h3 className="text-xl font-bold">
+                    Typical crop-to-fit (what most tools do)
+                  </h3>
+                  <span className="inline-block text-xs font-semibold px-2.5 py-0.5 rounded-full bg-error/10 text-error border border-error/20">
+                    Typical crop tool
+                  </span>
+                </div>
+                <p className="text-sm text-foreground-60 mb-5">
+                  Same artwork, different ratios &mdash; edges get cut.
+                </p>
+                <div className="flex flex-wrap justify-center items-end gap-4">
+                  {[
+                    { src: "/assets/Composition_pictures/poppies_orginal_2x3.jpg", alt: "Original poppies artwork in 2:3 ratio", ratio: "2 / 3", label: "2:3 (Original)" },
+                    { src: "/assets/Composition_pictures/poppies_BAD_crop_2700x3600.png", alt: "Poppies artwork cropped to 3:4 — edges lost", ratio: "3 / 4", label: "3:4" },
+                    { src: "/assets/Composition_pictures/poppies_BAD_crop_2400x3000.png", alt: "Poppies artwork cropped to 4:5 — edges lost", ratio: "4 / 5", label: "4:5" },
+                  ].map((img) => (
+                    <div key={img.label} className="flex flex-col items-center">
+                      <div
+                        className="relative rounded-lg overflow-hidden border border-error/20 shadow-[0_0_8px_-2px_rgba(239,68,68,0.2)] h-[220px] sm:h-[260px] md:h-[300px] transition-all duration-150 hover:-translate-y-0.5 hover:border-error/40 hover:shadow-md"
+                        style={{ aspectRatio: img.ratio }}
+                      >
+                        <Image
+                          src={img.src}
+                          alt={img.alt}
+                          fill
+                          sizes="(max-width: 640px) 45vw, 200px"
+                          style={{ objectFit: "cover" }}
+                        />
+                      </div>
+                      <p className="text-xs text-foreground-60 mt-2 text-center">
+                        {img.label}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+                <p className="text-sm text-foreground-60 mt-3 text-center">
+                  Same file. Different damage.
+                </p>
+                <p className="text-xs text-foreground-60 mt-1 text-center">
+                  Different ratios. Different lost details.
+                </p>
+              </div>
+
+              {/* ===== COMMON MISTAKES SECTION ===== */}
+              <div className="mt-8 mb-12">
+                <h3 className="text-2xl font-bold mb-2">
+                  Common Etsy Print Mistakes (That Cost You Time and Sales)
+                </h3>
+                <p className="text-sm text-foreground-60 mb-6">
+                  Most digital print sellers make at least one of these.
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                  {[
+                    {
+                      title: "Uploading only one size",
+                      description:
+                        "Buyers ask for 8×10, A4, 11×14. You end up resizing manually per order.",
+                    },
+                    {
+                      title: "Cropping to force ratios",
+                      description:
+                        "Each ratio becomes a different composition. Edges disappear — refunds start here.",
+                    },
+                    {
+                      title: "Oversized files that fail uploads",
+                      description:
+                        "Etsy's 20MB limit gets hit fast. Random compression creates inconsistent results.",
+                    },
+                    {
+                      title: "Ignoring ISO sizes (A4/A3/A2)",
+                      description:
+                        "International buyers don't use inches. Missing ISO quietly kills conversions.",
+                    },
+                    {
+                      title: "Messy file naming",
+                      description:
+                        "Confusing filenames create support messages and lower perceived quality.",
+                    },
+                    {
+                      title: "No clear instructions for buyers",
+                      description:
+                        "Buyers don't know which file to print. That triggers messages, confusion, and lower review quality.",
+                    },
+                  ].map((mistake, index) => (
+                    <div
+                      key={index}
+                      className="flex items-start gap-3 p-4 rounded-lg bg-background-5 border border-border hover:-translate-y-0.5 transition-all duration-150 shadow-sm hover:shadow-md"
+                    >
+                      <div className="flex-shrink-0 mt-0.5">
+                        <div className="h-5 w-5 rounded-full bg-amber-500/10 flex items-center justify-center">
+                          <AlertTriangle className="h-3.5 w-3.5 text-amber-500" />
+                        </div>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-sm mb-1">
+                          {mistake.title}
+                        </h4>
+                        <p className="text-sm text-foreground-60">
+                          {mistake.description}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <p className="text-sm text-foreground-60 text-center">
+                  Professional sellers use{" "}
+                  <a
+                    href="https://app.snaptosize.com/app/packs"
+                    className="text-foreground-60 hover:underline"
+                  >
+                    structured, ratio-based exports
+                  </a>{" "}
+                  — not manual resizing.
+                </p>
+              </div>
+
+              {/* ===== BLOCK B: SnapToSize preserves ===== */}
+              <div className="mb-8">
+                <div className="flex flex-wrap items-center gap-3 mb-2">
+                  <h3 className="text-xl font-bold">
+                    One Upload. Every Ratio. Zero Cropping.
+                  </h3>
+                  <span className="inline-block text-xs font-semibold px-2.5 py-0.5 rounded-full bg-accent-5 text-accent-light border border-accent-30">
+                    SnapToSize
+                  </span>
+                </div>
+                <p className="text-xs text-foreground-60 mb-1">
+                  Built for{" "}
+                  <Link
+                    href="/pricing"
+                    className="text-foreground-60 hover:underline"
+                  >
+                    serious Etsy digital sellers
+                  </Link>
+                  .
+                </p>
+                <p className="text-sm text-foreground-60 mb-5">
+                  Your original composition stays intact across every size
+                  &mdash; with exact pixel dimensions at 300&nbsp;DPI.
+                </p>
+                <div className="flex flex-wrap justify-center items-end gap-4">
+                  {[
+                    { src: "/assets/Composition_pictures/Koi_2x3_12x18.jpg", alt: "Koi artwork preserved in 2:3 ratio", ratio: "2 / 3", label: "2:3" },
+                    { src: "/assets/Composition_pictures/Koi_3x4_18x24.jpg", alt: "Koi artwork preserved in 3:4 ratio", ratio: "3 / 4", label: "3:4" },
+                    { src: "/assets/Composition_pictures/Koi_4x5_15x20.jpg", alt: "Koi artwork preserved in 4:5 ratio", ratio: "4 / 5", label: "4:5" },
+                    { src: "/assets/Composition_pictures/Koi_a2.jpg", alt: "Koi artwork preserved in ISO A2 format", ratio: "420 / 594", label: "ISO A2" },
+                    { src: "/assets/Composition_pictures/Koi_common_11x14.jpg", alt: "Koi artwork preserved in 11\u00d714 format", ratio: "11 / 14", label: "11\u00d714" },
+                  ].map((img) => (
+                    <div key={img.label} className="flex flex-col items-center">
+                      <div
+                        className="relative rounded-lg overflow-hidden border border-accent-30 h-[220px] sm:h-[260px] md:h-[300px] transition-all duration-150 hover:-translate-y-0.5 hover:border-accent-light hover:shadow-[0_4px_16px_-4px_rgba(139,92,246,0.25)]"
+                        style={{ aspectRatio: img.ratio }}
+                      >
+                        <Image
+                          src={img.src}
+                          alt={img.alt}
+                          fill
+                          sizes="(max-width: 640px) 45vw, 160px"
+                          style={{ objectFit: "cover" }}
+                        />
+                      </div>
+                      <p className="text-xs text-foreground-60 mt-2 text-center">
+                        {img.label}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Guarantee pills */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mt-6">
+                  {[
+                    "Save hours per listing",
+                    "One upload \u2192 complete ratio packs",
+                    "Zero surprise cropping",
+                    "Optimized for Etsy's 20MB limit",
+                    "Preview = delivered file",
+                  ].map((text) => (
+                    <div
+                      key={text}
+                      className="flex items-center gap-2 rounded-lg border border-green-500/20 bg-green-500/5 px-3 py-2"
+                    >
+                      <Check className="h-4 w-4 text-green-500 flex-shrink-0" />
+                      <span className="text-sm text-foreground-60">{text}</span>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Social proof */}
+                <div className="mt-10 text-center">
+                  <p className="text-sm font-medium text-foreground mb-1">
+                    Used by serious Etsy digital sellers.
+                  </p>
+                  <p className="text-xs text-foreground-60">
+                    Over 18,000 size packs generated.
+                  </p>
+                </div>
+
+                {/* Mid-section CTA */}
+                <div className="mt-8 text-center">
+                  <a href={appUrl} target="_blank" rel="noopener noreferrer">
+                    <Button className="text-sm px-6 py-2.5">
+                      Generate My Etsy Size Packs
+                    </Button>
+                  </a>
+                  <p className="text-xs text-foreground-60 mt-2">
+                    Upload once. Download every ratio.
+                  </p>
+                  <p className="text-xs text-foreground-60 mt-1">
+                    No design skills required. Works with any high-resolution
+                    artwork.
+                  </p>
+                </div>
+
+                <p className="text-sm text-foreground-60 mt-5">
+                  If you need different compositions per ratio, crop your source
+                  artwork intentionally before uploading.
+                </p>
+              </div>
+            </div>
+
+            {/* ===== SECTION: All Standard Vertical Print Ratios ===== */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
                 All Standard Vertical Print Ratios
               </h2>
               <p className="text-foreground-60 mb-8">
-                Below are the five ratio groups that cover virtually every frame
-                and print size sold on Etsy. All pixel dimensions are calculated
-                at <strong>300&nbsp;DPI</strong> (inches &times; 300 = pixels).
+                Five ratio groups covering virtually every frame and{" "}
+                <Link href="/sizes" className="text-foreground-60 hover:underline">
+                  print size
+                </Link>{" "}
+                on Etsy. All pixel dimensions at <strong>300&nbsp;DPI</strong>.
               </p>
 
-              {/* 2:3 Ratio */}
               <div className="space-y-12">
+                {/* 2:3 Ratio */}
                 <div>
                   <h3 className="text-xl font-bold mb-3">
                     2:3 Ratio (Most Common for Wall Art)
                   </h3>
                   <p className="text-sm text-foreground-60 mb-4">
-                    The 2:3 ratio is the most widely used for vertical wall art
-                    prints. It matches the most common frame sizes available at
-                    IKEA, Target, and Amazon.
+                    The most widely used ratio for vertical wall art. Matches
+                    common frames at IKEA, Target, and Amazon.
                   </p>
                   <Card>
                     <div className="overflow-x-auto">
@@ -139,9 +536,14 @@ export default function EtsyPrintSizesPage() {
                             <td className="py-2">Small prints, cards</td>
                           </tr>
                           <tr className="border-b border-border">
+                            <td className="py-2 pr-4">6 &times; 9</td>
+                            <td className="py-2 pr-4">1800 &times; 2700</td>
+                            <td className="py-2">Medium print</td>
+                          </tr>
+                          <tr className="border-b border-border">
                             <td className="py-2 pr-4">8 &times; 12</td>
                             <td className="py-2 pr-4">2400 &times; 3600</td>
-                            <td className="py-2">Medium wall art</td>
+                            <td className="py-2">Medium prints</td>
                           </tr>
                           <tr className="border-b border-border">
                             <td className="py-2 pr-4">10 &times; 15</td>
@@ -158,10 +560,15 @@ export default function EtsyPrintSizesPage() {
                             <td className="py-2 pr-4">4800 &times; 7200</td>
                             <td className="py-2">Statement piece</td>
                           </tr>
-                          <tr>
+                          <tr className="border-b border-border">
                             <td className="py-2 pr-4">20 &times; 30</td>
                             <td className="py-2 pr-4">6000 &times; 9000</td>
                             <td className="py-2">Extra large</td>
+                          </tr>
+                          <tr>
+                            <td className="py-2 pr-4">24 &times; 36</td>
+                            <td className="py-2 pr-4">7200 &times; 10800</td>
+                            <td className="py-2">Maximum size</td>
                           </tr>
                         </tbody>
                       </table>
@@ -175,8 +582,8 @@ export default function EtsyPrintSizesPage() {
                     3:4 Ratio (Classic Photo Frame)
                   </h3>
                   <p className="text-sm text-foreground-60 mb-4">
-                    The 3:4 ratio matches classic photo and art frames.
-                    Essential for buyers who already own standard frames.
+                    Matches classic photo and art frames. Essential for buyers
+                    with standard frames.
                   </p>
                   <Card>
                     <div className="overflow-x-auto">
@@ -209,10 +616,15 @@ export default function EtsyPrintSizesPage() {
                             <td className="py-2 pr-4">4500 &times; 6000</td>
                             <td className="py-2">Large poster</td>
                           </tr>
-                          <tr>
+                          <tr className="border-b border-border">
                             <td className="py-2 pr-4">18 &times; 24</td>
                             <td className="py-2 pr-4">5400 &times; 7200</td>
                             <td className="py-2">Gallery size</td>
+                          </tr>
+                          <tr>
+                            <td className="py-2 pr-4">24 &times; 32</td>
+                            <td className="py-2 pr-4">7200 &times; 9600</td>
+                            <td className="py-2">Maximum size</td>
                           </tr>
                         </tbody>
                       </table>
@@ -226,9 +638,8 @@ export default function EtsyPrintSizesPage() {
                     4:5 Ratio (Traditional Art)
                   </h3>
                   <p className="text-sm text-foreground-60 mb-4">
-                    The 4:5 ratio is the go-to for traditional art frames. The
-                    iconic 8&times;10 lives here &mdash; one of the most
-                    requested print sizes on Etsy.
+                    Home of the iconic 8&times;10 &mdash; one of the most
+                    requested sizes on Etsy.
                   </p>
                   <Card>
                     <div className="overflow-x-auto">
@@ -256,10 +667,15 @@ export default function EtsyPrintSizesPage() {
                             <td className="py-2 pr-4">4800 &times; 6000</td>
                             <td className="py-2">Popular poster size</td>
                           </tr>
-                          <tr>
+                          <tr className="border-b border-border">
                             <td className="py-2 pr-4">20 &times; 25</td>
                             <td className="py-2 pr-4">6000 &times; 7500</td>
                             <td className="py-2">Large format</td>
+                          </tr>
+                          <tr>
+                            <td className="py-2 pr-4">24 &times; 30</td>
+                            <td className="py-2 pr-4">7200 &times; 9000</td>
+                            <td className="py-2">Maximum size</td>
                           </tr>
                         </tbody>
                       </table>
@@ -273,9 +689,8 @@ export default function EtsyPrintSizesPage() {
                     ISO A-Series (International Standard)
                   </h3>
                   <p className="text-sm text-foreground-60 mb-4">
-                    If you sell to buyers outside the US, ISO A-sizes are
-                    essential. These are the standard print sizes in Europe,
-                    Australia, and most of the world.
+                    Standard print sizes in Europe, Australia, and most of the
+                    world. Essential for international buyers.
                   </p>
                   <Card>
                     <div className="overflow-x-auto">
@@ -331,9 +746,8 @@ export default function EtsyPrintSizesPage() {
                     Extras (Sizes Most Sellers Forget)
                   </h3>
                   <p className="text-sm text-foreground-60 mb-4">
-                    These don&apos;t fit neatly into a single ratio group, but
-                    they&apos;re some of the most requested sizes on Etsy. Skip
-                    these and you lose sales to sellers who include them.
+                    Some of the most requested sizes on Etsy. Skip these and you
+                    lose sales.
                   </p>
                   <Card accent>
                     <div className="overflow-x-auto">
@@ -384,7 +798,7 @@ export default function EtsyPrintSizesPage() {
                 </div>
               </div>
 
-              {/* CTA #2 */}
+              {/* CTA after tables */}
               <div className="mt-12 text-center">
                 <a href={appUrl} target="_blank" rel="noopener noreferrer">
                   <Button className="text-base px-7 py-3">
@@ -397,16 +811,43 @@ export default function EtsyPrintSizesPage() {
               </div>
             </div>
 
-            {/* ===== SECTION 3: Etsy 20MB File Limit ===== */}
+            {/* ===== NEW SECTION: Need Square or Landscape Too? ===== */}
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                Need Square or Landscape Too?
+              </h2>
+              <p className="text-foreground-60 mb-4">
+                While this guide focuses on vertical Etsy print sizes,
+                SnapToSize also supports additional formats.
+              </p>
+              <ul className="space-y-2 text-foreground-60 mb-6">
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
+                  <span>Square sizes available in single export mode</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
+                  <span>Any vertical size available individually</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
+                  <span>Landscape sizes available in single export mode</span>
+                </li>
+              </ul>
+              <a href={packsUrl} target="_blank" rel="noopener noreferrer">
+                <Button>Open the App to Pick Formats</Button>
+              </a>
+            </div>
+
+            {/* ===== SECTION: Etsy 20MB File Limit ===== */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
                 Etsy&apos;s 20MB File Limit (Critical for Digital Sellers)
               </h2>
               <p className="text-foreground-60 mb-4">
                 Etsy enforces a <strong>20MB maximum per digital file</strong>.
-                This applies to each individual file you attach to a listing
-                &mdash; including ZIPs. If your ZIP exceeds 20MB, the upload
-                fails silently or gets rejected.
+                If your ZIP exceeds 20MB, the upload fails silently or gets
+                rejected.
               </p>
 
               <Card>
@@ -414,10 +855,9 @@ export default function EtsyPrintSizesPage() {
                   Why 300 DPI files can blow the limit
                 </h3>
                 <p className="text-sm text-foreground-60 mb-4">
-                  A single 20&times;30&Prime; file at 300 DPI is 6000&times;9000
-                  pixels. As a high-quality JPEG, that&apos;s 8&ndash;15MB
-                  depending on image complexity. Bundle 6 of those into one ZIP
-                  and you&apos;re well over 20MB.
+                  A single 20&times;30&Prime; file at 300 DPI is
+                  6000&times;9000 pixels &mdash; 8&ndash;15MB as JPEG. Bundle 6
+                  into one ZIP and you&apos;re well over 20MB.
                 </p>
                 <h3 className="font-semibold mb-3">
                   How to stay under the limit
@@ -427,43 +867,39 @@ export default function EtsyPrintSizesPage() {
                     <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
                     <span>
                       <strong>Group by ratio</strong> &mdash; one ZIP per ratio
-                      (2:3, 3:4, 4:5, etc.) keeps file counts manageable
+                      keeps file counts manageable
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
                     <span>
-                      <strong>Optimize JPEG quality</strong> &mdash;
-                      quality 80 is visually indistinguishable from 100 but
-                      40&ndash;60% smaller
+                      <strong>Optimize JPEG quality</strong> &mdash; quality 80
+                      is visually identical to 100 but 40&ndash;60% smaller
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
                     <span>
-                      <strong>Use a quality fallback chain</strong> &mdash; if a
-                      ZIP exceeds 20MB at quality 80, step down: 76 &rarr; 72
-                      &rarr; 68 &rarr; 64 &rarr; 60
+                      <strong>Use a quality fallback chain</strong> &mdash; step
+                      down: 76 &rarr; 72 &rarr; 68 &rarr; 64 &rarr; 60
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <AlertTriangle className="h-5 w-5 text-error flex-shrink-0 mt-0.5" />
                     <span>
                       <strong>Never use PNG for print files</strong> &mdash;
-                      PNG files are 3&ndash;5&times; larger than JPEG with no
-                      visible quality benefit at print resolution
+                      3&ndash;5&times; larger with no visible quality benefit
                     </span>
                   </li>
                 </ul>
               </Card>
 
-              {/* CTA #3 */}
               <Card accent className="mt-6 p-6">
                 <p className="text-sm text-foreground-60">
                   <strong>SnapToSize handles this automatically.</strong> Every
                   ZIP is optimized with a quality fallback chain to stay under
-                  Etsy&apos;s 20MB limit. If a ZIP still exceeds the cap, the
-                  app stops and warns you &mdash; no silent failures.
+                  20MB. If a ZIP still exceeds the cap, the app warns you
+                  &mdash; no silent failures.
                 </p>
                 <div className="mt-4">
                   <a href={appUrl} target="_blank" rel="noopener noreferrer">
@@ -473,165 +909,209 @@ export default function EtsyPrintSizesPage() {
               </Card>
             </div>
 
-            {/* ===== SECTION 4: Why Cropping Ruins Print Sets ===== */}
+            {/* ===== SECTION: Packaging ===== */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                Why Cropping Ruins Print Sets
+                Built for serious digital print sellers.
               </h2>
-              <p className="text-foreground-60 mb-4">
-                Most image resizing tools crop to fit the target ratio. For
-                general photos, that&apos;s fine. For wall art and digital
-                prints, it&apos;s destructive.
+              <p className="text-foreground-60 mb-2">
+                Because manually exporting 20+ sizes per listing is not a
+                scalable business model.
               </p>
-              <p className="text-foreground-60 mb-4">
-                When you crop a 2:3 artwork to fit a 4:5 frame, the tool cuts
-                off the top, bottom, or sides of your composition. Elements you
-                carefully positioned near the edges disappear. The print your
-                buyer receives doesn&apos;t match the listing preview.
+              <p className="text-foreground-60 mb-6">
+                Manually exporting 20+ sizes per listing doesn&apos;t scale.
               </p>
 
-              <Card>
-                <h3 className="font-semibold mb-3">
-                  The stretch-only alternative
-                </h3>
-                <p className="text-sm text-foreground-60 mb-4">
-                  Instead of cropping, a stretch-only resize scales the entire
-                  image to the exact target dimensions. Your full composition is
-                  preserved in every size &mdash; nothing is cut off.
-                </p>
-                <ul className="space-y-2 text-sm text-foreground-60">
-                  <li className="flex items-start gap-3">
-                    <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
-                    <span>
-                      Every pixel of your artwork appears in every export
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
-                    <span>
-                      Listing preview matches the delivered file exactly
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
-                    <span>
-                      No buyer complaints about missing edges or cut-off details
-                    </span>
-                  </li>
-                </ul>
-                <p className="text-sm text-foreground-60 mt-4">
-                  This is the approach SnapToSize uses. If you need different
-                  compositions per ratio, pre-crop your source artwork before
-                  uploading.
-                </p>
-              </Card>
+              <ul className="space-y-2 text-foreground-60">
+                <li className="flex items-start gap-2">
+                  <span className="text-accent-light mt-0.5">•</span>
+                  <span>Exact Etsy aspect ratios</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-accent-light mt-0.5">•</span>
+                  <span>Organized ZIP exports</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-accent-light mt-0.5">•</span>
+                  <span>Professional file naming</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-accent-light mt-0.5">•</span>
+                  <span>Production-ready structure</span>
+                </li>
+              </ul>
             </div>
 
-            {/* ===== SECTION 5: How Pro Sellers Package Files ===== */}
-            <div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                How Professional Etsy Sellers Package Print Files
-              </h2>
-              <p className="text-foreground-60 mb-4">
-                The difference between a $5 listing and a $25 listing is often
-                just packaging. Buyers pay more when the files are organized,
-                clearly named, and ready to print without confusion.
-              </p>
-
-              <Card>
-                <h3 className="font-semibold mb-3">
-                  Ratio-based ZIP packs
-                </h3>
-                <p className="text-sm text-foreground-60 mb-4">
-                  Group your files by ratio. One ZIP per group:
-                </p>
-                <div className="bg-background rounded-lg p-4 font-mono text-sm text-foreground-60 space-y-1 mb-4">
-                  <p>2x3.zip</p>
-                  <p>3x4.zip</p>
-                  <p>4x5.zip</p>
-                  <p>ISO.zip</p>
-                  <p>EXTRAS.zip</p>
-                </div>
-                <h3 className="font-semibold mb-3">
-                  Clean filename format
-                </h3>
-                <p className="text-sm text-foreground-60 mb-4">
-                  Inside each ZIP, files are named with the size label and exact
-                  pixel dimensions:
-                </p>
-                <div className="bg-background rounded-lg p-4 font-mono text-sm text-foreground-60 space-y-1 mb-4">
-                  <p>12x18in_3600x5400.jpg</p>
-                  <p>A4_2480x3508.jpg</p>
-                  <p>5x7in_1500x2100.jpg</p>
-                </div>
-                <p className="text-sm text-foreground-60">
-                  No random UUIDs, no &ldquo;final_v2_export&rdquo; names. The
-                  buyer instantly knows what each file is. This reduces support
-                  messages and increases positive reviews.
-                </p>
-              </Card>
-            </div>
-
-            {/* ===== SECTION 6: Fastest Way to Generate All Sizes ===== */}
+            {/* ===== SECTION: Fastest Way + CTA ===== */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
                 The Fastest Way to Generate All Etsy Print Sizes
               </h2>
               <p className="text-foreground-60 mb-6">
-                You can do this manually in Photoshop or Canva. Resize each
-                size, export, rename, organize into folders, ZIP, check file
-                sizes, re-export if over 20MB. For 25 sizes, that&apos;s
-                1&ndash;3 hours per artwork.
-              </p>
-              <p className="text-foreground-60 mb-6">
-                Or you can do it in seconds:
+                Manually in Photoshop: resize, export, rename, organize, ZIP,
+                check sizes &mdash; 1&ndash;3 hours per artwork for 25 sizes.
+                Or do it in seconds:
               </p>
 
               <Card>
-                <ul className="space-y-3 text-sm text-foreground-60">
-                  <li className="flex items-start gap-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
+                  <div className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
-                    <span>
-                      Upload <strong>one</strong> high-resolution image
+                    <span className="text-sm text-foreground-60">
+                      Save hours per listing
                     </span>
-                  </li>
-                  <li className="flex items-start gap-3">
+                  </div>
+                  <div className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
-                    <span>
-                      Get <strong>all vertical ratios</strong> generated
-                      automatically
+                    <span className="text-sm text-foreground-60">
+                      Clean, ready-to-sell ZIP structure
                     </span>
-                  </li>
-                  <li className="flex items-start gap-3">
+                  </div>
+                  <div className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
-                    <span>
-                      Download <strong>organized ZIP packs</strong> (one per
-                      ratio)
+                    <span className="text-sm text-foreground-60">
+                      Complete Etsy ratio packs instantly
                     </span>
-                  </li>
-                  <li className="flex items-start gap-3">
+                  </div>
+                  <div className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
-                    <span>
-                      Every file is <strong>300 DPI</strong> with Etsy-ready
-                      naming
+                    <span className="text-sm text-foreground-60">
+                      Exact Etsy aspect ratios (300&nbsp;DPI)
                     </span>
-                  </li>
-                  <li className="flex items-start gap-3">
+                  </div>
+                  <div className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
-                    <span>
-                      ZIPs auto-optimized to stay{" "}
-                      <strong>under 20MB</strong>
+                    <span className="text-sm text-foreground-60">
+                      Optimized for Etsy's 20MB limit
                     </span>
-                  </li>
-                  <li className="flex items-start gap-3">
+                  </div>
+                  <div className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>No cropping</strong> &mdash; full composition
-                      preserved
+                    <span className="text-sm text-foreground-60">
+                      Professional file naming
                     </span>
-                  </li>
-                </ul>
+                  </div>
+                </div>
               </Card>
+            </div>
+
+            {/* ===== FAQ SECTION ===== */}
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6">
+                Frequently Asked Questions
+              </h2>
+
+              <FAQAccordion
+                items={[
+                  {
+                    question: "What should I upload to Etsy for digital downloads?",
+                    answer: [
+                      (
+                        <>
+                          You don&apos;t upload &ldquo;one file&rdquo; &mdash; you
+                          upload a set. Professional sellers deliver{" "}
+                          <strong>ZIP packs grouped by ratio</strong>: 2:3, 3:4,
+                          4:5, ISO A-series, and optional extras.
+                        </>
+                      ),
+                      (
+                        <>
+                          Each ratio pack contains multiple sizes at 300&nbsp;DPI
+                          (small, medium, large). Result: buyers find their size
+                          without messaging you. This is how serious Etsy sellers
+                          eliminate &ldquo;do you have 8&times;10?&rdquo; requests.
+                        </>
+                      ),
+                    ],
+                  },
+                  {
+                    question: "How many files should an Etsy print set include?",
+                    answer: [
+                      (
+                        <>
+                          A complete set includes{" "}
+                          <strong>4&ndash;5 ratio packs</strong>, each covering
+                          small to large sizes. This ensures you cover virtually
+                          every frame size buyers own without uploading hundreds of
+                          individual files.
+                        </>
+                      ),
+                      (
+                        <>
+                          Inside each pack: typically 4&ndash;8 sizes ranging from
+                          small prints (4&times;6, 8&times;10) to large posters
+                          (20&times;30, 24&times;36). Buyers get instant choice. You
+                          get zero &ldquo;can I get this in…&rdquo; messages.
+                        </>
+                      ),
+                    ],
+                  },
+                  {
+                    question: "How do I avoid cropping across different print ratios?",
+                    answer: [
+                      (
+                        <>
+                          The problem: crop-to-fit tools force your artwork into a
+                          new ratio by cutting edges. Different ratios = different
+                          compositions. Buyers get unexpected results.
+                        </>
+                      ),
+                      (
+                        <>
+                          The solution: <strong>resize without cropping</strong>.
+                          Your full composition stays intact across every ratio
+                          &mdash; no lost edges, no surprise cut-offs. What buyers
+                          see in your listing photos matches exactly what they
+                          download. Fewer complaints, fewer refunds.
+                        </>
+                      ),
+                    ],
+                  },
+                  {
+                    question: "Why do buyers ask for ISO sizes (A4, A3, A2)?",
+                    answer: [
+                      (
+                        <>
+                          ISO A-series sizes are the{" "}
+                          <strong>standard in most of the world</strong> (Europe,
+                          Australia, Asia). If you only offer US inch-based sizes,
+                          you lose international buyers or get constant requests for
+                          A4, A3, A2.
+                        </>
+                      ),
+                      (
+                        <>
+                          Including ISO sizes = fewer messages, higher conversion
+                          from international traffic. SnapToSize includes ISO as
+                          part of the standard pack &mdash; you cover more buyers
+                          without extra work.
+                        </>
+                      ),
+                    ],
+                  },
+                  {
+                    question: "My Etsy download file is over 20MB — what do I do?",
+                    answer: [
+                      (
+                        <>
+                          Etsy has a <strong>20MB limit per digital file</strong>{" "}
+                          (including ZIPs). Large print files at 300&nbsp;DPI add up
+                          fast. If you bundle too many sizes into one ZIP, uploads
+                          fail or get rejected.
+                        </>
+                      ),
+                      (
+                        <>
+                          The fix: <strong>group by ratio</strong> (one ZIP per
+                          ratio keeps file counts manageable) and optimize JPEG
+                          quality. SnapToSize auto-optimizes every ZIP to stay under
+                          20MB &mdash; no manual compression, no upload failures.
+                        </>
+                      ),
+                    ],
+                  },
+                ]}
+              />
             </div>
 
             {/* ===== FINAL CTA ===== */}
