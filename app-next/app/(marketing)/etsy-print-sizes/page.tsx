@@ -286,9 +286,9 @@ export default function EtsyPrintSizesPage() {
                 </p>
                 <div className="flex flex-wrap justify-center items-end gap-4">
                   {[
-                    { src: "/assets/Composition_pictures/poppies_orginal_2x3.jpg", alt: "Original poppies artwork in 2:3 ratio", ratio: "2 / 3", label: "2:3 (Original)" },
-                    { src: "/assets/Composition_pictures/poppies_BAD_crop_2700x3600.png", alt: "Poppies artwork cropped to 3:4 — edges lost", ratio: "3 / 4", label: "3:4" },
-                    { src: "/assets/Composition_pictures/poppies_BAD_crop_2400x3000.png", alt: "Poppies artwork cropped to 4:5 — edges lost", ratio: "4 / 5", label: "4:5" },
+                    { src: "/assets/Composition_Pictures/poppies_orginal_2x3.jpg", alt: "Original poppies artwork in 2:3 ratio", ratio: "2 / 3", label: "2:3 (Original)" },
+                    { src: "/assets/Composition_Pictures/poppies_BAD_crop_2700x3600.png", alt: "Poppies artwork cropped to 3:4 — edges lost", ratio: "3 / 4", label: "3:4" },
+                    { src: "/assets/Composition_Pictures/poppies_BAD_crop_2400x3000.png", alt: "Poppies artwork cropped to 4:5 — edges lost", ratio: "4 / 5", label: "4:5" },
                   ].map((img) => (
                     <div key={img.label} className="flex flex-col items-center">
                       <div
@@ -418,11 +418,11 @@ export default function EtsyPrintSizesPage() {
                 </p>
                 <div className="flex flex-wrap justify-center items-end gap-4">
                   {[
-                    { src: "/assets/Composition_pictures/Koi_2x3_12x18.jpg", alt: "Koi artwork preserved in 2:3 ratio", ratio: "2 / 3", label: "2:3" },
-                    { src: "/assets/Composition_pictures/Koi_3x4_18x24.jpg", alt: "Koi artwork preserved in 3:4 ratio", ratio: "3 / 4", label: "3:4" },
-                    { src: "/assets/Composition_pictures/Koi_4x5_15x20.jpg", alt: "Koi artwork preserved in 4:5 ratio", ratio: "4 / 5", label: "4:5" },
-                    { src: "/assets/Composition_pictures/Koi_a2.jpg", alt: "Koi artwork preserved in ISO A2 format", ratio: "420 / 594", label: "ISO A2" },
-                    { src: "/assets/Composition_pictures/Koi_common_11x14.jpg", alt: "Koi artwork preserved in 11\u00d714 format", ratio: "11 / 14", label: "11\u00d714" },
+                    { src: "/assets/Composition_Pictures/Koi_2x3_12x18.jpg", alt: "Koi artwork preserved in 2:3 ratio", ratio: "2 / 3", label: "2:3" },
+                    { src: "/assets/Composition_Pictures/Koi_3x4_18x24.jpg", alt: "Koi artwork preserved in 3:4 ratio", ratio: "3 / 4", label: "3:4" },
+                    { src: "/assets/Composition_Pictures/Koi_4x5_15x20.jpg", alt: "Koi artwork preserved in 4:5 ratio", ratio: "4 / 5", label: "4:5" },
+                    { src: "/assets/Composition_Pictures/Koi_a2.jpg", alt: "Koi artwork preserved in ISO A2 format", ratio: "420 / 594", label: "ISO A2" },
+                    { src: "/assets/Composition_Pictures/Koi_common_11x14.jpg", alt: "Koi artwork preserved in 11\u00d714 format", ratio: "11 / 14", label: "11\u00d714" },
                   ].map((img) => (
                     <div key={img.label} className="flex flex-col items-center">
                       <div

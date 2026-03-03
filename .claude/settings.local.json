@@ -18,7 +18,9 @@
       "Bash(npm run dev:*)",
       "Bash(git reset:*)",
       "Bash(gh api:*)",
-      "WebFetch(domain:snaptosize.com)"
+      "WebFetch(domain:snaptosize.com)",
+      "Bash(taskkill:*)",
+      "Bash(git mv:*)"
     ]
   }
 }

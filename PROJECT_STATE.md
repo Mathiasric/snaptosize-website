@@ -1,7 +1,7 @@
 # PROJECT_STATE.md  
 ## SnapToSize — Authoritative System State
 
-Last updated: 2026-02-24
+Last updated: 2026-03-03
 
 ---
 
@@ -49,10 +49,30 @@ Runner:
 Storage:
 - Cloudflare R2 bucket: `snaptosize-zips`
 
+Cloudflare Workers Paid plan ($5/mnd) — activated 2026-03-03.
+
 Cloudflare Pages now requires:
 - WORKER_BASE_URL set in Production environment variables
 
 ---
+
+## Cloudflare Pages Constraint (App Router POST Limitation)
+
+SnapToSize frontend runs on Cloudflare Pages (static prerender).
+
+Constraint:
+- POST requests to /app/* routes return 405 by default.
+- Next.js Server Actions (including Clerk invalidateCacheAction) POST to current route.
+- Middleware does NOT execute for prerendered static responses on Pages.
+
+Workaround (Production):
+- Server Action POSTs with `next-action` header are intercepted at edge level.
+- Response: 200 with `content-type: text/x-component` and no-op RSC flight body.
+- Prevents Clerk auth state changes from failing on static routes.
+
+Important:
+SnapToSize frontend assumes static hosting.
+Server Actions must never be relied upon for critical functionality.
 
 # 3. Backend Status (PRODUCTION READY)
 
@@ -174,6 +194,55 @@ Events are:
 
 Analytics is production-safe and verified live.
 
+### Next.js App Events (Server-Side)
+
+Next.js app emits events via server-side PostHog wrapper (`app/lib/posthog.ts`).
+
+All use `distinct_id = clerk:{userId}` to match Worker format.
+
+Events:
+
+- **billing_view** — every billing page render
+  - Properties: source, kind, success, canceled, plan_before
+  - File: `app/api/analytics/billing-view/route.ts`
+
+- **upgrade_clicked** — billing page opened with `?source=` param
+  - Properties: source, kind, entry, plan_before
+  - File: `app/api/analytics/billing-view/route.ts`
+
+- **checkout_started** — Stripe checkout session created
+  - Properties: interval, source, kind, plan_before
+  - File: `app/api/stripe/checkout/route.ts`
+
+- **checkout_completed** — Stripe webhook confirms payment
+  - Properties: source, kind, interval, price_id, plan_after
+  - File: `app/api/stripe/webhook/route.ts`
+
+- **portal_opened** — Stripe billing portal opened
+  - Properties: plan_before, entry
+  - File: `app/api/stripe/portal/route.ts`
+
+- **subscription_updated** — Stripe subscription status change
+  - Properties: status, plan_after
+  - File: `app/api/stripe/webhook/route.ts`
+
+- **subscription_deleted** — Stripe subscription canceled
+  - Properties: status, plan_after
+  - File: `app/api/stripe/webhook/route.ts`
+
+Attribution chain:
+- Upgrade links pass `?source=` and `?kind=` to billing page
+- Billing page forwards source/kind to checkout POST body
+- Checkout route writes source/kind into Stripe session metadata
+- Webhook reads session.metadata.source/kind into checkout_completed
+
+Important implementation detail:
+- All posthogCapture() calls MUST be awaited on Cloudflare Pages edge runtime.
+- Without await, the edge worker terminates before the fetch completes and events are silently dropped.
+- This applies to all route handlers using `export const runtime = "edge"`.
+
+Verified live: 2026-03-01. All events confirmed in PostHog Activity.
+
 # 4. Free vs Pro System (LIVE)
 
 ## 4.1 Free Plan
@@ -196,8 +265,6 @@ TTL: 36h
 Server-authoritative.
 
 ---
-
-## 4.2 Stripe Integration (LIVE)
 
 ## 4.2 Stripe Integration (LIVE – HARDENED)
 
@@ -224,7 +291,20 @@ Webhook improvements:
 - Clerk mirrors subscription state
 
 Plan propagation:
-Stripe → Webhook → Clerk publicMetadata.plan → JWT → Worker enforcement
+Stripe → Webhook → Clerk publicMetadata.plan → JWT (template: "snap") → Worker enforcement
+
+JWT template "snap" contains:
+```json
+{ "plan": "{{user.public_metadata.plan}}" }
+```
+
+Worker secrets (must match production Clerk instance):
+- CLERK_JWKS_URL = https://clerk.snaptosize.com/.well-known/jwks.json
+- CLERK_ISSUER = https://clerk.snaptosize.com
+
+Critical: If Clerk instance changes, these secrets MUST be updated or all users resolve as "free".
+Bug fixed 2026-03-03: CLERK_JWKS_URL pointed to old dev instance after Clerk production migration.
+Root cause: kid mismatch — JWT signed by production Clerk, JWKS from dev Clerk.
 
 Worker fail-safe:
 If plan unclear or missing → treated as free.
@@ -315,18 +395,21 @@ Contract unchanged.
 - Webhook sync
 - Pro gating
 - Proxy architecture
-- Abuse protection (rate limits + active job caps)
-- Abuse protection (rate limiting + O(1) active job caps) 
-- Server-side analytics (PostHog)        
+- Abuse protection (rate limiting + O(1) active job caps)
+- Server-side analytics (PostHog)
+- JWT/Clerk production auth (verified 2026-03-03)
+- Cloudflare Workers Paid plan
 
 Core + monetization + protection base working.
+First paying customer acquired 2026-03-03.
 
 ---
 
 # 8. What Is NOT Built Yet
 
-- Subscription lifecycle UX polish (cancel_at_period_end display)
-- Analytics
+- Subscription lifecycle UX polish (cancel_at_period_end display, portal clarity)
+- Client-side funnel tracking on marketing site (landing → app click attribution)
+- Growth content layer (SEO guides + landing pages)
 
 ---
 
@@ -403,7 +486,7 @@ error_code = "runner_failed"
 
 alert triggered
 
-Layer 3: Stuck Job Detection (LIVE)
+Layer 3: Stuck Job Detection (LIVE — OPTIMIZED 2026-03-03)
 
 Cloudflare Cron Trigger:
 
@@ -420,6 +503,10 @@ Mark error
 error_code = "timeout"
 
 Send alert
+
+Optimization: KV metadata (status + updated_at) stored on job: keys.
+Cron uses metadata from list() to skip non-running and recent jobs without individual get() calls.
+Reduces KV reads from O(all jobs) to O(stuck jobs only).
 
 Pagination implemented.
 Milliseconds consistent.
@@ -552,13 +639,46 @@ job_id is operational case number.
 
 ---
 
-After this layer is implemented:
-
-SnapToSize becomes:
+SnapToSize is:
 - Self-healing
 - Self-monitoring
 - Push-alert enabled
 - Production-safe without live supervision
+
+## 8.2 JWT Diagnostic Logging (LIVE — 2026-03-03)
+
+Worker includes persistent jwt_fail_reason logs for JWT verification failures.
+
+Logged failure reasons:
+- kid_not_found — signing key mismatch (JWKS doesn't contain token's kid)
+- kid_not_found_after_refresh — kid still missing after JWKS cache refresh
+- signature_invalid — token signature doesn't match
+- expired — token past exp claim
+- wrong_alg — algorithm not RS256
+- jwt_issuer_mismatch — iss claim doesn't match CLERK_ISSUER
+
+These logs fire only on errors, cost nothing in normal operation,
+and are critical for diagnosing auth issues in production.
+
+## 8.3 Known Technical Debt & Future Optimizations
+
+**Legacy dual KV write (LOW priority):**
+- updateJobState writes to both `job:{id}` (new) and `{id}` (legacy).
+- Frontend currently reads `{id}` via /status endpoint.
+- When frontend migrates to read `job:{id}`, remove legacy write to halve KV writes.
+
+**KV race conditions (LOW priority, non-critical):**
+- Rate limit, quota, and active job counters use read-modify-write on KV.
+- No atomic increment available in KV — theoretical race under concurrent requests from same user.
+- Impact: a user might occasionally bypass a limit by 1 request.
+- Fix if needed: migrate counters to Durable Objects for atomic operations.
+- Not worth fixing until proven problematic at scale.
+
+**JWKS cache is in-memory (INFO):**
+- JWKS keys cached 10 min in Worker memory.
+- Cloudflare Workers are stateless — cache resets per isolate.
+- At high concurrency, multiple isolates may each fetch JWKS independently.
+- Not a problem — Clerk JWKS endpoint handles this fine.
 
 # 9. Strategic Positioning
 
@@ -570,37 +690,37 @@ Differentiators unchanged.
 
 # 10. Next Phase Roadmap
 
-## Immediate Next Step
+## Immediate Next Steps
 
-1. Marketing layer upgrade (snaptosize.com redesign)
-   - Align visual identity with app.snaptosize.com
-   - Clean premium SaaS design (minimal, structured, confident)
-   - Add real product screenshots / flow visuals
-   - Clear positioning: Etsy-native print pack generator
-   - Strong CTA: Start free → app.snaptosize.com
-   - Structured pricing section
-   - FAQ addressing Etsy sellers’ real concerns
+1. PostHog dashboard setup (manual)
+   - Create "SnapToSize – Upgrade Attribution" dashboard in PostHog UI
+   - Add funnel: upgrade_clicked → checkout_started → checkout_completed
+   - Add trends: checkout_completed, upgrade_clicked, billing_view (daily by source)
 
-2. Conversion architecture
+2. Landing → App attribution (NOT YET BUILT)
+   - Add UTM param capture on marketing site (snaptosize.com)
+   - Pass UTM through to app signup flow
+   - Track landing_click event with UTM properties
+
+3. First export tracking (NOT YET BUILT)
+   - Correlate Worker enqueue_success with user's first-ever export
+   - Track first_export event with mode (pack/single)
+
+4. Conversion architecture
    - Ensure clean separation:
      snaptosize.com → marketing
      app.snaptosize.com → product
    - No embedding of app inside marketing
    - Clear upgrade path
 
-3. Core funnel dashboard in PostHog
-   - Funnel: enqueue_success → job_done → download_clicked
-   - Breakdown by plan and mode
-   - Monitor job_error rate
+## Phase 3: Hardening (COMPLETE — 2026-03-03)
 
-## Phase 3: Hardening
-
-- Abuse prevention
-- Concurrency caps
-- Logging
-- Monitoring
-- Production alerting
-- Remove debug endpoints
+- ~~Abuse prevention~~ DONE
+- ~~Concurrency caps~~ DONE
+- ~~Logging~~ DONE
+- ~~Monitoring~~ DONE
+- ~~Production alerting~~ DONE
+- Remove debug endpoints (LOW priority)
 
 ---
 
@@ -613,11 +733,168 @@ Differentiators unchanged.
 - No client-side plan trust.
 - Remove demo bypass before scale.
 
+- No new product features until:
+  - ≥ 50 paying users
+  - ≥ 7% free → pro conversion validated
+- Growth > Features
 ---
 
 # 12. Current System Status
 
-Core engine + billing + reliability + abuse protection complete.
+Core engine + billing + reliability + abuse protection + upgrade attribution tracking complete.
+
+Clerk production instance live (clerk.snaptosize.com).
+Stripe production checkout + portal + webhook verified.
+PostHog growth funnel events verified live (2026-03-01).
+Worker Clerk secrets aligned with production instance (2026-03-03).
+Cloudflare Workers Paid plan active (2026-03-03).
+Cron stuck-job detection optimized with KV metadata (2026-03-03).
+First paying Pro customer live (2026-03-03).
+
+# 13. Growth System (ACTIVE PHASE)
+
+## 13.1 Ideal Customer Profile (Locked)
+
+Primary ICP:
+- Etsy sellers selling DIGITAL wall art / printables
+- 10–200 listings OR consistent sales history
+- Already earns > $500/mo (not beginners)
+- Pain: resizing, packaging, naming, Etsy upload compliance
+
+Secondary ICP:
+- POD creators scaling listing count
+- Bundle sellers needing consistent size sets
+
+Not targeting (by default):
+- Hobby/one-off Canva users
+- Generic “image resizer” traffic
+- People who don’t sell on Etsy
+
+## 13.2 North Star Metric (Locked)
+
+Primary:
+- Weekly Pro activations (count)
+
+Secondary:
+- Free → Pro conversion rate
+- Time-to-first-export (TTFE)
+- Upgrade click rate after 402
+- Job success rate (error %)
+
+Targets (initial):
+- Free → Pro conversion ≥ 7% (minimum viable)
+- Free → Pro conversion ≥ 10% (goal)
+- TTFE ≤ 60 seconds median
+- Job success rate ≥ 99%
+
+Activation definition:
+
+User is considered Activated when:
+- First successful export (pack OR single)
+- Within first session
+- No 402 encountered
+
+Activation rate target:
+≥ 60%
+
+## 13.3 Funnel Definition (Tracked — LIVE)
+
+Full upgrade funnel tracked in PostHog (verified 2026-03-01):
+
+| Step | Event | Status |
+|------|-------|--------|
+| Billing page view | billing_view | LIVE |
+| Upgrade click | upgrade_clicked | LIVE |
+| Checkout started | checkout_started | LIVE |
+| Checkout completed | checkout_completed | LIVE |
+| Portal opened | portal_opened | LIVE |
+| Subscription changed | subscription_updated | LIVE |
+| Subscription canceled | subscription_deleted | LIVE |
+
+Not yet tracked:
+- Landing → App click (requires marketing site instrumentation)
+- App → First export (requires Worker event correlation)
+
+PostHog dashboard: "SnapToSize – Upgrade Attribution" (manual setup in PostHog UI).
+
+Implementation rule:
+- Every step is a PostHog event with consistent distinct_id (clerk:{userId}) + properties (source, kind, plan_before/plan_after).
+
+## 13.4 Marketing Execution Channels (3 lanes)
+
+Lane A — SEO content engine:
+- Print size guides (ratios + exact Etsy sizes)
+- “How to sell printables on Etsy” content
+- Size/ratio calculators (lead capture)
+- Long-tail keyword capture
+
+Lane B — Etsy-native positioning:
+- Messaging: “Built for Etsy sellers”
+- Emphasize: exact ratios + naming + zip packs + no cropping + under 20MB compliance
+
+Lane C — Direct niche distribution:
+- Reddit: Etsy sellers subreddits
+- Facebook groups (digital downloads / printables)
+- Pinterest (printable audience)
+- IndieHackers / build-in-public
+
+## 13.5 Conversion Optimization (Planned experiments)
+
+- Show free remaining counts (quick + packs)
+- Inline upsell after 402 (one-click to billing)
+- Watermark preview + “Remove watermark” CTA
+- Annual plan highlight + anchor pricing
+- Checkout abandonment tracking
+- Exit-intent paywall on billing
+
+## 13.6 Revenue Tracking (Stripe source of truth)
+
+Track weekly:
+- MRR
+- Net revenue
+- Pro activations
+- Churn
+- Annual vs monthly split
+
+Milestone path:
+- 10 paying users → validate willingness
+- 100 paying users → validate retention + pricing
+- 500 paying users → prove growth engine
+- 1000+ paying users → scale distribution
+
+Pricing Lock:
+
+- $11.99 monthly
+- $97 yearly
+
+No pricing changes before:
+- 100 paying users
+- Or statistically significant churn data
+
+Reason:
+Do not change price without signal.
+---
+
+## 13.7 Distribution Priority (LOCKED)
+
+Phase 1 (Validation – 0 → 100 paying users)
+
+Primary channel:
+- Pinterest (organic first, ads after baseline)
+- SEO (1–2 high-intent guides only)
+
+Secondary:
+- Direct outreach in Etsy seller communities (manual)
+
+Not allowed during validation phase:
+- TikTok
+- X
+- YouTube
+- Broad paid ads
+- Multi-channel chaos
+
+Rule:
+One channel must prove repeatable acquisition before adding another.
 
 ## Next Major Build
 
@@ -630,9 +907,9 @@ Scope:
 - SEO content layer (Etsy guides, print size resources)
 - Conversion copy optimization
 - Pricing experiments
-- Upgrade funnel tracking (checkout_started → checkout_completed)
+- ~~Upgrade funnel tracking (checkout_started → checkout_completed)~~ DONE (2026-03-01)
 - Stripe lifecycle UX polish (portal clarity, cancellation flow)
 - Revenue dashboard (MRR, Pro activation rate)
 
-Backend engine is stable.
+Backend engine is stable and optimized for 1000+ users.
 Now building growth engine.
