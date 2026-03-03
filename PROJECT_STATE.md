@@ -896,6 +896,42 @@ Not allowed during validation phase:
 Rule:
 One channel must prove repeatable acquisition before adding another.
 
+## 13.8 SEO Content (LIVE — 2026-03-03)
+
+### /etsy-print-sizes — SEO Pillar Page (PRODUCTION)
+
+Comprehensive Etsy print sizes guide deployed as primary SEO entry point.
+
+URL: https://snaptosize.com/etsy-print-sizes
+
+SEO implementation:
+- Article schema (datePublished: 2025-02-10, dateModified: 2026-03-03)
+- BreadcrumbList schema (Home → Etsy Print Sizes Guide)
+- FAQPage schema (5 conversion-focused questions)
+- OpenGraph + Twitter Card with custom hero image
+- 4 strategic internal links (/pricing, /sizes, app)
+
+Content structure:
+- Premium hero section (100vh, custom OG image)
+- Visual proof: crop-to-fit vs SnapToSize comparison (Poppies/Koi images)
+- Common Etsy Print Mistakes section (6 cards)
+- Complete ratio tables: 2:3, 3:4, 4:5, ISO A-series, extras (all at 300 DPI)
+- Collapsible FAQ accordion (semantic, accessible)
+- Social proof elements ("Over 18,000 size packs generated")
+- Trust elements (guarantee pills, micro-benefit chips)
+
+Target keywords:
+- "Etsy print sizes"
+- "Etsy print ratios"
+- "300 DPI print sizes"
+- "Etsy 20MB limit"
+
+Navigation:
+- Header: "Print Sizes" → /etsy-print-sizes
+- Footer: "Print Sizes" → /etsy-print-sizes, "All Pack Sizes" → /sizes
+
+Status: Indexed, requested re-indexing 2026-03-03
+
 ## Next Major Build
 
 Growth & Conversion Infrastructure
@@ -904,7 +940,7 @@ Focus shifts from backend stability to distribution and revenue optimization.
 
 Scope:
 
-- SEO content layer (Etsy guides, print size resources)
+- ~~SEO content layer (Etsy guides, print size resources)~~ DONE (/etsy-print-sizes live 2026-03-03)
 - Conversion copy optimization
 - Pricing experiments
 - ~~Upgrade funnel tracking (checkout_started → checkout_completed)~~ DONE (2026-03-01)
