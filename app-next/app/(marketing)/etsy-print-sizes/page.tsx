@@ -160,7 +160,7 @@ export default function EtsyPrintSizesPage() {
         {/* Content - centered vertically */}
         <div className="relative z-10 h-full flex items-center">
           <Container>
-            <div className="max-w-[680px] py-4 -mt-8">
+            <div className="max-w-[680px] py-4 -mt-12 md:-mt-8">
               <h1 className="font-bold tracking-tight mb-5 text-white">
                 <span className="block text-3xl md:text-4xl lg:text-5xl mb-1.5">
                   Etsy Print Sizes — Complete Guide + Instant Generator
@@ -1118,7 +1118,7 @@ export default function EtsyPrintSizesPage() {
             </div>
 
             {/* Internal links for SEO */}
-            <div className="text-sm text-foreground-60 space-y-2 pb-24 md:pb-8">
+            <div className="text-sm text-foreground-60 space-y-2 pb-8">
               <p>
                 <strong>Related:</strong>{" "}
                 <Link
@@ -1154,21 +1154,6 @@ export default function EtsyPrintSizesPage() {
         </Container>
       </section>
 
-      {/* CTA #3: Mobile-only sticky bottom bar */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-t border-border shadow-lg">
-        <div className="px-4 py-3 flex items-center justify-between gap-3">
-          <div className="flex-1 min-w-0">
-            <p className="text-sm font-medium text-foreground truncate">
-              Generate all Etsy print sizes instantly
-            </p>
-          </div>
-          <a href={appUrl} target="_blank" rel="noopener noreferrer">
-            <Button className="text-sm px-5 py-2 whitespace-nowrap">
-              Start Free
-            </Button>
-          </a>
-        </div>
-      </div>
     </>
   );
 }
