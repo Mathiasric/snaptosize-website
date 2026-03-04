@@ -1,7 +1,7 @@
-# PROJECT_STATE.md  
+# PROJECT_STATE.md
 ## SnapToSize — Authoritative System State
 
-Last updated: 2026-03-03
+Last updated: 2026-03-04
 
 ---
 
@@ -931,6 +931,36 @@ Navigation:
 - Footer: "Print Sizes" → /etsy-print-sizes, "All Pack Sizes" → /sizes
 
 Status: Indexed, requested re-indexing 2026-03-03
+
+### /etsy-print-ratios — SEO Supporting Page (PRODUCTION)
+
+Educational page supporting /etsy-print-sizes pillar with ratio explanation content.
+
+URL: https://snaptosize.com/etsy-print-ratios
+
+SEO implementation:
+- Article schema (datePublished: 2026-03-04, dateModified: 2026-03-04)
+- BreadcrumbList schema (Home → Etsy Print Ratios)
+- FAQPage schema (5 questions)
+- OpenGraph + Twitter Card with custom hero image (hero_og_etsy-print-ratios.png)
+- Internal links to pillar page (/etsy-print-sizes) + core pages (/sizes, /pricing, /guide)
+- Bidirectional linking: pillar page links to supporting page (inline + related section)
+
+Content structure:
+- Educational sections explaining ratio groups (2:3, 3:4, 4:5, ISO, extras)
+- Visual infographic with overlay content (ratio boxes)
+- Why ratios matter for Etsy printables
+- Pack structure explanation
+- Product connection copy (non-promotional education)
+
+Target keywords:
+- "etsy print ratios"
+- "etsy printable ratios"
+- "print ratio packs"
+
+Added to sitemap with priority 0.8 (2026-03-04)
+
+Status: Deployed, ready for indexing
 
 ## Next Major Build
 
