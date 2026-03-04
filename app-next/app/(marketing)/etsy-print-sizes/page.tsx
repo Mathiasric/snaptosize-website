@@ -48,7 +48,7 @@ export default function EtsyPrintSizesPage() {
       "Complete Etsy print sizes reference with exact pixel dimensions at 300 DPI for every standard vertical ratio.",
     url: "https://snaptosize.com/etsy-print-sizes",
     datePublished: "2025-02-10",
-    dateModified: "2026-03-03",
+    dateModified: "2026-03-04",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -157,53 +157,52 @@ export default function EtsyPrintSizesPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/25 to-transparent" />
         </div>
 
-        {/* Content */}
-        <div className="relative z-10 pt-16 pb-6 md:pt-20 md:pb-8">
+        {/* Content - centered vertically */}
+        <div className="relative z-10 h-full flex items-center">
           <Container>
-            <div className="max-w-[680px]">
-              <h1 className="font-bold tracking-tight mb-6 text-white">
-                <span className="block text-4xl md:text-5xl lg:text-6xl mb-2">
-                  Etsy Print Sizes Guide
+            <div className="max-w-[680px] py-4 -mt-8">
+              <h1 className="font-bold tracking-tight mb-5 text-white">
+                <span className="block text-3xl md:text-4xl lg:text-5xl mb-1.5">
+                  Etsy Print Sizes — Complete Guide + Instant Generator
                 </span>
-                <span className="block text-2xl md:text-3xl lg:text-4xl font-semibold text-white/95">
-                  Exact ratios + pixel dimensions (300 DPI)
+                <span className="block text-xl md:text-2xl lg:text-3xl font-semibold text-white/95">
+                  Upload once → get all print sizes → ready-to-sell ZIP packs
                 </span>
               </h1>
-              <p className="text-lg text-white/95 mb-6 drop-shadow-md">
-                Complete ratio reference with pixel dimensions at 300&nbsp;DPI
-                and file packaging rules for professional sellers &mdash;
-                without cropping or breaking the 20MB limit.
+              <p className="text-base text-white/95 mb-4 drop-shadow-md">
+                Built for Etsy print sellers. Generate all required print ratios (2:3, 3:4, 4:5, ISO + extras) at 300&nbsp;DPI &mdash;
+                organized in upload-ready ZIP packs, optimized for Etsy&apos;s 20MB limit, with zero cropping.
               </p>
 
-              <div className="mb-5">
+              <div className="mb-3">
                 <a href={appUrl} target="_blank" rel="noopener noreferrer">
-                  <Button className="text-base px-7 py-3">
+                  <Button className="text-sm px-6 py-2.5">
                     Generate All Etsy Sizes Instantly
                   </Button>
                 </a>
-                <p className="text-sm text-white/85 mt-2">
+                <p className="text-sm text-white/85 mt-1.5">
                   Free → generate your first complete size pack in minutes.
                 </p>
               </div>
 
               {/* Micro-benefit chips */}
-              <div className="flex flex-wrap gap-2.5">
-                <div className="flex items-center gap-2 px-3 py-1.5 rounded-md bg-white/15 backdrop-blur-sm border border-white/25">
-                  <Check className="h-3.5 w-3.5 text-white flex-shrink-0" />
+              <div className="flex flex-wrap gap-2">
+                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/15 backdrop-blur-sm border border-white/25">
+                  <Check className="h-3 w-3 text-white flex-shrink-0" />
                   <span className="text-xs text-white font-medium">
-                    Exact ratios (300 DPI)
+                    All Etsy print ratios included
                   </span>
                 </div>
-                <div className="flex items-center gap-2 px-3 py-1.5 rounded-md bg-white/15 backdrop-blur-sm border border-white/25">
-                  <Check className="h-3.5 w-3.5 text-white flex-shrink-0" />
+                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/15 backdrop-blur-sm border border-white/25">
+                  <Check className="h-3 w-3 text-white flex-shrink-0" />
                   <span className="text-xs text-white font-medium">
-                    No cropping / no missing edges
+                    Zero cropping or quality loss
                   </span>
                 </div>
-                <div className="flex items-center gap-2 px-3 py-1.5 rounded-md bg-white/15 backdrop-blur-sm border border-white/25">
-                  <Check className="h-3.5 w-3.5 text-white flex-shrink-0" />
+                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/15 backdrop-blur-sm border border-white/25">
+                  <Check className="h-3 w-3 text-white flex-shrink-0" />
                   <span className="text-xs text-white font-medium">
-                    Optimized for Etsy's 20MB limit
+                    Upload-ready ZIP packs under 20MB
                   </span>
                 </div>
               </div>
@@ -392,6 +391,21 @@ export default function EtsyPrintSizesPage() {
                 </p>
               </div>
 
+              {/* CTA #1: After Common Mistakes */}
+              <Card accent className="p-6 my-8">
+                <h3 className="text-xl font-bold mb-3">
+                  Generate All Etsy Print Sizes Automatically
+                </h3>
+                <p className="text-sm text-foreground-60 mb-4">
+                  Upload one image and instantly generate every Etsy-ready print size — perfectly organized and ready to upload.
+                </p>
+                <a href={appUrl} target="_blank" rel="noopener noreferrer">
+                  <Button className="text-base px-6 py-2.5">
+                    Generate All Etsy Sizes
+                  </Button>
+                </a>
+              </Card>
+
               {/* ===== BLOCK B: SnapToSize preserves ===== */}
               <div className="mb-8">
                 <div className="flex flex-wrap items-center gap-3 mb-2">
@@ -473,23 +487,7 @@ export default function EtsyPrintSizesPage() {
                   </p>
                 </div>
 
-                {/* Mid-section CTA */}
-                <div className="mt-8 text-center">
-                  <a href={appUrl} target="_blank" rel="noopener noreferrer">
-                    <Button className="text-sm px-6 py-2.5">
-                      Generate My Etsy Size Packs
-                    </Button>
-                  </a>
-                  <p className="text-xs text-foreground-60 mt-2">
-                    Upload once. Download every ratio.
-                  </p>
-                  <p className="text-xs text-foreground-60 mt-1">
-                    No design skills required. Works with any high-resolution
-                    artwork.
-                  </p>
-                </div>
-
-                <p className="text-sm text-foreground-60 mt-5">
+                <p className="text-sm text-foreground-60 mt-8">
                   If you need different compositions per ratio, crop your source
                   artwork intentionally before uploading.
                 </p>
@@ -798,17 +796,23 @@ export default function EtsyPrintSizesPage() {
                 </div>
               </div>
 
-              {/* CTA after tables */}
-              <div className="mt-12 text-center">
+              {/* CTA #2: After ratio tables */}
+              <Card accent className="p-6 my-12">
+                <h3 className="text-xl font-bold mb-3">
+                  Stop resizing files manually
+                </h3>
+                <p className="text-sm text-foreground-60 mb-4">
+                  SnapToSize generates every required Etsy print size in seconds — with correct ratios, 300 DPI, and ready-to-upload ZIP packs.
+                </p>
                 <a href={appUrl} target="_blank" rel="noopener noreferrer">
-                  <Button className="text-base px-7 py-3">
-                    Generate All These Sizes From One Image
+                  <Button className="text-base px-6 py-2.5">
+                    Generate Etsy Print Packs
                   </Button>
                 </a>
                 <p className="text-xs text-foreground-60 mt-3">
                   No signup required. Free watermarked exports to test.
                 </p>
-              </div>
+              </Card>
             </div>
 
             {/* ===== NEW SECTION: Need Square or Landscape Too? ===== */}
@@ -842,104 +846,72 @@ export default function EtsyPrintSizesPage() {
             {/* ===== SECTION: Etsy 20MB File Limit ===== */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                Etsy&apos;s 20MB File Limit (Critical for Digital Sellers)
+                Etsy&apos;s 20MB File Size Limit Explained
               </h2>
               <p className="text-foreground-60 mb-4">
-                Etsy enforces a <strong>20MB maximum per digital file</strong>.
-                If your ZIP exceeds 20MB, the upload fails silently or gets
-                rejected.
+                Etsy allows a maximum of <strong>20MB per uploaded file</strong>. For printable wall art sellers, this creates a common problem: high-resolution 300 DPI files can easily exceed the upload limit.
+              </p>
+              <p className="text-foreground-60 mb-6">
+                This becomes worse when sellers try to include multiple print sizes in one download. A single large-format file at 300 DPI can reach 8&ndash;15MB. Bundle several sizes into one ZIP and you hit the 20MB ceiling fast.
               </p>
 
+              <h3 className="text-xl font-semibold mb-3">
+                Typical problems sellers encounter:
+              </h3>
+              <ul className="space-y-2 text-foreground-60 mb-6">
+                <li className="flex items-start gap-3">
+                  <AlertTriangle className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
+                  <span>Files too large to upload to Etsy listings</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <AlertTriangle className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
+                  <span>Needing to manually split ZIP files by ratio or size</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <AlertTriangle className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
+                  <span>Lowering image quality to meet file size constraints</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <AlertTriangle className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
+                  <span>Trial-and-error compression with inconsistent results</span>
+                </li>
+              </ul>
+
               <Card>
-                <h3 className="font-semibold mb-3">
-                  Why 300 DPI files can blow the limit
-                </h3>
-                <p className="text-sm text-foreground-60 mb-4">
-                  A single 20&times;30&Prime; file at 300 DPI is
-                  6000&times;9000 pixels &mdash; 8&ndash;15MB as JPEG. Bundle 6
-                  into one ZIP and you&apos;re well over 20MB.
-                </p>
-                <h3 className="font-semibold mb-3">
-                  How to stay under the limit
-                </h3>
+                <h3 className="font-semibold mb-3">How SnapToSize solves this:</h3>
                 <ul className="space-y-2 text-sm text-foreground-60">
                   <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Group by ratio</strong> &mdash; one ZIP per ratio
-                      keeps file counts manageable
-                    </span>
+                    <span>Generates optimized JPEG files at 300 DPI</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Optimize JPEG quality</strong> &mdash; quality 80
-                      is visually identical to 100 but 40&ndash;60% smaller
-                    </span>
+                    <span>Each ZIP pack stays under Etsy&apos;s 20MB limit</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Use a quality fallback chain</strong> &mdash; step
-                      down: 76 &rarr; 72 &rarr; 68 &rarr; 64 &rarr; 60
-                    </span>
+                    <span>Upload files directly to your Etsy listing</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <AlertTriangle className="h-5 w-5 text-error flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Never use PNG for print files</strong> &mdash;
-                      3&ndash;5&times; larger with no visible quality benefit
-                    </span>
+                    <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
+                    <span>No manual compression or file splitting required</span>
                   </li>
                 </ul>
               </Card>
 
               <Card accent className="mt-6 p-6">
-                <p className="text-sm text-foreground-60">
-                  <strong>SnapToSize handles this automatically.</strong> Every
-                  ZIP is optimized with a quality fallback chain to stay under
-                  20MB. If a ZIP still exceeds the cap, the app warns you
-                  &mdash; no silent failures.
+                <h3 className="text-lg font-bold mb-2">
+                  Generate Etsy-Ready Files Automatically
+                </h3>
+                <p className="text-sm text-foreground-60 mb-4">
+                  SnapToSize creates all required print sizes and keeps every file optimized for Etsy&apos;s upload limits.
                 </p>
-                <div className="mt-4">
-                  <a href={appUrl} target="_blank" rel="noopener noreferrer">
-                    <Button>Try It Free</Button>
-                  </a>
-                </div>
+                <a href={appUrl} target="_blank" rel="noopener noreferrer">
+                  <Button className="text-sm px-6 py-2.5">
+                    Generate Etsy Print Packs
+                  </Button>
+                </a>
               </Card>
-            </div>
-
-            {/* ===== SECTION: Packaging ===== */}
-            <div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                Built for serious digital print sellers.
-              </h2>
-              <p className="text-foreground-60 mb-2">
-                Because manually exporting 20+ sizes per listing is not a
-                scalable business model.
-              </p>
-              <p className="text-foreground-60 mb-6">
-                Manually exporting 20+ sizes per listing doesn&apos;t scale.
-              </p>
-
-              <ul className="space-y-2 text-foreground-60">
-                <li className="flex items-start gap-2">
-                  <span className="text-accent-light mt-0.5">•</span>
-                  <span>Exact Etsy aspect ratios</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent-light mt-0.5">•</span>
-                  <span>Organized ZIP exports</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent-light mt-0.5">•</span>
-                  <span>Professional file naming</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-accent-light mt-0.5">•</span>
-                  <span>Production-ready structure</span>
-                </li>
-              </ul>
             </div>
 
             {/* ===== SECTION: Fastest Way + CTA ===== */}
@@ -947,10 +919,11 @@ export default function EtsyPrintSizesPage() {
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
                 The Fastest Way to Generate All Etsy Print Sizes
               </h2>
+              <p className="text-foreground-60 mb-3">
+                Manually exporting 20+ sizes per listing is not a scalable business model. Photoshop workflows take 1&ndash;3 hours per artwork: resize, export, rename, organize, ZIP, check sizes.
+              </p>
               <p className="text-foreground-60 mb-6">
-                Manually in Photoshop: resize, export, rename, organize, ZIP,
-                check sizes &mdash; 1&ndash;3 hours per artwork for 25 sizes.
-                Or do it in seconds:
+                SnapToSize does it in seconds:
               </p>
 
               <Card>
@@ -1145,7 +1118,7 @@ export default function EtsyPrintSizesPage() {
             </div>
 
             {/* Internal links for SEO */}
-            <div className="text-sm text-foreground-60 space-y-2 pb-8">
+            <div className="text-sm text-foreground-60 space-y-2 pb-24 md:pb-8">
               <p>
                 <strong>Related:</strong>{" "}
                 <Link
@@ -1180,6 +1153,22 @@ export default function EtsyPrintSizesPage() {
           </div>
         </Container>
       </section>
+
+      {/* CTA #3: Mobile-only sticky bottom bar */}
+      <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-t border-border shadow-lg">
+        <div className="px-4 py-3 flex items-center justify-between gap-3">
+          <div className="flex-1 min-w-0">
+            <p className="text-sm font-medium text-foreground truncate">
+              Generate all Etsy print sizes instantly
+            </p>
+          </div>
+          <a href={appUrl} target="_blank" rel="noopener noreferrer">
+            <Button className="text-sm px-5 py-2 whitespace-nowrap">
+              Start Free
+            </Button>
+          </a>
+        </div>
+      </div>
     </>
   );
 }
