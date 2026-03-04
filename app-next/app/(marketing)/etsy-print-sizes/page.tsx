@@ -222,8 +222,13 @@ export default function EtsyPrintSizesPage() {
               <p className="text-foreground-60 mb-4">
                 There&apos;s no single correct upload size. Buyers have different
                 frames and walls. For vertical wall art, you need{" "}
-                <strong>multiple aspect ratios</strong> &mdash; each with exact
-                pixel dimensions at 300&nbsp;DPI.
+                <Link
+                  href="/etsy-print-ratios"
+                  className="text-foreground-60 hover:underline font-semibold"
+                >
+                  multiple aspect ratios
+                </Link>{" "}
+                &mdash; each with exact pixel dimensions at 300&nbsp;DPI.
               </p>
               <Card accent>
                 <p className="text-sm text-foreground-60">
@@ -1121,6 +1126,13 @@ export default function EtsyPrintSizesPage() {
             <div className="text-sm text-foreground-60 space-y-2 pb-8">
               <p>
                 <strong>Related:</strong>{" "}
+                <Link
+                  href="/etsy-print-ratios"
+                  className="text-accent-light hover:underline"
+                >
+                  Print ratios explained
+                </Link>
+                {" · "}
                 <Link
                   href="/sizes"
                   className="text-accent-light hover:underline"
