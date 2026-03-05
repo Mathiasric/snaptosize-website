@@ -278,7 +278,7 @@ export default function EtsyPrintRatiosPage() {
                   <h3 className="text-xl font-bold mb-2">2:3 Ratio</h3>
                   <p className="text-sm text-foreground-60 mb-3">
                     The most common ratio for vertical wall art. Matches frames at IKEA, Target, Amazon,
-                    and most home goods stores. Includes sizes like 4×6, 8×12, 12×18, 16×24, 20×30, 24×36.
+                    and most home goods stores. Includes sizes like 4×6, 6×9, 8×12, 12×18, 16×24, 20×30, 24×36.
                   </p>
                   <p className="text-xs text-foreground-60">
                     <strong>Why it matters:</strong> If you only provide one ratio, make it 2:3.

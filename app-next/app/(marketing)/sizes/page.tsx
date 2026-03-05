@@ -109,7 +109,7 @@ export default function SizesPage() {
                       <tr className="border-b border-border">
                         <td className="py-2 pr-4">6 × 9</td>
                         <td className="py-2 pr-4">1800 × 2700</td>
-                        <td className="py-2">Medium print</td>
+                        <td className="py-2">Medium print / book cover</td>
                       </tr>
                       <tr className="border-b border-border">
                         <td className="py-2 pr-4">8 × 12</td>
