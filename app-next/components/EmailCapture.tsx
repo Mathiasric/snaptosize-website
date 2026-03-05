@@ -29,7 +29,7 @@ export function EmailCapture({
     setErrorMessage("");
 
     try {
-      const response = await fetch("/api/subscribe", {
+      const response = await fetch("https://worker.snaptosize-mathias.workers.dev/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: email.trim() }),
