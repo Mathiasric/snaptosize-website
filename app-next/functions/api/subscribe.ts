@@ -1,8 +1,7 @@
 // Cloudflare Pages Function
 // Handles POST /api/subscribe directly at edge level
 // Bypasses Next.js entirely to avoid 405 errors on static routes
-
-import { Resend } from "resend";
+// Uses native fetch instead of Resend SDK to avoid bundling issues
 
 interface Env {
   RESEND_API_KEY: string;
@@ -45,33 +44,52 @@ export const onRequestPost: PagesFunction<Env> = async (context: EventContext<En
       );
     }
 
-    const resend = new Resend(apiKey);
-
-    // Add contact to audience
+    // Add contact to Resend Audience using native fetch
     try {
-      await resend.contacts.create({
-        email: trimmedEmail,
-        audienceId: audienceId,
+      const audienceResponse = await fetch(`https://api.resend.com/audiences/${audienceId}/contacts`, {
+        method: "POST",
+        headers: {
+          "Authorization": `Bearer ${apiKey}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: trimmedEmail,
+        }),
       });
-    } catch (audienceError: any) {
-      // If contact already exists, treat as success
-      if (!audienceError?.message?.includes("already exists")) {
-        console.error("Resend audience error:", audienceError);
-        return new Response(
-          JSON.stringify({ error: "Failed to subscribe" }),
-          { status: 500, headers: { "Content-Type": "application/json" } }
-        );
+
+      if (!audienceResponse.ok) {
+        const errorData = await audienceResponse.json().catch(() => ({}));
+        // If contact already exists, treat as success
+        if (!audienceResponse.status.toString().includes("409")) {
+          console.error("Resend audience error:", errorData);
+          return new Response(
+            JSON.stringify({ error: "Failed to subscribe" }),
+            { status: 500, headers: { "Content-Type": "application/json" } }
+          );
+        }
+        console.log(`Contact already exists: ${trimmedEmail}`);
       }
-      console.log(`Contact already exists: ${trimmedEmail}`);
+    } catch (audienceError: any) {
+      console.error("Resend audience error:", audienceError);
+      return new Response(
+        JSON.stringify({ error: "Failed to subscribe" }),
+        { status: 500, headers: { "Content-Type": "application/json" } }
+      );
     }
 
-    // Send welcome email with PDF
+    // Send welcome email with PDF using native fetch
     try {
-      await resend.emails.send({
-        from: "SnapToSize <hello@snaptosize.com>",
-        to: trimmedEmail,
-        subject: "Your Free Etsy Print Size Cheat Sheet",
-        html: `
+      await fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: {
+          "Authorization": `Bearer ${apiKey}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          from: "SnapToSize <hello@snaptosize.com>",
+          to: [trimmedEmail],
+          subject: "Your Free Etsy Print Size Cheat Sheet",
+          html: `
           <div style="font-family: system-ui, -apple-system, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
             <h1 style="color: #7C3AED; font-size: 24px; margin-bottom: 16px;">Thanks for subscribing!</h1>
 
@@ -99,7 +117,12 @@ export const onRequestPost: PagesFunction<Env> = async (context: EventContext<En
             </p>
           </div>
         `,
+        }),
       });
+
+      if (!emailResponse.ok) {
+        console.error("Resend email error:", await emailResponse.text());
+      }
     } catch (emailError) {
       console.error("Resend email error:", emailError);
       // Don't fail the request if email fails - they're in the audience
