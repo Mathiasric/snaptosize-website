@@ -1,6 +1,7 @@
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Badge } from "@/components/Badge";
+import { EmailCapture } from "@/components/EmailCapture";
 import { Check } from "lucide-react";
 
 export function HeroSection() {
@@ -78,6 +79,15 @@ export function HeroSection() {
               <p className="text-xs text-white/80 mb-5">
                 No credit card required.
               </p>
+
+              {/* Lead Capture */}
+              <div className="max-w-md mx-auto mb-6">
+                <EmailCapture
+                  variant="compact"
+                  placeholder="Get the free Etsy Print Size Cheat Sheet"
+                  buttonText="Get PDF"
+                />
+              </div>
 
               {/* Proof Bullets */}
               <div className="space-y-1.5 inline-flex flex-col items-start mx-auto" style={{ textShadow: '0 2px 10px rgba(11, 11, 18, 0.8)' }}>

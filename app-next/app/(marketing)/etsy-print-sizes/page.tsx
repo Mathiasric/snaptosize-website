@@ -6,6 +6,7 @@ import { Card } from "@/components/Card";
 import { Check, AlertTriangle } from "lucide-react";
 import Image from "next/image";
 import { FAQAccordion } from "@/components/FAQAccordion";
+import { EmailCapture } from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
   title:
@@ -1161,6 +1162,24 @@ export default function EtsyPrintSizesPage() {
                   FAQ
                 </Link>
               </p>
+            </div>
+
+            {/* Lead Capture */}
+            <div className="pb-12">
+              <Card accent className="p-6 md:p-8">
+                <div className="max-w-xl mx-auto text-center">
+                  <h3 className="text-xl md:text-2xl font-bold mb-3">
+                    Free Etsy Print Size Cheat Sheet
+                  </h3>
+                  <p className="text-sm text-foreground-60 mb-5">
+                    Get all Etsy ratios and pixel dimensions at 300 DPI in one handy PDF reference. Plus file naming conventions and best practices.
+                  </p>
+                  <EmailCapture
+                    placeholder="Enter your email"
+                    buttonText="Get Free Cheat Sheet"
+                  />
+                </div>
+              </Card>
             </div>
           </div>
         </Container>
