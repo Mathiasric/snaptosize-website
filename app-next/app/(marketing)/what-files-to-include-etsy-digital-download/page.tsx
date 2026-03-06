@@ -111,7 +111,7 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
         name: "How do I stay under Etsy's 20MB file limit?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Organize files into separate ZIP packs by ratio (2:3, 3:4, 4:5, ISO, extras). Use JPG instead of PNG. Each ZIP should contain 4-8 sizes of the same ratio = typically 8-15 MB. SnapToSize handles all of this automatically.",
+          text: "Organize files into separate ZIP packs by ratio (2:3, 3:4, 4:5, ISO, extras). Use JPG instead of PNG. Each ZIP should contain 4-8 sizes of the same ratio — most ratio packs stay well under 15 MB. SnapToSize handles all of this automatically.",
         },
       },
       {
@@ -328,7 +328,7 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
                     <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
                     <span>
                       <strong>Manageable file sizes</strong> — typical 8×10 JPG
-                      = 3-8 MB, same PNG = 40-80 MB
+                      = 1-3 MB — PNG of the same file = 30-60 MB
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
@@ -736,80 +736,17 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
                 everything into one ZIP.
               </p>
 
-              <Card className="mb-6">
-                <h3 className="font-semibold mb-3">
-                  Common mistakes that hit the 20MB limit:
-                </h3>
-                <ul className="space-y-2 text-sm text-foreground-60">
-                  <li className="flex items-start gap-3">
-                    <AlertTriangle className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Using PNG instead of JPG</strong> — PNGs are
-                      10-20x larger
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <AlertTriangle className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Bundling all sizes in one ZIP</strong> — 20-30
-                      files quickly exceed 20MB
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <AlertTriangle className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Using JPG at maximum quality</strong> — minimal
-                      quality improvement, massive file size
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <AlertTriangle className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Not optimizing before upload</strong> — raw
-                      exports often contain unnecessary metadata
-                    </span>
-                  </li>
-                </ul>
-              </Card>
+              <p className="text-foreground-60 mb-4">
+                The fix is simple: organize files into separate ZIP packs
+                by ratio — one ZIP per ratio family. Each ZIP contains
+                4-8 sizes of the same ratio, keeping file sizes well under
+                Etsy&apos;s limit without sacrificing quality.
+              </p>
 
-              <Card accent>
-                <h3 className="font-semibold mb-3">
-                  How to stay under 20MB with ratio packs:
-                </h3>
-                <ul className="space-y-2 text-sm text-foreground-60">
-                  <li className="flex items-start gap-3">
-                    <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Separate ZIPs per ratio</strong> (2:3, 3:4, 4:5,
-                      ISO, extras)
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Use JPG instead of PNG</strong>
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>Each ZIP: 4-8 sizes of the same ratio</strong> =
-                      typically 8-15 MB
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
-                    <span>
-                      <strong>SnapToSize handles all of this automatically</strong>
-                    </span>
-                  </li>
-                </ul>
-              </Card>
-
-              <p className="text-sm text-foreground-60 mt-4">
-                Professional sellers never hit Etsy&apos;s 20MB limit because
-                they use ratio-based organization. This approach also improves
-                buyer experience — smaller downloads, clearer organization.
+              <p className="text-foreground-60">
+                SnapToSize handles this automatically. Every ZIP is
+                generated, organized, and optimized — ready to upload
+                directly to your Etsy listing.
               </p>
             </div>
 
@@ -919,8 +856,8 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
                         Organize files into{" "}
                         <strong>separate ZIP packs by ratio</strong> (2:3, 3:4,
                         4:5, ISO, extras). Use JPG instead of PNG. Each ZIP
-                        should contain 4-8 sizes of the same ratio = typically
-                        8-15 MB.
+                        should contain 4-8 sizes of the same ratio — most ratio
+                        packs stay well under 15 MB.
                       </>,
                       <>
                         SnapToSize handles all of this automatically — perfect
