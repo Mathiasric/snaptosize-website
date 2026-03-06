@@ -86,7 +86,7 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
         name: "What file format should I use for Etsy digital downloads?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Use high-resolution JPEG files at 300 DPI for printable wall art. JPEGs offer the best balance of quality and file size. Organize multiple print sizes into ZIP files grouped by ratio (2:3, 3:4, 4:5, ISO, extras) to stay under Etsy's 20MB limit per file.",
+          text: "Use high-resolution JPG files at 300 DPI for printable wall art. JPGs offer the best balance of quality and file size. Organize multiple print sizes into ZIP files grouped by ratio (2:3, 3:4, 4:5, ISO, extras) to stay under Etsy's 20MB limit per file.",
         },
       },
       {
@@ -304,18 +304,18 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
                     <FileText className="h-6 w-6 text-accent-light flex-shrink-0 mt-0.5" />
                     <div>
                       <h3 className="text-lg font-bold mb-2">
-                        File Format: JPEG (Not PNG)
+                        File Format: JPG (Not PNG)
                       </h3>
                       <p className="text-sm text-foreground-60 mb-2">
-                        For printable wall art, use high-quality JPEG files.
-                        JPEGs balance print quality with manageable file sizes.
+                        For printable wall art, use high-quality JPG files.
+                        JPGs balance print quality with manageable file sizes.
                       </p>
                       <ul className="space-y-1 text-sm text-foreground-60">
                         <li className="flex items-start gap-2">
                           <Check className="h-4 w-4 text-accent-light flex-shrink-0 mt-0.5" />
                           <span>
-                            <strong>JPEG quality 85-95:</strong> Excellent print
-                            quality without massive file sizes
+                            <strong>JPG files at 300 DPI:</strong> Professional
+                            print quality with manageable file sizes
                           </span>
                         </li>
                         <li className="flex items-start gap-2">
@@ -330,7 +330,7 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
                           <AlertTriangle className="h-4 w-4 text-amber-500 flex-shrink-0 mt-0.5" />
                           <span>
                             <strong>Avoid PNG:</strong> PNG files are often
-                            10-20x larger than JPEG for the same print quality
+                            10-20x larger than JPG for the same print quality
                           </span>
                         </li>
                       </ul>
@@ -1038,8 +1038,8 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
                       "What file format should I use for Etsy digital downloads?",
                     answer: [
                       <>
-                        Use <strong>high-resolution JPEG files at 300 DPI</strong>{" "}
-                        for printable wall art. JPEGs offer the best balance of
+                        Use <strong>high-resolution JPG files at 300 DPI</strong>{" "}
+                        for printable wall art. JPGs offer the best balance of
                         quality and file size. PNG files are often 10-20x larger
                         without meaningful quality improvement for prints.
                       </>,

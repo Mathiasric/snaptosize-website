@@ -117,7 +117,7 @@ export default function EtsyPrintSizesPage() {
         name: "My Etsy download file is over 20MB — what do I do?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Etsy has a 20MB limit per digital file. Group by ratio (one ZIP per ratio keeps file counts manageable) and optimize JPEG quality. SnapToSize auto-optimizes every ZIP to stay under 20MB.",
+          text: "Etsy has a 20MB limit per digital file. Group by ratio (one ZIP per ratio keeps file counts manageable) and use optimized JPG files. SnapToSize auto-optimizes every ZIP to stay under 20MB.",
         },
       },
     ],
@@ -888,7 +888,7 @@ export default function EtsyPrintSizesPage() {
                 <ul className="space-y-2 text-sm text-foreground-60">
                   <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
-                    <span>Generates optimized JPEG files at 300 DPI</span>
+                    <span>Generates optimized JPG files at 300 DPI</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
@@ -1082,8 +1082,8 @@ export default function EtsyPrintSizesPage() {
                       (
                         <>
                           The fix: <strong>group by ratio</strong> (one ZIP per
-                          ratio keeps file counts manageable) and optimize JPEG
-                          quality. SnapToSize auto-optimizes every ZIP to stay under
+                          ratio keeps file counts manageable) and use optimized JPG
+                          files. SnapToSize auto-optimizes every ZIP to stay under
                           20MB &mdash; no manual compression, no upload failures.
                         </>
                       ),

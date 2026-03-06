@@ -448,7 +448,7 @@ export default function EtsyPrintRatiosPage() {
                   {
                     step: "3",
                     title: "Export files individually",
-                    description: "Save each size with correct filename, format (JPEG), and quality settings.",
+                    description: "Save each size with correct filename, format (JPG), and quality settings.",
                   },
                   {
                     step: "4",
@@ -509,7 +509,7 @@ export default function EtsyPrintRatiosPage() {
                     <div>
                       <p className="font-semibold text-foreground mb-1">Upload one image</p>
                       <p className="text-sm text-foreground-60">
-                        Your original high-resolution artwork (JPEG or PNG, any size above 2400 pixels).
+                        Your original high-resolution artwork (JPG or PNG, any size above 2400 pixels).
                       </p>
                     </div>
                   </div>

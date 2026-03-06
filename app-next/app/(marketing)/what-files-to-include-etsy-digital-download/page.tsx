@@ -84,10 +84,10 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "Should I use JPEG or PNG for Etsy printables?",
+        name: "Should I use JPG/JPEG or PNG for Etsy printables?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Use JPEG for Etsy printables. JPEGs at quality 85-95 provide excellent print quality at 300 DPI while keeping file sizes manageable. PNG files are 10-20x larger with no meaningful quality improvement for prints, making it nearly impossible to stay under Etsy's 20MB limit.",
+          text: "Use JPG (JPEG format) for Etsy printables. SnapToSize automatically exports optimized JPG files at 300 DPI — perfect quality, always under Etsy's 20MB limit. PNG files are 10-20x larger with no meaningful quality improvement for prints.",
         },
       },
       {
@@ -111,7 +111,7 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
         name: "How do I stay under Etsy's 20MB file limit?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Organize files into separate ZIP packs by ratio (2:3, 3:4, 4:5, ISO, extras). Use JPEG instead of PNG. Optimize JPEG quality to 85-90. Each ZIP should contain 4-8 sizes of the same ratio. This keeps individual file sizes manageable while providing complete coverage.",
+          text: "Organize files into separate ZIP packs by ratio (2:3, 3:4, 4:5, ISO, extras). Use JPG instead of PNG. Each ZIP should contain 4-8 sizes of the same ratio = typically 8-15 MB. SnapToSize handles all of this automatically.",
         },
       },
       {
@@ -303,31 +303,31 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
               </div>
             </div>
 
-            {/* ===== SECTION 2: File Format - JPEG vs PNG ===== */}
+            {/* ===== SECTION 2: File Format - JPG vs PNG ===== */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                File Format: JPEG vs PNG — JPEG Wins for Printables
+                File Format: JPG vs PNG — JPG Wins for Printables
               </h2>
               <p className="text-foreground-60 mb-6">
                 This is the #1 mistake new sellers make: using PNG when they
-                should use JPEG. PNG files are 10-20x larger than JPEG with zero
+                should use JPG. PNG files are 10-20x larger than JPG with zero
                 meaningful quality improvement for prints.
               </p>
 
               <Card accent className="mb-6">
-                <h3 className="font-semibold mb-3">Why JPEG is correct:</h3>
+                <h3 className="font-semibold mb-3">Why JPG is correct:</h3>
                 <ul className="space-y-2 text-sm text-foreground-60">
                   <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
                     <span>
-                      <strong>Professional print quality</strong> — JPEG at
-                      85-95 quality produces excellent prints at 300 DPI
+                      <strong>Professional print quality</strong> — SnapToSize
+                      automatically exports optimized JPG files at 300 DPI
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
                     <span>
-                      <strong>Manageable file sizes</strong> — typical 8×10 JPEG
+                      <strong>Manageable file sizes</strong> — typical 8×10 JPG
                       = 3-8 MB, same PNG = 40-80 MB
                     </span>
                   </li>
@@ -360,9 +360,8 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
               </div>
 
               <p className="text-sm text-foreground-60">
-                <strong>Recommended JPEG settings:</strong> Quality 85-90,
-                RGB color mode, 300 DPI. This balances print quality with file
-                size perfectly.
+                SnapToSize automatically exports optimized JPG files at 300
+                DPI — perfect quality, always under Etsy&apos;s 20MB limit.
               </p>
             </div>
 
@@ -372,7 +371,7 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
                 Never Worry About File Formats Again
               </h3>
               <p className="text-sm text-foreground-60 mb-4">
-                SnapToSize automatically exports all files as optimized JPEGs at
+                SnapToSize automatically exports all files as optimized JPGs at
                 300 DPI — perfect for print, optimized for Etsy&apos;s limits.
                 Upload once, download professionally formatted files in seconds.
               </p>
@@ -745,7 +744,7 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
                   <li className="flex items-start gap-3">
                     <AlertTriangle className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
                     <span>
-                      <strong>Using PNG instead of JPEG</strong> — PNGs are
+                      <strong>Using PNG instead of JPG</strong> — PNGs are
                       10-20x larger
                     </span>
                   </li>
@@ -759,8 +758,8 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
                   <li className="flex items-start gap-3">
                     <AlertTriangle className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
                     <span>
-                      <strong>Using JPEG quality 100</strong> — minimal quality
-                      improvement, massive file size
+                      <strong>Using JPG at maximum quality</strong> — minimal
+                      quality improvement, massive file size
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
@@ -781,29 +780,27 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
                   <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
                     <span>
-                      <strong>Separate ZIPs per ratio</strong> — 5 smaller ZIPs
-                      instead of 1 massive ZIP
+                      <strong>Separate ZIPs per ratio</strong> (2:3, 3:4, 4:5,
+                      ISO, extras)
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
                     <span>
-                      <strong>Use JPEG at quality 85-90</strong> — excellent
-                      print quality, manageable size
+                      <strong>Use JPG instead of PNG</strong>
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
                     <span>
-                      <strong>Each ZIP: 4-8 sizes of same ratio</strong> —
-                      typically 8-15 MB per ZIP
+                      <strong>Each ZIP: 4-8 sizes of the same ratio</strong> =
+                      typically 8-15 MB
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
                     <span>
-                      <strong>Optimize JPEG encoding</strong> — use progressive
-                      JPEG, strip metadata
+                      <strong>SnapToSize handles all of this automatically</strong>
                     </span>
                   </li>
                 </ul>
@@ -823,13 +820,13 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
               </h3>
               <p className="text-sm text-foreground-60 mb-4">
                 Upload one high-resolution image. SnapToSize generates all 5
-                ratio packs (20-30 files) at 300 DPI, optimized as JPEGs,
+                ratio packs (20-30 files) at 300 DPI, optimized as JPGs,
                 professionally named, organized into separate ZIPs under
                 Etsy&apos;s 20MB limit. Ready to upload in seconds.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-4">
                 {[
-                  "Correct file format (JPEG)",
+                  "Correct file format (JPG)",
                   "Professional file naming",
                   "300 DPI resolution",
                   "Under 20MB per ZIP",
@@ -862,18 +859,18 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
               <FAQAccordion
                 items={[
                   {
-                    question: "Should I use JPEG or PNG for Etsy printables?",
+                    question: "Should I use JPG/JPEG or PNG for Etsy printables?",
                     answer: [
                       <>
-                        Use <strong>JPEG</strong> for Etsy printables. JPEGs at
-                        quality 85-95 provide excellent print quality at 300 DPI
-                        while keeping file sizes manageable.
+                        Use <strong>JPG</strong> (JPG/JPEG format) for Etsy
+                        printables. SnapToSize automatically exports optimized
+                        JPG files at 300 DPI — perfect quality, always under
+                        Etsy&apos;s 20MB limit.
                       </>,
                       <>
                         PNG files are 10-20x larger with no meaningful quality
-                        improvement for prints, making it nearly impossible to
-                        stay under Etsy&apos;s 20MB limit. Only use PNG if your
-                        artwork absolutely requires transparency.
+                        improvement for prints. Only use PNG if your artwork
+                        absolutely requires transparency.
                       </>,
                     ],
                   },
@@ -921,13 +918,14 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
                       <>
                         Organize files into{" "}
                         <strong>separate ZIP packs by ratio</strong> (2:3, 3:4,
-                        4:5, ISO, extras). Use JPEG instead of PNG. Optimize
-                        JPEG quality to 85-90.
+                        4:5, ISO, extras). Use JPG instead of PNG. Each ZIP
+                        should contain 4-8 sizes of the same ratio = typically
+                        8-15 MB.
                       </>,
                       <>
-                        Each ZIP should contain 4-8 sizes of the same ratio.
-                        This keeps individual file sizes manageable (8-15 MB per
-                        ZIP) while providing complete coverage.
+                        SnapToSize handles all of this automatically — perfect
+                        file format, optimized size, organized by ratio, always
+                        under 20MB per ZIP.
                       </>,
                     ],
                   },
