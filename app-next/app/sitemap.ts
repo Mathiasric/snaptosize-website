@@ -49,6 +49,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/what-files-to-include-etsy-digital-download`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/faq`,
       lastModified: new Date(),
       changeFrequency: "monthly",

@@ -55,6 +55,11 @@ export function Footer() {
                   How to Sell Digital Downloads
                 </Link>
               </li>
+              <li>
+                <Link href="/what-files-to-include-etsy-digital-download" className="transition-colors hover:text-accent-light">
+                  What Files to Include
+                </Link>
+              </li>
             </ul>
           </div>
 

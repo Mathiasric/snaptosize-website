@@ -8,12 +8,12 @@ import { Check } from "lucide-react";
 export const metadata: Metadata = {
   title: "Pricing — Free vs Pro",
   description:
-    "SnapToSize pricing: Free plan with 3 Quick Exports and 1 Pack per day. Pro plan at $11.99/month or $97/year for unlimited access.",
+    "SnapToSize pricing: Free plan with 5 Quick Exports and 2 Packs per day. Pro plan at $11.99/month or $97/year for unlimited access.",
   alternates: { canonical: "https://snaptosize.com/pricing" },
   openGraph: {
     title: "Pricing — Free vs Pro | SnapToSize",
     description:
-      "Free plan with 3 Quick Exports and 1 Pack per day. Pro plan at $11.99/month or $97/year for unlimited access.",
+      "Free plan with 5 Quick Exports and 2 Packs per day. Pro plan at $11.99/month or $97/year for unlimited access.",
     url: "https://snaptosize.com/pricing",
   },
 };
@@ -33,7 +33,7 @@ export default function PricingPage() {
         price: "0",
         priceCurrency: "USD",
         description:
-          "3 Quick Exports per day, 1 Pack per day, watermark on outputs",
+          "5 Quick Exports per day, 2 Packs per day, watermark on outputs",
       },
       {
         "@type": "Offer",
@@ -87,7 +87,7 @@ export default function PricingPage() {
                   <Check className="h-5 w-5 text-success flex-shrink-0 mt-0.5" />
                   <span className="text-foreground-60">
                     <strong className="text-foreground">
-                      3 Quick Exports
+                      5 Quick Exports
                     </strong>{" "}
                     per day
                   </span>
@@ -95,7 +95,7 @@ export default function PricingPage() {
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-success flex-shrink-0 mt-0.5" />
                   <span className="text-foreground-60">
-                    <strong className="text-foreground">1 Pack</strong> per day
+                    <strong className="text-foreground">2 Packs</strong> per day
                   </span>
                 </li>
                 <li className="flex items-start gap-2">

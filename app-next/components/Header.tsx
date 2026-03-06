@@ -76,6 +76,12 @@ export function Header() {
                     >
                       How to Sell on Etsy
                     </Link>
+                    <Link
+                      href="/what-files-to-include-etsy-digital-download"
+                      className="block px-4 py-2 text-foreground-60 hover:text-foreground hover:bg-surface transition-colors"
+                    >
+                      What Files to Include
+                    </Link>
                   </div>
                 )}
               </div>
@@ -183,6 +189,13 @@ export function Header() {
                           className="block px-4 py-2 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring"
                         >
                           How to Sell on Etsy
+                        </Link>
+                        <Link
+                          href="/what-files-to-include-etsy-digital-download"
+                          onClick={closeMenu}
+                          className="block px-4 py-2 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring"
+                        >
+                          What Files to Include
                         </Link>
                       </div>
                     )}
