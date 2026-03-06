@@ -2,12 +2,13 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { Container } from "./Container";
 import { Button } from "./Button";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [guidesOpen, setGuidesOpen] = useState(false);
 
   // Lock body scroll when mobile menu is open
   useEffect(() => {
@@ -42,12 +43,43 @@ export function Header() {
           <div className="flex items-center gap-4">
             {/* Desktop navigation */}
             <div className="hidden md:flex items-center gap-6 text-sm">
-              <Link
-                href="/etsy-print-sizes"
-                className="text-foreground-60 transition-colors hover:text-foreground focus-ring"
+              {/* Guides dropdown */}
+              <div
+                className="relative"
+                onMouseEnter={() => setGuidesOpen(true)}
+                onMouseLeave={() => setGuidesOpen(false)}
               >
-                Print Sizes
-              </Link>
+                <button
+                  className="text-foreground-60 transition-colors hover:text-foreground focus-ring flex items-center gap-1"
+                >
+                  Guides
+                  <ChevronDown className="h-4 w-4" />
+                </button>
+
+                {guidesOpen && (
+                  <div className="absolute top-full left-0 mt-2 w-64 bg-background border border-border rounded-lg shadow-lg py-2">
+                    <Link
+                      href="/etsy-print-sizes"
+                      className="block px-4 py-2 text-foreground-60 hover:text-foreground hover:bg-surface transition-colors"
+                    >
+                      Etsy Print Sizes
+                    </Link>
+                    <Link
+                      href="/etsy-print-ratios"
+                      className="block px-4 py-2 text-foreground-60 hover:text-foreground hover:bg-surface transition-colors"
+                    >
+                      Etsy Print Ratios
+                    </Link>
+                    <Link
+                      href="/how-to-sell-digital-downloads-on-etsy"
+                      className="block px-4 py-2 text-foreground-60 hover:text-foreground hover:bg-surface transition-colors"
+                    >
+                      How to Sell on Etsy
+                    </Link>
+                  </div>
+                )}
+              </div>
+
               <Link
                 href="/pricing"
                 className="text-foreground-60 transition-colors hover:text-foreground focus-ring"
@@ -116,13 +148,46 @@ export function Header() {
 
                 {/* Navigation links */}
                 <nav className="flex flex-col space-y-1">
-                  <Link
-                    href="/etsy-print-sizes"
-                    onClick={closeMenu}
-                    className="px-4 py-3 text-base text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring"
-                  >
-                    Print Sizes
-                  </Link>
+                  {/* Guides section */}
+                  <div>
+                    <button
+                      onClick={() => setGuidesOpen(!guidesOpen)}
+                      className="w-full px-4 py-3 text-base text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring flex items-center justify-between"
+                    >
+                      Guides
+                      <ChevronDown
+                        className={`h-4 w-4 transition-transform ${
+                          guidesOpen ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+                    {guidesOpen && (
+                      <div className="ml-4 mt-1 space-y-1">
+                        <Link
+                          href="/etsy-print-sizes"
+                          onClick={closeMenu}
+                          className="block px-4 py-2 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring"
+                        >
+                          Etsy Print Sizes
+                        </Link>
+                        <Link
+                          href="/etsy-print-ratios"
+                          onClick={closeMenu}
+                          className="block px-4 py-2 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring"
+                        >
+                          Etsy Print Ratios
+                        </Link>
+                        <Link
+                          href="/how-to-sell-digital-downloads-on-etsy"
+                          onClick={closeMenu}
+                          className="block px-4 py-2 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring"
+                        >
+                          How to Sell on Etsy
+                        </Link>
+                      </div>
+                    )}
+                  </div>
+
                   <Link
                     href="/pricing"
                     onClick={closeMenu}

@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <footer className="border-t border-border bg-surface mt-16">
       <Container>
-        <div className="py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="font-semibold mb-3">Product</h3>
             <ul className="space-y-2 text-sm text-foreground-60">
@@ -32,6 +32,27 @@ export function Footer() {
               <li>
                 <Link href="/faq" className="transition-colors hover:text-accent-light">
                   FAQ
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold mb-3">Guides</h3>
+            <ul className="space-y-2 text-sm text-foreground-60">
+              <li>
+                <Link href="/etsy-print-sizes" className="transition-colors hover:text-accent-light">
+                  Etsy Print Sizes
+                </Link>
+              </li>
+              <li>
+                <Link href="/etsy-print-ratios" className="transition-colors hover:text-accent-light">
+                  Etsy Print Ratios
+                </Link>
+              </li>
+              <li>
+                <Link href="/how-to-sell-digital-downloads-on-etsy" className="transition-colors hover:text-accent-light">
+                  How to Sell Digital Downloads
                 </Link>
               </li>
             </ul>

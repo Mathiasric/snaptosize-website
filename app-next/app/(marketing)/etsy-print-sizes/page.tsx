@@ -1128,6 +1128,13 @@ export default function EtsyPrintSizesPage() {
               <p>
                 <strong>Related:</strong>{" "}
                 <Link
+                  href="/how-to-sell-digital-downloads-on-etsy"
+                  className="text-accent-light hover:underline"
+                >
+                  How to sell digital downloads on Etsy
+                </Link>
+                {" · "}
+                <Link
                   href="/etsy-print-ratios"
                   className="text-accent-light hover:underline"
                 >
