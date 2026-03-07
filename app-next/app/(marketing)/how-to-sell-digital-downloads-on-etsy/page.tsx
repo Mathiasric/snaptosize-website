@@ -43,19 +43,73 @@ export const metadata: Metadata = {
 export default function HowToSellDigitalDownloadsOnEtsyPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    headline:
-      "How to Sell Digital Downloads on Etsy — Complete Guide for Printables",
-    description:
-      "Complete step-by-step guide for selling digital downloads on Etsy, including file setup, print sizes, listing creation, and pricing strategies.",
-    url: "https://snaptosize.com/how-to-sell-digital-downloads-on-etsy",
-    datePublished: "2026-03-06",
-    dateModified: "2026-03-06",
-    author: {
-      "@type": "Organization",
-      name: "SnapToSize",
-      url: "https://snaptosize.com",
-    },
+    "@graph": [
+      {
+        "@type": "Article",
+        headline:
+          "How to Sell Digital Downloads on Etsy — Complete Guide for Printables",
+        description:
+          "Complete step-by-step guide for selling digital downloads on Etsy, including file setup, print sizes, listing creation, and pricing strategies.",
+        url: "https://snaptosize.com/how-to-sell-digital-downloads-on-etsy",
+        datePublished: "2026-03-06",
+        dateModified: "2026-03-06",
+        author: {
+          "@type": "Organization",
+          name: "SnapToSize",
+          url: "https://snaptosize.com",
+        },
+      },
+      {
+        "@type": "HowTo",
+        name: "How to Sell Digital Downloads on Etsy",
+        description:
+          "Step-by-step guide to setting up your Etsy digital download listing for printable wall art.",
+        step: [
+          {
+            "@type": "HowToStep",
+            position: 1,
+            name: "Go to Etsy Listings and Add a listing",
+            text: "From your Etsy Shop Manager, navigate to Listings → Add a listing. Choose Digital as the listing type. This automatically enables instant download delivery.",
+          },
+          {
+            "@type": "HowToStep",
+            position: 2,
+            name: "Upload listing photos (mockups)",
+            text: "Use high-quality mockup images showing your artwork in realistic settings (framed on walls, in rooms, on desks). First image should be a hero shot (most important for clicks). Additional images show different sizes, room settings, and close-ups of detail. Last image should be a size chart or file info graphic showing what's included.",
+          },
+          {
+            "@type": "HowToStep",
+            position: 3,
+            name: "Write your listing title and description",
+            text: "Title should include target keywords and specific details. Example: 'Botanical Wall Art Printable | Digital Download | 8×10 12×16 18×24 | Instant Download'. Description should explain what's included, how to download, file specs, and printing instructions. Clearly state: file format (JPEG), resolution (300 DPI), all included sizes, and delivery method (instant download).",
+          },
+          {
+            "@type": "HowToStep",
+            position: 4,
+            name: "Upload your digital files",
+            text: "In the Digital files section, upload your ZIP packs. Remember Etsy's 20MB maximum per file limit (this is why ratio packs are separate ZIPs). Upload 5 files: 2x3_print_sizes.zip, 3x4_print_sizes.zip, 4x5_print_sizes.zip, iso_print_sizes.zip, extras_print_sizes.zip. Use clear filenames so buyers know what each ZIP contains.",
+          },
+          {
+            "@type": "HowToStep",
+            position: 5,
+            name: "Set pricing and quantity",
+            text: "Price based on competitive research and value provided. Most Etsy printable wall art listings sell for $3.99-$7.99. Set quantity to 999 (digital files don't run out).",
+          },
+          {
+            "@type": "HowToStep",
+            position: 6,
+            name: "Add tags and categories",
+            text: "Use all 13 available tags. Focus on buyer intent keywords. Examples: 'printable wall art', 'digital download', 'instant download', '8x10 print', 'botanical print', 'home decor'.",
+          },
+          {
+            "@type": "HowToStep",
+            position: 7,
+            name: "Preview and publish",
+            text: "Test the download yourself before going live. Purchase your own listing (Etsy refunds you) and verify all files download correctly and display at high quality.",
+          },
+        ],
+      },
+    ],
   };
 
   const breadcrumbJsonLd = {

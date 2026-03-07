@@ -21,37 +21,86 @@ export const metadata: Metadata = {
 export default function PricingPage() {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: "SnapToSize",
-    url: "https://snaptosize.com/",
-    applicationCategory: "DesignApplication",
-    operatingSystem: "Web",
-    offers: [
+    "@graph": [
       {
-        "@type": "Offer",
-        name: "Free",
-        price: "0",
-        priceCurrency: "USD",
-        description:
-          "5 Quick Exports per day, 2 Packs per day, watermark on outputs",
+        "@type": "SoftwareApplication",
+        name: "SnapToSize",
+        url: "https://snaptosize.com/",
+        applicationCategory: "DesignApplication",
+        operatingSystem: "Web",
+        offers: [
+          {
+            "@type": "Offer",
+            name: "Free",
+            price: "0",
+            priceCurrency: "USD",
+            description:
+              "5 Quick Exports per day, 2 Packs per day, watermark on outputs",
+          },
+          {
+            "@type": "Offer",
+            name: "Pro Monthly",
+            price: "11.99",
+            priceCurrency: "USD",
+            billingIncrement: "P1M",
+            description:
+              "Unlimited exports, unlimited packs, no watermark, priority processing",
+          },
+          {
+            "@type": "Offer",
+            name: "Pro Yearly",
+            price: "97",
+            priceCurrency: "USD",
+            billingIncrement: "P1Y",
+            description:
+              "Unlimited exports, unlimited packs, no watermark, priority processing — save 33%",
+          },
+        ],
       },
       {
-        "@type": "Offer",
-        name: "Pro Monthly",
-        price: "11.99",
-        priceCurrency: "USD",
-        billingIncrement: "P1M",
-        description:
-          "Unlimited exports, unlimited packs, no watermark, priority processing",
-      },
-      {
-        "@type": "Offer",
-        name: "Pro Yearly",
-        price: "97",
-        priceCurrency: "USD",
-        billingIncrement: "P1Y",
-        description:
-          "Unlimited exports, unlimited packs, no watermark, priority processing — save 33%",
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "Can I cancel anytime?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. Cancel your Pro subscription anytime via Stripe Customer Portal. Your access continues until the end of your billing period.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What happens if I hit the free limit?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "You'll see a message prompting you to upgrade. Limits reset daily at midnight UTC.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Do you offer refunds?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "We recommend trying the free plan first. If you upgrade and encounter technical issues, contact support within 7 days.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Can I switch from monthly to yearly?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. Cancel your monthly plan and subscribe to yearly. You won't be double-charged.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Are there any hidden fees?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "No. The price you see is what you pay. No setup fees, no overage charges.",
+            },
+          },
+        ],
       },
     ],
   };
