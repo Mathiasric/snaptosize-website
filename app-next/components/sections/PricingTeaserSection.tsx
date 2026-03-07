@@ -17,8 +17,8 @@ export function PricingTeaserSection() {
             <h3 className="text-xl font-bold mb-2">Free</h3>
             <p className="text-foreground-60 mb-6">Try before you buy</p>
             <ul className="space-y-3 mb-6 text-sm text-foreground-60">
-              <li>• 3 Quick Exports per day</li>
-              <li>• 1 Pack per day</li>
+              <li>• 5 Quick Exports per day</li>
+              <li>• 2 Packs per day</li>
               <li>• All ratios included</li>
               <li>• Watermark on outputs</li>
             </ul>

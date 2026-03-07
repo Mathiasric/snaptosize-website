@@ -51,7 +51,7 @@ export default function FAQPage() {
         name: "How does the free plan work?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Free users get 3 Quick Exports per day, 1 Pack per day, all ratios and sizes included, with watermark on all outputs. Limits reset daily at midnight UTC.",
+          text: "Free users get 5 Quick Exports per day, 2 Packs per day, all ratios and sizes included, with watermark on all outputs. Limits reset daily at midnight UTC.",
         },
       },
       {
@@ -155,8 +155,8 @@ export default function FAQPage() {
                 Free users get:
               </p>
               <ul className="space-y-1 ml-5 list-disc">
-                <li>3 Quick Exports per day</li>
-                <li>1 Pack per day</li>
+                <li>5 Quick Exports per day</li>
+                <li>2 Packs per day</li>
                 <li>All ratios and sizes included</li>
                 <li>Watermark on all outputs</li>
               </ul>

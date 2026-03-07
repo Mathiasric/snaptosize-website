@@ -34,7 +34,7 @@ export function FAQTeaserSection() {
 
           <Accordion question="How does the free plan work?">
             <p>
-              Free users get 3 Quick Exports and 1 Pack per day with a
+              Free users get 5 Quick Exports and 2 Packs per day with a
               watermark. Perfect for testing before upgrading.
             </p>
           </Accordion>

@@ -304,7 +304,7 @@ export default function GuidePage() {
                     Hit free plan limit
                   </h3>
                   <p className="text-sm text-foreground-60">
-                    Free users get 3 Quick Exports and 1 Pack per day. Upgrade
+                    Free users get 5 Quick Exports and 2 Packs per day. Upgrade
                     to Pro for unlimited access.
                   </p>
                 </div>

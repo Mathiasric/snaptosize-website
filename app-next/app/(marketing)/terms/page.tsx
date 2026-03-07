@@ -54,8 +54,8 @@ export default function TermsPage() {
                   3. Free and Pro Plans
                 </h2>
                 <p>
-                  <strong>Free Plan:</strong> Includes daily limits (3 Quick
-                  Exports, 1 Pack per day) with watermarked outputs.
+                  <strong>Free Plan:</strong> Includes daily limits (5 Quick
+                  Exports, 2 Packs per day) with watermarked outputs.
                 </p>
                 <p className="mt-2">
                   <strong>Pro Plan:</strong> Unlimited exports with no watermark.

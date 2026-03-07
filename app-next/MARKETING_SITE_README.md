@@ -205,7 +205,7 @@ All app CTAs use `<a href="https://app.snaptosize.com">` (external).
 ## 📝 Content Notes
 
 ### Pricing from PROJECT_STATE.md
-- **Free:** 3 Quick Exports/day, 1 Pack/day, watermarked
+- **Free:** 5 Quick Exports/day, 2 Packs/day, watermarked
 - **Pro Monthly:** $11.99/month, unlimited, no watermark
 - **Pro Yearly:** $97/year (save 33%)
 
