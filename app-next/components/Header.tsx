@@ -22,6 +22,21 @@ export function Header() {
     };
   }, [mobileMenuOpen]);
 
+  // Close guides dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      if (!target.closest('[data-guides-dropdown]')) {
+        setGuidesOpen(false);
+      }
+    };
+
+    if (guidesOpen) {
+      document.addEventListener('click', handleClickOutside);
+      return () => document.removeEventListener('click', handleClickOutside);
+    }
+  }, [guidesOpen]);
+
   const closeMenu = () => setMobileMenuOpen(false);
 
   return (
@@ -46,14 +61,16 @@ export function Header() {
               {/* Guides dropdown */}
               <div
                 className="relative"
+                data-guides-dropdown
                 onMouseEnter={() => setGuidesOpen(true)}
                 onMouseLeave={() => setGuidesOpen(false)}
               >
                 <button
+                  onClick={() => setGuidesOpen(!guidesOpen)}
                   className="text-foreground-60 transition-colors hover:text-foreground focus-ring flex items-center gap-1"
                 >
                   Guides
-                  <ChevronDown className="h-4 w-4" />
+                  <ChevronDown className={`h-4 w-4 transition-transform ${guidesOpen ? 'rotate-180' : ''}`} />
                 </button>
 
                 {guidesOpen && (
