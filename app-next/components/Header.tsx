@@ -99,6 +99,12 @@ export function Header() {
                     >
                       What Files to Include
                     </Link>
+                    <Link
+                      href="/etsy-20mb-file-limit"
+                      className="block px-4 py-2 text-foreground-60 hover:text-foreground hover:bg-surface transition-colors"
+                    >
+                      Etsy 20MB File Limit
+                    </Link>
                   </div>
                 )}
               </div>
@@ -213,6 +219,13 @@ export function Header() {
                           className="block px-4 py-2 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring"
                         >
                           What Files to Include
+                        </Link>
+                        <Link
+                          href="/etsy-20mb-file-limit"
+                          onClick={closeMenu}
+                          className="block px-4 py-2 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring"
+                        >
+                          Etsy 20MB File Limit
                         </Link>
                       </div>
                     )}

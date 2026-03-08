@@ -731,7 +731,7 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
                 Etsy&apos;s 20MB Limit — How to Stay Under It
               </h2>
               <p className="text-foreground-60 mb-6">
-                Etsy has a hard 20MB limit per uploaded file. Large print files
+                Etsy has a hard <Link href="/etsy-20mb-file-limit" className="text-accent-light hover:underline">20MB limit</Link> per uploaded file. Large print files
                 at 300 DPI can easily exceed this, especially if you bundle
                 everything into one ZIP.
               </p>

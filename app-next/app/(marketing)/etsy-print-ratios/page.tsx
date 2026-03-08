@@ -521,7 +521,7 @@ export default function EtsyPrintRatiosPage() {
                       <p className="font-semibold text-foreground mb-1">SnapToSize generates all ratios</p>
                       <p className="text-sm text-foreground-60">
                         System creates 2:3, 3:4, 4:5, ISO, and extras ratio packs — all at 300 DPI,
-                        organized in separate ZIPs, optimized for Etsy&apos;s 20MB limit.
+                        organized in separate ZIPs, optimized for <Link href="/etsy-20mb-file-limit" className="text-accent-light hover:underline">Etsy&apos;s 20MB limit</Link>.
                       </p>
                     </div>
                   </div>
@@ -668,6 +668,13 @@ export default function EtsyPrintRatiosPage() {
                   className="text-accent-light hover:underline"
                 >
                   All print sizes
+                </Link>
+                {" · "}
+                <Link
+                  href="/etsy-20mb-file-limit"
+                  className="text-accent-light hover:underline"
+                >
+                  Etsy 20MB file limit
                 </Link>
                 {" · "}
                 <Link

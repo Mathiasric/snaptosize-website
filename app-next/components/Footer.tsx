@@ -60,6 +60,11 @@ export function Footer() {
                   What Files to Include
                 </Link>
               </li>
+              <li>
+                <Link href="/etsy-20mb-file-limit" className="transition-colors hover:text-accent-light">
+                  Etsy 20MB File Limit
+                </Link>
+              </li>
             </ul>
           </div>
 

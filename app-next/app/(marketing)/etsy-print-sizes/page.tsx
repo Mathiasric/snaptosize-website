@@ -855,7 +855,7 @@ export default function EtsyPrintSizesPage() {
                 Etsy&apos;s 20MB File Size Limit Explained
               </h2>
               <p className="text-foreground-60 mb-4">
-                Etsy allows a maximum of <strong>20MB per uploaded file</strong>. For printable wall art sellers, this creates a common problem: high-resolution 300 DPI files can easily exceed the upload limit.
+                Etsy allows a maximum of <strong>20MB per uploaded file</strong>. For printable wall art sellers, this creates a common problem: high-resolution 300 DPI files can easily exceed the upload limit. See our <Link href="/etsy-20mb-file-limit" className="text-accent-light hover:underline">complete guide to Etsy&apos;s 20MB limit</Link> for a full breakdown.
               </p>
               <p className="text-foreground-60 mb-6">
                 This becomes worse when sellers try to include multiple print sizes in one download. A single large-format file at 300 DPI can reach 8&ndash;15MB. Bundle several sizes into one ZIP and you hit the 20MB ceiling fast.

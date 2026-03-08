@@ -656,7 +656,7 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
                         <li className="flex items-start gap-2">
                           <AlertTriangle className="h-4 w-4 text-amber-500 flex-shrink-0 mt-0.5" />
                           <span>
-                            <strong>20MB maximum per file</strong> (this is
+                            <strong><Link href="/etsy-20mb-file-limit" className="text-accent-light hover:underline">20MB maximum per file</Link></strong> (this is
                             why ratio packs are separate ZIPs)
                           </span>
                         </li>
