@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     url: "https://snaptosize.com/what-files-to-include-etsy-digital-download",
     images: [
       {
-        url: "/assets/what-files_hero_3.png",
+        url: "/assets/og/what-files-to-include-etsy-digital-download.png",
         width: 1200,
         height: 630,
         alt: "What Files to Include in Etsy Digital Download",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "What Files to Include in Etsy Digital Download",
     description:
       "Complete guide: file formats, resolution, ratio packs, and Etsy's 20MB limit.",
-    images: ["/assets/what-files_hero_3.png"],
+    images: ["/assets/og/what-files-to-include-etsy-digital-download.png"],
   },
 };
 
@@ -148,7 +148,7 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/assets/what-files_hero_3.png"
+            src="/assets/og/what-files-to-include-etsy-digital-download.png"
             alt=""
             fill
             priority

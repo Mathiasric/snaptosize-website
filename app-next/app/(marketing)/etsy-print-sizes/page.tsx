@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     url: "https://snaptosize.com/etsy-print-sizes",
     images: [
       {
-        url: "/assets/Hero_OG_etsy-print-sizes.png",
+        url: "/assets/og/etsy-print-sizes.png",
         width: 1200,
         height: 630,
         alt: "Etsy Print Sizes Guide — Complete ratio and size reference",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
       "Etsy Print Sizes Guide — Exact Vertical Ratios + Pixel Dimensions",
     description:
       "Every Etsy print size at 300 DPI. Complete reference for professional sellers.",
-    images: ["/assets/Hero_OG_etsy-print-sizes.png"],
+    images: ["/assets/og/etsy-print-sizes.png"],
   },
 };
 
@@ -146,7 +146,7 @@ export default function EtsyPrintSizesPage() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/assets/Hero_OG_etsy-print-sizes.png"
+            src="/assets/og/etsy-print-sizes.png"
             alt=""
             fill
             priority

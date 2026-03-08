@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: "https://snaptosize.com/etsy-20mb-file-limit",
     images: [
       {
-        url: "/assets/hero_image_20mb.png",
+        url: "/assets/og/etsy-20mb-file-limit.png",
         width: 1200,
         height: 630,
         alt: "Etsy 20MB file size limit guide — Complete solution",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: "Etsy 20MB File Size Limit Explained (How to Fix Large Digital Downloads)",
     description:
       "Hit Etsy's 20MB upload limit? Learn why PNG files are too large and how to use JPG instead.",
-    images: ["/assets/hero_image_20mb.png"],
+    images: ["/assets/og/etsy-20mb-file-limit.png"],
   },
 };
 

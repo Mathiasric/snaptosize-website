@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     url: "https://snaptosize.com/how-to-sell-digital-downloads-on-etsy",
     images: [
       {
-        url: "/assets/how-to-sell_hero.png",
+        url: "/assets/og/how-to-sell-digital-downloads-on-etsy.png",
         width: 1200,
         height: 630,
         alt: "How to Sell Digital Downloads on Etsy Guide",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: "How to Sell Digital Downloads on Etsy — Complete Guide",
     description:
       "Step-by-step guide to selling digital printables on Etsy: setup, file prep, pricing, and common mistakes.",
-    images: ["/assets/how-to-sell_hero.png"],
+    images: ["/assets/og/how-to-sell-digital-downloads-on-etsy.png"],
   },
 };
 
@@ -201,7 +201,7 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/assets/how-to-sell_hero.png"
+            src="/assets/og/how-to-sell-digital-downloads-on-etsy.png"
             alt=""
             fill
             priority

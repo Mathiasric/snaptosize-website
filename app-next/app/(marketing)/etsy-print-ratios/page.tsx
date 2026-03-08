@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://snaptosize.com/etsy-print-ratios",
     images: [
       {
-        url: "/assets/hero_og_etsy-print-ratios.png",
+        url: "/assets/og/etsy-print-ratios.png",
         width: 1200,
         height: 630,
         alt: "Etsy Print Ratios Guide — Complete ratio reference",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: "Etsy Print Ratios Explained (How Printable Wall Art Sizes Work)",
     description:
       "The essential print ratios every Etsy seller needs: 2:3, 3:4, 4:5, ISO, and extras.",
-    images: ["/assets/hero_og_etsy-print-ratios.png"],
+    images: ["/assets/og/etsy-print-ratios.png"],
   },
 };
 
@@ -185,7 +185,7 @@ export default function EtsyPrintRatiosPage() {
               <div className="my-8 relative rounded-lg overflow-hidden border border-border">
                 {/* Background Image */}
                 <Image
-                  src="/assets/hero_og_etsy-print-ratios.png"
+                  src="/assets/og/etsy-print-ratios.png"
                   alt="Etsy printable wall art ratio chart showing 2:3, 3:4, 4:5, ISO and extra print sizes"
                   width={1200}
                   height={675}
