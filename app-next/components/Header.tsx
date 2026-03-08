@@ -62,8 +62,6 @@ export function Header() {
               <div
                 className="relative"
                 data-guides-dropdown
-                onMouseEnter={() => setGuidesOpen(true)}
-                onMouseLeave={() => setGuidesOpen(false)}
               >
                 <button
                   onClick={() => setGuidesOpen(!guidesOpen)}
