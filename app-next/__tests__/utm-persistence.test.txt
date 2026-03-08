@@ -1,0 +1,30 @@
+Manual Test Plan for UTM Persistence
+
+Test 1: UTM Capture
+✓ Visit: https://snaptosize.com/etsy-print-sizes?utm_source=pinterest&utm_medium=social
+✓ Open DevTools → Application → Session Storage
+✓ Expected: utm_params = {"utm_source":"pinterest","utm_medium":"social"}
+
+Test 2: Link Updates
+✓ Visit: https://snaptosize.com/etsy-print-sizes?utm_source=pinterest
+✓ Inspect any "Start Free" link
+✓ Expected href: https://app.snaptosize.com?[existing_params]&utm_source=pinterest
+
+Test 3: UTM Persistence Across Pages
+✓ Visit: /etsy-print-sizes?utm_source=pinterest
+✓ Navigate to /pricing (no UTM in URL)
+✓ Check "Start Free" link
+✓ Expected: utm_source=pinterest still appended (from sessionStorage)
+
+Test 4: No UTM Params
+✓ Visit: https://snaptosize.com/ (no UTM params)
+✓ Check "Start Free" links
+✓ Expected: Original URLs unchanged
+
+Test 5: Existing Query Params Preserved
+✓ Links with ?source=seo_pillar&kind=guide should preserve these params
+✓ UTM params should be appended: ?source=seo_pillar&kind=guide&utm_source=pinterest
+
+Test 6: sessionStorage Unavailable
+✓ Open incognito mode with storage disabled (if possible)
+✓ Expected: Page loads normally, no errors in console
