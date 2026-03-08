@@ -304,7 +304,7 @@ export default function Etsy20MBFileLimitPage() {
                           </div>
                           <div className="flex justify-between">
                             <span className="text-foreground-60">24×36 inch @ 300 DPI (JPG):</span>
-                            <span className="font-semibold text-green-600">9 MB ✓</span>
+                            <span className="font-semibold text-green-600">well under 20MB ✓</span>
                           </div>
                         </div>
                       </div>
@@ -587,7 +587,7 @@ export default function Etsy20MBFileLimitPage() {
                   {
                     step: "6",
                     title: "Verify each ZIP is under 20MB",
-                    description: "Check the file size of each ZIP. If any exceed 20MB, re-export the JPGs inside at a lower quality setting and re-zip.",
+                    description: "Check the file size of each ZIP. If any exceed 20MB, the most common fix is switching from PNG to JPG — or use SnapToSize which handles this automatically.",
                   },
                   {
                     step: "7",
