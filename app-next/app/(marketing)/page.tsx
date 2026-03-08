@@ -22,6 +22,21 @@ export const metadata: Metadata = {
     description:
       "Generate all required ratios and download ready-to-upload ZIPs. No Photoshop. No manual resizing.",
     url: "https://snaptosize.com",
+    images: [
+      {
+        url: "/assets/og/home.png",
+        width: 1200,
+        height: 630,
+        alt: "SnapToSize — Turn one image into a complete Etsy print set",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SnapToSize — Turn one image into a complete Etsy print set",
+    description:
+      "Generate all required ratios and download ready-to-upload ZIPs. No Photoshop. No manual resizing.",
+    images: ["/assets/og/home.png"],
   },
 };
 
