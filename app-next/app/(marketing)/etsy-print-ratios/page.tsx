@@ -185,7 +185,7 @@ export default function EtsyPrintRatiosPage() {
               <div className="my-8 relative rounded-lg overflow-hidden border border-border">
                 {/* Background Image */}
                 <Image
-                  src="/assets/og/etsy-print-ratios.png"
+                  src="/assets/hero_og_etsy-print-ratios.png"
                   alt="Etsy printable wall art ratio chart showing 2:3, 3:4, 4:5, ISO and extra print sizes"
                   width={1200}
                   height={675}

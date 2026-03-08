@@ -201,7 +201,7 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/assets/og/how-to-sell-digital-downloads-on-etsy.png"
+            src="/assets/how-to-sell_hero.png"
             alt=""
             fill
             priority

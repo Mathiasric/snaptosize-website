@@ -146,7 +146,7 @@ export default function EtsyPrintSizesPage() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/assets/og/etsy-print-sizes.png"
+            src="/assets/Hero_OG_etsy-print-sizes.png"
             alt=""
             fill
             priority

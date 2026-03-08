@@ -148,7 +148,7 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/assets/og/what-files-to-include-etsy-digital-download.png"
+            src="/assets/what-files_hero_3.png"
             alt=""
             fill
             priority
