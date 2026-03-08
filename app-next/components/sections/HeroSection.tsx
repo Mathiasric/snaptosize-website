@@ -9,12 +9,17 @@ export function HeroSection() {
     <section className="relative w-full overflow-hidden min-h-[calc(100vh-80px)]">
       {/* Background Image with Refined Purple Glow */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="/Hero_image.png"
-          alt="SnapToSize — Turn one image into a complete Etsy print set"
-          className="w-full h-full object-cover"
-          style={{ filter: 'saturate(1.15) contrast(1.08)' }}
-        />
+        <picture>
+          <source srcSet="/Hero_image.webp" type="image/webp" />
+          <img
+            src="/Hero_image.png"
+            alt="SnapToSize — Turn one image into a complete Etsy print set"
+            className="w-full h-full object-cover"
+            style={{ filter: 'saturate(1.15) contrast(1.08)' }}
+            fetchPriority="high"
+            loading="eager"
+          />
+        </picture>
         {/* Top vignette - dark navy at top, transparent at bottom for purple glow */}
         <div
           className="absolute inset-0"
