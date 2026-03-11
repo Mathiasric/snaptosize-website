@@ -1,7 +1,7 @@
 # GROWTH_STATE.md
 ## SnapToSize — Growth & Business State
 
-Last updated: 2026-03-07
+Last updated: 2026-03-11
 
 ---
 
@@ -40,10 +40,14 @@ SnapToSize is a SaaS tool for Etsy sellers selling digital wall art / printables
 
 - **Product:** Live and production-stable as of 2026-03-03
 - **First paying customer:** 2026-03-03
-- **SEO pages live:** 4 pages (see §9)
-- **Email list:** NOT YET BUILT — lead capture is next priority
-- **Active distribution:** None live yet
-- **Pinterest:** Planned but not yet active (see §8)
+- **Paying users:** 1 ($12 MRR)
+- **SEO pages live:** 7
+- **Email list:** Lead capture component live on site
+- **Pipelines built:** SEO (10 pages/week) + Social (7 videos + 21 pins/week)
+- **Video:** Remotion rendering working (TikTokVertical template)
+- **Active distribution:** Starting this week (March 11)
+- See MILESTONES.md for full build status
+- See CONTENT_PLAYBOOK.md for channel strategies and content specs
 
 ---
 
@@ -175,120 +179,16 @@ Every funnel step uses consistent `distinct_id = clerk:{userId}` + properties (`
 
 # 8. Marketing Channels
 
-## Phase 1 Strategy (0 → 100 paying users)
+**Active channels and full specs → see CONTENT_PLAYBOOK.md**
 
-**Primary channels:**
-- **SEO** (high-intent Etsy seller keywords)
-- **Direct outreach** in Etsy seller communities (manual — Reddit, Facebook groups)
+**Summary:**
+- **SEO:** 10 pages/week via automated pipeline
+- **TikTok + Reels:** 7 videos/week (1/day), dual-posted, Remotion-rendered
+- **Pinterest:** 21 pins/week (3/day)
+- **Community outreach:** Reddit + Facebook groups (manual)
+- **YouTube, affiliates, paid ads:** Not started (gated by milestones)
 
-**Not allowed during validation phase:**
-- TikTok
-- X / Twitter
-- YouTube
-- Broad paid ads
-- Pinterest (planned for Phase 2 — see below)
-- Multi-channel chaos
-
-**Rule:** One channel must prove repeatable acquisition before adding another.
-
----
-
-## Channel Overview
-
-### Lane A — SEO Content Engine
-
-**Target keywords:**
-- Etsy print sizes
-- Etsy print ratios
-- 300 DPI print sizes
-- Etsy 20MB limit
-- How to sell printables on Etsy
-- What files to include in Etsy digital download
-
-**Content types:**
-- Size guides
-- Ratio explainers
-- How-to tutorials
-- FAQ-style problem pages
-- Long-tail keyword articles
-
-**Structured data strategy:**
-- Add FAQ schema to all guides
-- Target rich snippets for "What sizes should I include?"
-- Mark up tables with appropriate schema
-
-**International expansion (future):**
-- Consider localizing core pages for EU markets once English cluster ranks
-- Target: "formats d'impression Etsy" (French), "Druckgrößen Etsy" (German)
-
----
-
-### Lane B — Etsy-Native Positioning
-
-**Messaging:** "Built for Etsy sellers"
-
-**Emphasize:**
-- Exact ratios + naming + zip packs
-- No cropping + 20MB compliance
-- Time saved (1–3 hours per listing)
-
----
-
-### Lane C — Direct Niche Distribution
-
-**Reddit:**
-- r/EtsySellers
-- r/Etsy
-- r/PassiveIncome
-
-**Facebook groups:**
-- Digital downloads / printables communities
-- Provide value by answering questions
-- Link to educational guides, not hard sells
-
-**IndieHackers / build-in-public:** (secondary)
-
----
-
-### Lane D — Pinterest (PLANNED — Phase 2)
-
-**Status:** Not active during validation phase. Reconsider after SEO baseline proven.
-
-**When activated:**
-
-**Board categories:**
-- Etsy Print Size Guides
-- Printable Wall Art Ratios
-- Etsy Seller Tips
-
-**Pin strategy:**
-- Create 5+ pins per article (1000×1500 px)
-- Use screenshots of size tables or infographic elements
-- Schedule 5 pins/day via Tailwind
-- Keyword-rich descriptions: "Etsy print size chart", "printable ratios guide"
-
-**Repurposing:**
-- Convert pins to Instagram stories
-- Save to highlights for discoverability
-
-**Why Pinterest works:**
-- Dominant platform for printable wall art guides
-- Long content lifespan (pins resurface for months)
-- High-intent traffic from searchers
-
----
-
-### Lane E — Partnerships & Guest Posts (PLANNED)
-
-**Etsy coach partnerships:**
-- Reach out to YouTube channels teaching digital products
-- Offer exclusive discount codes
-- Co-branded tutorials showing SnapToSize as time-saving solution
-
-**Guest articles:**
-- Pitch established Etsy blogs
-- Focus on educational content
-- Gain authoritative backlinks
+**Positioning:** "Built for Etsy sellers" — exact ratios, no cropping, 20MB compliance, time saved
 
 ---
 
@@ -302,7 +202,7 @@ Every funnel step uses consistent `distinct_id = clerk:{userId}` + properties (`
 
 ---
 
-## Live Pages (4)
+## Live Pages (6)
 
 ### /etsy-print-sizes — Pillar Page (PRODUCTION)
 
@@ -391,9 +291,7 @@ Every funnel step uses consistent `distinct_id = clerk:{userId}` + properties (`
 
 ### Content Velocity
 
-**Target:** Publish 1–2 high-quality guides per month until cluster has 8–10 pages.
-
-**Maintenance:** Update existing pages quarterly to keep fresh and maintain rankings.
+**Target:** 10 pages/week via automated SEO pipeline (see CONTENT_PLAYBOOK.md for full specs)
 
 ---
 
@@ -696,21 +594,61 @@ See PROJECT_STATE.md §7.5 for technical Worker implementation details.
 
 ---
 
+### 5. Adjacent Market: Social Media Content Creators
+
+**Discovery date:** 2026-03-09
+
+**Origin:** While creating Instagram content for SnapToSize marketing, used the product to convert Pinterest pins (2:3 ratio, 1536x2752px) to Instagram feed posts (4:5 ratio, 1080x1350px). Product worked flawlessly for this use case.
+
+**Opportunity:**
+
+Social media managers, content creators, and marketers need to optimize images across platforms with different aspect ratio requirements:
+
+**Platform Requirements:**
+- Pinterest: 2:3 (1000x1500px)
+- Instagram Feed: 4:5 (1080x1350px) or 1:1 (1080x1080px)
+- Instagram Stories/Reels: 9:16 (1080x1920px)
+- TikTok: 9:16 (1080x1920px)
+- LinkedIn: 1.91:1 (1200x627px)
+- Twitter/X: 16:9 (1200x675px)
+
+**Current workflow pain point:** Manual resizing in Photoshop/Canva for each platform (same problem as Etsy sellers, different ratios).
+
+**SnapToSize value prop:** Upload once → get all social media ratios automatically.
+
+**Market size:**
+- Social media managers: 200K+ globally
+- Content creators: Millions (Instagram/TikTok creators)
+- Marketing agencies: Need bulk social media image optimization
+
+**Positioning:**
+- Primary: Still Etsy sellers (don't dilute)
+- Secondary messaging: "Works for social media too" (low-effort expansion)
+- Landing page (future): `/social-media-image-sizes`
+
+**Why this works:**
+- Same core technology (aspect ratio conversion)
+- No product changes needed
+- Widens TAM without pivot
+- Self-discovered through "dogfooding" (using own product)
+
+**Validation needed:**
+- ≥50 paying Etsy users first (don't expand before core proven)
+- Test messaging: "Not just for Etsy" campaigns
+- Track signups from social media creator segment
+
+**Risk mitigation:**
+- DO NOT pivot away from Etsy focus
+- Only surface this as secondary use case in marketing
+- No dedicated product features until Etsy vertical saturated
+
+**Status:** Opportunity documented. Revisit after 50 paying users milestone.
+
+---
+
 # 13. What Is NOT Built Yet (Growth Layer)
 
-✗ Lead capture / email list
-✗ Landing → App UTM attribution
-✗ First export event tracking (Worker correlation)
-✗ Subscription lifecycle UX polish (cancel_at_period_end display)
-✗ Client-side funnel tracking on marketing site
-✗ Pinterest distribution
-✗ Reddit/Facebook community outreach (manual — needs to start)
-✗ Revenue dashboard (MRR, Pro activation rate)
-✗ SEO cluster expansion pages (20MB limit, printable sizes, how-to guides)
-✗ Partnerships / guest posts
-✗ In-product upsell modal
-✗ Batch processing feature
-✗ Feature gating (premium tier)
+See MILESTONES.md for full build status (what's built vs not built).
 
 ---
 

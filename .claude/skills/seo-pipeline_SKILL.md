@@ -128,8 +128,20 @@ TOUCHPOINT 3: User confirms deploy (build verified, sitemap updated)
 **Pipeline stage:** `drafts`
 
 ### Skills to activate first:
-- `frontend-design` — component quality
+- `frontend-design` — **REQUIRED** for hero design and page layout. Every page gets a unique, CSS-only hero with visual elements that communicate the page topic (e.g., blueprint frame for size pages, comparison diagrams for ratio pages, warning iconography for problem pages). No plain gradient heroes. No generic layouts.
 - `schema-markup` — JSON-LD validation
+
+### Hero Design Process:
+1. Activate `frontend-design` skill before writing any page
+2. Design a CSS-only hero that visually communicates the page's topic — not just text on a gradient
+3. Use techniques from the 8×10 page as reference: dot grids, geometric shapes, dimension labels, gradient mesh blobs, monospace labels, accent lines
+4. Each page type should have a distinct visual language:
+   - **Size pages**: blueprint/technical drawing aesthetic (frame outlines, dimension callouts, tick marks)
+   - **Ratio pages**: overlapping ratio rectangles, proportion visualizations
+   - **Problem pages**: warning patterns, diagnostic/fix visual metaphor
+   - **Guide pages**: editorial layout with typographic hierarchy, section previews
+   - **Niche pages**: lifestyle-oriented, softer gradients, category-specific visual cues
+5. Hero must look good as a 1200×630 OG image (top portion captured)
 
 ### Steps:
 
@@ -176,7 +188,8 @@ TOUCHPOINT 3: User confirms deploy (build verified, sitemap updated)
    - Copy `marketing/drafts/YYYY-WXX-[slug]/page.tsx` → `app-next/app/(marketing)/[slug]/page.tsx`
    - Add entry to `app-next/data/page-registry.json` (auto-updates sitemap + internal links)
 2. **Run `npm run build`** in app-next to verify all pages compile
-3. **Run `seo-audit` skill** for post-deploy check
+3. **Generate OG image** using `og-screenshot` skill (build static → serve → Playwright screenshot → save to `app-next/public/assets/og/[slug].png` → update metadata with `openGraph.images` and `twitter.images`)
+4. **Run `seo-audit` skill** for post-deploy check
 4. **Present results:**
 
 ```

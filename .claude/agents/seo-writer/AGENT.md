@@ -50,17 +50,46 @@ These are non-negotiable regardless of content structure:
 - What conversion angle to use
 
 Study existing pages for **quality and style**, not for structural copying:
-- `app-next/app/(marketing)/etsy-print-sizes/page.tsx`
-- `app-next/app/(marketing)/how-to-sell-digital-downloads-on-etsy/page.tsx`
+- `app-next/app/(marketing)/etsy-print-sizes/page.tsx` — pillar page with hero background image
+- `app-next/app/(marketing)/etsy-8x10-print-size/page.tsx` — **CSS-only hero reference** (blueprint frame, dot grid, gradient mesh)
+
+### Hero Design — MANDATORY
+
+**Activate the `frontend-design` skill before writing any page.**
+
+Every page MUST have a unique, visually distinctive CSS-only hero. No plain gradient + text heroes. The hero is also the OG image source (1200×630 crop from top).
+
+**Design approach by page type:**
+- **Size pages**: blueprint/technical drawing (frame outlines, dimension callouts, tick marks, dot grid). Reference: `etsy-8x10-print-size/page.tsx`
+- **Ratio pages**: overlapping ratio rectangles showing proportions, comparison visual
+- **Problem pages**: warning/diagnostic aesthetic (caution patterns, before/after visual metaphor)
+- **Guide pages**: editorial layout with typographic hierarchy, section preview elements
+- **Niche pages**: softer gradients, category-specific visual cues (e.g., nursery = organic shapes)
+
+**Required hero elements:**
+- CSS-only background (dot grids, gradient mesh blobs, geometric shapes — no images)
+- Visual element on the right side that communicates the page topic
+- Monospace label above H1 (e.g., "PRINT SIZE REFERENCE")
+- Accent line or decorative element connecting label to content
+- Purple accent colors consistent with brand
+- Trust pills with purple check marks
+
+**CTA pattern** (match existing pages exactly):
+```tsx
+<a href={appUrl} target="_blank" rel="noopener noreferrer">
+  <Button className="text-sm px-6 py-2.5">CTA Text</Button>
+</a>
+```
+Button does NOT accept `href`, `variant="primary"`, or `size` props directly. Wrap in `<a>` tag. Use `variant="secondary"` only for secondary buttons.
 
 ### Components to Use
 
 Import from existing codebase:
 - `Container` — page wrapper
-- `Button` — CTA buttons
-- `Card` — content cards, tip boxes
-- `FAQAccordion` — FAQ section
-- `EmailCapture` — lead capture
+- `Button` — CTA buttons (wrap in `<a>` for links)
+- `Card` — content cards, tip boxes (`accent` prop for highlighted cards)
+- `FAQAccordion` — FAQ section (takes `items` array with `question`/`answer`)
+- `EmailCapture` — lead capture (takes `placeholder` and `buttonText` props)
 - `RelatedPages` — internal linking (from `@/components/RelatedPages`)
 
 Use same visual patterns: dark background, purple CTA buttons, trust pills under hero CTA.
