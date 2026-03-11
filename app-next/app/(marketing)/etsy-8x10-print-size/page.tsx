@@ -19,12 +19,21 @@ export const metadata: Metadata = {
     description:
       "Complete 8×10 print guide for Etsy sellers. Exact pixels at 300 DPI, 4:5 ratio family, file format rules, and framing tips.",
     url: "https://snaptosize.com/etsy-8x10-print-size",
+    images: [
+      {
+        url: "/assets/og/etsy-8x10-print-size.png",
+        width: 1200,
+        height: 630,
+        alt: "8×10 Print Size for Etsy — Pixel Dimensions at 300 DPI",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "8×10 Print Size for Etsy — Pixel Dimensions at 300 DPI",
     description:
       "Complete 8×10 print guide for Etsy sellers. 2400×3000 pixels at 300 DPI, 4:5 ratio, and file setup.",
+    images: ["/assets/og/etsy-8x10-print-size.png"],
   },
 };
 
@@ -144,51 +153,137 @@ export default function Etsy8x10PrintSizePage() {
       />
 
       {/* ===== HERO ===== */}
-      <section className="relative py-20 md:py-28 bg-gradient-to-b from-gray-950 via-gray-900 to-background overflow-hidden">
+      <section className="relative py-20 md:py-28 overflow-hidden" style={{ background: "linear-gradient(135deg, #030712 0%, #0a0f1e 40%, #0d1117 100%)" }}>
+        {/* Dot grid background */}
+        <div
+          className="absolute inset-0 opacity-[0.07]"
+          style={{
+            backgroundImage: "radial-gradient(circle, #a78bfa 1px, transparent 1px)",
+            backgroundSize: "24px 24px",
+          }}
+        />
+
+        {/* Gradient mesh blobs */}
+        <div
+          className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] rounded-full opacity-[0.08]"
+          style={{ background: "radial-gradient(circle, #7c3aed, transparent 70%)" }}
+        />
+        <div
+          className="absolute bottom-[-30%] left-[-5%] w-[500px] h-[500px] rounded-full opacity-[0.05]"
+          style={{ background: "radial-gradient(circle, #6366f1, transparent 70%)" }}
+        />
+
+        {/* 4:5 Frame blueprint — right side */}
+        <div className="absolute right-[8%] top-1/2 -translate-y-1/2 hidden md:block">
+          {/* Outer frame */}
+          <div
+            className="relative border border-white/[0.08] rounded-sm"
+            style={{ width: "240px", height: "300px" }}
+          >
+            {/* Inner frame with accent border */}
+            <div className="absolute inset-3 border border-purple-500/20 rounded-sm" />
+
+            {/* Corner marks */}
+            <div className="absolute -top-2 -left-2 w-4 h-4 border-t border-l border-purple-400/30" />
+            <div className="absolute -top-2 -right-2 w-4 h-4 border-t border-r border-purple-400/30" />
+            <div className="absolute -bottom-2 -left-2 w-4 h-4 border-b border-l border-purple-400/30" />
+            <div className="absolute -bottom-2 -right-2 w-4 h-4 border-b border-r border-purple-400/30" />
+
+            {/* Dimension label — width */}
+            <div className="absolute -top-8 left-0 right-0 flex items-center justify-center gap-2">
+              <div className="h-px flex-1 bg-white/10" />
+              <span className="text-[10px] font-mono text-purple-300/50 tracking-widest whitespace-nowrap">
+                8 in &middot; 2400 px
+              </span>
+              <div className="h-px flex-1 bg-white/10" />
+            </div>
+
+            {/* Dimension label — height */}
+            <div className="absolute -right-24 top-0 bottom-0 flex flex-col items-center justify-center gap-2 w-20">
+              <div className="w-px flex-1 bg-white/10" />
+              <span className="text-[10px] font-mono text-purple-300/50 tracking-widest whitespace-nowrap -rotate-90">
+                10 in &middot; 3000 px
+              </span>
+              <div className="w-px flex-1 bg-white/10" />
+            </div>
+
+            {/* Ratio badge */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="px-3 py-1.5 rounded border border-white/[0.06] bg-white/[0.02]">
+                <span className="text-xs font-mono text-white/20 tracking-[0.2em]">
+                  4 : 5
+                </span>
+              </div>
+            </div>
+
+            {/* Tick marks — top edge */}
+            <div className="absolute top-0 left-0 right-0 flex justify-between px-3">
+              {[...Array(9)].map((_, i) => (
+                <div key={`tt-${i}`} className="w-px h-1.5 bg-white/[0.06]" />
+              ))}
+            </div>
+
+            {/* Tick marks — left edge */}
+            <div className="absolute top-0 bottom-0 left-0 flex flex-col justify-between py-3">
+              {[...Array(11)].map((_, i) => (
+                <div key={`tl-${i}`} className="h-px w-1.5 bg-white/[0.06]" />
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Content */}
         <Container>
-          <div className="max-w-[680px]">
+          <div className="relative z-10 max-w-[680px]">
+            <div className="flex items-center gap-2 mb-5">
+              <div className="h-px w-8 bg-purple-500/40" />
+              <span className="text-xs font-mono tracking-[0.15em] text-purple-300/60 uppercase">
+                Print Size Reference
+              </span>
+            </div>
+
             <h1 className="font-bold tracking-tight mb-5">
-              <span className="block text-3xl md:text-4xl lg:text-5xl mb-1.5">
+              <span className="block text-3xl md:text-4xl lg:text-5xl mb-1.5 text-white">
                 8×10 Print Size for Etsy
               </span>
-              <span className="block text-xl md:text-2xl lg:text-3xl font-semibold text-foreground/90">
+              <span className="block text-xl md:text-2xl lg:text-3xl font-semibold text-white/80">
                 Exact pixel dimensions at 300&nbsp;DPI &mdash; the #1 selling
                 print size explained
               </span>
             </h1>
-            <p className="text-base text-foreground-60 mb-4">
+            <p className="text-base text-white/60 mb-5 max-w-lg">
               2400×3000 pixels. 4:5 aspect ratio. Fits every standard frame.
               Here&apos;s everything you need to set up 8×10 digital downloads
               that sell &mdash; plus the full 4:5 ratio pack.
             </p>
 
-            <div className="mb-3">
+            <div className="mb-4">
               <a href={appUrl} target="_blank" rel="noopener noreferrer">
                 <Button className="text-sm px-6 py-2.5">
                   Get All 4:5 Sizes Instantly
                 </Button>
               </a>
-              <p className="text-sm text-foreground-60 mt-1.5">
+              <p className="text-sm text-white/40 mt-1.5">
                 Free &rarr; upload once, download 8×10 + four more 4:5 sizes.
               </p>
             </div>
 
             <div className="flex flex-wrap gap-2">
-              <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/15 backdrop-blur-sm border border-white/25">
-                <Check className="h-3 w-3 text-white flex-shrink-0" />
-                <span className="text-xs text-white font-medium">
+              <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/[0.06] backdrop-blur-sm border border-white/[0.08]">
+                <Check className="h-3 w-3 text-purple-400 flex-shrink-0" />
+                <span className="text-xs text-white/70 font-medium">
                   2400×3000 px at 300 DPI
                 </span>
               </div>
-              <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/15 backdrop-blur-sm border border-white/25">
-                <Check className="h-3 w-3 text-white flex-shrink-0" />
-                <span className="text-xs text-white font-medium">
+              <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/[0.06] backdrop-blur-sm border border-white/[0.08]">
+                <Check className="h-3 w-3 text-purple-400 flex-shrink-0" />
+                <span className="text-xs text-white/70 font-medium">
                   4:5 aspect ratio
                 </span>
               </div>
-              <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/15 backdrop-blur-sm border border-white/25">
-                <Check className="h-3 w-3 text-white flex-shrink-0" />
-                <span className="text-xs text-white font-medium">
+              <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/[0.06] backdrop-blur-sm border border-white/[0.08]">
+                <Check className="h-3 w-3 text-purple-400 flex-shrink-0" />
+                <span className="text-xs text-white/70 font-medium">
                   Standard frame size
                 </span>
               </div>
