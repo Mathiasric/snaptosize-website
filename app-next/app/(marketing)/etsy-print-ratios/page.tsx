@@ -6,6 +6,7 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, ArrowRight } from "lucide-react";
 import { EmailCapture } from "@/components/EmailCapture";
+import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
   title: "Etsy Print Ratios Explained (How Printable Wall Art Sizes Work)",
@@ -646,52 +647,7 @@ export default function EtsyPrintRatiosPage() {
             </div>
 
             {/* Internal links for SEO */}
-            <div className="text-sm text-foreground-60 space-y-2 pb-8">
-              <p>
-                <strong>Related:</strong>{" "}
-                <Link
-                  href="/how-to-sell-digital-downloads-on-etsy"
-                  className="text-accent-light hover:underline"
-                >
-                  How to sell digital downloads on Etsy
-                </Link>
-                {" · "}
-                <Link
-                  href="/etsy-print-sizes"
-                  className="text-accent-light hover:underline"
-                >
-                  Complete size chart
-                </Link>
-                {" · "}
-                <Link
-                  href="/sizes"
-                  className="text-accent-light hover:underline"
-                >
-                  All print sizes
-                </Link>
-                {" · "}
-                <Link
-                  href="/etsy-20mb-file-limit"
-                  className="text-accent-light hover:underline"
-                >
-                  Etsy 20MB file limit
-                </Link>
-                {" · "}
-                <Link
-                  href="/pricing"
-                  className="text-accent-light hover:underline"
-                >
-                  Pricing
-                </Link>
-                {" · "}
-                <Link
-                  href="/guide"
-                  className="text-accent-light hover:underline"
-                >
-                  User guide
-                </Link>
-              </p>
-            </div>
+            <RelatedPages currentSlug="etsy-print-ratios" />
           </div>
         </Container>
       </section>

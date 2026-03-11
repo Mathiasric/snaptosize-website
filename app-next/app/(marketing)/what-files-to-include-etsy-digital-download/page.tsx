@@ -7,6 +7,7 @@ import { Card } from "@/components/Card";
 import { Check, AlertTriangle, FileText, FolderArchive } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { EmailCapture } from "@/components/EmailCapture";
+import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
   title:
@@ -935,38 +936,7 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
             </div>
 
             {/* Internal links for SEO */}
-            <div className="text-sm text-foreground-60 space-y-2 pb-8">
-              <p>
-                <strong>Related:</strong>{" "}
-                <Link
-                  href="/etsy-print-sizes"
-                  className="text-accent-light hover:underline"
-                >
-                  Complete Etsy print sizes guide
-                </Link>
-                {" · "}
-                <Link
-                  href="/etsy-print-ratios"
-                  className="text-accent-light hover:underline"
-                >
-                  Print ratios explained
-                </Link>
-                {" · "}
-                <Link
-                  href="/how-to-sell-digital-downloads-on-etsy"
-                  className="text-accent-light hover:underline"
-                >
-                  How to sell digital downloads
-                </Link>
-                {" · "}
-                <Link
-                  href="/pricing"
-                  className="text-accent-light hover:underline"
-                >
-                  Pricing
-                </Link>
-              </p>
-            </div>
+            <RelatedPages currentSlug="what-files-to-include-etsy-digital-download" />
           </div>
         </Container>
       </section>

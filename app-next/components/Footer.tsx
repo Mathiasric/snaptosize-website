@@ -44,6 +44,13 @@ export function Footer() {
                 <Link href="/etsy-print-sizes" className="transition-colors hover:text-accent-light">
                   Etsy Print Sizes
                 </Link>
+                <ul className="ml-3 mt-1 space-y-1">
+                  <li>
+                    <Link href="/etsy-8x10-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                      8×10 Print Size
+                    </Link>
+                  </li>
+                </ul>
               </li>
               <li>
                 <Link href="/etsy-print-ratios" className="transition-colors hover:text-accent-light">

@@ -80,6 +80,12 @@ export function Header() {
                       Etsy Print Sizes
                     </Link>
                     <Link
+                      href="/etsy-8x10-print-size"
+                      className="block pl-7 pr-4 py-1.5 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface transition-colors"
+                    >
+                      8×10 Print Size
+                    </Link>
+                    <Link
                       href="/etsy-print-ratios"
                       className="block px-4 py-2 text-foreground-60 hover:text-foreground hover:bg-surface transition-colors"
                     >
@@ -196,6 +202,13 @@ export function Header() {
                           className="block px-4 py-2 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring"
                         >
                           Etsy Print Sizes
+                        </Link>
+                        <Link
+                          href="/etsy-8x10-print-size"
+                          onClick={closeMenu}
+                          className="block pl-7 pr-4 py-1.5 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring"
+                        >
+                          8×10 Print Size
                         </Link>
                         <Link
                           href="/etsy-print-ratios"

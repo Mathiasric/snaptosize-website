@@ -7,6 +7,7 @@ import { Card } from "@/components/Card";
 import { Check, ArrowRight, AlertCircle, FileWarning } from "lucide-react";
 import { EmailCapture } from "@/components/EmailCapture";
 import { FAQAccordion } from "@/components/FAQAccordion";
+import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
   title: "Etsy 20MB File Size Limit Explained (How to Fix Large Digital Downloads)",
@@ -723,38 +724,7 @@ export default function Etsy20MBFileLimitPage() {
             </div>
 
             {/* Internal links for SEO */}
-            <div className="text-sm text-foreground-60 space-y-2 pb-8">
-              <p>
-                <strong>Related:</strong>{" "}
-                <Link
-                  href="/etsy-print-sizes"
-                  className="text-accent-light hover:underline"
-                >
-                  Complete Etsy print sizes
-                </Link>
-                {" · "}
-                <Link
-                  href="/etsy-print-ratios"
-                  className="text-accent-light hover:underline"
-                >
-                  Etsy print ratios explained
-                </Link>
-                {" · "}
-                <Link
-                  href="/what-files-to-include-etsy-digital-download"
-                  className="text-accent-light hover:underline"
-                >
-                  What files to include
-                </Link>
-                {" · "}
-                <Link
-                  href="/pricing"
-                  className="text-accent-light hover:underline"
-                >
-                  Pricing
-                </Link>
-              </p>
-            </div>
+            <RelatedPages currentSlug="etsy-20mb-file-limit" />
           </div>
         </Container>
       </section>

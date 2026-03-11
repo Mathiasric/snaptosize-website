@@ -1,0 +1,58 @@
+[
+  {
+    "slug": "etsy-print-sizes",
+    "title": "Etsy Print Sizes Guide",
+    "pageType": "pillar",
+    "keywords": ["etsy print sizes", "print dimensions 300 dpi", "etsy print size chart"],
+    "cluster": "sizes",
+    "relatedSlugs": ["etsy-print-ratios", "etsy-20mb-file-limit", "sizes", "how-to-sell-digital-downloads-on-etsy", "etsy-8x10-print-size"]
+  },
+  {
+    "slug": "etsy-print-ratios",
+    "title": "Etsy Print Ratios Explained",
+    "pageType": "pillar",
+    "keywords": ["etsy print ratios", "aspect ratio for prints", "print ratio guide"],
+    "cluster": "ratios",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-20mb-file-limit", "sizes"]
+  },
+  {
+    "slug": "etsy-20mb-file-limit",
+    "title": "Etsy 20MB File Limit",
+    "pageType": "problem",
+    "keywords": ["etsy 20mb file limit", "etsy file too large", "etsy image size limit"],
+    "cluster": "problems",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "what-files-to-include-etsy-digital-download"]
+  },
+  {
+    "slug": "how-to-sell-digital-downloads-on-etsy",
+    "title": "How to Sell Digital Downloads on Etsy",
+    "pageType": "guide",
+    "keywords": ["sell digital downloads etsy", "etsy digital download guide", "etsy printables business"],
+    "cluster": "guides",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "what-files-to-include-etsy-digital-download", "sizes"]
+  },
+  {
+    "slug": "what-files-to-include-etsy-digital-download",
+    "title": "What Files to Include in Etsy Digital Downloads",
+    "pageType": "guide",
+    "keywords": ["etsy digital download files", "what files etsy digital download", "etsy printable file formats"],
+    "cluster": "guides",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "how-to-sell-digital-downloads-on-etsy", "etsy-20mb-file-limit"]
+  },
+  {
+    "slug": "sizes",
+    "title": "Print Sizes & Ratio Reference",
+    "pageType": "reference",
+    "keywords": ["print sizes", "print size chart", "standard print dimensions"],
+    "cluster": "sizes",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios"]
+  },
+  {
+    "slug": "etsy-8x10-print-size",
+    "title": "8×10 Print Size for Etsy",
+    "pageType": "size",
+    "keywords": ["etsy 8x10 print size", "8x10 print dimensions 300 dpi", "8x10 aspect ratio"],
+    "cluster": "sizes",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-20mb-file-limit"]
+  }
+]
