@@ -32,5 +32,30 @@ Choose based on context. Direct tool link for action-oriented posts, marketing s
 ### LESSON-006: Every SEO page needs a unique CSS-only hero design (2026-03-11)
 **Rule:** Plain gradient + text heroes are not good enough for OG images or visual quality. Activate `frontend-design` skill and design a CSS-only hero with visual elements that communicate the page topic (blueprint frames for size pages, ratio visualizations for ratio pages, etc.). No background images needed — pure CSS can match or exceed image-based heroes. Reference: `etsy-8x10-print-size/page.tsx` hero.
 
+### LESSON-010: Etsy tags are max 20 characters and must be realistic (2026-03-13)
+**Trigger:** SEO page showed fake/unrealistic Etsy tag examples like "8x10 wall print" that sellers don't use.
+**Rule:** When showing Etsy tag examples in content:
+- Each tag must be max 20 characters (Etsy's limit)
+- Tags should be multi-word phrases buyers actually search
+- Verify character count before publishing
+- Good examples: "boho nursery print" (18), "printable wall art" (18), "gallery wall set" (16), "digital art download" (20), "minimalist art print" (20)
+- Bad examples: single words ("art", "printable"), or made-up combos nobody searches
+
+### LESSON-009: Buffer API garbles some Unicode — investigate encoding fix (2026-03-13)
+**Trigger:** Instagram posts showed garbled characters (æ etc.) for arrows (→), emojis, and bullet points when scheduled via Buffer API.
+**Current workaround:** Using ASCII-only captions (dashes instead of arrows, no emojis).
+**TODO:** Investigate if setting proper UTF-8 encoding on the requests call or Buffer API headers fixes this. Emojis and icons ARE fine on Instagram — the issue is likely in how our Python script sends the data to Buffer.
+**Rule for now:** Test Unicode in a single dry-run post before using it in batch. If garbled, fall back to ASCII.
+
+### LESSON-008: Gemini image gen invents fake sizes/text — always list EXACT sizes in prompt (2026-03-13)
+**Trigger:** Instagram post showed fake sizes like "Phone", "Phme", "Find", "5x10", "6x12", "7x14", "8x14" etc. None are real SnapToSize sizes.
+**Rule:** When generating images that show size labels, the prompt MUST list every exact size to display. Never say "multiple sizes" or let the model invent labels. Use only:
+- 2:3: 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30, 24×36
+- 3:4: 6×8, 9×12, 12×16, 15×20, 18×24, 24×32
+- 4:5: 8×10, 12×15, 16×20, 20×25, 24×30
+- ISO: A5, A4, A3, A2, A1
+- Extras: 5×7, 8.5×11, 11×14, 16×20, 20×24
+If showing a subset, pick real ones only. Gemini will hallucinate text if not constrained.
+
 ### LESSON-007: Button component doesn't accept href/size props (2026-03-11)
 **Rule:** The Button component only accepts `children`, `variant`, `className`, `onClick`. For link CTAs, wrap in `<a href={url} target="_blank" rel="noopener noreferrer"><Button>Text</Button></a>`. EmailCapture takes `placeholder` and `buttonText` props.

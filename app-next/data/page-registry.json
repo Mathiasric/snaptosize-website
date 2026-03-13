@@ -54,5 +54,13 @@
     "keywords": ["etsy 8x10 print size", "8x10 print dimensions 300 dpi", "8x10 aspect ratio"],
     "cluster": "sizes",
     "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-20mb-file-limit"]
+  },
+  {
+    "slug": "etsy-digital-download-not-selling",
+    "title": "Etsy Digital Download Not Selling? 7 Fixes",
+    "pageType": "problem",
+    "keywords": ["etsy digital download not selling", "etsy printables not selling", "etsy printable no sales"],
+    "cluster": "problems",
+    "relatedSlugs": ["how-to-sell-digital-downloads-on-etsy", "what-files-to-include-etsy-digital-download", "etsy-print-sizes", "etsy-20mb-file-limit", "etsy-8x10-print-size"]
   }
 ]

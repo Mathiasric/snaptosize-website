@@ -72,6 +72,11 @@ export function Footer() {
                   Etsy 20MB File Limit
                 </Link>
               </li>
+              <li>
+                <Link href="/etsy-digital-download-not-selling" className="transition-colors hover:text-accent-light">
+                  Not Selling? 7 Fixes
+                </Link>
+              </li>
             </ul>
           </div>
 

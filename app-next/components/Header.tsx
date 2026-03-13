@@ -109,6 +109,12 @@ export function Header() {
                     >
                       Etsy 20MB File Limit
                     </Link>
+                    <Link
+                      href="/etsy-digital-download-not-selling"
+                      className="block px-4 py-2 text-foreground-60 hover:text-foreground hover:bg-surface transition-colors"
+                    >
+                      Not Selling? 7 Fixes
+                    </Link>
                   </div>
                 )}
               </div>
@@ -237,6 +243,13 @@ export function Header() {
                           className="block px-4 py-2 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring"
                         >
                           Etsy 20MB File Limit
+                        </Link>
+                        <Link
+                          href="/etsy-digital-download-not-selling"
+                          onClick={closeMenu}
+                          className="block px-4 py-2 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring"
+                        >
+                          Not Selling? 7 Fixes
                         </Link>
                       </div>
                     )}
