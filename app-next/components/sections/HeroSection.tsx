@@ -1,10 +1,14 @@
+"use client";
+
+import { useState } from "react";
 import { Button } from "@/components/Button";
-import { Card } from "@/components/Card";
-import { Badge } from "@/components/Badge";
 import { EmailCapture } from "@/components/EmailCapture";
+import { VideoModal } from "@/components/VideoModal";
 import { Check } from "lucide-react";
 
 export function HeroSection() {
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
     <section className="relative w-full overflow-hidden min-h-[calc(100vh-80px)]">
       {/* Background Image with Refined Purple Glow */}
@@ -20,21 +24,21 @@ export function HeroSection() {
             loading="eager"
           />
         </picture>
-        {/* Top vignette - dark navy at top, transparent at bottom for purple glow */}
+        {/* Top vignette */}
         <div
           className="absolute inset-0"
           style={{
             background: 'linear-gradient(to bottom, rgba(5,5,10,0.95) 0%, rgba(5,5,10,0.7) 35%, rgba(0,0,0,0.3) 55%, rgba(0,0,0,0) 65%)'
           }}
         />
-        {/* Side vignette - darker edges for premium control */}
+        {/* Side vignette */}
         <div
           className="absolute inset-0"
           style={{
             background: 'linear-gradient(to right, rgba(5,5,15,0.85) 0%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(5,5,15,0.85) 100%)'
           }}
         />
-        {/* Concentrated glow at bottom center - 15% narrower */}
+        {/* Concentrated glow at bottom center */}
         <div
           className="absolute inset-0"
           style={{
@@ -54,7 +58,6 @@ export function HeroSection() {
       <div className="relative z-10 h-full flex items-center">
         <div className="max-w-7xl mx-auto px-6 py-8 md:py-10 w-full">
           <div className="max-w-3xl mx-auto text-center">
-            {/* Primary Messaging */}
             <div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight mb-3" style={{ textShadow: '0 8px 40px rgba(0,0,0,0.45), 0 2px 20px rgba(11, 11, 18, 0.9)' }}>
                 Launch a complete, professional Etsy print set from a single image — in seconds.
@@ -64,8 +67,8 @@ export function HeroSection() {
                 What normally takes 1–3 hours of manual resizing becomes seconds. Generate all required Etsy ratios at 300 DPI with zero quality loss — perfectly organized and ready to upload.
               </p>
 
-              {/* CTAs */}
-              <div className="flex flex-wrap gap-3 mb-2.5 justify-center">
+              {/* CTA */}
+              <div className="flex flex-wrap gap-3 mb-2 justify-center">
                 <a
                   href="https://app.snaptosize.com"
                   target="_blank"
@@ -73,17 +76,34 @@ export function HeroSection() {
                 >
                   <Button className="text-base px-7 py-3">Start Free</Button>
                 </a>
-                <a href="#how-it-works">
-                  <Button variant="secondary" className="text-base px-7 py-3">
-                    See how it works
-                  </Button>
-                </a>
               </div>
-
-              {/* Microcopy */}
-              <p className="text-xs text-white/80 mb-5">
+              <p className="text-xs text-white/60 mb-5">
                 No credit card required.
               </p>
+
+              {/* Video Thumbnail — primary visual hook */}
+              <button
+                onClick={() => setModalOpen(true)}
+                className="relative max-w-2xl mx-auto rounded-xl overflow-hidden border border-border block w-full group cursor-pointer mb-5"
+              >
+                <video
+                  src="/assets/snaptosize-demo.mp4"
+                  muted
+                  playsInline
+                  preload="metadata"
+                  className="w-full block"
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
+                  <div className="w-16 h-16 rounded-full bg-accent/80 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <svg viewBox="0 0 24 24" fill="white" className="w-7 h-7 ml-1">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                </div>
+                <span className="absolute bottom-3 left-1/2 -translate-x-1/2 text-xs text-white/70 bg-black/40 backdrop-blur-sm px-3 py-1 rounded-full">
+                  Watch demo · 50s
+                </span>
+              </button>
 
               {/* Lead Capture */}
               <div className="max-w-md mx-auto mb-6">
@@ -94,15 +114,11 @@ export function HeroSection() {
                 />
               </div>
 
-              {/* Proof Bullets */}
+              {/* Proof Bullets — supporting evidence after visual hook */}
               <div className="space-y-1.5 inline-flex flex-col items-start mx-auto" style={{ textShadow: '0 2px 10px rgba(11, 11, 18, 0.8)' }}>
                 <div className="flex items-center gap-3 text-sm text-foreground-80">
                   <Check className="h-4 w-4 text-white/90 flex-shrink-0" style={{ filter: 'drop-shadow(0 0 8px rgba(255,255,255,0.15))' }} />
-                  <span>Professional Etsy-ready structure</span>
-                </div>
-                <div className="flex items-center gap-3 text-sm text-foreground-80">
-                  <Check className="h-4 w-4 text-white/90 flex-shrink-0" style={{ filter: 'drop-shadow(0 0 8px rgba(255,255,255,0.15))' }} />
-                  <span>Full ratio packs + single & square exports</span>
+                  <span>Save hours per listing</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm text-foreground-80">
                   <Check className="h-4 w-4 text-white/90 flex-shrink-0" style={{ filter: 'drop-shadow(0 0 8px rgba(255,255,255,0.15))' }} />
@@ -110,13 +126,23 @@ export function HeroSection() {
                 </div>
                 <div className="flex items-center gap-3 text-sm text-foreground-80">
                   <Check className="h-4 w-4 text-white/90 flex-shrink-0" style={{ filter: 'drop-shadow(0 0 8px rgba(255,255,255,0.15))' }} />
-                  <span>Save hours per listing</span>
+                  <span>Professional Etsy-ready structure</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm text-foreground-80">
+                  <Check className="h-4 w-4 text-white/90 flex-shrink-0" style={{ filter: 'drop-shadow(0 0 8px rgba(255,255,255,0.15))' }} />
+                  <span>Ratio packs + vertical, landscape & square exports</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <VideoModal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        videoSrc="/assets/snaptosize-demo.mp4"
+      />
     </section>
   );
 }

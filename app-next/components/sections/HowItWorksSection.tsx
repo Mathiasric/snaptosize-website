@@ -15,21 +15,30 @@ export function HowItWorksSection() {
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent-15 mb-4">
               <Upload className="h-6 w-6 text-accent-light" />
             </div>
-            <h3 className="font-semibold mb-2">1. Upload your high-resolution image</h3>
+            <h3 className="font-semibold mb-2">1. Upload your image</h3>
+            <p className="text-sm text-foreground-60">
+              Drop any high-resolution image. JPEG, PNG, or TIFF — up to 100 MB.
+            </p>
           </Card>
 
           <Card className="text-center">
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent-15 mb-4">
               <PackageOpen className="h-6 w-6 text-accent-light" />
             </div>
-            <h3 className="font-semibold mb-2">2. Choose packs or export mode</h3>
+            <h3 className="font-semibold mb-2">2. Pick your export mode</h3>
+            <p className="text-sm text-foreground-60">
+              Choose ratio packs for complete Etsy sets, or single exports for specific sizes.
+            </p>
           </Card>
 
           <Card className="text-center">
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent-15 mb-4">
               <Download className="h-6 w-6 text-accent-light" />
             </div>
-            <h3 className="font-semibold mb-2">3. Download your ready-to-upload ZIP</h3>
+            <h3 className="font-semibold mb-2">3. Download your ZIP</h3>
+            <p className="text-sm text-foreground-60">
+              Every file at 300 DPI, named and organized — ready to upload to Etsy.
+            </p>
           </Card>
         </div>
 
