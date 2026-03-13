@@ -319,7 +319,7 @@ export default function EtsyPrintRatiosPage() {
                   <h3 className="text-xl font-bold mb-2">ISO A-Series (International Standard)</h3>
                   <p className="text-sm text-foreground-60 mb-3">
                     Standard print sizes in Europe, Australia, Asia, and most of the world.
-                    Includes A5, A4, A3, A2, A1. These sizes use millimeters (not inches) and a consistent 1:√2 ratio.
+                    Includes A5, A4, A3, A2, A1, A0. These sizes use millimeters (not inches) and a consistent 1:√2 ratio.
                   </p>
                   <p className="text-xs text-foreground-60">
                     <strong>Why it matters:</strong> If you only offer US sizes (inches),
@@ -333,7 +333,7 @@ export default function EtsyPrintRatiosPage() {
                   <p className="text-sm text-foreground-60 mb-3">
                     These don&apos;t fit standard ratios but are frequently requested:
                     5×7 (greeting cards), 8.5×11 (US Letter, home printing), 11×14 (photo mat standard),
-                    16×20, 20×24.
+                    11×17 (tabloid poster), 16×20, 20×24.
                   </p>
                   <p className="text-xs text-foreground-60">
                     <strong>Why it matters:</strong> These are some of the most common requests.
@@ -402,7 +402,7 @@ export default function EtsyPrintRatiosPage() {
                     </div>
                     <div>
                       <p className="font-semibold text-foreground mb-1">ZIP 4 — ISO A-series</p>
-                      <p className="text-xs">Contains A5, A4, A3, A2, A1 at 300 DPI</p>
+                      <p className="text-xs">Contains A5, A4, A3, A2, A1, A0 at 300 DPI</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -411,7 +411,7 @@ export default function EtsyPrintRatiosPage() {
                     </div>
                     <div>
                       <p className="font-semibold text-foreground mb-1">ZIP 5 — Extras</p>
-                      <p className="text-xs">Contains 5×7, 8.5×11, 11×14, 16×20, 20×24 at 300 DPI</p>
+                      <p className="text-xs">Contains 5×7, 8.5×11, 11×14, 11×17, 16×20, 20×24 at 300 DPI</p>
                     </div>
                   </div>
                 </div>

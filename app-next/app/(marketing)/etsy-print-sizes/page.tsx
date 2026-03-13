@@ -799,11 +799,17 @@ export default function EtsyPrintSizesPage() {
                             <td className="py-2 pr-4">4961 &times; 7016</td>
                             <td className="py-2">Large poster</td>
                           </tr>
-                          <tr>
+                          <tr className="border-b border-border">
                             <td className="py-2 pr-4">A1</td>
                             <td className="py-2 pr-4">594 &times; 841</td>
                             <td className="py-2 pr-4">7016 &times; 9933</td>
                             <td className="py-2">Extra large</td>
+                          </tr>
+                          <tr>
+                            <td className="py-2 pr-4">A0</td>
+                            <td className="py-2 pr-4">841 &times; 1189</td>
+                            <td className="py-2 pr-4">9933 &times; 14043</td>
+                            <td className="py-2">Oversized poster</td>
                           </tr>
                         </tbody>
                       </table>
@@ -849,6 +855,13 @@ export default function EtsyPrintSizesPage() {
                             <td className="py-2 pr-4">11 &times; 14</td>
                             <td className="py-2 pr-4">3300 &times; 4200</td>
                             <td className="py-2">Photo mat standard</td>
+                          </tr>
+                          <tr className="border-b border-border">
+                            <td className="py-2 pr-4">11 &times; 17</td>
+                            <td className="py-2 pr-4">3300 &times; 5100</td>
+                            <td className="py-2">
+                              Tabloid &mdash; popular US poster size
+                            </td>
                           </tr>
                           <tr className="border-b border-border">
                             <td className="py-2 pr-4">16 &times; 20</td>

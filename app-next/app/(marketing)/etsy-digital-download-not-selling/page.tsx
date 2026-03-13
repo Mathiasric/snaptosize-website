@@ -110,7 +110,7 @@ export default function EtsyDigitalDownloadNotSellingPage() {
         name: "How many sizes should I offer per Etsy printable listing?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "At minimum 5-6 sizes covering different ratios: 5x7, 8x10, 11x14, 16x20, and A4 for international buyers. Top sellers include 15-29 sizes across all five standard ratio packs (2:3, 3:4, 4:5, ISO, extras). More sizes = higher perceived value at the same price.",
+          text: "At minimum 5-6 sizes covering different ratios: 5x7, 8x10, 11x14, 16x20, and A4 for international buyers. Top sellers include 15-30 sizes across all five standard ratio packs (2:3, 3:4, 4:5, ISO, extras). More sizes = higher perceived value at the same price.",
         },
       },
       {
@@ -355,13 +355,13 @@ export default function EtsyDigitalDownloadNotSellingPage() {
                     },
                     {
                       ratio: "ISO A-Series",
-                      sizes: "A5 to A1",
-                      count: 5,
+                      sizes: "A5 to A0",
+                      count: 6,
                     },
                     {
                       ratio: "Extras",
-                      sizes: "5x7, 8.5x11, 11x14...",
-                      count: 5,
+                      sizes: "5x7, 8.5x11, 11x14, 11x17...",
+                      count: 6,
                     },
                   ].map((pack, i) => (
                     <div
@@ -383,7 +383,7 @@ export default function EtsyDigitalDownloadNotSellingPage() {
                   ))}
                 </div>
                 <p className="text-sm text-foreground-60 mt-4">
-                  That&apos;s 29 sizes total. When a competitor offers 29 sizes
+                  That&apos;s 30 sizes total. When a competitor offers 30 sizes
                   at $12 and you offer 2 sizes at $8, yours looks like less
                   value even though it&apos;s cheaper.
                 </p>
@@ -396,7 +396,7 @@ export default function EtsyDigitalDownloadNotSellingPage() {
                     <p className="font-semibold mb-1">The fix</p>
                     <p className="text-foreground-60 text-sm">
                       Include all 5 ratio packs in every listing. You
-                      don&apos;t need to manually resize to 29 sizes &mdash;{" "}
+                      don&apos;t need to manually resize to 30 sizes &mdash;{" "}
                       <Link
                         href="https://app.snaptosize.com"
                         className="text-accent-light hover:underline"
@@ -492,7 +492,7 @@ export default function EtsyDigitalDownloadNotSellingPage() {
                   Fix #1 Right Now &mdash; Add All Sizes
                 </h3>
                 <p className="text-sm text-foreground-60 mb-5">
-                  Upload your artwork once. Get 29 sizes across 5 ratio
+                  Upload your artwork once. Get 30 sizes across 5 ratio
                   packs at 300&nbsp;DPI &mdash; organized, named, and under
                   20&nbsp;MB. Ready to list in seconds.
                 </p>
@@ -639,7 +639,7 @@ export default function EtsyDigitalDownloadNotSellingPage() {
                     <div className="flex items-center gap-2">
                       <Check className="w-4 h-4 text-green-400" />
                       <span className="text-sm">
-                        All 5 ratio packs (29 sizes)
+                        All 5 ratio packs (30 sizes)
                       </span>
                     </div>
                     <span className="text-sm text-foreground-60">
@@ -820,7 +820,7 @@ export default function EtsyDigitalDownloadNotSellingPage() {
                 art with multiple sizes is $8&ndash;15.
               </p>
               <p className="text-foreground-60 mb-4">
-                The key is perceived value. A listing with 29 sizes across 5
+                The key is perceived value. A listing with 30 sizes across 5
                 ratio packs at $12 looks like a steal. A listing with 1 size
                 at $3 looks cheap. Same art, drastically different conversion
                 rates.
@@ -833,7 +833,7 @@ export default function EtsyDigitalDownloadNotSellingPage() {
                     <p className="font-semibold mb-1">The fix</p>
                     <p className="text-foreground-60 text-sm">
                       Price your complete size packs at $8&ndash;15. Mention
-                      &ldquo;29 sizes included&rdquo; in your title and first
+                      &ldquo;30 sizes included&rdquo; in your title and first
                       listing image. This reframes the purchase from &ldquo;one
                       image file&rdquo; to &ldquo;complete print-ready
                       collection.&rdquo;
@@ -851,7 +851,7 @@ export default function EtsyDigitalDownloadNotSellingPage() {
               <Card className="p-6 md:p-8">
                 <div className="space-y-3">
                   {[
-                    "Include 5+ ratio packs (29 sizes minimum) in every listing",
+                    "Include 5+ ratio packs (30 sizes minimum) in every listing",
                     "Title uses specific long-tail keywords with sizes and niche",
                     "All files are 300 DPI with correct pixel dimensions",
                     "Files bundled in organized ZIPs under 20 MB each",
@@ -885,7 +885,7 @@ export default function EtsyDigitalDownloadNotSellingPage() {
                 </h3>
                 <p className="text-sm text-foreground-60 mb-5">
                   Incomplete sizes are the most common reason Etsy printables
-                  don&apos;t sell. Upload your artwork once and get all 29
+                  don&apos;t sell. Upload your artwork once and get all 30
                   sizes across 5 ratio packs at 300&nbsp;DPI &mdash;
                   organized, named, and ready to list.
                 </p>
@@ -968,7 +968,7 @@ export default function EtsyDigitalDownloadNotSellingPage() {
                     question:
                       "How many sizes should I offer per Etsy printable listing?",
                     answer:
-                      "At minimum 5-6 sizes covering different ratios: 5x7, 8x10, 11x14, 16x20, and A4 for international buyers. Top sellers include 15-29 sizes across all five standard ratio packs (2:3, 3:4, 4:5, ISO, extras). More sizes means higher perceived value at the same price.",
+                      "At minimum 5-6 sizes covering different ratios: 5x7, 8x10, 11x14, 16x20, and A4 for international buyers. Top sellers include 15-30 sizes across all five standard ratio packs (2:3, 3:4, 4:5, ISO, extras). More sizes means higher perceived value at the same price.",
                   },
                   {
                     question:
@@ -1000,7 +1000,7 @@ export default function EtsyDigitalDownloadNotSellingPage() {
                     Free Etsy Print Size Cheat Sheet
                   </h3>
                   <p className="text-sm text-foreground-60 mb-5">
-                    All 29 Etsy sizes with pixel dimensions at 300 DPI, ratio
+                    All 30 Etsy sizes with pixel dimensions at 300 DPI, ratio
                     families, and file naming conventions. One page, zero
                     guesswork.
                   </p>

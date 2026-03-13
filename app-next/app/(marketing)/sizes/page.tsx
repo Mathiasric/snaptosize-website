@@ -287,11 +287,17 @@ export default function SizesPage() {
                         <td className="py-2 pr-4">4961 × 7016</td>
                         <td className="py-2">Large poster</td>
                       </tr>
-                      <tr>
+                      <tr className="border-b border-border">
                         <td className="py-2 pr-4">A1</td>
                         <td className="py-2 pr-4">594 × 841</td>
                         <td className="py-2 pr-4">7016 × 9933</td>
                         <td className="py-2">Extra large</td>
+                      </tr>
+                      <tr>
+                        <td className="py-2 pr-4">A0</td>
+                        <td className="py-2 pr-4">841 × 1189</td>
+                        <td className="py-2 pr-4">9933 × 14043</td>
+                        <td className="py-2">Oversized poster</td>
                       </tr>
                     </tbody>
                   </table>

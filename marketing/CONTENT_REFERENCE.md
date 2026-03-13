@@ -52,17 +52,30 @@ Upload one high-resolution image → receive ready-to-sell print size ZIP packs 
 | A3 | 297×420 | 3508×4961 |
 | A2 | 420×594 | 4961×7016 |
 | A1 | 594×841 | 7016×9933 |
+| A0 | 841×1189 | 9933×14043 |
 
-### Extras — Sizes Most Sellers Forget
+### Extras — Common Sizes
 | Size | Pixels | Use Case |
 |---|---|---|
 | 5×7 | 1500×2100 | Greeting cards, small frames |
 | 8.5×11 | 2550×3300 | US Letter, home printing |
 | 11×14 | 3300×4200 | Photo mat standard |
-| 16×20 | 4800×6000 | Popular standalone poster |
+| 11×17 | 3300×5100 | Tabloid poster, very common in USA |
 | 20×24 | 6000×7200 | Large format print |
 
-**Total: 29 sizes across 5 packs, all at 300 DPI, JPEG, organized ZIP structure.**
+**Total: 30 sizes across 5 packs (ZIP), all at 300 DPI, JPEG, organized ZIP structure.**
+
+### Single Export Only — Square (1:1)
+Available in Quick Export mode, not in ratio packs:
+| Size | Pixels |
+|---|---|
+| 8×8 | 2400×2400 |
+| 10×10 | 3000×3000 |
+| 12×12 | 3600×3600 |
+| 16×16 | 4800×4800 |
+| 18×18 | 5400×5400 |
+| 20×20 | 6000×6000 |
+| 24×24 | 7200×7200 |
 
 ---
 

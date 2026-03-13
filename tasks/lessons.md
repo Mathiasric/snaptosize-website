@@ -57,5 +57,20 @@ Choose based on context. Direct tool link for action-oriented posts, marketing s
 - Extras: 5×7, 8.5×11, 11×14, 16×20, 20×24
 If showing a subset, pick real ones only. Gemini will hallucinate text if not constrained.
 
+### LESSON-011: Correct size inventory — 35 sizes across 6 packs (2026-03-13)
+**Trigger:** Content reference had 16×20 duplicated in Extras (already in 4:5) and was missing Square pack entirely.
+**Rule:** SnapToSize offers 30 sizes across 5 ZIP packs + 7 square sizes in single export:
+- **2:3** (8): 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30, 24×36
+- **3:4** (6): 6×8, 9×12, 12×16, 15×20, 18×24, 24×32
+- **4:5** (5): 8×10, 12×15, 16×20, 20×25, 24×30
+- **ISO** (6): A5, A4, A3, A2, A1, A0
+- **Extras** (5): 5×7, 8.5×11, 11×14, 11×17, 20×24
+- **Square (single export only)** (7): 8×8, 10×10, 12×12, 16×16, 18×18, 20×20, 24×24
+**Potential future additions (Worker-side):**
+- 11×17 (Tabloid) — single export only, too small for ZIP pack
+- 13×19 (Super B) — same concern, small vertical
+- A0 — investigate if feasible for ZIP
+Always reference this list, never invent sizes.
+
 ### LESSON-007: Button component doesn't accept href/size props (2026-03-11)
 **Rule:** The Button component only accepts `children`, `variant`, `className`, `onClick`. For link CTAs, wrap in `<a href={url} target="_blank" rel="noopener noreferrer"><Button>Text</Button></a>`. EmailCapture takes `placeholder` and `buttonText` props.
