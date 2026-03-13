@@ -143,74 +143,140 @@ export default function EtsyPrintSizesPage() {
       />
 
       {/* ===== HERO ===== */}
-      <section className="relative overflow-hidden h-screen">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/assets/Hero_OG_etsy-print-sizes.png"
-            alt=""
-            fill
-            priority
-            sizes="100vw"
-            style={{ objectFit: "cover" }}
-            className="z-0"
-          />
-          {/* Left-side gradient overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/25 to-transparent" />
-        </div>
+      <section className="relative overflow-hidden min-h-[80vh] flex items-center -mt-4">
+        {/* Background: dark with subtle grid */}
+        <div className="absolute inset-0 bg-background" />
+        <div
+          className="absolute inset-0 opacity-[0.04]"
+          style={{
+            backgroundImage: `linear-gradient(rgba(139,92,246,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(139,92,246,0.3) 1px, transparent 1px)`,
+            backgroundSize: '60px 60px',
+          }}
+        />
+        {/* Radial glow behind frames */}
+        <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-[600px] h-[600px] bg-accent-light/[0.06] rounded-full blur-[120px]" />
 
-        {/* Content - centered vertically */}
-        <div className="relative z-10 h-full flex items-center">
-          <Container>
-            <div className="max-w-[680px] py-4 -mt-12 md:-mt-8">
-              <h1 className="font-bold tracking-tight mb-5 text-white">
+        <div className="relative z-10"><Container>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center py-10 md:py-14">
+            {/* Left: Text */}
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent-light/10 border border-accent-light/20 mb-5">
+                <span className="text-xs font-semibold text-accent-light tracking-wide">Every Etsy Print Size</span>
+                <span className="text-xs text-foreground-60">4 ratios + common sizes &middot; 30+ dimensions</span>
+              </div>
+
+              <h1 className="font-bold tracking-tight mb-4">
                 <span className="block text-3xl md:text-4xl lg:text-5xl mb-1.5">
-                  Etsy Print Sizes — Complete Guide + Instant Generator
+                  Etsy Print Sizes
                 </span>
-                <span className="block text-xl md:text-2xl lg:text-3xl font-semibold text-white/95">
-                  Upload once → get all print sizes → ready-to-sell ZIP packs
+                <span className="block text-lg md:text-xl lg:text-2xl font-semibold text-foreground-60">
+                  Exact pixel dimensions at 300 DPI for every ratio
                 </span>
               </h1>
-              <p className="text-base text-white/95 mb-4 drop-shadow-md">
-                Built for Etsy print sellers. Generate all required print ratios (2:3, 3:4, 4:5, ISO + extras) at 300&nbsp;DPI &mdash;
-                organized in upload-ready ZIP packs, optimized for Etsy&apos;s 20MB limit, with zero cropping.
+              <p className="text-base text-foreground-60 mb-6 max-w-lg">
+                Every Etsy print ratio (2:3, 3:4, 4:5, ISO + extras) at 300&nbsp;DPI &mdash;
+                with exact pixel dimensions, packaging rules, and ready-to-upload ZIP packs.
               </p>
 
-              <div className="mb-3">
+              <div className="mb-5">
                 <a href={appUrl} target="_blank" rel="noopener noreferrer">
                   <Button className="text-sm px-6 py-2.5">
                     Generate All Etsy Sizes Instantly
                   </Button>
                 </a>
-                <p className="text-sm text-white/85 mt-1.5">
-                  Free → generate your first complete size pack in minutes.
+                <p className="text-sm text-foreground-60 mt-2">
+                  Free plan available. No credit card required.
                 </p>
               </div>
 
               {/* Micro-benefit chips */}
               <div className="flex flex-wrap gap-2">
-                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/15 backdrop-blur-sm border border-white/25">
-                  <Check className="h-3 w-3 text-white flex-shrink-0" />
-                  <span className="text-xs text-white font-medium">
-                    All Etsy print ratios included
-                  </span>
+                {["All 4 ratios + extras", "Zero cropping", "Under 20MB per ZIP"].map((text) => (
+                  <div key={text} className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface border border-border">
+                    <Check className="h-3 w-3 text-accent-light flex-shrink-0" />
+                    <span className="text-xs text-foreground-60 font-medium">{text}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Right: Gallery Wall — CSS-only ratio frames */}
+            <div className="hidden lg:block relative" aria-hidden="true">
+              <div className="relative w-full h-[480px]">
+                {/* 2:3 frame — tallest */}
+                <div
+                  className="absolute rounded-lg border border-accent-light/30 bg-accent-light/[0.03] shadow-[0_0_30px_-8px_rgba(139,92,246,0.15)]"
+                  style={{ width: '120px', height: '180px', top: '20px', left: '30px' }}
+                >
+                  <div className="absolute bottom-2 left-2 text-[10px] font-mono text-accent-light/60">2:3</div>
+                  <div className="absolute top-2 right-2 text-[9px] font-mono text-foreground-60/40">4&times;6</div>
                 </div>
-                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/15 backdrop-blur-sm border border-white/25">
-                  <Check className="h-3 w-3 text-white flex-shrink-0" />
-                  <span className="text-xs text-white font-medium">
-                    Zero cropping or quality loss
-                  </span>
+
+                {/* 3:4 frame */}
+                <div
+                  className="absolute rounded-lg border border-purple-400/25 bg-purple-400/[0.03] shadow-[0_0_24px_-8px_rgba(168,85,247,0.12)]"
+                  style={{ width: '130px', height: '173px', top: '50px', left: '170px' }}
+                >
+                  <div className="absolute bottom-2 left-2 text-[10px] font-mono text-purple-400/60">3:4</div>
+                  <div className="absolute top-2 right-2 text-[9px] font-mono text-foreground-60/40">9&times;12</div>
                 </div>
-                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/15 backdrop-blur-sm border border-white/25">
-                  <Check className="h-3 w-3 text-white flex-shrink-0" />
-                  <span className="text-xs text-white font-medium">
-                    Upload-ready ZIP packs under 20MB
-                  </span>
+
+                {/* 4:5 frame — widest */}
+                <div
+                  className="absolute rounded-lg border border-blue-400/25 bg-blue-400/[0.03] shadow-[0_0_24px_-8px_rgba(96,165,250,0.12)]"
+                  style={{ width: '140px', height: '175px', top: '0px', left: '320px' }}
+                >
+                  <div className="absolute bottom-2 left-2 text-[10px] font-mono text-blue-400/60">4:5</div>
+                  <div className="absolute top-2 right-2 text-[9px] font-mono text-foreground-60/40">8&times;10</div>
+                </div>
+
+                {/* ISO A4 frame */}
+                <div
+                  className="absolute rounded-lg border border-emerald-400/25 bg-emerald-400/[0.03] shadow-[0_0_24px_-8px_rgba(52,211,153,0.12)]"
+                  style={{ width: '115px', height: '163px', top: '220px', left: '60px' }}
+                >
+                  <div className="absolute bottom-2 left-2 text-[10px] font-mono text-emerald-400/60">ISO</div>
+                  <div className="absolute top-2 right-2 text-[9px] font-mono text-foreground-60/40">A4</div>
+                </div>
+
+                {/* 5×7 Extra */}
+                <div
+                  className="absolute rounded-lg border border-amber-400/25 bg-amber-400/[0.03] shadow-[0_0_24px_-8px_rgba(251,191,36,0.1)]"
+                  style={{ width: '100px', height: '140px', top: '250px', left: '200px' }}
+                >
+                  <div className="absolute bottom-2 left-2 text-[10px] font-mono text-amber-400/60">Extra</div>
+                  <div className="absolute top-2 right-2 text-[9px] font-mono text-foreground-60/40">5&times;7</div>
+                </div>
+
+                {/* Large 24×36 poster frame — background accent */}
+                <div
+                  className="absolute rounded-lg border border-accent-light/15 bg-accent-light/[0.02]"
+                  style={{ width: '160px', height: '240px', top: '195px', left: '320px' }}
+                >
+                  <div className="absolute bottom-2 left-2 text-[10px] font-mono text-accent-light/40">2:3</div>
+                  <div className="absolute top-2 right-2 text-[9px] font-mono text-foreground-60/30">24&times;36</div>
+                </div>
+
+                {/* Small 11×14 frame */}
+                <div
+                  className="absolute rounded-lg border border-rose-400/20 bg-rose-400/[0.02]"
+                  style={{ width: '88px', height: '112px', top: '140px', left: '0px' }}
+                >
+                  <div className="absolute bottom-2 left-2 text-[10px] font-mono text-rose-400/50">Extra</div>
+                  <div className="absolute top-2 right-2 text-[9px] font-mono text-foreground-60/30">11&times;14</div>
+                </div>
+
+                {/* Decorative: "300 DPI" badge */}
+                <div
+                  className="absolute px-3 py-1.5 rounded-md bg-surface border border-border"
+                  style={{ bottom: '20px', left: '80px' }}
+                >
+                  <span className="text-xs font-mono text-foreground-60">300 DPI &middot; JPG &middot; ZIP</span>
                 </div>
               </div>
             </div>
-          </Container>
-        </div>
+          </div>
+        </Container></div>
       </section>
 
       <section className="py-8">
