@@ -50,6 +50,11 @@ export function Footer() {
                       8×10 Print Size
                     </Link>
                   </li>
+                  <li>
+                    <Link href="/etsy-5x7-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                      5×7 Print Size
+                    </Link>
+                  </li>
                 </ul>
               </li>
               <li>

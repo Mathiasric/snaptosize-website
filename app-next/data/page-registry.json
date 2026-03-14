@@ -5,7 +5,7 @@
     "pageType": "pillar",
     "keywords": ["etsy print sizes", "print dimensions 300 dpi", "etsy print size chart"],
     "cluster": "sizes",
-    "relatedSlugs": ["etsy-print-ratios", "etsy-20mb-file-limit", "sizes", "how-to-sell-digital-downloads-on-etsy", "etsy-8x10-print-size"]
+    "relatedSlugs": ["etsy-print-ratios", "etsy-20mb-file-limit", "sizes", "how-to-sell-digital-downloads-on-etsy", "etsy-8x10-print-size", "etsy-5x7-print-size"]
   },
   {
     "slug": "etsy-print-ratios",
@@ -53,7 +53,15 @@
     "pageType": "size",
     "keywords": ["etsy 8x10 print size", "8x10 print dimensions 300 dpi", "8x10 aspect ratio"],
     "cluster": "sizes",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-20mb-file-limit"]
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-20mb-file-limit", "etsy-5x7-print-size"]
+  },
+  {
+    "slug": "etsy-5x7-print-size",
+    "title": "5×7 Print Size for Etsy",
+    "pageType": "size",
+    "keywords": ["etsy 5x7 print size", "5x7 print dimensions 300 dpi", "5x7 aspect ratio"],
+    "cluster": "sizes",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-8x10-print-size", "etsy-20mb-file-limit"]
   },
   {
     "slug": "etsy-digital-download-not-selling",

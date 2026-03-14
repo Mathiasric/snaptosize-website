@@ -1,0 +1,29 @@
+[
+  {
+    "keyword": "etsy 5x7 print size",
+    "slug": "etsy-5x7-print-size",
+    "intent": "informational+commercial",
+    "sections": [
+      "Exact pixel dimensions at 300 DPI (1500x2100)",
+      "5x7 aspect ratio explained (5:7) and which pack it belongs to (Extras)",
+      "Why 5x7 is the #2 most popular Etsy print size",
+      "Where buyers print 5x7 (home printers, Walgreens, CVS, Costco)",
+      "Framing options — standard 5x7 frames and matting in 8x10",
+      "File format, color profile and naming conventions",
+      "Common mistakes with 5x7 prints"
+    ],
+    "faqs": [
+      "What pixel dimensions do I need for a 5x7 print at 300 DPI?",
+      "What aspect ratio is 5x7?",
+      "Does 5x7 fit a standard frame?",
+      "Is 5x7 the same ratio as 8x10?",
+      "What file format should I use for 5x7 Etsy prints?",
+      "Can buyers print 5x7 at home?"
+    ],
+    "competitor_gaps": "No Etsy-specific 5x7 guide exists. Generic photo sites cover dimensions but not Etsy seller workflow, ZIP packaging, or ratio pack inclusion. No one explains that 5x7 is NOT the same ratio as 8x10.",
+    "conversion_angle": "Reference page with dimension table feel -> CTA after explaining Extras pack includes 5x7",
+    "link_to": ["etsy-print-sizes", "etsy-print-ratios", "etsy-8x10-print-size", "etsy-20mb-file-limit"],
+    "link_from": ["etsy-print-sizes"],
+    "cluster": "sizes"
+  }
+]

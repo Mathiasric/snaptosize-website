@@ -838,7 +838,11 @@ export default function EtsyPrintSizesPage() {
                         </thead>
                         <tbody className="text-foreground-60">
                           <tr className="border-b border-border">
-                            <td className="py-2 pr-4">5 &times; 7</td>
+                            <td className="py-2 pr-4">
+                              <Link href="/etsy-5x7-print-size" className="text-accent-light hover:underline">
+                                5 &times; 7
+                              </Link>
+                            </td>
                             <td className="py-2 pr-4">1500 &times; 2100</td>
                             <td className="py-2">
                               Greeting cards, small frames
