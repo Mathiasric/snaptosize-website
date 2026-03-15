@@ -121,6 +121,12 @@ export function Header() {
                     >
                       Not Selling? 7 Fixes
                     </Link>
+                    <Link
+                      href="/how-to-sell-printables-on-etsy-without-photoshop"
+                      className="block px-4 py-2 text-foreground-60 hover:text-foreground hover:bg-surface transition-colors"
+                    >
+                      Sell Without Photoshop
+                    </Link>
                   </div>
                 )}
               </div>
@@ -263,6 +269,13 @@ export function Header() {
                           className="block px-4 py-2 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring"
                         >
                           Not Selling? 7 Fixes
+                        </Link>
+                        <Link
+                          href="/how-to-sell-printables-on-etsy-without-photoshop"
+                          onClick={closeMenu}
+                          className="block px-4 py-2 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring"
+                        >
+                          Sell Without Photoshop
                         </Link>
                       </div>
                     )}

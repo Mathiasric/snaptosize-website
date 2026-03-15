@@ -82,6 +82,11 @@ export function Footer() {
                   Not Selling? 7 Fixes
                 </Link>
               </li>
+              <li>
+                <Link href="/how-to-sell-printables-on-etsy-without-photoshop" className="transition-colors hover:text-accent-light">
+                  Sell Without Photoshop
+                </Link>
+              </li>
             </ul>
           </div>
 
