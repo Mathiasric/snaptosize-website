@@ -5,18 +5,13 @@ export function Footer() {
   return (
     <footer className="border-t border-border bg-surface mt-16">
       <Container>
-        <div className="py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="py-12 grid grid-cols-2 md:grid-cols-5 gap-8">
           <div>
             <h3 className="font-semibold mb-3">Product</h3>
             <ul className="space-y-2 text-sm text-foreground-60">
               <li>
                 <Link href="/guide" className="transition-colors hover:text-accent-light">
                   User Guide
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-print-sizes" className="transition-colors hover:text-accent-light">
-                  Print Sizes
                 </Link>
               </li>
               <li>
@@ -38,33 +33,42 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-3">Guides</h3>
+            <h3 className="font-semibold mb-3">Size Guides</h3>
             <ul className="space-y-2 text-sm text-foreground-60">
               <li>
                 <Link href="/etsy-print-sizes" className="transition-colors hover:text-accent-light">
                   Etsy Print Sizes
                 </Link>
-                <ul className="ml-3 mt-1 space-y-1">
-                  <li>
-                    <Link href="/etsy-8x10-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                      8×10 Print Size
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/etsy-5x7-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                      5×7 Print Size
-                    </Link>
-                  </li>
-                </ul>
+              </li>
+              <li>
+                <Link href="/etsy-8x10-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                  8×10 Print Size
+                </Link>
+              </li>
+              <li>
+                <Link href="/etsy-5x7-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                  5×7 Print Size
+                </Link>
               </li>
               <li>
                 <Link href="/etsy-print-ratios" className="transition-colors hover:text-accent-light">
                   Etsy Print Ratios
                 </Link>
               </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold mb-3">Seller Guides</h3>
+            <ul className="space-y-2 text-sm text-foreground-60">
               <li>
                 <Link href="/how-to-sell-digital-downloads-on-etsy" className="transition-colors hover:text-accent-light">
-                  How to Sell Digital Downloads
+                  How to Sell on Etsy
+                </Link>
+              </li>
+              <li>
+                <Link href="/how-to-sell-printables-on-etsy-without-photoshop" className="transition-colors hover:text-accent-light">
+                  Sell Without Photoshop
                 </Link>
               </li>
               <li>
@@ -80,11 +84,6 @@ export function Footer() {
               <li>
                 <Link href="/etsy-digital-download-not-selling" className="transition-colors hover:text-accent-light">
                   Not Selling? 7 Fixes
-                </Link>
-              </li>
-              <li>
-                <Link href="/how-to-sell-printables-on-etsy-without-photoshop" className="transition-colors hover:text-accent-light">
-                  Sell Without Photoshop
                 </Link>
               </li>
             </ul>

@@ -72,60 +72,43 @@ export function Header() {
                 </button>
 
                 {guidesOpen && (
-                  <div className="absolute top-full left-0 mt-2 w-64 bg-background border border-border rounded-lg shadow-lg py-2">
-                    <Link
-                      href="/etsy-print-sizes"
-                      className="block px-4 py-2 text-foreground-60 hover:text-foreground hover:bg-surface transition-colors"
-                    >
+                  <div className="absolute top-full left-0 mt-2 w-72 bg-background border border-border rounded-lg shadow-lg py-2">
+                    {/* Size Guides */}
+                    <p className="px-4 pt-2 pb-1 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">Size Guides</p>
+                    <Link href="/etsy-print-sizes" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
                       Etsy Print Sizes
                     </Link>
-                    <Link
-                      href="/etsy-8x10-print-size"
-                      className="block pl-7 pr-4 py-1.5 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface transition-colors"
-                    >
+                    <Link href="/etsy-8x10-print-size" className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface transition-colors">
                       8×10 Print Size
                     </Link>
-                    <Link
-                      href="/etsy-5x7-print-size"
-                      className="block pl-7 pr-4 py-1.5 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface transition-colors"
-                    >
+                    <Link href="/etsy-5x7-print-size" className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface transition-colors">
                       5×7 Print Size
                     </Link>
-                    <Link
-                      href="/etsy-print-ratios"
-                      className="block px-4 py-2 text-foreground-60 hover:text-foreground hover:bg-surface transition-colors"
-                    >
+                    <Link href="/etsy-print-ratios" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
                       Etsy Print Ratios
                     </Link>
-                    <Link
-                      href="/how-to-sell-digital-downloads-on-etsy"
-                      className="block px-4 py-2 text-foreground-60 hover:text-foreground hover:bg-surface transition-colors"
-                    >
+
+                    {/* Seller Guides */}
+                    <div className="h-px bg-border my-1.5 mx-3" />
+                    <p className="px-4 pt-1 pb-1 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">Seller Guides</p>
+                    <Link href="/how-to-sell-digital-downloads-on-etsy" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
                       How to Sell on Etsy
                     </Link>
-                    <Link
-                      href="/what-files-to-include-etsy-digital-download"
-                      className="block px-4 py-2 text-foreground-60 hover:text-foreground hover:bg-surface transition-colors"
-                    >
+                    <Link href="/how-to-sell-printables-on-etsy-without-photoshop" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
+                      Sell Without Photoshop
+                    </Link>
+                    <Link href="/what-files-to-include-etsy-digital-download" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
                       What Files to Include
                     </Link>
-                    <Link
-                      href="/etsy-20mb-file-limit"
-                      className="block px-4 py-2 text-foreground-60 hover:text-foreground hover:bg-surface transition-colors"
-                    >
+
+                    {/* Troubleshooting */}
+                    <div className="h-px bg-border my-1.5 mx-3" />
+                    <p className="px-4 pt-1 pb-1 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">Troubleshooting</p>
+                    <Link href="/etsy-20mb-file-limit" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
                       Etsy 20MB File Limit
                     </Link>
-                    <Link
-                      href="/etsy-digital-download-not-selling"
-                      className="block px-4 py-2 text-foreground-60 hover:text-foreground hover:bg-surface transition-colors"
-                    >
+                    <Link href="/etsy-digital-download-not-selling" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
                       Not Selling? 7 Fixes
-                    </Link>
-                    <Link
-                      href="/how-to-sell-printables-on-etsy-without-photoshop"
-                      className="block px-4 py-2 text-foreground-60 hover:text-foreground hover:bg-surface transition-colors"
-                    >
-                      Sell Without Photoshop
                     </Link>
                   </div>
                 )}
@@ -213,69 +196,43 @@ export function Header() {
                       />
                     </button>
                     {guidesOpen && (
-                      <div className="ml-4 mt-1 space-y-1">
-                        <Link
-                          href="/etsy-print-sizes"
-                          onClick={closeMenu}
-                          className="block px-4 py-2 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring"
-                        >
+                      <div className="ml-4 mt-1 space-y-0.5">
+                        {/* Size Guides */}
+                        <p className="px-4 pt-2 pb-1 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">Size Guides</p>
+                        <Link href="/etsy-print-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Etsy Print Sizes
                         </Link>
-                        <Link
-                          href="/etsy-8x10-print-size"
-                          onClick={closeMenu}
-                          className="block pl-7 pr-4 py-1.5 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring"
-                        >
+                        <Link href="/etsy-8x10-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           8×10 Print Size
                         </Link>
-                        <Link
-                          href="/etsy-5x7-print-size"
-                          onClick={closeMenu}
-                          className="block pl-7 pr-4 py-1.5 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring"
-                        >
+                        <Link href="/etsy-5x7-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           5×7 Print Size
                         </Link>
-                        <Link
-                          href="/etsy-print-ratios"
-                          onClick={closeMenu}
-                          className="block px-4 py-2 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring"
-                        >
+                        <Link href="/etsy-print-ratios" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Etsy Print Ratios
                         </Link>
-                        <Link
-                          href="/how-to-sell-digital-downloads-on-etsy"
-                          onClick={closeMenu}
-                          className="block px-4 py-2 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring"
-                        >
+
+                        {/* Seller Guides */}
+                        <div className="h-px bg-border my-1.5 mx-3" />
+                        <p className="px-4 pt-1 pb-1 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">Seller Guides</p>
+                        <Link href="/how-to-sell-digital-downloads-on-etsy" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           How to Sell on Etsy
                         </Link>
-                        <Link
-                          href="/what-files-to-include-etsy-digital-download"
-                          onClick={closeMenu}
-                          className="block px-4 py-2 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring"
-                        >
+                        <Link href="/how-to-sell-printables-on-etsy-without-photoshop" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Sell Without Photoshop
+                        </Link>
+                        <Link href="/what-files-to-include-etsy-digital-download" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           What Files to Include
                         </Link>
-                        <Link
-                          href="/etsy-20mb-file-limit"
-                          onClick={closeMenu}
-                          className="block px-4 py-2 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring"
-                        >
+
+                        {/* Troubleshooting */}
+                        <div className="h-px bg-border my-1.5 mx-3" />
+                        <p className="px-4 pt-1 pb-1 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">Troubleshooting</p>
+                        <Link href="/etsy-20mb-file-limit" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Etsy 20MB File Limit
                         </Link>
-                        <Link
-                          href="/etsy-digital-download-not-selling"
-                          onClick={closeMenu}
-                          className="block px-4 py-2 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring"
-                        >
+                        <Link href="/etsy-digital-download-not-selling" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Not Selling? 7 Fixes
-                        </Link>
-                        <Link
-                          href="/how-to-sell-printables-on-etsy-without-photoshop"
-                          onClick={closeMenu}
-                          className="block px-4 py-2 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring"
-                        >
-                          Sell Without Photoshop
                         </Link>
                       </div>
                     )}
