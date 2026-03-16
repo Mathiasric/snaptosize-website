@@ -5,7 +5,7 @@
     "pageType": "pillar",
     "keywords": ["etsy print sizes", "print dimensions 300 dpi", "etsy print size chart"],
     "cluster": "sizes",
-    "relatedSlugs": ["etsy-print-ratios", "etsy-20mb-file-limit", "sizes", "how-to-sell-digital-downloads-on-etsy", "etsy-8x10-print-size", "etsy-5x7-print-size"]
+    "relatedSlugs": ["etsy-print-ratios", "etsy-20mb-file-limit", "sizes", "how-to-sell-digital-downloads-on-etsy", "etsy-8x10-print-size", "etsy-5x7-print-size", "how-to-resize-images-for-etsy"]
   },
   {
     "slug": "etsy-print-ratios",
@@ -21,7 +21,7 @@
     "pageType": "problem",
     "keywords": ["etsy 20mb file limit", "etsy file too large", "etsy image size limit"],
     "cluster": "problems",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "what-files-to-include-etsy-digital-download"]
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "what-files-to-include-etsy-digital-download", "how-to-resize-images-for-etsy"]
   },
   {
     "slug": "how-to-sell-digital-downloads-on-etsy",
@@ -70,5 +70,13 @@
     "keywords": ["etsy digital download not selling", "etsy printables not selling", "etsy printable no sales"],
     "cluster": "problems",
     "relatedSlugs": ["how-to-sell-digital-downloads-on-etsy", "what-files-to-include-etsy-digital-download", "etsy-print-sizes", "etsy-20mb-file-limit", "etsy-8x10-print-size"]
+  },
+  {
+    "slug": "how-to-resize-images-for-etsy",
+    "title": "How to Resize Images for Etsy Digital Downloads",
+    "pageType": "guide",
+    "keywords": ["how to resize images for etsy", "resize etsy digital downloads", "etsy print file dimensions", "batch resize etsy printables"],
+    "cluster": "guides",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-20mb-file-limit", "how-to-sell-digital-downloads-on-etsy", "what-files-to-include-etsy-digital-download", "etsy-8x10-print-size", "etsy-digital-download-not-selling"]
   }
 ]

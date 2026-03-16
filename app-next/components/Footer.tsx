@@ -77,6 +77,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/how-to-resize-images-for-etsy" className="transition-colors hover:text-accent-light">
+                  How to Resize Images
+                </Link>
+              </li>
+              <li>
                 <Link href="/etsy-20mb-file-limit" className="transition-colors hover:text-accent-light">
                   Etsy 20MB File Limit
                 </Link>

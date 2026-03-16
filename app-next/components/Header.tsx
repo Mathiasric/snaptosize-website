@@ -100,6 +100,9 @@ export function Header() {
                     <Link href="/what-files-to-include-etsy-digital-download" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
                       What Files to Include
                     </Link>
+                    <Link href="/how-to-resize-images-for-etsy" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
+                      How to Resize Images
+                    </Link>
 
                     {/* Troubleshooting */}
                     <div className="h-px bg-border my-1.5 mx-3" />
@@ -223,6 +226,9 @@ export function Header() {
                         </Link>
                         <Link href="/what-files-to-include-etsy-digital-download" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           What Files to Include
+                        </Link>
+                        <Link href="/how-to-resize-images-for-etsy" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          How to Resize Images
                         </Link>
 
                         {/* Troubleshooting */}
