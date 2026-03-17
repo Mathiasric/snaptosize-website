@@ -214,10 +214,71 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/25 to-transparent" />
         </div>
 
+        {/* CSS-only workflow visual — right side */}
+        <div className="absolute right-[5%] top-1/2 -translate-y-1/2 hidden lg:block z-10">
+          <div className="relative" style={{ width: "220px" }}>
+            <div className="space-y-3">
+              {/* Step 1: Upload */}
+              <div className="rounded-lg border border-white/10 bg-white/[0.06] backdrop-blur-sm p-3 shadow-xl">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-purple-500/15 border border-purple-400/25 flex items-center justify-center flex-shrink-0">
+                    <Upload className="w-3.5 h-3.5 text-purple-400/70" />
+                  </div>
+                  <div>
+                    <span className="text-[11px] font-semibold text-white/60 block">Upload 1 image</span>
+                    <span className="text-[9px] font-mono text-white/30">artwork.jpg · 8400×11200</span>
+                  </div>
+                </div>
+              </div>
+              {/* Arrow */}
+              <div className="flex justify-center">
+                <div className="w-px h-4 bg-gradient-to-b from-purple-400/30 to-purple-400/10" />
+              </div>
+              {/* Step 2: Process */}
+              <div className="rounded-lg border border-purple-400/15 bg-purple-500/[0.06] backdrop-blur-sm p-3 shadow-xl">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-purple-500/20 border border-purple-400/30 flex items-center justify-center flex-shrink-0">
+                    <span className="text-[10px] font-bold text-purple-300/70">⚡</span>
+                  </div>
+                  <div>
+                    <span className="text-[11px] font-semibold text-white/60 block">SnapToSize processes</span>
+                    <span className="text-[9px] font-mono text-white/30">30 sizes · 300 DPI · 10 sec</span>
+                  </div>
+                </div>
+              </div>
+              {/* Arrow */}
+              <div className="flex justify-center">
+                <div className="w-px h-4 bg-gradient-to-b from-purple-400/30 to-purple-400/10" />
+              </div>
+              {/* Step 3: Output */}
+              <div className="rounded-lg border border-white/10 bg-white/[0.06] backdrop-blur-sm p-3 shadow-xl">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-8 h-8 rounded-full bg-green-500/15 border border-green-400/25 flex items-center justify-center flex-shrink-0">
+                    <Check className="w-3.5 h-3.5 text-green-400/70" />
+                  </div>
+                  <div>
+                    <span className="text-[11px] font-semibold text-white/60 block">5 ZIP packs ready</span>
+                    <span className="text-[9px] font-mono text-white/30">Upload directly to Etsy</span>
+                  </div>
+                </div>
+                <div className="space-y-1 pl-11">
+                  {["2:3 ratio · 8 sizes", "3:4 ratio · 6 sizes", "4:5 ratio · 5 sizes", "ISO A · 6 sizes", "Extras · 5 sizes"].map((pack, i) => (
+                    <div key={i} className="text-[8px] font-mono text-white/25">{pack}</div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Content - centered vertically */}
         <div className="relative z-10 h-full flex items-center">
           <Container>
             <div className="max-w-[680px] py-4 -mt-12 md:-mt-8">
+              <div className="flex items-center gap-2 mb-4">
+                <div className="h-px w-8 bg-purple-500/40" />
+                <span className="text-xs font-mono tracking-[0.15em] text-purple-300/60 uppercase">Seller Guide</span>
+              </div>
               <h1 className="font-bold tracking-tight mb-5 text-white">
                 <span className="block text-3xl md:text-4xl lg:text-5xl mb-1.5">
                   How to Sell Digital Downloads on Etsy

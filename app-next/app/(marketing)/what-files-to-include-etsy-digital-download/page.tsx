@@ -161,10 +161,59 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/25 to-transparent" />
         </div>
 
+        {/* CSS-only file checklist visual — right side */}
+        <div className="absolute right-[5%] top-1/2 -translate-y-1/2 hidden lg:block z-10">
+          <div className="relative" style={{ width: "250px" }}>
+            {/* Badge on top */}
+            <div className="flex justify-center mb-2">
+              <div className="px-3 py-1 rounded-full border border-purple-400/20 bg-purple-500/10 backdrop-blur-sm">
+                <span className="text-[10px] font-mono text-purple-300/60 tracking-wider">30 SIZES · 5 PACKS</span>
+              </div>
+            </div>
+            <div className="rounded-xl border border-white/10 bg-white/[0.06] backdrop-blur-sm p-4 shadow-2xl">
+              <div className="flex items-center gap-2 mb-3 pb-2 border-b border-white/[0.08]">
+                <FolderArchive className="w-4 h-4 text-purple-400/60" />
+                <span className="text-[11px] font-mono text-white/50 tracking-wide">my_artwork.zip</span>
+              </div>
+              <div className="space-y-2">
+                {[
+                  { name: "2x3_ratio_pack/", files: "8 sizes", check: true },
+                  { name: "3x4_ratio_pack/", files: "6 sizes", check: true },
+                  { name: "4x5_ratio_pack/", files: "5 sizes", check: true },
+                  { name: "ISO_A_series/", files: "6 sizes", check: true },
+                  { name: "extras_pack/", files: "5 sizes", check: true },
+                ].map((item, i) => (
+                  <div key={i} className="flex items-center justify-between px-2 py-1.5 rounded bg-white/[0.03] border border-white/[0.06]">
+                    <div className="flex items-center gap-2">
+                      <div className={`w-3.5 h-3.5 rounded-sm border flex items-center justify-center ${item.check ? "border-green-400/40 bg-green-500/10" : "border-white/10"}`}>
+                        {item.check && <Check className="w-2.5 h-2.5 text-green-400/70" />}
+                      </div>
+                      <span className="text-[10px] font-mono text-white/45">{item.name}</span>
+                    </div>
+                    <span className="text-[9px] font-mono text-purple-300/40">{item.files}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="mt-3 pt-2 border-t border-white/[0.08] flex items-center justify-between">
+                <span className="text-[9px] font-mono text-white/30">Total: 30 files</span>
+                <span className="text-[9px] font-mono text-green-400/50">✓ Under 20MB</span>
+              </div>
+            </div>
+            {/* Bottom status */}
+            <div className="flex justify-center mt-2">
+              <span className="text-[10px] font-mono text-green-400/50 tracking-wider">✓ READY TO UPLOAD</span>
+            </div>
+          </div>
+        </div>
+
         {/* Content - centered vertically */}
         <div className="relative z-10 h-full flex items-center">
           <Container>
             <div className="max-w-[680px] py-4 -mt-12 md:-mt-8">
+              <div className="flex items-center gap-2 mb-4">
+                <div className="h-px w-8 bg-purple-500/40" />
+                <span className="text-xs font-mono tracking-[0.15em] text-purple-300/60 uppercase">Seller Guide</span>
+              </div>
               <h1 className="font-bold tracking-tight mb-5 text-white">
                 <span className="block text-3xl md:text-4xl lg:text-5xl mb-1.5">
                   What Files to Include in Etsy Digital Download
