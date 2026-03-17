@@ -6,7 +6,7 @@
 ## Current State
 - **Paying users:** 1
 - **MRR:** $12
-- **SEO pages live:** 7
+- **SEO pages live:** 13
 - **First paying customer:** 2026-03-03
 - **Target:** $1M ARR (~7,500 paying users)
 
@@ -47,7 +47,7 @@ $1M ARR requires:
 
 ### Marketing Infrastructure
 - ✅ Marketing site (snaptosize.com, Cloudflare Pages)
-- ✅ 7 SEO pages live (etsy-8x10-print-size deployed 2026-03-11)
+- ✅ 13 SEO pages live (3 new pages deployed 2026-03-17)
 - ✅ PostHog pageview tracking
 - ✅ Lead capture backend (Worker /subscribe)
 - ✅ Email capture component on site
@@ -91,7 +91,11 @@ $1M ARR requires:
 
 ---
 
-## Completed This Week
-- ✅ Remotion scaffolded + TikTokVertical composition built
-- ✅ Pipeline updated for video (dual-post TikTok + Reels)
-- ✅ Docs restructured (EXECUTION.md → CONTENT_PLAYBOOK + NEXT_ACTIONS + MILESTONES)
+## Completed This Week (2026-03-17)
+- ✅ 3 new SEO pages: best-resolution-for-etsy-printables, how-many-sizes-etsy-printable, how-to-package-digital-wall-art-for-etsy
+- ✅ Hero upgrades for how-to-sell-digital-downloads + what-files-to-include (CSS-only visuals)
+- ✅ Cross-linking between all new pages + nav/footer entries
+- ✅ OG images generated for all new + upgraded pages
+- ✅ NotebookLM scaling playbook notebook created with 6 sources
+- ✅ $1M ARR scaling plan written (docs/plans/scaling-to-1m-arr.md)
+- ✅ CLAUDE.md updated with auto-sync rules + NotebookLM integration
