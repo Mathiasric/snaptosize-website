@@ -87,6 +87,9 @@ export function Header() {
                     <Link href="/etsy-print-ratios" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
                       Etsy Print Ratios
                     </Link>
+                    <Link href="/how-many-sizes-etsy-printable" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
+                      How Many Sizes to Include
+                    </Link>
 
                     {/* Seller Guides */}
                     <div className="h-px bg-border my-1.5 mx-3" />
@@ -102,6 +105,12 @@ export function Header() {
                     </Link>
                     <Link href="/how-to-resize-images-for-etsy" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
                       How to Resize Images
+                    </Link>
+                    <Link href="/best-resolution-for-etsy-printables" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
+                      Best Resolution for Printables
+                    </Link>
+                    <Link href="/how-to-package-digital-wall-art-for-etsy" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
+                      Package Digital Wall Art
                     </Link>
 
                     {/* Troubleshooting */}
@@ -214,6 +223,9 @@ export function Header() {
                         <Link href="/etsy-print-ratios" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Etsy Print Ratios
                         </Link>
+                        <Link href="/how-many-sizes-etsy-printable" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          How Many Sizes to Include
+                        </Link>
 
                         {/* Seller Guides */}
                         <div className="h-px bg-border my-1.5 mx-3" />
@@ -229,6 +241,12 @@ export function Header() {
                         </Link>
                         <Link href="/how-to-resize-images-for-etsy" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           How to Resize Images
+                        </Link>
+                        <Link href="/best-resolution-for-etsy-printables" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Best Resolution for Printables
+                        </Link>
+                        <Link href="/how-to-package-digital-wall-art-for-etsy" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Package Digital Wall Art
                         </Link>
 
                         {/* Troubleshooting */}

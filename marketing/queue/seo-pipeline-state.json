@@ -1,0 +1,61 @@
+{
+  "_fresh": false,
+  "current_week": "W12",
+  "batch_id": "2026-W12",
+  "started_at": "2026-03-17T00:00:00+00:00",
+  "target": {
+    "pages": 10
+  },
+  "stages": {
+    "researcher": {
+      "status": "completed",
+      "output": "3 briefs produced"
+    },
+    "writer": {
+      "status": "completed",
+      "output": "3 pages written"
+    },
+    "review": {
+      "status": "completed",
+      "output": "build passed, all 3 pages compile"
+    },
+    "deploy": {
+      "status": "pending",
+      "output": null
+    },
+    "verify": {
+      "status": "pending",
+      "output": null
+    }
+  },
+  "content_items": [
+    {
+      "slug": "best-resolution-for-etsy-printables",
+      "keyword": "best resolution for etsy printables",
+      "type": "problem-solution",
+      "status": "ready-to-deploy",
+      "brief": "marketing/briefs/best-resolution-for-etsy-printables.md"
+    },
+    {
+      "slug": "how-many-sizes-etsy-printable",
+      "keyword": "how many sizes to include etsy printable",
+      "type": "problem-solution",
+      "status": "ready-to-deploy",
+      "brief": "marketing/briefs/how-many-sizes-etsy-printable.md"
+    },
+    {
+      "slug": "how-to-package-digital-wall-art-for-etsy",
+      "keyword": "how to package digital wall art for etsy",
+      "type": "problem-solution",
+      "status": "ready-to-deploy",
+      "brief": "marketing/briefs/how-to-package-digital-wall-art-for-etsy.md"
+    }
+  ],
+  "metrics": {
+    "total": 3,
+    "completed": 3,
+    "failed": 0,
+    "success_rate": 1.0
+  },
+  "updated_at": "2026-03-17T00:00:00+00:00"
+}

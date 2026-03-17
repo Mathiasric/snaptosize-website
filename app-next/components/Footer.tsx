@@ -55,6 +55,11 @@ export function Footer() {
                   Etsy Print Ratios
                 </Link>
               </li>
+              <li>
+                <Link href="/how-many-sizes-etsy-printable" className="transition-colors hover:text-accent-light">
+                  How Many Sizes to Include
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -79,6 +84,16 @@ export function Footer() {
               <li>
                 <Link href="/how-to-resize-images-for-etsy" className="transition-colors hover:text-accent-light">
                   How to Resize Images
+                </Link>
+              </li>
+              <li>
+                <Link href="/best-resolution-for-etsy-printables" className="transition-colors hover:text-accent-light">
+                  Best Resolution for Printables
+                </Link>
+              </li>
+              <li>
+                <Link href="/how-to-package-digital-wall-art-for-etsy" className="transition-colors hover:text-accent-light">
+                  Package Digital Wall Art
                 </Link>
               </li>
               <li>

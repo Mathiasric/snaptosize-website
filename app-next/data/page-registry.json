@@ -77,6 +77,30 @@
     "pageType": "guide",
     "keywords": ["how to resize images for etsy", "resize etsy digital downloads", "etsy print file dimensions", "batch resize etsy printables"],
     "cluster": "guides",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-20mb-file-limit", "how-to-sell-digital-downloads-on-etsy", "what-files-to-include-etsy-digital-download", "etsy-8x10-print-size", "etsy-digital-download-not-selling"]
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-20mb-file-limit", "how-to-sell-digital-downloads-on-etsy", "what-files-to-include-etsy-digital-download", "etsy-8x10-print-size", "etsy-digital-download-not-selling", "best-resolution-for-etsy-printables"]
+  },
+  {
+    "slug": "best-resolution-for-etsy-printables",
+    "title": "Best Resolution for Etsy Printables — 300 DPI Guide",
+    "pageType": "guide",
+    "keywords": ["best resolution for etsy printables", "what DPI for etsy printables", "etsy printable resolution requirements", "300 dpi etsy digital downloads"],
+    "cluster": "guides",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "how-to-resize-images-for-etsy", "what-files-to-include-etsy-digital-download", "how-to-sell-printables-on-etsy-without-photoshop", "etsy-8x10-print-size"]
+  },
+  {
+    "slug": "how-to-package-digital-wall-art-for-etsy",
+    "title": "How to Package Digital Wall Art for Etsy",
+    "pageType": "guide",
+    "keywords": ["how to package digital wall art for etsy", "etsy digital wall art file organization", "how to deliver digital art on etsy", "etsy printable packaging best practices"],
+    "cluster": "guides",
+    "relatedSlugs": ["what-files-to-include-etsy-digital-download", "etsy-print-sizes", "etsy-print-ratios", "etsy-20mb-file-limit", "how-to-sell-digital-downloads-on-etsy", "etsy-8x10-print-size", "how-to-resize-images-for-etsy"]
+  },
+  {
+    "slug": "how-many-sizes-etsy-printable",
+    "title": "How Many Sizes to Include in Etsy Printable",
+    "pageType": "guide",
+    "keywords": ["how many sizes etsy printable", "etsy printable size options", "best sizes for etsy prints", "how many files etsy digital download"],
+    "cluster": "guides",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-8x10-print-size", "etsy-5x7-print-size", "what-files-to-include-etsy-digital-download", "etsy-20mb-file-limit", "how-to-resize-images-for-etsy"]
   }
 ]
