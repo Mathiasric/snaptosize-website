@@ -102,5 +102,21 @@
     "keywords": ["how many sizes etsy printable", "etsy printable size options", "best sizes for etsy prints", "how many files etsy digital download"],
     "cluster": "guides",
     "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-8x10-print-size", "etsy-5x7-print-size", "what-files-to-include-etsy-digital-download", "etsy-20mb-file-limit", "how-to-resize-images-for-etsy"]
+  },
+  {
+    "slug": "etsy-16x20-print-size",
+    "title": "16×20 Print Size for Etsy",
+    "pageType": "size",
+    "keywords": ["etsy 16x20 print size", "16x20 print dimensions 300 dpi", "16x20 aspect ratio", "16x20 pixel dimensions"],
+    "cluster": "sizes",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-8x10-print-size", "etsy-5x7-print-size", "best-resolution-for-etsy-printables", "how-to-resize-images-for-etsy"]
+  },
+  {
+    "slug": "best-file-format-etsy-printables",
+    "title": "Best File Format for Etsy Printables — PDF vs PNG vs JPG",
+    "pageType": "guide",
+    "keywords": ["best file format for etsy printables", "etsy digital download file type", "PDF vs PNG etsy", "what format for etsy printables"],
+    "cluster": "guides",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-20mb-file-limit", "what-files-to-include-etsy-digital-download", "best-resolution-for-etsy-printables", "how-to-resize-images-for-etsy", "how-to-package-digital-wall-art-for-etsy"]
   }
 ]

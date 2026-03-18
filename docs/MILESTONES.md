@@ -6,7 +6,7 @@
 ## Current State
 - **Paying users:** 1
 - **MRR:** $12
-- **SEO pages live:** 13
+- **SEO pages live:** 15
 - **First paying customer:** 2026-03-03
 - **Target:** $1M ARR (~7,500 paying users)
 
@@ -47,7 +47,7 @@ $1M ARR requires:
 
 ### Marketing Infrastructure
 - ✅ Marketing site (snaptosize.com, Cloudflare Pages)
-- ✅ 13 SEO pages live (3 new pages deployed 2026-03-17)
+- ✅ 15 SEO pages live (2 new pages deployed 2026-03-18)
 - ✅ PostHog pageview tracking
 - ✅ Lead capture backend (Worker /subscribe)
 - ✅ Email capture component on site

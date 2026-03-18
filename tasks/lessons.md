@@ -190,3 +190,36 @@ Current TikTokVertical template needs these improvements:
 ### LESSON-026: Avoid jargon — keep it accessible for Etsy sellers (2026-03-16)
 **Trigger:** Source file requirements section used "MP" (megapixels) which isn't familiar to non-photographer Etsy sellers.
 **Rule:** Avoid technical photography jargon (MP, megapixels, Lanczos, bicubic, resampling) unless directly explaining it. Our audience is Etsy sellers who make digital art — they understand pixels and DPI but not camera specs. Use pixel dimensions directly instead of MP counts.
+
+### LESSON-027: Extras pack does NOT contain Square — only 5 specific sizes (2026-03-17)
+**Trigger:** Gemini-generated images showed "Square (1:1)", "Panoramic", "Custom Sizes", and "Social Media Sizes" under Extras pack. None of these exist.
+**Rule:** The Extras pack contains EXACTLY these 5 sizes and nothing else:
+- 5×7, 8.5×11, 11×14, 11×17, 20×24
+Square sizes (8×8 through 24×24) are only available in Single Export mode, NOT in any ZIP pack. Never mention Square, Panoramic, Custom Sizes, or Social Media Sizes as pack contents. When prompting Gemini for images showing pack contents, explicitly list the real Extras sizes.
+
+### LESSON-028: Gemini drops sizes and invents fake ones even when showing individual packs (2026-03-17)
+**Trigger:** P01 image showed 4:5 pack with "4×5" (not a real size), missing 12×15, 20×25, 24×30. Also missing 6×9 from 2:3, missing 24×32 from 3:4, missing A0 from ISO.
+**Rule:** When Gemini generates images showing size lists per pack, it will:
+1. **Invent fake sizes** like "4×5" (confusing the ratio name with a size)
+2. **Drop sizes** — especially the less common ones in each pack
+3. **Show incomplete lists** even when all sizes are in the prompt
+**Mitigation:** If showing individual pack sizes in an image, either show ALL sizes or use "popular sizes" with "+ more". Pre-check: the ratio name (e.g., "4:5") is NOT a print size. For images that need accurate size text, consider Remotion or CSS-based graphics instead of Gemini.
+
+### LESSON-030: Always mention JPG/JPEG — they're the same format (2026-03-18)
+**Trigger:** SEO page only said "JPG" throughout. Users also search "JPEG" and may not know they're identical.
+**Rule:** On SEO pages about file formats, mention "JPG (also called JPEG)" or "JPG / JPEG" early in the content (H1, intro, or first mention). This captures both search terms and educates readers. In headings and cards, use "JPG / JPEG". In body text after the first mention, "JPG" alone is fine.
+
+### LESSON-031: Don't show specific MB file sizes — use relative comparisons (2026-03-18)
+**Trigger:** File format page showed "24×36: 12-18 MB" for JPG, "60-80 MB" for PNG. These are generic estimates that don't match SnapToSize output (our compression/optimization differs). Showing wrong numbers hurts credibility.
+**Rule:** Never commit to specific MB numbers for file sizes in SEO content. Instead use relative comparisons:
+- "PNG files are typically 3-5× larger than JPG at the same dimensions"
+- "JPG stays under Etsy's 20MB limit" / "PNG often exceeds 20MB at larger sizes"
+- "PDF adds ~1.5× overhead vs JPG"
+- Add disclaimer: "Actual file sizes vary by image content and dimensions"
+This is truthful, useful, and doesn't create inaccurate expectations. See also LESSON-025 (same principle for size tables).
+
+### LESSON-029: ISO A-series prints are all portrait orientation (2026-03-17)
+**Trigger:** Gallery wall image showed A2, A1, A0 as landscape (horizontal) and A5, A4, A3 as portrait (vertical). Mixed orientation looks wrong.
+**Rule:** ISO A-series paper sizes are defined as portrait orientation (width < height):
+- A5: 148×210mm, A4: 210×297mm, A3: 297×420mm, A2: 420×594mm, A1: 594×841mm, A0: 841×1189mm
+When showing A-series prints in mockups or gallery walls, they should all be displayed in portrait orientation for consistency. If Gemini generates mixed orientations, note this as an error and regenerate or use alternative tools.
