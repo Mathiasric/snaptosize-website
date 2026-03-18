@@ -51,6 +51,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-16x20-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                  16×20 Print Size
+                </Link>
+              </li>
+              <li>
                 <Link href="/etsy-print-ratios" className="transition-colors hover:text-accent-light">
                   Etsy Print Ratios
                 </Link>
@@ -94,6 +99,11 @@ export function Footer() {
               <li>
                 <Link href="/how-to-package-digital-wall-art-for-etsy" className="transition-colors hover:text-accent-light">
                   Package Digital Wall Art
+                </Link>
+              </li>
+              <li>
+                <Link href="/best-file-format-etsy-printables" className="transition-colors hover:text-accent-light">
+                  Best File Format
                 </Link>
               </li>
               <li>

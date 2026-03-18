@@ -84,6 +84,9 @@ export function Header() {
                     <Link href="/etsy-5x7-print-size" className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface transition-colors">
                       5×7 Print Size
                     </Link>
+                    <Link href="/etsy-16x20-print-size" className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface transition-colors">
+                      16×20 Print Size
+                    </Link>
                     <Link href="/etsy-print-ratios" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
                       Etsy Print Ratios
                     </Link>
@@ -111,6 +114,9 @@ export function Header() {
                     </Link>
                     <Link href="/how-to-package-digital-wall-art-for-etsy" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
                       Package Digital Wall Art
+                    </Link>
+                    <Link href="/best-file-format-etsy-printables" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
+                      Best File Format
                     </Link>
 
                     {/* Troubleshooting */}
@@ -220,6 +226,9 @@ export function Header() {
                         <Link href="/etsy-5x7-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           5×7 Print Size
                         </Link>
+                        <Link href="/etsy-16x20-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          16×20 Print Size
+                        </Link>
                         <Link href="/etsy-print-ratios" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Etsy Print Ratios
                         </Link>
@@ -247,6 +256,9 @@ export function Header() {
                         </Link>
                         <Link href="/how-to-package-digital-wall-art-for-etsy" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Package Digital Wall Art
+                        </Link>
+                        <Link href="/best-file-format-etsy-printables" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Best File Format
                         </Link>
 
                         {/* Troubleshooting */}

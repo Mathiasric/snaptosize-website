@@ -218,6 +218,14 @@ Square sizes (8×8 through 24×24) are only available in Single Export mode, NOT
 - Add disclaimer: "Actual file sizes vary by image content and dimensions"
 This is truthful, useful, and doesn't create inaccurate expectations. See also LESSON-025 (same principle for size tables).
 
+### LESSON-032: Always add new SEO pages to nav bar and footer (2026-03-18)
+**Trigger:** Two new pages were committed and pushed without being added to Header.tsx or Footer.tsx navigation.
+**Rule:** After creating any new SEO page, ALWAYS:
+1. Add to `Header.tsx` — both desktop dropdown AND mobile menu, in the correct category (Size Guides for size pages, Seller Guides for guides, Troubleshooting for problem pages)
+2. Add to `Footer.tsx` — in the matching column. Size pages go as indented sub-items under "Size Guides", guides under "Seller Guides"
+3. Verify nav links work before committing
+This is part of the deploy checklist alongside page-registry, CONTENT_PLAYBOOK, and MILESTONES updates.
+
 ### LESSON-029: ISO A-series prints are all portrait orientation (2026-03-17)
 **Trigger:** Gallery wall image showed A2, A1, A0 as landscape (horizontal) and A5, A4, A3 as portrait (vertical). Mixed orientation looks wrong.
 **Rule:** ISO A-series paper sizes are defined as portrait orientation (width < height):
