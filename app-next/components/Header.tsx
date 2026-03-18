@@ -72,62 +72,76 @@ export function Header() {
                 </button>
 
                 {guidesOpen && (
-                  <div className="absolute top-full left-0 mt-2 w-72 bg-background border border-border rounded-lg shadow-lg py-2">
-                    {/* Size Guides */}
-                    <p className="px-4 pt-2 pb-1 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">Size Guides</p>
-                    <Link href="/etsy-print-sizes" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
-                      Etsy Print Sizes
-                    </Link>
-                    <Link href="/etsy-8x10-print-size" className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface transition-colors">
-                      8×10 Print Size
-                    </Link>
-                    <Link href="/etsy-5x7-print-size" className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface transition-colors">
-                      5×7 Print Size
-                    </Link>
-                    <Link href="/etsy-16x20-print-size" className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface transition-colors">
-                      16×20 Print Size
-                    </Link>
-                    <Link href="/etsy-print-ratios" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
-                      Etsy Print Ratios
-                    </Link>
-                    <Link href="/how-many-sizes-etsy-printable" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
-                      How Many Sizes to Include
-                    </Link>
+                  <div className="absolute top-full -left-20 mt-2 bg-background border border-border rounded-lg shadow-lg p-5">
+                    <div className="grid grid-cols-3 gap-6" style={{ width: "620px" }}>
+                      {/* Size Guides */}
+                      <div>
+                        <p className="pb-2 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">Size Guides</p>
+                        <div className="space-y-0.5">
+                          <Link href="/etsy-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                            Etsy Print Sizes
+                          </Link>
+                          <Link href="/etsy-print-ratios" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                            Etsy Print Ratios
+                          </Link>
+                          <Link href="/how-many-sizes-etsy-printable" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                            How Many Sizes to Include
+                          </Link>
+                          <div className="pt-1.5 space-y-0.5">
+                            <Link href="/etsy-8x10-print-size" className="block py-1 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
+                              8×10 Print Size
+                            </Link>
+                            <Link href="/etsy-5x7-print-size" className="block py-1 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
+                              5×7 Print Size
+                            </Link>
+                            <Link href="/etsy-16x20-print-size" className="block py-1 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
+                              16×20 Print Size
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
 
-                    {/* Seller Guides */}
-                    <div className="h-px bg-border my-1.5 mx-3" />
-                    <p className="px-4 pt-1 pb-1 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">Seller Guides</p>
-                    <Link href="/how-to-sell-digital-downloads-on-etsy" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
-                      How to Sell on Etsy
-                    </Link>
-                    <Link href="/how-to-sell-printables-on-etsy-without-photoshop" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
-                      Sell Without Photoshop
-                    </Link>
-                    <Link href="/what-files-to-include-etsy-digital-download" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
-                      What Files to Include
-                    </Link>
-                    <Link href="/how-to-resize-images-for-etsy" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
-                      How to Resize Images
-                    </Link>
-                    <Link href="/best-resolution-for-etsy-printables" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
-                      Best Resolution for Printables
-                    </Link>
-                    <Link href="/how-to-package-digital-wall-art-for-etsy" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
-                      Package Digital Wall Art
-                    </Link>
-                    <Link href="/best-file-format-etsy-printables" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
-                      Best File Format
-                    </Link>
+                      {/* Seller Guides */}
+                      <div>
+                        <p className="pb-2 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">Seller Guides</p>
+                        <div className="space-y-0.5">
+                          <Link href="/how-to-sell-digital-downloads-on-etsy" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                            How to Sell on Etsy
+                          </Link>
+                          <Link href="/how-to-sell-printables-on-etsy-without-photoshop" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                            Sell Without Photoshop
+                          </Link>
+                          <Link href="/what-files-to-include-etsy-digital-download" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                            What Files to Include
+                          </Link>
+                          <Link href="/how-to-resize-images-for-etsy" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                            How to Resize Images
+                          </Link>
+                          <Link href="/best-resolution-for-etsy-printables" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                            Best Resolution
+                          </Link>
+                          <Link href="/how-to-package-digital-wall-art-for-etsy" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                            Package Digital Wall Art
+                          </Link>
+                          <Link href="/best-file-format-etsy-printables" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                            Best File Format
+                          </Link>
+                        </div>
+                      </div>
 
-                    {/* Troubleshooting */}
-                    <div className="h-px bg-border my-1.5 mx-3" />
-                    <p className="px-4 pt-1 pb-1 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">Troubleshooting</p>
-                    <Link href="/etsy-20mb-file-limit" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
-                      Etsy 20MB File Limit
-                    </Link>
-                    <Link href="/etsy-digital-download-not-selling" className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface transition-colors">
-                      Not Selling? 7 Fixes
-                    </Link>
+                      {/* Troubleshooting */}
+                      <div>
+                        <p className="pb-2 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">Troubleshooting</p>
+                        <div className="space-y-0.5">
+                          <Link href="/etsy-20mb-file-limit" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                            Etsy 20MB File Limit
+                          </Link>
+                          <Link href="/etsy-digital-download-not-selling" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                            Not Selling? 7 Fixes
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 )}
               </div>
