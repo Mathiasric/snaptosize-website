@@ -381,7 +381,7 @@ Alert contains: job_id, error_code, group, mode.
 
 ---
 
-# 9. Analytics — Server-Side (LIVE)
+# 9. Analytics — Server-Side (LIVE) + Marketing Site (LIVE)
 
 ## Worker Events
 
@@ -628,7 +628,24 @@ All emails configured in Resend dashboard with automated triggers.
 | `email_capture_view` | EmailCapture component rendered | `source`, `variant` |
 | `email_capture_submitted` | Form submitted | `source`, `variant` |
 
-**Implementation:** Client-side PostHog SDK on marketing site.
+**Implementation:** Client-side PostHog SDK on marketing site — LIVE (2026-03-09).
+- `posthog-js` installed in `app-next`
+- `PostHogProvider` component: `app-next/components/PostHogProvider.tsx`
+- Wraps marketing layout, captures `$pageview` on every route change
+- Env vars: `NEXT_PUBLIC_POSTHOG_KEY`, `NEXT_PUBLIC_POSTHOG_HOST` (must be set in Cloudflare Pages dashboard)
+
+**PostHog API CLI Access** (added 2026-03-19):
+- Personal API key stored in `app-next/.env.local` (POSTHOG_PERSONAL_API_KEY)
+- Project ID: 131652, Region: EU (`https://eu.posthog.com`)
+- Query persons, events, funnels via REST API from CLI
+- Example: `curl -s "https://eu.posthog.com/api/projects/131652/persons/" -H "Authorization: Bearer $POSTHOG_PERSONAL_API_KEY"`
+- Used for: partner referral tracking, conversion analysis, manual reporting
+
+**Partner Referral Tracking** (added 2026-03-19):
+- Marketing site: `UTMPersistence.tsx` forwards `ref` and `source` params to app links
+- Marketing site: `/ref/[name]` redirects to `app.snaptosize.com?ref=[name]&source=partner_[name]`
+- App: `PartnerRefCapture.tsx` captures `ref`/`source` → localStorage + PostHog person properties (`partner_ref`, `partner_source`)
+- Full spec: `docs/PARTNER_PROGRAM.md`
 
 ---
 
@@ -797,7 +814,7 @@ Logs fire only on errors. Zero cost in normal operation.
 
 - **Email capture system** (specification complete in §9.5, implementation pending)
 - Subscription lifecycle UX polish (cancel_at_period_end display, portal clarity)
-- Client-side funnel tracking on marketing site (UTM attribution)
+- Client-side funnel tracking on marketing site (UTM attribution — pageview tracking LIVE, UTM attribution pending)
 - First export event tracking (Worker enqueue_success correlation)
 - Remove debug endpoints (LOW priority)
 - CLI debug script (Layer 5)

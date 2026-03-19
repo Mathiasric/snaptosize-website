@@ -1,5 +1,5 @@
 # MILESTONES.md — Revenue Targets & Progress
-**Last updated:** 2026-03-11
+**Last updated:** 2026-03-18
 
 ---
 
@@ -53,6 +53,10 @@ $1M ARR requires:
 - ✅ Email capture component on site
 - ✅ Resend integration (alerts + email list)
 - ✅ Hero WebP optimization + OG images
+- ✅ Lead capture: email + PDF + 2 automated follow-up emails (Resend)
+- ✅ PostHog dashboards on webapp + marketing site
+- ✅ Pinterest, Instagram, TikTok accounts active (daily posting)
+- ✅ DM outreach workflow to Etsy sellers
 
 ### Pipelines & Automation
 - ✅ SEO content pipeline (10 pages/week target)
@@ -60,6 +64,8 @@ $1M ARR requires:
 - ✅ Remotion video rendering (TikTokVertical template)
 - ✅ Outreach tracker
 - ✅ Growth reporter
+- ✅ Partner program (landing page + ref tracking + PostHog attribution)
+- ✅ PostHog API CLI access (query events, persons, funnels via personal API key)
 - ✅ Buffer API integration
 - ✅ Cloudflare R2 for content hosting
 
@@ -78,20 +84,38 @@ $1M ARR requires:
 
 ## What's NOT Built Yet
 
-- ❌ Landing → App UTM attribution
+- ✅ ~~Landing → App UTM attribution~~ (ref/source tracking via PartnerRefCapture)
+- ✅ ~~Affiliate program~~ (partner page live, ref tracking working)
 - ❌ Revenue dashboard (MRR tracking view)
+- ❌ Analytics agent team (PostHog API querying, funnel analysis, automated reports) — trigger: 100+ users
+- ❌ Automated partner commission tracking (Stripe Connect) — trigger: 3+ active partners
 - ❌ In-product upsell modal
-- ❌ Pinterest business account (not set up)
-- ❌ TikTok/Instagram accounts (not set up)
 - ❌ YouTube channel
-- ❌ Affiliate program
 - ❌ Paid acquisition
 - ❌ Batch processing feature
 - ❌ Premium tier
 
 ---
 
-## Completed This Week (2026-03-17)
+## Completed This Week (2026-03-19)
+- ✅ Partner program live: /partners landing page + /ref/[name] referral redirects
+- ✅ Partner referral tracking: PostHog person properties (partner_ref, partner_source) verified working
+- ✅ PostHog API CLI access: query events, persons, funnels via personal API key
+- ✅ UTMPersistence updated to forward ref/source params to app links
+- ✅ Footer updated with Partner Program link
+- ✅ Docs: PARTNER_PROGRAM.md, APP_PARTNER_TRACKING_SPEC.md, NotebookLM synced
+- ✅ CLAUDE.md: added secrets-in-committed-files rule
+
+## Completed Previous Week (2026-03-18)
+- ✅ 2 new SEO pages: etsy-16x20-print-size, best-file-format-etsy-printables
+- ✅ Lead capture fully live: email + PDF cheat sheet + 2 automated follow-up emails
+- ✅ PostHog dashboards built for webapp + marketing site click tracking
+- ✅ Social media active daily: Pinterest 4/day, Instagram 2-3/day + reels, TikTok 1/day
+- ✅ DM outreach to Etsy sellers started (5-10/day)
+- ✅ Mega menu navigation deployed
+- ✅ Scaling plan updated — dropped Reddit/Facebook (bad ROI)
+
+## Completed Last Week (2026-03-17)
 - ✅ 3 new SEO pages: best-resolution-for-etsy-printables, how-many-sizes-etsy-printable, how-to-package-digital-wall-art-for-etsy
 - ✅ Hero upgrades for how-to-sell-digital-downloads + what-files-to-include (CSS-only visuals)
 - ✅ Cross-linking between all new pages + nav/footer entries
