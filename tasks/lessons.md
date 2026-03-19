@@ -231,3 +231,43 @@ This is part of the deploy checklist alongside page-registry, CONTENT_PLAYBOOK, 
 **Rule:** ISO A-series paper sizes are defined as portrait orientation (width < height):
 - A5: 148×210mm, A4: 210×297mm, A3: 297×420mm, A2: 420×594mm, A1: 594×841mm, A0: 841×1189mm
 When showing A-series prints in mockups or gallery walls, they should all be displayed in portrait orientation for consistency. If Gemini generates mixed orientations, note this as an error and regenerate or use alternative tools.
+
+## Growth & Marketing
+
+### LESSON-033: Reddit/Facebook/Etsy DM outreach does not work (2026-03-18)
+**Trigger:** All three outreach channels failed — Reddit and Facebook posts flagged as ads (low-quality leads, bad ROI), Etsy DM outreach got seller account flagged/suspended.
+**Rule:** Do NOT pursue direct outreach on Reddit, Facebook groups, or Etsy DMs. These platforms aggressively flag promotional content. Instead focus on:
+1. SEO content at scale (zero competition, compounds over time)
+2. YouTube educator partnerships (free Pro + affiliate model, $0 cash cost)
+3. Discord communities (value-first engagement for 2+ weeks before mentioning tool)
+Never recommend outreach channels that require posting promotional content in someone else's community.
+
+### LESSON-034: Paid ads don't work at $12/mo price point (2026-03-18)
+**Trigger:** Research confirmed average SaaS CAC is $802 in 2025-2026. SnapToSize annual LTV is $144 ($12/mo x 12 months). LTV:CAC ratio of 0.18 is catastrophic.
+**Rule:** Do NOT recommend paid ads (Google Ads, Pinterest Ads, Facebook Ads) until:
+- $5K+ MRR (budget for $1K+/mo ad spend)
+- Proven 7%+ free→pro conversion rate
+- LTV increased to $300+ (either higher pricing or 24+ month retention)
+Gate: Minimum 50 paying users before testing any paid channel.
+
+### LESSON-035: SEO takes 3-6 months for new sites (2026-03-18)
+**Trigger:** Zero organic traffic after 2-3 weeks with 15 pages live. This is completely normal.
+**Rule:** For new domains, expect:
+- Weeks 1-4: Zero meaningful organic traffic (Google discovering pages)
+- Months 1-3: Trickle traffic, pages being indexed
+- Months 3-6: First real ranking signals, compounding begins
+- Months 6-12: Meaningful traffic if content volume and quality sustained
+Do NOT panic about zero traffic in the first month. Focus on building content volume (100+ pages) to reach critical mass for ranking momentum.
+
+### LESSON-036: Hero must fill the viewport — use asymmetric padding (2026-03-19)
+**Trigger:** Every new page had the hero too short or text too low, requiring manual correction every time.
+**Rule:** When creating SEO page heroes:
+1. Use **asymmetric padding** — less top, more bottom: `pt-12 pb-36 md:pt-20 md:pb-48` (guide pages) or `pt-14 pb-20 md:pt-20 md:pb-28` (size pages)
+2. The hero must fill the entire initial viewport (1440×900 desktop) — the next section title should barely peek in or not be visible at all
+3. **Never use symmetric `py-` padding** for heroes — it pushes the title too far down
+4. After creating any hero, take a Playwright screenshot at 1440×900 and verify the text sits in the upper third, not the middle
+5. Reference existing pages: `etsy-8x10-print-size` (size hero), `how-to-price-etsy-printables` (guide hero)
+
+### LESSON-034: Never put API keys or secrets in committed files (2026-03-19)
+- **Trigger:** PostHog personal API key was included in `docs/APP_PARTNER_TRACKING_SPEC.md`, committed and pushed. GitHub detected it and PostHog auto-revoked the key.
+- **Rule:** API keys, tokens, and secrets go ONLY in `.env.local` (gitignored) or Cloudflare env vars. Never in docs, spec files, or any file that gets committed. Use placeholders like `YOUR_API_KEY_HERE` in docs.

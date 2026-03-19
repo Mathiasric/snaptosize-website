@@ -126,6 +126,14 @@ Production safe
 No experimental patterns.
 No speculative optimizations.
 
+No Secrets in Committed Files
+NEVER put API keys, tokens, passwords, or secrets in any file that gets committed to git.
+Secrets go ONLY in:
+- `.env.local` (gitignored)
+- Cloudflare Pages environment variables
+- Use placeholders like `YOUR_API_KEY_HERE` in docs and specs.
+This is a hard rule. Violation causes automatic key revocation by providers.
+
 When Uncertain
 If any of the following is unclear:
 
