@@ -118,5 +118,21 @@
     "keywords": ["best file format for etsy printables", "etsy digital download file type", "PDF vs PNG etsy", "what format for etsy printables"],
     "cluster": "guides",
     "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-20mb-file-limit", "what-files-to-include-etsy-digital-download", "best-resolution-for-etsy-printables", "how-to-resize-images-for-etsy", "how-to-package-digital-wall-art-for-etsy"]
+  },
+  {
+    "slug": "etsy-24x36-print-size",
+    "title": "24×36 Print Size for Etsy",
+    "pageType": "size",
+    "keywords": ["etsy 24x36 print size", "24x36 poster print etsy", "24x36 digital print dimensions", "24x36 print pixels"],
+    "cluster": "sizes",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-8x10-print-size", "etsy-16x20-print-size", "etsy-5x7-print-size", "best-resolution-for-etsy-printables", "how-to-resize-images-for-etsy", "etsy-20mb-file-limit"]
+  },
+  {
+    "slug": "how-to-price-etsy-printables",
+    "title": "How to Price Etsy Printables",
+    "pageType": "guide",
+    "keywords": ["how to price etsy printables", "etsy printable pricing calculator", "etsy digital product pricing strategy", "pricing multiple sizes etsy printables"],
+    "cluster": "guides",
+    "relatedSlugs": ["how-to-sell-digital-downloads-on-etsy", "how-many-sizes-etsy-printable", "what-files-to-include-etsy-digital-download", "etsy-print-sizes", "how-to-package-digital-wall-art-for-etsy", "best-resolution-for-etsy-printables"]
   }
 ]

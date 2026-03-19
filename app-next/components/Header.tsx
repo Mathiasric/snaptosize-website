@@ -135,6 +135,9 @@ export function Header() {
                     <Link href="/etsy-16x20-print-size" className="block py-1 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
                       16×20 Print Size
                     </Link>
+                    <Link href="/etsy-24x36-print-size" className="block py-1 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
+                      24×36 Print Size
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -163,6 +166,9 @@ export function Header() {
                   </Link>
                   <Link href="/best-file-format-etsy-printables" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                     Best File Format
+                  </Link>
+                  <Link href="/how-to-price-etsy-printables" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    How to Price Printables
                   </Link>
                 </div>
               </div>
@@ -243,6 +249,9 @@ export function Header() {
                         <Link href="/etsy-16x20-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           16×20 Print Size
                         </Link>
+                        <Link href="/etsy-24x36-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          24×36 Print Size
+                        </Link>
                         <Link href="/etsy-print-ratios" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Etsy Print Ratios
                         </Link>
@@ -273,6 +282,9 @@ export function Header() {
                         </Link>
                         <Link href="/best-file-format-etsy-printables" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Best File Format
+                        </Link>
+                        <Link href="/how-to-price-etsy-printables" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          How to Price Printables
                         </Link>
 
                         {/* Troubleshooting */}

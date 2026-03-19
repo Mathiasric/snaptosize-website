@@ -56,6 +56,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-24x36-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                  24×36 Print Size
+                </Link>
+              </li>
+              <li>
                 <Link href="/etsy-print-ratios" className="transition-colors hover:text-accent-light">
                   Etsy Print Ratios
                 </Link>
@@ -104,6 +109,11 @@ export function Footer() {
               <li>
                 <Link href="/best-file-format-etsy-printables" className="transition-colors hover:text-accent-light">
                   Best File Format
+                </Link>
+              </li>
+              <li>
+                <Link href="/how-to-price-etsy-printables" className="transition-colors hover:text-accent-light">
+                  How to Price Printables
                 </Link>
               </li>
               <li>
