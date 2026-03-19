@@ -79,7 +79,7 @@ if (ref) {
 The marketing site repo has the personal API key stored. For the app repo, add to `.env.local`:
 
 ```
-POSTHOG_PERSONAL_API_KEY=phx_ptIbo5e8eNpmFNsMhRcj6Bz811mc3tQEFexzEhXblkVNmXg
+POSTHOG_PERSONAL_API_KEY=YOUR_POSTHOG_PERSONAL_API_KEY
 POSTHOG_PROJECT_ID=131652
 ```
 
@@ -87,11 +87,11 @@ Query partner conversions:
 ```bash
 # All persons with a partner_ref
 curl -s "https://eu.posthog.com/api/projects/131652/persons/?properties=%5B%7B%22key%22%3A%22partner_ref%22%2C%22value%22%3A%22is_set%22%2C%22operator%22%3A%22is_set%22%2C%22type%22%3A%22person%22%7D%5D" \
-  -H "Authorization: Bearer phx_ptIbo5e8eNpmFNsMhRcj6Bz811mc3tQEFexzEhXblkVNmXg"
+  -H "Authorization: Bearer YOUR_POSTHOG_PERSONAL_API_KEY"
 
 # Checkout events with partner_ref
 curl -s "https://eu.posthog.com/api/projects/131652/events/?event=checkout_completed&properties=%5B%7B%22key%22%3A%22partner_ref%22%2C%22value%22%3A%22is_set%22%2C%22operator%22%3A%22is_set%22%7D%5D" \
-  -H "Authorization: Bearer phx_ptIbo5e8eNpmFNsMhRcj6Bz811mc3tQEFexzEhXblkVNmXg"
+  -H "Authorization: Bearer YOUR_POSTHOG_PERSONAL_API_KEY"
 ```
 
 ## How to Query from NotebookLM
