@@ -150,7 +150,7 @@ export default function HowToPriceEtsyPrintablesPage() {
 
       {/* ===== HERO ===== */}
       <section
-        className="relative py-28 md:py-40 overflow-hidden"
+        className="relative pt-12 pb-36 md:pt-20 md:pb-48 overflow-hidden"
         style={{
           background:
             "linear-gradient(145deg, #030712 0%, #0c1222 35%, #0a0f1e 70%, #030712 100%)",
