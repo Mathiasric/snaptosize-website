@@ -134,5 +134,13 @@
     "keywords": ["how to price etsy printables", "etsy printable pricing calculator", "etsy digital product pricing strategy", "pricing multiple sizes etsy printables"],
     "cluster": "guides",
     "relatedSlugs": ["how-to-sell-digital-downloads-on-etsy", "how-many-sizes-etsy-printable", "what-files-to-include-etsy-digital-download", "etsy-print-sizes", "how-to-package-digital-wall-art-for-etsy", "best-resolution-for-etsy-printables"]
+  },
+  {
+    "slug": "partners",
+    "title": "Partner Program — Earn 25% Commission for 12 Months",
+    "pageType": "landing",
+    "keywords": ["snaptosize partner program", "etsy educator affiliate", "snaptosize referral"],
+    "cluster": "company",
+    "relatedSlugs": ["pricing", "faq"]
   }
 ]

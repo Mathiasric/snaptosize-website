@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 
 const UTM_STORAGE_KEY = "utm_params";
-const UTM_PARAMS = ["utm_source", "utm_medium", "utm_campaign", "utm_content"];
+const UTM_PARAMS = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "ref", "source"];
 
 /**
  * UTM Persistence Component

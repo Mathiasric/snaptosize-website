@@ -146,15 +146,22 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-3">Support</h3>
-            <p className="text-sm text-foreground-60">
-              <a
-                href="mailto:support@snaptosize.com"
-                className="transition-colors hover:text-accent-light"
-              >
-                support@snaptosize.com
-              </a>
-            </p>
+            <h3 className="font-semibold mb-3">Company</h3>
+            <ul className="space-y-2 text-sm text-foreground-60">
+              <li>
+                <Link href="/partners" className="transition-colors hover:text-accent-light">
+                  Partner Program
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="mailto:support@snaptosize.com"
+                  className="transition-colors hover:text-accent-light"
+                >
+                  support@snaptosize.com
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
