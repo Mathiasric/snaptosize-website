@@ -744,7 +744,15 @@ export default function Etsy24x36PrintSizePage() {
                   4×6
                 </Link>
                 ) to create a cohesive multi-print layout. All sizes share the
-                same 2:3 proportions, so they visually align.
+                same 2:3 proportions, so they visually align. For a different
+                ratio at a similar scale, see the{" "}
+                <Link
+                  href="/etsy-18x24-print-size"
+                  className="text-accent-light hover:underline"
+                >
+                  18×24 (3:4 ratio)
+                </Link>{" "}
+                guide.
               </p>
 
               <Card className="p-6 bg-accent/10 border-accent/20">

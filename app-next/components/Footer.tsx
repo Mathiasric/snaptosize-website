@@ -61,6 +61,16 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-18x24-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                  18×24 Print Size
+                </Link>
+              </li>
+              <li>
+                <Link href="/etsy-nursery-wall-art-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                  Nursery Wall Art Sizes
+                </Link>
+              </li>
+              <li>
                 <Link href="/etsy-print-ratios" className="transition-colors hover:text-accent-light">
                   Etsy Print Ratios
                 </Link>

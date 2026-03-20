@@ -136,6 +136,22 @@
     "relatedSlugs": ["how-to-sell-digital-downloads-on-etsy", "how-many-sizes-etsy-printable", "what-files-to-include-etsy-digital-download", "etsy-print-sizes", "how-to-package-digital-wall-art-for-etsy", "best-resolution-for-etsy-printables"]
   },
   {
+    "slug": "etsy-18x24-print-size",
+    "title": "18×24 Print Size for Etsy",
+    "pageType": "size",
+    "keywords": ["etsy 18x24 print size", "18x24 print dimensions 300 dpi", "18x24 aspect ratio", "18x24 poster size"],
+    "cluster": "sizes",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-24x36-print-size", "etsy-16x20-print-size", "best-resolution-for-etsy-printables", "how-to-resize-images-for-etsy"]
+  },
+  {
+    "slug": "etsy-nursery-wall-art-sizes",
+    "title": "Nursery Wall Art Sizes for Etsy",
+    "pageType": "niche",
+    "keywords": ["nursery wall art sizes etsy", "baby room print sizes", "nursery printable sizes", "kids room wall art dimensions"],
+    "cluster": "niches",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-8x10-print-size", "etsy-5x7-print-size", "etsy-16x20-print-size", "how-many-sizes-etsy-printable", "how-to-package-digital-wall-art-for-etsy"]
+  },
+  {
     "slug": "partners",
     "title": "Partner Program — Earn 25% Commission for 12 Months",
     "pageType": "landing",

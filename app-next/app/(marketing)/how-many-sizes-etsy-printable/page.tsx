@@ -396,7 +396,14 @@ export default function HowManySizesEtsyPrintablePage() {
                   <p className="text-foreground-60 text-sm">
                     24&times;36 and 20&times;30 are popular for statement pieces.
                     These buyers often spend more and leave better reviews. Don&apos;t
-                    leave high-value customers without their size.
+                    leave high-value customers without their size. For niche-specific
+                    sizing, see our{" "}
+                    <Link
+                      href="/etsy-nursery-wall-art-sizes"
+                      className="text-accent-light hover:underline"
+                    >
+                      nursery wall art sizes guide
+                    </Link>.
                   </p>
                 </Card>
               </div>

@@ -1,12 +1,12 @@
 # MILESTONES.md — Revenue Targets & Progress
-**Last updated:** 2026-03-18
+**Last updated:** 2026-03-20
 
 ---
 
 ## Current State
 - **Paying users:** 1
 - **MRR:** $12
-- **SEO pages live:** 15
+- **SEO pages live:** 19
 - **First paying customer:** 2026-03-03
 - **Target:** $1M ARR (~7,500 paying users)
 
@@ -105,6 +105,9 @@ $1M ARR requires:
 - ✅ Footer updated with Partner Program link
 - ✅ Docs: PARTNER_PROGRAM.md, APP_PARTNER_TRACKING_SPEC.md, NotebookLM synced
 - ✅ CLAUDE.md: added secrets-in-committed-files rule
+- ✅ Educator outreach prep: 20 prospects researched, 20 personalized emails written, follow-up templates ready
+- ✅ Outreach tracker populated (20 entries) — ready to send
+- ✅ Gap analysis: educator content vs SnapToSize features (95% coverage, no blockers)
 
 ## Completed Previous Week (2026-03-18)
 - ✅ 2 new SEO pages: etsy-16x20-print-size, best-file-format-etsy-printables

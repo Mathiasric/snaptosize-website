@@ -293,7 +293,8 @@ export default function EtsyPrintRatiosPage() {
                   <h3 className="text-xl font-bold mb-2">3:4 Ratio</h3>
                   <p className="text-sm text-foreground-60 mb-3">
                     Classic photo frame ratio. Found in standard picture frames and art prints.
-                    Includes sizes like 6×8, 9×12, 12×16, 18×24, 24×32.
+                    Includes sizes like 6×8, 9×12, 12×16,{" "}
+                    <Link href="/etsy-18x24-print-size" className="text-accent-light hover:underline">18×24</Link>, 24×32.
                   </p>
                   <p className="text-xs text-foreground-60">
                     <strong>Why it matters:</strong> Many buyers have existing 3:4 frames from family photos.

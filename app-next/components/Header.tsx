@@ -138,6 +138,14 @@ export function Header() {
                     <Link href="/etsy-24x36-print-size" className="block py-1 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
                       24×36 Print Size
                     </Link>
+                    <Link href="/etsy-18x24-print-size" className="block py-1 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
+                      18×24 Print Size
+                    </Link>
+                  </div>
+                  <div className="pt-2 mt-2 border-t border-border/50 space-y-0.5">
+                    <Link href="/etsy-nursery-wall-art-sizes" className="block py-1 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
+                      Nursery Wall Art Sizes
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -251,6 +259,12 @@ export function Header() {
                         </Link>
                         <Link href="/etsy-24x36-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           24×36 Print Size
+                        </Link>
+                        <Link href="/etsy-18x24-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          18×24 Print Size
+                        </Link>
+                        <Link href="/etsy-nursery-wall-art-sizes" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Nursery Wall Art Sizes
                         </Link>
                         <Link href="/etsy-print-ratios" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Etsy Print Ratios

@@ -95,7 +95,7 @@ export default function HowToPackageDigitalWallArtForEtsyPage() {
         name: "How many sizes should I include in a digital wall art download?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "20-30 sizes across 5 ratio packs (2:3, 3:4, 4:5, ISO, extras) to cover every common frame size buyers own.",
+          text: "20-30 sizes across 5 ratio packs (2:3, 3:4, 4:5, ISO, extras) to cover every common frame size buyers own. For nursery wall art, see our nursery size guide at snaptosize.com/etsy-nursery-wall-art-sizes.",
         },
       },
       {
@@ -631,7 +631,14 @@ export default function HowToPackageDigitalWallArtForEtsyPage() {
                 >
                   how many sizes to include in your Etsy printable
                 </Link>
-                .
+                . Selling nursery art? See our{" "}
+                <Link
+                  href="/etsy-nursery-wall-art-sizes"
+                  className="text-accent-light hover:underline"
+                >
+                  nursery wall art sizes guide
+                </Link>{" "}
+                for niche-specific bundling strategies.
               </p>
             </div>
 

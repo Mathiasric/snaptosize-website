@@ -27,7 +27,7 @@
 - Hero design via `frontend-design` skill — unique CSS-only hero per page, no plain gradients
 - Page registry (`app-next/data/page-registry.json`) auto-manages sitemap + internal links
 
-**Live pages (17):** etsy-print-sizes, etsy-print-ratios, etsy-20mb-file-limit, how-to-sell-digital-downloads-on-etsy, what-files-to-include-etsy-digital-download, etsy-8x10-print-size, etsy-5x7-print-size, etsy-digital-download-not-selling, how-to-sell-printables-on-etsy-without-photoshop, how-to-resize-images-for-etsy, best-resolution-for-etsy-printables, how-many-sizes-etsy-printable, how-to-package-digital-wall-art-for-etsy, sizes, etsy-16x20-print-size, best-file-format-etsy-printables, etsy-24x36-print-size, how-to-price-etsy-printables
+**Live pages (19):** etsy-print-sizes, etsy-print-ratios, etsy-20mb-file-limit, how-to-sell-digital-downloads-on-etsy, what-files-to-include-etsy-digital-download, etsy-8x10-print-size, etsy-5x7-print-size, etsy-digital-download-not-selling, how-to-sell-printables-on-etsy-without-photoshop, how-to-resize-images-for-etsy, best-resolution-for-etsy-printables, how-many-sizes-etsy-printable, how-to-package-digital-wall-art-for-etsy, sizes, etsy-16x20-print-size, best-file-format-etsy-printables, etsy-24x36-print-size, how-to-price-etsy-printables, etsy-18x24-print-size, etsy-nursery-wall-art-sizes
 
 **First size-specific page deployed:** etsy-8x10-print-size (CSS-only blueprint hero, 4:5 ratio family table, 6 FAQs, OG image). Use as template for future size pages.
 
