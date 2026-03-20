@@ -17,7 +17,7 @@ export function FinalCTASection() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="text-base px-8 py-4">Start Free →</Button>
+            <Button className="text-base px-8 py-4">Create Your First Print Pack — Free →</Button>
           </a>
         </div>
       </Container>

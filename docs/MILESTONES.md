@@ -94,6 +94,9 @@ $1M ARR requires:
 - ❌ Paid acquisition
 - ❌ Batch processing feature
 - ❌ Premium tier
+- ❌ Planner/printable layout adaptation (Letter→A4→A5 re-layout) — adjacent market, different product. Explore after wall art PMF proven.
+- ❌ Auto mockup generator (upload image → 10-20 frame/wall mockups) — bundle with SnapToSize as premium tier ($29/mo). Trigger: 10+ paying users. Proves resize demand first, then add mockups for higher price + lower churn.
+- ❌ Community listening agent — monitors Reddit/Etsy forums for sizing pain points, feeds into SEO + social pipelines
 
 ---
 
