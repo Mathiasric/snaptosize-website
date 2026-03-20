@@ -5,14 +5,14 @@ import { Card } from "@/components/Card";
 import { Accordion } from "@/components/Accordion";
 
 export const metadata: Metadata = {
-  title: "Partner Program — Earn 25% Commission for 12 Months",
+  title: "Partner Program — Earn 25% Recurring Commission for Life",
   description:
-    "Join the SnapToSize partner program. Get free Pro access, earn 25% commission for 12 months, and help Etsy sellers resize images faster.",
+    "Join the SnapToSize partner program. Get free Pro access, earn 25% recurring commission for life, and help Etsy sellers resize images faster.",
   alternates: { canonical: "https://snaptosize.com/partners" },
   openGraph: {
-    title: "Partner Program — Earn 25% Commission for 12 Months | SnapToSize",
+    title: "Partner Program — Earn 25% Recurring Commission for Life | SnapToSize",
     description:
-      "Get free Pro access, earn 25% commission for 12 months, and help Etsy sellers resize images faster.",
+      "Get free Pro access, earn 25% recurring commission for life, and help Etsy sellers resize images faster.",
     url: "https://snaptosize.com/partners",
   },
 };
@@ -24,7 +24,7 @@ export default function PartnersPage() {
     name: "SnapToSize Partner Program",
     url: "https://snaptosize.com/partners",
     description:
-      "Join the SnapToSize partner program. Free Pro access and 25% commission for 12 months for Etsy educators.",
+      "Join the SnapToSize partner program. Free Pro access and 25% recurring commission for life for Etsy educators.",
     publisher: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -49,7 +49,7 @@ export default function PartnersPage() {
       number: "3",
       title: "Earn Commission",
       description:
-        "Share your link with your audience. Earn 25% commission on every Pro signup for the first 12 months.",
+        "Share your link with your audience. Earn 25% recurring commission on every Pro signup — for life.",
     },
   ];
 
@@ -69,7 +69,7 @@ export default function PartnersPage() {
             </p>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
               Teach Etsy Sellers.{" "}
-              <span className="text-accent-light">Earn 25% for 12 Months.</span>
+              <span className="text-accent-light">Earn 25% for Life.</span>
             </h1>
             <p className="text-lg text-foreground-60 mb-8 max-w-2xl mx-auto">
               You already help Etsy sellers succeed. Now recommend the tool that
@@ -95,10 +95,10 @@ export default function PartnersPage() {
                 <div className="text-3xl font-bold text-accent-light mb-2">
                   25%
                 </div>
-                <h3 className="font-semibold mb-2">Commission for 12 Months</h3>
+                <h3 className="font-semibold mb-2">Lifetime Commission</h3>
                 <p className="text-sm text-foreground-60">
                   Earn 25% of every Pro subscription you refer — monthly or
-                  yearly — for the first 12 months.
+                  yearly — for as long as they stay subscribed.
                 </p>
               </Card>
               <Card className="p-6 text-center">
@@ -198,8 +198,8 @@ export default function PartnersPage() {
               <Accordion question="When do I get paid?">
                 <p>
                   Commission is paid monthly via PayPal or bank transfer for
-                  the first 12 months of each referral, with a 30-day delay to
-                  account for refunds. Minimum payout is $25.
+                  as long as the referral stays subscribed, with a 30-day delay
+                  to account for refunds. Minimum payout is $25.
                 </p>
               </Accordion>
               <Accordion question="Is there a minimum audience size?">
@@ -217,9 +217,9 @@ export default function PartnersPage() {
               </Accordion>
               <Accordion question="What if a referral cancels?">
                 <p>
-                  Commission stops when the referred user cancels or after 12
-                  months, whichever comes first. There are no clawbacks on
-                  previously paid commission.
+                  Commission stops when the referred user cancels their
+                  subscription. There are no clawbacks on previously paid
+                  commission.
                 </p>
               </Accordion>
             </div>

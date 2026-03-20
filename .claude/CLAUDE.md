@@ -244,7 +244,9 @@ The following skills are available and MUST be activated when their domain is re
 Always read the appropriate SKILL.md before starting work in that domain.
 Using skills produces significantly better output than general knowledge alone.
 Keyword / DomainSkillfrontend, UI, component, layout, design systemfrontend-designSEO audit, technical SEO, on-page SEO, meta tagsseo-auditschema, structured data, JSON-LD, rich snippetsschema-markupprogrammatic SEO, pages at scale, template pagesprogrammatic-seosocial media, Pinterest, Instagram, LinkedIn postsocial-contentmarketing ideas, growth tactics, acquisition channelsmarketing-ideaspsychology, persuasion, behavioral science, copymarketing-psychologypricing, tiers, packaging, monetizationpricing-strategycompetitor page, alternatives page, vs pagecompetitor-alternativesreferral program, affiliate, word of mouthreferral-programpositioning, ICP, product marketing contextproduct-marketing-contextvideo, remotion, animation, TikTok video, Reels, video pinremotion
+Keyword / DomainSkillstrategy, priorities, where to focus, session start, decision makingstrategic-advisor
 Rule: If a task touches any domain above → read the SKILL.md first, then execute.
+Rule: Run `/strategy` at session start when unsure what to work on. It queries NotebookLM.
 AGENTS
 Agent definitions live in /claude/agents/.
 Active agents:
