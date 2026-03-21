@@ -403,7 +403,7 @@ export default function EtsyPrintSizesPage() {
                     {
                       title: "Uploading only one size",
                       description:
-                        "Buyers ask for 8×10, A4, 11×14. You end up resizing manually per order.",
+                        <>Buyers ask for 8×10, <Link href="/etsy-a4-print-size" className="text-accent-light hover:underline">A4</Link>, <Link href="/etsy-11x14-print-size" className="text-accent-light hover:underline">11×14</Link>. You end up resizing manually per order.</>,
                     },
                     {
                       title: "Cropping to force ratios",

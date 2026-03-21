@@ -477,7 +477,7 @@ export default function EtsyNurseryWallArtSizesPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">
-                        11×14 &mdash; Statement Piece
+                        <Link href="/etsy-11x14-print-size" className="text-accent-light hover:underline">11×14</Link> &mdash; Statement Piece
                       </h3>
                       <p className="text-foreground-60 text-sm">
                         Large enough to anchor a gallery wall. Often used as the
@@ -498,7 +498,7 @@ export default function EtsyNurseryWallArtSizesPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">
-                        A4 &mdash; International Standard
+                        <Link href="/etsy-a4-print-size" className="text-accent-light hover:underline">A4</Link> &mdash; International Standard
                       </h3>
                       <p className="text-foreground-60 text-sm">
                         Standard frame size in the UK, Europe, and Australia. If

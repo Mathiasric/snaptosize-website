@@ -621,7 +621,7 @@ export default function Etsy8x10PrintSizePage() {
               <p className="text-foreground-60 mb-6">
                 8×10 prints fit directly into standard 8×10 frames with no mat
                 required. For a gallery look, the most common setup is an 8×10
-                print matted inside an 11×14 frame. Mentioning this in your
+                print matted inside an <Link href="/etsy-11x14-print-size" className="text-accent-light hover:underline">11×14 frame</Link>. Mentioning this in your
                 listing description reduces buyer questions and increases
                 perceived value.
               </p>

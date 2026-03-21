@@ -179,12 +179,12 @@ export default function HowToResizeImagesForEtsyPage() {
     { size: "5×7", px: "1500 × 2100", ratio: "Extras" },
     { size: "8×10", px: "2400 × 3000", ratio: "4:5" },
     { size: "8.5×11", px: "2550 × 3300", ratio: "Extras" },
-    { size: "11×14", px: "3300 × 4200", ratio: "Extras" },
+    { size: "11×14", px: "3300 × 4200", ratio: "Extras", href: "/etsy-11x14-print-size" },
     { size: "12×18", px: "3600 × 5400", ratio: "2:3" },
     { size: "16×20", px: "4800 × 6000", ratio: "4:5" },
     { size: "18×24", px: "5400 × 7200", ratio: "3:4" },
     { size: "24×36", px: "7200 × 10800", ratio: "2:3" },
-    { size: "A4", px: "2480 × 3508", ratio: "ISO" },
+    { size: "A4", px: "2480 × 3508", ratio: "ISO", href: "/etsy-a4-print-size" },
   ];
 
   return (
@@ -496,7 +496,7 @@ export default function HowToResizeImagesForEtsyPage() {
                           row.size === "8×10" ? "bg-accent/5" : ""
                         }`}
                       >
-                        <td className="py-3 px-4 font-semibold">{row.size}</td>
+                        <td className="py-3 px-4 font-semibold">{row.href ? <Link href={row.href} className="text-accent-light hover:underline">{row.size}</Link> : row.size}</td>
                         <td className="py-3 px-4 text-foreground-60 font-mono text-xs">
                           {row.px}
                         </td>

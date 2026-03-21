@@ -652,7 +652,7 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
                         4. ISO A-Series Pack (International)
                       </h4>
                       <p className="text-sm text-foreground-60 mb-2">
-                        Contains: A5, A4, A3, A2, A1, A0
+                        Contains: A5, <Link href="/etsy-a4-print-size" className="text-accent-light hover:underline">A4</Link>, A3, A2, A1, A0
                       </p>
                       <p className="text-xs text-foreground-60">
                         Standard in Europe, Australia, Asia. Essential for
@@ -670,7 +670,7 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
                         5. Extras Pack (Common Requests)
                       </h4>
                       <p className="text-sm text-foreground-60 mb-2">
-                        Contains: 5×7, 8.5×11, 11×14, 11×17, 16×20, 20×24
+                        Contains: 5×7, 8.5×11, <Link href="/etsy-11x14-print-size" className="text-accent-light hover:underline">11×14</Link>, 11×17, 16×20, 20×24
                       </p>
                       <p className="text-xs text-foreground-60">
                         Frequently requested sizes that don&apos;t fit standard

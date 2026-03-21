@@ -141,6 +141,12 @@ export function Header() {
                     <Link href="/etsy-18x24-print-size" className="block py-1 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
                       18×24 Print Size
                     </Link>
+                    <Link href="/etsy-11x14-print-size" className="block py-1 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
+                      11×14 Print Size
+                    </Link>
+                    <Link href="/etsy-a4-print-size" className="block py-1 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
+                      A4 Print Size (International)
+                    </Link>
                   </div>
                   <div className="pt-2 mt-2 border-t border-border/50 space-y-0.5">
                     <Link href="/etsy-nursery-wall-art-sizes" className="block py-1 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
@@ -262,6 +268,12 @@ export function Header() {
                         </Link>
                         <Link href="/etsy-18x24-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           18×24 Print Size
+                        </Link>
+                        <Link href="/etsy-11x14-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          11×14 Print Size
+                        </Link>
+                        <Link href="/etsy-a4-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          A4 Print Size (International)
                         </Link>
                         <Link href="/etsy-nursery-wall-art-sizes" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Nursery Wall Art Sizes

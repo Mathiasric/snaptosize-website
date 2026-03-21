@@ -354,7 +354,7 @@ export default function HowManySizesEtsyPrintablePage() {
                 Why Size Coverage Matters for Etsy Sales
               </h2>
               <p className="text-foreground-60 mb-4">
-                When a buyer sees &ldquo;8&times;10, 11&times;14,
+                When a buyer sees &ldquo;8&times;10, <Link href="/etsy-11x14-print-size" className="text-accent-light hover:underline">11&times;14</Link>,
                 16&times;20&rdquo; listed, they immediately wonder: will this
                 work in my 18&times;24 frame? Incomplete size coverage creates
                 doubt. Doubt kills conversions.
@@ -383,7 +383,7 @@ export default function HowManySizesEtsyPrintablePage() {
                     European buyers need ISO sizes
                   </h3>
                   <p className="text-foreground-60 text-sm">
-                    A4, A3, A2, A1 are standard in Europe, Australia, and most
+                    <Link href="/etsy-a4-print-size" className="text-accent-light hover:underline">A4</Link>, A3, A2, A1 are standard in Europe, Australia, and most
                     of the world. Skipping ISO sizes means losing international
                     customers entirely &mdash; and Etsy is a global marketplace.
                   </p>
