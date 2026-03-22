@@ -33,7 +33,7 @@ export function FAQAccordion({ items }: FAQAccordionProps) {
       {items.map((item, index) => {
         const isOpen = openItems.has(index);
         return (
-          <Card key={index}>
+          <Card key={index} className={`transition-all duration-200 ${isOpen ? "border-l-2 border-l-[#2DD4BF]" : ""}`}>
             <button
               onClick={() => toggleItem(index)}
               aria-expanded={isOpen}
