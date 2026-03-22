@@ -6,7 +6,8 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle, FileText, FolderArchive } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCapture } from "@/components/EmailCapture";
+import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
@@ -516,7 +517,8 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
                 </div>
                 <p className="text-xs text-foreground-60 mt-3">
                   Formula: (width in inches) × 300 = pixel width · (height in
-                  inches) × 300 = pixel height
+                  inches) × 300 = pixel height. Want to skip the math? Our{" "}
+                  <Link href="/etsy-print-size-calculator" className="text-accent-light hover:underline">print size calculator</Link> shows every dimension and estimated file size for your image instantly.
                 </p>
               </div>
 
@@ -937,51 +939,24 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
             </div>
 
             {/* ===== FINAL CTA ===== */}
-            <div className="text-center pt-8 pb-8">
-              <Card accent className="p-8">
-                <h2 className="text-2xl font-bold mb-4">
-                  Generate Perfect File Packages in Seconds
-                </h2>
-                <p className="text-foreground-60 mb-6">
-                  Stop worrying about file formats, resolution, naming, and
-                  Etsy&apos;s limits. Upload once, download perfectly formatted
-                  files ready to upload to your listing.
-                </p>
-                <div className="flex flex-wrap gap-4 justify-center">
-                  <a href={appUrl} target="_blank" rel="noopener noreferrer">
-                    <Button className="text-base px-7 py-3">Start Free</Button>
-                  </a>
-                  <Link href="/pricing">
-                    <Button variant="secondary" className="text-base px-7 py-3">
-                      See Pricing
-                    </Button>
-                  </Link>
-                </div>
-                <p className="text-xs text-foreground-60 mt-4">
-                  No credit card required. Free plan includes watermarked
-                  exports.
-                </p>
-              </Card>
+            <div>
+              <FinalCTA
+                heading="Generate Perfect File Packages in Seconds"
+                stat="Complete file packs that buyers love"
+                description="Stop worrying about file formats, resolution, naming, and Etsy's limits. Upload once, download perfectly formatted files ready to upload to your listing."
+                buttonText="Start Free"
+                appUrl={appUrl}
+              />
             </div>
 
             {/* Lead Capture */}
             <div className="pb-12">
-              <Card accent className="p-6 md:p-8">
-                <div className="max-w-xl mx-auto text-center">
-                  <h3 className="text-xl md:text-2xl font-bold mb-3">
-                    Free Etsy Print Size Cheat Sheet
-                  </h3>
-                  <p className="text-sm text-foreground-60 mb-5">
-                    Get all Etsy ratios and pixel dimensions at 300 DPI in one
-                    handy PDF reference. Plus file naming conventions and best
-                    practices.
-                  </p>
-                  <EmailCapture
-                    placeholder="Enter your email"
-                    buttonText="Get Free Cheat Sheet"
-                  />
-                </div>
-              </Card>
+              <EmailCaptureSection
+                heading="Free Etsy Print Size Cheat Sheet"
+                description="Get all Etsy ratios and pixel dimensions at 300 DPI in one handy PDF reference. Plus file naming conventions and best practices."
+                placeholder="Enter your email"
+                buttonText="Get Free Cheat Sheet"
+              />
             </div>
 
             {/* Internal links for SEO */}

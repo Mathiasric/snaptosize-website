@@ -5,7 +5,8 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle, DollarSign } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCapture } from "@/components/EmailCapture";
+import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
@@ -846,44 +847,13 @@ export default function HowToPriceEtsyPrintablesPage() {
 
             {/* --- CTA 3 --- */}
             <div>
-              <Card accent className="p-6 md:p-8 text-center">
-                <h3 className="text-xl md:text-2xl font-bold mb-3">
-                  Price with Confidence
-                </h3>
-                <p className="text-sm text-foreground-60 mb-5">
-                  Offer all sizes at{" "}
-                  <Link
-                    href="/best-resolution-for-etsy-printables"
-                    className="text-foreground hover:underline"
-                  >
-                    300 DPI
-                  </Link>
-                  . Charge premium prices. No manual resizing, no file limit
-                  headaches. Upload once, get{" "}
-                  <Link
-                    href="/what-files-to-include-etsy-digital-download"
-                    className="text-foreground hover:underline"
-                  >
-                    production-ready ZIPs
-                  </Link>{" "}
-                  in seconds.
-                </p>
-                <a href={appUrl} target="_blank" rel="noopener noreferrer">
-                  <Button className="text-base px-7 py-3">
-                    Start Free — Generate Sizes Now
-                  </Button>
-                </a>
-                <p className="text-xs text-foreground-60 mt-2">
-                  No credit card required.{" "}
-                  <Link
-                    href="/pricing"
-                    className="text-accent-light hover:underline"
-                  >
-                    Free plan
-                  </Link>{" "}
-                  includes watermarked exports.
-                </p>
-              </Card>
+              <FinalCTA
+                heading="Price with Confidence"
+                stat="Bundles of 30 sizes convert 2-3x better than single files"
+                description="Offer all sizes at 300 DPI. Charge premium prices. No manual resizing, no file limit headaches. Upload once, get production-ready ZIPs in seconds."
+                buttonText="Start Free — Generate Sizes Now"
+                appUrl={appUrl}
+              />
             </div>
 
             {/* --- FAQ --- */}
@@ -924,22 +894,12 @@ export default function HowToPriceEtsyPrintablesPage() {
 
             {/* --- Email Capture --- */}
             <div>
-              <Card accent className="p-6 md:p-8">
-                <div className="max-w-xl mx-auto text-center">
-                  <h3 className="text-xl md:text-2xl font-bold mb-3">
-                    Free Etsy Seller Pricing Calculator
-                  </h3>
-                  <p className="text-sm text-foreground-60 mb-5">
-                    Enter your design time and target hourly rate. Get instant
-                    price recommendations after Etsy fees. Plus pricing
-                    strategies from top sellers.
-                  </p>
-                  <EmailCapture
-                    placeholder="Enter your email"
-                    buttonText="Get Free Calculator"
-                  />
-                </div>
-              </Card>
+              <EmailCaptureSection
+                heading="Free Etsy Seller Pricing Calculator"
+                description="Enter your design time and target hourly rate. Get instant price recommendations after Etsy fees. Plus pricing strategies from top sellers."
+                placeholder="Enter your email"
+                buttonText="Get Free Calculator"
+              />
             </div>
 
             {/* --- Related Pages --- */}

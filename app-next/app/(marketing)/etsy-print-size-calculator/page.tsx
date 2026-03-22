@@ -4,7 +4,8 @@ import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCapture } from "@/components/EmailCapture";
+import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import {
   PRINT_SIZES,
@@ -558,53 +559,24 @@ export default function EtsyPrintSizeCalculatorPage() {
       {/* ===== EMAIL CAPTURE ===== */}
       <section className="py-12 md:py-16 border-t border-border" style={{ backgroundColor: "#111020" }}>
         <Container>
-          <div className="max-w-xl mx-auto">
-            <div className="rounded-2xl border border-white/[0.08] border-t-2 border-t-[#2DD4BF]/30 bg-[#13112a] p-8 text-center">
-              {/* CSS cheat sheet preview */}
-              <div className="mx-auto mb-5 w-12 h-14 rounded-md border border-white/[0.1] bg-white/[0.03] flex flex-col items-center justify-center gap-1.5 p-2.5">
-                <div className="w-full h-1 rounded-full bg-[#2DD4BF]/30" />
-                <div className="w-3/4 h-1 rounded-full bg-white/10" />
-                <div className="w-full h-1 rounded-full bg-white/10" />
-                <div className="w-5/6 h-1 rounded-full bg-white/10" />
-              </div>
-              <h2 className="text-2xl font-bold mb-3">
-                Get the Free Print Size Cheat Sheet
-              </h2>
-              <p className="text-foreground-60 mb-6">
-                All 30 sizes, pixel dimensions, and file size estimates in one
-                printable PDF. Pin it next to your desk.
-              </p>
-              <EmailCapture
-                placeholder="you@email.com"
-                buttonText="Send Me the Cheat Sheet"
-              />
-            </div>
-          </div>
+          <EmailCaptureSection
+            heading="Get the Free Print Size Cheat Sheet"
+            description="All 30 sizes, pixel dimensions, and file size estimates in one printable PDF. Pin it next to your desk."
+            placeholder="you@email.com"
+            buttonText="Send Me the Cheat Sheet"
+          />
         </Container>
       </section>
 
       {/* ===== FINAL CTA ===== */}
       <section className="py-12 md:py-16 border-t border-border">
         <Container>
-          <div className="rounded-xl border border-white/[0.08] border-l-4 border-l-[#2DD4BF] bg-[#0e0c18] p-8 text-center max-w-2xl mx-auto">
-            <h2 className="text-2xl font-bold mb-2">
-              Stop calculating. Start selling.
-            </h2>
-            <p className="text-sm text-[#2DD4BF]/70 font-medium mb-4">
-              70+ print-ready files from a single upload
-            </p>
-            <p className="text-foreground-60 mb-6">
-              SnapToSize turns one image into a complete size pack &mdash; all
-              ratios, all DPIs, organized in ZIPs. Ready for your Etsy listing
-              in seconds.
-            </p>
-            <a href={appUrl} target="_blank" rel="noopener noreferrer">
-              <Button>Try SnapToSize Free</Button>
-            </a>
-            <p className="text-xs text-foreground-60 mt-3">
-              Free tier &middot; No credit card required
-            </p>
-          </div>
+          <FinalCTA
+            heading="Stop calculating. Start selling."
+            stat="70+ print-ready files from a single upload"
+            description="SnapToSize turns one image into a complete size pack — all ratios, all DPIs, organized in ZIPs. Ready for your Etsy listing in seconds."
+            appUrl={appUrl}
+          />
         </Container>
       </section>
 

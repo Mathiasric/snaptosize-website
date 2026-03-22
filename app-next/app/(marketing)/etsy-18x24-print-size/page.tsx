@@ -5,7 +5,8 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCapture } from "@/components/EmailCapture";
+import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
@@ -783,25 +784,13 @@ export default function Etsy18x24PrintSizePage() {
 
             {/* --- CTA 3 --- */}
             <div>
-              <Card accent className="p-6 md:p-8 text-center">
-                <h3 className="text-xl md:text-2xl font-bold mb-3">
-                  Get All 3:4 Sizes in One Click
-                </h3>
-                <p className="text-sm text-foreground-60 mb-5">
-                  Upload your artwork and instantly receive 6×8, 9×12, 12×16,
-                  15×20, 18×24, and 24×32 at 300&nbsp;DPI. No cropping, no
-                  manual resizing. Production-ready in seconds.
-                </p>
-                <a href={appUrl} target="_blank" rel="noopener noreferrer">
-                  <Button className="text-base px-7 py-3">
-                    Start Free — Generate Sizes Now
-                  </Button>
-                </a>
-                <p className="text-xs text-foreground-60 mt-2">
-                  No credit card required. Free plan includes watermarked
-                  exports.
-                </p>
-              </Card>
+              <FinalCTA
+                heading="Get All 3:4 Sizes in One Click"
+                stat="Six 3:4 sizes from a single upload"
+                description="Upload your artwork and instantly receive 6x8, 9x12, 12x16, 15x20, 18x24, and 24x32 at 300 DPI. No cropping, no manual resizing. Production-ready in seconds."
+                buttonText="Start Free — Generate Sizes Now"
+                appUrl={appUrl}
+              />
             </div>
 
             {/* --- FAQ --- */}
@@ -850,21 +839,12 @@ export default function Etsy18x24PrintSizePage() {
 
             {/* --- Email Capture --- */}
             <div>
-              <Card accent className="p-6 md:p-8">
-                <div className="max-w-xl mx-auto text-center">
-                  <h3 className="text-xl md:text-2xl font-bold mb-3">
-                    Free Etsy Print Size Cheat Sheet
-                  </h3>
-                  <p className="text-sm text-foreground-60 mb-5">
-                    All Etsy ratios and pixel dimensions at 300 DPI in one PDF.
-                    Plus file naming conventions and best practices.
-                  </p>
-                  <EmailCapture
-                    placeholder="Enter your email"
-                    buttonText="Get Free Cheat Sheet"
-                  />
-                </div>
-              </Card>
+              <EmailCaptureSection
+                heading="Free Etsy Print Size Cheat Sheet"
+                description="All Etsy ratios and pixel dimensions at 300 DPI in one PDF. Plus file naming conventions and best practices."
+                placeholder="Enter your email"
+                buttonText="Get Free Cheat Sheet"
+              />
             </div>
 
             {/* --- Related Pages --- */}

@@ -5,7 +5,8 @@ import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, ArrowRight, AlertCircle, FileWarning } from "lucide-react";
-import { EmailCapture } from "@/components/EmailCapture";
+import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { FinalCTA } from "@/components/FinalCTA";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import RelatedPages from "@/components/RelatedPages";
 
@@ -268,7 +269,8 @@ export default function Etsy20MBFileLimitPage() {
               </Card>
               <p className="text-sm text-foreground-60 mt-6">
                 This limit applies to <strong>each individual file</strong>, not the total of all files in a listing.
-                If you upload 5 files, each one must be under 20MB.
+                If you upload 5 files, each one must be under 20MB. Our{" "}
+                <Link href="/etsy-print-size-calculator" className="text-accent-light hover:underline">print size calculator</Link> estimates file sizes for every print dimension so you can check before uploading.
               </p>
             </div>
 
@@ -677,50 +679,24 @@ export default function Etsy20MBFileLimitPage() {
             </div>
 
             {/* ===== FINAL CTA ===== */}
-            <div className="text-center pt-8 pb-8">
-              <Card accent className="p-8">
-                <h2 className="text-2xl font-bold mb-4">
-                  Never Hit Etsy&apos;s 20MB Limit Again
-                </h2>
-                <p className="text-foreground-60 mb-6">
-                  SnapToSize automatically generates JPG files at 300 DPI, organizes them into ratio packs,
-                  and guarantees every ZIP stays under 20MB. Upload once, download Etsy-ready files.
-                </p>
-                <div className="flex flex-wrap gap-4 justify-center">
-                  <a href={appUrl} target="_blank" rel="noopener noreferrer">
-                    <Button className="text-base px-7 py-3">
-                      Start Free
-                    </Button>
-                  </a>
-                  <Link href="/pricing">
-                    <Button variant="secondary" className="text-base px-7 py-3">
-                      See Pricing
-                    </Button>
-                  </Link>
-                </div>
-                <p className="text-xs text-foreground-60 mt-4">
-                  No credit card required. Free plan includes watermarked exports.
-                </p>
-              </Card>
+            <div className="pt-8 pb-8">
+              <FinalCTA
+                heading="Never Hit Etsy's 20MB Limit Again"
+                stat="Every ZIP guaranteed under 20 MB — zero manual compression"
+                description="SnapToSize automatically generates JPG files at 300 DPI, organizes them into ratio packs, and guarantees every ZIP stays under 20MB. Upload once, download Etsy-ready files."
+                buttonText="Start Free"
+                appUrl={appUrl}
+              />
             </div>
 
             {/* Lead Capture */}
             <div className="pb-12">
-              <Card accent className="p-6 md:p-8">
-                <div className="max-w-xl mx-auto text-center">
-                  <h3 className="text-xl md:text-2xl font-bold mb-3">
-                    Free Etsy Print Size Cheat Sheet
-                  </h3>
-                  <p className="text-sm text-foreground-60 mb-5">
-                    Get all Etsy ratios and pixel dimensions at 300 DPI in one handy PDF reference.
-                    Plus file naming conventions and best practices.
-                  </p>
-                  <EmailCapture
-                    placeholder="Enter your email"
-                    buttonText="Get Free Cheat Sheet"
-                  />
-                </div>
-              </Card>
+              <EmailCaptureSection
+                heading="Free Etsy Print Size Cheat Sheet"
+                description="Get all Etsy ratios and pixel dimensions at 300 DPI in one handy PDF reference. Plus file naming conventions and best practices."
+                placeholder="Enter your email"
+                buttonText="Get Free Cheat Sheet"
+              />
             </div>
 
             {/* Internal links for SEO */}

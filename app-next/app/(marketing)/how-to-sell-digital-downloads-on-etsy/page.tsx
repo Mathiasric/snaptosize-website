@@ -6,7 +6,8 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle, FileText, Upload, DollarSign } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCapture } from "@/components/EmailCapture";
+import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
@@ -1264,49 +1265,24 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
             </div>
 
             {/* ===== FINAL CTA ===== */}
-            <div className="text-center pt-8 pb-8">
-              <Card accent className="p-8">
-                <h2 className="text-2xl font-bold mb-4">
-                  Ready to Sell Digital Downloads on Etsy?
-                </h2>
-                <p className="text-foreground-60 mb-6">
-                  Generate all required print sizes in seconds. Upload once,
-                  download every ratio pack — ready to upload to your Etsy
-                  listing.
-                </p>
-                <div className="flex flex-wrap gap-4 justify-center">
-                  <a href={appUrl} target="_blank" rel="noopener noreferrer">
-                    <Button className="text-base px-7 py-3">Start Free</Button>
-                  </a>
-                  <Link href="/pricing">
-                    <Button variant="secondary" className="text-base px-7 py-3">
-                      See Pricing
-                    </Button>
-                  </Link>
-                </div>
-                <p className="text-xs text-foreground-60 mt-4">
-                  No credit card required. Free plan includes watermarked
-                  exports.
-                </p>
-              </Card>
+            <div className="pt-8 pb-8">
+              <FinalCTA
+                heading="Ready to Sell Digital Downloads on Etsy?"
+                stat="30 sizes across 5 ratio packs in under 60 seconds"
+                description="Generate all required print sizes in seconds. Upload once, download every ratio pack — ready to upload to your Etsy listing."
+                buttonText="Start Free"
+                appUrl={appUrl}
+              />
             </div>
 
             {/* Lead Capture */}
             <div className="pb-12">
-              <Card accent className="p-6 md:p-8">
-                <div className="max-w-xl mx-auto text-center">
-                  <h3 className="text-xl md:text-2xl font-bold mb-3">
-                    Free Etsy Print Size Cheat Sheet
-                  </h3>
-                  <p className="text-sm text-foreground-60 mb-5">
-                    Get all Etsy ratios and pixel dimensions at 300 DPI in one handy PDF reference. Plus file naming conventions and best practices.
-                  </p>
-                  <EmailCapture
-                    placeholder="Enter your email"
-                    buttonText="Get Free Cheat Sheet"
-                  />
-                </div>
-              </Card>
+              <EmailCaptureSection
+                heading="Free Etsy Print Size Cheat Sheet"
+                description="Get all Etsy ratios and pixel dimensions at 300 DPI in one handy PDF reference. Plus file naming conventions and best practices."
+                placeholder="Enter your email"
+                buttonText="Get Free Cheat Sheet"
+              />
             </div>
 
             {/* Internal links for SEO */}

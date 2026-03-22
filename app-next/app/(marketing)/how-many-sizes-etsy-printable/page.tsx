@@ -5,7 +5,8 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle, Clock, Package } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCapture } from "@/components/EmailCapture";
+import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
@@ -635,22 +636,12 @@ export default function HowManySizesEtsyPrintablePage() {
 
             {/* --- Email Capture (after pain points) --- */}
             <div>
-              <Card accent className="p-6 md:p-8">
-                <div className="max-w-xl mx-auto text-center">
-                  <h3 className="text-xl md:text-2xl font-bold mb-3">
-                    Free Etsy Printable Size Checklist
-                  </h3>
-                  <p className="text-sm text-foreground-60 mb-5">
-                    All 30 sizes, 5 ratio packs, and pixel dimensions at 300 DPI
-                    in one printable PDF. Plus file naming conventions and
-                    organization best practices.
-                  </p>
-                  <EmailCapture
-                    placeholder="Enter your email"
-                    buttonText="Get Free Checklist"
-                  />
-                </div>
-              </Card>
+              <EmailCaptureSection
+                heading="Free Etsy Printable Size Checklist"
+                description="All 30 sizes, 5 ratio packs, and pixel dimensions at 300 DPI in one printable PDF. Plus file naming conventions and organization best practices."
+                placeholder="Enter your email"
+                buttonText="Get Free Checklist"
+              />
             </div>
 
             {/* --- The Manual Resizing Problem --- */}
@@ -770,7 +761,8 @@ export default function HowManySizesEtsyPrintablePage() {
                     </h4>
                     <p className="text-sm text-foreground-60">
                       Select 2:3, 3:4, 4:5, ISO, Extras &mdash; or all five.
-                      Each pack generates every size within that ratio.
+                      Each pack generates every size within that ratio. Not sure which sizes your image supports? Use our{" "}
+                      <Link href="/etsy-print-size-calculator" className="text-accent-light hover:underline">print size calculator</Link> to find out.
                     </p>
                   </div>
                 </div>
@@ -1017,31 +1009,13 @@ export default function HowManySizesEtsyPrintablePage() {
 
             {/* --- CTA 3: Post-FAQ --- */}
             <div>
-              <Card accent className="p-6 md:p-8 text-center">
-                <h3 className="text-xl md:text-2xl font-bold mb-3">
-                  Start Creating Professional Size Packs Today
-                </h3>
-                <p className="text-sm text-foreground-60 mb-5">
-                  Join professional Etsy sellers who deliver 30 sizes across 5
-                  organized ratio packs. Upload your first artwork and see the
-                  difference in seconds.
-                </p>
-                <div className="flex flex-wrap gap-4 justify-center">
-                  <a href={appUrl} target="_blank" rel="noopener noreferrer">
-                    <Button className="text-base px-7 py-3">
-                      Start Free
-                    </Button>
-                  </a>
-                  <Link href="/pricing">
-                    <Button variant="secondary" className="text-base px-7 py-3">
-                      See Pricing
-                    </Button>
-                  </Link>
-                </div>
-                <p className="text-xs text-foreground-60 mt-2">
-                  Free account included. No credit card required.
-                </p>
-              </Card>
+              <FinalCTA
+                heading="Start Creating Professional Size Packs Today"
+                stat="The right number of sizes for maximum sales"
+                description="Join professional Etsy sellers who deliver 30 sizes across 5 organized ratio packs. Upload your first artwork and see the difference in seconds."
+                buttonText="Start Free"
+                appUrl={appUrl}
+              />
             </div>
 
             {/* --- Related Pages --- */}

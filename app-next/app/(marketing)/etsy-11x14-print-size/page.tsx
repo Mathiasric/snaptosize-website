@@ -5,7 +5,8 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCapture } from "@/components/EmailCapture";
+import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
@@ -896,31 +897,13 @@ export default function Etsy11x14PrintSizePage() {
 
             {/* --- CTA 3 --- */}
             <div>
-              <Card accent className="p-6 md:p-8 text-center">
-                <h3 className="text-xl md:text-2xl font-bold mb-3">
-                  Add 11&times;14 to Every Listing
-                </h3>
-                <p className="text-sm text-foreground-60 mb-5">
-                  Upload once, get 11&times;14 plus all popular Etsy sizes at
-                  300&nbsp;DPI. Production-ready files in seconds, not hours.
-                </p>
-                <a href={appUrl} target="_blank" rel="noopener noreferrer">
-                  <Button className="text-base px-7 py-3">
-                    Start Free &mdash; Generate Sizes Now
-                  </Button>
-                </a>
-                <p className="text-xs text-foreground-60 mt-2">
-                  No credit card required. Free plan includes watermarked
-                  exports.{" "}
-                  <Link
-                    href="/pricing"
-                    className="text-accent-light hover:underline"
-                  >
-                    See pricing
-                  </Link>
-                  .
-                </p>
-              </Card>
+              <FinalCTA
+                heading="Add 11×14 to Every Listing"
+                stat="70+ print-ready files from a single upload"
+                description="Upload once, get 11×14 plus all popular Etsy sizes at 300 DPI. Production-ready files in seconds, not hours."
+                buttonText="Start Free — Generate Sizes Now"
+                appUrl={appUrl}
+              />
             </div>
 
             {/* --- FAQ --- */}
@@ -963,21 +946,12 @@ export default function Etsy11x14PrintSizePage() {
 
             {/* --- Email Capture --- */}
             <div>
-              <Card accent className="p-6 md:p-8">
-                <div className="max-w-xl mx-auto text-center">
-                  <h3 className="text-xl md:text-2xl font-bold mb-3">
-                    Free Etsy Print Size Cheat Sheet
-                  </h3>
-                  <p className="text-sm text-foreground-60 mb-5">
-                    All Etsy ratios and pixel dimensions at 300 DPI in one PDF.
-                    Plus file naming conventions and best practices.
-                  </p>
-                  <EmailCapture
-                    placeholder="Enter your email"
-                    buttonText="Get Free Cheat Sheet"
-                  />
-                </div>
-              </Card>
+              <EmailCaptureSection
+                heading="Free Etsy Print Size Cheat Sheet"
+                description="All Etsy ratios and pixel dimensions at 300 DPI in one PDF. Plus file naming conventions and best practices."
+                placeholder="Enter your email"
+                buttonText="Get Free Cheat Sheet"
+              />
             </div>
 
             {/* --- Related Pages --- */}

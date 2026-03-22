@@ -16,7 +16,8 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCapture } from "@/components/EmailCapture";
+import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
@@ -333,7 +334,8 @@ export default function EtsyDigitalDownloadNotSellingPage() {
                 This is the #1 reason printables don&apos;t sell. A buyer
                 wants an 11&times;14 for their hallway. Your listing only
                 offers 8&times;10. They leave and buy from a competitor who
-                includes 6 sizes. You never see that buyer again.
+                includes 6 sizes. You never see that buyer again. Use our{" "}
+                <Link href="/etsy-print-size-calculator" className="text-accent-light hover:underline">print size calculator</Link> to see exactly which sizes and dimensions your image supports.
               </p>
 
               <Card className="p-6 mb-6">
@@ -879,26 +881,13 @@ export default function EtsyDigitalDownloadNotSellingPage() {
 
             {/* --- CTA 3 --- */}
             <div>
-              <Card accent className="p-6 md:p-8 text-center">
-                <h3 className="text-xl md:text-2xl font-bold mb-3">
-                  Start With the Biggest Fix
-                </h3>
-                <p className="text-sm text-foreground-60 mb-5">
-                  Incomplete sizes are the most common reason Etsy printables
-                  don&apos;t sell. Upload your artwork once and get all 30
-                  sizes across 5 ratio packs at 300&nbsp;DPI &mdash;
-                  organized, named, and ready to list.
-                </p>
-                <a href={appUrl} target="_blank" rel="noopener noreferrer">
-                  <Button className="text-base px-7 py-3">
-                    Generate All Sizes Free
-                  </Button>
-                </a>
-                <p className="text-xs text-foreground-60 mt-2">
-                  No credit card required. Free plan includes watermarked
-                  exports.
-                </p>
-              </Card>
+              <FinalCTA
+                heading="Start With the Biggest Fix"
+                stat="Fix your listings in minutes"
+                description="Incomplete sizes are the most common reason Etsy printables don't sell. Upload your artwork once and get all 30 sizes across 5 ratio packs at 300 DPI — organized, named, and ready to list."
+                buttonText="Generate All Sizes Free"
+                appUrl={appUrl}
+              />
             </div>
 
             {/* --- Where to learn more --- */}
@@ -994,22 +983,12 @@ export default function EtsyDigitalDownloadNotSellingPage() {
 
             {/* --- Email Capture --- */}
             <div>
-              <Card accent className="p-6 md:p-8">
-                <div className="max-w-xl mx-auto text-center">
-                  <h3 className="text-xl md:text-2xl font-bold mb-3">
-                    Free Etsy Print Size Cheat Sheet
-                  </h3>
-                  <p className="text-sm text-foreground-60 mb-5">
-                    All 30 Etsy sizes with pixel dimensions at 300 DPI, ratio
-                    families, and file naming conventions. One page, zero
-                    guesswork.
-                  </p>
-                  <EmailCapture
-                    placeholder="Enter your email"
-                    buttonText="Get Free Cheat Sheet"
-                  />
-                </div>
-              </Card>
+              <EmailCaptureSection
+                heading="Free Etsy Print Size Cheat Sheet"
+                description="All 30 Etsy sizes with pixel dimensions at 300 DPI, ratio families, and file naming conventions. One page, zero guesswork."
+                placeholder="Enter your email"
+                buttonText="Get Free Cheat Sheet"
+              />
             </div>
 
             {/* --- Related Pages --- */}

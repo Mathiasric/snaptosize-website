@@ -6,7 +6,8 @@ import { Card } from "@/components/Card";
 import { Check, AlertTriangle } from "lucide-react";
 import Image from "next/image";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCapture } from "@/components/EmailCapture";
+import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
@@ -296,7 +297,9 @@ export default function EtsyPrintSizesPage() {
                 >
                   multiple aspect ratios
                 </Link>{" "}
-                &mdash; each with exact pixel dimensions at 300&nbsp;DPI.
+                &mdash; each with exact pixel dimensions at 300&nbsp;DPI. Use our{" "}
+                <Link href="/etsy-print-size-calculator" className="text-accent-light hover:underline">print size calculator</Link>{" "}
+                to check which sizes your image can print without cropping.
               </p>
               <Card accent>
                 <p className="text-sm text-foreground-60">
@@ -1178,33 +1181,14 @@ export default function EtsyPrintSizesPage() {
             </div>
 
             {/* ===== FINAL CTA ===== */}
-            <div className="text-center pt-8 pb-8">
-              <Card accent className="p-8">
-                <h2 className="text-2xl font-bold mb-4">
-                  Generate All Etsy Print Sizes &mdash; In Seconds
-                </h2>
-                <p className="text-foreground-60 mb-6">
-                  Stop resizing manually. Upload one image and get every
-                  standard Etsy size at 300 DPI, organized in ratio packs and
-                  optimized for Etsy&apos;s file limits.
-                </p>
-                <div className="flex flex-wrap gap-4 justify-center">
-                  <a href={appUrl} target="_blank" rel="noopener noreferrer">
-                    <Button className="text-base px-7 py-3">
-                      Start Free
-                    </Button>
-                  </a>
-                  <Link href="/pricing">
-                    <Button variant="secondary" className="text-base px-7 py-3">
-                      See Pricing
-                    </Button>
-                  </Link>
-                </div>
-                <p className="text-xs text-foreground-60 mt-4">
-                  No credit card required. Free plan includes watermarked
-                  exports.
-                </p>
-              </Card>
+            <div>
+              <FinalCTA
+                heading="Generate All Etsy Print Sizes — In Seconds"
+                stat="Every ratio, every DPI, every size"
+                description="Stop resizing manually. Upload one image and get every standard Etsy size at 300 DPI, organized in ratio packs and optimized for Etsy's file limits."
+                buttonText="Start Free"
+                appUrl={appUrl}
+              />
             </div>
 
             {/* Internal links for SEO */}
@@ -1212,20 +1196,12 @@ export default function EtsyPrintSizesPage() {
 
             {/* Lead Capture */}
             <div className="pb-12">
-              <Card accent className="p-6 md:p-8">
-                <div className="max-w-xl mx-auto text-center">
-                  <h3 className="text-xl md:text-2xl font-bold mb-3">
-                    Free Etsy Print Size Cheat Sheet
-                  </h3>
-                  <p className="text-sm text-foreground-60 mb-5">
-                    Get all Etsy ratios and pixel dimensions at 300 DPI in one handy PDF reference. Plus file naming conventions and best practices.
-                  </p>
-                  <EmailCapture
-                    placeholder="Enter your email"
-                    buttonText="Get Free Cheat Sheet"
-                  />
-                </div>
-              </Card>
+              <EmailCaptureSection
+                heading="Free Etsy Print Size Cheat Sheet"
+                description="Get all Etsy ratios and pixel dimensions at 300 DPI in one handy PDF reference. Plus file naming conventions and best practices."
+                placeholder="Enter your email"
+                buttonText="Get Free Cheat Sheet"
+              />
             </div>
           </div>
         </Container>

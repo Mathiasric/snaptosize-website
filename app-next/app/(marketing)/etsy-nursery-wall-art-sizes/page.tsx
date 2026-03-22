@@ -5,7 +5,8 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle, Baby, Frame } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCapture } from "@/components/EmailCapture";
+import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
@@ -985,33 +986,13 @@ export default function EtsyNurseryWallArtSizesPage() {
 
             {/* --- CTA 3 --- */}
             <div>
-              <Card accent className="p-6 md:p-8 text-center">
-                <h3 className="text-xl md:text-2xl font-bold mb-3">
-                  Every Nursery Size From One Upload
-                </h3>
-                <p className="text-sm text-foreground-60 mb-5">
-                  Upload your nursery artwork and instantly get 5×7, 8×10,
-                  11×14, A4, 16×20, squares, and every other size at
-                  300&nbsp;DPI. Organized by ratio pack, professionally named,
-                  and ready to upload to Etsy. See our{" "}
-                  <Link
-                    href="/how-to-package-digital-wall-art-for-etsy"
-                    className="text-accent-light hover:underline"
-                  >
-                    packaging guide
-                  </Link>{" "}
-                  for how to structure your download files.
-                </p>
-                <a href={appUrl} target="_blank" rel="noopener noreferrer">
-                  <Button className="text-base px-7 py-3">
-                    Start Free — Generate Sizes Now
-                  </Button>
-                </a>
-                <p className="text-xs text-foreground-60 mt-2">
-                  No credit card required. Free plan includes watermarked
-                  exports.
-                </p>
-              </Card>
+              <FinalCTA
+                heading="Every Nursery Size From One Upload"
+                stat="All nursery sizes from a single upload"
+                description="Upload your nursery artwork and instantly get 5×7, 8×10, 11×14, A4, 16×20, squares, and every other size at 300 DPI. Organized by ratio pack, professionally named, and ready to upload to Etsy."
+                buttonText="Start Free — Generate Sizes Now"
+                appUrl={appUrl}
+              />
             </div>
 
             {/* --- FAQ --- */}
@@ -1063,28 +1044,12 @@ export default function EtsyNurseryWallArtSizesPage() {
 
             {/* --- Email Capture --- */}
             <div>
-              <Card accent className="p-6 md:p-8">
-                <div className="max-w-xl mx-auto text-center">
-                  <h3 className="text-xl md:text-2xl font-bold mb-3">
-                    Free Nursery Print Size Cheat Sheet
-                  </h3>
-                  <p className="text-sm text-foreground-60 mb-5">
-                    All nursery sizes, pixel dimensions at 300 DPI, gallery wall
-                    combos, and{" "}
-                    <Link
-                      href="/how-to-price-etsy-printables"
-                      className="text-accent-light hover:underline"
-                    >
-                      pricing tips
-                    </Link>{" "}
-                    in one PDF.
-                  </p>
-                  <EmailCapture
-                    placeholder="Enter your email"
-                    buttonText="Get Free Cheat Sheet"
-                  />
-                </div>
-              </Card>
+              <EmailCaptureSection
+                heading="Free Nursery Print Size Cheat Sheet"
+                description="All nursery sizes, pixel dimensions at 300 DPI, gallery wall combos, and pricing tips in one PDF."
+                placeholder="Enter your email"
+                buttonText="Get Free Cheat Sheet"
+              />
             </div>
 
             {/* --- Related Pages --- */}

@@ -14,7 +14,8 @@ import {
   Zap,
 } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCapture } from "@/components/EmailCapture";
+import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
@@ -1196,25 +1197,13 @@ export default function BestFileFormatEtsyPrintablesPage() {
 
             {/* --- Final CTA --- */}
             <div>
-              <Card accent className="p-6 md:p-8 text-center">
-                <h3 className="text-xl md:text-2xl font-bold mb-3">
-                  Stop Wrestling with Format Settings and File Size Limits
-                </h3>
-                <p className="text-sm text-foreground-60 mb-5">
-                  Upload your artwork. Get all 30 print sizes at 300 DPI as JPG.
-                  Organized ZIP packs under 20MB. Professional file naming. Free
-                  plan available.
-                </p>
-                <a href={appUrl} target="_blank" rel="noopener noreferrer">
-                  <Button className="text-base px-7 py-3">
-                    Generate 30 Sizes Instantly
-                  </Button>
-                </a>
-                <p className="text-xs text-foreground-60 mt-2">
-                  No credit card required. Free plan includes watermarked
-                  exports.
-                </p>
-              </Card>
+              <FinalCTA
+                heading="Stop Wrestling with Format Settings and File Size Limits"
+                stat="JPG at 300 DPI — every file under 20 MB, guaranteed"
+                description="Upload your artwork. Get all 30 print sizes at 300 DPI as JPG. Organized ZIP packs under 20MB. Professional file naming. Free plan available."
+                buttonText="Generate 30 Sizes Instantly"
+                appUrl={appUrl}
+              />
             </div>
 
             {/* --- FAQ --- */}
@@ -1257,21 +1246,12 @@ export default function BestFileFormatEtsyPrintablesPage() {
 
             {/* --- Email Capture --- */}
             <div>
-              <Card accent className="p-6 md:p-8">
-                <div className="max-w-xl mx-auto text-center">
-                  <h3 className="text-xl md:text-2xl font-bold mb-3">
-                    File Format Decision Tree for Etsy Sellers
-                  </h3>
-                  <p className="text-sm text-foreground-60 mb-5">
-                    Get our free cheat sheet: which format to use for every
-                    product type, plus file size optimization tips.
-                  </p>
-                  <EmailCapture
-                    placeholder="Enter your email"
-                    buttonText="Get Free Cheat Sheet"
-                  />
-                </div>
-              </Card>
+              <EmailCaptureSection
+                heading="File Format Decision Tree for Etsy Sellers"
+                description="Get our free cheat sheet: which format to use for every product type, plus file size optimization tips."
+                placeholder="Enter your email"
+                buttonText="Get Free Cheat Sheet"
+              />
             </div>
 
             {/* --- Related Pages --- */}

@@ -5,7 +5,8 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCapture } from "@/components/EmailCapture";
+import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
@@ -471,6 +472,11 @@ export default function BestResolutionForEtsyPrintablesPage() {
                 </table>
               </div>
 
+              <p className="text-foreground-60 mb-4">
+                Use our free{" "}
+                <Link href="/etsy-print-size-calculator" className="text-accent-light hover:underline">print size calculator</Link>{" "}
+                to verify your image meets 300 DPI for every size.
+              </p>
               <p className="text-foreground-60">
                 For the complete list of all 30 sizes across 5 ratio packs, see
                 the{" "}
@@ -886,28 +892,13 @@ export default function BestResolutionForEtsyPrintablesPage() {
               </Card>
 
               {/* CTA 3 */}
-              <Card accent className="p-6 md:p-8 text-center">
-                <h3 className="text-xl md:text-2xl font-bold mb-3">
-                  Skip the Manual Workflow
-                </h3>
-                <p className="text-sm text-foreground-60 mb-5">
-                  SnapToSize generates all sizes at 300 DPI instantly. Try it
-                  free &mdash; 5 Quick Exports and 2 Packs per day, forever.
-                </p>
-                <a
-                  href="https://app.snaptosize.com/app/quick-export?source=seo_best-resolution-for-etsy-printables&kind=guide"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button className="text-base px-7 py-3">
-                    Start Free &mdash; Generate Sizes Now
-                  </Button>
-                </a>
-                <p className="text-xs text-foreground-60 mt-2">
-                  No credit card required. Free plan includes watermarked
-                  exports.
-                </p>
-              </Card>
+              <FinalCTA
+                heading="Skip the Manual Workflow"
+                stat="Every file guaranteed 300 DPI — zero math required"
+                description="SnapToSize generates all sizes at 300 DPI instantly. Try it free — 5 Quick Exports and 2 Packs per day, forever."
+                buttonText="Start Free — Generate Sizes Now"
+                appUrl="https://app.snaptosize.com/app/quick-export?source=seo_best-resolution-for-etsy-printables&kind=guide"
+              />
             </div>
 
             {/* --- FAQ --- */}
@@ -951,21 +942,12 @@ export default function BestResolutionForEtsyPrintablesPage() {
 
             {/* --- Email Capture --- */}
             <div>
-              <Card accent className="p-6 md:p-8">
-                <div className="max-w-xl mx-auto text-center">
-                  <h3 className="text-xl md:text-2xl font-bold mb-3">
-                    Free Etsy Print Size Cheat Sheet
-                  </h3>
-                  <p className="text-sm text-foreground-60 mb-5">
-                    All 30 print sizes with exact pixel dimensions at 300 DPI.
-                    Plus file naming conventions and ratio pack structure.
-                  </p>
-                  <EmailCapture
-                    placeholder="Enter your email"
-                    buttonText="Get Free Cheat Sheet"
-                  />
-                </div>
-              </Card>
+              <EmailCaptureSection
+                heading="Free Etsy Print Size Cheat Sheet"
+                description="All 30 print sizes with exact pixel dimensions at 300 DPI. Plus file naming conventions and ratio pack structure."
+                placeholder="Enter your email"
+                buttonText="Get Free Cheat Sheet"
+              />
             </div>
 
             {/* --- Related Pages --- */}

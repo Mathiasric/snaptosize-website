@@ -13,7 +13,8 @@ import {
   Printer,
 } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCapture } from "@/components/EmailCapture";
+import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
@@ -519,6 +520,11 @@ export default function HowToResizeImagesForEtsyPage() {
                   full Etsy print sizes guide
                 </Link>
                 .
+              </p>
+              <p className="text-foreground-60 mb-4">
+                Before resizing, run your image through our{" "}
+                <Link href="/etsy-print-size-calculator" className="text-accent-light hover:underline">print size calculator</Link>{" "}
+                to see which sizes fit without cropping.
               </p>
               <p className="text-foreground-60">
                 Notice how sizes fall into{" "}
@@ -1076,26 +1082,13 @@ export default function HowToResizeImagesForEtsyPage() {
 
             {/* --- Final CTA --- */}
             <div>
-              <Card accent className="p-6 md:p-8 text-center">
-                <h3 className="text-xl md:text-2xl font-bold mb-3">
-                  Resize Once. Sell Everywhere.
-                </h3>
-                <p className="text-sm text-foreground-60 mb-5">
-                  Upload your artwork and instantly receive 30 print-ready files
-                  across 5 ratio packs. 300&nbsp;DPI, JPEG, sRGB, professional
-                  naming &mdash; every file guaranteed under 20&nbsp;MB. No
-                  Photoshop required.
-                </p>
-                <a href={appUrl} target="_blank" rel="noopener noreferrer">
-                  <Button className="text-base px-7 py-3">
-                    Start Free &mdash; Generate Sizes Now
-                  </Button>
-                </a>
-                <p className="text-xs text-foreground-60 mt-2">
-                  No credit card required. Free plan includes watermarked
-                  exports.
-                </p>
-              </Card>
+              <FinalCTA
+                heading="Resize Once. Sell Everywhere."
+                stat="30 print-ready files from one upload in under 30 seconds"
+                description="Upload your artwork and instantly receive 30 print-ready files across 5 ratio packs. 300 DPI, JPEG, sRGB, professional naming — every file guaranteed under 20 MB. No Photoshop required."
+                buttonText="Start Free — Generate Sizes Now"
+                appUrl={appUrl}
+              />
             </div>
 
             {/* --- FAQ --- */}
@@ -1146,21 +1139,12 @@ export default function HowToResizeImagesForEtsyPage() {
 
             {/* --- Email Capture --- */}
             <div>
-              <Card accent className="p-6 md:p-8">
-                <div className="max-w-xl mx-auto text-center">
-                  <h3 className="text-xl md:text-2xl font-bold mb-3">
-                    Free Etsy Print Size Cheat Sheet
-                  </h3>
-                  <p className="text-sm text-foreground-60 mb-5">
-                    All 30 print sizes with exact pixel dimensions at 300 DPI.
-                    Plus file naming conventions and ratio pack structure.
-                  </p>
-                  <EmailCapture
-                    placeholder="Enter your email"
-                    buttonText="Get Free Cheat Sheet"
-                  />
-                </div>
-              </Card>
+              <EmailCaptureSection
+                heading="Free Etsy Print Size Cheat Sheet"
+                description="All 30 print sizes with exact pixel dimensions at 300 DPI. Plus file naming conventions and ratio pack structure."
+                placeholder="Enter your email"
+                buttonText="Get Free Cheat Sheet"
+              />
             </div>
 
             {/* --- Related Pages --- */}

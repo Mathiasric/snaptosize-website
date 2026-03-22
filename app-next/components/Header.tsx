@@ -159,6 +159,11 @@ export function Header() {
                       Nursery Wall Art Sizes
                     </Link>
                   </div>
+                  <div className="pt-2 mt-2 border-t border-border/50">
+                    <Link href="/etsy-print-size-calculator" className="block py-1.5 text-sm text-[#2DD4BF] hover:text-[#2DD4BF]/80 transition-colors font-medium">
+                      Print Size Calculator
+                    </Link>
+                  </div>
                 </div>
               </div>
 
@@ -289,6 +294,9 @@ export function Header() {
                         </Link>
                         <Link href="/etsy-nursery-wall-art-sizes" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Nursery Wall Art Sizes
+                        </Link>
+                        <Link href="/etsy-print-size-calculator" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-[#2DD4BF] hover:text-[#2DD4BF]/80 hover:bg-surface rounded transition-colors focus-ring font-medium">
+                          Print Size Calculator
                         </Link>
                         <Link href="/etsy-print-ratios" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Etsy Print Ratios

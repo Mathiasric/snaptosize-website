@@ -14,7 +14,8 @@ import {
   X,
 } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCapture } from "@/components/EmailCapture";
+import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
@@ -862,34 +863,13 @@ export default function HowToSellPrintablesWithoutPhotoshopPage() {
 
             {/* --- CTA 3 --- */}
             <div>
-              <Card accent className="p-6 md:p-8 text-center">
-                <h3 className="text-xl md:text-2xl font-bold mb-3">
-                  Ready to Ditch Photoshop?
-                </h3>
-                <p className="text-sm text-foreground-60 mb-5">
-                  Upload your artwork once. Get all 30 sizes across 5 ratio
-                  packs at 300&nbsp;DPI &mdash; organized, named, and under
-                  20&nbsp;MB. No Photoshop. No manual resizing. Ready to
-                  list in seconds.
-                </p>
-                <a href={appUrl} target="_blank" rel="noopener noreferrer">
-                  <button className="inline-flex items-center justify-center rounded-xl px-7 py-3 text-base font-semibold text-white shadow-lg transition-all hover:-translate-y-0.5" style={{ background: "linear-gradient(135deg, #d97706 0%, #b45309 50%, #92400e 100%)" }}>
-                    Generate All Sizes Free
-                  </button>
-                </a>
-                <p className="text-xs text-foreground-60 mt-2">
-                  No credit card required. Free plan includes watermarked
-                  exports.
-                </p>
-                <p className="text-xs text-foreground-60 mt-1">
-                  <Link
-                    href="/pricing"
-                    className="text-accent-light hover:underline"
-                  >
-                    See pricing plans
-                  </Link>
-                </p>
-              </Card>
+              <FinalCTA
+                heading="Ready to Ditch Photoshop?"
+                stat="$0/month instead of $22.99/month — same professional output"
+                description="Upload your artwork once. Get all 30 sizes across 5 ratio packs at 300 DPI — organized, named, and under 20 MB. No Photoshop. No manual resizing. Ready to list in seconds."
+                buttonText="Generate All Sizes Free"
+                appUrl={appUrl}
+              />
             </div>
 
             {/* --- FAQ --- */}
@@ -935,22 +915,12 @@ export default function HowToSellPrintablesWithoutPhotoshopPage() {
 
             {/* --- Email Capture --- */}
             <div>
-              <Card accent className="p-6 md:p-8">
-                <div className="max-w-xl mx-auto text-center">
-                  <h3 className="text-xl md:text-2xl font-bold mb-3">
-                    Free Etsy Print Size Cheat Sheet
-                  </h3>
-                  <p className="text-sm text-foreground-60 mb-5">
-                    All 30 Etsy sizes with pixel dimensions at 300 DPI,
-                    ratio families, and file naming conventions. One page,
-                    zero guesswork.
-                  </p>
-                  <EmailCapture
-                    placeholder="Enter your email"
-                    buttonText="Get Free Cheat Sheet"
-                  />
-                </div>
-              </Card>
+              <EmailCaptureSection
+                heading="Free Etsy Print Size Cheat Sheet"
+                description="All 30 Etsy sizes with pixel dimensions at 300 DPI, ratio families, and file naming conventions. One page, zero guesswork."
+                placeholder="Enter your email"
+                buttonText="Get Free Cheat Sheet"
+              />
             </div>
 
             {/* --- Related Pages --- */}

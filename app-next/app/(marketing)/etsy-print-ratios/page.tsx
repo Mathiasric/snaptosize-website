@@ -5,7 +5,8 @@ import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, ArrowRight } from "lucide-react";
-import { EmailCapture } from "@/components/EmailCapture";
+import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
@@ -249,6 +250,8 @@ export default function EtsyPrintRatiosPage() {
                 Buyers choose prints based on their frame size. If someone has an 8×10 frame (4:5 ratio),
                 they need a 4:5 file. If they have a 12×18 frame (2:3 ratio), they need a 2:3 file.
                 One ratio doesn&apos;t fit all frames — that&apos;s why Etsy sellers need to provide multiple ratios.
+                Check how much of your image gets cropped for each ratio with our{" "}
+                <Link href="/etsy-print-size-calculator" className="text-accent-light hover:underline">print size calculator</Link>.
               </p>
 
               <Card>
@@ -602,49 +605,24 @@ export default function EtsyPrintRatiosPage() {
             </div>
 
             {/* ===== FINAL CTA ===== */}
-            <div className="text-center pt-8 pb-8">
-              <Card accent className="p-8">
-                <h2 className="text-2xl font-bold mb-4">
-                  Stop Resizing Files Manually
-                </h2>
-                <p className="text-foreground-60 mb-6">
-                  Generate all Etsy print ratios in seconds. Upload once, download every ratio pack,
-                  ready to upload to your listing.
-                </p>
-                <div className="flex flex-wrap gap-4 justify-center">
-                  <a href={appUrl} target="_blank" rel="noopener noreferrer">
-                    <Button className="text-base px-7 py-3">
-                      Start Free
-                    </Button>
-                  </a>
-                  <Link href="/pricing">
-                    <Button variant="secondary" className="text-base px-7 py-3">
-                      See Pricing
-                    </Button>
-                  </Link>
-                </div>
-                <p className="text-xs text-foreground-60 mt-4">
-                  No credit card required. Free plan includes watermarked exports.
-                </p>
-              </Card>
+            <div>
+              <FinalCTA
+                heading="Stop Resizing Files Manually"
+                stat="Every ratio optimized from one image"
+                description="Generate all Etsy print ratios in seconds. Upload once, download every ratio pack, ready to upload to your listing."
+                buttonText="Start Free"
+                appUrl={appUrl}
+              />
             </div>
 
             {/* Lead Capture */}
             <div className="pb-12">
-              <Card accent className="p-6 md:p-8">
-                <div className="max-w-xl mx-auto text-center">
-                  <h3 className="text-xl md:text-2xl font-bold mb-3">
-                    Free Etsy Print Size Cheat Sheet
-                  </h3>
-                  <p className="text-sm text-foreground-60 mb-5">
-                    Get all Etsy ratios and pixel dimensions at 300 DPI in one handy PDF reference. Plus file naming conventions and best practices.
-                  </p>
-                  <EmailCapture
-                    placeholder="Enter your email"
-                    buttonText="Get Free Cheat Sheet"
-                  />
-                </div>
-              </Card>
+              <EmailCaptureSection
+                heading="Free Etsy Print Size Cheat Sheet"
+                description="Get all Etsy ratios and pixel dimensions at 300 DPI in one handy PDF reference. Plus file naming conventions and best practices."
+                placeholder="Enter your email"
+                buttonText="Get Free Cheat Sheet"
+              />
             </div>
 
             {/* Internal links for SEO */}

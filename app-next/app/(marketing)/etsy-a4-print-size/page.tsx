@@ -5,7 +5,8 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCapture } from "@/components/EmailCapture";
+import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
@@ -948,25 +949,13 @@ export default function EtsyA4PrintSizePage() {
 
             {/* --- CTA 3 --- */}
             <div>
-              <Card accent className="p-6 md:p-8 text-center">
-                <h3 className="text-xl md:text-2xl font-bold mb-3">
-                  Tap Into the Global Market Today
-                </h3>
-                <p className="text-sm text-foreground-60 mb-5">
-                  Upload your artwork and instantly receive A5, A4, A3, plus all
-                  US sizes at 300&nbsp;DPI. Correctly named, organized, and
-                  under 20&nbsp;MB. Production-ready in seconds.
-                </p>
-                <a href={appUrl} target="_blank" rel="noopener noreferrer">
-                  <Button className="text-base px-7 py-3">
-                    Start Free — Generate All Sizes
-                  </Button>
-                </a>
-                <p className="text-xs text-foreground-60 mt-2">
-                  No credit card required. Free plan includes watermarked
-                  exports.
-                </p>
-              </Card>
+              <FinalCTA
+                heading="Tap Into the Global Market Today"
+                stat="A5 + A4 + A3 plus all US sizes from one upload"
+                description="Upload your artwork and instantly receive A5, A4, A3, plus all US sizes at 300 DPI. Correctly named, organized, and under 20 MB. Production-ready in seconds."
+                buttonText="Start Free — Generate All Sizes"
+                appUrl={appUrl}
+              />
             </div>
 
             {/* --- FAQ --- */}
@@ -1012,21 +1001,12 @@ export default function EtsyA4PrintSizePage() {
 
             {/* --- Email Capture --- */}
             <div>
-              <Card accent className="p-6 md:p-8">
-                <div className="max-w-xl mx-auto text-center">
-                  <h3 className="text-xl md:text-2xl font-bold mb-3">
-                    Free Etsy Print Size Cheat Sheet
-                  </h3>
-                  <p className="text-sm text-foreground-60 mb-5">
-                    All Etsy ratios and pixel dimensions at 300 DPI in one PDF.
-                    US sizes, international A-series, and file naming conventions.
-                  </p>
-                  <EmailCapture
-                    placeholder="Enter your email"
-                    buttonText="Get Free Cheat Sheet"
-                  />
-                </div>
-              </Card>
+              <EmailCaptureSection
+                heading="Free Etsy Print Size Cheat Sheet"
+                description="All Etsy ratios and pixel dimensions at 300 DPI in one PDF. US sizes, international A-series, and file naming conventions."
+                placeholder="Enter your email"
+                buttonText="Get Free Cheat Sheet"
+              />
             </div>
 
             {/* --- Related Pages --- */}

@@ -5,7 +5,8 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCapture } from "@/components/EmailCapture";
+import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
@@ -881,41 +882,13 @@ export default function Etsy4x6PrintSizePage() {
 
             {/* --- CTA 3 --- */}
             <div>
-              <Card accent className="p-6 md:p-8 text-center">
-                <h3 className="text-xl md:text-2xl font-bold mb-3">
-                  Get All 2:3 Sizes in One Click
-                </h3>
-                <p className="text-sm text-foreground-60 mb-5">
-                  Upload your artwork and instantly receive 4×6, 6×9, 8×12,
-                  10×15, 12×18, 16×24, 20×30, and 24×36 at 300&nbsp;DPI. No
-                  cropping, no manual resizing. Production-ready in seconds.
-                </p>
-                <a href={appUrl} target="_blank" rel="noopener noreferrer">
-                  <Button className="text-base px-7 py-3">
-                    Start Free — Generate Sizes Now
-                  </Button>
-                </a>
-                <div className="flex flex-wrap justify-center gap-2 mt-4">
-                  <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/[0.06] border border-white/[0.08]">
-                    <Check className="h-3 w-3 text-amber-400 flex-shrink-0" />
-                    <span className="text-xs text-white/70">
-                      No credit card required
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/[0.06] border border-white/[0.08]">
-                    <Check className="h-3 w-3 text-amber-400 flex-shrink-0" />
-                    <span className="text-xs text-white/70">
-                      Free plan available
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/[0.06] border border-white/[0.08]">
-                    <Check className="h-3 w-3 text-amber-400 flex-shrink-0" />
-                    <span className="text-xs text-white/70">
-                      Under 20MB guaranteed
-                    </span>
-                  </div>
-                </div>
-              </Card>
+              <FinalCTA
+                heading="Get All 2:3 Sizes in One Click"
+                stat="Eight 2:3 sizes from a single upload"
+                description="Upload your artwork and instantly receive 4x6, 6x9, 8x12, 10x15, 12x18, 16x24, 20x30, and 24x36 at 300 DPI. No cropping, no manual resizing. Production-ready in seconds."
+                buttonText="Start Free — Generate Sizes Now"
+                appUrl={appUrl}
+              />
             </div>
 
             {/* --- FAQ --- */}
@@ -965,21 +938,12 @@ export default function Etsy4x6PrintSizePage() {
 
             {/* --- Email Capture --- */}
             <div>
-              <Card accent className="p-6 md:p-8">
-                <div className="max-w-xl mx-auto text-center">
-                  <h3 className="text-xl md:text-2xl font-bold mb-3">
-                    Free Etsy Print Size Cheat Sheet
-                  </h3>
-                  <p className="text-sm text-foreground-60 mb-5">
-                    All Etsy ratios and pixel dimensions at 300 DPI in one PDF.
-                    Plus file naming conventions and best practices.
-                  </p>
-                  <EmailCapture
-                    placeholder="Enter your email"
-                    buttonText="Get Free Cheat Sheet"
-                  />
-                </div>
-              </Card>
+              <EmailCaptureSection
+                heading="Free Etsy Print Size Cheat Sheet"
+                description="All Etsy ratios and pixel dimensions at 300 DPI in one PDF. Plus file naming conventions and best practices."
+                placeholder="Enter your email"
+                buttonText="Get Free Cheat Sheet"
+              />
             </div>
 
             {/* --- Related Pages --- */}

@@ -20,6 +20,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-print-size-calculator" className="transition-colors hover:text-accent-light">
+                  Print Size Calculator
+                </Link>
+              </li>
+              <li>
                 <Link href="/pricing" className="transition-colors hover:text-accent-light">
                   Pricing
                 </Link>
