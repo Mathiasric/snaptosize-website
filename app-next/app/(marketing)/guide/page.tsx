@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
+import { FinalCTA } from "@/components/FinalCTA";
 import { CheckCircle, AlertCircle } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -29,17 +30,22 @@ export default function GuidePage() {
       {
         "@type": "HowToStep",
         name: "Upload your artwork",
-        text: "Upload a high-resolution image (at least 3000px on the shortest side) to SnapToSize.",
+        text: "Upload a high-resolution JPEG or PNG image to SnapToSize. For best results, use at least 3000px on the shortest side.",
       },
       {
         "@type": "HowToStep",
-        name: "Choose export type",
-        text: "Select Quick Export for a single size or Pack for a full set of ratio-matched sizes.",
+        name: "Choose your export mode",
+        text: "Select Quick Export for a single size, or choose a Ratio Pack to get all sizes in that aspect ratio as a ZIP file.",
       },
       {
         "@type": "HowToStep",
-        name: "Download and upload to Etsy",
-        text: "Download your 300 DPI files or ZIPs and upload them directly to your Etsy listing.",
+        name: "Download your files",
+        text: "Download your 300 DPI print-ready files. Packs come as organized ZIPs with professional file naming.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Upload to Etsy",
+        text: "Upload the ZIP directly to your Etsy listing's Digital files section. Each ZIP stays under Etsy's 20MB limit.",
       },
     ],
   };
@@ -84,8 +90,17 @@ export default function GuidePage() {
                 <a href="#export-modes" className="text-sm text-accent-light hover:underline">
                   Export Modes
                 </a>
+                <a href="#ratio-packs" className="text-sm text-accent-light hover:underline">
+                  Ratio Packs
+                </a>
+                <a href="#zip-structure" className="text-sm text-accent-light hover:underline">
+                  ZIP Structure
+                </a>
                 <a href="#upload-etsy" className="text-sm text-accent-light hover:underline">
                   Upload to Etsy
+                </a>
+                <a href="#calculator" className="text-sm text-accent-light hover:underline">
+                  Calculator
                 </a>
                 <a href="#common-mistakes" className="text-sm text-accent-light hover:underline">
                   Common Mistakes
@@ -95,7 +110,7 @@ export default function GuidePage() {
                 </a>
               </div>
               <p className="text-sm text-foreground-60 mt-3">
-                Need the exact size list? <Link href="/sizes" className="text-accent-light hover:underline">See Print Sizes →</Link>
+                Need the exact size list? <Link href="/etsy-print-sizes" className="text-accent-light hover:underline">See Print Sizes →</Link>
               </p>
             </div>
           </div>
@@ -190,6 +205,73 @@ export default function GuidePage() {
               </div>
             </div>
 
+            {/* What's in Each Pack */}
+            <div id="ratio-packs">
+              <h2 className="text-2xl font-bold mb-6">
+                What&apos;s in Each Ratio Pack
+              </h2>
+              <p className="text-foreground-60 mb-6">
+                Every pack contains sizes that share the same aspect ratio —
+                so your design fits perfectly without any cropping.
+              </p>
+              <div className="space-y-4">
+                <Card>
+                  <h3 className="font-semibold mb-2">2:3 Ratio — Most Popular for Wall Art</h3>
+                  <p className="text-sm text-foreground-60">
+                    4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30, 24×36
+                  </p>
+                </Card>
+                <Card>
+                  <h3 className="font-semibold mb-2">3:4 Ratio — Classic Photo Frames</h3>
+                  <p className="text-sm text-foreground-60">
+                    6×8, 9×12, 12×16, 15×20, 18×24, 24×32
+                  </p>
+                </Card>
+                <Card>
+                  <h3 className="font-semibold mb-2">4:5 Ratio — Home of the 8×10</h3>
+                  <p className="text-sm text-foreground-60">
+                    8×10, 12×15, 16×20, 20×25, 24×30
+                  </p>
+                </Card>
+                <Card>
+                  <h3 className="font-semibold mb-2">ISO A-Series — International Standard</h3>
+                  <p className="text-sm text-foreground-60">
+                    A5, A4, A3, A2, A1, A0
+                  </p>
+                </Card>
+                <Card>
+                  <h3 className="font-semibold mb-2">Extras — Common Sizes</h3>
+                  <p className="text-sm text-foreground-60">
+                    5×7, 8.5×11, 11×14, 11×17, 20×24
+                  </p>
+                </Card>
+              </div>
+              <p className="text-sm text-foreground-60 mt-4">
+                <strong>30 sizes total</strong>, all at 300 DPI. Square sizes (8×8, 10×10)
+                are available via Quick Export.
+              </p>
+            </div>
+
+            {/* ZIP Structure */}
+            <div id="zip-structure">
+              <h2 className="text-2xl font-bold mb-6">
+                What Your Download Looks Like
+              </h2>
+              <Card className="font-mono text-sm text-foreground-60 space-y-1">
+                <p className="text-foreground font-semibold mb-2">YourArtwork_2-3_Pack.zip</p>
+                <p className="ml-4">YourArtwork_4x6_1200x1800_300dpi.jpg</p>
+                <p className="ml-4">YourArtwork_8x12_2400x3600_300dpi.jpg</p>
+                <p className="ml-4">YourArtwork_12x18_3600x5400_300dpi.jpg</p>
+                <p className="ml-4">YourArtwork_16x24_4800x7200_300dpi.jpg</p>
+                <p className="ml-4">YourArtwork_24x36_7200x10800_300dpi.jpg</p>
+                <p className="ml-4 text-foreground-60/50">... and more sizes</p>
+              </Card>
+              <p className="text-sm text-foreground-60 mt-4">
+                Every file is named with the size and pixel dimensions — ready to upload
+                directly to Etsy without renaming.
+              </p>
+            </div>
+
             {/* How to upload to Etsy */}
             <div id="upload-etsy">
               <h2 className="text-2xl font-bold mb-6">
@@ -221,6 +303,27 @@ export default function GuidePage() {
               </Card>
             </div>
 
+            {/* Calculator Tool */}
+            <div id="calculator">
+              <h2 className="text-2xl font-bold mb-6">
+                Check Your Image First
+              </h2>
+              <p className="text-foreground-60 mb-4">
+                Not sure if your image is high enough resolution? Use our free
+                Print Size Calculator to check DPI quality and crop analysis for
+                any image dimensions.
+              </p>
+              <Card accent className="p-6 text-center">
+                <p className="text-foreground-60 mb-4">
+                  Enter your image&apos;s pixel dimensions and instantly see which
+                  sizes will print at professional quality.
+                </p>
+                <a href="/etsy-print-size-calculator">
+                  <Button variant="secondary">Open Print Size Calculator</Button>
+                </a>
+              </Card>
+            </div>
+
             {/* Common Mistakes */}
             <div id="common-mistakes">
               <h2 className="text-2xl font-bold mb-6">Common Mistakes</h2>
@@ -247,11 +350,12 @@ export default function GuidePage() {
                     <AlertCircle className="h-5 w-5 text-error flex-shrink-0 mt-0.5" />
                     <div>
                       <h3 className="font-semibold mb-1">
-                        Expecting cropping
+                        Offering only one ratio
                       </h3>
                       <p className="text-sm text-foreground-60">
-                        SnapToSize resizes to exact print dimensions — it
-                        preserves your full design without cropping.
+                        Different frame sizes use different aspect ratios. A 2:3
+                        image won&apos;t fit an 8×10 (4:5) frame without cropping.
+                        Include all 5 ratio packs so every buyer gets a perfect fit.
                       </p>
                     </div>
                   </div>
@@ -311,21 +415,25 @@ export default function GuidePage() {
               </Card>
             </div>
 
+            {/* Related */}
+            <div className="mt-12">
+              <h2 className="text-sm font-semibold mb-3 text-foreground-60">Learn more:</h2>
+              <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+                <a href="/etsy-print-sizes" className="text-accent-light hover:underline">All Print Sizes →</a>
+                <a href="/etsy-print-ratios" className="text-accent-light hover:underline">Understanding Ratios →</a>
+                <a href="/how-to-resize-images-for-etsy" className="text-accent-light hover:underline">Resize Guide →</a>
+                <a href="/faq" className="text-accent-light hover:underline">FAQ →</a>
+              </div>
+            </div>
+
             {/* CTA */}
-            <div className="text-center pt-8">
-              <Card accent className="p-8">
-                <h2 className="text-2xl font-bold mb-4">Ready to try it?</h2>
-                <p className="text-foreground-60 mb-6">
-                  Start with the free plan and upgrade when you need more.
-                </p>
-                <a
-                  href="https://app.snaptosize.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button>Start Free</Button>
-                </a>
-              </Card>
+            <div className="pt-8">
+              <FinalCTA
+                heading="Ready to Create Your Print Files?"
+                stat="30 sizes · 5 ratio packs · under 30 seconds"
+                description="Upload one image, download every size your buyers need."
+                appUrl="https://app.snaptosize.com"
+              />
             </div>
           </div>
         </Container>

@@ -1,18 +1,17 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/Container";
 import { Accordion } from "@/components/Accordion";
-import { Button } from "@/components/Button";
-import { Card } from "@/components/Card";
+import { FinalCTA } from "@/components/FinalCTA";
 
 export const metadata: Metadata = {
   title: "FAQ — Frequently Asked Questions",
   description:
-    "Common questions about SnapToSize: file quality, cropping, commercial use, refunds, and Etsy integration.",
+    "Common questions about SnapToSize: 30 print sizes, file quality, DPI, commercial use, pricing, and Etsy integration.",
   alternates: { canonical: "https://snaptosize.com/faq" },
   openGraph: {
     title: "FAQ — Frequently Asked Questions | SnapToSize",
     description:
-      "Common questions about SnapToSize: file quality, cropping, commercial use, refunds, and Etsy integration.",
+      "Common questions about SnapToSize: 30 print sizes, file quality, DPI, commercial use, pricing, and Etsy integration.",
     url: "https://snaptosize.com/faq",
   },
 };
@@ -28,6 +27,14 @@ export default function FAQPage() {
         acceptedAnswer: {
           "@type": "Answer",
           text: "No. SnapToSize preserves your full design — every pixel, every detail. Your image is resized to exact print dimensions without any cropping. Your buyers get exactly what you designed.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How many sizes does SnapToSize generate?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "30 print sizes across 5 ratio packs: 2:3 (8 sizes from 4×6 to 24×36), 3:4 (6 sizes), 4:5 (5 sizes including the popular 8×10), ISO A-series (6 sizes from A5 to A0), and Extras (5 sizes like 5×7, 11×14, 11×17). Plus square sizes via Quick Export.",
         },
       },
       {
@@ -107,6 +114,22 @@ export default function FAQPage() {
               </p>
             </Accordion>
 
+            <Accordion question="How many sizes does SnapToSize generate?">
+              <p className="mb-3">
+                <strong>30 print sizes</strong> across 5 ratio packs:
+              </p>
+              <ul className="space-y-1 ml-5 list-disc text-sm text-foreground-60">
+                <li><strong>2:3</strong> — 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30, 24×36</li>
+                <li><strong>3:4</strong> — 6×8, 9×12, 12×16, 15×20, 18×24, 24×32</li>
+                <li><strong>4:5</strong> — 8×10, 12×15, 16×20, 20×25, 24×30</li>
+                <li><strong>ISO A-Series</strong> — A5, A4, A3, A2, A1, A0</li>
+                <li><strong>Extras</strong> — 5×7, 8.5×11, 11×14, 11×17, 20×24</li>
+              </ul>
+              <p className="mt-3 text-sm text-foreground-60">
+                Plus square sizes (8×8, 10×10) via Quick Export. Every file at 300 DPI.
+              </p>
+            </Accordion>
+
             <Accordion question="What file quality and DPI do I get?">
               <p className="mb-3">
                 Every file exports at <strong>300 DPI</strong> — the professional
@@ -139,12 +162,12 @@ export default function FAQPage() {
 
             <Accordion question="Do I need to create an account?">
               <p>
-                No account required for the free plan. Just visit the app and
-                start uploading.
+                No account needed. Just visit the app and start uploading — it
+                works instantly.
               </p>
               <p className="mt-3">
-                Pro users authenticate via Stripe Checkout for subscription
-                management.
+                When you're ready to upgrade, Pro setup takes less than 60
+                seconds.
               </p>
             </Accordion>
 
@@ -222,19 +245,23 @@ export default function FAQPage() {
 
             <Accordion question="What's the maximum file size I can upload?">
               <p>
-                Upload size limits are set to handle typical high-res artwork
-                (up to 50MB source files). Larger files may time out.
+                SnapToSize handles high-resolution artwork up to 50MB — plenty
+                for even the largest source files.
+              </p>
+              <p className="mt-3">
+                For best results, use images at least 3000px on the shortest
+                side.
               </p>
             </Accordion>
 
             <Accordion question="How long are my files stored?">
               <p>
-                Generated files are stored temporarily on Cloudflare R2 for
-                download. Files are automatically cleaned up after a short
-                retention period.
+                Your generated files are available for download immediately
+                after processing.
               </p>
               <p className="mt-3">
-                We don't store your source images long-term.
+                We recommend downloading your files right away. Source images
+                are not stored long-term — your artwork stays private.
               </p>
             </Accordion>
 
@@ -288,8 +315,8 @@ export default function FAQPage() {
                 for technical issues or billing questions.
               </p>
               <p className="mt-3">
-                SnapToSize is intentionally simple with minimal support
-                overhead. Most questions are answered in the{" "}
+                We respond to every message. Most questions are answered in
+                the{" "}
                 <a href="/guide" className="text-accent-light hover:underline">
                   User Guide
                 </a>
@@ -306,26 +333,33 @@ export default function FAQPage() {
             </Accordion>
           </div>
 
+          {/* Related Resources */}
+          <div className="max-w-3xl mx-auto mt-12">
+            <h2 className="text-lg font-semibold mb-4">Related Resources</h2>
+            <div className="grid sm:grid-cols-3 gap-3">
+              <a href="/etsy-print-size-calculator" className="block p-4 rounded-lg border border-border hover:border-accent-light/30 transition-colors">
+                <h3 className="font-medium text-sm mb-1">Print Size Calculator</h3>
+                <p className="text-xs text-foreground-60">Check DPI and crop analysis for your images</p>
+              </a>
+              <a href="/etsy-print-sizes" className="block p-4 rounded-lg border border-border hover:border-accent-light/30 transition-colors">
+                <h3 className="font-medium text-sm mb-1">All Print Sizes</h3>
+                <p className="text-xs text-foreground-60">Complete reference for every Etsy print size</p>
+              </a>
+              <a href="/how-to-resize-images-for-etsy" className="block p-4 rounded-lg border border-border hover:border-accent-light/30 transition-colors">
+                <h3 className="font-medium text-sm mb-1">Resize Guide</h3>
+                <p className="text-xs text-foreground-60">Step-by-step resizing for Etsy sellers</p>
+              </a>
+            </div>
+          </div>
+
           {/* CTA */}
-          <div className="max-w-2xl mx-auto mt-16">
-            <Card accent className="p-8 text-center">
-              <h2 className="text-2xl font-bold mb-4">Still have questions?</h2>
-              <p className="text-foreground-60 mb-6">
-                Try the free plan or contact support.
-              </p>
-              <div className="flex flex-wrap gap-4 justify-center">
-                <a
-                  href="https://app.snaptosize.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button>Start Free</Button>
-                </a>
-                <a href="mailto:support@snaptosize.com">
-                  <Button variant="secondary">Contact Support</Button>
-                </a>
-              </div>
-            </Card>
+          <div className="mt-16">
+            <FinalCTA
+              heading="Ready to Create Print-Ready Files?"
+              stat="30 sizes · 5 ratio packs · 300 DPI"
+              description="Upload one image, download every size your Etsy buyers need."
+              appUrl="https://app.snaptosize.com"
+            />
           </div>
         </Container>
       </section>
