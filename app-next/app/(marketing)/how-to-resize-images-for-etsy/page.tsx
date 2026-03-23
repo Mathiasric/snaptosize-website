@@ -149,7 +149,7 @@ export default function HowToResizeImagesForEtsyPage() {
         name: "Can I resize a 2:3 image to 8×10 without cropping?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "No. 2:3 and 4:5 (8×10) are different aspect ratios. Resizing without cropping would distort the image. You need separate files for each ratio, or use a tool like SnapToSize that generates all ratios from one source image using intelligent stretch-only resizing.",
+          text: "No. 2:3 and 4:5 (8×10) are different aspect ratios. Resizing without cropping would distort the image. You need separate files for each ratio, or use a tool like SnapToSize that generates all ratios from one source image — preserving your full design in every size.",
         },
       },
       {
@@ -1119,7 +1119,7 @@ export default function HowToResizeImagesForEtsyPage() {
                     question:
                       "Can I resize a 2:3 image to 8×10 without cropping?",
                     answer:
-                      "No. 2:3 and 4:5 (8×10) are different aspect ratios. Resizing without cropping would distort the image. You need separate files for each ratio, or use a tool like SnapToSize that generates all ratios from one source image using stretch-only resizing that preserves your full composition.",
+                      "No. 2:3 and 4:5 (8×10) are different aspect ratios. Resizing without cropping would distort the image. You need separate files for each ratio, or use a tool like SnapToSize that generates all ratios from one source image — preserving your full composition in every size.",
                   },
                   {
                     question:

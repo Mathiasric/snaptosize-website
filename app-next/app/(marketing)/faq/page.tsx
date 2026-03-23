@@ -27,7 +27,7 @@ export default function FAQPage() {
         name: "Does SnapToSize crop my images?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "No. SnapToSize uses a stretch-only resize policy. Images are resized to exact dimensions without cropping, ensuring your entire composition stays intact.",
+          text: "No. SnapToSize preserves your full design — every pixel, every detail. Your image is resized to exact print dimensions without any cropping. Your buyers get exactly what you designed.",
         },
       },
       {
@@ -35,7 +35,7 @@ export default function FAQPage() {
         name: "What file quality and DPI do I get?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "All exports are 300 DPI JPEG files with quality optimization to stay under Etsy's 20MB ZIP limit. The quality fallback chain is: 80 → 76 → 72 → 68 → 64 → 60. Most files export at quality 80.",
+          text: "Every file exports at 300 DPI — the professional print standard. Files are optimized to stay under Etsy's 20MB ZIP limit while maintaining sharp, print-ready quality.",
         },
       },
       {
@@ -98,24 +98,23 @@ export default function FAQPage() {
             {/* Product Questions */}
             <Accordion question="Does SnapToSize crop my images?">
               <p className="mb-3">
-                No. SnapToSize uses a <strong>stretch-only resize policy</strong>.
-                Images are resized to exact dimensions without cropping.
+                No. SnapToSize <strong>preserves your full design</strong> — every
+                pixel, every detail. Your image is resized to exact print
+                dimensions without any cropping.
               </p>
               <p>
-                This is a deliberate design choice to ensure your entire
-                composition stays intact. If you need cropping, pre-crop your
-                source image before uploading.
+                Your buyers get exactly what you designed, in every size.
               </p>
             </Accordion>
 
             <Accordion question="What file quality and DPI do I get?">
               <p className="mb-3">
-                All exports are <strong>300 DPI JPEG</strong> files with quality
-                optimization to stay under Etsy's 20MB ZIP limit.
+                Every file exports at <strong>300 DPI</strong> — the professional
+                print standard.
               </p>
               <p>
-                The quality fallback chain is: 80 → 76 → 72 → 68 → 64 → 60. Most
-                files export at quality 80.
+                Files are optimized to stay under Etsy's 20MB ZIP limit while
+                maintaining sharp, print-ready quality.
               </p>
             </Accordion>
 

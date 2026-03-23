@@ -12,7 +12,7 @@ const testimonials = [
   },
   {
     quote:
-      "The fact that it stretches instead of cropping is what sold me. My compositions stay intact across every size — no more losing edges on 4:5 or cutting flowers off on 3:4. Buyers get exactly what they see.",
+      "The fact that it preserves my full design instead of cropping is what sold me. My compositions stay intact across every size — no more losing edges on 4:5 or cutting flowers off on 3:4. Buyers get exactly what they see.",
     name: "Jessica R.",
     title: "Botanical print shop · 3,400+ sales",
     stars: 5,

@@ -13,8 +13,8 @@ export function FAQTeaserSection() {
         <div className="max-w-3xl mx-auto space-y-4">
           <Accordion question="Does this crop my images?">
             <p>
-              No. SnapToSize stretches images to exact dimensions without
-              cropping. Your entire composition stays intact.
+              No. SnapToSize resizes images to exact print dimensions without
+              cropping. Your entire design is preserved in every size.
             </p>
           </Accordion>
 

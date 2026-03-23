@@ -250,8 +250,8 @@ export default function GuidePage() {
                         Expecting cropping
                       </h3>
                       <p className="text-sm text-foreground-60">
-                        SnapToSize stretches to exact dimensions — it doesn't
-                        crop. If you need cropping, pre-crop your source image.
+                        SnapToSize resizes to exact print dimensions — it
+                        preserves your full design without cropping.
                       </p>
                     </div>
                   </div>
