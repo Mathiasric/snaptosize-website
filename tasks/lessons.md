@@ -271,3 +271,89 @@ Do NOT panic about zero traffic in the first month. Focus on building content vo
 ### LESSON-034: Never put API keys or secrets in committed files (2026-03-19)
 - **Trigger:** PostHog personal API key was included in `docs/APP_PARTNER_TRACKING_SPEC.md`, committed and pushed. GitHub detected it and PostHog auto-revoked the key.
 - **Rule:** API keys, tokens, and secrets go ONLY in `.env.local` (gitignored) or Cloudflare env vars. Never in docs, spec files, or any file that gets committed. Use placeholders like `YOUR_API_KEY_HERE` in docs.
+
+### LESSON-037: All print sizes must display in portrait orientation (2026-03-20)
+**Trigger:** Frame size guide pin showed 16×20 and 20×30 as landscape (horizontal) frames. All SnapToSize sizes are portrait (width < height).
+**Rule:** When generating images showing print sizes or frames:
+1. ALL frames must be displayed in portrait/vertical orientation (taller than wide)
+2. Width×Height notation (e.g., 16×20) means 16 inches wide, 20 inches tall — always portrait
+3. This applies to every size across all packs, not just ISO A-series (see also LESSON-029)
+4. If Gemini renders any frame as landscape, reject the image and regenerate
+5. In prompts, explicitly state: "All frames in portrait/vertical orientation (taller than wide)"
+
+### LESSON-039: Etsy 20MB is a hard upload limit, not a quality issue (2026-03-20)
+**Trigger:** Video said "Your ZIP is over 20MB" as a reason buyers leave — but files over 20MB can't even be uploaded to Etsy in the first place. It's not a quality/buyer issue, it's a seller upload blocker.
+**Rule:** When framing the 20MB limit in content:
+1. It's a **seller-side problem** (can't upload), NOT a buyer-side problem (buyers leaving)
+2. Correct framing: "Your ZIP won't upload" / "Etsy rejects files over 20MB" / "You can't even list it"
+3. Wrong framing: "Buyers leave because your ZIP is over 20MB" — buyers never see this
+4. In countdown/listicle content about why buyers leave or sales are lost, don't include 20MB — use it only in content about seller workflow problems
+
+### LESSON-041: NotebookLM studio — what works and what doesn't (2026-03-21)
+**Trigger:** Created slides (14 pages) and video (1:50) via NotebookLM. Video had good educational content but missed key product details (not all ratios, minimal SnapToSize promotion). Slides "detailed_deck" produced 14 pages — far too long for social media.
+**Rule:** When using NotebookLM studio for social content:
+1. **Video** (`nlm video create`): Produces educational explainers, NOT sales content. Good for YouTube/educational use, too long for TikTok/Reels (1:50). Will omit specific product details even when in sources. Use `--format brief --style whiteboard` for shortest output. Always add music manually before posting.
+2. **Slides** (`nlm slides create`): Use `--format presenter_slides --length short` for minimal output. Even "short" can produce 7+ slides. For carousel/social, explicitly state "5 slides only" in `--focus` and describe each slide's content.
+3. **Content accuracy**: NotebookLM pulls from its sources — if sources are outdated or incomplete, output will be wrong. Always sync `CONTENT_REFERENCE.md`, `lessons.md`, and `CONTENT_PLAYBOOK.md` before generating.
+4. **NotebookLM is educational, not promotional**: It won't hard-sell your product. For sales-focused content, use Gemini image gen or Remotion instead.
+5. **Best use case**: Carousel slides (5-6 pages) or educational B-roll video clips. Not standalone TikTok/Reels content.
+
+### LESSON-042: NotebookLM sources must stay synced for accurate output (2026-03-21)
+**Trigger:** NotebookLM video omitted ratios and product details because sources were outdated.
+**Rule:** Before creating any NotebookLM studio artifact, sync these sources:
+1. `marketing/CONTENT_REFERENCE.md` — product data (sizes, ratios, pricing, CTAs)
+2. `tasks/lessons.md` — content rules and corrections
+3. `docs/CONTENT_PLAYBOOK.md` — channel specs and templates
+4. `docs/GROWTH_STATE.md` — business context
+5. `docs/PIPELINE_OPERATIONS.md` — pipeline operations
+Use: `PYTHONIOENCODING=utf-8 nlm source add <notebook_id> --type text --title "<Name> (<date>)" --text "$(cat <file>)" 2>&1 | cat`
+Source deletion often fails — just add new versions with dates in the title to track freshness. Old sources don't override new ones.
+
+### LESSON-043: QA dimension tolerances must accept SnapToSize-resized images (2026-03-21)
+**Trigger:** Cross-platform images resized with SnapToSize (2400x3000 for 4:5) failed QA because max height was 1450px. Had to widen tolerances twice in one session.
+**Rule:** QA tolerances in `qa_validate.py` should accept any image with correct aspect ratio, regardless of pixel size. Social platforms compress/resize automatically. Current tolerances:
+- Pinterest: 800-3000px width, 1200-4000px height
+- Instagram: 800-3000px width, 1000-4000px height
+- What matters is correct ratio (2:3 for Pinterest, 4:5 for Instagram), not exact pixel dimensions.
+
+### LESSON-044: TikTokVertical template — cards must be bigger and CTA below cards (2026-03-21)
+**Trigger:** Video had cards overlapping each other and CTA ("Try Free → snaptosize.com") stacking on top of cards in the center of the screen.
+**Fixes applied:**
+1. **Dynamic spacing** — cards now divide available space (340-1700px) evenly instead of fixed 120px gap
+2. **CTA at bottom** — changed from `justifyContent: "center"` to `justifyContent: "flex-end"` with `paddingBottom: 120px`
+3. **Compact mode** for 5+ points — smaller padding, badges, font
+**Still needs improvement for next time:**
+- Cards are still too small visually — increase card padding, font size, and badge size even in compact mode
+- Consider showing fewer points per screen (e.g., 3 at a time with scroll) instead of cramming all 5
+- Or split into 2 scenes: first 3 points, then last 2 points
+- Target: each card should take up ~20% of screen height minimum for readability on mobile
+
+### LESSON-040: Gemini image prompts that produce accurate text — the recipe (2026-03-21)
+**Trigger:** 4 out of 4 images generated with correct sizes, pack names, and product data — zero hallucinated text.
+**Rule:** For Gemini image prompts that need accurate text rendered in the image:
+1. **List every single text element explicitly** — never say "show the sizes", write out "4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30, 24×36"
+2. **Use structured layout descriptions** — "Section 1 header: '2:3 Ratio', items below: 4×6, 6×9..." gives Gemini a clear visual hierarchy to follow
+3. **Keep text volume reasonable** — 5 sections with 5-8 items each is the sweet spot. More than ~40 text items and Gemini starts dropping/inventing
+4. **Use 1K resolution** — sufficient for social media, faster generation, correct aspect ratio
+5. **Add explicit exclusions** — "No phone mockups, no app screenshots, no social media UI elements, no platform branding" prevents Gemini from adding fake chrome
+6. **Specify colors per section** — "(coral accent)", "(gold accent)" etc. helps Gemini organize visually distinct sections
+7. **Always end with the URL** — "snaptosize.com" in the prompt = it appears in the image
+This recipe consistently produces clean infographic-style images with accurate product data.
+
+### LESSON-038: Pinterest descriptions max 500 characters (2026-03-20)
+**Trigger:** Multiple Pinterest pins failed Buffer scheduling because description exceeded 500 characters. Had to trim and retry each time.
+**Rule:** Pinterest descriptions must be under 500 characters. When writing Pinterest captions:
+1. Keep descriptions under 450 characters (buffer for safety)
+2. Front-load keywords in the first 1-2 sentences (most visible in search)
+3. Cut filler words — Pinterest is a search engine, not a social feed
+4. CTA + link can be ~60 characters, so content gets ~390 characters max
+5. Count characters BEFORE sending to Buffer — never assume it fits
+
+### LESSON-045: Writer agents must verify internal links match the correct page (2026-03-23)
+**Trigger:** Botanical page had 5x7 table row linking to `/etsy-8x10-print-size` instead of `/etsy-5x7-print-size`. Caught during Playwright validation.
+**Rule:** When a writer agent creates internal links to size pages:
+1. The link href must match the SIZE being discussed, not a different size
+2. Before submitting: verify every `<Link href="/etsy-[X]-print-size">` matches the text it wraps
+3. Common mistake: copy-pasting a link from a nearby row and forgetting to update the href
+4. The seo-writer agent prompt should include: "Verify every internal link href matches the anchor text size"
+This is a mechanical error that automated validation could catch — consider adding a post-write link audit step to the pipeline.

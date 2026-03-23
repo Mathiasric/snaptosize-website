@@ -5,7 +5,7 @@
     "pageType": "pillar",
     "keywords": ["etsy print sizes", "print dimensions 300 dpi", "etsy print size chart"],
     "cluster": "sizes",
-    "relatedSlugs": ["etsy-print-ratios", "etsy-20mb-file-limit", "sizes", "how-to-sell-digital-downloads-on-etsy", "etsy-8x10-print-size", "etsy-5x7-print-size", "how-to-resize-images-for-etsy", "etsy-a4-print-size", "etsy-11x14-print-size", "etsy-4x6-print-size", "etsy-12x16-print-size"]
+    "relatedSlugs": ["etsy-print-ratios", "etsy-20mb-file-limit", "sizes", "etsy-print-size-calculator", "how-to-sell-digital-downloads-on-etsy", "etsy-8x10-print-size", "etsy-5x7-print-size", "how-to-resize-images-for-etsy", "etsy-a4-print-size", "etsy-11x14-print-size", "etsy-4x6-print-size", "etsy-12x16-print-size"]
   },
   {
     "slug": "etsy-print-ratios",
@@ -190,5 +190,29 @@
     "keywords": ["snaptosize partner program", "etsy educator affiliate", "snaptosize referral"],
     "cluster": "company",
     "relatedSlugs": ["pricing", "faq"]
+  },
+  {
+    "slug": "etsy-print-size-calculator",
+    "title": "Etsy Print Size Calculator",
+    "pageType": "tool",
+    "keywords": ["etsy print size calculator", "print size pixels calculator", "etsy DPI calculator", "print dimensions calculator"],
+    "cluster": "tools",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-20mb-file-limit", "sizes", "etsy-8x10-print-size", "etsy-5x7-print-size", "etsy-16x20-print-size", "etsy-11x14-print-size", "best-resolution-for-etsy-printables", "how-to-resize-images-for-etsy"]
+  },
+  {
+    "slug": "etsy-botanical-print-sizes",
+    "title": "Botanical Print Sizes for Etsy",
+    "pageType": "niche",
+    "keywords": ["etsy botanical print sizes", "botanical wall art sizes", "botanical printable sizes etsy", "botanical illustration print size"],
+    "cluster": "niches",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-print-size-calculator", "etsy-nursery-wall-art-sizes", "etsy-8x10-print-size", "etsy-16x20-print-size", "etsy-24x36-print-size", "etsy-18x24-print-size", "how-many-sizes-etsy-printable", "how-to-resize-images-for-etsy"]
+  },
+  {
+    "slug": "2-3-vs-4-5-ratio",
+    "title": "2:3 vs 4:5 Ratio — Which Print Sizes Do Etsy Sellers Need?",
+    "pageType": "ratio",
+    "keywords": ["2:3 vs 4:5 ratio", "2:3 vs 4:5 aspect ratio print", "8x10 vs 8x12 print size", "which print ratio for etsy wall art"],
+    "cluster": "ratios",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-print-size-calculator", "etsy-8x10-print-size", "etsy-24x36-print-size", "etsy-16x20-print-size", "etsy-4x6-print-size", "how-many-sizes-etsy-printable", "how-to-resize-images-for-etsy", "best-resolution-for-etsy-printables"]
   }
 ]

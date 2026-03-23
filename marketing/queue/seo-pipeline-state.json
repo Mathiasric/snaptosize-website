@@ -1,27 +1,27 @@
 {
   "_fresh": false,
-  "current_week": "W12",
-  "batch_id": "2026-W12",
-  "started_at": "2026-03-17T00:00:00+00:00",
+  "current_week": "W13",
+  "batch_id": "2026-W13",
+  "started_at": "2026-03-23T00:00:00+00:00",
   "target": {
     "pages": 10
   },
   "stages": {
     "researcher": {
       "status": "completed",
-      "output": "5 briefs produced"
+      "output": "2 briefs produced (2-3-vs-4-5-ratio, etsy-botanical-print-sizes)"
     },
     "writer": {
       "status": "completed",
-      "output": "5 pages written"
+      "output": "2 pages written"
     },
     "review": {
       "status": "completed",
-      "output": "build passed, all 5 pages compile"
+      "output": "build passed, both pages compile (40 total pages)"
     },
     "deploy": {
-      "status": "pending",
-      "output": null
+      "status": "completed",
+      "output": "nav/footer/registry/docs updated"
     },
     "verify": {
       "status": "pending",
@@ -30,46 +30,25 @@
   },
   "content_items": [
     {
-      "slug": "best-resolution-for-etsy-printables",
-      "keyword": "best resolution for etsy printables",
-      "type": "problem-solution",
-      "status": "ready-to-deploy",
-      "brief": "marketing/briefs/best-resolution-for-etsy-printables.md"
+      "slug": "2-3-vs-4-5-ratio",
+      "keyword": "2:3 vs 4:5 ratio",
+      "type": "ratio",
+      "status": "deployed",
+      "brief": "marketing/briefs/2-3-vs-4-5-ratio-brief.md"
     },
     {
-      "slug": "how-many-sizes-etsy-printable",
-      "keyword": "how many sizes to include etsy printable",
-      "type": "problem-solution",
-      "status": "ready-to-deploy",
-      "brief": "marketing/briefs/how-many-sizes-etsy-printable.md"
-    },
-    {
-      "slug": "how-to-package-digital-wall-art-for-etsy",
-      "keyword": "how to package digital wall art for etsy",
-      "type": "problem-solution",
-      "status": "ready-to-deploy",
-      "brief": "marketing/briefs/how-to-package-digital-wall-art-for-etsy.md"
-    },
-    {
-      "slug": "etsy-24x36-print-size",
-      "keyword": "etsy 24x36 print size",
-      "type": "size",
-      "status": "ready-to-deploy",
-      "brief": null
-    },
-    {
-      "slug": "how-to-price-etsy-printables",
-      "keyword": "how to price etsy printables",
-      "type": "guide",
-      "status": "ready-to-deploy",
-      "brief": null
+      "slug": "etsy-botanical-print-sizes",
+      "keyword": "etsy botanical print sizes",
+      "type": "niche",
+      "status": "deployed",
+      "brief": "marketing/briefs/etsy-botanical-print-sizes-brief.md"
     }
   ],
   "metrics": {
-    "total": 5,
-    "completed": 5,
+    "total": 2,
+    "completed": 2,
     "failed": 0,
     "success_rate": 1.0
   },
-  "updated_at": "2026-03-19T00:00:00+00:00"
+  "updated_at": "2026-03-23T00:00:00+00:00"
 }

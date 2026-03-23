@@ -158,6 +158,12 @@ export function Header() {
                     <Link href="/etsy-nursery-wall-art-sizes" className="block py-1 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
                       Nursery Wall Art Sizes
                     </Link>
+                    <Link href="/etsy-botanical-print-sizes" className="block py-1 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
+                      Botanical Print Sizes
+                    </Link>
+                    <Link href="/2-3-vs-4-5-ratio" className="block py-1 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
+                      2:3 vs 4:5 Ratio
+                    </Link>
                   </div>
                   <div className="pt-2 mt-2 border-t border-border/50">
                     <Link href="/etsy-print-size-calculator" className="block py-1.5 text-sm text-[#2DD4BF] hover:text-[#2DD4BF]/80 transition-colors font-medium">
@@ -294,6 +300,12 @@ export function Header() {
                         </Link>
                         <Link href="/etsy-nursery-wall-art-sizes" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Nursery Wall Art Sizes
+                        </Link>
+                        <Link href="/etsy-botanical-print-sizes" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Botanical Print Sizes
+                        </Link>
+                        <Link href="/2-3-vs-4-5-ratio" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          2:3 vs 4:5 Ratio
                         </Link>
                         <Link href="/etsy-print-size-calculator" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-[#2DD4BF] hover:text-[#2DD4BF]/80 hover:bg-surface rounded transition-colors focus-ring font-medium">
                           Print Size Calculator

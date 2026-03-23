@@ -1,12 +1,12 @@
 # MILESTONES.md — Revenue Targets & Progress
-**Last updated:** 2026-03-20
+**Last updated:** 2026-03-22
 
 ---
 
 ## Current State
 - **Paying users:** 1
 - **MRR:** $12
-- **SEO pages live:** 19
+- **SEO pages live:** 25
 - **First paying customer:** 2026-03-03
 - **Target:** $1M ARR (~7,500 paying users)
 
@@ -47,7 +47,7 @@ $1M ARR requires:
 
 ### Marketing Infrastructure
 - ✅ Marketing site (snaptosize.com, Cloudflare Pages)
-- ✅ 15 SEO pages live (2 new pages deployed 2026-03-18)
+- ✅ 25 SEO pages live (2 new pages deployed 2026-03-23: ratio comparison + niche vertical)
 - ✅ PostHog pageview tracking
 - ✅ Lead capture backend (Worker /subscribe)
 - ✅ Email capture component on site
@@ -84,23 +84,48 @@ $1M ARR requires:
 
 ## What's NOT Built Yet
 
+### Fast-Feedback Growth (NEW — prioritized 2026-03-22)
+- ❌ Product Hunt launch — prep listing, screenshots, GIF, schedule launch
+- ✅ ~~Interactive "Etsy Print Size Calculator" tool~~ (`/etsy-print-size-calculator`) — deployed 2026-03-22
+- ❌ AppSumo / lifetime deal listing — submit application, prepare assets
+- ❌ Cold email campaign to Etsy printable sellers (50 targets identified)
+- ❌ Facebook group admin partnerships (top 5 groups identified)
+
+### Product & Conversion
 - ✅ ~~Landing → App UTM attribution~~ (ref/source tracking via PartnerRefCapture)
 - ✅ ~~Affiliate program~~ (partner page live, ref tracking working)
 - ❌ Revenue dashboard (MRR tracking view)
-- ❌ Analytics agent team (PostHog API querying, funnel analysis, automated reports) — trigger: 100+ users
-- ❌ Automated partner commission tracking (Stripe Connect) — trigger: 3+ active partners
 - ❌ In-product upsell modal
-- ❌ YouTube channel
-- ❌ Paid acquisition
-- ❌ Batch processing feature
-- ❌ Premium tier
-- ❌ Planner/printable layout adaptation (Letter→A4→A5 re-layout) — adjacent market, different product. Explore after wall art PMF proven.
-- ❌ Auto mockup generator (upload image → 10-20 frame/wall mockups) — bundle with SnapToSize as premium tier ($29/mo). Trigger: 10+ paying users. Proves resize demand first, then add mockups for higher price + lower churn.
-- ❌ Community listening agent — monitors Reddit/Etsy forums for sizing pain points, feeds into SEO + social pipelines
+- ❌ Batch processing feature — trigger: 50+ paying users
+- ❌ Premium tier — trigger: 50+ paying users
+- ❌ Auto mockup generator — trigger: 10+ paying users
+
+### Channels (Future)
+- ❌ YouTube channel — trigger: after educator partnerships prove out
+- ❌ Paid acquisition — trigger: $5K MRR, proven conversion rate
+- ❌ Analytics agent team — trigger: 100+ users
+- ❌ Automated partner commission tracking (Stripe Connect) — trigger: 3+ active partners
+- ❌ Community listening agent — monitors Reddit/Etsy forums for sizing pain points
+
+### Adjacent Markets (Post-PMF)
+- ❌ Planner/printable layout adaptation (Letter→A4→A5 re-layout)
+- ❌ Social media image sizing (secondary ICP, same technology)
 
 ---
 
-## Completed This Week (2026-03-19)
+## Completed This Week (2026-03-23)
+- ✅ 2 new SEO pages deployed: `/2-3-vs-4-5-ratio` (first ratio comparison page) + `/etsy-botanical-print-sizes` (second niche vertical)
+- ✅ SEO pipeline W13 batch started — 2 pages researched, written, built, deployed
+- ✅ Etsy Print Size Calculator interactive tool page deployed (`/etsy-print-size-calculator`)
+- ✅ Design polish: shared EmailCaptureSection + FinalCTA components (teal accents) across all 24 SEO pages
+- ✅ Calculator discoverability: added to Header nav, Footer, 8 internal links from key pages, OG image generated
+- ✅ 2 new SEO pages deployed (4×6 + 12×16 print sizes)
+- ✅ Daily social media content: Pinterest + Instagram + TikTok
+- ✅ 4 educator outreach emails sent
+- ✅ Strategic assessment: identified 5 new fast-feedback growth channels
+- ✅ Updated scaling plan with Product Hunt, interactive tools, AppSumo, cold email, FB group strategies
+
+## Completed Previous Week (2026-03-19)
 - ✅ Partner program live: /partners landing page + /ref/[name] referral redirects
 - ✅ Partner referral tracking: PostHog person properties (partner_ref, partner_source) verified working
 - ✅ PostHog API CLI access: query events, persons, funnels via personal API key

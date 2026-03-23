@@ -96,6 +96,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-botanical-print-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                  Botanical Print Sizes
+                </Link>
+              </li>
+              <li>
                 <Link href="/etsy-print-ratios" className="transition-colors hover:text-accent-light">
                   Etsy Print Ratios
                 </Link>
@@ -103,6 +108,11 @@ export function Footer() {
               <li>
                 <Link href="/how-many-sizes-etsy-printable" className="transition-colors hover:text-accent-light">
                   How Many Sizes to Include
+                </Link>
+              </li>
+              <li>
+                <Link href="/2-3-vs-4-5-ratio" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                  2:3 vs 4:5 Ratio
                 </Link>
               </li>
             </ul>
