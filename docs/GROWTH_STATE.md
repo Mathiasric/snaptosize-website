@@ -1,7 +1,7 @@
 # GROWTH_STATE.md
 ## SnapToSize — Growth & Business State
 
-Last updated: 2026-03-11
+Last updated: 2026-03-22
 
 ---
 
@@ -41,11 +41,15 @@ SnapToSize is a SaaS tool for Etsy sellers selling digital wall art / printables
 - **Product:** Live and production-stable as of 2026-03-03
 - **First paying customer:** 2026-03-03
 - **Paying users:** 1 ($12 MRR)
-- **SEO pages live:** 7
-- **Email list:** Lead capture component live on site
+- **SEO pages live:** 23 (9 size, 8 guide, 4 hub/problem, 1 niche, 1 interactive tool)
+- **Interactive tools:** Print Size Calculator live (`/etsy-print-size-calculator`) — crop analysis, DPI checker, 30-size reference
+- **Email list:** Lead capture live (PDF cheat sheet + 2 automated follow-up emails)
 - **Pipelines built:** SEO (10 pages/week) + Social (7 videos + 21 pins/week)
 - **Video:** Remotion rendering working (TikTokVertical template)
-- **Active distribution:** Starting this week (March 11)
+- **Active distribution:** Pinterest 4/day, Instagram 2-3/day + reels, TikTok 1/day
+- **Partner program:** /partners landing page live, /ref/[name] referral tracking, PostHog attribution
+- **Design system:** Shared EmailCaptureSection + FinalCTA components (teal accents) across all 24 pages
+- **PostHog dashboards:** Live on both webapp + marketing site (~4 weeks of data)
 - See MILESTONES.md for full build status
 - See CONTENT_PLAYBOOK.md for channel strategies and content specs
 
@@ -185,8 +189,15 @@ Every funnel step uses consistent `distinct_id = clerk:{userId}` + properties (`
 - **SEO:** 10 pages/week via automated pipeline
 - **TikTok + Reels:** 7 videos/week (1/day), dual-posted, Remotion-rendered
 - **Pinterest:** 21 pins/week (3/day)
-- **Community outreach:** Reddit + Facebook groups (manual)
+- **YouTube educator outreach:** Targeting 20 micro-educators (5K-50K followers), free Pro + 25% affiliate
+- **Discord communities:** Etsy Empire, Fireflies, Ecom Queens (value-first engagement)
+- **Partner program:** /partners page live, /ref/[name] referral redirects, PostHog person property tracking (partner_ref, partner_source)
+- **Educator outreach:** 20 prospects researched, 4 personalized emails sent, follow-up templates ready
+- ~~DM outreach: Etsy sellers~~ **DROPPED** — Etsy account flagged/suspended
+- ~~Community outreach: Reddit + Facebook~~ **DROPPED** — flagged as ads, bad ROI
+- ~~Paid ads~~ **NOT VIABLE** — CAC $802 vs LTV $144 (revisit at $5K MRR)
 - **YouTube, affiliates, paid ads:** Not started (gated by milestones)
+- **NEW fast-feedback channels (planned):** Product Hunt, cold email to sellers, AppSumo lifetime deal, FB group admin partnerships
 
 **Positioning:** "Built for Etsy sellers" — exact ratios, no cropping, 20MB compliance, time saved
 
@@ -202,92 +213,30 @@ Every funnel step uses consistent `distinct_id = clerk:{userId}` + properties (`
 
 ---
 
-## Live Pages (6)
+## Live Pages (23)
 
-### /etsy-print-sizes — Pillar Page (PRODUCTION)
+Full list in CONTENT_PLAYBOOK.md. Key pages:
 
-**URL:** https://snaptosize.com/etsy-print-sizes
-**Published:** 2025-02-10 | **Modified:** 2026-03-03
-**Status:** Indexed, re-indexing requested 2026-03-03
-**Schema:** Article + BreadcrumbList + FAQPage (5 questions)
-**OG/Twitter:** Custom hero image
-**Internal links:** /pricing, /sizes, /etsy-print-ratios, app
-**Target keywords:** "Etsy print sizes", "Etsy print ratios", "300 DPI print sizes", "Etsy 20MB limit"
+**Pillar:** /etsy-print-sizes (indexed, bidirectional links to all size/ratio/guide pages)
+**Size pages (9):** 8x10, 5x7, 16x20, 24x36, 18x24, 11x14, A4, 4x6, 12x16
+**Guide pages (8):** how-to-resize, best-resolution, best-file-format, 20mb-limit, package-digital-wall-art, price-printables, sell-digital-downloads, sell-without-photoshop
+**Hub/problem (4):** print-ratios, how-many-sizes, digital-download-not-selling, nursery-wall-art-sizes
+**Interactive tools (1):** etsy-print-size-calculator (crop analysis, DPI checker, 30-size reference)
+**Other:** what-files-to-include, sizes (all pack sizes)
 
-**Content:**
-- Crop-to-fit vs SnapToSize comparison (visual proof)
-- Common Etsy Print Mistakes (6 cards)
-- Complete ratio tables: 2:3, 3:4, 4:5, ISO A-series, extras at 300 DPI
-- Collapsible FAQ
-- Social proof: "Over 18,000 size packs generated"
-- Trust pills + micro-benefit chips
-- 4 internal CTAs
-
----
-
-### /etsy-print-ratios — Supporting Page (PRODUCTION)
-
-**URL:** https://snaptosize.com/etsy-print-ratios
-**Published:** 2026-03-04 | **Modified:** 2026-03-04
-**Status:** Deployed, ready for indexing. Sitemap priority: 0.8
-**Schema:** Article + BreadcrumbList + FAQPage (5 questions)
-**OG/Twitter:** hero_og_etsy-print-ratios.png
-**Internal links:** /etsy-print-sizes, /sizes, /pricing, /guide (bidirectional with pillar)
-**Target keywords:** "etsy print ratios", "etsy printable ratios", "print ratio packs"
-
----
-
-### /how-to-sell-digital-downloads-on-etsy (PRODUCTION)
-
-**URL:** https://snaptosize.com/how-to-sell-digital-downloads-on-etsy
-**Target keywords:** "how to sell digital downloads on Etsy", "Etsy digital products"
-
-**Content:**
-- Guide for new sellers covering research, pricing, creating listings
-- Technical requirements for digital downloads
-- Internal links to SnapToSize product
-- Multiple CTAs
-
----
-
-### /what-files-to-include-etsy-digital-download (PRODUCTION)
-
-**URL:** https://snaptosize.com/what-files-to-include-etsy-digital-download
-**Target keywords:** "what files to include etsy digital download"
-
-**Content:**
-- Explains which files to include in Etsy digital download listings
-- Emphasizes ratios, file types, Etsy policies
-- Internal links to size/ratio pages
-- CTAs to SnapToSize
+All pages have: Article + BreadcrumbList + FAQPage schema, 3+ CTAs, shared EmailCaptureSection + FinalCTA components, internal linking, OG images.
 
 ---
 
 ## SEO Cluster Expansion (PLANNED)
 
-### High-Priority Pages (Next 6 months)
+### High-Priority Pages (Next to build)
 
-**1. /etsy-20mb-file-limit**
-- **Target:** "etsy 20mb limit", "etsy file size limit"
-- **Content:** Explains Etsy's 20MB limit, how to compress files without losing quality
-- **CTA:** SnapToSize automatically stays under limit
-
-**2. /printable-wall-art-sizes**
-- **Target:** "printable wall art sizes", "poster sizes", "canvas sizes"
-- **Content:** Broader guide covering common print sizes beyond Etsy (posters, canvases, frames)
-- **Strategy:** Capture external searchers who later discover Etsy
-
-**3. /how-to-create-etsy-listing-files**
-- **Target:** "how to create etsy listing files", "etsy file preparation"
-- **Content:** Tutorial on workflow and automation
-- **Structure:** Show manual steps → present SnapToSize as shortcut
-
-**4. Problem-based FAQ pages**
-- **Target:** "etsy file too big", "etsy dpi error", "cannot upload digital files"
-- **Content:** FAQ-style pages targeting long-tail, high-intent queries
-- **Strategy:** Capture users actively troubleshooting
-
----
+**Ratio comparisons:** 2:3-vs-3:4, 4:5-vs-3:4, etc. (10 planned)
+**Niche verticals:** botanical, minimalist, wedding, abstract (10 planned)
+**Comparison pages:** vs-canva, vs-photoshop (10 planned)
+**Problem-based:** "etsy file too big", "etsy dpi error" (5+ planned)
+**Broader reach:** printable-wall-art-sizes, how-to-create-etsy-listing-files
 
 ### Content Velocity
 
@@ -295,7 +244,7 @@ Every funnel step uses consistent `distinct_id = clerk:{userId}` + properties (`
 
 ---
 
-# 10. Lead Capture System (NOT YET BUILT — NEXT PRIORITY)
+# 10. Lead Capture System (LIVE — Built 2026-03)
 
 ## Lead Magnet
 
@@ -659,7 +608,7 @@ See MILESTONES.md for full build status (what's built vs not built).
 - No new product features until ≥ 50 paying users AND ≥ 7% free → pro conversion validated
 - One channel must prove before adding another
 - Pricing locked until 100 paying users
-- **Content velocity:** 1–2 SEO guides/month until 8–10 pages live
+- **Content velocity:** 10 pages/week via SEO pipeline (23 live, targeting 200+)
 - Update existing pages quarterly
 
 **Sources of truth:**

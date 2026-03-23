@@ -1,7 +1,7 @@
 # PROJECT_STATE.md
 ## SnapToSize — Technical System State
 
-Last updated: 2026-03-05
+Last updated: 2026-03-22
 
 > This file is the authoritative source for infrastructure, backend, API contracts, billing implementation, and monitoring.
 > For business strategy, ICP, funnel, and growth execution, see GROWTH_STATE.md.
@@ -42,7 +42,8 @@ Marketing site: snaptosize.com
 - Next.js static export (output: "out")
 - Deployed to Cloudflare Pages
 - Root directory: app-next/
-- Contains: landing page, SEO pages, pricing, FAQ, EmailCapture component
+- Contains: landing page, SEO pages, pricing, FAQ, EmailCapture component, Print Size Calculator tool
+- Interactive tools: `/etsy-print-size-calculator` — client-side crop analysis, DPI check, ratio detection for 30 print sizes
 - API routes do NOT work (static export) — use Worker for any server logic
 - EmailCapture calls Worker directly for subscribe
 - `images: { unoptimized: true }` — Cloudflare Pages constraint, do not change
@@ -810,6 +811,40 @@ Logs fire only on errors. Zero cost in normal operation.
 
 ---
 
+# 13.5 Marketing Site — Calculator & Shared Components (2026-03-22)
+
+## Print Size Calculator (`/etsy-print-size-calculator`)
+
+Interactive client-side tool — no Worker calls. Pure React state.
+
+**Features:**
+- Enter image width × height in pixels
+- Analyze tab: crop % per ratio group, DPI quality per size, orientation auto-detect
+- Reference tab: complete 30-size table with pixel dimensions, megapixels, use cases
+- File size estimates (JPEG + PNG) per size
+
+**Schema:** Article + BreadcrumbList + FAQPage + WebApplication (applicationCategory: DesignApplication, price: 0)
+
+**Internal linking:** 8 pages link TO calculator. Calculator links OUT to 11+ pages. In Header nav (Guides dropdown) and Footer (Product section).
+
+## Shared CTA Components (2026-03-22)
+
+Two shared components replace old `<Card accent>` patterns across all 24 SEO pages:
+
+**`EmailCaptureSection`** (`components/EmailCaptureSection.tsx`):
+- Props: heading, description, placeholder, buttonText
+- Renders: elevated card (bg-[#13112a], border-white/[0.08], teal top accent), document icon preview, EmailCapture form
+- Used as the email capture section on every SEO page
+
+**`FinalCTA`** (`components/FinalCTA.tsx`):
+- Props: heading, stat, description, buttonText, appUrl
+- Renders: teal left accent bar (border-l-4 border-l-[#2DD4BF]), elevated bg, stat line in teal, Button + free tier text
+- Used as the final CTA section on every SEO page
+
+**Design system:** Teal (#2DD4BF) accents for conversion elements, purple accents for mid-content inline CTAs (`<Card accent>`).
+
+---
+
 # 14. What Is NOT Built Yet (Technical)
 
 - **Email capture system** (specification complete in §9.5, implementation pending)
@@ -880,6 +915,7 @@ OG images are generated using **Playwright MCP CLI** — automated browser scree
 | /how-to-sell-digital-downloads-on-etsy | `/assets/og/how-to-sell-digital-downloads-on-etsy.png` |
 | /what-files-to-include-etsy-digital-download | `/assets/og/what-files-to-include-etsy-digital-download.png` |
 | /etsy-20mb-file-limit | `/assets/og/etsy-20mb-file-limit.png` |
+| /etsy-print-size-calculator | `/assets/og/etsy-print-size-calculator.png` |
 
 **Twitter card:** `summary_large_image` on all pages — shows large preview image when link is shared.
 

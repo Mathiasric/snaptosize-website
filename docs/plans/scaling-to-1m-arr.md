@@ -1,6 +1,7 @@
 # SnapToSize — Scaling to $1M ARR Execution Plan
 **Created:** 2026-03-17
-**Status:** 1 paying user · $12 MRR · 13 SEO pages · Pipelines running
+**Status:** 1 paying user · $12 MRR · 23 SEO pages · Calculator live · Social active · Lead capture live · Partner program live · 4 outreach emails sent
+**Last updated:** 2026-03-22
 
 ---
 
@@ -11,30 +12,45 @@
 | Paying users | 1 | 7,500 | 7,499x |
 | MRR | $12 | $83,333 | 6,944x |
 | Organic traffic | ~50/mo (est.) | 90-180k/mo | 2,000-3,600x |
-| SEO pages | 13 | 200+ | 15x |
+| SEO pages | 23 | 200+ | ~9x |
 | Conversion rate | Unknown | 7-10% | No data |
-| Distribution channels | 3 (SEO + Pinterest + Instagram) | 5+ active | 2 missing |
+| Distribution channels | 6 (SEO + Pinterest + Instagram + TikTok + Email + Partners) | 8+ active | Adding 3 new |
 
 ---
 
 ## Phase 1: Foundation (Now → 10 paying users)
 **Timeline:** Weeks 1-8 · **Gate:** 10 users proves willingness to pay
 
-### 1.1 SEO Volume — The Primary Growth Engine
-**Why:** Zero competition for "Etsy printable sizing" niche (confirmed by competitor analysis). No mainstream competitor offers end-to-end automation. We own this.
+### 1.1 SEO Dominans — AI-Powered Content Blitz
+**Why:** Zero competition for "Etsy printable sizing" niche (confirmed by competitor analysis). No mainstream competitor offers end-to-end automation. We own this. Claude Max = unlimited compute for content production.
 
-**Actions:**
-- [ ] Scale SEO pipeline from 3/week → 10/week (current target, not yet hitting it)
-- [ ] Prioritize remaining high-intent keywords from researcher priority list:
-  - "how to price your etsy printables" (medium comp, high volume)
-  - "etsy printables beginner guide" (medium comp, high volume)
-  - "etsy digital download tips" (medium comp)
-  - "how to make passive income on etsy" (high volume, broader)
-- [ ] Build size-specific pages at scale: `/etsy-11x14-print-size`, `/etsy-16x20-print-size`, etc. (50 planned, 2 built)
-- [ ] Build ratio comparison pages: `/2x3-vs-3x4-ratio`, `/4x5-vs-3x4-ratio` (10 planned, 0 built)
-- [ ] Target: 50 SEO pages by end of week 8
+**Target: 100 pages by week 4, 200 by week 8** (5-10 pages/day using parallel agent execution)
 
-**Estimated impact:** 50 pages × 200 sessions/mo avg = 10,000 sessions/mo
+**Page types to build:**
+| Type | Count | Status |
+|------|-------|--------|
+| Size-specific (11x14, 18x24, 24x36, A4, A3, etc.) | 25 | 9 built (8x10, 5x7, 16x20, 24x36, 18x24, 11x14, A4, 4x6, 12x16) |
+| Ratio comparisons (2:3-vs-3:4, etc.) | 10 | 0 built |
+| Problem/troubleshooting (file-too-big, wrong-dpi, etc.) | 15 | 5 built |
+| Niche verticals (nursery, botanical, wedding, minimalist) | 10 | 1 built (nursery) |
+| How-to guides (pricing, beginner, passive income) | 15 | 7 built |
+| Comparison/alternatives (vs-canva, vs-photoshop) | 10 | 0 built |
+| **Total target** | **85 new pages** | **23 live** |
+
+**Priority keywords:**
+- "how to price your etsy printables" (medium comp, high volume)
+- "etsy printables beginner guide" (medium comp, high volume)
+- "etsy digital download tips" (medium comp)
+- "how to make passive income on etsy" (high volume, broader)
+- All remaining Etsy print size long-tail queries
+
+**Quality gates (never sacrifice for speed):**
+- Every page passes `npx next build`
+- Playwright screenshot QA (desktop + mobile)
+- Unique, valuable content (not thin programmatic filler)
+- Article + BreadcrumbList + FAQPage schema, 3+ CTAs, internal links
+
+**Estimated impact:** 200 pages × 300 sessions/mo = 60,000 sessions/mo
 
 ### 1.2 Conversion Tracking — We're Flying Blind
 **Why:** We don't know our conversion rate. Can't optimize what we can't measure.
@@ -47,28 +63,108 @@
 - [ ] **Weekly metrics check** — MRR, signups, exports, conversion rate
 - [ ] Wire up "Landing → App click" tracking (listed as missing in GROWTH_STATE.md §7)
 
-### 1.3 Direct Outreach — Manual but High-Converting
-**Why:** SEO takes 2-3 months to compound. Need users NOW to validate.
+### 1.3 YouTube Educator Partnerships + Community Presence
+**Why:** SEO takes 3-6 months to compound. Educator partnerships can drive targeted signups NOW at $0 cash cost. eRank grew primarily through Starla Moore.
 
-**Actions:**
-- [ ] Reddit: r/EtsySellers, r/EtsyPrintables — 3 valuable comments/day with natural guide links
-- [ ] Facebook groups: "Etsy Digital Sellers", "Etsy Printable Makers" — share guides, not product
-- [ ] Etsy forums: Answer sizing/file questions with guide links
-- [ ] Target: 5 outreach posts/day, track click-throughs
-- [ ] DM top Etsy printable sellers directly (50+ listings) — offer free Pro trial
+**❌ All outreach channels dropped:**
+- Reddit/Facebook — flagged as ads, bad ROI
+- Etsy DMs — account flagged/suspended after outreach
 
-**Estimated impact:** 20-50 signups/month from manual outreach
+**YouTube Educator Outreach (highest-impact fast channel):**
+- [ ] Research 20 Etsy micro-educators (5K-50K YouTube followers)
+- [ ] Write personalized outreach emails (Claude generates these)
+- [ ] Offer: Free Pro account forever + 25% recurring affiliate commission
+- [ ] Provide: Demo video link + personalized landing page
+- [ ] Target educators: Starla Moore, Kara Buntin, Brandon Timothy Canada, Dylan Jahraus + 16 more micro-creators
+- [ ] Build `/partners` affiliate page on snaptosize.com
+- [ ] Follow up at day 3 and day 7
 
-### 1.4 Email Nurture
+**Community Presence (zero-cost, value-first):**
+- [ ] Join Discord communities: Etsy Empire, Fireflies, Ecom Queens
+- [ ] Join community.etsy.com forums (Education & Insights)
+- [ ] Weeks 1-2: Answer print sizing questions only (value-first)
+- [ ] Week 3+: Share tool naturally when asked "how do you handle all those sizes?"
+
+**Estimated impact:** 1 educator partnership = 50-200 targeted signups. 3-5 partners = pipeline to 10+ paying users.
+
+### 1.4 Email Nurture ✅ LIVE
 **Why:** Visitors who don't convert immediately need follow-up.
 
-**Actions:**
-- [ ] Create 3-email welcome sequence (Resend):
-  1. "Your free size guide" (immediate value)
-  2. "The 5 ratio packs every seller needs" (education, day 3)
-  3. "How SnapToSize saves 1-3 hours per listing" (soft sell, day 7)
-- [ ] Add exit-intent email capture on high-traffic pages
+**Done:**
+- [x] Lead capture live on site (email + PDF cheat sheet download)
+- [x] 2 automated follow-up emails after signup
+- [x] Email → PDF → nurture sequence working
+
+**Remaining:**
 - [ ] Weekly newsletter with sizing tips + new guide announcements
+- [ ] Track email → signup → upgrade conversion
+
+### 1.5 Product Hunt Launch (NEW — added 2026-03-22)
+**Why:** Free launch event that can deliver 200-2000 visits in a single day. Etsy-niche SaaS tools perform well on PH. Zero cost, fast feedback.
+
+**Actions:**
+- [ ] Write tagline + description (< 260 chars)
+- [ ] Prepare 4-5 product screenshots (hero, upload flow, ZIP output, before/after)
+- [ ] Short demo GIF or clip from existing 50-sec video
+- [ ] Set up maker profile
+- [ ] Schedule launch Tuesday-Thursday
+- [ ] Prep "first comment" with founder story
+- [ ] Share launch link via email list + social channels on launch day
+
+**Estimated impact:** 500-2000 visits, 30-100 signups, validation signal from tech/SaaS audience
+
+### 1.6 ✅ Interactive Free Tool — "Etsy Print Size Calculator" (DONE — 2026-03-22)
+**Why:** Captures tool-intent searches (completely different from article SEO). Free tools are proven traffic magnets — Ahrefs free backlink checker, Canva free tools, Coolors palette generator all used this playbook. People using a calculator are in "doing" mode, not "reading" mode — higher intent.
+
+**Actions:**
+- [x] Build `/etsy-print-size-calculator` page on marketing site
+- [x] Features: enter image dimensions → crop %, DPI quality, orientation for all 30 sizes
+- [x] Reference tab with complete 30-size table (pixels, megapixels, use cases)
+- [x] CTA: "Want all sizes automatically? Try SnapToSize Free"
+- [x] Schema markup (WebApplication + FAQPage + Article + BreadcrumbList)
+- [x] Added to Header nav, Footer, 8 internal links from key pages, OG image generated
+- [ ] Share on social + Product Hunt + email sequence
+
+**Target keywords:** "etsy print size calculator", "print dpi calculator", "image size checker for etsy"
+**Estimated impact:** 500-2000 sessions/mo within 2-3 months, high conversion intent
+
+### 1.7 Cold Email to Etsy Sellers (NEW — added 2026-03-22)
+**Why:** Etsy DMs got the account flagged, but email is a completely separate channel. Many top Etsy printable sellers have public email in their shop About page, linked website, or via Hunter.io. These are exactly our ICP — sellers who already have the problem we solve.
+
+**Actions:**
+- [ ] Find 50 top Etsy printable sellers with public email addresses
+- [ ] Write personalized cold email template (genuine, personal, short — not spam)
+- [ ] Send 5-10 per day manually
+- [ ] Offer: "I built this tool for sellers like you. Try it free — I'd love your feedback."
+- [ ] Track in `marketing/outreach/outreach-tracker.json`
+
+**Estimated impact:** 1-3% conversion → 1-3 signups from first 50 emails
+
+### 1.8 AppSumo / Lifetime Deal Marketplace (NEW — added 2026-03-22)
+**Why:** AppSumo has 1M+ newsletter subscribers who actively buy SaaS tools. At $12 MRR with 1 user, we need users more than margin. A lifetime deal campaign can deliver 200-2000 users in 30 days, plus reviews, feedback, and word-of-mouth.
+
+**Actions:**
+- [ ] Research AppSumo partner submission (appsumo.com/partners)
+- [ ] Decide pricing: $29 (1-code), $58 (2-code stack)
+- [ ] Prepare listing: screenshots, demo video, description
+- [ ] Submit application
+- [ ] Alternatives if slow: PitchGround, Dealify, StackSocial
+
+**Tradeoff:** Giving away lifetime access cheap. But at $12 MRR, 200 users at $29 = $5,800 cash + product validation + reviews + word-of-mouth. Worth it.
+
+**Estimated impact:** 200-2000 lifetime sales, $5,800-$58,000 one-time revenue
+
+### 1.9 Facebook Group Admin Partnerships (NEW — added 2026-03-22)
+**Why:** Group admins are gatekeepers to thousands of Etsy sellers. One partnership = access to 5,000-20,000 target users. Different from "posting in groups" (which gets flagged). This is direct admin-to-admin partnership.
+
+**Actions:**
+- [ ] Identify top 5 Facebook groups for Etsy digital download sellers
+- [ ] Contact admins directly (not post in group)
+- [ ] Offer: "Free Pro for all members for 1 month" or exclusive group discount
+- [ ] Provide admin with affiliate link for recurring commission
+- [ ] If successful: replicate across more groups
+
+**Estimated impact:** Access to 10,000+ Etsy sellers through 2-3 group partnerships
 
 ---
 
@@ -188,51 +284,87 @@
 
 | Phase | Users | MRR | Traffic/mo | Pages | Channels |
 |-------|-------|-----|------------|-------|----------|
-| Phase 1 (wk 1-8) | 10 | $120 | 5-10k | 50 | SEO + outreach |
-| Phase 2 (wk 8-16) | 50 | $600 | 20-40k | 100 | + social + YouTube |
-| Phase 3 (wk 16-32) | 500 | $6,000 | 60-100k | 200 | + affiliates + premium |
-| Phase 4 (wk 32-52) | 7,500 | $83,333 | 150-200k | 300+ | + paid ads + platforms |
+| Phase 1 (wk 1-8) | 10 | $120 | 5-10k | 200 | SEO + educators + PH + cold email + AppSumo + FB groups |
+| Phase 2 (wk 8-16) | 50 | $600 | 20-40k | 300 | + social + YouTube + affiliates + interactive tools |
+| Phase 3 (wk 16-32) | 500 | $6,000 | 60-100k | 400+ | + partnerships + premium tier |
+| Phase 4 (wk 32-52) | 7,500 | $83,333 | 150-200k | 500+ | + paid ads + platforms |
 
 ---
 
-## Biggest Levers (Ranked by Impact)
+## Biggest Levers (Ranked by Impact — updated 2026-03-22)
 
-1. **SEO volume** — 200 pages capturing every "etsy [size/ratio/problem]" query. Zero competition. Compounding. This alone can drive 50k+ sessions/mo.
+1. **Product Hunt + launch events** — One-day burst that can deliver 500+ signups. Fast feedback, zero cost. Do this FIRST.
 
-2. **Conversion optimization** — Going from unknown to 10% free→paid is the difference between 500 and 5,000 paying users on the same traffic.
+2. **Educator partnerships** — 1 mention = 50-200 targeted signups. 3-5 partners = pipeline to 10+ paying. 4 emails sent, awaiting responses.
 
-3. **Affiliates** — 50 active affiliates × 10 conversions/month = 500 new users/month. The most capital-efficient growth channel.
+3. **Interactive free tools** — Print size calculator, DPI checker. Captures tool-intent searches (higher conversion than articles). Proven playbook.
 
-4. **Pinterest** — Massively underrated for craft/seller niches. Pins have 3-6 month lifespan (vs. social posts dying in 24 hours). 21 pins/week compounds fast.
+4. **AppSumo lifetime deal** — 200-2000 users in 30 days. Trades margin for user base. At $12 MRR, users > margin.
 
-5. **YouTube** — "How to sell printables on Etsy" videos get 50-500k views. One good video = months of signups.
+5. **SEO volume** — 200 pages capturing every "etsy [size/ratio/problem]" query. Zero competition. Compounding. Won't rank for 3-6 months but builds moat.
+
+6. **Cold email** — Direct access to ICP. 5-10/day, 1-3% conversion. Slow but steady and highly targeted.
+
+7. **FB group admin partnerships** — Gatekeepers to 5,000-20,000 sellers per group. One partnership = massive distribution.
+
+8. **Conversion optimization** — Going from unknown to 10% free→paid is the difference between 500 and 5,000 paying users on the same traffic.
+
+9. **Pinterest** — Massively underrated for craft/seller niches. Pins have 3-6 month lifespan. 21 pins/week compounds fast.
+
+10. **YouTube** — "How to sell printables on Etsy" videos get 50-500k views. One good video = months of signups.
 
 ---
 
-## What to Do THIS WEEK
+## AI-Powered Production Capacity
+
+Claude Max + Gemini MCP + Remotion + Agent systems = production at 10x human team rate.
+
+| Asset | Tool | Volume/day | Cost |
+|-------|------|-----------|------|
+| SEO pages | Claude Max + SEO pipeline agents | 5-10 pages | $0 |
+| Pinterest pins | Gemini image gen + Buffer | 4 pins | $0 |
+| Instagram posts | Gemini + Buffer | 2-3 posts | $0 |
+| TikTok/Reels | Remotion + manual upload | 1 video | $0 |
+| Outreach emails | Claude Max | 5-10 personalized | $0 |
+| OG images | Playwright screenshot | Per new page | $0 |
+
+---
+
+## What to Do THIS WEEK (Mar 22-28)
 
 ### Already done ✅
-- [x] TikTok + Instagram + Pinterest accounts created
-- [x] ~50 posts published across Pinterest + Instagram
-- [x] PostHog analytics tracking live on all pages
-- [x] UTM attribution on SEO page CTAs (`?source=seo_[slug]&kind=guide`)
-- [x] 13 SEO pages live
+- [x] TikTok + Instagram + Pinterest accounts created and active
+- [x] Social media: Pinterest 4/day, Instagram 2-3/day + reels, TikTok 1/day
+- [x] PostHog dashboards live on webapp + marketing site
+- [x] UTM attribution on SEO page CTAs
+- [x] 23 SEO pages live
+- [x] Lead capture live: email + PDF cheat sheet + 2 automated follow-up emails
+- [x] Demo video on homepage (50 sec, 1.5x speed)
+- [x] Partner program live (/partners + ref tracking)
+- [x] 20 educator prospects researched, 20 personalized emails written
+- [x] 4 outreach emails sent
 
-### Immediate (today)
-- [ ] Run SEO pipeline for 7 more pages (size-specific + ratio comparison)
-- [ ] Build PostHog conversion funnel dashboard (landing → signup → export → upgrade)
+### ❌ Dropped channels
+- Reddit/Facebook outreach — flagged as ads, bad ROI
+- Etsy DM outreach — account flagged/suspended
+- Paid ads — CAC $802 vs LTV $144, impossible economics
 
-### This week
-- [ ] Ship 7 Remotion videos via social pipeline
-- [ ] Post 5 Reddit/Facebook outreach comments with guide links
-- [ ] Build 3-email welcome sequence in Resend
-- [ ] DM 10 top Etsy printable sellers offering free Pro trial
+### This week — Fast-Feedback Growth Channels
+- [ ] **Product Hunt:** Prep listing (tagline, screenshots, GIF, first comment), schedule launch Tue-Thu
+- [x] **Interactive tool:** `/etsy-print-size-calculator` deployed with crop analysis, DPI checker, 30-size reference
+- [ ] **Cold email:** Find 50 Etsy printable seller emails, send first 10
+- [ ] **AppSumo:** Research submission process, decide pricing, prepare listing
+- [ ] **FB groups:** Identify top 5 groups, contact 3 admins with partnership offer
+- [ ] **Educator outreach:** Send remaining batch of 5, follow up on first 4
+- [ ] **SEO:** Continue 2 quality pages/day via pipeline
 
-### Next week
-- [ ] Deploy 10 new SEO pages (hit 30 total)
-- [ ] Record first YouTube video (SnapToSize demo)
-- [ ] Identify 10 Etsy educator YouTubers for partnerships
-- [ ] Analyze Pinterest/Instagram performance — double down on what works
+### Next week (Mar 29 - Apr 4)
+- [ ] **Product Hunt launch day** (if prep done)
+- [ ] **Submit AppSumo application**
+- [ ] **Cold email:** Send next 20 emails, track responses
+- [ ] **Calculator v2:** Add "Is My Image Print-Ready?" upload checker
+- [ ] **Review PostHog funnel data** — first real conversion insights
+- [ ] **SEO:** Continue pages, target 30+ total
 
 ---
 

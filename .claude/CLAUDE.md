@@ -247,6 +247,7 @@ Keyword / DomainSkillfrontend, UI, component, layout, design systemfrontend-desi
 Keyword / DomainSkillstrategy, priorities, where to focus, session start, decision makingstrategic-advisor
 Rule: If a task touches any domain above → read the SKILL.md first, then execute.
 Rule: Run `/strategy` at session start when unsure what to work on. It queries NotebookLM.
+Rule: When building NEW UI components (modals, dropdowns, data tables, etc.), fetch shadcn/ui docs as pattern reference and adapt to our design tokens. Don't install shadcn — just use as reference.
 AGENTS
 Agent definitions live in /claude/agents/.
 Active agents:
