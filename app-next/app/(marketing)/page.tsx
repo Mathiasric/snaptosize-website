@@ -3,7 +3,6 @@ import {
   HeroSection,
   TimeSavedSection,
   AuthoritySection,
-  TestimonialsSection,
   CompositionSection,
   HowItWorksSection,
   TrustSection,
@@ -68,7 +67,6 @@ export default function HomePage() {
       <HeroSection />
       <TimeSavedSection />
       <AuthoritySection />
-      <TestimonialsSection />
       <CompositionSection />
       <HowItWorksSection />
       <TrustSection />
