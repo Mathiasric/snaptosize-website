@@ -364,11 +364,11 @@ export default function Etsy20MBFileLimitPage() {
                 <h3 className="font-semibold mb-4">Recommended file structure:</h3>
                 <div className="space-y-3 text-sm text-foreground-60">
                   {[
-                    { name: "2x3_print_sizes.zip", sizes: "4×6, 6×9, 8×12, 12×18, 16×24, 20×30, 24×36" },
-                    { name: "3x4_print_sizes.zip", sizes: "6×8, 9×12, 12×16, 18×24, 24×32" },
+                    { name: "2x3_print_sizes.zip", sizes: "4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30" },
+                    { name: "3x4_print_sizes.zip", sizes: "6×8, 9×12, 12×16, 15×20, 18×24" },
                     { name: "4x5_print_sizes.zip", sizes: "8×10, 12×15, 16×20, 20×25, 24×30" },
-                    { name: "iso_print_sizes.zip", sizes: "A5, A4, A3, A2, A1, A0" },
-                    { name: "extras_print_sizes.zip", sizes: "5×7, 8.5×11, 11×14, 11×17, 16×20, 20×24" },
+                    { name: "iso_print_sizes.zip", sizes: "A5, A4, A3, A2, A1" },
+                    { name: "extras_print_sizes.zip", sizes: "5×7, 8.5×11, 11×14, 11×17, 13×19, 20×24" },
                   ].map((pack, index) => (
                     <div key={index} className="flex items-start gap-3 p-3 rounded-lg bg-background-5 border border-border">
                       <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent-5 flex items-center justify-center text-accent-light font-semibold text-xs">

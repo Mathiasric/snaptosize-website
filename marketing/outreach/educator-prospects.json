@@ -1,0 +1,421 @@
+{
+  "researched_at": "2026-03-19",
+  "research_notes": "Focus on micro-educators (5K-100K subscribers/followers) who teach Etsy sellers about digital downloads, print-on-demand, or selling printables. Prioritized creators who discuss image sizing, print quality, DPI, or file preparation.",
+  "prospects": [
+    {
+      "id": 1,
+      "name": "Starla Moore / The Handmade Alphas",
+      "platform": "youtube",
+      "url": "https://youtube.com/@starlamoore",
+      "subscribers": "100K-116K",
+      "content_focus": "Etsy SEO, technical optimization, and scientific approach to Etsy success. Leading coach with decade of Etsy experience, works closely with eRank.",
+      "contact": {
+        "email": "starla@handmadealphaacademy.com",
+        "website": "https://handmadealphaacademy.com",
+        "instagram": "@handmadealphas",
+        "other": "Facebook group and Patreon community"
+      },
+      "tools_recommended": ["eRank", "Etsy SEO tools"],
+      "reference_video": {
+        "title": "The Science of Etsy Success - Free Etsy SEO Workshop",
+        "url": null
+      },
+      "notes": "Perfect fit - highly technical Etsy seller educator who focuses on data-driven optimization. Her audience cares deeply about technical details like file specs and quality."
+    },
+    {
+      "id": 2,
+      "name": "Dylan Jahraus",
+      "platform": "youtube",
+      "url": "https://youtube.com/@dylanjahraus",
+      "subscribers": "116K",
+      "content_focus": "Etsy shop growth, digital products, and scaling to 7-figures. Top 0.1% Etsy seller teaching complete shop optimization.",
+      "contact": {
+        "email": "Via contact form at dylanjahraus.com/contact",
+        "website": "https://dylanjahraus.com",
+        "instagram": "@dylanjahraus",
+        "other": "Posts 2 videos per week, has podcast Etsy Seller Success with nearly 1M downloads"
+      },
+      "tools_recommended": ["Etsy SEO", "Email marketing tools"],
+      "reference_video": {
+        "title": "From Zero to Etsy Millionaire: Dylan Jahraus' Winning Strategy",
+        "url": null
+      },
+      "notes": "Built $10M business without ads. Has 5,700+ students. Strong educator with proven results - great credibility for partnership."
+    },
+    {
+      "id": 3,
+      "name": "Gold City Ventures (Julie Berninger & Cody Berman)",
+      "platform": "youtube",
+      "url": "https://youtube.com/@goldcityventures",
+      "subscribers": "~50K-70K (estimated)",
+      "content_focus": "Etsy printables, creating and selling digital products, Canva templates, and passive income strategies for beginners.",
+      "contact": {
+        "email": "team@goldcityventures.com",
+        "website": "https://goldcityventures.com",
+        "instagram": "@goldcityventures (27K followers)",
+        "other": "68K email subscribers, weekly livestreams, Facebook group"
+      },
+      "tools_recommended": ["Canva", "eRank"],
+      "reference_video": {
+        "title": "The $100K Trend Strategy on Etsy (Steal This!)",
+        "url": null
+      },
+      "notes": "Built $1M+ business teaching Etsy printables. Strong email list (68K). Students earned $3.3M+ selling printables. Excellent match for sizing/quality education."
+    },
+    {
+      "id": 4,
+      "name": "Kara Buntin / Artisan Shopper",
+      "platform": "youtube",
+      "url": "https://youtube.com/@karabuntin",
+      "subscribers": "~30K-40K (estimated)",
+      "content_focus": "Etsy seller education, shop optimization, product creation strategies. 25+ years home business experience, 50K+ sales on Etsy.",
+      "contact": {
+        "email": "Via artisanshopper.com contact",
+        "website": "https://artisanshopper.com",
+        "instagram": "@acaketoremember",
+        "other": "Two YouTube channels, weekly live chats on Tuesdays"
+      },
+      "tools_recommended": ["Etsy SEO tools", "Keyword research planners"],
+      "reference_video": {
+        "title": "The Secret to Etsy Success with Kara Buntin",
+        "url": null
+      },
+      "notes": "Published author (Keyword Tracker for Etsy Sellers). Long-term Etsy veteran with deep knowledge. Live chat format creates engaged community."
+    },
+    {
+      "id": 5,
+      "name": "Nancy Badillo",
+      "platform": "youtube",
+      "url": "https://youtube.com/@NancyBadillo",
+      "subscribers": "~40K-50K (estimated)",
+      "content_focus": "Etsy tips and tricks, printable stationery, digital products, SEO, social media, and branding for Etsy sellers.",
+      "contact": {
+        "email": "Via nancybadillo.com contact",
+        "website": "https://nancybadillo.com",
+        "instagram": null,
+        "other": "1,200+ YouTube videos, Teachable course platform, Pinterest presence"
+      },
+      "tools_recommended": ["Canva", "SEO tools", "Social media platforms"],
+      "reference_video": {
+        "title": "What to Sell on Etsy in 2026 - Etsy YouTube Channel",
+        "url": null
+      },
+      "notes": "6+ years Etsy experience, 13 years digital marketing. Massive video library (1,200+) means highly engaged educational audience."
+    },
+    {
+      "id": 6,
+      "name": "Cassie Smallwood",
+      "platform": "youtube",
+      "url": "https://youtube.com/@cassiesmallwood",
+      "subscribers": "~20K-30K (estimated)",
+      "content_focus": "Using YouTube to grow Etsy sales, free printables, recipes, crafts. Former preschool teacher creating kid-focused printables.",
+      "contact": {
+        "email": "Via cassiesmallwood.com contact",
+        "website": "https://cassiesmallwood.com",
+        "instagram": "@cassiesmallwood",
+        "other": "Pinterest presence, blog"
+      },
+      "tools_recommended": ["Canva", "YouTube marketing"],
+      "reference_video": {
+        "title": "How To Use A YouTube Channel To Increase Etsy Sales",
+        "url": null
+      },
+      "notes": "Teaches cross-platform marketing (YouTube + Etsy). Strong focus on visual content and printables - perfect audience for sizing tools."
+    },
+    {
+      "id": 7,
+      "name": "Renae Christine",
+      "platform": "youtube",
+      "url": "https://youtube.com/@renaechristine",
+      "subscribers": "~40K-60K (estimated)",
+      "content_focus": "Handmade businesses, Etsy shop growth, product creation. Leading educator for handmade businesses worldwide since 2012.",
+      "contact": {
+        "email": "Via renae.com contact",
+        "website": "https://renae.com",
+        "instagram": null,
+        "other": "Cupcake Trainings, #1 Amazon bestselling author, featured in Huffington Post, ABC, NBC, Fox"
+      },
+      "tools_recommended": ["Etsy tools", "Photography equipment"],
+      "reference_video": {
+        "title": "Your First 1000 Youtube Subscriber",
+        "url": null
+      },
+      "notes": "2.5M+ YouTube views, answered 200K+ questions. Six-figure stationery business. Strong credibility and massive reach in handmade space."
+    },
+    {
+      "id": 8,
+      "name": "Mei Pak",
+      "platform": "youtube",
+      "url": "https://youtube.com/@meipak",
+      "subscribers": "40K",
+      "content_focus": "Helping creative makers, artists and designers start and run businesses online. Taught on CreativeLive alongside Seth Godin, Sophia Amoruso.",
+      "contact": {
+        "email": "Via mei-pak.com contact",
+        "website": "https://mei-pak.com/entrepreneur",
+        "instagram": null,
+        "other": "CreativeLive instructor"
+      },
+      "tools_recommended": ["Creative business tools"],
+      "reference_video": {
+        "title": null,
+        "url": null
+      },
+      "notes": "Grew to 40K subscribers in one year. High-caliber educator (taught alongside industry giants). Focus on creative entrepreneurs matches well."
+    },
+    {
+      "id": 9,
+      "name": "RJ Martinez",
+      "platform": "youtube",
+      "url": "https://youtube.com/@RJmartinez",
+      "subscribers": "~50K-70K (estimated)",
+      "content_focus": "Print on demand education, Merch by Amazon, Etsy POD, Redbubble. Frequent uploads with tips and tricks for POD sellers.",
+      "contact": {
+        "email": "Via Patreon or Gumroad",
+        "website": "https://gumroad.com/everythingamazon",
+        "instagram": "@rjhustles",
+        "other": "Patreon community, podcast appearances"
+      },
+      "tools_recommended": ["Printify", "Merch by Amazon", "Canva"],
+      "reference_video": {
+        "title": "Matt Sheeran and RJ Martinez on Creating a Successful Etsy Store",
+        "url": null
+      },
+      "notes": "Strong POD focus. His audience creates lots of print designs and would benefit heavily from proper sizing tools. Active community on Patreon."
+    },
+    {
+      "id": 10,
+      "name": "Paul Xavier / Next Level Creators",
+      "platform": "youtube",
+      "url": "https://youtube.com/@paulxavier",
+      "subscribers": "125K",
+      "content_focus": "Video production, content creation, building YouTube channels, and creating digital courses. Teaches commercial video production.",
+      "contact": {
+        "email": "Via mrpaulxavier.com contact",
+        "website": "https://mrpaulxavier.com",
+        "instagram": "@mrpaulxavier",
+        "other": "Co-founder with Anthony Gallo, $2.5M+ in course sales"
+      },
+      "tools_recommended": ["Video editing tools", "Course creation platforms"],
+      "reference_video": {
+        "title": "14 Day Filmmaker Course",
+        "url": null
+      },
+      "notes": "While not Etsy-specific, his audience creates tons of visual content and thumbnails that need proper sizing. Grew from 5K to 125K subs in 2 years."
+    },
+    {
+      "id": 11,
+      "name": "Pam Duthie / Etsy Nerd",
+      "platform": "youtube",
+      "url": "https://youtube.com/@pamduthie",
+      "subscribers": "~15K-25K (estimated)",
+      "content_focus": "Etsy coaching, shop optimization, product creation. Sells needle-felted sculptures at BenMcFuzzylugs shop.",
+      "contact": {
+        "email": "Via BenMcfuzzylugs blog contact",
+        "website": "http://benmcfuzzylugs.blogspot.com",
+        "instagram": null,
+        "other": "Twitter @benmcfuzzylugs, Pinterest"
+      },
+      "tools_recommended": ["Etsy SEO"],
+      "reference_video": {
+        "title": "The Secret to Getting More Sales on Etsy? It's YouTube!",
+        "url": null
+      },
+      "notes": "Niche educator (needle-felted art) who understands product photography and presentation. Shows behind-the-scenes creation process in videos."
+    },
+    {
+      "id": 12,
+      "name": "Sadie Smiley / Passive Income Pathways",
+      "platform": "youtube",
+      "url": "https://youtube.com/@passiveincomepathways",
+      "subscribers": "~30K-40K (estimated)",
+      "content_focus": "Passive income, digital products, Etsy printables, membership models. Blogger since 1999, teaches low-ticket memberships.",
+      "contact": {
+        "email": "Via passiveincomepathways.com contact",
+        "website": "https://passiveincomepathways.com",
+        "instagram": null,
+        "other": "Facebook group, blog with extensive Etsy content"
+      },
+      "tools_recommended": ["Canva", "E-commerce platforms"],
+      "reference_video": {
+        "title": "How to Sell Printables on Etsy for Passive Income",
+        "url": null
+      },
+      "notes": "Veteran blogger (since 1999) with established credibility. Teaches passive income which resonates with digital product creators."
+    },
+    {
+      "id": 13,
+      "name": "T / hey.itsteaa",
+      "platform": "tiktok",
+      "url": "https://tiktok.com/@hey.itsteaa",
+      "subscribers": "300K+ followers",
+      "content_focus": "Print on demand, Etsy + Printify tutorials, Canva design, digital products. Business strategist who scaled to $500K+ in 2 years.",
+      "contact": {
+        "email": null,
+        "website": null,
+        "instagram": "@hey.itsteaa",
+        "other": "TikTok POD community, coaching calls"
+      },
+      "tools_recommended": ["Printify", "Canva", "Etsy"],
+      "reference_video": {
+        "title": "Quick tutorial on how to create a print on demand item to sell on Etsy",
+        "url": "https://tiktok.com/@hey.itsteaa/video/7184922551251029294"
+      },
+      "notes": "Massive TikTok following (300K+). Started in 2020, now doing $500K+. Perfect audience - actively creating POD products that need proper sizing."
+    },
+    {
+      "id": 14,
+      "name": "pixelsbyteaa",
+      "platform": "tiktok",
+      "url": "https://tiktok.com/@pixelsbyteaa",
+      "subscribers": "~50K-80K (estimated)",
+      "content_focus": "Etsy digital downloads, print on demand with Printify, digital art, AI-generated art for Etsy. Technical tutorials.",
+      "contact": {
+        "email": null,
+        "website": null,
+        "instagram": null,
+        "other": "TikTok bio link"
+      },
+      "tools_recommended": ["Printify", "Playground AI", "Canva", "Etsy"],
+      "reference_video": {
+        "title": "Ultimate tutorial on how to sell digital products, digital art, anything digital on Etsy",
+        "url": "https://tiktok.com/@pixelsbyteaa/video/7541566501610933518"
+      },
+      "notes": "Technical focus on AI art and digital products. Audience is tech-savvy and cares about file quality. Great fit for sizing/DPI education."
+    },
+    {
+      "id": 15,
+      "name": "Gold City Ventures",
+      "platform": "tiktok",
+      "url": "https://tiktok.com/@goldcityventures",
+      "subscribers": "~40K-60K (estimated)",
+      "content_focus": "Etsy printables tips, Canva templates, digital product creation. Same founders as YouTube channel (Julie & Cody).",
+      "contact": {
+        "email": "team@goldcityventures.com",
+        "website": "https://goldcityventures.com",
+        "instagram": "@goldcityventures",
+        "other": "Also active on YouTube, Facebook, Instagram"
+      },
+      "tools_recommended": ["Canva", "Etsy"],
+      "reference_video": {
+        "title": null,
+        "url": null
+      },
+      "notes": "Cross-platform presence (YouTube + TikTok + Instagram). Weekly livestreams. Can reach them on multiple channels."
+    },
+    {
+      "id": 16,
+      "name": "Chelsea Shelton / Gold City Ventures Student",
+      "platform": "youtube",
+      "url": "https://goldcityventures.com/author/chelsea",
+      "subscribers": "N/A (contributes to GCV content)",
+      "content_focus": "Etsy and Teachers Pay Teachers seller, former elementary teacher. Writes guides for Gold City Ventures.",
+      "contact": {
+        "email": "Via Gold City Ventures",
+        "website": "https://goldcityventures.com",
+        "instagram": null,
+        "other": "Featured student with 11K+ Etsy sales"
+      },
+      "tools_recommended": ["Canva", "Etsy", "TPT"],
+      "reference_video": {
+        "title": "Standard Art Print Sizes to Sell",
+        "url": null
+      },
+      "notes": "Former teacher turned successful Etsy seller. Writes extensively about printables and sizing. Direct expertise in the sizing problem we solve."
+    },
+    {
+      "id": 17,
+      "name": "Rachel Jones / Side Hustle Nation Featured",
+      "platform": "youtube",
+      "url": null,
+      "subscribers": "N/A (featured in podcast/articles)",
+      "content_focus": "Etsy printables entrepreneur averaging $10K+/month in sales. Started 2018, full-time 2021.",
+      "contact": {
+        "email": null,
+        "website": null,
+        "instagram": null,
+        "other": "Featured in Side Hustle Nation"
+      },
+      "tools_recommended": ["Canva", "Etsy"],
+      "reference_video": {
+        "title": "Etsy Printables: $10,000 a Month Selling Digital Products on Etsy",
+        "url": "https://www.sidehustlenation.com/etsy-printables/"
+      },
+      "notes": "Highly successful printables seller. Case study in major publication. Could be strong testimonial/case study partner."
+    },
+    {
+      "id": 18,
+      "name": "Courtney (Gold City Ventures Student)",
+      "platform": "youtube",
+      "url": null,
+      "subscribers": "N/A (testimonial/case study)",
+      "content_focus": "Former TV personality turned mom of 4. Etsy printables seller with 12K+ sales. Completed E-Printables course 2021.",
+      "contact": {
+        "email": "Via Gold City Ventures",
+        "website": null,
+        "instagram": null,
+        "other": "Featured success story at Gold City Ventures"
+      },
+      "tools_recommended": ["Canva"],
+      "reference_video": {
+        "title": null,
+        "url": null
+      },
+      "notes": "Success story - went from student to 12K sales. Mom of 4 angle resonates with target audience. Work-from-home inspiration."
+    },
+    {
+      "id": 19,
+      "name": "Caitlin Bacher / Little Farm Media",
+      "platform": "youtube",
+      "url": "https://youtube.com/@caitlinbacher",
+      "subscribers": "~10K-20K (estimated)",
+      "content_focus": "Social media strategy for creative entrepreneurs, Instagram marketing, Etsy branding. Online course creators.",
+      "contact": {
+        "email": "Via caitlinbacher.com contact",
+        "website": "https://caitlinbacher.com",
+        "instagram": "@caitlinbacher",
+        "other": "For Love + Money Facebook group, CreativeLive instructor"
+      },
+      "tools_recommended": ["Instagram", "Pinterest", "Social media tools"],
+      "reference_video": {
+        "title": "Grow Your Creative Biz with Instagram",
+        "url": null
+      },
+      "notes": "Social media strategist for makers/artists/designers. Teaches visual marketing - strong need for proper image sizing across platforms."
+    },
+    {
+      "id": 20,
+      "name": "Giggles Galore",
+      "platform": "youtube",
+      "url": "https://youtube.com/@gigglesgalore",
+      "subscribers": "~15K-25K (estimated)",
+      "content_focus": "DIY printables, party ideas, budget-friendly crafts. Former marketing consultant, Dallas-based blogger since 2009.",
+      "contact": {
+        "email": "Via gigglesgalore.net contact",
+        "website": "https://gigglesgalore.net",
+        "instagram": "@gigglesgalore",
+        "other": "Etsy shop: gigglesgalorenmore"
+      },
+      "tools_recommended": ["Canva", "DIY tools"],
+      "reference_video": {
+        "title": "Printables Archives - Party Ideas and DIY Tutorials",
+        "url": null
+      },
+      "notes": "Long-term creator (since 2009). Strong visual content focus. Markets both on YouTube and Etsy - perfect for cross-promotion."
+    }
+  ],
+  "summary": {
+    "total_prospects": 20,
+    "youtube_creators": 15,
+    "tiktok_creators": 3,
+    "multi_platform": 2,
+    "avg_subscriber_range": "15K-100K",
+    "perfect_fit_creators": [
+      "Starla Moore (technical SEO focus)",
+      "Gold City Ventures (printables expertise + sizing guides already published)",
+      "Chelsea Shelton (wrote art print sizing guide)",
+      "hey.itsteaa (300K+ TikTok, active POD educator)",
+      "RJ Martinez (POD focus, designs need sizing)"
+    ],
+    "outreach_priority": "Start with creators who have already published content about print sizing, DPI, or image quality - they've proven their audience cares about this topic."
+  }
+}

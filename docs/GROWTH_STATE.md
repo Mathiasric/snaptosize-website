@@ -1,7 +1,7 @@
 # GROWTH_STATE.md
 ## SnapToSize — Growth & Business State
 
-Last updated: 2026-03-22
+Last updated: 2026-03-24
 
 ---
 
@@ -40,9 +40,10 @@ SnapToSize is a SaaS tool for Etsy sellers selling digital wall art / printables
 
 - **Product:** Live and production-stable as of 2026-03-03
 - **First paying customer:** 2026-03-03
-- **Paying users:** 1 ($12 MRR)
-- **SEO pages live:** 23 (9 size, 8 guide, 4 hub/problem, 1 niche, 1 interactive tool)
-- **Interactive tools:** Print Size Calculator live (`/etsy-print-size-calculator`) — crop analysis, DPI checker, 30-size reference
+- **Paying users:** 3 — MRR $32 (2 monthly + 1 yearly). Revenue 2026-03-23: $109 ($97 yearly + $11.99 monthly)
+- **SEO pages live:** 27 (11 size, 8 guide, 5 hub/problem, 2 niche, 1 interactive tool)
+- **Pack system:** 28 sizes across 5 ratio packs + 8 square + 3 large via single export = up to 70 files from one upload
+- **Interactive tools:** Print Size Calculator live (`/etsy-print-size-calculator`) — crop analysis, DPI checker, size reference
 - **Email list:** Lead capture live (PDF cheat sheet + 2 automated follow-up emails)
 - **Pipelines built:** SEO (10 pages/week) + Social (7 videos + 21 pins/week)
 - **Video:** Remotion rendering working (TikTokVertical template)

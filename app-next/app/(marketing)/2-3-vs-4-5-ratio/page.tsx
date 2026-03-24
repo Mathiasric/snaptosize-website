@@ -311,7 +311,7 @@ export default function TwoThreeVsFourFiveRatioPage() {
               <div className="flex items-center gap-1.5 px-2 text-[11px] sm:text-xs sm:px-2.5 py-1 rounded-md bg-white/[0.06] backdrop-blur-sm border border-white/[0.08]">
                 <Check className="h-3 w-3 text-purple-400 flex-shrink-0" />
                 <span className="text-white/70 font-medium">
-                  8 sizes in 2:3
+                  7 sizes in 2:3
                 </span>
               </div>
               <div className="flex items-center gap-1.5 px-2 text-[11px] sm:text-xs sm:px-2.5 py-1 rounded-md bg-white/[0.06] backdrop-blur-sm border border-white/[0.08]">
@@ -388,7 +388,6 @@ export default function TwoThreeVsFourFiveRatioPage() {
                     "12x18",
                     "16x24",
                     "20x30",
-                    "24x36",
                   ].map((size) => (
                     <div
                       key={size}
@@ -539,7 +538,7 @@ export default function TwoThreeVsFourFiveRatioPage() {
                         Included sizes
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
-                        4x6, 6x9, 8x12, 10x15, 12x18, 16x24, 20x30, 24x36
+                        4x6, 6x9, 8x12, 10x15, 12x18, 16x24, 20x30
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
                         8x10, 12x15, 16x20, 20x25, 24x30
@@ -594,7 +593,7 @@ export default function TwoThreeVsFourFiveRatioPage() {
                         Number of sizes
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
-                        8 sizes
+                        7 sizes
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
                         5 sizes
@@ -728,7 +727,7 @@ export default function TwoThreeVsFourFiveRatioPage() {
                   Stop Manually Resizing for Every Ratio
                 </h3>
                 <p className="text-sm text-foreground-60 mb-5">
-                  Upload one image to SnapToSize and get all 30 sizes across 5
+                  Upload one image to SnapToSize and get up to 70 files across 5
                   ratios in seconds. No cropping, no composition loss, no manual
                   work.
                 </p>
@@ -870,7 +869,7 @@ export default function TwoThreeVsFourFiveRatioPage() {
                   </h3>
                   <p className="text-sm text-foreground-60 mb-4">
                     Open your design tool. Resize the canvas to each 2:3 size.
-                    Export 8 files. Then resize for each 4:5 size. Export 5 more
+                    Export 7 files. Then resize for each 4:5 size. Export 5 more
                     files. Organize into folders, create ZIPs, check they&apos;re
                     under 20&nbsp;MB.
                   </p>
@@ -885,7 +884,7 @@ export default function TwoThreeVsFourFiveRatioPage() {
                     </div>
                     <div className="flex items-center gap-2">
                       <AlertTriangle className="h-4 w-4 text-amber-400 flex-shrink-0" />
-                      <span>13 individual exports just for 2:3 + 4:5</span>
+                      <span>12 individual exports just for 2:3 + 4:5</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <AlertTriangle className="h-4 w-4 text-amber-400 flex-shrink-0" />
@@ -899,7 +898,7 @@ export default function TwoThreeVsFourFiveRatioPage() {
                     With SnapToSize
                   </h3>
                   <p className="text-sm text-foreground-60 mb-4">
-                    Upload one image. SnapToSize generates all 30 sizes across 5
+                    Upload one image. SnapToSize generates up to 70 files across 5
                     ratios automatically &mdash; 2:3, 3:4, 4:5, ISO, and extras.
                     All at 300 DPI, organized into ZIPs, under Etsy&apos;s
                     20&nbsp;MB limit.
@@ -915,7 +914,7 @@ export default function TwoThreeVsFourFiveRatioPage() {
                     </div>
                     <div className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-green-400 flex-shrink-0" />
-                      <span>30 sizes in 5 organized ZIPs</span>
+                      <span>Up to 70 files in 5 organized packs</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-green-400 flex-shrink-0" />
@@ -1005,12 +1004,11 @@ export default function TwoThreeVsFourFiveRatioPage() {
                       { inches: "12 x 18", cm: "30.5 x 45.7", pixels: "3600 x 5400" },
                       { inches: "16 x 24", cm: "40.6 x 61.0", pixels: "4800 x 7200" },
                       { inches: "20 x 30", cm: "50.8 x 76.2", pixels: "6000 x 9000" },
-                      { inches: "24 x 36", cm: "61.0 x 91.4", pixels: "7200 x 10800" },
                     ].map((row, i) => (
                       <tr
                         key={row.inches}
                         className={
-                          i < 7
+                          i < 6
                             ? "border-b border-white/10"
                             : ""
                         }
@@ -1097,7 +1095,7 @@ export default function TwoThreeVsFourFiveRatioPage() {
             <div>
               <FinalCTA
                 heading="Generate Both Ratios in One Click"
-                stat="30 sizes across 5 ratio packs from a single upload"
+                stat="Up to 70 print-ready files from a single upload"
                 description="Upload your artwork and receive every 2:3, 4:5, and more at 300 DPI. No cropping, no manual resizing."
                 buttonText="Try SnapToSize Free"
                 appUrl={appUrl}

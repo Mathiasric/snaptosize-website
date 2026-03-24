@@ -23,7 +23,6 @@ Upload one high-resolution image → receive ready-to-sell print size ZIP packs 
 | 12×18 | 3600×5400 |
 | 16×24 | 4800×7200 |
 | 20×30 | 6000×9000 |
-| 24×36 | 7200×10800 |
 
 ### 3:4 Ratio — Classic Photo Frame
 | Size | Pixels |
@@ -33,7 +32,6 @@ Upload one high-resolution image → receive ready-to-sell print size ZIP packs 
 | 12×16 | 3600×4800 |
 | 15×20 | 4500×6000 |
 | 18×24 | 5400×7200 |
-| 24×32 | 7200×9600 |
 
 ### 4:5 Ratio — Traditional Art (home of the 8×10)
 | Size | Pixels |
@@ -52,7 +50,6 @@ Upload one high-resolution image → receive ready-to-sell print size ZIP packs 
 | A3 | 297×420 | 3508×4961 |
 | A2 | 420×594 | 4961×7016 |
 | A1 | 594×841 | 7016×9933 |
-| A0 | 841×1189 | 9933×14043 |
 
 ### Extras — Common Sizes
 | Size | Pixels | Use Case |
@@ -60,15 +57,35 @@ Upload one high-resolution image → receive ready-to-sell print size ZIP packs 
 | 5×7 | 1500×2100 | Greeting cards, small frames |
 | 8.5×11 | 2550×3300 | US Letter, home printing |
 | 11×14 | 3300×4200 | Photo mat standard |
-| 11×17 | 3300×5100 | Tabloid poster, very common in USA |
+| 11×17 | 3300×5100 | Tabloid, large format home printing |
+| 13×19 | 3900×5700 | Fine art poster, large format |
 | 20×24 | 6000×7200 | Large format print |
 
-**Total: 30 sizes across 5 packs (ZIP), all at 300 DPI, JPEG, organized ZIP structure.**
+**Total: 28 sizes across 5 packs (7 + 5 + 5 + 5 + 6 = 28), all at 300 DPI, JPEG, organized ZIP structure.**
+
+### Marketing Language — How to Present Sizes
+- **Headlines / CTAs:** "Up to 70 print-ready files from one upload" (31 portrait + 31 landscape + 8 square)
+- **Casual / social:** "30+ sizes" (31 unique sizes rounds naturally)
+- **Pack detail:** "28 sizes in 5 organized packs" (when specifically discussing ZIP packs)
+- **Always mention:** "portrait & landscape" as a value multiplier — each size comes in both orientations
+- **Never say:** "28 sizes" as a headline — it undersells the full value. Lead with 70 files or 30+ sizes.
+- **Single export value add:** "plus 8 square sizes and 3 oversized formats via single export"
+
+### Single Export Only — Large Sizes (removed from packs)
+Available in Quick Export mode, not in ratio packs:
+| Size | Ratio | Pixels @ 300 DPI |
+|---|---|---|
+| 24×36 | 2:3 | 7200×10800 |
+| 24×32 | 3:4 | 7200×9600 |
+| A0 (841×1189mm) | ISO | 9933×14043 |
+
+These sizes were removed from ZIP packs due to file size constraints but remain available via single export.
 
 ### Single Export Only — Square (1:1)
 Available in Quick Export mode, not in ratio packs:
 | Size | Pixels |
 |---|---|
+| 5×5 | 1500×1500 |
 | 8×8 | 2400×2400 |
 | 10×10 | 3000×3000 |
 | 12×12 | 3600×3600 |
@@ -162,7 +179,7 @@ Available in Quick Export mode, not in ratio packs:
 
 - "Over 18,000 size packs generated"
 - Used by professional Etsy digital art sellers
-- 1 paying customer (early stage — don't mention specific numbers publicly)
+- 3 paying customers (early stage — don't mention specific numbers publicly)
 
 ---
 

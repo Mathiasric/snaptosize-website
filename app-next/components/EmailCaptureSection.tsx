@@ -9,7 +9,7 @@ interface EmailCaptureSectionProps {
 
 export function EmailCaptureSection({
   heading = "Get the Free Print Size Cheat Sheet",
-  description = "All 30 sizes, pixel dimensions, and file size estimates in one printable PDF. Pin it next to your desk.",
+  description = "Every size, orientation, and pixel dimension in one printable PDF. Pin it next to your desk.",
   placeholder = "you@email.com",
   buttonText = "Send Me the Cheat Sheet",
 }: EmailCaptureSectionProps) {

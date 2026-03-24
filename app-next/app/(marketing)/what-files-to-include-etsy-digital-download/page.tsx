@@ -600,7 +600,7 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
                         1. 2:3 Ratio Pack (Most Common)
                       </h4>
                       <p className="text-sm text-foreground-60 mb-2">
-                        Contains: 4×6, 6×9, 8×12, 12×18, 16×24, 20×30, 24×36
+                        Contains: 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30
                       </p>
                       <p className="text-xs text-foreground-60">
                         The most widely used ratio for vertical wall art.
@@ -618,7 +618,7 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
                         2. 3:4 Ratio Pack (Classic Frames)
                       </h4>
                       <p className="text-sm text-foreground-60 mb-2">
-                        Contains: 6×8, 9×12, 12×16, 18×24, 24×32
+                        Contains: 6×8, 9×12, 12×16, 15×20, 18×24
                       </p>
                       <p className="text-xs text-foreground-60">
                         Standard photo frame ratio. Essential for buyers with
@@ -654,7 +654,7 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
                         4. ISO A-Series Pack (International)
                       </h4>
                       <p className="text-sm text-foreground-60 mb-2">
-                        Contains: A5, <Link href="/etsy-a4-print-size" className="text-accent-light hover:underline">A4</Link>, A3, A2, A1, A0
+                        Contains: A5, <Link href="/etsy-a4-print-size" className="text-accent-light hover:underline">A4</Link>, A3, A2, A1
                       </p>
                       <p className="text-xs text-foreground-60">
                         Standard in Europe, Australia, Asia. Essential for
@@ -672,7 +672,7 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
                         5. Extras Pack (Common Requests)
                       </h4>
                       <p className="text-sm text-foreground-60 mb-2">
-                        Contains: 5×7, 8.5×11, <Link href="/etsy-11x14-print-size" className="text-accent-light hover:underline">11×14</Link>, 11×17, 16×20, 20×24
+                        Contains: 5×7, 8.5×11, <Link href="/etsy-11x14-print-size" className="text-accent-light hover:underline">11×14</Link>, 11×17, 13×19, 20×24
                       </p>
                       <p className="text-xs text-foreground-60">
                         Frequently requested sizes that don&apos;t fit standard

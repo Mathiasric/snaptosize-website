@@ -580,12 +580,12 @@ export default function HowToPackageDigitalWallArtForEtsyPage() {
                 {[
                   {
                     ratio: "2:3 Ratio Pack",
-                    sizes: "4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30, 24×36",
+                    sizes: "4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30",
                     note: "Most common for vertical wall art",
                   },
                   {
                     ratio: "3:4 Ratio Pack",
-                    sizes: "6×8, 9×12, 12×16, 15×20, 18×24, 24×32",
+                    sizes: "6×8, 9×12, 12×16, 15×20, 18×24",
                     note: "Classic photo frame ratio",
                   },
                   {
@@ -595,12 +595,12 @@ export default function HowToPackageDigitalWallArtForEtsyPage() {
                   },
                   {
                     ratio: "ISO A-Series Pack",
-                    sizes: "A5, A4, A3, A2, A1, A0",
+                    sizes: "A5, A4, A3, A2, A1",
                     note: "Essential for international buyers",
                   },
                   {
                     ratio: "Extras Pack",
-                    sizes: "5×7, 8.5×11, 11×14, 11×17, 20×24",
+                    sizes: "5×7, 8.5×11, 11×14, 11×17, 13×19, 20×24",
                     note: "Common sizes outside standard ratios",
                   },
                 ].map((pack, i) => (

@@ -6,11 +6,11 @@
 **Trigger:** User deleted posts that mentioned generic sizes instead of actual product offerings.
 **Rule:** When creating content about print sizes or ratios, ALWAYS reference the exact SnapToSize packs:
 
-- **2:3 Ratio** — 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30, 24×36
-- **3:4 Ratio** — 6×8, 9×12, 12×16, 15×20, 18×24, 24×32
+- **2:3 Ratio** — 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30
+- **3:4 Ratio** — 6×8, 9×12, 12×16, 15×20, 18×24
 - **4:5 Ratio** — 8×10, 12×15, 16×20, 20×25, 24×30
 - **ISO A-Series** — A5, A4, A3, A2, A1
-- **Extras** — 5×7, 8.5×11 (US Letter), 11×14, 11×17 (Tabloid), 16×20, 20×24
+- **Extras** (6) — 5×7, 8.5×11 (US Letter), 11×14, 11×17 (Tabloid), 13×19 (Fine art poster), 20×24
 
 All at 300 DPI, JPEG, Lanczos resize, stretch-only (no cropping), under 20MB.
 
@@ -50,26 +50,25 @@ Choose based on context. Direct tool link for action-oriented posts, marketing s
 ### LESSON-008: Gemini image gen invents fake sizes/text — always list EXACT sizes in prompt (2026-03-13)
 **Trigger:** Instagram post showed fake sizes like "Phone", "Phme", "Find", "5x10", "6x12", "7x14", "8x14" etc. None are real SnapToSize sizes.
 **Rule:** When generating images that show size labels, the prompt MUST list every exact size to display. Never say "multiple sizes" or let the model invent labels. Use only:
-- 2:3: 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30, 24×36
-- 3:4: 6×8, 9×12, 12×16, 15×20, 18×24, 24×32
+- 2:3: 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30
+- 3:4: 6×8, 9×12, 12×16, 15×20, 18×24
 - 4:5: 8×10, 12×15, 16×20, 20×25, 24×30
 - ISO: A5, A4, A3, A2, A1
-- Extras: 5×7, 8.5×11, 11×14, 16×20, 20×24
+- Extras: 5×7, 8.5×11, 11×14, 11×17, 13×19, 20×24
 If showing a subset, pick real ones only. Gemini will hallucinate text if not constrained.
 
-### LESSON-011: Correct size inventory — 35 sizes across 6 packs (2026-03-13)
-**Trigger:** Content reference had 16×20 duplicated in Extras (already in 4:5) and was missing Square pack entirely.
-**Rule:** SnapToSize offers 30 sizes across 5 ZIP packs + 7 square sizes in single export:
-- **2:3** (8): 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30, 24×36
-- **3:4** (6): 6×8, 9×12, 12×16, 15×20, 18×24, 24×32
+### LESSON-011: Correct size inventory — 28 in packs, 70 files total (2026-03-24, updated)
+**Trigger:** A0, 24×36, 24×32 removed from packs. Total = 70 files (31 portrait + 31 landscape + 8 square).
+**Rule:** SnapToSize produces up to 70 print-ready files from one upload:
+- **2:3** (7): 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30
+- **3:4** (5): 6×8, 9×12, 12×16, 15×20, 18×24
 - **4:5** (5): 8×10, 12×15, 16×20, 20×25, 24×30
-- **ISO** (6): A5, A4, A3, A2, A1, A0
-- **Extras** (5): 5×7, 8.5×11, 11×14, 11×17, 20×24
-- **Square (single export only)** (7): 8×8, 10×10, 12×12, 16×16, 18×18, 20×20, 24×24
-**Potential future additions (Worker-side):**
-- 11×17 (Tabloid) — single export only, too small for ZIP pack
-- 13×19 (Super B) — same concern, small vertical
-- A0 — investigate if feasible for ZIP
+- **ISO** (5): A5, A4, A3, A2, A1
+- **Extras** (6): 5×7, 8.5×11, 11×14, 11×17, 13×19, 20×24
+- **Single export only — Large** (3): 24×36, 24×32, A0
+- **Single export only — Square** (8): 5×5, 8×8, 10×10, 12×12, 16×16, 18×18, 20×20, 24×24
+**28 unique sizes in 5 ZIP packs × 2 orientations (portrait + landscape) + 8 square + 3 large singles = 70 files.**
+Marketing language: lead with "70 files" or "30+ sizes", not "28". See LESSON-047.
 Always reference this list, never invent sizes.
 
 ### LESSON-012: Buffer duplicate detection is image-URL-based (2026-03-16)
@@ -169,11 +168,11 @@ Current TikTokVertical template needs these improvements:
 ### LESSON-023: Use exact SnapToSize sizes — never approximate (2026-03-16)
 **Trigger:** First draft of resize page used incomplete ratio lists (e.g. "8×10, 16×20, 24×30" for 4:5 instead of all 5 sizes).
 **Rule:** When listing sizes/ratios on SEO pages, always use the COMPLETE lists from CONTENT_REFERENCE.md:
-- **2:3** (8): 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30, 24×36
-- **3:4** (6): 6×8, 9×12, 12×16, 15×20, 18×24, 24×32
+- **2:3** (7): 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30
+- **3:4** (5): 6×8, 9×12, 12×16, 15×20, 18×24
 - **4:5** (5): 8×10, 12×15, 16×20, 20×25, 24×30
-- **ISO** (6): A5, A4, A3, A2, A1, A0
-- **Extras** (5): 5×7, 8.5×11, 11×14, 11×17, 20×24
+- **ISO** (5): A5, A4, A3, A2, A1
+- **Extras** (6): 5×7, 8.5×11, 11×14, 11×17, 13×19, 20×24
 
 ### LESSON-024: Don't market competitors' tools in SEO content (2026-03-16)
 **Trigger:** First draft had detailed step-by-step guides for Photoshop, Canva, and GIMP — essentially teaching users how to use competitors.
@@ -194,8 +193,8 @@ Current TikTokVertical template needs these improvements:
 ### LESSON-027: Extras pack does NOT contain Square — only 5 specific sizes (2026-03-17)
 **Trigger:** Gemini-generated images showed "Square (1:1)", "Panoramic", "Custom Sizes", and "Social Media Sizes" under Extras pack. None of these exist.
 **Rule:** The Extras pack contains EXACTLY these 5 sizes and nothing else:
-- 5×7, 8.5×11, 11×14, 11×17, 20×24
-Square sizes (8×8 through 24×24) are only available in Single Export mode, NOT in any ZIP pack. Never mention Square, Panoramic, Custom Sizes, or Social Media Sizes as pack contents. When prompting Gemini for images showing pack contents, explicitly list the real Extras sizes.
+- 5×7, 8.5×11, 11×14, 11×17, 13×19, 20×24
+Square sizes (5×5 through 24×24) are only available in Single Export mode, NOT in any ZIP pack. Never mention Square, Panoramic, Custom Sizes, or Social Media Sizes as pack contents. When prompting Gemini for images showing pack contents, explicitly list the real Extras sizes.
 
 ### LESSON-028: Gemini drops sizes and invents fake ones even when showing individual packs (2026-03-17)
 **Trigger:** P01 image showed 4:5 pack with "4×5" (not a real size), missing 12×15, 20×25, 24×30. Also missing 6×9 from 2:3, missing 24×32 from 3:4, missing A0 from ISO.
@@ -349,6 +348,15 @@ This recipe consistently produces clean infographic-style images with accurate p
 4. CTA + link can be ~60 characters, so content gets ~390 characters max
 5. Count characters BEFORE sending to Buffer — never assume it fits
 
+### LESSON-046: Remotion CTA scene too long + duration mismatch (2026-03-23)
+**Trigger:** Videos had ~2-3s of blank screen at the end. Two causes:
+1. CTA_SCENE was 90 frames (3s) but animation finishes in ~1s
+2. Root.tsx used `calculateDuration(DEFAULT_PROPS.points.length)` (5 points = 474 frames) — but actual videos had 4 points (409 frames needed). The 65 extra frames = 2.17s blank.
+**Fixes applied:**
+1. Reduced CTA_SCENE from 90 to 50 frames in TikTokVertical.tsx
+2. Changed Root.tsx to use `calculateMetadata` — duration now scales dynamically with actual points count
+**Rule:** Never hardcode duration based on DEFAULT_PROPS. Always use `calculateMetadata` so duration matches the actual props passed at render time.
+
 ### LESSON-045: Writer agents must verify internal links match the correct page (2026-03-23)
 **Trigger:** Botanical page had 5x7 table row linking to `/etsy-8x10-print-size` instead of `/etsy-5x7-print-size`. Caught during Playwright validation.
 **Rule:** When a writer agent creates internal links to size pages:
@@ -357,3 +365,40 @@ This recipe consistently produces clean infographic-style images with accurate p
 3. Common mistake: copy-pasting a link from a nearby row and forgetting to update the href
 4. The seo-writer agent prompt should include: "Verify every internal link href matches the anchor text size"
 This is a mechanical error that automated validation could catch — consider adding a post-write link audit step to the pipeline.
+
+### LESSON-047: Market "70 files" or "30+ sizes" — never lead with "28" (2026-03-24, updated)
+**Trigger:** Pack total dropped from 31 to 28 after removing A0, 24×36, 24×32. But actual output is 70 files (31 portrait + 31 landscape + 8 square).
+**Rule:** In all marketing content, SEO pages, captions, and image prompts:
+1. **Headlines/CTAs:** "Up to 70 print-ready files from one upload" — strongest true number
+2. **Casual/social:** "30+ sizes" — 31 unique sizes rounds naturally
+3. **Pack detail (when relevant):** "28 sizes in 5 organized packs"
+4. **Always mention:** "portrait & landscape" — each size comes in both orientations, doubling the value
+5. **Never lead with "28"** — it sounds like a downgrade from 31. Lead with 70 or 30+.
+6. **Single export value add:** "plus 8 square sizes and 3 oversized formats via single export"
+7. Exception: internal docs (CONTENT_REFERENCE.md) track exact pack count of 28 for accuracy
+
+### LESSON-048: Partner commission is 25% lifetime, not 12 months (2026-03-24)
+**Trigger:** User decided 25% lifetime recurring commission is better than 12-month cap at current stage (3 paying users). Lifetime alignment keeps partners promoting forever.
+**Rule:** In all outreach emails, partner page copy, and partner-related content:
+1. Say **"25% lifetime recurring commission"** — not "for 12 months"
+2. Rationale: at $12/mo Pro, 25% = $3/mo per referral — extremely cheap CAC. Awareness > margin optimization.
+3. If terms ever change, grandfather existing partners.
+
+### LESSON-049: Use founder signature for outreach, not "Support" (2026-03-24)
+**Trigger:** User's email signature said "SnapToSize Support" — reads as helpdesk, not founder outreach.
+**Rule:** For partner/cold outreach emails, use:
+```
+Mathias
+Founder, SnapToSize
+snaptosize.com
+```
+Never use "SnapToSize Support" for partnership or business development emails. "Support" is for customer service only.
+
+### LESSON-050: A0, 24×36, 24×32 removed from packs — single export only (2026-03-24)
+**Trigger:** Large sizes removed from ZIP packs due to file size constraints. They are still available via Quick Export (single file download).
+**Rule:** When listing pack contents in content, do NOT include:
+- 24×36 in the 2:3 pack (pack is now 7 sizes: 4×6 through 20×30)
+- 24×32 in the 3:4 pack (pack is now 5 sizes: 6×8 through 18×24)
+- A0 in the ISO pack (pack is now 5 sizes: A5 through A1)
+General mentions of these as popular print sizes (e.g., "24×36 is the top poster size") are fine — just don't claim they're in the ZIP packs.
+Total pack sizes: 28 (was 31). Lead with "70 files" or "30+ sizes" in marketing. Use "28 in packs" only when detailing ZIP structure.

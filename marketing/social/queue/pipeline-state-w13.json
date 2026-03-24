@@ -1,0 +1,172 @@
+{
+  "current_week": "W13",
+  "batch_id": "2026-W13",
+  "started_at": "2026-03-24T10:00:00.000000+00:00",
+  "updated_at": "2026-03-24T10:47:00.000000+00:00",
+  "target": {
+    "pinterest": 3,
+    "instagram": 1,
+    "tiktok": 0
+  },
+  "stages": {
+    "analyst": {
+      "status": "completed",
+      "output": "Reviewed W12 content (54 items), identified 4 fresh angles avoiding all overlap"
+    },
+    "researcher": {
+      "status": "completed",
+      "output": "Cross-referenced CONTENT_REFERENCE.md + lessons.md (46 lessons applied)"
+    },
+    "ideator": {
+      "status": "completed",
+      "output": "4 topics: buyers-search-by-size, 5-min-listing-setup, new-seller-starter-packs, pro-vs-amateur-files"
+    },
+    "scripter": {
+      "status": "completed",
+      "output": "4 metadata.json files with captions, descriptions, hashtags, board assignments"
+    },
+    "creator": {
+      "status": "completed",
+      "output": "4 images generated via Gemini (3 Pinterest 2:3, 1 Instagram 4:5) — all text verified accurate"
+    },
+    "qa": {
+      "status": "completed",
+      "output": "4/4 passed — correct ratios, descriptions under 500 chars, 5 hashtags on IG, all product data accurate"
+    },
+    "publisher": {
+      "status": "completed",
+      "output": "4/4 scheduled to Buffer — staggered 2h apart starting 11:47 UTC"
+    },
+    "tracker": {
+      "status": "pending",
+      "output": null
+    }
+  },
+  "content_items": [
+    {
+      "id": "W13-P01",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini",
+      "tool_attempts": [],
+      "files": {
+        "main": "marketing/social/content/pinterest/2026-03-24-buyers-search-by-size/pin.jpg"
+      },
+      "metadata": {},
+      "linked_item": null,
+      "created_at": "2026-03-24T10:00:00.000000+00:00",
+      "updated_at": "2026-03-24T10:47:00.000000+00:00",
+      "error": null
+    },
+    {
+      "id": "W13-P02",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini",
+      "tool_attempts": [],
+      "files": {
+        "main": "marketing/social/content/pinterest/2026-03-24-5-min-listing-setup/pin.jpg"
+      },
+      "metadata": {},
+      "linked_item": null,
+      "created_at": "2026-03-24T10:00:00.000000+00:00",
+      "updated_at": "2026-03-24T10:47:00.000000+00:00",
+      "error": null
+    },
+    {
+      "id": "W13-P03",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini",
+      "tool_attempts": [],
+      "files": {
+        "main": "marketing/social/content/pinterest/2026-03-24-new-seller-starter-packs/pin.jpg"
+      },
+      "metadata": {},
+      "linked_item": null,
+      "created_at": "2026-03-24T10:00:00.000000+00:00",
+      "updated_at": "2026-03-24T10:47:00.000000+00:00",
+      "error": null
+    },
+    {
+      "id": "W13-I01",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini",
+      "tool_attempts": [],
+      "files": {
+        "main": "marketing/social/content/instagram/2026-03-24-pro-vs-amateur-files/post.jpg"
+      },
+      "metadata": {},
+      "linked_item": null,
+      "created_at": "2026-03-24T10:00:00.000000+00:00",
+      "updated_at": "2026-03-24T10:47:00.000000+00:00",
+      "error": null
+    },
+    {
+      "id": "W13-I02",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "manual",
+      "tool_attempts": [],
+      "files": {
+        "main": "marketing/social/content/instagram/2026-03-24-5-min-listing-setup/post.jpg"
+      },
+      "metadata": {},
+      "linked_item": "W13-P02",
+      "created_at": "2026-03-24T10:56:00.000000+00:00",
+      "updated_at": "2026-03-24T10:56:00.000000+00:00",
+      "error": null
+    },
+    {
+      "id": "W13-I03",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "manual",
+      "tool_attempts": [],
+      "files": {
+        "main": "marketing/social/content/instagram/2026-03-24-new-seller-starter-packs/post.jpg"
+      },
+      "metadata": {},
+      "linked_item": "W13-P03",
+      "created_at": "2026-03-24T10:56:00.000000+00:00",
+      "updated_at": "2026-03-24T10:56:00.000000+00:00",
+      "error": null
+    },
+    {
+      "id": "W13-P04",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "manual",
+      "tool_attempts": [],
+      "files": {
+        "main": "marketing/social/content/pinterest/2026-03-24-pro-vs-amateur-files/pin.jpg"
+      },
+      "metadata": {},
+      "linked_item": "W13-I01",
+      "created_at": "2026-03-24T10:56:00.000000+00:00",
+      "updated_at": "2026-03-24T10:56:00.000000+00:00",
+      "error": null
+    }
+  ],
+  "metrics": {
+    "total": 7,
+    "completed": 7,
+    "failed": 0,
+    "success_rate": 1.0
+  }
+}

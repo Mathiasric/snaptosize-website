@@ -1,12 +1,13 @@
 # MILESTONES.md — Revenue Targets & Progress
-**Last updated:** 2026-03-22
+**Last updated:** 2026-03-24
 
 ---
 
 ## Current State
-- **Paying users:** 1
-- **MRR:** $12
-- **SEO pages live:** 25
+- **Paying users:** 3 (2 monthly, 1 yearly)
+- **MRR:** $32 (2× $11.99 monthly + $97/year amortized)
+- **Revenue collected today (2026-03-23):** $108.99 ($97 yearly + $11.99 monthly)
+- **SEO pages live:** 27
 - **First paying customer:** 2026-03-03
 - **Target:** $1M ARR (~7,500 paying users)
 
@@ -27,7 +28,8 @@ $1M ARR requires:
 
 | Milestone | Users | MRR | Status | Action when hit |
 |-----------|-------|-----|--------|-----------------|
-| First paying | 1 | $12 | ✅ Done | Ship content daily |
+| First paying | 1 | $12 | ✅ Done (2026-03-03) | Ship content daily |
+| 3 paying | 3 | $32 | ✅ Done (2026-03-23) — $109 revenue today | Keep pushing distribution |
 | 10 paying | 10 | $120 | ❌ | Double content volume |
 | 50 paying | 50 | $600 | ❌ | Launch affiliates |
 | 100 paying | 100 | $1,200 | ❌ | Test pricing changes |
@@ -41,13 +43,14 @@ $1M ARR requires:
 
 ### Product
 - ✅ Core app (upload → ZIP packs) — live, stable
+- ✅ 28 sizes across 5 ratio packs + 8 square + 3 large via single export (up to 70 files from one upload)
 - ✅ Free/Pro plans with Stripe billing
 - ✅ Clerk auth + PostHog analytics
 - ✅ Watermark on free, unlimited on Pro
 
 ### Marketing Infrastructure
 - ✅ Marketing site (snaptosize.com, Cloudflare Pages)
-- ✅ 25 SEO pages live (2 new pages deployed 2026-03-23: ratio comparison + niche vertical)
+- ✅ 27 SEO pages live (2 new pages deployed 2026-03-24: 8.5×11 US Letter + blurry prints fix)
 - ✅ PostHog pageview tracking
 - ✅ Lead capture backend (Worker /subscribe)
 - ✅ Email capture component on site
@@ -107,13 +110,29 @@ $1M ARR requires:
 - ❌ Automated partner commission tracking (Stripe Connect) — trigger: 3+ active partners
 - ❌ Community listening agent — monitors Reddit/Etsy forums for sizing pain points
 
+### Future Product Expansion — New Pack Types
+- ❌ **Panoramic / wide ratio packs** (1:2, 1:3) — sizes like 12×24, 10×20, 8×24, 12×36. Growing niche on Etsy for landscape art and above-sofa statement pieces. Same technology, new ratio group.
+- ❌ **Square pack (1:1)** — currently 8 sizes in single export only. Bundling into a ZIP pack would add value for Instagram-driven art, nursery sets, and gallery wall collections. Low engineering effort.
+- ❌ **Social media sizing pack** — 1080×1080, 1080×1350, 1080×1920 etc. Different ICP (content creators), but same core technology.
+
 ### Adjacent Markets (Post-PMF)
 - ❌ Planner/printable layout adaptation (Letter→A4→A5 re-layout)
 - ❌ Social media image sizing (secondary ICP, same technology)
 
 ---
 
-## Completed This Week (2026-03-23)
+## Completed This Week (2026-03-24)
+- ✅ 2 new SEO pages deployed: `/etsy-8-5x11-print-size` (US Letter size page) + `/etsy-digital-download-blurry-prints` (problem-solution troubleshooter)
+- ✅ Nav, footer, page registry, pipeline state all updated
+- ✅ Removed A0, 24×36, 24×32 from ZIP packs (single export only) — fixed ISO A-series timeout bug for Pro user
+- ✅ Reframed all 27 SEO pages: "up to 70 files" / "30+ sizes" positioning (was "28 sizes")
+- ✅ Added 11×17 to Extras pack listings across all pages (6 sizes now)
+- ✅ Updated Remotion defaults, CONTENT_REFERENCE.md, lessons.md for new marketing language
+- ✅ 3 educator outreach emails sent (Cassie Smallwood, Renae Christine, Giggles Galore) — 7 total sent
+
+## Completed Previous Week (2026-03-23)
+- ✅ **2 new paying customers!** (1 Pro Monthly $11.99 + 1 Pro Yearly $97) — $109 revenue today, MRR $12 → $32
+- ✅ App improvements: added 5×5 square size + 13×19 extras size, added 11×17 to Extras pack
 - ✅ 2 new SEO pages deployed: `/2-3-vs-4-5-ratio` (first ratio comparison page) + `/etsy-botanical-print-sizes` (second niche vertical)
 - ✅ SEO pipeline W13 batch started — 2 pages researched, written, built, deployed
 - ✅ Etsy Print Size Calculator interactive tool page deployed (`/etsy-print-size-calculator`)

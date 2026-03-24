@@ -6,12 +6,12 @@ import { FinalCTA } from "@/components/FinalCTA";
 export const metadata: Metadata = {
   title: "FAQ — Frequently Asked Questions",
   description:
-    "Common questions about SnapToSize: 30 print sizes, file quality, DPI, commercial use, pricing, and Etsy integration.",
+    "Common questions about SnapToSize: 30+ print sizes, 70 files from one upload, DPI, commercial use, pricing, and Etsy integration.",
   alternates: { canonical: "https://snaptosize.com/faq" },
   openGraph: {
     title: "FAQ — Frequently Asked Questions | SnapToSize",
     description:
-      "Common questions about SnapToSize: 30 print sizes, file quality, DPI, commercial use, pricing, and Etsy integration.",
+      "Common questions about SnapToSize: 30+ print sizes, 70 files from one upload, DPI, commercial use, pricing, and Etsy integration.",
     url: "https://snaptosize.com/faq",
   },
 };
@@ -34,7 +34,7 @@ export default function FAQPage() {
         name: "How many sizes does SnapToSize generate?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "30 print sizes across 5 ratio packs: 2:3 (8 sizes from 4×6 to 24×36), 3:4 (6 sizes), 4:5 (5 sizes including the popular 8×10), ISO A-series (6 sizes from A5 to A0), and Extras (5 sizes like 5×7, 11×14, 11×17). Plus square sizes via Quick Export.",
+          text: "Up to 70 print-ready files from one upload: 30+ sizes across 5 ratio packs in portrait and landscape, plus large formats and square sizes via single export. Packs include 2:3 (7 sizes from 4×6 to 20×30), 3:4 (5 sizes), 4:5 (5 sizes including the popular 8×10), ISO A-series (5 sizes from A5 to A1), and Common Sizes (6 sizes like 5×7, 11×14, 13×19).",
         },
       },
       {
@@ -116,17 +116,17 @@ export default function FAQPage() {
 
             <Accordion question="How many sizes does SnapToSize generate?">
               <p className="mb-3">
-                <strong>30 print sizes</strong> across 5 ratio packs:
+                <strong>30+ sizes</strong> across 5 ratio packs, in both portrait and landscape — up to 70 files total:
               </p>
               <ul className="space-y-1 ml-5 list-disc text-sm text-foreground-60">
-                <li><strong>2:3</strong> — 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30, 24×36</li>
-                <li><strong>3:4</strong> — 6×8, 9×12, 12×16, 15×20, 18×24, 24×32</li>
+                <li><strong>2:3</strong> — 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30</li>
+                <li><strong>3:4</strong> — 6×8, 9×12, 12×16, 15×20, 18×24</li>
                 <li><strong>4:5</strong> — 8×10, 12×15, 16×20, 20×25, 24×30</li>
-                <li><strong>ISO A-Series</strong> — A5, A4, A3, A2, A1, A0</li>
-                <li><strong>Extras</strong> — 5×7, 8.5×11, 11×14, 11×17, 20×24</li>
+                <li><strong>ISO A-Series</strong> — A5, A4, A3, A2, A1</li>
+                <li><strong>Common Sizes</strong> — 5×7, 8.5×11, 11×14, 11×17, 13×19, 20×24</li>
               </ul>
               <p className="mt-3 text-sm text-foreground-60">
-                Plus square sizes (8×8, 10×10) via Quick Export. Every file at 300 DPI.
+                Plus large formats (A0, 24×36, 24×32) and square sizes (5×5, 8×8, 10×10) via single export. Every file at 300 DPI.
               </p>
             </Accordion>
 
@@ -356,7 +356,7 @@ export default function FAQPage() {
           <div className="mt-16">
             <FinalCTA
               heading="Ready to Create Print-Ready Files?"
-              stat="30 sizes · 5 ratio packs · 300 DPI"
+              stat="Up to 70 files · 5 ratio packs · portrait & landscape"
               description="Upload one image, download every size your Etsy buyers need."
               appUrl="https://app.snaptosize.com"
             />

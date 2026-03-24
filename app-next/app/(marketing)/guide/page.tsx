@@ -218,13 +218,13 @@ export default function GuidePage() {
                 <Card>
                   <h3 className="font-semibold mb-2">2:3 Ratio — Most Popular for Wall Art</h3>
                   <p className="text-sm text-foreground-60">
-                    4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30, 24×36
+                    4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30
                   </p>
                 </Card>
                 <Card>
                   <h3 className="font-semibold mb-2">3:4 Ratio — Classic Photo Frames</h3>
                   <p className="text-sm text-foreground-60">
-                    6×8, 9×12, 12×16, 15×20, 18×24, 24×32
+                    6×8, 9×12, 12×16, 15×20, 18×24
                   </p>
                 </Card>
                 <Card>
@@ -236,19 +236,19 @@ export default function GuidePage() {
                 <Card>
                   <h3 className="font-semibold mb-2">ISO A-Series — International Standard</h3>
                   <p className="text-sm text-foreground-60">
-                    A5, A4, A3, A2, A1, A0
+                    A5, A4, A3, A2, A1
                   </p>
                 </Card>
                 <Card>
                   <h3 className="font-semibold mb-2">Extras — Common Sizes</h3>
                   <p className="text-sm text-foreground-60">
-                    5×7, 8.5×11, 11×14, 11×17, 20×24
+                    5×7, 8.5×11, 11×14, 11×17, 13×19, 20×24
                   </p>
                 </Card>
               </div>
               <p className="text-sm text-foreground-60 mt-4">
-                <strong>30 sizes total</strong>, all at 300 DPI. Square sizes (8×8, 10×10)
-                are available via Quick Export.
+                <strong>30+ sizes in portrait & landscape — up to 70 files total.</strong> All at 300 DPI. Large formats (A0, 24×36, 24×32)
+                and square sizes (5×5, 8×8, 10×10) are available via single export.
               </p>
             </div>
 
@@ -263,7 +263,7 @@ export default function GuidePage() {
                 <p className="ml-4">YourArtwork_8x12_2400x3600_300dpi.jpg</p>
                 <p className="ml-4">YourArtwork_12x18_3600x5400_300dpi.jpg</p>
                 <p className="ml-4">YourArtwork_16x24_4800x7200_300dpi.jpg</p>
-                <p className="ml-4">YourArtwork_24x36_7200x10800_300dpi.jpg</p>
+                <p className="ml-4">YourArtwork_20x30_6000x9000_300dpi.jpg</p>
                 <p className="ml-4 text-foreground-60/50">... and more sizes</p>
               </Card>
               <p className="text-sm text-foreground-60 mt-4">
@@ -430,7 +430,7 @@ export default function GuidePage() {
             <div className="pt-8">
               <FinalCTA
                 heading="Ready to Create Your Print Files?"
-                stat="30 sizes · 5 ratio packs · under 30 seconds"
+                stat="Up to 70 files · 5 ratio packs · portrait & landscape"
                 description="Upload one image, download every size your buyers need."
                 appUrl="https://app.snaptosize.com"
               />

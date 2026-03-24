@@ -537,6 +537,15 @@ export default function Etsy85x11PrintSizePage() {
                       </td>
                     </tr>
                     <tr className="border-b border-white/10">
+                      <td className="py-3 px-4">11×17</td>
+                      <td className="py-3 px-4 text-foreground-60">
+                        3300 × 5100
+                      </td>
+                      <td className="py-3 px-4 text-foreground-60">
+                        Tabloid / ledger size
+                      </td>
+                    </tr>
+                    <tr className="border-b border-white/10">
                       <td className="py-3 px-4">13×19</td>
                       <td className="py-3 px-4 text-foreground-60">
                         3900 × 5700
@@ -835,7 +844,7 @@ export default function Etsy85x11PrintSizePage() {
                         Listings with a single 8.5×11 file convert poorly
                         compared to those offering multiple sizes. Buyers
                         expect a bundle. Include the full Extras pack (5×7,
-                        8.5×11, 11×14, 13×19, 20×24) &mdash; it takes the same
+                        8.5×11, 11×14, 11×17, 13×19, 20×24) &mdash; it takes the same
                         upload effort but dramatically increases perceived
                         value.
                       </p>
@@ -875,8 +884,8 @@ export default function Etsy85x11PrintSizePage() {
             <div>
               <FinalCTA
                 heading="Get All Extras Sizes in One Click"
-                stat="5 common sizes from a single upload"
-                description="Upload your artwork and instantly receive 5×7, 8.5×11, 11×14, 13×19, and 20×24 at 300 DPI. No cropping, no manual resizing. Production-ready in seconds."
+                stat="6 common sizes from a single upload"
+                description="Upload your artwork and instantly receive 5×7, 8.5×11, 11×14, 11×17, 13×19, and 20×24 at 300 DPI. No cropping, no manual resizing. Production-ready in seconds."
                 buttonText="Start Free — Generate Sizes Now"
                 appUrl={appUrl}
               />

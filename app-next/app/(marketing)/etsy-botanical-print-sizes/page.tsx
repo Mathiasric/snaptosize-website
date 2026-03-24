@@ -124,7 +124,7 @@ export default function EtsyBotanicalPrintSizesPage() {
         name: "Do I need to include international (A-series) sizes for botanical prints?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. Botanical art has a strong international buyer base, especially in the UK, Europe, and Australia where A4 and A3 are the standard frame sizes. Skipping A-series means leaving 20\u201330% of potential buyers without a usable file. SnapToSize\u2019s ISO pack generates A5 through A0 automatically.",
+          text: "Yes. Botanical art has a strong international buyer base, especially in the UK, Europe, and Australia where A4 and A3 are the standard frame sizes. Skipping A-series means leaving 20\u201330% of potential buyers without a usable file. SnapToSize\u2019s ISO pack generates A5 through A1 automatically.",
         },
       },
     ],
@@ -1082,10 +1082,10 @@ export default function EtsyBotanicalPrintSizesPage() {
                   <tbody>
                     <tr className="border-b border-white/10 bg-accent/5">
                       <td className="py-3 px-4 font-semibold">
-                        2:3 (8 sizes)
+                        2:3 (7 sizes)
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
-                        4x6, 6x9, 8x12, 10x15, 12x18, 16x24, 20x30, 24x36
+                        4x6, 6x9, 8x12, 10x15, 12x18, 16x24, 20x30
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
                         Hero ratio for botanical art &mdash; the classic tall
@@ -1106,10 +1106,10 @@ export default function EtsyBotanicalPrintSizesPage() {
                     </tr>
                     <tr className="border-b border-white/10 bg-accent/5">
                       <td className="py-3 px-4 font-semibold">
-                        3:4 (6 sizes)
+                        3:4 (5 sizes)
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
-                        6x8, 9x12, 12x16, 15x20, 18x24, 24x32
+                        6x8, 9x12, 12x16, 15x20, 18x24
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
                         12x16 for gallery walls, 18x24 for large botanical
@@ -1118,10 +1118,10 @@ export default function EtsyBotanicalPrintSizesPage() {
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="py-3 px-4 font-semibold">
-                        ISO (6 sizes)
+                        ISO (5 sizes)
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
-                        A5, A4, A3, A2, A1, A0
+                        A5, A4, A3, A2, A1
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
                         Critical for botanical art &mdash; stronger
@@ -1130,10 +1130,10 @@ export default function EtsyBotanicalPrintSizesPage() {
                     </tr>
                     <tr>
                       <td className="py-3 px-4 font-semibold">
-                        Extras (5 sizes)
+                        Extras (6 sizes)
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
-                        5x7, 8.5x11, 11x14, 11x17, 20x24
+                        5x7, 8.5x11, 11x14, 11x17, 13x19, 20x24
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
                         5x7 for herb prints, 11x14 for gallery wall
@@ -1234,7 +1234,7 @@ export default function EtsyBotanicalPrintSizesPage() {
                         buyers use A4 and A3 as their standard frame sizes.
                         Skipping A-series means leaving 20-30% of potential
                         botanical buyers without a usable file. The ISO pack
-                        generates A5 through A0 automatically.
+                        generates A5 through A1 automatically.
                       </p>
                     </div>
                   </div>
@@ -1444,7 +1444,7 @@ export default function EtsyBotanicalPrintSizesPage() {
                     question:
                       "Do I need to include international (A-series) sizes for botanical prints?",
                     answer:
-                      "Yes. Botanical art has a strong international buyer base, especially in the UK, Europe, and Australia where A4 and A3 are the standard frame sizes. Skipping A-series means leaving 20\u201330% of potential buyers without a usable file. SnapToSize\u2019s ISO pack generates A5 through A0 automatically.",
+                      "Yes. Botanical art has a strong international buyer base, especially in the UK, Europe, and Australia where A4 and A3 are the standard frame sizes. Skipping A-series means leaving 20\u201330% of potential buyers without a usable file. SnapToSize\u2019s ISO pack generates A5 through A1 automatically.",
                   },
                 ]}
               />

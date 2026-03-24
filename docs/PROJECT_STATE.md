@@ -114,15 +114,21 @@ SnapToSize frontend runs on Cloudflare Pages (static prerender).
 
 ## 3.1 Etsy Pack System
 
-Five production Etsy ZIP packs:
+Five production Etsy ZIP packs (28 sizes total):
 
-| Pack | Filename |
-|------|----------|
-| 2:3 ratio | 2x3_print_sizes.zip |
-| 3:4 ratio | 3x4_print_sizes.zip |
-| 4:5 ratio | 4x5_print_sizes.zip |
-| ISO A-series | iso_print_sizes.zip |
-| Common sizes | extras_print_sizes.zip |
+| Pack | Filename | Sizes |
+|------|----------|-------|
+| 2:3 ratio | 2x3_print_sizes.zip | 7: 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30 |
+| 3:4 ratio | 3x4_print_sizes.zip | 5: 6×8, 9×12, 12×16, 15×20, 18×24 |
+| 4:5 ratio | 4x5_print_sizes.zip | 5: 8×10, 12×15, 16×20, 20×25, 24×30 |
+| ISO A-series | iso_print_sizes.zip | 5: A5, A4, A3, A2, A1 |
+| Common sizes | extras_print_sizes.zip | 6: 5×7, 8.5×11, 11×14, 11×17, 13×19, 20×24 |
+
+Single export only (not in packs):
+- **Large sizes:** 24×36 (2:3), 24×32 (3:4), A0 (ISO) — removed from packs 2026-03-24 due to Runner processing limits and ZIP file size
+- **Square sizes (1:1):** 5×5, 8×8, 10×10, 12×12, 16×16, 18×18, 20×20, 24×24
+
+Total output from one upload: up to 70 files (28 pack sizes × 2 orientations + 8 square + 3 large singles via Quick Export).
 
 Each pack:
 - 300 DPI

@@ -139,7 +139,7 @@ export default function SizesPage() {
                       <tr>
                         <td className="py-2 pr-4">24 × 36</td>
                         <td className="py-2 pr-4">7200 × 10800</td>
-                        <td className="py-2">Maximum size</td>
+                        <td className="py-2">Maximum size (single export)</td>
                       </tr>
                     </tbody>
                   </table>
@@ -191,7 +191,7 @@ export default function SizesPage() {
                       <tr>
                         <td className="py-2 pr-4">24 × 32</td>
                         <td className="py-2 pr-4">7200 × 9600</td>
-                        <td className="py-2">Maximum size</td>
+                        <td className="py-2">Maximum size (single export)</td>
                       </tr>
                     </tbody>
                   </table>
@@ -297,7 +297,7 @@ export default function SizesPage() {
                         <td className="py-2 pr-4">A0</td>
                         <td className="py-2 pr-4">841 × 1189</td>
                         <td className="py-2 pr-4">9933 × 14043</td>
-                        <td className="py-2">Oversized poster</td>
+                        <td className="py-2">Oversized poster (single export)</td>
                       </tr>
                     </tbody>
                   </table>
@@ -337,7 +337,12 @@ export default function SizesPage() {
                       <tr className="border-b border-border">
                         <td className="py-2 pr-4">11 × 17</td>
                         <td className="py-2 pr-4">3300 × 5100</td>
-                        <td className="py-2">Tabloid size</td>
+                        <td className="py-2">Tabloid / ledger</td>
+                      </tr>
+                      <tr className="border-b border-border">
+                        <td className="py-2 pr-4">13 × 19</td>
+                        <td className="py-2 pr-4">3900 × 5700</td>
+                        <td className="py-2">Fine art poster</td>
                       </tr>
                       <tr>
                         <td className="py-2 pr-4">20 × 24</td>

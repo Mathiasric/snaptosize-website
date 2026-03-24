@@ -344,11 +344,11 @@ export default function EtsyDigitalDownloadNotSellingPage() {
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {[
-                    { ratio: "2:3 Wall Art", sizes: "4x6 to 24x36", count: 8 },
+                    { ratio: "2:3 Wall Art", sizes: "4x6 to 20x30", count: 7 },
                     {
                       ratio: "3:4 Photo Frame",
-                      sizes: "6x8 to 24x32",
-                      count: 6,
+                      sizes: "6x8 to 18x24",
+                      count: 5,
                     },
                     {
                       ratio: "4:5 Traditional",
@@ -357,8 +357,8 @@ export default function EtsyDigitalDownloadNotSellingPage() {
                     },
                     {
                       ratio: "ISO A-Series",
-                      sizes: "A5 to A0",
-                      count: 6,
+                      sizes: "A5 to A1",
+                      count: 5,
                     },
                     {
                       ratio: "Extras",

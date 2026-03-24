@@ -499,13 +499,13 @@ export default function HowToSellPrintablesWithoutPhotoshopPage() {
                   {[
                     {
                       ratio: "2:3 Wall Art",
-                      sizes: "4x6 to 24x36",
-                      count: 8,
+                      sizes: "4x6 to 20x30",
+                      count: 7,
                     },
                     {
                       ratio: "3:4 Photo Frame",
-                      sizes: "6x8 to 24x32",
-                      count: 6,
+                      sizes: "6x8 to 18x24",
+                      count: 5,
                     },
                     {
                       ratio: "4:5 Traditional",
@@ -514,12 +514,12 @@ export default function HowToSellPrintablesWithoutPhotoshopPage() {
                     },
                     {
                       ratio: "ISO A-Series",
-                      sizes: "A5 to A0",
-                      count: 6,
+                      sizes: "A5 to A1",
+                      count: 5,
                     },
                     {
                       ratio: "Extras",
-                      sizes: "5x7, 8.5x11, 11x14, 11x17...",
+                      sizes: "5x7, 8.5x11, 11x14, 13x19...",
                       count: 5,
                     },
                   ].map((pack, i) => (

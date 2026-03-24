@@ -6,7 +6,7 @@
 
 ## Strategic Context (updated 2026-03-22)
 
-**Current position:** 1 paying user, $12 MRR, 25 SEO pages, 4 outreach emails sent, social active daily.
+**Current position:** 3 paying users, $32 MRR / $109 revenue today (2 monthly + 1 yearly as of 2026-03-23), 27 SEO pages, 7 outreach emails sent, social active daily. Pack system: 28 sizes in 5 packs, up to 70 files total.
 **Diagnosis:** Product is strong. Distribution is the only bottleneck. SEO and social are correct long-term bets but won't convert for months. We need **fast-feedback channels** that produce signups in days, not months.
 **New insight:** We've been over-indexed on content (SEO + social) which is slow-burn. Adding **launch events** (Product Hunt), **interactive tools** (calculator), **direct outreach** (cold email), and **marketplace deals** (AppSumo) creates multiple shots on goal with faster feedback loops.
 **Fastest path to 10 users:** Educator partnerships + Product Hunt + cold email to Etsy sellers. Three independent channels, any one can hit the target.
@@ -120,12 +120,12 @@
 
 | Gate | Metric | Status | Unlocks |
 |------|--------|--------|---------|
-| Send outreach emails | 10+ emails sent | ⏳ 4 sent | Educator partnerships |
+| Send outreach emails | 10+ emails sent | ⏳ 7 sent | Educator partnerships |
 | Product Hunt launch | Launched + 100 upvotes | ❌ Not started | Burst traffic + signups |
 | Interactive tool live | Calculator deployed | ✅ Done (2026-03-22) | New SEO channel + tool-intent traffic |
 | 3 educator partnerships | Distribution proven | ❌ | Scale to 20+ partners |
-| 100 SEO pages | Content foundation | ❌ 25 live | Shift to optimization |
-| 10 paying users | WTP proven | ❌ 1 user | Small ad spend test, mockup build |
+| 100 SEO pages | Content foundation | ❌ 27 live | Shift to optimization |
+| 10 paying users | WTP proven | ⏳ 3 users | Small ad spend test, mockup build |
 | 50 paying users | PMF signal | ❌ | Premium tier, affiliates at scale |
 
 ---

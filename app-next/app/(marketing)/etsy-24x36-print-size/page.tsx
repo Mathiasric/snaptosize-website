@@ -121,7 +121,7 @@ export default function Etsy24x36PrintSizePage() {
         name: "Should I offer 24×36 alone or in a bundle?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Bundle with the complete 2:3 pack: 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30, and 24×36. Buyers expect multiple sizes in digital downloads, and bundling increases perceived value at the same price point.",
+          text: "The 2:3 pack includes 7 sizes: 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, and 20×30. Export 24×36 separately via single export. Buyers expect multiple sizes in digital downloads, and bundling increases perceived value at the same price point.",
         },
       },
     ],
@@ -257,7 +257,7 @@ export default function Etsy24x36PrintSizePage() {
                 </Button>
               </a>
               <p className="text-sm text-white/40 mt-1.5">
-                Free &rarr; upload once, download 24×36 + seven more 2:3 sizes.
+                Free &rarr; export 24×36 via single export, or download the 2:3 pack with 7 sizes.
               </p>
             </div>
 
@@ -390,12 +390,12 @@ export default function Etsy24x36PrintSizePage() {
             <div>
               <Card accent className="p-6 md:p-8 text-center">
                 <h3 className="text-xl md:text-2xl font-bold mb-3">
-                  Upload Once, Get All 2:3 Sizes Including 24×36
+                  Upload Once, Get All 2:3 Sizes + 24×36 via Single Export
                 </h3>
                 <p className="text-sm text-foreground-60 mb-5">
-                  One upload gives you 4×6, 6×9, 8×12, 10×15, 12×18, 16×24,
-                  20×30, and 24×36 at 300&nbsp;DPI &mdash; organized, named, and
-                  under 20&nbsp;MB.
+                  One upload gives you the 2:3 pack (4×6, 6×9, 8×12, 10×15,
+                  12×18, 16×24, 20×30) at 300&nbsp;DPI, plus 24×36 via single
+                  export &mdash; organized, named, and under 20&nbsp;MB.
                 </p>
                 <a href={appUrl} target="_blank" rel="noopener noreferrer">
                   <Button className="text-sm px-6 py-2.5">
@@ -408,14 +408,14 @@ export default function Etsy24x36PrintSizePage() {
             {/* --- 2:3 Ratio Family --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
-                The 2:3 Ratio Family — All Sizes That Come With 24×36
+                The 2:3 Ratio Family — All Sizes Related to 24×36
               </h2>
               <p className="text-foreground-60 mb-6">
                 24×36 belongs to the 2:3 aspect ratio family. All sizes in this
                 group maintain identical proportions, so you scale up or down from
-                the same source file without cropping. Buyers expect to receive
-                all eight sizes in one download &mdash; this is the standard Etsy
-                bundle for 2:3 ratio prints.
+                the same source file without cropping. The 2:3 pack includes
+                seven sizes (4×6 through 20×30), and 24×36 is available via
+                single export.
               </p>
 
               <div className="overflow-x-auto mb-8">
@@ -503,7 +503,7 @@ export default function Etsy24x36PrintSizePage() {
                         7200 × 10800
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
-                        Standard poster, largest in pack
+                        Standard poster, available via single export
                       </td>
                     </tr>
                   </tbody>
@@ -512,9 +512,10 @@ export default function Etsy24x36PrintSizePage() {
 
               <p className="text-foreground-60 mb-4">
                 When a competitor offers &ldquo;24×36 only&rdquo; and your
-                listing includes all eight 2:3 sizes, yours appears to have
-                5-8× more value at the same price. Buyers perceive a complete
-                size range instead of a single file.
+                listing includes all seven 2:3 pack sizes plus 24×36 via
+                single export, yours appears to have much more value at the
+                same price. Buyers perceive a complete size range instead of
+                a single file.
               </p>
               <p className="text-foreground-60">
                 For the full picture across all ratios (2:3, 3:4, 4:5, ISO,
@@ -806,8 +807,8 @@ export default function Etsy24x36PrintSizePage() {
                       <p className="text-foreground-60 text-sm">
                         Buyers expect multiple sizes in digital print downloads.
                         Listings with only 24×36 convert poorly compared to
-                        competitors who include the full 2:3 family (4×6 through
-                        24×36). Include all eight sizes.
+                        competitors who include the full 2:3 family. Include all
+                        seven pack sizes plus 24×36 via single export.
                       </p>
                     </div>
                   </div>
@@ -853,8 +854,8 @@ export default function Etsy24x36PrintSizePage() {
             <div>
               <FinalCTA
                 heading="Get All 2:3 Sizes in One Click"
-                stat="All 8 sizes in the 2:3 ratio from a single upload"
-                description="Upload your artwork and instantly receive 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30, and 24×36 at 300 DPI. No cropping, no manual resizing. Production-ready in seconds."
+                stat="7 pack sizes plus 24×36 via single export from one upload"
+                description="Upload your artwork and instantly receive the 2:3 pack (4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30) plus 24×36 via single export at 300 DPI. No cropping, no manual resizing. Production-ready in seconds."
                 buttonText="Start Free — Generate Sizes Now"
                 appUrl={appUrl}
               />
@@ -893,7 +894,7 @@ export default function Etsy24x36PrintSizePage() {
                     question:
                       "Should I offer 24×36 alone or in a bundle?",
                     answer:
-                      "Bundle with the complete 2:3 pack: 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30, and 24×36. Buyers expect multiple sizes in digital downloads, and bundling increases perceived value at the same price point.",
+                      "The 2:3 pack includes 7 sizes: 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, and 20×30. Export 24×36 separately via single export. Buyers expect multiple sizes in digital downloads, and bundling increases perceived value at the same price point.",
                   },
                 ]}
               />

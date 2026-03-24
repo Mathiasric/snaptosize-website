@@ -1,0 +1,30 @@
+{
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": true,
+    "claude-mem@thedotmack": true
+  },
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp",
+        "--browser",
+        "chrome"
+      ]
+    },
+    "gemini": {
+      "command": "node",
+      "args": [
+        "C:/Users/mathi/AppData/Roaming/npm/node_modules/@rlabs-inc/gemini-mcp/dist/index.js"
+      ],
+      "env": {
+        "GEMINI_API_KEY": "${GEMINI_API_KEY}"
+      }
+    }
+  },
+  "permissions": {
+    "allow": [
+      "Read(//c/snaptosize-website/.claude/**)"
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 # SnapToSize — Scaling to $1M ARR Execution Plan
 **Created:** 2026-03-17
-**Status:** 1 paying user · $12 MRR · 23 SEO pages · Calculator live · Social active · Lead capture live · Partner program live · 4 outreach emails sent
-**Last updated:** 2026-03-22
+**Status:** 3 paying users · $32 MRR · $109 revenue day 1 (2026-03-23) · 27 SEO pages · Calculator live · Social active · Lead capture live · Partner program live · 7 outreach emails sent · Pack system: 28 sizes in 5 packs, up to 70 files total
+**Last updated:** 2026-03-24
 
 ---
 
@@ -9,10 +9,10 @@
 
 | Metric | Now | Target | Gap |
 |--------|-----|--------|-----|
-| Paying users | 1 | 7,500 | 7,499x |
-| MRR | $12 | $83,333 | 6,944x |
+| Paying users | 3 | 7,500 | 2,500x |
+| MRR | $32 | $83,333 | 2,604x |
 | Organic traffic | ~50/mo (est.) | 90-180k/mo | 2,000-3,600x |
-| SEO pages | 23 | 200+ | ~9x |
+| SEO pages | 27 | 200+ | ~7x |
 | Conversion rate | Unknown | 7-10% | No data |
 | Distribution channels | 6 (SEO + Pinterest + Instagram + TikTok + Email + Partners) | 8+ active | Adding 3 new |
 
@@ -29,13 +29,13 @@
 **Page types to build:**
 | Type | Count | Status |
 |------|-------|--------|
-| Size-specific (11x14, 18x24, 24x36, A4, A3, etc.) | 25 | 9 built (8x10, 5x7, 16x20, 24x36, 18x24, 11x14, A4, 4x6, 12x16) |
-| Ratio comparisons (2:3-vs-3:4, etc.) | 10 | 0 built |
+| Size-specific (8x10, 5x7, 8.5x11, 16x20, 24x36, 18x24, 11x14, A4, 4x6, 12x16, etc.) | 25 | 11 built |
+| Ratio comparisons (2:3-vs-3:4, etc.) | 10 | 1 built (2:3-vs-4:5) |
 | Problem/troubleshooting (file-too-big, wrong-dpi, etc.) | 15 | 5 built |
-| Niche verticals (nursery, botanical, wedding, minimalist) | 10 | 1 built (nursery) |
+| Niche verticals (nursery, botanical, wedding, minimalist) | 10 | 2 built (nursery, botanical) |
 | How-to guides (pricing, beginner, passive income) | 15 | 7 built |
 | Comparison/alternatives (vs-canva, vs-photoshop) | 10 | 0 built |
-| **Total target** | **85 new pages** | **23 live** |
+| **Total target** | **85 new pages** | **27 live** |
 
 **Priority keywords:**
 - "how to price your etsy printables" (medium comp, high volume)
@@ -229,7 +229,7 @@
 **Why:** 200+ pages capturing every long-tail "etsy [size] print" query.
 
 **Actions:**
-- [ ] Programmatic size pages: all 30 sizes get dedicated pages
+- [ ] Programmatic size pages: all 28 pack sizes + popular large/square sizes get dedicated pages
 - [ ] Programmatic ratio pages: all ratio combinations
 - [ ] "Etsy vs" pages: "SnapToSize vs Photoshop", "SnapToSize vs Canva for printables"
 - [ ] Niche verticals: botanical, minimalist, nursery, abstract — size guides per niche
@@ -245,7 +245,17 @@
 - [ ] Premium tier: $29/mo or $249/year
 - [ ] Target segment: sellers with 50+ listings doing $2k+/mo
 
-### 3.4 Adjacent Markets (Preparation Only)
+### 3.4 New Pack Types — Product Expansion
+**Why:** Current 5 packs cover standard frame sizes. Adding new ratio groups opens new customer segments and content clusters with zero new infrastructure.
+
+**Candidates (in priority order):**
+1. **Square pack (1:1)** — 8 sizes already in single export (5×5 → 24×24). Bundle into ZIP pack. Low effort, immediate value for Instagram-art sellers, nursery sets, gallery wall collections.
+2. **Panoramic / wide packs (1:2, 1:3)** — sizes like 12×24, 10×20, 8×24, 12×36. Growing niche for landscape art, above-sofa pieces. Requires new ratio definitions in Worker.
+3. **Social media pack** — 1080×1080, 1080×1350, 1080×1920. Different ICP (content creators) but same technology. Opens adjacent market.
+
+**Trigger:** Build after 50+ paying users and confirmed demand signals (customer requests, search volume).
+
+### 3.5 Adjacent Markets (Preparation Only)
 **Why:** Same problem exists on Shopify, Creative Market, Gumroad.
 
 **Actions:**

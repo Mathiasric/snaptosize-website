@@ -97,7 +97,7 @@ export default function Etsy18x24PrintSizePage() {
         name: "What aspect ratio is 18×24?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "18×24 has a 3:4 aspect ratio (0.75 decimal). Other sizes in this ratio family include 6×8, 9×12, 12×16, 15×20, and 24×32. All can be scaled from the same source file without cropping.",
+          text: "18×24 has a 3:4 aspect ratio (0.75 decimal). The 3:4 pack includes 6×8, 9×12, 12×16, 15×20, and 18×24. 24×32 is available via single export. All 3:4 sizes can be scaled from the same source file without cropping.",
         },
       },
       {
@@ -505,7 +505,7 @@ export default function Etsy18x24PrintSizePage() {
                         7200 × 9600
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
-                        Oversized art, maximum impact
+                        Oversized art, available via single export
                       </td>
                     </tr>
                   </tbody>
@@ -514,9 +514,9 @@ export default function Etsy18x24PrintSizePage() {
 
               <p className="text-foreground-60 mb-4">
                 When a competitor offers &ldquo;18×24 only&rdquo; and your
-                listing includes all six 3:4 sizes, yours appears to have
-                higher value at the same price. Buyers perceive six products
-                instead of one.
+                listing includes all five 3:4 pack sizes, yours appears to
+                have higher value at the same price. Buyers perceive five
+                products instead of one.
               </p>
               <p className="text-foreground-60">
                 For the full picture across all ratios (2:3, 3:4, 4:5, ISO,
@@ -786,8 +786,8 @@ export default function Etsy18x24PrintSizePage() {
             <div>
               <FinalCTA
                 heading="Get All 3:4 Sizes in One Click"
-                stat="Six 3:4 sizes from a single upload"
-                description="Upload your artwork and instantly receive 6x8, 9x12, 12x16, 15x20, 18x24, and 24x32 at 300 DPI. No cropping, no manual resizing. Production-ready in seconds."
+                stat="Five 3:4 pack sizes from a single upload"
+                description="Upload your artwork and instantly receive 6x8, 9x12, 12x16, 15x20, and 18x24 at 300 DPI. No cropping, no manual resizing. Production-ready in seconds."
                 buttonText="Start Free — Generate Sizes Now"
                 appUrl={appUrl}
               />
@@ -809,7 +809,7 @@ export default function Etsy18x24PrintSizePage() {
                   {
                     question: "What aspect ratio is 18×24?",
                     answer:
-                      "3:4 (or 0.75 as a decimal). This ratio is shared with 6×8, 9×12, 12×16, 15×20, and 24×32. All these sizes can be scaled from the same source file without any cropping.",
+                      "3:4 (or 0.75 as a decimal). The 3:4 pack includes 6×8, 9×12, 12×16, 15×20, and 18×24. 24×32 is available via single export. All 3:4 sizes can be scaled from the same source file without any cropping.",
                   },
                   {
                     question: "Does 18×24 fit a standard frame?",

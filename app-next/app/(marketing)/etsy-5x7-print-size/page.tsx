@@ -736,6 +736,18 @@ export default function Etsy5x7PrintSizePage() {
                       </td>
                     </tr>
                     <tr className="border-b border-white/10">
+                      <td className="py-3 px-4">11×17</td>
+                      <td className="py-3 px-4 text-foreground-60">
+                        3300 × 5100
+                      </td>
+                      <td className="py-3 px-4 text-foreground-60">
+                        11:17
+                      </td>
+                      <td className="py-3 px-4 text-foreground-60">
+                        Tabloid / ledger size
+                      </td>
+                    </tr>
+                    <tr className="border-b border-white/10">
                       <td className="py-3 px-4">13×19</td>
                       <td className="py-3 px-4 text-foreground-60">
                         3900 × 5700
@@ -1009,7 +1021,7 @@ export default function Etsy5x7PrintSizePage() {
                   {
                     question: "What shape is a 5×7 print?",
                     answer:
-                      "5×7 has its own unique shape (5:7 ratio) — it's narrower than 8×10 and wider than 4×6. You can't just resize between these sizes without cutting off part of your design. Because of its unique shape, SnapToSize includes 5×7 in the Extras pack alongside 8.5×11, 11×14, 13×19, and 20×24.",
+                      "5×7 has its own unique shape (5:7 ratio) — it's narrower than 8×10 and wider than 4×6. You can't just resize between these sizes without cutting off part of your design. Because of its unique shape, SnapToSize includes 5×7 in the Extras pack alongside 8.5×11, 11×14, 11×17, 13×19, and 20×24.",
                   },
                   {
                     question: "Does 5×7 fit a standard frame?",

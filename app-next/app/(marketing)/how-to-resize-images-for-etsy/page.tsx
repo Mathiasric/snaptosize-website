@@ -565,13 +565,13 @@ export default function HowToResizeImagesForEtsyPage() {
                       {
                         ratio: "2:3",
                         sizes:
-                          "4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30, 24×36",
-                        note: "8 sizes — photography standard (DSLR default)",
+                          "4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30",
+                        note: "7 sizes — photography standard (DSLR default)",
                       },
                       {
                         ratio: "3:4",
-                        sizes: "6×8, 9×12, 12×16, 15×20, 18×24, 24×32",
-                        note: "6 sizes — classic photo frame ratio",
+                        sizes: "6×8, 9×12, 12×16, 15×20, 18×24",
+                        note: "5 sizes — classic photo frame ratio",
                       },
                       {
                         ratio: "4:5",
@@ -580,13 +580,13 @@ export default function HowToResizeImagesForEtsyPage() {
                       },
                       {
                         ratio: "ISO",
-                        sizes: "A5, A4, A3, A2, A1, A0",
-                        note: "6 sizes — international standard (EU/UK/AU)",
+                        sizes: "A5, A4, A3, A2, A1",
+                        note: "5 sizes — international standard (EU/UK/AU)",
                       },
                       {
                         ratio: "Extras",
-                        sizes: "5×7, 8.5×11, 11×14, 11×17, 20×24",
-                        note: "5 sizes — common US sizes",
+                        sizes: "5×7, 8.5×11, 11×14, 11×17, 13×19, 20×24",
+                        note: "6 sizes — common US sizes",
                       },
                     ].map((group) => (
                       <div

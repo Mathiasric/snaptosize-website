@@ -108,7 +108,7 @@ export default function EtsyNurseryWallArtSizesPage() {
         name: "Should I offer square prints for nursery art?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes — square prints (8×8, 10×10, 12×12) are popular for modern nursery gallery walls. They pair well with rectangular sizes for visual variety. SnapToSize exports square sizes as single files alongside your ratio packs.",
+          text: "Yes — square prints (5×5, 8×8, 10×10, 12×12) are popular for modern nursery gallery walls. They pair well with rectangular sizes for visual variety. SnapToSize exports square sizes as single files alongside your ratio packs.",
         },
       },
       {
@@ -838,7 +838,7 @@ export default function EtsyNurseryWallArtSizesPage() {
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="py-3 px-4 font-semibold">
-                        3:4 (6 sizes)
+                        3:4 (5 sizes)
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
                         6×8, 12×16
@@ -849,7 +849,7 @@ export default function EtsyNurseryWallArtSizesPage() {
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="py-3 px-4 font-semibold">
-                        Extras (5 sizes)
+                        Extras (6 sizes)
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
                         <Link
@@ -858,7 +858,7 @@ export default function EtsyNurseryWallArtSizesPage() {
                         >
                           5×7
                         </Link>
-                        , 11×14
+                        , 11×14, 11×17
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
                         Shelf prints, statement pieces, gift sizes
@@ -866,7 +866,7 @@ export default function EtsyNurseryWallArtSizesPage() {
                     </tr>
                     <tr>
                       <td className="py-3 px-4 font-semibold">
-                        ISO (6 sizes)
+                        ISO (5 sizes)
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
                         A4, A3
@@ -1018,7 +1018,7 @@ export default function EtsyNurseryWallArtSizesPage() {
                     question:
                       "Should I offer square prints for nursery art?",
                     answer:
-                      "Yes — square prints (8×8, 10×10, 12×12) are popular for modern nursery gallery walls. They pair well with rectangular sizes for visual variety. SnapToSize exports square sizes as single files alongside your ratio packs.",
+                      "Yes — square prints (5×5, 8×8, 10×10, 12×12) are popular for modern nursery gallery walls. They pair well with rectangular sizes for visual variety. SnapToSize exports square sizes as single files alongside your ratio packs.",
                   },
                   {
                     question:

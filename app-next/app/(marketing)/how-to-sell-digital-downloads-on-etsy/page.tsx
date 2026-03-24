@@ -150,7 +150,7 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
         name: "How many print sizes should I include in my Etsy listing?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Professional sellers provide 20-30 print sizes organized into 5 ratio packs: 2:3 (most common), 3:4 (classic frames), 4:5 (includes 8×10), ISO A-series (international), and extras (5×7, 8.5×11, 11×14, 11×17). This covers virtually every frame size and eliminates custom size requests.",
+          text: "Professional sellers provide 20-30 print sizes organized into 5 ratio packs: 2:3 (most common), 3:4 (classic frames), 4:5 (includes 8×10), ISO A-series (international), and extras (5×7, 8.5×11, 11×14, 13×19). This covers virtually every frame size and eliminates custom size requests.",
         },
       },
       {
@@ -525,14 +525,14 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
                           <span className="font-semibold">1.</span>
                           <span>
                             <strong>2:3 ratio</strong> — 4×6, 6×9, 8×12, 12×18,
-                            16×24, 20×30, 24×36
+                            16×24, 20×30
                           </span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="font-semibold">2.</span>
                           <span>
                             <strong>3:4 ratio</strong> — 6×8, 9×12, 12×16,
-                            18×24, 24×32
+                            18×24
                           </span>
                         </li>
                         <li className="flex items-start gap-2">
@@ -545,14 +545,14 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
                         <li className="flex items-start gap-2">
                           <span className="font-semibold">4.</span>
                           <span>
-                            <strong>ISO A-series</strong> — A5, A4, A3, A2, A1, A0
+                            <strong>ISO A-series</strong> — A5, A4, A3, A2, A1
                             (international buyers)
                           </span>
                         </li>
                         <li className="flex items-start gap-2">
                           <span className="font-semibold">5.</span>
                           <span>
-                            <strong>Extras</strong> — 5×7, 8.5×11, 11×14, 11×17, 20×24
+                            <strong>Extras</strong> — 5×7, 8.5×11, 11×14, 11×17, 13×19, 20×24
                           </span>
                         </li>
                       </ul>
@@ -854,13 +854,13 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
                 <div className="flex items-start gap-3 p-3 rounded-lg bg-background-5 border border-border">
                   <span className="font-semibold">2:3 ratio</span>
                   <span className="text-sm text-foreground-60">
-                    → 4×6, 6×9, 8×12, 12×18, 16×24, 20×30, 24×36
+                    → 4×6, 6×9, 8×12, 12×18, 16×24, 20×30
                   </span>
                 </div>
                 <div className="flex items-start gap-3 p-3 rounded-lg bg-background-5 border border-border">
                   <span className="font-semibold">3:4 ratio</span>
                   <span className="text-sm text-foreground-60">
-                    → 6×8, 9×12, 12×16, 18×24, 24×32
+                    → 6×8, 9×12, 12×16, 18×24
                   </span>
                 </div>
                 <div className="flex items-start gap-3 p-3 rounded-lg bg-background-5 border border-border">
@@ -872,13 +872,13 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
                 <div className="flex items-start gap-3 p-3 rounded-lg bg-background-5 border border-border">
                   <span className="font-semibold">ISO A-series</span>
                   <span className="text-sm text-foreground-60">
-                    → A5, A4, A3, A2, A1, A0 (international buyers)
+                    → A5, A4, A3, A2, A1 (international buyers)
                   </span>
                 </div>
                 <div className="flex items-start gap-3 p-3 rounded-lg bg-background-5 border border-border">
                   <span className="font-semibold">Extras</span>
                   <span className="text-sm text-foreground-60">
-                    → 5×7, 8.5×11, 11×14, 11×17, 16×20, 20×24
+                    → 5×7, 8.5×11, 11×14, 11×17, 13×19, 20×24
                   </span>
                 </div>
               </div>
@@ -1177,7 +1177,7 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
                         <strong>20-30 print sizes</strong> organized into 5
                         ratio packs: 2:3 (most common), 3:4 (classic frames),
                         4:5 (includes 8×10), ISO A-series (international), and
-                        extras (5×7, 8.5×11, 11×14, 11×17).
+                        extras (5×7, 8.5×11, 11×14, 13×19).
                       </>,
                       <>
                         This covers virtually every frame size and eliminates

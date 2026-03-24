@@ -273,7 +273,7 @@ export default function Etsy4x6PrintSizePage() {
                 </Button>
               </a>
               <p className="text-sm text-white/40 mt-1.5">
-                Free &rarr; upload once, download 4×6 + seven more 2:3 sizes.
+                Free &rarr; upload once, download 4×6 + six more 2:3 pack sizes.
               </p>
             </div>
 
@@ -337,7 +337,7 @@ export default function Etsy4x6PrintSizePage() {
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-foreground-60">Ratio Pack</span>
-                    <span className="font-semibold">2:3 Ratio (8 sizes)</span>
+                    <span className="font-semibold">2:3 Ratio (7 sizes)</span>
                   </div>
                 </div>
               </Card>
@@ -352,7 +352,7 @@ export default function Etsy4x6PrintSizePage() {
               <p className="text-foreground-60 mb-4">
                 As a JPG, the file is very small &mdash; well under
                 Etsy&apos;s 20&nbsp;MB limit per download file, even when
-                bundled with all seven other 2:3 sizes in a ZIP. You will never
+                bundled with all six other 2:3 pack sizes in a ZIP. You will never
                 hit file size limits with 4×6 prints.
               </p>
               <p className="text-foreground-60">
@@ -441,7 +441,7 @@ export default function Etsy4x6PrintSizePage() {
                       24×36
                     </Link>
                     {" "}makes your listing appear to offer more for the money.
-                    Buyers see eight sizes instead of one &mdash; and the
+                    Buyers see seven pack sizes instead of one &mdash; and the
                     smallest size costs you nothing extra to generate.
                   </p>
                 </Card>
@@ -473,9 +473,9 @@ export default function Etsy4x6PrintSizePage() {
               </h2>
               <p className="text-foreground-60 mb-6">
                 4×6 is the smallest size in the 2:3 aspect ratio family. All
-                eight sizes maintain identical proportions, so you scale from
+                seven pack sizes maintain identical proportions, so you scale from
                 the same source file without cropping. Buyers expect to receive
-                all sizes in one download &mdash; this is the standard Etsy
+                multiple sizes in one download &mdash; this is the standard Etsy
                 bundle for 2:3 ratio prints.
               </p>
 
@@ -571,7 +571,7 @@ export default function Etsy4x6PrintSizePage() {
                         7200 × 10800
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
-                        Standard poster, largest in pack
+                        Standard poster, available via single export
                       </td>
                     </tr>
                   </tbody>
@@ -580,10 +580,10 @@ export default function Etsy4x6PrintSizePage() {
 
               <p className="text-foreground-60 mb-4">
                 When a competitor offers &ldquo;one size only&rdquo; and your
-                listing includes all eight 2:3 sizes, yours appears to have
-                8× more value at the same price. Buyers perceive a complete
-                size range &mdash; from a small photo print to a full poster
-                &mdash; instead of a single file.
+                listing includes all seven 2:3 pack sizes, yours appears to
+                have much more value at the same price. Buyers perceive a
+                complete size range &mdash; from a small photo print to a
+                large poster &mdash; instead of a single file.
               </p>
               <p className="text-foreground-60">
                 For the full picture across all ratios (2:3, 3:4, 4:5, ISO,
@@ -884,8 +884,8 @@ export default function Etsy4x6PrintSizePage() {
             <div>
               <FinalCTA
                 heading="Get All 2:3 Sizes in One Click"
-                stat="Eight 2:3 sizes from a single upload"
-                description="Upload your artwork and instantly receive 4x6, 6x9, 8x12, 10x15, 12x18, 16x24, 20x30, and 24x36 at 300 DPI. No cropping, no manual resizing. Production-ready in seconds."
+                stat="Seven 2:3 pack sizes from a single upload"
+                description="Upload your artwork and instantly receive 4x6, 6x9, 8x12, 10x15, 12x18, 16x24, and 20x30 at 300 DPI. No cropping, no manual resizing. Production-ready in seconds."
                 buttonText="Start Free — Generate Sizes Now"
                 appUrl={appUrl}
               />

@@ -12,7 +12,7 @@ import RelatedPages from "@/components/RelatedPages";
 export const metadata: Metadata = {
   title: "How Many Sizes to Include in Etsy Printable Listings?",
   description:
-    "Professional Etsy sellers include 25-30 sizes across 5 ratio packs. Here's the exact structure to maximize sales without spending hours resizing.",
+    "Up to 70 print-ready files from one upload — portrait, landscape, and square. The exact sizing strategy professional Etsy sellers use.",
   alternates: {
     canonical: "https://snaptosize.com/how-many-sizes-etsy-printable",
   },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "How Many Sizes to Include in Etsy Printable Listings?",
     description:
-      "25-30 sizes across 5 ratio packs. The exact sizing strategy professional Etsy sellers use.",
+      "Up to 70 print-ready files from one upload. The exact sizing strategy professional Etsy sellers use.",
     images: ["/assets/og/how-many-sizes-etsy-printable.png"],
   },
 };
@@ -46,7 +46,7 @@ export default function HowManySizesEtsyPrintablePage() {
     "@type": "Article",
     headline: "How Many Sizes to Include in Etsy Printable Listings",
     description:
-      "Complete guide to sizing strategy for Etsy digital print sellers. The 5 ratio pack system covering 30 sizes that eliminates buyer questions and maximizes conversions.",
+      "Complete guide to sizing strategy for Etsy digital print sellers. Up to 70 print-ready files from one upload — 30+ sizes in portrait and landscape, organized in 5 ratio packs.",
     url: "https://snaptosize.com/how-many-sizes-etsy-printable",
     datePublished: "2026-03-17",
     dateModified: "2026-03-17",
@@ -85,7 +85,7 @@ export default function HowManySizesEtsyPrintablePage() {
         name: "How many sizes should I include in my Etsy printable listing?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Professional sellers include 4-5 complete ratio packs covering 25-30 standard sizes total (2:3, 3:4, 4:5, ISO A-series, and extras). This eliminates buyer questions and positions you as a premium seller with comprehensive coverage.",
+          text: "Professional sellers deliver up to 70 print-ready files — 30+ sizes in portrait and landscape, plus square formats, organized in 5 ratio packs (2:3, 3:4, 4:5, ISO A-series, and extras). This eliminates buyer questions and positions you as a premium seller.",
         },
       },
       {
@@ -106,10 +106,10 @@ export default function HowManySizesEtsyPrintablePage() {
       },
       {
         "@type": "Question",
-        name: "How long does it take to create 30 sizes manually in Photoshop?",
+        name: "How long does it take to create 70 files manually in Photoshop?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Manual resizing takes 2-3 minutes per size. For 30 sizes, that's 1-1.5 hours per artwork minimum. For sellers with 50+ listings, this is 75-150 hours of tedious manual work that could be spent creating new art.",
+          text: "Manual resizing takes 2-3 minutes per file. For 70 files (portrait, landscape, and square), that's roughly 3.5 hours per artwork. For sellers with 50+ listings, this is hundreds of hours of tedious manual work that could be spent creating new art.",
         },
       },
       {
@@ -117,7 +117,7 @@ export default function HowManySizesEtsyPrintablePage() {
         name: "How do I create all Etsy print sizes without spending hours resizing?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Use a professional sizing tool like SnapToSize that generates all standard ratio packs from one upload. Upload once, receive organized ZIPs with all 30 sizes at 300 DPI in 10-30 seconds. No Photoshop, no cropping, no manual work.",
+          text: "Use a professional sizing tool like SnapToSize. Upload once, receive up to 70 files — 30+ sizes in portrait and landscape, plus square formats — organized in 5 ratio packs at 300 DPI. Processing time: 10-30 seconds. No Photoshop, no cropping, no manual work.",
         },
       },
     ],
@@ -239,7 +239,7 @@ export default function HowManySizesEtsyPrintablePage() {
             {/* Count badge */}
             <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full border border-white/[0.08] bg-white/[0.03]">
               <span className="text-[10px] font-mono text-purple-300/40 tracking-[0.15em]">
-                30 SIZES &middot; 5 PACKS
+                70 FILES &middot; 5 PACKS
               </span>
             </div>
           </div>
@@ -266,15 +266,16 @@ export default function HowManySizesEtsyPrintablePage() {
             </h1>
             <p className="text-base text-white/60 mb-5 max-w-lg">
               Should you include 5 sizes? 10? All of them? Professional sellers
-              offer 25&ndash;30 sizes across 5 ratio packs. Here&apos;s the
-              exact structure &mdash; and how to create it without spending hours
-              in Photoshop.
+              deliver up to 70 print-ready files &mdash; 30+ sizes in portrait
+              and landscape, organized in 5 ratio packs. Here&apos;s the exact
+              structure &mdash; and how to create it without spending hours in
+              Photoshop.
             </p>
 
             <div className="mb-4">
               <a href={appUrl} target="_blank" rel="noopener noreferrer">
                 <Button className="text-sm px-6 py-2.5">
-                  Generate All 30 Sizes Instantly
+                  Generate Up to 70 Files Instantly
                 </Button>
               </a>
               <p className="text-sm text-white/40 mt-1.5">
@@ -286,7 +287,7 @@ export default function HowManySizesEtsyPrintablePage() {
               <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/[0.06] backdrop-blur-sm border border-white/[0.08]">
                 <Check className="h-3 w-3 text-purple-400 flex-shrink-0" />
                 <span className="text-xs text-white/70 font-medium">
-                  30 sizes across 5 packs
+                  Up to 70 files &middot; 5 ratio packs
                 </span>
               </div>
               <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/[0.06] backdrop-blur-sm border border-white/[0.08]">
@@ -313,13 +314,15 @@ export default function HowManySizesEtsyPrintablePage() {
             {/* --- The Short Answer --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
-                The Short Answer: 25&ndash;30 Sizes Across 5 Ratio Packs
+                The Short Answer: Up to 70 Print-Ready Files From One Upload
               </h2>
               <p className="text-foreground-60 mb-4">
-                Professional Etsy printable sellers offer 4&ndash;5 complete
-                ratio packs covering 25&ndash;30 sizes total. This eliminates
-                &ldquo;do you have this in&hellip;?&rdquo; messages, reduces
-                refund requests, and positions you as a premium seller.
+                Professional Etsy printable sellers deliver up to 70
+                print-ready files &mdash; 30+ sizes in both portrait and
+                landscape orientations, plus square formats, organized in 5
+                ratio packs. This eliminates &ldquo;do you have this
+                in&hellip;?&rdquo; messages, reduces refund requests, and
+                positions you as a premium seller.
               </p>
               <p className="text-foreground-60 mb-4">
                 The key is organization: group sizes by{" "}
@@ -454,17 +457,17 @@ export default function HowManySizesEtsyPrintablePage() {
                       <td className="py-3 px-4 font-semibold">2:3 Ratio</td>
                       <td className="py-3 px-4 text-foreground-60">
                         4&times;6, 6&times;9, 8&times;12, 10&times;15,
-                        12&times;18, 16&times;24, 20&times;30, 24&times;36
+                        12&times;18, 16&times;24, 20&times;30
                       </td>
-                      <td className="py-3 px-4 text-foreground-60">8 sizes</td>
+                      <td className="py-3 px-4 text-foreground-60">7 sizes</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="py-3 px-4 font-semibold">3:4 Ratio</td>
                       <td className="py-3 px-4 text-foreground-60">
                         6&times;8, 9&times;12, 12&times;16, 15&times;20,
-                        18&times;24, 24&times;32
+                        18&times;24
                       </td>
-                      <td className="py-3 px-4 text-foreground-60">6 sizes</td>
+                      <td className="py-3 px-4 text-foreground-60">5 sizes</td>
                     </tr>
                     <tr className="border-b border-white/10">
                       <td className="py-3 px-4 font-semibold">4:5 Ratio</td>
@@ -482,9 +485,9 @@ export default function HowManySizesEtsyPrintablePage() {
                     <tr className="border-b border-white/10">
                       <td className="py-3 px-4 font-semibold">ISO A-Series</td>
                       <td className="py-3 px-4 text-foreground-60">
-                        A5, A4, A3, A2, A1, A0
+                        A5, A4, A3, A2, A1
                       </td>
-                      <td className="py-3 px-4 text-foreground-60">6 sizes</td>
+                      <td className="py-3 px-4 text-foreground-60">5 sizes</td>
                     </tr>
                     <tr>
                       <td className="py-3 px-4 font-semibold">Extras</td>
@@ -495,9 +498,9 @@ export default function HowManySizesEtsyPrintablePage() {
                         >
                           5&times;7
                         </Link>
-                        , 8.5&times;11, 11&times;14, 11&times;17, 20&times;24
+                        , 8.5&times;11, 11&times;14, 11&times;17, 13&times;19, 20&times;24
                       </td>
-                      <td className="py-3 px-4 text-foreground-60">5 sizes</td>
+                      <td className="py-3 px-4 text-foreground-60">6 sizes</td>
                     </tr>
                   </tbody>
                   <tfoot>
@@ -506,7 +509,15 @@ export default function HowManySizesEtsyPrintablePage() {
                       <td className="py-3 px-4 text-foreground-60">
                         Every standard frame on the market
                       </td>
-                      <td className="py-3 px-4 font-bold">30 sizes</td>
+                      <td className="py-3 px-4 font-bold">28 sizes</td>
+                    </tr>
+                    <tr className="border-t border-white/10 bg-accent-5/30">
+                      <td className="py-3 px-4 font-bold text-accent-light" colSpan={2}>
+                        With portrait, landscape &amp; square orientations
+                      </td>
+                      <td className="py-3 px-4 font-bold text-accent-light">
+                        Up to 70 files
+                      </td>
                     </tr>
                   </tfoot>
                 </table>
@@ -514,7 +525,8 @@ export default function HowManySizesEtsyPrintablePage() {
 
               <p className="text-foreground-60">
                 This is the professional standard. When a competitor offers 5
-                sizes and your listing includes all 30, yours appears
+                sizes and your listing includes up to 70 files &mdash;
+                portrait, landscape, and square &mdash; yours appears
                 dramatically more valuable at the same price point. Buyers
                 perceive five products instead of one.
               </p>
@@ -553,7 +565,7 @@ export default function HowManySizesEtsyPrintablePage() {
                       </h3>
                       <p className="text-foreground-60 text-sm">
                         Etsy search shows similar listings side by side. When one
-                        listing says &ldquo;30 sizes included&rdquo; and yours
+                        listing says &ldquo;70 files included&rdquo; and yours
                         says &ldquo;3 sizes,&rdquo; the choice is obvious.
                       </p>
                     </div>
@@ -627,9 +639,10 @@ export default function HowManySizesEtsyPrintablePage() {
               <Card accent className="p-6">
                 <p className="text-sm text-foreground-60">
                   <strong className="text-foreground">The difference:</strong>{" "}
-                  30 sizes organized into 5 ratio packs is professional. 50
-                  files dumped into one ZIP is chaos. Organization is what makes
-                  comprehensive coverage work.
+                  30+ sizes in portrait and landscape &mdash; up to 70 files
+                  &mdash; organized into 5 ratio packs is professional. 50
+                  random files dumped into one ZIP is chaos. Organization is
+                  what makes comprehensive coverage work.
                 </p>
               </Card>
             </div>
@@ -638,7 +651,7 @@ export default function HowManySizesEtsyPrintablePage() {
             <div>
               <EmailCaptureSection
                 heading="Free Etsy Printable Size Checklist"
-                description="All 30 sizes, 5 ratio packs, and pixel dimensions at 300 DPI in one printable PDF. Plus file naming conventions and organization best practices."
+                description="All 30+ sizes, 5 ratio packs, portrait and landscape orientations — up to 70 files mapped out with pixel dimensions at 300 DPI. Plus file naming conventions and organization best practices."
                 placeholder="Enter your email"
                 buttonText="Get Free Checklist"
               />
@@ -650,8 +663,9 @@ export default function HowManySizesEtsyPrintablePage() {
                 The Manual Resizing Problem
               </h2>
               <p className="text-foreground-60 mb-4">
-                You know you need 30 sizes. But creating them manually? That&apos;s
-                where the math gets painful.
+                You need up to 70 files per artwork &mdash; portrait, landscape,
+                and square. Creating them manually? That&apos;s where the math
+                gets painful.
               </p>
 
               <Card className="p-6 md:p-8 mb-8">
@@ -666,37 +680,38 @@ export default function HowManySizesEtsyPrintablePage() {
                   </div>
                   <div className="flex justify-between items-center border-b border-white/10 pb-3">
                     <span className="text-foreground-60">
-                      Total for 30 sizes
+                      Total for 70 files
                     </span>
                     <span className="font-semibold">
-                      1&ndash;1.5 hours per artwork
+                      ~3.5 hours per artwork
                     </span>
                   </div>
                   <div className="flex justify-between items-center border-b border-white/10 pb-3">
                     <span className="text-foreground-60">
                       For 50 listings
                     </span>
-                    <span className="font-semibold">75+ hours of labor</span>
+                    <span className="font-semibold">175+ hours of labor</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-foreground-60">
                       For 200 listings
                     </span>
-                    <span className="font-semibold">300+ hours of labor</span>
+                    <span className="font-semibold">700+ hours of labor</span>
                   </div>
                 </div>
               </Card>
 
               <p className="text-foreground-60 mb-4">
                 The workflow: open Photoshop, select crop tool, set dimensions,
-                adjust composition, export, rename file, repeat. Thirty times
-                per artwork. It&apos;s repetitive, tedious work that takes time
+                adjust composition, export, rename file, repeat. Seventy times
+                per artwork if you want portrait, landscape, and square
+                coverage. It&apos;s repetitive, tedious work that takes time
                 away from creating new art &mdash; which is what actually grows
                 your shop.
               </p>
               <p className="text-foreground-60">
                 For sellers with 50&ndash;200 listings, manual resizing becomes
-                a second job. That&apos;s 75&ndash;300 hours of work that
+                a second job. That&apos;s 175&ndash;700 hours of work that
                 doesn&apos;t create a single new design or generate a single new
                 listing.
               </p>
@@ -709,9 +724,10 @@ export default function HowManySizesEtsyPrintablePage() {
                   Generate All Etsy Print Sizes Instantly
                 </h3>
                 <p className="text-sm text-foreground-60 mb-5">
-                  Upload your artwork once. Receive all 5 ratio packs as
-                  organized ZIPs &mdash; 30 sizes at 300 DPI, each under
-                  20&nbsp;MB. Processing time: 10&ndash;30 seconds. No
+                  Upload your artwork once. Receive up to 70 print-ready files
+                  &mdash; 30+ sizes in portrait and landscape, plus square
+                  formats, organized in 5 ratio packs at 300 DPI. Each ZIP
+                  under 20&nbsp;MB. Processing time: 10&ndash;30 seconds. No
                   Photoshop. No cropping. Full composition preserved.
                 </p>
                 <a href={appUrl} target="_blank" rel="noopener noreferrer">
@@ -789,8 +805,9 @@ export default function HowManySizesEtsyPrintablePage() {
 
               <p className="text-foreground-60">
                 Total time: 10&ndash;30 seconds per artwork. Compare that to
-                1.5 hours of manual resizing. For sellers with 50+ listings, the
-                difference is hundreds of hours freed up for creating new art.
+                3.5 hours of manual resizing for 70 files. For sellers with 50+
+                listings, the difference is hundreds of hours freed up for
+                creating new art.
                 Every file is generated at{" "}
                 <Link
                   href="/best-resolution-for-etsy-printables"
@@ -897,26 +914,26 @@ export default function HowManySizesEtsyPrintablePage() {
                     <span className="text-foreground-60">
                       Time saved per artwork
                     </span>
-                    <span className="font-semibold">~1.5 hours</span>
+                    <span className="font-semibold">~3.5 hours</span>
                   </div>
                   <div className="flex justify-between items-center border-b border-white/10 pb-3">
                     <span className="text-foreground-60">
                       Time saved across 50 listings
                     </span>
-                    <span className="font-semibold">75 hours</span>
+                    <span className="font-semibold">175 hours</span>
                   </div>
                   <div className="flex justify-between items-center border-b border-white/10 pb-3">
                     <span className="text-foreground-60">
                       New artworks in that time
                     </span>
-                    <span className="font-semibold">~25 listings</span>
+                    <span className="font-semibold">~60 listings</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-foreground-60">
                       Potential extra monthly revenue
                     </span>
                     <span className="font-semibold text-accent-light">
-                      $1,250+ /month
+                      $3,000+ /month
                     </span>
                   </div>
                 </div>
@@ -928,8 +945,8 @@ export default function HowManySizesEtsyPrintablePage() {
 
               <p className="text-foreground-60 mb-4">
                 Every hour spent manually resizing is an hour not spent creating
-                new art. If each listing generates $50/month on average, those 25
-                extra listings represent $1,250 in additional monthly revenue.
+                new art. If each listing generates $50/month on average, those 60
+                extra listings represent $3,000 in additional monthly revenue.
               </p>
               <p className="text-foreground-60">
                 The ROI of professional sizing tools becomes obvious at scale.{" "}
@@ -950,7 +967,8 @@ export default function HowManySizesEtsyPrintablePage() {
                   Stop Resizing Manually. Start Scaling Your Shop.
                 </h3>
                 <p className="text-sm text-foreground-60 mb-5">
-                  Upload once. Receive 30 sizes across 5 organized ratio packs.
+                  Upload once. Receive up to 70 print-ready files across 5
+                  organized ratio packs &mdash; portrait, landscape, and square.
                   300 DPI. Under 20 MB. Professional naming. Ready to upload to
                   Etsy in seconds.
                 </p>
@@ -977,7 +995,7 @@ export default function HowManySizesEtsyPrintablePage() {
                     question:
                       "How many sizes should I include in my Etsy printable listing?",
                     answer:
-                      "Professional sellers include 4-5 complete ratio packs covering 25-30 standard sizes total (2:3, 3:4, 4:5, ISO A-series, and extras). This eliminates buyer questions and positions you as a premium seller with comprehensive coverage.",
+                      "Professional sellers deliver up to 70 print-ready files — 30+ sizes in portrait and landscape, plus square formats, organized in 5 ratio packs (2:3, 3:4, 4:5, ISO A-series, and extras). This eliminates buyer questions and positions you as a premium seller.",
                   },
                   {
                     question:
@@ -993,15 +1011,15 @@ export default function HowManySizesEtsyPrintablePage() {
                   },
                   {
                     question:
-                      "How long does it take to create 30 sizes manually in Photoshop?",
+                      "How long does it take to create 70 files manually in Photoshop?",
                     answer:
-                      "Manual resizing takes 2-3 minutes per size. For 30 sizes, that's 1-1.5 hours per artwork minimum. For sellers with 50+ listings, this is 75-150 hours of tedious manual work that could be spent creating new art.",
+                      "Manual resizing takes 2-3 minutes per file. For 70 files (portrait, landscape, and square), that's roughly 3.5 hours per artwork. For sellers with 50+ listings, this is hundreds of hours of tedious manual work that could be spent creating new art.",
                   },
                   {
                     question:
                       "How do I create all Etsy print sizes without spending hours resizing?",
                     answer:
-                      "Use a professional sizing tool like SnapToSize that generates all standard ratio packs from one upload. Upload once, receive organized ZIPs with all 30 sizes at 300 DPI in 10-30 seconds. No Photoshop, no cropping, no manual work.",
+                      "Use a professional sizing tool like SnapToSize. Upload once, receive up to 70 files — 30+ sizes in portrait and landscape, plus square formats — organized in 5 ratio packs at 300 DPI. Processing time: 10-30 seconds. No Photoshop, no cropping, no manual work.",
                   },
                 ]}
               />
@@ -1011,8 +1029,8 @@ export default function HowManySizesEtsyPrintablePage() {
             <div>
               <FinalCTA
                 heading="Start Creating Professional Size Packs Today"
-                stat="The right number of sizes for maximum sales"
-                description="Join professional Etsy sellers who deliver 30 sizes across 5 organized ratio packs. Upload your first artwork and see the difference in seconds."
+                stat="One upload → up to 70 print-ready files"
+                description="Join professional Etsy sellers who deliver up to 70 files — 30+ sizes in portrait and landscape, organized in 5 ratio packs. Upload your first artwork and see the difference in seconds."
                 buttonText="Start Free"
                 appUrl={appUrl}
               />

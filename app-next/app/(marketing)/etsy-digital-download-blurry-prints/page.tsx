@@ -783,19 +783,19 @@ export default function EtsyDigitalDownloadBlurryPrintsPage() {
                       <tr className="border-b border-white/10">
                         <td className="py-3 px-4 font-medium">2:3</td>
                         <td className="py-3 px-4 text-foreground-60">
-                          24&times;36
+                          20&times;30
                         </td>
                         <td className="py-3 px-4 text-foreground-60">
-                          7200 &times; 10800
+                          6000 &times; 9000
                         </td>
                       </tr>
                       <tr className="border-b border-white/10">
                         <td className="py-3 px-4 font-medium">3:4</td>
                         <td className="py-3 px-4 text-foreground-60">
-                          24&times;32
+                          18&times;24
                         </td>
                         <td className="py-3 px-4 text-foreground-60">
-                          7200 &times; 9600
+                          5400 &times; 7200
                         </td>
                       </tr>
                       <tr className="border-b border-white/10">
@@ -810,10 +810,10 @@ export default function EtsyDigitalDownloadBlurryPrintsPage() {
                       <tr className="border-b border-white/10">
                         <td className="py-3 px-4 font-medium">ISO</td>
                         <td className="py-3 px-4 text-foreground-60">
-                          A0
+                          A1
                         </td>
                         <td className="py-3 px-4 text-foreground-60">
-                          9933 &times; 14043
+                          7016 &times; 9933
                         </td>
                       </tr>
                       <tr>

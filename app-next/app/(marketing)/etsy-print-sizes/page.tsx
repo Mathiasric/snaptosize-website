@@ -642,7 +642,7 @@ export default function EtsyPrintSizesPage() {
                           <tr>
                             <td className="py-2 pr-4">24 &times; 36</td>
                             <td className="py-2 pr-4">7200 &times; 10800</td>
-                            <td className="py-2">Maximum size</td>
+                            <td className="py-2">Maximum size (single export)</td>
                           </tr>
                         </tbody>
                       </table>
@@ -698,7 +698,7 @@ export default function EtsyPrintSizesPage() {
                           <tr>
                             <td className="py-2 pr-4">24 &times; 32</td>
                             <td className="py-2 pr-4">7200 &times; 9600</td>
-                            <td className="py-2">Maximum size</td>
+                            <td className="py-2">Maximum size (single export)</td>
                           </tr>
                         </tbody>
                       </table>
@@ -812,7 +812,7 @@ export default function EtsyPrintSizesPage() {
                             <td className="py-2 pr-4">A0</td>
                             <td className="py-2 pr-4">841 &times; 1189</td>
                             <td className="py-2 pr-4">9933 &times; 14043</td>
-                            <td className="py-2">Oversized poster</td>
+                            <td className="py-2">Oversized poster (single export)</td>
                           </tr>
                         </tbody>
                       </table>
@@ -866,6 +866,11 @@ export default function EtsyPrintSizesPage() {
                             <td className="py-2 pr-4">11 &times; 14</td>
                             <td className="py-2 pr-4">3300 &times; 4200</td>
                             <td className="py-2">Photo mat standard</td>
+                          </tr>
+                          <tr className="border-b border-border">
+                            <td className="py-2 pr-4">11 &times; 17</td>
+                            <td className="py-2 pr-4">3300 &times; 5100</td>
+                            <td className="py-2">Tabloid / ledger size</td>
                           </tr>
                           <tr className="border-b border-border">
                             <td className="py-2 pr-4">13 &times; 19</td>

@@ -447,7 +447,7 @@ export default function EtsyA4PrintSizePage() {
                         9933 &times; 14043
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
-                        Maximum size, architectural prints
+                        Maximum size, available via single export
                       </td>
                     </tr>
                   </tbody>
