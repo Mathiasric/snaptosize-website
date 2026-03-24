@@ -13,6 +13,21 @@ export const metadata: Metadata = {
     description:
       "Complete reference for Etsy print sizes organized by ratio. Includes pixel dimensions at 300 DPI.",
     url: "https://snaptosize.com/sizes",
+    images: [
+      {
+        url: "/assets/og/sizes.png",
+        width: 1200,
+        height: 630,
+        alt: "Etsy Print Sizes & Ratio Guide | SnapToSize",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Etsy Print Sizes & Ratio Guide | SnapToSize",
+    description:
+      "Complete reference for Etsy print sizes organized by ratio. Includes pixel dimensions at 300 DPI.",
+    images: ["/assets/og/sizes.png"],
   },
 };
 

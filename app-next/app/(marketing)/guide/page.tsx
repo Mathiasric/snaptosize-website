@@ -16,6 +16,21 @@ export const metadata: Metadata = {
     description:
       "Step-by-step instructions for Quick Export and Packs. Create Etsy-ready print files.",
     url: "https://snaptosize.com/guide",
+    images: [
+      {
+        url: "/assets/og/guide.png",
+        width: 1200,
+        height: 630,
+        alt: "User Guide | SnapToSize",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "User Guide | SnapToSize",
+    description:
+      "Step-by-step instructions for Quick Export and Packs. Create Etsy-ready print files.",
+    images: ["/assets/og/guide.png"],
   },
 };
 

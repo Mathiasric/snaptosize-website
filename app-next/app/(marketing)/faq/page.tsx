@@ -13,6 +13,21 @@ export const metadata: Metadata = {
     description:
       "Common questions about SnapToSize: 30+ print sizes, 70 files from one upload, DPI, commercial use, pricing, and Etsy integration.",
     url: "https://snaptosize.com/faq",
+    images: [
+      {
+        url: "/assets/og/faq.png",
+        width: 1200,
+        height: 630,
+        alt: "FAQ — Frequently Asked Questions | SnapToSize",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FAQ — Frequently Asked Questions | SnapToSize",
+    description:
+      "Common questions about SnapToSize: 30+ print sizes, 70 files from one upload, DPI, commercial use, pricing, and Etsy integration.",
+    images: ["/assets/og/faq.png"],
   },
 };
 
