@@ -414,7 +414,11 @@ export default function BestResolutionForEtsyPrintablesPage() {
                 When resolution is too low, buyers see pixelated prints, blurry
                 edges, and muddy details. The result: refund requests, bad
                 reviews, and a damaged shop reputation. 300 DPI is
-                non-negotiable for professional sellers.
+                non-negotiable for professional sellers. If your prints are
+                already coming out blurry, see our{" "}
+                <Link href="/etsy-digital-download-blurry-prints" className="text-accent-light hover:underline">
+                  complete blurry prints troubleshooting guide
+                </Link>.
               </p>
 
               <Card className="p-6 bg-accent/10 border-accent/20">

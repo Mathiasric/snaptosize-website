@@ -852,7 +852,11 @@ export default function EtsyPrintSizesPage() {
                             </td>
                           </tr>
                           <tr className="border-b border-border">
-                            <td className="py-2 pr-4">8.5 &times; 11</td>
+                            <td className="py-2 pr-4">
+                              <Link href="/etsy-8-5x11-print-size" className="text-accent-light hover:underline">
+                                8.5 &times; 11
+                              </Link>
+                            </td>
                             <td className="py-2 pr-4">2550 &times; 3300</td>
                             <td className="py-2">
                               US Letter &mdash; home printing
@@ -864,17 +868,10 @@ export default function EtsyPrintSizesPage() {
                             <td className="py-2">Photo mat standard</td>
                           </tr>
                           <tr className="border-b border-border">
-                            <td className="py-2 pr-4">11 &times; 17</td>
-                            <td className="py-2 pr-4">3300 &times; 5100</td>
+                            <td className="py-2 pr-4">13 &times; 19</td>
+                            <td className="py-2 pr-4">3900 &times; 5700</td>
                             <td className="py-2">
-                              Tabloid &mdash; popular US poster size
-                            </td>
-                          </tr>
-                          <tr className="border-b border-border">
-                            <td className="py-2 pr-4">16 &times; 20</td>
-                            <td className="py-2 pr-4">4800 &times; 6000</td>
-                            <td className="py-2">
-                              Popular standalone poster
+                              Fine art / poster size
                             </td>
                           </tr>
                           <tr>
@@ -920,7 +917,7 @@ export default function EtsyPrintSizesPage() {
               <ul className="space-y-2 text-foreground-60 mb-6">
                 <li className="flex items-start gap-3">
                   <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
-                  <span>Square sizes available in single export mode</span>
+                  <span>Square sizes (5&times;5, 8&times;8, 10&times;10, 12&times;12, 16&times;16, 18&times;18, 20&times;20, 24&times;24) available in single export mode</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />

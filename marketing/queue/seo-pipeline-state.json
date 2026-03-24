@@ -9,23 +9,23 @@
   "stages": {
     "researcher": {
       "status": "completed",
-      "output": "2 briefs produced (2-3-vs-4-5-ratio, etsy-botanical-print-sizes)"
+      "output": "4 briefs produced (2-3-vs-4-5-ratio, etsy-botanical-print-sizes, etsy-8-5x11-print-size, etsy-digital-download-blurry-prints)"
     },
     "writer": {
       "status": "completed",
-      "output": "2 pages written"
+      "output": "4 pages written"
     },
     "review": {
       "status": "completed",
-      "output": "build passed, both pages compile (40 total pages)"
+      "output": "build passed, all pages compile (42 total routes)"
     },
     "deploy": {
       "status": "completed",
       "output": "nav/footer/registry/docs updated"
     },
     "verify": {
-      "status": "pending",
-      "output": null
+      "status": "completed",
+      "output": "Playwright screenshots verified desktop + mobile for both new pages"
     }
   },
   "content_items": [
@@ -42,13 +42,27 @@
       "type": "niche",
       "status": "deployed",
       "brief": "marketing/briefs/etsy-botanical-print-sizes-brief.md"
+    },
+    {
+      "slug": "etsy-8-5x11-print-size",
+      "keyword": "etsy 8.5x11 print size",
+      "type": "size",
+      "status": "deployed",
+      "brief": null
+    },
+    {
+      "slug": "etsy-digital-download-blurry-prints",
+      "keyword": "etsy digital download blurry prints",
+      "type": "problem",
+      "status": "deployed",
+      "brief": null
     }
   ],
   "metrics": {
-    "total": 2,
-    "completed": 2,
+    "total": 4,
+    "completed": 4,
     "failed": 0,
     "success_rate": 1.0
   },
-  "updated_at": "2026-03-23T00:00:00+00:00"
+  "updated_at": "2026-03-24T00:00:00+00:00"
 }

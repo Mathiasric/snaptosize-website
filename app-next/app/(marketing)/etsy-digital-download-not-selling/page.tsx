@@ -362,7 +362,7 @@ export default function EtsyDigitalDownloadNotSellingPage() {
                     },
                     {
                       ratio: "Extras",
-                      sizes: "5x7, 8.5x11, 11x14, 11x17...",
+                      sizes: "5x7, 8.5x11, 11x14, 13x19...",
                       count: 6,
                     },
                   ].map((pack, i) => (
@@ -522,7 +522,11 @@ export default function EtsyDigitalDownloadNotSellingPage() {
                 1-star review and a refund request. The minimum for
                 professional print quality is 300 DPI. Files at 72 DPI (screen
                 resolution) or 150 DPI look acceptable on screen but terrible
-                when printed.
+                when printed. See our{" "}
+                <Link href="/etsy-digital-download-blurry-prints" className="text-accent-light hover:underline">
+                  blurry prints fix guide
+                </Link>{" "}
+                for exact pixel dimensions at every size.
               </p>
 
               <Card className="p-6 mb-6">

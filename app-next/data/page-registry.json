@@ -214,5 +214,21 @@
     "keywords": ["2:3 vs 4:5 ratio", "2:3 vs 4:5 aspect ratio print", "8x10 vs 8x12 print size", "which print ratio for etsy wall art"],
     "cluster": "ratios",
     "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-print-size-calculator", "etsy-8x10-print-size", "etsy-24x36-print-size", "etsy-16x20-print-size", "etsy-4x6-print-size", "how-many-sizes-etsy-printable", "how-to-resize-images-for-etsy", "best-resolution-for-etsy-printables"]
+  },
+  {
+    "slug": "etsy-8-5x11-print-size",
+    "title": "8.5×11 Print Size for Etsy — US Letter",
+    "pageType": "size",
+    "keywords": ["etsy 8.5x11 print size", "US letter print size etsy", "8.5x11 pixel dimensions 300 dpi", "letter size digital download"],
+    "cluster": "sizes",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-a4-print-size", "etsy-11x14-print-size", "etsy-5x7-print-size", "etsy-8x10-print-size", "etsy-print-size-calculator", "how-to-resize-images-for-etsy", "best-file-format-etsy-printables", "etsy-20mb-file-limit"]
+  },
+  {
+    "slug": "etsy-digital-download-blurry-prints",
+    "title": "Etsy Digital Download Prints Blurry? Here's the Fix",
+    "pageType": "problem",
+    "keywords": ["etsy digital download blurry prints", "etsy print pixelated", "etsy digital download resolution too low", "300 dpi etsy", "blurry etsy printable"],
+    "cluster": "problems",
+    "relatedSlugs": ["best-resolution-for-etsy-printables", "etsy-print-sizes", "etsy-print-size-calculator", "etsy-8x10-print-size", "etsy-24x36-print-size", "how-to-resize-images-for-etsy", "best-file-format-etsy-printables", "etsy-20mb-file-limit", "etsy-digital-download-not-selling"]
   }
 ]

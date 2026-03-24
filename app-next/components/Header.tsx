@@ -153,6 +153,9 @@ export function Header() {
                     <Link href="/etsy-12x16-print-size" className="block py-1 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
                       12×16 Print Size
                     </Link>
+                    <Link href="/etsy-8-5x11-print-size" className="block py-1 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
+                      8.5×11 Print Size (US Letter)
+                    </Link>
                   </div>
                   <div className="pt-2 mt-2 border-t border-border/50 space-y-0.5">
                     <Link href="/etsy-nursery-wall-art-sizes" className="block py-1 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
@@ -213,6 +216,9 @@ export function Header() {
                   </Link>
                   <Link href="/etsy-digital-download-not-selling" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                     Not Selling? 7 Fixes
+                  </Link>
+                  <Link href="/etsy-digital-download-blurry-prints" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    Blurry Prints? Fix Resolution
                   </Link>
                 </div>
               </div>
@@ -298,6 +304,9 @@ export function Header() {
                         <Link href="/etsy-12x16-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           12×16 Print Size
                         </Link>
+                        <Link href="/etsy-8-5x11-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          8.5×11 Print Size (US Letter)
+                        </Link>
                         <Link href="/etsy-nursery-wall-art-sizes" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Nursery Wall Art Sizes
                         </Link>
@@ -353,6 +362,9 @@ export function Header() {
                         </Link>
                         <Link href="/etsy-digital-download-not-selling" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Not Selling? 7 Fixes
+                        </Link>
+                        <Link href="/etsy-digital-download-blurry-prints" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Blurry Prints? Fix Resolution
                         </Link>
                       </div>
                     )}

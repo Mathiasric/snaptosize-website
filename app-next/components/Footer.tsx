@@ -91,6 +91,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-8-5x11-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                  8.5×11 Print Size (US Letter)
+                </Link>
+              </li>
+              <li>
                 <Link href="/etsy-nursery-wall-art-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
                   Nursery Wall Art Sizes
                 </Link>
@@ -169,6 +174,11 @@ export function Footer() {
               <li>
                 <Link href="/etsy-digital-download-not-selling" className="transition-colors hover:text-accent-light">
                   Not Selling? 7 Fixes
+                </Link>
+              </li>
+              <li>
+                <Link href="/etsy-digital-download-blurry-prints" className="transition-colors hover:text-accent-light">
+                  Blurry Prints? Fix Resolution
                 </Link>
               </li>
             </ul>
