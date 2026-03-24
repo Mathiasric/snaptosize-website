@@ -394,6 +394,20 @@ snaptosize.com
 ```
 Never use "SnapToSize Support" for partnership or business development emails. "Support" is for customer service only.
 
+### LESSON-051: Never fabricate testimonials or fake social proof (2026-03-24)
+**Trigger:** Homepage had a TestimonialsSection with 3 fabricated reviews (Sarah M., Jessica R., Amanda K.) — none were real users. Removed immediately.
+**Rule:** NEVER create fake testimonials, reviews, or user quotes. This includes:
+1. Invented names with initials ("Sarah M.") presented as real people
+2. Fabricated quotes presented as real feedback
+3. Made-up sales numbers or shop descriptions ("1,200+ sales")
+4. Star ratings on reviews that don't exist
+**What's allowed:**
+- Real metrics from production data ("18,000+ packs generated")
+- Testimonials from real users who explicitly approved their quote
+- Generic trust signals (feature lists, guarantees, "Built for Etsy sellers")
+**Testimonials are a future feature** — re-add the section only when real users provide approved quotes.
+Fake reviews violate FTC guidelines and destroy trust. This is a hard rule.
+
 ### LESSON-050: A0, 24×36, 24×32 removed from packs — single export only (2026-03-24)
 **Trigger:** Large sizes removed from ZIP packs due to file size constraints. They are still available via Quick Export (single file download).
 **Rule:** When listing pack contents in content, do NOT include:

@@ -134,6 +134,20 @@ Secrets go ONLY in:
 - Use placeholders like `YOUR_API_KEY_HERE` in docs and specs.
 This is a hard rule. Violation causes automatic key revocation by providers.
 
+No Fake Social Proof
+NEVER create fabricated testimonials, reviews, quotes attributed to named people, or fake user profiles.
+This includes:
+- Fake names with initials ("Sarah M.", "Jessica R.")
+- Invented quotes presented as real user feedback
+- Fabricated sales numbers or user counts not backed by real data
+- Star ratings on non-existent reviews
+Only use social proof that is:
+- Real metrics from actual usage (e.g., "18,000+ packs generated" from production data)
+- Approved testimonials from real users who gave explicit permission
+- Clearly labeled placeholders (e.g., "[Testimonials section — coming when we have approved reviews]")
+Testimonials section is a future feature — add it back ONLY when real users provide approved quotes.
+This is a trust and legal issue. Fake reviews violate FTC guidelines and destroy credibility.
+
 When Uncertain
 If any of the following is unclear:
 
