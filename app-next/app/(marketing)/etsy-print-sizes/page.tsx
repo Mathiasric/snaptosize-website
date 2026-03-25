@@ -791,7 +791,7 @@ export default function EtsyPrintSizesPage() {
                             <td className="py-2">Standard document</td>
                           </tr>
                           <tr className="border-b border-border">
-                            <td className="py-2 pr-4">A3</td>
+                            <td className="py-2 pr-4"><Link href="/etsy-a3-print-size" className="text-accent-light hover:underline">A3</Link></td>
                             <td className="py-2 pr-4">297 &times; 420</td>
                             <td className="py-2 pr-4">3508 &times; 4961</td>
                             <td className="py-2">Medium poster</td>

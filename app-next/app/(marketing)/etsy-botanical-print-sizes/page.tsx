@@ -630,7 +630,7 @@ export default function EtsyBotanicalPrintSizesPage() {
                       </td>
                     </tr>
                     <tr>
-                      <td className="py-3 px-4 font-semibold">A3</td>
+                      <td className="py-3 px-4 font-semibold"><Link href="/etsy-a3-print-size" className="text-accent-light hover:underline">A3</Link></td>
                       <td className="py-3 px-4 text-foreground-60">
                         3508 x 4961
                       </td>
@@ -931,7 +931,11 @@ export default function EtsyBotanicalPrintSizesPage() {
                 sellers. Buyers pay a premium for curated sets because choosing
                 matching prints individually is stressful. The key to gallery
                 wall sizing: consistency within each set, variety across your
-                size options.
+                size options. For all 5 arrangement types with exact dimensions,
+                see our{" "}
+                <Link href="/etsy-gallery-wall-print-sizes" className="text-accent-light hover:underline">
+                  gallery wall print sizes guide
+                </Link>.
               </p>
 
               <div className="space-y-4 mb-8">

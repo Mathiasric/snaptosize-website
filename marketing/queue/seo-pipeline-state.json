@@ -9,23 +9,23 @@
   "stages": {
     "researcher": {
       "status": "completed",
-      "output": "4 briefs produced (2-3-vs-4-5-ratio, etsy-botanical-print-sizes, etsy-8-5x11-print-size, etsy-digital-download-blurry-prints)"
+      "output": "6 briefs produced (2-3-vs-4-5-ratio, etsy-botanical-print-sizes, etsy-8-5x11-print-size, etsy-digital-download-blurry-prints, etsy-a3-print-size, etsy-gallery-wall-print-sizes)"
     },
     "writer": {
       "status": "completed",
-      "output": "4 pages written"
+      "output": "6 pages written"
     },
     "review": {
       "status": "completed",
-      "output": "build passed, all pages compile (42 total routes)"
+      "output": "build passed, all pages compile (44 total routes)"
     },
     "deploy": {
       "status": "completed",
-      "output": "nav/footer/registry/docs updated"
+      "output": "nav/footer/registry/MILESTONES/CONTENT_PLAYBOOK updated, OG images generated"
     },
     "verify": {
       "status": "completed",
-      "output": "Playwright screenshots verified desktop + mobile for both new pages"
+      "output": "Playwright screenshots verified desktop + mobile for both new pages, OG images generated at 1200x630"
     }
   },
   "content_items": [
@@ -56,13 +56,27 @@
       "type": "problem",
       "status": "deployed",
       "brief": null
+    },
+    {
+      "slug": "etsy-a3-print-size",
+      "keyword": "etsy a3 print size",
+      "type": "size",
+      "status": "deployed",
+      "brief": "marketing/briefs/etsy-a3-print-size-brief.md"
+    },
+    {
+      "slug": "etsy-gallery-wall-print-sizes",
+      "keyword": "etsy gallery wall print sizes",
+      "type": "niche",
+      "status": "deployed",
+      "brief": "marketing/briefs/etsy-gallery-wall-print-sizes-brief.md"
     }
   ],
   "metrics": {
-    "total": 4,
-    "completed": 4,
+    "total": 6,
+    "completed": 6,
     "failed": 0,
     "success_rate": 1.0
   },
-  "updated_at": "2026-03-24T00:00:00+00:00"
+  "updated_at": "2026-03-25T00:00:00+00:00"
 }

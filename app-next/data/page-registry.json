@@ -230,5 +230,21 @@
     "keywords": ["etsy digital download blurry prints", "etsy print pixelated", "etsy digital download resolution too low", "300 dpi etsy", "blurry etsy printable"],
     "cluster": "problems",
     "relatedSlugs": ["best-resolution-for-etsy-printables", "etsy-print-sizes", "etsy-print-size-calculator", "etsy-8x10-print-size", "etsy-24x36-print-size", "how-to-resize-images-for-etsy", "best-file-format-etsy-printables", "etsy-20mb-file-limit", "etsy-digital-download-not-selling"]
+  },
+  {
+    "slug": "etsy-a3-print-size",
+    "title": "A3 Print Size for Etsy — International Poster Dimensions",
+    "pageType": "size",
+    "keywords": ["etsy a3 print size", "a3 print dimensions 300 dpi", "a3 size in pixels", "a3 poster size etsy", "a3 vs 11x17"],
+    "cluster": "sizes",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-a4-print-size", "etsy-print-size-calculator", "etsy-8-5x11-print-size", "etsy-11x14-print-size", "how-to-resize-images-for-etsy", "best-resolution-for-etsy-printables", "how-many-sizes-etsy-printable", "etsy-20mb-file-limit"]
+  },
+  {
+    "slug": "etsy-gallery-wall-print-sizes",
+    "title": "Gallery Wall Print Sizes for Etsy",
+    "pageType": "niche",
+    "keywords": ["etsy gallery wall print sizes", "gallery wall set sizes", "gallery wall art sizes etsy", "gallery wall print arrangement sizes"],
+    "cluster": "niches",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-print-size-calculator", "etsy-nursery-wall-art-sizes", "etsy-botanical-print-sizes", "etsy-8x10-print-size", "etsy-11x14-print-size", "etsy-16x20-print-size", "etsy-5x7-print-size", "etsy-12x16-print-size", "etsy-18x24-print-size", "how-many-sizes-etsy-printable", "how-to-package-digital-wall-art-for-etsy", "how-to-resize-images-for-etsy"]
   }
 ]

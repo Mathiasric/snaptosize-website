@@ -590,8 +590,12 @@ export default function EtsyNurseryWallArtSizesPage() {
                 Gallery wall sets are one of the highest-value offerings in the
                 nursery art category. Buyers pay a premium for coordinated sets
                 because choosing matching prints individually is stressful.
-                Bundling 3-5 prints together at predetermined sizes removes
-                that friction.
+                Bundling 3&ndash;5 prints together at predetermined sizes removes
+                that friction. For a complete guide to all arrangement types and
+                sizes, see our{" "}
+                <Link href="/etsy-gallery-wall-print-sizes" className="text-accent-light hover:underline">
+                  gallery wall print sizes guide
+                </Link>.
               </p>
 
               <div className="space-y-4 mb-8">
@@ -869,7 +873,8 @@ export default function EtsyNurseryWallArtSizesPage() {
                         ISO (5 sizes)
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
-                        A4, A3
+                        <Link href="/etsy-a4-print-size" className="text-accent-light hover:underline">A4</Link>,{" "}
+                        <Link href="/etsy-a3-print-size" className="text-accent-light hover:underline">A3</Link>
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
                         International buyers (UK, EU, Australia)

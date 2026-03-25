@@ -81,6 +81,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-a3-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                  A3 Print Size
+                </Link>
+              </li>
+              <li>
                 <Link href="/etsy-4x6-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
                   4×6 Print Size
                 </Link>
@@ -103,6 +108,11 @@ export function Footer() {
               <li>
                 <Link href="/etsy-botanical-print-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
                   Botanical Print Sizes
+                </Link>
+              </li>
+              <li>
+                <Link href="/etsy-gallery-wall-print-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                  Gallery Wall Print Sizes
                 </Link>
               </li>
               <li>
