@@ -109,7 +109,7 @@ export function Header() {
 
       {/* Desktop mega menu — full width, below header */}
       {guidesOpen && (
-        <div className="hidden md:block absolute left-0 right-0 top-full z-50 border-b border-border bg-background/95 backdrop-blur-md shadow-lg" data-guides-dropdown>
+        <div className="hidden md:block absolute left-0 right-0 top-full z-50 border-b border-border bg-background shadow-lg" data-guides-dropdown>
           <Container>
             <div className="grid grid-cols-4 gap-6 py-6">
               {/* Size Guides — col spans wider with 2-col sub-grid for individual sizes */}
@@ -142,42 +142,42 @@ export function Header() {
                 <div className="pt-2 mt-2 border-t border-border/50">
                   <div className="grid grid-cols-2 gap-x-6">
                     <div className="space-y-0.5">
-                      <Link href="/etsy-8x10-print-size" className="block py-0.5 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
+                      <Link href="/etsy-8x10-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         8&times;10 Print Size
                       </Link>
-                      <Link href="/etsy-5x7-print-size" className="block py-0.5 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
+                      <Link href="/etsy-5x7-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         5&times;7 Print Size
                       </Link>
-                      <Link href="/etsy-16x20-print-size" className="block py-0.5 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
+                      <Link href="/etsy-16x20-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         16&times;20 Print Size
                       </Link>
-                      <Link href="/etsy-24x36-print-size" className="block py-0.5 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
+                      <Link href="/etsy-24x36-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         24&times;36 Print Size
                       </Link>
-                      <Link href="/etsy-18x24-print-size" className="block py-0.5 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
+                      <Link href="/etsy-18x24-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         18&times;24 Print Size
                       </Link>
-                      <Link href="/etsy-11x14-print-size" className="block py-0.5 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
+                      <Link href="/etsy-11x14-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         11&times;14 Print Size
                       </Link>
                     </div>
                     <div className="space-y-0.5">
-                      <Link href="/etsy-a4-print-size" className="block py-0.5 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
+                      <Link href="/etsy-a4-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         A4 Print Size
                       </Link>
-                      <Link href="/etsy-a3-print-size" className="block py-0.5 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
+                      <Link href="/etsy-a3-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         A3 Print Size
                       </Link>
-                      <Link href="/etsy-4x6-print-size" className="block py-0.5 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
+                      <Link href="/etsy-4x6-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         4&times;6 Print Size
                       </Link>
-                      <Link href="/etsy-12x16-print-size" className="block py-0.5 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
+                      <Link href="/etsy-12x16-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         12&times;16 Print Size
                       </Link>
-                      <Link href="/etsy-8-5x11-print-size" className="block py-0.5 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
+                      <Link href="/etsy-8-5x11-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         8.5&times;11 US Letter
                       </Link>
-                      <Link href="/2-3-vs-4-5-ratio" className="block py-0.5 text-xs text-foreground-60/70 hover:text-foreground transition-colors">
+                      <Link href="/2-3-vs-4-5-ratio" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         2:3 vs 4:5 Ratio
                       </Link>
                     </div>
