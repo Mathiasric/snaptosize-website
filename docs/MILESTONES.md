@@ -7,7 +7,7 @@
 - **Paying users:** 3 (2 monthly, 1 yearly)
 - **MRR:** $32 (2× $11.99 monthly + $97/year amortized)
 - **Revenue collected today (2026-03-23):** $108.99 ($97 yearly + $11.99 monthly)
-- **SEO pages live:** 27
+- **SEO pages live:** 31
 - **First paying customer:** 2026-03-03
 - **Target:** $1M ARR (~7,500 paying users)
 
@@ -50,7 +50,7 @@ $1M ARR requires:
 
 ### Marketing Infrastructure
 - ✅ Marketing site (snaptosize.com, Cloudflare Pages)
-- ✅ 27 SEO pages live (2 new pages deployed 2026-03-24: 8.5×11 US Letter + blurry prints fix)
+- ✅ 29 SEO pages live (2 new pages deployed 2026-03-25: A3 international + gallery wall print sizes)
 - ✅ PostHog pageview tracking
 - ✅ Lead capture backend (Worker /subscribe)
 - ✅ Email capture component on site

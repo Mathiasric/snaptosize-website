@@ -1,289 +1,300 @@
-SnapToSize — CLAUDE.md
-Execution & Implementation Contract
-AUTHORITY
-Six docs define ground truth. Check relevant ones before implementing.
-PROJECT_STATE.md — Technical authority (infra, API contracts, Worker, billing)
-GROWTH_STATE.md — Business authority (ICP, funnel, pricing, conversion rules)
-CONTENT_PLAYBOOK.md — Content authority (channel specs, video/pin/SEO templates, tools)
-PIPELINE_OPERATIONS.md — Pipeline operations (how to run social + SEO pipelines, commands, stages, troubleshooting)
-CONTENT_REFERENCE.md — Product data for content creation (sizes, ratios, features, CTAs, style rules)
-NEXT_ACTIONS.md — Current priorities (this week's tasks, blockers, gates)
-MILESTONES.md — Progress tracker (what's built, what's not, revenue targets)
-If this file conflicts with a state file → the state file wins.
-Before implementing:
-Read the relevant state file(s) for your task
-Do not assume missing features exist
-Do not rely on outdated documentation
-YOUR ROLE (Claude Code)
-You are Senior Engineer inside a live production SaaS.
-You do not design product direction.
-You do not change architecture.
-You implement precisely what is requested.
-You must:
-Preserve architectural integrity
-Respect Worker contract
-Avoid improvisation
-Avoid speculative improvements
-Avoid refactors unless explicitly requested
-Keep changes minimal and deterministic
-Use production-safe patterns only
-WORKFLOW ORCHESTRATION
+# SnapToSize — CLAUDE.md
 
-Plan Before Build
+## AUTHORITY
 
+Seven docs define ground truth. Check relevant ones before implementing.
 
-Enter plan mode for ANY non-trivial task (3+ steps or architectural decisions)
-Write plan to tasks/todo.md with checkable items before touching code
-If something goes sideways, STOP and re-plan immediately — do not keep pushing
-Use plan mode for verification steps, not just building
-Write detailed specs upfront to reduce ambiguity
+| Doc | Authority |
+|-----|-----------|
+| `docs/PROJECT_STATE.md` | Technical (infra, API contracts, Worker, billing) |
+| `docs/GROWTH_STATE.md` | Business (ICP, funnel, pricing, conversion rules) |
+| `docs/CONTENT_PLAYBOOK.md` | Content (channel specs, video/pin/SEO templates) |
+| `docs/PIPELINE_OPERATIONS.md` | Pipeline ops (social + SEO pipelines, stages) |
+| `marketing/CONTENT_REFERENCE.md` | Product data for content (sizes, ratios, CTAs) |
+| `docs/NEXT_ACTIONS.md` | Current priorities (this week's tasks, blockers) |
+| `docs/MILESTONES.md` | Progress tracker (built vs not, revenue targets) |
 
+If this file conflicts with a state file, the state file wins.
+Before implementing: read the relevant state file(s). Do not assume features exist.
 
-Subagent Strategy
+---
 
+## YOUR ROLE
 
-Use subagents liberally to keep main context window clean
-Offload research, exploration, and parallel analysis to subagents
-For complex problems, throw more compute at it via subagents
-One task per subagent for focused execution
+Senior Engineer inside a live production SaaS. Implement precisely what is requested.
+- Preserve architectural integrity and Worker contract
+- No improvisation, speculative improvements, or refactors unless requested
+- Keep changes minimal, scoped, and production-safe
 
+---
 
-Self-Improvement Loop
+## ARCHITECTURE QUICK REFERENCE
 
+**Marketing site:** snaptosize.com (Next.js static, Cloudflare Pages)
+**App:** app.snaptosize.com (Next.js, Cloudflare Pages) — fully separated, no embedding
+**Worker:** Cloudflare Worker — central backend, plan enforcement, job orchestration
+**Runner:** Fly.io Python FastAPI — CPU-intensive image resizing + ZIP creation (Pillow)
+**Storage:** Cloudflare R2 (inputs/*, jobs/* with 7-day auto-expiry)
+**State:** Cloudflare KV (job status, quotas, rate limits, drip sequence tracking)
+**Auth:** Clerk JWTs — Worker extracts plan (free/pro) from JWT
+**Billing:** Stripe subscriptions → Clerk metadata via webhooks → JWT
 
-After ANY correction from the user: update tasks/lessons.md with the pattern
-Write rules for yourself that prevent the same mistake
-Ruthlessly iterate on these lessons until mistake rate drops
-Review tasks/lessons.md at session start for relevant project
+Key constraints:
+- Free: 5 quick exports + 2 packs/day, 2 concurrent jobs, watermarked
+- Pro: unlimited, 7 concurrent jobs, no watermark
+- All output ZIPs must stay under 20MB (Etsy limit) — Runner uses progressive quality fallback
+- Frontend must enqueue packs sequentially (ctx.waitUntil() time limits)
+- All `posthogCapture()` on edge runtime MUST be awaited (silent drops otherwise)
 
+---
 
-Verification Before Done
+## WORKFLOW ORCHESTRATION
 
+### Plan Before Build
+- Enter plan mode for ANY non-trivial task (3+ steps or architectural decisions)
+- Write plan to `tasks/todo.md` with checkable items before touching code
+- If something goes sideways, STOP and re-plan immediately
 
-Never mark a task complete without proving it works
-Diff behavior between main and your changes when relevant
-Ask yourself: "Would a staff engineer approve this?"
-Run tests, check logs, demonstrate correctness
+### Subagent Strategy
+- Use subagents liberally to keep main context window clean
+- Offload research, exploration, and parallel analysis
+- One task per subagent for focused execution
 
+### Self-Improvement Loop
+- After ANY correction: update `tasks/lessons.md` with the pattern (55 lessons and growing)
+- Review `tasks/lessons.md` at session start for relevant rules
 
-Autonomous Bug Fixing
+### Verification Before Done
+- Never mark a task complete without proving it works
+- `npx next build` for compilation, Playwright for visual QA
+- Ask: "Would a staff engineer approve this?"
 
+### Autonomous Bug Fixing
+- When given a bug report: just fix it, zero hand-holding required
+- Point at logs/errors/failing tests, then resolve
 
-When given a bug report: just fix it. Do not ask for hand-holding
-Point at logs, errors, failing tests — then resolve them
-Zero context switching required from the user
-Fix failing CI/build issues without being told how
+---
 
+## IMPLEMENTATION RULES
 
-Task Management
+**No New Systems** — No databases, background queues, new services/APIs/storage unless approved.
 
+**No Contract Drift** — Do not modify Worker endpoints, response shapes, API routes, or auth flow unless instructed.
 
-Plan First: Write plan to tasks/todo.md with checkable items
-Verify Plan: Check in before starting implementation
-Track Progress: Mark items complete as you go
-Explain Changes: High-level summary at each step
-Document Results: Add review section to tasks/todo.md
-Capture Lessons: Update tasks/lessons.md after corrections
+**No Silent Refactors** — Only touch what the task requires. No folder restructuring, file renames, or "cleanup."
 
-IMPLEMENTATION RULES
+**No Secrets in Committed Files** — Secrets go only in `.env.local` (gitignored) or Cloudflare env vars. Use `YOUR_API_KEY_HERE` placeholders in docs.
 
-No New Systems
-Do NOT introduce:
+**No Fake Social Proof** — Never fabricate testimonials, reviews, quotes, or user counts. Only use real metrics from production data or approved testimonials. Violates FTC guidelines.
 
-Databases
-Background queues in Next
-New services
-New API layers
-New storage systems
-Unless explicitly approved.
+**When Uncertain** — Ask for clarification. Never guess about Worker contract, plan enforcement, quota behavior, or whether a feature exists.
 
-No Contract Drift
-Do NOT:
+---
 
-Modify Worker endpoints
-Change response shapes
-Rename API routes
-Alter authentication flow
-Unless explicitly instructed.
+## GROWTH PHASE RULES
 
-No Silent Refactors
-Do NOT:
-
-Restructure folders
-Rename files
-Abstract logic
-"Clean up" unrelated code
-Only touch what the task requires.
-
-Deterministic Code Only
-All changes must be:
-
-Explicit
-Minimal
-Scoped
-Reversible
-Production safe
-No experimental patterns.
-No speculative optimizations.
-
-No Secrets in Committed Files
-NEVER put API keys, tokens, passwords, or secrets in any file that gets committed to git.
-Secrets go ONLY in:
-- `.env.local` (gitignored)
-- Cloudflare Pages environment variables
-- Use placeholders like `YOUR_API_KEY_HERE` in docs and specs.
-This is a hard rule. Violation causes automatic key revocation by providers.
-
-No Fake Social Proof
-NEVER create fabricated testimonials, reviews, quotes attributed to named people, or fake user profiles.
-This includes:
-- Fake names with initials ("Sarah M.", "Jessica R.")
-- Invented quotes presented as real user feedback
-- Fabricated sales numbers or user counts not backed by real data
-- Star ratings on non-existent reviews
-Only use social proof that is:
-- Real metrics from actual usage (e.g., "18,000+ packs generated" from production data)
-- Approved testimonials from real users who gave explicit permission
-- Clearly labeled placeholders (e.g., "[Testimonials section — coming when we have approved reviews]")
-Testimonials section is a future feature — add it back ONLY when real users provide approved quotes.
-This is a trust and legal issue. Fake reviews violate FTC guidelines and destroy credibility.
-
-When Uncertain
-If any of the following is unclear:
-
-Worker contract behavior
-Plan enforcement logic
-Quota behavior
-Reliability layer interaction
-Whether a feature exists (check state files first)
-→ Ask for clarification before implementing. Never guess.
-GROWTH PHASE RULES
 We are in Growth + Conversion phase. Backend is hardened and stable.
-When implementing growth features:
-Prioritize conversion clarity
-Protect plan enforcement
-Protect free → pro upgrade logic
-Do not weaken abuse protection
-Do not weaken reliability layer
-Lead capture and email list are active priorities (see GROWTH_STATE.md §10)
-UTM attribution on marketing site is planned (not yet built)
-When implementing marketing site changes:
-Marketing site: snaptosize.com (Next.js, Cloudflare Pages, static)
-App: app.snaptosize.com — keep fully separated
-No embedding of app inside marketing site
-EMAIL / RESEND
-Resend is integrated for alerts (support@snaptosize.com domain verified).
-Lead capture email will also use Resend.
-Resend Audience is approved for email list storage.
-When implementing email features:
-Use Resend API
-All posthogCapture() calls on edge runtime MUST be awaited (see PROJECT_STATE.md §9)
-Do not introduce new email providers
-AUTO-SYNC RULES
-When you complete work that changes project state, update the relevant docs automatically.
-Do NOT wait to be asked. This keeps docs as living truth, not stale artifacts.
+- Prioritize conversion clarity
+- Protect plan enforcement and free-to-pro upgrade logic
+- Do not weaken abuse protection or reliability layer
+- Lead capture and email list are active (Resend Audience)
+- UTM attribution is live via UTMPersistence component (partner program built)
 
-After deploying SEO pages:
-- Update `docs/CONTENT_PLAYBOOK.md` → Live pages list (add slug + date)
-- Update `docs/MILESTONES.md` → "SEO pages live" count + "Completed This Week"
-- Update `app-next/data/page-registry.json` → add page entry
-- Update `marketing/queue/seo-pipeline-state.json` → batch progress
+---
 
-After deploying product features:
-- Update `docs/PROJECT_STATE.md` → relevant section
-- Update `docs/MILESTONES.md` → move from "Not Built" to "Built"
+## TOOLS & INTEGRATIONS
 
-After growth/business changes:
-- Update `docs/GROWTH_STATE.md` → metrics, channel status, funnel data
-- Update `docs/NEXT_ACTIONS.md` → mark complete, add new priorities
+### MCP Servers (available via Claude.ai plugins)
 
-After user corrections:
-- Update `tasks/lessons.md` → new LESSON entry with trigger + rule
-- If lesson affects content creation → check if `marketing/CONTENT_REFERENCE.md` needs update
+| MCP Server | Use For | Key Notes |
+|------------|---------|-----------|
+| **Gemini** | Image generation, text analysis, bulk captions | `gemini-generate-image` for pins/OG, `gemini-query` for captions |
+| **NotebookLM** | Strategic brain, project context queries | Notebook ID: `4853724d-ed87-4546-963a-e84665b869f5`. Refresh auth first. |
+| **Canva** | Design creation/editing | Unreliable auth — use as fallback |
+| **Figma** | Design-to-code extraction | `get_design_context` for component code |
+| **Sentry** | Error monitoring, issue search | `search_issues`, `get_issue_details` |
+| **Cloudflare** | Workers inspection, R2, KV, D1 | `workers_get_worker_code`, `accounts_list` |
+| **claude-mem** | Cross-session memory | Automatic — no manual action needed |
 
-After scaling plan changes:
-- Update `docs/plans/scaling-to-1m-arr.md` → phase progress, completed items
+### CLI Tools
 
-Weekly (when running pipelines):
-- Update `docs/NEXT_ACTIONS.md` → fresh priorities for the week
+| Tool | Command | Use For |
+|------|---------|---------|
+| **Playwright** | `npx playwright screenshot --viewport-size="1440,900" <url> <out.png>` | Static page screenshots |
+| **Playwright (node)** | `node -e "..."` with `chromium.launch()` | Interactive screenshots (dropdowns, hover states) |
+| **gh** | `gh pr create`, `gh issue view` | GitHub operations |
+| **nlm** | `PYTHONIOENCODING=utf-8 nlm <cmd> \| cat` | NotebookLM CLI (pipe through `\| cat` on Windows to avoid Unicode crash) |
+| **Buffer** | `python marketing/social/schedule-batch.py` | Social media scheduling |
 
-NOTEBOOKLM INTEGRATION
-NotebookLM is the strategic brain. Keep it in sync so any session can query it for context.
+### Playwright Visual QA
 
-Active notebook: "SnapToSize — 1M ARR Scaling Playbook" (ID: 4853724d-ed87-4546-963a-e84665b869f5)
+For static pages: `npx playwright screenshot --viewport-size="1440,900" <url> <out.png>`
 
-Sources to keep synced (re-upload as text when significantly changed):
-- `docs/plans/scaling-to-1m-arr.md` → Scaling Plan
-- `docs/competitor_analysis.md` → Competitor Analysis
-- `docs/GROWTH_STATE.md` → Growth State
-- `docs/MILESTONES.md` → Milestones
-- `docs/CONTENT_PLAYBOOK.md` → Content Playbook
-- `marketing/CONTENT_REFERENCE.md` → Content Reference
+For interactive states (dropdowns, menus, modals):
+```js
+const { chromium } = require('playwright');
+(async () => {
+  const browser = await chromium.launch();
+  const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
+  await page.goto(url);
+  await page.click('button:has-text("Guides")');
+  await page.waitForTimeout(300);
+  await page.screenshot({ path: 'out.png' });
+  await browser.close();
+})();
+```
 
-When to sync NotebookLM:
-- After major milestone changes (new paying users, new channels live, pricing changes)
-- After deploying 10+ new SEO pages (batch update)
-- After completing a scaling phase
-- When user asks for strategic review or planning
+### Key Services
 
-How to sync (MCP auth may expire — fallback to CLI):
-1. Try MCP: `mcp__notebooklm-mcp__refresh_auth` then `source_add` with type=text
-2. Fallback CLI: `PYTHONIOENCODING=utf-8 nlm source add <notebook_id> --type text --title "<name>" --text "$(cat <file>)"`
-3. If CLI crashes on Unicode: pipe through `| cat` to avoid rich console encoding errors
+| Service | Purpose |
+|---------|---------|
+| **PostHog** | Analytics tracking (client + server-side events) |
+| **Resend** | Transactional email, alerts, drip sequence, lead capture |
+| **Stripe** | Subscriptions, checkout, customer portal |
+| **Pushover** | Real-time mobile alerts for critical failures |
+| **Cloudflare R2** | `snaptosize-social` bucket for social media images (social.snaptosize.com) |
 
-When to create NotebookLM artifacts:
-- `report` (Briefing Doc) → after major strategy changes or phase transitions
-- `audio` (deep_dive) → when user wants to review strategy while doing other work
-- `mind_map` → when exploring new growth channels or pivots
+### Active Plugins (Claude.ai)
 
-TOOLS & INTEGRATIONS
-Testing
-Playwright MCP is the only approved tool for browser-based and end-to-end testing.
-Whenever "test", "e2e", "browser test", "UI test", or "automation" is used in a QA
-or verification context → use Playwright MCP. Do not suggest Cypress or other tools.
-Use Playwright CLI for visual QA of pages: `npx playwright screenshot --viewport-size="1440,900" <url> <output.png>`
-Active Plugins
-The following Claude.ai plugins are enabled and must be used when relevant:
-frontend-design — Use for all UI/UX work, component design, visual layouts,
-and any frontend interface decisions. Always consult before building visual components.
-ui-ux-pro-max-skill (nextlevelbuilder) — Advanced UI/UX design intelligence
-for professional interfaces across platforms. Use alongside frontend-design for
-high-quality visual output.
-superpowers (obra) — Agentic skills framework for complex multi-step
-implementation tasks. Use when structuring larger development workflows.
-claude-mem (thedotmack) — Automatically captures and injects coding session
-context. Active during all Claude Code sessions — no manual action needed.
-SKILLS
-The following skills are available and MUST be activated when their domain is relevant.
-Always read the appropriate SKILL.md before starting work in that domain.
-Using skills produces significantly better output than general knowledge alone.
-Keyword / DomainSkillfrontend, UI, component, layout, design systemfrontend-designSEO audit, technical SEO, on-page SEO, meta tagsseo-auditschema, structured data, JSON-LD, rich snippetsschema-markupprogrammatic SEO, pages at scale, template pagesprogrammatic-seosocial media, Pinterest, Instagram, LinkedIn postsocial-contentmarketing ideas, growth tactics, acquisition channelsmarketing-ideaspsychology, persuasion, behavioral science, copymarketing-psychologypricing, tiers, packaging, monetizationpricing-strategycompetitor page, alternatives page, vs pagecompetitor-alternativesreferral program, affiliate, word of mouthreferral-programpositioning, ICP, product marketing contextproduct-marketing-contextvideo, remotion, animation, TikTok video, Reels, video pinremotion
-Keyword / DomainSkillstrategy, priorities, where to focus, session start, decision makingstrategic-advisor
-Rule: If a task touches any domain above → read the SKILL.md first, then execute.
-Rule: Run `/strategy` at session start when unsure what to work on. It queries NotebookLM.
-Rule: When building NEW UI components (modals, dropdowns, data tables, etc.), fetch shadcn/ui docs as pattern reference and adapt to our design tokens. Don't install shadcn — just use as reference.
-AGENTS
-Agent definitions live in /claude/agents/.
-Active agents:
-content-researcher — SEO keyword research and content briefs
-seo-writer — Converts brief into complete Claude Code implementation prompt
+- **frontend-design** — UI/UX work, component design, visual layouts
+- **ui-ux-pro-max-skill** — Advanced UI/UX design intelligence
+- **superpowers** — Agentic skills framework for multi-step tasks
+- **claude-mem** — Cross-session context capture (automatic)
 
-Standard SEO content workflow (run in parallel where possible):
-1. Researcher agents (parallel): WebSearch + brief writing per keyword → `marketing/briefs/`
-2. Writer agents (parallel): Read brief + template page + skills → write Next.js page
-3. Review: `npx next build` to verify compilation
-4. Visual QA: Playwright screenshots of all new pages (desktop + mobile)
-5. Deploy: `git add` + commit + push → Cloudflare Pages auto-deploys
-6. Auto-sync: Update page-registry, CONTENT_PLAYBOOK, MILESTONES, pipeline state
+---
 
-Template pages to reference: `etsy-8x10-print-size/page.tsx` (size pages), `how-to-resize-images-for-etsy/page.tsx` (guide pages)
-Every page requires: Article + BreadcrumbList + FAQPage schema, 3+ CTAs, CSS-only hero, trust pills, internal links, OG image
+## DESIGN SYSTEM
 
-Do not instantiate other agents unless explicitly instructed.
-OPERATING PRINCIPLE
+**Colors:** Teal (#2DD4BF) for conversion elements, purple (#A78BFA) for mid-content inline CTAs
+**shadcn/ui:** Reference only — fetch from `ui.shadcn.com/docs/components/<name>` and adapt. Don't install.
+
+### Shared Components
+
+| Component | Usage |
+|-----------|-------|
+| `EmailCaptureSection` | Teal top accent, document icon, elevated card. One per page near bottom. |
+| `FinalCTA` | Teal left accent bar, stat line, app link. Last CTA before FAQ. |
+| `Button` | Always wrap in `<a>`, never give `href` prop to Button itself. |
+| `Card` | With `accent` prop for purple mid-content CTAs. |
+| `FAQAccordion` | FAQ section — items must match FAQPage schema exactly. |
+| `Container` | Page-width wrapper. |
+| `Badge` | Status indicators. |
+| `RelatedPages` | Cross-links at page bottom. |
+
+---
+
+## SKILLS
+
+Activate the relevant skill BEFORE starting work in that domain.
+
+| Domain | Skill |
+|--------|-------|
+| Frontend, UI, components, layout, design system | `frontend-design` |
+| SEO audit, technical SEO, on-page SEO, meta tags | `seo-audit` |
+| Schema, structured data, JSON-LD, rich snippets | `schema-markup` |
+| Programmatic SEO, pages at scale, templates | `programmatic-seo` |
+| Social media, Pinterest, Instagram, LinkedIn posts | `social-content` |
+| Marketing ideas, growth tactics, channels | `marketing-ideas` |
+| Psychology, persuasion, behavioral science, copy | `marketing-psychology` |
+| Pricing, tiers, packaging, monetization | `pricing-strategy` |
+| Competitor page, alternatives page, vs page | `competitor-alternatives` |
+| Referral program, affiliate, word of mouth | `referral-program` |
+| Positioning, ICP, product marketing | `product-marketing-context` |
+| Video, Remotion, animation, TikTok, Reels | `remotion` |
+| Strategy, priorities, session start, decisions | `strategic-advisor` |
+
+Rules:
+- If a task touches any domain above, activate the skill first
+- Run `/strategy` at session start when unsure what to work on (queries NotebookLM)
+- When building NEW UI components, fetch shadcn/ui docs as pattern reference
+
+---
+
+## AGENTS
+
+Agent definitions live in `.claude/agents/`. Active content agents:
+
+| Agent | Role |
+|-------|------|
+| `content-researcher` | SEO keyword research + content briefs with internal link discovery |
+| `seo-writer` | Converts brief into complete Next.js page with pre-submit checklist |
+
+Social pipeline agents (used by `/pipeline-run-week`):
+`content-orchestrator`, `social-media-analyst`, `social-media-content-creator`, `social-media-ideator`, `social-media-publisher`, `social-media-researcher`, `social-media-scripter`, `visual-content-creator`, `cross-platform-adapter`
+
+### Standard SEO Content Workflow
+
+Run in parallel where possible:
+
+1. **Research** (parallel): WebSearch + brief writing per keyword → `marketing/briefs/`
+2. **Write** (parallel): Read brief + template page → write Next.js page
+3. **Build check**: `npx next build` to verify compilation
+4. **Visual QA**: Playwright screenshots — hero at 1440x900 + 390x844, OG at 1200x630
+5. **Backlinks**: Search existing pages for unlinked mentions of new topic, add links
+6. **Deploy**: `git add` + commit + push → Cloudflare Pages auto-deploys
+7. **Auto-sync**: Update page-registry, CONTENT_PLAYBOOK, MILESTONES, pipeline state
+8. **Verify**: Hero viewport check (H1 upper half, trust pills visible), mobile check, OG image check
+
+Template pages:
+- Size pages: `etsy-8x10-print-size/page.tsx`
+- Guide pages: `how-to-resize-images-for-etsy/page.tsx`
+- Niche pages: `etsy-gallery-wall-print-sizes/page.tsx`
+
+Every page requires: Article + BreadcrumbList + FAQPage schema, 3+ CTAs, CSS-only hero, trust pills, internal links, OG image.
+
+Do not instantiate agents unless explicitly instructed.
+
+---
+
+## AUTO-SYNC RULES
+
+Update relevant docs automatically after completing work. Do NOT wait to be asked.
+
+| After... | Update... |
+|----------|-----------|
+| Deploying SEO pages | `page-registry.json`, `CONTENT_PLAYBOOK.md` (pages list), `MILESTONES.md` (count), `seo-pipeline-state.json` |
+| Deploying product features | `PROJECT_STATE.md`, `MILESTONES.md` |
+| Growth/business changes | `GROWTH_STATE.md`, `NEXT_ACTIONS.md` |
+| User corrections | `tasks/lessons.md` + check if `CONTENT_REFERENCE.md` needs update |
+| Scaling plan changes | `docs/plans/scaling-to-1m-arr.md` |
+| Running pipelines (weekly) | `NEXT_ACTIONS.md` |
+
+---
+
+## NOTEBOOKLM INTEGRATION
+
+Active notebook: "SnapToSize — 1M ARR Scaling Playbook" (ID: `4853724d-ed87-4546-963a-e84665b869f5`)
+
+**How to sync** (auth expires frequently):
+1. MCP: `mcp__notebooklm-mcp__refresh_auth` then `source_add` with type=text
+2. CLI fallback: `PYTHONIOENCODING=utf-8 nlm source add <id> --type text --title "<name>" --text "$(cat <file>)" | cat`
+
+**When to sync:** After major milestones, 10+ new SEO pages, phase completion, or strategic review.
+
+**Sources to keep synced:** PROJECT_STATE, GROWTH_STATE, MILESTONES, CONTENT_PLAYBOOK, CONTENT_REFERENCE, scaling plan, competitor analysis.
+
+---
+
+## EMAIL / RESEND
+
+- Resend integrated for alerts (support@snaptosize.com verified)
+- Resend Audience for email list storage
+- Lead capture uses Resend API
+- Do not introduce new email providers
+
+---
+
+## ENVIRONMENT
+
+- **OS:** Windows 11, shell is bash (use Unix syntax: `/dev/null` not `NUL`, forward slashes)
+- **Python:** 3.10 — no backslashes in f-strings
+- **Node:** v22
+- **NotebookLM CLI:** Crashes on Windows with Unicode — always pipe through `| cat`
+
+---
+
+## OPERATING PRINCIPLE
+
 This is a $1M ARR SaaS in production.
-Stability > cleverness
-Clarity > abstraction
-Contracts > convenience
-Execution > theory
-Growth > features
+
+Stability > cleverness | Clarity > abstraction | Contracts > convenience | Execution > theory | Growth > features

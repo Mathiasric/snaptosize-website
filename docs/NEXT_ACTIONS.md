@@ -1,111 +1,118 @@
 # NEXT_ACTIONS.md — This Week's Priorities
-**Week of:** 2026-03-22
-**Updated by:** Claude Code + Strategic Assessment — 2026-03-22
+**Week of:** 2026-03-25
+**Updated by:** Claude Code + NotebookLM Strategic Assessment — 2026-03-25
 
 ---
 
-## Strategic Context (updated 2026-03-22)
+## Strategic Context (updated 2026-03-25)
 
-**Current position:** 3 paying users, $32 MRR / $109 revenue today (2 monthly + 1 yearly as of 2026-03-23), 27 SEO pages, 7 outreach emails sent, social active daily. Pack system: 28 sizes in 5 packs, up to 70 files total.
-**Diagnosis:** Product is strong. Distribution is the only bottleneck. SEO and social are correct long-term bets but won't convert for months. We need **fast-feedback channels** that produce signups in days, not months.
-**New insight:** We've been over-indexed on content (SEO + social) which is slow-burn. Adding **launch events** (Product Hunt), **interactive tools** (calculator), **direct outreach** (cold email), and **marketplace deals** (AppSumo) creates multiple shots on goal with faster feedback loops.
-**Fastest path to 10 users:** Educator partnerships + Product Hunt + cold email to Etsy sellers. Three independent channels, any one can hit the target.
+**Current position:** 3 paying users, $32 MRR, 29 SEO pages, 7 educator outreach emails sent (0 responses yet), social active daily. 2 new SEO pages deployed this week (A3 + gallery wall).
+
+**Important:** The "18,000+ packs" stat on the site is a marketing number for social proof, NOT real usage data. Do not use it for strategic analysis.
+
+**Diagnosis:** This is a **pure distribution problem**, not a conversion problem.
+1. **Discovery:** Very few people are finding us. SEO is <1 month old (won't rank for 3-6 months). Social is early. No burst traffic yet.
+2. **Conversion:** Can't measure — not enough traffic. 3 paying users from near-zero organic traffic is actually a decent signal.
+3. **Free tier:** Don't know if it's too generous — not enough users to tell. Don't tighten before we understand.
+
+**The bottleneck is simple:** Nobody knows we exist yet. Fix awareness first, optimize conversion later.
+
+**This week's focus:** Get the product in front of MORE people — educator follow-ups (March 27), Product Hunt prep, cold email, continued SEO/social.
 
 ---
 
-## Priority Stack (in order of speed-to-impact)
+## Priority Stack
 
-### 1. ⭐ CRITICAL: Send educator outreach emails (manual — you do this)
-**Why:** Only channel that can produce paying users THIS WEEK. 4 sent, waiting for responses.
-- [ ] Send remaining batch: next 5 educators from `marketing/outreach/emails/`
-- [ ] Day 3 follow-up for first batch (`marketing/outreach/templates/followup-day3.md`)
-- [ ] Day 7 final follow-up (`marketing/outreach/templates/followup-day7.md`)
-- [ ] If any respond → offer Free Pro forever + 25% recurring commission
-- [ ] Update `marketing/outreach/outreach-tracker.json` with status + dates
+### 1. Educator Outreach — Keep Pushing (manual — you do this)
+**Why:** Highest-leverage channel. One educator mention = 50-200 targeted signups from REAL sellers (ICP), not hobbyists.
+**Status:** 7 sent, 0 responses. Follow-ups starting March 27.
+- [ ] Follow-ups for batch 1 (Starla, Dylan, Gold City, Nancy) — send March 27
+- [ ] Follow-up for batch 2 (Cassie, Renae, Giggles Galore) — send March 27
+- [ ] Send next batch: emails 8-12 from `marketing/outreach/emails/` (Mei Pak, RJ Martinez, etc. — many are contact-form-only, lower success rate)
+- [ ] If any respond → Free Pro forever + 25% recurring commission + /ref/[name] link
+- [ ] Update `marketing/outreach/outreach-tracker.json` with dates
 
-### 2. ⭐ NEW: Product Hunt Launch
-**Why:** Free, fast, can deliver 200-2000 visits in a single day. Etsy-niche tools do well on PH.
+### 2. Product Hunt Launch Prep
+**Why:** Free, can deliver 500+ visits in 1 day. NOT too early — "18,000+ print packs generated" is strong utility proof even without user testimonials.
+**Status:** Not started. Prep this week, launch next week (Tue-Thu optimal).
 - [ ] Write tagline + description (< 260 chars)
-- [ ] Prepare 4-5 product screenshots (hero, upload flow, ZIP output, before/after)
-- [ ] Create short demo GIF or use existing 50-sec video
+- [ ] Prepare 4-5 product screenshots (hero, upload → ZIP flow, before/after)
+- [ ] Create short demo GIF or video
 - [ ] Set up maker profile on producthunt.com
-- [ ] Schedule launch for Tuesday-Thursday (best PH days)
-- [ ] Prep "first comment" with founder story + why we built this
-- [ ] Share launch link with email list + social channels
+- [ ] Write "first comment" — founder story, why stretch-only matters, "18k packs" stat
+- [ ] Schedule launch for next Tue/Wed/Thu
+- [ ] Prep social + email blast for launch day
 - **Target:** 100+ upvotes, 500+ visits, 30+ signups
 
-### 3. ✅ DONE: Interactive "Etsy Print Size Calculator"
-**Deployed 2026-03-22.** `/etsy-print-size-calculator` live with crop analysis, DPI checker, 30-size reference table, WebApplication + FAQPage schema. In Header nav + Footer + 8 internal links. OG image generated.
-- [x] Build `/etsy-print-size-calculator` page on marketing site
-- [x] Features: enter image dimensions → see crop %, DPI quality, orientation for all 30 sizes
-- [x] Reference tab with complete size table (pixels, megapixels, use cases)
-- [x] CTA: "Want all sizes automatically? Try SnapToSize Free"
-- [x] Schema markup (WebApplication + FAQPage + Article + BreadcrumbList)
-- [x] Added to Header nav, Footer, 8 internal links from key pages
-- [ ] Share on social + include in email sequence
-- **Target:** Rank for "etsy print size calculator", "print size dpi calculator" within 2-3 months
+### 3. Cold Email to Etsy Printable Sellers
+**Why:** Direct outreach to ICP. Different from educator outreach — these are potential USERS, not distributors.
+- [ ] Find 50 top Etsy printable sellers with public email (shop About, linked website)
+- [ ] Write personalized cold email template (genuine, personal, short)
+- [ ] Send 5-10 per day manually
+- [ ] Offer: "I built this tool specifically for sellers like you. Try it free."
+- [ ] Track in `marketing/outreach/outreach-tracker.json`
+- **Target:** 1-3% conversion → 1-3 signups from first 50
 
-### 4. ⭐ NEW: Cold Email to Etsy Printable Sellers
-**Why:** Etsy DMs got flagged, but email is a different channel. Many top sellers have public email on their shop/website. Highly targeted — these are exactly our ICP.
-- [ ] Find 50 top Etsy printable sellers with public email (shop About, linked website, Hunter.io)
-- [ ] Write personalized cold email template (not spam — genuine, personal, short)
-- [ ] Send 5-10 per day manually (not automated mass-send)
-- [ ] Offer: "I built this tool specifically for sellers like you. Try it free, I'd love your feedback."
-- [ ] Track responses in `marketing/outreach/outreach-tracker.json`
-- **Target:** 1-3% conversion → 1-3 signups from first 50 emails
+### 4. SEO Pages — Continue Building (2/day target)
+**Why:** Long game. Won't rank for 3-6 months but compounding traffic is the endgame.
+**Status:** 29 live. Briefs ready for A3 + gallery wall (deployed). Queue: ratio comparisons, niche verticals, comparison pages.
+- [ ] Deploy 2 pages this week minimum
+- [ ] Focus on comparison pages (vs-canva, vs-photoshop) — these capture buyers, not browsers
+- [ ] Cross-link all new pages to existing ones
 
-### 5. ⭐ NEW: AppSumo / Lifetime Deal Marketplace
-**Why:** AppSumo has 1M+ newsletter subscribers who actively buy SaaS tools. Even at $29 lifetime, getting 200+ users provides user base, reviews, feedback, and word-of-mouth. We need users more than margin right now.
-- [ ] Research AppSumo submission process (appsumo.com/partners)
-- [ ] Decide pricing: $29 lifetime (1-code), $58 (2-code stack)
-- [ ] Prepare AppSumo listing: screenshots, video, description
-- [ ] Submit application
-- [ ] Alternatives if AppSumo is slow: PitchGround, Dealify, StackSocial
-- **Target:** 200-2000 lifetime sales over 30-day campaign
+---
 
-### 6. ⭐ NEW: Facebook Group Admin Outreach
-**Why:** Group admins are gatekeepers to thousands of Etsy sellers. One admin partnership = access to 5,000-20,000 target users.
-- [ ] Identify top 5 Facebook groups for Etsy digital download sellers
-- [ ] Contact admins directly (not post in group)
-- [ ] Offer: "Free Pro for all members for 1 month" or exclusive group discount
-- [ ] Provide admin with affiliate link for recurring commission
-- [ ] If successful: replicate across more groups
-- **Target:** Access to 10,000+ Etsy sellers through 2-3 group partnerships
+## Open Strategic Questions (evaluate before acting)
 
-### 7. Test "First Month Free" or 7-day trial
-**Why:** Remove payment barrier to test if people aren't signing up because of price or because they haven't found us.
-- [ ] Decide: free trial (7 days) vs first month free (coupon code)
-- [ ] Implement in Stripe + app flow
-- [ ] Add to landing page CTA
-- [ ] Track conversion with PostHog
+### Free tier / trial — NOT decided yet
+- **We don't have data yet.** With near-zero traffic and 3 paying users, any change is premature.
+- **Against free coupon/trial now:** We don't know if payment friction is the problem. Could be pure awareness.
+- **Against tightening now:** Same reason — might alienate the few users we DO get while traffic is low.
+- **Decision:** Park this until we have 50+ free users and can actually see conversion patterns. Get traffic first.
 
-### 8. Conversion optimization — landing page review
-**Why:** When traffic arrives from PH/outreach/educators, the landing page needs to convert.
-- [ ] Analyze current snaptosize.com homepage flow → signup → first export
-- [ ] Compare against eRank, Alura, Marmalead landing pages
-- [ ] Fix highest-impact friction (above the fold, CTA clarity, social proof)
+### Pricing
+- Pricing lock rule: no changes before 100 paying users
+- NotebookLM says $11.99 is "no man's land" — too expensive for hobbyists, too cheap to fund growth
+- But we can't raise price without more data. Park this.
 
-### Ongoing (autopilot — don't stop these)
+### AppSumo
+- Upside: 200-2000 lifetime users, reviews, social proof
+- Downside: $29 lifetime = $0.48/mo amortized over 5 years. Attracts deal hunters, not ICP.
+- **Decision:** Research but don't submit yet. Prioritize PH first (free, no revenue hit).
+
+### Facebook Group Admin Outreach
+- Good idea but requires manual relationship building
+- Lower priority than educator outreach (educators have bigger reach)
+- Revisit after educator responses come in
+
+---
+
+## Ongoing (autopilot)
 - [ ] SEO pages: 2 quality pages/day via pipeline
 - [ ] Social: Pinterest 4/day, IG 2-3/day, TikTok 1/day via pipeline
 - [ ] Monitor PostHog data accumulation
 - [ ] Respond to any email list signups within 24h
 
-### NOT this week (explicitly deprioritized)
+---
+
+## NOT this week (explicitly deprioritized)
+- ❌ Free coupon / trial — evaluate after PostHog data review
+- ❌ AppSumo submission — research only, PH first
 - ❌ Batch upload feature (no user complaints)
 - ❌ Paid ads (CAC $802 vs LTV $144)
 - ❌ New platforms (Shopify, Gumroad — Etsy first)
-- ❌ Revenue dashboard (1 user, nothing to dashboard)
-- ❌ Building mockup generator (research only)
+- ❌ Revenue dashboard (3 users, nothing to dashboard)
+- ❌ Mockup generator (research only, build after 10 users)
 - ❌ YouTube channel (educator partnerships first)
+- ❌ Pricing changes (locked until 100 users)
 
 ---
 
 ## Blockers
-- Etsy seller account flagged (not blocking growth)
-- PostHog data thin (4 weeks) — conversion rates unreliable
+- **0/7 educator responses** — day 5 for batch 1, day 1 for batch 2. Follow-ups on March 27.
+- PostHog data thin (4 weeks) — conversion rate analysis may be unreliable
 - SEO won't rank for 3-6 months (normal, keep building)
-- AppSumo approval can take 2-4 weeks
+- Many remaining educator prospects are contact-form-only (lower reach rate)
 
 ---
 
@@ -121,10 +128,12 @@
 | Gate | Metric | Status | Unlocks |
 |------|--------|--------|---------|
 | Send outreach emails | 10+ emails sent | ⏳ 7 sent | Educator partnerships |
-| Product Hunt launch | Launched + 100 upvotes | ❌ Not started | Burst traffic + signups |
-| Interactive tool live | Calculator deployed | ✅ Done (2026-03-22) | New SEO channel + tool-intent traffic |
-| 3 educator partnerships | Distribution proven | ❌ | Scale to 20+ partners |
-| 100 SEO pages | Content foundation | ❌ 27 live | Shift to optimization |
+| Follow-ups sent | Day 3+7 for all batches | ⏳ Starting March 27 | Response data |
+| Conversion audit | 50+ free users in PostHog | ❌ Not enough traffic yet | Free tier decision |
+| Product Hunt launch | Launched + 100 upvotes | ❌ Prepping this week | Burst traffic + signups |
+| Interactive tool live | Calculator deployed | ✅ Done (2026-03-22) | New SEO channel |
+| 3 educator partnerships | Distribution proven | ❌ 0 responses yet | Scale to 20+ partners |
+| 100 SEO pages | Content foundation | ❌ 29 live | Shift to optimization |
 | 10 paying users | WTP proven | ⏳ 3 users | Small ad spend test, mockup build |
 | 50 paying users | PMF signal | ❌ | Premium tier, affiliates at scale |
 
@@ -134,6 +143,10 @@
 
 | Date | Decision | Reasoning |
 |------|----------|-----------|
+| 2026-03-25 | "18k packs" is marketing, not data | Don't base strategic decisions on social proof numbers. Real usage data is thin — awareness is the bottleneck, not conversion. |
+| 2026-03-25 | Defer free tier / trial changes | Not enough users to measure conversion. Get traffic first, optimize second. |
+| 2026-03-25 | PH before AppSumo | PH is free, no revenue hit. AppSumo attracts deal hunters at $29 lifetime. |
+| 2026-03-25 | Follow-ups start March 27 | Give educators 7 days before first follow-up |
 | 2026-03-22 | Add Product Hunt as fast-feedback channel | Free, can deliver 500+ visits in 1 day, low effort to prepare |
 | 2026-03-22 | Build interactive calculator tool | Captures tool-intent searches, different from article SEO, proven playbook (Ahrefs, Canva) |
 | 2026-03-22 | Cold email Etsy sellers (not DMs) | Email is separate channel from Etsy DMs, sellers have public emails, highly targeted ICP |

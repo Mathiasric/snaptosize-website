@@ -10,30 +10,30 @@ import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "4×6 Print Size for Etsy — Pixels, DPI & File Setup",
+  title: "4\u00d76 Print Size for Etsy \u2014 Pixels, DPI & File Setup",
   description:
-    "4×6 is the most affordable entry-level Etsy print size. Get exact pixel dimensions at 300 DPI (1200×1800), 2:3 ratio specs, file format rules, and framing tips for digital downloads.",
+    "4\u00d76 print guide for Etsy sellers. Exact pixels at 300 DPI (1200\u00d71800), 2:3 ratio family, postcard uses, framing tips, and file setup.",
   alternates: { canonical: "https://snaptosize.com/etsy-4x6-print-size" },
   openGraph: {
     title:
-      "4×6 Print Size for Etsy — Pixel Dimensions at 300 DPI | SnapToSize",
+      "4\u00d76 Print Size for Etsy \u2014 Pixel Dimensions at 300 DPI | SnapToSize",
     description:
-      "Complete 4×6 print guide for Etsy sellers. Exact pixels at 300 DPI, 2:3 ratio family, file format rules, and framing tips.",
+      "Complete 4\u00d76 print guide for Etsy sellers. Exact pixels at 300 DPI, 2:3 ratio family, file format rules, and framing tips.",
     url: "https://snaptosize.com/etsy-4x6-print-size",
     images: [
       {
         url: "/assets/og/etsy-4x6-print-size.png",
         width: 1200,
         height: 630,
-        alt: "4×6 Print Size for Etsy — Pixel Dimensions at 300 DPI",
+        alt: "4\u00d76 Print Size for Etsy \u2014 Pixel Dimensions at 300 DPI",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "4×6 Print Size for Etsy — Pixel Dimensions at 300 DPI",
+    title: "4\u00d76 Print Size for Etsy \u2014 Pixel Dimensions at 300 DPI",
     description:
-      "Complete 4×6 print guide for Etsy sellers. 1200×1800 pixels at 300 DPI, 2:3 ratio, and file setup.",
+      "Complete 4\u00d76 print guide for Etsy sellers. 1200\u00d71800 pixels at 300 DPI, 2:3 ratio, and file setup.",
     images: ["/assets/og/etsy-4x6-print-size.png"],
   },
 };
@@ -42,12 +42,12 @@ export default function Etsy4x6PrintSizePage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "4×6 Print Size for Etsy — Pixel Dimensions at 300 DPI",
+    headline: "4\u00d76 Print Size for Etsy \u2014 Pixel Dimensions at 300 DPI",
     description:
-      "Complete technical guide to 4×6 print dimensions for Etsy sellers, including exact pixel dimensions at 300 DPI, 2:3 ratio specs, and file requirements.",
+      "Complete technical guide to 4\u00d76 print dimensions for Etsy sellers, including exact pixel dimensions at 300 DPI, 2:3 ratio specs, postcard and greeting card uses, and file requirements.",
     url: "https://snaptosize.com/etsy-4x6-print-size",
-    datePublished: "2026-03-22",
-    dateModified: "2026-03-22",
+    datePublished: "2026-03-26",
+    dateModified: "2026-03-26",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -74,7 +74,7 @@ export default function Etsy4x6PrintSizePage() {
       {
         "@type": "ListItem",
         position: 3,
-        name: "4×6 Print Size",
+        name: "4\u00d76 Print Size",
         item: "https://snaptosize.com/etsy-4x6-print-size",
       },
     ],
@@ -86,50 +86,42 @@ export default function Etsy4x6PrintSizePage() {
     mainEntity: [
       {
         "@type": "Question",
-        name: "What pixel dimensions do I need for a 4×6 print at 300 DPI?",
+        name: "What pixel dimensions do I need for a 4\u00d76 print at 300 DPI?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "A 4×6 inch print at 300 DPI requires exactly 1200×1800 pixels. Multiply each dimension by 300: 4×300=1200, 6×300=1800. As a JPG with sRGB color profile, the file is very small and well under Etsy's 20MB limit.",
+          text: "A 4\u00d76 inch print at 300 DPI requires exactly 1200\u00d71800 pixels. Multiply each dimension by 300: 4\u00d7300=1200, 6\u00d7300=1800. As a JPG with sRGB color profile, the file is very small and well under Etsy\u2019s 20 MB limit.",
         },
       },
       {
         "@type": "Question",
-        name: "What aspect ratio is 4×6?",
+        name: "What aspect ratio is 4\u00d76?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "4×6 has a 2:3 aspect ratio (0.667 decimal). This is the same ratio as DSLR cameras and includes 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30, and 24×36. All can be scaled from the same source file without cropping.",
+          text: "4\u00d76 has a 2:3 aspect ratio (0.667 decimal). This is the same ratio as DSLR cameras and includes 4\u00d76, 6\u00d79, 8\u00d712, 10\u00d715, 12\u00d718, 16\u00d724, and 20\u00d730 in the pack. All can be scaled from the same source file without cropping.",
         },
       },
       {
         "@type": "Question",
-        name: "Is 4×6 the same as a standard photo print?",
+        name: "Is 4\u00d76 too small for Etsy wall art?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. 4×6 is the classic photo print size — the same dimensions used by every photo lab, drug store printing kiosk, and home printer. It's the size most people picture when they think of a 'photo print.' This familiarity makes it a strong entry point for digital download buyers.",
+          text: "For standalone wall art, most buyers prefer 8\u00d710 or larger. But 4\u00d76 excels as mini art for shelves, desks, and gallery wall clusters. It\u2019s also the standard postcard and greeting card size, which is a massive Etsy category on its own.",
         },
       },
       {
         "@type": "Question",
-        name: "What frame sizes fit a 4×6 print?",
+        name: "Should I include 4\u00d76 in my Etsy printable listing?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "A 4×6 print fits directly into a standard 4×6 frame (available at Dollar Tree, Target, Walmart, IKEA, Amazon). For a matted look, use a 5×7 frame with a 4×6 mat opening, or an 8×10 frame with a wide mat for a gallery presentation.",
+          text: "Yes. 4\u00d76 is the most affordable size for buyers to print, making it the lowest-barrier entry point in your listing. It captures the postcard and greeting card market, and since it shares the 2:3 ratio with larger sizes, adding it requires no extra design work.",
         },
       },
       {
         "@type": "Question",
-        name: "What file format should I use for 4×6 Etsy prints?",
+        name: "What size frame fits a 4\u00d76 print?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Use JPG (also called JPEG) at 300 DPI with sRGB color profile. JPG keeps file sizes small — a 4×6 at 300 DPI is under 2MB. Avoid PNG for print files; it creates larger files with no visible quality benefit when printed.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Should I include 4×6 in my Etsy printable listings?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes. 4×6 is the most affordable size for buyers to print, making it the lowest-barrier entry point in your listing. Many buyers download 4×6 first to test print quality before committing to larger, more expensive sizes. Including it increases perceived value and encourages repeat purchases.",
+          text: "Standard 4\u00d76 frames are the most widely available frame size in the world. IKEA FISKBO ($0.99), Dollar Tree ($1.25), and every major retailer stock them. You can also mat a 4\u00d76 in a 5\u00d77 or 8\u00d710 frame for a gallery look.",
         },
       },
     ],
@@ -174,14 +166,14 @@ export default function Etsy4x6PrintSizePage() {
           style={{ background: "radial-gradient(circle, #f59e0b, transparent 70%)" }}
         />
 
-        {/* 2:3 Greeting card / small frame visual — right side */}
+        {/* 2:3 Frame blueprint — right side */}
         <div className="absolute right-[8%] top-1/2 -translate-y-1/2 hidden md:block">
-          {/* Outer greeting card shape */}
+          {/* Outer frame — 2:3 ratio (200px wide x 300px tall) */}
           <div
             className="relative border border-white/[0.08] rounded-sm"
-            style={{ width: "180px", height: "270px" }}
+            style={{ width: "200px", height: "300px" }}
           >
-            {/* Inner card border with amber accent */}
+            {/* Inner frame with amber accent border */}
             <div className="absolute inset-3 border border-amber-500/20 rounded-sm" />
 
             {/* Decorative fold line — greeting card hint */}
@@ -253,7 +245,7 @@ export default function Etsy4x6PrintSizePage() {
 
             <h1 className="font-bold tracking-tight mb-5">
               <span className="block text-3xl md:text-4xl lg:text-5xl mb-1.5 text-white">
-                4×6 Print Size for Etsy
+                4&times;6 Print Size for Etsy
               </span>
               <span className="block text-xl md:text-2xl lg:text-3xl font-semibold text-white/80">
                 Exact pixel dimensions at 300&nbsp;DPI &mdash; the starter
@@ -261,9 +253,9 @@ export default function Etsy4x6PrintSizePage() {
               </span>
             </h1>
             <p className="text-base text-white/60 mb-5 max-w-lg">
-              1200×1800 pixels. 2:3 aspect ratio. The classic photo print size.
-              Here&apos;s everything you need to set up 4×6 digital downloads
-              that sell &mdash; plus the full 2:3 ratio pack.
+              1200&times;1800 pixels. 2:3 aspect ratio. The classic photo and
+              postcard size. Here&apos;s everything you need to set up 4&times;6
+              digital downloads that sell &mdash; plus the full 2:3 ratio pack.
             </p>
 
             <div className="mb-4">
@@ -273,7 +265,7 @@ export default function Etsy4x6PrintSizePage() {
                 </Button>
               </a>
               <p className="text-sm text-white/40 mt-1.5">
-                Free &rarr; upload once, download 4×6 + six more 2:3 pack sizes.
+                Free &rarr; upload once, download 4&times;6 + six more 2:3 pack sizes.
               </p>
             </div>
 
@@ -281,7 +273,7 @@ export default function Etsy4x6PrintSizePage() {
               <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/[0.06] backdrop-blur-sm border border-white/[0.08]">
                 <Check className="h-3 w-3 text-amber-400 flex-shrink-0" />
                 <span className="text-xs text-white/70 font-medium">
-                  1200×1800 px at 300 DPI
+                  1200&times;1800 px at 300 DPI
                 </span>
               </div>
               <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/[0.06] backdrop-blur-sm border border-white/[0.08]">
@@ -293,7 +285,7 @@ export default function Etsy4x6PrintSizePage() {
               <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/[0.06] backdrop-blur-sm border border-white/[0.08]">
                 <Check className="h-3 w-3 text-amber-400 flex-shrink-0" />
                 <span className="text-xs text-white/70 font-medium">
-                  Classic photo print size
+                  Standard photo &amp; postcard size
                 </span>
               </div>
             </div>
@@ -305,23 +297,27 @@ export default function Etsy4x6PrintSizePage() {
       <section className="py-12 md:py-16">
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
-            {/* --- Exact Dimensions --- */}
+            {/* --- Section 1: Exact Dimensions --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
-                4×6 at 300 DPI — Exact Pixel Dimensions
+                4&times;6 at 300 DPI &mdash; Exact Pixel Dimensions
               </h2>
 
               <Card className="p-6 md:p-8 mb-8">
                 <div className="space-y-3">
                   <div className="flex justify-between items-center border-b border-white/10 pb-3">
                     <span className="text-foreground-60">Print Size</span>
-                    <span className="font-semibold">4 × 6 inches</span>
+                    <span className="font-semibold">4 &times; 6 inches</span>
+                  </div>
+                  <div className="flex justify-between items-center border-b border-white/10 pb-3">
+                    <span className="text-foreground-60">Metric</span>
+                    <span className="font-semibold">10.2 &times; 15.2 cm</span>
                   </div>
                   <div className="flex justify-between items-center border-b border-white/10 pb-3">
                     <span className="text-foreground-60">
                       Pixel Dimensions
                     </span>
-                    <span className="font-semibold">1200 × 1800 px</span>
+                    <span className="font-semibold">1200 &times; 1800 px</span>
                   </div>
                   <div className="flex justify-between items-center border-b border-white/10 pb-3">
                     <span className="text-foreground-60">Resolution</span>
@@ -330,6 +326,10 @@ export default function Etsy4x6PrintSizePage() {
                   <div className="flex justify-between items-center border-b border-white/10 pb-3">
                     <span className="text-foreground-60">Aspect Ratio</span>
                     <span className="font-semibold">2:3 (0.667)</span>
+                  </div>
+                  <div className="flex justify-between items-center border-b border-white/10 pb-3">
+                    <span className="text-foreground-60">Megapixels</span>
+                    <span className="font-semibold">2.16 MP</span>
                   </div>
                   <div className="flex justify-between items-center border-b border-white/10 pb-3">
                     <span className="text-foreground-60">Format</span>
@@ -344,16 +344,23 @@ export default function Etsy4x6PrintSizePage() {
 
               <p className="text-foreground-60 mb-4">
                 The math is simple: multiply each dimension in inches by 300.
-                4&nbsp;×&nbsp;300&nbsp;=&nbsp;1200 pixels wide,
-                6&nbsp;×&nbsp;300&nbsp;=&nbsp;1800 pixels tall. That gives you
-                any modern camera or design tool handles this resolution
-                comfortably.
+                4&nbsp;&times;&nbsp;300&nbsp;=&nbsp;1200 pixels wide,
+                6&nbsp;&times;&nbsp;300&nbsp;=&nbsp;1800 pixels tall. That gives you
+                2.16 megapixels &mdash; any modern camera or design tool handles this
+                comfortably. For more on why 300 DPI matters, see the{" "}
+                <Link
+                  href="/best-resolution-for-etsy-printables"
+                  className="text-accent-light hover:underline"
+                >
+                  best resolution for Etsy printables
+                </Link>{" "}
+                guide.
               </p>
               <p className="text-foreground-60 mb-4">
-                As a JPG, the file is very small &mdash; well under
+                As a JPG (also called JPEG), the file is compact &mdash; well under
                 Etsy&apos;s 20&nbsp;MB limit per download file, even when
                 bundled with all six other 2:3 pack sizes in a ZIP. You will never
-                hit file size limits with 4×6 prints.
+                hit file size limits with 4&times;6 prints.
               </p>
               <p className="text-foreground-60">
                 The 2:3 aspect ratio (width is 66.7% of height) matches DSLR
@@ -365,21 +372,21 @@ export default function Etsy4x6PrintSizePage() {
                 >
                   2:3 ratio family
                 </Link>
-                {" "}&mdash; from 4×6 all the way up to{" "}
+                {" "}&mdash; from 4&times;6 all the way up to{" "}
                 <Link
                   href="/etsy-24x36-print-size"
                   className="text-accent-light hover:underline"
                 >
-                  24×36
+                  24&times;36
                 </Link>
                 {" "}&mdash; without any cropping.
               </p>
             </div>
 
-            {/* --- Why 4×6 --- */}
+            {/* --- Section 2: Why 4×6 --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
-                Why 4×6 Is the Entry-Level Size Every Listing Needs
+                Why 4&times;6 Is the Entry-Level Size Every Listing Needs
               </h2>
 
               <div className="space-y-6">
@@ -388,11 +395,25 @@ export default function Etsy4x6PrintSizePage() {
                     The Cheapest Size for Buyers to Print
                   </h3>
                   <p className="text-foreground-60">
-                    4×6 costs pennies to print at any drug store, photo kiosk,
+                    4&times;6 costs pennies to print at any drug store, photo kiosk,
                     or home printer. This makes it the lowest-risk purchase for
                     buyers &mdash; they can test your artwork quality before
-                    committing to larger, more expensive prints. Many buyers
-                    download 4×6 first, then come back for bigger sizes.
+                    committing to larger, more expensive prints like{" "}
+                    <Link
+                      href="/etsy-8x10-print-size"
+                      className="text-accent-light hover:underline"
+                    >
+                      8&times;10
+                    </Link>
+                    {" "}or{" "}
+                    <Link
+                      href="/etsy-16x20-print-size"
+                      className="text-accent-light hover:underline"
+                    >
+                      16&times;20
+                    </Link>
+                    . Many buyers download 4&times;6 first, then come back for
+                    bigger sizes.
                   </p>
                 </Card>
 
@@ -401,9 +422,9 @@ export default function Etsy4x6PrintSizePage() {
                     Frames Are Everywhere &mdash; Including Dollar Stores
                   </h3>
                   <p className="text-foreground-60">
-                    4×6 frames are the most widely available frame size in
-                    existence. Dollar Tree, Target, Walmart, IKEA, Amazon
-                    &mdash; every retailer stocks them, often for $1-3. This
+                    4&times;6 frames are the most widely available frame size in
+                    existence. Dollar Tree ($1.25), IKEA FISKBO ($0.99), Target,
+                    Walmart, Amazon &mdash; every retailer stocks them. This
                     eliminates a major friction point: buyers never wonder
                     &ldquo;Where do I find a frame for this?&rdquo;
                   </p>
@@ -411,13 +432,15 @@ export default function Etsy4x6PrintSizePage() {
 
                 <Card className="p-6">
                   <h3 className="text-lg font-semibold mb-2">
-                    Perfect for Greeting Cards, Postcards &amp; Invitations
+                    Perfect for Postcards, Greeting Cards &amp; Invitations
                   </h3>
                   <p className="text-foreground-60">
-                    4×6 is the standard postcard size. Buyers use it for party
-                    invitations, thank-you cards, and small framed gifts. If
-                    your designs work for events or holidays, 4×6 opens up use
-                    cases beyond wall art &mdash; broadening your buyer pool.
+                    4&times;6 is the standard postcard size and a popular greeting
+                    card format. Buyers use it for party invitations, thank-you
+                    cards, and small framed gifts. If your designs work for events
+                    or holidays, 4&times;6 opens up use cases beyond wall art &mdash;
+                    broadening your buyer pool into the massive Etsy stationery
+                    niche.
                   </p>
                 </Card>
 
@@ -426,57 +449,54 @@ export default function Etsy4x6PrintSizePage() {
                     Boosts Perceived Value of Your Bundle
                   </h3>
                   <p className="text-foreground-60">
-                    Including 4×6 alongside larger sizes like{" "}
+                    Including 4&times;6 alongside larger sizes like{" "}
                     <Link
                       href="/etsy-8x10-print-size"
                       className="text-accent-light hover:underline"
                     >
-                      8×10
+                      8&times;10
                     </Link>
                     {" "}or{" "}
                     <Link
                       href="/etsy-24x36-print-size"
                       className="text-accent-light hover:underline"
                     >
-                      24×36
+                      24&times;36
                     </Link>
                     {" "}makes your listing appear to offer more for the money.
                     Buyers see seven pack sizes instead of one &mdash; and the
-                    smallest size costs you nothing extra to generate.
+                    smallest size costs you nothing extra to generate. For guidance
+                    on how many sizes to offer, see{" "}
+                    <Link
+                      href="/how-many-sizes-etsy-printable"
+                      className="text-accent-light hover:underline"
+                    >
+                      how many sizes to include in an Etsy printable
+                    </Link>
+                    .
                   </p>
                 </Card>
               </div>
             </div>
 
-            {/* --- CTA 1 --- */}
-            <div>
-              <Card accent className="p-6 md:p-8 text-center">
-                <h3 className="text-xl md:text-2xl font-bold mb-3">
-                  Skip the Manual Resizing
-                </h3>
-                <p className="text-sm text-foreground-60 mb-5">
-                  Upload your artwork once. Get 4×6 and all other 2:3 sizes at
-                  300&nbsp;DPI &mdash; organized, named, and ready for Etsy.
-                </p>
-                <a href={appUrl} target="_blank" rel="noopener noreferrer">
-                  <Button className="text-sm px-6 py-2.5">
-                    Generate All 2:3 Sizes
-                  </Button>
-                </a>
-              </Card>
-            </div>
-
-            {/* --- 2:3 Ratio Family --- */}
+            {/* --- Section 3: 2:3 Ratio Family --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
-                The 2:3 Ratio Family &mdash; All Sizes That Come With 4×6
+                The 2:3 Ratio Family &mdash; All Sizes That Come With 4&times;6
               </h2>
               <p className="text-foreground-60 mb-6">
-                4×6 is the smallest size in the 2:3 aspect ratio family. All
+                4&times;6 is the smallest size in the 2:3 aspect ratio family. All
                 seven pack sizes maintain identical proportions, so you scale from
                 the same source file without cropping. Buyers expect to receive
                 multiple sizes in one download &mdash; this is the standard Etsy
-                bundle for 2:3 ratio prints.
+                bundle for{" "}
+                <Link
+                  href="/etsy-print-ratios"
+                  className="text-accent-light hover:underline"
+                >
+                  2:3 ratio prints
+                </Link>
+                .
               </p>
 
               <div className="overflow-x-auto mb-8">
@@ -496,82 +516,66 @@ export default function Etsy4x6PrintSizePage() {
                   </thead>
                   <tbody>
                     <tr className="border-b border-white/10 bg-accent/5">
-                      <td className="py-3 px-4 font-semibold">4×6</td>
+                      <td className="py-3 px-4 font-semibold">4&times;6</td>
                       <td className="py-3 px-4 text-foreground-60">
-                        1200 × 1800
+                        1200 &times; 1800
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
                         Photo prints, greeting cards, postcards
                       </td>
                     </tr>
                     <tr className="border-b border-white/10">
-                      <td className="py-3 px-4">6×9</td>
+                      <td className="py-3 px-4">6&times;9</td>
                       <td className="py-3 px-4 text-foreground-60">
-                        1800 × 2700
+                        1800 &times; 2700
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
                         Photo matting, small wall art
                       </td>
                     </tr>
                     <tr className="border-b border-white/10">
-                      <td className="py-3 px-4">8×12</td>
+                      <td className="py-3 px-4">8&times;12</td>
                       <td className="py-3 px-4 text-foreground-60">
-                        2400 × 3600
+                        2400 &times; 3600
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
                         Common frame size
                       </td>
                     </tr>
                     <tr className="border-b border-white/10">
-                      <td className="py-3 px-4">10×15</td>
+                      <td className="py-3 px-4">10&times;15</td>
                       <td className="py-3 px-4 text-foreground-60">
-                        3000 × 4500
+                        3000 &times; 4500
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
                         Mid-size wall art
                       </td>
                     </tr>
                     <tr className="border-b border-white/10">
-                      <td className="py-3 px-4">12×18</td>
+                      <td className="py-3 px-4">12&times;18</td>
                       <td className="py-3 px-4 text-foreground-60">
-                        3600 × 5400
+                        3600 &times; 5400
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
                         Medium poster size
                       </td>
                     </tr>
                     <tr className="border-b border-white/10">
-                      <td className="py-3 px-4">16×24</td>
+                      <td className="py-3 px-4">16&times;24</td>
                       <td className="py-3 px-4 text-foreground-60">
-                        4800 × 7200
+                        4800 &times; 7200
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
                         Large gallery wall
                       </td>
                     </tr>
-                    <tr className="border-b border-white/10">
-                      <td className="py-3 px-4">20×30</td>
+                    <tr>
+                      <td className="py-3 px-4">20&times;30</td>
                       <td className="py-3 px-4 text-foreground-60">
-                        6000 × 9000
+                        6000 &times; 9000
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
                         Oversized statement piece
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="py-3 px-4">
-                        <Link
-                          href="/etsy-24x36-print-size"
-                          className="text-accent-light hover:underline"
-                        >
-                          24×36
-                        </Link>
-                      </td>
-                      <td className="py-3 px-4 text-foreground-60">
-                        7200 × 10800
-                      </td>
-                      <td className="py-3 px-4 text-foreground-60">
-                        Standard poster, available via single export
                       </td>
                     </tr>
                   </tbody>
@@ -594,12 +598,162 @@ export default function Etsy4x6PrintSizePage() {
                 >
                   complete Etsy print sizes guide
                 </Link>
-                . For ratio-specific guidance, see{" "}
+                .
+              </p>
+            </div>
+
+            {/* --- CTA 1 --- */}
+            <div>
+              <Card accent className="p-6 md:p-8 text-center">
+                <h3 className="text-xl md:text-2xl font-bold mb-3">
+                  One Upload, Every 2:3 Size
+                </h3>
+                <p className="text-sm text-foreground-60 mb-5">
+                  Upload your artwork once. SnapToSize generates pixel-perfect
+                  4&times;6, 6&times;9, 8&times;12, 10&times;15, 12&times;18,
+                  16&times;24, and 20&times;30 at 300&nbsp;DPI. All from one image.
+                </p>
+                <a href={appUrl} target="_blank" rel="noopener noreferrer">
+                  <Button className="text-sm px-6 py-2.5">
+                    Generate All Sizes Instantly
+                  </Button>
+                </a>
+              </Card>
+            </div>
+
+            {/* --- Section 4: Use Cases --- */}
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6">
+                4&times;6 Use Cases on Etsy
+              </h2>
+              <p className="text-foreground-60 mb-6">
+                4&times;6 serves more buyer intents than any other print size. Each
+                use case drives different search keywords your listing will capture
+                organically.
+              </p>
+
+              <div className="space-y-6">
+                <Card className="p-6">
+                  <h3 className="text-lg font-semibold mb-2">
+                    Mini Wall Art &amp; Gallery Clusters
+                  </h3>
+                  <p className="text-foreground-60">
+                    Gallery walls with mixed small prints are a top trend on Etsy.
+                    4&times;6 is the go-to size for{" "}
+                    <Link
+                      href="/etsy-gallery-wall-print-sizes"
+                      className="text-accent-light hover:underline"
+                    >
+                      gallery wall clusters
+                    </Link>
+                    , shelf displays, and desk frames. Buyers often purchase 3-6
+                    small prints at once for a coordinated arrangement.
+                  </p>
+                </Card>
+
+                <Card className="p-6">
+                  <h3 className="text-lg font-semibold mb-2">
+                    Postcards
+                  </h3>
+                  <p className="text-foreground-60">
+                    4&times;6 is the standard flat postcard size &mdash; the #1
+                    postcard format on Etsy. Buyers print them at home or through
+                    online services for travel postcards, art prints, and
+                    promotional cards. If you sell any art that works at small
+                    scale, postcards are pure volume.
+                  </p>
+                </Card>
+
+                <Card className="p-6">
+                  <h3 className="text-lg font-semibold mb-2">
+                    Greeting Cards &amp; Invitations
+                  </h3>
+                  <p className="text-foreground-60">
+                    4&times;6 is a standard greeting card format when folded from
+                    a larger sheet. Birthday invitations, thank-you cards, and
+                    holiday cards at this size are a massive Etsy category.
+                    Including 4&times;6 in your listing captures this entire
+                    stationery audience.
+                  </p>
+                </Card>
+
+                <Card className="p-6">
+                  <h3 className="text-lg font-semibold mb-2">
+                    Photo Prints
+                  </h3>
+                  <p className="text-foreground-60">
+                    Every buyer already knows 4&times;6 as &ldquo;the photo
+                    print size.&rdquo; This familiarity means zero confusion about
+                    dimensions &mdash; no one asks &ldquo;How big is that?&rdquo;
+                    They already know, and they already have frames. For what files
+                    to include in your listing, see{" "}
+                    <Link
+                      href="/what-files-to-include-etsy-digital-download"
+                      className="text-accent-light hover:underline"
+                    >
+                      what files to include in Etsy digital downloads
+                    </Link>
+                    .
+                  </p>
+                </Card>
+              </div>
+            </div>
+
+            {/* --- Section 5: Is 4×6 Too Small? --- */}
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6">
+                Is 4&times;6 Too Small for Wall Art?
+              </h2>
+              <p className="text-foreground-60 mb-4">
+                For standalone wall display &mdash; a single piece on a blank wall
+                &mdash; most buyers prefer{" "}
                 <Link
-                  href="/etsy-print-ratios"
+                  href="/etsy-8x10-print-size"
                   className="text-accent-light hover:underline"
                 >
-                  Etsy print ratios explained
+                  8&times;10
+                </Link>
+                {" "}or larger. A lone 4&times;6 on a wall looks small.
+              </p>
+              <p className="text-foreground-60 mb-4">
+                But 4&times;6 is not designed for that use case. It excels in three
+                specific contexts: tabletop and shelf displays, gallery wall
+                clusters with multiple small pieces, and desktop frames. In all
+                three, 4&times;6 is the ideal size.
+              </p>
+              <p className="text-foreground-60 mb-4">
+                More importantly, 4&times;6 covers the postcard and greeting card
+                market &mdash; a category where size is exactly right by definition.
+                Skipping 4&times;6 means missing all of these buyers entirely.
+              </p>
+              <p className="text-foreground-60">
+                For larger wall art, recommend stepping up to{" "}
+                <Link
+                  href="/etsy-8x10-print-size"
+                  className="text-accent-light hover:underline"
+                >
+                  8&times;10
+                </Link>
+                ,{" "}
+                <Link
+                  href="/etsy-11x14-print-size"
+                  className="text-accent-light hover:underline"
+                >
+                  11&times;14
+                </Link>
+                , or{" "}
+                <Link
+                  href="/etsy-16x20-print-size"
+                  className="text-accent-light hover:underline"
+                >
+                  16&times;20
+                </Link>
+                . For another compact option with a different ratio, compare with{" "}
+                <Link
+                  href="/etsy-5x7-print-size"
+                  className="text-accent-light hover:underline"
+                >
+                  5&times;7
                 </Link>
                 .
               </p>
@@ -607,14 +761,23 @@ export default function Etsy4x6PrintSizePage() {
 
             {/* --- CTA 2 --- */}
             <div>
-              <a href={appUrl} target="_blank" rel="noopener noreferrer">
-                <Button className="text-base px-6 py-2.5">
-                  Generate All 2:3 Sizes in Seconds
-                </Button>
-              </a>
+              <Card accent className="p-6 md:p-8 text-center">
+                <h3 className="text-xl md:text-2xl font-bold mb-3">
+                  Never Crop Between Ratios Again
+                </h3>
+                <p className="text-sm text-foreground-60 mb-5">
+                  Get 1200&times;1800&nbsp;px files (and every other 2:3 size)
+                  in seconds. No manual math, no cropping.
+                </p>
+                <a href={appUrl} target="_blank" rel="noopener noreferrer">
+                  <Button className="text-sm px-6 py-2.5">
+                    Generate All 2:3 Sizes in Seconds
+                  </Button>
+                </a>
+              </Card>
             </div>
 
-            {/* --- File Format --- */}
+            {/* --- Section 6: File Format --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
                 File Format, Color Profile &amp; Naming
@@ -626,8 +789,8 @@ export default function Etsy4x6PrintSizePage() {
                     JPG / JPEG at 300 DPI
                   </h3>
                   <p className="text-foreground-60">
-                    JPG (also called JPEG) is the standard for Etsy print files. At 4×6 and
-                    300&nbsp;DPI, the file is compact &mdash; well under
+                    JPG (also called JPEG) is the standard for Etsy print files. At
+                    4&times;6 and 300&nbsp;DPI, the file is compact &mdash; well under
                     Etsy&apos;s 20&nbsp;MB limit. Avoid PNG for print files:
                     they&apos;re larger with no visible benefit when printed.
                     For more on format choices, see{" "}
@@ -649,7 +812,7 @@ export default function Etsy4x6PrintSizePage() {
                     Always embed sRGB. Most home printers, photo kiosks, and
                     online print services expect it. Files in Adobe RGB or
                     ProPhoto RGB will shift colors during printing &mdash; reds
-                    go orange, blues go purple. Since 4×6 is commonly printed at
+                    go orange, blues go purple. Since 4&times;6 is commonly printed at
                     photo kiosks, sRGB is especially critical for this size.
                   </p>
                 </div>
@@ -721,27 +884,27 @@ export default function Etsy4x6PrintSizePage() {
               </Card>
             </div>
 
-            {/* --- Framing & Matting --- */}
+            {/* --- Section 7: Framing & Matting --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
                 Framing &amp; Matting &mdash; What Buyers Need to Know
               </h2>
               <p className="text-foreground-60 mb-6">
-                4×6 prints fit directly into standard 4×6 frames &mdash; the
-                most affordable and widely available frame size. For a more
-                polished look, buyers can mat a 4×6 print inside a{" "}
+                4&times;6 prints fit directly into standard 4&times;6 frames &mdash;
+                the most affordable and widely available frame size. For a more
+                polished look, buyers can mat a 4&times;6 print inside a{" "}
                 <Link
                   href="/etsy-5x7-print-size"
                   className="text-accent-light hover:underline"
                 >
-                  5×7 frame
+                  5&times;7 frame
                 </Link>
                 {" "}or even an{" "}
                 <Link
                   href="/etsy-8x10-print-size"
                   className="text-accent-light hover:underline"
                 >
-                  8×10 frame
+                  8&times;10 frame
                 </Link>
                 {" "}with a wide mat for a gallery presentation.
               </p>
@@ -752,14 +915,14 @@ export default function Etsy4x6PrintSizePage() {
                 </h3>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center border-b border-white/10 pb-3">
-                    <span className="font-medium">4×6 frame, no mat</span>
+                    <span className="font-medium">4&times;6 frame, no mat</span>
                     <span className="text-foreground-60 text-sm">
                       Budget-friendly, print fills frame
                     </span>
                   </div>
                   <div className="flex justify-between items-center border-b border-white/10 pb-3">
                     <span className="font-medium">
-                      5×7 frame + 4×6 mat
+                      5&times;7 frame + 4&times;6 mat
                     </span>
                     <span className="text-foreground-60 text-sm">
                       Subtle border, classic look
@@ -767,7 +930,7 @@ export default function Etsy4x6PrintSizePage() {
                   </div>
                   <div className="flex justify-between items-center border-b border-white/10 pb-3">
                     <span className="font-medium">
-                      8×10 frame + 4×6 mat
+                      8&times;10 frame + 4&times;6 mat
                     </span>
                     <span className="text-foreground-60 text-sm">
                       Wide mat, gallery presentation
@@ -775,10 +938,10 @@ export default function Etsy4x6PrintSizePage() {
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="font-medium">
-                      Multi-opening frame
+                      Multi-opening collage frame
                     </span>
                     <span className="text-foreground-60 text-sm">
-                      Display several 4×6 prints together
+                      Display several 4&times;6 prints together
                     </span>
                   </div>
                 </div>
@@ -791,19 +954,20 @@ export default function Etsy4x6PrintSizePage() {
                     <strong className="text-foreground">
                       Listing tip:
                     </strong>{" "}
-                    Add &ldquo;4×6 fits any standard photo frame (Dollar Tree,
-                    Target, IKEA, Amazon). For a gallery look, mat in a 5×7 or
-                    8×10 frame.&rdquo; to your Etsy description. This single
-                    line increases buyer confidence and reduces support messages.
+                    Add &ldquo;4&times;6 fits any standard photo frame (Dollar Tree
+                    $1.25, IKEA FISKBO $0.99, Target, Amazon). For a gallery look,
+                    mat in a 5&times;7 or 8&times;10 frame.&rdquo; to your Etsy
+                    description. This single line increases buyer confidence and
+                    reduces support messages.
                   </p>
                 </div>
               </Card>
             </div>
 
-            {/* --- Common Mistakes --- */}
+            {/* --- Section 8: Common Mistakes --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
-                Common Mistakes With 4×6 Digital Prints
+                Common Mistakes With 4&times;6 Digital Prints
               </h2>
 
               <div className="space-y-4">
@@ -812,14 +976,45 @@ export default function Etsy4x6PrintSizePage() {
                     <AlertTriangle className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
                     <div>
                       <h3 className="font-semibold mb-2">
+                        Skipping 4&times;6 from your listings
+                      </h3>
+                      <p className="text-foreground-60 text-sm">
+                        Some sellers only include large sizes like{" "}
+                        <Link
+                          href="/etsy-16x20-print-size"
+                          className="text-accent-light hover:underline"
+                        >
+                          16&times;20
+                        </Link>
+                        {" "}or{" "}
+                        <Link
+                          href="/etsy-24x36-print-size"
+                          className="text-accent-light hover:underline"
+                        >
+                          24&times;36
+                        </Link>
+                        . This misses budget-conscious buyers who want a low-cost
+                        test print and the entire postcard/greeting card audience.
+                        4&times;6 costs nothing extra to generate and adds perceived
+                        value to every listing.
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+
+                <Card className="p-6">
+                  <div className="flex gap-4">
+                    <AlertTriangle className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h3 className="font-semibold mb-2">
                         Exporting at 72 DPI instead of 300 DPI
                       </h3>
                       <p className="text-foreground-60 text-sm">
-                        72 DPI is screen resolution. A 4×6 at 72 DPI is only
-                        288×432 pixels &mdash; prints will be visibly pixelated
+                        72 DPI is screen resolution. A 4&times;6 at 72 DPI is only
+                        288&times;432 pixels &mdash; prints will be visibly pixelated
                         and blurry, especially on small prints where details
                         matter. Always check your export settings. The file must
-                        be 1200×1800 pixels.
+                        be 1200&times;1800 pixels.
                       </p>
                     </div>
                   </div>
@@ -830,31 +1025,20 @@ export default function Etsy4x6PrintSizePage() {
                     <AlertTriangle className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
                     <div>
                       <h3 className="font-semibold mb-2">
-                        Cropping a different ratio to fit 4×6
+                        Confusing 4&times;6 (2:3) with 4&times;5 (4:5) ratio
                       </h3>
                       <p className="text-foreground-60 text-sm">
-                        Cropping a 4:5 or 3:4 design to 2:3 cuts off parts of
-                        the artwork. Buyers expect the full composition shown in
-                        your listing preview. Design at 2:3 from the start, or
-                        use a tool that generates each ratio separately without
-                        cropping.
-                      </p>
-                    </div>
-                  </div>
-                </Card>
-
-                <Card className="p-6">
-                  <div className="flex gap-4">
-                    <AlertTriangle className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
-                    <div>
-                      <h3 className="font-semibold mb-2">
-                        Skipping 4×6 from your listings
-                      </h3>
-                      <p className="text-foreground-60 text-sm">
-                        Some sellers only include large sizes like 16×20 or
-                        24×36. This misses buyers who want a low-cost test
-                        print or a small greeting card. 4×6 costs nothing extra
-                        to generate and adds perceived value to every listing.
+                        4&times;6 is 2:3 ratio. 4&times;5 (which scales to{" "}
+                        <Link
+                          href="/etsy-8x10-print-size"
+                          className="text-accent-light hover:underline"
+                        >
+                          8&times;10
+                        </Link>
+                        ) is 4:5 ratio. Cropping between these ratios cuts off parts
+                        of the artwork. Design at 2:3 from the start for the
+                        4&times;6 family, or use a tool that generates each ratio
+                        separately without cropping.
                       </p>
                     </div>
                   </div>
@@ -868,7 +1052,7 @@ export default function Etsy4x6PrintSizePage() {
                         Wrong color profile for photo kiosk printing
                       </h3>
                       <p className="text-foreground-60 text-sm">
-                        4×6 is the most commonly kiosk-printed size. Photo
+                        4&times;6 is the most commonly kiosk-printed size. Photo
                         kiosks universally expect sRGB. Files in Adobe RGB or
                         ProPhoto RGB display incorrect colors &mdash; reds
                         appear orange, blues shift purple. Convert to sRGB
@@ -883,9 +1067,9 @@ export default function Etsy4x6PrintSizePage() {
             {/* --- CTA 3 --- */}
             <div>
               <FinalCTA
-                heading="Get All 2:3 Sizes in One Click"
+                heading="Add 4×6 to Every Listing in Seconds"
                 stat="Seven 2:3 pack sizes from a single upload"
-                description="Upload your artwork and instantly receive 4x6, 6x9, 8x12, 10x15, 12x18, 16x24, and 20x30 at 300 DPI. No cropping, no manual resizing. Production-ready in seconds."
+                description="Upload your artwork and instantly receive 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, and 20×30 at 300 DPI. Perfect files for prints, postcards, and greeting cards."
                 buttonText="Start Free — Generate Sizes Now"
                 appUrl={appUrl}
               />
@@ -900,37 +1084,31 @@ export default function Etsy4x6PrintSizePage() {
                 items={[
                   {
                     question:
-                      "What pixel dimensions do I need for a 4×6 print at 300 DPI?",
+                      "What pixel dimensions do I need for a 4\u00d76 print at 300 DPI?",
                     answer:
-                      "Exactly 1200×1800 pixels. Multiply each dimension by 300: 4×300 = 1200 pixels wide, 6×300 = 1800 pixels tall. As a JPG with sRGB color profile, the file is very small and well under Etsy's 20MB limit.",
+                      "Exactly 1200\u00d71800 pixels. Multiply each dimension by 300: 4\u00d7300 = 1200 pixels wide, 6\u00d7300 = 1800 pixels tall. As a JPG with sRGB color profile, the file is very small and well under Etsy\u2019s 20 MB limit.",
                   },
                   {
-                    question: "What aspect ratio is 4×6?",
+                    question: "What aspect ratio is 4\u00d76?",
                     answer:
-                      "2:3 (or 0.667 as a decimal). This is the same ratio as DSLR cameras and includes 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30, and 24×36. All these sizes can be scaled from the same source file without any cropping.",
+                      "2:3 (or 0.667 as a decimal). This is the same ratio as DSLR cameras and includes 4\u00d76, 6\u00d79, 8\u00d712, 10\u00d715, 12\u00d718, 16\u00d724, and 20\u00d730 in the pack. All these sizes can be scaled from the same source file without any cropping.",
                   },
                   {
-                    question: "Is 4×6 the same as a standard photo print?",
+                    question: "Is 4\u00d76 too small for Etsy wall art?",
                     answer:
-                      "Yes — 4×6 is the classic photo print size used by every photo lab, drug store kiosk, and home printer. It's the size most people picture when they think of a 'photo print.' This familiarity makes it a strong entry point for digital download buyers.",
-                  },
-                  {
-                    question:
-                      "What frame sizes fit a 4×6 print?",
-                    answer:
-                      "A 4×6 print fits directly into a standard 4×6 frame (available at Dollar Tree, Target, Walmart, IKEA, Amazon). For a matted look, use a 5×7 frame with a 4×6 mat opening, or an 8×10 frame with a wide mat for a gallery presentation.",
+                      "For standalone wall art, most buyers prefer 8\u00d710 or larger. But 4\u00d76 excels as mini art for shelves, desks, and gallery wall clusters. It\u2019s also the standard postcard and greeting card size, which is a massive Etsy category on its own.",
                   },
                   {
                     question:
-                      "What file format should I use for 4×6 Etsy prints?",
+                      "Should I include 4\u00d76 in my Etsy printable listing?",
                     answer:
-                      "JPG / JPEG at 300 DPI with sRGB color profile. JPG keeps file sizes small — a 4×6 at 300 DPI is well under 2MB. Avoid PNG for print files; it creates larger files with no visible quality benefit when printed.",
+                      "Yes. 4\u00d76 is the most affordable size for buyers to print, making it the lowest-barrier entry point in your listing. It captures the postcard and greeting card market, and since it shares the 2:3 ratio with larger sizes, adding it requires no extra design work.",
                   },
                   {
                     question:
-                      "Should I include 4×6 in my Etsy printable listings?",
+                      "What size frame fits a 4\u00d76 print?",
                     answer:
-                      "Yes. 4×6 is the most affordable size for buyers to print, making it the lowest-barrier entry point in your listing. Many buyers download 4×6 first to test print quality before committing to larger, more expensive sizes. Including it increases perceived value and encourages repeat purchases.",
+                      "Standard 4\u00d76 frames are the most widely available frame size in the world. IKEA FISKBO ($0.99), Dollar Tree ($1.25), and every major retailer stock them. You can also mat a 4\u00d76 in a 5\u00d77 or 8\u00d710 frame for a gallery look.",
                   },
                 ]}
               />

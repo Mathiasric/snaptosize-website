@@ -605,7 +605,11 @@ export default function EtsyPrintSizesPage() {
                         </thead>
                         <tbody className="text-foreground-60">
                           <tr className="border-b border-border">
-                            <td className="py-2 pr-4">4 &times; 6</td>
+                            <td className="py-2 pr-4">
+                              <Link href="/etsy-4x6-print-size" className="text-accent-light hover:underline">
+                                4 &times; 6
+                              </Link>
+                            </td>
                             <td className="py-2 pr-4">1200 &times; 1800</td>
                             <td className="py-2">Small prints, cards</td>
                           </tr>
@@ -863,7 +867,11 @@ export default function EtsyPrintSizesPage() {
                             </td>
                           </tr>
                           <tr className="border-b border-border">
-                            <td className="py-2 pr-4">11 &times; 14</td>
+                            <td className="py-2 pr-4">
+                              <Link href="/etsy-11x14-print-size" className="text-accent-light hover:underline">
+                                11 &times; 14
+                              </Link>
+                            </td>
                             <td className="py-2 pr-4">3300 &times; 4200</td>
                             <td className="py-2">Photo mat standard</td>
                           </tr>

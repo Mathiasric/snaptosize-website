@@ -549,7 +549,11 @@ export default function EtsyBotanicalPrintSizesPage() {
                       </td>
                     </tr>
                     <tr className="border-b border-white/10">
-                      <td className="py-3 px-4 font-semibold">11x14</td>
+                      <td className="py-3 px-4 font-semibold">
+                        <Link href="/etsy-11x14-print-size" className="text-accent-light hover:underline">
+                          11×14
+                        </Link>
+                      </td>
                       <td className="py-3 px-4 text-foreground-60">
                         3300 x 4200
                       </td>

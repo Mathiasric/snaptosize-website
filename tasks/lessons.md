@@ -258,14 +258,15 @@ Gate: Minimum 50 paying users before testing any paid channel.
 - Months 6-12: Meaningful traffic if content volume and quality sustained
 Do NOT panic about zero traffic in the first month. Focus on building content volume (100+ pages) to reach critical mass for ranking momentum.
 
-### LESSON-036: Hero must fill the viewport — use asymmetric padding (2026-03-19)
-**Trigger:** Every new page had the hero too short or text too low, requiring manual correction every time.
+### LESSON-036: Hero must fill the viewport — use asymmetric padding (2026-03-19, updated 2026-03-25)
+**Trigger:** Every new page had the hero too short or text too low, requiring manual correction every time. Gallery wall page needed hero fix because trust pills fell below viewport.
 **Rule:** When creating SEO page heroes:
-1. Use **asymmetric padding** — less top, more bottom: `pt-12 pb-36 md:pt-20 md:pb-48` (guide pages) or `pt-14 pb-20 md:pt-20 md:pb-28` (size pages)
-2. The hero must fill the entire initial viewport (1440×900 desktop) — the next section title should barely peek in or not be visible at all
+1. Use **asymmetric padding** — less top, more bottom: `pt-10 pb-16 md:pt-14 md:pb-24` (compact/niche pages) or `pt-14 pb-20 md:pt-20 md:pb-28` (size pages)
+2. Trust pills / checkmark badges MUST be visible within the initial viewport (1440×900 desktop) — they are conversion elements
 3. **Never use symmetric `py-` padding** for heroes — it pushes the title too far down
-4. After creating any hero, take a Playwright screenshot at 1440×900 and verify the text sits in the upper third, not the middle
-5. Reference existing pages: `etsy-8x10-print-size` (size hero), `how-to-price-etsy-printables` (guide hero)
+4. After creating any hero, take a Playwright screenshot at 1440×900 and verify: title in upper third, trust pills visible, visual element renders
+5. Reference existing pages: `etsy-8x10-print-size` (size hero), `etsy-gallery-wall-print-sizes` (niche hero with compact padding)
+6. **See also LESSON-052** for full hero + OG verification checklist (mandatory pipeline step)
 
 ### LESSON-034: Never put API keys or secrets in committed files (2026-03-19)
 - **Trigger:** PostHog personal API key was included in `docs/APP_PARTNER_TRACKING_SPEC.md`, committed and pushed. GitHub detected it and PostHog auto-revoked the key.
@@ -407,6 +408,31 @@ Never use "SnapToSize Support" for partnership or business development emails. "
 - Generic trust signals (feature lists, guarantees, "Built for Etsy sellers")
 **Testimonials are a future feature** — re-add the section only when real users provide approved quotes.
 Fake reviews violate FTC guidelines and destroy trust. This is a hard rule.
+
+### LESSON-052: Verify hero and OG visuals with Playwright after every new page (2026-03-25)
+**Trigger:** Gallery wall page hero pushed trust pills below the viewport. Only caught during manual user review, not by the pipeline.
+**Rule:** After creating any new SEO page, the pipeline verify stage MUST:
+1. **Hero viewport check** — Take a Playwright screenshot at 1440×900. Verify:
+   - H1 title is in the upper half of the viewport (not pushed down)
+   - Trust pills / checkmarks are fully visible within the initial viewport
+   - The CSS visual element (blueprint, frames, etc.) renders correctly and doesn't overlap text
+   - Hero doesn't leave excessive white/empty space at the bottom
+2. **Hero mobile check** — Take a screenshot at 390×844 (iPhone). Verify H1 and CTA button are visible without scrolling.
+3. **OG image check** — Generate OG screenshot at 1200×630 and verify:
+   - Page title text is legible (not cut off)
+   - Visual element renders at OG resolution
+   - No broken layout or overflow
+4. **Fix before deploying** — If hero is too tall/low, adjust padding (see LESSON-036). If OG is broken, fix layout before push.
+**Pipeline integration:** This is part of the `verify` stage in `/seo-run-week`. The verify agent must use `npx playwright screenshot` and visually inspect results. Do NOT skip this step or mark verify as complete without screenshots.
+
+### LESSON-053: "18,000+ packs" is a marketing stat, not real usage data (2026-03-25)
+**Trigger:** NotebookLM analysis concluded "18k packs / 3 paying = broken conversion funnel" — but the 18k number is a social proof stat on the website, not real production data. This led to a completely wrong diagnosis (conversion problem vs. distribution problem).
+**Rule:** Never use marketing/social proof numbers for strategic analysis. When evaluating business health:
+1. Only use real data from PostHog, Stripe, or Cloudflare analytics
+2. The "18,000+" stat on the site is for visitor trust, not internal decision-making
+3. If a metric seems too clean or round, verify its source before building strategy on it
+4. Current reality: near-zero organic traffic, 3 paying users = pure awareness/distribution problem
+5. Don't optimize conversion (free tier limits, pricing, trials) before you have enough traffic to measure conversion
 
 ### LESSON-050: A0, 24×36, 24×32 removed from packs — single export only (2026-03-24)
 **Trigger:** Large sizes removed from ZIP packs due to file size constraints. They are still available via Quick Export (single file download).

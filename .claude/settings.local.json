@@ -1,26 +1,26 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm install:*)",
-      "Bash(npm run build:*)",
-      "Bash(npm uninstall:*)",
-      "Bash(timeout 10 npm run dev:*)",
-      "Bash(ls:*)",
-      "Bash(wc:*)",
-      "Bash(curl:*)",
-      "Bash(git commit:*)",
-      "Bash(git push:*)",
-      "Bash(git checkout:*)",
-      "Bash(git pull:*)",
-      "Bash(git add:*)",
-      "Bash(git merge:*)",
-      "Bash(git stash:*)",
-      "Bash(npm run dev:*)",
-      "Bash(git reset:*)",
-      "Bash(gh api:*)",
-      "WebFetch(domain:snaptosize.com)",
-      "Bash(taskkill:*)",
-      "Bash(git mv:*)"
+      "Edit",
+      "Write",
+      "Read",
+      "Bash(*)",
+      "WebFetch(*)",
+      "WebSearch",
+      "mcp__notebooklm-mcp__*",
+      "mcp__claude_ai_Canva__*",
+      "mcp__gemini__*",
+      "mcp__plugin_claude-mem_mcp-search__*",
+      "mcp__claude_ai_Sentry__find_organizations",
+      "mcp__claude_ai_Cloudflare_Developer_Platform__workers_list",
+      "mcp__claude_ai_Sentry__search_issues",
+      "mcp__claude_ai_Cloudflare_Developer_Platform__accounts_list",
+      "mcp__claude_ai_Cloudflare_Developer_Platform__set_active_account",
+      "mcp__claude_ai_Cloudflare_Developer_Platform__workers_get_worker",
+      "mcp__claude_ai_Cloudflare_Developer_Platform__workers_get_worker_code"
     ]
-  }
+  },
+  "enabledMcpjsonServers": [
+    "gemini"
+  ]
 }

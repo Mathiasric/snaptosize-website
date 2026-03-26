@@ -1,82 +1,54 @@
 {
   "_fresh": false,
-  "current_week": "W13",
-  "batch_id": "2026-W13",
-  "started_at": "2026-03-23T00:00:00+00:00",
+  "current_week": "W14",
+  "batch_id": "2026-W14",
+  "started_at": "2026-03-26T00:00:00+00:00",
   "target": {
-    "pages": 10
+    "pages": 2
   },
   "stages": {
     "researcher": {
       "status": "completed",
-      "output": "6 briefs produced (2-3-vs-4-5-ratio, etsy-botanical-print-sizes, etsy-8-5x11-print-size, etsy-digital-download-blurry-prints, etsy-a3-print-size, etsy-gallery-wall-print-sizes)"
+      "output": "2 briefs used (etsy-11x14-print-size, etsy-4x6-print-size) — briefs existed from W13 research"
     },
     "writer": {
       "status": "completed",
-      "output": "6 pages written"
+      "output": "2 pages written (parallel subagents)"
     },
     "review": {
       "status": "completed",
-      "output": "build passed, all pages compile (44 total routes)"
+      "output": "build passed, all pages compile (46 total routes, 31 SEO pages)"
     },
     "deploy": {
       "status": "completed",
-      "output": "nav/footer/registry/MILESTONES/CONTENT_PLAYBOOK updated, OG images generated"
+      "output": "nav/footer/registry already included from W13 planning. MILESTONES updated to 31 pages, CONTENT_PLAYBOOK updated."
     },
     "verify": {
       "status": "completed",
-      "output": "Playwright screenshots verified desktop + mobile for both new pages, OG images generated at 1200x630"
+      "output": "Playwright screenshots verified: desktop 1440x900 (hero in viewport, trust pills visible, frame blueprints render), mobile 390x844 (H1 + CTA visible, trust pills visible). Both pages pass LESSON-036/052."
     }
   },
   "content_items": [
     {
-      "slug": "2-3-vs-4-5-ratio",
-      "keyword": "2:3 vs 4:5 ratio",
-      "type": "ratio",
-      "status": "deployed",
-      "brief": "marketing/briefs/2-3-vs-4-5-ratio-brief.md"
-    },
-    {
-      "slug": "etsy-botanical-print-sizes",
-      "keyword": "etsy botanical print sizes",
-      "type": "niche",
-      "status": "deployed",
-      "brief": "marketing/briefs/etsy-botanical-print-sizes-brief.md"
-    },
-    {
-      "slug": "etsy-8-5x11-print-size",
-      "keyword": "etsy 8.5x11 print size",
+      "slug": "etsy-11x14-print-size",
+      "keyword": "etsy 11x14 print size",
       "type": "size",
       "status": "deployed",
-      "brief": null
+      "brief": "marketing/briefs/etsy-11x14-print-size-brief.md"
     },
     {
-      "slug": "etsy-digital-download-blurry-prints",
-      "keyword": "etsy digital download blurry prints",
-      "type": "problem",
-      "status": "deployed",
-      "brief": null
-    },
-    {
-      "slug": "etsy-a3-print-size",
-      "keyword": "etsy a3 print size",
+      "slug": "etsy-4x6-print-size",
+      "keyword": "etsy 4x6 print size",
       "type": "size",
       "status": "deployed",
-      "brief": "marketing/briefs/etsy-a3-print-size-brief.md"
-    },
-    {
-      "slug": "etsy-gallery-wall-print-sizes",
-      "keyword": "etsy gallery wall print sizes",
-      "type": "niche",
-      "status": "deployed",
-      "brief": "marketing/briefs/etsy-gallery-wall-print-sizes-brief.md"
+      "brief": "marketing/briefs/etsy-4x6-print-size-brief.md"
     }
   ],
   "metrics": {
-    "total": 6,
-    "completed": 6,
+    "total": 2,
+    "completed": 2,
     "failed": 0,
     "success_rate": 1.0
   },
-  "updated_at": "2026-03-25T00:00:00+00:00"
+  "updated_at": "2026-03-26T00:00:00+00:00"
 }

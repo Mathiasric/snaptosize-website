@@ -202,10 +202,41 @@ R2_PUBLIC_URL=https://social.snaptosize.com
 
 ### What `/seo-run-week` Does
 
-1. `content-researcher` agent generates keyword briefs
-2. `seo-writer` agent converts briefs into Next.js page implementation prompts
-3. Claude Code deploys pages to marketing site repo
-4. Post-deploy: OG image generation, schema validation
+| Stage | What happens | Owner |
+|-------|-------------|-------|
+| 1. **Research** | `content-researcher` agents generate keyword briefs (parallel) | Subagents |
+| 2. **Write** | `seo-writer` agents convert briefs into Next.js pages (parallel) | Subagents |
+| 3. **Review** | `npx next build` — verify all routes compile, zero errors | Main agent |
+| 4. **Deploy** | Update Header, Footer, page-registry, pipeline state, MILESTONES, CONTENT_PLAYBOOK. Git commit + push | Main agent |
+| 5. **Verify** | **Visual QA with Playwright** (see checklist below). Fix issues before marking complete | Main agent |
+
+#### Verify Stage Checklist (LESSON-052)
+
+The verify stage is **mandatory** — do not skip or mark complete without screenshots.
+
+For each new page, run these Playwright checks:
+
+1. **Hero viewport (desktop)** — `npx playwright screenshot --viewport-size="1440,900" <url> <output.png>`
+   - H1 title visible in upper half of viewport
+   - Trust pills / checkmarks fully visible without scrolling
+   - CSS visual element renders correctly, no overlap with text
+   - No excessive empty space at bottom of hero
+
+2. **Hero viewport (mobile)** — `npx playwright screenshot --viewport-size="390,844" <url> <output.png>`
+   - H1 and CTA button visible without scrolling
+   - Visual element hidden or adapted for mobile
+
+3. **OG image** — `npx playwright screenshot --viewport-size="1200,630" <url> <output.png>`
+   - Page title legible and not cut off
+   - Visual element renders at OG dimensions
+   - No broken layout or overflow
+
+4. **Content spot-check** — Scroll through full page and verify:
+   - Internal links point to correct pages (LESSON-045)
+   - Tables render correctly on desktop
+   - No broken or overlapping elements
+
+**If any check fails:** Fix the issue (hero padding, link href, layout) and re-screenshot before completing the verify stage.
 
 **State:** `marketing/queue/seo-pipeline-state.json`
 **Briefs:** `marketing/briefs/`

@@ -12,7 +12,7 @@ import RelatedPages from "@/components/RelatedPages";
 export const metadata: Metadata = {
   title: "11×14 Print Size for Etsy — Pixels, DPI & Frame Guide",
   description:
-    "11×14 is NOT 4:5 ratio. Get exact pixel dimensions at 300 DPI (3300×4200), 11:14 aspect ratio specs, 16×20 frame matting guide, and file setup for Etsy digital downloads.",
+    "11×14 print specs for Etsy: 3300×4200 px at 300 DPI, 11:14 ratio (not 4:5), 16×20 frame matting, and file setup for digital downloads.",
   alternates: { canonical: "https://snaptosize.com/etsy-11x14-print-size" },
   openGraph: {
     title:
@@ -46,8 +46,8 @@ export default function Etsy11x14PrintSizePage() {
     description:
       "Complete technical guide to 11×14 print dimensions for Etsy sellers, including exact pixel dimensions at 300 DPI, 11:14 aspect ratio specs, 16×20 frame matting, and file requirements.",
     url: "https://snaptosize.com/etsy-11x14-print-size",
-    datePublished: "2026-03-21",
-    dateModified: "2026-03-21",
+    datePublished: "2026-03-26",
+    dateModified: "2026-03-26",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -89,7 +89,7 @@ export default function Etsy11x14PrintSizePage() {
         name: "What pixel dimensions do I need for an 11×14 print at 300 DPI?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "3300×4200 pixels exactly. Multiply each dimension by 300: 11×300=3300, 14×300=4200. As a JPG / JPEG, the file stays well under Etsy's 20 MB limit.",
+          text: "3300×4200 pixels exactly. Multiply each dimension by 300: 11×300=3300, 14×300=4200. Typical JPEG file size: 4-7 MB — well under Etsy's 20 MB limit.",
         },
       },
       {
@@ -209,14 +209,14 @@ export default function Etsy11x14PrintSizePage() {
               </div>
             </div>
 
-            {/* Tick marks — top edge (11 ticks for 11 inches) */}
+            {/* Tick marks — top edge (12 ticks for 11 inches) */}
             <div className="absolute top-0 left-0 right-0 flex justify-between px-3">
               {[...Array(12)].map((_, i) => (
                 <div key={`tt-${i}`} className="w-px h-1.5 bg-white/[0.06]" />
               ))}
             </div>
 
-            {/* Tick marks — left edge (14 ticks for 14 inches) */}
+            {/* Tick marks — left edge (15 ticks for 14 inches) */}
             <div className="absolute top-0 bottom-0 left-0 flex flex-col justify-between py-3">
               {[...Array(15)].map((_, i) => (
                 <div key={`tl-${i}`} className="h-px w-1.5 bg-white/[0.06]" />
@@ -317,6 +317,10 @@ export default function Etsy11x14PrintSizePage() {
                     <span className="text-foreground-60">Aspect Ratio</span>
                     <span className="font-semibold">11:14 (0.786) &mdash; not 4:5</span>
                   </div>
+                  <div className="flex justify-between items-center border-b border-white/10 pb-3">
+                    <span className="text-foreground-60">Megapixels</span>
+                    <span className="font-semibold">13.86 MP</span>
+                  </div>
                   <div className="flex justify-between items-center">
                     <span className="text-foreground-60">Color Profile</span>
                     <span className="font-semibold">sRGB</span>
@@ -327,11 +331,14 @@ export default function Etsy11x14PrintSizePage() {
               <p className="text-foreground-60 mb-4">
                 The calculation: multiply each dimension in inches by 300.
                 11&nbsp;&times;&nbsp;300&nbsp;=&nbsp;3300 pixels wide,
-                14&nbsp;&times;&nbsp;300&nbsp;=&nbsp;4200 pixels tall.
+                14&nbsp;&times;&nbsp;300&nbsp;=&nbsp;4200 pixels tall. That
+                gives you 13.86 megapixels &mdash; any modern camera or design
+                tool handles this comfortably.
               </p>
               <p className="text-foreground-60 mb-4">
-                As a JPG / JPEG, the file stays well under Etsy&apos;s
-                20&nbsp;MB limit.
+                As a JPG (also called JPEG), the file typically weighs 4&ndash;7&nbsp;MB
+                &mdash; well under Etsy&apos;s 20&nbsp;MB limit, even when
+                bundled with other sizes in a ZIP.
               </p>
               <p className="text-foreground-60">
                 The critical detail most guides miss: 11:14 is{" "}
@@ -576,6 +583,24 @@ export default function Etsy11x14PrintSizePage() {
                 </Link>
                 .
               </p>
+              <p className="text-foreground-60 mb-4">
+                Sellers expanding to larger formats often add{" "}
+                <Link
+                  href="/etsy-18x24-print-size"
+                  className="text-accent-light hover:underline"
+                >
+                  18&times;24
+                </Link>{" "}
+                and{" "}
+                <Link
+                  href="/etsy-24x36-print-size"
+                  className="text-accent-light hover:underline"
+                >
+                  24&times;36
+                </Link>{" "}
+                for buyers who want large-scale statement pieces. Covering small
+                through large sizes in one listing maximizes perceived value.
+              </p>
               <p className="text-foreground-60">
                 For a broader overview of what files buyers expect, check{" "}
                 <Link
@@ -583,6 +608,14 @@ export default function Etsy11x14PrintSizePage() {
                   className="text-accent-light hover:underline"
                 >
                   what files to include in an Etsy digital download
+                </Link>
+                . For the full list of all Etsy print sizes and their pixel
+                dimensions, see the{" "}
+                <Link
+                  href="/etsy-print-sizes"
+                  className="text-accent-light hover:underline"
+                >
+                  complete Etsy print sizes guide
                 </Link>
                 .
               </p>
@@ -601,10 +634,10 @@ export default function Etsy11x14PrintSizePage() {
                   </h3>
                   <p className="text-foreground-60">
                     JPG (also called JPEG) is the standard for Etsy print files. At
-                    11&times;14, a JPG / JPEG stays well under Etsy&apos;s
-                    20&nbsp;MB limit, even when bundled with other sizes.
-                    PNG files are typically 3-5&times; larger with no visible
-                    print quality benefit.
+                    11&times;14, a JPEG typically weighs 4&ndash;7&nbsp;MB &mdash;
+                    well under Etsy&apos;s 20&nbsp;MB limit, even when bundled
+                    with other sizes. PNG files are typically 3&ndash;5&times;
+                    larger with no visible print quality benefit.
                   </p>
                 </div>
 
@@ -645,7 +678,7 @@ export default function Etsy11x14PrintSizePage() {
                 <ul className="space-y-2 text-foreground-60">
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-green-400 flex-shrink-0 mt-1" />
-                    <span>Use JPG / JPEG, not PNG &mdash; 5&ndash;10&times; smaller files</span>
+                    <span>Use JPEG, not PNG &mdash; 3&ndash;5&times; smaller files</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-green-400 flex-shrink-0 mt-1" />
@@ -852,7 +885,7 @@ export default function Etsy11x14PrintSizePage() {
                 </h3>
                 <p className="text-sm text-foreground-60 mb-5">
                   Get 3300&times;4200&nbsp;px files (and every other Etsy size)
-                  in seconds. No Photoshop math required.
+                  in seconds. No manual math required.
                 </p>
                 <a href={appUrl} target="_blank" rel="noopener noreferrer">
                   <Button className="text-sm px-6 py-2.5">
@@ -900,7 +933,7 @@ export default function Etsy11x14PrintSizePage() {
               <FinalCTA
                 heading="Add 11×14 to Every Listing"
                 stat="70+ print-ready files from a single upload"
-                description="Upload once, get 11×14 plus all popular Etsy sizes at 300 DPI. Production-ready files in seconds, not hours."
+                description="Upload once, get 11×14 plus all popular Etsy sizes at 300 DPI. Production-ready files in seconds, not hours. See pricing for Pro features."
                 buttonText="Start Free — Generate Sizes Now"
                 appUrl={appUrl}
               />
@@ -917,7 +950,7 @@ export default function Etsy11x14PrintSizePage() {
                     question:
                       "What pixel dimensions do I need for an 11×14 print at 300 DPI?",
                     answer:
-                      "3300×4200 pixels exactly. Multiply each dimension by 300: 11×300 = 3300 pixels wide, 14×300 = 4200 pixels tall. As a JPG / JPEG, the file stays well under Etsy's 20 MB limit.",
+                      "3300×4200 pixels exactly. Multiply each dimension by 300: 11×300 = 3300 pixels wide, 14×300 = 4200 pixels tall. Typical JPEG file size: 4-7 MB — well under Etsy's 20 MB limit.",
                   },
                   {
                     question: "What aspect ratio is 11×14?",
