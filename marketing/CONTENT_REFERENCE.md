@@ -64,12 +64,17 @@ Upload one high-resolution image → receive ready-to-sell print size ZIP packs 
 **Total: 28 sizes across 5 packs (7 + 5 + 5 + 5 + 6 = 28), all at 300 DPI, JPEG, organized ZIP structure.**
 
 ### Marketing Language — How to Present Sizes
-- **Headlines / CTAs:** "Up to 70 print-ready files from one upload" (31 portrait + 31 landscape + 8 square)
+
+**Core principle:** Packs and Quick Export are ONE product, not two. Never present them as separate features. The buyer gets everything from one upload.
+
+- **Headlines / CTAs:** "One upload → up to 70 print-ready files" or "30+ sizes from one upload"
+- **Supporting detail:** "5 organized ZIP packs + bonus sizes in Quick Export"
+- **Pack spotlight images:** Show the pack sizes in the visual, then add "+ more sizes in Quick Export" in the image footer or caption
 - **Casual / social:** "30+ sizes" (31 unique sizes rounds naturally)
-- **Pack detail:** "28 sizes in 5 organized packs" (when specifically discussing ZIP packs)
+- **Full value statement:** "Up to 70 files — 5 ZIP packs in portrait & landscape, plus square and oversized formats in Quick Export"
 - **Always mention:** "portrait & landscape" as a value multiplier — each size comes in both orientations
 - **Never say:** "28 sizes" as a headline — it undersells the full value. Lead with 70 files or 30+ sizes.
-- **Single export value add:** "plus 8 square sizes and 3 oversized formats via single export"
+- **Never separate:** Don't present packs and Quick Export as different products. It's one upload, one tool, all sizes.
 
 ### Single Export Only — Large Sizes (removed from packs)
 Available in Quick Export mode, not in ratio packs:

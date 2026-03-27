@@ -116,6 +116,16 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-quote-wall-art-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                  Quote Wall Art Sizes
+                </Link>
+              </li>
+              <li>
+                <Link href="/etsy-20x30-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                  20×30 Print Size
+                </Link>
+              </li>
+              <li>
                 <Link href="/etsy-print-ratios" className="transition-colors hover:text-accent-light">
                   Etsy Print Ratios
                 </Link>

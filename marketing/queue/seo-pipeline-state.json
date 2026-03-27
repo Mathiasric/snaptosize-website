@@ -1,47 +1,47 @@
 {
   "_fresh": false,
-  "current_week": "W14",
-  "batch_id": "2026-W14",
-  "started_at": "2026-03-26T00:00:00+00:00",
+  "current_week": "W15",
+  "batch_id": "2026-W15",
+  "started_at": "2026-03-27T00:00:00+00:00",
   "target": {
     "pages": 2
   },
   "stages": {
     "researcher": {
       "status": "completed",
-      "output": "2 briefs used (etsy-11x14-print-size, etsy-4x6-print-size) — briefs existed from W13 research"
+      "output": "2 briefs created (etsy-quote-wall-art-sizes, etsy-20x30-print-size) — parallel subagents with keyword research + backlink discovery"
     },
     "writer": {
       "status": "completed",
-      "output": "2 pages written (parallel subagents)"
+      "output": "2 pages written (parallel subagents) — quote wall art niche page + 20x30 size page"
     },
     "review": {
       "status": "completed",
-      "output": "build passed, all pages compile (46 total routes, 31 SEO pages)"
+      "output": "build passed, all pages compile (48 total routes, 33 SEO pages)"
     },
     "deploy": {
       "status": "completed",
-      "output": "nav/footer/registry already included from W13 planning. MILESTONES updated to 31 pages, CONTENT_PLAYBOOK updated."
+      "output": "Header.tsx, Footer.tsx, page-registry.json updated. MILESTONES updated to 33 pages. OG images generated for both pages."
     },
     "verify": {
       "status": "completed",
-      "output": "Playwright screenshots verified: desktop 1440x900 (hero in viewport, trust pills visible, frame blueprints render), mobile 390x844 (H1 + CTA visible, trust pills visible). Both pages pass LESSON-036/052."
+      "output": "Playwright verified. Post-deploy polish: hero spacing, trust pills (70 files / 5 packs / portrait+landscape+square), CTA copy, Quick Export formulation, 20x30 positioning vs 24x36. Backlinks added from 4 existing pages (2-3-vs-4-5, 24x36, print-sizes, 11x14)."
     }
   },
   "content_items": [
     {
-      "slug": "etsy-11x14-print-size",
-      "keyword": "etsy 11x14 print size",
-      "type": "size",
+      "slug": "etsy-quote-wall-art-sizes",
+      "keyword": "etsy quote wall art sizes",
+      "type": "niche",
       "status": "deployed",
-      "brief": "marketing/briefs/etsy-11x14-print-size-brief.md"
+      "brief": "marketing/briefs/etsy-quote-wall-art-sizes-brief.md"
     },
     {
-      "slug": "etsy-4x6-print-size",
-      "keyword": "etsy 4x6 print size",
+      "slug": "etsy-20x30-print-size",
+      "keyword": "etsy 20x30 print size",
       "type": "size",
       "status": "deployed",
-      "brief": "marketing/briefs/etsy-4x6-print-size-brief.md"
+      "brief": "marketing/briefs/etsy-20x30-print-size-brief.md"
     }
   ],
   "metrics": {
@@ -50,5 +50,5 @@
     "failed": 0,
     "success_rate": 1.0
   },
-  "updated_at": "2026-03-26T00:00:00+00:00"
+  "updated_at": "2026-03-27T00:00:00+00:00"
 }

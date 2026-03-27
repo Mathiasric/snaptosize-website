@@ -1116,7 +1116,7 @@ export default function EtsyPrintSizesPage() {
                         <>
                           Inside each pack: typically 4&ndash;8 sizes ranging from
                           small prints (4&times;6, 8&times;10) to large posters
-                          (20&times;30, 24&times;36). Buyers get instant choice. You
+                          (<Link href="/etsy-20x30-print-size" className="text-accent-light hover:underline">20&times;30</Link>, <Link href="/etsy-24x36-print-size" className="text-accent-light hover:underline">24&times;36</Link>). Buyers get instant choice. You
                           get zero &ldquo;can I get this in…&rdquo; messages.
                         </>
                       ),

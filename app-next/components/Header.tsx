@@ -137,6 +137,9 @@ export function Header() {
                     <Link href="/etsy-gallery-wall-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Gallery Wall Print Sizes
                     </Link>
+                    <Link href="/etsy-quote-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Quote Wall Art Sizes
+                    </Link>
                   </div>
                 </div>
                 <div className="pt-2 mt-2 border-t border-border/50">
@@ -176,6 +179,9 @@ export function Header() {
                       </Link>
                       <Link href="/etsy-8-5x11-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         8.5&times;11 US Letter
+                      </Link>
+                      <Link href="/etsy-20x30-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                        20&times;30 Print Size
                       </Link>
                       <Link href="/2-3-vs-4-5-ratio" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         2:3 vs 4:5 Ratio
@@ -330,6 +336,9 @@ export function Header() {
                         <Link href="/etsy-8-5x11-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           8.5&times;11 US Letter
                         </Link>
+                        <Link href="/etsy-20x30-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          20&times;30 Print Size
+                        </Link>
                         <Link href="/etsy-print-size-calculator" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-[#2DD4BF] hover:text-[#2DD4BF]/80 hover:bg-surface rounded transition-colors focus-ring font-medium">
                           Print Size Calculator
                         </Link>
@@ -345,6 +354,9 @@ export function Header() {
                         </Link>
                         <Link href="/etsy-gallery-wall-print-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Gallery Wall Print Sizes
+                        </Link>
+                        <Link href="/etsy-quote-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Quote Wall Art Sizes
                         </Link>
                         <Link href="/2-3-vs-4-5-ratio" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           2:3 vs 4:5 Ratio

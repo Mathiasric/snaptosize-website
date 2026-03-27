@@ -245,6 +245,22 @@
     "pageType": "niche",
     "keywords": ["etsy gallery wall print sizes", "gallery wall set sizes", "gallery wall art sizes etsy", "gallery wall print arrangement sizes"],
     "cluster": "niches",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-print-size-calculator", "etsy-nursery-wall-art-sizes", "etsy-botanical-print-sizes", "etsy-8x10-print-size", "etsy-11x14-print-size", "etsy-16x20-print-size", "etsy-5x7-print-size", "etsy-12x16-print-size", "etsy-18x24-print-size", "how-many-sizes-etsy-printable", "how-to-package-digital-wall-art-for-etsy", "how-to-resize-images-for-etsy"]
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-print-size-calculator", "etsy-nursery-wall-art-sizes", "etsy-botanical-print-sizes", "etsy-quote-wall-art-sizes", "etsy-8x10-print-size", "etsy-11x14-print-size", "etsy-16x20-print-size", "etsy-5x7-print-size", "etsy-12x16-print-size", "etsy-18x24-print-size", "how-many-sizes-etsy-printable", "how-to-package-digital-wall-art-for-etsy", "how-to-resize-images-for-etsy"]
+  },
+  {
+    "slug": "etsy-quote-wall-art-sizes",
+    "title": "Quote Wall Art Sizes for Etsy",
+    "pageType": "niche",
+    "keywords": ["etsy quote wall art sizes", "typography wall art sizes etsy", "quote print sizes for etsy", "inspirational quote printable sizes"],
+    "cluster": "niches",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-print-size-calculator", "etsy-nursery-wall-art-sizes", "etsy-botanical-print-sizes", "etsy-gallery-wall-print-sizes", "etsy-8x10-print-size", "etsy-11x14-print-size", "etsy-16x20-print-size", "etsy-5x7-print-size", "etsy-18x24-print-size", "etsy-24x36-print-size", "how-many-sizes-etsy-printable", "how-to-package-digital-wall-art-for-etsy", "how-to-resize-images-for-etsy"]
+  },
+  {
+    "slug": "etsy-20x30-print-size",
+    "title": "20×30 Print Size for Etsy",
+    "pageType": "size",
+    "keywords": ["etsy 20x30 print size", "20x30 print pixels at 300 dpi", "20x30 aspect ratio", "20x30 poster print dimensions"],
+    "cluster": "sizes",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "2-3-vs-4-5-ratio", "etsy-24x36-print-size", "etsy-18x24-print-size", "etsy-16x20-print-size", "etsy-4x6-print-size", "etsy-8x10-print-size", "how-to-resize-images-for-etsy", "best-resolution-for-etsy-printables", "best-file-format-etsy-printables", "etsy-digital-download-blurry-prints", "etsy-20mb-file-limit", "how-many-sizes-etsy-printable", "etsy-print-size-calculator"]
   }
 ]

@@ -636,7 +636,7 @@ export default function TwoThreeVsFourFiveRatioPage() {
                   <ul className="space-y-2 text-sm text-foreground-60">
                     <li className="flex items-start gap-2">
                       <ArrowRight className="h-4 w-4 text-purple-400 flex-shrink-0 mt-0.5" />
-                      <span>Large statement pieces (24x36, 20x30)</span>
+                      <span>Large statement pieces (<Link href="/etsy-24x36-print-size" className="text-accent-light hover:underline">24x36</Link>, <Link href="/etsy-20x30-print-size" className="text-accent-light hover:underline">20x30</Link>)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <ArrowRight className="h-4 w-4 text-purple-400 flex-shrink-0 mt-0.5" />

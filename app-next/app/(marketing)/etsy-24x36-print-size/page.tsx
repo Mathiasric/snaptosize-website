@@ -489,7 +489,7 @@ export default function Etsy24x36PrintSizePage() {
                       </td>
                     </tr>
                     <tr className="border-b border-white/10">
-                      <td className="py-3 px-4">20×30</td>
+                      <td className="py-3 px-4"><Link href="/etsy-20x30-print-size" className="text-accent-light hover:underline">20×30</Link></td>
                       <td className="py-3 px-4 text-foreground-60">
                         6000 × 9000
                       </td>

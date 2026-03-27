@@ -60,17 +60,24 @@ Auto-generated from page-registry.json — no manual entry needed.
 
 ---
 
-## Hero Rules (LESSON-036 + LESSON-052)
+## Hero Rules (LESSON-036 + LESSON-052 + LESSON-056 + LESSON-057)
 
 **This is the #1 source of post-write fixes. Get it right the first time.**
 
-- Use **asymmetric padding** — never symmetric `py-`:
-  - Size pages: `pt-14 pb-20 md:pt-20 md:pb-28`
-  - Niche/guide pages: `pt-10 pb-16 md:pt-14 md:pb-24`
+- Hero MUST fill viewport: add `min-h-screen` to the hero `<section>` (LESSON-056)
+- Use **top padding + generous internal spacing** to distribute content (NOT `flex justify-center`):
+  - Niche/guide pages: `min-h-screen pt-[8vh] md:pt-[12vh] pb-16 md:pb-24`
+  - Size pages: `min-h-screen pt-14 pb-20 md:pt-20 md:pb-28`
+- Increase spacing between hero elements to fill the viewport: `mb-5` on labels, `mb-5` on H1, `mb-8` on description, `mb-10` on CTA
 - Trust pills MUST be visible within initial viewport at 1440×900 — no scrolling
 - H1 in upper third of viewport, not centered
 - CSS visual element (right side, `hidden md:block` or `hidden lg:block`) must not overlap text
-- Reference: `etsy-8x10-print-size` (size hero), `etsy-gallery-wall-print-sizes` (niche hero)
+- **Trust pills — no contradicting numbers** (LESSON-057): Use this trio:
+  1. `Up to 70 print-ready files` (biggest impact number)
+  2. `All 5 ratio packs` (coverage)
+  3. `Portrait, landscape & square` (explains WHY 70)
+  - NEVER show "30+ sizes" and "70 files" in the same pill row
+- Reference: `etsy-8x10-print-size` (size hero), `etsy-quote-wall-art-sizes` (niche hero)
 
 ---
 
@@ -99,7 +106,7 @@ Auto-generated from page-registry.json — no manual entry needed.
   heading="..."
   stat="Up to 70 files from a single upload"
   description="..."
-  buttonText="Start Free — Generate Sizes Now"
+  buttonText="Generate All Sizes Free"
   appUrl={appUrl}
 />
 ```
@@ -142,6 +149,7 @@ Auto-generated from page-registry.json — no manual entry needed.
 - Never condescending
 - SnapToSize mentioned as solution, never as pitch
 - "you" not "one" — conversational but professional
+- **Informational first, conversion second** (LESSON-058): Educational content must stand alone as the best answer to the search query. Product jargon ("Quick Export", "ZIP pack", "ratio pack") belongs ONLY in CTA sections and comparison tables — never in H1, subtitle, or educational body paragraphs.
 
 **Do NOT write:**
 - "In this article, we will..." — just start
@@ -149,6 +157,7 @@ Auto-generated from page-registry.json — no manual entry needed.
 - Generic advice that applies to any ecommerce platform
 - Redundant descriptions that repeat the heading
 - Measurement details readers don't need (wall span calculations, furniture dimensions)
+- Product-specific terms in educational sections (save for CTAs)
 
 ---
 
@@ -167,3 +176,6 @@ Before returning the page, verify:
 - [ ] datePublished and dateModified set to TODAY's date
 - [ ] canonical URL matches the slug
 - [ ] No fake MB file sizes, no competitor tutorials, no "28 sizes" in marketing copy
+- [ ] Trust pills use the standard trio (70 files / 5 packs / orientations) — no contradicting numbers
+- [ ] No product jargon in educational sections (Quick Export, ZIP pack, ratio pack → CTA sections only)
+- [ ] Hero fills viewport (`min-h-screen`) with content near top (not vertically centered)

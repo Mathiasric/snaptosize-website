@@ -40,7 +40,7 @@ SnapToSize is a SaaS tool for Etsy sellers selling digital wall art / printables
 
 - **Product:** Live and production-stable as of 2026-03-03
 - **First paying customer:** 2026-03-03
-- **Paying users:** 3 — MRR $32 (2 monthly + 1 yearly). Revenue 2026-03-23: $109 ($97 yearly + $11.99 monthly)
+- **Paying users:** 4 — MRR $44 (3 monthly + 1 yearly)
 - **SEO pages live:** 27 (11 size, 8 guide, 5 hub/problem, 2 niche, 1 interactive tool)
 - **Pack system:** 28 sizes across 5 ratio packs + 8 square + 3 large via single export = up to 70 files from one upload
 - **Interactive tools:** Print Size Calculator live (`/etsy-print-size-calculator`) — crop analysis, DPI checker, size reference
@@ -64,6 +64,10 @@ SnapToSize is a SaaS tool for Etsy sellers selling digital wall art / printables
 - 10–200 listings OR consistent sales history
 - Already earns > $500/mo (not beginners)
 - **Pain points:** resizing, packaging, naming, Etsy upload compliance
+
+## Validated Sub-Niches (from real customers)
+
+- **Quote / typography wall art** — High-volume sellers with dozens of designs (e.g. motivational quotes, lettering art). Export from Illustrator/Photoshop artboards, need every size for each design. Power users: select all packs, professional 300 DPI source files (30+ MB PNGs). Ideal Pro candidates. *(Observed 2026-03-26: paying customer uploading "quote2 - Artboard 8.png" at 31.3 MB, all packs selected.)*
 
 ## Secondary ICP
 
@@ -234,7 +238,7 @@ All pages have: Article + BreadcrumbList + FAQPage schema, 3+ CTAs, shared Email
 ### High-Priority Pages (Next to build)
 
 **Ratio comparisons:** 2:3-vs-3:4, 4:5-vs-3:4, etc. (10 planned)
-**Niche verticals:** botanical, minimalist, wedding, abstract (10 planned)
+**Niche verticals:** quote/typography art, botanical, minimalist, wedding, abstract (10 planned)
 **Comparison pages:** vs-canva, vs-photoshop (10 planned)
 **Problem-based:** "etsy file too big", "etsy dpi error" (5+ planned)
 **Broader reach:** printable-wall-art-sizes, how-to-create-etsy-listing-files

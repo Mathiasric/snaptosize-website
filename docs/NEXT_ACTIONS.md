@@ -55,8 +55,9 @@
 
 ### 4. SEO Pages — Continue Building (2/day target)
 **Why:** Long game. Won't rank for 3-6 months but compounding traffic is the endgame.
-**Status:** 29 live. Briefs ready for A3 + gallery wall (deployed). Queue: ratio comparisons, niche verticals, comparison pages.
+**Status:** 31 live. Queue: niche verticals, ratio comparisons, comparison pages.
 - [ ] Deploy 2 pages this week minimum
+- [ ] **Priority niche page:** `etsy-quote-wall-art-sizes` — validated by real paying customer (quote/typography art seller, all packs, 31 MB source files). Big Etsy category.
 - [ ] Focus on comparison pages (vs-canva, vs-photoshop) — these capture buyers, not browsers
 - [ ] Cross-link all new pages to existing ones
 

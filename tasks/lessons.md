@@ -442,3 +442,55 @@ Fake reviews violate FTC guidelines and destroy trust. This is a hard rule.
 - A0 in the ISO pack (pack is now 5 sizes: A5 through A1)
 General mentions of these as popular print sizes (e.g., "24×36 is the top poster size") are fine — just don't claim they're in the ZIP packs.
 Total pack sizes: 28 (was 31). Lead with "70 files" or "30+ sizes" in marketing. Use "28 in packs" only when detailing ZIP structure.
+
+### LESSON-054: Present packs + Quick Export as ONE product, not two (2026-03-26)
+**Trigger:** Pack spotlight posts only showed pack sizes without mentioning Quick Export. Missed value.
+**Rule:** Packs and Quick Export are one product — one upload, all sizes. Never present them separately.
+1. **Pack spotlight images:** Show the pack sizes in the visual + add "+ more sizes in Quick Export" in the image footer
+2. **Captions:** Include one line like "Plus A0, 24×36, square sizes and more in Quick Export"
+3. **Headlines:** "One upload → up to 70 print-ready files" or "30+ sizes from one upload"
+4. **Supporting detail:** "5 organized ZIP packs + bonus sizes in Quick Export"
+5. **Full value:** "Up to 70 files — 5 ZIP packs in portrait & landscape, plus square and oversized formats in Quick Export"
+6. **Never** frame Quick Export as a separate tool or secondary feature. It's all part of one upload flow.
+
+### LESSON-055: Quote/typography art is a validated high-value sub-niche (2026-03-26)
+**Trigger:** Real paying customer uploading "quote2 - Artboard 8.png" (31.3 MB), all 5 packs selected. Professional designer with multi-artboard workflow.
+**Insight:** Quote/typography wall art sellers are power users — dozens of designs, every size needed per design, professional source files from Illustrator/Photoshop. Ideal Pro candidates.
+**Action:** Added to GROWTH_STATE.md as validated sub-niche. Prioritized in SEO niche vertical queue (ahead of botanical/minimalist). SEO page opportunity: `/etsy-quote-wall-art-sizes`.
+
+### LESSON-056: Hero must fill viewport WITHOUT centering content (2026-03-27)
+**Trigger:** Quote wall art hero used `min-h-screen flex justify-center` which dead-centered content, looking off vs other pages.
+**Rule:** Use `min-h-screen` with top padding (matching page type pattern) to fill viewport. Content sits near the top with generous spacing between elements. Never use `flex justify-center` on heroes — it looks unnatural.
+- Niche pages: `pt-[8vh] md:pt-[12vh] pb-16 md:pb-24`
+- Size pages: `pt-14 pb-20 md:pt-20 md:pb-28`
+- Increase internal spacing (mb-5, mb-8, mb-10) to distribute content into the vertical space.
+
+### LESSON-057: Trust pills must not show contradicting numbers (2026-03-27)
+**Trigger:** Trust pills showed "30+ sizes" AND "Up to 70 files per upload" side by side, creating confusion (is it 30 or 70?).
+**Rule:** Lead with the biggest number. Use three pills that tell a coherent story:
+1. **Up to 70 print-ready files** (the output — biggest impact number)
+2. **All 5 ratio packs** (the coverage)
+3. **Portrait, landscape & square** (explains WHY 70 files, not a second number)
+Never put "30+ sizes" and "70 files" in the same pill row.
+
+### LESSON-058: Keep product jargon out of educational content (2026-03-27)
+**Trigger:** 20×30 hero subtitle said "plus 24×36 via Quick Export" — product-specific jargon a first-time visitor won't understand.
+**Rule:** SEO guides are informational first, conversion second. Product-specific terms ("Quick Export", "ZIP pack", "ratio pack") belong ONLY in CTA sections and comparison tables where they're explained in context. Educational H1/subtitle/body should read naturally for someone who's never heard of SnapToSize.
+- Hero subtitle: describe the topic ("the largest standard 2:3 poster size"), not the product feature
+- CTA sections: product language is fine ("Upload once, get all 5 ratio packs")
+- Comparison tables: explain product terms in context
+
+### LESSON-059: OG images must be generated during pipeline deploy stage (2026-03-27)
+**Trigger:** Both new pages shipped without OG images — caught during manual review.
+**Rule:** The deploy stage must generate OG images (1200×630) for every new page using Playwright. Add to deploy checklist:
+1. Header/Footer links
+2. Page registry
+3. OG image generation (Playwright HTML → screenshot)
+4. MILESTONES update
+
+### LESSON-060: Backlinks from existing pages must be added during deploy stage (2026-03-27)
+**Trigger:** Briefs identified backlink targets (existing pages mentioning "20×30", "typography") but the pipeline never implemented them. Both new pages had zero inbound links from existing pages.
+**Rule:** The deploy stage must search existing pages for unlinked mentions of the new page's topic and add `<Link>` tags. Minimum 2-3 inbound links per new page from existing content. Check:
+- Size pages: search for the size number (e.g., "20×30", "20x30") across all pages
+- Niche pages: search for the niche term (e.g., "quote", "typography") across all pages
+- Use `grep` to find mentions, then add links in the most natural positions.

@@ -460,7 +460,7 @@ export default function Etsy11x14PrintSizePage() {
                   <span>
                     <strong>Cropping:</strong> ~1.8% sliced off the left and
                     right edges. Fine for abstract art, problematic for
-                    typography or bordered designs.
+                    <Link href="/etsy-quote-wall-art-sizes" className="text-accent-light hover:underline">typography</Link> or bordered designs.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
