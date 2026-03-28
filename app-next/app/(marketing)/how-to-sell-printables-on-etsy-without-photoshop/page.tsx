@@ -444,7 +444,14 @@ export default function HowToSellPrintablesWithoutPhotoshopPage() {
                 generators, or anything else that exports an image file.
                 The design tool doesn&apos;t matter. What matters is the
                 next step: turning that single design into the 30 print
-                sizes Etsy buyers expect.
+                sizes Etsy buyers expect. See our{" "}
+                <Link
+                  href="/snaptosize-vs-canva"
+                  className="text-accent-light hover:underline"
+                >
+                  full Canva vs SnapToSize comparison
+                </Link>{" "}
+                for how the two tools complement each other.
               </p>
 
               <Card className="p-5 bg-amber-500/5 border-amber-500/10">

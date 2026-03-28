@@ -877,8 +877,14 @@ export default function HowToResizeImagesForEtsyPage() {
               <p className="text-foreground-60 mb-4">
                 Photoshop Actions can automate some of the process, but they
                 don&apos;t handle different aspect ratios &mdash; they either
-                crop or distort. Canva requires creating 30 separate designs per
-                artwork.
+                crop or distort.{" "}
+                <Link
+                  href="/snaptosize-vs-canva"
+                  className="text-accent-light hover:underline"
+                >
+                  Canva requires creating 30 separate designs
+                </Link>{" "}
+                per artwork.
               </p>
               <p className="text-foreground-60">
                 Tools like SnapToSize solve this by generating all sizes from one

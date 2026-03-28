@@ -912,7 +912,14 @@ export default function EtsyBotanicalPrintSizesPage() {
               <p className="text-foreground-60 mt-6">
                 The takeaway: one size list doesn&apos;t fit every botanical
                 style. If you sell vintage botanicals, lean heavily into 2:3.
-                If you sell minimalist line art, prioritize 4:5. If you sell
+                If you sell{" "}
+                <Link
+                  href="/etsy-minimalist-wall-art-sizes"
+                  className="text-accent-light hover:underline"
+                >
+                  minimalist line art
+                </Link>
+                , prioritize 4:5. If you sell
                 across sub-niches, include all ratio packs. For more on{" "}
                 <Link
                   href="/how-many-sizes-etsy-printable"

@@ -256,6 +256,22 @@
     "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-print-size-calculator", "etsy-nursery-wall-art-sizes", "etsy-botanical-print-sizes", "etsy-gallery-wall-print-sizes", "etsy-8x10-print-size", "etsy-11x14-print-size", "etsy-16x20-print-size", "etsy-5x7-print-size", "etsy-18x24-print-size", "etsy-24x36-print-size", "how-many-sizes-etsy-printable", "how-to-package-digital-wall-art-for-etsy", "how-to-resize-images-for-etsy"]
   },
   {
+    "slug": "etsy-minimalist-wall-art-sizes",
+    "title": "Minimalist Wall Art Sizes for Etsy",
+    "pageType": "niche",
+    "keywords": ["minimalist wall art sizes etsy", "minimalist print sizes", "minimalist art sizing guide", "japandi print sizes", "scandinavian wall art sizes"],
+    "cluster": "niches",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-print-size-calculator", "etsy-nursery-wall-art-sizes", "etsy-botanical-print-sizes", "etsy-gallery-wall-print-sizes", "etsy-quote-wall-art-sizes", "etsy-8x10-print-size", "etsy-16x20-print-size", "etsy-24x36-print-size", "etsy-a4-print-size", "etsy-a3-print-size", "etsy-11x14-print-size", "how-many-sizes-etsy-printable", "how-to-resize-images-for-etsy", "2-3-vs-4-5-ratio"]
+  },
+  {
+    "slug": "snaptosize-vs-canva",
+    "title": "SnapToSize vs Canva for Etsy Print Resizing",
+    "pageType": "comparison",
+    "keywords": ["snaptosize vs canva", "canva etsy print resizing", "canva alternative etsy prints", "resize etsy prints without canva"],
+    "cluster": "comparisons",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "how-to-resize-images-for-etsy", "how-to-sell-printables-on-etsy-without-photoshop", "etsy-print-size-calculator", "how-many-sizes-etsy-printable", "what-files-to-include-etsy-digital-download", "how-to-package-digital-wall-art-for-etsy", "best-resolution-for-etsy-printables", "how-to-price-etsy-printables", "etsy-20mb-file-limit"]
+  },
+  {
     "slug": "etsy-20x30-print-size",
     "title": "20×30 Print Size for Etsy",
     "pageType": "size",

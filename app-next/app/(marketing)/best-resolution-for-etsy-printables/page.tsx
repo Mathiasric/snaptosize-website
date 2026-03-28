@@ -513,7 +513,14 @@ export default function BestResolutionForEtsyPrintablesPage() {
                   <p className="text-foreground-60 text-sm">
                     Download settings &mdash; select &ldquo;PDF Print&rdquo; or
                     enable 300 DPI in export options (Pro may be required for
-                    some formats).
+                    some formats). See our{" "}
+                    <Link
+                      href="/snaptosize-vs-canva"
+                      className="text-accent-light hover:underline"
+                    >
+                      Canva vs SnapToSize comparison
+                    </Link>{" "}
+                    for the full DPI breakdown.
                   </p>
                 </Card>
                 <Card className="p-6">

@@ -140,6 +140,9 @@ export function Header() {
                     <Link href="/etsy-quote-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Quote Wall Art Sizes
                     </Link>
+                    <Link href="/etsy-minimalist-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Minimalist Wall Art Sizes
+                    </Link>
                   </div>
                 </div>
                 <div className="pt-2 mt-2 border-t border-border/50">
@@ -223,6 +226,9 @@ export function Header() {
                   </Link>
                   <Link href="/how-to-price-etsy-printables" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                     How to Price Printables
+                  </Link>
+                  <Link href="/snaptosize-vs-canva" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    SnapToSize vs Canva
                   </Link>
                 </div>
               </div>
@@ -358,6 +364,9 @@ export function Header() {
                         <Link href="/etsy-quote-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Quote Wall Art Sizes
                         </Link>
+                        <Link href="/etsy-minimalist-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Minimalist Wall Art Sizes
+                        </Link>
                         <Link href="/2-3-vs-4-5-ratio" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           2:3 vs 4:5 Ratio
                         </Link>
@@ -388,6 +397,9 @@ export function Header() {
                         </Link>
                         <Link href="/how-to-price-etsy-printables" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           How to Price Printables
+                        </Link>
+                        <Link href="/snaptosize-vs-canva" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          SnapToSize vs Canva
                         </Link>
 
                         {/* Troubleshooting */}

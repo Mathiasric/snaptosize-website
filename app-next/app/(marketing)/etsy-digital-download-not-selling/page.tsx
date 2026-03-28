@@ -476,7 +476,7 @@ export default function EtsyDigitalDownloadNotSellingPage() {
                     <p className="font-semibold mb-1">The fix</p>
                     <p className="text-foreground-60 text-sm">
                       Use long-tail keywords that match buyer intent. Include
-                      your niche (minimalist, boho, nursery), specific sizes
+                      your niche (<Link href="/etsy-minimalist-wall-art-sizes" className="text-accent-light hover:underline">minimalist</Link>, boho, nursery), specific sizes
                       (8x10, 11x14, 16x20), style descriptors (neutral, beige,
                       colorful), and room context (living room, nursery, office).
                       Fill all 13 Etsy tags with specific phrases, not single

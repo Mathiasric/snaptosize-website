@@ -10,46 +10,46 @@ import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "Quote Wall Art Sizes for Etsy \u2014 Sizing Guide",
+  title: "Minimalist Wall Art Sizes for Etsy — Guide",
   description:
-    "Quote wall art sizing guide for Etsy sellers. 30+ sizes across 5 ratio packs, sub-niche breakdowns, and how to generate all sizes from one upload.",
+    "Minimalist wall art sizing guide for Etsy sellers. Best sizes by sub-style, ratio packs, gallery wall sets, and how to resize from one upload.",
   alternates: {
-    canonical: "https://snaptosize.com/etsy-quote-wall-art-sizes",
+    canonical: "https://snaptosize.com/etsy-minimalist-wall-art-sizes",
   },
   openGraph: {
-    title: "Quote Wall Art Sizes for Etsy | SnapToSize",
+    title: "Minimalist Wall Art Sizes for Etsy | SnapToSize",
     description:
-      "30+ sizes for quote and typography wall art. Sub-niche breakdowns, ratio packs, and batch sizing for Etsy sellers.",
-    url: "https://snaptosize.com/etsy-quote-wall-art-sizes",
+      "Best sizes for minimalist wall art on Etsy. Sub-style breakdowns, gallery wall sets, ratio packs, and batch resizing from one upload.",
+    url: "https://snaptosize.com/etsy-minimalist-wall-art-sizes",
     images: [
       {
-        url: "/assets/og/etsy-quote-wall-art-sizes.png",
+        url: "/assets/og/etsy-minimalist-wall-art-sizes.png",
         width: 1200,
         height: 630,
-        alt: "Quote Wall Art Sizes for Etsy \u2014 Sizing Guide",
+        alt: "Minimalist Wall Art Sizes for Etsy — Sizing Guide",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Quote Wall Art Sizes for Etsy \u2014 Sizing Guide",
+    title: "Minimalist Wall Art Sizes for Etsy — Guide",
     description:
-      "30+ sizes for quote and typography wall art. Sub-niche breakdowns, ratio packs, and batch sizing for Etsy sellers.",
-    images: ["/assets/og/etsy-quote-wall-art-sizes.png"],
+      "Best sizes for minimalist wall art on Etsy. Sub-style breakdowns, gallery wall sets, ratio packs, and batch resizing from one upload.",
+    images: ["/assets/og/etsy-minimalist-wall-art-sizes.png"],
   },
 };
 
-export default function EtsyQuoteWallArtSizesPage() {
+export default function EtsyMinimalistWallArtSizesPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "Quote Wall Art Sizes for Etsy \u2014 Every Size, Every Sub-Niche, One Upload",
+      "Minimalist Wall Art Sizes for Etsy — Every Sub-Style, Every Size, One Upload",
     description:
-      "Complete quote and typography wall art sizing guide for Etsy sellers. Covers the 8 must-have sizes, 6 sub-niche breakdowns, all 5 ratio packs, typography-specific sizing tips, and how to generate every size from one upload.",
-    url: "https://snaptosize.com/etsy-quote-wall-art-sizes",
-    datePublished: "2026-03-27",
-    dateModified: "2026-03-27",
+      "Complete minimalist wall art sizing guide for Etsy sellers. Covers best-selling sizes, sub-style breakdowns (line art, abstract, Japandi, Scandinavian, typography, black and white), gallery wall sets, all 5 ratio packs, and how to generate every size from one upload.",
+    url: "https://snaptosize.com/etsy-minimalist-wall-art-sizes",
+    datePublished: "2026-03-28",
+    dateModified: "2026-03-28",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -76,52 +76,46 @@ export default function EtsyQuoteWallArtSizesPage() {
       {
         "@type": "ListItem",
         position: 3,
-        name: "Quote Wall Art Sizes",
-        item: "https://snaptosize.com/etsy-quote-wall-art-sizes",
+        name: "Minimalist Wall Art Sizes",
+        item: "https://snaptosize.com/etsy-minimalist-wall-art-sizes",
       },
     ],
   };
 
   const faqItems = [
     {
-      question: "What is the best size for quote wall art on Etsy?",
+      question: "What is the best-selling minimalist wall art size on Etsy?",
       answer:
-        "8\u00d710 is the best-selling single size for quote art, but top sellers include all 5 ratio packs (30+ sizes) to capture every buyer preference. The more sizes you offer, the more search terms your listing matches.",
+        "8\u00d710 (2400\u00d73000px at 300 DPI) is the top seller overall, but minimalist art over-indexes on large statement sizes. 16\u00d720 and 24\u00d736 perform exceptionally well because buyers use minimalist designs as focal points in curated living spaces. Offering at least 5\u20138 sizes captures the full market.",
     },
     {
       question:
-        "How many sizes should I include in a quote art listing?",
+        "How many sizes should I include in a minimalist art listing?",
       answer:
-        "Include at least 8\u201310 sizes across multiple ratios. Professional sellers offer 30+ sizes covering 2:3, 3:4, 4:5, ISO, and Extras packs. More sizes means higher perceived value and a higher price point.",
+        "Top minimalist art sellers offer 8\u201315 sizes per listing. At minimum, include 5\u00d77, 8\u00d710, 11\u00d714, 16\u00d720, 24\u00d736, A4, and A3. More sizes increase perceived value, reduce \u201cdo you have this in...\u201d messages, and improve Etsy search visibility.",
+    },
+    {
+      question: "Should minimalist prints be portrait or landscape?",
+      answer:
+        "Most minimalist wall art on Etsy is portrait (vertical) orientation, but offering both from the same design can effectively double your catalog. Landscape versions work well for above-sofa placement. SnapToSize generates both portrait and landscape from the same upload.",
     },
     {
       question:
-        "Do I need international sizes (A4, A3) for quote art?",
+        "What sizes work best for minimalist gallery wall sets?",
       answer:
-        "Yes. Quote art has strong international demand, especially in the UK, Europe, and Australia where A-series paper is standard. Including ISO sizes (A5 through A1) opens your listing to global buyers.",
+        "The most popular gallery wall sizes for minimalist sets are 8\u00d710, 11\u00d714, and 16\u00d720 \u2014 all prints in a set should match. Offering the set in 3 size options (small/medium/large) in a single listing maximizes buyer choice. Consistent sizing is even more critical for minimalist sets because the clean aesthetic demands precision.",
     },
     {
       question:
-        "What resolution should quote wall art be for Etsy?",
+        "Do minimalist art buyers need international (A-series) sizes?",
       answer:
-        "300 DPI is the professional print standard. For an 8\u00d710 print, that means 2400\u00d73000 pixels. Higher resolution source files produce better results across all sizes.",
-    },
-    {
-      question: "Should I include square sizes for quote art?",
-      answer:
-        "Yes. Square formats (8\u00d78, 10\u00d710, 12\u00d712) are popular for quote art in Instagram-style gallery walls and modern interiors. Square sizes are available via Quick Export.",
+        "Yes, especially for Scandinavian and Japandi styles that have a strong following in Northern Europe, UK, and Australia. A4 and A3 are standard frame sizes in these markets. Skipping A-series means missing 20\u201330% of potential buyers. SnapToSize\u2019s ISO pack generates A5 through A1 automatically.",
     },
     {
       question:
-        "How do I prevent text from looking distorted across different ratios?",
+        "What resolution do I need for large minimalist prints like 24\u00d736?",
       answer:
-        "Design your quote with generous margins and center the text. SnapToSize uses stretch-only resize (no cropping), which preserves the full composition. Starting with a well-centered design ensures readability across all ratios.",
-    },
-    {
-      question:
-        "Can I resize quote art without losing text quality?",
-      answer:
-        "Yes, as long as your source file is high resolution (4000+ pixels on the longest side). SnapToSize uses Lanczos resampling at 300 DPI \u2014 the highest quality resize algorithm \u2014 so text stays crisp at every output size.",
+        "300 DPI is the professional standard. At 24\u00d736, that\u2019s 7200\u00d710800 pixels. Minimalist art with large areas of solid color or negative space reveals pixelation more easily than detailed art, so 300 DPI is non-negotiable. SnapToSize outputs every file at 300 DPI.",
     },
   ];
 
@@ -139,7 +133,7 @@ export default function EtsyQuoteWallArtSizesPage() {
   };
 
   const appUrl =
-    "https://app.snaptosize.com?source=seo_quote_wall_art&kind=guide";
+    "https://app.snaptosize.com/app/quick-export?source=seo_minimalist-wall-art&kind=guide";
 
   return (
     <>
@@ -163,118 +157,128 @@ export default function EtsyQuoteWallArtSizesPage() {
         className="relative py-20 md:py-28 overflow-hidden"
         style={{
           background:
-            "linear-gradient(155deg, #1a1714 0%, #1e1a16 25%, #19160f 50%, #1c1914 75%, #17140f 100%)",
+            "linear-gradient(155deg, #141414 0%, #171717 25%, #131313 50%, #161616 75%, #121212 100%)",
         }}
       >
-        {/* Subtle paper texture dot grid */}
+        {/* Subtle grid — minimalist aesthetic */}
         <div
-          className="absolute inset-0 opacity-[0.06]"
+          className="absolute inset-0 opacity-[0.04]"
           style={{
             backgroundImage:
-              "radial-gradient(circle, #d4c5a9 1px, transparent 1px)",
-            backgroundSize: "24px 24px",
+              "linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)",
+            backgroundSize: "60px 60px",
           }}
         />
 
-        {/* Warm parchment gradient — top right */}
+        {/* Warm neutral glow — top right */}
         <div
-          className="absolute top-[-10%] right-[10%] w-[500px] h-[500px] rounded-full opacity-[0.08]"
+          className="absolute top-[-10%] right-[15%] w-[500px] h-[500px] rounded-full opacity-[0.06]"
           style={{
             background:
-              "radial-gradient(circle, #c9a87c, transparent 70%)",
+              "radial-gradient(circle, #d4c5a9, transparent 70%)",
           }}
         />
-        {/* Ink accent blob — bottom left */}
+        {/* Cool accent glow — bottom left */}
         <div
-          className="absolute bottom-[-15%] left-[-5%] w-[450px] h-[450px] rounded-full opacity-[0.06]"
+          className="absolute bottom-[-15%] left-[-5%] w-[400px] h-[400px] rounded-full opacity-[0.04]"
           style={{
             background:
-              "radial-gradient(circle, #8b7355, transparent 70%)",
+              "radial-gradient(circle, #a78bfa, transparent 70%)",
           }}
         />
 
-        {/* CSS-only Typography/Quote Visual — right side */}
+        {/* CSS-only Minimalist Frame Composition — right side */}
         <div className="absolute right-[4%] top-1/2 -translate-y-1/2 hidden lg:block">
           <div
             className="relative"
-            style={{ width: "320px", height: "300px" }}
+            style={{ width: "320px", height: "340px" }}
           >
-            {/* Large decorative opening quotation mark */}
+            {/* Large frame outline — thin border, minimalist */}
             <div
-              className="absolute font-serif leading-none select-none"
+              className="absolute rounded-sm"
               style={{
-                fontSize: "180px",
-                top: "-30px",
+                width: "140px",
+                height: "180px",
+                top: "0px",
                 left: "0px",
-                color: "rgba(201,168,124,0.12)",
+                border: "1px solid rgba(212,197,169,0.12)",
               }}
-            >
-              &ldquo;
-            </div>
-
-            {/* Simulated text lines at different sizes */}
-            <div className="absolute" style={{ top: "70px", left: "40px" }}>
-              {/* Large "headline" line */}
-              <div
-                className="rounded-full mb-3"
-                style={{
-                  width: "220px",
-                  height: "10px",
-                  background: "rgba(201,168,124,0.18)",
-                }}
-              />
-              <div
-                className="rounded-full mb-3"
-                style={{
-                  width: "180px",
-                  height: "10px",
-                  background: "rgba(201,168,124,0.14)",
-                }}
-              />
-              {/* Smaller "body" lines */}
-              <div
-                className="rounded-full mb-2"
-                style={{
-                  width: "200px",
-                  height: "5px",
-                  background: "rgba(201,168,124,0.10)",
-                }}
-              />
-              <div
-                className="rounded-full mb-2"
-                style={{
-                  width: "160px",
-                  height: "5px",
-                  background: "rgba(201,168,124,0.08)",
-                }}
-              />
-              <div
-                className="rounded-full"
-                style={{
-                  width: "140px",
-                  height: "5px",
-                  background: "rgba(201,168,124,0.06)",
-                }}
-              />
-            </div>
-
-            {/* Size labels floating around the quote block */}
+            />
+            {/* Inner content placeholder — single horizontal line */}
             <div
-              className="absolute text-[9px] font-mono tracking-wider"
+              className="absolute"
               style={{
-                top: "55px",
-                right: "10px",
-                color: "rgba(201,168,124,0.35)",
+                width: "80px",
+                height: "1px",
+                top: "90px",
+                left: "30px",
+                background: "rgba(212,197,169,0.15)",
               }}
-            >
-              8&times;10
-            </div>
+            />
+
+            {/* Medium frame — offset right */}
+            <div
+              className="absolute rounded-sm"
+              style={{
+                width: "110px",
+                height: "140px",
+                top: "50px",
+                right: "20px",
+                border: "1px solid rgba(167,139,250,0.10)",
+              }}
+            />
+            {/* Inner content — circle */}
+            <div
+              className="absolute rounded-full"
+              style={{
+                width: "40px",
+                height: "40px",
+                top: "100px",
+                right: "55px",
+                border: "1px solid rgba(167,139,250,0.12)",
+              }}
+            />
+
+            {/* Small frame — bottom left */}
+            <div
+              className="absolute rounded-sm"
+              style={{
+                width: "80px",
+                height: "100px",
+                bottom: "10px",
+                left: "40px",
+                border: "1px solid rgba(212,197,169,0.09)",
+              }}
+            />
+            {/* Inner content — two thin lines */}
+            <div
+              className="absolute"
+              style={{
+                width: "40px",
+                height: "1px",
+                bottom: "55px",
+                left: "60px",
+                background: "rgba(212,197,169,0.10)",
+              }}
+            />
+            <div
+              className="absolute"
+              style={{
+                width: "30px",
+                height: "1px",
+                bottom: "45px",
+                left: "60px",
+                background: "rgba(212,197,169,0.07)",
+              }}
+            />
+
+            {/* Size labels — floating, monospaced */}
             <div
               className="absolute text-[8px] font-mono tracking-wider"
               style={{
-                top: "170px",
-                right: "5px",
-                color: "rgba(167,139,250,0.3)",
+                top: "-12px",
+                left: "50px",
+                color: "rgba(212,197,169,0.30)",
               }}
             >
               16&times;20
@@ -282,58 +286,33 @@ export default function EtsyQuoteWallArtSizesPage() {
             <div
               className="absolute text-[7px] font-mono tracking-wider"
               style={{
-                bottom: "50px",
-                left: "20px",
-                color: "rgba(201,168,124,0.3)",
+                top: "42px",
+                right: "48px",
+                color: "rgba(167,139,250,0.25)",
               }}
             >
-              5&times;7
+              8&times;10
             </div>
             <div
-              className="absolute text-[8px] font-mono tracking-wider"
+              className="absolute text-[7px] font-mono tracking-wider"
               style={{
-                bottom: "30px",
-                right: "40px",
-                color: "rgba(167,139,250,0.25)",
+                bottom: "0px",
+                left: "60px",
+                color: "rgba(212,197,169,0.22)",
               }}
             >
               A4
             </div>
-
-            {/* Large decorative closing quotation mark */}
             <div
-              className="absolute font-serif leading-none select-none"
+              className="absolute text-[8px] font-mono tracking-wider"
               style={{
-                fontSize: "180px",
-                bottom: "-70px",
+                bottom: "100px",
                 right: "0px",
-                color: "rgba(201,168,124,0.10)",
+                color: "rgba(167,139,250,0.20)",
               }}
             >
-              &rdquo;
+              24&times;36
             </div>
-
-            {/* Frame outlines at different scales */}
-            <div
-              className="absolute rounded-sm"
-              style={{
-                width: "60px",
-                height: "75px",
-                bottom: "15px",
-                left: "0px",
-                border: "1.5px solid rgba(201,168,124,0.12)",
-              }}
-            />
-            <div
-              className="absolute rounded-sm"
-              style={{
-                width: "90px",
-                height: "112px",
-                top: "15px",
-                right: "-10px",
-                border: "1.5px solid rgba(167,139,250,0.10)",
-              }}
-            />
           </div>
         </div>
 
@@ -343,11 +322,11 @@ export default function EtsyQuoteWallArtSizesPage() {
             <div className="flex items-center gap-2 mb-5">
               <div
                 className="h-px w-8"
-                style={{ background: "rgba(201,168,124,0.5)" }}
+                style={{ background: "rgba(212,197,169,0.5)" }}
               />
               <span
                 className="text-xs font-mono tracking-[0.15em] uppercase"
-                style={{ color: "rgba(201,168,124,0.7)" }}
+                style={{ color: "rgba(212,197,169,0.7)" }}
               >
                 Niche Guide
               </span>
@@ -358,29 +337,29 @@ export default function EtsyQuoteWallArtSizesPage() {
                 className="block text-3xl md:text-4xl lg:text-5xl mb-2"
                 style={{ color: "#f5f0eb" }}
               >
-                Quote Wall Art Sizes for Etsy
+                Minimalist Wall Art Sizes for Etsy
               </span>
               <span
                 className="block text-lg md:text-xl lg:text-2xl font-semibold"
                 style={{ color: "rgba(245,240,235,0.6)" }}
               >
-                Every size, every sub-niche, one&nbsp;upload
+                Every sub-style, every size, one&nbsp;upload
               </span>
             </h1>
             <p
               className="text-sm md:text-base mb-8 max-w-lg leading-relaxed"
               style={{ color: "rgba(245,240,235,0.5)" }}
             >
-              Quote and typography art is one of Etsy&apos;s largest digital
-              download categories. This guide covers the must-have sizes,
-              sub-niche breakdowns, and how to generate every size from a
-              single upload.
+              Minimalist art is one of the largest digital download niches on
+              Etsy. This guide covers the best-selling sizes by sub-style,
+              gallery wall set dimensions, and how to generate every size from
+              a single upload.
             </p>
 
             <div className="mb-10">
               <a href={appUrl} target="_blank" rel="noopener noreferrer">
                 <Button className="text-sm px-6 py-2.5">
-                  Generate All Quote Art Sizes
+                  Generate All Minimalist Sizes
                 </Button>
               </a>
               <p
@@ -455,40 +434,44 @@ export default function EtsyQuoteWallArtSizesPage() {
       <section className="py-12 md:py-16">
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
-            {/* --- H2 1: Why Quote and Typography Wall Art Needs Every Size --- */}
+            {/* --- H2 1: Why Minimalist Art Has Unique Sizing Needs --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
-                Why Quote and Typography Wall Art Needs Every Size
+                Why Minimalist Art Has Unique Sizing Needs
               </h2>
               <p className="text-foreground-60 mb-4">
-                Quote art is uniquely ratio-sensitive. Unlike photographic art
-                where slight cropping is forgivable, text layout, margins, and
-                readability change dramatically across ratios. A motivational
-                quote that looks balanced at{" "}
+                Minimalist wall art is fundamentally different from other
+                niches when it comes to sizing. The defining feature of
+                minimalist design &mdash; deliberate negative space &mdash;
+                is destroyed by cropping. A single line drawing with carefully
+                balanced white space loses its entire aesthetic if a crop-based
+                resizer cuts into those margins.
+              </p>
+              <p className="text-foreground-60 mb-4">
+                Minimalist buyers are design-conscious. They expect clean,
+                precise files with no distortion, no pixelation, and no
+                compression artifacts. Because minimalist compositions are
+                visually simple, every imperfection is more visible than in
+                busy, detailed artwork. A slightly blurry edge or a misaligned
+                proportion stands out immediately against a clean background.
+              </p>
+              <p className="text-foreground-60">
+                Minimalist art also spans the widest range of use cases
+                &mdash; from small{" "}
                 <Link
                   href="/etsy-8x10-print-size"
                   className="text-accent-light hover:underline"
                 >
-                  8&times;10
+                  8&times;10 bedside prints
                 </Link>{" "}
-                (4:5) looks stretched at 4&times;6 (2:3). Every ratio needs
-                deliberate sizing to maintain visual hierarchy and legibility.
-              </p>
-              <p className="text-foreground-60 mb-4">
-                Then there&apos;s the volume problem. Top quote art sellers list
-                50&ndash;200+ designs, each needing all sizes. A seller with 100
-                designs offering 30 sizes each faces{" "}
-                <strong className="text-foreground">
-                  3,000 individual resize operations
-                </strong>
-                . Manual resizing at that scale is hundreds of hours of
-                repetitive work.
-              </p>
-              <p className="text-foreground-60">
-                Buyers also search by specific size (&ldquo;8&times;10 quote
-                art&rdquo;, &ldquo;16&times;20 motivational print&rdquo;) and
-                expect their preferred frame size to be available. Missing sizes
-                means missing sales. Read our{" "}
+                to oversized{" "}
+                <Link
+                  href="/etsy-24x36-print-size"
+                  className="text-accent-light hover:underline"
+                >
+                  24&times;36 living room statements
+                </Link>
+                . Missing any part of this range means missing sales. See our{" "}
                 <Link
                   href="/how-many-sizes-etsy-printable"
                   className="text-accent-light hover:underline"
@@ -499,15 +482,16 @@ export default function EtsyQuoteWallArtSizesPage() {
               </p>
             </div>
 
-            {/* --- H2 2: The 8 Must-Have Sizes for Quote Wall Art --- */}
+            {/* --- H2 2: The Best-Selling Sizes for Minimalist Wall Art on Etsy --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
-                The 8 Must-Have Sizes for Quote Wall Art
+                The Best-Selling Sizes for Minimalist Wall Art on Etsy
               </h2>
               <p className="text-foreground-60 mb-6">
-                These eight sizes cover 90%+ of quote art buyer demand. Every
-                pixel dimension is at 300 DPI &mdash; the professional print
-                standard. For the complete size chart, see the{" "}
+                These sizes cover the core of minimalist art buyer demand,
+                organized by use case. Every pixel dimension is at 300 DPI
+                &mdash; the professional print standard. For the full chart,
+                see the{" "}
                 <Link
                   href="/etsy-print-sizes"
                   className="text-accent-light hover:underline"
@@ -531,7 +515,7 @@ export default function EtsyQuoteWallArtSizesPage() {
                         Ratio Pack
                       </th>
                       <th className="text-left py-3 px-4 font-semibold">
-                        Why It Sells
+                        Use Case
                       </th>
                     </tr>
                   </thead>
@@ -550,7 +534,7 @@ export default function EtsyQuoteWallArtSizesPage() {
                       </td>
                       <td className="py-3 px-4 text-foreground-60">4:5</td>
                       <td className="py-3 px-4 text-foreground-60">
-                        Best-selling quote art size. Desk frames, home offices
+                        Best-selling overall. Desk, shelf, bathroom
                       </td>
                     </tr>
                     <tr className="border-b border-white/10">
@@ -569,7 +553,7 @@ export default function EtsyQuoteWallArtSizesPage() {
                         Extras
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
-                        Quote cards, mini prints, gifts
+                        Small frames, gifts, bedside tables
                       </td>
                     </tr>
                     <tr className="border-b border-white/10">
@@ -588,7 +572,7 @@ export default function EtsyQuoteWallArtSizesPage() {
                         Extras
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
-                        Photo mat standard. Mid-size statement quotes
+                        Photo mat standard. Mid-size statement
                       </td>
                     </tr>
                     <tr className="border-b border-white/10">
@@ -605,7 +589,43 @@ export default function EtsyQuoteWallArtSizesPage() {
                       </td>
                       <td className="py-3 px-4 text-foreground-60">4:5</td>
                       <td className="py-3 px-4 text-foreground-60">
-                        Large statement piece. Offices, gyms
+                        Above sofa/bed. Top minimalist statement size
+                      </td>
+                    </tr>
+                    <tr className="border-b border-white/10">
+                      <td className="py-3 px-4 font-medium">
+                        <Link
+                          href="/etsy-18x24-print-size"
+                          className="text-accent-light hover:underline"
+                        >
+                          18&times;24
+                        </Link>
+                      </td>
+                      <td className="py-3 px-4 text-foreground-60">
+                        5400&times;7200
+                      </td>
+                      <td className="py-3 px-4 text-foreground-60">3:4</td>
+                      <td className="py-3 px-4 text-foreground-60">
+                        Hallway, entryway. Gallery wall anchor
+                      </td>
+                    </tr>
+                    <tr className="border-b border-white/10">
+                      <td className="py-3 px-4 font-medium">
+                        <Link
+                          href="/etsy-24x36-print-size"
+                          className="text-accent-light hover:underline"
+                        >
+                          24&times;36
+                        </Link>
+                      </td>
+                      <td className="py-3 px-4 text-foreground-60">
+                        7200&times;10800
+                      </td>
+                      <td className="py-3 px-4 text-foreground-60">
+                        Quick Export
+                      </td>
+                      <td className="py-3 px-4 text-foreground-60">
+                        Oversized focal point. Living room statement
                       </td>
                     </tr>
                     <tr className="border-b border-white/10">
@@ -628,7 +648,7 @@ export default function EtsyQuoteWallArtSizesPage() {
                         International buyers (UK, EU, AUS)
                       </td>
                     </tr>
-                    <tr className="border-b border-white/10">
+                    <tr>
                       <td className="py-3 px-4 font-medium">
                         <Link
                           href="/etsy-a3-print-size"
@@ -645,60 +665,44 @@ export default function EtsyQuoteWallArtSizesPage() {
                       </td>
                       <td className="py-3 px-4 text-foreground-60">ISO</td>
                       <td className="py-3 px-4 text-foreground-60">
-                        International poster size. Dorms, bedrooms
-                      </td>
-                    </tr>
-                    <tr className="border-b border-white/10">
-                      <td className="py-3 px-4 font-medium">
-                        <Link
-                          href="/etsy-18x24-print-size"
-                          className="text-accent-light hover:underline"
-                        >
-                          18&times;24
-                        </Link>
-                      </td>
-                      <td className="py-3 px-4 text-foreground-60">
-                        5400&times;7200
-                      </td>
-                      <td className="py-3 px-4 text-foreground-60">3:4</td>
-                      <td className="py-3 px-4 text-foreground-60">
-                        Poster standard. Gallery wall anchor
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="py-3 px-4 font-medium">
-                        <Link
-                          href="/etsy-24x36-print-size"
-                          className="text-accent-light hover:underline"
-                        >
-                          24&times;36
-                        </Link>
-                      </td>
-                      <td className="py-3 px-4 text-foreground-60">
-                        7200&times;10800
-                      </td>
-                      <td className="py-3 px-4 text-foreground-60">
-                        Quick Export
-                      </td>
-                      <td className="py-3 px-4 text-foreground-60">
-                        Large poster. Dorm rooms, studios
+                        International poster. Scandinavian/Japandi buyers
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+
+              <p className="text-foreground-60 text-sm">
+                Minimalist art over-indexes on{" "}
+                <Link
+                  href="/etsy-16x20-print-size"
+                  className="text-accent-light hover:underline"
+                >
+                  16&times;20
+                </Link>{" "}
+                and 24&times;36 because buyers use clean designs as anchor
+                pieces in curated rooms. For precise pixel calculations, use
+                the{" "}
+                <Link
+                  href="/etsy-print-size-calculator"
+                  className="text-accent-light hover:underline"
+                >
+                  print size calculator
+                </Link>
+                .
+              </p>
             </div>
 
-            {/* --- CTA 1: After must-have sizes --- */}
+            {/* --- CTA 1: After best-selling sizes --- */}
             <div>
               <Card accent className="p-6 md:p-8 text-center">
                 <h3 className="text-xl md:text-2xl font-bold mb-3">
-                  Every Size Your Buyers Search For &mdash; One Upload
+                  Generate All Minimalist Sizes From One Upload
                 </h3>
                 <p className="text-sm text-foreground-60 mb-5">
-                  Upload one quote design and get 30+ sizes across all 5 ratio
-                  packs. Portrait, landscape, and square &mdash; up to 70
-                  print-ready files, organized and named for Etsy.
+                  Upload one minimalist design and get 30+ sizes across all 5
+                  ratio packs. Portrait, landscape, and square &mdash; up to
+                  70 print-ready files, organized and named for Etsy.
                 </p>
                 <a
                   href={appUrl}
@@ -712,166 +716,230 @@ export default function EtsyQuoteWallArtSizesPage() {
               </Card>
             </div>
 
-            {/* --- H2 3: Quote Art Sub-Niches and Their Best-Performing Sizes --- */}
+            {/* --- H2 3: Minimalist Sub-Styles and Their Best-Performing Sizes --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
-                Quote Art Sub-Niches and Their Best-Performing Sizes
+                Minimalist Sub-Styles and Their Best-Performing Sizes
               </h2>
               <p className="text-foreground-60 mb-8">
-                Different quote art sub-niches sell differently across sizes.
-                Match your size offerings to the sub-niche for higher
-                conversion.
+                Different minimalist sub-styles have distinct sizing
+                preferences. Match your size offerings to your style for
+                higher conversion.
               </p>
 
               <div className="space-y-4">
                 <Card className="p-6">
                   <h3 className="text-lg font-semibold mb-2">
-                    Motivational / Inspirational Quotes
+                    One-Line Drawings
                   </h3>
                   <p className="text-foreground-60 text-sm mb-3">
-                    Large formats dominate. Offices, gyms, and studios want
-                    big, bold statements. Also strong at desk-frame sizes.
+                    Portrait-oriented by nature. The tall 2:3 ratio dominates
+                    because continuous line art flows vertically. Best at
+                    medium to large sizes where the line detail is visible.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link>
+                      8&times;12 (2:3)
                     </span>
                     <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-18x24-print-size" className="hover:underline">18&times;24</Link>
+                      12&times;18 (2:3)
+                    </span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
+                      20&times;30 (2:3)
+                    </span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
+                      <Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link> (4:5)
+                    </span>
+                  </div>
+                </Card>
+
+                <Card className="p-6">
+                  <h3 className="text-lg font-semibold mb-2">
+                    Abstract Minimalist
+                  </h3>
+                  <p className="text-foreground-60 text-sm mb-3">
+                    Works across all ratios, but 4:5 and 3:4 are most popular.
+                    Abstract compositions are flexible &mdash; offer every
+                    ratio for maximum reach.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
+                      <Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link> (4:5)
+                    </span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
+                      12&times;16 (3:4)
+                    </span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
+                      <Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link> (4:5)
+                    </span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
+                      All packs
+                    </span>
+                  </div>
+                </Card>
+
+                <Card className="p-6">
+                  <h3 className="text-lg font-semibold mb-2">
+                    Minimalist Typography / Word Art
+                  </h3>
+                  <p className="text-foreground-60 text-sm mb-3">
+                    Portrait-heavy. Tall formats like 4:5 and 2:3 give text
+                    room to breathe. Also see our{" "}
+                    <Link
+                      href="/etsy-quote-wall-art-sizes"
+                      className="text-accent-light hover:underline"
+                    >
+                      quote wall art sizes
+                    </Link>{" "}
+                    guide for typography-specific sizing.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
+                      <Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link> (4:5)
+                    </span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
+                      <Link href="/etsy-11x14-print-size" className="hover:underline">11&times;14</Link> (Extras)
+                    </span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
+                      <Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link> (4:5)
+                    </span>
+                  </div>
+                </Card>
+
+                <Card className="p-6">
+                  <h3 className="text-lg font-semibold mb-2">
+                    Japandi / Scandinavian
+                  </h3>
+                  <p className="text-foreground-60 text-sm mb-3">
+                    A-series sizes are critical &mdash; Nordic and Japanese
+                    buyers expect A4 and A3. Also strong at 8&times;10 and
+                    16&times;20 for US buyers. International reach is the key
+                    differentiator.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
+                      A4 (ISO)
+                    </span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
+                      A3 (ISO)
+                    </span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
+                      <Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link> (4:5)
+                    </span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
+                      <Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link> (4:5)
+                    </span>
+                  </div>
+                </Card>
+
+                <Card className="p-6">
+                  <h3 className="text-lg font-semibold mb-2">
+                    Black and White Minimalist
+                  </h3>
+                  <p className="text-foreground-60 text-sm mb-3">
+                    Maximum impact at large sizes. High-contrast black and
+                    white commands attention as a room focal point. Go big.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
+                      <Link href="/etsy-18x24-print-size" className="hover:underline">18&times;24</Link> (3:4)
                     </span>
                     <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
                       <Link href="/etsy-24x36-print-size" className="hover:underline">24&times;36</Link>
                     </span>
                     <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link>
-                    </span>
-                  </div>
-                </Card>
-
-                <Card className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">
-                    Bible Verses / Religious Quotes
-                  </h3>
-                  <p className="text-foreground-60 text-sm mb-3">
-                    All sizes sell well. Strong{" "}
-                    <Link
-                      href="/etsy-nursery-wall-art-sizes"
-                      className="text-accent-light hover:underline"
-                    >
-                      nursery crossover
-                    </Link>{" "}
-                    at small sizes. Gift-friendly. A4 for international church
-                    communities.
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-5x7-print-size" className="hover:underline">5&times;7</Link>
+                      A2 (ISO)
                     </span>
                     <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link>
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-a4-print-size" className="hover:underline">A4</Link>
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      All packs
-                    </span>
-                  </div>
-                </Card>
-
-                <Card className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">
-                    Funny / Sarcastic Quotes
-                  </h3>
-                  <p className="text-foreground-60 text-sm mb-3">
-                    Small to medium sizes. Kitchen, bathroom, and dorm room
-                    art. Strong gift market.
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-5x7-print-size" className="hover:underline">5&times;7</Link>
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link>
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-11x14-print-size" className="hover:underline">11&times;14</Link>
-                    </span>
-                  </div>
-                </Card>
-
-                <Card className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">
-                    Minimalist Typography
-                  </h3>
-                  <p className="text-foreground-60 text-sm mb-3">
-                    Premium sizes for clean modern interiors.{" "}
-                    <Link
-                      href="/etsy-gallery-wall-print-sizes"
-                      className="text-accent-light hover:underline"
-                    >
-                      Gallery wall sets
-                    </Link>{" "}
-                    in matching typography are a top-seller.
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-11x14-print-size" className="hover:underline">11&times;14</Link>
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link>
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-18x24-print-size" className="hover:underline">18&times;24</Link>
-                    </span>
-                  </div>
-                </Card>
-
-                <Card className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">
-                    Calligraphy / Hand-Lettered
-                  </h3>
-                  <p className="text-foreground-60 text-sm mb-3">
-                    All sizes, with emphasis on 8&times;10 and 11&times;14.
-                    Strong wedding decor crossover.
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link>
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-11x14-print-size" className="hover:underline">11&times;14</Link>
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      All packs
-                    </span>
-                  </div>
-                </Card>
-
-                <Card className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">
-                    Affirmation / Self-Care
-                  </h3>
-                  <p className="text-foreground-60 text-sm mb-3">
-                    Medium sizes for bedrooms and bathrooms. Often sold in
-                    sets of 3&ndash;6 matching prints.
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link>
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-11x14-print-size" className="hover:underline">11&times;14</Link>
+                      <Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link> (4:5)
                     </span>
                   </div>
                 </Card>
               </div>
             </div>
 
-            {/* --- H2 4: The Complete Size Map --- */}
+            {/* --- H2 4: Minimalist Gallery Wall Sets — Sizing for Curated Collections --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
-                The Complete Size Map &mdash; All 5 Ratio Packs for Quote Art
+                Minimalist Gallery Wall Sets &mdash; Sizing for Curated
+                Collections
+              </h2>
+              <p className="text-foreground-60 mb-6">
+                Gallery wall sets are the highest-margin product for
+                minimalist sellers. The clean aesthetic demands precision
+                &mdash; every print in a set must be exactly the same size,
+                and buyers expect multiple size options. For full gallery wall
+                strategy, see our{" "}
+                <Link
+                  href="/etsy-gallery-wall-print-sizes"
+                  className="text-accent-light hover:underline"
+                >
+                  gallery wall print sizes guide
+                </Link>
+                .
+              </p>
+
+              <div className="space-y-4 mb-6">
+                <Card className="p-6">
+                  <h3 className="font-semibold mb-2">
+                    Matching Set Sizes (Most Popular)
+                  </h3>
+                  <p className="text-foreground-60 text-sm mb-3">
+                    All prints the same size. Offer each set in 3&ndash;4 size
+                    options within a single listing to maximize buyer choice.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
+                      3&times;{" "}
+                      <Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link>{" "}
+                      (small)
+                    </span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
+                      3&times;{" "}
+                      <Link href="/etsy-11x14-print-size" className="hover:underline">11&times;14</Link>{" "}
+                      (medium)
+                    </span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
+                      3&times;{" "}
+                      <Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link>{" "}
+                      (large)
+                    </span>
+                  </div>
+                </Card>
+
+                <Card className="p-6">
+                  <h3 className="font-semibold mb-2">
+                    Mixed-Size Arrangements
+                  </h3>
+                  <p className="text-foreground-60 text-sm mb-3">
+                    One large center piece flanked by smaller prints. Popular
+                    for diptychs and triptychs. Require consistent ratios
+                    across all pieces.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
+                      1&times; 16&times;20 + 2&times; 8&times;10
+                    </span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
+                      1&times; 18&times;24 + 2&times; 11&times;14
+                    </span>
+                  </div>
+                </Card>
+              </div>
+
+              <p className="text-foreground-60 text-sm">
+                Offering each gallery wall set in 3 size options in a single
+                listing boosts conversion and average order value. Consistent
+                sizing across prints is even more critical for minimalist
+                sets &mdash; the clean aesthetic reveals any size mismatch
+                instantly.
+              </p>
+            </div>
+
+            {/* --- H2 5: Which Ratio Packs Cover Minimalist Art Best --- */}
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6">
+                Which Ratio Packs Cover Minimalist Art Best
               </h2>
               <p className="text-foreground-60 mb-6">
                 SnapToSize organizes sizes by aspect ratio. Each pack contains
@@ -879,15 +947,37 @@ export default function EtsyQuoteWallArtSizesPage() {
                 without cropping. Up to 70 print-ready files from one upload
                 &mdash; portrait and landscape orientations included. Use our{" "}
                 <Link
-                  href="/etsy-print-size-calculator"
+                  href="/etsy-print-ratios"
                   className="text-accent-light hover:underline"
                 >
-                  print size calculator
+                  print ratios guide
                 </Link>{" "}
-                to check pixel dimensions for any size.
+                to understand how ratios work, or compare the two most popular
+                in our{" "}
+                <Link
+                  href="/2-3-vs-4-5-ratio"
+                  className="text-accent-light hover:underline"
+                >
+                  2:3 vs 4:5 ratio comparison
+                </Link>
+                .
               </p>
 
               <div className="space-y-4 mb-8">
+                <Card className="p-6">
+                  <h3 className="font-semibold mb-2">
+                    4:5 Ratio Pack (5 sizes) &mdash; The Minimalist Hero
+                  </h3>
+                  <p className="text-foreground-60 text-sm mb-2">
+                    8&times;10, 12&times;15, 16&times;20, 20&times;25,
+                    24&times;30
+                  </p>
+                  <p className="text-foreground-60 text-xs">
+                    Covers the two most popular minimalist sizes (8&times;10
+                    and 16&times;20). Essential for every minimalist listing.
+                  </p>
+                </Card>
+
                 <Card className="p-6">
                   <h3 className="font-semibold mb-2">
                     2:3 Ratio Pack (7 sizes)
@@ -897,8 +987,8 @@ export default function EtsyQuoteWallArtSizesPage() {
                     12&times;18, 16&times;24, 20&times;30
                   </p>
                   <p className="text-foreground-60 text-xs">
-                    Tallest proportions. 4&times;6 for mini quote cards,
-                    20&times;30 for oversized motivational posters.
+                    Tallest proportions. Handles line art and poster formats
+                    from mini prints to oversized wall art.
                   </p>
                 </Card>
 
@@ -911,22 +1001,8 @@ export default function EtsyQuoteWallArtSizesPage() {
                     18&times;24
                   </p>
                   <p className="text-foreground-60 text-xs">
-                    Classic photo frame proportions. 18&times;24 is the go-to
-                    poster format for quote art.
-                  </p>
-                </Card>
-
-                <Card className="p-6">
-                  <h3 className="font-semibold mb-2">
-                    4:5 Ratio Pack (5 sizes)
-                  </h3>
-                  <p className="text-foreground-60 text-sm mb-2">
-                    8&times;10, 12&times;15, 16&times;20, 20&times;25,
-                    24&times;30
-                  </p>
-                  <p className="text-foreground-60 text-xs">
-                    Home of the best-selling 8&times;10 and statement-piece
-                    16&times;20. Essential for every quote art listing.
+                    Classic photo frame proportions. 12&times;16 fills the
+                    European frame gap, 18&times;24 is a gallery wall anchor.
                   </p>
                 </Card>
 
@@ -938,8 +1014,9 @@ export default function EtsyQuoteWallArtSizesPage() {
                     A5, A4, A3, A2, A1
                   </p>
                   <p className="text-foreground-60 text-xs">
-                    A4 and A3 are must-haves for international buyers. Quote
-                    art has strong demand in the UK, EU, and Australia.
+                    Critical for Scandinavian and Japandi styles. A4 and A3
+                    are standard frame sizes in Northern Europe, UK, and
+                    Australia.
                   </p>
                 </Card>
 
@@ -952,7 +1029,7 @@ export default function EtsyQuoteWallArtSizesPage() {
                     13&times;19, 20&times;24
                   </p>
                   <p className="text-foreground-60 text-xs">
-                    5&times;7 and 11&times;14 are top quote art sizes that
+                    5&times;7 and 11&times;14 are top minimalist sizes that
                     only exist in this pack. 8.5&times;11 for home printing.
                   </p>
                 </Card>
@@ -966,9 +1043,10 @@ export default function EtsyQuoteWallArtSizesPage() {
                       Plus Quick Export
                     </strong>{" "}
                     &mdash; download any size individually in portrait or
-                    landscape. Also includes 8 square formats (5&times;5 through
-                    24&times;24) and large sizes (A0, 24&times;36, 24&times;32)
-                    available only via Quick Export. Learn more about{" "}
+                    landscape. Also includes 8 square formats (5&times;5
+                    through 24&times;24) and large sizes (A0, 24&times;36,
+                    24&times;32) available only via Quick Export. Learn more
+                    about{" "}
                     <Link
                       href="/etsy-print-ratios"
                       className="text-accent-light hover:underline"
@@ -981,45 +1059,11 @@ export default function EtsyQuoteWallArtSizesPage() {
               </Card>
             </div>
 
-            {/* --- CTA 2: After complete size map --- */}
-            <div>
-              <Card accent className="p-6 md:p-8 text-center">
-                <h3 className="text-xl md:text-2xl font-bold mb-3">
-                  One Upload &rarr; Up to 70 Print-Ready Files
-                </h3>
-                <p className="text-sm text-foreground-60 mb-5">
-                  Every ratio, both orientations, 300 DPI. Organized by pack,
-                  named for buyers, and ready to list on Etsy.
-                </p>
-                <a
-                  href={appUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button className="text-sm px-6 py-2.5">
-                    Generate All Quote Art Sizes
-                  </Button>
-                </a>
-              </Card>
-            </div>
-
-            {/* --- H2 5: Typography-Specific Sizing Considerations --- */}
+            {/* --- H2 6: Common Sizing Mistakes Minimalist Art Sellers Make --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
-                Typography-Specific Sizing Considerations
+                Common Sizing Mistakes Minimalist Art Sellers Make
               </h2>
-              <p className="text-foreground-60 mb-6">
-                Text-based art behaves differently from photographic art when
-                resized. Keep these factors in mind when designing your source
-                file. For a deeper look at ratio differences, see our{" "}
-                <Link
-                  href="/2-3-vs-4-5-ratio"
-                  className="text-accent-light hover:underline"
-                >
-                  2:3 vs 4:5 ratio comparison
-                </Link>
-                .
-              </p>
 
               <div className="space-y-4">
                 <Card className="p-6">
@@ -1027,13 +1071,13 @@ export default function EtsyQuoteWallArtSizesPage() {
                     <AlertTriangle className="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" />
                     <div>
                       <h3 className="font-semibold mb-2">
-                        Margins and breathing room
+                        Only offering 8&times;10
                       </h3>
                       <p className="text-foreground-60 text-sm">
-                        Text art needs more white space than photographic art.
-                        At small sizes (4&times;6, 5&times;7), ensure your
-                        source design has adequate margins so text doesn&apos;t
-                        feel cramped against the edges.
+                        Minimalist buyers want large-format statement pieces
+                        more than most niches. Skipping 16&times;20,
+                        18&times;24, and 24&times;36 means missing the
+                        highest-value sales. Include 5&ndash;8 sizes minimum.
                       </p>
                     </div>
                   </div>
@@ -1044,13 +1088,14 @@ export default function EtsyQuoteWallArtSizesPage() {
                     <AlertTriangle className="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" />
                     <div>
                       <h3 className="font-semibold mb-2">
-                        Readability at scale
+                        Using crop-based resizing
                       </h3>
                       <p className="text-foreground-60 text-sm">
-                        A quote that&apos;s legible at 24&times;36 may have
-                        too-small text at 5&times;7. Test your design at
-                        5&times;7 &mdash; if it&apos;s readable there, it
-                        works everywhere.
+                        Cropping destroys the deliberate negative space that
+                        defines minimalist art. A one-line drawing with
+                        balanced white space loses its entire composition
+                        when cropped. Use a stretch-only approach that
+                        preserves the full design.
                       </p>
                     </div>
                   </div>
@@ -1061,12 +1106,13 @@ export default function EtsyQuoteWallArtSizesPage() {
                     <AlertTriangle className="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" />
                     <div>
                       <h3 className="font-semibold mb-2">
-                        Font weight matters
+                        Skipping A-series sizes
                       </h3>
                       <p className="text-foreground-60 text-sm">
-                        Thin/light fonts can look washed out at small sizes
-                        and low print quality. Use medium to bold weights for
-                        quote art that prints well at any size.
+                        The Scandinavian and Japandi buyer segment is massive
+                        for minimalist art, and they need A4 and A3 frames.
+                        Skipping ISO sizes means losing 20&ndash;30% of
+                        potential international buyers.
                       </p>
                     </div>
                   </div>
@@ -1077,12 +1123,45 @@ export default function EtsyQuoteWallArtSizesPage() {
                     <AlertTriangle className="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" />
                     <div>
                       <h3 className="font-semibold mb-2">
-                        Color considerations
+                        Inconsistent gallery wall set sizes
                       </h3>
                       <p className="text-foreground-60 text-sm">
-                        Dark text on light backgrounds is most forgiving
-                        across print services. Reverse (light text on dark)
-                        uses more ink and can vary between printers.
+                        Every print in a minimalist gallery set must be
+                        exactly the same size. Even a 1-pixel difference
+                        between files creates visible misalignment when
+                        framed side by side. Use consistent sizing tools,
+                        not manual resizing.
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+
+                <Card className="p-6">
+                  <div className="flex gap-4">
+                    <AlertTriangle className="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h3 className="font-semibold mb-2">
+                        Low-resolution source files
+                      </h3>
+                      <p className="text-foreground-60 text-sm">
+                        Minimalist art with large areas of solid color or
+                        negative space reveals pixelation more easily than
+                        detailed artwork. Always use 300 DPI source files
+                        &mdash; at{" "}
+                        <Link
+                          href="/etsy-24x36-print-size"
+                          className="text-accent-light hover:underline"
+                        >
+                          24&times;36
+                        </Link>
+                        , that&apos;s 7200&times;10800 pixels. Read our{" "}
+                        <Link
+                          href="/best-resolution-for-etsy-printables"
+                          className="text-accent-light hover:underline"
+                        >
+                          300 DPI resolution guide
+                        </Link>{" "}
+                        for more.
                       </p>
                     </div>
                   </div>
@@ -1090,141 +1169,16 @@ export default function EtsyQuoteWallArtSizesPage() {
               </div>
             </div>
 
-            {/* --- H2 6: How to List Quote Art with Multiple Sizes on Etsy --- */}
+            {/* --- H2 7: How to Generate All Minimalist Print Sizes from One Upload --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
-                How to List Quote Art with Multiple Sizes on Etsy
-              </h2>
-
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-lg font-semibold mb-3">
-                    Title optimization
-                  </h3>
-                  <p className="text-foreground-60 text-sm mb-2">
-                    Include sizes in your title to match buyer searches.
-                    Example:
-                  </p>
-                  <Card className="p-4 bg-accent/5 border-accent/10">
-                    <p className="text-sm font-mono text-foreground-60">
-                      &ldquo;Motivational Quote Wall Art, Printable, 8x10
-                      11x14 16x20 Digital Download&rdquo;
-                    </p>
-                  </Card>
-                </div>
-
-                <div>
-                  <h3 className="text-lg font-semibold mb-3">Tags</h3>
-                  <p className="text-foreground-60 text-sm mb-3">
-                    Use all 13 Etsy tags (max 20 characters each). Include
-                    niche + size combos:
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      quote art 8x10
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      typography print
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      motivational wall art
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      printable quote art
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      digital download quote
-                    </span>
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className="text-lg font-semibold mb-3">
-                    Listing photos
-                  </h3>
-                  <p className="text-foreground-60 text-sm">
-                    Show mockups at different sizes. Include a{" "}
-                    <Link
-                      href="/etsy-gallery-wall-print-sizes"
-                      className="text-accent-light hover:underline"
-                    >
-                      gallery wall arrangement
-                    </Link>{" "}
-                    with your quote prints and a size comparison graphic in
-                    your listing photos.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-lg font-semibold mb-3">
-                    File delivery
-                  </h3>
-                  <p className="text-foreground-60 text-sm">
-                    Organized ZIP files by ratio, with professional file naming
-                    (e.g., <code className="text-xs bg-white/5 px-1.5 py-0.5 rounded">artwork_8x10_300dpi.jpg</code>).
-                    Mention all included sizes in the description. For
-                    packaging best practices, see our{" "}
-                    <Link
-                      href="/how-to-package-digital-wall-art-for-etsy"
-                      className="text-accent-light hover:underline"
-                    >
-                      packaging guide
-                    </Link>{" "}
-                    and{" "}
-                    <Link
-                      href="/what-files-to-include-etsy-digital-download"
-                      className="text-accent-light hover:underline"
-                    >
-                      file inclusion guide
-                    </Link>
-                    . All ZIPs stay under{" "}
-                    <Link
-                      href="/etsy-20mb-file-limit"
-                      className="text-accent-light hover:underline"
-                    >
-                      Etsy&apos;s 20 MB limit
-                    </Link>
-                    .
-                  </p>
-                </div>
-
-                <Card className="p-5 bg-accent/10 border-accent/20">
-                  <div className="flex gap-4">
-                    <Check className="w-5 h-5 text-accent-light flex-shrink-0 mt-0.5" />
-                    <p className="text-foreground-60 text-sm">
-                      <strong className="text-foreground">
-                        Listing tip:
-                      </strong>{" "}
-                      For file format guidance, check our{" "}
-                      <Link
-                        href="/best-file-format-etsy-printables"
-                        className="text-accent-light hover:underline"
-                      >
-                        best file format for Etsy printables
-                      </Link>{" "}
-                      guide. If your listing isn&apos;t converting, see{" "}
-                      <Link
-                        href="/etsy-digital-download-not-selling"
-                        className="text-accent-light hover:underline"
-                      >
-                        why your digital download isn&apos;t selling
-                      </Link>
-                      .
-                    </p>
-                  </div>
-                </Card>
-              </div>
-            </div>
-
-            {/* --- H2 7: How to Generate All Quote Art Sizes from One Upload --- */}
-            <div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-6">
-                How to Generate All Quote Art Sizes From One Upload
+                How to Generate All Minimalist Print Sizes From One Upload
               </h2>
               <p className="text-foreground-60 mb-6">
-                A quote art seller with 100 designs offering 30 sizes each
-                faces 3,000 individual resize operations. Here&apos;s how to
-                eliminate that entirely. For a general walkthrough, see our{" "}
+                A minimalist art seller with 100 designs offering 30 sizes
+                each faces 3,000 individual resize operations. Here&apos;s how
+                to eliminate that entirely. For a general walkthrough, see
+                our{" "}
                 <Link
                   href="/how-to-resize-images-for-etsy"
                   className="text-accent-light hover:underline"
@@ -1248,7 +1202,7 @@ export default function EtsyQuoteWallArtSizesPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-sm mb-1">
-                        Upload Your High-Res Quote Design
+                        Upload Your High-Res Minimalist Design
                       </h3>
                       <p className="text-foreground-60 text-sm">
                         Upload your artwork to SnapToSize. Any resolution
@@ -1277,7 +1231,8 @@ export default function EtsyQuoteWallArtSizesPage() {
                       <p className="text-foreground-60 text-sm">
                         Choose all packs to cover every buyer preference.
                         Up to 70 files from a single upload &mdash; portrait
-                        and landscape orientations included.
+                        and landscape orientations included. The stretch-only
+                        resize preserves your negative space and composition.
                       </p>
                     </div>
                   </div>
@@ -1313,12 +1268,12 @@ export default function EtsyQuoteWallArtSizesPage() {
                   <Check className="w-5 h-5 text-accent-light flex-shrink-0 mt-0.5" />
                   <p className="text-foreground-60 text-sm">
                     <strong className="text-foreground">
-                      Volume math:
+                      Time savings:
                     </strong>{" "}
-                    100 quote designs &times; 30+ sizes = 3,000 manual resizes.
-                    With SnapToSize: 100 uploads, done in under an hour. Same
-                    300 DPI quality, same professional naming, same Etsy-compliant
-                    ZIPs.
+                    100 minimalist designs &times; 30+ sizes = 3,000 manual
+                    resizes. With SnapToSize: 100 uploads, done in under an
+                    hour. Same 300 DPI quality, same professional naming,
+                    same Etsy-compliant ZIPs.
                   </p>
                 </div>
               </Card>
@@ -1327,18 +1282,18 @@ export default function EtsyQuoteWallArtSizesPage() {
             {/* --- FinalCTA --- */}
             <div>
               <FinalCTA
-                heading="Generate Every Quote Art Size Instantly"
+                heading="Generate Every Minimalist Art Size Instantly"
                 stat="Up to 70 print-ready files from a single upload"
-                description="Upload your quote design once and get every size your buyers need. Portrait, landscape, and square. Organized by ratio, named for buyers, and ready for Etsy."
+                description="Upload your minimalist design once and get every size your buyers need. Portrait, landscape, and square. Organized by ratio, named for buyers, and ready for Etsy."
                 buttonText="Generate All Sizes Free"
-                appUrl="https://app.snaptosize.com?source=seo_quote_wall_art&kind=cta"
+                appUrl="https://app.snaptosize.com/app/quick-export?source=seo_minimalist-wall-art&kind=cta"
               />
             </div>
 
             {/* --- FAQ --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
-                FAQ &mdash; Quote Wall Art Sizes for Etsy
+                FAQ &mdash; Minimalist Wall Art Sizes for Etsy
               </h2>
               <FAQAccordion items={faqItems} />
             </div>
@@ -1346,15 +1301,15 @@ export default function EtsyQuoteWallArtSizesPage() {
             {/* --- Email Capture --- */}
             <div>
               <EmailCaptureSection
-                heading="Free Etsy Quote Art Size Cheat Sheet"
-                description="Every must-have quote art size with pixel dimensions at 300 DPI, sub-niche recommendations, and ratio pack mapping in one printable PDF."
+                heading="Free Minimalist Art Sizing Cheat Sheet"
+                description="Every must-have minimalist art size with pixel dimensions at 300 DPI, sub-style recommendations, gallery wall set dimensions, and ratio pack mapping in one printable PDF."
                 placeholder="Enter your email"
                 buttonText="Get Free Cheat Sheet"
               />
             </div>
 
             {/* --- Related Pages --- */}
-            <RelatedPages currentSlug="etsy-quote-wall-art-sizes" />
+            <RelatedPages currentSlug="etsy-minimalist-wall-art-sizes" />
           </div>
         </Container>
       </section>

@@ -121,6 +121,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-minimalist-wall-art-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                  Minimalist Wall Art Sizes
+                </Link>
+              </li>
+              <li>
                 <Link href="/etsy-20x30-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
                   20×30 Print Size
                 </Link>
@@ -199,6 +204,11 @@ export function Footer() {
               <li>
                 <Link href="/etsy-digital-download-blurry-prints" className="transition-colors hover:text-accent-light">
                   Blurry Prints? Fix Resolution
+                </Link>
+              </li>
+              <li>
+                <Link href="/snaptosize-vs-canva" className="transition-colors hover:text-accent-light">
+                  SnapToSize vs Canva
                 </Link>
               </li>
             </ul>
