@@ -372,8 +372,9 @@ export default function HowToSellPrintablesWithoutPhotoshopPage() {
               </p>
               <p className="text-foreground-60 mb-4">
                 The reality? Most successful Etsy printable sellers
-                don&apos;t use Photoshop at all. Photoshop is a $22.99/month
-                professional photo editing suite designed for photographers
+                don&apos;t use Photoshop at all.{" "}
+                <Link href="/snaptosize-vs-photoshop" className="text-accent-light hover:underline">Photoshop is a $22.99/month
+                professional photo editing suite</Link> designed for photographers
                 and graphic designers. Selling printable wall art requires
                 exactly two things:
               </p>

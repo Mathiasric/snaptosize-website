@@ -278,5 +278,21 @@
     "keywords": ["etsy 20x30 print size", "20x30 print pixels at 300 dpi", "20x30 aspect ratio", "20x30 poster print dimensions"],
     "cluster": "sizes",
     "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "2-3-vs-4-5-ratio", "etsy-24x36-print-size", "etsy-18x24-print-size", "etsy-16x20-print-size", "etsy-4x6-print-size", "etsy-8x10-print-size", "how-to-resize-images-for-etsy", "best-resolution-for-etsy-printables", "best-file-format-etsy-printables", "etsy-digital-download-blurry-prints", "etsy-20mb-file-limit", "how-many-sizes-etsy-printable", "etsy-print-size-calculator"]
+  },
+  {
+    "slug": "etsy-a5-print-size",
+    "title": "A5 Print Size for Etsy — International Paper Dimensions",
+    "pageType": "size",
+    "keywords": ["etsy A5 print size", "A5 size in pixels", "A5 print dimensions 300 DPI", "A5 vs 5x7 print size", "A5 paper size in inches"],
+    "cluster": "sizes",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-a4-print-size", "etsy-a3-print-size", "etsy-5x7-print-size", "etsy-8-5x11-print-size", "best-resolution-for-etsy-printables", "how-to-resize-images-for-etsy", "etsy-print-size-calculator", "how-many-sizes-etsy-printable"]
+  },
+  {
+    "slug": "snaptosize-vs-photoshop",
+    "title": "SnapToSize vs Photoshop for Etsy Print Resizing",
+    "pageType": "comparison",
+    "keywords": ["snaptosize vs photoshop", "photoshop alternative etsy prints", "resize images for etsy without photoshop", "batch resize etsy printables photoshop"],
+    "cluster": "comparisons",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "how-to-resize-images-for-etsy", "how-to-sell-printables-on-etsy-without-photoshop", "snaptosize-vs-canva", "etsy-20mb-file-limit", "best-resolution-for-etsy-printables", "how-many-sizes-etsy-printable", "how-to-package-digital-wall-art-for-etsy", "etsy-print-size-calculator"]
   }
 ]

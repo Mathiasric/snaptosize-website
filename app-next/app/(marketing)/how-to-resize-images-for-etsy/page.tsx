@@ -875,7 +875,7 @@ export default function HowToResizeImagesForEtsyPage() {
               </Card>
 
               <p className="text-foreground-60 mb-4">
-                Photoshop Actions can automate some of the process, but they
+                <Link href="/snaptosize-vs-photoshop" className="text-accent-light hover:underline">Photoshop Actions</Link> can automate some of the process, but they
                 don&apos;t handle different aspect ratios &mdash; they either
                 crop or distort.{" "}
                 <Link

@@ -171,6 +171,9 @@ export function Header() {
                       <Link href="/etsy-a4-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         A4 Print Size
                       </Link>
+                      <Link href="/etsy-a5-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                        A5 Print Size
+                      </Link>
                       <Link href="/etsy-a3-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         A3 Print Size
                       </Link>
@@ -229,6 +232,9 @@ export function Header() {
                   </Link>
                   <Link href="/snaptosize-vs-canva" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                     SnapToSize vs Canva
+                  </Link>
+                  <Link href="/snaptosize-vs-photoshop" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    SnapToSize vs Photoshop
                   </Link>
                 </div>
               </div>
@@ -330,6 +336,9 @@ export function Header() {
                         <Link href="/etsy-a4-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           A4 Print Size
                         </Link>
+                        <Link href="/etsy-a5-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          A5 Print Size
+                        </Link>
                         <Link href="/etsy-a3-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           A3 Print Size
                         </Link>
@@ -400,6 +409,9 @@ export function Header() {
                         </Link>
                         <Link href="/snaptosize-vs-canva" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           SnapToSize vs Canva
+                        </Link>
+                        <Link href="/snaptosize-vs-photoshop" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          SnapToSize vs Photoshop
                         </Link>
 
                         {/* Troubleshooting */}

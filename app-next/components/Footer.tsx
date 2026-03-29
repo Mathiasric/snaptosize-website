@@ -131,6 +131,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-a5-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                  A5 Print Size
+                </Link>
+              </li>
+              <li>
                 <Link href="/etsy-print-ratios" className="transition-colors hover:text-accent-light">
                   Etsy Print Ratios
                 </Link>
@@ -209,6 +214,11 @@ export function Footer() {
               <li>
                 <Link href="/snaptosize-vs-canva" className="transition-colors hover:text-accent-light">
                   SnapToSize vs Canva
+                </Link>
+              </li>
+              <li>
+                <Link href="/snaptosize-vs-photoshop" className="transition-colors hover:text-accent-light">
+                  SnapToSize vs Photoshop
                 </Link>
               </li>
             </ul>

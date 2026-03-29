@@ -783,7 +783,7 @@ export default function EtsyPrintSizesPage() {
                         </thead>
                         <tbody className="text-foreground-60">
                           <tr className="border-b border-border">
-                            <td className="py-2 pr-4">A5</td>
+                            <td className="py-2 pr-4"><Link href="/etsy-a5-print-size" className="text-accent-light hover:underline">A5</Link></td>
                             <td className="py-2 pr-4">148 &times; 210</td>
                             <td className="py-2 pr-4">1748 &times; 2480</td>
                             <td className="py-2">Small prints</td>

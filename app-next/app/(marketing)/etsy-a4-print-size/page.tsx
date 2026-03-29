@@ -604,7 +604,7 @@ export default function EtsyA4PrintSizePage() {
 
                 <Card className="p-6">
                   <h3 className="text-lg font-semibold mb-2">
-                    A5 &mdash; The Small Print &amp; Card Size
+                    <Link href="/etsy-a5-print-size" className="text-accent-light hover:underline">A5</Link> &mdash; The Small Print &amp; Card Size
                   </h3>
                   <p className="text-foreground-60">
                     Half the area of A4. Used for small desk prints, greeting

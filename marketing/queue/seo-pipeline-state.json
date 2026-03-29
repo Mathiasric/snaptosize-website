@@ -1,47 +1,47 @@
 {
   "_fresh": false,
-  "current_week": "W15",
-  "batch_id": "2026-W15",
-  "started_at": "2026-03-27T00:00:00+00:00",
+  "current_week": "W16",
+  "batch_id": "2026-W16",
+  "started_at": "2026-03-29T00:00:00+00:00",
   "target": {
     "pages": 2
   },
   "stages": {
     "researcher": {
       "status": "completed",
-      "output": "2 briefs created (etsy-quote-wall-art-sizes, etsy-20x30-print-size) — parallel subagents with keyword research + backlink discovery"
+      "output": "2 briefs created (snaptosize-vs-photoshop, etsy-a5-print-size) — parallel subagents with keyword research + backlink discovery"
     },
     "writer": {
       "status": "completed",
-      "output": "2 pages written (parallel subagents) — quote wall art niche page + 20x30 size page"
+      "output": "2 pages written (parallel subagents) — vs-photoshop comparison page + A5 size page"
     },
     "review": {
       "status": "completed",
-      "output": "build passed, all pages compile (48 total routes, 33 SEO pages)"
+      "output": "build passed, all pages compile (35 SEO pages total)"
     },
     "deploy": {
       "status": "completed",
-      "output": "Header.tsx, Footer.tsx, page-registry.json updated. MILESTONES updated to 33 pages. OG images generated for both pages."
+      "output": "Header.tsx, Footer.tsx, page-registry.json updated. MILESTONES updated to 35 pages. CONTENT_PLAYBOOK updated."
     },
     "verify": {
       "status": "completed",
-      "output": "Playwright verified. Post-deploy polish: hero spacing, trust pills (70 files / 5 packs / portrait+landscape+square), CTA copy, Quick Export formulation, 20x30 positioning vs 24x36. Backlinks added from 4 existing pages (2-3-vs-4-5, 24x36, print-sizes, 11x14)."
+      "output": "Playwright verified (4 screenshots). Backlinks added: vs-canva links to vs-photoshop, without-photoshop already links to vs-photoshop (writer added), A4 and A3 already link to A5."
     }
   },
   "content_items": [
     {
-      "slug": "etsy-quote-wall-art-sizes",
-      "keyword": "etsy quote wall art sizes",
-      "type": "niche",
+      "slug": "snaptosize-vs-photoshop",
+      "keyword": "snaptosize vs photoshop etsy prints",
+      "type": "comparison",
       "status": "deployed",
-      "brief": "marketing/briefs/etsy-quote-wall-art-sizes-brief.md"
+      "brief": "marketing/briefs/snaptosize-vs-photoshop-brief.md"
     },
     {
-      "slug": "etsy-20x30-print-size",
-      "keyword": "etsy 20x30 print size",
+      "slug": "etsy-a5-print-size",
+      "keyword": "etsy A5 print size",
       "type": "size",
       "status": "deployed",
-      "brief": "marketing/briefs/etsy-20x30-print-size-brief.md"
+      "brief": "marketing/briefs/etsy-a5-print-size-brief.md"
     }
   ],
   "metrics": {
@@ -50,5 +50,5 @@
     "failed": 0,
     "success_rate": 1.0
   },
-  "updated_at": "2026-03-27T00:00:00+00:00"
+  "updated_at": "2026-03-29T00:00:00+00:00"
 }

@@ -101,7 +101,7 @@ export default function SnapToSizeVsCanvaPage() {
     {
       question: "Do I need Photoshop to resize images for Etsy?",
       answer:
-        "No. You can design in Canva or Procreate, then use SnapToSize to produce all print sizes at once. The key difference is manual (one size at a time in Canva) vs automated (all sizes from one upload in SnapToSize).",
+        "No. You can design in Canva or Procreate, then use SnapToSize to produce all print sizes at once. The key difference is manual (one size at a time in Canva) vs automated (all sizes from one upload in SnapToSize). See our full SnapToSize vs Photoshop comparison for details.",
     },
     {
       question: "Why do Etsy printables need multiple aspect ratios?",
@@ -998,7 +998,14 @@ export default function SnapToSizeVsCanvaPage() {
                 >
                   want to skip Photoshop entirely
                 </Link>
-                ? The Canva + SnapToSize workflow covers that.
+                ? The Canva + SnapToSize workflow covers that. You can also see our{" "}
+                <Link
+                  href="/snaptosize-vs-photoshop"
+                  className="text-accent-light hover:underline"
+                >
+                  direct SnapToSize vs Photoshop comparison
+                </Link>
+                .
               </p>
             </div>
 

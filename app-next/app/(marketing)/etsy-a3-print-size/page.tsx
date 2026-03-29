@@ -922,7 +922,7 @@ export default function EtsyA3PrintSizePage() {
                   </h3>
                   <p className="text-foreground-60">
                     Always start with your largest size. Creating at A3
-                    resolution means you can scale down to A4 and A5 without
+                    resolution means you can scale down to A4 and <Link href="/etsy-a5-print-size" className="text-accent-light hover:underline">A5</Link> without
                     any quality loss. Going the other direction &mdash;
                     upscaling an A4 file to A3 &mdash; doubles the area and
                     will make the image look soft or pixelated.
