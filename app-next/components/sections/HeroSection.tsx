@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/Button";
-import { EmailCapture } from "@/components/EmailCapture";
+
 import { VideoModal } from "@/components/VideoModal";
 import { Check } from "lucide-react";
 
@@ -110,13 +110,14 @@ export function HeroSection() {
                 </span>
               </button>
 
-              {/* Lead Capture */}
-              <div className="max-w-md mx-auto mb-6">
-                <EmailCapture
-                  variant="compact"
-                  placeholder="Get the free Etsy Print Size Cheat Sheet"
-                  buttonText="Get PDF"
-                />
+              {/* Secondary CTA — Calculator */}
+              <div className="mb-6">
+                <a
+                  href="/etsy-print-size-calculator"
+                  className="text-sm text-white/60 hover:text-white/90 underline underline-offset-2 transition-colors"
+                >
+                  Not sure about your image dimensions? Try the free Print Size Calculator →
+                </a>
               </div>
 
               {/* Proof Bullets — supporting evidence after visual hook */}
