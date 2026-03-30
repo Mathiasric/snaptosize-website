@@ -534,7 +534,7 @@ export default function HowToResizeImagesForEtsyPage() {
                 >
                   different aspect ratios
                 </Link>
-                . You can&apos;t resize an 8×10 (4:5) to a 12×18 (2:3) without
+                . You can&apos;t resize an 8×10 (4:5) to a <Link href="/etsy-12x18-print-size" className="text-accent-light hover:underline">12×18</Link> (2:3) without
                 cropping or distortion &mdash; they&apos;re different
                 proportions. This is why professional sellers offer files in
                 multiple ratios.

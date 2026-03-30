@@ -49,10 +49,15 @@ Internal links FROM existing pages (backlinks to add during deploy):
 - /[existing-slug] has [section] about [topic] → add cross-reference
 (Search existing pages for unlinked mentions of the new page's topic)
 
-Natural CTA placement:
-- [Section where SnapToSize CTA fits naturally]
-- [Second CTA placement]
-- [Third CTA placement]
+Natural CTA placement (1 per 3-4 sections, max 3 — LESSON-066):
+- [CTA 1: Mid-content Card accent — after which section, with what angle]
+- [CTA 2: FinalCTA — before FAQ, with what distinct angle]
+- [CTA 3 (long pages only, 7+ sections): Second mid-content Card accent — after which section, with what distinct angle]
+Note: Each CTA must have a genuinely different angle. Never rephrase the same value prop. Never place CTAs back-to-back.
+
+Financial claims (if comparison/guide page — LESSON-067):
+- [List any fees, margins, or percentages that need WebSearch verification]
+- [Note: all financial data must be line-by-line, not approximated]
 
 Differentiation angle:
 [What makes this article different from existing competition?

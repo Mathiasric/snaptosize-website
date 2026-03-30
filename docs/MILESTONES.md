@@ -1,5 +1,5 @@
 # MILESTONES.md — Revenue Targets & Progress
-**Last updated:** 2026-03-27
+**Last updated:** 2026-03-30
 
 ---
 
@@ -7,7 +7,7 @@
 - **Paying users:** 4 (3 monthly, 1 yearly)
 - **MRR:** $44 (3× $11.99 monthly + $97/year amortized)
 - **Total revenue collected:** $120.98 (1× $97 yearly + 3× $11.99 monthly = $132.96 gross)
-- **SEO pages live:** 35
+- **SEO pages live:** 37
 - **First paying customer:** 2026-03-03
 - **Target:** $1M ARR (~7,500 paying users)
 

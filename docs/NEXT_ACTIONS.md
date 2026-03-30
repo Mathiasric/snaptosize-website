@@ -32,17 +32,26 @@
 - [ ] If any respond → Free Pro forever + 25% recurring commission + /ref/[name] link
 - [ ] Update `marketing/outreach/outreach-tracker.json` with dates
 
-### 2. Product Hunt Launch Prep
-**Why:** Free, can deliver 500+ visits in 1 day. NOT too early — "18,000+ print packs generated" is strong utility proof even without user testimonials.
-**Status:** Not started. Prep this week, launch next week (Tue-Thu optimal).
-- [ ] Write tagline + description (< 260 chars)
-- [ ] Prepare 4-5 product screenshots (hero, upload → ZIP flow, before/after)
-- [ ] Create short demo GIF or video
-- [ ] Set up maker profile on producthunt.com
-- [ ] Write "first comment" — founder story, why stretch-only matters, "18k packs" stat
-- [ ] Schedule launch for next Tue/Wed/Thu
-- [ ] Prep social + email blast for launch day
+### 2. Product Hunt Launch — SCHEDULED March 31, 2026
+**Why:** Free, can deliver 500+ visits in 1 day. "18,000+ print packs generated" is strong utility proof.
+**Status:** SCHEDULED. Launches Tuesday March 31 at 12:01 AM PT (09:01 CET).
+- [x] Write tagline + description
+- [x] Prepare 6 product screenshots (hero, app, before/after, how-it-works, ratios, pricing)
+- [x] Set up maker profile on producthunt.com (@snaptosize)
+- [x] Write first comment with PRODUCTHUNT promo code
+- [x] Submit and schedule on PH
+- [x] Create Stripe promo: PRODUCTHUNT (100% off first month, 200 uses, expires Apr 30)
+- [x] Enable `allow_promotion_codes` on monthly checkout only (app repo)
+- [x] Create IG + Pinterest launch images (3 total)
+- [x] Write all social captions + email blast copy
+- [ ] **Sunday:** Upload images to R2 + schedule via Buffer (Claude does this)
+- [ ] **Sunday:** Prepare email draft in Resend (user does this, 10 min)
+- [ ] **Tuesday 09:05:** Copy live PH URL, paste into Resend draft, send email
+- [ ] **Tuesday 09:30:** Update IG bio link + post IG Story
+- [ ] **Tuesday all day:** Monitor and reply to PH comments
 - **Target:** 100+ upvotes, 500+ visits, 30+ signups
+- **All assets:** `producthunt/` directory + `marketing/social/content/*/2026-03-31-producthunt-launch*/`
+- **All copy:** `producthunt/copy.md`
 
 ### 3. Cold Email to Etsy Printable Sellers
 **Why:** Direct outreach to ICP. Different from educator outreach — these are potential USERS, not distributors.

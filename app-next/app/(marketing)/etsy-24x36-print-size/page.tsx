@@ -471,7 +471,7 @@ export default function Etsy24x36PrintSizePage() {
                       </td>
                     </tr>
                     <tr className="border-b border-white/10">
-                      <td className="py-3 px-4">12×18</td>
+                      <td className="py-3 px-4"><Link href="/etsy-12x18-print-size" className="text-accent-light hover:underline">12×18</Link></td>
                       <td className="py-3 px-4 text-foreground-60">
                         3600 × 5400
                       </td>

@@ -494,3 +494,66 @@ Never put "30+ sizes" and "70 files" in the same pill row.
 - Size pages: search for the size number (e.g., "20×30", "20x30") across all pages
 - Niche pages: search for the niche term (e.g., "quote", "typography") across all pages
 - Use `grep` to find mentions, then add links in the most natural positions.
+
+### LESSON-061: NEVER remove or modify MCP server configurations (2026-03-27)
+**Trigger:** A chat session "cleaned up" `.claude/settings.json` by removing the `mcpServers` block (Gemini + Playwright) and creating an empty `.mcp.json`. This broke the entire social media pipeline — Gemini MCP disappeared, forcing fallback to Imagen 4.0 Python scripts which produce garbage infographics (CSS code in images, garbled text, wrong sizes).
+**Rule:**
+1. **NEVER remove MCP server configs** without explicit user instruction. MCP servers are critical infrastructure.
+2. **NEVER "clean up" settings files** by removing blocks you don't understand.
+3. **MCP servers belong in `.mcp.json`** at project root (not in `.claude/settings.json` which no longer supports `mcpServers`)
+4. **If migrating settings:** ALWAYS copy servers to the new location BEFORE removing from the old one
+5. **Gemini MCP is the ONLY image generation tool** for the social pipeline. Imagen 4.0 API cannot render text in infographics. Never substitute it.
+6. **Current MCP servers (DO NOT REMOVE):** gemini (image gen + text), playwright (screenshots + visual QA)
+
+### LESSON-062: Imagen 4.0 cannot do infographics — only use Gemini MCP for social images (2026-03-27)
+**Trigger:** After Gemini MCP was accidentally removed, pipeline used `imagen-4.0-generate-001` via Python script. Results: CSS code rendered as image content ("display: flex. directcion: row"), markdown syntax leaking ("#", "##"), garbled text ("CEAX PXX", "covery" instead of "every"), wrong sizes ("5x14", "18x14"), degree symbols instead of multiplication signs.
+**Rule:** For social media infographics:
+1. **Always use Gemini MCP** (`gemini-generate-image`) — understands layout, renders text accurately
+2. **Never use Imagen 4.0** for text-heavy images — it dumps prompt/CSS as visual content
+3. **If Gemini MCP is unavailable**, STOP and fix the MCP configuration first. Do NOT fall back to Imagen API.
+4. **Imagen 4.0 is only acceptable** for photorealistic images WITHOUT text overlays (lifestyle photos, product mockups where text is added separately via HTML/Playwright)
+
+### LESSON-063: Never generate social content ad-hoc — always use the pipeline (2026-03-30)
+**Trigger:** Assistant wrote ad-hoc Python scripts to generate 4 images instead of running `/pipeline-run-week`. Results: hex codes rendered as text in images, Instagram post had white borders (looked like 2:3 with padding instead of true 4:5 fill), hallucinated size numbers in tag-cloud, no metadata.json files, no QA validation, no captions. All 4 images rejected.
+**Rule:**
+1. **Always use `/pipeline-run-week`** for social content — it handles research, creation, QA, and scheduling in proper stages
+2. **Never write one-off generation scripts** — the pipeline exists to prevent exactly these quality issues
+3. **Every content item needs metadata.json** with captions, hashtags, board assignment, and link URL
+4. **QA stage is mandatory** — dimensions, file format, metadata, and captions must be validated before scheduling
+5. **If the pipeline is broken**, fix the pipeline. Do not bypass it with ad-hoc scripts.
+
+### LESSON-064: Never create content that contradicts the product's own behavior (2026-03-30)
+**Trigger:** Generated Instagram post "3 Resizing Mistakes That Ruin Your Prints" listed "Stretching to fit" as mistake #1. But SnapToSize itself uses stretch-only resizing (Lanczos, no cropping). This directly contradicts and downplays the product.
+**Rule:**
+1. **Know the product mechanics** — SnapToSize uses stretch-only resize (no crop, no padding). Never frame stretching as a mistake or negative.
+2. **Never create "mistakes to avoid" content that criticizes what the product does** — always check if the "mistake" is actually the product's approach
+3. **When in doubt, re-read LESSON-001** — it states "stretch-only (no cropping)" as a core feature
+4. **Safe pain-points to use:** wrong DPI, manual resizing tedium, missing sizes, wrong file format, not offering enough ratios — NOT stretching
+
+### LESSON-065: Instagram metadata MUST have "caption" field — not just "description" (2026-03-30)
+**Trigger:** Two Instagram posts (ISO sizes, PH launch) were scheduled via Buffer with completely empty text. The metadata.json files had "description" but not "caption". The schedule script uses `meta.get("caption", "")` for Instagram posts.
+**Rule:**
+1. **Every Instagram metadata.json MUST include a "caption" field** — this is what Buffer sends as the post text
+2. **Pinterest uses "description", Instagram uses "caption"** — different field names per platform
+3. **Before scheduling, verify metadata has the right fields** for the target platform:
+   - Pinterest: `title`, `description`, `link`, `board`
+   - Instagram: `caption`, `hashtags`
+4. **Dry-run doesn't catch this** — it only checks if items exist, not if metadata fields are populated correctly
+
+### LESSON-066: CTA density and variety — no repeating the same message (2026-03-30)
+**Trigger:** User called out 12×18 page and POD vs DD page for having 3 CTA sections each that all said "upload once, get everything, no manual work" in slightly different wording. Felt repetitive and salesy.
+**Rule:**
+1. **1 CTA per 3-4 content sections, max 3 total.** Short pages (size, ~5 sections) get 2. Long pages (guides, pillar, 7+ sections) can have up to 3. Last CTA is always FinalCTA before FAQ.
+2. **Each CTA must have a distinct angle** — don't rephrase the same value prop. If CTA 1 says "get all sizes from one upload", CTA 2 should NOT say "skip manual resizing" (same message)
+3. **EmailCaptureSection is NOT a CTA** — it's lead capture. Place it after FAQ, separated from product CTAs
+4. **Never stack 2+ CTAs back-to-back** — minimum 3 content sections between each CTA
+5. **If you can't write a distinct CTA, you don't need another one** — fewer is better than repetitive
+
+### LESSON-067: Research financial claims before publishing — never estimate fees (2026-03-30)
+**Trigger:** POD vs DD page had "Etsy fees (~13%)" which was wrong. Actual Etsy fees are $0.20 listing + 6.5% transaction + 3% + $0.25 payment processing = ~10-18% effective depending on price. Margin ranges ("85-95%") were also inaccurate.
+**Rule:**
+1. **Always WebSearch actual fee structures** before writing financial comparisons
+2. **Show fee breakdowns line-by-line** (listing fee, transaction fee, processing fee) — not a single approximation
+3. **Margins depend on price point** — the fixed $0.45/transaction fee means low-priced items ($4.99) have much lower margins than higher-priced items ($14.99). Always acknowledge this variance
+4. **Include offsite ads warning** — Etsy charges 15% extra on offsite-ad-attributed sales (12% and mandatory above $10K/yr revenue)
+5. **Use conservative, defensible ranges** — better to slightly understate margins than overstate them. Readers who discover inflated numbers lose trust in the entire article

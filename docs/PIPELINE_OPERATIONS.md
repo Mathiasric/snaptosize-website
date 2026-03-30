@@ -204,11 +204,11 @@ R2_PUBLIC_URL=https://social.snaptosize.com
 
 | Stage | What happens | Owner |
 |-------|-------------|-------|
-| 1. **Research** | `content-researcher` agents generate keyword briefs (parallel) | Subagents |
-| 2. **Write** | `seo-writer` agents convert briefs into Next.js pages (parallel) | Subagents |
+| 1. **Research** | `content-researcher` agents generate keyword briefs (parallel). Briefs for comparison/guide pages must flag financial claims needing WebSearch verification (LESSON-067) | Subagents |
+| 2. **Write** | `seo-writer` agents convert briefs into Next.js pages (parallel). 1 CTA per 3-4 sections, max 3, each with distinct angle (LESSON-066). Financial claims must be line-by-line verified, never approximated | Subagents |
 | 3. **Review** | `npx next build` — verify all routes compile, zero errors | Main agent |
 | 4. **Deploy** | Update Header, Footer, page-registry, pipeline state, MILESTONES, CONTENT_PLAYBOOK. Git commit + push | Main agent |
-| 5. **Verify** | **Visual QA with Playwright** (see checklist below). Fix issues before marking complete | Main agent |
+| 5. **Verify** | **Visual QA with Playwright** (see checklist below). Includes CTA audit — no back-to-back CTAs, no repeated messaging | Main agent |
 
 #### Verify Stage Checklist (LESSON-052)
 

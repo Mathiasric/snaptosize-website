@@ -560,7 +560,7 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
                     <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
                     <span>
                       <strong>Buyers know which ZIP to use</strong> — if they
-                      have a 12×18 frame (2:3 ratio), they download the 2:3 pack
+                      have a <Link href="/etsy-12x18-print-size" className="text-accent-light hover:underline">12×18</Link> frame (2:3 ratio), they download the 2:3 pack
                     </span>
                   </li>
                   <li className="flex items-start gap-3">

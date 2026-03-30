@@ -166,6 +166,9 @@ export function Header() {
                       <Link href="/etsy-11x14-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         11&times;14 Print Size
                       </Link>
+                      <Link href="/etsy-12x18-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                        12&times;18 Print Size
+                      </Link>
                     </div>
                     <div className="space-y-0.5">
                       <Link href="/etsy-a4-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
@@ -235,6 +238,9 @@ export function Header() {
                   </Link>
                   <Link href="/snaptosize-vs-photoshop" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                     SnapToSize vs Photoshop
+                  </Link>
+                  <Link href="/etsy-print-on-demand-vs-digital-download" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    POD vs Digital Downloads
                   </Link>
                 </div>
               </div>
@@ -333,6 +339,9 @@ export function Header() {
                         <Link href="/etsy-11x14-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           11&times;14 Print Size
                         </Link>
+                        <Link href="/etsy-12x18-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          12&times;18 Print Size
+                        </Link>
                         <Link href="/etsy-a4-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           A4 Print Size
                         </Link>
@@ -412,6 +421,9 @@ export function Header() {
                         </Link>
                         <Link href="/snaptosize-vs-photoshop" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           SnapToSize vs Photoshop
+                        </Link>
+                        <Link href="/etsy-print-on-demand-vs-digital-download" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          POD vs Digital Downloads
                         </Link>
 
                         {/* Troubleshooting */}

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
@@ -81,7 +82,7 @@ export default function SizesPage() {
                 </p>
                 <ul className="space-y-2 text-sm text-foreground-60">
                   <li>
-                    <strong>2:3 ratio</strong> — 4×6, 8×12, 12×18 all share the
+                    <strong>2:3 ratio</strong> — 4×6, 8×12, <Link href="/etsy-12x18-print-size" className="text-accent-light hover:underline">12×18</Link> all share the
                     same proportions
                   </li>
                   <li>

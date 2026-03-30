@@ -294,5 +294,21 @@
     "keywords": ["snaptosize vs photoshop", "photoshop alternative etsy prints", "resize images for etsy without photoshop", "batch resize etsy printables photoshop"],
     "cluster": "comparisons",
     "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "how-to-resize-images-for-etsy", "how-to-sell-printables-on-etsy-without-photoshop", "snaptosize-vs-canva", "etsy-20mb-file-limit", "best-resolution-for-etsy-printables", "how-many-sizes-etsy-printable", "how-to-package-digital-wall-art-for-etsy", "etsy-print-size-calculator"]
+  },
+  {
+    "slug": "etsy-12x18-print-size",
+    "title": "12×18 Print Size for Etsy — Pixels, DPI & Framing Guide",
+    "pageType": "size",
+    "keywords": ["etsy 12x18 print size", "12x18 print dimensions 300 dpi", "12x18 poster size", "12x18 frame and mat guide", "12x18 pixel dimensions"],
+    "cluster": "sizes",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-20x30-print-size", "etsy-18x24-print-size", "etsy-24x36-print-size", "etsy-4x6-print-size", "2-3-vs-4-5-ratio", "how-to-resize-images-for-etsy", "best-resolution-for-etsy-printables", "how-many-sizes-etsy-printable", "etsy-20mb-file-limit", "etsy-print-size-calculator"]
+  },
+  {
+    "slug": "etsy-print-on-demand-vs-digital-download",
+    "title": "Print on Demand vs Digital Downloads on Etsy — Which Is More Profitable?",
+    "pageType": "guide",
+    "keywords": ["etsy print on demand vs digital download", "etsy POD vs printables", "etsy digital downloads vs print on demand", "should I sell printables or print on demand"],
+    "cluster": "guides",
+    "relatedSlugs": ["how-to-sell-digital-downloads-on-etsy", "what-files-to-include-etsy-digital-download", "how-to-package-digital-wall-art-for-etsy", "how-to-price-etsy-printables", "etsy-print-sizes", "how-many-sizes-etsy-printable", "etsy-digital-download-not-selling", "how-to-resize-images-for-etsy"]
   }
 ]

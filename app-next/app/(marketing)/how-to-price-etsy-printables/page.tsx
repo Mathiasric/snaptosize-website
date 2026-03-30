@@ -304,7 +304,9 @@ export default function HowToPriceEtsyPrintablesPage() {
                   <p className="text-foreground-60 text-sm">
                     Every sale after covering your design time is pure profit.
                     No shipping, no inventory, no materials. Your second sale
-                    costs nothing to fulfill. This means you can price for value
+                    costs nothing to fulfill. This is why digital downloads have{" "}
+                    <Link href="/etsy-print-on-demand-vs-digital-download" className="text-accent-light hover:underline">much higher margins than print on demand</Link>.
+                    It means you can price for value
                     instead of cost recovery.
                   </p>
                 </Card>

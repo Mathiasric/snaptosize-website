@@ -41,10 +41,13 @@ export const metadata: Metadata = {
 - Short paragraphs (2-4 sentences max). Use bullets for lists of 3+ items
 - **Be concise.** If a sentence repeats the heading, cut it. If a detail doesn't serve the seller, cut it.
 
-### 4. CTAs (minimum 3)
-- CTA 1: After problem/overview section
-- CTA 2: After most technical section (natural SnapToSize fit)
-- CTA 3: FinalCTA component before FAQ
+### 4. CTAs (LESSON-066)
+- **Rule: 1 CTA per 3-4 content sections, max 3 total.** Last CTA is always `<FinalCTA>` before FAQ.
+- Short pages (size pages, ~5 sections): 2 CTAs — one mid-content `<Card accent>`, one `<FinalCTA>`
+- Long pages (guides, comparisons, pillar, ~7+ sections): up to 3 CTAs — two mid-content `<Card accent>`, one `<FinalCTA>`
+- **Each CTA must have a DISTINCT angle** — if CTA 1 says "get all sizes from one upload", CTA 2 must NOT rephrase the same thing. Find a genuinely different benefit for each.
+- **Never stack CTAs back-to-back** — always have 3+ content sections between them
+- EmailCaptureSection is NOT a CTA — place it after FAQ, never between CTAs
 - All link to: `https://app.snaptosize.com?source=seo_[slug]&kind=guide`
 
 ### 5. Internal links
@@ -179,3 +182,8 @@ Before returning the page, verify:
 - [ ] Trust pills use the standard trio (70 files / 5 packs / orientations) — no contradicting numbers
 - [ ] No product jargon in educational sections (Quick Export, ZIP pack, ratio pack → CTA sections only)
 - [ ] Hero fills viewport (`min-h-screen`) with content near top (not vertically centered)
+- [ ] **CTA count matches page length** — 2 for short pages, up to 3 for long guides/pillar. Never more than 3. (LESSON-066)
+- [ ] **No back-to-back CTAs** — minimum 3 content sections between each CTA
+- [ ] **Each CTA has a distinct angle** — no rephrasing the same value prop
+- [ ] **Financial claims verified** — all fees, margins, percentages WebSearched, not estimated (LESSON-067)
+- [ ] **Fee breakdowns are line-by-line** — never "~X%" approximations for Etsy fees

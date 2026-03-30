@@ -76,6 +76,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-12x18-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                  12×18 Print Size
+                </Link>
+              </li>
+              <li>
                 <Link href="/etsy-a4-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
                   A4 Print Size
                 </Link>
@@ -219,6 +224,11 @@ export function Footer() {
               <li>
                 <Link href="/snaptosize-vs-photoshop" className="transition-colors hover:text-accent-light">
                   SnapToSize vs Photoshop
+                </Link>
+              </li>
+              <li>
+                <Link href="/etsy-print-on-demand-vs-digital-download" className="transition-colors hover:text-accent-light">
+                  POD vs Digital Downloads
                 </Link>
               </li>
             </ul>

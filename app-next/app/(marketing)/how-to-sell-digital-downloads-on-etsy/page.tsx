@@ -291,6 +291,9 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
               <p className="text-base text-white/95 mb-4 drop-shadow-md">
                 Selling digital downloads on Etsy is one of the most scalable business models on the platform.
                 No inventory, no shipping, no production costs — just create once and sell infinitely.
+                Unlike{" "}
+                <Link href="/etsy-print-on-demand-vs-digital-download" className="text-white underline hover:text-white/80">print on demand</Link>,
+                margins stay above 85%.
                 This guide covers everything: correct file formats, proper print sizes, listing setup, and pricing strategies.
               </p>
 
@@ -524,7 +527,7 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
                         <li className="flex items-start gap-2">
                           <span className="font-semibold">1.</span>
                           <span>
-                            <strong>2:3 ratio</strong> — 4×6, 6×9, 8×12, 12×18,
+                            <strong>2:3 ratio</strong> — 4×6, 6×9, 8×12, <Link href="/etsy-12x18-print-size" className="text-accent-light hover:underline">12×18</Link>,
                             16×24, 20×30
                           </span>
                         </li>
@@ -836,7 +839,7 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
                   Why ratios matter more than individual sizes:
                 </h3>
                 <p className="text-sm text-foreground-60 mb-3">
-                  A buyer with a 12×18 frame needs a 2:3 ratio file. A buyer
+                  A buyer with a <Link href="/etsy-12x18-print-size" className="text-accent-light hover:underline">12×18</Link> frame needs a 2:3 ratio file. A buyer
                   with an 8×10 frame needs a 4:5 ratio file. Same artwork,
                   different aspect ratios.
                 </p>
@@ -854,7 +857,7 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
                 <div className="flex items-start gap-3 p-3 rounded-lg bg-background-5 border border-border">
                   <span className="font-semibold">2:3 ratio</span>
                   <span className="text-sm text-foreground-60">
-                    → 4×6, 6×9, 8×12, 12×18, 16×24, 20×30
+                    → 4×6, 6×9, 8×12, <Link href="/etsy-12x18-print-size" className="text-accent-light hover:underline">12×18</Link>, 16×24, 20×30
                   </span>
                 </div>
                 <div className="flex items-start gap-3 p-3 rounded-lg bg-background-5 border border-border">
@@ -1104,7 +1107,7 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
                 <p className="text-sm text-foreground-60 mb-3">
                   This is the most common and most costly error. Buyers expect
                   complete ratio coverage. If you provide only 8×10 and 16×20,
-                  you&apos;ll lose sales to buyers who need 12×18 or A4.
+                  you&apos;ll lose sales to buyers who need <Link href="/etsy-12x18-print-size" className="text-accent-light hover:underline">12×18</Link> or A4.
                 </p>
                 <p className="text-sm text-foreground-60">
                   Solution: Provide all 5 ratio packs (2:3, 3:4, 4:5, ISO,

@@ -248,7 +248,7 @@ export default function EtsyPrintRatiosPage() {
 
               <p className="text-foreground-60 mb-6">
                 Buyers choose prints based on their frame size. If someone has an 8×10 frame (4:5 ratio),
-                they need a 4:5 file. If they have a 12×18 frame (2:3 ratio), they need a 2:3 file.
+                they need a 4:5 file. If they have a <Link href="/etsy-12x18-print-size" className="text-accent-light hover:underline">12×18 frame</Link> (2:3 ratio), they need a 2:3 file.
                 One ratio doesn&apos;t fit all frames — that&apos;s why Etsy sellers need to provide multiple ratios.
                 Check how much of your image gets cropped for each ratio with our{" "}
                 <Link href="/etsy-print-size-calculator" className="text-accent-light hover:underline">print size calculator</Link>.
@@ -283,7 +283,7 @@ export default function EtsyPrintRatiosPage() {
                   <h3 className="text-xl font-bold mb-2">2:3 Ratio</h3>
                   <p className="text-sm text-foreground-60 mb-3">
                     The most common ratio for vertical wall art. Matches frames at IKEA, Target, Amazon,
-                    and most home goods stores. Includes sizes like 4×6, 6×9, 8×12, 12×18, 16×24, 20×30.
+                    and most home goods stores. Includes sizes like 4×6, 6×9, 8×12, <Link href="/etsy-12x18-print-size" className="text-accent-light hover:underline">12×18</Link>, 16×24, 20×30.
                   </p>
                   <p className="text-xs text-foreground-60">
                     <strong>Why it matters:</strong> If you only provide one ratio, make it 2:3.
@@ -379,7 +379,7 @@ export default function EtsyPrintRatiosPage() {
                     </div>
                     <div>
                       <p className="font-semibold text-foreground mb-1">ZIP 1 — 2:3 ratio sizes</p>
-                      <p className="text-xs">Contains 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30 at 300 DPI</p>
+                      <p className="text-xs">Contains 4×6, 6×9, 8×12, 10×15, <Link href="/etsy-12x18-print-size" className="text-accent-light hover:underline">12×18</Link>, 16×24, 20×30 at 300 DPI</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
