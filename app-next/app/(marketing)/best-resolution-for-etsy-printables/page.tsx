@@ -5,21 +5,21 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
   title:
-    "Best Resolution for Etsy Printables — 300 DPI Guide With Pixel Dimensions",
+    "300 DPI for Etsy Printables — Exact Pixels for Every Print Size",
   description:
-    "300 DPI is the professional standard for Etsy printables. Get exact pixel dimensions for every print size, learn how to verify DPI, and automate multi-size file creation.",
+    "300 DPI is non-negotiable for Etsy printables. Get exact pixel dimensions for every size — or auto-generate all 30+ sizes from one upload with our free tool.",
   alternates: {
     canonical: "https://snaptosize.com/best-resolution-for-etsy-printables",
   },
   openGraph: {
     title:
-      "Best Resolution for Etsy Printables — 300 DPI Pixel Dimension Guide | SnapToSize",
+      "300 DPI for Etsy Printables — Exact Pixels for Every Print Size | SnapToSize",
     description:
       "Complete DPI guide for Etsy sellers. Exact pixel dimensions at 300 DPI for every print size, verification steps, and automated multi-size generation.",
     url: "https://snaptosize.com/best-resolution-for-etsy-printables",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Best Resolution for Etsy Printables — 300 DPI Guide With Pixel Dimensions",
+      "300 DPI for Etsy Printables — Exact Pixels for Every Print Size",
     description:
       "300 DPI is non-negotiable for Etsy printables. Exact pixel dimensions for every size, DPI verification, and automated workflow.",
     images: ["/assets/og/best-resolution-for-etsy-printables.png"],
@@ -47,7 +47,7 @@ export default function BestResolutionForEtsyPrintablesPage() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "Best Resolution for Etsy Printables — 300 DPI Guide With Pixel Dimensions",
+      "300 DPI for Etsy Printables — Exact Pixels for Every Print Size",
     description:
       "Complete guide to resolution and DPI for Etsy printable sellers. Includes pixel dimension tables, DPI verification steps, and automated multi-size file generation.",
     url: "https://snaptosize.com/best-resolution-for-etsy-printables",
@@ -951,13 +951,12 @@ export default function BestResolutionForEtsyPrintablesPage() {
               />
             </div>
 
-            {/* --- Email Capture --- */}
-            <div>
-              <EmailCaptureSection
-                heading="Free Etsy Print Size Cheat Sheet"
-                description="All 30 print sizes with exact pixel dimensions at 300 DPI. Plus file naming conventions and ratio pack structure."
-                placeholder="Enter your email"
-                buttonText="Get Free Cheat Sheet"
+            <div className="pb-12">
+              <ContextualCTA
+                problem="Calculating pixel dimensions for 30 sizes at 300 DPI by hand?"
+                solution="SnapToSize handles every size at exactly 300 DPI. Upload your artwork and download print-ready files — no math required."
+                buttonText="Skip the Math"
+                appUrl={appUrl}
               />
             </div>
 

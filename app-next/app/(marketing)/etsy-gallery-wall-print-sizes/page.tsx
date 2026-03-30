@@ -5,7 +5,7 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle, Frame, Layers, LayoutGrid } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
@@ -1613,13 +1613,13 @@ export default function EtsyGalleryWallPrintSizesPage() {
               />
             </div>
 
-            {/* --- Email Capture --- */}
-            <div>
-              <EmailCaptureSection
-                heading="Free Gallery Wall Size Cheat Sheet"
-                description="Every gallery wall arrangement with exact sizes, pixel dimensions at 300 DPI, and room-by-room recommendations in one printable PDF."
-                placeholder="Enter your email"
-                buttonText="Get Free Cheat Sheet"
+            {/* --- Contextual CTA --- */}
+            <div className="pb-12">
+              <ContextualCTA
+                problem="Selling gallery wall sets? Every piece needs to come in every size."
+                solution="Upload one artwork, get all standard sizes. Create complete gallery wall sets from a single source file."
+                buttonText="Create Gallery Wall Sets"
+                appUrl={appUrl}
               />
             </div>
 

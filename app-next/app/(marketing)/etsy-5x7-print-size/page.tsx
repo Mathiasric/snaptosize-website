@@ -5,7 +5,7 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
@@ -1048,13 +1048,12 @@ export default function Etsy5x7PrintSizePage() {
               />
             </div>
 
-            {/* --- Email Capture --- */}
-            <div>
-              <EmailCaptureSection
-                heading="Free Etsy Print Size Cheat Sheet"
-                description="All 30 Etsy sizes and pixel dimensions at 300 DPI in one PDF. Plus file naming conventions and best practices."
-                placeholder="Enter your email"
-                buttonText="Get Free Cheat Sheet"
+            <div className="pb-12">
+              <ContextualCTA
+                problem="Still exporting 5×7 files manually for every listing?"
+                solution="Upload once, get 5×7 plus 29 other sizes at 300 DPI. Organized in ratio packs, ready for Etsy."
+                buttonText="Get All Sizes"
+                appUrl={appUrl}
               />
             </div>
 

@@ -5,17 +5,17 @@ import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, ArrowRight } from "lucide-react";
-import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "Etsy Print Ratios Explained (How Printable Wall Art Sizes Work)",
+  title: "Etsy Print Ratios — Generate All 4 Ratio Packs From One Image",
   description:
-    "Understand the 4 print ratios used in Etsy printable wall art (2:3, 3:4, 4:5, ISO). Learn how printable packs are structured and how to prepare files correctly.",
+    "Understand the 4 Etsy print ratios (2:3, 3:4, 4:5, ISO) and how to generate all ratio packs from a single upload. Free tool included.",
   alternates: { canonical: "https://snaptosize.com/etsy-print-ratios" },
   openGraph: {
-    title: "Etsy Print Ratios Explained — How Printable Wall Art Works",
+    title: "Etsy Print Ratios — Generate All 4 Ratio Packs From One Image",
     description:
       "The essential print ratios every Etsy seller needs: 2:3, 3:4, 4:5, ISO, and extras. Learn how to structure printable packs correctly.",
     url: "https://snaptosize.com/etsy-print-ratios",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Etsy Print Ratios Explained (How Printable Wall Art Sizes Work)",
+    title: "Etsy Print Ratios — Generate All 4 Ratio Packs From One Image",
     description:
       "The essential print ratios every Etsy seller needs: 2:3, 3:4, 4:5, ISO, and extras.",
     images: ["/assets/og/etsy-print-ratios.png"],
@@ -41,7 +41,7 @@ export default function EtsyPrintRatiosPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Etsy Print Ratios Explained (How Printable Wall Art Sizes Work)",
+    headline: "Etsy Print Ratios — Generate All 4 Ratio Packs From One Image",
     description:
       "Complete guide to print ratios for Etsy printable wall art sellers.",
     url: "https://snaptosize.com/etsy-print-ratios",
@@ -615,13 +615,12 @@ export default function EtsyPrintRatiosPage() {
               />
             </div>
 
-            {/* Lead Capture */}
             <div className="pb-12">
-              <EmailCaptureSection
-                heading="Free Etsy Print Size Cheat Sheet"
-                description="Get all Etsy ratios and pixel dimensions at 300 DPI in one handy PDF reference. Plus file naming conventions and best practices."
-                placeholder="Enter your email"
-                buttonText="Get Free Cheat Sheet"
+              <ContextualCTA
+                problem="Manually resizing your artwork for 4 different ratio families?"
+                solution="Upload once. SnapToSize generates every ratio — 2:3, 3:4, 4:5, and ISO — organized in separate ZIPs. 60 seconds."
+                buttonText="Generate All Ratios"
+                appUrl={appUrl}
               />
             </div>
 

@@ -5,7 +5,7 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
@@ -1082,13 +1082,12 @@ export default function EtsyDigitalDownloadBlurryPrintsPage() {
               />
             </div>
 
-            {/* --- Email Capture --- */}
-            <div>
-              <EmailCaptureSection
-                heading="Free Etsy Print Size Cheat Sheet"
-                description="All 30 Etsy sizes with pixel dimensions at 300 DPI, ratio families, and file naming conventions. One page, zero guesswork."
-                placeholder="Enter your email"
-                buttonText="Get Free Cheat Sheet"
+            <div className="pb-12">
+              <ContextualCTA
+                problem="Worried about blurry prints from your files?"
+                solution="SnapToSize guarantees 300 DPI at every size. Upload your artwork and every output is print-quality — verified automatically."
+                buttonText="Fix Your Print Quality"
+                appUrl={appUrl}
               />
             </div>
 

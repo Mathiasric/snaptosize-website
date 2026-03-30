@@ -5,7 +5,7 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle, Clock, Package } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
@@ -648,13 +648,12 @@ export default function HowManySizesEtsyPrintablePage() {
               </Card>
             </div>
 
-            {/* --- Email Capture (after pain points) --- */}
-            <div>
-              <EmailCaptureSection
-                heading="Free Etsy Printable Size Checklist"
-                description="All 30+ sizes, 5 ratio packs, portrait and landscape orientations — up to 70 files mapped out with pixel dimensions at 300 DPI. Plus file naming conventions and organization best practices."
-                placeholder="Enter your email"
-                buttonText="Get Free Checklist"
+            <div className="pb-12">
+              <ContextualCTA
+                problem="Convinced you need more sizes but dreading the manual work?"
+                solution="Upload one image. SnapToSize generates up to 70 files across 5 ratio packs — portrait and landscape. Under a minute."
+                buttonText="Generate All Sizes"
+                appUrl={appUrl}
               />
             </div>
 

@@ -5,18 +5,18 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "A4 Print Size for Etsy — Pixels, DPI & International Sizing Guide",
+  title: "A4 for Etsy — Exact Pixels at 300 DPI + All ISO Sizes",
   description:
-    "A4 is 2480×3508 pixels at 300 DPI (210×297mm). Get exact dimensions, A4 vs US Letter comparison, A-series sizing table, and file setup for Etsy digital downloads.",
+    "A4 is 2480×3508 pixels at 300 DPI (210×297mm). Generate A4 plus A5, A3, A2, and all US sizes from one upload. Free tool for Etsy sellers.",
   alternates: { canonical: "https://snaptosize.com/etsy-a4-print-size" },
   openGraph: {
     title:
-      "A4 Print Size for Etsy — Pixel Dimensions at 300 DPI | SnapToSize",
+      "A4 for Etsy — Exact Pixels at 300 DPI + All ISO Sizes",
     description:
       "Complete A4 print guide for Etsy sellers. 2480×3508 pixels at 300 DPI, ISO A-series ratio, A4 vs US Letter, and international sizing.",
     url: "https://snaptosize.com/etsy-a4-print-size",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "A4 Print Size for Etsy — Pixel Dimensions at 300 DPI",
+    title: "A4 for Etsy — Exact Pixels at 300 DPI + All ISO Sizes",
     description:
       "Complete A4 print guide for Etsy sellers. 2480×3508 pixels at 300 DPI, ISO A-series ratio, and international file setup.",
     images: ["/assets/og/etsy-a4-print-size.png"],
@@ -42,7 +42,7 @@ export default function EtsyA4PrintSizePage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "A4 Print Size for Etsy — Pixel Dimensions at 300 DPI",
+    headline: "A4 for Etsy — Exact Pixels at 300 DPI + All ISO Sizes",
     description:
       "Complete technical guide to A4 print dimensions for Etsy sellers, including exact pixel dimensions at 300 DPI, A4 vs US Letter comparison, and A-series sizing for international markets.",
     url: "https://snaptosize.com/etsy-a4-print-size",
@@ -999,13 +999,12 @@ export default function EtsyA4PrintSizePage() {
               />
             </div>
 
-            {/* --- Email Capture --- */}
-            <div>
-              <EmailCaptureSection
-                heading="Free Etsy Print Size Cheat Sheet"
-                description="All Etsy ratios and pixel dimensions at 300 DPI in one PDF. US sizes, international A-series, and file naming conventions."
-                placeholder="Enter your email"
-                buttonText="Get Free Cheat Sheet"
+            <div className="pb-12">
+              <ContextualCTA
+                problem="Offering A4 but missing other ISO sizes your international buyers need?"
+                solution="Generate A5, A4, A3, A2, and A1 alongside all US sizes. One upload, complete international coverage."
+                buttonText="Add All ISO Sizes"
+                appUrl={appUrl}
               />
             </div>
 

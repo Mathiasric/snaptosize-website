@@ -5,7 +5,7 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle, ArrowRight } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
@@ -1142,15 +1142,12 @@ export default function TwoThreeVsFourFiveRatioPage() {
               />
             </div>
 
-            {/* ===== Email Capture ===== */}
-            <div>
-              <EmailCaptureSection
-                heading="Free Etsy Print Size Cheat Sheet"
-                description="All Etsy ratios and pixel dimensions at 300 DPI in one PDF."
-                placeholder="Enter your email"
-                buttonText="Get Free Cheat Sheet"
-              />
-            </div>
+            <ContextualCTA
+              problem="Manually resizing for both 2:3 and 4:5 ratio families?"
+              solution="Upload once. SnapToSize generates both ratios — plus 3:4 and ISO — organized in separate ZIPs. 60 seconds."
+              appUrl={appUrl}
+              buttonText="Generate Both Ratios"
+            />
 
             {/* ===== Related Pages ===== */}
             <RelatedPages currentSlug="2-3-vs-4-5-ratio" />

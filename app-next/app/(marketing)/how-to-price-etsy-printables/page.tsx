@@ -5,7 +5,7 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle, DollarSign } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
@@ -894,13 +894,12 @@ export default function HowToPriceEtsyPrintablesPage() {
               />
             </div>
 
-            {/* --- Email Capture --- */}
-            <div>
-              <EmailCaptureSection
-                heading="Free Etsy Seller Pricing Calculator"
-                description="Enter your design time and target hourly rate. Get instant price recommendations after Etsy fees. Plus pricing strategies from top sellers."
-                placeholder="Enter your email"
-                buttonText="Get Free Calculator"
+            <div className="pb-12">
+              <ContextualCTA
+                problem="Spending hours on file prep instead of creating new designs?"
+                solution="SnapToSize handles the production work. Upload once, get 30+ sizes. Spend your time on what sells — new artwork."
+                buttonText="Try It Free"
+                appUrl={appUrl}
               />
             </div>
 

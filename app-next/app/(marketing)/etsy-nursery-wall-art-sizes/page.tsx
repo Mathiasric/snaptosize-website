@@ -5,7 +5,7 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle, Baby, Frame } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
@@ -1047,13 +1047,13 @@ export default function EtsyNurseryWallArtSizesPage() {
               />
             </div>
 
-            {/* --- Email Capture --- */}
-            <div>
-              <EmailCaptureSection
-                heading="Free Nursery Print Size Cheat Sheet"
-                description="All nursery sizes, pixel dimensions at 300 DPI, gallery wall combos, and pricing tips in one PDF."
-                placeholder="Enter your email"
-                buttonText="Get Free Cheat Sheet"
+            {/* --- Contextual CTA --- */}
+            <div className="pb-12">
+              <ContextualCTA
+                problem="Listing nursery wall art? Parents want every size option."
+                solution="One upload → every nursery-friendly size at 300 DPI. Perfect for sets, gallery walls, and individual prints."
+                buttonText="Resize Your Nursery Art"
+                appUrl={appUrl}
               />
             </div>
 

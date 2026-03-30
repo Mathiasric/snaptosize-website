@@ -208,6 +208,44 @@ Every funnel step uses consistent `distinct_id = clerk:{userId}` + properties (`
 
 ---
 
+# 8b. Competitive Landscape (updated 2026-03-30)
+
+**Purpose:** Not for competitor pages or comparison marketing — for strategic awareness and learning from how others operate.
+
+## Direct Competitors (resize for Etsy sellers)
+
+| Tool | Model | Key difference from us |
+|---|---|---|
+| **Artigo** (getartigo.com) | Desktop app, $59 lifetime | 4 crop modes, grid sheets, batch folders. No web presence, no SEO. |
+| **Convert300DPI.com** | Free web tool | Only 5 sizes, no ratio packs, no ZIP org. Catches beginners. |
+| **Pixiffy Pro** | Desktop app, one-time Etsy purchase | Windows only, minimal distribution. |
+
+**Our advantages over all of them:** Browser-based (zero install), 70 files vs 20, 20MB Etsy compliance (nobody else enforces this), 37+ SEO pages (Artigo has ~0), free tier as onboarding funnel.
+
+**Artigo's $59 lifetime pricing** means we win on convenience + distribution, not price. SaaS value must be clear: always updated, web-based, no install, compliance built in.
+
+## Adjacent Tools (mockups — same audience, different problem)
+
+| Tool | What they do | Learning for us |
+|---|---|---|
+| **Mockably.co** | AI mockup generator for printables/POD | Credit-based (no subscription). Targets same Etsy sellers. Early stage. |
+| **Seb's Visuals** (sebsvisual.com) | AI wall art frame mockups | Built by a print seller. "Built by a seller, for sellers" positioning. Credit-based €5/5 credits. Founder-credibility as marketing. |
+| **Dynamic Mockups** | Bulk mockup generation | Direct Etsy integration for pushing mockups to listings. 100k+ templates. |
+| **Placeit** | Template mockup library | $15/mo. 29k+ templates. Broad audience. |
+
+**Key insight:** Mockup tools solve "how does my listing look" — we solve "what files does the customer download." Both problems exist for the same seller. Future opportunity: resize + mockup in one workflow = "Etsy listing production engine" (revisit after 10+ paying users, per existing plan).
+
+**Positioning learning from Seb's Visuals:** Founder story ("built by a seller") builds trust. Consider making founder story more prominent on landing page.
+
+## Strategic Takeaways
+
+1. **No one else has SEO.** Artigo, Mockably, Seb's Visuals — all have near-zero web presence. Our 37-page SEO machine is the moat. Keep building.
+2. **Credit-based pricing is common** in adjacent tools (Mockably, Seb's). Our free-tier-to-Pro funnel is the right model for recurring revenue.
+3. **"Complete listing workflow"** (resize → mockup → listing-ready) is where the market is heading. Multiple tools serving the same seller = integration opportunity.
+4. **Distribution wins, not features.** Artigo has more features. We have more distribution. Distribution compounds.
+
+---
+
 # 9. SEO Content
 
 ## Homepage Performance & Social Previews

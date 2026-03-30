@@ -4,7 +4,7 @@ import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import {
@@ -556,14 +556,13 @@ export default function EtsyPrintSizeCalculatorPage() {
         </Container>
       </section>
 
-      {/* ===== EMAIL CAPTURE ===== */}
-      <section className="py-12 md:py-16 border-t border-border" style={{ backgroundColor: "#111020" }}>
+      <section className="py-12 md:py-16">
         <Container>
-          <EmailCaptureSection
-            heading="Get the Free Print Size Cheat Sheet"
-            description="All 30 sizes, pixel dimensions, and file size estimates in one printable PDF. Pin it next to your desk."
-            placeholder="you@email.com"
-            buttonText="Send Me the Cheat Sheet"
+          <ContextualCTA
+            problem="Done calculating? Generate the actual files."
+            solution="SnapToSize turns your artwork into all 30+ sizes at 300 DPI — organized in ratio packs, ready for Etsy. No manual resizing."
+            appUrl={appUrl}
+            buttonText="Generate All Sizes"
           />
         </Container>
       </section>

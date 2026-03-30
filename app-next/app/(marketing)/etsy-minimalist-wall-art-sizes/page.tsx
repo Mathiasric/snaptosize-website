@@ -5,7 +5,7 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
@@ -1298,13 +1298,13 @@ export default function EtsyMinimalistWallArtSizesPage() {
               <FAQAccordion items={faqItems} />
             </div>
 
-            {/* --- Email Capture --- */}
-            <div>
-              <EmailCaptureSection
-                heading="Free Minimalist Art Sizing Cheat Sheet"
-                description="Every must-have minimalist art size with pixel dimensions at 300 DPI, sub-style recommendations, gallery wall set dimensions, and ratio pack mapping in one printable PDF."
-                placeholder="Enter your email"
-                buttonText="Get Free Cheat Sheet"
+            {/* --- Contextual CTA --- */}
+            <div className="pb-12">
+              <ContextualCTA
+                problem="Listing minimalist art? Clean designs deserve clean file preparation."
+                solution="Upload once. SnapToSize generates every size — large statement pieces, gallery wall sets, small frames — in organized ZIPs."
+                buttonText="Resize Your Minimalist Art"
+                appUrl={appUrl}
               />
             </div>
 

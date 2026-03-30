@@ -5,7 +5,7 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
@@ -1343,13 +1343,13 @@ export default function EtsyQuoteWallArtSizesPage() {
               <FAQAccordion items={faqItems} />
             </div>
 
-            {/* --- Email Capture --- */}
-            <div>
-              <EmailCaptureSection
-                heading="Free Etsy Quote Art Size Cheat Sheet"
-                description="Every must-have quote art size with pixel dimensions at 300 DPI, sub-niche recommendations, and ratio pack mapping in one printable PDF."
-                placeholder="Enter your email"
-                buttonText="Get Free Cheat Sheet"
+            {/* --- Contextual CTA --- */}
+            <div className="pb-12">
+              <ContextualCTA
+                problem="Running a quote art shop? Each design needs every size for every buyer."
+                solution="Upload one quote design → get all 30+ sizes in 60 seconds. Perfect for high-volume typography sellers."
+                buttonText="Resize Your Quote Art"
+                appUrl={appUrl}
               />
             </div>
 

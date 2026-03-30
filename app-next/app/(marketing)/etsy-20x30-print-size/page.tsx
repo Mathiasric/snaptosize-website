@@ -5,7 +5,7 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
@@ -1092,15 +1092,12 @@ export default function Etsy20x30PrintSizePage() {
               />
             </div>
 
-            {/* --- Email Capture --- */}
-            <div>
-              <EmailCaptureSection
-                heading="Free Etsy Print Size Cheat Sheet"
-                description="All Etsy ratios and pixel dimensions at 300 DPI in one PDF. Plus file naming conventions and best practices."
-                placeholder="Enter your email"
-                buttonText="Get Free Cheat Sheet"
-              />
-            </div>
+            <ContextualCTA
+              problem="Still exporting 20×30 files manually for every listing?"
+              solution="Upload once, get 20×30 plus 29 other sizes at 300 DPI. Organized in ratio packs, ready for Etsy."
+              appUrl={appUrl}
+              buttonText="Get All Sizes"
+            />
 
             {/* --- Related Pages --- */}
             <RelatedPages currentSlug="etsy-20x30-print-size" />

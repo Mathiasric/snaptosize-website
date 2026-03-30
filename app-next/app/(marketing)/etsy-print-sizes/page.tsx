@@ -6,19 +6,19 @@ import { Card } from "@/components/Card";
 import { Check, AlertTriangle } from "lucide-react";
 import Image from "next/image";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
   title:
-    "Etsy Print Sizes Guide — Exact Vertical Ratios + Pixel Dimensions at 300 DPI",
+    "All Etsy Print Sizes — 30+ Sizes From One Upload (Free Tool)",
   description:
-    "Complete Etsy print sizes reference: exact pixel dimensions at 300 DPI for every vertical ratio (2:3, 3:4, 4:5, ISO A-series, and extras). Includes 20MB ZIP limit rules and file packaging best practices.",
+    "Complete Etsy print sizes reference: pixel dimensions at 300 DPI for every ratio (2:3, 3:4, 4:5, ISO). Plus a free tool to generate all 30+ sizes from one upload.",
   alternates: { canonical: "https://snaptosize.com/etsy-print-sizes" },
   openGraph: {
     title:
-      "Etsy Print Sizes Guide — Exact Vertical Ratios + Pixel Dimensions | SnapToSize",
+      "All Etsy Print Sizes — 30+ Sizes From One Upload (Free Tool)",
     description:
       "Every Etsy print size at 300 DPI. Vertical ratios, pixel dimensions, 20MB limit rules, and packaging best practices for professional sellers.",
     url: "https://snaptosize.com/etsy-print-sizes",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Etsy Print Sizes Guide — Exact Vertical Ratios + Pixel Dimensions",
+      "All Etsy Print Sizes — 30+ Sizes From One Upload (Free Tool)",
     description:
       "Every Etsy print size at 300 DPI. Complete reference for professional sellers.",
     images: ["/assets/og/etsy-print-sizes.png"],
@@ -46,7 +46,7 @@ export default function EtsyPrintSizesPage() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "Etsy Print Sizes Guide — Exact Vertical Ratios + Pixel Dimensions at 300 DPI",
+      "All Etsy Print Sizes — 30+ Sizes From One Upload (Free Tool)",
     description:
       "Complete Etsy print sizes reference with exact pixel dimensions at 300 DPI for every standard vertical ratio.",
     url: "https://snaptosize.com/etsy-print-sizes",
@@ -1201,18 +1201,17 @@ export default function EtsyPrintSizesPage() {
               />
             </div>
 
-            {/* Internal links for SEO */}
-            <RelatedPages currentSlug="etsy-print-sizes" />
-
-            {/* Lead Capture */}
             <div className="pb-12">
-              <EmailCaptureSection
-                heading="Free Etsy Print Size Cheat Sheet"
-                description="Get all Etsy ratios and pixel dimensions at 300 DPI in one handy PDF reference. Plus file naming conventions and best practices."
-                placeholder="Enter your email"
-                buttonText="Get Free Cheat Sheet"
+              <ContextualCTA
+                problem="Resizing your artwork to 30+ sizes for each listing?"
+                solution="One upload → every standard Etsy size at 300 DPI, organized in ratio packs. Ready to list in under a minute."
+                buttonText="Resize All Sizes at Once"
+                appUrl={appUrl}
               />
             </div>
+
+            {/* Internal links for SEO */}
+            <RelatedPages currentSlug="etsy-print-sizes" />
           </div>
         </Container>
       </section>

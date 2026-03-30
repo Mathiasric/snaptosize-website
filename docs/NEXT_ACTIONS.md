@@ -165,5 +165,8 @@
 | 2026-03-20 | Stretch is a differentiator, not a weakness | Visual comparison shows crop destroys composition; stretch preserves all details |
 | 2026-03-20 | Distribution > product at this stage | Product works, nobody knows about it. Fix awareness first. |
 | 2026-03-20 | Mockup generator is the next major product bet | Resize + mockup = complete listing flow. Research now, build after 10 users. |
+| 2026-03-30 | Competitive research: Artigo, Mockably, Seb's Visuals | Artigo is closest competitor ($59 lifetime desktop app, more features). Our moat is SEO (37 pages vs 0) + browser convenience + 20MB compliance. No feature-chasing needed — distribution wins. Added §8b to GROWTH_STATE. |
+| 2026-03-30 | No competitor comparison pages | Artigo/others too small for dedicated vs-pages. Not our style. Focus energy on educational SEO content. |
+| 2026-03-30 | Founder story as marketing lever | Seb's Visuals uses "built by a seller" effectively. Consider making founder story more visible on landing page. |
 | 2026-03-20 | Batch upload deprioritized | 30-60 sec per image is fast enough. No user complaints about speed. |
 | 2026-03-20 | Created /strategy skill | NotebookLM-backed strategic advisor for session-start orientation |

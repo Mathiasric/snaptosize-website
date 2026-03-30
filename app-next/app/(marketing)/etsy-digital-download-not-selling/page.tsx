@@ -16,7 +16,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
@@ -985,13 +985,12 @@ export default function EtsyDigitalDownloadNotSellingPage() {
               />
             </div>
 
-            {/* --- Email Capture --- */}
-            <div>
-              <EmailCaptureSection
-                heading="Free Etsy Print Size Cheat Sheet"
-                description="All 30 Etsy sizes with pixel dimensions at 300 DPI, ratio families, and file naming conventions. One page, zero guesswork."
-                placeholder="Enter your email"
-                buttonText="Get Free Cheat Sheet"
+            <div className="pb-12">
+              <ContextualCTA
+                problem="Missing sizes could be costing you sales."
+                solution="Professional sellers offer 30+ sizes per design. SnapToSize generates them all from one upload — every ratio, every standard size."
+                buttonText="Add All Sizes to Your Listings"
+                appUrl={appUrl}
               />
             </div>
 

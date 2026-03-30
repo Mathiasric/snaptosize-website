@@ -13,7 +13,7 @@ import {
   Printer,
 } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
@@ -1143,13 +1143,12 @@ export default function HowToResizeImagesForEtsyPage() {
               />
             </div>
 
-            {/* --- Email Capture --- */}
-            <div>
-              <EmailCaptureSection
-                heading="Free Etsy Print Size Cheat Sheet"
-                description="All 30 print sizes with exact pixel dimensions at 300 DPI. Plus file naming conventions and ratio pack structure."
-                placeholder="Enter your email"
-                buttonText="Get Free Cheat Sheet"
+            <div className="pb-12">
+              <ContextualCTA
+                problem="Ready to skip the manual resizing workflow?"
+                solution="SnapToSize automates everything in this guide. Upload one image, download 30+ sizes at 300 DPI in organized ZIPs."
+                buttonText="Try It Free"
+                appUrl={appUrl}
               />
             </div>
 

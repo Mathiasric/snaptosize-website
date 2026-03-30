@@ -5,7 +5,7 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, ArrowRight, X } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
@@ -1084,8 +1084,12 @@ export default function PrintOnDemandVsDigitalDownloadPage() {
               <FAQAccordion items={faqItems} />
             </div>
 
-            {/* --- Email Capture --- */}
-            <EmailCaptureSection />
+            <ContextualCTA
+              problem="Convinced digital downloads are the way? The only bottleneck is file preparation."
+              solution="SnapToSize eliminates it. Upload one image, download every standard print size at 300 DPI in organized ZIPs. 60 seconds."
+              appUrl={appUrl}
+              buttonText="Start Selling Digital Downloads"
+            />
 
             {/* --- Related Pages --- */}
             <RelatedPages currentSlug="etsy-print-on-demand-vs-digital-download" />

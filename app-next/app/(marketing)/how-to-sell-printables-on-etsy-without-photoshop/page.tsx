@@ -14,7 +14,7 @@ import {
   X,
 } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
@@ -921,13 +921,12 @@ export default function HowToSellPrintablesWithoutPhotoshopPage() {
               />
             </div>
 
-            {/* --- Email Capture --- */}
-            <div>
-              <EmailCaptureSection
-                heading="Free Etsy Print Size Cheat Sheet"
-                description="All 30 Etsy sizes with pixel dimensions at 300 DPI, ratio families, and file naming conventions. One page, zero guesswork."
-                placeholder="Enter your email"
-                buttonText="Get Free Cheat Sheet"
+            <div className="pb-12">
+              <ContextualCTA
+                problem="No Photoshop? No problem."
+                solution="SnapToSize generates every print size from one upload. No desktop software needed — works in your browser."
+                buttonText="Try Without Photoshop"
+                appUrl={appUrl}
               />
             </div>
 

@@ -5,18 +5,18 @@ import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, ArrowRight, AlertCircle, FileWarning } from "lucide-react";
-import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "Etsy 20MB File Size Limit Explained (How to Fix Large Digital Downloads)",
+  title: "Etsy 20MB Limit Fix — Auto-Split Files Under 20MB (Free Tool)",
   description:
-    "Hit Etsy's 20MB upload limit for digital downloads? Learn why PNG files are too large, how to use JPG instead, and why ratio packs solve the problem permanently.",
+    "Getting 'file too large' on Etsy? Upload your artwork and every file is auto-converted to JPG, split by ratio, and guaranteed under 20MB. Or read the manual fix.",
   alternates: { canonical: "https://snaptosize.com/etsy-20mb-file-limit" },
   openGraph: {
-    title: "Etsy 20MB Limit — How to Fix 'File Too Large' Errors",
+    title: "Etsy 20MB Limit Fix — Auto-Split Files Under 20MB",
     description:
       "Your digital download is too large for Etsy. Learn why it happens and how to fix it with JPG compression and ratio packs.",
     url: "https://snaptosize.com/etsy-20mb-file-limit",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Etsy 20MB File Size Limit Explained (How to Fix Large Digital Downloads)",
+    title: "Etsy 20MB Limit Fix — Auto-Split Files Under 20MB (Free Tool)",
     description:
       "Hit Etsy's 20MB upload limit? Learn why PNG files are too large and how to use JPG instead.",
     images: ["/assets/og/etsy-20mb-file-limit.png"],
@@ -44,7 +44,7 @@ export default function Etsy20MBFileLimitPage() {
     "@graph": [
       {
         "@type": "Article",
-        headline: "Etsy 20MB File Size Limit Explained (How to Fix Large Digital Downloads)",
+        headline: "Etsy 20MB Limit Fix — Auto-Split Files Under 20MB (Free Tool)",
         description:
           "Complete guide to Etsy's 20MB file size limit for digital downloads. Learn why files are too large and how to fix it.",
         url: "https://snaptosize.com/etsy-20mb-file-limit",
@@ -689,13 +689,12 @@ export default function Etsy20MBFileLimitPage() {
               />
             </div>
 
-            {/* Lead Capture */}
             <div className="pb-12">
-              <EmailCaptureSection
-                heading="Free Etsy Print Size Cheat Sheet"
-                description="Get all Etsy ratios and pixel dimensions at 300 DPI in one handy PDF reference. Plus file naming conventions and best practices."
-                placeholder="Enter your email"
-                buttonText="Get Free Cheat Sheet"
+              <ContextualCTA
+                problem="Still manually converting PNG to JPG and splitting files into ZIPs?"
+                solution="Upload one image. Every file auto-converted, split by ratio, and guaranteed under 20MB. Done in 60 seconds."
+                buttonText="Fix Your File Sizes"
+                appUrl={appUrl}
               />
             </div>
 

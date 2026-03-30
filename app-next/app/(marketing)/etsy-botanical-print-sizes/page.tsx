@@ -5,7 +5,7 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle, Leaf, Flower2 } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
@@ -1465,13 +1465,13 @@ export default function EtsyBotanicalPrintSizesPage() {
               />
             </div>
 
-            {/* --- Email Capture --- */}
-            <div>
-              <EmailCaptureSection
-                heading="Free Etsy Print Size Cheat Sheet"
-                description="All Etsy ratios and pixel dimensions at 300 DPI in one PDF. Perfect for botanical sellers."
-                placeholder="Enter your email"
-                buttonText="Get Free Cheat Sheet"
+            {/* --- Contextual CTA --- */}
+            <div className="pb-12">
+              <ContextualCTA
+                problem="Listing botanical printables? Your buyers expect every standard size."
+                solution="One botanical artwork → complete size pack in seconds. Every ratio, every size, organized in ZIPs."
+                buttonText="Resize Your Botanicals"
+                appUrl={appUrl}
               />
             </div>
 

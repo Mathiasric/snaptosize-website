@@ -5,7 +5,7 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, ArrowRight, X } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
@@ -1245,13 +1245,13 @@ export default function SnapToSizeVsPhotoshopPage() {
               />
             </div>
 
-            {/* --- Email Capture --- */}
-            <div>
-              <EmailCaptureSection
-                heading="Free Etsy Print Size Cheat Sheet"
-                description="Every standard print size with pixel dimensions at 300 DPI, ratio pack mapping, and file setup tips. One printable PDF for your workflow."
-                placeholder="Enter your email"
-                buttonText="Get Free Cheat Sheet"
+            {/* --- Contextual CTA --- */}
+            <div className="pb-12">
+              <ContextualCTA
+                problem="Love Photoshop for design but tired of batch-resizing actions?"
+                solution="Design in Photoshop, resize in SnapToSize. Upload your artwork and get every Etsy size in 60 seconds — no custom actions needed."
+                buttonText="Try It Free"
+                appUrl={appUrl}
               />
             </div>
 

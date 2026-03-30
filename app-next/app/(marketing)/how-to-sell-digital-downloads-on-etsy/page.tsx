@@ -6,7 +6,7 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle, FileText, Upload, DollarSign } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { EmailCaptureSection } from "@/components/EmailCaptureSection";
+import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
@@ -1278,13 +1278,12 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
               />
             </div>
 
-            {/* Lead Capture */}
             <div className="pb-12">
-              <EmailCaptureSection
-                heading="Free Etsy Print Size Cheat Sheet"
-                description="Get all Etsy ratios and pixel dimensions at 300 DPI in one handy PDF reference. Plus file naming conventions and best practices."
-                placeholder="Enter your email"
-                buttonText="Get Free Cheat Sheet"
+              <ContextualCTA
+                problem="Ready to skip the manual file preparation?"
+                solution="SnapToSize automates the hardest part of selling digital downloads. One upload → every standard size, organized and Etsy-ready."
+                buttonText="Try It Free"
+                appUrl={appUrl}
               />
             </div>
 
