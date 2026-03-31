@@ -76,6 +76,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-11x17-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                  11×17 Print Size
+                </Link>
+              </li>
+              <li>
                 <Link href="/etsy-12x18-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
                   12×18 Print Size
                 </Link>
@@ -128,6 +133,11 @@ export function Footer() {
               <li>
                 <Link href="/etsy-minimalist-wall-art-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
                   Minimalist Wall Art Sizes
+                </Link>
+              </li>
+              <li>
+                <Link href="/etsy-20x24-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                  20×24 Print Size
                 </Link>
               </li>
               <li>

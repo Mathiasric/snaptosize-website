@@ -897,7 +897,7 @@ export default function Etsy12x18PrintSizePage() {
                         Confusing 12&times;18 with 11&times;17
                       </h3>
                       <p className="text-foreground-60 text-sm">
-                        11&times;17 (tabloid) is a different ratio entirely.
+                        <Link href="/etsy-11x17-print-size" className="text-accent-light hover:underline">11&times;17 (tabloid)</Link> is a different ratio entirely.
                         Stretching an 11&times;17 design to fit 12&times;18
                         will distort the artwork. They are not
                         interchangeable. If buyers want both, create each at

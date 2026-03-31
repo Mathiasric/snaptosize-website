@@ -1,27 +1,27 @@
 {
   "_fresh": false,
-  "current_week": "W17",
-  "batch_id": "2026-W17",
-  "started_at": "2026-03-30T00:00:00+00:00",
+  "current_week": "W18",
+  "batch_id": "2026-W18",
+  "started_at": "2026-03-31T00:00:00+00:00",
   "target": {
     "pages": 2
   },
   "stages": {
     "researcher": {
       "status": "completed",
-      "output": "2 briefs created (etsy-12x18-print-size, etsy-print-on-demand-vs-digital-download) — parallel keyword research with WebSearch"
+      "output": "2 briefs created (etsy-20x24-print-size, etsy-11x17-print-size) — parallel keyword research with WebSearch"
     },
     "writer": {
       "status": "completed",
-      "output": "2 pages written (parallel subagents) — 12x18 size page + POD vs digital download guide"
+      "output": "2 pages written (parallel subagents) — 20x24 large format size page + 11x17 tabloid size page"
     },
     "review": {
       "status": "completed",
-      "output": "build passed, all pages compile (37 SEO pages total)"
+      "output": "build passed, all pages compile (39 SEO pages total)"
     },
     "deploy": {
       "status": "completed",
-      "output": "Header.tsx, Footer.tsx, page-registry.json updated. MILESTONES updated to 37 pages. Backlinks: 6 inbound for 12x18, 2 inbound for POD vs digital."
+      "output": "Header.tsx, Footer.tsx, page-registry.json updated. Backlinks: 2 inbound for 20x24, 4 inbound for 11x17. Hero CTA buttons added post-QA."
     },
     "verify": {
       "status": "completed",
@@ -30,18 +30,18 @@
   },
   "content_items": [
     {
-      "slug": "etsy-12x18-print-size",
-      "keyword": "etsy 12x18 print size",
+      "slug": "etsy-20x24-print-size",
+      "keyword": "etsy 20x24 print size",
       "type": "size",
       "status": "deployed",
-      "brief": "marketing/briefs/etsy-12x18-print-size-brief.md"
+      "brief": "marketing/briefs/etsy-20x24-print-size-brief.md"
     },
     {
-      "slug": "etsy-print-on-demand-vs-digital-download",
-      "keyword": "etsy print on demand vs digital download",
-      "type": "guide",
+      "slug": "etsy-11x17-print-size",
+      "keyword": "etsy 11x17 print size",
+      "type": "size",
       "status": "deployed",
-      "brief": "marketing/briefs/etsy-print-on-demand-vs-digital-download-brief.md"
+      "brief": "marketing/briefs/etsy-11x17-print-size-brief.md"
     }
   ],
   "metrics": {
@@ -50,5 +50,5 @@
     "failed": 0,
     "success_rate": 1.0
   },
-  "updated_at": "2026-03-30T00:00:00+00:00"
+  "updated_at": "2026-03-31T12:00:00+00:00"
 }

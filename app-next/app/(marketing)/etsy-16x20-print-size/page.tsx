@@ -625,7 +625,7 @@ export default function Etsy16x20PrintSizePage() {
               <p className="text-foreground-60 mb-6">
                 16×20 prints fit directly into standard 16×20 frames with no mat
                 required. For gallery presentation, the most common setups are
-                matting in 20×24 or 24×30 frames, or using floating frames that
+                matting in <Link href="/etsy-20x24-print-size" className="text-accent-light hover:underline">20×24</Link> or 24×30 frames, or using floating frames that
                 add depth without matting. Mentioning these options in your
                 listing description reduces buyer questions and increases
                 perceived value.

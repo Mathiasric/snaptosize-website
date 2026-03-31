@@ -166,6 +166,9 @@ export function Header() {
                       <Link href="/etsy-11x14-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         11&times;14 Print Size
                       </Link>
+                      <Link href="/etsy-11x17-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                        11&times;17 Print Size
+                      </Link>
                       <Link href="/etsy-12x18-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         12&times;18 Print Size
                       </Link>
@@ -188,6 +191,9 @@ export function Header() {
                       </Link>
                       <Link href="/etsy-8-5x11-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         8.5&times;11 US Letter
+                      </Link>
+                      <Link href="/etsy-20x24-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                        20&times;24 Print Size
                       </Link>
                       <Link href="/etsy-20x30-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         20&times;30 Print Size
@@ -339,6 +345,9 @@ export function Header() {
                         <Link href="/etsy-11x14-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           11&times;14 Print Size
                         </Link>
+                        <Link href="/etsy-11x17-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          11&times;17 Print Size
+                        </Link>
                         <Link href="/etsy-12x18-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           12&times;18 Print Size
                         </Link>
@@ -359,6 +368,9 @@ export function Header() {
                         </Link>
                         <Link href="/etsy-8-5x11-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           8.5&times;11 US Letter
+                        </Link>
+                        <Link href="/etsy-20x24-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          20&times;24 Print Size
                         </Link>
                         <Link href="/etsy-20x30-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           20&times;30 Print Size

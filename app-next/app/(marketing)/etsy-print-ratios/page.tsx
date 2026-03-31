@@ -337,7 +337,7 @@ export default function EtsyPrintRatiosPage() {
                   <p className="text-sm text-foreground-60 mb-3">
                     These don&apos;t fit standard ratios but are frequently requested:
                     5×7 (greeting cards), 8.5×11 (US Letter, home printing), <Link href="/etsy-11x14-print-size" className="text-accent-light hover:underline">11×14</Link> (photo mat standard),
-                    13×19 (fine art poster), 20×24.
+                    13×19 (fine art poster), <Link href="/etsy-20x24-print-size" className="text-accent-light hover:underline">20×24</Link>.
                   </p>
                   <p className="text-xs text-foreground-60">
                     <strong>Why it matters:</strong> These are some of the most common requests.

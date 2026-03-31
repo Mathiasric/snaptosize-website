@@ -537,7 +537,7 @@ export default function Etsy85x11PrintSizePage() {
                       </td>
                     </tr>
                     <tr className="border-b border-white/10">
-                      <td className="py-3 px-4">11×17</td>
+                      <td className="py-3 px-4"><Link href="/etsy-11x17-print-size" className="text-accent-light hover:underline">11×17</Link></td>
                       <td className="py-3 px-4 text-foreground-60">
                         3300 × 5100
                       </td>

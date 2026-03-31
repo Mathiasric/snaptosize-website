@@ -296,6 +296,22 @@
     "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "how-to-resize-images-for-etsy", "how-to-sell-printables-on-etsy-without-photoshop", "snaptosize-vs-canva", "etsy-20mb-file-limit", "best-resolution-for-etsy-printables", "how-many-sizes-etsy-printable", "how-to-package-digital-wall-art-for-etsy", "etsy-print-size-calculator"]
   },
   {
+    "slug": "etsy-20x24-print-size",
+    "title": "20\u00d724 Print Size for Etsy",
+    "pageType": "size",
+    "keywords": ["etsy 20x24 print size", "20x24 print dimensions 300 dpi", "20x24 aspect ratio", "20x24 pixel dimensions", "20x24 large format print"],
+    "cluster": "sizes",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-16x20-print-size", "etsy-18x24-print-size", "etsy-20x30-print-size", "etsy-8x10-print-size", "etsy-11x14-print-size", "etsy-5x7-print-size", "etsy-8-5x11-print-size", "how-to-resize-images-for-etsy", "best-resolution-for-etsy-printables", "etsy-print-size-calculator", "how-many-sizes-etsy-printable", "etsy-20mb-file-limit"]
+  },
+  {
+    "slug": "etsy-11x17-print-size",
+    "title": "11\u00d717 Print Size for Etsy",
+    "pageType": "size",
+    "keywords": ["etsy 11x17 print size", "11x17 print dimensions 300 dpi", "11x17 aspect ratio", "tabloid print size etsy", "11x17 pixel dimensions"],
+    "cluster": "sizes",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-a3-print-size", "etsy-8-5x11-print-size", "etsy-11x14-print-size", "etsy-18x24-print-size", "etsy-print-size-calculator", "how-to-resize-images-for-etsy", "best-resolution-for-etsy-printables", "how-many-sizes-etsy-printable", "etsy-20mb-file-limit", "what-files-to-include-etsy-digital-download"]
+  },
+  {
     "slug": "etsy-12x18-print-size",
     "title": "12×18 Print Size for Etsy — Pixels, DPI & Framing Guide",
     "pageType": "size",

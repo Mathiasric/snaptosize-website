@@ -502,8 +502,8 @@ export default function EtsyA3PrintSizePage() {
 
               <p className="text-foreground-60 mb-6">
                 If you&apos;re in the US, the closest paper size to A3 is
-                Tabloid (also called Ledger or ANSI&nbsp;B) at 11&times;17
-                inches. They look similar, but they are not interchangeable.
+                Tabloid (also called Ledger or ANSI&nbsp;B) at <Link href="/etsy-11x17-print-size" className="text-accent-light hover:underline">11&times;17</Link>
+                {" "}inches. They look similar, but they are not interchangeable.
               </p>
 
               <div className="overflow-x-auto mb-8">
