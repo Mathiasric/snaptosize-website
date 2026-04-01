@@ -341,6 +341,11 @@ export default function TwoThreeVsFourFiveRatioPage() {
       <section className="py-12 md:py-16">
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
+            {/* Visual: 2:3 vs 4:5 comparison */}
+            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+              <img src="/assets/visuals/2-3-vs-4-5-ratio-comparison.png" alt="2:3 vs 4:5 ratio side-by-side shape comparison — 2:3 is taller and narrower, 4:5 is wider and closer to square" width={1200} height={520} className="w-full h-auto" loading="lazy" />
+            </div>
+
             {/* ===== SECTION 1: What Is the 2:3 Ratio? ===== */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">

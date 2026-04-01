@@ -283,6 +283,11 @@ export default function EtsyPrintSizesPage() {
       <section className="py-8">
         <Container>
           <div className="max-w-4xl space-y-16">
+            {/* Visual: Master size overview */}
+            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+              <img src="/assets/visuals/etsy-print-sizes-master.png" alt="All 28 Etsy print sizes organized by ratio pack — 2:3, 3:4, 4:5, ISO A-Series, and Extras with pixel dimensions at 300 DPI" width={1200} height={600} className="w-full h-auto" loading="lazy" />
+            </div>
+
             {/* ===== SECTION 1: What Size Should I Upload? (shortened) ===== */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-4">

@@ -172,6 +172,11 @@ export default function EtsyPrintRatiosPage() {
       <section className="py-8">
         <Container>
           <div className="max-w-4xl space-y-16">
+            {/* Visual: 5 ratio packs comparison */}
+            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+              <img src="/assets/visuals/etsy-print-ratios-comparison.png" alt="The 5 Etsy print ratio packs — 2:3, 3:4, 4:5, ISO, and Extras — shown with representative frame shapes at correct proportions" width={1200} height={520} className="w-full h-auto" loading="lazy" />
+            </div>
+
             {/* ===== SECTION 1: What Are Print Ratios? ===== */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
