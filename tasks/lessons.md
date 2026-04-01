@@ -557,3 +557,36 @@ Never put "30+ sizes" and "70 files" in the same pill row.
 3. **Margins depend on price point** — the fixed $0.45/transaction fee means low-priced items ($4.99) have much lower margins than higher-priced items ($14.99). Always acknowledge this variance
 4. **Include offsite ads warning** — Etsy charges 15% extra on offsite-ad-attributed sales (12% and mandatory above $10K/yr revenue)
 5. **Use conservative, defensible ranges** — better to slightly understate margins than overstate them. Readers who discover inflated numbers lose trust in the entire article
+
+### LESSON-068: Most Remotion templates have text overlap issues — QA before batch (2026-03-30)
+**Trigger:** Rendered 7 TikTok videos across 6 templates. User found most had sloppy text overlapping. Only CountdownReveal passed QA.
+**Rule:**
+1. **Render ONE video first and get user approval** before batch rendering
+2. **CountdownReveal is the most reliable template** — other templates (BeforeAfter, StatHighlight, TextSlam, QuickList, TikTokVertical) have text overlap issues with certain prop lengths
+3. **Keep text SHORT** — long points cause overflow. Test with actual content before committing to a batch
+4. **Never auto-generate 7 videos** when user asks for 1
+
+### LESSON-078: Do NOT use min-h-screen on hero sections (2026-04-01)
+**Trigger:** Hero sections had massive empty space on 27" monitors (2560×1440). Gallery wall page (no min-h-screen) looked correct while new pages with min-h-screen had 60% empty hero.
+**Rule:** Hero sections use content-driven height with asymmetric padding: `pt-10 pb-16 md:pt-14 md:pb-24`. Never `min-h-screen`. Reference: `etsy-gallery-wall-print-sizes` hero pattern.
+
+### LESSON-079: EmailCaptureSection / cheat sheet PDF is deprecated (2026-04-01)
+**Trigger:** User confirmed print sheet/PDF is no longer offered.
+**Rule:** Do NOT include EmailCaptureSection on any page. No "Free Cheat Sheet" or "printable PDF" offers. Pages end with FinalCTA → FAQ → RelatedPages. Remove EmailCaptureSection from any page that still has it.
+
+### LESSON-080: Gemini mockups — no text, detailed scene description (2026-04-01)
+**Trigger:** Testing Gemini MCP for room mockup images. Works great when prompt is detailed and explicitly excludes text.
+**Rule:** For Gemini room mockups:
+1. Describe the EXACT room, furniture, frame style, art style, and lighting
+2. Always include "No text, no words, no labels, no watermarks, no phone mockups, no app screenshots, no social media UI elements"
+3. Use `aspectRatio: "3:2"`, `imageSize: "2K"`, `style: "photorealistic"`
+4. Save to `app-next/public/assets/visuals/etsy-[slug]-mockup.jpg`
+
+### LESSON-081: Size comparison diagrams use CSS/HTML → Playwright screenshot (2026-04-01)
+**Trigger:** Playwright-generated diagrams are pixel-perfect, free, and templatable vs Gemini which hallucinates text.
+**Rule:** For size comparison visuals:
+1. Use `tests/diagrams/gen-diagram.js` to generate HTML files
+2. Screenshot with `npx playwright screenshot --viewport-size="1200,500"`
+3. Save to `app-next/public/assets/visuals/etsy-[slug]-size-comparison.png`
+4. Proportions must be mathematically correct (1 inch = scale factor in px)
+5. Hero size highlighted in teal, others in white/gray

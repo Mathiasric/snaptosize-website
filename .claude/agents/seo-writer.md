@@ -67,11 +67,10 @@ Auto-generated from page-registry.json — no manual entry needed.
 
 **This is the #1 source of post-write fixes. Get it right the first time.**
 
-- Hero MUST fill viewport: add `min-h-screen` to the hero `<section>` (LESSON-056)
-- Use **top padding + generous internal spacing** to distribute content (NOT `flex justify-center`):
-  - Niche/guide pages: `min-h-screen pt-[8vh] md:pt-[12vh] pb-16 md:pb-24`
-  - Size pages: `min-h-screen pt-14 pb-20 md:pt-20 md:pb-28`
-- Increase spacing between hero elements to fill the viewport: `mb-5` on labels, `mb-5` on H1, `mb-8` on description, `mb-10` on CTA
+- Hero uses content-driven height — do NOT use `min-h-screen` (causes empty space on 27" monitors)
+- Use **asymmetric padding** (NOT `flex justify-center`):
+  - All pages: `pt-10 pb-16 md:pt-14 md:pb-24`
+- Use generous spacing between hero elements: `mb-5` on labels, `mb-5` on H1, `mb-8` on description, `mb-10` on CTA
 - Trust pills MUST be visible within initial viewport at 1440×900 — no scrolling
 - H1 in upper third of viewport, not centered
 - CSS visual element (right side, `hidden md:block` or `hidden lg:block`) must not overlap text
