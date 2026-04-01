@@ -8,6 +8,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "24×36 Print Size for Etsy — Pixels, DPI & Large Format Setup",
@@ -289,6 +290,10 @@ export default function Etsy24x36PrintSizePage() {
       <section className="py-12 md:py-16">
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
+            <QuickAnswer question="What pixel dimensions for 24×36 at 300 DPI?">
+              <strong>7200 × 10800 pixels</strong>. 24×36 is the standard poster size — available as single export only (not included in ratio packs).
+            </QuickAnswer>
+
             {/* --- Exact Dimensions --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
@@ -339,6 +344,10 @@ export default function Etsy24x36PrintSizePage() {
                 cameras scale to 24×36 without any cropping &mdash; the full frame
                 is preserved.
               </p>
+            </div>
+
+            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+              <img src="/assets/visuals/etsy-24x36-size-comparison.png" alt="24×36 poster size comparison with 16×20, 18×24, and 20×30" width={1200} height={500} className="w-full h-auto" loading="lazy" />
             </div>
 
             {/* --- Why 24×36 --- */}
@@ -498,7 +507,7 @@ export default function Etsy24x36PrintSizePage() {
                       </td>
                     </tr>
                     <tr className="bg-accent/5">
-                      <td className="py-3 px-4 font-semibold">24×36</td>
+                      <td className="py-3 px-4 font-semibold">24×36<span className="ml-1.5 px-1.5 py-0.5 rounded text-[10px] font-mono bg-teal-400/10 text-teal-300/80 border border-teal-400/20">Popular</span></td>
                       <td className="py-3 px-4 text-foreground-60">
                         7200 × 10800
                       </td>

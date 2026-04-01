@@ -7,6 +7,7 @@ import { Check } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "20\u00d724 Print Size for Etsy \u2014 Pixels, DPI & Framing",
@@ -274,6 +275,9 @@ export default function Etsy20x24PrintSizePage() {
               <span className="text-xs font-mono tracking-[0.15em] text-violet-300/60 uppercase">
                 Print Size Reference
               </span>
+              <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold tracking-wide bg-teal-400/10 border border-teal-400/25 text-teal-300/70">
+                Popular
+              </span>
             </div>
 
             <h1 className="font-bold tracking-tight mb-5">
@@ -322,6 +326,27 @@ export default function Etsy20x24PrintSizePage() {
                   Portrait, landscape &amp; square
                 </span>
               </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* ===== QUICK ANSWER + DIAGRAM ===== */}
+      <section className="py-8 md:py-10">
+        <Container>
+          <div className="max-w-3xl mx-auto space-y-8">
+            <QuickAnswer question="What pixel dimensions for 20×24 at 300 DPI?">
+              <strong>6000 × 7200 pixels</strong>. 20×24 is in the Extras pack — a large format for gallery-quality prints and professional framing.
+            </QuickAnswer>
+            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+              <img
+                src="/assets/visuals/etsy-20x24-size-comparison.png"
+                alt="20×24 print size comparison with 16×20, 18×24, and 20×25"
+                width={1200}
+                height={500}
+                className="w-full h-auto"
+                loading="lazy"
+              />
             </div>
           </div>
         </Container>

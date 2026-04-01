@@ -267,7 +267,11 @@ export default function HowManySizesEtsyPrintablePage() {
             <p className="text-base text-white/60 mb-5 max-w-lg">
               Should you include 5 sizes? 10? All of them? Professional sellers
               deliver up to 70 print-ready files &mdash; 30+ sizes in portrait
-              and landscape, organized in 5 ratio packs. Here&apos;s the exact
+              and{" "}
+              <Link href="/etsy-landscape-print-sizes" className="text-teal-300/70 hover:text-teal-300 underline underline-offset-2">
+                landscape
+              </Link>
+              , organized in 5 ratio packs. Here&apos;s the exact
               structure &mdash; and how to create it without spending hours in
               Photoshop.
             </p>
@@ -640,8 +644,9 @@ export default function HowManySizesEtsyPrintablePage() {
               <Card accent className="p-6">
                 <p className="text-sm text-foreground-60">
                   <strong className="text-foreground">The difference:</strong>{" "}
-                  30+ sizes in portrait and landscape &mdash; up to 70 files
-                  &mdash; organized into 5 ratio packs is professional. 50
+                  30+ sizes in portrait and{" "}
+                  <Link href="/etsy-landscape-print-sizes" className="text-accent-light hover:underline">landscape</Link>{" "}
+                  &mdash; up to 70 files &mdash; organized into 5 ratio packs is professional. 50
                   random files dumped into one ZIP is chaos. Organization is
                   what makes comprehensive coverage work.
                 </p>

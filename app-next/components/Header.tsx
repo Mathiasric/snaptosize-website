@@ -137,11 +137,17 @@ export function Header() {
                     <Link href="/etsy-gallery-wall-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Gallery Wall Print Sizes
                     </Link>
+                    <Link href="/etsy-square-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Square Print Sizes
+                    </Link>
                     <Link href="/etsy-quote-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Quote Wall Art Sizes
                     </Link>
                     <Link href="/etsy-minimalist-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Minimalist Wall Art Sizes
+                    </Link>
+                    <Link href="/etsy-landscape-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Landscape Print Sizes
                     </Link>
                   </div>
                 </div>
@@ -391,11 +397,17 @@ export function Header() {
                         <Link href="/etsy-gallery-wall-print-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Gallery Wall Print Sizes
                         </Link>
+                        <Link href="/etsy-square-print-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Square Print Sizes
+                        </Link>
                         <Link href="/etsy-quote-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Quote Wall Art Sizes
                         </Link>
                         <Link href="/etsy-minimalist-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Minimalist Wall Art Sizes
+                        </Link>
+                        <Link href="/etsy-landscape-print-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Landscape Print Sizes
                         </Link>
                         <Link href="/2-3-vs-4-5-ratio" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           2:3 vs 4:5 Ratio

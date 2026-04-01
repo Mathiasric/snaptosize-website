@@ -930,7 +930,7 @@ export default function EtsyPrintSizesPage() {
               <ul className="space-y-2 text-foreground-60 mb-6">
                 <li className="flex items-start gap-3">
                   <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
-                  <span>Square sizes (5&times;5, 8&times;8, 10&times;10, 12&times;12, 16&times;16, 18&times;18, 20&times;20, 24&times;24) available in single export mode</span>
+                  <span><Link href="/etsy-square-print-sizes" className="text-accent-light hover:underline">Square sizes</Link> (5&times;5, 8&times;8, 10&times;10, 12&times;12, 16&times;16, 18&times;18, 20&times;20, 24&times;24) available in single export mode</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />

@@ -8,6 +8,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "8×10 Print Size for Etsy — Pixels, DPI & File Setup",
@@ -297,6 +298,12 @@ export default function Etsy8x10PrintSizePage() {
       <section className="py-12 md:py-16">
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
+            {/* --- Quick Answer --- */}
+            <QuickAnswer question="What pixel dimensions do I need for 8×10 prints at 300 DPI?">
+              <strong>2400 × 3000 pixels</strong> for portrait, <strong>3000 × 2400 pixels</strong> for landscape.
+              8×10 uses the 4:5 aspect ratio and is included in the 4:5 ratio pack alongside 12×15, 16×20, 20×25, and 24×30.
+            </QuickAnswer>
+
             {/* --- Exact Dimensions --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
@@ -354,6 +361,17 @@ export default function Etsy8x10PrintSizePage() {
                 can scale between all 4:5 sizes without cropping &mdash; your
                 full artwork composition is preserved at every size.
               </p>
+
+              <div className="mt-8 rounded-xl overflow-hidden border border-white/[0.08]">
+                <img
+                  src="/assets/visuals/etsy-8x10-size-comparison.png"
+                  alt="8×10 print size comparison showing how it compares to 5×7, 11×14, 16×20, and A4 at correct proportions"
+                  width={1200}
+                  height={500}
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
+              </div>
             </div>
 
             {/* --- Why #1 --- */}
@@ -448,8 +466,8 @@ export default function Etsy8x10PrintSizePage() {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b border-white/10 bg-accent/5">
-                      <td className="py-3 px-4 font-semibold">8×10</td>
+                    <tr className="border-b border-white/10 bg-teal-400/[0.06]">
+                      <td className="py-3 px-4 font-semibold">8×10<span className="ml-1.5 px-1.5 py-0.5 rounded text-[10px] font-mono bg-teal-400/10 text-teal-300/80 border border-teal-400/20">Popular</span></td>
                       <td className="py-3 px-4 text-foreground-60">
                         2400 × 3000
                       </td>

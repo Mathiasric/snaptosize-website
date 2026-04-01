@@ -8,6 +8,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "SnapToSize vs Photoshop for Etsy Print Resizing",
@@ -526,6 +527,9 @@ export default function SnapToSizeVsPhotoshopPage() {
       <section className="py-12 md:py-16">
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
+            <QuickAnswer question="Is SnapToSize better than Photoshop for Etsy print resizing?">
+              For <strong>batch resizing across all standard print sizes</strong>, yes. Photoshop requires manual actions per size. SnapToSize generates up to 70 files from one upload &mdash; no Photoshop skills needed.
+            </QuickAnswer>
             {/* --- Section 2: The Problem --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
@@ -988,6 +992,10 @@ export default function SnapToSizeVsPhotoshopPage() {
                   </p>
                 </Card>
               </div>
+            </div>
+
+            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+              <img src="/assets/visuals/snaptosize-vs-photoshop-chart.png" alt="Feature comparison chart — SnapToSize vs Photoshop for Etsy print resizing" width={1200} height={520} className="w-full h-auto" loading="lazy" />
             </div>
 
             {/* --- CTA 1: After comparison sections --- */}

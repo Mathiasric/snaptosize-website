@@ -3,328 +3,978 @@
     "slug": "etsy-print-sizes",
     "title": "Etsy Print Sizes Guide",
     "pageType": "pillar",
-    "keywords": ["etsy print sizes", "print dimensions 300 dpi", "etsy print size chart"],
+    "keywords": [
+      "etsy print sizes",
+      "print dimensions 300 dpi",
+      "etsy print size chart"
+    ],
     "cluster": "sizes",
-    "relatedSlugs": ["etsy-print-ratios", "etsy-20mb-file-limit", "sizes", "etsy-print-size-calculator", "how-to-sell-digital-downloads-on-etsy", "etsy-8x10-print-size", "etsy-5x7-print-size", "how-to-resize-images-for-etsy", "etsy-a4-print-size", "etsy-11x14-print-size", "etsy-4x6-print-size", "etsy-12x16-print-size"]
+    "relatedSlugs": [
+      "etsy-print-ratios",
+      "etsy-20mb-file-limit",
+      "sizes",
+      "etsy-print-size-calculator",
+      "how-to-sell-digital-downloads-on-etsy",
+      "etsy-8x10-print-size",
+      "etsy-5x7-print-size",
+      "how-to-resize-images-for-etsy",
+      "etsy-a4-print-size",
+      "etsy-11x14-print-size",
+      "etsy-4x6-print-size",
+      "etsy-12x16-print-size"
+    ]
   },
   {
     "slug": "etsy-print-ratios",
     "title": "Etsy Print Ratios Explained",
     "pageType": "pillar",
-    "keywords": ["etsy print ratios", "aspect ratio for prints", "print ratio guide"],
+    "keywords": [
+      "etsy print ratios",
+      "aspect ratio for prints",
+      "print ratio guide"
+    ],
     "cluster": "ratios",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-20mb-file-limit", "sizes"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-20mb-file-limit",
+      "sizes"
+    ]
   },
   {
     "slug": "etsy-20mb-file-limit",
     "title": "Etsy 20MB File Limit",
     "pageType": "problem",
-    "keywords": ["etsy 20mb file limit", "etsy file too large", "etsy image size limit"],
+    "keywords": [
+      "etsy 20mb file limit",
+      "etsy file too large",
+      "etsy image size limit"
+    ],
     "cluster": "problems",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "what-files-to-include-etsy-digital-download", "how-to-resize-images-for-etsy"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "what-files-to-include-etsy-digital-download",
+      "how-to-resize-images-for-etsy"
+    ]
   },
   {
     "slug": "how-to-sell-digital-downloads-on-etsy",
     "title": "How to Sell Digital Downloads on Etsy",
     "pageType": "guide",
-    "keywords": ["sell digital downloads etsy", "etsy digital download guide", "etsy printables business"],
+    "keywords": [
+      "sell digital downloads etsy",
+      "etsy digital download guide",
+      "etsy printables business"
+    ],
     "cluster": "guides",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "what-files-to-include-etsy-digital-download", "sizes"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "what-files-to-include-etsy-digital-download",
+      "sizes"
+    ]
   },
   {
     "slug": "what-files-to-include-etsy-digital-download",
     "title": "What Files to Include in Etsy Digital Downloads",
     "pageType": "guide",
-    "keywords": ["etsy digital download files", "what files etsy digital download", "etsy printable file formats"],
+    "keywords": [
+      "etsy digital download files",
+      "what files etsy digital download",
+      "etsy printable file formats"
+    ],
     "cluster": "guides",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "how-to-sell-digital-downloads-on-etsy", "etsy-20mb-file-limit"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "how-to-sell-digital-downloads-on-etsy",
+      "etsy-20mb-file-limit"
+    ]
   },
   {
     "slug": "sizes",
     "title": "Print Sizes & Ratio Reference",
     "pageType": "reference",
-    "keywords": ["print sizes", "print size chart", "standard print dimensions"],
+    "keywords": [
+      "print sizes",
+      "print size chart",
+      "standard print dimensions"
+    ],
     "cluster": "sizes",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios"
+    ]
   },
   {
     "slug": "etsy-8x10-print-size",
     "title": "8×10 Print Size for Etsy",
     "pageType": "size",
-    "keywords": ["etsy 8x10 print size", "8x10 print dimensions 300 dpi", "8x10 aspect ratio"],
+    "keywords": [
+      "etsy 8x10 print size",
+      "8x10 print dimensions 300 dpi",
+      "8x10 aspect ratio"
+    ],
     "cluster": "sizes",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-20mb-file-limit", "etsy-5x7-print-size", "etsy-a4-print-size", "etsy-11x14-print-size", "etsy-4x6-print-size", "etsy-12x16-print-size"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-20mb-file-limit",
+      "etsy-5x7-print-size",
+      "etsy-a4-print-size",
+      "etsy-11x14-print-size",
+      "etsy-4x6-print-size",
+      "etsy-12x16-print-size"
+    ]
   },
   {
     "slug": "etsy-5x7-print-size",
     "title": "5×7 Print Size for Etsy",
     "pageType": "size",
-    "keywords": ["etsy 5x7 print size", "5x7 print dimensions 300 dpi", "5x7 aspect ratio"],
+    "keywords": [
+      "etsy 5x7 print size",
+      "5x7 print dimensions 300 dpi",
+      "5x7 aspect ratio"
+    ],
     "cluster": "sizes",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-8x10-print-size", "etsy-20mb-file-limit", "etsy-4x6-print-size"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-8x10-print-size",
+      "etsy-20mb-file-limit",
+      "etsy-4x6-print-size"
+    ]
   },
   {
     "slug": "etsy-digital-download-not-selling",
     "title": "Etsy Digital Download Not Selling? 7 Fixes",
     "pageType": "problem",
-    "keywords": ["etsy digital download not selling", "etsy printables not selling", "etsy printable no sales"],
+    "keywords": [
+      "etsy digital download not selling",
+      "etsy printables not selling",
+      "etsy printable no sales"
+    ],
     "cluster": "problems",
-    "relatedSlugs": ["how-to-sell-digital-downloads-on-etsy", "what-files-to-include-etsy-digital-download", "etsy-print-sizes", "etsy-20mb-file-limit", "etsy-8x10-print-size"]
+    "relatedSlugs": [
+      "how-to-sell-digital-downloads-on-etsy",
+      "what-files-to-include-etsy-digital-download",
+      "etsy-print-sizes",
+      "etsy-20mb-file-limit",
+      "etsy-8x10-print-size"
+    ]
   },
   {
     "slug": "how-to-resize-images-for-etsy",
     "title": "How to Resize Images for Etsy Digital Downloads",
     "pageType": "guide",
-    "keywords": ["how to resize images for etsy", "resize etsy digital downloads", "etsy print file dimensions", "batch resize etsy printables"],
+    "keywords": [
+      "how to resize images for etsy",
+      "resize etsy digital downloads",
+      "etsy print file dimensions",
+      "batch resize etsy printables"
+    ],
     "cluster": "guides",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-20mb-file-limit", "how-to-sell-digital-downloads-on-etsy", "what-files-to-include-etsy-digital-download", "etsy-8x10-print-size", "etsy-digital-download-not-selling", "best-resolution-for-etsy-printables"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-20mb-file-limit",
+      "how-to-sell-digital-downloads-on-etsy",
+      "what-files-to-include-etsy-digital-download",
+      "etsy-8x10-print-size",
+      "etsy-digital-download-not-selling",
+      "best-resolution-for-etsy-printables"
+    ]
   },
   {
     "slug": "best-resolution-for-etsy-printables",
     "title": "Best Resolution for Etsy Printables — 300 DPI Guide",
     "pageType": "guide",
-    "keywords": ["best resolution for etsy printables", "what DPI for etsy printables", "etsy printable resolution requirements", "300 dpi etsy digital downloads"],
+    "keywords": [
+      "best resolution for etsy printables",
+      "what DPI for etsy printables",
+      "etsy printable resolution requirements",
+      "300 dpi etsy digital downloads"
+    ],
     "cluster": "guides",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "how-to-resize-images-for-etsy", "what-files-to-include-etsy-digital-download", "how-to-sell-printables-on-etsy-without-photoshop", "etsy-8x10-print-size"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "how-to-resize-images-for-etsy",
+      "what-files-to-include-etsy-digital-download",
+      "how-to-sell-printables-on-etsy-without-photoshop",
+      "etsy-8x10-print-size"
+    ]
   },
   {
     "slug": "how-to-package-digital-wall-art-for-etsy",
     "title": "How to Package Digital Wall Art for Etsy",
     "pageType": "guide",
-    "keywords": ["how to package digital wall art for etsy", "etsy digital wall art file organization", "how to deliver digital art on etsy", "etsy printable packaging best practices"],
+    "keywords": [
+      "how to package digital wall art for etsy",
+      "etsy digital wall art file organization",
+      "how to deliver digital art on etsy",
+      "etsy printable packaging best practices"
+    ],
     "cluster": "guides",
-    "relatedSlugs": ["what-files-to-include-etsy-digital-download", "etsy-print-sizes", "etsy-print-ratios", "etsy-20mb-file-limit", "how-to-sell-digital-downloads-on-etsy", "etsy-8x10-print-size", "how-to-resize-images-for-etsy"]
+    "relatedSlugs": [
+      "what-files-to-include-etsy-digital-download",
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-20mb-file-limit",
+      "how-to-sell-digital-downloads-on-etsy",
+      "etsy-8x10-print-size",
+      "how-to-resize-images-for-etsy"
+    ]
   },
   {
     "slug": "how-many-sizes-etsy-printable",
     "title": "How Many Sizes to Include in Etsy Printable",
     "pageType": "guide",
-    "keywords": ["how many sizes etsy printable", "etsy printable size options", "best sizes for etsy prints", "how many files etsy digital download"],
+    "keywords": [
+      "how many sizes etsy printable",
+      "etsy printable size options",
+      "best sizes for etsy prints",
+      "how many files etsy digital download"
+    ],
     "cluster": "guides",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-8x10-print-size", "etsy-5x7-print-size", "what-files-to-include-etsy-digital-download", "etsy-20mb-file-limit", "how-to-resize-images-for-etsy", "etsy-a4-print-size", "etsy-11x14-print-size", "etsy-4x6-print-size", "etsy-12x16-print-size"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-8x10-print-size",
+      "etsy-5x7-print-size",
+      "what-files-to-include-etsy-digital-download",
+      "etsy-20mb-file-limit",
+      "how-to-resize-images-for-etsy",
+      "etsy-a4-print-size",
+      "etsy-11x14-print-size",
+      "etsy-4x6-print-size",
+      "etsy-12x16-print-size"
+    ]
   },
   {
     "slug": "etsy-16x20-print-size",
     "title": "16×20 Print Size for Etsy",
     "pageType": "size",
-    "keywords": ["etsy 16x20 print size", "16x20 print dimensions 300 dpi", "16x20 aspect ratio", "16x20 pixel dimensions"],
+    "keywords": [
+      "etsy 16x20 print size",
+      "16x20 print dimensions 300 dpi",
+      "16x20 aspect ratio",
+      "16x20 pixel dimensions"
+    ],
     "cluster": "sizes",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-8x10-print-size", "etsy-5x7-print-size", "best-resolution-for-etsy-printables", "how-to-resize-images-for-etsy", "etsy-12x16-print-size"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-8x10-print-size",
+      "etsy-5x7-print-size",
+      "best-resolution-for-etsy-printables",
+      "how-to-resize-images-for-etsy",
+      "etsy-12x16-print-size"
+    ]
   },
   {
     "slug": "best-file-format-etsy-printables",
     "title": "Best File Format for Etsy Printables — PDF vs PNG vs JPG",
     "pageType": "guide",
-    "keywords": ["best file format for etsy printables", "etsy digital download file type", "PDF vs PNG etsy", "what format for etsy printables"],
+    "keywords": [
+      "best file format for etsy printables",
+      "etsy digital download file type",
+      "PDF vs PNG etsy",
+      "what format for etsy printables"
+    ],
     "cluster": "guides",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-20mb-file-limit", "what-files-to-include-etsy-digital-download", "best-resolution-for-etsy-printables", "how-to-resize-images-for-etsy", "how-to-package-digital-wall-art-for-etsy"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-20mb-file-limit",
+      "what-files-to-include-etsy-digital-download",
+      "best-resolution-for-etsy-printables",
+      "how-to-resize-images-for-etsy",
+      "how-to-package-digital-wall-art-for-etsy"
+    ]
   },
   {
     "slug": "etsy-24x36-print-size",
     "title": "24×36 Print Size for Etsy",
     "pageType": "size",
-    "keywords": ["etsy 24x36 print size", "24x36 poster print etsy", "24x36 digital print dimensions", "24x36 print pixels"],
+    "keywords": [
+      "etsy 24x36 print size",
+      "24x36 poster print etsy",
+      "24x36 digital print dimensions",
+      "24x36 print pixels"
+    ],
     "cluster": "sizes",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-8x10-print-size", "etsy-16x20-print-size", "etsy-5x7-print-size", "best-resolution-for-etsy-printables", "how-to-resize-images-for-etsy", "etsy-20mb-file-limit", "etsy-4x6-print-size"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-8x10-print-size",
+      "etsy-16x20-print-size",
+      "etsy-5x7-print-size",
+      "best-resolution-for-etsy-printables",
+      "how-to-resize-images-for-etsy",
+      "etsy-20mb-file-limit",
+      "etsy-4x6-print-size"
+    ]
   },
   {
     "slug": "how-to-price-etsy-printables",
     "title": "How to Price Etsy Printables",
     "pageType": "guide",
-    "keywords": ["how to price etsy printables", "etsy printable pricing calculator", "etsy digital product pricing strategy", "pricing multiple sizes etsy printables"],
+    "keywords": [
+      "how to price etsy printables",
+      "etsy printable pricing calculator",
+      "etsy digital product pricing strategy",
+      "pricing multiple sizes etsy printables"
+    ],
     "cluster": "guides",
-    "relatedSlugs": ["how-to-sell-digital-downloads-on-etsy", "how-many-sizes-etsy-printable", "what-files-to-include-etsy-digital-download", "etsy-print-sizes", "how-to-package-digital-wall-art-for-etsy", "best-resolution-for-etsy-printables"]
+    "relatedSlugs": [
+      "how-to-sell-digital-downloads-on-etsy",
+      "how-many-sizes-etsy-printable",
+      "what-files-to-include-etsy-digital-download",
+      "etsy-print-sizes",
+      "how-to-package-digital-wall-art-for-etsy",
+      "best-resolution-for-etsy-printables"
+    ]
   },
   {
     "slug": "etsy-18x24-print-size",
     "title": "18×24 Print Size for Etsy",
     "pageType": "size",
-    "keywords": ["etsy 18x24 print size", "18x24 print dimensions 300 dpi", "18x24 aspect ratio", "18x24 poster size"],
+    "keywords": [
+      "etsy 18x24 print size",
+      "18x24 print dimensions 300 dpi",
+      "18x24 aspect ratio",
+      "18x24 poster size"
+    ],
     "cluster": "sizes",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-24x36-print-size", "etsy-16x20-print-size", "best-resolution-for-etsy-printables", "how-to-resize-images-for-etsy", "etsy-12x16-print-size"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-24x36-print-size",
+      "etsy-16x20-print-size",
+      "best-resolution-for-etsy-printables",
+      "how-to-resize-images-for-etsy",
+      "etsy-12x16-print-size"
+    ]
   },
   {
     "slug": "etsy-nursery-wall-art-sizes",
     "title": "Nursery Wall Art Sizes for Etsy",
     "pageType": "niche",
-    "keywords": ["nursery wall art sizes etsy", "baby room print sizes", "nursery printable sizes", "kids room wall art dimensions"],
+    "keywords": [
+      "nursery wall art sizes etsy",
+      "baby room print sizes",
+      "nursery printable sizes",
+      "kids room wall art dimensions"
+    ],
     "cluster": "niches",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-8x10-print-size", "etsy-5x7-print-size", "etsy-16x20-print-size", "how-many-sizes-etsy-printable", "how-to-package-digital-wall-art-for-etsy"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-8x10-print-size",
+      "etsy-5x7-print-size",
+      "etsy-16x20-print-size",
+      "how-many-sizes-etsy-printable",
+      "how-to-package-digital-wall-art-for-etsy"
+    ]
   },
   {
     "slug": "etsy-a4-print-size",
     "title": "A4 Print Size for Etsy — International Paper Dimensions",
     "pageType": "size",
-    "keywords": ["etsy A4 print size", "A4 size pixels 300 DPI", "A4 vs US Letter Etsy", "A4 print dimensions"],
+    "keywords": [
+      "etsy A4 print size",
+      "A4 size pixels 300 DPI",
+      "A4 vs US Letter Etsy",
+      "A4 print dimensions"
+    ],
     "cluster": "sizes",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-8x10-print-size", "etsy-5x7-print-size", "etsy-16x20-print-size", "how-to-resize-images-for-etsy", "best-resolution-for-etsy-printables", "how-many-sizes-etsy-printable"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-8x10-print-size",
+      "etsy-5x7-print-size",
+      "etsy-16x20-print-size",
+      "how-to-resize-images-for-etsy",
+      "best-resolution-for-etsy-printables",
+      "how-many-sizes-etsy-printable"
+    ]
   },
   {
     "slug": "etsy-11x14-print-size",
     "title": "11×14 Print Size for Etsy",
     "pageType": "size",
-    "keywords": ["etsy 11x14 print size", "11x14 print pixels 300 DPI", "11x14 aspect ratio", "11x14 frame size"],
+    "keywords": [
+      "etsy 11x14 print size",
+      "11x14 print pixels 300 DPI",
+      "11x14 aspect ratio",
+      "11x14 frame size"
+    ],
     "cluster": "sizes",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-8x10-print-size", "etsy-5x7-print-size", "etsy-16x20-print-size", "etsy-24x36-print-size", "how-to-resize-images-for-etsy", "best-resolution-for-etsy-printables", "how-many-sizes-etsy-printable", "etsy-12x16-print-size"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-8x10-print-size",
+      "etsy-5x7-print-size",
+      "etsy-16x20-print-size",
+      "etsy-24x36-print-size",
+      "how-to-resize-images-for-etsy",
+      "best-resolution-for-etsy-printables",
+      "how-many-sizes-etsy-printable",
+      "etsy-12x16-print-size"
+    ]
   },
   {
     "slug": "etsy-4x6-print-size",
     "title": "4×6 Print Size for Etsy",
     "pageType": "size",
-    "keywords": ["etsy 4x6 print size", "4x6 print dimensions 300 dpi", "4x6 aspect ratio", "4x6 pixel dimensions"],
+    "keywords": [
+      "etsy 4x6 print size",
+      "4x6 print dimensions 300 dpi",
+      "4x6 aspect ratio",
+      "4x6 pixel dimensions"
+    ],
     "cluster": "sizes",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-24x36-print-size", "etsy-8x10-print-size", "etsy-5x7-print-size", "etsy-20mb-file-limit", "how-to-resize-images-for-etsy", "what-files-to-include-etsy-digital-download"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-24x36-print-size",
+      "etsy-8x10-print-size",
+      "etsy-5x7-print-size",
+      "etsy-20mb-file-limit",
+      "how-to-resize-images-for-etsy",
+      "what-files-to-include-etsy-digital-download"
+    ]
   },
   {
     "slug": "etsy-12x16-print-size",
     "title": "12×16 Print Size for Etsy",
     "pageType": "size",
-    "keywords": ["etsy 12x16 print size", "12x16 print dimensions 300 dpi", "12x16 aspect ratio", "12x16 pixel dimensions"],
+    "keywords": [
+      "etsy 12x16 print size",
+      "12x16 print dimensions 300 dpi",
+      "12x16 aspect ratio",
+      "12x16 pixel dimensions"
+    ],
     "cluster": "sizes",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-18x24-print-size", "etsy-16x20-print-size", "etsy-8x10-print-size", "etsy-20mb-file-limit", "how-to-resize-images-for-etsy", "how-many-sizes-etsy-printable"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-18x24-print-size",
+      "etsy-16x20-print-size",
+      "etsy-8x10-print-size",
+      "etsy-20mb-file-limit",
+      "how-to-resize-images-for-etsy",
+      "how-many-sizes-etsy-printable"
+    ]
   },
   {
     "slug": "partners",
     "title": "Partner Program — Earn 25% Commission for 12 Months",
     "pageType": "landing",
-    "keywords": ["snaptosize partner program", "etsy educator affiliate", "snaptosize referral"],
+    "keywords": [
+      "snaptosize partner program",
+      "etsy educator affiliate",
+      "snaptosize referral"
+    ],
     "cluster": "company",
-    "relatedSlugs": ["pricing", "faq"]
+    "relatedSlugs": [
+      "pricing",
+      "faq"
+    ]
   },
   {
     "slug": "etsy-print-size-calculator",
     "title": "Etsy Print Size Calculator",
     "pageType": "tool",
-    "keywords": ["etsy print size calculator", "print size pixels calculator", "etsy DPI calculator", "print dimensions calculator"],
+    "keywords": [
+      "etsy print size calculator",
+      "print size pixels calculator",
+      "etsy DPI calculator",
+      "print dimensions calculator"
+    ],
     "cluster": "tools",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-20mb-file-limit", "sizes", "etsy-8x10-print-size", "etsy-5x7-print-size", "etsy-16x20-print-size", "etsy-11x14-print-size", "best-resolution-for-etsy-printables", "how-to-resize-images-for-etsy"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-20mb-file-limit",
+      "sizes",
+      "etsy-8x10-print-size",
+      "etsy-5x7-print-size",
+      "etsy-16x20-print-size",
+      "etsy-11x14-print-size",
+      "best-resolution-for-etsy-printables",
+      "how-to-resize-images-for-etsy"
+    ]
   },
   {
     "slug": "etsy-botanical-print-sizes",
     "title": "Botanical Print Sizes for Etsy",
     "pageType": "niche",
-    "keywords": ["etsy botanical print sizes", "botanical wall art sizes", "botanical printable sizes etsy", "botanical illustration print size"],
+    "keywords": [
+      "etsy botanical print sizes",
+      "botanical wall art sizes",
+      "botanical printable sizes etsy",
+      "botanical illustration print size"
+    ],
     "cluster": "niches",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-print-size-calculator", "etsy-nursery-wall-art-sizes", "etsy-8x10-print-size", "etsy-16x20-print-size", "etsy-24x36-print-size", "etsy-18x24-print-size", "how-many-sizes-etsy-printable", "how-to-resize-images-for-etsy"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-print-size-calculator",
+      "etsy-nursery-wall-art-sizes",
+      "etsy-8x10-print-size",
+      "etsy-16x20-print-size",
+      "etsy-24x36-print-size",
+      "etsy-18x24-print-size",
+      "how-many-sizes-etsy-printable",
+      "how-to-resize-images-for-etsy"
+    ]
   },
   {
     "slug": "2-3-vs-4-5-ratio",
     "title": "2:3 vs 4:5 Ratio — Which Print Sizes Do Etsy Sellers Need?",
     "pageType": "ratio",
-    "keywords": ["2:3 vs 4:5 ratio", "2:3 vs 4:5 aspect ratio print", "8x10 vs 8x12 print size", "which print ratio for etsy wall art"],
+    "keywords": [
+      "2:3 vs 4:5 ratio",
+      "2:3 vs 4:5 aspect ratio print",
+      "8x10 vs 8x12 print size",
+      "which print ratio for etsy wall art"
+    ],
     "cluster": "ratios",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-print-size-calculator", "etsy-8x10-print-size", "etsy-24x36-print-size", "etsy-16x20-print-size", "etsy-4x6-print-size", "how-many-sizes-etsy-printable", "how-to-resize-images-for-etsy", "best-resolution-for-etsy-printables"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-print-size-calculator",
+      "etsy-8x10-print-size",
+      "etsy-24x36-print-size",
+      "etsy-16x20-print-size",
+      "etsy-4x6-print-size",
+      "how-many-sizes-etsy-printable",
+      "how-to-resize-images-for-etsy",
+      "best-resolution-for-etsy-printables"
+    ]
   },
   {
     "slug": "etsy-8-5x11-print-size",
     "title": "8.5×11 Print Size for Etsy — US Letter",
     "pageType": "size",
-    "keywords": ["etsy 8.5x11 print size", "US letter print size etsy", "8.5x11 pixel dimensions 300 dpi", "letter size digital download"],
+    "keywords": [
+      "etsy 8.5x11 print size",
+      "US letter print size etsy",
+      "8.5x11 pixel dimensions 300 dpi",
+      "letter size digital download"
+    ],
     "cluster": "sizes",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-a4-print-size", "etsy-11x14-print-size", "etsy-5x7-print-size", "etsy-8x10-print-size", "etsy-print-size-calculator", "how-to-resize-images-for-etsy", "best-file-format-etsy-printables", "etsy-20mb-file-limit"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-a4-print-size",
+      "etsy-11x14-print-size",
+      "etsy-5x7-print-size",
+      "etsy-8x10-print-size",
+      "etsy-print-size-calculator",
+      "how-to-resize-images-for-etsy",
+      "best-file-format-etsy-printables",
+      "etsy-20mb-file-limit"
+    ]
   },
   {
     "slug": "etsy-digital-download-blurry-prints",
     "title": "Etsy Digital Download Prints Blurry? Here's the Fix",
     "pageType": "problem",
-    "keywords": ["etsy digital download blurry prints", "etsy print pixelated", "etsy digital download resolution too low", "300 dpi etsy", "blurry etsy printable"],
+    "keywords": [
+      "etsy digital download blurry prints",
+      "etsy print pixelated",
+      "etsy digital download resolution too low",
+      "300 dpi etsy",
+      "blurry etsy printable"
+    ],
     "cluster": "problems",
-    "relatedSlugs": ["best-resolution-for-etsy-printables", "etsy-print-sizes", "etsy-print-size-calculator", "etsy-8x10-print-size", "etsy-24x36-print-size", "how-to-resize-images-for-etsy", "best-file-format-etsy-printables", "etsy-20mb-file-limit", "etsy-digital-download-not-selling"]
+    "relatedSlugs": [
+      "best-resolution-for-etsy-printables",
+      "etsy-print-sizes",
+      "etsy-print-size-calculator",
+      "etsy-8x10-print-size",
+      "etsy-24x36-print-size",
+      "how-to-resize-images-for-etsy",
+      "best-file-format-etsy-printables",
+      "etsy-20mb-file-limit",
+      "etsy-digital-download-not-selling"
+    ]
   },
   {
     "slug": "etsy-a3-print-size",
     "title": "A3 Print Size for Etsy — International Poster Dimensions",
     "pageType": "size",
-    "keywords": ["etsy a3 print size", "a3 print dimensions 300 dpi", "a3 size in pixels", "a3 poster size etsy", "a3 vs 11x17"],
+    "keywords": [
+      "etsy a3 print size",
+      "a3 print dimensions 300 dpi",
+      "a3 size in pixels",
+      "a3 poster size etsy",
+      "a3 vs 11x17"
+    ],
     "cluster": "sizes",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-a4-print-size", "etsy-print-size-calculator", "etsy-8-5x11-print-size", "etsy-11x14-print-size", "how-to-resize-images-for-etsy", "best-resolution-for-etsy-printables", "how-many-sizes-etsy-printable", "etsy-20mb-file-limit"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-a4-print-size",
+      "etsy-print-size-calculator",
+      "etsy-8-5x11-print-size",
+      "etsy-11x14-print-size",
+      "how-to-resize-images-for-etsy",
+      "best-resolution-for-etsy-printables",
+      "how-many-sizes-etsy-printable",
+      "etsy-20mb-file-limit"
+    ]
   },
   {
     "slug": "etsy-gallery-wall-print-sizes",
     "title": "Gallery Wall Print Sizes for Etsy",
     "pageType": "niche",
-    "keywords": ["etsy gallery wall print sizes", "gallery wall set sizes", "gallery wall art sizes etsy", "gallery wall print arrangement sizes"],
+    "keywords": [
+      "etsy gallery wall print sizes",
+      "gallery wall set sizes",
+      "gallery wall art sizes etsy",
+      "gallery wall print arrangement sizes"
+    ],
     "cluster": "niches",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-print-size-calculator", "etsy-nursery-wall-art-sizes", "etsy-botanical-print-sizes", "etsy-quote-wall-art-sizes", "etsy-8x10-print-size", "etsy-11x14-print-size", "etsy-16x20-print-size", "etsy-5x7-print-size", "etsy-12x16-print-size", "etsy-18x24-print-size", "how-many-sizes-etsy-printable", "how-to-package-digital-wall-art-for-etsy", "how-to-resize-images-for-etsy"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-print-size-calculator",
+      "etsy-nursery-wall-art-sizes",
+      "etsy-botanical-print-sizes",
+      "etsy-quote-wall-art-sizes",
+      "etsy-8x10-print-size",
+      "etsy-11x14-print-size",
+      "etsy-16x20-print-size",
+      "etsy-5x7-print-size",
+      "etsy-12x16-print-size",
+      "etsy-18x24-print-size",
+      "how-many-sizes-etsy-printable",
+      "how-to-package-digital-wall-art-for-etsy",
+      "how-to-resize-images-for-etsy"
+    ]
   },
   {
     "slug": "etsy-quote-wall-art-sizes",
     "title": "Quote Wall Art Sizes for Etsy",
     "pageType": "niche",
-    "keywords": ["etsy quote wall art sizes", "typography wall art sizes etsy", "quote print sizes for etsy", "inspirational quote printable sizes"],
+    "keywords": [
+      "etsy quote wall art sizes",
+      "typography wall art sizes etsy",
+      "quote print sizes for etsy",
+      "inspirational quote printable sizes"
+    ],
     "cluster": "niches",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-print-size-calculator", "etsy-nursery-wall-art-sizes", "etsy-botanical-print-sizes", "etsy-gallery-wall-print-sizes", "etsy-8x10-print-size", "etsy-11x14-print-size", "etsy-16x20-print-size", "etsy-5x7-print-size", "etsy-18x24-print-size", "etsy-24x36-print-size", "how-many-sizes-etsy-printable", "how-to-package-digital-wall-art-for-etsy", "how-to-resize-images-for-etsy"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-print-size-calculator",
+      "etsy-nursery-wall-art-sizes",
+      "etsy-botanical-print-sizes",
+      "etsy-gallery-wall-print-sizes",
+      "etsy-8x10-print-size",
+      "etsy-11x14-print-size",
+      "etsy-16x20-print-size",
+      "etsy-5x7-print-size",
+      "etsy-18x24-print-size",
+      "etsy-24x36-print-size",
+      "how-many-sizes-etsy-printable",
+      "how-to-package-digital-wall-art-for-etsy",
+      "how-to-resize-images-for-etsy"
+    ]
   },
   {
     "slug": "etsy-minimalist-wall-art-sizes",
     "title": "Minimalist Wall Art Sizes for Etsy",
     "pageType": "niche",
-    "keywords": ["minimalist wall art sizes etsy", "minimalist print sizes", "minimalist art sizing guide", "japandi print sizes", "scandinavian wall art sizes"],
+    "keywords": [
+      "minimalist wall art sizes etsy",
+      "minimalist print sizes",
+      "minimalist art sizing guide",
+      "japandi print sizes",
+      "scandinavian wall art sizes"
+    ],
     "cluster": "niches",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-print-size-calculator", "etsy-nursery-wall-art-sizes", "etsy-botanical-print-sizes", "etsy-gallery-wall-print-sizes", "etsy-quote-wall-art-sizes", "etsy-8x10-print-size", "etsy-16x20-print-size", "etsy-24x36-print-size", "etsy-a4-print-size", "etsy-a3-print-size", "etsy-11x14-print-size", "how-many-sizes-etsy-printable", "how-to-resize-images-for-etsy", "2-3-vs-4-5-ratio"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-print-size-calculator",
+      "etsy-nursery-wall-art-sizes",
+      "etsy-botanical-print-sizes",
+      "etsy-gallery-wall-print-sizes",
+      "etsy-quote-wall-art-sizes",
+      "etsy-8x10-print-size",
+      "etsy-16x20-print-size",
+      "etsy-24x36-print-size",
+      "etsy-a4-print-size",
+      "etsy-a3-print-size",
+      "etsy-11x14-print-size",
+      "how-many-sizes-etsy-printable",
+      "how-to-resize-images-for-etsy",
+      "2-3-vs-4-5-ratio"
+    ]
   },
   {
     "slug": "snaptosize-vs-canva",
     "title": "SnapToSize vs Canva for Etsy Print Resizing",
     "pageType": "comparison",
-    "keywords": ["snaptosize vs canva", "canva etsy print resizing", "canva alternative etsy prints", "resize etsy prints without canva"],
+    "keywords": [
+      "snaptosize vs canva",
+      "canva etsy print resizing",
+      "canva alternative etsy prints",
+      "resize etsy prints without canva"
+    ],
     "cluster": "comparisons",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "how-to-resize-images-for-etsy", "how-to-sell-printables-on-etsy-without-photoshop", "etsy-print-size-calculator", "how-many-sizes-etsy-printable", "what-files-to-include-etsy-digital-download", "how-to-package-digital-wall-art-for-etsy", "best-resolution-for-etsy-printables", "how-to-price-etsy-printables", "etsy-20mb-file-limit"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "how-to-resize-images-for-etsy",
+      "how-to-sell-printables-on-etsy-without-photoshop",
+      "etsy-print-size-calculator",
+      "how-many-sizes-etsy-printable",
+      "what-files-to-include-etsy-digital-download",
+      "how-to-package-digital-wall-art-for-etsy",
+      "best-resolution-for-etsy-printables",
+      "how-to-price-etsy-printables",
+      "etsy-20mb-file-limit"
+    ]
   },
   {
     "slug": "etsy-20x30-print-size",
     "title": "20×30 Print Size for Etsy",
     "pageType": "size",
-    "keywords": ["etsy 20x30 print size", "20x30 print pixels at 300 dpi", "20x30 aspect ratio", "20x30 poster print dimensions"],
+    "keywords": [
+      "etsy 20x30 print size",
+      "20x30 print pixels at 300 dpi",
+      "20x30 aspect ratio",
+      "20x30 poster print dimensions"
+    ],
     "cluster": "sizes",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "2-3-vs-4-5-ratio", "etsy-24x36-print-size", "etsy-18x24-print-size", "etsy-16x20-print-size", "etsy-4x6-print-size", "etsy-8x10-print-size", "how-to-resize-images-for-etsy", "best-resolution-for-etsy-printables", "best-file-format-etsy-printables", "etsy-digital-download-blurry-prints", "etsy-20mb-file-limit", "how-many-sizes-etsy-printable", "etsy-print-size-calculator"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "2-3-vs-4-5-ratio",
+      "etsy-24x36-print-size",
+      "etsy-18x24-print-size",
+      "etsy-16x20-print-size",
+      "etsy-4x6-print-size",
+      "etsy-8x10-print-size",
+      "how-to-resize-images-for-etsy",
+      "best-resolution-for-etsy-printables",
+      "best-file-format-etsy-printables",
+      "etsy-digital-download-blurry-prints",
+      "etsy-20mb-file-limit",
+      "how-many-sizes-etsy-printable",
+      "etsy-print-size-calculator"
+    ]
   },
   {
     "slug": "etsy-a5-print-size",
     "title": "A5 Print Size for Etsy — International Paper Dimensions",
     "pageType": "size",
-    "keywords": ["etsy A5 print size", "A5 size in pixels", "A5 print dimensions 300 DPI", "A5 vs 5x7 print size", "A5 paper size in inches"],
+    "keywords": [
+      "etsy A5 print size",
+      "A5 size in pixels",
+      "A5 print dimensions 300 DPI",
+      "A5 vs 5x7 print size",
+      "A5 paper size in inches"
+    ],
     "cluster": "sizes",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-a4-print-size", "etsy-a3-print-size", "etsy-5x7-print-size", "etsy-8-5x11-print-size", "best-resolution-for-etsy-printables", "how-to-resize-images-for-etsy", "etsy-print-size-calculator", "how-many-sizes-etsy-printable"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-a4-print-size",
+      "etsy-a3-print-size",
+      "etsy-5x7-print-size",
+      "etsy-8-5x11-print-size",
+      "best-resolution-for-etsy-printables",
+      "how-to-resize-images-for-etsy",
+      "etsy-print-size-calculator",
+      "how-many-sizes-etsy-printable"
+    ]
   },
   {
     "slug": "snaptosize-vs-photoshop",
     "title": "SnapToSize vs Photoshop for Etsy Print Resizing",
     "pageType": "comparison",
-    "keywords": ["snaptosize vs photoshop", "photoshop alternative etsy prints", "resize images for etsy without photoshop", "batch resize etsy printables photoshop"],
+    "keywords": [
+      "snaptosize vs photoshop",
+      "photoshop alternative etsy prints",
+      "resize images for etsy without photoshop",
+      "batch resize etsy printables photoshop"
+    ],
     "cluster": "comparisons",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "how-to-resize-images-for-etsy", "how-to-sell-printables-on-etsy-without-photoshop", "snaptosize-vs-canva", "etsy-20mb-file-limit", "best-resolution-for-etsy-printables", "how-many-sizes-etsy-printable", "how-to-package-digital-wall-art-for-etsy", "etsy-print-size-calculator"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "how-to-resize-images-for-etsy",
+      "how-to-sell-printables-on-etsy-without-photoshop",
+      "snaptosize-vs-canva",
+      "etsy-20mb-file-limit",
+      "best-resolution-for-etsy-printables",
+      "how-many-sizes-etsy-printable",
+      "how-to-package-digital-wall-art-for-etsy",
+      "etsy-print-size-calculator"
+    ]
   },
   {
     "slug": "etsy-20x24-print-size",
-    "title": "20\u00d724 Print Size for Etsy",
+    "title": "20×24 Print Size for Etsy",
     "pageType": "size",
-    "keywords": ["etsy 20x24 print size", "20x24 print dimensions 300 dpi", "20x24 aspect ratio", "20x24 pixel dimensions", "20x24 large format print"],
+    "keywords": [
+      "etsy 20x24 print size",
+      "20x24 print dimensions 300 dpi",
+      "20x24 aspect ratio",
+      "20x24 pixel dimensions",
+      "20x24 large format print"
+    ],
     "cluster": "sizes",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-16x20-print-size", "etsy-18x24-print-size", "etsy-20x30-print-size", "etsy-8x10-print-size", "etsy-11x14-print-size", "etsy-5x7-print-size", "etsy-8-5x11-print-size", "how-to-resize-images-for-etsy", "best-resolution-for-etsy-printables", "etsy-print-size-calculator", "how-many-sizes-etsy-printable", "etsy-20mb-file-limit"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-16x20-print-size",
+      "etsy-18x24-print-size",
+      "etsy-20x30-print-size",
+      "etsy-8x10-print-size",
+      "etsy-11x14-print-size",
+      "etsy-5x7-print-size",
+      "etsy-8-5x11-print-size",
+      "how-to-resize-images-for-etsy",
+      "best-resolution-for-etsy-printables",
+      "etsy-print-size-calculator",
+      "how-many-sizes-etsy-printable",
+      "etsy-20mb-file-limit"
+    ]
   },
   {
     "slug": "etsy-11x17-print-size",
-    "title": "11\u00d717 Print Size for Etsy",
+    "title": "11×17 Print Size for Etsy",
     "pageType": "size",
-    "keywords": ["etsy 11x17 print size", "11x17 print dimensions 300 dpi", "11x17 aspect ratio", "tabloid print size etsy", "11x17 pixel dimensions"],
+    "keywords": [
+      "etsy 11x17 print size",
+      "11x17 print dimensions 300 dpi",
+      "11x17 aspect ratio",
+      "tabloid print size etsy",
+      "11x17 pixel dimensions"
+    ],
     "cluster": "sizes",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-a3-print-size", "etsy-8-5x11-print-size", "etsy-11x14-print-size", "etsy-18x24-print-size", "etsy-print-size-calculator", "how-to-resize-images-for-etsy", "best-resolution-for-etsy-printables", "how-many-sizes-etsy-printable", "etsy-20mb-file-limit", "what-files-to-include-etsy-digital-download"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-a3-print-size",
+      "etsy-8-5x11-print-size",
+      "etsy-11x14-print-size",
+      "etsy-18x24-print-size",
+      "etsy-print-size-calculator",
+      "how-to-resize-images-for-etsy",
+      "best-resolution-for-etsy-printables",
+      "how-many-sizes-etsy-printable",
+      "etsy-20mb-file-limit",
+      "what-files-to-include-etsy-digital-download"
+    ]
   },
   {
     "slug": "etsy-12x18-print-size",
     "title": "12×18 Print Size for Etsy — Pixels, DPI & Framing Guide",
     "pageType": "size",
-    "keywords": ["etsy 12x18 print size", "12x18 print dimensions 300 dpi", "12x18 poster size", "12x18 frame and mat guide", "12x18 pixel dimensions"],
+    "keywords": [
+      "etsy 12x18 print size",
+      "12x18 print dimensions 300 dpi",
+      "12x18 poster size",
+      "12x18 frame and mat guide",
+      "12x18 pixel dimensions"
+    ],
     "cluster": "sizes",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-20x30-print-size", "etsy-18x24-print-size", "etsy-24x36-print-size", "etsy-4x6-print-size", "2-3-vs-4-5-ratio", "how-to-resize-images-for-etsy", "best-resolution-for-etsy-printables", "how-many-sizes-etsy-printable", "etsy-20mb-file-limit", "etsy-print-size-calculator"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-20x30-print-size",
+      "etsy-18x24-print-size",
+      "etsy-24x36-print-size",
+      "etsy-4x6-print-size",
+      "2-3-vs-4-5-ratio",
+      "how-to-resize-images-for-etsy",
+      "best-resolution-for-etsy-printables",
+      "how-many-sizes-etsy-printable",
+      "etsy-20mb-file-limit",
+      "etsy-print-size-calculator"
+    ]
   },
   {
     "slug": "etsy-print-on-demand-vs-digital-download",
     "title": "Print on Demand vs Digital Downloads on Etsy — Which Is More Profitable?",
     "pageType": "guide",
-    "keywords": ["etsy print on demand vs digital download", "etsy POD vs printables", "etsy digital downloads vs print on demand", "should I sell printables or print on demand"],
+    "keywords": [
+      "etsy print on demand vs digital download",
+      "etsy POD vs printables",
+      "etsy digital downloads vs print on demand",
+      "should I sell printables or print on demand"
+    ],
     "cluster": "guides",
-    "relatedSlugs": ["how-to-sell-digital-downloads-on-etsy", "what-files-to-include-etsy-digital-download", "how-to-package-digital-wall-art-for-etsy", "how-to-price-etsy-printables", "etsy-print-sizes", "how-many-sizes-etsy-printable", "etsy-digital-download-not-selling", "how-to-resize-images-for-etsy"]
+    "relatedSlugs": [
+      "how-to-sell-digital-downloads-on-etsy",
+      "what-files-to-include-etsy-digital-download",
+      "how-to-package-digital-wall-art-for-etsy",
+      "how-to-price-etsy-printables",
+      "etsy-print-sizes",
+      "how-many-sizes-etsy-printable",
+      "etsy-digital-download-not-selling",
+      "how-to-resize-images-for-etsy"
+    ]
+  },
+  {
+    "slug": "etsy-square-print-sizes",
+    "title": "Etsy Square Print Sizes",
+    "pageType": "niche",
+    "keywords": [
+      "etsy square print sizes",
+      "square print dimensions 300 DPI",
+      "1:1 ratio print sizes",
+      "square wall art sizes etsy"
+    ],
+    "cluster": "niches",
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-gallery-wall-print-sizes",
+      "etsy-minimalist-wall-art-sizes",
+      "etsy-nursery-wall-art-sizes",
+      "etsy-quote-wall-art-sizes",
+      "etsy-botanical-print-sizes",
+      "etsy-8x10-print-size",
+      "etsy-11x14-print-size",
+      "etsy-print-size-calculator",
+      "how-many-sizes-etsy-printable",
+      "how-to-resize-images-for-etsy"
+    ]
+  },
+  {
+    "slug": "etsy-landscape-print-sizes",
+    "title": "Etsy Landscape Print Sizes",
+    "pageType": "niche",
+    "keywords": [
+      "etsy landscape print sizes",
+      "horizontal print sizes etsy",
+      "landscape orientation digital downloads",
+      "landscape wall art sizes"
+    ],
+    "cluster": "niches",
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-gallery-wall-print-sizes",
+      "etsy-8x10-print-size",
+      "etsy-16x20-print-size",
+      "etsy-18x24-print-size",
+      "etsy-11x14-print-size",
+      "etsy-20x30-print-size",
+      "etsy-12x18-print-size",
+      "how-many-sizes-etsy-printable",
+      "etsy-print-size-calculator",
+      "what-files-to-include-etsy-digital-download"
+    ]
   }
 ]

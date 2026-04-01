@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
@@ -8,6 +9,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "11×14 Print Size for Etsy — Pixels, DPI & Frame Guide",
@@ -291,6 +293,13 @@ export default function Etsy11x14PrintSizePage() {
       <section className="py-12 md:py-16">
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
+            {/* --- Quick Answer --- */}
+            <QuickAnswer question="What pixel dimensions do I need for 11×14 prints at 300 DPI?">
+              <strong>3300 × 4200 pixels</strong> for portrait, <strong>4200 × 3300</strong> for landscape.
+              11×14 is a standard photo mat size — widely available at every frame store.
+              Part of the Extras pack.
+            </QuickAnswer>
+
             {/* --- Section 1: Exact Dimensions --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
@@ -361,6 +370,17 @@ export default function Etsy11x14PrintSizePage() {
                 </Link>{" "}
                 guide.
               </p>
+
+              {/* Size comparison diagram */}
+              <div className="mt-8 rounded-xl overflow-hidden border border-white/[0.06]">
+                <Image
+                  src="/assets/visuals/etsy-11x14-size-comparison.png"
+                  alt="11x14 print size comparison diagram showing 8x10, 8.5x11, 11x14, 12x16, and A3 at scale"
+                  width={1200}
+                  height={500}
+                  className="w-full h-auto"
+                />
+              </div>
             </div>
 
             {/* --- Section 2: Why Essential --- */}
@@ -536,7 +556,12 @@ export default function Etsy11x14PrintSizePage() {
                     </span>
                   </div>
                   <div className="flex justify-between items-center border-b border-white/10 pb-3 bg-accent/5">
-                    <span className="font-semibold">11&times;14</span>
+                    <span className="font-semibold">
+                      11&times;14{" "}
+                      <span className="ml-1.5 inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-teal-500/20 text-teal-300 border border-teal-500/30">
+                        Popular
+                      </span>
+                    </span>
                     <span className="text-foreground-60 text-sm">
                       Medium &mdash; bedroom, office, hallway
                     </span>

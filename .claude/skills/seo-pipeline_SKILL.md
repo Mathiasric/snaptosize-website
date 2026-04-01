@@ -151,8 +151,13 @@ TOUCHPOINT 3: User confirms deploy (build verified, sitemap updated)
    - CTA placement driven by intent analysis
    - Use `RelatedPages` component (no hardcoded links)
    - Add page-registry.json entry as part of output
-2. **Save drafts** to `marketing/drafts/YYYY-WXX-[slug]/page.tsx`
-3. **Run quality gates automatically** (see Quality Gates below)
+2. **Generate visuals** specified in the brief's "Visual plan" section:
+   - **Size pages:** Create HTML diagram in `tests/diagrams/[slug]-comparison.html` using `tests/diagrams/gen-diagram.js` as reference. Screenshot with Playwright at 1200×500. Save to `app-next/public/assets/visuals/etsy-[slug]-size-comparison.png`.
+   - **Niche pages:** Generate 1 Gemini room mockup via `gemini-generate-image` MCP. Prompt MUST include "no text, no words, no labels, no watermarks" (LESSON-008/019). Save to `app-next/public/assets/visuals/etsy-[slug]-mockup.jpg`.
+   - **Comparison pages:** Create Playwright feature comparison chart if applicable.
+   - Insert `<img>` tags in draft at positions specified by visual plan.
+3. **Save drafts** to `marketing/drafts/YYYY-WXX-[slug]/page.tsx`
+4. **Run quality gates automatically** (see Quality Gates below)
 4. **Present results to user:**
 
 ```
@@ -214,6 +219,8 @@ Run automatically after draft generation, before Touchpoint 2 review.
 | Content depth | Word count > 1500, 5+ FAQ questions, no duplicate H2s | Text analysis |
 | Internal links | 2+ links to pages in registry | Check for registry slugs in draft |
 | Components | Uses Container, Button, FAQAccordion, EmailCapture | Import check |
+| Visuals | Visual plan from brief executed, images exist in /assets/visuals/ | File existence check + draft img tag count |
+| QuickAnswer | QuickAnswer component present after hero, before first H2 | Import + JSX check |
 | Build | Draft compiles without errors | `npm run build` (run once for all drafts) |
 
 Store gate results via `state.set_gate(item_id, gate_name, passed, detail)`.

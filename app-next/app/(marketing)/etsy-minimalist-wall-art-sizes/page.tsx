@@ -8,6 +8,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "Minimalist Wall Art Sizes for Etsy — Guide",
@@ -434,6 +435,9 @@ export default function EtsyMinimalistWallArtSizesPage() {
       <section className="py-12 md:py-16">
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
+            <QuickAnswer question="What sizes work best for minimalist wall art on Etsy?">
+              <strong>A4, A3, 16×20, and 24×36</strong> are the most popular minimalist art sizes. Scandinavian and Japandi interiors favor clean formats — include both US and international sizes.
+            </QuickAnswer>
             {/* --- H2 1: Why Minimalist Art Has Unique Sizing Needs --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
@@ -480,6 +484,10 @@ export default function EtsyMinimalistWallArtSizesPage() {
                 </Link>{" "}
                 for the full strategy.
               </p>
+            </div>
+
+            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+              <img src="/assets/visuals/etsy-minimalist-wall-art-mockup.jpg" alt="Minimalist living room with a single large line drawing portrait in a black frame above a beige sofa — Scandinavian interior" width={1200} height={800} className="w-full h-auto" loading="lazy" />
             </div>
 
             {/* --- H2 2: The Best-Selling Sizes for Minimalist Wall Art on Etsy --- */}
@@ -701,8 +709,12 @@ export default function EtsyMinimalistWallArtSizesPage() {
                 </h3>
                 <p className="text-sm text-foreground-60 mb-5">
                   Upload one minimalist design and get 30+ sizes across all 5
-                  ratio packs. Portrait, landscape, and square &mdash; up to
-                  70 print-ready files, organized and named for Etsy.
+                  ratio packs. Portrait,{" "}
+                  <Link href="/etsy-landscape-print-sizes" className="text-accent-light hover:underline">
+                    landscape
+                  </Link>
+                  , and square &mdash; up to 70 print-ready files, organized
+                  and named for Etsy.
                 </p>
                 <a
                   href={appUrl}
@@ -1043,7 +1055,9 @@ export default function EtsyMinimalistWallArtSizesPage() {
                       Plus Quick Export
                     </strong>{" "}
                     &mdash; download any size individually in portrait or
-                    landscape. Also includes 8 square formats (5&times;5
+                    landscape. Also includes{" "}
+                    <Link href="/etsy-square-print-sizes" className="text-accent-light hover:underline">8 square formats</Link>{" "}
+                    (5&times;5
                     through 24&times;24) and large sizes (A0, 24&times;36,
                     24&times;32) available only via Quick Export. Learn more
                     about{" "}

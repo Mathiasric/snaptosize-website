@@ -8,6 +8,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "A3 Print Size for Etsy — Pixels, DPI & Seller Guide",
@@ -346,6 +347,11 @@ export default function EtsyA3PrintSizePage() {
       <section className="py-12 md:py-16">
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
+            {/* --- Quick Answer --- */}
+            <QuickAnswer question="What pixel dimensions for A3 at 300 DPI?">
+              <strong>3508 × 4961 pixels</strong> (297 × 420 mm). A3 is the international poster size — twice A4. Part of the ISO A-Series pack.
+            </QuickAnswer>
+
             {/* --- What Is A3 Print Size --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
@@ -492,6 +498,18 @@ export default function EtsyA3PrintSizePage() {
                 </Link>
                 .
               </p>
+            </div>
+
+            {/* --- Size Comparison Diagram --- */}
+            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+              <img
+                src="/assets/visuals/etsy-a3-size-comparison.png"
+                alt="A3 print size comparison with A4, 11×14, 12×18, and 16×20"
+                width={1200}
+                height={500}
+                className="w-full h-auto"
+                loading="lazy"
+              />
             </div>
 
             {/* --- A3 vs Tabloid (11×17) --- */}
@@ -1285,7 +1303,7 @@ export default function EtsyA3PrintSizePage() {
                       </td>
                     </tr>
                     <tr className="border-b border-white/10 bg-accent/5">
-                      <td className="py-3 px-4 font-semibold">A3</td>
+                      <td className="py-3 px-4 font-semibold">A3<span className="ml-1.5 px-1.5 py-0.5 rounded text-[10px] font-mono bg-teal-400/10 text-teal-300/80 border border-teal-400/20">Popular</span></td>
                       <td className="py-3 px-4 text-foreground-60">
                         297 &times; 420
                       </td>

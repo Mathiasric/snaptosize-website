@@ -8,6 +8,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title:
@@ -382,6 +383,9 @@ export default function EtsyNurseryWallArtSizesPage() {
       <section className="py-12 md:py-16">
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
+            <QuickAnswer question="What are the best print sizes for nursery wall art on Etsy?">
+              <strong>8×10, 11×14, and 16×20</strong> are the top nursery sizes — they fit standard frames from IKEA, Target, and Amazon. Offer all sizes in the 4:5 and 3:4 ratio packs for full nursery wall coverage.
+            </QuickAnswer>
             {/* --- Why Nursery Art Needs Multiple Sizes --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
@@ -405,6 +409,10 @@ export default function EtsyNurseryWallArtSizesPage() {
                 cohesive look. Offering a range of sizes means you capture the
                 full gallery wall purchase &mdash; not just one piece of it.
               </p>
+            </div>
+
+            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+              <img src="/assets/visuals/etsy-nursery-wall-art-mockup.jpg" alt="Nursery room with three framed animal illustration prints above a white crib — bunny, deer, and bear in wood frames" width={1200} height={800} className="w-full h-auto" loading="lazy" />
             </div>
 
             {/* --- The 6 Must-Have Nursery Sizes --- */}
@@ -551,7 +559,7 @@ export default function EtsyNurseryWallArtSizesPage() {
                         10×10 or 12×12 &mdash; Modern Square
                       </h3>
                       <p className="text-foreground-60 text-sm">
-                        Square prints are trending for modern nurseries. They
+                        <Link href="/etsy-square-print-sizes" className="text-accent-light hover:underline">Square prints</Link> are trending for modern nurseries. They
                         pair beautifully with rectangular sizes in gallery wall
                         arrangements. SnapToSize exports square sizes as
                         individual files alongside your ratio packs.

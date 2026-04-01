@@ -7,6 +7,7 @@ import { Check } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "11\u00d717 Print Size for Etsy \u2014 Pixels, DPI & Tabloid Guide",
@@ -292,6 +293,9 @@ export default function Etsy11x17PrintSizePage() {
               <span className="text-xs font-mono tracking-[0.15em] text-purple-300/60 uppercase">
                 Print Size Reference
               </span>
+              <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold tracking-wide bg-teal-400/10 border border-teal-400/25 text-teal-300/70">
+                Popular
+              </span>
             </div>
 
             <h1 className="font-bold tracking-tight mb-5">
@@ -340,6 +344,27 @@ export default function Etsy11x17PrintSizePage() {
                   Portrait, landscape &amp; square
                 </span>
               </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* ===== QUICK ANSWER + DIAGRAM ===== */}
+      <section className="py-8 md:py-10">
+        <Container>
+          <div className="max-w-3xl mx-auto space-y-8">
+            <QuickAnswer question="What pixel dimensions for 11×17 at 300 DPI?">
+              <strong>3300 × 5100 pixels</strong>. 11×17 (Tabloid) is in the Extras pack — perfect for oversized home printing and tall poster art.
+            </QuickAnswer>
+            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+              <img
+                src="/assets/visuals/etsy-11x17-size-comparison.png"
+                alt="11×17 Tabloid size comparison with 8.5×11, 11×14, A3, and 12×18"
+                width={1200}
+                height={500}
+                className="w-full h-auto"
+                loading="lazy"
+              />
             </div>
           </div>
         </Container>

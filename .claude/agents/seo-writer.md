@@ -47,7 +47,7 @@ export const metadata: Metadata = {
 - Long pages (guides, comparisons, pillar, ~7+ sections): up to 3 CTAs — two mid-content `<Card accent>`, one `<FinalCTA>`
 - **Each CTA must have a DISTINCT angle** — if CTA 1 says "get all sizes from one upload", CTA 2 must NOT rephrase the same thing. Find a genuinely different benefit for each.
 - **Never stack CTAs back-to-back** — always have 3+ content sections between them
-- EmailCaptureSection is NOT a CTA — place it after FAQ, never between CTAs
+- EmailCaptureSection is deprecated — do NOT include it on new pages
 - All link to: `https://app.snaptosize.com?source=seo_[slug]&kind=guide`
 
 ### 5. Internal links
@@ -84,6 +84,49 @@ Auto-generated from page-registry.json — no manual entry needed.
 
 ---
 
+## Visual Integration
+
+Add visuals as specified in the content brief's "Visual plan" section.
+
+**Standard image wrapper:**
+```tsx
+<div className="rounded-xl overflow-hidden border border-white/[0.08]">
+  <img
+    src="/assets/visuals/[slug]-[type].png"
+    alt="[descriptive alt text with sizes and dimensions]"
+    width={1200}
+    height={600}
+    className="w-full h-auto"
+    loading="lazy"
+  />
+</div>
+```
+
+**Visual type by page type:**
+- **Size pages** — Playwright size comparison diagram after the main dimensions table
+- **Niche pages** — Gemini room mockup after the first content section (context-setting intro)
+- **Comparison pages** — Playwright feature comparison chart after the main comparison table
+- **Guide pages** — Playwright workflow diagram if brief specifies one
+
+**Rules:**
+- All visuals stored in `app-next/public/assets/visuals/[slug]-[type].png`
+- Alt text must be descriptive (include sizes, dimensions, context)
+- Place visuals after the relevant H2 section, not before
+- Gemini images: prompt must include "no text, no words, no labels, no watermarks" (LESSON-008/019)
+
+**QuickAnswer box** (every page, after hero, before first H2):
+```tsx
+<QuickAnswer question="[Primary search query as question]">
+  [2-3 line direct answer with key sizes/numbers]
+</QuickAnswer>
+```
+
+**Table row highlighting** for popular sizes:
+- Add `className="bg-teal-400/[0.06]"` to the most popular `<tr>` rows
+- Add a teal badge: `<span className="ml-1.5 px-1.5 py-0.5 rounded text-[10px] font-mono bg-teal-400/10 text-teal-300/80 border border-teal-400/20">Popular</span>`
+
+---
+
 ## Component Usage
 
 **Button** — wrap in `<a>`, no href prop on Button itself:
@@ -93,17 +136,7 @@ Auto-generated from page-registry.json — no manual entry needed.
 </a>
 ```
 
-**Email capture** (one per page, near bottom after FAQ):
-```tsx
-<EmailCaptureSection
-  heading="Free Etsy Print Size Cheat Sheet"
-  description="..."
-  placeholder="Enter your email"
-  buttonText="Get Free Cheat Sheet"
-/>
-```
-
-**FinalCTA** (last CTA before FAQ/email):
+**FinalCTA** (last CTA before FAQ):
 ```tsx
 <FinalCTA
   heading="..."
@@ -174,16 +207,20 @@ Before returning the page, verify:
 - [ ] Trust pills exist in hero
 - [ ] Every `<Link href>` matches the text it wraps (no copy-paste link errors)
 - [ ] Button wrapped in `<a>`, not given href prop
-- [ ] Uses EmailCaptureSection (not raw EmailCapture in Card)
+- [ ] No EmailCaptureSection (deprecated — no cheat sheet/PDF offers)
 - [ ] Uses FinalCTA component for last CTA
 - [ ] datePublished and dateModified set to TODAY's date
 - [ ] canonical URL matches the slug
 - [ ] No fake MB file sizes, no competitor tutorials, no "28 sizes" in marketing copy
 - [ ] Trust pills use the standard trio (70 files / 5 packs / orientations) — no contradicting numbers
 - [ ] No product jargon in educational sections (Quick Export, ZIP pack, ratio pack → CTA sections only)
-- [ ] Hero fills viewport (`min-h-screen`) with content near top (not vertically centered)
+- [ ] Hero uses asymmetric padding (`pt-10 pb-16 md:pt-14 md:pb-24`), NOT `min-h-screen` (causes empty space on large screens)
 - [ ] **CTA count matches page length** — 2 for short pages, up to 3 for long guides/pillar. Never more than 3. (LESSON-066)
 - [ ] **No back-to-back CTAs** — minimum 3 content sections between each CTA
 - [ ] **Each CTA has a distinct angle** — no rephrasing the same value prop
 - [ ] **Financial claims verified** — all fees, margins, percentages WebSearched, not estimated (LESSON-067)
 - [ ] **Fee breakdowns are line-by-line** — never "~X%" approximations for Etsy fees
+- [ ] **Visual plan from brief executed** — all specified visuals integrated with correct `<img>` wrapper
+- [ ] **QuickAnswer box** present after hero, before first H2
+- [ ] **Popular badges** on most-popular table rows (if size tables exist)
+- [ ] **Visual alt text** is descriptive (includes sizes/dimensions), not just "image"

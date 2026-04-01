@@ -453,7 +453,7 @@ export default function EtsyPrintSizeCalculatorPage() {
               <span className="text-[#2DD4BF] text-lg mt-0.5">&harr;</span>
               <div>
                 <p className="text-sm text-foreground">
-                  Every non-square size includes both <strong>portrait and landscape</strong> orientations.
+                  Every non-square size includes both <strong>portrait and <a href="/etsy-landscape-print-sizes" className="text-accent-light hover:underline">landscape</a></strong> orientations.
                   That&apos;s <strong className="text-[#2DD4BF]">70+ print-ready files</strong> from a single upload.
                 </p>
                 <p className="text-xs text-foreground-60 mt-1">

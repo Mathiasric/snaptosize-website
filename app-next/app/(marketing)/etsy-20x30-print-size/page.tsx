@@ -8,6 +8,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "20\u00d730 Print Size for Etsy \u2014 Pixels, DPI & Setup",
@@ -316,6 +317,10 @@ export default function Etsy20x30PrintSizePage() {
       <section className="py-12 md:py-16">
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
+            <QuickAnswer question="What pixel dimensions for 20×30 at 300 DPI?">
+              <strong>6000 × 9000 pixels</strong>. 20×30 uses the 2:3 ratio — the largest standard size in the 2:3 ratio pack. Popular for statement wall art.
+            </QuickAnswer>
+
             {/* --- Section 1: Exact Dimensions --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
@@ -390,6 +395,11 @@ export default function Etsy20x30PrintSizePage() {
                 .
               </p>
             </div>
+
+            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+              <img src="/assets/visuals/etsy-20x30-size-comparison.png" alt="20×30 print size comparison with 16×24, 18×24, and 24×36" width={1200} height={500} className="w-full h-auto" loading="lazy" />
+            </div>
+
 
             {/* --- Section 2: Why 20x30 Matters --- */}
             <div>
@@ -543,7 +553,7 @@ export default function Etsy20x30PrintSizePage() {
                     </tr>
                     <tr className="bg-accent/5">
                       <td className="py-3 px-4 font-semibold">
-                        20&times;30
+                        20&times;30<span className="ml-1.5 px-1.5 py-0.5 rounded text-[10px] font-mono bg-teal-400/10 text-teal-300/80 border border-teal-400/20">Popular</span>
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
                         6000 &times; 9000

@@ -8,6 +8,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title:
@@ -425,6 +426,9 @@ export default function EtsyBotanicalPrintSizesPage() {
       <section className="py-12 md:py-16">
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
+            <QuickAnswer question="What sizes sell best for botanical prints on Etsy?">
+              <strong>8&times;10, 11&times;14, and A4</strong> are the top sellers for botanical wall art. Include ISO sizes (A4, A3) for international buyers &mdash; botanical art is especially popular in Europe and Australia.
+            </QuickAnswer>
             {/* --- H2 1: Why Botanical Print Sizing Is Different --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
@@ -479,6 +483,10 @@ export default function EtsyBotanicalPrintSizesPage() {
                 </Link>{" "}
                 for your sub-niche is essential.
               </p>
+            </div>
+
+            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+              <img src="/assets/visuals/etsy-botanical-print-mockup.jpg" alt="Dining room with two framed botanical prints — a large fern and smaller eucalyptus — in black frames above an oak table" width={1200} height={800} className="w-full h-auto" loading="lazy" />
             </div>
 
             {/* --- H2 2: The 8 Must-Have Sizes --- */}
@@ -836,7 +844,7 @@ export default function EtsyBotanicalPrintSizesPage() {
                       <p className="text-foreground-60 text-sm mb-2">
                         Broad leaves and bold colors work across the widest range
                         of sizes, including squares. Best sizes: 8x10, 16x20,
-                        24x36, plus square formats like 12x12 and 16x16.
+                        24x36, plus <Link href="/etsy-square-print-sizes" className="text-accent-light hover:underline">square formats</Link> like 12x12 and 16x16.
                       </p>
                       <div className="flex flex-wrap gap-2">
                         <span className="px-2.5 py-0.5 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
@@ -1446,8 +1454,13 @@ export default function EtsyBotanicalPrintSizesPage() {
                   {
                     question:
                       "Should botanical prints be vertical or horizontal?",
-                    answer:
-                      "85%+ of botanical prints on Etsy are vertical (portrait orientation). This follows the natural growth pattern of plants and matches the classic botanical illustration tradition. However, offering both orientations as separate listings can double your catalog with minimal extra work \u2014 SnapToSize handles both from the same upload.",
+                    answer: (
+                      <>
+                        85%+ of botanical prints on Etsy are vertical (portrait orientation). This follows the natural growth pattern of plants and matches the classic botanical illustration tradition. However, offering{" "}
+                        <Link href="/etsy-landscape-print-sizes" className="text-accent-light hover:underline">both orientations</Link>{" "}
+                        as separate listings can double your catalog with minimal extra work &mdash; SnapToSize handles both from the same upload.
+                      </>
+                    ),
                   },
                   {
                     question:

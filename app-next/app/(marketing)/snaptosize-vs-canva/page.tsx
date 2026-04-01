@@ -8,6 +8,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "SnapToSize vs Canva for Etsy Print Resizing",
@@ -423,6 +424,9 @@ export default function SnapToSizeVsCanvaPage() {
       <section className="py-12 md:py-16">
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
+            <QuickAnswer question="Is SnapToSize better than Canva for resizing Etsy prints?">
+              For <strong>batch resizing to 30+ print sizes</strong>, yes. Canva is a design tool &mdash; you resize one image at a time. SnapToSize generates up to 70 print-ready files from a single upload, organized in ratio packs.
+            </QuickAnswer>
             {/* --- Section 2: The real bottleneck --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
@@ -658,6 +662,10 @@ export default function SnapToSizeVsCanvaPage() {
                 </Link>
                 , see our resolution guide.
               </p>
+            </div>
+
+            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+              <img src="/assets/visuals/snaptosize-vs-canva-chart.png" alt="Feature comparison chart — SnapToSize vs Canva for Etsy print resizing" width={1200} height={520} className="w-full h-auto" loading="lazy" />
             </div>
 
             {/* --- CTA 1: After comparison table --- */}

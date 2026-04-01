@@ -8,6 +8,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title:
@@ -472,6 +473,9 @@ export default function EtsyGalleryWallPrintSizesPage() {
       <section className="py-12 md:py-16">
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
+            <QuickAnswer question="What print sizes do I need for gallery wall sets on Etsy?">
+              <strong>8×10, 11×14, 5×7, 12×16, and 16×20</strong> cover most gallery wall arrangements. Mix sizes from at least 2 ratio families and offer both portrait and landscape for maximum flexibility.
+            </QuickAnswer>
             {/* --- H2 1: Why Gallery Wall Sizing Is Hard --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
@@ -899,7 +903,7 @@ export default function EtsyGalleryWallPrintSizesPage() {
                     <tr>
                       <td className="py-3 px-4 font-medium">10&times;10, 12&times;12</td>
                       <td className="py-3 px-4 text-foreground-60">3000&times;3000, 3600&times;3600</td>
-                      <td className="py-3 px-4 text-foreground-60">Single export (square)</td>
+                      <td className="py-3 px-4 text-foreground-60"><Link href="/etsy-square-print-sizes" className="text-accent-light hover:underline">Single export (square)</Link></td>
                       <td className="py-3 px-4 text-foreground-60">Modern square grid layouts</td>
                     </tr>
                   </tbody>
@@ -1158,8 +1162,11 @@ export default function EtsyGalleryWallPrintSizesPage() {
                 </h3>
                 <p className="text-sm text-foreground-60 mb-5">
                   Upload your gallery wall art once. Download up to 70 files &mdash;
-                  portrait, landscape, and square &mdash; organized by ratio and
-                  ready for Etsy.
+                  portrait,{" "}
+                  <Link href="/etsy-landscape-print-sizes" className="text-accent-light hover:underline">
+                    landscape
+                  </Link>
+                  , and square &mdash; organized by ratio and ready for Etsy.
                 </p>
                 <a
                   href="https://app.snaptosize.com?source=seo_gallery_wall&kind=strategy"
@@ -1277,7 +1284,9 @@ export default function EtsyGalleryWallPrintSizesPage() {
                   <Check className="w-5 h-5 text-accent-light flex-shrink-0 mt-0.5" />
                   <p className="text-foreground-60 text-sm">
                     <strong className="text-foreground">All 5 packs combined</strong> give
-                    you up to 70 files from one upload (portrait + landscape + square)
+                    you up to 70 files from one upload (portrait +{" "}
+                    <Link href="/etsy-landscape-print-sizes" className="text-accent-light hover:underline">landscape</Link>{" "}
+                    + square)
                     &mdash; every gallery wall size your buyers could need. Learn more
                     about the{" "}
                     <Link

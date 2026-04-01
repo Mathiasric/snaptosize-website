@@ -8,6 +8,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "Quote Wall Art Sizes for Etsy \u2014 Sizing Guide",
@@ -455,6 +456,9 @@ export default function EtsyQuoteWallArtSizesPage() {
       <section className="py-12 md:py-16">
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
+            <QuickAnswer question="What sizes should I offer for quote wall art on Etsy?">
+              <strong>8×10, 11×14, and 5×7</strong> are the top sellers for typography and quote prints. Portrait orientation works best — the narrow format keeps text readable and balanced.
+            </QuickAnswer>
             {/* --- H2 1: Why Quote and Typography Wall Art Needs Every Size --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
@@ -497,6 +501,10 @@ export default function EtsyQuoteWallArtSizesPage() {
                 </Link>{" "}
                 for the full strategy.
               </p>
+            </div>
+
+            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+              <img src="/assets/visuals/etsy-quote-wall-art-mockup.jpg" alt="Bedroom with two framed abstract calligraphy art prints in gold frames above the headboard — warm ambient lighting" width={1200} height={800} className="w-full h-auto" loading="lazy" />
             </div>
 
             {/* --- H2 2: The 8 Must-Have Sizes for Quote Wall Art --- */}
@@ -697,7 +705,11 @@ export default function EtsyQuoteWallArtSizesPage() {
                 </h3>
                 <p className="text-sm text-foreground-60 mb-5">
                   Upload one quote design and get 30+ sizes across all 5 ratio
-                  packs. Portrait, landscape, and square &mdash; up to 70
+                  packs. Portrait,{" "}
+                  <Link href="/etsy-landscape-print-sizes" className="text-accent-light hover:underline">
+                    landscape
+                  </Link>
+                  , and square &mdash; up to 70
                   print-ready files, organized and named for Etsy.
                 </p>
                 <a
@@ -877,7 +889,9 @@ export default function EtsyQuoteWallArtSizesPage() {
                 SnapToSize organizes sizes by aspect ratio. Each pack contains
                 sizes that share the same proportions, so your artwork scales
                 without cropping. Up to 70 print-ready files from one upload
-                &mdash; portrait and landscape orientations included. Use our{" "}
+                &mdash; portrait and{" "}
+                <Link href="/etsy-landscape-print-sizes" className="text-accent-light hover:underline">landscape</Link>{" "}
+                orientations included. Use our{" "}
                 <Link
                   href="/etsy-print-size-calculator"
                   className="text-accent-light hover:underline"
@@ -966,7 +980,9 @@ export default function EtsyQuoteWallArtSizesPage() {
                       Plus Quick Export
                     </strong>{" "}
                     &mdash; download any size individually in portrait or
-                    landscape. Also includes 8 square formats (5&times;5 through
+                    landscape. Also includes{" "}
+                    <Link href="/etsy-square-print-sizes" className="text-accent-light hover:underline">8 square formats</Link>{" "}
+                    (5&times;5 through
                     24&times;24) and large sizes (A0, 24&times;36, 24&times;32)
                     available only via Quick Export. Learn more about{" "}
                     <Link

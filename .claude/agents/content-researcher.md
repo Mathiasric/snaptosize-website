@@ -15,6 +15,18 @@ Before writing a brief, read:
 
 ---
 
+## Research Method
+
+**Default:** Use WebSearch + WebFetch to research the keyword and competitive landscape.
+
+**Optional — Firecrawl (when instructed):**
+If told to use Firecrawl, enhance research with:
+1. `firecrawl_search` — full page content from top results (2 credits / 10 results)
+2. `firecrawl_scrape` — extract competitor H2s, word count, FAQs, angles (1 credit / page)
+3. Max ~10 credits per keyword. Fall back to WebSearch if Firecrawl fails.
+
+---
+
 ## Your Job
 
 Given a seed keyword or topic, produce a complete content brief that can be handed directly to the seo-writer agent.
@@ -58,6 +70,14 @@ Note: Each CTA must have a genuinely different angle. Never rephrase the same va
 Financial claims (if comparison/guide page — LESSON-067):
 - [List any fees, margins, or percentages that need WebSearch verification]
 - [Note: all financial data must be line-by-line, not approximated]
+
+Visual plan:
+- Page type visual category: [size-diagram / niche-mockup / guide-diagram / comparison-chart / none]
+- Playwright diagrams needed:
+  - [Diagram 1: description — e.g., "Size comparison showing 8×10 vs 16×20 vs 24×36 at correct proportions"]
+- Gemini mockup needed: [Yes/No]
+  - If yes: [Scene description — e.g., "Botanical prints in white frames on sage green nursery wall, no text"]
+- Visual placement: [After which H2 section each visual goes]
 
 Differentiation angle:
 [What makes this article different from existing competition?
@@ -109,3 +129,10 @@ Check page-registry.json to avoid targeting keywords that already have a live pa
 - Use EXACT pack sizes from CONTENT_REFERENCE.md — never approximate (LESSON-023)
 - Marketing language: "up to 70 files" or "30+ sizes", not "28" (LESSON-047)
 - 24×36, 24×32, A0 are single export only — not in packs (LESSON-050)
+
+Visual type by page type:
+- **Size pages** → Playwright size comparison diagram (templated, free)
+- **Niche pages** → 1 Gemini room mockup (costs credits, use sparingly) + optional Playwright diagram
+- **Guide pages** → Playwright workflow diagram if applicable, otherwise none
+- **Comparison pages** → Playwright feature comparison chart
+- Always specify "no text, no words, no labels, no watermarks" for Gemini prompts (LESSON-008/019)

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
@@ -8,6 +9,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "A4 for Etsy — Exact Pixels at 300 DPI + All ISO Sizes",
@@ -289,6 +291,13 @@ export default function EtsyA4PrintSizePage() {
       <section className="py-12 md:py-16">
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
+            {/* --- Quick Answer --- */}
+            <QuickAnswer question="What pixel dimensions do I need for A4 prints at 300 DPI?">
+              <strong>2480 × 3508 pixels</strong> (210 × 297 mm). A4 is the international
+              standard paper size — essential for reaching European, Australian, and Asian
+              buyers on Etsy. Part of the ISO A-Series pack.
+            </QuickAnswer>
+
             {/* --- What Is A4 Print Size --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
@@ -391,7 +400,12 @@ export default function EtsyA4PrintSizePage() {
                       </td>
                     </tr>
                     <tr className="border-b border-white/10 bg-accent/5">
-                      <td className="py-3 px-4 font-semibold">A4</td>
+                      <td className="py-3 px-4 font-semibold">
+                        A4{" "}
+                        <span className="ml-1.5 inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-teal-500/20 text-teal-300 border border-teal-500/30">
+                          Popular
+                        </span>
+                      </td>
                       <td className="py-3 px-4 text-foreground-60">
                         210 &times; 297
                       </td>
@@ -468,6 +482,17 @@ export default function EtsyA4PrintSizePage() {
                 </Link>
                 .
               </p>
+
+              {/* Size comparison diagram */}
+              <div className="mt-8 rounded-xl overflow-hidden border border-white/[0.06]">
+                <Image
+                  src="/assets/visuals/etsy-a4-size-comparison.png"
+                  alt="A4 print size comparison diagram showing A5, A4, 8.5x11, A3, and 11x14 at scale"
+                  width={1200}
+                  height={500}
+                  className="w-full h-auto"
+                />
+              </div>
             </div>
 
             {/* --- A4 vs US Letter --- */}

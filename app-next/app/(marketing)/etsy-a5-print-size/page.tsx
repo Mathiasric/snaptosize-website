@@ -8,6 +8,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "A5 Print Size for Etsy — Dimensions, Pixels & International Sizing",
@@ -309,6 +310,11 @@ export default function EtsyA5PrintSizePage() {
       <section className="py-12 md:py-16">
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
+            {/* --- Quick Answer --- */}
+            <QuickAnswer question="What pixel dimensions for A5 at 300 DPI?">
+              <strong>1748 × 2480 pixels</strong> (148 × 210 mm). A5 is half of A4 — popular for small prints, greeting cards, and international buyers.
+            </QuickAnswer>
+
             {/* --- A5 at a Glance --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
@@ -343,6 +349,17 @@ export default function EtsyA5PrintSizePage() {
                   </div>
                 </div>
               </Card>
+
+              <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+                <img
+                  src="/assets/visuals/etsy-a5-size-comparison.png"
+                  alt="A5 print size comparison with 4×6, 5×7, 6×8, and A4"
+                  width={1200}
+                  height={500}
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
+              </div>
             </div>
 
             {/* --- What Is A5 Paper Size? --- */}
@@ -440,7 +457,7 @@ export default function EtsyA5PrintSizePage() {
                   </thead>
                   <tbody>
                     <tr className="border-b border-white/10 bg-accent/5">
-                      <td className="py-3 px-4 font-semibold">A5</td>
+                      <td className="py-3 px-4 font-semibold">A5<span className="ml-1.5 px-1.5 py-0.5 rounded text-[10px] font-mono bg-teal-400/10 text-teal-300/80 border border-teal-400/20">Popular</span></td>
                       <td className="py-3 px-4 text-foreground-60">
                         148 &times; 210
                       </td>
@@ -520,6 +537,18 @@ export default function EtsyA5PrintSizePage() {
                 upload &mdash; A5 through A1 at 300&nbsp;DPI. No manual canvas
                 resizing needed.
               </p>
+            </div>
+
+            {/* --- Size Comparison Diagram --- */}
+            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+              <img
+                src="/assets/visuals/etsy-a5-size-comparison.png"
+                alt="A5 print size comparison showing how it compares to 4×6, 5×7, 6×8, and A4 at correct proportions"
+                width={1200}
+                height={500}
+                className="w-full h-auto"
+                loading="lazy"
+              />
             </div>
 
             {/* --- A5 vs US Sizes --- */}

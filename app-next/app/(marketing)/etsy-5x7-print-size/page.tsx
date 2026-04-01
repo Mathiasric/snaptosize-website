@@ -8,6 +8,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "5×7 Print Size for Etsy — Pixels, DPI & File Setup",
@@ -313,6 +314,18 @@ export default function Etsy5x7PrintSizePage() {
         </Container>
       </section>
 
+      {/* ===== QUICK ANSWER ===== */}
+      <section className="py-6 md:py-8">
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <QuickAnswer question="What pixel dimensions do I need for 5×7 prints at 300 DPI?">
+              <strong>1500 × 2100 pixels</strong> for portrait, <strong>2100 × 1500 pixels</strong> for landscape.
+              5×7 is in the Extras pack — a popular size for greeting cards, small frames, and gift prints.
+            </QuickAnswer>
+          </div>
+        </Container>
+      </section>
+
       {/* ===== CONTENT ===== */}
       <section className="py-12 md:py-16">
         <Container>
@@ -373,6 +386,17 @@ export default function Etsy5x7PrintSizePage() {
                 Each size needs its own file, or you can use a tool that
                 creates each size automatically without cutting anything off.
               </p>
+
+              {/* Size comparison diagram */}
+              <div className="mt-8 rounded-xl overflow-hidden border border-white/[0.06]">
+                <img
+                  src="/assets/visuals/etsy-5x7-size-comparison.png"
+                  alt="5×7 print size compared to 4×6, 6×8, A5, and 8×10 — all at 300 DPI"
+                  width={1200}
+                  height={500}
+                  className="w-full h-auto"
+                />
+              </div>
             </div>
 
             {/* --- 5:7 Aspect Ratio Explained --- */}
@@ -700,7 +724,12 @@ export default function Etsy5x7PrintSizePage() {
                   </thead>
                   <tbody>
                     <tr className="border-b border-white/10 bg-accent/5">
-                      <td className="py-3 px-4 font-semibold">5×7</td>
+                      <td className="py-3 px-4 font-semibold">
+                        5×7{" "}
+                        <span className="ml-1.5 inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-teal-500/15 text-teal-400 border border-teal-500/20">
+                          Popular
+                        </span>
+                      </td>
                       <td className="py-3 px-4 text-foreground-60">
                         1500 × 2100
                       </td>

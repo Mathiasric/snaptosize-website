@@ -8,6 +8,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "18×24 Print Size for Etsy — Pixels, DPI & File Setup",
@@ -307,6 +308,11 @@ export default function Etsy18x24PrintSizePage() {
       <section className="py-12 md:py-16">
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
+
+            <QuickAnswer question="What pixel dimensions for 18×24 at 300 DPI?">
+              <strong>5400 × 7200 pixels</strong> for portrait, <strong>7200 × 5400</strong> for landscape. 18×24 uses the 3:4 ratio — a large wall art size for living rooms and offices.
+            </QuickAnswer>
+
             {/* --- Exact Dimensions --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
@@ -339,6 +345,17 @@ export default function Etsy18x24PrintSizePage() {
                   </div>
                 </div>
               </Card>
+
+              <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+                <img
+                  src="/assets/visuals/etsy-18x24-size-comparison.png"
+                  alt="18×24 print size comparison with 12×16, 16×20, and 20×30"
+                  width={1200}
+                  height={500}
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
+              </div>
 
               <p className="text-foreground-60 mb-4">
                 The math is simple: multiply each dimension in inches by 300.
@@ -491,7 +508,10 @@ export default function Etsy18x24PrintSizePage() {
                       </td>
                     </tr>
                     <tr className="border-b border-white/10 bg-accent/5">
-                      <td className="py-3 px-4 font-semibold">18×24</td>
+                      <td className="py-3 px-4 font-semibold">
+                        18×24{" "}
+                        <span className="ml-1 inline-block rounded-full bg-teal-500/15 px-2 py-0.5 text-[10px] font-semibold text-teal-400 border border-teal-500/25">Popular</span>
+                      </td>
                       <td className="py-3 px-4 text-foreground-60">
                         5400 × 7200
                       </td>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
@@ -8,6 +9,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "16×20 Print Size for Etsy — Pixels, DPI & File Setup",
@@ -288,6 +290,13 @@ export default function Etsy16x20PrintSizePage() {
       <section className="py-12 md:py-16">
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
+            {/* --- Quick Answer --- */}
+            <QuickAnswer question="What pixel dimensions do I need for 16×20 prints at 300 DPI?">
+              <strong>4800 × 6000 pixels</strong> for portrait, <strong>6000 × 4800</strong> for landscape.
+              16×20 uses the 4:5 aspect ratio — a popular statement piece size for living rooms
+              and offices. Part of the 4:5 ratio pack.
+            </QuickAnswer>
+
             {/* --- Exact Dimensions --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
@@ -454,7 +463,12 @@ export default function Etsy16x20PrintSizePage() {
                       </td>
                     </tr>
                     <tr className="border-b border-white/10 bg-accent/5">
-                      <td className="py-3 px-4 font-semibold">16×20</td>
+                      <td className="py-3 px-4 font-semibold">
+                        16×20{" "}
+                        <span className="ml-1.5 inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-semibold bg-teal-500/20 text-teal-300 border border-teal-500/30">
+                          Popular
+                        </span>
+                      </td>
                       <td className="py-3 px-4 text-foreground-60">
                         4800 × 6000
                       </td>
@@ -501,6 +515,17 @@ export default function Etsy16x20PrintSizePage() {
                 </Link>
                 .
               </p>
+
+              {/* Size comparison diagram */}
+              <div className="mt-8 rounded-xl overflow-hidden border border-white/[0.06]">
+                <Image
+                  src="/assets/visuals/etsy-16x20-size-comparison.png"
+                  alt="16x20 print size comparison diagram showing 11x14, 12x16, 16x20, 18x24, and 20x30 at scale"
+                  width={1200}
+                  height={500}
+                  className="w-full h-auto"
+                />
+              </div>
             </div>
 
             {/* --- CTA 1 --- */}
