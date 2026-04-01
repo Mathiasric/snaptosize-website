@@ -7,7 +7,7 @@
 - **Paying users:** 4 (3 monthly, 1 yearly)
 - **MRR:** $44 (3× $11.99 monthly + $97/year amortized)
 - **Total revenue collected:** $120.98 (1× $97 yearly + 3× $11.99 monthly = $132.96 gross)
-- **SEO pages live:** 37
+- **SEO pages live:** 40 (43 total incl. non-SEO)
 - **First paying customer:** 2026-03-03
 - **Target:** $1M ARR (~7,500 paying users)
 
@@ -88,7 +88,7 @@ $1M ARR requires:
 ## What's NOT Built Yet
 
 ### Fast-Feedback Growth (NEW — prioritized 2026-03-22)
-- ❌ Product Hunt launch — prep listing, screenshots, GIF, schedule launch
+- ✅ ~~Product Hunt launch~~ — launched 2026-03-31, all assets deployed, email blast sent, social posted
 - ✅ ~~Interactive "Etsy Print Size Calculator" tool~~ (`/etsy-print-size-calculator`) — deployed 2026-03-22
 - ❌ AppSumo / lifetime deal listing — submit application, prepare assets
 - ❌ Cold email campaign to Etsy printable sellers (50 targets identified)
@@ -121,7 +121,12 @@ $1M ARR requires:
 
 ---
 
-## Completed This Week (2026-03-24)
+## Completed This Week (2026-03-31)
+- ✅ **Product Hunt launched!** All assets, email blast, social media, IG Story — everything deployed
+- ✅ 8 new SEO pages deployed (20×24, 11×17, 12×18, POD vs digital download, quote wall art, and more)
+- ✅ PRODUCTHUNT promo code live (100% off first month, 200 redemptions, expires Apr 30)
+
+## Completed Previous Week (2026-03-24)
 - ✅ 2 new SEO pages deployed: `/etsy-8-5x11-print-size` (US Letter size page) + `/etsy-digital-download-blurry-prints` (problem-solution troubleshooter)
 - ✅ Nav, footer, page registry, pipeline state all updated
 - ✅ Removed A0, 24×36, 24×32 from ZIP packs (single export only) — fixed ISO A-series timeout bug for Pro user

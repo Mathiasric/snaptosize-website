@@ -1,6 +1,6 @@
 # NEXT_ACTIONS.md — This Week's Priorities
-**Week of:** 2026-03-25
-**Updated by:** Claude Code + NotebookLM Strategic Assessment — 2026-03-25
+**Week of:** 2026-03-31
+**Updated by:** Claude Code — 2026-03-31
 
 ---
 
@@ -32,11 +32,10 @@
 - [ ] If any respond → Free Pro forever + 25% recurring commission + /ref/[name] link
 - [ ] Update `marketing/outreach/outreach-tracker.json` with dates
 
-### 2. Product Hunt Launch — SCHEDULED March 31, 2026
-**Why:** Free, can deliver 500+ visits in 1 day. "18,000+ print packs generated" is strong utility proof.
-**Status:** SCHEDULED. Launches Tuesday March 31 at 12:01 AM PT (09:01 CET).
+### 2. Product Hunt Launch — LIVE 🟢
+**Status:** LAUNCHED March 31, 2026. All tasks complete.
 - [x] Write tagline + description
-- [x] Prepare 6 product screenshots (hero, app, before/after, how-it-works, ratios, pricing)
+- [x] Prepare 6 product screenshots
 - [x] Set up maker profile on producthunt.com (@snaptosize)
 - [x] Write first comment with PRODUCTHUNT promo code
 - [x] Submit and schedule on PH
@@ -44,14 +43,14 @@
 - [x] Enable `allow_promotion_codes` on monthly checkout only (app repo)
 - [x] Create IG + Pinterest launch images (3 total)
 - [x] Write all social captions + email blast copy
-- [ ] **Sunday:** Upload images to R2 + schedule via Buffer (Claude does this)
-- [ ] **Sunday:** Prepare email draft in Resend (user does this, 10 min)
-- [ ] **Tuesday 09:05:** Copy live PH URL, paste into Resend draft, send email
-- [ ] **Tuesday 09:30:** Update IG bio link + post IG Story
-- [ ] **Tuesday all day:** Monitor and reply to PH comments
+- [x] Upload images to R2 + schedule via Buffer
+- [x] Email blast sent to all free users
+- [x] Social media posted (IG + Pinterest + IG Story)
+- [x] IG bio link updated to PH page
+- [x] Code tested — promo code + checkout working
+- [ ] **Today:** Monitor and reply to PH comments (within 30 min)
+- [ ] **Evening:** Post thank-you update as PH comment
 - **Target:** 100+ upvotes, 500+ visits, 30+ signups
-- **All assets:** `producthunt/` directory + `marketing/social/content/*/2026-03-31-producthunt-launch*/`
-- **All copy:** `producthunt/copy.md`
 
 ### 3. Cold Email to Etsy Printable Sellers
 **Why:** Direct outreach to ICP. Different from educator outreach — these are potential USERS, not distributors.
@@ -64,10 +63,13 @@
 
 ### 4. SEO Pages — Continue Building (2/day target)
 **Why:** Long game. Won't rank for 3-6 months but compounding traffic is the endgame.
-**Status:** 31 live. Queue: niche verticals, ratio comparisons, comparison pages.
+**Status:** 40 SEO pages live (43 total). Visual pipeline upgraded — all pages now have QuickAnswer + size diagrams/mockups.
+- [x] `etsy-quote-wall-art-sizes` — deployed
+- [x] `snaptosize-vs-canva` + `snaptosize-vs-photoshop` — deployed
+- [x] `etsy-landscape-print-sizes` + `etsy-square-print-sizes` — deployed (Firecrawl-identified opportunities)
+- [x] Visual pipeline: 27 new visuals across 28 pages (Playwright diagrams + Gemini mockups)
 - [ ] Deploy 2 pages this week minimum
-- [ ] **Priority niche page:** `etsy-quote-wall-art-sizes` — validated by real paying customer (quote/typography art seller, all packs, 31 MB source files). Big Etsy category.
-- [ ] Focus on comparison pages (vs-canva, vs-photoshop) — these capture buyers, not browsers
+- [ ] **Next from Firecrawl backlog:** abstract wall art sizes, AI art print sizes, etsy listing photo size guide
 - [ ] Cross-link all new pages to existing ones
 
 ---
@@ -140,10 +142,10 @@
 | Send outreach emails | 10+ emails sent | ⏳ 7 sent | Educator partnerships |
 | Follow-ups sent | Day 3+7 for all batches | ⏳ Starting March 27 | Response data |
 | Conversion audit | 50+ free users in PostHog | ❌ Not enough traffic yet | Free tier decision |
-| Product Hunt launch | Launched + 100 upvotes | ❌ Prepping this week | Burst traffic + signups |
+| Product Hunt launch | Launched + 100 upvotes | ✅ LIVE 2026-03-31 | Burst traffic + signups |
 | Interactive tool live | Calculator deployed | ✅ Done (2026-03-22) | New SEO channel |
 | 3 educator partnerships | Distribution proven | ❌ 0 responses yet | Scale to 20+ partners |
-| 100 SEO pages | Content foundation | ❌ 29 live | Shift to optimization |
+| 100 SEO pages | Content foundation | ⏳ 40 live | Shift to optimization |
 | 10 paying users | WTP proven | ⏳ 3 users | Small ad spend test, mockup build |
 | 50 paying users | PMF signal | ❌ | Premium tier, affiliates at scale |
 
