@@ -33,6 +33,10 @@ marketing/social/ready/
 # Local Claude settings
 .claude/settings.local.json
 
+# Google service account keys
+**/service-account.json
+.env.gsc
+
 # Remotion build output
 marketing/remotion/out/
 

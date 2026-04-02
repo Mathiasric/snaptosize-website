@@ -146,6 +146,12 @@ export function Header() {
                     <Link href="/etsy-minimalist-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Minimalist Wall Art Sizes
                     </Link>
+                    <Link href="/etsy-abstract-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Abstract Wall Art Sizes
+                    </Link>
+                    <Link href="/etsy-ai-art-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      AI Art Print Sizes
+                    </Link>
                     <Link href="/etsy-landscape-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Landscape Print Sizes
                     </Link>
@@ -405,6 +411,12 @@ export function Header() {
                         </Link>
                         <Link href="/etsy-minimalist-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Minimalist Wall Art Sizes
+                        </Link>
+                        <Link href="/etsy-abstract-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Abstract Wall Art Sizes
+                        </Link>
+                        <Link href="/etsy-ai-art-print-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          AI Art Print Sizes
                         </Link>
                         <Link href="/etsy-landscape-print-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Landscape Print Sizes

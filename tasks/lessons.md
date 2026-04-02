@@ -582,6 +582,14 @@ Never put "30+ sizes" and "70 files" in the same pill row.
 3. Use `aspectRatio: "3:2"`, `imageSize: "2K"`, `style: "photorealistic"`
 4. Save to `app-next/public/assets/visuals/etsy-[slug]-mockup.jpg`
 
+### LESSON-082: Use descriptive file names for social content images (2026-04-01)
+**Trigger:** User couldn't tell images apart when resizing with SnapToSize — all named `pin.jpg` or `post.jpg`.
+**Rule:** Name content files descriptively using the slug from metadata:
+1. Strip the date prefix from the folder slug → use as filename (e.g. `5-ratios-every-seller.jpg`)
+2. Legacy names (`pin.jpg`, `post.jpg`) still work — pipeline falls back to glob by extension
+3. Both `qa_validate.py` and `schedule-batch.py` support descriptive names via extension-based fallback
+4. Convention: `marketing/social/content/{platform}/{date}-{slug}/{slug}.jpg`
+
 ### LESSON-081: Size comparison diagrams use CSS/HTML → Playwright screenshot (2026-04-01)
 **Trigger:** Playwright-generated diagrams are pixel-perfect, free, and templatable vs Gemini which hallucinates text.
 **Rule:** For size comparison visuals:

@@ -412,6 +412,18 @@ export default function HowManySizesEtsyPrintablePage() {
                       className="text-accent-light hover:underline"
                     >
                       nursery wall art sizes guide
+                    </Link>,{" "}
+                    <Link
+                      href="/etsy-abstract-wall-art-sizes"
+                      className="text-accent-light hover:underline"
+                    >
+                      abstract wall art sizes
+                    </Link>, or{" "}
+                    <Link
+                      href="/etsy-ai-art-print-sizes"
+                      className="text-accent-light hover:underline"
+                    >
+                      AI art print sizes
                     </Link>.
                   </p>
                 </Card>

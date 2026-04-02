@@ -48,6 +48,7 @@ SnapToSize is a SaaS tool for Etsy sellers selling digital wall art / printables
 - **Pipelines built:** SEO (10 pages/week) + Social (7 videos + 21 pins/week)
 - **Video:** Remotion rendering working (TikTokVertical template)
 - **Active distribution:** Pinterest 4/day, Instagram 2-3/day + reels, TikTok 1/day
+- **Product Hunt:** LIVE as of 2026-03-31. PRODUCTHUNT promo code active (100% off first month, 200 uses, expires Apr 30)
 - **Partner program:** /partners landing page live, /ref/[name] referral tracking, PostHog attribution
 - **Design system:** Shared EmailCaptureSection + FinalCTA components (teal accents) across all 24 pages
 - **PostHog dashboards:** Live on both webapp + marketing site (~4 weeks of data)

@@ -976,5 +976,59 @@
       "etsy-print-size-calculator",
       "what-files-to-include-etsy-digital-download"
     ]
+  },
+  {
+    "slug": "etsy-abstract-wall-art-sizes",
+    "title": "Abstract Wall Art Sizes for Etsy",
+    "pageType": "niche",
+    "keywords": [
+      "abstract wall art sizes etsy",
+      "abstract art print sizes",
+      "geometric abstract wall art sizes",
+      "fluid abstract art sizes",
+      "abstract gallery wall sizes"
+    ],
+    "cluster": "niches",
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-minimalist-wall-art-sizes",
+      "etsy-gallery-wall-print-sizes",
+      "etsy-botanical-print-sizes",
+      "etsy-landscape-print-sizes",
+      "etsy-square-print-sizes",
+      "etsy-8x10-print-size",
+      "etsy-16x20-print-size",
+      "etsy-18x24-print-size",
+      "etsy-24x36-print-size",
+      "how-many-sizes-etsy-printable"
+    ]
+  },
+  {
+    "slug": "etsy-ai-art-print-sizes",
+    "title": "AI Art Print Sizes for Etsy",
+    "pageType": "niche",
+    "keywords": [
+      "ai art print sizes etsy",
+      "midjourney print sizes",
+      "dall-e print dimensions",
+      "ai generated art sizes",
+      "ai art resolution for printing"
+    ],
+    "cluster": "niches",
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "best-resolution-for-etsy-printables",
+      "etsy-gallery-wall-print-sizes",
+      "etsy-square-print-sizes",
+      "etsy-abstract-wall-art-sizes",
+      "etsy-landscape-print-sizes",
+      "etsy-8x10-print-size",
+      "etsy-16x20-print-size",
+      "etsy-24x36-print-size",
+      "how-many-sizes-etsy-printable",
+      "how-to-resize-images-for-etsy"
+    ]
   }
 ]

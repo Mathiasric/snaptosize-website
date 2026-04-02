@@ -141,6 +141,16 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-abstract-wall-art-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                  Abstract Wall Art Sizes
+                </Link>
+              </li>
+              <li>
+                <Link href="/etsy-ai-art-print-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                  AI Art Print Sizes
+                </Link>
+              </li>
+              <li>
                 <Link href="/etsy-landscape-print-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
                   Landscape Print Sizes
                 </Link>

@@ -125,6 +125,7 @@ We are in Growth + Conversion phase. Backend is hardened and stable.
 | **gh** | `gh pr create`, `gh issue view` | GitHub operations |
 | **nlm** | `PYTHONIOENCODING=utf-8 nlm <cmd> \| cat` | NotebookLM CLI (pipe through `\| cat` on Windows to avoid Unicode crash) |
 | **Buffer** | `python marketing/social/schedule-batch.py` | Social media scheduling |
+| **GSC** | `python marketing/gsc-analytics/pull_gsc.py` | Google Search Console API data pull + analysis |
 
 ### Playwright Visual QA
 
@@ -201,7 +202,9 @@ Activate the relevant skill BEFORE starting work in that domain.
 | Referral program, affiliate, word of mouth | `referral-program` |
 | Positioning, ICP, product marketing | `product-marketing-context` |
 | Video, Remotion, animation, TikTok, Reels | `remotion` |
+| Marketing images, social graphics, campaign slides, PH/launch visuals | `marketing-visuals` |
 | Strategy, priorities, session start, decisions | `strategic-advisor` |
+| GSC review, search performance, CTR optimization | `gsc-review` |
 
 Rules:
 - If a task touches any domain above, activate the skill first
