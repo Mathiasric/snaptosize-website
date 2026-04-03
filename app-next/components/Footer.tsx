@@ -156,6 +156,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-photography-print-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                  Photography Print Sizes
+                </Link>
+              </li>
+              <li>
                 <Link href="/etsy-20x24-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
                   20×24 Print Size
                 </Link>
@@ -259,6 +264,11 @@ export function Footer() {
               <li>
                 <Link href="/etsy-print-on-demand-vs-digital-download" className="transition-colors hover:text-accent-light">
                   POD vs Digital Downloads
+                </Link>
+              </li>
+              <li>
+                <Link href="/etsy-listing-photo-size" className="transition-colors hover:text-accent-light">
+                  Listing Photo Size Guide
                 </Link>
               </li>
             </ul>
