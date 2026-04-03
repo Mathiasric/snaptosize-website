@@ -921,16 +921,17 @@ export default function EtsyAiArtPrintSizesPage() {
                 your size offerings to your style for higher conversion rates.
               </p>
 
-              <div className="space-y-4">
-                <Card className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="rounded-lg border border-border bg-surface p-6 border-l-[3px] border-l-pink-400">
+                  <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                    <span className="w-6 h-8 rounded-sm flex-shrink-0 border border-pink-400/30" style={{ background: "linear-gradient(180deg, #fce7f3 0%, #fbcfe8 100%)" }} />
                     AI Portraits
                   </h3>
                   <p className="text-foreground-60 text-sm mb-3">
-                    Faces and character art dominate in portrait orientation.
-                    The 4:5 ratio is the natural fit for close-up compositions.
-                    Large sizes let buyers appreciate the fine details AI
-                    generates in skin textures, hair, and eyes.
+                    Faces and character art in portrait orientation.
+                    The 4:5 ratio is the natural fit for close-ups.
+                    Large sizes let buyers appreciate fine AI detail
+                    in textures, hair, and eyes.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
@@ -946,21 +947,18 @@ export default function EtsyAiArtPrintSizesPage() {
                       A3 (ISO)
                     </span>
                   </div>
-                </Card>
+                </div>
 
-                <Card className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">
+                <div className="rounded-lg border border-border bg-surface p-6 border-l-[3px] border-l-emerald-400">
+                  <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                    <span className="w-8 h-5 rounded-sm flex-shrink-0 border border-emerald-400/30" style={{ background: "linear-gradient(90deg, #d1fae5 0%, #a7f3d0 100%)" }} />
                     AI Landscapes
                   </h3>
                   <p className="text-foreground-60 text-sm mb-3">
                     Sweeping vistas, fantasy worlds, and surreal environments.
-                    Landscape orientation is essential &mdash; buyers want these
-                    above sofas and mantels. The wider 2:3 and 3:4 ratios
-                    complement panoramic compositions. See our{" "}
-                    <Link
-                      href="/etsy-landscape-print-sizes"
-                      className="text-accent-light hover:underline"
-                    >
+                    Landscape orientation essential &mdash; buyers want these
+                    above sofas. See our{" "}
+                    <Link href="/etsy-landscape-print-sizes" className="text-accent-light hover:underline">
                       landscape print sizes guide
                     </Link>{" "}
                     for complete sizing.
@@ -979,17 +977,17 @@ export default function EtsyAiArtPrintSizesPage() {
                       20&times;30 (2:3)
                     </span>
                   </div>
-                </Card>
+                </div>
 
-                <Card className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">
+                <div className="rounded-lg border border-border bg-surface p-6 border-l-[3px] border-l-purple-400">
+                  <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                    <span className="w-6 h-6 rounded-sm flex-shrink-0 border border-purple-400/30" style={{ background: "linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%)" }} />
                     AI Abstract Art
                   </h3>
                   <p className="text-foreground-60 text-sm mb-3">
-                    Abstract compositions are the most flexible for sizing
-                    because they have no fixed orientation. Offer every ratio
-                    pack for maximum reach. Square formats work particularly
-                    well for symmetrical abstract pieces.
+                    Most flexible for sizing &mdash; no fixed orientation.
+                    Offer every ratio pack for maximum reach. Square formats
+                    work especially well for symmetrical pieces.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
@@ -1005,17 +1003,18 @@ export default function EtsyAiArtPrintSizesPage() {
                       All packs
                     </span>
                   </div>
-                </Card>
+                </div>
 
-                <Card className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">
+                <div className="rounded-lg border border-border bg-surface p-6 border-l-[3px] border-l-orange-400">
+                  <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                    <span className="w-6 h-8 rounded-sm flex-shrink-0 border border-orange-400/30" style={{ background: "linear-gradient(180deg, #ffedd5 0%, #fed7aa 100%)" }} />
                     AI Anime &amp; Illustration
                   </h3>
                   <p className="text-foreground-60 text-sm mb-3">
-                    Character-focused like portraits but often with more dynamic
-                    compositions. Portrait orientation dominates, but action
-                    scenes benefit from wider ratios. This sub-niche has a
-                    strong collector audience that values multiple size options.
+                    Character-focused with dynamic compositions.
+                    Portrait dominates, but action scenes benefit from
+                    wider ratios. Strong collector audience that values
+                    multiple size options.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
@@ -1031,17 +1030,17 @@ export default function EtsyAiArtPrintSizesPage() {
                       <Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link> (4:5)
                     </span>
                   </div>
-                </Card>
+                </div>
 
-                <Card className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">
+                <div className="rounded-lg border border-border bg-surface p-6 border-l-[3px] border-l-blue-400 md:col-span-2">
+                  <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                    <span className="w-7 h-5 rounded-sm flex-shrink-0 border border-blue-400/30" style={{ background: "linear-gradient(90deg, #dbeafe 0%, #bfdbfe 100%)" }} />
                     AI Photography-Style
                   </h3>
                   <p className="text-foreground-60 text-sm mb-3">
-                    Photorealistic AI images that mimic real photography. These
-                    follow traditional photo sizing conventions. The 4:5 and 2:3
-                    ratios align with standard photo frames. Buyers expect the
-                    same sizes they would order for real photographs.
+                    Photorealistic AI images that mimic real photography.
+                    Follow traditional photo sizing conventions. The 4:5 and 2:3
+                    ratios align with standard photo frames.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
@@ -1057,7 +1056,7 @@ export default function EtsyAiArtPrintSizesPage() {
                       A4 (ISO)
                     </span>
                   </div>
-                </Card>
+                </div>
               </div>
             </div>
 
@@ -1080,15 +1079,25 @@ export default function EtsyAiArtPrintSizesPage() {
                 .
               </p>
 
-              <div className="space-y-4 mb-6">
+              {/* --- Gallery Wall Layout Diagrams --- */}
+              <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <Card className="p-6">
-                  <h3 className="font-semibold mb-2">
-                    Matching Set Sizes (Most Popular)
+                  <h3 className="font-semibold mb-3">
+                    Matching Set (Most Popular)
                   </h3>
+                  {/* CSS diagram: 3 equal frames in a row */}
+                  <div className="flex items-center justify-center gap-3 mb-4 py-4 px-2 rounded-lg" style={{ background: "linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%)" }}>
+                    {[1, 2, 3].map((i) => (
+                      <div key={i} className="flex flex-col items-center gap-1">
+                        <div className="rounded border-2 flex items-center justify-center" style={{ width: "72px", height: "90px", borderColor: "rgba(168,139,250,0.4)", background: "linear-gradient(135deg, rgba(168,139,250,0.08), rgba(168,139,250,0.03))" }}>
+                          <span className="text-[9px] font-mono text-foreground-60/60">8&times;10</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                   <p className="text-foreground-60 text-sm mb-3">
                     All prints the same size. Generate 3&ndash;6 AI images with
-                    a consistent style prompt, then offer the set in multiple
-                    size options within a single Etsy listing.
+                    a consistent style prompt, then offer multiple size options.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
@@ -1108,13 +1117,30 @@ export default function EtsyAiArtPrintSizesPage() {
                 </Card>
 
                 <Card className="p-6">
-                  <h3 className="font-semibold mb-2">
-                    Mixed-Size Arrangements
+                  <h3 className="font-semibold mb-3">
+                    Mixed-Size Arrangement
                   </h3>
+                  {/* CSS diagram: 1 large center + 2 small flanking */}
+                  <div className="flex items-center justify-center gap-3 mb-4 py-4 px-2 rounded-lg" style={{ background: "linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%)" }}>
+                    <div className="flex flex-col items-center gap-1">
+                      <div className="rounded border-2 flex items-center justify-center" style={{ width: "56px", height: "70px", borderColor: "rgba(168,139,250,0.3)", background: "linear-gradient(135deg, rgba(168,139,250,0.06), rgba(168,139,250,0.02))" }}>
+                        <span className="text-[8px] font-mono text-foreground-60/60">8&times;10</span>
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-center gap-1">
+                      <div className="rounded border-2 flex items-center justify-center" style={{ width: "80px", height: "100px", borderColor: "rgba(168,139,250,0.5)", background: "linear-gradient(135deg, rgba(168,139,250,0.1), rgba(168,139,250,0.04))" }}>
+                        <span className="text-[9px] font-mono text-foreground-60/70">16&times;20</span>
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-center gap-1">
+                      <div className="rounded border-2 flex items-center justify-center" style={{ width: "56px", height: "70px", borderColor: "rgba(168,139,250,0.3)", background: "linear-gradient(135deg, rgba(168,139,250,0.06), rgba(168,139,250,0.02))" }}>
+                        <span className="text-[8px] font-mono text-foreground-60/60">8&times;10</span>
+                      </div>
+                    </div>
+                  </div>
                   <p className="text-foreground-60 text-sm mb-3">
-                    One large center piece flanked by smaller prints. Works well
-                    for AI art series where one image is the hero and others are
-                    supporting compositions.
+                    One large center piece flanked by smaller prints. Hero image
+                    with supporting compositions.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">

@@ -769,17 +769,17 @@ export default function EtsyAbstractWallArtSizesPage() {
                 your specific style for higher conversion.
               </p>
 
-              <div className="space-y-4">
-                <Card className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="rounded-lg border border-border bg-surface p-6 border-l-[3px] border-l-teal-400">
+                  <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                    {/* Mini geometric icon */}
+                    <span className="w-5 h-5 flex-shrink-0 rotate-45 rounded-sm" style={{ background: "linear-gradient(135deg, rgba(45,212,191,0.3), rgba(45,212,191,0.1))", border: "1.5px solid rgba(45,212,191,0.4)" }} />
                     Geometric Abstract
                   </h3>
                   <p className="text-foreground-60 text-sm mb-3">
                     Clean shapes, sharp angles, and structured compositions.
-                    Works across all ratios because geometric elements can be
-                    arranged to fill any frame. Strong demand at medium and
-                    large sizes where the precision of shapes is most
-                    impactful.
+                    Works across all ratios. Strong demand at medium and
+                    large sizes where precision is most impactful.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
@@ -795,17 +795,18 @@ export default function EtsyAbstractWallArtSizesPage() {
                       All ratios
                     </span>
                   </div>
-                </Card>
+                </div>
 
-                <Card className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">
+                <div className="rounded-lg border border-border bg-surface p-6 border-l-[3px] border-l-pink-400">
+                  <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                    {/* Fluid blob icon */}
+                    <span className="w-5 h-5 flex-shrink-0 rounded-full" style={{ background: "linear-gradient(135deg, rgba(244,114,182,0.3), rgba(244,114,182,0.1))", border: "1.5px solid rgba(244,114,182,0.4)", borderRadius: "60% 40% 70% 30% / 50% 60% 40% 50%" }} />
                     Fluid / Organic Abstract
                   </h3>
                   <p className="text-foreground-60 text-sm mb-3">
-                    Flowing shapes, soft curves, and natural forms. These
-                    compositions thrive at large sizes where the organic
-                    movement fills the wall. The 2:3 ratio gives tall,
-                    dramatic proportions that complement flowing designs.
+                    Flowing shapes, soft curves, and natural forms. Thrive
+                    at large sizes where organic movement fills the wall.
+                    The 2:3 ratio gives tall, dramatic proportions.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
@@ -821,21 +822,21 @@ export default function EtsyAbstractWallArtSizesPage() {
                       12&times;16 (3:4)
                     </span>
                   </div>
-                </Card>
+                </div>
 
-                <Card className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">
+                <div className="rounded-lg border border-border bg-surface p-6 border-l-[3px] border-l-orange-400">
+                  <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                    {/* Color block icon */}
+                    <span className="w-5 h-5 flex-shrink-0 rounded-sm overflow-hidden flex" style={{ border: "1.5px solid rgba(251,146,60,0.4)" }}>
+                      <span className="w-1/2 h-full" style={{ background: "rgba(251,146,60,0.3)" }} />
+                      <span className="w-1/2 h-full" style={{ background: "rgba(251,146,60,0.12)" }} />
+                    </span>
                     Color Field / Color Block
                   </h3>
                   <p className="text-foreground-60 text-sm mb-3">
-                    Large areas of flat color, subtle gradients, and bold
-                    color relationships. These designs command attention at
-                    oversized formats where the color impact fills a room.
-                    Also popular as{" "}
-                    <Link
-                      href="/etsy-gallery-wall-print-sizes"
-                      className="text-accent-light hover:underline"
-                    >
+                    Bold color relationships that command attention at oversized
+                    formats. Also popular as{" "}
+                    <Link href="/etsy-gallery-wall-print-sizes" className="text-accent-light hover:underline">
                       gallery wall sets
                     </Link>{" "}
                     with coordinated palettes.
@@ -854,24 +855,21 @@ export default function EtsyAbstractWallArtSizesPage() {
                       A3 (ISO)
                     </span>
                   </div>
-                </Card>
+                </div>
 
-                <Card className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">
-                    Mid-Century Modern Abstract
+                <div className="rounded-lg border border-border bg-surface p-6 border-l-[3px] border-l-neutral-400">
+                  <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                    {/* Retro circle icon */}
+                    <span className="w-5 h-5 flex-shrink-0 rounded-full" style={{ background: "linear-gradient(135deg, rgba(163,163,163,0.3), rgba(163,163,163,0.1))", border: "1.5px solid rgba(163,163,163,0.4)" }} />
+                    Mid-Century Modern
                   </h3>
                   <p className="text-foreground-60 text-sm mb-3">
-                    Retro-inspired shapes, earth tones, and bold graphic
-                    elements. Strong at medium sizes for curated living rooms
-                    and home offices. The 4:5 ratio matches the classic
-                    mid-century frame aesthetic. Also popular in{" "}
-                    <Link
-                      href="/etsy-minimalist-wall-art-sizes"
-                      className="text-accent-light hover:underline"
-                    >
+                    Retro shapes, earth tones, and bold graphic elements.
+                    Strong at medium sizes. The 4:5 ratio matches the classic
+                    mid-century frame. Also popular in{" "}
+                    <Link href="/etsy-minimalist-wall-art-sizes" className="text-accent-light hover:underline">
                       minimalist wall art
-                    </Link>{" "}
-                    collections.
+                    </Link>.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
@@ -887,18 +885,20 @@ export default function EtsyAbstractWallArtSizesPage() {
                       A4 (ISO)
                     </span>
                   </div>
-                </Card>
+                </div>
 
-                <Card className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">
-                    Textured / Mixed Media Abstract
+                <div className="rounded-lg border border-border bg-surface p-6 border-l-[3px] border-l-purple-400 md:col-span-2">
+                  <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                    {/* Textured layers icon */}
+                    <span className="w-5 h-5 flex-shrink-0 rounded-sm relative" style={{ border: "1.5px solid rgba(192,132,252,0.4)", background: "rgba(192,132,252,0.08)" }}>
+                      <span className="absolute inset-[3px] rounded-[1px]" style={{ border: "1px solid rgba(192,132,252,0.3)", background: "rgba(192,132,252,0.12)" }} />
+                    </span>
+                    Textured / Mixed Media
                   </h3>
                   <p className="text-foreground-60 text-sm mb-3">
-                    Paint textures, brush strokes, and layered surfaces. The
-                    detail in textured abstract art is best appreciated at
-                    large formats. Buyers often print these as oversized
-                    centerpieces. Resolution matters more here &mdash;
-                    texture detail degrades at lower DPI.
+                    Paint textures, brush strokes, and layered surfaces. Best appreciated at
+                    large formats &mdash; buyers print these as oversized centerpieces.
+                    Resolution matters more here; texture detail degrades at lower DPI.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
@@ -914,7 +914,7 @@ export default function EtsyAbstractWallArtSizesPage() {
                       A2 (ISO)
                     </span>
                   </div>
-                </Card>
+                </div>
               </div>
             </div>
 
@@ -940,69 +940,88 @@ export default function EtsyAbstractWallArtSizesPage() {
                 .
               </p>
 
-              <div className="space-y-4 mb-6">
+              {/* --- Gallery Wall Layout Diagrams --- */}
+              <div className="grid md:grid-cols-3 gap-4 mb-6">
                 <Card className="p-6">
-                  <h3 className="font-semibold mb-2">
-                    Matching Set Sizes (Most Popular)
+                  <h3 className="font-semibold mb-3">
+                    Matching Set (Most Popular)
                   </h3>
-                  <p className="text-foreground-60 text-sm mb-3">
-                    All prints the same size. Offer each set in 3&ndash;4 size
-                    options within a single listing. The most common abstract
-                    gallery wall format &mdash; 3 prints in a horizontal row.
+                  {/* CSS diagram: 3 equal frames */}
+                  <div className="flex items-center justify-center gap-2.5 mb-4 py-4 rounded-lg" style={{ background: "linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%)" }}>
+                    {[1, 2, 3].map((i) => (
+                      <div key={i} className="rounded border-2 flex items-center justify-center" style={{ width: "56px", height: "70px", borderColor: "rgba(168,139,250,0.4)", background: "linear-gradient(135deg, rgba(168,139,250,0.08), rgba(168,139,250,0.03))" }}>
+                        <span className="text-[8px] font-mono text-foreground-60/60">8&times;10</span>
+                      </div>
+                    ))}
+                  </div>
+                  <p className="text-foreground-60 text-xs mb-3">
+                    All prints the same size. 3 prints in a horizontal row.
                   </p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
+                  <div className="flex flex-wrap gap-1.5">
+                    <span className="px-2.5 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
                       3&times;{" "}
-                      <Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link>{" "}
-                      (small)
+                      <Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link>
                     </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
+                    <span className="px-2.5 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
                       3&times;{" "}
-                      <Link href="/etsy-11x14-print-size" className="hover:underline">11&times;14</Link>{" "}
-                      (medium)
+                      <Link href="/etsy-11x14-print-size" className="hover:underline">11&times;14</Link>
                     </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
+                    <span className="px-2.5 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
                       3&times;{" "}
-                      <Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link>{" "}
-                      (large)
+                      <Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link>
                     </span>
                   </div>
                 </Card>
 
                 <Card className="p-6">
-                  <h3 className="font-semibold mb-2">
-                    Mixed-Size Arrangements
+                  <h3 className="font-semibold mb-3">
+                    Mixed-Size Arrangement
                   </h3>
-                  <p className="text-foreground-60 text-sm mb-3">
-                    One large center piece flanked by smaller prints. Popular
-                    for salon-style walls and asymmetric layouts. Require
-                    consistent ratios across all pieces.
+                  {/* CSS diagram: 1 large center + 2 small flanking */}
+                  <div className="flex items-center justify-center gap-2.5 mb-4 py-4 rounded-lg" style={{ background: "linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%)" }}>
+                    <div className="rounded border-2 flex items-center justify-center" style={{ width: "42px", height: "52px", borderColor: "rgba(168,139,250,0.3)", background: "rgba(168,139,250,0.04)" }}>
+                      <span className="text-[7px] font-mono text-foreground-60/50">8&times;10</span>
+                    </div>
+                    <div className="rounded border-2 flex items-center justify-center" style={{ width: "60px", height: "76px", borderColor: "rgba(168,139,250,0.5)", background: "rgba(168,139,250,0.08)" }}>
+                      <span className="text-[8px] font-mono text-foreground-60/60">16&times;20</span>
+                    </div>
+                    <div className="rounded border-2 flex items-center justify-center" style={{ width: "42px", height: "52px", borderColor: "rgba(168,139,250,0.3)", background: "rgba(168,139,250,0.04)" }}>
+                      <span className="text-[7px] font-mono text-foreground-60/50">8&times;10</span>
+                    </div>
+                  </div>
+                  <p className="text-foreground-60 text-xs mb-3">
+                    Large center piece flanked by smaller prints.
                   </p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
+                  <div className="flex flex-wrap gap-1.5">
+                    <span className="px-2.5 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
                       1&times; 16&times;20 + 2&times; 8&times;10
                     </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
+                    <span className="px-2.5 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
                       1&times; 18&times;24 + 2&times; 11&times;14
                     </span>
                   </div>
                 </Card>
 
                 <Card className="p-6">
-                  <h3 className="font-semibold mb-2">
-                    Color-Coordinated Sets
+                  <h3 className="font-semibold mb-3">
+                    Color-Coordinated Set
                   </h3>
-                  <p className="text-foreground-60 text-sm mb-3">
-                    Abstract art&apos;s biggest advantage for gallery walls: different
-                    compositions that share a color palette. Create 3&ndash;6 abstract
-                    pieces with coordinated tones, then offer every piece in
-                    every size so buyers can mix and match.
+                  {/* CSS diagram: 3 frames with matching color accents */}
+                  <div className="flex items-center justify-center gap-2.5 mb-4 py-4 rounded-lg" style={{ background: "linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%)" }}>
+                    {["rgba(251,146,60,0.25)", "rgba(251,146,60,0.15)", "rgba(251,146,60,0.20)"].map((bg, i) => (
+                      <div key={i} className="rounded border-2 flex items-center justify-center" style={{ width: "50px", height: "62px", borderColor: "rgba(251,146,60,0.35)", background: bg }}>
+                        <span className="text-[7px] font-mono" style={{ color: "rgba(251,146,60,0.7)" }}>{["A", "B", "C"][i]}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <p className="text-foreground-60 text-xs mb-3">
+                    Different compositions, shared color palette.
                   </p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
+                  <div className="flex flex-wrap gap-1.5">
+                    <span className="px-2.5 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
                       Same ratio across set
                     </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
+                    <span className="px-2.5 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
                       3&ndash;4 size options per set
                     </span>
                   </div>
@@ -1022,28 +1041,46 @@ export default function EtsyAbstractWallArtSizesPage() {
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
                 Abstract Art in Landscape vs Portrait
               </h2>
-              <p className="text-foreground-60 mb-4">
+              <p className="text-foreground-60 mb-6">
                 Unlike many niches where one orientation dominates, abstract
-                art sells well in both portrait and landscape. This is a
-                significant advantage &mdash; offering both orientations from
-                every design effectively doubles your catalog without creating
-                new artwork.
+                art sells well in both portrait and landscape. Offering both
+                orientations from every design effectively doubles your catalog
+                without creating new artwork.
               </p>
+
+              {/* CSS orientation comparison diagram */}
+              <div className="grid grid-cols-3 gap-4 mb-6">
+                <div className="flex flex-col items-center">
+                  <div className="rounded-lg border-2 flex items-center justify-center mb-3" style={{ width: "120px", height: "80px", borderColor: "rgba(45,212,191,0.4)", background: "linear-gradient(135deg, rgba(45,212,191,0.08), rgba(45,212,191,0.02))" }}>
+                    <span className="text-xs font-mono" style={{ color: "rgba(45,212,191,0.7)" }}>24&times;36</span>
+                  </div>
+                  <p className="text-sm font-semibold text-center mb-1">Landscape</p>
+                  <p className="text-xs text-foreground-60 text-center">Above-sofa placement. Highest demand for abstract.</p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <div className="rounded-lg border-2 flex items-center justify-center mb-3" style={{ width: "68px", height: "85px", borderColor: "rgba(168,139,250,0.4)", background: "linear-gradient(135deg, rgba(168,139,250,0.08), rgba(168,139,250,0.02))" }}>
+                    <span className="text-xs font-mono" style={{ color: "rgba(168,139,250,0.7)" }}>16&times;20</span>
+                  </div>
+                  <p className="text-sm font-semibold text-center mb-1">Portrait</p>
+                  <p className="text-xs text-foreground-60 text-center">Hallways, entryways, paired arrangements.</p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <div className="rounded-lg border-2 flex items-center justify-center mb-3" style={{ width: "80px", height: "80px", borderColor: "rgba(251,146,60,0.4)", background: "linear-gradient(135deg, rgba(251,146,60,0.08), rgba(251,146,60,0.02))" }}>
+                    <span className="text-xs font-mono" style={{ color: "rgba(251,146,60,0.7)" }}>12&times;12</span>
+                  </div>
+                  <p className="text-sm font-semibold text-center mb-1">Square</p>
+                  <p className="text-xs text-foreground-60 text-center">Underserved. Less competition.</p>
+                </div>
+              </div>
+
               <p className="text-foreground-60 mb-4">
                 <strong className="text-foreground">Landscape abstract</strong>{" "}
-                is especially strong for above-sofa placement &mdash; the most
-                common wall art position in living rooms. Horizontal abstract
-                compositions in sizes like{" "}
-                <Link
-                  href="/etsy-landscape-print-sizes"
-                  className="text-accent-light hover:underline"
-                >
+                is especially strong for above-sofa placement. Horizontal
+                compositions in{" "}
+                <Link href="/etsy-landscape-print-sizes" className="text-accent-light hover:underline">
                   landscape 24&times;36 and 20&times;30
                 </Link>{" "}
-                are among the highest-demand formats on Etsy. Buyers
-                searching for &ldquo;horizontal abstract wall art&rdquo; or
-                &ldquo;landscape abstract print&rdquo; are high-intent
-                shoppers looking for a specific placement.
+                are among the highest-demand formats on Etsy.
               </p>
               <p className="text-foreground-60 mb-4">
                 <strong className="text-foreground">Portrait abstract</strong>{" "}
@@ -1053,12 +1090,9 @@ export default function EtsyAbstractWallArtSizesPage() {
               </p>
               <p className="text-foreground-60">
                 <strong className="text-foreground">Square formats</strong>{" "}
-                are an underserved opportunity in abstract art. Bold geometric
-                and color field designs work naturally in{" "}
-                <Link
-                  href="/etsy-square-print-sizes"
-                  className="text-accent-light hover:underline"
-                >
+                are an underserved opportunity. Bold geometric and color field
+                designs work naturally in{" "}
+                <Link href="/etsy-square-print-sizes" className="text-accent-light hover:underline">
                   square formats
                 </Link>{" "}
                 &mdash; 8&times;8, 10&times;10, 12&times;12, and larger.
