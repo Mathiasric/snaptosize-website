@@ -1030,5 +1030,41 @@
       "how-many-sizes-etsy-printable",
       "how-to-resize-images-for-etsy"
     ]
+  },
+  {
+    "slug": "etsy-listing-photo-size",
+    "title": "Etsy Listing Photo Size Guide",
+    "pageType": "guide",
+    "keywords": [
+      "etsy listing photo size",
+      "etsy listing image dimensions",
+      "etsy photo requirements"
+    ],
+    "cluster": "guides",
+    "relatedSlugs": [
+      "best-resolution-for-etsy-printables",
+      "how-to-resize-images-for-etsy",
+      "etsy-print-sizes",
+      "how-to-package-digital-wall-art-for-etsy",
+      "etsy-8x10-print-size"
+    ]
+  },
+  {
+    "slug": "etsy-photography-print-sizes",
+    "title": "Photography Print Sizes for Etsy",
+    "pageType": "niche",
+    "keywords": [
+      "etsy photography print sizes",
+      "camera photo print sizes",
+      "3:2 print sizes etsy"
+    ],
+    "cluster": "niches",
+    "relatedSlugs": [
+      "etsy-landscape-print-sizes",
+      "2-3-vs-4-5-ratio",
+      "etsy-print-ratios",
+      "how-to-resize-images-for-etsy",
+      "best-resolution-for-etsy-printables"
+    ]
   }
 ]

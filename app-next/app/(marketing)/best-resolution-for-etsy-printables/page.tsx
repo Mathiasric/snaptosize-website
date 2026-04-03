@@ -689,7 +689,7 @@ export default function BestResolutionForEtsyPrintablesPage() {
                         Using listing photos as printable files
                       </h3>
                       <p className="text-foreground-60 text-sm">
-                        Etsy&apos;s 2000px listing photos are designed for
+                        Etsy&apos;s 2000px <Link href="/etsy-listing-photo-size" className="text-accent-light hover:underline">listing photos</Link> are designed for
                         screen display at 72 DPI. They are not print files.
                         Buyers who try to print them get pixelated results at
                         anything larger than 6×6 inches.

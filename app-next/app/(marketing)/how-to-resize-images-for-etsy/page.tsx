@@ -369,8 +369,8 @@ export default function HowToResizeImagesForEtsyPage() {
                 Not the Same
               </h2>
               <p className="text-foreground-60 mb-6">
-                This is the #1 source of confusion for Etsy sellers. Listing
-                photos and digital download files have completely different size
+                This is the #1 source of confusion for Etsy sellers. <Link href="/etsy-listing-photo-size" className="text-accent-light hover:underline">Listing
+                photos</Link> and digital download files have completely different size
                 requirements. Getting them mixed up leads to blurry prints,
                 rejected uploads, and bad reviews.
               </p>

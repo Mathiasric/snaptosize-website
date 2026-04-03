@@ -63,14 +63,17 @@
 
 ### 4. SEO Pages — Continue Building (2/day target)
 **Why:** Long game. Won't rank for 3-6 months but compounding traffic is the endgame.
-**Status:** 40 SEO pages live (43 total). Visual pipeline upgraded — all pages now have QuickAnswer + size diagrams/mockups.
+**Status:** 42 SEO pages live (45 total). Visual pipeline upgraded — all pages now have QuickAnswer + size diagrams/mockups.
 - [x] `etsy-quote-wall-art-sizes` — deployed
 - [x] `snaptosize-vs-canva` + `snaptosize-vs-photoshop` — deployed
 - [x] `etsy-landscape-print-sizes` + `etsy-square-print-sizes` — deployed (Firecrawl-identified opportunities)
 - [x] Visual pipeline: 27 new visuals across 28 pages (Playwright diagrams + Gemini mockups)
-- [ ] Deploy 2 pages this week minimum
-- [ ] **Next from Firecrawl backlog:** abstract wall art sizes, AI art print sizes, etsy listing photo size guide
-- [ ] Cross-link all new pages to existing ones
+- [x] `etsy-abstract-wall-art-sizes` — deployed with Gemini mockup + OG image (2026-04-03)
+- [x] `etsy-ai-art-print-sizes` — deployed with Gemini mockup + OG image, resolution table moved to H2 2 (2026-04-03)
+- [x] `etsy-listing-photo-size` — deployed with Gemini mockup + OG image, bridge page (listing photos → print files) (2026-04-03)
+- [x] `etsy-photography-print-sizes` — deployed with Gemini mockup + OG image, camera 3:2 ratio mapping (2026-04-03)
+- [x] Cross-links added: 4 inbound backlinks across existing pages
+- [ ] **Next from Firecrawl backlog:** etsy photography sub-niches, etsy digital planner sizes
 
 ---
 

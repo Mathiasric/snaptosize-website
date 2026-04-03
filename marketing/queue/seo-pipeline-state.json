@@ -1,47 +1,47 @@
 {
   "_fresh": false,
-  "current_week": "W18",
-  "batch_id": "2026-W18",
-  "started_at": "2026-03-31T00:00:00+00:00",
+  "current_week": "W19",
+  "batch_id": "2026-W19",
+  "started_at": "2026-04-03T00:00:00+00:00",
   "target": {
     "pages": 2
   },
   "stages": {
     "researcher": {
       "status": "completed",
-      "output": "2 briefs created (etsy-20x24-print-size, etsy-11x17-print-size) — parallel keyword research with WebSearch"
+      "output": "2 briefs created (etsy-listing-photo-size, etsy-photography-print-sizes) — parallel keyword research with WebSearch + Firecrawl backlog"
     },
     "writer": {
       "status": "completed",
-      "output": "2 pages written (parallel subagents) — 20x24 large format size page + 11x17 tabloid size page"
+      "output": "2 pages written (parallel subagents) — listing photo bridge page + photography niche page with camera ratio mapping"
     },
     "review": {
       "status": "completed",
-      "output": "build passed, all pages compile (39 SEO pages total)"
+      "output": "TypeScript compilation passed, all 61 pages generated successfully. EPERM on out/ dir from Google Drive sync (not code error)."
     },
     "deploy": {
       "status": "completed",
-      "output": "Header.tsx, Footer.tsx, page-registry.json updated. Backlinks: 2 inbound for 20x24, 4 inbound for 11x17. Hero CTA buttons added post-QA."
+      "output": "Header.tsx, Footer.tsx, page-registry.json updated. Backlinks: 2 inbound for listing-photo (how-to-resize, best-resolution), 2 inbound for photography (landscape, 24x36). Gemini mockups + OG images generated."
     },
     "verify": {
       "status": "completed",
-      "output": "Visual QA passed — desktop (1440x900) + mobile (390x844) screenshots for both pages. H1 in upper half, CTA visible, trust pills OK."
+      "output": "Visual QA passed — desktop (1440x900) + mobile (390x844) + OG (1200x630) screenshots for both pages. H1 upper half, CTA visible, trust pills OK. Mockup images rendering correctly after H2 1."
     }
   },
   "content_items": [
     {
-      "slug": "etsy-20x24-print-size",
-      "keyword": "etsy 20x24 print size",
-      "type": "size",
+      "slug": "etsy-listing-photo-size",
+      "keyword": "etsy listing photo size",
+      "type": "guide",
       "status": "deployed",
-      "brief": "marketing/briefs/etsy-20x24-print-size-brief.md"
+      "brief": "marketing/briefs/etsy-listing-photo-size-brief.md"
     },
     {
-      "slug": "etsy-11x17-print-size",
-      "keyword": "etsy 11x17 print size",
-      "type": "size",
+      "slug": "etsy-photography-print-sizes",
+      "keyword": "etsy photography print sizes",
+      "type": "niche",
       "status": "deployed",
-      "brief": "marketing/briefs/etsy-11x17-print-size-brief.md"
+      "brief": "marketing/briefs/etsy-photography-print-sizes-brief.md"
     }
   ],
   "metrics": {
@@ -50,5 +50,5 @@
     "failed": 0,
     "success_rate": 1.0
   },
-  "updated_at": "2026-03-31T12:00:00+00:00"
+  "updated_at": "2026-04-03T10:00:00+00:00"
 }

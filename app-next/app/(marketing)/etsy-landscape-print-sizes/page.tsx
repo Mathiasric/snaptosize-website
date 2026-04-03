@@ -576,7 +576,7 @@ export default function EtsyLandscapePrintSizesPage() {
                     Wide horizontal compositions are the natural home for landscape
                     photography. The 2:3 ratio in landscape (30&times;20, 24&times;16,
                     18&times;12) gives that cinematic panoramic feel matching how
-                    photographers capture wide scenes.
+                    photographers capture wide scenes. See our full <Link href="/etsy-photography-print-sizes" className="text-accent-light hover:underline">photography print sizes guide</Link> for camera-native ratios.
                   </p>
                   <p className="text-foreground-60 text-sm">
                     For{" "}

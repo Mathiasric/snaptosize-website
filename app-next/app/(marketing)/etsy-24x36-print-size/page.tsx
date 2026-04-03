@@ -387,7 +387,7 @@ export default function Etsy24x36PrintSizePage() {
                   </h3>
                   <p className="text-foreground-60">
                     2:3 is the native aspect ratio for DSLR and mirrorless
-                    cameras. If you&apos;re selling photography or photo-based art,
+                    cameras. If you&apos;re selling <Link href="/etsy-photography-print-sizes" className="text-accent-light hover:underline">photography prints</Link>,
                     24×36 preserves the full composition captured by the camera.
                     No cropping, no letterboxing, no black bars.
                   </p>
