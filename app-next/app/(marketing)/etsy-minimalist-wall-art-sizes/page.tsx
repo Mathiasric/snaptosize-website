@@ -739,136 +739,103 @@ export default function EtsyMinimalistWallArtSizesPage() {
                 higher conversion.
               </p>
 
-              <div className="space-y-4">
-                <Card className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="rounded-lg border border-border bg-surface p-6 border-l-[3px] border-l-neutral-400">
+                  <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                    <span className="w-5 h-7 flex-shrink-0 rounded-sm" style={{ background: "linear-gradient(180deg, rgba(163,163,163,0.2), rgba(163,163,163,0.05))", border: "1.5px solid rgba(163,163,163,0.4)" }}>
+                      <span className="block w-full mt-2 mx-auto" style={{ height: "1px", background: "rgba(163,163,163,0.5)", width: "60%" }} />
+                    </span>
                     One-Line Drawings
                   </h3>
                   <p className="text-foreground-60 text-sm mb-3">
-                    Portrait-oriented by nature. The tall 2:3 ratio dominates
-                    because continuous line art flows vertically. Best at
-                    medium to large sizes where the line detail is visible.
+                    Portrait-oriented. The tall 2:3 ratio dominates as
+                    continuous line art flows vertically. Best at medium to
+                    large where line detail is visible.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      8&times;12 (2:3)
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      12&times;18 (2:3)
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      20&times;30 (2:3)
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link> (4:5)
-                    </span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">8&times;12 (2:3)</span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">12&times;18 (2:3)</span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">20&times;30 (2:3)</span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link> (4:5)</span>
                   </div>
-                </Card>
+                </div>
 
-                <Card className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">
+                <div className="rounded-lg border border-border bg-surface p-6 border-l-[3px] border-l-purple-400">
+                  <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                    <span className="w-5 h-5 flex-shrink-0 rounded-sm" style={{ background: "linear-gradient(135deg, rgba(192,132,252,0.2), rgba(192,132,252,0.05))", border: "1.5px solid rgba(192,132,252,0.4)" }} />
                     <Link href="/etsy-abstract-wall-art-sizes" className="hover:underline">Abstract Minimalist</Link>
                   </h3>
                   <p className="text-foreground-60 text-sm mb-3">
-                    Works across all ratios, but 4:5 and 3:4 are most popular.
-                    Abstract compositions are flexible &mdash; offer every
-                    ratio for maximum reach. See our full{" "}
-                    <Link href="/etsy-abstract-wall-art-sizes" className="text-accent-light hover:underline">abstract wall art sizing guide</Link>{" "}
+                    Works across all ratios. Flexible compositions &mdash;
+                    offer every pack. See our{" "}
+                    <Link href="/etsy-abstract-wall-art-sizes" className="text-accent-light hover:underline">abstract wall art guide</Link>{" "}
                     for sub-style breakdowns.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link> (4:5)
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      12&times;16 (3:4)
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link> (4:5)
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      All packs
-                    </span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link> (4:5)</span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">12&times;16 (3:4)</span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link> (4:5)</span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">All packs</span>
                   </div>
-                </Card>
+                </div>
 
-                <Card className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">
-                    Minimalist Typography / Word Art
+                <div className="rounded-lg border border-border bg-surface p-6 border-l-[3px] border-l-amber-400">
+                  <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                    <span className="w-5 h-6 flex-shrink-0 rounded-sm flex items-center justify-center" style={{ background: "linear-gradient(180deg, rgba(251,191,36,0.15), rgba(251,191,36,0.05))", border: "1.5px solid rgba(251,191,36,0.4)" }}>
+                      <span className="text-[6px] font-bold" style={{ color: "rgba(251,191,36,0.7)" }}>Aa</span>
+                    </span>
+                    Typography / Word Art
                   </h3>
                   <p className="text-foreground-60 text-sm mb-3">
-                    Portrait-heavy. Tall formats like 4:5 and 2:3 give text
-                    room to breathe. Also see our{" "}
-                    <Link
-                      href="/etsy-quote-wall-art-sizes"
-                      className="text-accent-light hover:underline"
-                    >
-                      quote wall art sizes
-                    </Link>{" "}
-                    guide for typography-specific sizing.
+                    Portrait-heavy. Tall 4:5 and 2:3 give text room to breathe.
+                    See our{" "}
+                    <Link href="/etsy-quote-wall-art-sizes" className="text-accent-light hover:underline">quote wall art sizes</Link>{" "}
+                    guide for more.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link> (4:5)
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-11x14-print-size" className="hover:underline">11&times;14</Link> (Extras)
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link> (4:5)
-                    </span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link> (4:5)</span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-11x14-print-size" className="hover:underline">11&times;14</Link> (Extras)</span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link> (4:5)</span>
                   </div>
-                </Card>
+                </div>
 
-                <Card className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">
+                <div className="rounded-lg border border-border bg-surface p-6 border-l-[3px] border-l-teal-400">
+                  <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                    <span className="w-5 h-5 flex-shrink-0 rounded-full" style={{ background: "linear-gradient(135deg, rgba(45,212,191,0.2), rgba(45,212,191,0.05))", border: "1.5px solid rgba(45,212,191,0.4)" }} />
                     Japandi / Scandinavian
                   </h3>
                   <p className="text-foreground-60 text-sm mb-3">
-                    A-series sizes are critical &mdash; Nordic and Japanese
-                    buyers expect A4 and A3. Also strong at 8&times;10 and
-                    16&times;20 for US buyers. International reach is the key
-                    differentiator.
+                    A-series critical — Nordic and Japanese buyers expect A4/A3.
+                    Also strong at 8&times;10 and 16&times;20 for US. International
+                    reach is the key differentiator.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      A4 (ISO)
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      A3 (ISO)
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link> (4:5)
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link> (4:5)
-                    </span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">A4 (ISO)</span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">A3 (ISO)</span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link> (4:5)</span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link> (4:5)</span>
                   </div>
-                </Card>
+                </div>
 
-                <Card className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">
+                <div className="rounded-lg border border-border bg-surface p-6 border-l-[3px] border-l-zinc-500 md:col-span-2">
+                  <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                    <span className="w-5 h-5 flex-shrink-0 rounded-sm overflow-hidden flex" style={{ border: "1.5px solid rgba(113,113,122,0.5)" }}>
+                      <span className="w-1/2 h-full" style={{ background: "rgba(24,24,27,0.8)" }} />
+                      <span className="w-1/2 h-full" style={{ background: "rgba(244,244,245,0.8)" }} />
+                    </span>
                     Black and White Minimalist
                   </h3>
                   <p className="text-foreground-60 text-sm mb-3">
-                    Maximum impact at large sizes. High-contrast black and
-                    white commands attention as a room focal point. Go big.
+                    Maximum impact at large sizes. High-contrast B&amp;W commands
+                    attention as a room focal point. Go big.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-18x24-print-size" className="hover:underline">18&times;24</Link> (3:4)
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-24x36-print-size" className="hover:underline">24&times;36</Link>
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      A2 (ISO)
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link> (4:5)
-                    </span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-18x24-print-size" className="hover:underline">18&times;24</Link> (3:4)</span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-24x36-print-size" className="hover:underline">24&times;36</Link></span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">A2 (ISO)</span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link> (4:5)</span>
                   </div>
-                </Card>
+                </div>
               </div>
             </div>
 
@@ -893,50 +860,45 @@ export default function EtsyMinimalistWallArtSizesPage() {
                 .
               </p>
 
-              <div className="space-y-4 mb-6">
+              <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <Card className="p-6">
-                  <h3 className="font-semibold mb-2">
-                    Matching Set Sizes (Most Popular)
-                  </h3>
+                  <h3 className="font-semibold mb-3">Matching Set (Most Popular)</h3>
+                  <div className="flex items-center justify-center gap-3 mb-4 py-4 rounded-lg" style={{ background: "linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%)" }}>
+                    {[1, 2, 3].map((i) => (
+                      <div key={i} className="rounded border-2 flex items-center justify-center" style={{ width: "72px", height: "90px", borderColor: "rgba(168,139,250,0.4)", background: "linear-gradient(135deg, rgba(168,139,250,0.08), rgba(168,139,250,0.03))" }}>
+                        <span className="text-[9px] font-mono text-foreground-60/60">8&times;10</span>
+                      </div>
+                    ))}
+                  </div>
                   <p className="text-foreground-60 text-sm mb-3">
-                    All prints the same size. Offer each set in 3&ndash;4 size
-                    options within a single listing to maximize buyer choice.
+                    All prints the same size. Offer in 3&ndash;4 size options per listing.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      3&times;{" "}
-                      <Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link>{" "}
-                      (small)
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      3&times;{" "}
-                      <Link href="/etsy-11x14-print-size" className="hover:underline">11&times;14</Link>{" "}
-                      (medium)
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      3&times;{" "}
-                      <Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link>{" "}
-                      (large)
-                    </span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">3&times; <Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link> (small)</span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">3&times; <Link href="/etsy-11x14-print-size" className="hover:underline">11&times;14</Link> (medium)</span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">3&times; <Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link> (large)</span>
                   </div>
                 </Card>
 
                 <Card className="p-6">
-                  <h3 className="font-semibold mb-2">
-                    Mixed-Size Arrangements
-                  </h3>
+                  <h3 className="font-semibold mb-3">Mixed-Size Arrangement</h3>
+                  <div className="flex items-center justify-center gap-3 mb-4 py-4 rounded-lg" style={{ background: "linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%)" }}>
+                    <div className="rounded border-2 flex items-center justify-center" style={{ width: "56px", height: "70px", borderColor: "rgba(168,139,250,0.3)", background: "rgba(168,139,250,0.04)" }}>
+                      <span className="text-[8px] font-mono text-foreground-60/60">8&times;10</span>
+                    </div>
+                    <div className="rounded border-2 flex items-center justify-center" style={{ width: "80px", height: "100px", borderColor: "rgba(168,139,250,0.5)", background: "rgba(168,139,250,0.08)" }}>
+                      <span className="text-[9px] font-mono text-foreground-60/70">16&times;20</span>
+                    </div>
+                    <div className="rounded border-2 flex items-center justify-center" style={{ width: "56px", height: "70px", borderColor: "rgba(168,139,250,0.3)", background: "rgba(168,139,250,0.04)" }}>
+                      <span className="text-[8px] font-mono text-foreground-60/60">8&times;10</span>
+                    </div>
+                  </div>
                   <p className="text-foreground-60 text-sm mb-3">
-                    One large center piece flanked by smaller prints. Popular
-                    for diptychs and triptychs. Require consistent ratios
-                    across all pieces.
+                    Large center piece flanked by smaller prints. Consistent ratios across all pieces.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      1&times; 16&times;20 + 2&times; 8&times;10
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      1&times; 18&times;24 + 2&times; 11&times;14
-                    </span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">1&times; 16&times;20 + 2&times; 8&times;10</span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">1&times; 18&times;24 + 2&times; 11&times;14</span>
                   </div>
                 </Card>
               </div>

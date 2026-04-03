@@ -536,10 +536,17 @@ export default function EtsyGalleryWallPrintSizesPage() {
                     >
                       <span className="text-sm font-bold" style={{ color: "#a78bfa" }}>1</span>
                     </div>
-                    <div>
+                    <div className="flex-1">
                       <h3 className="text-lg font-semibold mb-2">
                         Triptych &mdash; Set of 3, Same Size
                       </h3>
+                      <div className="flex items-end justify-start gap-2 mb-3 py-3">
+                        {[1,2,3].map((i) => (
+                          <div key={i} className="rounded border-2 flex items-center justify-center" style={{ width: "48px", height: "60px", borderColor: "rgba(167,139,250,0.4)", background: "rgba(167,139,250,0.06)" }}>
+                            <span className="text-[7px] font-mono" style={{ color: "rgba(167,139,250,0.6)" }}>8&times;10</span>
+                          </div>
+                        ))}
+                      </div>
                       <p className="text-foreground-60 text-sm mb-3">
                         The most popular gallery wall arrangement on Etsy. Works
                         above sofas, beds, and console tables.
@@ -571,10 +578,27 @@ export default function EtsyGalleryWallPrintSizesPage() {
                     >
                       <span className="text-sm font-bold" style={{ color: "#d4a574" }}>2</span>
                     </div>
-                    <div>
+                    <div className="flex-1">
                       <h3 className="text-lg font-semibold mb-2">
                         Stepped / Graduated &mdash; Large + Medium + Small
                       </h3>
+                      <div className="flex items-end justify-start gap-2 mb-3 py-3">
+                        <div className="rounded border-2 flex items-center justify-center" style={{ width: "32px", height: "40px", borderColor: "rgba(212,165,116,0.3)", background: "rgba(212,165,116,0.04)" }}>
+                          <span className="text-[6px] font-mono" style={{ color: "rgba(212,165,116,0.6)" }}>5&times;7</span>
+                        </div>
+                        <div className="rounded border-2 flex items-center justify-center" style={{ width: "44px", height: "55px", borderColor: "rgba(212,165,116,0.4)", background: "rgba(212,165,116,0.06)" }}>
+                          <span className="text-[7px] font-mono" style={{ color: "rgba(212,165,116,0.6)" }}>11&times;14</span>
+                        </div>
+                        <div className="rounded border-2 flex items-center justify-center" style={{ width: "56px", height: "70px", borderColor: "rgba(212,165,116,0.5)", background: "rgba(212,165,116,0.08)" }}>
+                          <span className="text-[7px] font-mono" style={{ color: "rgba(212,165,116,0.7)" }}>16&times;20</span>
+                        </div>
+                        <div className="rounded border-2 flex items-center justify-center" style={{ width: "44px", height: "55px", borderColor: "rgba(212,165,116,0.4)", background: "rgba(212,165,116,0.06)" }}>
+                          <span className="text-[7px] font-mono" style={{ color: "rgba(212,165,116,0.6)" }}>11&times;14</span>
+                        </div>
+                        <div className="rounded border-2 flex items-center justify-center" style={{ width: "32px", height: "40px", borderColor: "rgba(212,165,116,0.3)", background: "rgba(212,165,116,0.04)" }}>
+                          <span className="text-[6px] font-mono" style={{ color: "rgba(212,165,116,0.6)" }}>5&times;7</span>
+                        </div>
+                      </div>
                       <p className="text-foreground-60 text-sm mb-3">
                         One hero piece in the center flanked by progressively
                         smaller prints. Creates visual hierarchy and depth.
@@ -603,10 +627,19 @@ export default function EtsyGalleryWallPrintSizesPage() {
                     >
                       <span className="text-sm font-bold" style={{ color: "#a78bfa" }}>3</span>
                     </div>
-                    <div>
+                    <div className="flex-1">
                       <h3 className="text-lg font-semibold mb-2">
                         Grid &mdash; 2&times;2, 2&times;3, or 3&times;3
                       </h3>
+                      <div className="mb-3 py-3">
+                        <div className="inline-grid grid-cols-3 gap-1.5">
+                          {[1,2,3,4,5,6].map((i) => (
+                            <div key={i} className="rounded border-2 flex items-center justify-center" style={{ width: "36px", height: "45px", borderColor: "rgba(167,139,250,0.35)", background: "rgba(167,139,250,0.05)" }}>
+                              <span className="text-[6px] font-mono" style={{ color: "rgba(167,139,250,0.5)" }}>8&times;10</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
                       <p className="text-foreground-60 text-sm mb-3">
                         All prints the same size in rows and columns. Clean,
                         modern, symmetrical.
@@ -635,10 +668,33 @@ export default function EtsyGalleryWallPrintSizesPage() {
                     >
                       <span className="text-sm font-bold" style={{ color: "#d4a574" }}>4</span>
                     </div>
-                    <div>
+                    <div className="flex-1">
                       <h3 className="text-lg font-semibold mb-2">
                         Salon Style &mdash; Mixed Sizes, Organic Layout
                       </h3>
+                      <div className="mb-3 py-3">
+                        <div className="flex items-start gap-1.5 flex-wrap" style={{ maxWidth: "220px" }}>
+                          <div className="rounded border-2 flex items-center justify-center" style={{ width: "52px", height: "65px", borderColor: "rgba(212,165,116,0.5)", background: "rgba(212,165,116,0.08)" }}>
+                            <span className="text-[7px] font-mono" style={{ color: "rgba(212,165,116,0.7)" }}>16&times;20</span>
+                          </div>
+                          <div className="flex flex-col gap-1.5">
+                            <div className="rounded border-2 flex items-center justify-center" style={{ width: "36px", height: "45px", borderColor: "rgba(212,165,116,0.35)", background: "rgba(212,165,116,0.05)" }}>
+                              <span className="text-[6px] font-mono" style={{ color: "rgba(212,165,116,0.5)" }}>11&times;14</span>
+                            </div>
+                            <div className="rounded border-2 flex items-center justify-center" style={{ width: "28px", height: "35px", borderColor: "rgba(212,165,116,0.25)", background: "rgba(212,165,116,0.03)" }}>
+                              <span className="text-[5px] font-mono" style={{ color: "rgba(212,165,116,0.4)" }}>8&times;10</span>
+                            </div>
+                          </div>
+                          <div className="flex flex-col gap-1.5">
+                            <div className="rounded border-2 flex items-center justify-center" style={{ width: "28px", height: "35px", borderColor: "rgba(212,165,116,0.25)", background: "rgba(212,165,116,0.03)" }}>
+                              <span className="text-[5px] font-mono" style={{ color: "rgba(212,165,116,0.4)" }}>5&times;7</span>
+                            </div>
+                            <div className="rounded border-2 flex items-center justify-center" style={{ width: "36px", height: "45px", borderColor: "rgba(212,165,116,0.35)", background: "rgba(212,165,116,0.05)" }}>
+                              <span className="text-[6px] font-mono" style={{ color: "rgba(212,165,116,0.5)" }}>11&times;14</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                       <p className="text-foreground-60 text-sm mb-3">
                         The &ldquo;curated&rdquo; look &mdash; 5&ndash;12 prints
                         in 3&ndash;4 different sizes. Buyers expect all sizes
@@ -671,10 +727,17 @@ export default function EtsyGalleryWallPrintSizesPage() {
                     >
                       <span className="text-sm font-bold" style={{ color: "#a78bfa" }}>5</span>
                     </div>
-                    <div>
+                    <div className="flex-1">
                       <h3 className="text-lg font-semibold mb-2">
                         Diptych &mdash; Set of 2, Matching
                       </h3>
+                      <div className="flex items-end justify-start gap-3 mb-3 py-3">
+                        {[1,2].map((i) => (
+                          <div key={i} className="rounded border-2 flex items-center justify-center" style={{ width: "48px", height: "60px", borderColor: "rgba(167,139,250,0.4)", background: "rgba(167,139,250,0.06)" }}>
+                            <span className="text-[7px] font-mono" style={{ color: "rgba(167,139,250,0.6)" }}>11&times;14</span>
+                          </div>
+                        ))}
+                      </div>
                       <p className="text-foreground-60 text-sm mb-3">
                         Two matching prints side by side. Works above nightstands,
                         sofas, and console tables.

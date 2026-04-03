@@ -735,148 +735,79 @@ export default function EtsyQuoteWallArtSizesPage() {
                 conversion.
               </p>
 
-              <div className="space-y-4">
-                <Card className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">
-                    Motivational / Inspirational Quotes
-                  </h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="rounded-lg border border-border bg-surface p-6 border-l-[3px] border-l-orange-400">
+                  <h3 className="text-lg font-semibold mb-2">Motivational / Inspirational</h3>
                   <p className="text-foreground-60 text-sm mb-3">
-                    Large formats dominate. Offices, gyms, and studios want
-                    big, bold statements. Also strong at desk-frame sizes.
+                    Large formats dominate. Offices, gyms, studios want big, bold statements. Also strong at desk-frame sizes.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link>
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-18x24-print-size" className="hover:underline">18&times;24</Link>
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-24x36-print-size" className="hover:underline">24&times;36</Link>
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link>
-                    </span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link></span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-18x24-print-size" className="hover:underline">18&times;24</Link></span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-24x36-print-size" className="hover:underline">24&times;36</Link></span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link></span>
                   </div>
-                </Card>
+                </div>
 
-                <Card className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">
-                    Bible Verses / Religious Quotes
-                  </h3>
+                <div className="rounded-lg border border-border bg-surface p-6 border-l-[3px] border-l-purple-400">
+                  <h3 className="text-lg font-semibold mb-2">Bible Verses / Religious</h3>
                   <p className="text-foreground-60 text-sm mb-3">
-                    All sizes sell well. Strong{" "}
-                    <Link
-                      href="/etsy-nursery-wall-art-sizes"
-                      className="text-accent-light hover:underline"
-                    >
-                      nursery crossover
-                    </Link>{" "}
-                    at small sizes. Gift-friendly. A4 for international church
-                    communities.
+                    All sizes sell well. Strong <Link href="/etsy-nursery-wall-art-sizes" className="text-accent-light hover:underline">nursery crossover</Link> at small sizes. Gift-friendly. A4 for international churches.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-5x7-print-size" className="hover:underline">5&times;7</Link>
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link>
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-a4-print-size" className="hover:underline">A4</Link>
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      All packs
-                    </span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-5x7-print-size" className="hover:underline">5&times;7</Link></span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link></span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-a4-print-size" className="hover:underline">A4</Link></span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">All packs</span>
                   </div>
-                </Card>
+                </div>
 
-                <Card className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">
-                    Funny / Sarcastic Quotes
-                  </h3>
+                <div className="rounded-lg border border-border bg-surface p-6 border-l-[3px] border-l-pink-400">
+                  <h3 className="text-lg font-semibold mb-2">Funny / Sarcastic</h3>
                   <p className="text-foreground-60 text-sm mb-3">
-                    Small to medium sizes. Kitchen, bathroom, and dorm room
-                    art. Strong gift market.
+                    Small to medium. Kitchen, bathroom, dorm room art. Strong gift market.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-5x7-print-size" className="hover:underline">5&times;7</Link>
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link>
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-11x14-print-size" className="hover:underline">11&times;14</Link>
-                    </span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-5x7-print-size" className="hover:underline">5&times;7</Link></span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link></span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-11x14-print-size" className="hover:underline">11&times;14</Link></span>
                   </div>
-                </Card>
+                </div>
 
-                <Card className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">
-                    Minimalist Typography
-                  </h3>
+                <div className="rounded-lg border border-border bg-surface p-6 border-l-[3px] border-l-neutral-400">
+                  <h3 className="text-lg font-semibold mb-2">Minimalist Typography</h3>
                   <p className="text-foreground-60 text-sm mb-3">
-                    Premium sizes for clean modern interiors.{" "}
-                    <Link
-                      href="/etsy-gallery-wall-print-sizes"
-                      className="text-accent-light hover:underline"
-                    >
-                      Gallery wall sets
-                    </Link>{" "}
-                    in matching typography are a top-seller.
+                    Premium sizes for clean modern interiors. <Link href="/etsy-gallery-wall-print-sizes" className="text-accent-light hover:underline">Gallery wall sets</Link> in matching typography are a top-seller.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-11x14-print-size" className="hover:underline">11&times;14</Link>
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link>
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-18x24-print-size" className="hover:underline">18&times;24</Link>
-                    </span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-11x14-print-size" className="hover:underline">11&times;14</Link></span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-16x20-print-size" className="hover:underline">16&times;20</Link></span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-18x24-print-size" className="hover:underline">18&times;24</Link></span>
                   </div>
-                </Card>
+                </div>
 
-                <Card className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">
-                    Calligraphy / Hand-Lettered
-                  </h3>
+                <div className="rounded-lg border border-border bg-surface p-6 border-l-[3px] border-l-amber-400">
+                  <h3 className="text-lg font-semibold mb-2">Calligraphy / Hand-Lettered</h3>
                   <p className="text-foreground-60 text-sm mb-3">
-                    All sizes, with emphasis on 8&times;10 and 11&times;14.
-                    Strong wedding decor crossover.
+                    All sizes, emphasis on 8&times;10 and 11&times;14. Strong wedding decor crossover.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link>
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-11x14-print-size" className="hover:underline">11&times;14</Link>
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      All packs
-                    </span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link></span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-11x14-print-size" className="hover:underline">11&times;14</Link></span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">All packs</span>
                   </div>
-                </Card>
+                </div>
 
-                <Card className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">
-                    Affirmation / Self-Care
-                  </h3>
+                <div className="rounded-lg border border-border bg-surface p-6 border-l-[3px] border-l-teal-400">
+                  <h3 className="text-lg font-semibold mb-2">Affirmation / Self-Care</h3>
                   <p className="text-foreground-60 text-sm mb-3">
-                    Medium sizes for bedrooms and bathrooms. Often sold in
-                    sets of 3&ndash;6 matching prints.
+                    Medium sizes for bedrooms and bathrooms. Often sold in sets of 3&ndash;6 matching prints.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link>
-                    </span>
-                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
-                      <Link href="/etsy-11x14-print-size" className="hover:underline">11&times;14</Link>
-                    </span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-8x10-print-size" className="hover:underline">8&times;10</Link></span>
+                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-11x14-print-size" className="hover:underline">11&times;14</Link></span>
                   </div>
-                </Card>
+                </div>
               </div>
             </div>
 
