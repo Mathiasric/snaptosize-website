@@ -532,7 +532,154 @@ export default function EtsyAiArtPrintSizesPage() {
               </p>
             </div>
 
-            {/* --- H2 2: Best-Selling AI Art Print Sizes on Etsy --- */}
+            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+              <img src="/assets/visuals/etsy-ai-art-print-mockup.jpg" alt="Home office with two framed AI-generated art prints on the wall — a large vivid surreal landscape and a smaller abstract portrait in jewel tones, in natural oak frames above a clean wooden desk" width={1200} height={800} className="w-full h-auto" loading="lazy" />
+            </div>
+
+            {/* --- H2 2: AI Output Resolutions vs Print Requirements --- */}
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6">
+                AI Output Resolutions vs Print Requirements
+              </h2>
+              <p className="text-foreground-60 mb-6">
+                Every AI tool outputs at a fixed resolution. This table shows
+                what you actually get and the maximum print size at 300 DPI.
+                In practice, AI art looks sharp well below 300 DPI &mdash;
+                most buyers won&apos;t notice a difference down to ~150 DPI.
+              </p>
+
+              <div className="overflow-x-auto mb-6">
+                <table className="w-full border-collapse text-sm">
+                  <thead>
+                    <tr className="border-b border-white/20">
+                      <th className="text-left py-3 px-4 font-semibold">
+                        AI Tool / Setting
+                      </th>
+                      <th className="text-left py-3 px-4 font-semibold">
+                        Output (px)
+                      </th>
+                      <th className="text-left py-3 px-4 font-semibold">
+                        Print Size @ 300 DPI
+                      </th>
+                      <th className="text-left py-3 px-4 font-semibold">
+                        Verdict
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-white/10">
+                      <td className="py-3 px-4 font-medium">
+                        Midjourney v6 (default)
+                      </td>
+                      <td className="py-3 px-4 text-foreground-60">
+                        1024&times;1024
+                      </td>
+                      <td className="py-3 px-4 text-foreground-60">
+                        3.4&times;3.4&Prime;
+                      </td>
+                      <td className="py-3 px-4">
+                        <span className="text-yellow-400 text-xs font-medium">Good up to 5&times;7</span>
+                      </td>
+                    </tr>
+                    <tr className="border-b border-white/10">
+                      <td className="py-3 px-4 font-medium">
+                        Midjourney --ar 2:3
+                      </td>
+                      <td className="py-3 px-4 text-foreground-60">
+                        1024&times;1536
+                      </td>
+                      <td className="py-3 px-4 text-foreground-60">
+                        3.4&times;5.1&Prime;
+                      </td>
+                      <td className="py-3 px-4">
+                        <span className="text-green-400 text-xs font-medium">Good up to 8&times;10</span>
+                      </td>
+                    </tr>
+                    <tr className="border-b border-white/10">
+                      <td className="py-3 px-4 font-medium">
+                        DALL-E 3 (portrait)
+                      </td>
+                      <td className="py-3 px-4 text-foreground-60">
+                        1024&times;1792
+                      </td>
+                      <td className="py-3 px-4 text-foreground-60">
+                        3.4&times;6&Prime;
+                      </td>
+                      <td className="py-3 px-4">
+                        <span className="text-green-400 text-xs font-medium">Good up to 8&times;12</span>
+                      </td>
+                    </tr>
+                    <tr className="border-b border-white/10">
+                      <td className="py-3 px-4 font-medium">
+                        Stable Diffusion XL
+                      </td>
+                      <td className="py-3 px-4 text-foreground-60">
+                        1024&times;1024
+                      </td>
+                      <td className="py-3 px-4 text-foreground-60">
+                        3.4&times;3.4&Prime;
+                      </td>
+                      <td className="py-3 px-4">
+                        <span className="text-yellow-400 text-xs font-medium">Good up to 5&times;7</span>
+                      </td>
+                    </tr>
+                    <tr className="border-b border-white/10">
+                      <td className="py-3 px-4 font-medium">
+                        After 4x upscale
+                      </td>
+                      <td className="py-3 px-4 text-foreground-60">
+                        4096&times;4096
+                      </td>
+                      <td className="py-3 px-4 text-foreground-60">
+                        13.6&times;13.6&Prime;
+                      </td>
+                      <td className="py-3 px-4">
+                        <span className="text-green-400 text-xs font-medium">Covers most sizes</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-3 px-4 font-medium">
+                        After 8x upscale
+                      </td>
+                      <td className="py-3 px-4 text-foreground-60">
+                        8192&times;8192
+                      </td>
+                      <td className="py-3 px-4 text-foreground-60">
+                        27.3&times;27.3&Prime;
+                      </td>
+                      <td className="py-3 px-4">
+                        <span className="text-green-400 text-xs font-medium">Covers all sizes</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <Card className="p-5 bg-accent/10 border-accent/20">
+                <div className="flex gap-4">
+                  <AlertTriangle className="w-5 h-5 text-accent-light flex-shrink-0 mt-0.5" />
+                  <p className="text-foreground-60 text-sm">
+                    <strong className="text-foreground">
+                      Key takeaway:
+                    </strong>{" "}
+                    Raw AI images work great for small to mid sizes straight
+                    out of the tool. Upload directly to SnapToSize &mdash; it
+                    handles the resizing. For large prints (16&times;20+),
+                    upscaling to 4096+ pixels first gives the sharpest results.
+                    An 8x upscale covers every size including{" "}
+                    <Link
+                      href="/etsy-24x36-print-size"
+                      className="text-accent-light hover:underline"
+                    >
+                      24&times;36
+                    </Link>
+                    .
+                  </p>
+                </div>
+              </Card>
+            </div>
+
+            {/* --- H2 3: Best-Selling AI Art Print Sizes on Etsy --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
                 Best-Selling AI Art Print Sizes on Etsy
@@ -764,7 +911,7 @@ export default function EtsyAiArtPrintSizesPage() {
               </Card>
             </div>
 
-            {/* --- H2 3: AI Art Sub-Styles and Their Best Sizes --- */}
+            {/* --- H2 4: AI Art Sub-Styles and Their Best Sizes --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
                 AI Art Sub-Styles and Their Best Sizes
@@ -912,149 +1059,6 @@ export default function EtsyAiArtPrintSizesPage() {
                   </div>
                 </Card>
               </div>
-            </div>
-
-            {/* --- H2 4: AI Output Resolutions vs Print Requirements --- */}
-            <div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-6">
-                AI Output Resolutions vs Print Requirements
-              </h2>
-              <p className="text-foreground-60 mb-6">
-                Every AI tool outputs at a fixed resolution. This table shows
-                what you actually get and the maximum print size at 300 DPI.
-                In practice, AI art looks sharp well below 300 DPI &mdash;
-                most buyers won&apos;t notice a difference down to ~150 DPI.
-              </p>
-
-              <div className="overflow-x-auto mb-6">
-                <table className="w-full border-collapse text-sm">
-                  <thead>
-                    <tr className="border-b border-white/20">
-                      <th className="text-left py-3 px-4 font-semibold">
-                        AI Tool / Setting
-                      </th>
-                      <th className="text-left py-3 px-4 font-semibold">
-                        Output (px)
-                      </th>
-                      <th className="text-left py-3 px-4 font-semibold">
-                        Print Size @ 300 DPI
-                      </th>
-                      <th className="text-left py-3 px-4 font-semibold">
-                        Verdict
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-white/10">
-                      <td className="py-3 px-4 font-medium">
-                        Midjourney v6 (default)
-                      </td>
-                      <td className="py-3 px-4 text-foreground-60">
-                        1024&times;1024
-                      </td>
-                      <td className="py-3 px-4 text-foreground-60">
-                        3.4&times;3.4&Prime;
-                      </td>
-                      <td className="py-3 px-4">
-                        <span className="text-yellow-400 text-xs font-medium">Good up to 5&times;7</span>
-                      </td>
-                    </tr>
-                    <tr className="border-b border-white/10">
-                      <td className="py-3 px-4 font-medium">
-                        Midjourney --ar 2:3
-                      </td>
-                      <td className="py-3 px-4 text-foreground-60">
-                        1024&times;1536
-                      </td>
-                      <td className="py-3 px-4 text-foreground-60">
-                        3.4&times;5.1&Prime;
-                      </td>
-                      <td className="py-3 px-4">
-                        <span className="text-green-400 text-xs font-medium">Good up to 8&times;10</span>
-                      </td>
-                    </tr>
-                    <tr className="border-b border-white/10">
-                      <td className="py-3 px-4 font-medium">
-                        DALL-E 3 (portrait)
-                      </td>
-                      <td className="py-3 px-4 text-foreground-60">
-                        1024&times;1792
-                      </td>
-                      <td className="py-3 px-4 text-foreground-60">
-                        3.4&times;6&Prime;
-                      </td>
-                      <td className="py-3 px-4">
-                        <span className="text-green-400 text-xs font-medium">Good up to 8&times;12</span>
-                      </td>
-                    </tr>
-                    <tr className="border-b border-white/10">
-                      <td className="py-3 px-4 font-medium">
-                        Stable Diffusion XL
-                      </td>
-                      <td className="py-3 px-4 text-foreground-60">
-                        1024&times;1024
-                      </td>
-                      <td className="py-3 px-4 text-foreground-60">
-                        3.4&times;3.4&Prime;
-                      </td>
-                      <td className="py-3 px-4">
-                        <span className="text-yellow-400 text-xs font-medium">Good up to 5&times;7</span>
-                      </td>
-                    </tr>
-                    <tr className="border-b border-white/10">
-                      <td className="py-3 px-4 font-medium">
-                        After 4x upscale
-                      </td>
-                      <td className="py-3 px-4 text-foreground-60">
-                        4096&times;4096
-                      </td>
-                      <td className="py-3 px-4 text-foreground-60">
-                        13.6&times;13.6&Prime;
-                      </td>
-                      <td className="py-3 px-4">
-                        <span className="text-green-400 text-xs font-medium">Covers most sizes</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="py-3 px-4 font-medium">
-                        After 8x upscale
-                      </td>
-                      <td className="py-3 px-4 text-foreground-60">
-                        8192&times;8192
-                      </td>
-                      <td className="py-3 px-4 text-foreground-60">
-                        27.3&times;27.3&Prime;
-                      </td>
-                      <td className="py-3 px-4">
-                        <span className="text-green-400 text-xs font-medium">Covers all sizes</span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              <Card className="p-5 bg-accent/10 border-accent/20">
-                <div className="flex gap-4">
-                  <AlertTriangle className="w-5 h-5 text-accent-light flex-shrink-0 mt-0.5" />
-                  <p className="text-foreground-60 text-sm">
-                    <strong className="text-foreground">
-                      Key takeaway:
-                    </strong>{" "}
-                    Raw AI images work great for small to mid sizes straight
-                    out of the tool. Upload directly to SnapToSize &mdash; it
-                    handles the resizing. For large prints (16&times;20+),
-                    upscaling to 4096+ pixels first gives the sharpest results.
-                    An 8x upscale covers every size including{" "}
-                    <Link
-                      href="/etsy-24x36-print-size"
-                      className="text-accent-light hover:underline"
-                    >
-                      24&times;36
-                    </Link>
-                    .
-                  </p>
-                </div>
-              </Card>
             </div>
 
             {/* --- H2 5: Gallery Wall Sets with AI Art --- */}
