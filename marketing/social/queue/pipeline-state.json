@@ -1,40 +1,40 @@
 {
-  "current_week": "W13",
-  "batch_id": "2026-W13",
-  "started_at": "2026-03-25T11:45:01.857150+00:00",
-  "updated_at": "2026-03-25T12:13:40.882396+00:00",
+  "current_week": "W14",
+  "batch_id": "2026-W14",
+  "started_at": "2026-03-30T12:38:41.108782+00:00",
+  "updated_at": "2026-04-04T09:37:30.121869+00:00",
   "target": {
-    "pinterest": 4,
-    "instagram": 3,
-    "tiktok": 0
+    "pinterest": 21,
+    "instagram": 7,
+    "tiktok": 7
   },
   "stages": {
     "analyst": {
-      "status": "completed",
-      "output": "Mini-run: 4 Pinterest + 3 Instagram (incl. cross-platform)"
+      "status": "pending",
+      "output": null
     },
     "researcher": {
-      "status": "completed",
-      "output": "Used CONTENT_REFERENCE.md + lessons.md"
+      "status": "pending",
+      "output": null
     },
     "ideator": {
-      "status": "completed",
-      "output": "4 topics generated + 3 cross-platform"
+      "status": "pending",
+      "output": null
     },
     "scripter": {
-      "status": "completed",
-      "output": "7 captions written"
+      "status": "pending",
+      "output": null
     },
     "creator": {
-      "status": "completed",
-      "output": "4 Gemini + 3 SnapToSize cross-platform"
+      "status": "pending",
+      "output": null
     },
     "qa": {
-      "status": "completed",
+      "status": "pending",
       "output": null
     },
     "publisher": {
-      "status": "completed",
+      "status": "in_progress",
       "output": null
     },
     "tracker": {
@@ -44,129 +44,974 @@
   },
   "content_items": [
     {
-      "id": "W13-P01",
+      "id": "W14-P01",
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
       "stage": "published",
-      "tool_used": "gemini",
+      "tool_used": null,
       "tool_attempts": [],
       "files": {
-        "main": "marketing/social/content/pinterest/2026-03-25-etsy-file-naming-sells/pin.jpg"
+        "pin": "marketing/social/content/pinterest/2026-03-30-ratio-cheat-sheet/pin.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-03-30-ratio-cheat-sheet/metadata.json"
       },
-      "metadata": {},
+      "metadata": {
+        "title": "Print Ratio Cheat Sheet",
+        "slug": "2026-03-30-ratio-cheat-sheet",
+        "schedule": "today"
+      },
       "linked_item": null,
-      "created_at": "2026-03-25T11:45:01.857150+00:00",
-      "updated_at": "2026-03-25T11:50:18.505094+00:00",
+      "created_at": "2026-03-30T12:38:41.108782+00:00",
+      "updated_at": "2026-03-30T13:20:20.619995+00:00",
       "error": null
     },
     {
-      "id": "W13-P02",
+      "id": "W14-P02",
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
       "stage": "published",
-      "tool_used": "gemini",
+      "tool_used": null,
       "tool_attempts": [],
       "files": {
-        "main": "marketing/social/content/pinterest/2026-03-25-why-300-dpi-matters/pin.jpg"
+        "pin": "marketing/social/content/pinterest/2026-03-30-extras-pack-sizes/pin.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-03-30-extras-pack-sizes/metadata.json"
       },
-      "metadata": {},
+      "metadata": {
+        "title": "6 Sizes You Are Forgetting",
+        "slug": "2026-03-30-extras-pack-sizes",
+        "schedule": "today"
+      },
       "linked_item": null,
-      "created_at": "2026-03-25T11:45:01.857150+00:00",
-      "updated_at": "2026-03-25T11:50:26.099018+00:00",
+      "created_at": "2026-03-30T12:38:41.108782+00:00",
+      "updated_at": "2026-03-30T13:20:25.490097+00:00",
       "error": null
     },
     {
-      "id": "W13-P03",
+      "id": "W14-P03",
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
       "stage": "published",
-      "tool_used": "gemini",
+      "tool_used": null,
       "tool_attempts": [],
       "files": {
-        "main": "marketing/social/content/pinterest/2026-03-25-5-packs-70-files/pin.jpg"
+        "pin": "marketing/social/content/pinterest/2026-03-30-workflow-hack/pin.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-03-30-workflow-hack/metadata.json"
       },
-      "metadata": {},
+      "metadata": {
+        "title": "1 Upload 30+ Files",
+        "slug": "2026-03-30-workflow-hack",
+        "schedule": "today"
+      },
       "linked_item": null,
-      "created_at": "2026-03-25T11:45:01.857150+00:00",
-      "updated_at": "2026-03-25T11:50:33.985432+00:00",
+      "created_at": "2026-03-30T12:38:41.108782+00:00",
+      "updated_at": "2026-03-30T13:20:29.950315+00:00",
       "error": null
     },
     {
-      "id": "W13-I01",
+      "id": "W14-P04",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": null,
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-03-30-selling-globally/pin.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-03-30-selling-globally/metadata.json"
+      },
+      "metadata": {
+        "title": "Selling Globally ISO Sizes",
+        "slug": "2026-03-30-selling-globally",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.108782+00:00",
+      "updated_at": "2026-03-30T13:20:34.710636+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-P05",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-01-5-ratios-every-seller/pin.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-01-5-ratios-every-seller/metadata.json"
+      },
+      "metadata": {
+        "title": "5 Ratios Every Etsy Seller Needs",
+        "slug": "2026-04-01-5-ratios-every-seller",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.108782+00:00",
+      "updated_at": "2026-04-01T15:39:58.313671+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-P06",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-01-how-many-sizes/pin.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-01-how-many-sizes/metadata.json"
+      },
+      "metadata": {
+        "title": "How Many Sizes Should You Offer?",
+        "slug": "2026-04-01-how-many-sizes",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.108782+00:00",
+      "updated_at": "2026-04-01T15:39:59.815913+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-P07",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-01-ph-free-30-days/pin.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-01-ph-free-30-days/metadata.json"
+      },
+      "metadata": {
+        "title": "Free 30 Days - PH Launch",
+        "slug": "2026-04-01-ph-free-30-days",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.108782+00:00",
+      "updated_at": "2026-04-01T15:40:00.993972+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-P08",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "snaptosize-resize",
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-01-ph-free-trial-xpost/try-it-free-for-30-days.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-01-ph-free-trial-xpost/metadata.json"
+      },
+      "metadata": {
+        "title": "Try Free 30 Days (xpost from IG)",
+        "slug": "2026-04-01-ph-free-trial-xpost",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.108782+00:00",
+      "updated_at": "2026-04-01T15:48:39.032674+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-P09",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-02-portrait-landscape-double/portrait-landscape-double.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-02-portrait-landscape-double/metadata.json"
+      },
+      "metadata": {
+        "title": "Double Your Listings â€” Portrait + Landscape",
+        "slug": "2026-04-02-portrait-landscape-double",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.108782+00:00",
+      "updated_at": "2026-04-02T06:54:55.804591+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-P10",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-02-inside-zip-pack/inside-zip-pack.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-02-inside-zip-pack/metadata.json"
+      },
+      "metadata": {
+        "title": "What's Inside Your ZIP Pack",
+        "slug": "2026-04-02-inside-zip-pack",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.108782+00:00",
+      "updated_at": "2026-04-02T06:55:00.442142+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-P11",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-02-top-5-print-sizes/top-5-print-sizes.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-02-top-5-print-sizes/metadata.json"
+      },
+      "metadata": {
+        "title": "Top 5 Print Sizes for Etsy Wall Art",
+        "slug": "2026-04-02-top-5-print-sizes",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.108782+00:00",
+      "updated_at": "2026-04-02T06:55:05.569842+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-P12-xpost",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "snaptosize-resize",
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-02-stop-start-xpost/stop-start.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-02-stop-start-xpost/metadata.json"
+      },
+      "metadata": {
+        "title": "Stop Resizing One By One (xpost from IG)",
+        "slug": "2026-04-02-stop-start-xpost",
+        "schedule": "today"
+      },
+      "linked_item": "W14-I08",
+      "created_at": "2026-04-02T12:00:00.000000+00:00",
+      "updated_at": "2026-04-02T07:01:27.744966+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-P12",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-03-3-4-ratio-frame-pack/3-4-ratio-frame-pack.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-03-3-4-ratio-frame-pack/metadata.json"
+      },
+      "metadata": {
+        "title": "3:4 Ratio Pack â€” The Classic Frame Size",
+        "slug": "2026-04-03-3-4-ratio-frame-pack",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.108782+00:00",
+      "updated_at": "2026-04-03T07:58:23.927499+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-P13",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-03-why-300-dpi-matters/why-300-dpi-matters.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-03-why-300-dpi-matters/metadata.json"
+      },
+      "metadata": {
+        "title": "Why 300 DPI Matters for Etsy Prints",
+        "slug": "2026-04-03-why-300-dpi-matters",
+        "schedule": "tomorrow"
+      },
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.108782+00:00",
+      "updated_at": "2026-04-03T07:59:58.188176+00:00",
+      "error": "You have already scheduled the maximum number of posts Pinterest allows in a day (5). Please consider scheduling this post for another day."
+    },
+    {
+      "id": "W14-P14",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-03-spring-gallery-wall/spring-gallery-wall.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-03-spring-gallery-wall/metadata.json"
+      },
+      "metadata": {
+        "title": "Spring Gallery Wall Inspiration",
+        "slug": "2026-04-03-spring-gallery-wall",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.108782+00:00",
+      "updated_at": "2026-04-03T06:42:51.378675+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-P15-xpost",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "snaptosize-resize",
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-03-extras-pack-xpost/extras-pack-spotlight.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-03-extras-pack-xpost/metadata.json"
+      },
+      "metadata": {
+        "title": "Extras Pack â€” 6 Sizes (xpost from IG)",
+        "slug": "2026-04-03-extras-pack-xpost",
+        "schedule": "tomorrow"
+      },
+      "linked_item": "W14-I11",
+      "created_at": "2026-04-03T12:00:00.000000+00:00",
+      "updated_at": "2026-04-03T07:59:58.188176+00:00",
+      "error": "You have already scheduled the maximum number of posts Pinterest allows in a day (5). Please consider scheduling this post for another day."
+    },
+    {
+      "id": "W14-P15",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-04-best-selling-8x10/best-selling-8x10.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-04-best-selling-8x10/metadata.json"
+      },
+      "metadata": {
+        "title": "Why 8x10 is the Best-Selling Etsy Size",
+        "slug": "2026-04-04-best-selling-8x10",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.108782+00:00",
+      "updated_at": "2026-04-04T09:32:56.766645+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-P16",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-04-square-sizes-etsy/square-sizes-etsy.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-04-square-sizes-etsy/metadata.json"
+      },
+      "metadata": {
+        "title": "Square Sizes for Etsy — 5x5 to 24x24",
+        "slug": "2026-04-04-square-sizes-etsy",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.108782+00:00",
+      "updated_at": "2026-04-04T09:33:01.339580+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-P17",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-04-file-naming-etsy/file-naming-etsy.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-04-file-naming-etsy/metadata.json"
+      },
+      "metadata": {
+        "title": "Name Your Files Like a Pro",
+        "slug": "2026-04-04-file-naming-etsy",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.109779+00:00",
+      "updated_at": "2026-04-04T09:33:06.292309+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-P18",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "ideation",
+      "tool_used": null,
+      "tool_attempts": [],
+      "files": {},
+      "metadata": {},
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.109779+00:00",
+      "updated_at": "2026-03-30T12:38:41.109779+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-P19",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "ideation",
+      "tool_used": null,
+      "tool_attempts": [],
+      "files": {},
+      "metadata": {},
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.109779+00:00",
+      "updated_at": "2026-03-30T12:38:41.109779+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-P20",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "ideation",
+      "tool_used": null,
+      "tool_attempts": [],
+      "files": {},
+      "metadata": {},
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.109779+00:00",
+      "updated_at": "2026-03-30T12:38:41.109779+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-P21",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "ideation",
+      "tool_used": null,
+      "tool_attempts": [],
+      "files": {},
+      "metadata": {},
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.109779+00:00",
+      "updated_at": "2026-03-30T12:38:41.109779+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-I01",
       "platform": "instagram",
       "format": "image",
       "priority": "P1",
       "stage": "published",
-      "tool_used": "gemini",
+      "tool_used": null,
       "tool_attempts": [],
       "files": {
-        "main": "marketing/social/content/instagram/2026-03-25-stop-leaving-money/post.jpg"
+        "post": "marketing/social/content/instagram/2026-03-30-iso-sizes/post.jpg",
+        "metadata": "marketing/social/content/instagram/2026-03-30-iso-sizes/metadata.json"
       },
-      "metadata": {},
+      "metadata": {
+        "title": "ISO A-Series Sizes",
+        "slug": "2026-03-30-iso-sizes",
+        "schedule": "today"
+      },
       "linked_item": null,
-      "created_at": "2026-03-25T11:45:01.858465+00:00",
-      "updated_at": "2026-03-25T11:50:41.670349+00:00",
+      "created_at": "2026-03-30T12:38:41.109779+00:00",
+      "updated_at": "2026-03-30T13:27:54.909862+00:00",
       "error": null
     },
     {
-      "id": "W13-I02",
+      "id": "W14-I02",
       "platform": "instagram",
       "format": "image",
       "priority": "P1",
       "stage": "published",
-      "tool_used": "manual",
+      "tool_used": null,
       "tool_attempts": [],
       "files": {
-        "main": "marketing/social/content/instagram/2026-03-25-5-packs-70-files/post.jpg"
+        "post": "marketing/social/content/instagram/2026-03-30-1upload-30plus-files/post.jpg",
+        "metadata": "marketing/social/content/instagram/2026-03-30-1upload-30plus-files/metadata.json"
       },
-      "metadata": {},
-      "linked_item": "W13-P03",
-      "created_at": "2026-03-25T12:10:00.000000+00:00",
-      "updated_at": "2026-03-25T12:13:20.645841+00:00",
+      "metadata": {
+        "title": "1 Upload 30+ Files",
+        "slug": "2026-03-30-1upload-30plus-files",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.109779+00:00",
+      "updated_at": "2026-03-30T13:20:44.761902+00:00",
       "error": null
     },
     {
-      "id": "W13-I03",
+      "id": "W14-I03",
       "platform": "instagram",
       "format": "image",
       "priority": "P1",
       "stage": "published",
-      "tool_used": "manual",
+      "tool_used": null,
       "tool_attempts": [],
       "files": {
-        "main": "marketing/social/content/instagram/2026-03-25-why-300-dpi-matters/post.jpg"
+        "post": "marketing/social/content/instagram/2026-03-30-6sizes-forgetting/post.jpg",
+        "metadata": "marketing/social/content/instagram/2026-03-30-6sizes-forgetting/metadata.json"
       },
-      "metadata": {},
-      "linked_item": "W13-P02",
-      "created_at": "2026-03-25T12:10:00.000000+00:00",
-      "updated_at": "2026-03-25T12:13:31.703197+00:00",
+      "metadata": {
+        "title": "6 Sizes You Are Forgetting",
+        "slug": "2026-03-30-6sizes-forgetting",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.109779+00:00",
+      "updated_at": "2026-03-30T13:20:49.340798+00:00",
       "error": null
     },
     {
-      "id": "W13-P04",
+      "id": "W14-I04",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": null,
+      "tool_attempts": [],
+      "files": {
+        "post": "marketing/social/content/instagram/2026-03-30-ph-launch/post.jpg",
+        "metadata": "marketing/social/content/instagram/2026-03-30-ph-launch/metadata.json"
+      },
+      "metadata": {
+        "title": "PH Launch Announcement",
+        "slug": "2026-03-30-ph-launch",
+        "schedule": "tomorrow"
+      },
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.109779+00:00",
+      "updated_at": "2026-03-30T13:27:55.868443+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-I05",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "tool_attempts": [],
+      "files": {
+        "post": "marketing/social/content/instagram/2026-04-01-ph-day2-free-trial/post.jpg",
+        "metadata": "marketing/social/content/instagram/2026-04-01-ph-day2-free-trial/metadata.json"
+      },
+      "metadata": {
+        "title": "PH Day 2 - Free Trial",
+        "slug": "2026-04-01-ph-day2-free-trial",
+        "schedule": "today"
+      },
+      "linked_item": "W14-T05",
+      "created_at": "2026-03-30T12:38:41.109779+00:00",
+      "updated_at": "2026-04-01T15:40:16.010979+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-I06",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "snaptosize-resize",
+      "tool_attempts": [],
+      "files": {
+        "post": "marketing/social/content/instagram/2026-04-01-how-many-sizes-xpost/how-many-sizes.jpg",
+        "metadata": "marketing/social/content/instagram/2026-04-01-how-many-sizes-xpost/metadata.json"
+      },
+      "metadata": {
+        "title": "How Many Sizes (xpost from Pinterest)",
+        "slug": "2026-04-01-how-many-sizes-xpost",
+        "schedule": "today"
+      },
+      "linked_item": "W14-T06",
+      "created_at": "2026-03-30T12:38:41.109779+00:00",
+      "updated_at": "2026-04-01T15:48:41.133318+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-I07",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "snaptosize-resize",
+      "tool_attempts": [],
+      "files": {
+        "post": "marketing/social/content/instagram/2026-04-01-ph-free-30-days-xpost/free-for-30-days.jpg",
+        "metadata": "marketing/social/content/instagram/2026-04-01-ph-free-30-days-xpost/metadata.json"
+      },
+      "metadata": {
+        "title": "Free 30 Days (xpost from Pinterest)",
+        "slug": "2026-04-01-ph-free-30-days-xpost",
+        "schedule": "today"
+      },
+      "linked_item": "W14-T07",
+      "created_at": "2026-03-30T12:38:41.109779+00:00",
+      "updated_at": "2026-04-01T15:48:42.565384+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-I08",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "tool_attempts": [],
+      "files": {
+        "post": "marketing/social/content/instagram/2026-04-02-stop-resizing-one-by-one/stop-resizing-one-by-one.jpg",
+        "metadata": "marketing/social/content/instagram/2026-04-02-stop-resizing-one-by-one/metadata.json"
+      },
+      "metadata": {
+        "title": "Stop Resizing One By One",
+        "slug": "2026-04-02-stop-resizing-one-by-one",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-04-02T12:00:00.000000+00:00",
+      "updated_at": "2026-04-02T06:55:10.999696+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-I09-xpost",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "snaptosize-resize",
+      "tool_attempts": [],
+      "files": {
+        "post": "marketing/social/content/instagram/2026-04-02-inside-zip-pack-xpost/inside-zip-pack.jpg",
+        "metadata": "marketing/social/content/instagram/2026-04-02-inside-zip-pack-xpost/metadata.json"
+      },
+      "metadata": {
+        "title": "What's Inside Your ZIP Pack (xpost from Pinterest)",
+        "slug": "2026-04-02-inside-zip-pack-xpost",
+        "schedule": "today"
+      },
+      "linked_item": "W14-P10",
+      "created_at": "2026-04-02T12:00:00.000000+00:00",
+      "updated_at": "2026-04-02T07:01:32.003458+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-I10-xpost",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "snaptosize-resize",
+      "tool_attempts": [],
+      "files": {
+        "post": "marketing/social/content/instagram/2026-04-02-portrait-landscape-double-xpost/portrait-landscape-double.jpg",
+        "metadata": "marketing/social/content/instagram/2026-04-02-portrait-landscape-double-xpost/metadata.json"
+      },
+      "metadata": {
+        "title": "Double Your Listings (xpost from Pinterest)",
+        "slug": "2026-04-02-portrait-landscape-double-xpost",
+        "schedule": "today"
+      },
+      "linked_item": "W14-P09",
+      "created_at": "2026-04-02T12:00:00.000000+00:00",
+      "updated_at": "2026-04-02T07:01:36.101434+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-I11",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "tool_attempts": [],
+      "files": {
+        "post": "marketing/social/content/instagram/2026-04-03-extras-pack-spotlight/extras-pack-spotlight.jpg",
+        "metadata": "marketing/social/content/instagram/2026-04-03-extras-pack-spotlight/metadata.json"
+      },
+      "metadata": {
+        "title": "Extras Pack â€” 6 Sizes You Didn't Know You Needed",
+        "slug": "2026-04-03-extras-pack-spotlight",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-04-03T12:00:00.000000+00:00",
+      "updated_at": "2026-04-03T06:42:55.429569+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-I12-xpost",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "snaptosize-resize",
+      "tool_attempts": [],
+      "files": {
+        "post": "marketing/social/content/instagram/2026-04-03-gallery-wall-xpost/gallery-wall-sizes.jpg",
+        "metadata": "marketing/social/content/instagram/2026-04-03-gallery-wall-xpost/metadata.json"
+      },
+      "metadata": {
+        "title": "Gallery Wall Sizes (xpost from Pinterest)",
+        "slug": "2026-04-03-gallery-wall-xpost",
+        "schedule": "today"
+      },
+      "linked_item": "W14-P14",
+      "created_at": "2026-04-03T12:00:00.000000+00:00",
+      "updated_at": "2026-04-03T07:56:13.221212+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-I13-xpost",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "snaptosize-resize",
+      "tool_attempts": [],
+      "files": {
+        "post": "marketing/social/content/instagram/2026-04-03-why-300-dpi-xpost/why-300-dpi-matters.jpg",
+        "metadata": "marketing/social/content/instagram/2026-04-03-why-300-dpi-xpost/metadata.json"
+      },
+      "metadata": {
+        "title": "Why 300 DPI Matters (xpost from Pinterest)",
+        "slug": "2026-04-03-why-300-dpi-xpost",
+        "schedule": "today"
+      },
+      "linked_item": "W14-P13",
+      "created_at": "2026-04-03T12:00:00.000000+00:00",
+      "updated_at": "2026-04-03T07:56:17.868761+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-I14",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "tool_attempts": [],
+      "files": {
+        "post": "marketing/social/content/instagram/2026-04-04-4-5-ratio-pack-spotlight/4-5-ratio-pack-spotlight.jpg",
+        "metadata": "marketing/social/content/instagram/2026-04-04-4-5-ratio-pack-spotlight/metadata.json"
+      },
+      "metadata": {
+        "title": "The 4:5 Ratio Pack — 5 Classic Frame Sizes",
+        "slug": "2026-04-04-4-5-ratio-pack-spotlight",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-04-04T12:00:00.000000+00:00",
+      "updated_at": "2026-04-04T09:33:10.725672+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-I15-xpost",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "snaptosize-resize",
+      "tool_attempts": [],
+      "files": {
+        "post": "marketing/social/content/instagram/2026-04-04-best-selling-8x10-xpost/best-selling-8x10.jpg",
+        "metadata": "marketing/social/content/instagram/2026-04-04-best-selling-8x10-xpost/metadata.json"
+      },
+      "metadata": {
+        "title": "Why 8x10 is Best-Selling (xpost from Pinterest)",
+        "slug": "2026-04-04-best-selling-8x10-xpost",
+        "schedule": "today"
+      },
+      "linked_item": "W14-P15",
+      "created_at": "2026-04-04T12:00:00.000000+00:00",
+      "updated_at": "2026-04-04T09:37:20.454935+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-I16-xpost",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "snaptosize-resize",
+      "tool_attempts": [],
+      "files": {
+        "post": "marketing/social/content/instagram/2026-04-04-square-sizes-etsy-xpost/square-sizes-etsy.jpg",
+        "metadata": "marketing/social/content/instagram/2026-04-04-square-sizes-etsy-xpost/metadata.json"
+      },
+      "metadata": {
+        "title": "Square Sizes for Etsy (xpost from Pinterest)",
+        "slug": "2026-04-04-square-sizes-etsy-xpost",
+        "schedule": "today"
+      },
+      "linked_item": "W14-P16",
+      "created_at": "2026-04-04T12:00:00.000000+00:00",
+      "updated_at": "2026-04-04T09:37:25.722414+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-P18-xpost",
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "published",
-      "tool_used": "manual",
+      "stage": "publishing",
+      "tool_used": "snaptosize-resize",
       "tool_attempts": [],
       "files": {
-        "main": "marketing/social/content/pinterest/2026-03-25-stop-leaving-money/pin.jpg"
+        "pin": "marketing/social/content/pinterest/2026-04-04-4-5-ratio-pack-xpost/4-5-ratio-pack.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-04-4-5-ratio-pack-xpost/metadata.json"
       },
+      "metadata": {
+        "title": "4:5 Ratio Pack (xpost from IG)",
+        "slug": "2026-04-04-4-5-ratio-pack-xpost",
+        "schedule": "today"
+      },
+      "linked_item": "W14-I14",
+      "created_at": "2026-04-04T12:00:00.000000+00:00",
+      "updated_at": "2026-04-04T09:37:30.072264+00:00",
+      "error": "You have already scheduled the maximum number of posts Pinterest allows in a day (5). Please consider scheduling this post for another day."
+    },
+    {
+      "id": "W14-T01",
+      "platform": "tiktok",
+      "format": "video",
+      "priority": "P1",
+      "stage": "publishing",
+      "tool_used": "remotion-slideshow",
+      "tool_attempts": [],
+      "files": {
+        "video": "marketing/social/content/tiktok/2026-04-03-top-5-buyer-sizes/top-5-buyer-sizes.mp4",
+        "metadata": "marketing/social/content/tiktok/2026-04-03-top-5-buyer-sizes/metadata.json"
+      },
+      "metadata": {
+        "title": "Top 5 Sizes Buyers Search",
+        "slug": "2026-04-03-top-5-buyer-sizes",
+        "schedule": "manual"
+      },
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.109779+00:00",
+      "updated_at": "2026-04-04T09:37:30.121869+00:00",
+      "error": "No channel ID for tiktok"
+    },
+    {
+      "id": "W14-T02",
+      "platform": "tiktok",
+      "format": "video",
+      "priority": "P1",
+      "stage": "ideation",
+      "tool_used": null,
+      "tool_attempts": [],
+      "files": {},
       "metadata": {},
-      "linked_item": "W13-I01",
-      "created_at": "2026-03-25T12:10:00.000000+00:00",
-      "updated_at": "2026-03-25T12:13:39.716441+00:00",
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.109779+00:00",
+      "updated_at": "2026-03-30T12:38:41.109779+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-T03",
+      "platform": "tiktok",
+      "format": "video",
+      "priority": "P1",
+      "stage": "ideation",
+      "tool_used": null,
+      "tool_attempts": [],
+      "files": {},
+      "metadata": {},
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.109779+00:00",
+      "updated_at": "2026-03-30T12:38:41.109779+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-T04",
+      "platform": "tiktok",
+      "format": "video",
+      "priority": "P1",
+      "stage": "ideation",
+      "tool_used": null,
+      "tool_attempts": [],
+      "files": {},
+      "metadata": {},
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.109779+00:00",
+      "updated_at": "2026-03-30T12:38:41.109779+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-T05",
+      "platform": "tiktok",
+      "format": "video",
+      "priority": "P1",
+      "stage": "ideation",
+      "tool_used": null,
+      "tool_attempts": [],
+      "files": {},
+      "metadata": {},
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.109779+00:00",
+      "updated_at": "2026-03-30T12:38:41.109779+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-T06",
+      "platform": "tiktok",
+      "format": "video",
+      "priority": "P1",
+      "stage": "ideation",
+      "tool_used": null,
+      "tool_attempts": [],
+      "files": {},
+      "metadata": {},
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.109779+00:00",
+      "updated_at": "2026-03-30T12:38:41.109779+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-T07",
+      "platform": "tiktok",
+      "format": "video",
+      "priority": "P1",
+      "stage": "ideation",
+      "tool_used": null,
+      "tool_attempts": [],
+      "files": {},
+      "metadata": {},
+      "linked_item": null,
+      "created_at": "2026-03-30T12:38:41.109779+00:00",
+      "updated_at": "2026-03-30T12:38:41.109779+00:00",
       "error": null
     }
   ],
   "metrics": {
-    "total": 7,
-    "completed": 7,
+    "total": 47,
+    "completed": 35,
     "failed": 0,
-    "success_rate": 1.0
+    "success_rate": 0.745
   }
 }

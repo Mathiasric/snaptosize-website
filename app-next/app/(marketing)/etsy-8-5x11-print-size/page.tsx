@@ -880,7 +880,9 @@ export default function Etsy85x11PrintSizePage() {
                         Wrong orientation for planners
                       </h3>
                       <p className="text-foreground-60 text-sm">
-                        Most planner and worksheet buyers expect portrait
+                        Most{" "}
+                        <Link href="/etsy-digital-planner-sizes" className="text-accent-light hover:underline">planner</Link>{" "}
+                        and worksheet buyers expect portrait
                         orientation (8.5 wide × 11 tall). Delivering landscape
                         files forces buyers to rotate before printing &mdash;
                         extra friction that leads to bad reviews. Always

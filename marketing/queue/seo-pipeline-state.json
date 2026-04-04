@@ -1,47 +1,47 @@
 {
   "_fresh": false,
-  "current_week": "W19",
-  "batch_id": "2026-W19",
-  "started_at": "2026-04-03T00:00:00+00:00",
+  "current_week": "W20",
+  "batch_id": "2026-W20",
+  "started_at": "2026-04-04T00:00:00+00:00",
   "target": {
     "pages": 2
   },
   "stages": {
     "researcher": {
       "status": "completed",
-      "output": "2 briefs created (etsy-listing-photo-size, etsy-photography-print-sizes) — parallel keyword research with WebSearch + Firecrawl backlog"
+      "output": "2 briefs created (etsy-watercolor-print-sizes, etsy-digital-planner-sizes) — parallel keyword research with WebSearch"
     },
     "writer": {
       "status": "completed",
-      "output": "2 pages written (parallel subagents) — listing photo bridge page + photography niche page with camera ratio mapping"
+      "output": "2 pages written (parallel subagents) — watercolor niche page with sub-niche breakdowns + digital planner crossover guide"
     },
     "review": {
       "status": "completed",
-      "output": "TypeScript compilation passed, all 61 pages generated successfully. EPERM on out/ dir from Google Drive sync (not code error)."
+      "output": "TypeScript compilation passed (npx tsc --noEmit). Next build blocked by Google Drive lockfile (known issue, not code error)."
     },
     "deploy": {
       "status": "completed",
-      "output": "Header.tsx, Footer.tsx, page-registry.json updated. Backlinks: 2 inbound for listing-photo (how-to-resize, best-resolution), 2 inbound for photography (landscape, 24x36). Gemini mockups + OG images generated."
+      "output": "Header.tsx, Footer.tsx, page-registry.json updated. Backlinks: 2 inbound for watercolor (botanical, abstract), 3 inbound for digital-planner (A4, A5, 8.5x11). Gemini mockup generated for watercolor. OG images generated for both pages."
     },
     "verify": {
-      "status": "completed",
-      "output": "Visual QA passed — desktop (1440x900) + mobile (390x844) + OG (1200x630) screenshots for both pages. H1 upper half, CTA visible, trust pills OK. Mockup images rendering correctly after H2 1."
+      "status": "in_progress",
+      "output": ""
     }
   },
   "content_items": [
     {
-      "slug": "etsy-listing-photo-size",
-      "keyword": "etsy listing photo size",
-      "type": "guide",
-      "status": "deployed",
-      "brief": "marketing/briefs/etsy-listing-photo-size-brief.md"
-    },
-    {
-      "slug": "etsy-photography-print-sizes",
-      "keyword": "etsy photography print sizes",
+      "slug": "etsy-watercolor-print-sizes",
+      "keyword": "etsy watercolor print sizes",
       "type": "niche",
       "status": "deployed",
-      "brief": "marketing/briefs/etsy-photography-print-sizes-brief.md"
+      "brief": "marketing/briefs/etsy-watercolor-print-sizes-brief.md"
+    },
+    {
+      "slug": "etsy-digital-planner-sizes",
+      "keyword": "etsy digital planner sizes",
+      "type": "guide",
+      "status": "deployed",
+      "brief": "marketing/briefs/etsy-digital-planner-sizes-brief.md"
     }
   ],
   "metrics": {
@@ -50,5 +50,5 @@
     "failed": 0,
     "success_rate": 1.0
   },
-  "updated_at": "2026-04-03T10:00:00+00:00"
+  "updated_at": "2026-04-04T12:00:00+00:00"
 }

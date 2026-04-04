@@ -68,10 +68,19 @@ def count_hashtags(text: str) -> int:
 
 
 def find_content_file(item_dir: Path, file_names: list) -> Path | None:
+    """Find content file by legacy name (pin.jpg/post.jpg) or any matching extension."""
+    # 1. Try legacy exact names first
     for name in file_names:
         p = item_dir / name
         if p.exists():
             return p
+    # 2. Fall back to any file with matching extension (supports descriptive names)
+    extensions = {Path(n).suffix for n in file_names}
+    for ext in extensions:
+        matches = sorted(item_dir.glob(f"*{ext}"))
+        # Skip metadata.json etc — only return content files
+        if matches:
+            return matches[0]
     return None
 
 

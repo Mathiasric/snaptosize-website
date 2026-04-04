@@ -1,0 +1,18 @@
+{
+  "hookQuestion": "Still resizing Etsy art manually?",
+  "beforeTitle": "WITHOUT SnapToSize",
+  "beforePoints": [
+    "Hours spent cropping",
+    "Awkward cut-off artwork",
+    "Hitting Etsy's 20MB limit"
+  ],
+  "afterTitle": "WITH SnapToSize",
+  "afterPoints": [
+    "30+ sizes in 1 click",
+    "Perfectly scaled 300 DPI",
+    "Under 20MB organized ZIPs"
+  ],
+  "cta": "Try Free \u2192 snaptosize.com",
+  "episodeTag": "Etsy Tips \u00b7 Day 1",
+  "theme": "sunset"
+}

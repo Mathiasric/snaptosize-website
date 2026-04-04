@@ -10,6 +10,12 @@ import { BeforeAfter, BeforeAfterProps } from "./compositions/BeforeAfter";
 import { CountdownReveal, CountdownRevealProps } from "./compositions/CountdownReveal";
 import { StatHighlight, StatHighlightProps } from "./compositions/StatHighlight";
 import { QuickList, QuickListProps } from "./compositions/QuickList";
+import { PHLaunchSlideshow, PH_LAUNCH_DURATION } from "./compositions/PHLaunchSlideshow";
+import {
+  SlideshowVertical,
+  SlideshowVerticalProps,
+  calculateSlideshowDuration,
+} from "./compositions/SlideshowVertical";
 
 const DEFAULT_PROPS: TikTokVerticalProps = {
   hook: "Stop Guessing\nPrint Sizes",
@@ -132,6 +138,38 @@ export const RemotionRoot: React.FC = () => (
       width={1080}
       height={1920}
       defaultProps={DEFAULT_QUICK_LIST_PROPS}
+    />
+    <Composition
+      id="SlideshowVertical"
+      component={SlideshowVertical}
+      calculateMetadata={({ props }) => ({
+        durationInFrames: calculateSlideshowDuration(props.slides.length),
+      })}
+      fps={30}
+      width={1080}
+      height={1920}
+      defaultProps={{
+        hook: "Top 5 Sizes\nBuyers Search",
+        hookSub: "Are you offering all of them?",
+        slides: [
+          { image: "slide-02-8x10.png", label: "Most Popular", text: "8×10 — The Bestseller" },
+          { image: "slide-03-5x7.png", label: "Gift Favorite", text: "5×7 — Cards & Small Frames" },
+          { image: "slide-04-16x20.png", label: "Gallery Star", text: "16×20 — Gallery Wall Hero" },
+          { image: "slide-05-18x24.png", label: "Statement Piece", text: "18×24 — Large Format" },
+        ],
+        cta: "Get All Sizes",
+        ctaSub: "One upload. 70 files. 60 seconds.",
+        theme: "emerald",
+        tag: "Print Tips",
+      } satisfies SlideshowVerticalProps}
+    />
+    <Composition
+      id="PHLaunchSlideshow"
+      component={PHLaunchSlideshow}
+      durationInFrames={PH_LAUNCH_DURATION}
+      fps={30}
+      width={1080}
+      height={1920}
     />
   </>
 );

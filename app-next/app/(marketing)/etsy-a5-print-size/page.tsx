@@ -386,8 +386,9 @@ export default function EtsyA5PrintSizePage() {
                 A5 is the default stationery and card size across the UK,
                 Europe, Australia, New Zealand, and most of Asia. Greeting
                 cards, wedding invitations, planner inserts, and small booklets
-                are all built around A5 dimensions. If you sell stationery or
-                planners on Etsy, A5 is essential.
+                are all built around A5 dimensions. If you sell stationery or{" "}
+                <Link href="/etsy-digital-planner-sizes" className="text-accent-light hover:underline">digital planners</Link>{" "}
+                on Etsy, A5 is essential.
               </p>
               <p className="text-foreground-60">
                 Because A5 belongs to the ISO A-series family, it shares the

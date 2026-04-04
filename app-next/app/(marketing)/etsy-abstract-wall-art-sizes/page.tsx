@@ -804,8 +804,9 @@ export default function EtsyAbstractWallArtSizesPage() {
                     Fluid / Organic Abstract
                   </h3>
                   <p className="text-foreground-60 text-sm mb-3">
-                    Flowing shapes, soft curves, and natural forms. Thrive
-                    at large sizes where organic movement fills the wall.
+                    Flowing shapes, soft curves, and natural forms — including{" "}
+                    <Link href="/etsy-watercolor-print-sizes" className="text-accent-light hover:underline">watercolor abstracts</Link>.
+                    Thrive at large sizes where organic movement fills the wall.
                     The 2:3 ratio gives tall, dramatic proportions.
                   </p>
                   <div className="flex flex-wrap gap-2">

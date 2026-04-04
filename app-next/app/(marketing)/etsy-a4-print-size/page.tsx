@@ -634,7 +634,8 @@ export default function EtsyA4PrintSizePage() {
                   <p className="text-foreground-60">
                     Half the area of A4. Used for small desk prints, greeting
                     cards, journal covers, and planners. Adding A5 rounds out
-                    your bundle and serves the stationery and planner niche.
+                    your bundle and serves the stationery and{" "}
+                    <Link href="/etsy-digital-planner-sizes" className="text-accent-light hover:underline">planner niche</Link>.
                   </p>
                 </Card>
               </div>

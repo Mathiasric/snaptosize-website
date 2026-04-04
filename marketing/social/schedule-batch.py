@@ -157,16 +157,32 @@ def find_item_dir(item: dict) -> Path | None:
 
 
 def find_asset_file(item_dir: Path, platform: str) -> Path | None:
-    """Find the main content file in an item directory."""
+    """Find the main content file in an item directory.
+
+    Supports both legacy names (pin.jpg, post.jpg) and descriptive names
+    (e.g. 5-ratios-every-seller.jpg). Falls back to any file with a
+    matching extension if no legacy name is found.
+    """
     names = {
         "pinterest": ["pin.jpg", "pin.png", "pin.webp"],
         "instagram": ["post.jpg", "post.png", "post.webp", "video.mp4"],
         "tiktok": ["video.mp4"],
     }
+    # 1. Try legacy exact names first
     for name in names.get(platform, []):
         p = item_dir / name
         if p.exists():
             return p
+    # 2. Fall back to any file with matching extension (supports descriptive names)
+    extensions = {
+        "pinterest": [".jpg", ".png", ".webp"],
+        "instagram": [".jpg", ".png", ".webp", ".mp4"],
+        "tiktok": [".mp4"],
+    }
+    for ext in extensions.get(platform, []):
+        matches = sorted(item_dir.glob(f"*{ext}"))
+        if matches:
+            return matches[0]
     return None
 
 

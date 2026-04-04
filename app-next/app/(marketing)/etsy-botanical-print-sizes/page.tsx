@@ -873,7 +873,9 @@ export default function EtsyBotanicalPrintSizesPage() {
                       <p className="text-foreground-60 text-sm mb-2">
                         Soft watercolor textures shine at mid-range sizes where
                         details are visible without overwhelming the room. Best
-                        sizes: 8x10, 11x14, and 12x16.
+                        sizes: 8×10, 11×14, and 12×16. See our full{" "}
+                        <Link href="/etsy-watercolor-print-sizes" className="text-accent-light hover:underline">watercolor print sizes guide</Link>{" "}
+                        for sub-niche recommendations.
                       </p>
                       <div className="flex flex-wrap gap-2">
                         <span className="px-2.5 py-0.5 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
