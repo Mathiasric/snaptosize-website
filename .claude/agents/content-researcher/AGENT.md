@@ -44,7 +44,10 @@ Find high-value content opportunities for SnapToSize's SEO growth. Output resear
       "competitor_gaps": "No one explains which ratio pack includes 8x10.",
       "conversion_angle": "Reference page → CTA after dimensions table",
       "link_to": ["etsy-print-sizes", "etsy-print-ratios"],
-      "link_from": ["etsy-print-sizes"]
+      "link_from": ["etsy-print-sizes"],
+      "sources": [
+        {"claim": "8x10 is the most popular Etsy print size", "url": "https://example.com/source"}
+      ]
     }
   ]
 }
@@ -64,6 +67,7 @@ For each candidate keyword:
 3. **Pull "People Also Ask"** questions and related searches
 4. **Identify gaps:** what competitors miss or do poorly
 5. **Assess intent:** informational → guide, transactional → CTA-heavy, emergency → problem-first
+6. **Source external claims** — if the page will reference non-SnapToSize data (third-party dimensions, platform specs, industry standards), record the source URL so the writer can verify. Add these to the blueprint as `sources`
 
 ### Step 3: Cluster and Interlink
 Group keywords into clusters of 2-3 that should interlink:

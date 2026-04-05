@@ -457,7 +457,7 @@ export default function EtsyBotanicalPrintSizesPage() {
                 >
                   18x24
                 </Link>{" "}
-                anchors a dining room. Unlike nursery or abstract art, botanical
+                anchors a dining room. Unlike nursery, abstract, or <Link href="/etsy-boho-wall-art-sizes" className="text-accent-light hover:underline">boho wall art</Link>, botanical
                 prints over-index on sizes 16x20 and above.
               </p>
               <p className="text-foreground-60 mb-4">
@@ -929,7 +929,14 @@ export default function EtsyBotanicalPrintSizesPage() {
                 >
                   minimalist line art
                 </Link>
-                , prioritize 4:5. If you sell
+                , prioritize 4:5. Botanical prints pair naturally with{" "}
+                <Link
+                  href="/etsy-boho-wall-art-sizes"
+                  className="text-accent-light hover:underline"
+                >
+                  boho wall art
+                </Link>{" "}
+                &mdash; consider cross-listing in both niches. If you sell
                 across sub-niches, include all ratio packs. For more on{" "}
                 <Link
                   href="/how-many-sizes-etsy-printable"

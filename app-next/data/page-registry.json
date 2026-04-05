@@ -1108,5 +1108,52 @@
       "etsy-quote-wall-art-sizes",
       "how-to-sell-digital-downloads-on-etsy"
     ]
+  },
+  {
+    "slug": "etsy-a2-print-size",
+    "title": "A2 Print Size for Etsy",
+    "pageType": "size",
+    "keywords": [
+      "etsy A2 print size",
+      "A2 size in pixels 300 DPI",
+      "A2 poster size inches",
+      "A2 print dimensions for Etsy"
+    ],
+    "cluster": "sizes",
+    "relatedSlugs": [
+      "etsy-a3-print-size",
+      "etsy-a4-print-size",
+      "etsy-a5-print-size",
+      "etsy-18x24-print-size",
+      "etsy-16x20-print-size",
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-gallery-wall-print-sizes",
+      "etsy-minimalist-wall-art-sizes",
+      "best-resolution-for-etsy-printables"
+    ]
+  },
+  {
+    "slug": "etsy-boho-wall-art-sizes",
+    "title": "Boho Wall Art Sizes for Etsy",
+    "pageType": "niche",
+    "keywords": [
+      "etsy boho wall art sizes",
+      "bohemian printable wall art sizes",
+      "boho gallery wall sizes",
+      "boho print sizes etsy"
+    ],
+    "cluster": "niches",
+    "relatedSlugs": [
+      "etsy-gallery-wall-print-sizes",
+      "etsy-abstract-wall-art-sizes",
+      "etsy-minimalist-wall-art-sizes",
+      "etsy-botanical-print-sizes",
+      "etsy-nursery-wall-art-sizes",
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "how-many-sizes-etsy-printable",
+      "best-resolution-for-etsy-printables"
+    ]
   }
 ]

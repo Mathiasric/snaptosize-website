@@ -807,6 +807,8 @@ export default function EtsyAbstractWallArtSizesPage() {
                     Flowing shapes, soft curves, and natural forms — including{" "}
                     <Link href="/etsy-watercolor-print-sizes" className="text-accent-light hover:underline">watercolor abstracts</Link>.
                     Thrive at large sizes where organic movement fills the wall.
+                    Earth-tone organic abstracts are especially popular in{" "}
+                    <Link href="/etsy-boho-wall-art-sizes" className="text-accent-light hover:underline">boho wall art</Link> collections.
                     The 2:3 ratio gives tall, dramatic proportions.
                   </p>
                   <div className="flex flex-wrap gap-2">

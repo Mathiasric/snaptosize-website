@@ -161,6 +161,9 @@ export function Header() {
                     <Link href="/etsy-watercolor-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Watercolor Print Sizes
                     </Link>
+                    <Link href="/etsy-boho-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Boho Wall Art Sizes
+                    </Link>
                   </div>
                 </div>
                 <div className="pt-2 mt-2 border-t border-border/50">
@@ -200,6 +203,9 @@ export function Header() {
                       </Link>
                       <Link href="/etsy-a3-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         A3 Print Size
+                      </Link>
+                      <Link href="/etsy-a2-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                        A2 Print Size
                       </Link>
                       <Link href="/etsy-4x6-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         4&times;6 Print Size
@@ -384,6 +390,9 @@ export function Header() {
                         <Link href="/etsy-a3-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           A3 Print Size
                         </Link>
+                        <Link href="/etsy-a2-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          A2 Print Size
+                        </Link>
                         <Link href="/etsy-4x6-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           4&times;6 Print Size
                         </Link>
@@ -438,6 +447,9 @@ export function Header() {
                         </Link>
                         <Link href="/etsy-watercolor-print-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Watercolor Print Sizes
+                        </Link>
+                        <Link href="/etsy-boho-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Boho Wall Art Sizes
                         </Link>
                         <Link href="/2-3-vs-4-5-ratio" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           2:3 vs 4:5 Ratio

@@ -806,7 +806,7 @@ export default function EtsyPrintSizesPage() {
                             <td className="py-2">Medium poster</td>
                           </tr>
                           <tr className="border-b border-border">
-                            <td className="py-2 pr-4">A2</td>
+                            <td className="py-2 pr-4"><Link href="/etsy-a2-print-size" className="text-accent-light hover:underline">A2</Link></td>
                             <td className="py-2 pr-4">420 &times; 594</td>
                             <td className="py-2 pr-4">4961 &times; 7016</td>
                             <td className="py-2">Large poster</td>
@@ -1157,7 +1157,7 @@ export default function EtsyPrintSizesPage() {
                           <strong>standard in most of the world</strong> (Europe,
                           Australia, Asia). If you only offer US inch-based sizes,
                           you lose international buyers or get constant requests for
-                          A4, A3, A2.
+                          A4, A3, <Link href="/etsy-a2-print-size" className="text-accent-light hover:underline">A2</Link>.
                         </>
                       ),
                       (

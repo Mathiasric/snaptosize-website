@@ -2,7 +2,7 @@
   "current_week": "W14",
   "batch_id": "2026-W14",
   "started_at": "2026-03-30T12:38:41.108782+00:00",
-  "updated_at": "2026-04-04T09:37:30.121869+00:00",
+  "updated_at": "2026-04-05T07:11:37.559838+00:00",
   "target": {
     "pinterest": 21,
     "instagram": 7,
@@ -466,14 +466,21 @@
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "ideation",
-      "tool_used": null,
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
       "tool_attempts": [],
-      "files": {},
-      "metadata": {},
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-05-a4-vs-letter/a4-vs-letter.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-05-a4-vs-letter/metadata.json"
+      },
+      "metadata": {
+        "title": "A4 vs 8.5x11 - Know the Difference",
+        "slug": "2026-04-05-a4-vs-letter",
+        "schedule": "today"
+      },
       "linked_item": null,
       "created_at": "2026-03-30T12:38:41.109779+00:00",
-      "updated_at": "2026-03-30T12:38:41.109779+00:00",
+      "updated_at": "2026-04-05T07:11:08.477094+00:00",
       "error": null
     },
     {
@@ -481,14 +488,21 @@
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "ideation",
-      "tool_used": null,
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
       "tool_attempts": [],
-      "files": {},
-      "metadata": {},
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-05-nursery-sizes/nursery-sizes.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-05-nursery-sizes/metadata.json"
+      },
+      "metadata": {
+        "title": "Nursery Print Sizes That Sell",
+        "slug": "2026-04-05-nursery-sizes",
+        "schedule": "today"
+      },
       "linked_item": null,
       "created_at": "2026-03-30T12:38:41.109779+00:00",
-      "updated_at": "2026-03-30T12:38:41.109779+00:00",
+      "updated_at": "2026-04-05T07:11:13.281854+00:00",
       "error": null
     },
     {
@@ -496,14 +510,21 @@
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "ideation",
-      "tool_used": null,
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
       "tool_attempts": [],
-      "files": {},
-      "metadata": {},
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-05-2-3-ratio-spotlight/2-3-ratio-spotlight.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-05-2-3-ratio-spotlight/metadata.json"
+      },
+      "metadata": {
+        "title": "The 2:3 Ratio - 7 Sizes in One Pack",
+        "slug": "2026-04-05-2-3-ratio-spotlight",
+        "schedule": "today"
+      },
       "linked_item": null,
       "created_at": "2026-03-30T12:38:41.109779+00:00",
-      "updated_at": "2026-03-30T12:38:41.109779+00:00",
+      "updated_at": "2026-04-05T07:11:18.259454+00:00",
       "error": null
     },
     {
@@ -826,7 +847,7 @@
       },
       "linked_item": null,
       "created_at": "2026-04-04T12:00:00.000000+00:00",
-      "updated_at": "2026-04-04T09:33:10.725672+00:00",
+      "updated_at": "2026-04-05T07:11:24.460730+00:00",
       "error": null
     },
     {
@@ -848,7 +869,7 @@
       },
       "linked_item": "W14-P15",
       "created_at": "2026-04-04T12:00:00.000000+00:00",
-      "updated_at": "2026-04-04T09:37:20.454935+00:00",
+      "updated_at": "2026-04-05T07:11:28.994116+00:00",
       "error": null
     },
     {
@@ -870,7 +891,7 @@
       },
       "linked_item": "W14-P16",
       "created_at": "2026-04-04T12:00:00.000000+00:00",
-      "updated_at": "2026-04-04T09:37:25.722414+00:00",
+      "updated_at": "2026-04-05T07:11:33.476316+00:00",
       "error": null
     },
     {
@@ -878,7 +899,7 @@
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "publishing",
+      "stage": "published",
       "tool_used": "snaptosize-resize",
       "tool_attempts": [],
       "files": {
@@ -892,7 +913,7 @@
       },
       "linked_item": "W14-I14",
       "created_at": "2026-04-04T12:00:00.000000+00:00",
-      "updated_at": "2026-04-04T09:37:30.072264+00:00",
+      "updated_at": "2026-04-05T07:11:19.327031+00:00",
       "error": "You have already scheduled the maximum number of posts Pinterest allows in a day (5). Please consider scheduling this post for another day."
     },
     {
@@ -914,7 +935,7 @@
       },
       "linked_item": null,
       "created_at": "2026-03-30T12:38:41.109779+00:00",
-      "updated_at": "2026-04-04T09:37:30.121869+00:00",
+      "updated_at": "2026-04-05T07:11:19.376303+00:00",
       "error": "No channel ID for tiktok"
     },
     {
@@ -1006,12 +1027,100 @@
       "created_at": "2026-03-30T12:38:41.109779+00:00",
       "updated_at": "2026-03-30T12:38:41.109779+00:00",
       "error": null
+    },
+    {
+      "id": "W14-I14",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "publishing",
+      "tool_used": "gemini-generate-image",
+      "tool_attempts": [],
+      "files": {
+        "post": "marketing/social/content/instagram/2026-04-05-5-ratio-packs-explained/5-ratio-packs-explained.jpg",
+        "metadata": "marketing/social/content/instagram/2026-04-05-5-ratio-packs-explained/metadata.json"
+      },
+      "metadata": {
+        "title": "5 Ratio Packs - Every Frame Covered",
+        "slug": "2026-04-05-5-ratio-packs-explained",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-04-05T06:49:13.379868+00:00",
+      "updated_at": "2026-04-05T06:49:13.379868+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-I15-xpost",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "publishing",
+      "tool_used": "snaptosize-resize",
+      "tool_attempts": [],
+      "files": {
+        "post": "marketing/social/content/instagram/2026-04-05-nursery-sizes-xpost/nursery-sizes.jpg",
+        "metadata": "marketing/social/content/instagram/2026-04-05-nursery-sizes-xpost/metadata.json"
+      },
+      "metadata": {
+        "title": "Nursery Print Sizes That Sell (xpost from Pinterest)",
+        "slug": "2026-04-05-nursery-sizes-xpost",
+        "schedule": "today"
+      },
+      "linked_item": "W14-P19",
+      "created_at": "2026-04-05T07:10:30.183766+00:00",
+      "updated_at": "2026-04-05T07:10:30.183766+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-I16-xpost",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "publishing",
+      "tool_used": "snaptosize-resize",
+      "tool_attempts": [],
+      "files": {
+        "post": "marketing/social/content/instagram/2026-04-05-a4-vs-letter-xpost/a4-vs-letter.jpg",
+        "metadata": "marketing/social/content/instagram/2026-04-05-a4-vs-letter-xpost/metadata.json"
+      },
+      "metadata": {
+        "title": "A4 vs 8.5x11 (xpost from Pinterest)",
+        "slug": "2026-04-05-a4-vs-letter-xpost",
+        "schedule": "today"
+      },
+      "linked_item": "W14-P18",
+      "created_at": "2026-04-05T07:10:30.183766+00:00",
+      "updated_at": "2026-04-05T07:10:30.183766+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-P21-xpost",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "snaptosize-resize",
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-05-5-ratio-packs-xpost/5-ratio-packs-xpost.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-05-5-ratio-packs-xpost/metadata.json"
+      },
+      "metadata": {
+        "title": "5 Ratio Packs (xpost from Instagram)",
+        "slug": "2026-04-05-5-ratio-packs-xpost",
+        "schedule": "today"
+      },
+      "linked_item": "W14-I14",
+      "created_at": "2026-04-05T07:10:30.183766+00:00",
+      "updated_at": "2026-04-05T07:11:37.549283+00:00",
+      "error": null
     }
   ],
   "metrics": {
-    "total": 47,
-    "completed": 35,
+    "total": 51,
+    "completed": 40,
     "failed": 0,
-    "success_rate": 0.745
+    "success_rate": 0.784
   }
 }

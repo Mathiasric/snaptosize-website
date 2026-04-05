@@ -393,7 +393,7 @@ export default function EtsyA5PrintSizePage() {
               <p className="text-foreground-60">
                 Because A5 belongs to the ISO A-series family, it shares the
                 same 1:1.414 aspect ratio as every other A-size. One master
-                design scales perfectly across A5, A4, A3, and A2 without any
+                design scales perfectly across A5, A4, A3, and <Link href="/etsy-a2-print-size" className="text-accent-light hover:underline">A2</Link> without any
                 cropping. For a complete overview of all sizes, see the{" "}
                 <Link
                   href="/etsy-print-sizes"
@@ -494,7 +494,7 @@ export default function EtsyA5PrintSizePage() {
                       </td>
                     </tr>
                     <tr className="border-b border-white/10">
-                      <td className="py-3 px-4">A2</td>
+                      <td className="py-3 px-4"><Link href="/etsy-a2-print-size" className="text-accent-light hover:underline">A2</Link></td>
                       <td className="py-3 px-4 text-foreground-60">
                         420 &times; 594
                       </td>

@@ -236,7 +236,15 @@ For each new page, run these Playwright checks:
    - Tables render correctly on desktop
    - No broken or overlapping elements
 
-**If any check fails:** Fix the issue (hero padding, link href, layout) and re-screenshot before completing the verify stage.
+5. **Automated QA gates** — Run the SEO QA script to validate meta, schema, components:
+   ```bash
+   python marketing/queue/seo_qa_validate.py                    # Current batch deployed items
+   python marketing/queue/seo_qa_validate.py --slug <slug>      # Specific page
+   python marketing/queue/seo_qa_validate.py --all --dry-run    # All registry pages
+   ```
+   Checks: title ≤60ch, description ≤160ch, H1 keyword match, 2+ CTAs, Article/BreadcrumbList/FAQPage schemas, FAQAccordion/EmailCapture/FinalCTA components, 2+ internal links, 800+ words.
+
+**If any check fails:** Fix the issue (hero padding, link href, layout, meta length) and re-run before completing the verify stage.
 
 **State:** `marketing/queue/seo-pipeline-state.json`
 **Briefs:** `marketing/briefs/`
@@ -275,6 +283,7 @@ For each new page, run these Playwright checks:
 | `.claude/agents/shared/pipeline_state.py` | PipelineState class — all state read/write |
 | `.claude/agents/shared/batch_init.py` | Batch initialization + archiving |
 | `.claude/skills/pipeline-orchestrator_SKILL.md` | `/pipeline-run-week` skill definition |
+| `marketing/queue/seo_qa_validate.py` | SEO page QA — meta, schema, component validation |
 | `marketing/CONTENT_REFERENCE.md` | Product data for content creation |
 | `tasks/lessons.md` | Corrections + performance feedback |
 | `docs/CONTENT_PLAYBOOK.md` | Channel specs + content strategy |

@@ -368,7 +368,7 @@ export default function EtsyA3PrintSizePage() {
                 A3 is part of the ISO 216 standard, which defines all A-series
                 paper sizes. The defining feature of this system is the
                 aspect ratio: every A-size shares the same 1:1.414 proportions.
-                Fold an A2 in half and you get an A3. Fold A3 in half and you
+                Fold an <Link href="/etsy-a2-print-size" className="text-accent-light hover:underline">A2</Link> in half and you get an A3. Fold A3 in half and you
                 get an{" "}
                 <Link
                   href="/etsy-a4-print-size"
@@ -381,7 +381,7 @@ export default function EtsyA3PrintSizePage() {
               </p>
               <p className="text-foreground-60">
                 For Etsy sellers, A3 is the sweet spot between everyday A4
-                prints and statement-piece A2 posters. It&apos;s big enough
+                prints and statement-piece <Link href="/etsy-a2-print-size" className="text-accent-light hover:underline">A2</Link> posters. It&apos;s big enough
                 for framed wall art but small enough that buyers can print it
                 at local shops without specialty pricing. For a full overview
                 of every Etsy size, see the{" "}
@@ -624,7 +624,7 @@ export default function EtsyA3PrintSizePage() {
             {/* --- A3 vs A4 vs A2 --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
-                A3 vs A4 vs A2 &mdash; Size Comparison
+                A3 vs A4 vs <Link href="/etsy-a2-print-size" className="hover:text-accent-light transition-colors">A2</Link> &mdash; Size Comparison
               </h2>
 
               <div className="overflow-x-auto mb-8">
@@ -687,7 +687,7 @@ export default function EtsyA3PrintSizePage() {
                       </td>
                     </tr>
                     <tr>
-                      <td className="py-3 px-4">A2</td>
+                      <td className="py-3 px-4"><Link href="/etsy-a2-print-size" className="text-accent-light hover:underline">A2</Link></td>
                       <td className="py-3 px-4 text-foreground-60">
                         420 &times; 594
                       </td>
@@ -707,14 +707,14 @@ export default function EtsyA3PrintSizePage() {
 
               <p className="text-foreground-60 mb-4">
                 Each step in the A-series doubles the area. A3 is exactly
-                twice A4 and exactly half A2. All three share the same
+                twice A4 and exactly half <Link href="/etsy-a2-print-size" className="text-accent-light hover:underline">A2</Link>. All three share the same
                 1:1.414 aspect ratio, so your design composition stays
                 identical at every size &mdash; no cropping, no re-composing.
               </p>
               <p className="text-foreground-60 mb-4">
                 A3 sits in the sweet spot: it&apos;s large enough to make a
                 visual impact on a wall, but small enough that affordable
-                frames are widely available. A2 is reserved for statement
+                frames are widely available. <Link href="/etsy-a2-print-size" className="text-accent-light hover:underline">A2</Link> is reserved for statement
                 pieces and gallery walls where the buyer is ready to invest
                 in custom framing.
               </p>

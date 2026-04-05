@@ -96,6 +96,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-a2-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                  A2 Print Size
+                </Link>
+              </li>
+              <li>
                 <Link href="/etsy-4x6-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
                   4×6 Print Size
                 </Link>
@@ -163,6 +168,11 @@ export function Footer() {
               <li>
                 <Link href="/etsy-watercolor-print-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
                   Watercolor Print Sizes
+                </Link>
+              </li>
+              <li>
+                <Link href="/etsy-boho-wall-art-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                  Boho Wall Art Sizes
                 </Link>
               </li>
               <li>

@@ -320,7 +320,7 @@ export default function EtsyA4PrintSizePage() {
                 A4 belongs to the ISO 216 A-series &mdash; a family of paper
                 sizes that all share the same ISO A-series ratio.
                 This means one master design scales perfectly across A5, A4, A3,
-                and A2 without any cropping. For a complete overview of all Etsy
+                and <Link href="/etsy-a2-print-size" className="text-accent-light hover:underline">A2</Link> without any cropping. For a complete overview of all Etsy
                 sizes, see the{" "}
                 <Link
                   href="/etsy-print-sizes"
@@ -429,7 +429,7 @@ export default function EtsyA4PrintSizePage() {
                       </td>
                     </tr>
                     <tr className="border-b border-white/10">
-                      <td className="py-3 px-4">A2</td>
+                      <td className="py-3 px-4"><Link href="/etsy-a2-print-size" className="text-accent-light hover:underline">A2</Link></td>
                       <td className="py-3 px-4 text-foreground-60">
                         420 &times; 594
                       </td>

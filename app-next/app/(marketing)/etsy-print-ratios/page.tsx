@@ -328,7 +328,7 @@ export default function EtsyPrintRatiosPage() {
                   <h3 className="text-xl font-bold mb-2">ISO A-Series (International Standard)</h3>
                   <p className="text-sm text-foreground-60 mb-3">
                     Standard print sizes in Europe, Australia, Asia, and most of the world.
-                    Includes A5, <Link href="/etsy-a4-print-size" className="text-accent-light hover:underline">A4</Link>, A3, A2, A1. These sizes use millimeters (not inches) and a consistent 1:√2 ratio.
+                    Includes A5, <Link href="/etsy-a4-print-size" className="text-accent-light hover:underline">A4</Link>, A3, <Link href="/etsy-a2-print-size" className="text-accent-light hover:underline">A2</Link>, A1. These sizes use millimeters (not inches) and a consistent 1:√2 ratio.
                   </p>
                   <p className="text-xs text-foreground-60">
                     <strong>Why it matters:</strong> If you only offer US sizes (inches),

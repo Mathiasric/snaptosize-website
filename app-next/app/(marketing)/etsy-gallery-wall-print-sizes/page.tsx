@@ -697,8 +697,11 @@ export default function EtsyGalleryWallPrintSizesPage() {
                       </div>
                       <p className="text-foreground-60 text-sm mb-3">
                         The &ldquo;curated&rdquo; look &mdash; 5&ndash;12 prints
-                        in 3&ndash;4 different sizes. Buyers expect all sizes
-                        included.
+                        in 3&ndash;4 different sizes. Especially popular in{" "}
+                        <Link href="/etsy-boho-wall-art-sizes" className="text-accent-light hover:underline">
+                          boho wall art
+                        </Link>{" "}
+                        and eclectic decor. Buyers expect all sizes included.
                       </p>
                       <div className="flex flex-wrap gap-2">
                         <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
@@ -926,7 +929,7 @@ export default function EtsyGalleryWallPrintSizesPage() {
                       <td className="py-3 px-4 text-foreground-60">International equivalent of 11&times;14 / 12&times;16</td>
                     </tr>
                     <tr>
-                      <td className="py-3 px-4 font-medium">A2 (420&times;594 mm)</td>
+                      <td className="py-3 px-4 font-medium"><Link href="/etsy-a2-print-size" className="text-accent-light hover:underline">A2</Link> (420&times;594 mm)</td>
                       <td className="py-3 px-4 text-foreground-60">4961&times;7016</td>
                       <td className="py-3 px-4 text-foreground-60">ISO</td>
                       <td className="py-3 px-4 text-foreground-60">Large format for UK/EU/AUS buyers</td>

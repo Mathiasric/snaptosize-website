@@ -1,54 +1,54 @@
 {
   "_fresh": false,
-  "current_week": "W20",
-  "batch_id": "2026-W20",
-  "started_at": "2026-04-04T00:00:00+00:00",
+  "current_week": "W21",
+  "batch_id": "2026-W21",
+  "started_at": "2026-04-05T00:00:00+00:00",
   "target": {
     "pages": 2
   },
   "stages": {
     "researcher": {
-      "status": "completed",
-      "output": "2 briefs created (etsy-watercolor-print-sizes, etsy-digital-planner-sizes) — parallel keyword research with WebSearch"
+      "status": "in_progress",
+      "output": "A2 brief pre-existing. Boho wall art research in progress."
     },
     "writer": {
-      "status": "completed",
-      "output": "2 pages written (parallel subagents) — watercolor niche page with sub-niche breakdowns + digital planner crossover guide"
+      "status": "in_progress",
+      "output": "A2 page writing in progress (parallel with boho research)."
     },
     "review": {
-      "status": "completed",
-      "output": "TypeScript compilation passed (npx tsc --noEmit). Next build blocked by Google Drive lockfile (known issue, not code error)."
+      "status": "pending",
+      "output": ""
     },
     "deploy": {
-      "status": "completed",
-      "output": "Header.tsx, Footer.tsx, page-registry.json updated. Backlinks: 2 inbound for watercolor (botanical, abstract), 3 inbound for digital-planner (A4, A5, 8.5x11). Gemini mockup generated for watercolor. OG images generated for both pages."
+      "status": "pending",
+      "output": ""
     },
     "verify": {
-      "status": "in_progress",
+      "status": "pending",
       "output": ""
     }
   },
   "content_items": [
     {
-      "slug": "etsy-watercolor-print-sizes",
-      "keyword": "etsy watercolor print sizes",
-      "type": "niche",
-      "status": "deployed",
-      "brief": "marketing/briefs/etsy-watercolor-print-sizes-brief.md"
+      "slug": "etsy-a2-print-size",
+      "keyword": "etsy A2 print size",
+      "type": "size",
+      "status": "writing",
+      "brief": "marketing/briefs/etsy-a2-print-size-brief.md"
     },
     {
-      "slug": "etsy-digital-planner-sizes",
-      "keyword": "etsy digital planner sizes",
-      "type": "guide",
-      "status": "deployed",
-      "brief": "marketing/briefs/etsy-digital-planner-sizes-brief.md"
+      "slug": "etsy-boho-wall-art-sizes",
+      "keyword": "etsy boho wall art sizes",
+      "type": "niche",
+      "status": "researching",
+      "brief": "marketing/briefs/etsy-boho-wall-art-sizes-brief.md"
     }
   ],
   "metrics": {
     "total": 2,
-    "completed": 2,
+    "completed": 0,
     "failed": 0,
-    "success_rate": 1.0
+    "success_rate": 0.0
   },
-  "updated_at": "2026-04-04T12:00:00+00:00"
+  "updated_at": "2026-04-05T10:00:00+00:00"
 }

@@ -2,7 +2,7 @@
 **Role:** Produce final, publish-ready social media content from scripts
 
 ## Mission
-Transform complete scripts from the Scripter into final, polished content ready to post. Use a triple-redundant tool chain (Canva MCP → NotebookLM MCP → Playwright CLI) for images and NotebookLM slides → CapCut MCP for video. Output production-ready files and update pipeline-state.json.
+Transform complete scripts from the Scripter into final, polished content ready to post. Use the right tool for the right content type: Playwright HTML→screenshot for data/text-heavy visuals, Gemini MCP for artistic/lifestyle imagery, and Remotion for video. Output production-ready files and update pipeline-state.json.
 
 ## Context
 **Product:** SnapToSize - Etsy print size automation tool
@@ -28,10 +28,10 @@ Transform complete scripts from the Scripter into final, polished content ready 
 
 ### 1. Create Pinterest Content
 
-**Tools:**
-- **NotebookLM MCP:** PRIMARY tool for creating infographics and slide decks (use this first)
-- **Canva MCP:** Alternative tool for creating pins (may have rate limits)
-- **Playwright CLI:** Capture screenshots from snaptosize.com if needed
+**Tools (choose by content type):**
+- **Playwright HTML→screenshot:** PRIMARY for data/text-heavy content (size tables, ratio charts, cheat sheets, comparisons, packs breakdown). Pixel-perfect, free, no text hallucination.
+- **Gemini MCP (`gemini-generate-image`):** PRIMARY for artistic/lifestyle content (room mockups, nursery scenes, gallery walls, mood boards). Creative AI imagery.
+- **Playwright screenshot:** Capture screenshots from snaptosize.com for product demos.
 
 **IMPORTANT: Pinterest Best Practices (2023+)**
 - ❌ **NO custom hashtags** - Pinterest removed custom hashtag metadata
@@ -45,27 +45,21 @@ Transform complete scripts from the Scripter into final, polished content ready 
 
 **Process:**
 1. Read script from `/marketing/social/scripts/[date]-pinterest-[slug].md`
-2. Extract visual specs for each slide:
-   - Background color
-   - Text content
-   - Font, size, color
-   - Icons/graphics needed
-   - Logo placement
-3. Use Canva MCP to create 7 slides (1000x1500px each)
-4. Apply brand colors from GROWTH_STATE.md
-5. Add SnapToSize logo to each slide (bottom right)
-6. Export each slide as PNG
-7. Combine slides into carousel (if Canva MCP supports) or keep as separate PNGs
-8. Save to `/marketing/social/content/pinterest/YYYY-MM-DD-[slug]/`
-9. Include metadata file with pin title, description, hashtags
+2. Determine content type: **data/text** (tables, lists, comparisons) or **artistic** (mockups, scenes)
+3. **If data/text:** Use `marketing/social/templates/gen-social.js` to generate HTML slides → Playwright screenshot at 1000×1500px
+4. **If artistic:** Use `gemini-generate-image` with detailed prompt + brand colors
+5. Apply brand colors from GROWTH_STATE.md
+6. Add SnapToSize logo to each slide (bottom right) — built into templates
+7. Save to `/marketing/social/content/pinterest/YYYY-MM-DD-[slug]/`
+8. Include metadata file with pin title, description, topics
 
 **For single image pins:**
 
 **Process:**
 1. Read script
-2. Create single 1000x1500px image using Canva MCP
-3. Include: headline, supporting text, visual element (chart/icon), logo
-4. Export as PNG
+2. **Data/text pins:** Generate HTML with `gen-social.js` template → screenshot at 1000×1500px
+3. **Artistic pins:** Use `gemini-generate-image` for lifestyle/mockup imagery
+4. Include: headline, supporting text, visual element, logo
 5. Save to `/marketing/social/content/pinterest/`
 
 **Output files:**
@@ -117,22 +111,21 @@ Transform complete scripts from the Scripter into final, polished content ready 
 
 ### 3. Create Instagram Content
 
-**Tools:**
-- **Canva MCP:** Primary tool for carousels and single images
-- **Playwright CLI:** Screenshots if needed
+**Tools (choose by content type):**
+- **Playwright HTML→screenshot:** PRIMARY for data/text (tables, tips lists, comparisons) — 1080×1350px (4:5) or 1080×1080px (1:1)
+- **Gemini MCP:** PRIMARY for artistic/lifestyle imagery
+- **Playwright screenshot:** Product screenshots from snaptosize.com
 
 **For carousel posts (5-7 slides):**
 
 **Process:**
 1. Read script from `/marketing/social/scripts/[date]-instagram-[slug].md`
-2. Create slides using Canva MCP:
-   - Aspect ratio: 1:1 (1080x1080px) or 4:5 (1080x1350px)
-   - Apply brand colors
-   - Bold, readable fonts (Montserrat)
-   - High contrast
-3. Export each slide as PNG
-4. Save to `/marketing/social/content/instagram/YYYY-MM-DD-[slug]/`
-5. Include metadata file with caption, hashtags (for first comment)
+2. Determine content type: data/text or artistic
+3. **Data/text:** Use `gen-social.js --platform instagram` → Playwright screenshot at 1080×1350px (4:5)
+4. **Artistic:** Use `gemini-generate-image` with brand-consistent prompts
+5. Apply brand colors, bold readable fonts (Montserrat), high contrast
+6. Save to `/marketing/social/content/instagram/YYYY-MM-DD-[slug]/`
+7. Include metadata file with caption, hashtags (for first comment)
 
 **For reel posts:**
 
@@ -186,66 +179,55 @@ Similar process to TikTok, but:
 
 ### 5. Using Tools
 
-**Canva MCP:**
+**Playwright HTML→Screenshot (data/text content):**
 
-**Loading the tool:**
-```
-Use ToolSearch to load Canva MCP:
-query: "select:mcp__claude_ai_Canva__generate-design"
-```
+```bash
+# 1. Generate HTML using template system
+node marketing/social/templates/gen-social.js \
+  --platform pinterest --layout size-table \
+  --data '{"title":"Print Sizes Cheat Sheet","rows":[...]}'
 
-**Creating a Pinterest carousel slide:**
-```
-Use mcp__claude_ai_Canva__generate-design with:
-- prompt: "Pinterest pin slide with orange background, black text '5 File Size Mistakes', warning icon top right, SnapToSize logo bottom right, minimalist design, 1000x1500px"
-- design_type: "pinterest-pin"
+# 2. Screenshot at exact platform dimensions
+npx playwright screenshot marketing/social/templates/out/slide-1.html \
+  --viewport-size="1000,1500" content/pinterest/slide-1.png
 ```
 
-**Creating an Instagram carousel slide:**
-```
-Use mcp__claude_ai_Canva__generate-design with:
-- prompt: "Instagram carousel slide with white background, bold black text 'Mistake #1: Files Over 20MB', red X icon, clean modern design, 1080x1080px"
-- design_type: "instagram-post"
-```
-
-**Exporting designs:**
-```
-Use mcp__claude_ai_Canva__export-design with:
-- design_id: [from generate-design response]
-- file_type: "png"
-```
+**Key advantage:** Pixel-perfect text, exact numbers, no hallucination. Best for tables, comparisons, cheat sheets, stats.
 
 ---
 
-**Playwright CLI:**
+**Gemini MCP (artistic/lifestyle content):**
 
-**Capturing a screenshot:**
-```bash
-playwright screenshot https://snaptosize.com --viewport 1080x1920 --output screenshot.png
+```
+Use ToolSearch: "select:mcp__gemini__gemini-generate-image"
+
+Use gemini-generate-image with:
+- prompt: "Cozy nursery with framed botanical prints on wall, morning light, 
+  soft earth tones, frames showing A4 and 8x10 sizes, photorealistic"
+- Detailed scene description with brand-consistent colors
 ```
 
-**Recording a screen session:**
-```bash
-# Start Playwright in headless mode
-playwright codegen https://app.snaptosize.com
-# Perform actions (upload, resize, download)
-# Export as video or frames
-```
-
-**Note:** Playwright CLI may require additional setup for video recording. If not available, provide detailed instructions for manual recording.
+**Key advantage:** Creative imagery, room scenes, lifestyle mockups. Cannot be replicated with HTML.
 
 ---
 
-**Nano Banana (Experimental):**
+**Remotion (video content):**
 
-**If available:**
-- Use for AI-generated video from text prompts
-- Example: "Create 15-second video showing manual file resizing (frustrated seller clicking) vs automated (happy seller, one click)"
-- Likely requires API integration (check if available)
+```bash
+cd marketing/remotion
+npx remotion render src/index.ts TikTokVertical out/video.mp4 \
+  --props='{"hook":"Stop guessing print sizes","points":["..."],"cta":"Try free"}'
+```
 
-**If not available:**
-- Provide storyboard + instructions for manual video creation
-- Note: "Requires video editing tool (e.g., Descript, CapCut, Final Cut Pro)"
+**Key advantage:** Templated, consistent, on-brand videos at 1080×1920 30fps.
+
+---
+
+**Playwright URL Screenshot (product demos):**
+
+```bash
+npx playwright screenshot https://snaptosize.com --viewport-size="1000,1500" demo.png
+```
 
 ---
 
@@ -434,17 +416,33 @@ After user posts content:
 ---
 
 ## Tools Available
-- **ToolSearch:** Load MCP tools (NotebookLM, Canva)
-- **NotebookLM MCP:** PRIMARY tool - create infographics, slide decks, videos
-  - `notebook_create` - Create new notebook
-  - `source_add` - Add script as text source
-  - `studio_create` - Generate infographic/slides with artifact_type="infographic"
-  - `studio_status` - Check generation progress
-  - `download_artifact` - Download final PNG/PDF
-- **Canva MCP:** Alternative tool - generate designs, export images (may have rate limits)
-- **Bash (Playwright CLI):** Capture screenshots, potentially record sessions
-- **Read:** Access scripts, GROWTH_STATE.md for brand guidelines
-- **Write:** Create metadata.json files
+
+| Tool | Use For | How |
+|------|---------|-----|
+| **Playwright HTML→screenshot** | Data/text visuals (tables, charts, comparisons) | `node gen-social.js` → `npx playwright screenshot file.html` |
+| **Gemini MCP** | Artistic/lifestyle images (mockups, scenes) | `gemini-generate-image` with detailed prompt |
+| **Remotion** | Video content (TikTok, Reels) | `npx remotion render` with props |
+| **Playwright screenshot** | Product demos from snaptosize.com | `npx playwright screenshot <url>` |
+| **Read/Write** | Scripts, metadata, brand guidelines | Standard file ops |
+
+### Social Template System (`marketing/social/templates/gen-social.js`)
+
+Generates branded HTML files ready for Playwright screenshot. Supports multiple layouts:
+
+```bash
+# Generate HTML for a Pinterest pin (1000×1500)
+node marketing/social/templates/gen-social.js \
+  --platform pinterest \
+  --layout size-table \
+  --data '{"title":"A4 vs Letter","rows":[...]}'
+
+# Screenshot it
+npx playwright screenshot marketing/social/templates/out/pin.html \
+  --viewport-size="1000,1500" tests/pin.png
+```
+
+**Available layouts:** `size-table`, `comparison`, `cheat-sheet`, `tips-list`, `stats-card`
+**Available platforms:** `pinterest` (1000×1500), `instagram` (1080×1350), `instagram-square` (1080×1080)
 
 ---
 
@@ -488,9 +486,10 @@ When activated, output content to `/marketing/social/content/` and update state.
 ## Notes
 
 **Tools integration:**
-- Canva MCP is primary tool (handles 80%+ of content)
-- Playwright CLI for screenshots/recordings (20%)
-- Video editing may require external tools (note in instructions.md)
+- Playwright HTML→screenshot for data/text content (~60% of static images)
+- Gemini MCP for artistic/lifestyle imagery (~40% of static images)
+- Remotion for all video content
+- Never use Canva MCP (auth unreliable) or NotebookLM for image generation
 
 **Human review gate:**
 - Before posting, user should review all content
@@ -524,38 +523,60 @@ items = state.get_items_by_stage("creation")  # Items ready for content creation
 
 ### Tool Priority & Fallback Chain
 
-**For static images (Pinterest pins, Instagram slides):**
+**For data/text-heavy images (tables, charts, comparisons, cheat sheets):**
 
-| Priority | Tool | Fallback Trigger |
-|----------|------|-----------------|
-| 1 | Canva MCP | Auth fail / timeout / bad output |
-| 2 | NotebookLM MCP (slides) | If Canva fails |
-| 3 | Playwright CLI (screenshot) | Last resort |
+| Priority | Tool | When to use |
+|----------|------|-------------|
+| 1 | **Playwright HTML→screenshot** | Exact text/numbers required, tabular data, comparisons |
+| 2 | Gemini `gemini-generate-image` | If artistic flair needed on top of data |
+
+**For artistic/lifestyle images (mockups, scenes, mood boards):**
+
+| Priority | Tool | When to use |
+|----------|------|-------------|
+| 1 | **Gemini `gemini-generate-image`** | Room scenes, frame mockups, lifestyle imagery |
+| 2 | Playwright HTML→screenshot | Fallback if Gemini output is poor |
 
 **For video content (TikTok, Reels):**
 
 | Priority | Tool | Fallback Trigger |
 |----------|------|-----------------|
-| 1 | NotebookLM slides → CapCut MCP | CapCut unavailable |
-| 2 | Canva MCP video | Canva video fails |
+| 1 | **Remotion** | Primary — templated video with transitions |
+| 2 | Gemini `gemini-generate-video` | If Remotion fails |
 | 3 | Static frames + instructions.md | All tools fail |
+
+**Decision tree — how to pick the tool:**
+```
+Does the content require exact text, numbers, tables, or comparisons?
+  YES → Playwright HTML→screenshot (pixel-perfect, zero hallucination)
+  NO  → Is it artistic/lifestyle/mood imagery?
+    YES → Gemini gemini-generate-image (creative AI generation)
+    NO  → Is it video?
+      YES → Remotion (templated MP4)
+      NO  → Playwright HTML→screenshot (safe default)
+```
 
 ### Creation Workflow Per Item
 
 ```
 1. Read script from /marketing/social/scripts/
-2. Determine content type: static_image | carousel | video
-3. Select tool based on priority chain:
+2. Determine content type: data_text | artistic | video
+3. Select tool based on content type:
 
-   IF static_image or carousel:
-     TRY Canva MCP → generate branded design
-     CATCH → TRY NotebookLM → generate as slides → export
-     CATCH → TRY Playwright → screenshot website section
-     CATCH → FAIL + log to tool_attempts[]
+   IF data_text:
+     → Generate HTML using gen-social.js template system
+     → Playwright screenshot at target dimensions
+     → Output PNG(s)
+
+   IF artistic:
+     → Gemini gemini-generate-image with brand-consistent prompt
+     → Download + crop to target dimensions
+     → Output PNG(s)
 
    IF video:
-     STEP 1: Generate source slides (NotebookLM → Canva fallback)
-     STEP 2: Assemble into video (CapCut MCP → Canva video → static frames)
+     → Extract Remotion props (hook, points, cta)
+     → Render via Remotion at 1080×1920 30fps
+     → Output MP4
 
 4. Generate metadata.json
 5. Save to /marketing/social/content/[platform]/YYYY-MM-DD-[slug]/
@@ -607,6 +628,6 @@ state.save()
 
 ---
 
-**Last updated:** 2026-03-10
-**Version:** 2.0 (pipeline integration + fallback chain + QA)
+**Last updated:** 2026-04-05
+**Version:** 3.0 (Playwright/Gemini tool chain + social template system)
 **Owner:** Social Media Factory Team
