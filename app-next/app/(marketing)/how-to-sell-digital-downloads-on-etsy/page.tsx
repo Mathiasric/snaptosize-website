@@ -555,7 +555,7 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
                         <li className="flex items-start gap-2">
                           <span className="font-semibold">5.</span>
                           <span>
-                            <strong>Extras</strong> — 5×7, 8.5×11, 11×14, 11×17, 13×19, 20×24
+                            <strong>Extras</strong> — 5×7, 8.5×11, 11×14, 11×17, <Link href="/etsy-13x19-print-size" className="text-accent-light hover:underline">13×19</Link>, 20×24
                           </span>
                         </li>
                       </ul>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Accordion } from "@/components/Accordion";
 import { FinalCTA } from "@/components/FinalCTA";
@@ -138,7 +139,7 @@ export default function FAQPage() {
                 <li><strong>3:4</strong> — 6×8, 9×12, 12×16, 15×20, 18×24</li>
                 <li><strong>4:5</strong> — 8×10, 12×15, 16×20, 20×25, 24×30</li>
                 <li><strong>ISO A-Series</strong> — A5, A4, A3, A2, A1</li>
-                <li><strong>Common Sizes</strong> — 5×7, 8.5×11, 11×14, 11×17, 13×19, 20×24</li>
+                <li><strong>Common Sizes</strong> — 5×7, 8.5×11, 11×14, 11×17, <Link href="/etsy-13x19-print-size" className="text-accent-light hover:underline">13×19</Link>, 20×24</li>
               </ul>
               <p className="mt-3 text-sm text-foreground-60">
                 Plus large formats (A0, 24×36, 24×32) and square sizes (5×5, 8×8, 10×10) via single export. Every file at 300 DPI.

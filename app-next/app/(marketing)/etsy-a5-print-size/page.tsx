@@ -345,7 +345,7 @@ export default function EtsyA5PrintSizePage() {
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-foreground-60">Part Of</span>
-                    <span className="font-semibold">ISO A-Series pack (A5, A4, A3, A2, A1)</span>
+                    <span className="font-semibold">ISO A-Series pack (A5, A4, A3, A2, <Link href="/etsy-a1-print-size" className="text-accent-light hover:underline">A1</Link>)</span>
                   </div>
                 </div>
               </Card>

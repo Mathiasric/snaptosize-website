@@ -5,9 +5,9 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle, DollarSign } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title:
@@ -51,7 +51,7 @@ export default function HowToPriceEtsyPrintablesPage() {
       "Complete guide to pricing Etsy printables for profit. Covers fee breakdown, multi-size bundle pricing, value-based strategies, and premium tactics for digital wall art.",
     url: "https://snaptosize.com/how-to-price-etsy-printables",
     datePublished: "2026-03-19",
-    dateModified: "2026-03-19",
+    dateModified: "2026-04-06",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -125,7 +125,7 @@ export default function HowToPriceEtsyPrintablesPage() {
         name: "How do Etsy fees affect my pricing?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Etsy takes ~10% of each sale in base fees: $0.20 listing fee, 6.5% transaction fee, and 3% + $0.25 payment processing. On a $10 sale, you keep ~$8.60. On a $5 sale, you keep ~$4.07. If Offsite Ads apply (12-15% extra), you keep even less. Factor all fees into your pricing.",
+          text: "Etsy takes ~9.5% + $0.45 flat per sale in base fees: $0.20 listing fee, 6.5% transaction fee, and 3% + $0.25 payment processing. On a $10 sale, you keep ~$8.60. On a $5 sale, you keep ~$4.07. If Offsite Ads apply (12-15% extra), you keep even less. Factor all fees into your pricing.",
         },
       },
     ],
@@ -281,6 +281,17 @@ export default function HowToPriceEtsyPrintablesPage() {
         </Container>
       </section>
 
+      {/* ===== QUICK ANSWER ===== */}
+      <section className="py-8 md:py-10">
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <QuickAnswer question="How much should I charge for Etsy printables?">
+              <strong>$10&ndash;15 for a multi-size bundle</strong> (all sizes in one download). Etsy takes ~14% in fees at this price point, leaving you ~$8.60&ndash;$13.12 per sale. Below $8, flat fees eat too much margin. Above $15, compete on value (editable files, commercial licenses, seasonal bundles).
+            </QuickAnswer>
+          </div>
+        </Container>
+      </section>
+
       {/* ===== CONTENT ===== */}
       <section className="py-12 md:py-16">
         <Container>
@@ -420,7 +431,7 @@ export default function HowToPriceEtsyPrintablesPage() {
                 disproportionately.
               </p>
 
-              <Card className="p-5 bg-amber-500/10 border-amber-500/20">
+              <Card className="p-5 bg-amber-500/10 border-amber-500/20 mb-8">
                 <div className="flex gap-3">
                   <AlertTriangle className="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" />
                   <p className="text-foreground-60 text-sm">
@@ -433,6 +444,95 @@ export default function HowToPriceEtsyPrintablesPage() {
                   </p>
                 </div>
               </Card>
+
+              <h3 className="text-lg font-semibold mb-4">
+                What You Keep at Every Price Point
+              </h3>
+              <p className="text-foreground-60 text-sm mb-4">
+                Use this table to set your price. The lower you price, the
+                higher the percentage Etsy takes &mdash; flat fees ($0.45)
+                hit harder on cheap listings.
+              </p>
+              <div className="overflow-x-auto mb-6">
+                <table className="w-full border-collapse text-sm">
+                  <thead>
+                    <tr className="border-b border-white/20">
+                      <th className="text-left py-3 px-4 font-semibold">
+                        List Price
+                      </th>
+                      <th className="text-left py-3 px-4 font-semibold">
+                        Etsy Fees
+                      </th>
+                      <th className="text-left py-3 px-4 font-semibold">
+                        You Keep
+                      </th>
+                      <th className="text-left py-3 px-4 font-semibold">
+                        Fee %
+                      </th>
+                      <th className="text-left py-3 px-4 font-semibold">
+                        With Offsite Ads (15%)
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-white/10">
+                      <td className="py-3 px-4">$3</td>
+                      <td className="py-3 px-4 text-red-400">$0.74</td>
+                      <td className="py-3 px-4 font-semibold">$2.26</td>
+                      <td className="py-3 px-4 text-red-400">24.7%</td>
+                      <td className="py-3 px-4 text-red-400">$1.81</td>
+                    </tr>
+                    <tr className="border-b border-white/10">
+                      <td className="py-3 px-4">$5</td>
+                      <td className="py-3 px-4 text-red-400">$0.93</td>
+                      <td className="py-3 px-4 font-semibold">$4.07</td>
+                      <td className="py-3 px-4 text-red-400">18.5%</td>
+                      <td className="py-3 px-4 text-red-400">$3.32</td>
+                    </tr>
+                    <tr className="border-b border-white/10">
+                      <td className="py-3 px-4">$8</td>
+                      <td className="py-3 px-4 text-foreground-60">$1.21</td>
+                      <td className="py-3 px-4 font-semibold">$6.79</td>
+                      <td className="py-3 px-4 text-foreground-60">15.1%</td>
+                      <td className="py-3 px-4 text-foreground-60">$5.59</td>
+                    </tr>
+                    <tr className="border-b border-white/10 bg-accent/5">
+                      <td className="py-3 px-4 font-semibold">$10</td>
+                      <td className="py-3 px-4 text-foreground-60">$1.40</td>
+                      <td className="py-3 px-4 font-semibold text-green-400">$8.60</td>
+                      <td className="py-3 px-4 text-foreground-60">14.0%</td>
+                      <td className="py-3 px-4 text-foreground-60">$7.10</td>
+                    </tr>
+                    <tr className="border-b border-white/10 bg-accent/5">
+                      <td className="py-3 px-4 font-semibold">$12</td>
+                      <td className="py-3 px-4 text-foreground-60">$1.59</td>
+                      <td className="py-3 px-4 font-semibold text-green-400">$10.41</td>
+                      <td className="py-3 px-4 text-foreground-60">13.3%</td>
+                      <td className="py-3 px-4 text-foreground-60">$8.61</td>
+                    </tr>
+                    <tr className="border-b border-white/10">
+                      <td className="py-3 px-4">$15</td>
+                      <td className="py-3 px-4 text-foreground-60">$1.88</td>
+                      <td className="py-3 px-4 font-semibold text-green-400">$13.12</td>
+                      <td className="py-3 px-4 text-foreground-60">12.5%</td>
+                      <td className="py-3 px-4 text-foreground-60">$10.87</td>
+                    </tr>
+                    <tr>
+                      <td className="py-3 px-4">$20</td>
+                      <td className="py-3 px-4 text-foreground-60">$2.35</td>
+                      <td className="py-3 px-4 font-semibold text-green-400">$17.65</td>
+                      <td className="py-3 px-4 text-foreground-60">11.8%</td>
+                      <td className="py-3 px-4 text-foreground-60">$14.65</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-foreground-60 text-sm">
+                <strong>The sweet spot:</strong> $10&ndash;15 bundles keep
+                fees at 12&ndash;14% while maximizing profit per sale. Below
+                $8, Etsy&apos;s flat fees eat a disproportionate share of your
+                revenue.
+              </p>
             </div>
 
             {/* --- CTA 1 --- */}
@@ -888,18 +988,9 @@ export default function HowToPriceEtsyPrintablesPage() {
                   {
                     question: "How do Etsy fees affect my pricing?",
                     answer:
-                      "Etsy takes ~10-12% of each sale: $0.20 listing fee, 6.5% transaction fee, and 3% + $0.25 payment processing. On a $10 sale, you keep ~$8.60. On a $5 sale, you keep ~$3.90. The lower you price, the higher the percentage Etsy takes. This is why pricing below $8 hurts profit margins disproportionately.",
+                      "Etsy takes ~9.5% + $0.45 flat per sale: $0.20 listing fee, 6.5% transaction fee, and 3% + $0.25 payment processing. On a $10 sale, you keep ~$8.60. On a $5 sale, you keep ~$4.07. The lower you price, the higher the percentage Etsy takes. This is why pricing below $8 hurts profit margins disproportionately.",
                   },
                 ]}
-              />
-            </div>
-
-            <div className="pb-12">
-              <ContextualCTA
-                problem="Spending hours on file prep instead of creating new designs?"
-                solution="SnapToSize handles the production work. Upload once, get 30+ sizes. Spend your time on what sells — new artwork."
-                buttonText="Try It Free"
-                appUrl={appUrl}
               />
             </div>
 

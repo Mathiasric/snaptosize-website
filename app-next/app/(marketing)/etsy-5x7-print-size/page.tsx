@@ -466,7 +466,7 @@ export default function Etsy5x7PrintSizePage() {
                 </Link>,{" "}
                 <Link href="/etsy-11x14-print-size" className="text-accent-light hover:underline">
                   11×14
-                </Link>, 13×19, and 20×24. These are all sizes buyers
+                </Link>, <Link href="/etsy-13x19-print-size" className="text-accent-light hover:underline">13×19</Link>, and 20×24. These are all sizes buyers
                 frequently ask for that don&apos;t share a shape with the
                 main ratio groups.
               </p>

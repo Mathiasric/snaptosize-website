@@ -392,7 +392,7 @@ export default function HowManySizesEtsyPrintablePage() {
                   </h3>
                   <p className="text-foreground-60 text-sm">
                     <Link href="/etsy-a4-print-size" className="text-accent-light hover:underline">A4</Link>,{" "}
-                    <Link href="/etsy-a3-print-size" className="text-accent-light hover:underline">A3</Link>, A2, A1 are standard in Europe, Australia, and most
+                    <Link href="/etsy-a3-print-size" className="text-accent-light hover:underline">A3</Link>, A2, <Link href="/etsy-a1-print-size" className="text-accent-light hover:underline">A1</Link> are standard in Europe, Australia, and most
                     of the world. Skipping ISO sizes means losing international
                     customers entirely &mdash; and Etsy is a global marketplace.
                   </p>

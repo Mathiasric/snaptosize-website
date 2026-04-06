@@ -315,7 +315,7 @@ export default function EtsyA3PrintSizePage() {
                 </Button>
               </a>
               <p className="text-sm text-white/40 mt-1.5">
-                Free &rarr; upload once, download A5 + A4 + A3 + A2 + A1 at 300&nbsp;DPI.
+                Free &rarr; upload once, download A5 + A4 + A3 + A2 + <Link href="/etsy-a1-print-size" className="text-accent-light hover:underline">A1</Link> at 300&nbsp;DPI.
               </p>
             </div>
 

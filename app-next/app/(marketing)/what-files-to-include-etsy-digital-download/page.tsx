@@ -672,7 +672,7 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
                         5. Extras Pack (Common Requests)
                       </h4>
                       <p className="text-sm text-foreground-60 mb-2">
-                        Contains: 5×7, 8.5×11, <Link href="/etsy-11x14-print-size" className="text-accent-light hover:underline">11×14</Link>, 11×17, 13×19, 20×24
+                        Contains: 5×7, 8.5×11, <Link href="/etsy-11x14-print-size" className="text-accent-light hover:underline">11×14</Link>, 11×17, <Link href="/etsy-13x19-print-size" className="text-accent-light hover:underline">13×19</Link>, 20×24
                       </p>
                       <p className="text-xs text-foreground-60">
                         Frequently requested sizes that don&apos;t fit standard

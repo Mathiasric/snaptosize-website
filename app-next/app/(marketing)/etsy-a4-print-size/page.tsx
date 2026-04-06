@@ -441,7 +441,7 @@ export default function EtsyA4PrintSizePage() {
                       </td>
                     </tr>
                     <tr className="border-b border-white/10">
-                      <td className="py-3 px-4">A1</td>
+                      <td className="py-3 px-4"><Link href="/etsy-a1-print-size" className="text-accent-light hover:underline">A1</Link></td>
                       <td className="py-3 px-4 text-foreground-60">
                         594 &times; 841
                       </td>

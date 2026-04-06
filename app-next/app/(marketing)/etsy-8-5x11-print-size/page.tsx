@@ -864,7 +864,7 @@ export default function Etsy85x11PrintSizePage() {
                         Listings with a single 8.5×11 file convert poorly
                         compared to those offering multiple sizes. Buyers
                         expect a bundle. Include the full Extras pack (5×7,
-                        8.5×11, 11×14, 11×17, 13×19, 20×24) &mdash; it takes the same
+                        8.5×11, 11×14, 11×17, <Link href="/etsy-13x19-print-size" className="text-accent-light hover:underline">13×19</Link>, 20×24) &mdash; it takes the same
                         upload effort but dramatically increases perceived
                         value.
                       </p>

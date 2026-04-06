@@ -432,7 +432,7 @@ export default function EtsyBohoWallArtSizesPage() {
                   className="font-medium"
                   style={{ color: "rgba(61,48,40,0.7)" }}
                 >
-                  300 DPI Print-Ready
+                  Up to 70 print-ready files
                 </span>
               </div>
               <div
@@ -450,7 +450,7 @@ export default function EtsyBohoWallArtSizesPage() {
                   className="font-medium"
                   style={{ color: "rgba(61,48,40,0.7)" }}
                 >
-                  30+ Sizes
+                  All 5 ratio packs
                 </span>
               </div>
               <div
@@ -468,7 +468,7 @@ export default function EtsyBohoWallArtSizesPage() {
                   className="font-medium"
                   style={{ color: "rgba(61,48,40,0.7)" }}
                 >
-                  Gallery Wall Ready
+                  Portrait, landscape &amp; square
                 </span>
               </div>
             </div>
@@ -572,8 +572,8 @@ export default function EtsyBohoWallArtSizesPage() {
                 Complete Boho Print Size Reference
               </h2>
               <p className="text-foreground-60 mb-6">
-                Every size below is at 300 DPI &mdash; the professional print
-                standard. Organized by{" "}
+                Every size below is delivered as a JPG (also called JPEG) at
+                300 DPI &mdash; the professional print standard. Organized by{" "}
                 <Link
                   href="/etsy-print-ratios"
                   className="text-accent-light hover:underline"
@@ -950,7 +950,7 @@ export default function EtsyBohoWallArtSizesPage() {
                       </td>
                     </tr>
                     <tr className="border-b border-white/10">
-                      <td className="py-3 px-4 font-medium">A2</td>
+                      <td className="py-3 px-4 font-medium"><Link href="/etsy-a2-print-size" className="text-accent-light hover:underline">A2</Link></td>
                       <td className="py-3 px-4 text-foreground-60">
                         420&times;594
                       </td>
@@ -962,7 +962,7 @@ export default function EtsyBohoWallArtSizesPage() {
                       </td>
                     </tr>
                     <tr className="border-b border-white/10">
-                      <td className="py-3 px-4 font-medium">A1</td>
+                      <td className="py-3 px-4 font-medium"><Link href="/etsy-a1-print-size" className="text-accent-light hover:underline">A1</Link></td>
                       <td className="py-3 px-4 text-foreground-60">
                         594&times;841
                       </td>
@@ -1065,7 +1065,7 @@ export default function EtsyBohoWallArtSizesPage() {
                       </td>
                     </tr>
                     <tr className="border-b border-white/10">
-                      <td className="py-3 px-4 font-medium">13&times;19</td>
+                      <td className="py-3 px-4 font-medium"><Link href="/etsy-13x19-print-size" className="text-accent-light hover:underline">13&times;19</Link></td>
                       <td className="py-3 px-4 text-foreground-60">
                         3900&times;5700
                       </td>
@@ -1510,29 +1510,6 @@ export default function EtsyBohoWallArtSizesPage() {
                   </div>
                 </div>
               </div>
-            </div>
-
-            {/* --- CTA 1: After sub-niches --- Productivity angle --- */}
-            <div>
-              <Card accent className="p-6 md:p-8 text-center">
-                <h3 className="text-xl md:text-2xl font-bold mb-3">
-                  Stop Resizing Each Boho Design by Hand
-                </h3>
-                <p className="text-sm text-foreground-60 mb-5">
-                  Upload once, download up to 70 print-ready files across all 5
-                  ratio packs. Portrait, landscape, and square &mdash; organized
-                  and named for Etsy.
-                </p>
-                <a
-                  href={appUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button className="text-sm px-6 py-2.5">
-                    Try SnapToSize Free
-                  </Button>
-                </a>
-              </Card>
             </div>
 
             {/* --- H2 4: Boho Gallery Wall Sets: Sizing Strategy --- */}
