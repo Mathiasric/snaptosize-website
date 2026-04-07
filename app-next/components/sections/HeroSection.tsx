@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/Button";
 
 import { VideoModal } from "@/components/VideoModal";
-import { Check } from "lucide-react";
+
 
 export function HeroSection() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -64,7 +64,7 @@ export function HeroSection() {
               </h1>
 
               <p className="text-base md:text-lg text-white/85 mb-5 max-w-lg mx-auto leading-snug" style={{ textShadow: '0 2px 15px rgba(11, 11, 18, 0.9), 0 0 30px rgba(11, 11, 18, 0.7)' }}>
-                What normally takes 1–3 hours of manual resizing becomes seconds. Generate all required Etsy ratios at 300 DPI with zero quality loss — perfectly organized and ready to upload.
+                Upload once. Get every Etsy ratio at 300 DPI — organized, named, and ready to list.
               </p>
 
               {/* CTA */}
@@ -111,33 +111,13 @@ export function HeroSection() {
               </button>
 
               {/* Secondary CTA — Calculator */}
-              <div className="mb-6">
+              <div>
                 <a
                   href="/etsy-print-size-calculator"
                   className="text-sm text-white/60 hover:text-white/90 underline underline-offset-2 transition-colors"
                 >
                   Not sure about your image dimensions? Try the free Print Size Calculator →
                 </a>
-              </div>
-
-              {/* Proof Bullets — supporting evidence after visual hook */}
-              <div className="space-y-1.5 inline-flex flex-col items-start mx-auto" style={{ textShadow: '0 2px 10px rgba(11, 11, 18, 0.8)' }}>
-                <div className="flex items-center gap-3 text-sm text-foreground-80">
-                  <Check className="h-4 w-4 text-white/90 flex-shrink-0" style={{ filter: 'drop-shadow(0 0 8px rgba(255,255,255,0.15))' }} />
-                  <span>Save hours per listing</span>
-                </div>
-                <div className="flex items-center gap-3 text-sm text-foreground-80">
-                  <Check className="h-4 w-4 text-white/90 flex-shrink-0" style={{ filter: 'drop-shadow(0 0 8px rgba(255,255,255,0.15))' }} />
-                  <span>300 DPI print-ready quality</span>
-                </div>
-                <div className="flex items-center gap-3 text-sm text-foreground-80">
-                  <Check className="h-4 w-4 text-white/90 flex-shrink-0" style={{ filter: 'drop-shadow(0 0 8px rgba(255,255,255,0.15))' }} />
-                  <span>Professional Etsy-ready structure</span>
-                </div>
-                <div className="flex items-center gap-3 text-sm text-foreground-80">
-                  <Check className="h-4 w-4 text-white/90 flex-shrink-0" style={{ filter: 'drop-shadow(0 0 8px rgba(255,255,255,0.15))' }} />
-                  <span>Ratio packs + vertical, landscape & square exports</span>
-                </div>
               </div>
             </div>
           </div>

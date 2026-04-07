@@ -46,168 +46,23 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/etsy-8x10-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                <Link href="/etsy-8x10-print-size" className="transition-colors hover:text-accent-light">
                   8×10 Print Size
                 </Link>
               </li>
               <li>
-                <Link href="/etsy-5x7-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                <Link href="/etsy-5x7-print-size" className="transition-colors hover:text-accent-light">
                   5×7 Print Size
                 </Link>
               </li>
               <li>
-                <Link href="/etsy-16x20-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                <Link href="/etsy-16x20-print-size" className="transition-colors hover:text-accent-light">
                   16×20 Print Size
                 </Link>
               </li>
               <li>
-                <Link href="/etsy-24x36-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  24×36 Print Size
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-18x24-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  18×24 Print Size
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-11x14-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  11×14 Print Size
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-11x17-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  11×17 Print Size
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-12x18-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  12×18 Print Size
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-13x19-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  13×19 Print Size
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-a4-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                <Link href="/etsy-a4-print-size" className="transition-colors hover:text-accent-light">
                   A4 Print Size
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-a3-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  A3 Print Size
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-a2-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  A2 Print Size
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-a1-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  A1 Print Size
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-4x6-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  4×6 Print Size
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-12x16-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  12×16 Print Size
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-8-5x11-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  8.5×11 Print Size (US Letter)
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-nursery-wall-art-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  Nursery Wall Art Sizes
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-botanical-print-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  Botanical Print Sizes
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-gallery-wall-print-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  Gallery Wall Print Sizes
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-square-print-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  Square Print Sizes
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-quote-wall-art-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  Quote Wall Art Sizes
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-minimalist-wall-art-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  Minimalist Wall Art Sizes
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-abstract-wall-art-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  Abstract Wall Art Sizes
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-ai-art-print-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  AI Art Print Sizes
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-landscape-print-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  Landscape Print Sizes
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-pet-portrait-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  Pet Portrait Sizes
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-photography-print-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  Photography Print Sizes
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-vintage-art-print-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  Vintage Art Print Sizes
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-watercolor-print-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  Watercolor Print Sizes
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-boho-wall-art-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  Boho Wall Art Sizes
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-20x24-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  20×24 Print Size
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-20x30-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  20×30 Print Size
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-a5-print-size" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  A5 Print Size
                 </Link>
               </li>
               <li>
@@ -221,8 +76,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/2-3-vs-4-5-ratio" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
-                  2:3 vs 4:5 Ratio
+                <Link href="/sizes" className="transition-colors hover:text-accent-light font-medium">
+                  All size guides →
                 </Link>
               </li>
             </ul>
@@ -237,8 +92,13 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/how-to-sell-printables-on-etsy-without-photoshop" className="transition-colors hover:text-accent-light">
-                  Sell Without Photoshop
+                <Link href="/how-to-resize-images-for-etsy" className="transition-colors hover:text-accent-light">
+                  How to Resize Images
+                </Link>
+              </li>
+              <li>
+                <Link href="/best-resolution-for-etsy-printables" className="transition-colors hover:text-accent-light">
+                  Best Resolution
                 </Link>
               </li>
               <li>
@@ -247,43 +107,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/how-to-resize-images-for-etsy" className="transition-colors hover:text-accent-light">
-                  How to Resize Images
-                </Link>
-              </li>
-              <li>
-                <Link href="/best-resolution-for-etsy-printables" className="transition-colors hover:text-accent-light">
-                  Best Resolution for Printables
-                </Link>
-              </li>
-              <li>
-                <Link href="/how-to-package-digital-wall-art-for-etsy" className="transition-colors hover:text-accent-light">
-                  Package Digital Wall Art
-                </Link>
-              </li>
-              <li>
                 <Link href="/best-file-format-etsy-printables" className="transition-colors hover:text-accent-light">
                   Best File Format
-                </Link>
-              </li>
-              <li>
-                <Link href="/how-to-price-etsy-printables" className="transition-colors hover:text-accent-light">
-                  How to Price Printables
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-20mb-file-limit" className="transition-colors hover:text-accent-light">
-                  Etsy 20MB File Limit
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-digital-download-not-selling" className="transition-colors hover:text-accent-light">
-                  Not Selling? 7 Fixes
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-digital-download-blurry-prints" className="transition-colors hover:text-accent-light">
-                  Blurry Prints? Fix Resolution
                 </Link>
               </li>
               <li>
@@ -297,18 +122,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/etsy-print-on-demand-vs-digital-download" className="transition-colors hover:text-accent-light">
-                  POD vs Digital Downloads
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-listing-photo-size" className="transition-colors hover:text-accent-light">
-                  Listing Photo Size Guide
-                </Link>
-              </li>
-              <li>
-                <Link href="/etsy-digital-planner-sizes" className="transition-colors hover:text-accent-light">
-                  Digital Planner Sizes
+                <Link href="/guide" className="transition-colors hover:text-accent-light font-medium">
+                  All guides →
                 </Link>
               </li>
             </ul>

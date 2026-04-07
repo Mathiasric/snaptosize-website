@@ -45,47 +45,23 @@ export function TrustSection() {
         </div>
 
         {/* Quality Checklist */}
-        <div className="grid md:grid-cols-2 gap-x-12 gap-y-6 max-w-4xl mx-auto">
-          <div className="flex items-start gap-3">
-            <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
-            <div>
-              <p className="font-medium">Exact Etsy aspect ratios</p>
-            </div>
-          </div>
-
-          <div className="flex items-start gap-3">
-            <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
-            <div>
-              <p className="font-medium">Professional file naming</p>
-            </div>
-          </div>
-
-          <div className="flex items-start gap-3">
-            <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
-            <div>
-              <p className="font-medium">Organized ZIP packaging</p>
-            </div>
-          </div>
-
-          <div className="flex items-start gap-3">
-            <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
-            <div>
-              <p className="font-medium">High-quality 300 DPI exports</p>
-            </div>
-          </div>
-
-          <div className="flex items-start gap-3">
-            <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
-            <div>
-              <p className="font-medium">Optimized to stay under Etsy's 20MB upload limit</p>
-            </div>
-          </div>
-
-          <div className="flex items-start gap-3">
-            <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
-            <div>
-              <p className="font-medium">Artwork stays centered in every format</p>
-            </div>
+        <div className="rounded-xl border border-white/[0.08] bg-surface/30 p-6 md:p-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-x-12 gap-y-4">
+            {[
+              "Exact Etsy aspect ratios",
+              "Professional file naming",
+              "Organized ZIP packaging",
+              "High-quality 300 DPI exports",
+              "Under Etsy\u2019s 20MB upload limit",
+              "Artwork stays centered in every format",
+            ].map((item) => (
+              <div key={item} className="flex items-center gap-3">
+                <div className="flex items-center justify-center w-5 h-5 rounded-full bg-accent-light/15 flex-shrink-0">
+                  <Check className="h-3 w-3 text-accent-light" />
+                </div>
+                <p className="text-sm font-medium">{item}</p>
+              </div>
+            ))}
           </div>
         </div>
       </Container>
