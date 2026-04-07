@@ -9,3 +9,4 @@ export { PricingTeaserSection } from "./PricingTeaserSection";
 export { TrustSection } from "./TrustSection";
 export { FAQTeaserSection } from "./FAQTeaserSection";
 export { FinalCTASection } from "./FinalCTASection";
+export { FounderStorySection } from "./FounderStorySection";

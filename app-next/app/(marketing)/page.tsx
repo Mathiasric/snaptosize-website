@@ -9,6 +9,7 @@ import {
   PricingTeaserSection,
   FAQTeaserSection,
   FinalCTASection,
+  FounderStorySection,
 } from "@/components/sections";
 
 export const metadata: Metadata = {
@@ -70,6 +71,7 @@ export default function HomePage() {
       <CompositionSection />
       <HowItWorksSection />
       <TrustSection />
+      <FounderStorySection />
       <PricingTeaserSection />
       <FAQTeaserSection />
       <FinalCTASection />
