@@ -711,6 +711,13 @@ export default function EtsyNurseryWallArtSizesPage() {
                       Baby Animal Nursery Wall Art, Elephant Print, Printable
                       Nursery Decor, 10 Sizes Included, Digital Download
                     </p>
+                    <p className="text-xs text-foreground-60 mt-2">
+                      Animal illustrations and{" "}
+                      <Link href="/etsy-pet-portrait-sizes" className="text-accent-light hover:underline">
+                        pet portraits
+                      </Link>{" "}
+                      are among the top-selling nursery themes on Etsy.
+                    </p>
                   </Card>
                 </div>
 

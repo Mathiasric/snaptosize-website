@@ -872,6 +872,10 @@ export default function EtsyAbstractWallArtSizesPage() {
                     mid-century frame. Also popular in{" "}
                     <Link href="/etsy-minimalist-wall-art-sizes" className="text-accent-light hover:underline">
                       minimalist wall art
+                    </Link>{" "}
+                    and{" "}
+                    <Link href="/etsy-vintage-art-print-sizes" className="text-accent-light hover:underline">
+                      vintage art
                     </Link>.
                   </p>
                   <div className="flex flex-wrap gap-2">

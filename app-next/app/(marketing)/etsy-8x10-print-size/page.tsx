@@ -414,7 +414,11 @@ export default function Etsy8x10PrintSizePage() {
                     &ldquo;Do you have this in 8×10?&rdquo; is the single most
                     common size request Etsy sellers receive. Including 8×10 in
                     every listing eliminates these messages and converts
-                    browsers into buyers immediately.
+                    browsers into buyers immediately. This is especially true for{" "}
+                    <Link href="/etsy-pet-portrait-sizes" className="text-accent-light hover:underline">
+                      pet portrait
+                    </Link>{" "}
+                    sellers, where 8×10 is the #1 requested size.
                   </p>
                 </Card>
               </div>

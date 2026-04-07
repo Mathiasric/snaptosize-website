@@ -1208,5 +1208,51 @@
       "how-many-sizes-etsy-printable",
       "etsy-20mb-file-limit"
     ]
+  },
+  {
+    "slug": "etsy-vintage-art-print-sizes",
+    "title": "Vintage Art Print Sizes for Etsy",
+    "pageType": "niche",
+    "keywords": [
+      "etsy vintage art print sizes",
+      "vintage print sizes for etsy",
+      "retro art print sizes",
+      "art deco print sizes etsy",
+      "mid-century modern art sizes"
+    ],
+    "cluster": "niches",
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-gallery-wall-print-sizes",
+      "etsy-abstract-wall-art-sizes",
+      "etsy-botanical-print-sizes",
+      "etsy-minimalist-wall-art-sizes",
+      "etsy-18x24-print-size",
+      "etsy-24x36-print-size",
+      "etsy-landscape-print-sizes"
+    ]
+  },
+  {
+    "slug": "etsy-pet-portrait-sizes",
+    "title": "Pet Portrait Sizes for Etsy",
+    "pageType": "niche",
+    "keywords": [
+      "etsy pet portrait sizes",
+      "pet portrait print sizes",
+      "custom pet portrait dimensions etsy",
+      "best sizes for pet portrait prints",
+      "pet portrait wall art sizes"
+    ],
+    "cluster": "niches",
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-8x10-print-size",
+      "etsy-11x14-print-size",
+      "etsy-16x20-print-size",
+      "etsy-gallery-wall-print-sizes",
+      "etsy-photography-print-sizes",
+      "etsy-minimalist-wall-art-sizes",
+      "etsy-nursery-wall-art-sizes"
+    ]
   }
 ]

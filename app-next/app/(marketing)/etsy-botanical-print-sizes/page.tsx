@@ -731,7 +731,8 @@ export default function EtsyBotanicalPrintSizesPage() {
                       </h3>
                       <p className="text-foreground-60 text-sm mb-2">
                         Favor tall 2:3 formats that echo antique botanical plates.
-                        Best sizes: 8x12, 12x18, 24x36, and A3.
+                        Best sizes: 8x12, 12x18, 24x36, and A3. Strong overlap with{" "}
+                        <Link href="/etsy-vintage-art-print-sizes" className="text-accent-light hover:underline">vintage art print sizes</Link>.
                       </p>
                       <div className="flex flex-wrap gap-2">
                         <span className="px-2.5 py-0.5 rounded-full text-xs font-medium bg-accent/10 text-accent-light">

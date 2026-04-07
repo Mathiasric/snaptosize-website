@@ -171,8 +171,18 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-pet-portrait-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                  Pet Portrait Sizes
+                </Link>
+              </li>
+              <li>
                 <Link href="/etsy-photography-print-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
                   Photography Print Sizes
+                </Link>
+              </li>
+              <li>
+                <Link href="/etsy-vintage-art-print-sizes" className="text-xs text-foreground-60/70 transition-colors hover:text-accent-light">
+                  Vintage Art Print Sizes
                 </Link>
               </li>
               <li>

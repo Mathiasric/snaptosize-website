@@ -392,7 +392,12 @@ export default function Etsy18x24PrintSizePage() {
                     18×24 is the classic poster format. Frames are stocked at
                     IKEA, Amazon, Michaels, and Target &mdash; buyers can grab
                     one for under $15. No special ordering, no custom framing
-                    costs. This removes a major purchase barrier.
+                    costs. This removes a major purchase barrier. Especially
+                    popular for{" "}
+                    <Link href="/etsy-vintage-art-print-sizes" className="text-accent-light hover:underline">
+                      vintage art prints
+                    </Link>{" "}
+                    and retro posters.
                   </p>
                 </Card>
 

@@ -988,7 +988,11 @@ export default function EtsyPhotographyPrintSizesPage() {
                         8x10 is the traditional portrait frame &mdash; you
                         must include it despite the 3:2 crop. 11x14 and 16x20
                         are the next most popular portrait sizes. The 4:5
-                        ratio pack is essential for this niche.
+                        ratio pack is essential for this niche. For the fast-growing{" "}
+                        <Link href="/etsy-pet-portrait-sizes" className="text-accent-light hover:underline">
+                          pet portrait
+                        </Link>{" "}
+                        sub-niche, these same sizes apply.
                       </p>
                       <div className="flex flex-wrap gap-2">
                         <span className="px-2.5 py-0.5 rounded-full text-xs font-medium bg-accent/10 text-accent-light">

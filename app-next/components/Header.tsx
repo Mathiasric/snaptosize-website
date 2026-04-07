@@ -155,8 +155,14 @@ export function Header() {
                     <Link href="/etsy-landscape-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Landscape Print Sizes
                     </Link>
+                    <Link href="/etsy-pet-portrait-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Pet Portrait Sizes
+                    </Link>
                     <Link href="/etsy-photography-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Photography Print Sizes
+                    </Link>
+                    <Link href="/etsy-vintage-art-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Vintage Art Print Sizes
                     </Link>
                     <Link href="/etsy-watercolor-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Watercolor Print Sizes
@@ -454,8 +460,14 @@ export function Header() {
                         <Link href="/etsy-landscape-print-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Landscape Print Sizes
                         </Link>
+                        <Link href="/etsy-pet-portrait-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Pet Portrait Sizes
+                        </Link>
                         <Link href="/etsy-photography-print-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Photography Print Sizes
+                        </Link>
+                        <Link href="/etsy-vintage-art-print-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Vintage Art Print Sizes
                         </Link>
                         <Link href="/etsy-watercolor-print-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Watercolor Print Sizes
