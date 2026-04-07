@@ -53,11 +53,8 @@
 - [ ] Submit application
 - **Target:** 200-500 lifetime users, 50+ reviews, social proof for landing page
 
-### 4. Founder Story on Landing Page
-**Why:** NotebookLM + competitive research confirms "built by a seller, for sellers" positioning builds trust. Seb's Visuals uses this effectively.
-- [ ] Add founder story section to landing page (who you are, why you built this)
-- [ ] Keep it authentic and short (3-4 sentences + photo)
-- [ ] Position below hero, above features
+### 4. Founder Story on Landing Page — DONE
+**Status:** Completed 2026-04-07. Rewritten as "Loved by Etsy buyers" social proof section with 6 real reviews + artwork strip. No NordicCrafters promotion. Full homepage overhaul deployed (hero, timesaved, authority, how-it-works, trust, pricing, footer all polished).
 
 ### 5. YouTube Tutorials — Screen Recordings
 **Why:** "How I create 70 print files in 30 seconds" is linkbait for seller communities. YouTube SEO ranks faster than blog SEO for tool demos. Video builds trust that text never can.
@@ -83,6 +80,12 @@
 - [x] `etsy-pet-portrait-sizes` — deployed with CSS paw print frame wall hero + OG image, 6 sub-style breakdown + composition sizing (2026-04-07)
 - [x] Cross-links added: 6 inbound backlinks from existing pages (3 per new page)
 - [ ] **Next opportunities:** etsy photography sub-niches, etsy digital planner sizes, etsy farmhouse art sizes
+
+### 6. Guide Pages — Add Real Mockup Images (opportunity)
+**Why:** Highest-traffic guide pages are text-heavy. Adding real Etsy shop mockup images as visual examples would strengthen credibility and engagement. Images available in `etsy/` folder.
+- [ ] `/how-to-sell-digital-downloads-on-etsy` — Add real mockup images as visual examples throughout the step-by-step guide (highest-traffic guide page)
+- [ ] `/etsy-digital-download-not-selling` — Add before/after with real shop mockups to make troubleshooting advice concrete
+- **Caveat:** Frame images as "example from a real seller" not as shop promotion. Avoid NordicCrafters branding.
 
 ---
 
