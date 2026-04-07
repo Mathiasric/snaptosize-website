@@ -797,7 +797,7 @@ export default function Etsy5x7PrintSizePage() {
                         5:6
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
-                        Large portrait, studio photography
+                        Large portrait, <Link href="/etsy-photography-print-sizes" className="text-accent-light hover:underline">studio photography</Link>
                       </td>
                     </tr>
                   </tbody>

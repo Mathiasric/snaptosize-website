@@ -423,7 +423,9 @@ export default function HowToSellPrintablesWithoutPhotoshopPage() {
 
               <p className="text-foreground-60">
                 That&apos;s it. No $275/year Adobe subscription. No steep
-                learning curve. No complex layer management. The rest of
+                learning curve. No complex layer management. Whether you choose{" "}
+                <Link href="/etsy-print-on-demand-vs-digital-download" className="text-accent-light hover:underline">digital downloads over print-on-demand</Link>,
+                the workflow stays the same. The rest of
                 this guide shows you exactly how to go from zero to
                 listing-ready using free or inexpensive tools.
               </p>

@@ -876,7 +876,11 @@ export default function EtsyAbstractWallArtSizesPage() {
                     and{" "}
                     <Link href="/etsy-vintage-art-print-sizes" className="text-accent-light hover:underline">
                       vintage art
-                    </Link>.
+                    </Link>. AI-generated abstract art is also growing rapidly in this space &mdash; see our{" "}
+                    <Link href="/etsy-ai-art-print-sizes" className="text-accent-light hover:underline">
+                      AI art print sizes guide
+                    </Link>{" "}
+                    for that niche.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">

@@ -1,7 +1,7 @@
 # GROWTH_STATE.md
 ## SnapToSize — Growth & Business State
 
-Last updated: 2026-03-24
+Last updated: 2026-04-07
 
 ---
 
@@ -41,7 +41,7 @@ SnapToSize is a SaaS tool for Etsy sellers selling digital wall art / printables
 - **Product:** Live and production-stable as of 2026-03-03
 - **First paying customer:** 2026-03-03
 - **Paying users:** 4 — MRR $44 (3 monthly + 1 yearly)
-- **SEO pages live:** 27 (11 size, 8 guide, 5 hub/problem, 2 niche, 1 interactive tool)
+- **SEO pages live:** 48 (19 size, 8 guide, 5 hub/problem, 14 niche, 1 interactive tool, 1 comparison)
 - **Pack system:** 28 sizes across 5 ratio packs + 8 square + 3 large via single export = up to 70 files from one upload
 - **Interactive tools:** Print Size Calculator live (`/etsy-print-size-calculator`) — crop analysis, DPI checker, size reference
 - **Email list:** Lead capture live (PDF cheat sheet + 2 automated follow-up emails)
@@ -203,9 +203,19 @@ Every funnel step uses consistent `distinct_id = clerk:{userId}` + properties (`
 - ~~Community outreach: Reddit + Facebook~~ **DROPPED** — flagged as ads, bad ROI
 - ~~Paid ads~~ **NOT VIABLE** — CAC $802 vs LTV $144 (revisit at $5K MRR)
 - **YouTube, affiliates, paid ads:** Not started (gated by milestones)
-- **NEW fast-feedback channels (planned):** Product Hunt, cold email to sellers, AppSumo lifetime deal, FB group admin partnerships
+- **Product Hunt:** ✅ LAUNCHED 2026-03-31. Complete.
+- **Cold email to power sellers:** 🔴 TOP PRIORITY — setup Instantly.ai, scrape 50 sellers, target quote/typography niche
+- **AppSumo lifetime deal:** 🟡 Submit now (PH done). Cap at 500 codes. For reviews + social proof, not MRR.
+- **YouTube tutorials:** 🟡 Screen recordings of workflow. 2 videos this week. Builds trust + ranks for tool queries.
+- **FB group admin partnerships:** ⏳ After cold email is running
+- **Founder story on landing page:** 🟡 "Built by a seller, for sellers" positioning (Seb's Visuals playbook)
 
 **Positioning:** "Built for Etsy sellers" — exact ratios, no cropping, 20MB compliance, time saved
+
+**Future TAM expansion (research only):**
+- Social media managers (aspect ratio conversion — same pain, higher frequency)
+- Shopify/Gumroad/Creative Market sellers (same product, different market positioning)
+- Don't change positioning until Etsy traction proven
 
 ---
 
@@ -221,7 +231,7 @@ Every funnel step uses consistent `distinct_id = clerk:{userId}` + properties (`
 | **Convert300DPI.com** | Free web tool | Only 5 sizes, no ratio packs, no ZIP org. Catches beginners. |
 | **Pixiffy Pro** | Desktop app, one-time Etsy purchase | Windows only, minimal distribution. |
 
-**Our advantages over all of them:** Browser-based (zero install), 70 files vs 20, 20MB Etsy compliance (nobody else enforces this), 37+ SEO pages (Artigo has ~0), free tier as onboarding funnel.
+**Our advantages over all of them:** Browser-based (zero install), 70 files vs 20, 20MB Etsy compliance (nobody else enforces this), 48+ SEO pages (Artigo has ~0), free tier as onboarding funnel.
 
 **Artigo's $59 lifetime pricing** means we win on convenience + distribution, not price. SaaS value must be clear: always updated, web-based, no install, compliance built in.
 
@@ -240,10 +250,11 @@ Every funnel step uses consistent `distinct_id = clerk:{userId}` + properties (`
 
 ## Strategic Takeaways
 
-1. **No one else has SEO.** Artigo, Mockably, Seb's Visuals — all have near-zero web presence. Our 37-page SEO machine is the moat. Keep building.
+1. **No one else has SEO.** Artigo, Mockably, Seb's Visuals — all have near-zero web presence. Our 48-page SEO machine is the moat. Keep building to 100.
 2. **Credit-based pricing is common** in adjacent tools (Mockably, Seb's). Our free-tier-to-Pro funnel is the right model for recurring revenue.
-3. **"Complete listing workflow"** (resize → mockup → listing-ready) is where the market is heading. Multiple tools serving the same seller = integration opportunity.
+3. **"Complete listing workflow"** (resize → mockup → listing-ready) is where the market is heading. Build mockup after 10 users (confirmed 2026-04-07).
 4. **Distribution wins, not features.** Artigo has more features. We have more distribution. Distribution compounds.
+5. **Founder story is a proven trust-builder.** Seb's Visuals uses "built by a seller" effectively. Add founder story to landing page (decided 2026-04-07).
 
 ---
 

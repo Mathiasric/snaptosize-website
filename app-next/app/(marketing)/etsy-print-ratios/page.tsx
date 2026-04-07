@@ -10,14 +10,14 @@ import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "Etsy Print Ratios — Generate All 4 Ratio Packs From One Image",
+  title: "Etsy Print Ratios Explained: The 4 You Actually Need",
   description:
-    "Understand the 4 Etsy print ratios (2:3, 3:4, 4:5, ISO) and how to generate all ratio packs from a single upload. Free tool included.",
+    "Most sellers offer the wrong ratios and lose sales. Learn the 4 exact Etsy print ratios buyers expect (2:3, 3:4, 4:5, ISO) with a free size chart.",
   alternates: { canonical: "https://snaptosize.com/etsy-print-ratios" },
   openGraph: {
-    title: "Etsy Print Ratios — Generate All 4 Ratio Packs From One Image",
+    title: "Etsy Print Ratios Explained: The 4 You Actually Need",
     description:
-      "The essential print ratios every Etsy seller needs: 2:3, 3:4, 4:5, ISO, and extras. Learn how to structure printable packs correctly.",
+      "Most sellers offer the wrong ratios and lose sales. Learn the 4 exact Etsy print ratios buyers expect.",
     url: "https://snaptosize.com/etsy-print-ratios",
     images: [
       {
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Etsy Print Ratios — Generate All 4 Ratio Packs From One Image",
+    title: "Etsy Print Ratios Explained: The 4 You Actually Need",
     description:
-      "The essential print ratios every Etsy seller needs: 2:3, 3:4, 4:5, ISO, and extras.",
+      "Most sellers offer the wrong ratios. Learn the 4 exact print ratios Etsy buyers expect.",
     images: ["/assets/og/etsy-print-ratios.png"],
   },
 };

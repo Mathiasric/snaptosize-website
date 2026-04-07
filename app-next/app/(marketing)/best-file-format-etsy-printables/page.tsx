@@ -19,15 +19,14 @@ import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "Best File Format for Etsy Printables — One Clear Winner",
+  title: "Best File Format for Etsy Printables (2026 Guide)",
   description:
-    "JPG beats PNG for Etsy printables — smaller files, same print quality, stays under 20MB. See the comparison and auto-convert your files free.",
+    "PDF, PNG, or JPG? One format avoids Etsy's 20MB limit AND prints perfectly. See the side-by-side comparison most sellers get wrong.",
   alternates: {
     canonical: "https://snaptosize.com/best-file-format-etsy-printables",
   },
   openGraph: {
-    title:
-      "Best File Format for Etsy Printables — One Clear Winner | SnapToSize",
+    title: "Best File Format for Etsy Printables (2026 Guide)",
     description:
       "Compare PDF, PNG, and JPG for Etsy printables. Learn which format keeps print quality high and file sizes under 20MB.",
     url: "https://snaptosize.com/best-file-format-etsy-printables",
@@ -42,9 +41,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best File Format for Etsy Printables — One Clear Winner",
+    title: "Best File Format for Etsy Printables (2026 Guide)",
     description:
-      "Learn which file format to use for Etsy digital downloads. Includes DPI requirements and 20MB limit solutions.",
+      "PDF, PNG, or JPG? One format avoids Etsy's 20MB limit AND prints perfectly. See the comparison.",
     images: ["/assets/og/best-file-format-etsy-printables.png"],
   },
 };

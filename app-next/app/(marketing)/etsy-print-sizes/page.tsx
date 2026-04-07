@@ -11,16 +11,14 @@ import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
-  title:
-    "All Etsy Print Sizes — 30+ Sizes From One Upload (Free Tool)",
+  title: "Etsy Print Sizes: Complete 2026 Chart (30+ Sizes)",
   description:
-    "Complete Etsy print sizes reference: pixel dimensions at 300 DPI for every ratio (2:3, 3:4, 4:5, ISO). Plus a free tool to generate all 30+ sizes from one upload.",
+    "Every Etsy print size with exact pixel dimensions at 300 DPI. Copy-paste the sizes top sellers use to maximize sales per listing.",
   alternates: { canonical: "https://snaptosize.com/etsy-print-sizes" },
   openGraph: {
-    title:
-      "All Etsy Print Sizes — 30+ Sizes From One Upload (Free Tool)",
+    title: "Etsy Print Sizes: Complete 2026 Chart (30+ Sizes)",
     description:
-      "Every Etsy print size at 300 DPI. Vertical ratios, pixel dimensions, 20MB limit rules, and packaging best practices for professional sellers.",
+      "Every Etsy print size with exact pixel dimensions at 300 DPI. The sizes top sellers use to maximize sales.",
     url: "https://snaptosize.com/etsy-print-sizes",
     images: [
       {
@@ -33,10 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "All Etsy Print Sizes — 30+ Sizes From One Upload (Free Tool)",
+    title: "Etsy Print Sizes: Complete 2026 Chart (30+ Sizes)",
     description:
-      "Every Etsy print size at 300 DPI. Complete reference for professional sellers.",
+      "Every Etsy print size with exact pixel dimensions at 300 DPI. The complete reference for sellers.",
     images: ["/assets/og/etsy-print-sizes.png"],
   },
 };
@@ -949,6 +946,30 @@ export default function EtsyPrintSizesPage() {
               <a href={packsUrl} target="_blank" rel="noopener noreferrer">
                 <Button>Open the App to Pick Formats</Button>
               </a>
+            </div>
+
+            {/* ===== SECTION: Niche-Specific Size Guides ===== */}
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                Niche-Specific Size Guides
+              </h2>
+              <p className="text-foreground-60 mb-4">
+                Different art styles have different best-selling sizes. These niche guides cover the sizing sweet spots for each category:
+              </p>
+              <ul className="space-y-2 text-foreground-60 mb-6">
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
+                  <span><Link href="/etsy-ai-art-print-sizes" className="text-accent-light hover:underline">AI art print sizes</Link> &mdash; sizing for AI-generated artwork (Midjourney, DALL-E, Stable Diffusion)</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
+                  <span><Link href="/etsy-watercolor-print-sizes" className="text-accent-light hover:underline">Watercolor print sizes</Link> &mdash; best sizes for watercolor and soft-wash artwork</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
+                  <span><Link href="/etsy-photography-print-sizes" className="text-accent-light hover:underline">Photography print sizes</Link> &mdash; sizing for photo prints and DSLR-sourced artwork</span>
+                </li>
+              </ul>
             </div>
 
             {/* ===== SECTION: Etsy 20MB File Limit ===== */}

@@ -10,15 +10,14 @@ import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "How Many Sizes to Include in Etsy Printable Listings?",
+  title: "How Many Sizes per Etsy Printable? (2026 Answer)",
   description:
-    "Up to 70 print-ready files from one upload — portrait, landscape, and square. The exact sizing strategy professional Etsy sellers use.",
+    "Too few sizes = lost sales. Too many = confused buyers. See the exact number top Etsy sellers include and why it works.",
   alternates: {
     canonical: "https://snaptosize.com/how-many-sizes-etsy-printable",
   },
   openGraph: {
-    title:
-      "How Many Sizes Should You Include in Your Etsy Printable? — SnapToSize",
+    title: "How Many Sizes per Etsy Printable? (2026 Answer)",
     description:
       "The complete guide to sizing strategy for Etsy digital print sellers. Learn the 5 ratio pack system that eliminates buyer questions and maximizes conversions.",
     url: "https://snaptosize.com/how-many-sizes-etsy-printable",
@@ -33,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "How Many Sizes to Include in Etsy Printable Listings?",
+    title: "How Many Sizes per Etsy Printable? (2026 Answer)",
     description:
-      "Up to 70 print-ready files from one upload. The exact sizing strategy professional Etsy sellers use.",
+      "Too few sizes = lost sales. Too many = confused buyers. See the exact number top sellers include.",
     images: ["/assets/og/how-many-sizes-etsy-printable.png"],
   },
 };

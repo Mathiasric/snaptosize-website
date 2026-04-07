@@ -476,7 +476,7 @@ export default function EtsyDigitalDownloadNotSellingPage() {
                     <p className="font-semibold mb-1">The fix</p>
                     <p className="text-foreground-60 text-sm">
                       Use long-tail keywords that match buyer intent. Include
-                      your niche (<Link href="/etsy-minimalist-wall-art-sizes" className="text-accent-light hover:underline">minimalist</Link>, boho, nursery), specific sizes
+                      your niche (<Link href="/etsy-minimalist-wall-art-sizes" className="text-accent-light hover:underline">minimalist</Link>, boho, nursery, <Link href="/etsy-ai-art-print-sizes" className="text-accent-light hover:underline">AI art</Link>), specific sizes
                       (8x10, 11x14, 16x20), style descriptors (neutral, beige,
                       colorful), and room context (living room, nursery, office).
                       Fill all 13 Etsy tags with specific phrases, not single
@@ -840,7 +840,9 @@ export default function EtsyDigitalDownloadNotSellingPage() {
                     <p className="text-foreground-60 text-sm">
                       Price your complete size packs at $8&ndash;15. Mention
                       &ldquo;30 sizes included&rdquo; in your title and first
-                      listing image. This reframes the purchase from &ldquo;one
+                      listing image. Use high-quality mockups that follow{" "}
+                      <Link href="/etsy-listing-photo-size" className="text-accent-light hover:underline">Etsy listing photo size guidelines</Link>{" "}
+                      to maximize click-through rate. This reframes the purchase from &ldquo;one
                       image file&rdquo; to &ldquo;complete print-ready
                       collection.&rdquo;
                     </p>

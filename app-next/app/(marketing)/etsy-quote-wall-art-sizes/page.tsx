@@ -1028,7 +1028,9 @@ export default function EtsyQuoteWallArtSizesPage() {
                       </h3>
                       <p className="text-foreground-60 text-sm">
                         Dark text on light backgrounds is most forgiving
-                        across print services. Reverse (light text on dark)
+                        across print services. <Link href="/etsy-watercolor-print-sizes" className="text-accent-light hover:underline">Watercolor backgrounds</Link> are
+                        especially popular for quote art &mdash; soft washes add visual
+                        interest without competing with the text. Reverse (light text on dark)
                         uses more ink and can vary between printers.
                       </p>
                     </div>

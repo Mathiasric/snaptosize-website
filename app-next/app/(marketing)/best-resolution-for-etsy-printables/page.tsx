@@ -10,16 +10,14 @@ import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
-  title:
-    "300 DPI for Etsy Printables — Exact Pixels for Every Print Size",
+  title: "Etsy Printable Resolution: Exact DPI + Pixel Chart",
   description:
-    "300 DPI is non-negotiable for Etsy printables. Get exact pixel dimensions for every size — or auto-generate all 30+ sizes from one upload with our free tool.",
+    "Wrong DPI = blurry prints and refund requests. Get the exact pixel dimensions for every Etsy print size at 300 DPI. Free chart included.",
   alternates: {
     canonical: "https://snaptosize.com/best-resolution-for-etsy-printables",
   },
   openGraph: {
-    title:
-      "300 DPI for Etsy Printables — Exact Pixels for Every Print Size | SnapToSize",
+    title: "Etsy Printable Resolution: Exact DPI + Pixel Chart",
     description:
       "Complete DPI guide for Etsy sellers. Exact pixel dimensions at 300 DPI for every print size, verification steps, and automated multi-size generation.",
     url: "https://snaptosize.com/best-resolution-for-etsy-printables",
@@ -34,10 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "300 DPI for Etsy Printables — Exact Pixels for Every Print Size",
+    title: "Etsy Printable Resolution: Exact DPI + Pixel Chart",
     description:
-      "300 DPI is non-negotiable for Etsy printables. Exact pixel dimensions for every size, DPI verification, and automated workflow.",
+      "Wrong DPI = blurry prints. Get the exact pixel dimensions for every Etsy print size at 300 DPI.",
     images: ["/assets/og/best-resolution-for-etsy-printables.png"],
   },
 };
@@ -814,7 +811,7 @@ export default function BestResolutionForEtsyPrintablesPage() {
               </p>
               <p className="text-foreground-60 mb-4">
                 Higher DPI (600+) increases file size substantially without any
-                visible quality improvement for photographic prints and digital
+                visible quality improvement for <Link href="/etsy-photography-print-sizes" className="text-accent-light hover:underline">photographic prints</Link> and digital
                 art. Lower DPI (150) produces visible pixelation at normal
                 viewing distances. 300 DPI is the sweet spot: maximum
                 perceptible quality at manageable file sizes.

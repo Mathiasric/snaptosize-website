@@ -566,7 +566,7 @@ export default function HowToResizeImagesForEtsyPage() {
                         ratio: "2:3",
                         sizes:
                           "4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30",
-                        note: "7 sizes — photography standard (DSLR default)",
+                        note: "7 sizes — photography standard (DSLR default, also popular for AI art)",
                       },
                       {
                         ratio: "3:4",
@@ -889,7 +889,10 @@ export default function HowToResizeImagesForEtsyPage() {
               <p className="text-foreground-60">
                 Tools like SnapToSize solve this by generating all sizes from one
                 upload. The output is organized into ratio pack ZIPs, each named
-                professionally and guaranteed under 20&nbsp;MB.
+                professionally and guaranteed under 20&nbsp;MB. This is especially
+                valuable for high-volume niches like{" "}
+                <Link href="/etsy-ai-art-print-sizes" className="text-accent-light hover:underline">AI-generated art</Link>,
+                where sellers often list dozens of designs per week.
               </p>
             </div>
 
@@ -928,8 +931,9 @@ export default function HowToResizeImagesForEtsyPage() {
                       </h3>
                       <p className="text-foreground-60 text-sm">
                         You can&apos;t add pixels that don&apos;t exist.
-                        Enlarging a 1000×1000px image to 7200×10800px creates a
-                        blurry, pixelated mess. Always start with the largest
+                        Enlarging a 1000×1000px image to 7200×10800px creates a{" "}
+                        <Link href="/etsy-digital-download-blurry-prints" className="text-accent-light hover:underline">blurry, pixelated result</Link>.
+                        Always start with the largest
                         possible source file and scale down.
                       </p>
                     </div>

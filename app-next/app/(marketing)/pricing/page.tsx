@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
@@ -306,7 +307,8 @@ export default function PricingPage() {
                 <h3 className="font-semibold mb-2">Active Etsy sellers</h3>
                 <p className="text-sm text-foreground-60">
                   Listing multiple products per week and need unlimited
-                  exports.
+                  exports across all{" "}
+                  <Link href="/etsy-print-sizes" className="text-accent-light hover:underline">standard print sizes</Link>.
                 </p>
               </Card>
 
@@ -314,6 +316,9 @@ export default function PricingPage() {
                 <h3 className="font-semibold mb-2">Growing shops</h3>
                 <p className="text-sm text-foreground-60">
                   Scaling inventory and want watermark-free professional files.
+                  See our{" "}
+                  <Link href="/how-to-resize-images-for-etsy" className="text-accent-light hover:underline">resizing guide</Link>{" "}
+                  to learn more.
                 </p>
               </Card>
 
@@ -325,6 +330,13 @@ export default function PricingPage() {
                 </p>
               </Card>
             </div>
+
+            <p className="text-sm text-foreground-60 text-center mt-6">
+              New to SnapToSize? Read our{" "}
+              <Link href="/guide" className="text-accent-light hover:underline">complete guide</Link>{" "}
+              or browse{" "}
+              <Link href="/faq" className="text-accent-light hover:underline">frequently asked questions</Link>.
+            </p>
           </div>
         </Container>
       </section>

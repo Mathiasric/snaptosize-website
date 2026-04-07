@@ -643,7 +643,9 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
                       <p className="text-sm text-foreground-60 mb-2">
                         Use high-quality mockup images showing your artwork in
                         realistic settings (framed on walls, in rooms, on
-                        desks).
+                        desks). Make sure your images meet the correct{" "}
+                        <Link href="/etsy-listing-photo-size" className="text-accent-light hover:underline">Etsy listing photo size</Link>{" "}
+                        requirements for maximum visibility.
                       </p>
                       <ul className="space-y-1 text-sm text-foreground-60">
                         <li className="flex items-start gap-2">

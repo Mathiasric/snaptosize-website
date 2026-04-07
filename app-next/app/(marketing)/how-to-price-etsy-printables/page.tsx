@@ -10,16 +10,14 @@ import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
-  title:
-    "How to Price Etsy Printables — Pricing Strategy for Digital Downloads",
+  title: "How to Price Etsy Printables for Profit (2026)",
   description:
-    "How to price Etsy printables for profit. Fee breakdown, multi-size bundle pricing, value-based strategies, and premium tactics for digital downloads.",
+    "Most sellers underprice by 40%. See the exact fee breakdown, pricing formulas, and bundle strategies that top Etsy printable shops use.",
   alternates: {
     canonical: "https://snaptosize.com/how-to-price-etsy-printables",
   },
   openGraph: {
-    title:
-      "How to Price Etsy Printables — Pricing Strategy Guide | SnapToSize",
+    title: "How to Price Etsy Printables for Profit (2026)",
     description:
       "Price your Etsy printables for profit. Fee reality, multi-size pricing, premium tactics, and bundle strategies for digital downloads.",
     url: "https://snaptosize.com/how-to-price-etsy-printables",
@@ -34,10 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "How to Price Etsy Printables — Pricing Strategy for Digital Downloads",
+    title: "How to Price Etsy Printables for Profit (2026)",
     description:
-      "Fee breakdown, multi-size pricing strategies, and premium tactics for profitable Etsy printables.",
+      "Most sellers underprice by 40%. See the exact fee breakdown and pricing formulas top shops use.",
     images: ["/assets/og/how-to-price-etsy-printables.png"],
   },
 };

@@ -10,19 +10,17 @@ import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
-  title:
-    "How to Package Digital Wall Art for Etsy — File Organization & ZIP Guide",
+  title: "Package Digital Wall Art for Etsy (2026 Checklist)",
   description:
-    "Complete guide to packaging digital wall art for Etsy: file formats, 300 DPI resolution, ratio packs, ZIP organization, professional naming, and staying under Etsy's 20MB limit.",
+    "Avoid the 5 packaging mistakes that cause refund requests. Step-by-step ZIP structure, naming, and file format checklist for Etsy wall art.",
   alternates: {
     canonical:
       "https://snaptosize.com/how-to-package-digital-wall-art-for-etsy",
   },
   openGraph: {
-    title:
-      "How to Package Digital Wall Art for Etsy — File Organization & ZIP Guide",
+    title: "Package Digital Wall Art for Etsy (2026 Checklist)",
     description:
-      "Professional packaging for Etsy digital wall art: file formats, resolution, ratio packs, ZIP structure, naming conventions, and the 20MB limit.",
+      "Avoid the 5 packaging mistakes that cause refund requests. ZIP structure, naming, and file format checklist.",
     url: "https://snaptosize.com/how-to-package-digital-wall-art-for-etsy",
     images: [
       {
@@ -35,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "How to Package Digital Wall Art for Etsy",
+    title: "Package Digital Wall Art for Etsy (2026 Checklist)",
     description:
-      "File formats, ZIP structure, naming conventions, and ratio packs — everything you need to package digital wall art professionally.",
+      "Avoid the 5 packaging mistakes that cause refund requests. Complete ZIP structure and naming checklist.",
     images: ["/assets/og/how-to-package-digital-wall-art-for-etsy.png"],
   },
 };

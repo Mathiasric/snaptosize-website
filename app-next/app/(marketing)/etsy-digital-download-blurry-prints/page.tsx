@@ -446,7 +446,9 @@ export default function EtsyDigitalDownloadBlurryPrintsPage() {
 
               <p className="text-foreground-60">
                 This is why the same file that looks perfect as your Etsy
-                listing image looks terrible when a buyer prints it.
+                listing image looks terrible when a buyer prints it (learn the correct{" "}
+                <Link href="/etsy-listing-photo-size" className="text-accent-light hover:underline">Etsy listing photo dimensions</Link>{" "}
+                to avoid confusing listing photos with print files).
                 Screens are forgiving. Paper is not. For the full
                 breakdown, see our{" "}
                 <Link

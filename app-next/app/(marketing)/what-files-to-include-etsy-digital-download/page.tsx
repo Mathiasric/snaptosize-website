@@ -279,7 +279,9 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
                 Get the file setup wrong, and buyers will request refunds before
                 they even try printing. Get it right, and you eliminate 90% of
                 support messages while building a reputation for professional
-                quality.
+                quality. (Not sure if digital downloads are right for you? Compare{" "}
+                <Link href="/etsy-print-on-demand-vs-digital-download" className="text-accent-light hover:underline">print-on-demand vs digital downloads</Link>{" "}
+                to decide.)
               </p>
 
               <Card className="mb-6">

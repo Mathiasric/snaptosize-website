@@ -712,9 +712,12 @@ export default function EtsyNurseryWallArtSizesPage() {
                       Nursery Decor, 10 Sizes Included, Digital Download
                     </p>
                     <p className="text-xs text-foreground-60 mt-2">
-                      Animal illustrations and{" "}
+                      Animal illustrations,{" "}
                       <Link href="/etsy-pet-portrait-sizes" className="text-accent-light hover:underline">
                         pet portraits
+                      </Link>, and{" "}
+                      <Link href="/etsy-watercolor-print-sizes" className="text-accent-light hover:underline">
+                        watercolor artwork
                       </Link>{" "}
                       are among the top-selling nursery themes on Etsy.
                     </p>

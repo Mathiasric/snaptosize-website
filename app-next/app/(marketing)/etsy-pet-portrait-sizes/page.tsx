@@ -792,7 +792,9 @@ export default function EtsyPetPortraitSizesPage() {
                     Delicate brushwork and soft washes shine at mid sizes where
                     individual fur strokes are visible. A watercolor golden
                     retriever at 11&times;14 captures enough detail to show
-                    texture without overwhelming the composition.
+                    texture without overwhelming the composition. For sizing
+                    guidance across all watercolor styles, see our{" "}
+                    <Link href="/etsy-watercolor-print-sizes" className="text-accent-light hover:underline">watercolor print sizes guide</Link>.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
