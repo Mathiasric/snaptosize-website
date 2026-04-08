@@ -1523,7 +1523,14 @@ export default function EtsyVintageArtPrintSizesPage() {
                 Vintage gallery walls are trending heavily on Etsy. Buyers build curated
                 collections of vintage art that evoke a specific era or aesthetic &mdash;
                 a wall of retro travel posters from European cities, a set of vintage
-                botanical illustrations for a farmhouse kitchen, or a mixed-era collection
+                botanical illustrations for a{" "}
+                <Link
+                  href="/etsy-farmhouse-wall-art-sizes"
+                  className="text-accent-light hover:underline"
+                >
+                  farmhouse kitchen
+                </Link>
+                , or a mixed-era collection
                 blending art deco geometry with mid-century modern color. For the complete
                 gallery wall strategy, see our{" "}
                 <Link

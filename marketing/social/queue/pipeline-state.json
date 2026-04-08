@@ -1,8 +1,8 @@
 {
-  "current_week": "W14",
-  "batch_id": "2026-W14",
+  "current_week": "W15",
+  "batch_id": "2026-W15",
   "started_at": "2026-03-30T12:38:41.108782+00:00",
-  "updated_at": "2026-04-05T07:11:37.559838+00:00",
+  "updated_at": "2026-04-08T07:34:57.473424+00:00",
   "target": {
     "pinterest": 21,
     "instagram": 7,
@@ -847,7 +847,7 @@
       },
       "linked_item": null,
       "created_at": "2026-04-04T12:00:00.000000+00:00",
-      "updated_at": "2026-04-05T07:11:24.460730+00:00",
+      "updated_at": "2026-04-07T07:24:01.383000+00:00",
       "error": null
     },
     {
@@ -869,7 +869,7 @@
       },
       "linked_item": "W14-P15",
       "created_at": "2026-04-04T12:00:00.000000+00:00",
-      "updated_at": "2026-04-05T07:11:28.994116+00:00",
+      "updated_at": "2026-04-07T07:24:02.748814+00:00",
       "error": null
     },
     {
@@ -891,7 +891,7 @@
       },
       "linked_item": "W14-P16",
       "created_at": "2026-04-04T12:00:00.000000+00:00",
-      "updated_at": "2026-04-05T07:11:33.476316+00:00",
+      "updated_at": "2026-04-07T07:24:03.881017+00:00",
       "error": null
     },
     {
@@ -935,7 +935,7 @@
       },
       "linked_item": null,
       "created_at": "2026-03-30T12:38:41.109779+00:00",
-      "updated_at": "2026-04-05T07:11:19.376303+00:00",
+      "updated_at": "2026-04-07T07:31:51.167956+00:00",
       "error": "No channel ID for tiktok"
     },
     {
@@ -1033,7 +1033,7 @@
       "platform": "instagram",
       "format": "image",
       "priority": "P1",
-      "stage": "publishing",
+      "stage": "published",
       "tool_used": "gemini-generate-image",
       "tool_attempts": [],
       "files": {
@@ -1047,7 +1047,7 @@
       },
       "linked_item": null,
       "created_at": "2026-04-05T06:49:13.379868+00:00",
-      "updated_at": "2026-04-05T06:49:13.379868+00:00",
+      "updated_at": "2026-04-07T10:30:00.000000+00:00",
       "error": null
     },
     {
@@ -1055,7 +1055,7 @@
       "platform": "instagram",
       "format": "image",
       "priority": "P1",
-      "stage": "publishing",
+      "stage": "published",
       "tool_used": "snaptosize-resize",
       "tool_attempts": [],
       "files": {
@@ -1069,7 +1069,7 @@
       },
       "linked_item": "W14-P19",
       "created_at": "2026-04-05T07:10:30.183766+00:00",
-      "updated_at": "2026-04-05T07:10:30.183766+00:00",
+      "updated_at": "2026-04-07T10:30:00.000000+00:00",
       "error": null
     },
     {
@@ -1077,7 +1077,7 @@
       "platform": "instagram",
       "format": "image",
       "priority": "P1",
-      "stage": "publishing",
+      "stage": "published",
       "tool_used": "snaptosize-resize",
       "tool_attempts": [],
       "files": {
@@ -1091,7 +1091,7 @@
       },
       "linked_item": "W14-P18",
       "created_at": "2026-04-05T07:10:30.183766+00:00",
-      "updated_at": "2026-04-05T07:10:30.183766+00:00",
+      "updated_at": "2026-04-07T10:30:00.000000+00:00",
       "error": null
     },
     {
@@ -1115,12 +1115,386 @@
       "created_at": "2026-04-05T07:10:30.183766+00:00",
       "updated_at": "2026-04-05T07:11:37.549283+00:00",
       "error": null
+    },
+    {
+      "id": "W14-P22",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-06-landscape-print-sizes/landscape-print-sizes.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-06-landscape-print-sizes/metadata.json"
+      },
+      "metadata": {
+        "title": "Landscape Print Sizes for Etsy",
+        "slug": "2026-04-06-landscape-print-sizes",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-04-06T10:00:00.000000+00:00",
+      "updated_at": "2026-04-06T07:11:22.340281+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-P23",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-06-photography-print-sizes/photography-print-sizes.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-06-photography-print-sizes/metadata.json"
+      },
+      "metadata": {
+        "title": "Photography Print Sizes",
+        "slug": "2026-04-06-photography-print-sizes",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-04-06T10:00:00.000000+00:00",
+      "updated_at": "2026-04-06T07:11:26.345637+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-P24",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-06-manual-vs-snaptosize/manual-vs-snaptosize.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-06-manual-vs-snaptosize/metadata.json"
+      },
+      "metadata": {
+        "title": "Manual Resizing vs SnapToSize",
+        "slug": "2026-04-06-manual-vs-snaptosize",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-04-06T10:00:00.000000+00:00",
+      "updated_at": "2026-04-06T07:11:30.509738+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-I17",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "tool_attempts": [],
+      "files": {
+        "post": "marketing/social/content/instagram/2026-04-06-first-digital-download/first-digital-download.jpg",
+        "metadata": "marketing/social/content/instagram/2026-04-06-first-digital-download/metadata.json"
+      },
+      "metadata": {
+        "title": "Your First Etsy Digital Download",
+        "slug": "2026-04-06-first-digital-download",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-04-06T10:00:00.000000+00:00",
+      "updated_at": "2026-04-06T07:11:34.662554+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-I18-xpost",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "snaptosize-resize",
+      "tool_attempts": [],
+      "files": {
+        "post": "marketing/social/content/instagram/2026-04-06-landscape-xpost/landscape-print-sizes.jpg",
+        "metadata": "marketing/social/content/instagram/2026-04-06-landscape-xpost/metadata.json"
+      },
+      "metadata": {
+        "title": "Landscape Print Sizes (xpost from Pinterest)",
+        "slug": "2026-04-06-landscape-xpost",
+        "schedule": "tomorrow"
+      },
+      "linked_item": "W14-P22",
+      "created_at": "2026-04-06T11:00:00.000000+00:00",
+      "updated_at": "2026-04-06T19:30:11.315968+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-I19-xpost",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "snaptosize-resize",
+      "tool_attempts": [],
+      "files": {
+        "post": "marketing/social/content/instagram/2026-04-06-manual-vs-snaptosize-xpost/manual-vs-snaptosize.jpg",
+        "metadata": "marketing/social/content/instagram/2026-04-06-manual-vs-snaptosize-xpost/metadata.json"
+      },
+      "metadata": {
+        "title": "Manual vs SnapToSize (xpost from Pinterest)",
+        "slug": "2026-04-06-manual-vs-snaptosize-xpost",
+        "schedule": "tomorrow"
+      },
+      "linked_item": "W14-P24",
+      "created_at": "2026-04-06T11:00:00.000000+00:00",
+      "updated_at": "2026-04-06T19:30:16.010780+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-P25-xpost",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "snaptosize-resize",
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-06-first-digital-download-xpost/first-digital-download.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-06-first-digital-download-xpost/metadata.json"
+      },
+      "metadata": {
+        "title": "Your First Digital Download (xpost from IG)",
+        "slug": "2026-04-06-first-digital-download-xpost",
+        "schedule": "tomorrow"
+      },
+      "linked_item": "W14-I17",
+      "created_at": "2026-04-06T11:00:00.000000+00:00",
+      "updated_at": "2026-04-06T19:30:20.653422+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-P26",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-07-quote-wall-art-sizes/pin.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-07-quote-wall-art-sizes/metadata.json"
+      },
+      "metadata": {
+        "title": "Quote Wall Art — Best Print Sizes",
+        "slug": "2026-04-07-quote-wall-art-sizes",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-04-07T10:00:00.000000+00:00",
+      "updated_at": "2026-04-07T07:24:10.184102+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-P27",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "playwright-social-slide",
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-07-app-walkthrough/pin.png",
+        "metadata": "marketing/social/content/pinterest/2026-04-07-app-walkthrough/metadata.json"
+      },
+      "metadata": {
+        "title": "Manual Resizing vs SnapToSize — Before & After",
+        "slug": "2026-04-07-app-walkthrough",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-04-07T10:00:00.000000+00:00",
+      "updated_at": "2026-04-07T07:24:14.800669+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-P28",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-07-bedroom-wall-art-sizes/pin.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-07-bedroom-wall-art-sizes/metadata.json"
+      },
+      "metadata": {
+        "title": "Bedroom Wall Art — Size Guide",
+        "slug": "2026-04-07-bedroom-wall-art-sizes",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-04-07T10:00:00.000000+00:00",
+      "updated_at": "2026-04-07T07:33:05.873611+00:00",
+      "error": "You have already scheduled the maximum number of posts Pinterest allows in a day (5). Please consider scheduling this post for another day."
+    },
+    {
+      "id": "W14-I20",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "playwright-social-slide",
+      "tool_attempts": [],
+      "files": {
+        "post": "marketing/social/content/instagram/2026-04-07-app-showcase/post.png",
+        "metadata": "marketing/social/content/instagram/2026-04-07-app-showcase/metadata.json"
+      },
+      "metadata": {
+        "title": "Before & After — Manual Resizing vs SnapToSize",
+        "slug": "2026-04-07-app-showcase",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-04-07T10:00:00.000000+00:00",
+      "updated_at": "2026-04-07T07:24:23.492595+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-I21-xpost",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "snaptosize-resize",
+      "tool_attempts": [],
+      "files": {
+        "post": "marketing/social/content/instagram/2026-04-07-quote-wall-art-xpost/post.jpg",
+        "metadata": "marketing/social/content/instagram/2026-04-07-quote-wall-art-xpost/metadata.json"
+      },
+      "metadata": {
+        "title": "Quote Wall Art — Best Print Sizes (xpost from Pinterest)",
+        "slug": "2026-04-07-quote-wall-art-xpost",
+        "schedule": "tomorrow"
+      },
+      "linked_item": "W14-P26",
+      "created_at": "2026-04-07T10:00:00.000000+00:00",
+      "updated_at": "2026-04-07T07:36:36.307151+00:00",
+      "error": null
+    },
+    {
+      "id": "W14-I22-xpost",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "snaptosize-resize",
+      "tool_attempts": [],
+      "files": {
+        "post": "marketing/social/content/instagram/2026-04-07-bedroom-wall-art-xpost/post.jpg",
+        "metadata": "marketing/social/content/instagram/2026-04-07-bedroom-wall-art-xpost/metadata.json"
+      },
+      "metadata": {
+        "title": "Bedroom Wall Art — Size Guide (xpost from Pinterest)",
+        "slug": "2026-04-07-bedroom-wall-art-xpost",
+        "schedule": "tomorrow"
+      },
+      "linked_item": "W14-P28",
+      "created_at": "2026-04-07T10:00:00.000000+00:00",
+      "updated_at": "2026-04-07T07:36:48.240898+00:00",
+      "error": null
+    },
+    {
+      "id": "W15-P01",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "created",
+      "tool_used": "gemini-generate-image",
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-08-5-print-ratios-cheat-sheet/5-print-ratios-cheat-sheet.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-08-5-print-ratios-cheat-sheet/metadata.json"
+      },
+      "metadata": {
+        "title": "The 5 Print Ratios Every Etsy Seller Needs",
+        "slug": "2026-04-08-5-print-ratios-cheat-sheet",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-04-08T07:34:57.473424+00:00",
+      "updated_at": "2026-04-08T07:34:57.473424+00:00",
+      "error": null
+    },
+    {
+      "id": "W15-P02",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "created",
+      "tool_used": "playwright-screenshot",
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-08-manual-vs-oneclick/manual-vs-oneclick.png",
+        "metadata": "marketing/social/content/pinterest/2026-04-08-manual-vs-oneclick/metadata.json"
+      },
+      "metadata": {
+        "title": "Manual Resizing vs One Click",
+        "slug": "2026-04-08-manual-vs-oneclick",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-04-08T07:34:57.473424+00:00",
+      "updated_at": "2026-04-08T07:34:57.473424+00:00",
+      "error": null
+    },
+    {
+      "id": "W15-P03",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "created",
+      "tool_used": "gemini-generate-image",
+      "tool_attempts": [],
+      "files": {
+        "pin": "marketing/social/content/pinterest/2026-04-08-ratio-comparison-buyers/ratio-comparison-buyers.jpg",
+        "metadata": "marketing/social/content/pinterest/2026-04-08-ratio-comparison-buyers/metadata.json"
+      },
+      "metadata": {
+        "title": "Which Ratio Do Your Buyers Want?",
+        "slug": "2026-04-08-ratio-comparison-buyers",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-04-08T07:34:57.473424+00:00",
+      "updated_at": "2026-04-08T07:34:57.473424+00:00",
+      "error": null
+    },
+    {
+      "id": "W15-I01",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "created",
+      "tool_used": "gemini-generate-image",
+      "tool_attempts": [],
+      "files": {
+        "post": "marketing/social/content/instagram/2026-04-08-top-sellers-30-sizes/top-sellers-30-sizes.jpg",
+        "metadata": "marketing/social/content/instagram/2026-04-08-top-sellers-30-sizes/metadata.json"
+      },
+      "metadata": {
+        "title": "Most Sellers Offer 3 Sizes. Top Sellers Offer 30+.",
+        "slug": "2026-04-08-top-sellers-30-sizes",
+        "schedule": "today"
+      },
+      "linked_item": null,
+      "created_at": "2026-04-08T07:34:57.473424+00:00",
+      "updated_at": "2026-04-08T07:34:57.473424+00:00",
+      "error": null
     }
   ],
   "metrics": {
-    "total": 51,
-    "completed": 40,
+    "total": 64,
+    "completed": 56,
     "failed": 0,
-    "success_rate": 0.784
+    "success_rate": 0.875
   }
 }

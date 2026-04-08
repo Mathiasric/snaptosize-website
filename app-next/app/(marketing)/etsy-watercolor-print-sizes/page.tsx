@@ -1224,7 +1224,14 @@ export default function EtsyWatercolorPrintSizesPage() {
                     >
                       landscape watercolors
                     </Link>{" "}
-                    as oversized focal points.
+                    as oversized focal points. Ocean watercolors are a top seller &mdash; see our{" "}
+                    <Link
+                      href="/etsy-coastal-wall-art-sizes"
+                      className="text-accent-light hover:underline"
+                    >
+                      coastal wall art sizes guide
+                    </Link>{" "}
+                    for seascape-specific sizing.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">

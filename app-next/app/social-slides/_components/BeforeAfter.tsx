@@ -26,8 +26,8 @@ function GreenCheck({ size = 16 }: { size?: number }) {
 
 function DownArrow() {
   return (
-    <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-      <path d="M9 4V14M9 14L5 10M9 14L13 10" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <svg width="28" height="28" viewBox="0 0 20 20" fill="none">
+      <path d="M10 4v12m0 0l-4-4m4 4l4-4" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }
@@ -49,32 +49,36 @@ function BadCropOverlay() {
 
 const SCALE = {
   pinterest: {
-    sectionPadding: "px-10 pt-8",
-    badgeText: "text-xs",
-    titleSize: "text-3xl",
-    imageH: "h-[180px]",
-    imageW: "w-[135px]",
-    fanCardH: "h-[110px]",
-    fanCardW: "w-[80px]",
-    pointsText: "text-sm",
-    pointsGap: "gap-2",
-    dividerMy: "my-3",
-    afterFanGap: "gap-3",
-    fanLabel: "text-[9px]",
+    sectionPadding: "px-14 pt-12",
+    badgeText: "text-lg",
+    titleSize: "text-5xl",
+    subtitleSize: "text-xl",
+    imageH: "h-[300px]",
+    imageW: "w-[225px]",
+    fanCardH: "h-[180px]",
+    fanCardW: "w-[120px]",
+    pointsText: "text-xl",
+    pointsGap: "gap-4",
+    pointIcon: 22,
+    dividerMy: "my-4",
+    afterFanGap: "gap-4",
+    fanLabel: "text-xs",
   },
   instagram: {
-    sectionPadding: "px-10 pt-6",
-    badgeText: "text-xs",
-    titleSize: "text-2xl",
-    imageH: "h-[150px]",
-    imageW: "w-[112px]",
-    fanCardH: "h-[95px]",
-    fanCardW: "w-[70px]",
-    pointsText: "text-xs",
-    pointsGap: "gap-1.5",
-    dividerMy: "my-2",
-    afterFanGap: "gap-2.5",
-    fanLabel: "text-[8px]",
+    sectionPadding: "px-14 pt-10",
+    badgeText: "text-base",
+    titleSize: "text-4xl",
+    subtitleSize: "text-lg",
+    imageH: "h-[240px]",
+    imageW: "w-[180px]",
+    fanCardH: "h-[150px]",
+    fanCardW: "w-[100px]",
+    pointsText: "text-lg",
+    pointsGap: "gap-3",
+    pointIcon: 20,
+    dividerMy: "my-3",
+    afterFanGap: "gap-3",
+    fanLabel: "text-[10px]",
   },
 } as const;
 
@@ -91,9 +95,11 @@ const BENEFITS = [
 ];
 
 const FAN_CARDS = [
-  { label: "2:3", rotate: "-rotate-6", translate: "-translate-x-3" },
-  { label: "4:5", rotate: "rotate-0", translate: "translate-x-0 -translate-y-1" },
-  { label: "A4", rotate: "rotate-6", translate: "translate-x-3" },
+  { label: "2:3", src: "/assets/Composition_Pictures/poppies_orginal_2x3.jpg", rotate: "-rotate-6", translate: "-translate-x-2" },
+  { label: "3:4", src: "/assets/Composition_Pictures/poppies_orginal_2x3.jpg", rotate: "-rotate-2", translate: "-translate-x-1 -translate-y-1" },
+  { label: "4:5", src: "/assets/Composition_Pictures/poppies_orginal_2x3.jpg", rotate: "rotate-0", translate: "translate-x-0 -translate-y-2" },
+  { label: "A4", src: "/assets/Composition_Pictures/poppies_orginal_2x3.jpg", rotate: "rotate-2", translate: "translate-x-1 -translate-y-1" },
+  { label: "11×14", src: "/assets/Composition_Pictures/poppies_orginal_2x3.jpg", rotate: "rotate-6", translate: "translate-x-2" },
 ];
 
 export default function BeforeAfter({ ratio }: BeforeAfterProps) {
@@ -112,25 +118,31 @@ export default function BeforeAfter({ ratio }: BeforeAfterProps) {
           </span>
 
           {/* Title */}
-          <h2 className={`${s.titleSize} font-bold text-white/90 mb-4 text-center`}>
+          <h2 className={`${s.titleSize} font-bold text-white/90 mb-2 text-center`}>
             Manual Resizing
           </h2>
+          <p className={`${s.subtitleSize} text-white/40 mb-6 text-center`}>The Etsy seller&apos;s nightmare</p>
 
           {/* Bad crop image */}
-          <div className={`relative ${s.imageW} ${s.imageH} rounded-lg overflow-hidden border-2 border-red-500/40 mb-4 flex-shrink-0`}>
+          <div className={`relative ${s.imageW} ${s.imageH} rounded-xl overflow-hidden border-2 border-red-500/40 mb-6 flex-shrink-0 shadow-2xl shadow-red-900/20`}>
             <img
               src="/assets/Composition_Pictures/poppies_BAD_crop_2700x3600.png"
               alt="Badly cropped poppies"
               className="w-full h-full object-cover"
             />
-            <BadCropOverlay />
+            <div className="absolute inset-0 flex items-center justify-center bg-red-950/30">
+              <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                <line x1="15" y1="15" x2="65" y2="65" stroke="#EF4444" strokeWidth="5" strokeLinecap="round" />
+                <line x1="65" y1="15" x2="15" y2="65" stroke="#EF4444" strokeWidth="5" strokeLinecap="round" />
+              </svg>
+            </div>
           </div>
 
           {/* Pain points */}
           <div className={`flex flex-col ${s.pointsGap}`}>
             {PAIN_POINTS.map((point) => (
-              <div key={point} className={`flex items-center gap-2 ${s.pointsText} text-white/70`}>
-                <RedX />
+              <div key={point} className={`flex items-center gap-3 ${s.pointsText} text-white/60`}>
+                <RedX size={s.pointIcon} />
                 <span>{point}</span>
               </div>
             ))}
@@ -140,7 +152,7 @@ export default function BeforeAfter({ ratio }: BeforeAfterProps) {
         {/* ── Divider ── */}
         <div className={`relative flex items-center justify-center ${s.dividerMy} px-10`}>
           <div className="flex-1 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent" />
-          <div className="mx-4 w-9 h-9 rounded-full bg-gradient-to-r from-violet-600 to-purple-600 flex items-center justify-center shadow-lg shadow-purple-500/30 flex-shrink-0">
+          <div className="mx-4 w-14 h-14 rounded-full bg-gradient-to-b from-violet-600 to-purple-600 flex items-center justify-center shadow-xl shadow-purple-900/40 flex-shrink-0">
             <DownArrow />
           </div>
           <div className="flex-1 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent" />
@@ -156,27 +168,28 @@ export default function BeforeAfter({ ratio }: BeforeAfterProps) {
           </span>
 
           {/* Title */}
-          <h2 className={`${s.titleSize} font-bold text-white/90 mb-4 text-center`}>
-            One Click. Done.
+          <h2 className={`${s.titleSize} font-bold text-white/90 mb-2 text-center`}>
+            One Click. Every Size.
           </h2>
+          <p className={`${s.subtitleSize} text-white/40 mb-6 text-center`}>70 files, 5 ratios, organized ZIPs</p>
 
           {/* Fan of images at different aspect ratios */}
-          <div className={`flex items-end justify-center ${s.afterFanGap} mb-4`}>
+          <div className={`flex items-end justify-center ${s.afterFanGap} mb-6`}>
             {FAN_CARDS.map((card) => (
               <div
                 key={card.label}
-                className={`${s.fanCardW} ${s.fanCardH} rounded-md overflow-hidden border border-emerald-500/25 ${card.rotate} ${card.translate} flex-shrink-0 relative shadow-lg`}
+                className={`${s.fanCardW} ${s.fanCardH} rounded-lg overflow-hidden border border-emerald-500/25 ${card.rotate} ${card.translate} flex-shrink-0 relative shadow-xl shadow-black/40`}
               >
                 <img
-                  src="/assets/Composition_Pictures/poppies_orginal_2x3.jpg"
+                  src={card.src}
                   alt={`Poppies at ${card.label}`}
                   className="w-full h-full object-cover"
                 />
-                <span
-                  className={`absolute bottom-1 left-1/2 -translate-x-1/2 ${s.fanLabel} font-mono font-bold text-white bg-black/60 px-1.5 py-0.5 rounded`}
-                >
-                  {card.label}
-                </span>
+                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent px-2 py-1.5">
+                  <span className={`${s.fanLabel} font-mono font-bold text-emerald-300`}>
+                    {card.label}
+                  </span>
+                </div>
               </div>
             ))}
           </div>
@@ -184,8 +197,8 @@ export default function BeforeAfter({ ratio }: BeforeAfterProps) {
           {/* Benefits */}
           <div className={`flex flex-col ${s.pointsGap}`}>
             {BENEFITS.map((benefit) => (
-              <div key={benefit} className={`flex items-center gap-2 ${s.pointsText} text-white/70`}>
-                <GreenCheck />
+              <div key={benefit} className={`flex items-center gap-3 ${s.pointsText} text-white/75`}>
+                <GreenCheck size={s.pointIcon} />
                 <span>{benefit}</span>
               </div>
             ))}

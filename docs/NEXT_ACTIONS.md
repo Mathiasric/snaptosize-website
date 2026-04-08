@@ -6,7 +6,7 @@
 
 ## Strategic Context (updated 2026-04-07)
 
-**Current position:** 4 paying users (3 monthly + 1 yearly), $44 MRR, 48 SEO pages live (51 total). Product Hunt launched and done. Educator outreach: 0/7 responses. Social active daily.
+**Current position:** 4 paying users (3 monthly + 1 yearly), $44 MRR, 50 SEO pages live (53 total). Product Hunt launched and done. Educator outreach: 0/7 responses. Social active daily.
 
 **Important:** The "18,000+ packs" stat on the site is a marketing number for social proof, NOT real usage data.
 
@@ -66,7 +66,7 @@
 
 ### 4. SEO Pages — Continue Building (2/day target)
 **Why:** Long game. Won't rank for 3-6 months but compounding traffic is the endgame.
-**Status:** 48 SEO pages live (51 total). Visual pipeline upgraded — all pages now have QuickAnswer + size diagrams/mockups.
+**Status:** 50 SEO pages live (53 total). Visual pipeline upgraded — all pages now have QuickAnswer + size diagrams/mockups.
 - [x] `etsy-quote-wall-art-sizes` — deployed
 - [x] `snaptosize-vs-canva` + `snaptosize-vs-photoshop` — deployed
 - [x] `etsy-landscape-print-sizes` + `etsy-square-print-sizes` — deployed (Firecrawl-identified opportunities)
@@ -79,7 +79,10 @@
 - [x] `etsy-vintage-art-print-sizes` — deployed with CSS vintage frame gallery hero + OG image, 7 vintage sub-style breakdown (2026-04-07)
 - [x] `etsy-pet-portrait-sizes` — deployed with CSS paw print frame wall hero + OG image, 6 sub-style breakdown + composition sizing (2026-04-07)
 - [x] Cross-links added: 6 inbound backlinks from existing pages (3 per new page)
-- [ ] **Next opportunities:** etsy photography sub-niches, etsy digital planner sizes, etsy farmhouse art sizes
+- [x] `etsy-farmhouse-wall-art-sizes` — deployed with CSS shiplap hero, 6 sub-style breakdown, room-by-room guide (2026-04-08)
+- [x] `etsy-coastal-wall-art-sizes` — deployed with CSS ocean hero, 7 sub-style breakdown, gallery wall strategy (2026-04-08)
+- [x] Cross-links added: backlinks from vintage, photography, boho, watercolor pages
+- [ ] **Next opportunities:** etsy photography sub-niches, etsy digital planner sizes, etsy mid-century modern art sizes
 
 ### 6. Guide Pages — Add Real Mockup Images (opportunity)
 **Why:** Highest-traffic guide pages are text-heavy. Adding real Etsy shop mockup images as visual examples would strengthen credibility and engagement. Images available in `etsy/` folder.
@@ -159,7 +162,7 @@
 | Interactive tool live | Calculator deployed | ✅ Done (2026-03-22) | New SEO channel |
 | YouTube tutorials | 2+ tutorials published | ❌ Not started | Trust-building video content |
 | 3 educator partnerships | Distribution proven | ❌ 0 responses yet | Scale to 20+ partners |
-| 100 SEO pages | Content foundation | ⏳ 48 live | Shift to optimization |
+| 100 SEO pages | Content foundation | ⏳ 50 live | Shift to optimization |
 | 10 paying users | WTP proven | ⏳ 4 users | Mockup build, batch upload |
 | 50 paying users | PMF signal | ❌ | Premium tier, affiliates at scale |
 

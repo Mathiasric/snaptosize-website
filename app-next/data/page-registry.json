@@ -1273,5 +1273,45 @@
       "how-to-price-etsy-printables",
       "etsy-print-on-demand-vs-digital-download"
     ]
+  },
+  {
+    "slug": "etsy-farmhouse-wall-art-sizes",
+    "title": "Farmhouse Wall Art Sizes for Etsy",
+    "pageType": "niche",
+    "keywords": [
+      "farmhouse wall art sizes",
+      "rustic wall art dimensions",
+      "farmhouse print sizes etsy",
+      "modern farmhouse wall art sizes",
+      "cottagecore print sizes"
+    ],
+    "cluster": "niche-guides",
+    "relatedSlugs": [
+      "etsy-vintage-art-print-sizes",
+      "etsy-botanical-print-sizes",
+      "etsy-gallery-wall-print-sizes",
+      "etsy-quote-wall-art-sizes",
+      "etsy-boho-wall-art-sizes"
+    ]
+  },
+  {
+    "slug": "etsy-coastal-wall-art-sizes",
+    "title": "Coastal Wall Art Sizes for Etsy",
+    "pageType": "niche",
+    "keywords": [
+      "coastal wall art sizes",
+      "beach art print sizes etsy",
+      "ocean art dimensions",
+      "nautical wall art sizes",
+      "coastal gallery wall sizes"
+    ],
+    "cluster": "niche-guides",
+    "relatedSlugs": [
+      "etsy-photography-print-sizes",
+      "etsy-gallery-wall-print-sizes",
+      "etsy-watercolor-print-sizes",
+      "etsy-landscape-print-sizes",
+      "etsy-boho-wall-art-sizes"
+    ]
   }
 ]

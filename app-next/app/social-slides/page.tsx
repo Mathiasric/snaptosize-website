@@ -4,6 +4,8 @@ import BeforeAfter from "./_components/BeforeAfter";
 import StatsCard from "./_components/StatsCard";
 import Checklist from "./_components/Checklist";
 import SizeComparison from "./_components/SizeComparison";
+import WorkflowSteps from "./_components/WorkflowSteps";
+import NumberHighlight from "./_components/NumberHighlight";
 
 export const metadata: Metadata = {
   title: "Social Slides — SnapToSize",
@@ -41,6 +43,36 @@ export default function SocialSlidesPage() {
         {/* ═══ Template 5: Size Comparison ═══ */}
         <SizeComparison ratio="pinterest" />
         <SizeComparison ratio="instagram" />
+
+        {/* ═══ Template 6: Workflow Steps ═══ */}
+        <WorkflowSteps ratio="pinterest" />
+        <WorkflowSteps ratio="instagram" />
+
+        {/* ═══ Template 7: Number Highlight (70 files) ═══ */}
+        <NumberHighlight ratio="pinterest" />
+        <NumberHighlight ratio="instagram" />
+
+        {/* ═══ Template 7b: Number Highlight (30+ sizes, purple) ═══ */}
+        <NumberHighlight
+          ratio="pinterest"
+          number="30+"
+          label="unique print sizes"
+          subtitle="all standard frame ratios covered"
+          topBadge="Stop missing sales"
+          bullets={["2:3 · 3:4 · 4:5 · ISO · Extras", "Every size in portrait + landscape", "Under 20MB — Etsy compliant"]}
+          accentColor="purple"
+        />
+
+        {/* ═══ Template 7c: Number Highlight (5 packs, coral) ═══ */}
+        <NumberHighlight
+          ratio="pinterest"
+          number="5"
+          label="organized ZIP packs"
+          subtitle="one for each frame ratio"
+          topBadge="Professional file delivery"
+          bullets={["2:3 Wall Art · 3:4 Photo · 4:5 Classic", "ISO A-Series · Extras (5×7, 11×14...)", "Named, sorted, ready to list"]}
+          accentColor="coral"
+        />
       </div>
     </main>
   );

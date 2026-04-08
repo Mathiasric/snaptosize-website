@@ -1362,6 +1362,20 @@ export default function EtsyBohoWallArtSizesPage() {
                     >
                       minimalist styles
                     </Link>
+                    . Earth-tone palettes also cross over into{" "}
+                    <Link
+                      href="/etsy-farmhouse-wall-art-sizes"
+                      className="text-accent-light hover:underline"
+                    >
+                      farmhouse wall art
+                    </Link>{" "}
+                    and{" "}
+                    <Link
+                      href="/etsy-coastal-wall-art-sizes"
+                      className="text-accent-light hover:underline"
+                    >
+                      coastal wall art
+                    </Link>
                     .
                   </p>
                   <div className="flex flex-wrap gap-2">

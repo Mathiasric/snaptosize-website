@@ -828,6 +828,9 @@ export default function EtsyPhotographyPrintSizesPage() {
                         natively. For all horizontal print options, see our{" "}
                         <Link href="/etsy-landscape-print-sizes" className="text-accent-light hover:underline">
                           landscape print sizes reference
+                        </Link>. Beach and ocean photography has its own sizing strategy &mdash; see our{" "}
+                        <Link href="/etsy-coastal-wall-art-sizes" className="text-accent-light hover:underline">
+                          coastal wall art sizes guide
                         </Link>.
                       </p>
                       <div className="flex flex-wrap gap-2">

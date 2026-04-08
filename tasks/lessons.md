@@ -598,3 +598,13 @@ Never put "30+ sizes" and "70 files" in the same pill row.
 3. Save to `app-next/public/assets/visuals/etsy-[slug]-size-comparison.png`
 4. Proportions must be mathematically correct (1 inch = scale factor in px)
 5. Hero size highlighted in teal, others in white/gray
+
+### LESSON-083: Cross-platform resized images live in ready/ folders — use those, not Downloads (2026-04-06)
+**Trigger:** Scheduler used wrong files (from Downloads) and scheduled duplicate posts 4 times. Also scheduled old items from previous days repeatedly.
+**Rule:** When scheduling cross-platform xposts:
+1. **Resized images are in `marketing/social/ready/instagram_ready/` and `marketing/social/ready/pinterest_ready/`** — NOT in Downloads
+2. **Files are named with date suffix** like `landscape-print-sizes_(06.04).jpg` — only use files matching today's date
+3. **2:3 → 4:5 resizes go to `instagram_ready/`**, 4:5 → 2:3 resizes go to `pinterest_ready/`
+4. **The scheduler picks up ALL items in `publishing` stage** — including old ones from previous days. Before running `schedule-batch.py`, verify that only today's NEW items are in `created`/`publishing` stage. Items already `published` should stay `published`.
+5. **Never schedule from Downloads** — user puts resized files in the ready folders for a reason
+6. **Count the files first** — user says "3 files: 2 IG + 1 Pinterest", verify that's what you see before proceeding

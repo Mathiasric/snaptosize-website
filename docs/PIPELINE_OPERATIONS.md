@@ -133,16 +133,64 @@ Flow:
 
 | Content type | Primary tool | When to use |
 |-------------|-------------|-------------|
-| Pinterest pin (visual) | `gemini-generate-image` (2:3) | Branded visuals, product shots |
+| Pinterest pin (visual) | `gemini-generate-image` (2:3) | Branded visuals, product shots, niche size guides |
 | Pinterest pin (educational) | NotebookLM infographic | Data-heavy, charts, comparisons |
+| Pinterest/IG (product showcase) | Playwright social slides | Before/after, how-it-works, ratio showcase, stats |
 | Instagram static | `gemini-generate-image` (4:5) | Feed posts |
 | Video (text listicle) | Remotion `TikTokVertical` | Tips, lists, how-tos |
 | Video (educational) | NotebookLM studio | Explainers, deep dives |
+
+**Best practice:** Mix Gemini and Playwright slides in each daily batch for visual variety. Gemini excels at illustrated/infographic content. Playwright slides use the actual product design system for authentic, branded visuals.
 
 **Remotion render:**
 ```bash
 cd marketing/remotion && npx remotion render src/index.ts TikTokVertical out/video.mp4 --props='{"hook":"...","subHook":"...","points":["..."],"cta":"...","episodeTag":"..."}'
 ```
+
+### Playwright Social Slides
+
+React-based slide templates at `app-next/app/social-slides/` that match the ProductHunt visual style (dark background, teal/purple accents, real product artwork). Screenshot with Playwright for pixel-perfect output.
+
+**Source page:** `app-next/app/social-slides/page.tsx`
+**Components:** `app-next/app/social-slides/_components/`
+**Design system:** Same as `app-next/app/producthunt/page.tsx` — dark gradients (#0B0B12), purple (#7C3AED, #A78BFA), teal (#2DD4BF), emerald checks, real koi/poppies artwork.
+
+**Available templates:**
+
+| Template | What it shows | Good for |
+|----------|-------------|----------|
+| `BeforeAfter` | Manual resizing vs SnapToSize, red/green split | Pain point → solution posts |
+| `PackSpotlight` | Single ratio pack with sizes | Pack-specific education |
+| `StatsCard` | Key metrics/numbers | Social proof, value props |
+| `Checklist` | Feature or benefit checklist | Comparison, feature highlights |
+| `SizeComparison` | Side-by-side size visuals | Size education |
+
+Each template accepts `ratio="pinterest"` (1000×1500) or `ratio="instagram"` (1080×1350).
+
+**Workflow:**
+
+1. Start dev server: `cd app-next && npx next dev --port 3099`
+2. Screenshot individual slides:
+```js
+const { chromium } = require('playwright');
+(async () => {
+  const browser = await chromium.launch();
+  const page = await browser.newPage({ viewport: { width: 1200, height: 8000 } });
+  await page.goto('http://localhost:3099/social-slides', { waitUntil: 'networkidle' });
+  await page.waitForTimeout(3000);
+  const el = await page.locator('#before-after-pinterest').boundingBox();
+  if (el) {
+    await page.screenshot({ path: 'out/pin.png', clip: { x: el.x, y: el.y, width: el.width, height: el.height } });
+  }
+  await browser.close();
+})();
+```
+
+**Adding new templates:** Create a component in `_components/`, use `SlideWrapper` for consistent dimensions/background/footer. Reference `BeforeAfter.tsx` for the pattern. Use real product images from `/assets/Composition_Pictures/`.
+
+**When to use Playwright slides vs Gemini:**
+- **Playwright slides:** Product-centric content (before/after, how-it-works, feature showcase, pricing), anything with exact text/data that must be accurate, branded content matching website aesthetic
+- **Gemini:** Lifestyle/aspirational content (bedroom art, gallery walls, nursery), illustrated infographics, niche-specific visuals where artistic style matters more than data accuracy
 
 ### Performance Feedback Loop
 
