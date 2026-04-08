@@ -761,6 +761,10 @@ export default function EtsyFarmhouseWallArtSizesPage() {
               </p>
             </div>
 
+            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+              <img src="/assets/visuals/etsy-farmhouse-wall-art-mockup.jpg" alt="Cozy farmhouse living room with shiplap wall displaying framed art — rustic 'Gather' typography sign, vintage windmill sketch, botanical herb illustration, and cottagecore wildflowers in sizes from 8x10 to 24x36" width={1200} height={800} className="w-full h-auto" loading="lazy" />
+            </div>
+
             {/* --- H2 2: Complete Farmhouse Print Size Reference --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">

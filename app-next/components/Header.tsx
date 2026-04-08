@@ -112,10 +112,10 @@ export function Header() {
         <div className="hidden md:block absolute left-0 right-0 top-full z-50 border-b border-border bg-background shadow-lg" data-guides-dropdown>
           <Container>
             <div className="grid grid-cols-4 gap-6 py-6">
-              {/* Size Guides — col spans wider with 2-col sub-grid for individual sizes */}
+              {/* Size Guides — col spans wider with 3-col sub-grid for niche guides */}
               <div className="col-span-2">
                 <p className="pb-2.5 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">Size Guides</p>
-                <div className="grid grid-cols-2 gap-x-6">
+                <div className="grid grid-cols-3 gap-x-6">
                   <div className="space-y-0.5">
                     <Link href="/etsy-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Etsy Print Sizes
@@ -126,8 +126,6 @@ export function Header() {
                     <Link href="/how-many-sizes-etsy-printable" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       How Many Sizes to Include
                     </Link>
-                  </div>
-                  <div className="space-y-0.5">
                     <Link href="/etsy-nursery-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Nursery Wall Art Sizes
                     </Link>
@@ -140,6 +138,8 @@ export function Header() {
                     <Link href="/etsy-square-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Square Print Sizes
                     </Link>
+                  </div>
+                  <div className="space-y-0.5">
                     <Link href="/etsy-quote-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Quote Wall Art Sizes
                     </Link>
@@ -161,6 +161,8 @@ export function Header() {
                     <Link href="/etsy-photography-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Photography Print Sizes
                     </Link>
+                  </div>
+                  <div className="space-y-0.5">
                     <Link href="/etsy-vintage-art-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Vintage Art Print Sizes
                     </Link>
@@ -179,7 +181,7 @@ export function Header() {
                   </div>
                 </div>
                 <div className="pt-2 mt-2 border-t border-border/50">
-                  <div className="grid grid-cols-2 gap-x-6">
+                  <div className="grid grid-cols-3 gap-x-6">
                     <div className="space-y-0.5">
                       <Link href="/etsy-8x10-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         8&times;10 Print Size
@@ -202,14 +204,14 @@ export function Header() {
                       <Link href="/etsy-11x17-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         11&times;17 Print Size
                       </Link>
+                    </div>
+                    <div className="space-y-0.5">
                       <Link href="/etsy-12x18-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         12&times;18 Print Size
                       </Link>
                       <Link href="/etsy-13x19-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         13&times;19 Print Size
                       </Link>
-                    </div>
-                    <div className="space-y-0.5">
                       <Link href="/etsy-a4-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         A4 Print Size
                       </Link>
@@ -225,6 +227,8 @@ export function Header() {
                       <Link href="/etsy-a1-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         A1 Print Size
                       </Link>
+                    </div>
+                    <div className="space-y-0.5">
                       <Link href="/etsy-4x6-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         4&times;6 Print Size
                       </Link>

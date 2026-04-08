@@ -666,6 +666,10 @@ export default function EtsyCoastalWallArtSizesPage() {
               </p>
             </div>
 
+            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+              <img src="/assets/visuals/etsy-coastal-wall-art-mockup.jpg" alt="Bright coastal living room with a gallery wall of framed ocean art prints — beach sunset photography, watercolor seashells, nautical anchor illustration, and ocean waves in various sizes above a cream linen sofa" width={1200} height={800} className="w-full h-auto" loading="lazy" />
+            </div>
+
             {/* --- H2 2: Best-Selling Coastal Wall Art Sizes on Etsy --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
@@ -9,6 +8,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title:
@@ -199,72 +199,94 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
       />
 
       {/* ===== HERO ===== */}
-      <section className="relative overflow-hidden h-screen">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/assets/how-to-sell_hero.png"
-            alt=""
-            fill
-            priority
-            sizes="100vw"
-            style={{ objectFit: "cover" }}
-            className="z-0"
-          />
-          {/* Left-side gradient overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/25 to-transparent" />
-        </div>
+      <section
+        className="relative pt-10 pb-16 md:pt-14 md:pb-24 overflow-hidden"
+        style={{
+          background:
+            "linear-gradient(145deg, #030712 0%, #0c0a1e 35%, #110d20 70%, #030712 100%)",
+        }}
+      >
+        {/* Grid pattern background */}
+        <div
+          className="absolute inset-0 opacity-[0.06]"
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(168,85,247,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(168,85,247,0.4) 1px, transparent 1px)",
+            backgroundSize: "48px 48px",
+          }}
+        />
+
+        {/* Gradient accents */}
+        <div
+          className="absolute top-[-10%] right-[20%] w-[500px] h-[500px] rounded-full opacity-[0.08]"
+          style={{
+            background: "radial-gradient(circle, #a855f7, transparent 70%)",
+          }}
+        />
+        <div
+          className="absolute bottom-[-15%] left-[-5%] w-[400px] h-[400px] rounded-full opacity-[0.05]"
+          style={{
+            background: "radial-gradient(circle, #6366f1, transparent 70%)",
+          }}
+        />
+        {/* Top edge glow */}
+        <div
+          className="absolute top-0 left-0 right-0 h-px"
+          style={{
+            background: "linear-gradient(90deg, transparent, rgba(168,85,247,0.3) 50%, transparent)",
+          }}
+        />
 
         {/* CSS-only workflow visual — right side */}
-        <div className="absolute right-[5%] top-1/2 -translate-y-1/2 hidden lg:block z-10">
-          <div className="relative" style={{ width: "220px" }}>
+        <div className="absolute right-[4%] top-1/2 -translate-y-1/2 hidden lg:block">
+          <div className="relative" style={{ width: "240px" }}>
             <div className="space-y-3">
               {/* Step 1: Upload */}
-              <div className="rounded-lg border border-white/10 bg-white/[0.06] backdrop-blur-sm p-3 shadow-xl">
+              <div className="rounded-lg border border-white/10 bg-white/[0.04] backdrop-blur-sm p-3.5 shadow-xl">
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-full bg-purple-500/15 border border-purple-400/25 flex items-center justify-center flex-shrink-0">
-                    <Upload className="w-3.5 h-3.5 text-purple-400/70" />
+                  <div className="w-9 h-9 rounded-full bg-purple-500/15 border border-purple-400/25 flex items-center justify-center flex-shrink-0">
+                    <Upload className="w-4 h-4 text-purple-400/70" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-semibold text-white/60 block">Upload 1 image</span>
-                    <span className="text-[9px] font-mono text-white/30">artwork.jpg · 8400×11200</span>
+                    <span className="text-xs font-semibold text-white/60 block">Upload 1 image</span>
+                    <span className="text-[10px] font-mono text-white/30">artwork.jpg · 8400×11200</span>
                   </div>
                 </div>
               </div>
               {/* Arrow */}
               <div className="flex justify-center">
-                <div className="w-px h-4 bg-gradient-to-b from-purple-400/30 to-purple-400/10" />
+                <div className="w-px h-5 bg-gradient-to-b from-purple-400/30 to-purple-400/10" />
               </div>
               {/* Step 2: Process */}
-              <div className="rounded-lg border border-purple-400/15 bg-purple-500/[0.06] backdrop-blur-sm p-3 shadow-xl">
+              <div className="rounded-lg border border-purple-400/15 bg-purple-500/[0.06] backdrop-blur-sm p-3.5 shadow-xl">
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-full bg-purple-500/20 border border-purple-400/30 flex items-center justify-center flex-shrink-0">
-                    <span className="text-[10px] font-bold text-purple-300/70">⚡</span>
+                  <div className="w-9 h-9 rounded-full bg-purple-500/20 border border-purple-400/30 flex items-center justify-center flex-shrink-0">
+                    <span className="text-xs font-bold text-purple-300/70">⚡</span>
                   </div>
                   <div>
-                    <span className="text-[11px] font-semibold text-white/60 block">SnapToSize processes</span>
-                    <span className="text-[9px] font-mono text-white/30">30 sizes · 300 DPI · 10 sec</span>
+                    <span className="text-xs font-semibold text-white/60 block">SnapToSize processes</span>
+                    <span className="text-[10px] font-mono text-white/30">30 sizes · 300 DPI · 10 sec</span>
                   </div>
                 </div>
               </div>
               {/* Arrow */}
               <div className="flex justify-center">
-                <div className="w-px h-4 bg-gradient-to-b from-purple-400/30 to-purple-400/10" />
+                <div className="w-px h-5 bg-gradient-to-b from-purple-400/30 to-purple-400/10" />
               </div>
               {/* Step 3: Output */}
-              <div className="rounded-lg border border-white/10 bg-white/[0.06] backdrop-blur-sm p-3 shadow-xl">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-8 h-8 rounded-full bg-green-500/15 border border-green-400/25 flex items-center justify-center flex-shrink-0">
-                    <Check className="w-3.5 h-3.5 text-green-400/70" />
+              <div className="rounded-lg border border-white/10 bg-white/[0.04] backdrop-blur-sm p-3.5 shadow-xl">
+                <div className="flex items-center gap-3 mb-2.5">
+                  <div className="w-9 h-9 rounded-full bg-green-500/15 border border-green-400/25 flex items-center justify-center flex-shrink-0">
+                    <Check className="w-4 h-4 text-green-400/70" />
                   </div>
                   <div>
-                    <span className="text-[11px] font-semibold text-white/60 block">5 ZIP packs ready</span>
-                    <span className="text-[9px] font-mono text-white/30">Upload directly to Etsy</span>
+                    <span className="text-xs font-semibold text-white/60 block">5 ZIP packs ready</span>
+                    <span className="text-[10px] font-mono text-white/30">Upload directly to Etsy</span>
                   </div>
                 </div>
-                <div className="space-y-1 pl-11">
+                <div className="space-y-1 pl-12">
                   {["2:3 ratio · 8 sizes", "3:4 ratio · 6 sizes", "4:5 ratio · 5 sizes", "ISO A · 6 sizes", "Extras · 5 sizes"].map((pack, i) => (
-                    <div key={i} className="text-[8px] font-mono text-white/25">{pack}</div>
+                    <div key={i} className="text-[9px] font-mono text-white/25">{pack}</div>
                   ))}
                 </div>
               </div>
@@ -272,71 +294,72 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
           </div>
         </div>
 
-        {/* Content - centered vertically */}
-        <div className="relative z-10 h-full flex items-center">
-          <Container>
-            <div className="max-w-[680px] py-4 -mt-12 md:-mt-8">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="h-px w-8 bg-purple-500/40" />
-                <span className="text-xs font-mono tracking-[0.15em] text-purple-300/60 uppercase">Seller Guide</span>
-              </div>
-              <h1 className="font-bold tracking-tight mb-5 text-white">
-                <span className="block text-3xl md:text-4xl lg:text-5xl mb-1.5">
-                  How to Sell Digital Downloads on Etsy
-                </span>
-                <span className="block text-xl md:text-2xl lg:text-3xl font-semibold text-white/95">
-                  Complete guide — from file prep to your first sale
-                </span>
-              </h1>
-              <p className="text-base text-white/95 mb-4 drop-shadow-md">
-                Selling digital downloads on Etsy is one of the most scalable business models on the platform.
-                No inventory, no shipping, no production costs — just create once and sell infinitely.
-                Unlike{" "}
-                <Link href="/etsy-print-on-demand-vs-digital-download" className="text-white underline hover:text-white/80">print on demand</Link>,
-                margins stay above 85%.
-                This guide covers everything: correct file formats, proper print sizes, listing setup, and pricing strategies.
+        <Container>
+          <div className="relative z-10 max-w-[680px]">
+            <div className="flex items-center gap-2 mb-4">
+              <div className="h-px w-8 bg-purple-500/40" />
+              <span className="text-xs font-mono tracking-[0.15em] text-purple-300/60 uppercase">Seller Guide</span>
+            </div>
+            <h1 className="font-bold tracking-tight mb-5">
+              <span className="block text-3xl md:text-4xl lg:text-5xl mb-1.5">
+                How to Sell Digital Downloads on Etsy
+              </span>
+              <span className="block text-lg md:text-xl lg:text-2xl font-semibold text-foreground-60">
+                Complete guide — from file prep to your first sale
+              </span>
+            </h1>
+            <p className="text-base text-foreground-60 mb-6">
+              Selling digital downloads on Etsy is one of the most scalable business models on the platform.
+              No inventory, no shipping, no production costs — just create once and sell infinitely.
+              Unlike{" "}
+              <Link href="/etsy-print-on-demand-vs-digital-download" className="text-accent-light hover:underline">print on demand</Link>,
+              margins stay above 85%.
+              This guide covers everything: correct file formats, proper print sizes, listing setup, and pricing strategies.
+            </p>
+
+            <div className="mb-4">
+              <a href={appUrl} target="_blank" rel="noopener noreferrer">
+                <Button className="text-sm px-6 py-2.5">
+                  Generate Print-Ready Files Instantly
+                </Button>
+              </a>
+              <p className="text-sm text-foreground-60 mt-2">
+                Free → create all Etsy print sizes in seconds.
               </p>
+            </div>
 
-              <div className="mb-3">
-                <a href={appUrl} target="_blank" rel="noopener noreferrer">
-                  <Button className="text-sm px-6 py-2.5">
-                    Generate Print-Ready Files Instantly
-                  </Button>
-                </a>
-                <p className="text-sm text-white/85 mt-1.5">
-                  Free → create all Etsy print sizes in seconds.
-                </p>
+            {/* Trust pills */}
+            <div className="flex flex-wrap gap-2">
+              <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/[0.06] border border-white/[0.08]">
+                <Check className="h-3 w-3 text-accent-light flex-shrink-0" />
+                <span className="text-xs text-foreground-60 font-medium">
+                  All print sizes at 300 DPI
+                </span>
               </div>
-
-              {/* Micro-benefit chips */}
-              <div className="flex flex-wrap gap-2">
-                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/15 backdrop-blur-sm border border-white/25">
-                  <Check className="h-3 w-3 text-white flex-shrink-0" />
-                  <span className="text-xs text-white font-medium">
-                    All print sizes at 300 DPI
-                  </span>
-                </div>
-                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/15 backdrop-blur-sm border border-white/25">
-                  <Check className="h-3 w-3 text-white flex-shrink-0" />
-                  <span className="text-xs text-white font-medium">
-                    Organized ratio packs
-                  </span>
-                </div>
-                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/15 backdrop-blur-sm border border-white/25">
-                  <Check className="h-3 w-3 text-white flex-shrink-0" />
-                  <span className="text-xs text-white font-medium">
-                    Under Etsy's 20MB limit
-                  </span>
-                </div>
+              <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/[0.06] border border-white/[0.08]">
+                <Check className="h-3 w-3 text-accent-light flex-shrink-0" />
+                <span className="text-xs text-foreground-60 font-medium">
+                  Organized ratio packs
+                </span>
+              </div>
+              <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/[0.06] border border-white/[0.08]">
+                <Check className="h-3 w-3 text-accent-light flex-shrink-0" />
+                <span className="text-xs text-foreground-60 font-medium">
+                  Under Etsy&apos;s 20MB limit
+                </span>
               </div>
             </div>
-          </Container>
-        </div>
+          </div>
+        </Container>
       </section>
 
       <section className="py-8">
         <Container>
           <div className="max-w-4xl space-y-16">
+            <QuickAnswer question="How do you sell digital downloads on Etsy?">
+              Create high-resolution artwork (<strong>300 DPI, JPG</strong>), resize into <strong>5 ratio packs</strong> (2:3, 3:4, 4:5, ISO A-series, extras), upload each pack as a ZIP under 20MB, write keyword-rich titles and descriptions, add lifestyle mockup photos, and price at <strong>$4.99&ndash;$7.99</strong>. Each listing delivers instantly &mdash; no shipping, no inventory.
+            </QuickAnswer>
+
             {/* ===== SECTION 1: Why Digital Downloads Are Ideal on Etsy ===== */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
@@ -405,6 +428,10 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
                   right once, and each listing becomes a passive income stream.
                 </p>
               </Card>
+
+              <div className="mt-8 rounded-xl overflow-hidden border border-white/[0.08]">
+                <img src="/assets/visuals/how-to-sell-etsy-mockup.jpg" alt="Laptop showing an Etsy seller dashboard with printable wall art listings — botanical, minimalist, and boho designs priced at $5.99 each, displayed on a warm desk setup with a framed print and coffee" width={1200} height={800} className="w-full h-auto" loading="lazy" />
+              </div>
             </div>
 
             {/* ===== SECTION 2: What You Need Before You Start ===== */}
@@ -899,22 +926,12 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
                 .
               </p>
 
-              <Card>
-                <h3 className="font-semibold mb-2">
-                  Natural CTA to SnapToSize:
-                </h3>
-                <p className="text-sm text-foreground-60 mb-3">
-                  Creating 20-30 print sizes manually takes 1-3 hours per
-                  artwork. SnapToSize generates all required sizes in seconds —
-                  organized into ratio packs, at 300 DPI, under Etsy&apos;s 20MB
-                  limit.
-                </p>
-                <a href={appUrl} target="_blank" rel="noopener noreferrer">
-                  <Button className="text-sm px-5 py-2">
-                    Generate All Sizes Instantly
-                  </Button>
-                </a>
-              </Card>
+              <ContextualCTA
+                problem="Creating 20–30 print sizes manually takes 1–3 hours per artwork — per listing."
+                solution="SnapToSize generates all required sizes in seconds. Every ratio pack, at 300 DPI, organized into ZIP files under Etsy's 20MB limit."
+                buttonText="Generate All Sizes Instantly"
+                appUrl={appUrl}
+              />
             </div>
 
             {/* ===== SECTION 5: Pricing Your Digital Downloads ===== */}
