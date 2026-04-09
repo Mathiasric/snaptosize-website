@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
-import { Check } from "lucide-react";
+import { Check, AlertTriangle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
@@ -637,6 +637,161 @@ export default function Etsy8x12PrintSizePage() {
                     </tr>
                   </tbody>
                 </table>
+              </div>
+            </div>
+
+            {/* --- Section 4: Framing & Matting --- */}
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6">
+                Framing &amp; Matting &mdash; What Buyers Need to Know
+              </h2>
+              <p className="text-foreground-60 mb-6">
+                8&times;12 fits perfectly inside a standard 12&times;16
+                frame with a 2-inch mat border on all sides &mdash; a
+                balanced, professional gallery presentation. This is the
+                most popular framing choice for photography prints. Pre-cut
+                mats for this combination are stocked at Michaels, JOANN,
+                Hobby Lobby, and Amazon. Mention it in your Etsy listing to
+                help buyers visualise the finished look.
+              </p>
+
+              <Card className="p-6 md:p-8 mb-6">
+                <h3 className="text-lg font-semibold mb-4">
+                  Common Frame + Mat Combinations for 8&times;12
+                </h3>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center border-b border-white/10 pb-3">
+                    <span className="font-medium">
+                      12&times;16 frame + 8&times;12 mat
+                    </span>
+                    <span className="text-foreground-60 text-sm">
+                      2&Prime; border all sides &mdash; classic gallery look
+                    </span>
+                  </div>
+                  <div className="flex justify-between items-center border-b border-white/10 pb-3">
+                    <span className="font-medium">
+                      11&times;14 frame + 8&times;12 mat
+                    </span>
+                    <span className="text-foreground-60 text-sm">
+                      1.5&Prime; width / 1&Prime; height border
+                    </span>
+                  </div>
+                  <div className="flex justify-between items-center border-b border-white/10 pb-3">
+                    <span className="font-medium">
+                      16&times;20 frame + wide mat
+                    </span>
+                    <span className="text-foreground-60 text-sm">
+                      Generous border, statement gallery wall piece
+                    </span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="font-medium">Photo lab direct print</span>
+                    <span className="text-foreground-60 text-sm">
+                      Standard 8&times;12 at Bay Photo, Nations, Mpix
+                    </span>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-6 bg-accent/10 border-accent/20">
+                <div className="flex gap-4">
+                  <Check className="w-5 h-5 text-accent-light flex-shrink-0 mt-0.5" />
+                  <p className="text-foreground-60 text-sm">
+                    <strong className="text-foreground">Listing tip:</strong>{" "}
+                    Add &ldquo;8&times;12 fits inside a standard 12&times;16
+                    frame with a 2-inch mat (available at Michaels &amp; Amazon).
+                    For an unmatted look, print directly at any photography
+                    lab.&rdquo; to your description. This single line reduces
+                    buyer confusion and increases purchase confidence.
+                  </p>
+                </div>
+              </Card>
+            </div>
+
+            {/* --- Section 5: Common Mistakes --- */}
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6">
+                Common Mistakes With 8&times;12 Digital Prints
+              </h2>
+
+              <div className="space-y-4">
+                <Card className="p-6">
+                  <div className="flex gap-4">
+                    <AlertTriangle className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h3 className="font-semibold mb-2">
+                        Exporting at 72 DPI instead of 300 DPI
+                      </h3>
+                      <p className="text-foreground-60 text-sm">
+                        72 DPI is screen resolution. An 8&times;12 at 72 DPI
+                        is only 576&times;864 pixels &mdash; visibly pixelated
+                        at print size. The file must be 2400&times;3600
+                        pixels. Photography labs will reject or produce poor
+                        results with low-resolution files.
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+
+                <Card className="p-6">
+                  <div className="flex gap-4">
+                    <AlertTriangle className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h3 className="font-semibold mb-2">
+                        Wrong color profile (CMYK instead of sRGB)
+                      </h3>
+                      <p className="text-foreground-60 text-sm">
+                        Photography labs universally expect sRGB. Files in
+                        Adobe RGB, ProPhoto RGB, or CMYK display incorrect
+                        colors when printed &mdash; reds appear orange, blues
+                        shift purple. Convert to sRGB before exporting.
+                        SnapToSize outputs sRGB automatically.
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+
+                <Card className="p-6">
+                  <div className="flex gap-4">
+                    <AlertTriangle className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h3 className="font-semibold mb-2">
+                        Confusing 8&times;12 (2:3) with 8&times;10 (4:5)
+                      </h3>
+                      <p className="text-foreground-60 text-sm">
+                        8&times;12 is 2:3 ratio. 8&times;10 (
+                        <Link
+                          href="/etsy-8x10-print-size"
+                          className="text-accent-light hover:underline"
+                        >
+                          the 4:5 ratio size
+                        </Link>
+                        ) has different proportions. Scaling artwork between
+                        these two will crop or stretch the image. Design at
+                        the correct ratio from the start, or use a tool that
+                        handles each ratio separately without cropping.
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+
+                <Card className="p-6">
+                  <div className="flex gap-4">
+                    <AlertTriangle className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h3 className="font-semibold mb-2">
+                        Skipping 8&times;12 from photography listings
+                      </h3>
+                      <p className="text-foreground-60 text-sm">
+                        8&times;12 is the native 2:3 photography print size.
+                        Buyers who order from photo labs (Bay Photo, Nations
+                        Photo Lab, Mpix) look for this size specifically. Omitting
+                        it from your 2:3 pack leaves photography buyers without
+                        their expected format.
+                      </p>
+                    </div>
+                  </div>
+                </Card>
               </div>
             </div>
 

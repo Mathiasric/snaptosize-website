@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
-import { Check } from "lucide-react";
+import { Check, AlertTriangle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
@@ -617,6 +617,169 @@ export default function Etsy6x9PrintSizePage() {
                     </tr>
                   </tbody>
                 </table>
+              </div>
+            </div>
+
+            {/* --- Section 4: Framing & Matting --- */}
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6">
+                Framing &amp; Matting &mdash; What Buyers Need to Know
+              </h2>
+              <p className="text-foreground-60 mb-6">
+                6&times;9 is a standard photo print size available at photo
+                labs (Walgreens, CVS, Snapfish) and can be sold as a
+                standalone print in sleeves or pouches. For a framed look,
+                buyers can mat it inside a larger frame &mdash; though
+                6&times;9 doesn&apos;t have a dedicated standard frame size,
+                so matting is slightly asymmetric. Mention this in your
+                listing description to set correct expectations.
+              </p>
+
+              <Card className="p-6 md:p-8 mb-6">
+                <h3 className="text-lg font-semibold mb-4">
+                  Common Framing Options for 6&times;9
+                </h3>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center border-b border-white/10 pb-3">
+                    <span className="font-medium">Standalone photo print</span>
+                    <span className="text-foreground-60 text-sm">
+                      Print at photo lab, display in sleeve or pouch
+                    </span>
+                  </div>
+                  <div className="flex justify-between items-center border-b border-white/10 pb-3">
+                    <span className="font-medium">
+                      8&times;10 frame + mat
+                    </span>
+                    <span className="text-foreground-60 text-sm">
+                      1&Prime; border on sides, 0.5&Prime; top/bottom
+                    </span>
+                  </div>
+                  <div className="flex justify-between items-center border-b border-white/10 pb-3">
+                    <span className="font-medium">
+                      11&times;14 frame + wide mat
+                    </span>
+                    <span className="text-foreground-60 text-sm">
+                      Gallery presentation with generous border
+                    </span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="font-medium">Gallery wall cluster</span>
+                    <span className="text-foreground-60 text-sm">
+                      Pairs well with 4&times;6 and 8&times;12 in a grid
+                    </span>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-6 bg-accent/10 border-accent/20">
+                <div className="flex gap-4">
+                  <Check className="w-5 h-5 text-accent-light flex-shrink-0 mt-0.5" />
+                  <p className="text-foreground-60 text-sm">
+                    <strong className="text-foreground">Listing tip:</strong>{" "}
+                    Add &ldquo;Print at any photo lab as a standard 6&times;9
+                    photo print. For a framed look, mat inside an 8&times;10
+                    or 11&times;14 frame.&rdquo; to your description. This
+                    reduces buyer confusion and support messages.
+                  </p>
+                </div>
+              </Card>
+            </div>
+
+            {/* --- Section 5: Common Mistakes --- */}
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6">
+                Common Mistakes With 6&times;9 Digital Prints
+              </h2>
+
+              <div className="space-y-4">
+                <Card className="p-6">
+                  <div className="flex gap-4">
+                    <AlertTriangle className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h3 className="font-semibold mb-2">
+                        Exporting at 72 DPI instead of 300 DPI
+                      </h3>
+                      <p className="text-foreground-60 text-sm">
+                        72 DPI is screen resolution. A 6&times;9 at 72 DPI is
+                        only 432&times;648 pixels &mdash; prints will be
+                        visibly pixelated, especially at photo labs. The file
+                        must be 1800&times;2700 pixels. Always verify your
+                        export settings before uploading.
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+
+                <Card className="p-6">
+                  <div className="flex gap-4">
+                    <AlertTriangle className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h3 className="font-semibold mb-2">
+                        Wrong color profile (CMYK instead of sRGB)
+                      </h3>
+                      <p className="text-foreground-60 text-sm">
+                        Photo labs and home printers expect sRGB. Files in
+                        Adobe RGB or CMYK display incorrect colors &mdash; reds
+                        appear orange, blues shift. Convert to sRGB before
+                        exporting. SnapToSize outputs sRGB automatically.
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+
+                <Card className="p-6">
+                  <div className="flex gap-4">
+                    <AlertTriangle className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h3 className="font-semibold mb-2">
+                        Confusing 6&times;9 (2:3) with other ratios
+                      </h3>
+                      <p className="text-foreground-60 text-sm">
+                        6&times;9 is a 2:3 ratio print. If you scale artwork
+                        designed at 4:5 (like{" "}
+                        <Link
+                          href="/etsy-8x10-print-size"
+                          className="text-accent-light hover:underline"
+                        >
+                          8&times;10
+                        </Link>
+                        ) down to 6&times;9, it will be cropped or stretched.
+                        Design at 2:3 from the start, or use a tool that
+                        generates each ratio separately without cropping.
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+
+                <Card className="p-6">
+                  <div className="flex gap-4">
+                    <AlertTriangle className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h3 className="font-semibold mb-2">
+                        Skipping 6&times;9 from multi-size packs
+                      </h3>
+                      <p className="text-foreground-60 text-sm">
+                        Some sellers only include{" "}
+                        <Link
+                          href="/etsy-4x6-print-size"
+                          className="text-accent-light hover:underline"
+                        >
+                          4&times;6
+                        </Link>{" "}
+                        and jump straight to{" "}
+                        <Link
+                          href="/etsy-8x12-print-size"
+                          className="text-accent-light hover:underline"
+                        >
+                          8&times;12
+                        </Link>
+                        . This leaves a gap in the pack. 6&times;9 costs
+                        nothing extra to generate and fills the range buyers
+                        expect in a complete 2:3 set.
+                      </p>
+                    </div>
+                  </div>
+                </Card>
               </div>
             </div>
 
