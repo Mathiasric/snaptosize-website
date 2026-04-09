@@ -1,5 +1,5 @@
 # PIPELINE_OPERATIONS.md — How to Run the Content Pipeline
-**Last updated:** 2026-03-11
+**Last updated:** 2026-04-08
 
 > Single source of truth for operating the social media + SEO content pipelines.
 > If this file is out of date, update it before running the pipeline.
@@ -46,6 +46,7 @@ That's it. The orchestrator skill handles everything else inline.
 | 5. **User review** | Shows pass/fail summary → user approves | ⏸️ PAUSE |
 | 6. Schedule | Uploads to R2, schedules via Buffer | `run-pipeline.py --stage scheduler` |
 | 7. Metrics | Auto-saved on every state save | Automatic |
+| 8. **Track performance** | Pull analytics from Buffer, correlate to items, generate insights | `run-pipeline.py --stage tracker` |
 
 ### Manual Stage Commands
 
@@ -72,9 +73,11 @@ python marketing/social/run-pipeline.py --stage publisher
 # Render Remotion videos
 python marketing/social/run-pipeline.py --render-videos
 
-# Pull post performance (48h+ after publishing)
-python marketing/social/run-pipeline.py --pull-performance
-python marketing/social/pull-performance.py --week W11
+# Pull performance + generate insights (48h+ after publishing)
+python marketing/social/run-pipeline.py --stage tracker
+python marketing/social/run-pipeline.py --stage tracker --dry-run
+python marketing/social/pull-performance.py --week W15
+python marketing/social/pull-performance.py --dry-run
 ```
 
 ### Content Item Lifecycle
@@ -133,78 +136,157 @@ Flow:
 
 | Content type | Primary tool | When to use |
 |-------------|-------------|-------------|
-| Pinterest pin (visual) | `gemini-generate-image` (2:3) | Branded visuals, product shots, niche size guides |
-| Pinterest pin (educational) | NotebookLM infographic | Data-heavy, charts, comparisons |
-| Pinterest/IG (product showcase) | Playwright social slides | Before/after, how-it-works, ratio showcase, stats |
-| Instagram static | `gemini-generate-image` (4:5) | Feed posts |
-| Video (text listicle) | Remotion `TikTokVertical` | Tips, lists, how-tos |
-| Video (educational) | NotebookLM studio | Explainers, deep dives |
+| **Pinterest/IG (primary)** | Social slide components → Playwright | **Default for all branded visuals.** Before/after, ratios, stats, checklists, size comparisons |
+| Pinterest pin (lifestyle) | `gemini-generate-image` (2:3) | Aspirational/artistic content only — bedroom mockups, styled gallery walls |
+| **Video (primary)** | Social slides → Remotion `SlideshowVertical` | **Default for all videos.** Screenshot social slide components, compose into animated slideshow |
+| Video (text-only) | Remotion `TikTokVertical` | Last resort — only when no visual asset exists |
 
-**Best practice:** Mix Gemini and Playwright slides in each daily batch for visual variety. Gemini excels at illustrated/infographic content. Playwright slides use the actual product design system for authentic, branded visuals.
+### Social Slide System (Primary Visual Pipeline)
 
-**Remotion render:**
-```bash
-cd marketing/remotion && npx remotion render src/index.ts TikTokVertical out/video.mp4 --props='{"hook":"...","subHook":"...","points":["..."],"cta":"...","episodeTag":"..."}'
+**This is the core of all visual content.** React components → Playwright screenshot → use as pin, post, or video slide.
+
+#### Architecture
+
+```
+app-next/app/social-slides/_components/  ← React components (SlideWrapper + templates)
+app-next/app/social-slides/page.tsx      ← Renders all templates on /social-slides
+                    ↓
+              Playwright screenshot (clip by element ID)
+                    ↓
+         ┌─────────┼──────────┐
+    Pinterest    Instagram    Remotion SlideshowVertical
+    (direct)    (direct)     (→ video slides)
 ```
 
-### Playwright Social Slides
+#### Design System
 
-React-based slide templates at `app-next/app/social-slides/` that match the ProductHunt visual style (dark background, teal/purple accents, real product artwork). Screenshot with Playwright for pixel-perfect output.
+All slides use `SlideWrapper` which provides:
+- **Pinterest:** 1000×1500 (2:3)
+- **Instagram:** 1080×1350 (4:5)
+- Dark gradient background (#0B0B12 → #110E1F)
+- Purple/teal glow orbs
+- `snaptosize.com` footer
+- Same aesthetic as `app-next/app/producthunt/page.tsx`
 
-**Source page:** `app-next/app/social-slides/page.tsx`
-**Components:** `app-next/app/social-slides/_components/`
-**Design system:** Same as `app-next/app/producthunt/page.tsx` — dark gradients (#0B0B12), purple (#7C3AED, #A78BFA), teal (#2DD4BF), emerald checks, real koi/poppies artwork.
+Visual assets: Real product artwork from `/assets/Composition_Pictures/` (koi fish, poppies). SVG icons inline. No AI-generated images.
 
-**Available templates:**
+#### Available Templates
 
-| Template | What it shows | Good for |
-|----------|-------------|----------|
-| `BeforeAfter` | Manual resizing vs SnapToSize, red/green split | Pain point → solution posts |
-| `PackSpotlight` | Single ratio pack with sizes | Pack-specific education |
-| `StatsCard` | Key metrics/numbers | Social proof, value props |
-| `Checklist` | Feature or benefit checklist | Comparison, feature highlights |
-| `SizeComparison` | Side-by-side size visuals | Size education |
+| Template | ID prefix | What it shows | Good for |
+|----------|-----------|-------------|----------|
+| `BeforeAfter` | `before-after-` | Manual resizing vs One Click, red/green split, fanned cards | Pain → solution |
+| `PackSpotlight` | `pack-spotlight-` | Single ratio pack with all sizes listed | Pack education |
+| `StatsCard` | `stats-card-` | Key metrics with big numbers | Social proof |
+| `Checklist` | `checklist-` | Feature/benefit checklist with checkmarks | Feature highlights |
+| `SizeComparison` | `size-comparison-` | Side-by-side size visuals | Size education |
+| `WorkflowSteps` | `workflow-steps-` | 3-step flow: Upload → Pick → Download | How-it-works |
+| `NumberHighlight` | `number-highlight-` | Big number + context (configurable: number, label, color) | Value props, stats |
 
-Each template accepts `ratio="pinterest"` (1000×1500) or `ratio="instagram"` (1080×1350).
+Each template accepts `ratio="pinterest"` or `ratio="instagram"`. Some accept extra props (e.g., `NumberHighlight` takes `number`, `label`, `accentColor`).
 
-**Workflow:**
+#### How to Screenshot
 
-1. Start dev server: `cd app-next && npx next dev --port 3099`
-2. Screenshot individual slides:
-```js
+```bash
+# Terminal 1: Start dev server
+cd app-next && npx next dev --port 3099
+
+# Terminal 2: Screenshot (from app-next/)
+node -e "
 const { chromium } = require('playwright');
 (async () => {
   const browser = await chromium.launch();
   const page = await browser.newPage({ viewport: { width: 1200, height: 8000 } });
   await page.goto('http://localhost:3099/social-slides', { waitUntil: 'networkidle' });
   await page.waitForTimeout(3000);
+
+  // Screenshot one slide by ID
   const el = await page.locator('#before-after-pinterest').boundingBox();
   if (el) {
     await page.screenshot({ path: 'out/pin.png', clip: { x: el.x, y: el.y, width: el.width, height: el.height } });
   }
   await browser.close();
 })();
+"
 ```
 
-**Adding new templates:** Create a component in `_components/`, use `SlideWrapper` for consistent dimensions/background/footer. Reference `BeforeAfter.tsx` for the pattern. Use real product images from `/assets/Composition_Pictures/`.
+**Batch screenshot all slides:**
+```js
+const IDS = [
+  'before-after', 'pack-spotlight', 'stats-card',
+  'checklist', 'size-comparison', 'workflow-steps', 'number-highlight'
+];
+for (const id of IDS) {
+  for (const ratio of ['pinterest', 'instagram']) {
+    const el = await page.locator('#' + id + '-' + ratio).boundingBox();
+    if (el) await page.screenshot({ path: 'out/' + id + '-' + ratio + '.png', clip: el });
+  }
+}
+```
 
-**When to use Playwright slides vs Gemini:**
-- **Playwright slides:** Product-centric content (before/after, how-it-works, feature showcase, pricing), anything with exact text/data that must be accurate, branded content matching website aesthetic
-- **Gemini:** Lifestyle/aspirational content (bedroom art, gallery walls, nursery), illustrated infographics, niche-specific visuals where artistic style matters more than data accuracy
+#### How to Create New Templates
+
+1. Create `_components/NewTemplate.tsx`
+2. Use `SlideWrapper` for dimensions/background/footer
+3. Reference `BeforeAfter.tsx` for the pattern (scaling per ratio, inline SVG icons, real artwork)
+4. Add to `page.tsx` with both ratios: `<NewTemplate ratio="pinterest" />` + `<NewTemplate ratio="instagram" />`
+5. Screenshot with Playwright
+
+**Design rules for new templates:**
+- Use real artwork from `/assets/Composition_Pictures/` — never placeholder images
+- Inline SVG icons — never emoji or external icon libraries
+- Hardcode all text — these are precise marketing visuals, not dynamic templates
+- Scale per ratio using a `SCALE` object (see `BeforeAfter.tsx` pattern)
+- Every visual must teach something specific or show a real product difference
+
+#### Using Slides in Videos
+
+Screenshot social slide components → save to `marketing/remotion/public/` → use as `image` in SlideshowVertical props.
+
+For video slides, the 920×550 display area crops wide images. Best source: pinterest ratio slides (1000×1500) cropped to the key visual area, or purpose-built 920×550 images.
+
+**Render script:** `cd marketing/remotion && npx tsx render-slideshow-videos.ts`
+
+#### When to Use Gemini Instead
+
+Only for lifestyle/aspirational content where artistic style matters more than data accuracy: styled room mockups, aesthetic gallery wall arrangements, dreamy nursery scenes. Never for product UI, data, or feature comparisons — those must be pixel-perfect social slide components.
 
 ### Performance Feedback Loop
 
 After posts have been live 48+ hours:
 
 ```bash
-python marketing/social/pull-performance.py
+python marketing/social/run-pipeline.py --stage tracker
+# or directly:
+python marketing/social/pull-performance.py --week W15
 ```
 
 This:
-1. Queries Buffer API for post analytics
-2. Saves to `marketing/social/performance/YYYY-WNN.json`
-3. Appends top 3 / bottom 3 to `tasks/lessons.md`
-4. Next `/pipeline-run-week` reads this → better topic selection
+1. Queries Buffer API for post analytics (impressions, clicks, saves, shares, comments)
+2. Correlates Buffer posts to pipeline items (by `buffer_post_id` or text matching)
+3. Aggregates performance by `content_type`, `layout`, `tool_used`, platform
+4. Generates actionable insights: `do_more`, `do_less`, `best_content_types`, `best_layouts`
+5. Saves weekly report to `marketing/social/analytics/YYYY-WNN.json`
+6. Appends top/bottom performers + insights to `tasks/lessons.md`
+7. Stores insights on `pipeline-state.json` → auto-loaded into next batch via `previous_insights`
+
+**Analytics JSON format:**
+```json
+{
+  "week": "2026-W15",
+  "summary": { "total_posts", "matched", "avg_score" },
+  "by_content_type": { "cheat-sheet": { "count", "avg_score", "avg_saves" } },
+  "by_layout": { "playwright-tips-list": { "count", "avg_score" } },
+  "by_tool_used": { "gemini-generate-image": { ... } },
+  "by_platform": { "pinterest": { ... } },
+  "items": [ { "pipeline_id", "stats", "score", "content_type", "layout" } ],
+  "insights": { "do_more": [], "do_less": [], "best_content_types": [], "best_layouts": [] }
+}
+```
+
+**Pipeline item fields for tracking:**
+- `content_type`: cheat-sheet, comparison, size-guide, tips-list, ratio-spotlight, before-after, product-showcase, workflow-hack
+- `layout`: gemini-infographic, playwright-tips-list, playwright-comparison, playwright-stats-card, etc.
+- `buffer_post_id`: stored automatically at scheduling time for reliable correlation
 
 ### File Structure
 
@@ -216,8 +298,8 @@ marketing/social/
 │   ├── pinterest/{date}-{slug}/     # Pin images + metadata.json
 │   ├── instagram/{date}-{slug}/     # Posts + metadata.json
 │   └── tiktok/{date}-{slug}/        # Videos + metadata.json
-├── performance/
-│   └── YYYY-WNN.json               # Weekly analytics reports
+├── analytics/
+│   └── YYYY-WNN.json               # Weekly analytics reports with insights
 ├── archive/                         # Previous weeks' state files
 ├── run-pipeline.py                  # CLI entry point
 ├── qa_validate.py                   # QA validation script
@@ -321,6 +403,37 @@ For each new page, run these Playwright checks:
 | Items stuck at `creation` | Run `--stage qa` to validate and advance |
 | Items stuck at `publishing` | Run `--stage scheduler` to schedule |
 | Performance pull empty | Posts need 48h+ to accumulate stats |
+| Tracker shows 0 matched | Old items lack `buffer_post_id` — falls back to text matching. Set content_type/layout on new items |
+| No insights generated | Need 3+ matched posts for reliable insights |
+
+---
+
+## Growth Engine Tools
+
+Three automated tools for data-driven growth optimization. Run regularly.
+
+| Tool | Command | Output | When to Run |
+|------|---------|--------|-------------|
+| **Weekly Brief** | `python marketing/intelligence/weekly-brief.py` | `marketing/intelligence/YYYY-MM-DD-brief.md` | Monday mornings — combined GSC + social + pipeline report |
+| **Link Builder** | `python marketing/seo-optimizer/link-builder.py` | `marketing/seo-optimizer/link-opportunities.json` | After deploying new SEO pages — finds internal link gaps |
+| **Title Optimizer** | `python marketing/seo-optimizer/title-optimizer.py` | `marketing/seo-optimizer/optimization-log.json` | After GSC pull — finds low-CTR pages + suggests better titles |
+| **Content Gap Detector** | `python marketing/seo-optimizer/content-gap-detector.py` | `marketing/seo-optimizer/content-gaps.json` | After GSC pull — finds keyword clusters with no matching page |
+| **Striking Distance** | `python marketing/seo-optimizer/striking-distance.py` | `marketing/seo-optimizer/striking-distance.json` | After GSC pull — finds pages ranking pos 5-15 with push actions |
+
+**Weekly routine:**
+1. Run `python marketing/gsc-analytics/pull_gsc.py` → fresh GSC data
+2. Run `python marketing/intelligence/weekly-brief.py` → weekly brief
+3. Run `python marketing/seo-optimizer/title-optimizer.py` → title suggestions
+4. Review brief + apply high-impact title changes
+5. Run `python marketing/seo-optimizer/link-builder.py` → link opportunities
+6. Add top internal links to pages during next content session
+7. Run `python marketing/seo-optimizer/content-gap-detector.py` → new page opportunities
+8. Run `python marketing/seo-optimizer/striking-distance.py` → optimize near-page-1 pages
+
+**Feedback loop (automated since 2026-04-09):**
+- Social pipeline now carries `previous_insights` → analyst/researcher/ideator agents use last week's performance to guide next batch
+- Content creator agent now sets `content_type` + `layout` on every item → insights engine can aggregate properly
+- PostHog tracks: `email_capture_view/submitted/success`, `cta_clicked` (with source/type), `scroll_depth` (25/50/75/100%)
 
 ---
 
@@ -329,9 +442,14 @@ For each new page, run these Playwright checks:
 | File | Purpose |
 |------|---------|
 | `.claude/agents/shared/pipeline_state.py` | PipelineState class — all state read/write |
-| `.claude/agents/shared/batch_init.py` | Batch initialization + archiving |
+| `.claude/agents/shared/batch_init.py` | Batch initialization + archiving + insights carryforward |
 | `.claude/skills/pipeline-orchestrator_SKILL.md` | `/pipeline-run-week` skill definition |
 | `marketing/queue/seo_qa_validate.py` | SEO page QA — meta, schema, component validation |
+| `marketing/intelligence/weekly-brief.py` | Weekly intelligence brief generator |
+| `marketing/seo-optimizer/title-optimizer.py` | GSC-driven title/description optimization |
+| `marketing/seo-optimizer/link-builder.py` | Internal link opportunity scanner |
+| `marketing/seo-optimizer/content-gap-detector.py` | Keyword cluster gap detector |
+| `marketing/seo-optimizer/striking-distance.py` | Position 5-15 optimization pusher |
 | `marketing/CONTENT_REFERENCE.md` | Product data for content creation |
 | `tasks/lessons.md` | Corrections + performance feedback |
 | `docs/CONTENT_PLAYBOOK.md` | Channel specs + content strategy |

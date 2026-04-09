@@ -115,11 +115,35 @@
 
 ---
 
+## Growth Engine (built 2026-04-09)
+
+New automated tools for data-driven optimization. See `docs/PIPELINE_OPERATIONS.md` → Growth Engine Tools section for full details.
+
+**Weekly routine (add to Monday checklist):**
+1. `python marketing/gsc-analytics/pull_gsc.py` → fresh GSC data
+2. `python marketing/intelligence/weekly-brief.py` → weekly intelligence brief
+3. `python marketing/seo-optimizer/title-optimizer.py` → review title suggestions
+4. Apply high-impact title changes from optimization-log.json
+5. `python marketing/seo-optimizer/link-builder.py` → add internal links
+6. `python marketing/seo-optimizer/content-gap-detector.py` → find new page opportunities
+7. `python marketing/seo-optimizer/striking-distance.py` → optimize pages near page 1
+
+**Fixes deployed 2026-04-09:**
+- [x] PostHog tracking: email capture events, CTA clicks (with source/type), scroll depth
+- [x] Social pipeline: `content_type` + `layout` now set by agents → insights engine works
+- [x] Feedback loop: `previous_insights` carried forward to next batch's analyst/researcher/ideator
+- [x] Title optimization: top 5 pages updated (etsy-20mb-file-limit, best-file-format, best-resolution, print-ratios, a4-print-size)
+
+**Customer outreach plan ready:** `docs/plans/2026-04-09-customer-outreach.md` — send personlig e-post til 4 betalende brukere via Stripe
+
+---
+
 ## Ongoing (autopilot)
 - [ ] SEO pages: 2 quality pages/day via pipeline
 - [ ] Social: Pinterest 4/day, IG 2-3/day, TikTok 1/day via pipeline
-- [ ] Monitor PostHog data accumulation
+- [ ] Monitor PostHog data accumulation (now tracking CTA clicks + email captures)
 - [ ] Respond to any email list signups within 24h
+- [ ] Run weekly intelligence brief every Monday
 
 ---
 

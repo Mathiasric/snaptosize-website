@@ -364,7 +364,9 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
               <p className="text-foreground-60 mb-6">
                 This is the #1 mistake new sellers make: using PNG when they
                 should use JPG. PNG files are 10-20x larger than JPG with zero
-                meaningful quality improvement for prints.
+                meaningful quality improvement for prints. See our{" "}
+                <Link href="/best-file-format-etsy-printables" className="text-accent-light hover:underline">complete file format comparison</Link>{" "}
+                for the full breakdown.
               </p>
 
               <Card accent className="mb-6">
@@ -381,7 +383,8 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
                     <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
                     <span>
                       <strong>Manageable file sizes</strong> — typical 8×10 JPG
-                      = 1-3 MB — PNG of the same file = 30-60 MB
+                      = 1-3 MB — PNG of the same file = 30-60 MB (learn how to{" "}
+                      <Link href="/etsy-20mb-file-limit" className="text-accent-light hover:underline">fix the Etsy 20MB file limit</Link>)
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
@@ -759,7 +762,8 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
                   <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
                     <span>
-                      <strong>Include ratio (optional):</strong> 2x3-ratio,
+                      <strong>Include ratio (optional):</strong>{" "}
+                      <Link href="/etsy-print-ratios" className="text-accent-light hover:underline">2x3-ratio</Link>,
                       4x5-ratio
                     </span>
                   </li>

@@ -11,14 +11,14 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "Etsy 20MB Limit: 3 Fixes That Work in 2026 (Free)",
+  title: "Etsy 20MB File Limit: Fix It in 2 Minutes (Free Tool Inside)",
   description:
-    "Hit Etsy's 20MB upload limit? These 3 proven fixes shrink your files instantly without losing print quality. Most sellers fix it in under 2 minutes.",
+    "Etsy rejects files over 20MB. Here are 3 fixes that work instantly — compress, resize, or split. No Photoshop needed. Used by 1,000+ sellers.",
   alternates: { canonical: "https://snaptosize.com/etsy-20mb-file-limit" },
   openGraph: {
-    title: "Etsy 20MB Limit: 3 Fixes That Work in 2026 (Free)",
+    title: "Etsy 20MB File Limit: Fix It in 2 Minutes (Free Tool Inside)",
     description:
-      "Your digital download is too large for Etsy. Learn why it happens and how to fix it with JPG compression and ratio packs.",
+      "Etsy rejects files over 20MB. Here are 3 fixes that work instantly — compress, resize, or split. No Photoshop needed.",
     url: "https://snaptosize.com/etsy-20mb-file-limit",
     images: [
       {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Etsy 20MB Limit: 3 Fixes That Work in 2026 (Free)",
+    title: "Etsy 20MB File Limit: Fix It in 2 Minutes (Free Tool Inside)",
     description:
       "Hit Etsy's 20MB upload limit? These 3 proven fixes shrink your files instantly without losing print quality.",
     images: ["/assets/og/etsy-20mb-file-limit.png"],

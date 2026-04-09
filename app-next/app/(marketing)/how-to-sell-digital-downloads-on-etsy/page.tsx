@@ -456,6 +456,9 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
                       <p className="text-sm text-foreground-60 mb-2">
                         For printable wall art, use high-quality JPG files.
                         JPGs balance print quality with manageable file sizes.
+                        Read our{" "}
+                        <Link href="/best-file-format-etsy-printables" className="text-accent-light hover:underline">PNG vs PDF vs JPG comparison</Link>{" "}
+                        for the full breakdown.
                       </p>
                       <ul className="space-y-1 text-sm text-foreground-60">
                         <li className="flex items-start gap-2">
@@ -477,7 +480,8 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
                           <AlertTriangle className="h-4 w-4 text-amber-500 flex-shrink-0 mt-0.5" />
                           <span>
                             <strong>Avoid PNG:</strong> PNG files are often
-                            10-20x larger than JPG for the same print quality
+                            10-20x larger than JPG for the same print quality — and easily hit the{" "}
+                            <Link href="/etsy-20mb-file-limit" className="text-accent-light hover:underline">Etsy 20MB file limit</Link>
                           </span>
                         </li>
                       </ul>
