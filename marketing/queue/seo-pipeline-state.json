@@ -1,54 +1,54 @@
 {
-  "_fresh": false,
-  "current_week": "W22",
-  "batch_id": "2026-W22",
-  "started_at": "2026-04-08T00:00:00+00:00",
+  "_fresh": true,
+  "current_week": "W23",
+  "batch_id": "2026-W23",
+  "started_at": "2026-04-09T00:00:00+00:00",
   "target": {
     "pages": 2
   },
   "stages": {
     "researcher": {
       "status": "completed",
-      "output": "Farmhouse + coastal briefs complete"
+      "output": "Size pages — no external brief needed (exact dimensions known)"
     },
     "writer": {
       "status": "completed",
-      "output": "Both pages written and compiled"
+      "output": "etsy-6x9-print-size + etsy-8x12-print-size written"
     },
     "review": {
       "status": "completed",
-      "output": "npx next build passes"
+      "output": "npx next build passes (exit 0)"
     },
     "deploy": {
-      "status": "completed",
-      "output": "Nav, registry, backlinks, MILESTONES updated"
+      "status": "in_progress",
+      "output": "Pending git commit + push"
     },
     "verify": {
-      "status": "in_progress",
-      "output": "Visual QA pending"
+      "status": "pending",
+      "output": ""
     }
   },
   "content_items": [
     {
-      "slug": "etsy-farmhouse-wall-art-sizes",
-      "keyword": "farmhouse wall art sizes etsy",
-      "type": "niche",
-      "status": "deployed",
-      "brief": "marketing/briefs/etsy-farmhouse-wall-art-sizes-brief.md"
+      "slug": "etsy-6x9-print-size",
+      "keyword": "6x9 print size etsy",
+      "type": "size-reference",
+      "status": "built",
+      "brief": "inline — 2:3 ratio, 1800x2700px"
     },
     {
-      "slug": "etsy-coastal-wall-art-sizes",
-      "keyword": "coastal wall art sizes etsy",
-      "type": "niche",
-      "status": "deployed",
-      "brief": "marketing/briefs/etsy-coastal-wall-art-sizes-brief.md"
+      "slug": "etsy-8x12-print-size",
+      "keyword": "8x12 print size etsy",
+      "type": "size-reference",
+      "status": "built",
+      "brief": "inline — 2:3 ratio, 2400x3600px"
     }
   ],
   "metrics": {
     "total": 2,
-    "completed": 2,
+    "completed": 0,
     "failed": 0,
     "success_rate": 0.0
   },
-  "updated_at": "2026-04-05T10:00:00+00:00"
+  "updated_at": "2026-04-09T11:00:00+00:00"
 }

@@ -1313,5 +1313,51 @@
       "etsy-landscape-print-sizes",
       "etsy-boho-wall-art-sizes"
     ]
+  },
+  {
+    "slug": "etsy-6x9-print-size",
+    "title": "6\u00d79 Print Size for Etsy \u2014 Pixels, DPI & 2:3 Ratio Guide",
+    "pageType": "size",
+    "keywords": [
+      "etsy 6x9 print size",
+      "6x9 print dimensions 300 dpi",
+      "6x9 aspect ratio",
+      "6x9 pixel dimensions",
+      "6x9 photo print"
+    ],
+    "cluster": "sizes",
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-4x6-print-size",
+      "etsy-8x12-print-size",
+      "etsy-12x18-print-size",
+      "etsy-20x30-print-size",
+      "etsy-20mb-file-limit",
+      "etsy-print-size-calculator"
+    ]
+  },
+  {
+    "slug": "etsy-8x12-print-size",
+    "title": "8\u00d712 Print Size for Etsy \u2014 Pixels, DPI & 2:3 Ratio Guide",
+    "pageType": "size",
+    "keywords": [
+      "etsy 8x12 print size",
+      "8x12 print dimensions 300 dpi",
+      "8x12 aspect ratio",
+      "8x12 pixel dimensions",
+      "8x12 photography print"
+    ],
+    "cluster": "sizes",
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-4x6-print-size",
+      "etsy-6x9-print-size",
+      "etsy-12x18-print-size",
+      "etsy-20x30-print-size",
+      "etsy-20mb-file-limit",
+      "etsy-print-size-calculator"
+    ]
   }
 ]
