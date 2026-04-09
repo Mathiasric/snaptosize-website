@@ -545,7 +545,7 @@ export default function Etsy4x6PrintSizePage() {
                       </td>
                     </tr>
                     <tr className="border-b border-white/10">
-                      <td className="py-3 px-4">6&times;9</td>
+                      <td className="py-3 px-4"><Link href="/etsy-6x9-print-size" className="text-accent-light hover:underline">6&times;9</Link></td>
                       <td className="py-3 px-4 text-foreground-60">
                         1800 &times; 2700
                       </td>
@@ -554,7 +554,7 @@ export default function Etsy4x6PrintSizePage() {
                       </td>
                     </tr>
                     <tr className="border-b border-white/10">
-                      <td className="py-3 px-4">8&times;12</td>
+                      <td className="py-3 px-4"><Link href="/etsy-8x12-print-size" className="text-accent-light hover:underline">8&times;12</Link></td>
                       <td className="py-3 px-4 text-foreground-60">
                         2400 &times; 3600
                       </td>
