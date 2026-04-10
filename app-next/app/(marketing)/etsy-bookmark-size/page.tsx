@@ -9,7 +9,6 @@ import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
-import { EmailCapture } from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
   title: "Etsy Bookmark Size: Exact Dimensions & Pixels (2026)",
@@ -208,7 +207,7 @@ export default function EtsyBookmarkSizePage() {
             <div className="flex flex-wrap items-center justify-center gap-2 mb-6">
               {[
                 "300 DPI Ready",
-                "PNG & PDF",
+                
                 "4-Up Layout Tips",
                 "Bleed Margins",
               ].map((pill) => (
@@ -694,9 +693,6 @@ export default function EtsyBookmarkSizePage() {
             ))}
           </ul>
         </section>
-
-        {/* EmailCapture CTA */}
-        <EmailCapture />
 
         {/* FinalCTA before FAQ */}
         <div className="max-w-2xl mx-auto">
