@@ -392,6 +392,41 @@ export default function EtsyA4PrintSizePage() {
                 pixels.
               </p>
 
+              <h3 className="text-lg font-semibold mb-3">DPI Comparison for A4</h3>
+              <div className="overflow-x-auto mb-8">
+                <table className="w-full border-collapse text-sm">
+                  <thead>
+                    <tr className="border-b border-white/20">
+                      <th className="text-left py-3 px-4 font-semibold">Resolution</th>
+                      <th className="text-left py-3 px-4 font-semibold">Pixel Dimensions</th>
+                      <th className="text-left py-3 px-4 font-semibold">Use Case</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-white/10">
+                      <td className="py-3 px-4 text-foreground-60">72 DPI</td>
+                      <td className="py-3 px-4">595 × 842 px</td>
+                      <td className="py-3 px-4 text-foreground-60">Screen / web display only</td>
+                    </tr>
+                    <tr className="border-b border-white/10">
+                      <td className="py-3 px-4 text-foreground-60">150 DPI</td>
+                      <td className="py-3 px-4">1240 × 1754 px</td>
+                      <td className="py-3 px-4 text-foreground-60">Low-quality draft prints</td>
+                    </tr>
+                    <tr className="border-b border-white/10 bg-white/[0.03]">
+                      <td className="py-3 px-4 font-semibold text-accent-light">300 DPI</td>
+                      <td className="py-3 px-4 font-semibold">2480 × 3508 px</td>
+                      <td className="py-3 px-4 text-foreground-60 font-medium">Standard print quality — Etsy minimum</td>
+                    </tr>
+                    <tr className="border-b border-white/10">
+                      <td className="py-3 px-4 text-foreground-60">600 DPI</td>
+                      <td className="py-3 px-4">4960 × 7016 px</td>
+                      <td className="py-3 px-4 text-foreground-60">High-end commercial printing</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
               <div className="overflow-x-auto mb-8">
                 <table className="w-full border-collapse text-sm">
                   <thead>
@@ -1008,89 +1043,6 @@ export default function EtsyA4PrintSizePage() {
               />
             </div>
 
-            {/* --- 300 DPI Pixel Dimensions --- */}
-            <section>
-              <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                A4 at 300 DPI: Exact Pixel Dimensions
-              </h2>
-              <p className="text-foreground-60 mb-6">
-                A4 at 300 DPI is <strong>2480 × 3508 pixels</strong>. This is the
-                standard resolution required for professional print quality — sharp
-                enough for home printers, print shops, and Etsy digital downloads
-                alike. The formula: 210 mm ÷ 25.4 × 300 = 2480 px wide;
-                297 mm ÷ 25.4 × 300 = 3508 px tall.
-              </p>
-
-              <h3 className="text-lg font-semibold mb-3">DPI Comparison for A4</h3>
-              <div className="overflow-x-auto mb-8">
-                <table className="w-full border-collapse text-sm">
-                  <thead>
-                    <tr className="border-b border-white/20">
-                      <th className="text-left py-3 px-4 font-semibold">Resolution</th>
-                      <th className="text-left py-3 px-4 font-semibold">Pixel Dimensions</th>
-                      <th className="text-left py-3 px-4 font-semibold">Use Case</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-white/10">
-                      <td className="py-3 px-4 text-foreground-60">72 DPI</td>
-                      <td className="py-3 px-4">595 × 842 px</td>
-                      <td className="py-3 px-4 text-foreground-60">Screen / web display only</td>
-                    </tr>
-                    <tr className="border-b border-white/10">
-                      <td className="py-3 px-4 text-foreground-60">150 DPI</td>
-                      <td className="py-3 px-4">1240 × 1754 px</td>
-                      <td className="py-3 px-4 text-foreground-60">Low-quality draft prints</td>
-                    </tr>
-                    <tr className="border-b border-white/10 bg-white/[0.03]">
-                      <td className="py-3 px-4 font-semibold text-accent-light">300 DPI</td>
-                      <td className="py-3 px-4 font-semibold">2480 × 3508 px</td>
-                      <td className="py-3 px-4 text-foreground-60 font-medium">Standard print quality — Etsy minimum</td>
-                    </tr>
-                    <tr className="border-b border-white/10">
-                      <td className="py-3 px-4 text-foreground-60">600 DPI</td>
-                      <td className="py-3 px-4">4960 × 7016 px</td>
-                      <td className="py-3 px-4 text-foreground-60">High-end commercial printing</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              <h3 className="text-lg font-semibold mb-3">Related ISO Sizes at 300 DPI</h3>
-              <div className="overflow-x-auto mb-2">
-                <table className="w-full border-collapse text-sm">
-                  <thead>
-                    <tr className="border-b border-white/20">
-                      <th className="text-left py-3 px-4 font-semibold">Size</th>
-                      <th className="text-left py-3 px-4 font-semibold">Dimensions (mm)</th>
-                      <th className="text-left py-3 px-4 font-semibold">Pixels at 300 DPI</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-white/10">
-                      <td className="py-3 px-4 font-medium">A3</td>
-                      <td className="py-3 px-4 text-foreground-60">297 × 420 mm</td>
-                      <td className="py-3 px-4">3508 × 4961 px</td>
-                    </tr>
-                    <tr className="border-b border-white/10 bg-white/[0.03]">
-                      <td className="py-3 px-4 font-medium text-accent-light">A4</td>
-                      <td className="py-3 px-4 text-foreground-60">210 × 297 mm</td>
-                      <td className="py-3 px-4 font-semibold">2480 × 3508 px</td>
-                    </tr>
-                    <tr className="border-b border-white/10">
-                      <td className="py-3 px-4 font-medium">A2</td>
-                      <td className="py-3 px-4 text-foreground-60">420 × 594 mm</td>
-                      <td className="py-3 px-4">4961 × 7016 px</td>
-                    </tr>
-                    <tr className="border-b border-white/10">
-                      <td className="py-3 px-4 font-medium">A1</td>
-                      <td className="py-3 px-4 text-foreground-60">594 × 841 mm</td>
-                      <td className="py-3 px-4">7016 × 9933 px</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </section>
 
             {/* --- FAQ --- */}
             <div>
