@@ -12,13 +12,13 @@ import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
-  title: "A4 for Etsy — Exact Pixels at 300 DPI + All ISO Sizes",
+  title: "A4 Print Size at 300 DPI: Exact Pixels for Etsy (2026)",
   description:
-    "A4 is 2480×3508 pixels at 300 DPI (210×297mm). Generate A4 plus A5, A3, A2, and all US sizes from one upload. Free tool for Etsy sellers.",
+    "A4 is 2480 × 3508 pixels at 300 DPI. Complete ISO size chart for Etsy sellers — A5, A3, A2 dimensions included. Free resize tool.",
   alternates: { canonical: "https://snaptosize.com/etsy-a4-print-size" },
   openGraph: {
     title:
-      "A4 for Etsy — Exact Pixels at 300 DPI + All ISO Sizes",
+      "A4 Print Size at 300 DPI: Exact Pixels for Etsy (2026)",
     description:
       "Complete A4 print guide for Etsy sellers. 2480×3508 pixels at 300 DPI, ISO A-series ratio, A4 vs US Letter, and international sizing.",
     url: "https://snaptosize.com/etsy-a4-print-size",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "A4 for Etsy — Exact Pixels at 300 DPI + All ISO Sizes",
+    title: "A4 Print Size at 300 DPI: Exact Pixels for Etsy (2026)",
     description:
       "Complete A4 print guide for Etsy sellers. 2480×3508 pixels at 300 DPI, ISO A-series ratio, and international file setup.",
     images: ["/assets/og/etsy-a4-print-size.png"],
@@ -124,6 +124,30 @@ export default function EtsyA4PrintSizePage() {
         acceptedAnswer: {
           "@type": "Answer",
           text: "Create a ZIP file with folders: one for US sizes (5×7, 8×10, 11×14, 16×20) and one for international sizes (A5, A4, A3). Name files clearly — e.g., artwork_A4_300dpi.jpg. SnapToSize generates both US and international sizes from a single upload.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How many pixels is A4 at 300 DPI?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A4 at 300 DPI is exactly 2480 × 3508 pixels (width × height). This is the standard resolution for professional print quality and the minimum recommended for Etsy digital downloads intended for home printing.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is A4 300 DPI enough for Etsy?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — 300 DPI is the standard minimum for print quality on Etsy. At 2480 × 3508 pixels, your A4 file will print sharply on any home printer or print-on-demand service. Going higher (600 DPI) only makes sense for large-format or commercial printing.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is A4 in pixels at 150 DPI?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A4 at 150 DPI is 1240 × 1754 pixels. This resolution is suitable for low-quality draft prints or screen display, but not recommended for Etsy listings — buyers expect files they can print at full quality. Always provide 300 DPI files.",
         },
       },
     ],
@@ -984,6 +1008,90 @@ export default function EtsyA4PrintSizePage() {
               />
             </div>
 
+            {/* --- 300 DPI Pixel Dimensions --- */}
+            <section>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                A4 at 300 DPI: Exact Pixel Dimensions
+              </h2>
+              <p className="text-foreground-60 mb-6">
+                A4 at 300 DPI is <strong>2480 × 3508 pixels</strong>. This is the
+                standard resolution required for professional print quality — sharp
+                enough for home printers, print shops, and Etsy digital downloads
+                alike. The formula: 210 mm ÷ 25.4 × 300 = 2480 px wide;
+                297 mm ÷ 25.4 × 300 = 3508 px tall.
+              </p>
+
+              <h3 className="text-lg font-semibold mb-3">DPI Comparison for A4</h3>
+              <div className="overflow-x-auto mb-8">
+                <table className="w-full border-collapse text-sm">
+                  <thead>
+                    <tr className="border-b border-white/20">
+                      <th className="text-left py-3 px-4 font-semibold">Resolution</th>
+                      <th className="text-left py-3 px-4 font-semibold">Pixel Dimensions</th>
+                      <th className="text-left py-3 px-4 font-semibold">Use Case</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-white/10">
+                      <td className="py-3 px-4 text-foreground-60">72 DPI</td>
+                      <td className="py-3 px-4">595 × 842 px</td>
+                      <td className="py-3 px-4 text-foreground-60">Screen / web display only</td>
+                    </tr>
+                    <tr className="border-b border-white/10">
+                      <td className="py-3 px-4 text-foreground-60">150 DPI</td>
+                      <td className="py-3 px-4">1240 × 1754 px</td>
+                      <td className="py-3 px-4 text-foreground-60">Low-quality draft prints</td>
+                    </tr>
+                    <tr className="border-b border-white/10 bg-white/[0.03]">
+                      <td className="py-3 px-4 font-semibold text-accent-light">300 DPI</td>
+                      <td className="py-3 px-4 font-semibold">2480 × 3508 px</td>
+                      <td className="py-3 px-4 text-foreground-60 font-medium">Standard print quality — Etsy minimum</td>
+                    </tr>
+                    <tr className="border-b border-white/10">
+                      <td className="py-3 px-4 text-foreground-60">600 DPI</td>
+                      <td className="py-3 px-4">4960 × 7016 px</td>
+                      <td className="py-3 px-4 text-foreground-60">High-end commercial printing</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3 className="text-lg font-semibold mb-3">Related ISO Sizes at 300 DPI</h3>
+              <div className="overflow-x-auto mb-2">
+                <table className="w-full border-collapse text-sm">
+                  <thead>
+                    <tr className="border-b border-white/20">
+                      <th className="text-left py-3 px-4 font-semibold">Size</th>
+                      <th className="text-left py-3 px-4 font-semibold">Dimensions (mm)</th>
+                      <th className="text-left py-3 px-4 font-semibold">Pixels at 300 DPI</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-white/10">
+                      <td className="py-3 px-4 font-medium">A3</td>
+                      <td className="py-3 px-4 text-foreground-60">297 × 420 mm</td>
+                      <td className="py-3 px-4">3508 × 4961 px</td>
+                    </tr>
+                    <tr className="border-b border-white/10 bg-white/[0.03]">
+                      <td className="py-3 px-4 font-medium text-accent-light">A4</td>
+                      <td className="py-3 px-4 text-foreground-60">210 × 297 mm</td>
+                      <td className="py-3 px-4 font-semibold">2480 × 3508 px</td>
+                    </tr>
+                    <tr className="border-b border-white/10">
+                      <td className="py-3 px-4 font-medium">A2</td>
+                      <td className="py-3 px-4 text-foreground-60">420 × 594 mm</td>
+                      <td className="py-3 px-4">4961 × 7016 px</td>
+                    </tr>
+                    <tr className="border-b border-white/10">
+                      <td className="py-3 px-4 font-medium">A1</td>
+                      <td className="py-3 px-4 text-foreground-60">594 × 841 mm</td>
+                      <td className="py-3 px-4">7016 × 9933 px</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
             {/* --- FAQ --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
@@ -1020,6 +1128,21 @@ export default function EtsyA4PrintSizePage() {
                       "How do I include both US and international sizes in one Etsy listing?",
                     answer:
                       "Create a ZIP file with folders: one for US sizes (5×7, 8×10, 11×14, 16×20) and one for international sizes (A5, A4, A3). Name files clearly — e.g., artwork_A4_300dpi.jpg. SnapToSize generates both US and international sizes from a single upload.",
+                  },
+                  {
+                    question: "How many pixels is A4 at 300 DPI?",
+                    answer:
+                      "A4 at 300 DPI is exactly 2480 × 3508 pixels (width × height). This is the standard resolution for professional print quality and the minimum recommended for Etsy digital downloads intended for home printing.",
+                  },
+                  {
+                    question: "Is A4 300 DPI enough for Etsy?",
+                    answer:
+                      "Yes — 300 DPI is the standard minimum for print quality on Etsy. At 2480 × 3508 pixels, your A4 file will print sharply on any home printer or print-on-demand service. Going higher (600 DPI) only makes sense for large-format or commercial printing.",
+                  },
+                  {
+                    question: "What is A4 in pixels at 150 DPI?",
+                    answer:
+                      "A4 at 150 DPI is 1240 × 1754 pixels. This resolution is suitable for low-quality draft prints or screen display, but not recommended for Etsy listings — buyers expect files they can print at full quality. Always provide 300 DPI files.",
                   },
                 ]}
               />

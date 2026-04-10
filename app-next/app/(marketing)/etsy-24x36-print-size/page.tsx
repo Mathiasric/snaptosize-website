@@ -125,6 +125,30 @@ export default function Etsy24x36PrintSizePage() {
           text: "The 2:3 pack includes 7 sizes: 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, and 20×30. Export 24×36 separately via single export. Buyers expect multiple sizes in digital downloads, and bundling increases perceived value at the same price point.",
         },
       },
+      {
+        "@type": "Question",
+        name: "What resolution do I need for a 24×36 print?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "7200 × 10800 pixels at 300 DPI is the professional standard for a 24×36 print. This applies to both home printers and professional print shops.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I print 24×36 at 150 DPI?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Technically yes, but you'll see a noticeable quality drop, especially at normal viewing distances. 150 DPI produces a 3600 × 5400 px file — acceptable for large-format banners viewed from far away, but not for detailed art prints.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What file size is a 24×36 at 300 DPI?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Uncompressed, a 24×36 at 300 DPI is around 220 MB. As an optimized JPEG (Etsy-ready), expect 15–25 MB — well within Etsy's 20 MB per-file limit.",
+        },
+      },
     ],
   };
 
@@ -859,6 +883,126 @@ export default function Etsy24x36PrintSizePage() {
               </div>
             </div>
 
+            {/* --- Resolution Guide --- */}
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6">
+                What Resolution Do You Need for a 24×36 Print?
+              </h2>
+
+              <p className="text-foreground-60 mb-6">
+                For professional print quality, a 24×36 print requires{" "}
+                <strong>7200 × 10800 pixels</strong> at 300 DPI. This is the
+                standard used by both home printers and professional print
+                shops.
+              </p>
+
+              {/* DPI comparison table */}
+              <div className="overflow-x-auto mb-8">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-white/10 text-left">
+                      <th className="py-3 px-4 text-foreground-60 font-medium">DPI</th>
+                      <th className="py-3 px-4 text-foreground-60 font-medium">Pixel Dimensions</th>
+                      <th className="py-3 px-4 text-foreground-60 font-medium">Use Case</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-white/10">
+                      <td className="py-3 px-4">72 DPI</td>
+                      <td className="py-3 px-4 text-foreground-60">1728 × 2592 px</td>
+                      <td className="py-3 px-4 text-foreground-60">Screen only</td>
+                    </tr>
+                    <tr className="border-b border-white/10">
+                      <td className="py-3 px-4">150 DPI</td>
+                      <td className="py-3 px-4 text-foreground-60">3600 × 5400 px</td>
+                      <td className="py-3 px-4 text-foreground-60">Acceptable at distance</td>
+                    </tr>
+                    <tr className="border-b border-white/10 bg-accent/5">
+                      <td className="py-3 px-4 font-semibold">
+                        300 DPI
+                        <span className="ml-1.5 px-1.5 py-0.5 rounded text-[10px] font-mono bg-teal-400/10 text-teal-300/80 border border-teal-400/20">
+                          Standard
+                        </span>
+                      </td>
+                      <td className="py-3 px-4 font-semibold">7200 × 10800 px</td>
+                      <td className="py-3 px-4 text-foreground-60">Professional standard</td>
+                    </tr>
+                    <tr className="border-b border-white/10">
+                      <td className="py-3 px-4">600 DPI</td>
+                      <td className="py-3 px-4 text-foreground-60">14400 × 21600 px</td>
+                      <td className="py-3 px-4 text-foreground-60">Overkill for most printers</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Related sizes at 300 DPI */}
+              <h3 className="text-lg font-semibold mb-4">Related 2:3 Sizes at 300 DPI</h3>
+              <div className="overflow-x-auto mb-8">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-white/10 text-left">
+                      <th className="py-3 px-4 text-foreground-60 font-medium">Print Size</th>
+                      <th className="py-3 px-4 text-foreground-60 font-medium">Pixels at 300 DPI</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-white/10">
+                      <td className="py-3 px-4">
+                        <Link href="/etsy-20x30-print-size" className="text-accent-light hover:underline">
+                          20×30
+                        </Link>
+                      </td>
+                      <td className="py-3 px-4 text-foreground-60">6000 × 9000 px</td>
+                    </tr>
+                    <tr className="border-b border-white/10">
+                      <td className="py-3 px-4">
+                        <Link href="/etsy-18x24-print-size" className="text-accent-light hover:underline">
+                          18×24
+                        </Link>
+                      </td>
+                      <td className="py-3 px-4 text-foreground-60">5400 × 7200 px</td>
+                    </tr>
+                    <tr className="bg-accent/5">
+                      <td className="py-3 px-4 font-semibold">
+                        24×36
+                        <span className="ml-1.5 px-1.5 py-0.5 rounded text-[10px] font-mono bg-teal-400/10 text-teal-300/80 border border-teal-400/20">
+                          This page
+                        </span>
+                      </td>
+                      <td className="py-3 px-4 font-semibold">7200 × 10800 px</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Upscaling warning */}
+              <Card className="p-6">
+                <div className="flex gap-4">
+                  <AlertTriangle className="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <h3 className="font-semibold mb-2">
+                      What if your file isn&apos;t large enough?
+                    </h3>
+                    <p className="text-foreground-60 text-sm">
+                      Upscaling a small file to 7200 × 10800 pixels loses quality
+                      &mdash; the software invents pixels that weren&apos;t there.
+                      SnapToSize optimizes your output automatically but requires a
+                      good source file to begin with. For guidance on source file
+                      requirements, see the{" "}
+                      <Link
+                        href="/how-to-resize-images-for-etsy"
+                        className="text-accent-light hover:underline"
+                      >
+                        how to resize images for Etsy
+                      </Link>{" "}
+                      guide.
+                    </p>
+                  </div>
+                </div>
+              </Card>
+            </div>
+
             {/* --- CTA 3 --- */}
             <div>
               <FinalCTA
@@ -904,6 +1048,21 @@ export default function Etsy24x36PrintSizePage() {
                       "Should I offer 24×36 alone or in a bundle?",
                     answer:
                       "The 2:3 pack includes 7 sizes: 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, and 20×30. Export 24×36 separately via single export. Buyers expect multiple sizes in digital downloads, and bundling increases perceived value at the same price point.",
+                  },
+                  {
+                    question: "What resolution do I need for a 24×36 print?",
+                    answer:
+                      "7200 × 10800 pixels at 300 DPI is the professional standard for a 24×36 print. This applies to both home printers and professional print shops.",
+                  },
+                  {
+                    question: "Can I print 24×36 at 150 DPI?",
+                    answer:
+                      "Technically yes, but you'll see a noticeable quality drop, especially at normal viewing distances. 150 DPI produces a 3600 × 5400 px file — acceptable for large-format banners viewed from far away, but not for detailed art prints.",
+                  },
+                  {
+                    question: "What file size is a 24×36 at 300 DPI?",
+                    answer:
+                      "Uncompressed, a 24×36 at 300 DPI is around 220 MB. As an optimized JPEG (Etsy-ready), expect 15–25 MB — well within Etsy's 20 MB per-file limit.",
                   },
                 ]}
               />
