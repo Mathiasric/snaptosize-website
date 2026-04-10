@@ -9,6 +9,7 @@ import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
+import { EmailCapture } from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
   title: "Etsy Sticker Sheet Size: Exact Pixels & DPI Guide (2026)",
@@ -809,6 +810,9 @@ export default function EtSyStickerSheetSizePage() {
                 ))}
               </div>
             </div>
+
+            {/* ===== EmailCapture ===== */}
+            <EmailCapture />
 
             {/* ===== CTA 3 — FinalCTA ===== */}
             <div>

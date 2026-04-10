@@ -466,6 +466,15 @@ export default function EtsyBookmarkSizePage() {
           </div>
         </section>
 
+        {/* CTA after DPI table */}
+        <div className="max-w-2xl">
+          <a href={`${APP_URL}?source=seo_etsy-bookmark-size&kind=guide`} target="_blank" rel="noopener noreferrer">
+            <Button className="text-base px-7 py-3">
+              Resize to Exact Bookmark Pixels — Free
+            </Button>
+          </a>
+        </div>
+
         {/* Layout tips — 4-up */}
         <section className="max-w-3xl">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
@@ -624,6 +633,15 @@ export default function EtsyBookmarkSizePage() {
             into the bleed area.
           </p>
         </section>
+
+        {/* CTA after bleed section */}
+        <div className="max-w-2xl">
+          <a href={`${APP_URL}?source=seo_etsy-bookmark-size&kind=guide`} target="_blank" rel="noopener noreferrer">
+            <Button className="text-base px-7 py-3">
+              Get Print-Ready Bookmark Files — Free
+            </Button>
+          </a>
+        </div>
 
         {/* Internal links section */}
         <section className="max-w-3xl">
