@@ -227,8 +227,8 @@ def fetch_pinterest_top_pins(start_date: str, end_date: str) -> dict:
                             "saves": m.get("SAVE", 0) or 0,
                             "outbound_clicks": m.get("OUTBOUND_CLICK", 0) or 0,
                         }
-        except Exception:
-            pass
+        except Exception as e:
+            print(f"    top_pins error ({sort_by}): {e}")
 
     return all_pins
 
@@ -259,9 +259,9 @@ def enrich_with_pinterest_analytics(items: list, start_date: str, end_date: str)
     # Try pin-level analytics first
     analytics = fetch_pinterest_pin_analytics(list(pin_map.keys()), start_date, end_date)
 
-    # Check if pin-level returned mostly zeros (trial limitation)
+    # Check if pin-level returned mostly zeros or failed (trial limitation = 401)
     total_impressions = sum(a.get("impressions", 0) for a in analytics.values())
-    if total_impressions == 0 and len(analytics) > 5:
+    if total_impressions == 0 and (len(analytics) > 5 or len(analytics) == 0):
         print("    Pin-level returned all zeros, trying top_pins fallback...")
         top_analytics = fetch_pinterest_top_pins(start_date, end_date)
         # Merge top_pins data for pins we care about
@@ -541,9 +541,9 @@ def pull_and_correlate(week: str | None = None, dry_run: bool = False) -> dict:
     # API health check
     health = check_api_health()
     status_parts = [
-        f"Buffer={'✓' if health['buffer'] else '✗'}",
-        f"Pinterest={'✓' if health['pinterest'] else '✗'}",
-        f"Instagram={'✓' if health['instagram_graph'] else '✗'}",
+        f"Buffer={'OK' if health['buffer'] else 'FAIL'}",
+        f"Pinterest={'OK' if health['pinterest'] else 'FAIL'}",
+        f"Instagram={'OK' if health['instagram_graph'] else 'FAIL'}",
     ]
     print(f"API Health: {('  '.join(status_parts))}")
     if not health["pinterest"] and not health["instagram_graph"]:
