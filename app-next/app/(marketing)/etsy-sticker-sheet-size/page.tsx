@@ -64,7 +64,7 @@ const faqItems = [
   {
     question: "Should sticker sheets be PNG or JPEG?",
     answer:
-      "Use PNG with a transparent background for die-cut sticker files and digital planner stickers. Use JPEG or PDF for print-ready sheets where a white background is acceptable. Avoid TIFF for Etsy uploads — most buyers cannot open them without design software.",
+      "For print-ready sticker sheets, JPEG at 300 DPI is the standard — it prints cleanly and stays well under Etsy's 20 MB file limit. If you need transparent backgrounds for die-cut stickers, create those in your design software (Canva, Procreate, Illustrator) before exporting. SnapToSize outputs print-ready JPEGs sized and packaged for Etsy.",
   },
   {
     question: "Can I sell digital stickers and print-ready sheets in the same Etsy listing?",
@@ -223,7 +223,7 @@ export default function EtSyStickerSheetSizePage() {
             <div className="flex flex-wrap items-center justify-center gap-3 mb-10">
               {[
                 "300 DPI for print",
-                "Cricut & Silhouette ready",
+                "JPG print-ready files",
                 "20 MB Etsy limit",
                 
               ].map((pill) => (

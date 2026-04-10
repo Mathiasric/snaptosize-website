@@ -262,8 +262,8 @@ export default function EtsyBookmarkSizePage() {
         <QuickAnswer question="What size should Etsy bookmarks be?">
           The standard Etsy bookmark size is <strong>2×6 inches</strong> (600×1800 px at
           300 DPI). For longer bookmarks, use 2×7&quot; (600×2100 px) or 2×8.5&quot; (600×2550 px).
-          Save as PNG with transparent background for die-cut designs, or PDF for
-          ready-to-print sheet layouts.
+          Save as JPG at 300 DPI for print-ready files. If you need die-cut shapes with
+          transparent backgrounds, create those in your design software before exporting.
         </QuickAnswer>
 
         {/* Intro */}
@@ -535,23 +535,23 @@ export default function EtsyBookmarkSizePage() {
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
             <Card className="p-5 border-l-2 border-l-[#2DD4BF]">
-              <h3 className="font-semibold mb-3 text-teal-300">PNG (Recommended for individual files)</h3>
+              <h3 className="font-semibold mb-3 text-teal-300">JPG (Print-ready standard)</h3>
               <ul className="space-y-2 text-sm text-foreground-60">
                 <li className="flex items-start gap-2">
                   <Check className="h-3.5 w-3.5 text-teal-400 flex-shrink-0 mt-0.5" />
-                  Transparent background for die-cut shapes
+                  300 DPI print-ready quality
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-3.5 w-3.5 text-teal-400 flex-shrink-0 mt-0.5" />
-                  Lossless quality — no compression artefacts
+                  White background — standard for home and print shop printing
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-3.5 w-3.5 text-teal-400 flex-shrink-0 mt-0.5" />
-                  Works with most home printers and print shops
+                  Compact file size — stays under Etsy's 20 MB limit
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-3.5 w-3.5 text-teal-400 flex-shrink-0 mt-0.5" />
-                  Save at 300 DPI, sRGB colour space
+                  sRGB colour space, compatible with all printers
                 </li>
               </ul>
             </Card>
