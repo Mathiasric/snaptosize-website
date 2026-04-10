@@ -10,12 +10,12 @@ import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "Etsy Print Ratios Explained: 2:3, 3:4, 4:5 & ISO Cheat Sheet (2026)",
+  title: "Etsy Print Aspect Ratios Explained: 2:3, 3:4, 4:5",
   description:
     "Offering the wrong ratio? Buyers won't buy. Get the 4 Etsy print ratios with exact pixel dimensions at 300 DPI — free cheat sheet included.",
   alternates: { canonical: "https://snaptosize.com/etsy-print-ratios" },
   openGraph: {
-    title: "Etsy Print Ratios Explained: 2:3, 3:4, 4:5 & ISO Cheat Sheet (2026)",
+    title: "Etsy Print Aspect Ratios Explained: 2:3, 3:4, 4:5",
     description:
       "Offering the wrong ratio? Buyers won't buy. Get the 4 Etsy print ratios with exact pixel dimensions at 300 DPI.",
     url: "https://snaptosize.com/etsy-print-ratios",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Etsy Print Ratios Explained: 2:3, 3:4, 4:5 & ISO Cheat Sheet (2026)",
+    title: "Etsy Print Aspect Ratios Explained: 2:3, 3:4, 4:5",
     description:
       "Most sellers offer the wrong ratios. Learn the 4 exact print ratios Etsy buyers expect.",
     images: ["/assets/og/etsy-print-ratios.png"],

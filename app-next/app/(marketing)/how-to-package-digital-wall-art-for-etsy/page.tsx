@@ -10,7 +10,7 @@ import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "Package Digital Wall Art for Etsy (2026 Checklist)",
+  title: "How to Package Digital Wall Art for Etsy",
   description:
     "Avoid the 5 packaging mistakes that cause refund requests. Step-by-step ZIP structure, naming, and file format checklist for Etsy wall art.",
   alternates: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
       "https://snaptosize.com/how-to-package-digital-wall-art-for-etsy",
   },
   openGraph: {
-    title: "Package Digital Wall Art for Etsy (2026 Checklist)",
+    title: "How to Package Digital Wall Art for Etsy",
     description:
       "Avoid the 5 packaging mistakes that cause refund requests. ZIP structure, naming, and file format checklist.",
     url: "https://snaptosize.com/how-to-package-digital-wall-art-for-etsy",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Package Digital Wall Art for Etsy (2026 Checklist)",
+    title: "How to Package Digital Wall Art for Etsy",
     description:
       "Avoid the 5 packaging mistakes that cause refund requests. Complete ZIP structure and naming checklist.",
     images: ["/assets/og/how-to-package-digital-wall-art-for-etsy.png"],
