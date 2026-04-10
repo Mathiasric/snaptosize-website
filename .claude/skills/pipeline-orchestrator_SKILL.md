@@ -18,8 +18,15 @@ You are activating the **Pipeline Orchestrator** — the single entry point for 
 Read these files:
 1. `marketing/CONTENT_REFERENCE.md` — Product data, sizes, CTAs, style rules
 2. `tasks/lessons.md` — Previous corrections and patterns
-3. `marketing/social/queue/pipeline-state.json` — Current state
-4. Last week's performance: `marketing/social/performance/` (if exists)
+3. `marketing/social/queue/pipeline-state.json` — Current state + `previous_insights` section
+4. Latest analytics: `marketing/social/analytics/` — read the most recent `YYYY-WXX.json` file
+
+If `previous_insights` or analytics exist, use them to guide content creation:
+- Prioritize content_types listed in `best_content_types`
+- Use layouts listed in `best_layouts` more often
+- Follow `do_more` recommendations (proven formats/angles)
+- Avoid patterns listed in `do_less`
+- Reference `notes` for specific observations (e.g. most-saved post format)
 
 ## /pipeline-run-week — Full Inline Flow
 
@@ -39,6 +46,17 @@ Generate 10 content topics using Gemini flash for bulk ideation:
 - Use `gemini-query` with a prompt that includes: product features, ICP pain points, trending angles, and lessons learned
 - Output: 10 topics with platform assignment, hook, caption draft, hashtags
 
+**Obligatorisk innholdssjekk (LESSON-087) — før hvert topic godkjennes:**
+Still spørsmålet: "Gjør dette noen som helst til å ville prøve SnapToSize?"
+Hvert topic MÅ ha én av disse vinklene:
+- **Pain→Solution** — "Resizer du manuelt én og én?"
+- **Kontrast** — "3 størrelser vs. 30 — hva Etsy faktisk krever"
+- **Benefit-first** — "1 upload = 70 filer klare for print-on-demand"
+- **Data-hook** — "De mest søkte Etsy-størrelsene i 2024"
+
+❌ **Avvis topic hvis:** Generisk romfoto uten SnapToSize-referanse, size-guide uten hook, lifestyle-mockup uten app på skjerm eller CTA-tekst i bildet.
+✅ **Sterke content-types:** `workflow-hack`, `before-after`, `product-showcase` — ikke bare `size-guide`.
+
 **Targets per week:**
 - Pinterest: 21 pins (image, 2:3 ratio)
 - Instagram: 7 posts (video reels preferred, 4:5 for static)
@@ -50,8 +68,10 @@ For each topic, pick the best tool and create:
 
 | Content Type | Primary Tool | Fallback |
 |---|---|---|
-| Pinterest pin (educational/data) | `gemini-generate-image` (2:3) | NotebookLM infographic |
+| Pinterest pin (educational/data) | `gemini-generate-image` (2:3) | Playwright template |
+| Pinterest pin (comparison/table) | Playwright `gen-social.js` (size-table, comparison, tips-list, stats-card, cheat-sheet) | gemini-generate-image |
 | Pinterest pin (visual/branded) | `gemini-generate-image` (2:3) | — |
+| Instagram static (data/tips) | Playwright `gen-social.js` (4:5) | gemini-generate-image |
 | Instagram static | `gemini-generate-image` (4:5) | — |
 | Video (tips/list) | Remotion `TikTokVertical` or `QuickList` | — |
 | Video (punchy hook) | Remotion `TextSlam` | — |
@@ -65,6 +85,27 @@ For each topic, pick the best tool and create:
 - Visual/branded/product → Gemini image gen
 - Text-on-motion listicle → Remotion (rotate templates — see below)
 - Talking head/explainer → NotebookLM studio
+
+### Gemini Prompt-maler (LESSON-087)
+
+Bruk én av disse malene for alle Gemini-genererte bilder. Velg mal basert på innholdsvinkel.
+
+**Mal A — Before/After kontrast:**
+```
+Create a lifestyle photo showing two sides: LEFT: someone frustrated at a laptop, multiple browser tabs open, manually cropping the same image repeatedly. RIGHT: same person relaxed, SnapToSize app visible on screen showing "70 files ready to download". Clean home office. Warm natural lighting. Text overlay space at bottom: "The old way vs. SnapToSize"
+```
+
+**Mal B — Aspirational lifestyle med app synlig på skjerm:**
+```
+Create a cozy home office photo: Etsy seller at desk, laptop screen clearly showing SnapToSize app interface with a completed pack of print sizes ready to download. Wall behind has framed prints in various sizes (8x10, 5x7, 11x14). Natural light from window. Mood: productive and calm. Leave space at bottom for caption text.
+```
+
+**Mal C — Data-drevet hook:**
+```
+Create a clean infographic-style image: bold headline "The 5 most-searched Etsy print sizes" with size labels (8x10, 5x7, 4x6, 11x14, A4) displayed as framed artwork on a white gallery wall. Small SnapToSize logo in bottom corner. Professional, editorial feel. No clutter.
+```
+
+❌ Ikke generer Gemini-bilder uten én av disse malene som utgangspunkt.
 
 **Remotion template rotation (MANDATORY):**
 - 6 templates available: TikTokVertical, TextSlam, BeforeAfter, CountdownReveal, StatHighlight, QuickList
@@ -83,7 +124,22 @@ For each item created:
 1. Save content file to `marketing/social/content/{platform}/{date}-{slug}/`
 2. Save `metadata.json` with: title, description/caption, link, tags, hashtags, board (pinterest)
 3. Add to pipeline state: `state.add_content_item(id, platform, format)`
-4. Advance to `creation` stage
+4. Set content metadata on the item:
+   ```python
+   state.update_item(item_id,
+       tool_used="gemini-generate-image",  # or "playwright-social-slide", "remotion-slideshow"
+       content_type="cheat-sheet",          # see taxonomy below
+       layout="gemini-infographic",         # see taxonomy below
+   )
+   ```
+5. Advance to `creation` stage
+
+**Content type taxonomy:** `cheat-sheet`, `comparison`, `size-guide`, `tips-list`, `ratio-spotlight`, `before-after`, `product-showcase`, `workflow-hack`, `behind-scenes`
+
+**Layout taxonomy:**
+- Gemini: `gemini-infographic`, `gemini-lifestyle`
+- Playwright: `playwright-size-table`, `playwright-comparison`, `playwright-tips-list`, `playwright-stats-card`, `playwright-cheat-sheet`
+- Remotion: `remotion-tiktok-vertical`, `remotion-text-slam`, `remotion-before-after`, `remotion-countdown-reveal`, `remotion-stat-highlight`, `remotion-quick-list`
 
 For Remotion videos, render batch:
 ```bash
@@ -143,6 +199,29 @@ Show final summary:
 ```bash
 python marketing/social/run-pipeline.py --status
 ```
+
+### Step 8: Track Performance (48h+ after publishing)
+
+Run the tracker stage to pull performance analytics from Buffer:
+```bash
+python marketing/social/run-pipeline.py --stage tracker
+```
+Or dry-run first:
+```bash
+python marketing/social/run-pipeline.py --stage tracker --dry-run
+```
+
+This:
+- Pulls impressions, clicks, saves, shares from Buffer API
+- Correlates Buffer posts to pipeline items (by buffer_post_id or text matching)
+- Aggregates performance by content_type, layout, tool_used, platform
+- Generates `do_more` / `do_less` insights
+- Saves weekly report to `marketing/social/analytics/YYYY-WXX.json`
+- Appends top/bottom performers to `tasks/lessons.md`
+- Stores insights on pipeline-state.json for next batch
+
+**Run this 48+ hours after publishing** so platforms have time to report stats.
+Insights are automatically loaded into the next batch via `previous_insights`.
 
 ## /pipeline-status
 

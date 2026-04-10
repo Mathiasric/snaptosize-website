@@ -11,6 +11,21 @@ from dotenv import load_dotenv
 load_dotenv('.env.buffer')
 
 PROJECT_ROOT = Path(__file__).parent.parent.parent
+
+
+def add_utm(url: str, platform: str, slug: str) -> str:
+    """Append UTM parameters to a URL unless utm_source is already present.
+
+    Strips date prefix (YYYY-MM-DD-) from slug before use.
+    Handles URLs with and without existing query parameters.
+    """
+    if not url or "utm_source" in url:
+        return url
+    # Strip date prefix e.g. "2026-04-10-workflow-hack" → "workflow-hack"
+    import re
+    clean_slug = re.sub(r"^\d{4}-\d{2}-\d{2}-", "", slug)
+    separator = "&" if "?" in url else "?"
+    return f"{url}{separator}utm_source={platform}&utm_medium=social&utm_campaign=organic&utm_content={clean_slug}"
 sys.path.insert(0, str(PROJECT_ROOT / ".claude" / "agents"))
 
 TOKEN = os.environ.get('BUFFER_API_TOKEN', '')
@@ -82,7 +97,7 @@ def resolve_board(item: dict, meta: dict) -> str:
     return BOARDS["default"]
 
 
-def schedule_item(item: dict, meta: dict, asset_url: str, schedule_time: str, dry_run: bool = False) -> dict:
+def schedule_item(item: dict, meta: dict, asset_url: str, schedule_time: str, dry_run: bool = False, slug: str = "") -> dict:
     """Schedule a single item via Buffer. Returns {success: bool, response: str}."""
     platform = item["platform"]
     channel_id = CHANNEL_IDS.get(platform, "")
@@ -107,7 +122,7 @@ def schedule_item(item: dict, meta: dict, asset_url: str, schedule_time: str, dr
         inp["metadata"] = {
             "pinterest": {
                 "title": meta.get("title", ""),
-                "url": meta.get("link", "https://snaptosize.com/"),
+                "url": add_utm(meta.get("link", "https://snaptosize.com/"), "pinterest", slug),
                 "boardServiceId": resolve_board(item, meta),
             }
         }
@@ -132,7 +147,7 @@ def schedule_item(item: dict, meta: dict, asset_url: str, schedule_time: str, dr
     result = data.get("data", {}).get("createPost", {})
 
     if "post" in result:
-        return {"success": True, "response": f"Scheduled: post {result['post']['id']}"}
+        return {"success": True, "response": f"Scheduled: post {result['post']['id']}", "buffer_post_id": result['post']['id']}
     else:
         msg = result.get("message", resp.text[:200])
         return {"success": False, "response": msg}
@@ -264,13 +279,14 @@ def schedule_from_pipeline(dry_run: bool = False) -> dict:
 
         # Schedule with staggered times
         sched_time = (base_time + timedelta(hours=i * 2)).strftime("%Y-%m-%dT%H:%M:%S.000Z")
-        result = schedule_item(item, meta, asset_url, sched_time, dry_run=dry_run)
+        result = schedule_item(item, meta, asset_url, sched_time, dry_run=dry_run, slug=item_dir.name)
 
         if result["success"]:
             scheduled += 1
             print(f"  OK   {item['id']} ({item['platform']}): {result['response']}")
             if not dry_run:
-                state.advance_item(item["id"], "published")
+                buffer_post_id = result.get("buffer_post_id")
+                state.update_item(item["id"], stage="published", buffer_post_id=buffer_post_id)
         else:
             failed += 1
             errors[item["id"]] = result["response"]
@@ -321,7 +337,7 @@ def run_manual_batch():
                 'assets': {'images': [{'url': pin_url}]},
                 'metadata': {'pinterest': {
                     'title': slug.replace('-', ' ').title(),
-                    'url': pin_meta.get('link', 'https://snaptosize.com/'),
+                    'url': add_utm(pin_meta.get('link', 'https://snaptosize.com/'), 'pinterest', slug),
                     'boardServiceId': board_map.get(slug, BOARDS['default'])
                 }}
             }}
