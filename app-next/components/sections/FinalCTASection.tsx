@@ -1,5 +1,8 @@
+"use client";
+
 import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
+import posthog from "posthog-js";
 
 export function FinalCTASection() {
   return (
@@ -10,12 +13,19 @@ export function FinalCTASection() {
             Stop resizing manually.
           </h2>
           <p className="text-lg text-foreground-60 mb-8">
-            Start with the free plan. Upgrade when you&apos;re ready.
+            Upload your artwork and get all sizes in 60 seconds. No account needed.
           </p>
           <a
             href="https://app.snaptosize.com"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => {
+              posthog.capture("cta_clicked", {
+                source: typeof window !== "undefined" ? window.location.pathname : "",
+                cta_type: "hero_final",
+                destination: "https://app.snaptosize.com",
+              });
+            }}
           >
             <Button className="text-base px-8 py-4">Create Your First Print Pack — Free →</Button>
           </a>
