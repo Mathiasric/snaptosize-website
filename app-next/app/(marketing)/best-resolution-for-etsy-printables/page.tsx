@@ -10,14 +10,14 @@ import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "Etsy Printable Resolution: Exact DPI + Pixel Chart",
+  title: "Best Resolution for Etsy Printables: 300 DPI Pixel Chart (2026)",
   description:
-    "Wrong DPI = blurry prints and refund requests. Get the exact pixel dimensions for every Etsy print size at 300 DPI. Free chart included.",
+    "What resolution for Etsy printables? 300 DPI is the standard — exact pixel dimensions for every print size. Resize free with SnapToSize.",
   alternates: {
     canonical: "https://snaptosize.com/best-resolution-for-etsy-printables",
   },
   openGraph: {
-    title: "Etsy Printable Resolution: Exact DPI + Pixel Chart",
+    title: "Best Resolution for Etsy Printables: 300 DPI Pixel Chart (2026)",
     description:
       "Complete DPI guide for Etsy sellers. Exact pixel dimensions at 300 DPI for every print size, verification steps, and automated multi-size generation.",
     url: "https://snaptosize.com/best-resolution-for-etsy-printables",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Etsy Printable Resolution: Exact DPI + Pixel Chart",
+    title: "Best Resolution for Etsy Printables: 300 DPI Pixel Chart (2026)",
     description:
       "Wrong DPI = blurry prints. Get the exact pixel dimensions for every Etsy print size at 300 DPI.",
     images: ["/assets/og/best-resolution-for-etsy-printables.png"],

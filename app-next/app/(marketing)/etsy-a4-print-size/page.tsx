@@ -14,7 +14,7 @@ import { QuickAnswer } from "@/components/QuickAnswer";
 export const metadata: Metadata = {
   title: "A4 Print Size at 300 DPI: Exact Pixels for Etsy (2026)",
   description:
-    "A4 is 2480 × 3508 pixels at 300 DPI. Complete ISO size chart for Etsy sellers — A5, A3, A2 dimensions included. Free resize tool.",
+    "A4 is 2480 × 3508 pixels at 300 DPI. Complete ISO size chart for Etsy — A5, A3, A2 included. Resize to exact pixels instantly with SnapToSize.",
   alternates: { canonical: "https://snaptosize.com/etsy-a4-print-size" },
   openGraph: {
     title:

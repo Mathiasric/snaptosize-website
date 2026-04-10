@@ -13,7 +13,7 @@ import RelatedPages from "@/components/RelatedPages";
 export const metadata: Metadata = {
   title: "Etsy Print Sizes Explained: Size & Ratio Chart",
   description:
-    "Every Etsy print size with exact pixel dimensions at 300 DPI. Copy-paste the sizes top sellers use to maximize sales per listing.",
+    "Every Etsy print size with exact pixel dimensions at 300 DPI. Copy-paste sizes top sellers use — auto-resize to all of them free with SnapToSize.",
   alternates: { canonical: "https://snaptosize.com/etsy-print-sizes" },
   openGraph: {
     title: "Etsy Print Sizes Explained: Size & Ratio Chart",

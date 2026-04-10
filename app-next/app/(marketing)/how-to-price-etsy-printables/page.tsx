@@ -12,7 +12,7 @@ import { QuickAnswer } from "@/components/QuickAnswer";
 export const metadata: Metadata = {
   title: "How to Price Etsy Printables: Cost Formula Guide",
   description:
-    "Most sellers underprice by 40%. See the exact fee breakdown, pricing formulas, and bundle strategies that top Etsy printable shops use.",
+    "Most sellers underprice by 40%. Exact fee breakdown, pricing formulas, and bundle strategies — plus how to deliver all sizes instantly with SnapToSize.",
   alternates: {
     canonical: "https://snaptosize.com/how-to-price-etsy-printables",
   },

@@ -12,7 +12,7 @@ import RelatedPages from "@/components/RelatedPages";
 export const metadata: Metadata = {
   title: "How to Package Digital Wall Art for Etsy",
   description:
-    "Avoid the 5 packaging mistakes that cause refund requests. Step-by-step ZIP structure, naming, and file format checklist for Etsy wall art.",
+    "Avoid the 5 packaging mistakes that cause refund requests. ZIP structure, naming, and file format checklist — resize all sizes at once with SnapToSize.",
   alternates: {
     canonical:
       "https://snaptosize.com/how-to-package-digital-wall-art-for-etsy",
