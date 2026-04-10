@@ -138,6 +138,12 @@ export function Header() {
                     <Link href="/etsy-square-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Square Print Sizes
                     </Link>
+                    <Link href="/etsy-sticker-sheet-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Sticker Sheet Size
+                    </Link>
+                    <Link href="/etsy-bookmark-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Bookmark Size
+                    </Link>
                   </div>
                   <div className="space-y-0.5">
                     <Link href="/etsy-quote-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
@@ -378,6 +384,12 @@ export function Header() {
                         </Link>
                         <Link href="/how-many-sizes-etsy-printable" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           How Many Sizes to Include
+                        </Link>
+                        <Link href="/etsy-sticker-sheet-size" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Sticker Sheet Size
+                        </Link>
+                        <Link href="/etsy-bookmark-size" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Bookmark Size
                         </Link>
                         <Link href="/etsy-8x10-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           8&times;10 Print Size

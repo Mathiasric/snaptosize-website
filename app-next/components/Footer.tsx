@@ -76,6 +76,16 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-sticker-sheet-size" className="transition-colors hover:text-accent-light">
+                  Sticker Sheet Size
+                </Link>
+              </li>
+              <li>
+                <Link href="/etsy-bookmark-size" className="transition-colors hover:text-accent-light">
+                  Bookmark Size
+                </Link>
+              </li>
+              <li>
                 <Link href="/sizes" className="transition-colors hover:text-accent-light font-medium">
                   All size guides →
                 </Link>
