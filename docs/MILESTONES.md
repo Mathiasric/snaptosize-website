@@ -1,5 +1,5 @@
 # MILESTONES.md — Revenue Targets & Progress
-**Last updated:** 2026-04-07
+**Last updated:** 2026-04-10
 
 ---
 
@@ -7,7 +7,7 @@
 - **Paying users:** 4 (3 monthly, 1 yearly)
 - **MRR:** $44 (3× $11.99 monthly + $97/year amortized)
 - **Total revenue collected:** $120.98 (1× $97 yearly + 3× $11.99 monthly = $132.96 gross)
-- **SEO pages live:** 54 (57 total incl. non-SEO)
+- **SEO pages live:** 58 (61 total incl. non-SEO)
 - **First paying customer:** 2026-03-03
 - **Target:** $1M ARR (~7,500 paying users)
 
@@ -50,6 +50,13 @@ $1M ARR requires:
 
 ### Marketing Infrastructure
 - ✅ Marketing site (snaptosize.com, Cloudflare Pages)
+- ✅ 58 SEO pages live (2 new pages deployed 2026-04-10)
+- ✅ 3-email nurture sequence live for free app signups (Worker /app-signup + Resend, day 0/2/5)
+- ✅ Onboarding hint added to app (3-step guide, auto-dismisses after first export)
+- ✅ Marketing CTAs: "No account needed" across all 69 SEO pages
+- ✅ 4 SEO page titles improved based on SERP analysis
+- ✅ 56 SEO pages live (2 new pages deployed 2026-04-10: etsy-sticker-sheet-size + etsy-bookmark-size)
+- ✅ 54 SEO pages live (2 new pages deployed 2026-04-10: etsy-6x9-print-size + etsy-8x12-print-size)
 - ✅ 29 SEO pages live (2 new pages deployed 2026-03-25: A3 international + gallery wall print sizes)
 - ✅ PostHog pageview tracking
 - ✅ Lead capture backend (Worker /subscribe)
