@@ -422,6 +422,20 @@ export default function EtsyMidCenturyModernArtSizesPage() {
         </Container>
       </section>
 
+      {/* ===== LIFESTYLE IMAGE ===== */}
+      <div className="px-4 md:px-8 max-w-5xl mx-auto pb-4">
+        <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+          <img
+            src="/assets/visuals/etsy-mid-century-modern-art-sizes-mockup.jpg"
+            alt="Stylish mid-century modern living room with a large 18x24 geometric abstract print in ochre and teal flanked by two smaller atomic-age prints in slim walnut frames above a teak credenza"
+            width={1200}
+            height={800}
+            className="w-full h-auto"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
       {/* ===== BEST-SELLING SIZES TABLE ===== */}
       <section className="py-14 bg-white/[0.02]">
         <Container>

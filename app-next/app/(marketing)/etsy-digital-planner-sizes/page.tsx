@@ -454,10 +454,10 @@ export default function EtsyDigitalPlannerSizesPage() {
         </Container>
       </section>
 
-      {/* ===== MAIN CONTENT ===== */}
+      {/* ===== INTRO + STANDARD SIZES ===== */}
       <section className="py-12 md:py-16">
         <Container>
-          <div className="max-w-3xl mx-auto space-y-14">
+          <div className="max-w-3xl mx-auto space-y-10">
 
             {/* Quick Answer */}
             <QuickAnswer question="What are the standard digital planner sizes for Etsy?">
@@ -553,6 +553,29 @@ export default function EtsyDigitalPlannerSizesPage() {
               </p>
             </div>
 
+          </div>
+        </Container>
+      </section>
+
+      {/* ===== LIFESTYLE IMAGE ===== */}
+      <div className="px-4 md:px-8 max-w-5xl mx-auto pb-4">
+        <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+          <img
+            src="/assets/visuals/etsy-digital-planner-sizes-mockup.jpg"
+            alt="Modern desk setup with iPad Pro open in GoodNotes showing a digital weekly planner layout, Apple Pencil alongside, soft window light"
+            width={1200}
+            height={800}
+            className="w-full h-auto"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      {/* ===== GOODNOTES + HYPERLINKED ===== */}
+      <section className="py-14 bg-white/[0.02]">
+        <Container>
+          <div className="max-w-3xl mx-auto space-y-12">
+
             {/* H2: GoodNotes & iPad Sizes */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
@@ -634,7 +657,16 @@ export default function EtsyDigitalPlannerSizesPage() {
               </p>
             </div>
 
-            {/* CTA 2 — mid-page, after 3-4 sections, EmailCapture angle */}
+          </div>
+        </Container>
+      </section>
+
+      {/* ===== PACKAGING + COVER SIZES ===== */}
+      <section className="py-14">
+        <Container>
+          <div className="max-w-3xl mx-auto space-y-12">
+
+            {/* CTA 2 — mid-page */}
             <Card accent>
               <p className="text-sm font-mono mb-2" style={{ color: "#A78BFA" }}>
                 STOP RESIZING MANUALLY
@@ -743,6 +775,15 @@ export default function EtsyDigitalPlannerSizesPage() {
                 </Link>
               </p>
             </div>
+
+          </div>
+        </Container>
+      </section>
+
+      {/* ===== FAQ + CTA ===== */}
+      <section className="py-14 bg-white/[0.02]">
+        <Container>
+          <div className="max-w-3xl mx-auto space-y-10">
 
             {/* Email Capture */}
             <div>
