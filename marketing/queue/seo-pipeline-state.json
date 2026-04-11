@@ -1,71 +1,54 @@
 {
   "_fresh": true,
-  "current_week": "W24",
-  "batch_id": "2026-W24",
-  "started_at": "2026-04-10T00:00:00+00:00",
+  "current_week": "W25",
+  "batch_id": "2026-W25",
+  "started_at": "2026-04-11T00:00:00+00:00",
   "target": {
     "pages": 2
   },
   "stages": {
     "researcher": {
-      "status": "completed",
-      "output": "Briefs from a4-at-300-dpi-pixels and what-resolution-is-needed-for-24x36-print used as content source"
+      "status": "in_progress",
+      "output": ""
     },
     "writer": {
-      "status": "completed",
-      "output": "etsy-a4-print-size + etsy-24x36-print-size updated with DPI/resolution sections"
+      "status": "pending",
+      "output": ""
     },
     "review": {
-      "status": "completed",
-      "output": "npx next build passes (exit 0)"
+      "status": "pending",
+      "output": ""
     },
     "deploy": {
-      "status": "completed",
-      "output": "Committed 40c54a4 + pushed to main. Cloudflare Pages auto-deploys."
+      "status": "pending",
+      "output": ""
     },
     "verify": {
-      "status": "completed",
-      "output": "Pages deployed and live: etsy-sticker-sheet-size, etsy-bookmark-size"
+      "status": "pending",
+      "output": ""
     }
   },
   "content_items": [
     {
-      "slug": "etsy-a4-print-size",
-      "keyword": "a4 at 300 dpi pixels",
-      "type": "page-update",
-      "status": "built",
-      "brief": "a4-at-300-dpi-pixels-brief.md — added DPI table, ISO sizes table, 3 FAQ items"
-    },
-    {
-      "slug": "etsy-24x36-print-size",
-      "keyword": "what resolution is needed for 24x36 print",
-      "type": "page-update",
-      "status": "built",
-      "brief": "what-resolution-is-needed-for-24x36-print-brief.md — added resolution section, DPI table, related sizes, 3 FAQ items"
-    },
-    {
-      "slug": "etsy-sticker-sheet-size",
-      "keyword": "etsy sticker sheet size",
+      "slug": "etsy-digital-planner-sizes",
+      "keyword": "etsy digital planner sizes",
       "type": "new-page",
-      "status": "built",
-      "brief": "Etsy Sticker Sheet Size: Exact Pixels & DPI Guide (2026)"
+      "status": "researching",
+      "brief": ""
     },
     {
-      "slug": "etsy-bookmark-size",
-      "keyword": "etsy bookmark size",
+      "slug": "etsy-mid-century-modern-art-sizes",
+      "keyword": "etsy mid century modern art sizes",
       "type": "new-page",
-      "status": "built",
-      "brief": "Etsy Bookmark Size: Exact Dimensions & Pixels (2026)"
+      "status": "researching",
+      "brief": ""
     }
   ],
   "metrics": {
-    "total": 4,
-    "completed": 4,
+    "total": 2,
+    "completed": 0,
     "failed": 0,
-    "success_rate": 1.0
+    "success_rate": 0
   },
-  "verify": {
-    "status": "completed"
-  },
-  "updated_at": "2026-04-10T12:45:00+00:00"
+  "updated_at": "2026-04-11T10:47:00+00:00"
 }

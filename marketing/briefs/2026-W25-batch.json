@@ -1,0 +1,228 @@
+{
+  "week": "W25",
+  "created_at": "2026-04-11T00:00:00Z",
+  "keywords": [
+    {
+      "keyword": "etsy digital planner sizes",
+      "slug": "etsy-digital-planner-sizes",
+      "intent": "informational+commercial",
+      "page_type": "niche",
+      "priority": "P1",
+      "cluster": "digital-products",
+      "note": "Slug already registered in page-registry.json (planned). No page file exists yet — this brief is the build trigger.",
+      "hero_concept": "CSS-only hero: grid of planner page outlines (A4, A5, Letter, half-letter) arranged like an open planner/notebook, with pixel dimensions annotated on each page. Dark background, teal accent lines. Communicates 'multiple sizes, one upload'.",
+      "sections": [
+        "H1: Etsy Digital Planner Sizes — The Complete Size Guide for Sellers",
+        "QuickAnswer box: 'The most common digital planner sizes on Etsy are A4 (2480×3508 px), A5 (1748×2480 px), US Letter (2550×3300 px), and Half Letter (1275×1650 px). All at 300 DPI.'",
+        "H2: The 4 Standard Digital Planner Page Sizes (with pixel dimensions at 300 DPI)",
+        "H2: GoodNotes, Notability & iPad Optimized Sizes — What Ratio to Use",
+        "H2: Hyperlinked vs. Non-Hyperlinked Planners — Does Size Affect It?",
+        "H2: How to Package Multiple Planner Sizes for Etsy Without Manual Resizing",
+        "H2: Planner Cover vs. Interior Page Sizes — Are They Different?",
+        "H2: FAQ"
+      ],
+      "section_details": {
+        "H2_sizes": {
+          "title": "The 4 Standard Digital Planner Page Sizes",
+          "content_notes": [
+            "A4 portrait: 2480×3508 px @ 300 DPI — most popular internationally, ISO standard",
+            "A5 portrait: 1748×2480 px @ 300 DPI — half of A4, popular for compact planners",
+            "US Letter: 2550×3300 px @ 300 DPI — 8.5×11 inches, US/Canada standard",
+            "Half Letter: 1275×1650 px @ 300 DPI — 5.5×8.5 inches, popular for mini planners",
+            "A6: 1240×1748 px @ 300 DPI — niche but popular for pocket planners",
+            "Include a size comparison diagram showing all 5 side-by-side with physical dimensions",
+            "Note: All these are portrait orientation. Landscape versions exist but are niche."
+          ]
+        },
+        "H2_goodnotes_ipad": {
+          "title": "GoodNotes, Notability & iPad Optimized Sizes",
+          "content_notes": [
+            "GoodNotes default canvas is A4 — 2480×3508 px matches perfectly",
+            "iPad screen aspect ratio is 4:3 — A4/A5 are 1:√2 (ISO) and don't fill screen edge-to-edge",
+            "Many sellers offer both ISO (A4/A5) AND 'iPad optimized' versions (roughly 2048×2732 px for 12.9\" iPad Pro)",
+            "Key insight: Buyers will ask for 'GoodNotes size' — A4 is the correct answer 90% of the time",
+            "SnapToSize angle: ISO A-series pack covers A5 and A4 in one upload — sellers don't need to manually create both"
+          ]
+        },
+        "H2_packaging": {
+          "title": "How to Package Multiple Planner Sizes for Etsy Without Manual Resizing",
+          "content_notes": [
+            "Pain: Planner sellers create in one size (usually A4) then manually resize for A5, Letter, Half Letter",
+            "Manual process: open Canva/Photoshop, change artboard, re-export, repeat for each page of the planner",
+            "For a 50-page planner × 4 sizes = 200 exports manually",
+            "SnapToSize solution: Upload your master planner page → get ISO A-series pack (A5, A4, A3, A2, A1) in one ZIP",
+            "Limitation to be honest about: SnapToSize is designed for wall art / print files. For planners with embedded hyperlinks, the PDF structure with live links requires a different workflow. For static planner page images/covers without hyperlinks, SnapToSize handles resizing perfectly.",
+            "CTA: 'Start with your cover page and key interior templates — resize them all in one upload'"
+          ]
+        },
+        "H2_cover_interior": {
+          "title": "Planner Cover vs. Interior Page Sizes",
+          "content_notes": [
+            "Cover pages are typically the same size as interior pages in digital planners",
+            "Exception: Some sellers use a wider cover (landscape A4) paired with portrait interior pages",
+            "Interior page types: daily, weekly, monthly, notes — all same canvas size",
+            "Divider tabs and sticker sheets may use different sizes (often A4 landscape or custom)"
+          ]
+        }
+      },
+      "faqs": [
+        "What size should a digital planner be for Etsy?",
+        "What is the best size for GoodNotes planners?",
+        "What pixel dimensions for an A5 digital planner at 300 DPI?",
+        "Do I need to offer multiple sizes for my Etsy digital planner?",
+        "What file format should I use for Etsy digital planners — PDF or PNG?",
+        "What is the difference between A4 and US Letter for digital planners?",
+        "Can I sell both A4 and Letter size in the same Etsy listing?"
+      ],
+      "competitor_gaps": "Most competitors (Canva templates, Etsy seller blogs) list sizes without pixel dimensions at 300 DPI. GoodNotes/iPad-specific advice is missing — sellers search 'GoodNotes size' and get generic answers. No one explains the PDF-with-hyperlinks vs. PNG-only distinction clearly. No one connects the sizing pain to a tool that automates it for static pages/covers.",
+      "conversion_angle": "Pain: Planner sellers with 20-50+ page planners need to export every page at 4 different sizes = hours of manual work. Solution: SnapToSize handles the A-series pack (A5, A4 in one upload) for static page images and covers. Be honest that PDF-with-hyperlinks needs a different workflow — but for covers, sample pages, and static templates, SnapToSize saves the resizing step completely.",
+      "cta_primary": "Try Free — resize your planner cover to A4 + A5 in one upload",
+      "cta_secondary": "See all ISO A-series sizes",
+      "link_to": [
+        "etsy-a4-print-size",
+        "etsy-a5-print-size",
+        "etsy-8-5x11-print-size",
+        "etsy-print-sizes",
+        "etsy-print-ratios",
+        "how-many-sizes-etsy-printable",
+        "what-files-to-include-etsy-digital-download",
+        "how-to-sell-digital-downloads-on-etsy"
+      ],
+      "link_from": [
+        "etsy-a4-print-size",
+        "etsy-a5-print-size",
+        "etsy-8-5x11-print-size",
+        "what-files-to-include-etsy-digital-download",
+        "how-to-sell-digital-downloads-on-etsy",
+        "etsy-quote-wall-art-sizes"
+      ],
+      "schema_types": ["Article", "BreadcrumbList", "FAQPage"],
+      "og_image_concept": "Dark background. Grid of 4 planner page rectangles labeled A4, A5, Letter, Half Letter with pixel dimensions. Teal SnapToSize branding. Tagline: 'Get all sizes from one upload'.",
+      "meta_title": "Etsy Digital Planner Sizes: A4, A5, Letter & More (Pixel Guide)",
+      "meta_description": "The exact pixel dimensions for every Etsy digital planner size — A4, A5, US Letter, half letter, GoodNotes. Plus how to export all sizes without manual resizing.",
+      "sources": []
+    },
+    {
+      "keyword": "etsy mid century modern art sizes",
+      "slug": "etsy-mid-century-modern-art-sizes",
+      "intent": "informational+commercial",
+      "page_type": "niche",
+      "priority": "P1",
+      "cluster": "niche-wall-art",
+      "note": "New slug — not in registry yet. Must be added to page-registry.json after deployment.",
+      "hero_concept": "CSS-only hero: bold geometric shapes (circles, triangles, parallelograms) in a mid-century palette (ochre, teal, burnt orange, charcoal) arranged in an asymmetric composition. Overlaid with a clean size grid showing 8×10, 18×24, 16×20. Evokes 1950s-1970s Bauhaus/Eames aesthetic while communicating print sizing context.",
+      "sections": [
+        "H1: Etsy Mid Century Modern Art Sizes — What Print Dimensions Sell Best",
+        "QuickAnswer box: 'Mid century modern prints sell best in 8×10, 16×20, 18×24, and 24×36. The style works in bold geometric shapes with ochre, teal, and rust palettes — available in 2:3 and 4:5 ratio packs.'",
+        "H2: Why Mid Century Modern Art Thrives in Specific Print Sizes",
+        "H2: The 6 Best-Selling Mid Century Modern Print Sizes on Etsy",
+        "H2: 7 Mid Century Sub-Styles and Their Ideal Frame Sizes",
+        "H2: Gallery Wall Arrangements with Mid Century Modern Prints",
+        "H2: Color Palettes and Ratios That Define the Style",
+        "H2: How to Package Mid Century Modern Art for All Etsy Buyers",
+        "H2: FAQ"
+      ],
+      "section_details": {
+        "H2_why_sizes": {
+          "title": "Why Mid Century Modern Art Thrives in Specific Print Sizes",
+          "content_notes": [
+            "MCM aesthetic: geometric, bold, asymmetric — needs room to breathe. Smaller sizes (5×7) lose the impact of large geometric shapes.",
+            "The style originated in the 1950s-1970s (Bauhaus, Eames Era, Atomic Age) — buyers decorating in this style tend to want statement pieces",
+            "Mid century modern interiors favor large statement walls — 18×24 and 24×36 are strong sellers",
+            "The style works equally well in 4:5 ratio (8×10, 16×20) for classic frames and 2:3 ratio (12×18, 16×24) for poster-style frames",
+            "ISO A-series (A4, A3) sells well to European buyers who decorate in this international style"
+          ]
+        },
+        "H2_best_sizes": {
+          "title": "The 6 Best-Selling Mid Century Modern Print Sizes on Etsy",
+          "sizes": [
+            "8×10 (4:5) — 2400×3000 px @ 300 DPI — popular starter size, IKEA Ribba frames",
+            "16×20 (4:5) — 4800×6000 px @ 300 DPI — statement piece, classic MCM poster scale",
+            "18×24 (3:4) — 5400×7200 px @ 300 DPI — travel poster dimensions, very MCM-appropriate",
+            "12×18 (2:3) — 3600×5400 px @ 300 DPI — slim vertical, atomic age poster feel",
+            "24×36 (2:3) — 7200×10800 px @ 300 DPI — large format statement (Quick Export only)",
+            "A4 (ISO) — 2480×3508 px @ 300 DPI — European buyers, IKEA Hovsta frames",
+            "Include a visual size comparison chart with MCM-style frame mock previews"
+          ]
+        },
+        "H2_sub_styles": {
+          "title": "7 Mid Century Modern Sub-Styles and Their Ideal Frame Sizes",
+          "sub_styles": [
+            "Atomic Age / Starburst — circular/radial compositions, best in square or 4:5 (8×10, 16×20)",
+            "Bauhaus Geometric — strict geometric forms, works in any ratio, especially A-series for European buyers",
+            "Eames Era Abstract — organic shapes with bold colors (ochre, rust, mustard), best in 18×24 or 16×20",
+            "Space Age / Sputnik — orbs and orbits, works well as a set in 8×10 or 5×7 gallery wall",
+            "Danish Modern / Scandi MCM — muted palette, clean lines, best in A4/A3 ISO series",
+            "MCM Landscape / Nature — stylized trees and mountains, strong in 16×24 or 12×18 (2:3 vertical)",
+            "Typography MCM — bold sans-serif type with geometric elements, best in 8×10 or 11×14"
+          ]
+        },
+        "H2_gallery_wall": {
+          "title": "Gallery Wall Arrangements with Mid Century Modern Prints",
+          "content_notes": [
+            "Classic MCM gallery wall: asymmetric grouping of 3-5 prints in mixed sizes (not uniform grid)",
+            "Popular combo: 1× 18×24 + 2× 8×10 + 1× 5×7 — varied heights, different ratios",
+            "Sellers offering 'gallery wall sets' outperform single-size listings in MCM category",
+            "Tip for sellers: include sizes for all SnapToSize packs so buyers can self-select — offer the full 2:3 pack AND the 4:5 pack",
+            "SnapToSize angle: One MCM design upload → 30+ sizes across all packs → list as complete gallery wall set bundle"
+          ]
+        },
+        "H2_color_palettes": {
+          "title": "Color Palettes and Ratios That Define the Style",
+          "content_notes": [
+            "Classic MCM palettes: ochre/mustard + teal + charcoal, burnt orange + cream + black, olive green + rust + off-white",
+            "High-contrast geometric designs show best at larger sizes — 16×20 and above",
+            "Muted Scandinavian MCM works well at smaller sizes (A5, 8×10) for desk/shelf display",
+            "Buyers searching 'mid century modern art' expect bold color — contrast with farmhouse (neutral) and coastal (soft blue) niches"
+          ]
+        },
+        "H2_packaging": {
+          "title": "How to Package Mid Century Modern Art for All Etsy Buyers",
+          "content_notes": [
+            "Pain: MCM buyers expect large statement sizes (18×24, 24×36) AND classic sizes (8×10, 16×20) in one listing",
+            "Manual workflow: resize 1 design to 6+ sizes = 1-3 hours per design",
+            "SnapToSize solution: upload master high-res MCM design → select 2:3 pack (poster sizes) + 4:5 pack (classic frames) + ISO pack (European buyers) → get organized ZIP ready to upload",
+            "Volume impact: sellers with 20+ MCM designs save 20-60 hours of resizing per collection",
+            "CTA: 'Start Free — resize your first MCM design to 30+ sizes in under 2 minutes'"
+          ]
+        }
+      },
+      "faqs": [
+        "What size prints sell best for mid century modern art on Etsy?",
+        "What aspect ratio is best for mid century modern posters?",
+        "What are the most popular frame sizes for mid century modern prints?",
+        "Should I offer A4 and A3 for mid century modern art on Etsy?",
+        "What pixel dimensions for a 18×24 mid century modern print at 300 DPI?",
+        "How do I create a mid century modern gallery wall set for Etsy?",
+        "What is the difference between mid century modern and Bauhaus art sizes?"
+      ],
+      "competitor_gaps": "Competitor pages for 'mid century modern art' on Etsy focus on style inspiration and tag advice — none provide actual pixel dimensions or ratio guidance. Farmhouse and coastal niches have dedicated size guides on competitor blogs; MCM does not. No one connects MCM to gallery wall sets with size recommendations. The sub-style breakdown (Atomic Age vs. Bauhaus vs. Eames vs. Scandi MCM) is a clear gap — buyers and sellers conflate these.",
+      "conversion_angle": "Pain: MCM sellers create bold geometric statement art that needs large sizes (18×24, 24×36) but also standard sizes for classic frames. Packaging for all buyer types requires resizing the same design to 6+ sizes per artwork. SnapToSize solution: one upload covers all major MCM print sizes — 2:3 pack for poster frames, 4:5 pack for classic frames, ISO for European buyers. Sellers with 10+ MCM designs save hours of manual work per collection launch.",
+      "cta_primary": "Try Free — upload your MCM design and get 30+ sizes instantly",
+      "cta_secondary": "See all print size packs",
+      "link_to": [
+        "etsy-print-sizes",
+        "etsy-print-ratios",
+        "etsy-gallery-wall-print-sizes",
+        "etsy-18x24-print-size",
+        "etsy-16x20-print-size",
+        "etsy-farmhouse-wall-art-sizes",
+        "etsy-abstract-wall-art-sizes",
+        "how-many-sizes-etsy-printable"
+      ],
+      "link_from": [
+        "etsy-gallery-wall-print-sizes",
+        "etsy-abstract-wall-art-sizes",
+        "etsy-farmhouse-wall-art-sizes",
+        "etsy-coastal-wall-art-sizes",
+        "etsy-vintage-art-print-sizes",
+        "etsy-print-sizes"
+      ],
+      "schema_types": ["Article", "BreadcrumbList", "FAQPage"],
+      "og_image_concept": "Dark background. Bold MCM geometric composition (circles, triangles, ochre/teal palette) with overlaid size labels: 16×20, 18×24, 24×36. SnapToSize logo bottom right. Headline: 'Mid Century Modern Print Sizes for Etsy'.",
+      "meta_title": "Mid Century Modern Art Sizes for Etsy (Best-Selling Dimensions)",
+      "meta_description": "The exact print sizes and pixel dimensions for mid century modern art on Etsy. Sub-styles, gallery wall sets, and how to package all sizes from one upload.",
+      "sources": []
+    }
+  ]
+}

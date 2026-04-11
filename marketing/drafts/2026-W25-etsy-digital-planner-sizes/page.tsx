@@ -460,7 +460,7 @@ export default function EtsyDigitalPlannerSizesPage() {
           <div className="max-w-3xl mx-auto space-y-14">
 
             {/* Quick Answer */}
-            <QuickAnswer question="What are the standard digital planner sizes for Etsy?">
+            <QuickAnswer>
               The most common digital planner sizes on Etsy are{" "}
               <strong>A4 (2480&times;3508 px)</strong>,{" "}
               <strong>A5 (1748&times;2480 px)</strong>,{" "}
@@ -751,11 +751,10 @@ export default function EtsyDigitalPlannerSizesPage() {
 
             {/* FinalCTA */}
             <FinalCTA
-              heading="One upload. Every planner size."
-              stat="A4, A5, Letter, Half Letter — all from one upload."
-              description="SnapToSize generates every standard digital planner size in seconds. No Photoshop, no artboards, no manual resizing."
-              buttonText="Generate All Sizes Free"
-              appUrl={appUrl}
+              statLine="A4, A5, Letter, Half Letter — all from one upload."
+              body="SnapToSize generates every standard digital planner size in seconds. No Photoshop, no artboards, no manual resizing."
+              ctaText="Generate All Sizes Free"
+              ctaHref={appUrl}
             />
 
             {/* FAQ */}

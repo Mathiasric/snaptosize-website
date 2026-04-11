@@ -1359,5 +1359,45 @@
       "etsy-20mb-file-limit",
       "etsy-print-size-calculator"
     ]
+  },
+  {
+    "slug": "etsy-bookmark-size",
+    "title": "Etsy Bookmark Size: Exact Dimensions & Pixels",
+    "pageType": "size",
+    "keywords": [
+      "etsy bookmark size",
+      "etsy bookmark dimensions",
+      "printable bookmark size etsy",
+      "bookmark size pixels 300 dpi"
+    ],
+    "cluster": "sizes",
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "best-resolution-for-etsy-printables",
+      "etsy-a4-print-size",
+      "etsy-sticker-sheet-size",
+      "how-to-resize-images-for-etsy",
+      "etsy-20mb-file-limit"
+    ]
+  },
+  {
+    "slug": "etsy-mid-century-modern-art-sizes",
+    "title": "Etsy Mid Century Modern Art Sizes: The Complete Guide",
+    "pageType": "niche",
+    "keywords": [
+      "etsy mid century modern art sizes",
+      "mid century modern print sizes",
+      "mcm art print dimensions",
+      "mid century modern wall art sizes"
+    ],
+    "cluster": "niches",
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-gallery-wall-print-sizes",
+      "etsy-coastal-wall-art-sizes",
+      "etsy-farmhouse-wall-art-sizes",
+      "etsy-abstract-wall-art-sizes",
+      "2-3-vs-4-5-ratio"
+    ]
   }
 ]
