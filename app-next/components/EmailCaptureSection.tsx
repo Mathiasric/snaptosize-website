@@ -8,10 +8,10 @@ interface EmailCaptureSectionProps {
 }
 
 export function EmailCaptureSection({
-  heading = "Get the Free Print Size Cheat Sheet",
-  description = "Every size, orientation, and pixel dimension in one printable PDF. Pin it next to your desk.",
+  heading = "Get Etsy Print Size Tips",
+  description = "New format guides, size references, and Etsy seller tips — straight to your inbox.",
   placeholder = "you@email.com",
-  buttonText = "Send Me the Cheat Sheet",
+  buttonText = "Subscribe Free",
 }: EmailCaptureSectionProps) {
   return (
     <div className="rounded-2xl border border-white/[0.08] border-t-2 border-t-[#2DD4BF]/30 bg-[#13112a] p-8 text-center max-w-xl mx-auto">

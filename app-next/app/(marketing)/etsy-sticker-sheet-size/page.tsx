@@ -748,7 +748,7 @@ export default function EtSyStickerSheetSizePage() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-2">
-                    Get the Sticker Sheet Sizing Cheat Sheet
+                    Get Your Sticker Sheet Sizes Right
                   </h3>
                   <p className="text-foreground-60 text-sm mb-4">
                     All three formats (Letter, A4, Cricut), pixel dimensions,
@@ -757,7 +757,7 @@ export default function EtSyStickerSheetSizePage() {
                   </p>
                   <a href={appUrl}>
                     <Button variant="secondary">
-                      Get the Free Cheat Sheet →
+                      Get Size Tips Free →
                     </Button>
                   </a>
                 </div>

@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Mail, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
+import posthog from "posthog-js";
 
 interface EmailCaptureProps {
   variant?: "default" | "compact";
@@ -12,11 +13,15 @@ interface EmailCaptureProps {
 export function EmailCapture({
   variant = "default",
   placeholder = "Enter your email",
-  buttonText = "Get Free Cheat Sheet",
+  buttonText = "Subscribe Free",
 }: EmailCaptureProps) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
+
+  useEffect(() => {
+    posthog.capture("email_capture_view", { source: window.location.pathname });
+  }, []);
 
   const handleSubmit = async () => {
     if (!email.trim()) {
@@ -27,6 +32,7 @@ export function EmailCapture({
 
     setStatus("loading");
     setErrorMessage("");
+    posthog.capture("email_capture_submitted", { source: window.location.pathname });
 
     try {
       const response = await fetch("https://worker.snaptosize-mathias.workers.dev/subscribe", {
@@ -39,6 +45,7 @@ export function EmailCapture({
 
       if (response.ok && data.success) {
         setStatus("success");
+        posthog.capture("email_capture_success", { source: window.location.pathname });
         setEmail("");
       } else {
         setStatus("error");
@@ -65,7 +72,7 @@ export function EmailCapture({
         } text-green-400`}
       >
         <CheckCircle className={variant === "compact" ? "h-5 w-5" : "h-6 w-6"} />
-        <span className="font-medium">Check your inbox! PDF is on the way.</span>
+        <span className="font-medium">You&apos;re in — check your inbox!</span>
       </div>
     );
   }

@@ -12,7 +12,7 @@ import RelatedPages from "@/components/RelatedPages";
 export const metadata: Metadata = {
   title: "Etsy Print Aspect Ratios Explained: 2:3, 3:4, 4:5",
   description:
-    "Offering the wrong ratio? Buyers won't buy. Get the 4 Etsy print ratios with exact pixel dimensions at 300 DPI — free cheat sheet included.",
+    "Offering the wrong ratio? Buyers won't buy. Get the 4 Etsy print ratios with exact pixel dimensions at 300 DPI — every ratio explained.",
   alternates: { canonical: "https://snaptosize.com/etsy-print-ratios" },
   openGraph: {
     title: "Etsy Print Aspect Ratios Explained: 2:3, 3:4, 4:5",
