@@ -161,6 +161,21 @@ export default function EtsyMidCenturyModernArtSizesPage() {
       answer:
         "Atomic Age starburst and circular compositions look best in 4:5 ratio (8×10, 16×20) or square formats. Bauhaus geometric prints work in any ratio, but A-series ISO sizes are especially popular with European buyers.",
     },
+    {
+      question: "What is the pixel size for 18×24 mid century modern print at 300 DPI?",
+      answer:
+        "At 300 DPI, an 18×24 inch print is 5400×7200 pixels. This is the most popular large-format MCM size and fits the 3:4 ratio pack. Your master file should be at least 5400×7200 px before you resize down to smaller sizes.",
+    },
+    {
+      question: "Do European buyers want different sizes for mid century modern art?",
+      answer:
+        "Yes. European buyers — especially in Scandinavia, Germany, and the Netherlands — strongly prefer A4 (2480×3508 px) and A3 (3508×4961 px) ISO sizes that fit IKEA Ribba and Hovsta frames. Sellers who include A4 and A3 consistently report higher conversion with European shoppers.",
+    },
+    {
+      question: "How many sizes should I include in an MCM Etsy listing?",
+      answer:
+        "Aim for at least 4–6 sizes covering both US standard frames and ISO formats: 8×10, 16×20, 18×24 for the US market, plus A4 and A3 for European buyers. Adding a 24×36 option captures large statement-piece buyers. SnapToSize generates all these from a single upload.",
+    },
   ];
 
   return (

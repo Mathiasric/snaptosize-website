@@ -11,7 +11,7 @@ import { EmailCapture } from "@/components/EmailCapture";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
-  title: "Etsy Digital Planner Sizes — Complete Size Guide",
+  title: "Etsy Digital Planner Sizes — Exact Pixels for Every Format",
   description:
     "Exact pixel dimensions for digital planner sizes on Etsy. A4, A5, US Letter, Half Letter, GoodNotes and iPad-optimized sizes at 300 DPI.",
   alternates: {
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Etsy Digital Planner Sizes — Complete Size Guide",
+    title: "Etsy Digital Planner Sizes — Exact Pixels for Every Format",
     description:
       "Exact pixel dimensions for digital planner sizes on Etsy. A4, A5, US Letter, Half Letter, GoodNotes and iPad-optimized sizes at 300 DPI.",
     images: ["/assets/og/etsy-digital-planner-sizes.png"],
@@ -193,9 +193,9 @@ export default function EtsyDigitalPlannerSizesPage() {
                 style={{
                   width: "100%",
                   height: "100%",
-                  border: "2px solid rgba(167,139,250,0.45)",
-                  background: "linear-gradient(160deg, #1a1535 0%, #120f28 100%)",
-                  boxShadow: "0 8px 24px rgba(0,0,0,0.4)",
+                  border: "2px solid rgba(167,139,250,0.80)",
+                  background: "linear-gradient(160deg, #251c4a 0%, #1a1338 100%)",
+                  boxShadow: "0 8px 24px rgba(0,0,0,0.5), 0 0 16px rgba(167,139,250,0.12)",
                 }}
               >
                 {/* Horizontal lines — planner interior */}
@@ -208,7 +208,7 @@ export default function EtsyDigitalPlannerSizesPage() {
                       left: "10px",
                       right: "10px",
                       height: "1px",
-                      background: "rgba(167,139,250,0.18)",
+                      background: "rgba(167,139,250,0.42)",
                     }}
                   />
                 ))}
@@ -220,7 +220,7 @@ export default function EtsyDigitalPlannerSizesPage() {
                     left: "24px",
                     width: "1px",
                     bottom: "12px",
-                    background: "rgba(167,139,250,0.15)",
+                    background: "rgba(167,139,250,0.35)",
                   }}
                 />
                 {/* Label */}
@@ -231,7 +231,7 @@ export default function EtsyDigitalPlannerSizesPage() {
                     right: "6px",
                     fontSize: "7px",
                     fontFamily: "monospace",
-                    color: "rgba(167,139,250,0.6)",
+                    color: "rgba(167,139,250,0.95)",
                     letterSpacing: "0.03em",
                   }}
                 >
@@ -249,9 +249,9 @@ export default function EtsyDigitalPlannerSizesPage() {
                 style={{
                   width: "100%",
                   height: "100%",
-                  border: "2px solid rgba(45,212,191,0.40)",
-                  background: "linear-gradient(160deg, #0f1e1c 0%, #091615 100%)",
-                  boxShadow: "0 8px 24px rgba(0,0,0,0.4)",
+                  border: "2px solid rgba(45,212,191,0.80)",
+                  background: "linear-gradient(160deg, #153028 0%, #0d2020 100%)",
+                  boxShadow: "0 8px 24px rgba(0,0,0,0.5), 0 0 16px rgba(45,212,191,0.10)",
                 }}
               >
                 {[18, 32, 46, 60, 74, 88, 102, 116].map((top) => (
@@ -263,7 +263,7 @@ export default function EtsyDigitalPlannerSizesPage() {
                       left: "10px",
                       right: "10px",
                       height: "1px",
-                      background: "rgba(45,212,191,0.18)",
+                      background: "rgba(45,212,191,0.40)",
                     }}
                   />
                 ))}
@@ -274,7 +274,7 @@ export default function EtsyDigitalPlannerSizesPage() {
                     right: "6px",
                     fontSize: "7px",
                     fontFamily: "monospace",
-                    color: "rgba(45,212,191,0.6)",
+                    color: "rgba(45,212,191,0.95)",
                     letterSpacing: "0.03em",
                   }}
                 >
@@ -292,9 +292,9 @@ export default function EtsyDigitalPlannerSizesPage() {
                 style={{
                   width: "100%",
                   height: "100%",
-                  border: "2px solid rgba(167,139,250,0.35)",
-                  background: "linear-gradient(160deg, #1a1535 0%, #120f28 100%)",
-                  boxShadow: "0 6px 16px rgba(0,0,0,0.35)",
+                  border: "2px solid rgba(167,139,250,0.75)",
+                  background: "linear-gradient(160deg, #251c4a 0%, #1a1338 100%)",
+                  boxShadow: "0 6px 16px rgba(0,0,0,0.5), 0 0 10px rgba(167,139,250,0.10)",
                 }}
               >
                 {[16, 28, 40, 52, 64, 76, 88].map((top) => (
@@ -306,7 +306,7 @@ export default function EtsyDigitalPlannerSizesPage() {
                       left: "8px",
                       right: "8px",
                       height: "1px",
-                      background: "rgba(167,139,250,0.15)",
+                      background: "rgba(167,139,250,0.38)",
                     }}
                   />
                 ))}
@@ -317,7 +317,7 @@ export default function EtsyDigitalPlannerSizesPage() {
                     right: "5px",
                     fontSize: "6px",
                     fontFamily: "monospace",
-                    color: "rgba(167,139,250,0.55)",
+                    color: "rgba(167,139,250,0.95)",
                     letterSpacing: "0.03em",
                   }}
                 >
@@ -335,9 +335,9 @@ export default function EtsyDigitalPlannerSizesPage() {
                 style={{
                   width: "100%",
                   height: "100%",
-                  border: "2px solid rgba(45,212,191,0.30)",
-                  background: "linear-gradient(160deg, #0f1e1c 0%, #091615 100%)",
-                  boxShadow: "0 4px 12px rgba(0,0,0,0.3)",
+                  border: "2px solid rgba(45,212,191,0.75)",
+                  background: "linear-gradient(160deg, #153028 0%, #0d2020 100%)",
+                  boxShadow: "0 4px 12px rgba(0,0,0,0.5), 0 0 10px rgba(45,212,191,0.08)",
                 }}
               >
                 {[14, 26, 38, 50, 62, 74, 86].map((top) => (
@@ -349,7 +349,7 @@ export default function EtsyDigitalPlannerSizesPage() {
                       left: "8px",
                       right: "8px",
                       height: "1px",
-                      background: "rgba(45,212,191,0.15)",
+                      background: "rgba(45,212,191,0.38)",
                     }}
                   />
                 ))}
@@ -360,7 +360,7 @@ export default function EtsyDigitalPlannerSizesPage() {
                     right: "5px",
                     fontSize: "6px",
                     fontFamily: "monospace",
-                    color: "rgba(45,212,191,0.5)",
+                    color: "rgba(45,212,191,0.95)",
                     letterSpacing: "0.03em",
                   }}
                 >
@@ -377,7 +377,7 @@ export default function EtsyDigitalPlannerSizesPage() {
                 left: "0px",
                 fontSize: "9px",
                 fontFamily: "monospace",
-                color: "rgba(167,139,250,0.5)",
+                color: "rgba(167,139,250,0.85)",
                 letterSpacing: "0.04em",
               }}
             >
@@ -392,7 +392,7 @@ export default function EtsyDigitalPlannerSizesPage() {
                 left: "108px",
                 fontSize: "9px",
                 fontFamily: "monospace",
-                color: "rgba(45,212,191,0.45)",
+                color: "rgba(45,212,191,0.85)",
                 letterSpacing: "0.04em",
               }}
             >
@@ -417,8 +417,8 @@ export default function EtsyDigitalPlannerSizesPage() {
 
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-5 text-white leading-[1.15]">
               Etsy Digital Planner{" "}
-              <span style={{ color: "#A78BFA" }}>Sizes</span> — The Complete
-              Size Guide
+              <span style={{ color: "#A78BFA" }}>Sizes</span> — Exact Pixels
+              for Every Format
             </h1>
 
             <p className="text-base md:text-lg mb-7" style={{ color: "rgba(255,255,255,0.65)" }}>
