@@ -7,7 +7,6 @@ import { Check } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
-import { EmailCapture } from "@/components/EmailCapture";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
@@ -784,11 +783,6 @@ export default function EtsyDigitalPlannerSizesPage() {
       <section className="py-14 bg-white/[0.02]">
         <Container>
           <div className="max-w-3xl mx-auto space-y-10">
-
-            {/* Email Capture */}
-            <div>
-              <EmailCapture />
-            </div>
 
             {/* FinalCTA */}
             <FinalCTA

@@ -7,7 +7,6 @@ import { Check } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
-import { EmailCapture } from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
   title: "Etsy Mid Century Modern Art Sizes — Best Print Dimensions",
@@ -357,8 +356,8 @@ export default function EtsyMidCenturyModernArtSizesPage() {
             {/* Trust pills */}
             <div className="flex flex-wrap gap-3 mb-8">
               {[
-                "6 best-selling sizes with DPI specs",
-                "7 MCM sub-styles mapped to ratios",
+                "The 6 sizes Etsy buyers order most",
+                "7 MCM styles + ideal frame sizes for each",
                 "ISO sizes for European buyers",
               ].map((pill) => (
                 <div
@@ -808,15 +807,6 @@ export default function EtsyMidCenturyModernArtSizesPage() {
                 </div>
               ))}
             </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* ===== EMAIL CAPTURE ===== */}
-      <section className="py-12">
-        <Container>
-          <div className="max-w-2xl mx-auto">
-            <EmailCapture />
           </div>
         </Container>
       </section>
