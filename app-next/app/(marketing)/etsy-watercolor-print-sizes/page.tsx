@@ -7,6 +7,7 @@ import { Check } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
@@ -527,6 +528,12 @@ export default function EtsyWatercolorPrintSizesPage() {
                 loading="lazy"
               />
             </div>
+
+            <ListingOutputShowcase
+              artwork="misty_lake"
+              heading="Your watercolor art — every ratio ready to list."
+              subtext="SnapToSize generates all five ratio-correct files from your original upload. No Photoshop — just upload and download."
+            />
 
             {/* --- H2 2: Complete Watercolor Print Size Reference --- */}
             <div>

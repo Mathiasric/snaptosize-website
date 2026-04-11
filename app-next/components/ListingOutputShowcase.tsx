@@ -62,9 +62,8 @@ export const ARTWORK_PRESETS: Record<string, ArtworkPreset> = {
     sizes: [
       { id: "2x3", label: "2×3", examples: ["4×6", "8×12", "24×36"], file: "Wildflower botanical art.jpg", w: 2, h: 3 },
       { id: "a4", label: "ISO A4", examples: ["210×297mm", "2480×3508 px"], file: "A4_2480x3508_ISO (11).jpg", w: 210, h: 297 },
-      { id: "3x4", label: "3×4", examples: ["6×8", "12×16", "18×24"], file: "wildflower_6x8_1800x2400.jpg", w: 3, h: 4 },
-      { id: "11x14", label: "11×14", examples: ["11×14 in", "3300×4200 px"], file: "wildflower_11x14_3300x4200.jpg", w: 11, h: 14 },
-      { id: "4x5", label: "4×5", examples: ["8×10", "16×20", "24×30"], file: "wildflower_4x5_1200x1500.jpg", w: 4, h: 5 },
+      { id: "11x14", label: "11×14", examples: ["11×14 in", "3300×4200 px"], file: "Wildflower botanical art_11x14_3300x4200.jpg", w: 11, h: 14 },
+      { id: "4x5", label: "4×5", examples: ["8×10", "16×20", "24×30"], file: "Wildflower botanical art_4x5_1200x1500.jpg", w: 4, h: 5 },
     ],
   },
 };

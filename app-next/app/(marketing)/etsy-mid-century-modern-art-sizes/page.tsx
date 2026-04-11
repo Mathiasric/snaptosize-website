@@ -7,6 +7,7 @@ import { Check } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
@@ -453,6 +454,16 @@ export default function EtsyMidCenturyModernArtSizesPage() {
           />
         </div>
       </div>
+
+      <section className="py-4">
+        <Container>
+          <ListingOutputShowcase
+            artwork="geometric"
+            heading="Your MCM art — every ratio ready to list."
+            subtext="SnapToSize generates all five ratio-correct files from your original upload. No Photoshop — just upload and download."
+          />
+        </Container>
+      </section>
 
       {/* ===== BEST-SELLING SIZES TABLE ===== */}
       <section className="py-14 bg-white/[0.02]">

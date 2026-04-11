@@ -8,6 +8,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
@@ -488,6 +489,12 @@ export default function EtsyBotanicalPrintSizesPage() {
             <div className="rounded-xl overflow-hidden border border-white/[0.08]">
               <img src="/assets/visuals/etsy-botanical-print-mockup.jpg" alt="Dining room with two framed botanical prints — a large fern and smaller eucalyptus — in black frames above an oak table" width={1200} height={800} className="w-full h-auto" loading="lazy" />
             </div>
+
+            <ListingOutputShowcase
+              artwork="wildflower"
+              heading="Your botanical art — every ratio ready to list."
+              subtext="SnapToSize generates all five ratio-correct files from your original upload. No Photoshop — just upload and download."
+            />
 
             {/* --- H2 2: The 8 Must-Have Sizes --- */}
             <div>
