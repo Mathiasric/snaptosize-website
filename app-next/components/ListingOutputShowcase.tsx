@@ -197,62 +197,11 @@ export function ListingOutputShowcase({
                   </div>
                 </div>
 
-                {/* Label below image */}
-                <div className="mt-2 text-center px-1">
-                  <div
-                    style={{
-                      fontFamily: "ui-monospace, monospace",
-                      color: isHov ? "#2DD4BF" : "#cbd5e1",
-                      fontSize: 12,
-                      fontWeight: 700,
-                      letterSpacing: "0.02em",
-                      transition: "color 0.18s",
-                    }}
-                  >
-                    {size.label}
-                  </div>
-                </div>
               </div>
             );
           })}
         </div>
 
-        {/* Narrower ← → Wider axis */}
-        <div
-          className="flex items-center mt-3 gap-2"
-          style={{ opacity: 0.55 }}
-        >
-          <span
-            style={{
-              fontSize: 10,
-              fontFamily: "ui-monospace, monospace",
-              color: "#94a3b8",
-              letterSpacing: "0.06em",
-              whiteSpace: "nowrap",
-            }}
-          >
-            ← narrower
-          </span>
-          <div
-            style={{
-              flex: 1,
-              height: 1,
-              background:
-                "linear-gradient(to right, rgba(45,212,191,0.35), rgba(45,212,191,0.05))",
-            }}
-          />
-          <span
-            style={{
-              fontSize: 10,
-              fontFamily: "ui-monospace, monospace",
-              color: "#94a3b8",
-              letterSpacing: "0.06em",
-              whiteSpace: "nowrap",
-            }}
-          >
-            wider →
-          </span>
-        </div>
       </div>
 
       {/* Mobile: 3 top + 2 bottom centered — also uses px-3 */}
