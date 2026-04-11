@@ -8,6 +8,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 
 export const metadata: Metadata = {
   title:
@@ -345,6 +346,13 @@ export default function TwoThreeVsFourFiveRatioPage() {
             <div className="rounded-xl overflow-hidden border border-white/[0.08]">
               <img src="/assets/visuals/2-3-vs-4-5-ratio-comparison.png" alt="2:3 vs 4:5 ratio side-by-side shape comparison — 2:3 is taller and narrower, 4:5 is wider and closer to square" width={1200} height={520} className="w-full h-auto" loading="lazy" />
             </div>
+
+            {/* ===== Listing Output Showcase ===== */}
+            <ListingOutputShowcase
+              artwork="fox"
+              heading="Same artwork. Two ratios. See the difference."
+              subtext="The 2:3 is narrower — great for large statement prints. The 4:5 is wider — the standard for framed wall art. SnapToSize generates both from one upload."
+            />
 
             {/* ===== SECTION 1: What Is the 2:3 Ratio? ===== */}
             <div>

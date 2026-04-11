@@ -8,6 +8,7 @@ import { Check, ArrowRight } from "lucide-react";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 
 export const metadata: Metadata = {
   title: "Etsy Print Aspect Ratios Explained: 2:3, 3:4, 4:5",
@@ -176,6 +177,13 @@ export default function EtsyPrintRatiosPage() {
             <div className="rounded-xl overflow-hidden border border-white/[0.08]">
               <img src="/assets/visuals/etsy-print-ratios-comparison.png" alt="The 5 Etsy print ratio packs — 2:3, 3:4, 4:5, ISO, and Extras — shown with representative frame shapes at correct proportions" width={1200} height={520} className="w-full h-auto" loading="lazy" />
             </div>
+
+            {/* ===== Listing Output Showcase ===== */}
+            <ListingOutputShowcase
+              artwork="fox"
+              heading="One upload. Five ratio-correct files."
+              subtext="Every ratio a buyer might need — generated automatically from your original file. No Photoshop. No manual resizing."
+            />
 
             {/* ===== SECTION 1: What Are Print Ratios? ===== */}
             <div>
