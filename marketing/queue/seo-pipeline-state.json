@@ -8,24 +8,24 @@
   },
   "stages": {
     "researcher": {
-      "status": "in_progress",
-      "output": ""
+      "status": "completed",
+      "output": "marketing/briefs/2026-W25-batch.json — etsy-digital-planner-sizes + etsy-mid-century-modern-art-sizes"
     },
     "writer": {
-      "status": "pending",
-      "output": ""
+      "status": "completed",
+      "output": "marketing/drafts/2026-W25-* — 2 pages drafted by parallel seo-writer subagents"
     },
     "review": {
-      "status": "pending",
-      "output": ""
+      "status": "completed",
+      "output": "npx next build passes (77/77 routes, exit 0)"
     },
     "deploy": {
-      "status": "pending",
-      "output": ""
+      "status": "completed",
+      "output": "Committed 90e798d + pushed to main. Cloudflare Pages auto-deploys."
     },
     "verify": {
-      "status": "pending",
-      "output": ""
+      "status": "completed",
+      "output": "Both pages PASS SEO QA: schema OK, CTAs OK, content depth OK, internal links OK"
     }
   },
   "content_items": [
@@ -33,22 +33,22 @@
       "slug": "etsy-digital-planner-sizes",
       "keyword": "etsy digital planner sizes",
       "type": "new-page",
-      "status": "researching",
-      "brief": ""
+      "status": "built",
+      "brief": "2026-W25-batch.json — A4/A5/Letter/Half Letter sizes, GoodNotes guide, cover vs interior, SnapToSize pain→solution"
     },
     {
       "slug": "etsy-mid-century-modern-art-sizes",
       "keyword": "etsy mid century modern art sizes",
       "type": "new-page",
-      "status": "researching",
-      "brief": ""
+      "status": "built",
+      "brief": "2026-W25-batch.json — 7 MCM sub-styles, gallery wall guide, US+ISO sizes, geometric CSS hero"
     }
   ],
   "metrics": {
     "total": 2,
-    "completed": 0,
+    "completed": 2,
     "failed": 0,
-    "success_rate": 0
+    "success_rate": 1.0
   },
-  "updated_at": "2026-04-11T10:47:00+00:00"
+  "updated_at": "2026-04-11T11:10:00+00:00"
 }
