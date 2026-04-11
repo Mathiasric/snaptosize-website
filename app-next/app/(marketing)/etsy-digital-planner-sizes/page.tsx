@@ -635,7 +635,7 @@ export default function EtsyDigitalPlannerSizesPage() {
             </div>
 
             {/* CTA 2 — mid-page, after 3-4 sections, EmailCapture angle */}
-            <div className="rounded-xl p-6 border" style={{ background: "rgba(167,139,250,0.06)", borderColor: "rgba(167,139,250,0.15)" }}>
+            <Card accent>
               <p className="text-sm font-mono mb-2" style={{ color: "#A78BFA" }}>
                 STOP RESIZING MANUALLY
               </p>
@@ -649,7 +649,7 @@ export default function EtsyDigitalPlannerSizesPage() {
               <a href={appUrl} target="_blank" rel="noopener noreferrer">
                 <Button className="text-sm px-6 py-2.5">Try It Free &rarr;</Button>
               </a>
-            </div>
+            </Card>
 
             {/* H2: How to Package Multiple Sizes */}
             <div>

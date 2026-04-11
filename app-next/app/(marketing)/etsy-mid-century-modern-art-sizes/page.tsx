@@ -12,7 +12,7 @@ import { EmailCapture } from "@/components/EmailCapture";
 export const metadata: Metadata = {
   title: "Etsy Mid Century Modern Art Sizes — Best Print Dimensions",
   description:
-    "Best print sizes for mid century modern art on Etsy. Covers Atomic Age, Bauhaus, Eames sub-styles, gallery wall combos, ISO sizes for Europe, and batch resizing.",
+    "Best print sizes for mid century modern art on Etsy. Covers Atomic Age, Bauhaus, Eames sub-styles, gallery wall combos, ISO sizes for Europe, batch resizing.",
   alternates: {
     canonical: "https://snaptosize.com/etsy-mid-century-modern-art-sizes",
   },
