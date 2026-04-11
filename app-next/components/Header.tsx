@@ -184,6 +184,9 @@ export function Header() {
                     <Link href="/etsy-farmhouse-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Farmhouse Wall Art Sizes
                     </Link>
+                    <Link href="/etsy-mid-century-modern-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Mid Century Modern Sizes
+                    </Link>
                   </div>
                 </div>
                 <div className="pt-2 mt-2 border-t border-border/50">
@@ -502,6 +505,9 @@ export function Header() {
                         </Link>
                         <Link href="/etsy-farmhouse-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Farmhouse Wall Art Sizes
+                        </Link>
+                        <Link href="/etsy-mid-century-modern-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Mid Century Modern Sizes
                         </Link>
                         <Link href="/2-3-vs-4-5-ratio" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           2:3 vs 4:5 Ratio

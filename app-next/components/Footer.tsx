@@ -86,6 +86,16 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-mid-century-modern-art-sizes" className="transition-colors hover:text-accent-light">
+                  Mid Century Modern Sizes
+                </Link>
+              </li>
+              <li>
+                <Link href="/etsy-digital-planner-sizes" className="transition-colors hover:text-accent-light">
+                  Digital Planner Sizes
+                </Link>
+              </li>
+              <li>
                 <Link href="/sizes" className="transition-colors hover:text-accent-light font-medium">
                   All size guides →
                 </Link>
