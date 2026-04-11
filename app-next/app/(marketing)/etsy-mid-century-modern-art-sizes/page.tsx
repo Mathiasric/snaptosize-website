@@ -7,6 +7,7 @@ import { Check } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "Etsy Mid Century Modern Art Sizes — Best Print Dimensions",
@@ -388,7 +389,18 @@ export default function EtsyMidCenturyModernArtSizesPage() {
       <section className="py-14">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
+
+            <QuickAnswer question="What are the best print sizes for mid century modern art on Etsy?">
+              The best-selling sizes are{" "}
+              <strong>18×24 (3:4 ratio)</strong>,{" "}
+              <strong>16×20 (4:5)</strong>, and{" "}
+              <strong>8×10 (4:5)</strong>. For large statement pieces typical
+              of MCM interiors, <strong>24×36</strong> is also popular.
+              European buyers prefer <strong>A4 (2480×3508 px)</strong> and{" "}
+              <strong>A3</strong> to fit IKEA Hovsta and Ribba frames.
+            </QuickAnswer>
+
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 mt-10">
               Why Mid Century Modern Art Thrives in Specific Print Sizes
             </h2>
             <p className="text-white/70 mb-5">
@@ -404,16 +416,23 @@ export default function EtsyMidCenturyModernArtSizesPage() {
               prints, often flanked by coordinating smaller pieces.
             </p>
             <p className="text-white/70 mb-6">
-              The style also splits cleanly across two ratio families: 4:5 (8×10, 16×20) for
-              classic American frames, and 2:3 (12×18, 16×24) for poster-style vertical
-              compositions. European buyers — who shop Etsy heavily for this style — prefer
-              ISO A-series (A4, A3) to fit IKEA Hovsta and Ribba frames. Sellers who list
-              all three families consistently reach more buyers per design.
+              The style also splits cleanly across{" "}
+              <Link href="/etsy-print-ratios" className="text-[#2DD4BF] hover:underline">
+                two ratio families
+              </Link>
+              : 4:5 (8×10, 16×20) for classic American frames, and 2:3 (12×18, 16×24) for
+              poster-style vertical compositions. European buyers — who shop Etsy heavily for
+              this style — prefer ISO A-series (A4, A3) to fit IKEA Hovsta and Ribba frames.
+              Sellers who list all three families consistently reach more buyers per design.
             </p>
             <p className="text-white/70">
               For a broader look at how ratio choice affects your Etsy listings, see our{" "}
               <Link href="/2-3-vs-4-5-ratio" className="text-[#2DD4BF] hover:underline">
                 2:3 vs 4:5 ratio guide
+              </Link>
+              {" "}or browse the full{" "}
+              <Link href="/etsy-print-sizes" className="text-[#2DD4BF] hover:underline">
+                Etsy print sizes reference
               </Link>
               .
             </p>

@@ -629,9 +629,11 @@ export default function EtsyDigitalPlannerSizesPage() {
               </div>
 
               <p style={{ color: "rgba(255,255,255,0.65)" }}>
-                Most sellers include <strong>A5 (1748&times;2480 px)</strong> as the
-                iPad-friendly option because it works in GoodNotes and also prints
-                cleanly. If you want a true zero-margin iPad experience, add a
+                Most sellers include{" "}
+                <Link href="/etsy-a5-print-size" className="underline" style={{ color: "#A78BFA" }}>
+                  A5 (1748&times;2480 px)
+                </Link>{" "}
+                as the iPad-friendly option because it works in GoodNotes and also prints cleanly. If you want a true zero-margin iPad experience, add a
                 separate &ldquo;iPad optimized&rdquo; version at 1668&times;2224 px.
               </p>
             </div>
@@ -770,7 +772,15 @@ export default function EtsyDigitalPlannerSizesPage() {
               <p className="mt-4 text-sm" style={{ color: "rgba(255,255,255,0.55)" }}>
                 Related:{" "}
                 <Link href="/etsy-a4-print-size" className="underline" style={{ color: "#A78BFA" }}>
-                  Etsy A4 print size — exact pixels, DPI and export settings
+                  Etsy A4 print size
+                </Link>
+                {" · "}
+                <Link href="/etsy-a5-print-size" className="underline" style={{ color: "#A78BFA" }}>
+                  Etsy A5 print size
+                </Link>
+                {" · "}
+                <Link href="/etsy-print-sizes" className="underline" style={{ color: "#A78BFA" }}>
+                  Complete Etsy print sizes guide
                 </Link>
               </p>
             </div>
