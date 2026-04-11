@@ -75,6 +75,18 @@ Key constraints:
 
 ---
 
+## CONTEXT EFFICIENCY RULES
+
+These are hard rules, not guidelines. Violating them wastes tokens and shortens the session.
+
+**Bash output:** Any command that produces >20 lines MUST use `ctx_execute` or `ctx_batch_execute` instead of Bash. This includes: git log, grep across many files, npm/build output, python scripts with large output. Bash is only for: git add/commit/push, mkdir, rm, mv, and short-output commands.
+
+**File reads:** Never read a file in full if you only need part of it. For files >200 lines, always use `offset` + `limit` to target the section needed. Never read a file to analyze it — use `ctx_execute_file` instead. Read is only for files you are about to Edit.
+
+**Screenshots:** Default to viewport-only screenshots (1440×900 desktop, 390×844 mobile). Never use `fullPage: true` unless a specific full-page QA review is requested. Use `clip` to capture specific sections when only part of the page is relevant.
+
+---
+
 ## IMPLEMENTATION RULES
 
 **No New Systems** — No databases, background queues, new services/APIs/storage unless approved.
