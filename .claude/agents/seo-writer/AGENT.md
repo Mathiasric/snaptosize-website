@@ -33,13 +33,15 @@ A content blueprint from `marketing/briefs/YYYY-WXX-batch.json` containing:
 
 These are non-negotiable regardless of content structure:
 
-- **JSON-LD:** Article + BreadcrumbList + FAQPage schemas
+- **JSON-LD:** Article + BreadcrumbList + FAQPage schemas (3 separate `<script>` tags OR combined `@graph`)
 - **H1:** Contains primary keyword naturally
+- **QuickAnswer:** `<QuickAnswer question="...">` — first element in content, directly answers the target keyword as a question. Import from `@/components/QuickAnswer`. This targets featured snippets.
 - **CTAs:** 3+ links to `https://app.snaptosize.com?source=seo_[slug]&kind=guide`
 - **`<RelatedPages currentSlug="[slug]" />`** — auto-links from registry (never hardcode)
-- **`<EmailCapture />`** — lead capture component
+- **Internal links:** 4–6 contextual `<Link href="/...">` to relevant existing pages within body text. Use `page-registry.json` to find valid slugs. Do NOT count RelatedPages component as internal links.
+- **No EmailCapture** — do not include `<EmailCapture />` on any SEO page. There is no active lead magnet and it confuses users.
 - **Meta title:** < 60 characters
-- **Meta description:** < 160 characters
+- **Meta description:** < 160 characters, benefit-focused (not just keyword stuffing)
 
 ### Content Structure = Blueprint Output
 
@@ -82,6 +84,37 @@ Every page MUST have a unique, visually distinctive CSS-only hero. No plain grad
 ```
 Button does NOT accept `href`, `variant="primary"`, or `size` props directly. Wrap in `<a>` tag. Use `variant="secondary"` only for secondary buttons.
 
+### Page Structure — Section Rhythm
+
+**Never put all content in one `<section>`**. Split content into 3–4 separate `<section>` elements with alternating backgrounds:
+
+```tsx
+{/* Section 1: QuickAnswer + first H2 */}
+<section className="py-12 md:py-16">...</section>
+
+{/* Lifestyle image — full width */}
+<div className="px-4 md:px-8 max-w-5xl mx-auto pb-4">
+  <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+    <img src="/assets/visuals/etsy-[slug]-mockup.jpg" alt="..." width={1200} height={800} className="w-full h-auto" loading="lazy" />
+  </div>
+</div>
+
+{/* Section 2: middle H2s */}
+<section className="py-14 bg-white/[0.02]">...</section>
+
+{/* Section 3: CTA + packaging/workflow H2s */}
+<section className="py-14">...</section>
+
+{/* Section 4: FinalCTA + FAQ */}
+<section className="py-14 bg-white/[0.02]">...</section>
+```
+
+The lifestyle image placeholder should reference `/assets/visuals/etsy-[slug]-mockup.jpg` — it will be generated separately.
+
+### Trust Pills — Benefit Language
+
+Trust pills in the hero must be outcome-focused, not technical specs. Bad: "7 MCM sub-styles mapped to ratios". Good: "7 MCM styles + ideal frame sizes for each". Rule: if a non-seller wouldn't understand it in 2 seconds, rewrite it.
+
 ### Components to Use
 
 Import from existing codebase:
@@ -89,7 +122,8 @@ Import from existing codebase:
 - `Button` — CTA buttons (wrap in `<a>` for links)
 - `Card` — content cards, tip boxes (`accent` prop for highlighted cards)
 - `FAQAccordion` — FAQ section (takes `items` array with `question`/`answer`)
-- `EmailCapture` — lead capture (takes `placeholder` and `buttonText` props)
+- `QuickAnswer` — featured snippet block (import from `@/components/QuickAnswer`, requires `question` prop)
+- `FinalCTA` — final conversion block (props: `heading`, `stat`, `description`, `buttonText`, `appUrl`)
 - `RelatedPages` — internal linking (from `@/components/RelatedPages`)
 
 Use same visual patterns: dark background, purple CTA buttons, trust pills under hero CTA.

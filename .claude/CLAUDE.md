@@ -282,8 +282,9 @@ Run in parallel where possible:
 4. **Visual QA**: Playwright screenshots — hero at 1440x900 + 390x844, OG at 1200x630
 5. **Backlinks**: Search existing pages for unlinked mentions of new topic, add links
 6. **Deploy**: `git add` + commit + push → Cloudflare Pages auto-deploys
-7. **Auto-sync**: Update page-registry, CONTENT_PLAYBOOK, MILESTONES, pipeline state
-8. **Verify**: Hero viewport check (H1 upper half, trust pills visible), mobile check, OG image check
+7. **Nav/Footer**: Add new page to `Header.tsx` (desktop + mobile) and `Footer.tsx` under relevant section
+8. **Auto-sync**: Update page-registry, CONTENT_PLAYBOOK, MILESTONES, pipeline state
+9. **Verify**: Hero viewport check (H1 upper half, trust pills visible), mobile check, OG image check
 
 Template pages:
 - Size pages: `etsy-8x10-print-size/page.tsx`
