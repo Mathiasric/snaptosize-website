@@ -1,11 +1,36 @@
-{
-  "enabledPlugins": {
-    "frontend-design@claude-plugins-official": true,
-    "claude-mem@thedotmack": true
-  },
-  "permissions": {
-    "allow": [
-      "Read(//c/snaptosize-website/.claude/**)"
-    ]
+ {
+    "permissions": {
+      "allow": [
+        "mcp__claude_ai_Canva__*",
+        "mcp__gemini__*",
+        "mcp__playwright__*",
+        "Edit",
+        "Write",
+        "Bash"
+      ],
+      "defaultMode": "acceptEdits"
+    },
+    "model": "sonnet",
+    "enabledPlugins": {
+      "claude-mem@thedotmack": true,
+      "ui-ux-pro-max@ui-ux-pro-max-skill": true,
+      "superpowers@superpowers-marketplace": true,
+      "frontend-design@claude-plugins-official": true,
+      "context-mode@context-mode": true
+    },
+    "extraKnownMarketplaces": {
+      "ui-ux-pro-max-skill": {
+        "source": { "source": "github", "repo": "nextlevelbuilder/ui-ux-pro-max-skill" }
+      },
+      "superpowers-marketplace": {
+        "source": { "source": "github", "repo": "obra/superpowers-marketplace" }
+      },
+      "thedotmack": {
+        "source": { "source": "github", "repo": "thedotmack/claude-mem" }
+      },
+      "context-mode": {
+        "source": { "source": "github", "repo": "mksglu/context-mode" }
+      }
+    },
+    "effortLevel": "medium"
   }
-}

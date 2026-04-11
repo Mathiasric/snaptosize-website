@@ -40,8 +40,11 @@ marketing/social/ready/
 # Remotion build output
 marketing/remotion/out/
 
-# Playwright QA screenshots
+# Playwright QA screenshots (local only, never commit)
 review-*.png
+tests/
+marketing/qa/
+qa-*.png
 
 # Large binary assets (keep in local, not git)
 assets/*.mp4

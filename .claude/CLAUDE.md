@@ -104,46 +104,51 @@ We are in Growth + Conversion phase. Backend is hardened and stable.
 
 ## TOOLS & INTEGRATIONS
 
-### MCP Servers (available via Claude.ai plugins)
+### MCP Servers
 
 | MCP Server | Use For | Key Notes |
 |------------|---------|-----------|
-| **Gemini** | Image generation, text analysis, bulk captions | `gemini-generate-image` for pins/OG, `gemini-query` for captions |
+| **Playwright** | Screenshots, visual QA, social slide capture | **Primary visual tool.** Section clips via `chromium.launch()` in `app-next/`. |
+| **Gemini** | Lifestyle image gen, text analysis, captions | `gemini-generate-image` for aspirational pins only. Social slides preferred for branded visuals. |
+| **n8n-mcp** | Workflow automation docs/templates | Docs-only mode. 1396 nodes, 2709 templates. Connect N8N_API_URL later for automation. |
+| **Firecrawl** | Web scraping for SEO research | 500 free credits. Scrape SERP results for content briefs. |
 | **NotebookLM** | Strategic brain, project context queries | Notebook ID: `4853724d-ed87-4546-963a-e84665b869f5`. Refresh auth first. |
 | **Canva** | Design creation/editing | Unreliable auth — use as fallback |
 | **Figma** | Design-to-code extraction | `get_design_context` for component code |
 | **Sentry** | Error monitoring, issue search | `search_issues`, `get_issue_details` |
 | **Cloudflare** | Workers inspection, R2, KV, D1 | `workers_get_worker_code`, `accounts_list` |
 | **claude-mem** | Cross-session memory | Automatic — no manual action needed |
+| **context-mode** | Context window optimization | Use `ctx_execute` instead of Bash for large outputs. `ctx_batch_execute` for multi-command research. `/ctx-stats` shows savings. |
 
 ### CLI Tools
 
 | Tool | Command | Use For |
 |------|---------|---------|
 | **Playwright** | `npx playwright screenshot --viewport-size="1440,900" <url> <out.png>` | Static page screenshots |
-| **Playwright (node)** | `node -e "..."` with `chromium.launch()` | Interactive screenshots (dropdowns, hover states) |
+| **Playwright (node)** | `node -e "..."` with `chromium.launch()` | Interactive screenshots, section clips, social slide capture |
+| **Remotion** | `cd marketing/remotion && npx tsx render-slideshow-videos.ts` | Render SlideshowVertical videos from social slide screenshots |
 | **gh** | `gh pr create`, `gh issue view` | GitHub operations |
 | **nlm** | `PYTHONIOENCODING=utf-8 nlm <cmd> \| cat` | NotebookLM CLI (pipe through `\| cat` on Windows to avoid Unicode crash) |
 | **Buffer** | `python marketing/social/schedule-batch.py` | Social media scheduling |
 | **GSC** | `python marketing/gsc-analytics/pull_gsc.py` | Google Search Console API data pull + analysis |
 
+  | **Weekly Brief** | `python marketing/intelligence/weekly-brief.py` | Combined GSC + social + pipeline intelligence report →
+  `marketing/intelligence/YYYY-MM-DD-brief.md` |
+  | **Link Builder** | `python marketing/seo-optimizer/link-builder.py` | Scan all SEO pages for internal link opportunities →
+  `marketing/seo-optimizer/link-opportunities.json` |
+  | **Title Optimizer** | `python marketing/seo-optimizer/title-optimizer.py` | Find low-CTR pages via GSC, suggest better titles →
+  `marketing/seo-optimizer/optimization-log.json` |
+ 
+  | **Content Gap Detector** | `python marketing/seo-optimizer/content-gap-detector.py` | Find keyword clusters with impressions but no page →
+  `marketing/seo-optimizer/content-gaps.json` |
+  | **Striking Distance** | `python marketing/seo-optimizer/striking-distance.py` | Find pages ranking pos 5-15 with optimization actions →
+  `marketing/seo-optimizer/striking-distance.json` |
+
+
 ### Playwright Visual QA
 
-For static pages: `npx playwright screenshot --viewport-size="1440,900" <url> <out.png>`
-
-For interactive states (dropdowns, menus, modals):
-```js
-const { chromium } = require('playwright');
-(async () => {
-  const browser = await chromium.launch();
-  const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
-  await page.goto(url);
-  await page.click('button:has-text("Guides")');
-  await page.waitForTimeout(300);
-  await page.screenshot({ path: 'out.png' });
-  await browser.close();
-})();
-```
+Static: `npx playwright screenshot --viewport-size="1440,900" <url> <out.png>`
+Interactive (dropdowns, modals): use `node -e` with `chromium.launch()` — click, waitForTimeout(300), screenshot.
 
 ### Key Services
 
@@ -157,10 +162,15 @@ const { chromium } = require('playwright');
 
 ### Active Plugins (Claude.ai)
 
-- **frontend-design** — UI/UX work, component design, visual layouts
-- **ui-ux-pro-max-skill** — Advanced UI/UX design intelligence
-- **superpowers** — Agentic skills framework for multi-step tasks
-- **claude-mem** — Cross-session context capture (automatic)
+- **frontend-design** + **ui-ux-pro-max** — UI/UX, component design, visual layouts (activate either for design work)
+- **superpowers** — Structured dev workflow: planning, subagent coordination, verification
+- **claude-mem** — Cross-session memory (automatic)
+- **context-mode** — Context window optimization (always active)
+
+### External References
+
+- **awesome-design-md** (`github.com/VoltAgent/awesome-design-md`) — 58 DESIGN.md files from top brands. Use as inspiration when building new social slide templates.
+- **awesome-claude-code** (`github.com/hesreallyhim/awesome-claude-code`) — Curated list of Claude Code skills, workflows, and tools. Bookmark for discovering new capabilities.
 
 ---
 
@@ -181,6 +191,31 @@ const { chromium } = require('playwright');
 | `Container` | Page-width wrapper. |
 | `Badge` | Status indicators. |
 | `RelatedPages` | Cross-links at page bottom. |
+
+### Social Slide System (Primary Visual Pipeline)
+
+All branded visuals (pins, posts, video slides) are built as React components and screenshotted with Playwright. This is the **default tool** for all visual content.
+
+**Source:** `app-next/app/social-slides/_components/`
+**Page:** `app-next/app/social-slides/page.tsx` (noindex, screenshot-only)
+**Wrapper:** `SlideWrapper` → Pinterest 1000×1500, Instagram 1080×1350
+**Design:** Dark gradients (#0B0B12), purple/teal glow orbs, real artwork from `/assets/Composition_Pictures/`
+
+**Templates:** BeforeAfter, PackSpotlight, StatsCard, Checklist, SizeComparison, WorkflowSteps, NumberHighlight
+
+**Flow:**
+1. React component in `_components/` using `SlideWrapper`
+2. Rendered on `/social-slides` (noindex)
+3. Playwright screenshot with `clip` on element ID
+4. Used directly as pin/post, OR placed in `remotion/public/` for SlideshowVertical video slides
+
+**Rules:**
+- Social slide components are the DEFAULT for all branded visuals
+- Gemini only for lifestyle/aspirational content (room mockups, styled scenes)
+- Never use raw page screenshots or text-only Remotion for social content
+- New visual concepts → build a new `_components/` template, reference `BeforeAfter.tsx`
+
+See `docs/PIPELINE_OPERATIONS.md` for full workflow and screenshot commands.
 
 ---
 
@@ -272,9 +307,7 @@ Active notebook: "SnapToSize — 1M ARR Scaling Playbook" (ID: `4853724d-ed87-45
 1. MCP: `mcp__notebooklm-mcp__refresh_auth` then `source_add` with type=text
 2. CLI fallback: `PYTHONIOENCODING=utf-8 nlm source add <id> --type text --title "<name>" --text "$(cat <file>)" | cat`
 
-**When to sync:** After major milestones, 10+ new SEO pages, phase completion, or strategic review.
-
-**Sources to keep synced:** PROJECT_STATE, GROWTH_STATE, MILESTONES, CONTENT_PLAYBOOK, CONTENT_REFERENCE, scaling plan, competitor analysis.
+**When to sync:** After major milestones, 10+ new SEO pages, or strategic review. Key sources: PROJECT_STATE, GROWTH_STATE, MILESTONES, CONTENT_PLAYBOOK.
 
 ---
 
@@ -301,3 +334,27 @@ Active notebook: "SnapToSize — 1M ARR Scaling Playbook" (ID: `4853724d-ed87-45
 This is a $1M ARR SaaS in production.
 
 Stability > cleverness | Clarity > abstraction | Contracts > convenience | Execution > theory | Growth > features
+
+---
+
+## AUTONOMY RULES
+
+### Just do it (no approval needed)
+- Fix weak CTA copy on existing pages
+- Add or improve internal links on existing pages
+- Fix bugs, layout issues, broken components
+- Add PostHog tracking events
+- Improve meta titles/descriptions
+- Fix TypeScript errors, build warnings
+- Update docs (MILESTONES, NEXT_ACTIONS, page-registry) after completed work
+
+### Ask first (even if it seems obvious)
+- Creating any new page or file that gets committed and deployed
+- Bulk operations of any kind (e.g. "fix all 56 pages at once")
+- Changing pricing, quotas, or plan limits
+- Adding new services, APIs, or third-party integrations
+- Any change that affects more than 3 files at once
+- Sending emails, posting to social, or any external action
+
+### Decision rule
+If scope is > 1 file OR creates something new → confirm first with a one-line summary of what you're about to do and why. Keep it short. Don't ask for obvious small fixes.
