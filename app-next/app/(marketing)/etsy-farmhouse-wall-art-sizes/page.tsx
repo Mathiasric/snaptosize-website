@@ -762,6 +762,12 @@ export default function EtsyFarmhouseWallArtSizesPage() {
               </p>
             </div>
 
+            <ListingOutputShowcase
+              artwork="fox"
+              heading="Your farmhouse art — every ratio ready to list."
+              subtext="SnapToSize generates all five ratio-correct files from your original upload. No Photoshop — just upload and download."
+            />
+
             <div className="rounded-xl overflow-hidden border border-white/[0.08]">
               <img src="/assets/visuals/etsy-farmhouse-wall-art-mockup.jpg" alt="Cozy farmhouse living room with shiplap wall displaying framed art — rustic 'Gather' typography sign, vintage windmill sketch, botanical herb illustration, and cottagecore wildflowers in sizes from 8x10 to 24x36" width={1200} height={800} className="w-full h-auto" loading="lazy" />
             </div>
@@ -1145,12 +1151,6 @@ export default function EtsyFarmhouseWallArtSizesPage() {
                 </Card>
               </div>
             </div>
-
-            <ListingOutputShowcase
-              artwork="fox"
-              heading="Your farmhouse art — every ratio ready to list."
-              subtext="SnapToSize generates all five ratio-correct files from your original upload. No Photoshop — just upload and download."
-            />
 
             {/* --- CTA 1 — Productivity angle --- */}
             <ContextualCTA

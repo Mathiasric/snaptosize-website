@@ -486,15 +486,15 @@ export default function EtsyAbstractWallArtSizesPage() {
               </p>
             </div>
 
-            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
-              <img src="/assets/visuals/etsy-abstract-wall-art-mockup.jpg" alt="Living room with three framed abstract wall art prints above a cream sofa — geometric shapes in terracotta and amber, fluid organic forms, and a color field composition in warm earth tones with teal accents" width={1200} height={800} className="w-full h-auto" loading="lazy" />
-            </div>
-
             <ListingOutputShowcase
               artwork="geometric"
               heading="Your abstract art — every ratio ready to list."
               subtext="SnapToSize generates all five ratio-correct files from your original upload. No Photoshop — just upload and download."
             />
+
+            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
+              <img src="/assets/visuals/etsy-abstract-wall-art-mockup.jpg" alt="Living room with three framed abstract wall art prints above a cream sofa — geometric shapes in terracotta and amber, fluid organic forms, and a color field composition in warm earth tones with teal accents" width={1200} height={800} className="w-full h-auto" loading="lazy" />
+            </div>
 
             {/* --- H2 2: Best-Selling Abstract Wall Art Sizes on Etsy --- */}
             <div>

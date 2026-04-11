@@ -517,6 +517,12 @@ export default function EtsyWatercolorPrintSizesPage() {
               </p>
             </div>
 
+            <ListingOutputShowcase
+              artwork="misty_lake"
+              heading="Your watercolor art — every ratio ready to list."
+              subtext="SnapToSize generates all five ratio-correct files from your original upload. No Photoshop — just upload and download."
+            />
+
             {/* Mockup image placeholder */}
             <div className="rounded-xl overflow-hidden border border-white/[0.08]">
               <img
@@ -528,12 +534,6 @@ export default function EtsyWatercolorPrintSizesPage() {
                 loading="lazy"
               />
             </div>
-
-            <ListingOutputShowcase
-              artwork="misty_lake"
-              heading="Your watercolor art — every ratio ready to list."
-              subtext="SnapToSize generates all five ratio-correct files from your original upload. No Photoshop — just upload and download."
-            />
 
             {/* --- H2 2: Complete Watercolor Print Size Reference --- */}
             <div>

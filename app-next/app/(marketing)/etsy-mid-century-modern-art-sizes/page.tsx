@@ -441,6 +441,16 @@ export default function EtsyMidCenturyModernArtSizesPage() {
         </Container>
       </section>
 
+      <section className="py-4">
+        <Container>
+          <ListingOutputShowcase
+            artwork="geometric"
+            heading="Your MCM art — every ratio ready to list."
+            subtext="SnapToSize generates all five ratio-correct files from your original upload. No Photoshop — just upload and download."
+          />
+        </Container>
+      </section>
+
       {/* ===== LIFESTYLE IMAGE ===== */}
       <div className="px-4 md:px-8 max-w-5xl mx-auto pb-4">
         <div className="rounded-xl overflow-hidden border border-white/[0.08]">
@@ -454,16 +464,6 @@ export default function EtsyMidCenturyModernArtSizesPage() {
           />
         </div>
       </div>
-
-      <section className="py-4">
-        <Container>
-          <ListingOutputShowcase
-            artwork="geometric"
-            heading="Your MCM art — every ratio ready to list."
-            subtext="SnapToSize generates all five ratio-correct files from your original upload. No Photoshop — just upload and download."
-          />
-        </Container>
-      </section>
 
       {/* ===== BEST-SELLING SIZES TABLE ===== */}
       <section className="py-14 bg-white/[0.02]">
