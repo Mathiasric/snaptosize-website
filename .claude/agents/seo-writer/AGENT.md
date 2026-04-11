@@ -25,7 +25,32 @@ A content blueprint from `marketing/briefs/YYYY-WXX-batch.json` containing:
 
 1. **Draft page:** `marketing/drafts/YYYY-WXX-[slug]/page.tsx`
 2. **Registry entry:** JSON object to add to `app-next/data/page-registry.json`
-3. **State update:** Advance item in `seo-pipeline-state.json` from `briefed` → `drafted`
+3. **Lifestyle image:** Generate a Gemini lifestyle mockup for the page (see below)
+4. **OG image:** After build passes, run the `og-screenshot` skill to capture the hero at 1200×630
+5. **State update:** Advance item in `seo-pipeline-state.json` from `briefed` → `drafted`
+
+## Lifestyle Image Generation
+
+Every page needs a lifestyle mockup at `app-next/public/assets/visuals/[slug]-mockup.jpg`.
+
+Generate it with the Gemini API using `marketing/social/gen_lifestyle_mockups.py` as a template, or write an inline script. Rules:
+- Use `aspect_ratio: "4:3"` (the only wide ratio Imagen 4.0 supports — NOT 3:2, NOT 16:9)
+- Prompt should show real-world use: a desk scene, a framed print on a wall, a tablet/iPad displaying the content
+- Aspirational and lifestyle-focused — not a product mockup
+- Save as `.jpg` to `app-next/public/assets/visuals/[slug]-mockup.jpg`
+- Run with `PYTHONIOENCODING=utf-8 python <script>` on Windows
+
+After generating, update the lifestyle image placeholder in the page to use the real path.
+
+## OG Image Generation
+
+After `npx next build` passes, run the `og-screenshot` skill (`.claude/skills/og-screenshot_SKILL.md`) to:
+1. Serve static build on port 3333
+2. Screenshot the hero section at 1200×630 (no navbar)
+3. Save to `app-next/public/assets/og/[slug].png`
+4. Update metadata `openGraph.images` and `twitter.images` in `page.tsx`
+
+**Do NOT use `replace_all`** when updating OG image paths — it will corrupt the hero background image src too.
 
 ## Page Requirements
 
