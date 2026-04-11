@@ -132,7 +132,7 @@ export function EmailCapture({
 
       {status === "idle" && (
         <p className="mt-2 text-xs text-white/60">
-          Free PDF. No spam. Unsubscribe anytime.
+          No spam. Unsubscribe anytime.
         </p>
       )}
     </div>
