@@ -5,7 +5,6 @@ import { useState } from "react";
 interface SizeSpec {
   id: string;
   label: string;
-  examples: string[];
   file: string;
   w: number;
   h: number;
@@ -24,11 +23,11 @@ export const ARTWORK_PRESETS: Record<string, ArtworkPreset> = {
     folder: "fox",
     altPrefix: "Fox pencil sketch art print",
     sizes: [
-      { id: "2x3", label: "2×3", examples: ["4×6", "8×12", "24×36"], file: "Fox.jpg", w: 2, h: 3 },
-      { id: "a4", label: "ISO A4", examples: ["210×297mm", "2480×3508 px"], file: "A4_2480x3508_ISO (9).jpg", w: 210, h: 297 },
-      { id: "3x4", label: "3×4", examples: ["6×8", "12×16", "18×24"], file: "Fox_6x8_1800x2400.jpg", w: 3, h: 4 },
-      { id: "11x14", label: "11×14", examples: ["11×14 in", "3300×4200 px"], file: "Fox_11x14_3300x4200.jpg", w: 11, h: 14 },
-      { id: "4x5", label: "4×5", examples: ["8×10", "16×20", "24×30"], file: "Fox_4x5_1200x1500.jpg", w: 4, h: 5 },
+      { id: "2x3", label: "2×3", file: "Fox.jpg", w: 2, h: 3 },
+      { id: "a4", label: "ISO A4", file: "A4_2480x3508_ISO (9).jpg", w: 210, h: 297 },
+      { id: "3x4", label: "3×4", file: "Fox_6x8_1800x2400.jpg", w: 3, h: 4 },
+      { id: "11x14", label: "11×14", file: "Fox_11x14_3300x4200.jpg", w: 11, h: 14 },
+      { id: "4x5", label: "4×5", file: "Fox_4x5_1200x1500.jpg", w: 4, h: 5 },
     ],
   },
   misty_lake: {
@@ -36,11 +35,11 @@ export const ARTWORK_PRESETS: Record<string, ArtworkPreset> = {
     folder: "misty_lake",
     altPrefix: "Misty Nordic landscape watercolor art print",
     sizes: [
-      { id: "2x3", label: "2×3", examples: ["4×6", "8×12", "24×36"], file: "Misty_Nordic.jpg", w: 2, h: 3 },
-      { id: "a4", label: "ISO A4", examples: ["210×297mm", "2480×3508 px"], file: "A4_2480x3508_ISO (1).jpg", w: 210, h: 297 },
-      { id: "3x4", label: "3×4", examples: ["6×8", "12×16", "18×24"], file: "Misty_Nordic_6x8_1800x2400.jpg", w: 3, h: 4 },
-      { id: "11x14", label: "11×14", examples: ["11×14 in", "3300×4200 px"], file: "Misty_Nordic_11x14_3300x4200.jpg", w: 11, h: 14 },
-      { id: "4x5", label: "4×5", examples: ["8×10", "16×20", "24×30"], file: "Misty_Nordic_4x5_1200x1500.jpg", w: 4, h: 5 },
+      { id: "2x3", label: "2×3", file: "Misty_Nordic.jpg", w: 2, h: 3 },
+      { id: "a4", label: "ISO A4", file: "A4_2480x3508_ISO (1).jpg", w: 210, h: 297 },
+      { id: "3x4", label: "3×4", file: "Misty_Nordic_6x8_1800x2400.jpg", w: 3, h: 4 },
+      { id: "11x14", label: "11×14", file: "Misty_Nordic_11x14_3300x4200.jpg", w: 11, h: 14 },
+      { id: "4x5", label: "4×5", file: "Misty_Nordic_4x5_1200x1500.jpg", w: 4, h: 5 },
     ],
   },
   geometric: {
@@ -48,11 +47,11 @@ export const ARTWORK_PRESETS: Record<string, ArtworkPreset> = {
     folder: "geometric_colorful art",
     altPrefix: "Geometric colorful MCM abstract art print",
     sizes: [
-      { id: "2x3", label: "2×3", examples: ["4×6", "8×12", "24×36"], file: "Geometric colorful art.jpg", w: 2, h: 3 },
-      { id: "a4", label: "ISO A4", examples: ["210×297mm", "2480×3508 px"], file: "A4_2480x3508px.jpg", w: 210, h: 297 },
-      { id: "3x4", label: "3×4", examples: ["6×8", "12×16", "18×24"], file: "geo_6x8_1800x2400_3x4.jpg", w: 3, h: 4 },
-      { id: "11x14", label: "11×14", examples: ["11×14 in", "3300×4200 px"], file: "geo_11x14_3300x4200px.jpg", w: 11, h: 14 },
-      { id: "4x5", label: "4×5", examples: ["8×10", "16×20", "24×30"], file: "4x5_1200x1500px.jpg", w: 4, h: 5 },
+      { id: "2x3", label: "2×3", file: "Geometric colorful art.jpg", w: 2, h: 3 },
+      { id: "a4", label: "ISO A4", file: "A4_2480x3508px.jpg", w: 210, h: 297 },
+      { id: "3x4", label: "3×4", file: "geo_6x8_1800x2400_3x4.jpg", w: 3, h: 4 },
+      { id: "11x14", label: "11×14", file: "geo_11x14_3300x4200px.jpg", w: 11, h: 14 },
+      { id: "4x5", label: "4×5", file: "4x5_1200x1500px.jpg", w: 4, h: 5 },
     ],
   },
   wildflower: {
@@ -60,10 +59,10 @@ export const ARTWORK_PRESETS: Record<string, ArtworkPreset> = {
     folder: "wildflower_botanical_art",
     altPrefix: "Wildflower botanical art print",
     sizes: [
-      { id: "2x3", label: "2×3", examples: ["4×6", "8×12", "24×36"], file: "Wildflower botanical art.jpg", w: 2, h: 3 },
-      { id: "a4", label: "ISO A4", examples: ["210×297mm", "2480×3508 px"], file: "A4_2480x3508_ISO (11).jpg", w: 210, h: 297 },
-      { id: "11x14", label: "11×14", examples: ["11×14 in", "3300×4200 px"], file: "Wildflower botanical art_11x14_3300x4200.jpg", w: 11, h: 14 },
-      { id: "4x5", label: "4×5", examples: ["8×10", "16×20", "24×30"], file: "Wildflower botanical art_4x5_1200x1500.jpg", w: 4, h: 5 },
+      { id: "2x3", label: "2×3", file: "Wildflower botanical art.jpg", w: 2, h: 3 },
+      { id: "a4", label: "ISO A4", file: "A4_2480x3508_ISO (11).jpg", w: 210, h: 297 },
+      { id: "11x14", label: "11×14", file: "Wildflower botanical art_11x14_3300x4200.jpg", w: 11, h: 14 },
+      { id: "4x5", label: "4×5", file: "Wildflower botanical art_4x5_1200x1500.jpg", w: 4, h: 5 },
     ],
   },
 };
@@ -199,7 +198,7 @@ export function ListingOutputShowcase({
                 </div>
 
                 {/* Label below image */}
-                <div className="mt-2.5 text-center px-1">
+                <div className="mt-2 text-center px-1">
                   <div
                     style={{
                       fontFamily: "ui-monospace, monospace",
@@ -211,16 +210,6 @@ export function ListingOutputShowcase({
                     }}
                   >
                     {size.label}
-                  </div>
-                  <div
-                    style={{
-                      color: "#334155",
-                      fontSize: 10,
-                      marginTop: 2,
-                      lineHeight: 1.5,
-                    }}
-                  >
-                    {size.examples.join(" · ")}
                   </div>
                 </div>
               </div>
