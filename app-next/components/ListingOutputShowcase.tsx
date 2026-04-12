@@ -26,7 +26,7 @@ export const ARTWORK_PRESETS: Record<string, ArtworkPreset> = {
     altPrefix: "Fox pencil sketch art print",
     sizes: [
       { id: "2x3", label: "2×3", pack: "Pack 2×3", file: "Fox.jpg", w: 2, h: 3 },
-      { id: "a4", label: "ISO A4", pack: "Pack ISO", file: "A4_2480x3508_ISO (9).jpg", w: 210, h: 297 },
+      { id: "a4", label: "A4", pack: "Pack ISO", file: "A4_2480x3508_ISO (9).jpg", w: 210, h: 297 },
       { id: "3x4", label: "3×4", pack: "Pack 3×4", file: "Fox_6x8_1800x2400.jpg", w: 3, h: 4 },
       { id: "11x14", label: "11×14", pack: "Extras", file: "Fox_11x14_3300x4200.jpg", w: 11, h: 14 },
       { id: "4x5", label: "4×5", pack: "Pack 4×5", file: "Fox_4x5_1200x1500.jpg", w: 4, h: 5 },
@@ -38,7 +38,7 @@ export const ARTWORK_PRESETS: Record<string, ArtworkPreset> = {
     altPrefix: "Misty Nordic landscape watercolor art print",
     sizes: [
       { id: "2x3", label: "2×3", pack: "Pack 2×3", file: "Misty_Nordic.jpg", w: 2, h: 3 },
-      { id: "a4", label: "ISO A4", pack: "Pack ISO", file: "A4_2480x3508_ISO (1).jpg", w: 210, h: 297 },
+      { id: "a4", label: "A4", pack: "Pack ISO", file: "A4_2480x3508_ISO (1).jpg", w: 210, h: 297 },
       { id: "3x4", label: "3×4", pack: "Pack 3×4", file: "Misty_Nordic_6x8_1800x2400.jpg", w: 3, h: 4 },
       { id: "11x14", label: "11×14", pack: "Extras", file: "Misty_Nordic_11x14_3300x4200.jpg", w: 11, h: 14 },
       { id: "4x5", label: "4×5", pack: "Pack 4×5", file: "Misty_Nordic_4x5_1200x1500.jpg", w: 4, h: 5 },
@@ -50,7 +50,7 @@ export const ARTWORK_PRESETS: Record<string, ArtworkPreset> = {
     altPrefix: "Geometric colorful MCM abstract art print",
     sizes: [
       { id: "2x3", label: "2×3", pack: "Pack 2×3", file: "Geometric colorful art.jpg", w: 2, h: 3 },
-      { id: "a4", label: "ISO A4", pack: "Pack ISO", file: "A4_2480x3508px.jpg", w: 210, h: 297 },
+      { id: "a4", label: "A4", pack: "Pack ISO", file: "A4_2480x3508px.jpg", w: 210, h: 297 },
       { id: "3x4", label: "3×4", pack: "Pack 3×4", file: "geo_6x8_1800x2400_3x4.jpg", w: 3, h: 4 },
       { id: "11x14", label: "11×14", pack: "Extras", file: "geo_11x14_3300x4200px.jpg", w: 11, h: 14 },
       { id: "4x5", label: "4×5", pack: "Pack 4×5", file: "4x5_1200x1500px.jpg", w: 4, h: 5 },
@@ -62,7 +62,7 @@ export const ARTWORK_PRESETS: Record<string, ArtworkPreset> = {
     altPrefix: "Wildflower botanical art print",
     sizes: [
       { id: "2x3", label: "2×3", pack: "Pack 2×3", file: "Wildflower botanical art.jpg", w: 2, h: 3 },
-      { id: "a4", label: "ISO A4", pack: "Pack ISO", file: "A4_2480x3508_ISO (11).jpg", w: 210, h: 297 },
+      { id: "a4", label: "A4", pack: "Pack ISO", file: "A4_2480x3508_ISO (11).jpg", w: 210, h: 297 },
       { id: "11x14", label: "11×14", pack: "Extras", file: "Wildflower botanical art_11x14_3300x4200.jpg", w: 11, h: 14 },
       { id: "4x5", label: "4×5", pack: "Pack 4×5", file: "Wildflower botanical art_4x5_1200x1500.jpg", w: 4, h: 5 },
     ],
@@ -73,7 +73,7 @@ export const ARTWORK_PRESETS: Record<string, ArtworkPreset> = {
     altPrefix: "Mystical portal abstract art print",
     sizes: [
       { id: "2x3", label: "2×3", pack: "Pack 2×3", file: "Mystical portal abstract.jpeg", w: 2, h: 3 },
-      { id: "a4", label: "ISO A4", pack: "Pack ISO", file: "mysticalportal_A4_2480x3508px.jpg", w: 210, h: 297 },
+      { id: "a4", label: "A4", pack: "Pack ISO", file: "mysticalportal_A4_2480x3508px.jpg", w: 210, h: 297 },
       { id: "3x4", label: "3×4", pack: "Pack 3×4", file: "mysticalportal_3x4_6x8_1800x2400.jpg", w: 3, h: 4 },
       { id: "11x14", label: "11×14", pack: "Extras", file: "mysticalportal_11x14_3300x4200px.jpg", w: 11, h: 14 },
       { id: "4x5", label: "4×5", pack: "Pack 4×5", file: "mysticalportal_4x5_1200x1500.jpg", w: 4, h: 5 },
@@ -85,7 +85,7 @@ export const ARTWORK_PRESETS: Record<string, ArtworkPreset> = {
     altPrefix: "Floral vase watercolor art print",
     sizes: [
       { id: "2x3", label: "2×3", pack: "Pack 2×3", file: "Floral vase art .jpg", w: 2, h: 3 },
-      { id: "a4", label: "ISO A4", pack: "Pack ISO", file: "A4_2480x3508_ISO (12).jpg", w: 210, h: 297 },
+      { id: "a4", label: "A4", pack: "Pack ISO", file: "A4_2480x3508_ISO (12).jpg", w: 210, h: 297 },
       { id: "3x4", label: "3×4", pack: "Pack 3×4", file: "Floral vase art _6x8_1800x2400.jpg", w: 3, h: 4 },
       { id: "11x14", label: "11×14", pack: "Extras", file: "Floral vase art _11x14_3300x4200.jpg", w: 11, h: 14 },
       { id: "4x5", label: "4×5", pack: "Pack 4×5", file: "Floral vase art _4x5_1200x1500.jpg", w: 4, h: 5 },
