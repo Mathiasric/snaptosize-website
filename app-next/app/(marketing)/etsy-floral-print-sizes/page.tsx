@@ -9,7 +9,6 @@ import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 import { QuickAnswer } from "@/components/QuickAnswer";
-import { EmailCaptureSection } from "@/components/EmailCaptureSection";
 
 export const metadata: Metadata = {
   title: "Etsy Floral Print Sizes — What to Offer",
@@ -19,7 +18,7 @@ export const metadata: Metadata = {
     canonical: "https://snaptosize.com/etsy-floral-print-sizes",
   },
   openGraph: {
-    title: "Etsy Floral Print Sizes — What to Offer",
+    title: "Etsy Floral Print Sizes — What to Offer | SnapToSize",
     description:
       "Complete guide to floral print sizes for Etsy sellers. Best sizes for roses, peonies, wildflowers, and vintage florals. All 5 ratio packs covered.",
     url: "https://snaptosize.com/etsy-floral-print-sizes",
@@ -939,7 +938,6 @@ export default function EtsyFloralPrintSizesPage() {
             </div>
 
             {/* Email Capture */}
-            <EmailCaptureSection />
 
             {/* Related Pages */}
             <RelatedPages currentSlug="etsy-floral-print-sizes" />
