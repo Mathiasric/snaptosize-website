@@ -82,6 +82,8 @@
 - [x] `etsy-farmhouse-wall-art-sizes` — deployed with CSS shiplap hero, 6 sub-style breakdown, room-by-room guide (2026-04-08)
 - [x] `etsy-coastal-wall-art-sizes` — deployed with CSS ocean hero, 7 sub-style breakdown, gallery wall strategy (2026-04-08)
 - [x] Cross-links added: backlinks from vintage, photography, boho, watercolor pages
+- [x] `etsy-celestial-wall-art-sizes` — deployed (2026-04-12)
+- [x] `etsy-floral-print-sizes` — deployed (2026-04-12)
 - [ ] **Next opportunities:** etsy photography sub-niches, etsy digital planner sizes, etsy mid-century modern art sizes
 
 ### 6. Guide Pages — Add Real Mockup Images (opportunity)
