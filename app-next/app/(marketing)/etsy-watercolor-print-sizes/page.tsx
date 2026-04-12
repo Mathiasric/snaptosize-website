@@ -1172,6 +1172,13 @@ export default function EtsyWatercolorPrintSizesPage() {
                     >
                       botanical prints
                     </Link>
+                    . See also:{" "}
+                    <Link
+                      href="/etsy-floral-print-sizes"
+                      className="text-accent-light hover:underline"
+                    >
+                      floral print sizes
+                    </Link>
                     . Strong at medium sizes for bedrooms, bathrooms, and
                     nurseries. The 4:5 ratio is the classic floral frame.
                   </p>

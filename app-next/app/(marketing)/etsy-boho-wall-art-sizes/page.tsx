@@ -396,8 +396,11 @@ export default function EtsyBohoWallArtSizesPage() {
               style={{ color: "rgba(61,48,40,0.55)" }}
             >
               Bohemian wall art is one of the top-selling digital printable
-              niches on Etsy. From pampas grass illustrations to celestial moon
-              phase designs, boho buyers want gallery wall sets in multiple
+              niches on Etsy. From pampas grass illustrations to{" "}
+              <Link href="/etsy-celestial-wall-art-sizes" className="text-accent-light hover:underline">
+                celestial wall art sizes
+              </Link>
+              , boho buyers want gallery wall sets in multiple
               sizes. This guide covers the best sizes for every boho sub-niche
               and how to generate them all from a single upload.
             </p>

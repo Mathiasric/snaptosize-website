@@ -91,6 +91,16 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-celestial-wall-art-sizes" className="transition-colors hover:text-accent-light">
+                  Celestial Wall Art Sizes
+                </Link>
+              </li>
+              <li>
+                <Link href="/etsy-floral-print-sizes" className="transition-colors hover:text-accent-light">
+                  Floral Print Sizes
+                </Link>
+              </li>
+              <li>
                 <Link href="/etsy-digital-planner-sizes" className="transition-colors hover:text-accent-light">
                   Digital Planner Sizes
                 </Link>
