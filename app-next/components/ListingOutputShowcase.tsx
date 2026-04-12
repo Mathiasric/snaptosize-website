@@ -149,16 +149,10 @@ export function ListingOutputShowcase({
         </div>
       </div>
 
-      {/* Desktop image grid */}
+      {/* Desktop image grid: 3 top + 2 bottom */}
       <div className="hidden md:block px-3 sm:px-4">
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: gridTemplate,
-            gap: 8,
-          }}
-        >
-          {preset.sizes.map((size) => {
+        <div className="grid grid-cols-3 gap-3 mb-3">
+          {preset.sizes.slice(0, 3).map((size) => {
             const isHov = hovered === size.id;
             return (
               <div
@@ -167,70 +161,58 @@ export function ListingOutputShowcase({
                 onMouseEnter={() => setHovered(size.id)}
                 onMouseLeave={() => setHovered(null)}
               >
-                {/* Image with correct aspect ratio */}
                 <div
                   className="relative overflow-hidden w-full"
                   style={{
                     aspectRatio: `${size.w} / ${size.h}`,
                     borderRadius: 8,
-                    border: isHov
-                      ? "1.5px solid rgba(45,212,191,0.5)"
-                      : "1px solid rgba(255,255,255,0.09)",
-                    boxShadow: isHov
-                      ? "0 16px 48px rgba(0,0,0,0.7), 0 0 0 1px rgba(45,212,191,0.1)"
-                      : "0 6px 20px rgba(0,0,0,0.45)",
+                    border: isHov ? "1.5px solid rgba(45,212,191,0.5)" : "1px solid rgba(255,255,255,0.09)",
+                    boxShadow: isHov ? "0 16px 48px rgba(0,0,0,0.7), 0 0 0 1px rgba(45,212,191,0.1)" : "0 6px 20px rgba(0,0,0,0.45)",
                     transform: isHov ? "translateY(-5px)" : "translateY(0)",
-                    transition:
-                      "transform 0.22s ease, border-color 0.18s ease, box-shadow 0.22s ease",
+                    transition: "transform 0.22s ease, border-color 0.18s ease, box-shadow 0.22s ease",
                   }}
                 >
-                  <Image
-                    src={imgSrc(preset.folder, size.file)}
-                    alt={`${preset.altPrefix} at ${size.label} ratio`}
-                    fill
-                    sizes="(max-width: 768px) 33vw, 20vw"
-                    style={{ objectFit: "cover" }}
-                    loading="lazy"
-                  />
-                  {/* Ratio badge */}
-                  <div
-                    style={{
-                      position: "absolute",
-                      top: 7,
-                      left: 7,
-                      background: "rgba(8,9,16,0.82)",
-                      backdropFilter: "blur(8px)",
-                      borderRadius: 5,
-                      padding: "3px 8px",
-                      border: "1px solid rgba(255,255,255,0.13)",
-                    }}
-                  >
-                    <span
-                      style={{
-                        fontFamily: "ui-monospace, monospace",
-                        color: "#f1f5f9",
-                        fontSize: 11,
-                        fontWeight: 700,
-                        lineHeight: 1,
-                      }}
-                    >
-                      {size.label}
-                    </span>
+                  <Image src={imgSrc(preset.folder, size.file)} alt={`${preset.altPrefix} at ${size.label} ratio`} fill sizes="33vw" style={{ objectFit: "cover" }} loading="lazy" />
+                  <div style={{ position: "absolute", top: 7, left: 7, background: "rgba(8,9,16,0.82)", backdropFilter: "blur(8px)", borderRadius: 5, padding: "3px 8px", border: "1px solid rgba(255,255,255,0.13)" }}>
+                    <span style={{ fontFamily: "ui-monospace, monospace", color: "#f1f5f9", fontSize: 11, fontWeight: 700, lineHeight: 1 }}>{size.label}</span>
                   </div>
                 </div>
-                {/* Pack name below image */}
                 <div className="text-center mt-2">
-                  <span
-                    style={{
-                      fontFamily: "ui-monospace, monospace",
-                      color: "#64748b",
-                      fontSize: 11,
-                      fontWeight: 600,
-                      letterSpacing: "0.05em",
-                    }}
-                  >
-                    {size.pack}
-                  </span>
+                  <span style={{ fontFamily: "ui-monospace, monospace", color: "#64748b", fontSize: 11, fontWeight: 600, letterSpacing: "0.05em" }}>{size.pack}</span>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+        <div className="flex gap-3 justify-center">
+          {preset.sizes.slice(3).map((size) => {
+            const isHov = hovered === size.id;
+            return (
+              <div
+                key={size.id}
+                className="flex flex-col items-center"
+                style={{ width: "calc(33.33% - 6px)" }}
+                onMouseEnter={() => setHovered(size.id)}
+                onMouseLeave={() => setHovered(null)}
+              >
+                <div
+                  className="relative overflow-hidden w-full"
+                  style={{
+                    aspectRatio: `${size.w} / ${size.h}`,
+                    borderRadius: 8,
+                    border: isHov ? "1.5px solid rgba(45,212,191,0.5)" : "1px solid rgba(255,255,255,0.09)",
+                    boxShadow: isHov ? "0 16px 48px rgba(0,0,0,0.7), 0 0 0 1px rgba(45,212,191,0.1)" : "0 6px 20px rgba(0,0,0,0.45)",
+                    transform: isHov ? "translateY(-5px)" : "translateY(0)",
+                    transition: "transform 0.22s ease, border-color 0.18s ease, box-shadow 0.22s ease",
+                  }}
+                >
+                  <Image src={imgSrc(preset.folder, size.file)} alt={`${preset.altPrefix} at ${size.label} ratio`} fill sizes="33vw" style={{ objectFit: "cover" }} loading="lazy" />
+                  <div style={{ position: "absolute", top: 7, left: 7, background: "rgba(8,9,16,0.82)", backdropFilter: "blur(8px)", borderRadius: 5, padding: "3px 8px", border: "1px solid rgba(255,255,255,0.13)" }}>
+                    <span style={{ fontFamily: "ui-monospace, monospace", color: "#f1f5f9", fontSize: 11, fontWeight: 700, lineHeight: 1 }}>{size.label}</span>
+                  </div>
+                </div>
+                <div className="text-center mt-2">
+                  <span style={{ fontFamily: "ui-monospace, monospace", color: "#64748b", fontSize: 11, fontWeight: 600, letterSpacing: "0.05em" }}>{size.pack}</span>
                 </div>
               </div>
             );
