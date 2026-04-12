@@ -667,11 +667,15 @@ export default function EtsyCoastalWallArtSizesPage() {
               </p>
             </div>
 
+          </div>
+          <div className="mt-16">
             <ListingOutputShowcase
               artwork="misty_lake"
               heading="Your coastal art — every ratio ready to list."
               subtext="SnapToSize generates all five ratio-correct files from your original upload. No Photoshop — just upload and download."
             />
+          </div>
+          <div className="max-w-3xl mx-auto space-y-16 mt-16">
 
             <div className="rounded-xl overflow-hidden border border-white/[0.08]">
               <img src="/assets/visuals/etsy-coastal-wall-art-mockup.jpg" alt="Bright coastal living room with a gallery wall of framed ocean art prints — beach sunset photography, watercolor seashells, nautical anchor illustration, and ocean waves in various sizes above a cream linen sofa" width={1200} height={800} className="w-full h-auto" loading="lazy" />

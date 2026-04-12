@@ -584,8 +584,11 @@ export default function EtsyFloralPrintSizesPage() {
               </div>
             </div>
 
-            {/* ListingOutputShowcase */}
+          </div>
+          <div className="mt-16">
             <ListingOutputShowcase artwork="floral_vase" />
+          </div>
+          <div className="max-w-3xl mx-auto space-y-12 mt-16">
 
             {/* H2 4 — Ratio Packs */}
             <div>

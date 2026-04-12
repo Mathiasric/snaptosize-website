@@ -178,12 +178,16 @@ export default function EtsyPrintRatiosPage() {
               <img src="/assets/visuals/etsy-print-ratios-comparison.png" alt="The 5 Etsy print ratio packs — 2:3, 3:4, 4:5, ISO, and Extras — shown with representative frame shapes at correct proportions" width={1200} height={520} className="w-full h-auto" loading="lazy" />
             </div>
 
+          </div>
+          <div className="mt-16">
             {/* ===== Listing Output Showcase ===== */}
             <ListingOutputShowcase
               artwork="fox"
               heading="One upload. Five ratio-correct files."
               subtext="Every ratio a buyer might need — generated automatically from your original file. No Photoshop. No manual resizing."
             />
+          </div>
+          <div className="max-w-4xl space-y-16 mt-16">
 
             {/* ===== SECTION 1: What Are Print Ratios? ===== */}
             <div>

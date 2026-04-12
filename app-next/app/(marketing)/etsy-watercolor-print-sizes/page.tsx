@@ -517,11 +517,15 @@ export default function EtsyWatercolorPrintSizesPage() {
               </p>
             </div>
 
+          </div>
+          <div className="mt-16">
             <ListingOutputShowcase
               artwork="misty_lake"
               heading="Your watercolor art — every ratio ready to list."
               subtext="SnapToSize generates all five ratio-correct files from your original upload. No Photoshop — just upload and download."
             />
+          </div>
+          <div className="max-w-3xl mx-auto space-y-16 mt-16">
 
             {/* Mockup image placeholder */}
             <div className="rounded-xl overflow-hidden border border-white/[0.08]">
