@@ -1,10 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 interface SizeSpec {
   id: string;
   label: string;
+  pack: string;
   file: string;
   w: number;
   h: number;
@@ -23,11 +25,11 @@ export const ARTWORK_PRESETS: Record<string, ArtworkPreset> = {
     folder: "fox",
     altPrefix: "Fox pencil sketch art print",
     sizes: [
-      { id: "2x3", label: "2×3", file: "Fox.jpg", w: 2, h: 3 },
-      { id: "a4", label: "ISO A4", file: "A4_2480x3508_ISO (9).jpg", w: 210, h: 297 },
-      { id: "3x4", label: "3×4", file: "Fox_6x8_1800x2400.jpg", w: 3, h: 4 },
-      { id: "11x14", label: "11×14", file: "Fox_11x14_3300x4200.jpg", w: 11, h: 14 },
-      { id: "4x5", label: "4×5", file: "Fox_4x5_1200x1500.jpg", w: 4, h: 5 },
+      { id: "2x3", label: "2×3", pack: "Pack 2×3", file: "Fox.jpg", w: 2, h: 3 },
+      { id: "a4", label: "ISO A4", pack: "Pack ISO", file: "A4_2480x3508_ISO (9).jpg", w: 210, h: 297 },
+      { id: "3x4", label: "3×4", pack: "Pack 3×4", file: "Fox_6x8_1800x2400.jpg", w: 3, h: 4 },
+      { id: "11x14", label: "11×14", pack: "Extras", file: "Fox_11x14_3300x4200.jpg", w: 11, h: 14 },
+      { id: "4x5", label: "4×5", pack: "Pack 4×5", file: "Fox_4x5_1200x1500.jpg", w: 4, h: 5 },
     ],
   },
   misty_lake: {
@@ -35,11 +37,11 @@ export const ARTWORK_PRESETS: Record<string, ArtworkPreset> = {
     folder: "misty_lake",
     altPrefix: "Misty Nordic landscape watercolor art print",
     sizes: [
-      { id: "2x3", label: "2×3", file: "Misty_Nordic.jpg", w: 2, h: 3 },
-      { id: "a4", label: "ISO A4", file: "A4_2480x3508_ISO (1).jpg", w: 210, h: 297 },
-      { id: "3x4", label: "3×4", file: "Misty_Nordic_6x8_1800x2400.jpg", w: 3, h: 4 },
-      { id: "11x14", label: "11×14", file: "Misty_Nordic_11x14_3300x4200.jpg", w: 11, h: 14 },
-      { id: "4x5", label: "4×5", file: "Misty_Nordic_4x5_1200x1500.jpg", w: 4, h: 5 },
+      { id: "2x3", label: "2×3", pack: "Pack 2×3", file: "Misty_Nordic.jpg", w: 2, h: 3 },
+      { id: "a4", label: "ISO A4", pack: "Pack ISO", file: "A4_2480x3508_ISO (1).jpg", w: 210, h: 297 },
+      { id: "3x4", label: "3×4", pack: "Pack 3×4", file: "Misty_Nordic_6x8_1800x2400.jpg", w: 3, h: 4 },
+      { id: "11x14", label: "11×14", pack: "Extras", file: "Misty_Nordic_11x14_3300x4200.jpg", w: 11, h: 14 },
+      { id: "4x5", label: "4×5", pack: "Pack 4×5", file: "Misty_Nordic_4x5_1200x1500.jpg", w: 4, h: 5 },
     ],
   },
   geometric: {
@@ -47,11 +49,11 @@ export const ARTWORK_PRESETS: Record<string, ArtworkPreset> = {
     folder: "geometric_colorful art",
     altPrefix: "Geometric colorful MCM abstract art print",
     sizes: [
-      { id: "2x3", label: "2×3", file: "Geometric colorful art.jpg", w: 2, h: 3 },
-      { id: "a4", label: "ISO A4", file: "A4_2480x3508px.jpg", w: 210, h: 297 },
-      { id: "3x4", label: "3×4", file: "geo_6x8_1800x2400_3x4.jpg", w: 3, h: 4 },
-      { id: "11x14", label: "11×14", file: "geo_11x14_3300x4200px.jpg", w: 11, h: 14 },
-      { id: "4x5", label: "4×5", file: "4x5_1200x1500px.jpg", w: 4, h: 5 },
+      { id: "2x3", label: "2×3", pack: "Pack 2×3", file: "Geometric colorful art.jpg", w: 2, h: 3 },
+      { id: "a4", label: "ISO A4", pack: "Pack ISO", file: "A4_2480x3508px.jpg", w: 210, h: 297 },
+      { id: "3x4", label: "3×4", pack: "Pack 3×4", file: "geo_6x8_1800x2400_3x4.jpg", w: 3, h: 4 },
+      { id: "11x14", label: "11×14", pack: "Extras", file: "geo_11x14_3300x4200px.jpg", w: 11, h: 14 },
+      { id: "4x5", label: "4×5", pack: "Pack 4×5", file: "4x5_1200x1500px.jpg", w: 4, h: 5 },
     ],
   },
   wildflower: {
@@ -59,10 +61,10 @@ export const ARTWORK_PRESETS: Record<string, ArtworkPreset> = {
     folder: "wildflower_botanical_art",
     altPrefix: "Wildflower botanical art print",
     sizes: [
-      { id: "2x3", label: "2×3", file: "Wildflower botanical art.jpg", w: 2, h: 3 },
-      { id: "a4", label: "ISO A4", file: "A4_2480x3508_ISO (11).jpg", w: 210, h: 297 },
-      { id: "11x14", label: "11×14", file: "Wildflower botanical art_11x14_3300x4200.jpg", w: 11, h: 14 },
-      { id: "4x5", label: "4×5", file: "Wildflower botanical art_4x5_1200x1500.jpg", w: 4, h: 5 },
+      { id: "2x3", label: "2×3", pack: "Pack 2×3", file: "Wildflower botanical art.jpg", w: 2, h: 3 },
+      { id: "a4", label: "ISO A4", pack: "Pack ISO", file: "A4_2480x3508_ISO (11).jpg", w: 210, h: 297 },
+      { id: "11x14", label: "11×14", pack: "Extras", file: "Wildflower botanical art_11x14_3300x4200.jpg", w: 11, h: 14 },
+      { id: "4x5", label: "4×5", pack: "Pack 4×5", file: "Wildflower botanical art_4x5_1200x1500.jpg", w: 4, h: 5 },
     ],
   },
   mysthical_portal: {
@@ -70,11 +72,23 @@ export const ARTWORK_PRESETS: Record<string, ArtworkPreset> = {
     folder: "mysthical_portal",
     altPrefix: "Mystical portal abstract art print",
     sizes: [
-      { id: "2x3", label: "2×3", file: "Mystical portal abstract.jpeg", w: 2, h: 3 },
-      { id: "a4", label: "ISO A4", file: "mysticalportal_A4_2480x3508px.jpg", w: 210, h: 297 },
-      { id: "3x4", label: "3×4", file: "mysticalportal_3x4_6x8_1800x2400.jpg", w: 3, h: 4 },
-      { id: "11x14", label: "11×14", file: "mysticalportal_11x14_3300x4200px.jpg", w: 11, h: 14 },
-      { id: "4x5", label: "4×5", file: "mysticalportal_4x5_1200x1500.jpg", w: 4, h: 5 },
+      { id: "2x3", label: "2×3", pack: "Pack 2×3", file: "Mystical portal abstract.jpeg", w: 2, h: 3 },
+      { id: "a4", label: "ISO A4", pack: "Pack ISO", file: "mysticalportal_A4_2480x3508px.jpg", w: 210, h: 297 },
+      { id: "3x4", label: "3×4", pack: "Pack 3×4", file: "mysticalportal_3x4_6x8_1800x2400.jpg", w: 3, h: 4 },
+      { id: "11x14", label: "11×14", pack: "Extras", file: "mysticalportal_11x14_3300x4200px.jpg", w: 11, h: 14 },
+      { id: "4x5", label: "4×5", pack: "Pack 4×5", file: "mysticalportal_4x5_1200x1500.jpg", w: 4, h: 5 },
+    ],
+  },
+  floral_vase: {
+    name: "Floral Vase — watercolor",
+    folder: "floral_vase",
+    altPrefix: "Floral vase watercolor art print",
+    sizes: [
+      { id: "2x3", label: "2×3", pack: "Pack 2×3", file: "Floral vase art .jpg", w: 2, h: 3 },
+      { id: "a4", label: "ISO A4", pack: "Pack ISO", file: "A4_2480x3508_ISO (12).jpg", w: 210, h: 297 },
+      { id: "3x4", label: "3×4", pack: "Pack 3×4", file: "Floral vase art _6x8_1800x2400.jpg", w: 3, h: 4 },
+      { id: "11x14", label: "11×14", pack: "Extras", file: "Floral vase art _11x14_3300x4200.jpg", w: 11, h: 14 },
+      { id: "4x5", label: "4×5", pack: "Pack 4×5", file: "Floral vase art _4x5_1200x1500.jpg", w: 4, h: 5 },
     ],
   },
 };
@@ -97,7 +111,6 @@ export function ListingOutputShowcase({
   const [hovered, setHovered] = useState<string | null>(null);
   const preset = ARTWORK_PRESETS[artwork];
 
-  // CSS grid template: each column gets fr proportional to its aspect ratio
   const gridTemplate = preset.sizes.map((s) => `${s.w / s.h}fr`).join(" ");
 
   return (
@@ -108,7 +121,7 @@ export function ListingOutputShowcase({
         border: "1px solid rgba(255,255,255,0.07)",
       }}
     >
-      {/* Header — generous padding */}
+      {/* Header */}
       <div className="px-6 sm:px-10 md:px-14 pt-10 sm:pt-14">
         <div className="text-center mb-8">
           <span
@@ -136,7 +149,7 @@ export function ListingOutputShowcase({
         </div>
       </div>
 
-      {/* Desktop image grid — minimal side padding, fills full width */}
+      {/* Desktop image grid */}
       <div className="hidden md:block px-3 sm:px-4">
         <div
           style={{
@@ -154,7 +167,7 @@ export function ListingOutputShowcase({
                 onMouseEnter={() => setHovered(size.id)}
                 onMouseLeave={() => setHovered(null)}
               >
-                {/* Image with correct aspect ratio — fills grid column width */}
+                {/* Image with correct aspect ratio */}
                 <div
                   className="relative overflow-hidden w-full"
                   style={{
@@ -171,15 +184,12 @@ export function ListingOutputShowcase({
                       "transform 0.22s ease, border-color 0.18s ease, box-shadow 0.22s ease",
                   }}
                 >
-                  <img
+                  <Image
                     src={imgSrc(preset.folder, size.file)}
                     alt={`${preset.altPrefix} at ${size.label} ratio`}
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "cover",
-                      display: "block",
-                    }}
+                    fill
+                    sizes="(max-width: 768px) 33vw, 20vw"
+                    style={{ objectFit: "cover" }}
                     loading="lazy"
                   />
                   {/* Ratio badge */}
@@ -208,15 +218,27 @@ export function ListingOutputShowcase({
                     </span>
                   </div>
                 </div>
-
+                {/* Pack name below image */}
+                <div className="text-center mt-2">
+                  <span
+                    style={{
+                      fontFamily: "ui-monospace, monospace",
+                      color: "#64748b",
+                      fontSize: 11,
+                      fontWeight: 600,
+                      letterSpacing: "0.05em",
+                    }}
+                  >
+                    {size.pack}
+                  </span>
+                </div>
               </div>
             );
           })}
         </div>
-
       </div>
 
-      {/* Mobile: 3 top + 2 bottom centered — also uses px-3 */}
+      {/* Mobile: 3 top + 2 bottom centered */}
       <div className="md:hidden px-3">
         <div className="grid grid-cols-3 gap-2 mb-2">
           {preset.sizes.slice(0, 3).map((size) => (
@@ -230,10 +252,12 @@ export function ListingOutputShowcase({
                   boxShadow: "0 4px 12px rgba(0,0,0,0.4)",
                 }}
               >
-                <img
+                <Image
                   src={imgSrc(preset.folder, size.file)}
                   alt={`${size.label} ratio print`}
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  fill
+                  sizes="33vw"
+                  style={{ objectFit: "cover" }}
                   loading="lazy"
                 />
               </div>
@@ -246,7 +270,7 @@ export function ListingOutputShowcase({
                   fontWeight: 600,
                 }}
               >
-                {size.label}
+                {size.pack}
               </span>
             </div>
           ))}
@@ -267,10 +291,12 @@ export function ListingOutputShowcase({
                   boxShadow: "0 4px 12px rgba(0,0,0,0.4)",
                 }}
               >
-                <img
+                <Image
                   src={imgSrc(preset.folder, size.file)}
                   alt={`${size.label} ratio print`}
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  fill
+                  sizes="33vw"
+                  style={{ objectFit: "cover" }}
                   loading="lazy"
                 />
               </div>
@@ -283,14 +309,14 @@ export function ListingOutputShowcase({
                   fontWeight: 600,
                 }}
               >
-                {size.label}
+                {size.pack}
               </span>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Footer CTA — generous padding */}
+      {/* Footer CTA */}
       <div className="px-6 sm:px-10 md:px-14 pb-10 sm:pb-14">
         <div
           className="mt-8 pt-7 text-center"

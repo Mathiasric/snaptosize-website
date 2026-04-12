@@ -586,7 +586,7 @@ export default function EtsyFloralPrintSizesPage() {
             </div>
 
             {/* ListingOutputShowcase */}
-            <ListingOutputShowcase />
+            <ListingOutputShowcase artwork="floral_vase" />
 
             {/* H2 4 — Ratio Packs */}
             <div>
