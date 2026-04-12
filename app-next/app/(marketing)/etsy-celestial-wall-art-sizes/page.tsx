@@ -276,7 +276,7 @@ export default function EtsyCelestialWallArtSizesPage() {
         {/* ===== LISTING SHOWCASE ===== */}
         <div className="mt-10 mb-14">
           <ListingOutputShowcase
-            artwork="geometric"
+            artwork="mysthical_portal"
             heading="Your celestial art — every ratio ready to list."
             subtext="SnapToSize generates all five ratio-correct packs from your original upload. Moon phase, zodiac, constellation — one upload covers every buyer."
           />

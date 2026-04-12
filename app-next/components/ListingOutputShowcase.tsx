@@ -65,6 +65,18 @@ export const ARTWORK_PRESETS: Record<string, ArtworkPreset> = {
       { id: "4x5", label: "4×5", file: "Wildflower botanical art_4x5_1200x1500.jpg", w: 4, h: 5 },
     ],
   },
+  mysthical_portal: {
+    name: "Mystical Portal — abstract",
+    folder: "mysthical_portal",
+    altPrefix: "Mystical portal abstract art print",
+    sizes: [
+      { id: "2x3", label: "2×3", file: "Mystical portal abstract.jpeg", w: 2, h: 3 },
+      { id: "a4", label: "ISO A4", file: "mysticalportal_A4_2480x3508px.jpg", w: 210, h: 297 },
+      { id: "3x4", label: "3×4", file: "mysticalportal_3x4_6x8_1800x2400.jpg", w: 3, h: 4 },
+      { id: "11x14", label: "11×14", file: "mysticalportal_11x14_3300x4200px.jpg", w: 11, h: 14 },
+      { id: "4x5", label: "4×5", file: "mysticalportal_4x5_1200x1500.jpg", w: 4, h: 5 },
+    ],
+  },
 };
 
 function imgSrc(folder: string, file: string): string {
