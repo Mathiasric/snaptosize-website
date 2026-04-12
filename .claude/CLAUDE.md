@@ -61,8 +61,8 @@ Key constraints:
 - One task per subagent for focused execution
 
 ### Self-Improvement Loop
-- After ANY correction: update `tasks/lessons.md` with the pattern (55 lessons and growing)
-- Review `tasks/lessons.md` at session start for relevant rules
+- After ANY correction: update `tasks/lessons.md` with the pattern
+- Only check `tasks/lessons.md` for lessons *relevant to the current task* — never read the whole file
 
 ### Verification Before Done
 - Never mark a task complete without proving it works
@@ -84,6 +84,13 @@ These are hard rules, not guidelines. Violating them wastes tokens and shortens 
 **File reads:** Never read a file in full if you only need part of it. For files >200 lines, always use `offset` + `limit` to target the section needed. Never read a file to analyze it — use `ctx_execute_file` instead. Read is only for files you are about to Edit.
 
 **Screenshots:** Default to viewport-only screenshots (1440×900 desktop, 390×844 mobile). Never use `fullPage: true` unless a specific full-page QA review is requested. Use `clip` to capture specific sections when only part of the page is relevant.
+
+**Token & repo hygiene (check periodically):**
+- `app-next/*.png/jpg`: delete after use — never let QA screenshots accumulate (now gitignored)
+- `tasks/lessons.md`: cap at ~50 lessons — archive to `tasks/lessons-archive.md` when adding new ones
+- `tasks/lessons.md` has 45 lessons (last archived Apr 2026)
+- Run `/ctx-stats` if a session feels slow — check if context-mode is saving tokens
+- Agent AGENT.md files total ~115KB — don't spawn agents unless the task requires it
 
 ---
 

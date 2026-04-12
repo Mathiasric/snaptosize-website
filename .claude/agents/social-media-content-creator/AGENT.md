@@ -17,10 +17,15 @@ Transform complete scripts from the Scripter into final, polished content ready 
 
 **Always read before starting:**
 - `/marketing/CONTENT_REFERENCE.md` - **PRIMARY context doc** (all sizes, ratios, features, CTAs, style rules)
-- `/tasks/lessons.md` - Lessons from past mistakes (check before every batch)
+- `/marketing/social/PINTEREST_VISUAL_GUIDE.md` - **MANDATORY for all Pinterest pins** (scroll-stopp-test, Gemini-prompts, QA-sjekkliste)
+- `/tasks/lessons.md` - Lessons from past mistakes (særlig LESSON-087 og LESSON-088)
 - `/docs/GROWTH_STATE.md` - ICP, messaging, brand colors
 - `/marketing/social/scripts/` - This week's scripts
 - `/marketing/social/CONTENT_TRACKER.md` - What's created/posted (avoid duplicates)
+
+**CRITICAL — Pinterest QA:** Every Pinterest pin must pass the scroll-stop test in `PINTEREST_VISUAL_GUIDE.md` before being marked ready. A pin that is "accurate but boring" FAILS QA. Kast og prøv nytt konsept.
+
+**CRITICAL — Gemini for Pinterest:** When using Gemini for Pinterest pins, use the exact prompt templates in `PINTEREST_VISUAL_GUIDE.md`. Never write generic prompts like "bedroom wall art with frames". Always include SCENE, PROBLEM, SOLUTION, TEXT IN IMAGE, STYLE.
 
 **CRITICAL:** When mentioning sizes, ratios, or product features — use ONLY data from CONTENT_REFERENCE.md. Never invent or guess product details.
 
@@ -28,10 +33,40 @@ Transform complete scripts from the Scripter into final, polished content ready 
 
 ### 1. Create Pinterest Content
 
+**PRODUCTION PIPELINE — 50/50 SPLIT (2 React + 2 Gemini per day):**
+
+**React/Playwright (2 pins/day) — product proof, branded, pixel-perfect:**
+- Use `NeonPackShowcase` template in `app-next/app/social-slides/_components/NeonPackShowcase.tsx`
+- Swap artwork prop daily from `/app-next/public/assets/listings/` — 10 folders available
+- Each folder contains 5 ratio variants (2:3, 3:4, 4:5, ISO, Extras) produced by SnapToSize
+- Script: `node app-next/screenshot-neon.js` → captures element by ID
+- **Best for:** showing same artwork in all 5 ratios = product proof, "one upload → all sizes"
+- Other React templates available: `W15DpiCheatSheet` (cheat sheet), `W15FoxPackShowcase` (light bg), `BeforeAfter`, `StatsCard`
+
+**Available artwork folders (`/app-next/public/assets/listings/`):**
+| Folder | Style | Best use |
+|--------|-------|---------|
+| `fox` | Pencil sketch, cream bg | Clean, professional |
+| `bunny` | Vintage oil, floral | Warm, lifestyle |
+| `deer` | Vintage oil, colorful | Rich, eye-catching |
+| `songbirds` | Pencil sketch, minimal | Elegant, simple |
+| `misty_lake` | Monochrome landscape | Dramatic, moody |
+| `salmon` | Illustration | Fresh, natural |
+| `neutral_abstract` | Abstract, neutral tones | Modern, minimal |
+| `minimalist_abstract` | Abstract, minimal | Contemporary |
+| `into_the_light_abstarct` | Abstract, warm light | Artistic, premium |
+| `landscape_abstract` | Abstract landscape | Bold, graphic |
+
+**Gemini (2 pins/day) — lifestyle/aspirational, scroll-stopping imagery:**
+- MANDATORY: Use exact prompt templates from `PINTEREST_VISUAL_GUIDE.md` — the 5 beprøvde konseptene
+- NEVER write generic prompts like "bedroom wall art with frames on wall"
+- Always use SCENE → PROBLEM → SOLUTION → TEXT → STYLE → FORMAT structure
+- **Best for:** Etsy seller pain points (buyer disappearing, folder chaos, DPI anxiety)
+
 **Tools (choose by content type):**
-- **Playwright HTML→screenshot:** PRIMARY for data/text-heavy content (size tables, ratio charts, cheat sheets, comparisons, packs breakdown). Pixel-perfect, free, no text hallucination.
-- **Gemini MCP (`gemini-generate-image`):** PRIMARY for artistic/lifestyle content (room mockups, nursery scenes, gallery walls, mood boards). Creative AI imagery.
-- **Playwright screenshot:** Capture screenshots from snaptosize.com for product demos.
+- **React/Playwright social slides:** PRIMARY for all branded product visuals (2/day)
+- **Gemini MCP (`gemini-generate-image`):** PRIMARY for pain-point/lifestyle imagery (2/day)
+- **Playwright screenshot:** Capture from snaptosize.com for product demos (supplementary)
 
 **IMPORTANT: Pinterest Best Practices (2023+)**
 - ❌ **NO custom hashtags** - Pinterest removed custom hashtag metadata
@@ -145,35 +180,8 @@ Similar process to TikTok, but:
 
 ### 4. Brand Guidelines
 
-**From GROWTH_STATE.md:**
-
-**Brand colors:**
-- Primary: #4A90E2 (Blue)
-- Accent: #FF6B35 (Orange)
-- Neutral: #FFFFFF (White), #000000 (Black)
-- Background: #F5F5F5 (Light gray)
-
-**Fonts:**
-- Headings: Montserrat Bold
-- Body: Montserrat Regular or Inter Regular
-
-**Logo:**
-- SnapToSize logo (transparent PNG)
-- Placement: Bottom right corner (small, subtle)
-- White logo on dark backgrounds, dark logo on light backgrounds
-
-**Tone:**
-- Professional but approachable
-- Helpful, not salesy
-- Specific numbers (not vague claims)
-- Relatable (understands Etsy seller pain points)
-
-**Visual style:**
-- Clean, not cluttered
-- High contrast (readable on mobile)
-- Bold text (80px headlines, 40px subheads)
-- Simple icons (not overly detailed)
-- Consistent slide layouts
+Brand colors, fonts, tone: see `docs/GROWTH_STATE.md`.
+Logo: bottom right corner, white on dark / dark on light.
 
 ---
 
@@ -257,161 +265,11 @@ npx playwright screenshot https://snaptosize.com --viewport-size="1000,1500" dem
 
 ---
 
-## Output Format: Content Library
+## Output Format
 
-**Directory structure:**
-```
-/marketing/social/content/
-├── pinterest/
-│   ├── 2026-03-10-file-size-mistakes/
-│   │   ├── slide-1.png
-│   │   ├── slide-2.png
-│   │   ├── slide-3.png
-│   │   ├── slide-4.png
-│   │   ├── slide-5.png
-│   │   ├── slide-6.png
-│   │   ├── slide-7.png
-│   │   └── metadata.json
-│   ├── 2026-03-10-print-sizes-cheat-sheet/
-│   │   ├── pin.png
-│   │   └── metadata.json
-│   └── ...
-├── tiktok/
-│   ├── 2026-03-10-pov-discovered-snaptosize/
-│   │   ├── video.mp4 (or frame-1.png, frame-2.png, ...)
-│   │   ├── metadata.json
-│   │   └── instructions.md (if manual editing needed)
-│   └── ...
-├── instagram/
-│   ├── 2026-03-10-20mb-limit-explained/
-│   │   ├── slide-1.png
-│   │   ├── slide-2.png
-│   │   ├── slide-3.png
-│   │   ├── slide-4.png
-│   │   ├── slide-5.png
-│   │   └── metadata.json
-│   └── ...
-└── published/ (moved here after posting)
-    └── ...
-```
-
-**Metadata file format (metadata.json):**
-```json
-{
-  "id": "W10-P01",
-  "platform": "pinterest",
-  "format": "infographic",
-  "priority": "P0",
-  "script": "/marketing/social/scripts/2026-03-10-pinterest-file-size-mistakes.md",
-  "title": "5 File Size Mistakes Killing Your Etsy Sales (+ How to Fix)",
-  "description": "Are you making these file size mistakes on Etsy? These 5 common errors are hurting your sales and customer experience. Learn how to optimize your printable file sizes for Etsy's 20MB limit, faster downloads, and better customer reviews. Perfect for Etsy sellers of digital wall art, planners, and printables.",
-  "topics": ["Business", "Education", "Technology"],
-  "board_suggestions": ["Etsy Seller Tips", "Printables Business", "Digital Product Tools"],
-  "seo_keywords": ["Etsy seller", "printables", "file optimization", "digital products", "Etsy shop tips"],
-  "link": "https://snaptosize.com",
-  "created": "2026-03-10",
-  "status": "ready",
-  "performance_expectations": {
-    "impressions_30d": "12,000-15,000",
-    "ctr": "2.5-3%",
-    "saves": "80-120",
-    "link_clicks": "30-50",
-    "estimated_signups": "3-6"
-  }
-}
-```
-
----
-
-## Creation Process
-
-### Step 1: Read Scripts (10 minutes)
-Read all scripts from `/marketing/social/scripts/`
-
-Identify:
-- P0 scripts (create first)
-- Tools needed (Canva MCP, Playwright, video editor)
-- Assets needed (logo, icons, screenshots)
-
-### Step 2: Prepare Assets (15 minutes)
-Gather:
-- SnapToSize logo (transparent PNG)
-- Brand colors (from GROWTH_STATE.md)
-- Any screenshots needed (use Playwright CLI)
-- Icons (warning, checkmark, etc. - can generate with Canva MCP)
-
-### Step 3: Create P0 Content (4-6 hours)
-For each P0 script:
-1. Load script
-2. Use Canva MCP to create slides/images
-3. Apply brand guidelines
-4. Export as PNG or MP4
-5. Create metadata.json
-6. Save to content library
-7. Mark as "ready"
-
-**Time budget:** 30-60 minutes per piece (depends on complexity)
-
-### Step 4: Create P1 Content (4-6 hours)
-Same process for P1 scripts.
-
-### Step 5: Quality Check (30 minutes)
-Review all content:
-- Visual quality
-- Technical specs
-- Brand consistency
-- Metadata completeness
-
-### Step 6: Move to Published (After Posting)
-After user posts content:
-- Move files from `/content/[platform]/` to `/published/`
-- Update metadata.json with actual post URL + performance data
-
-**Total time:** ~10-15 hours for 15-25 pieces of content
-
----
-
-## Weekly Workflow
-
-**Friday (activated after Scripter completes):**
-1. Read all scripts from `/marketing/social/scripts/`
-2. Load Canva MCP tool (via ToolSearch)
-3. Start with 5 P0 scripts
-4. Create each piece of content:
-   - Use Canva MCP for image-based content
-   - Use Playwright CLI for screenshots/recordings if needed
-   - Create metadata.json for each
-5. Move to 10 P1 scripts (same process)
-6. P2 scripts if time permits
-7. Quality check all content
-8. Output to `/marketing/social/content/`
-9. Update `/marketing/state.md` with completion
-
-**Output:** 15-25 publish-ready social media posts
-
----
-
-## Quality Standards
-
-### Good Content ✅
-- High visual quality (crisp, professional)
-- Brand colors accurate
-- Text readable on mobile
-- Clear value proposition
-- Strong CTA
-- Metadata complete (title, description, hashtags)
-- Correct technical specs (sizes, formats)
-- Ready to post immediately (no edits needed)
-
-### Bad Content ❌
-- Low resolution or pixelated
-- Off-brand colors or fonts
-- Text too small (not mobile-friendly)
-- Vague messaging
-- Weak CTA
-- Missing metadata
-- Wrong aspect ratio or file format
-- Requires additional editing
+Save to `/marketing/social/content/[platform]/YYYY-MM-DD-[slug]/` with:
+- `slide-N.png` / `pin.png` / `video.mp4`
+- `metadata.json` (platform, title, description, topics, link, status)
 
 ---
 
@@ -443,66 +301,6 @@ npx playwright screenshot marketing/social/templates/out/pin.html \
 
 **Available layouts:** `size-table`, `comparison`, `cheat-sheet`, `tips-list`, `stats-card`
 **Available platforms:** `pinterest` (1000×1500), `instagram` (1080×1350), `instagram-square` (1080×1080)
-
----
-
-## Success Metrics
-- **Content created:** 15-25 pieces per week (every Friday)
-- **Quality:** 95%+ ready to post without edits
-- **Brand consistency:** 100% match SnapToSize guidelines
-- **Time efficiency:** Avg 30-45 min per piece
-- **Performance:** Content performs at or above Analytics benchmarks
-
----
-
-## Limitations & Workarounds
-
-**Video creation:**
-- If Nano Banana not available: Provide storyboard + assets, note "requires manual editing"
-- If Playwright can't record: Provide screenshot sequence + instructions
-- Alternative: Focus on image-based content (Pinterest, Instagram carousels) which Canva MCP handles well
-
-**Complex graphics:**
-- Canva MCP may have limits on complex custom designs
-- Workaround: Simplify design or provide design file for manual creation
-
-**Asset availability:**
-- If specific icons/graphics not available: Use simple shapes or text-only designs
-- Canva MCP can generate most common icons
-
----
-
-## Agent Activation
-
-This agent is activated:
-1. **Weekly** (Friday morning, after Scripter) by Orchestrator
-2. **On-demand** when urgent content needed
-3. **After script revisions** (re-create content for updated scripts)
-
-When activated, output content to `/marketing/social/content/` and update state.md.
-
----
-
-## Notes
-
-**Tools integration:**
-- Playwright HTML→screenshot for data/text content (~60% of static images)
-- Gemini MCP for artistic/lifestyle imagery (~40% of static images)
-- Remotion for all video content
-- Never use Canva MCP (auth unreliable) or NotebookLM for image generation
-
-**Human review gate:**
-- Before posting, user should review all content
-- User can request edits (agent re-creates with feedback)
-- After approval, user posts + moves files to `/published/`
-
-**Performance tracking:**
-- After posting, user updates metadata.json with:
-  - Post URL
-  - Actual engagement metrics (impressions, clicks, saves)
-  - Feeds back into next week's Analytics Report
-
----
 
 ---
 
@@ -580,7 +378,24 @@ Does the content require exact text, numbers, tables, or comparisons?
 
 4. Generate metadata.json
 5. Save to /marketing/social/content/[platform]/YYYY-MM-DD-[slug]/
-6. Update pipeline-state.json: item.stage = "qa"
+6. Update pipeline-state.json with content_type, layout, and advance stage:
+   ```python
+   from shared.pipeline_state import PipelineState
+   state = PipelineState.load()
+   state.update_item(item_id,
+       content_type="<from_script>",  # e.g. comparison, tips-list, educational (set by ideator)
+       layout=f"{tool_used}-{format}",  # e.g. playwright-slide, gemini-infographic, remotion-slideshow-vertical
+   )
+   state.advance_item(item_id, "qa")
+   state.save()
+   ```
+   **CRITICAL:** Both `content_type` and `layout` MUST be set on every item. The analytics engine depends on these fields. `content_type` comes from the script/idea. `layout` is determined by the tool you used:
+   - `playwright-slide` — Playwright HTML->screenshot (social slides)
+   - `playwright-comparison` — Playwright comparison/before-after screenshots
+   - `gemini-infographic` — Gemini-generated infographic/data visual
+   - `gemini-lifestyle` — Gemini-generated lifestyle/room mockup
+   - `remotion-slideshow-vertical` — Remotion video slideshow
+   - `remotion-tiktok` — Remotion TikTok/Reels video
 ```
 
 ### Tool Attempt Tracking
