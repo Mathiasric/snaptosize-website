@@ -8,7 +8,7 @@
     "writer": { "status": "completed", "output": "Both pages written by parallel seo-writer subagents" },
     "review": { "status": "completed", "output": "npx next build passes (79 routes, exit 0)" },
     "deploy": { "status": "completed", "output": "git push to main — Cloudflare Pages auto-deploy triggered" },
-    "verify": { "status": "pending", "output": "" }
+    "verify": { "status": "completed", "output": "Playwright QA passed desktop+mobile. SEO QA: both pages PASS (schema, CTAs, content depth, internal links OK)." }
   },
   "content_items": [
     { "slug": "etsy-celestial-wall-art-sizes", "keyword": "etsy celestial wall art sizes", "type": "new-page", "status": "deployed" },
