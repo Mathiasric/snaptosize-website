@@ -25,6 +25,9 @@ def add_utm(url: str, platform: str, slug: str) -> str:
     import re
     clean_slug = re.sub(r"^\d{4}-\d{2}-\d{2}-", "", slug)
     separator = "&" if "?" in url else "?"
+    # Ensure there's a path separator before query string (Pinterest rejects bare domain?query)
+    if separator == "?" and not url.endswith("/"):
+        url = url + "/"
     return f"{url}{separator}utm_source={platform}&utm_medium=social&utm_campaign=organic&utm_content={clean_slug}"
 sys.path.insert(0, str(PROJECT_ROOT / ".claude" / "agents"))
 
