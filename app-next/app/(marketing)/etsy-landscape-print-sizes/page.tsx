@@ -6,6 +6,7 @@ import { Card } from "@/components/Card";
 import { Check, AlertTriangle, Layers } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { FinalCTA } from "@/components/FinalCTA";
+import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Tabs } from "@/components/Tabs";
 import RelatedPages from "@/components/RelatedPages";
@@ -911,6 +912,13 @@ export default function EtsyLandscapePrintSizesPage() {
                 , the gallery wall guide covers common formulas in depth.
               </p>
             </div>
+
+            {/* Listing showcase: landscape bears line art */}
+            <ListingOutputShowcase
+              artwork="bears_line_art"
+              heading="Your landscape art — every ratio ready to list."
+              subtext="Upload once, get 3×2, 4×3, 5×4, 14×11 and A5 landscape — all ratio-correct and print-ready in one click."
+            />
 
             {/* CTA 2: FinalCTA — catalog growth angle */}
             <FinalCTA
