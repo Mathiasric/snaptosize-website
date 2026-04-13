@@ -277,9 +277,9 @@ export default function EtsyJapandiArtSizesPage() {
         {/* ===== LISTING SHOWCASE ===== */}
         <div className="mt-10 mb-14">
           <ListingOutputShowcase
-            artwork="wildflower"
+            artwork="misty_lake"
             heading="Your japandi art — every ratio ready to list."
-            subtext="SnapToSize exports all sizes in one click: 5×7, 8×10, 8×12, A4, A3, 16×20, 18×24. One upload covers US and international buyers."
+            subtext="SnapToSize exports all sizes in one click: 5×7, 8×10, 8×12, 9×12, A4, A3, 16×20, 18×24. One upload covers US and international buyers."
           />
         </div>
 
