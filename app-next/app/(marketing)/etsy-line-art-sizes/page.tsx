@@ -371,7 +371,7 @@ export default function EtsyLineArtSizesPage() {
           <ListingOutputShowcase
             artwork="bears_line_art"
             heading="Your line art — every ratio ready to list."
-            subtext="SnapToSize generates all five ratio-correct packs from your original upload. Botanical, figure, geometric — one upload covers every buyer."
+            subtext="Line art exports as a single file per size — no pack required. Upload once, get 3×2, 4×3, 5×4, 14×11 and A5 landscape, all ratio-correct and print-ready."
           />
         </div>
 
