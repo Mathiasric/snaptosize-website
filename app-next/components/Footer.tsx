@@ -101,6 +101,16 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-japandi-art-sizes" className="transition-colors hover:text-accent-light">
+                  Japandi Art Sizes
+                </Link>
+              </li>
+              <li>
+                <Link href="/etsy-line-art-sizes" className="transition-colors hover:text-accent-light">
+                  Line Art Sizes
+                </Link>
+              </li>
+              <li>
                 <Link href="/etsy-digital-planner-sizes" className="transition-colors hover:text-accent-light">
                   Digital Planner Sizes
                 </Link>

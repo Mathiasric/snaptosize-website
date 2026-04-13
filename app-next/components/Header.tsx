@@ -193,6 +193,12 @@ export function Header() {
                     <Link href="/etsy-floral-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Floral Print Sizes
                     </Link>
+                    <Link href="/etsy-japandi-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Japandi Art Sizes
+                    </Link>
+                    <Link href="/etsy-line-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Line Art Sizes
+                    </Link>
                   </div>
                 </div>
                 <div className="pt-2 mt-2 border-t border-border/50">
@@ -520,6 +526,12 @@ export function Header() {
                         </Link>
                         <Link href="/etsy-floral-print-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Floral Print Sizes
+                        </Link>
+                        <Link href="/etsy-japandi-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Japandi Art Sizes
+                        </Link>
+                        <Link href="/etsy-line-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Line Art Sizes
                         </Link>
                         <Link href="/2-3-vs-4-5-ratio" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           2:3 vs 4:5 Ratio
