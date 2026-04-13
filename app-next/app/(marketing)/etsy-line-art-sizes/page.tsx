@@ -369,7 +369,7 @@ export default function EtsyLineArtSizesPage() {
         {/* ===== LISTING SHOWCASE ===== */}
         <div className="mt-10 mb-14">
           <ListingOutputShowcase
-            artwork="fox"
+            artwork="bears_line_art"
             heading="Your line art — every ratio ready to list."
             subtext="SnapToSize generates all five ratio-correct packs from your original upload. Botanical, figure, geometric — one upload covers every buyer."
           />

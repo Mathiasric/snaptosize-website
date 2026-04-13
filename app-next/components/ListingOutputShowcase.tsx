@@ -103,6 +103,18 @@ export const ARTWORK_PRESETS: Record<string, ArtworkPreset> = {
       { id: "4x5", label: "4×5", pack: "Pack 4×5", file: "Neutral_abstract_4x5_1200x1500.jpg", w: 4, h: 5 },
     ],
   },
+  bears_line_art: {
+    name: "Bears landscape — line art",
+    folder: "landscpae_line_art_bears",
+    altPrefix: "Line art bears landscape print",
+    sizes: [
+      { id: "3x2", label: "3×2", pack: "Pack 2×3", file: "Three happy bears with floral theme(3x2).jpg", w: 3, h: 2 },
+      { id: "4x3", label: "4×3", pack: "Pack 3×4", file: "12 x 9(4x3).jpg", w: 4, h: 3 },
+      { id: "5x4", label: "10×8", pack: "Pack 4×5", file: "three-happy-bears-with-floral-theme_10x8in_25x20cm_3000x2400px.jpg", w: 5, h: 4 },
+      { id: "14x11", label: "14×11", pack: "Extras", file: "three-happy-bears-with-floral-theme_14x11in_36x28cm_4200x3300px.jpg", w: 14, h: 11 },
+      { id: "a5", label: "A5", pack: "Pack ISO", file: "three-happy-bears-with-floral-theme_A5_14.8x21cm_2480x1748px.jpg", w: 210, h: 148 },
+    ],
+  },
 };
 
 function imgSrc(folder: string, file: string): string {
