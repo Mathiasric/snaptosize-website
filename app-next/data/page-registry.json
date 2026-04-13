@@ -1439,5 +1439,45 @@
       "etsy-watercolor-print-sizes",
       "2-3-vs-4-5-ratio"
     ]
+  },
+  {
+    "slug": "etsy-japandi-art-sizes",
+    "title": "Japandi Art Sizes for Etsy — Sizing Guide",
+    "description": "Best print sizes for japandi wall art on Etsy. US and ISO A-series sizes for wabi-sabi, sumi-e, ikebana, and zen geometric prints — one guide for every buyer.",
+    "pageType": "niche",
+    "keywords": [
+      "etsy japandi art sizes",
+      "japandi wall art sizes",
+      "japandi print dimensions",
+      "japandi art etsy sizing"
+    ],
+    "cluster": "niches",
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-minimalist-wall-art-sizes",
+      "etsy-photography-print-sizes",
+      "etsy-a4-print-size",
+      "etsy-print-ratios"
+    ]
+  },
+  {
+    "slug": "etsy-line-art-sizes",
+    "title": "Etsy Line Art Print Sizes — Sizing Guide",
+    "description": "Best print sizes for line art on Etsy. Botanical, figure, and geometric line art — DPI requirements, aspect ratios, and portrait vs landscape breakdowns.",
+    "pageType": "niche",
+    "keywords": [
+      "etsy line art print sizes",
+      "line art print dimensions",
+      "botanical line art sizes etsy",
+      "line art etsy sizing"
+    ],
+    "cluster": "niches",
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-botanical-print-sizes",
+      "etsy-minimalist-wall-art-sizes",
+      "best-resolution-for-etsy-printables",
+      "etsy-print-ratios"
+    ]
   }
 ]

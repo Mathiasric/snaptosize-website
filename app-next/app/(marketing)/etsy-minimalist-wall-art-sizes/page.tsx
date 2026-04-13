@@ -749,7 +749,7 @@ export default function EtsyMinimalistWallArtSizesPage() {
                   </h3>
                   <p className="text-foreground-60 text-sm mb-3">
                     Portrait-oriented. The tall 2:3 ratio dominates as
-                    continuous line art flows vertically. Best at medium to
+                    continuous <Link href="/etsy-line-art-sizes" className="text-accent-light hover:underline">line art</Link> flows vertically. Best at medium to
                     large where line detail is visible.
                   </p>
                   <div className="flex flex-wrap gap-2">
@@ -802,12 +802,13 @@ export default function EtsyMinimalistWallArtSizesPage() {
                 <div className="rounded-lg border border-border bg-surface p-6 border-l-[3px] border-l-teal-400">
                   <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
                     <span className="w-5 h-5 flex-shrink-0 rounded-full" style={{ background: "linear-gradient(135deg, rgba(45,212,191,0.2), rgba(45,212,191,0.05))", border: "1.5px solid rgba(45,212,191,0.4)" }} />
-                    Japandi / Scandinavian
+                    <Link href="/etsy-japandi-art-sizes" className="hover:underline">Japandi / Scandinavian</Link>
                   </h3>
                   <p className="text-foreground-60 text-sm mb-3">
                     A-series critical — Nordic and Japanese buyers expect A4/A3.
-                    Also strong at 8&times;10 and 16&times;20 for US. International
-                    reach is the key differentiator.
+                    Also strong at 8&times;10 and 16&times;20 for US. See the{" "}
+                    <Link href="/etsy-japandi-art-sizes" className="text-accent-light hover:underline">japandi art sizes guide</Link>{" "}
+                    for international reach tips.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">A4 (ISO)</span>

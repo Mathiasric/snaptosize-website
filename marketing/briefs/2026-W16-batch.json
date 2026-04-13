@@ -1,0 +1,64 @@
+{
+  "week": "W16",
+  "created_at": "2026-04-13T08:00:00Z",
+  "keywords": [
+    {
+      "keyword": "etsy japandi art sizes",
+      "slug": "etsy-japandi-art-sizes",
+      "intent": "informational+commercial",
+      "page_type": "niche",
+      "priority": "P1",
+      "cluster": "niches",
+      "sections": [
+        "What Makes Japandi Art Different for Sizing — Explain how Japandi blends Japanese minimalism + Scandinavian design, why this creates a dual-market buyer (EU/Scandi + Japan/Asia), and why ISO A-series is essential alongside US standard sizes",
+        "Best Sizes for Japandi Wall Art on Etsy — Table with columns: Size, Pixels at 300 DPI, Aspect Ratio, Best for, Region. Rows: 5x7 (1500x2100, 5:7, accent pieces, US), 8x10 (2400x3000, 4:5, US standard, US), 8x12 (2400x3600, 2:3, statement/tokonoma, US+EU), A4 (2480x3508, roughly 1:√2, EU/UK/Scandi/Japan), A3 (3508x4961, 1:√2, large-format EU, EU/UK/Scandi), 16x20 (4800x6000, 4:5, gallery wall, US), 18x24 (5400x7200, 3:4, poster, US)",
+        "Japandi Sub-Styles and Their Ideal Formats — Wabi-sabi: asymmetric compositions fit 2:3 vertical well (8x12, A4); Sumi-e ink painting: tall narrow verticals (2:3) echo scroll format; Ikebana botanical: tall portrait 2:3 or A4 for stems and negative space; Zen geometric (ensō, karesansui patterns): works in square or 4:5 but also 2:3 for wall presence",
+        "Framing and Composition for Japandi Prints — Negative space is essential in Japandi; warn sellers that cropping to fill frame destroys the aesthetic. Recommend generous margins. Standard US frames (5x7, 8x10, 16x20) work for US buyers; IKEA Ribba frames are popular in Scandi markets and use A4/A3. Both should be offered.",
+        "Why International Sizing Matters for Japandi Art — Japandi is disproportionately popular in EU, UK, Scandinavia, and Japan. A-series (A4, A3) is the printing standard in these markets — US sizes like 8x10 require custom frames abroad. Sellers without A4/A3 lose ~40% of potential buyers. Brief explanation of ISO 216 standard.",
+        "How SnapToSize Handles Japandi Multi-Pack Exports — SnapToSize exports all sizes in one click: 5x7, 8x10, 8x12, A4, A3, 16x20, 18x24. Handles the ratio shift between 2:3 (US verticals) and 1:√2 (ISO) automatically. ZIP stays under 20MB (Etsy limit). One upload covers US and international buyers."
+      ],
+      "faqs": [
+        "What size is best for japandi wall art?",
+        "Should I offer A4 for japandi art on Etsy?",
+        "What aspect ratio is best for japandi prints?",
+        "How do I size a zen circle (enso) print?",
+        "What sizes are most popular for japanese minimalist art?",
+        "How many sizes should a japandi art listing include?"
+      ],
+      "competitor_gaps": "Blue ocean — all 8 SERP results are etsy.com marketplace listings. No dedicated seller guide exists. SnapToSize can own this result segment with a focused niche guide targeting Japandi sellers specifically.",
+      "conversion_angle": "Japandi buyers are international — without ISO A-series you lose 40% of your market. SnapToSize exports US and EU sizes in one click.",
+      "link_to": ["etsy-print-sizes", "etsy-minimalist-wall-art-sizes", "etsy-photography-print-sizes", "etsy-a4-print-size", "etsy-print-ratios"],
+      "link_from": ["etsy-minimalist-wall-art-sizes", "etsy-botanical-print-sizes", "etsy-print-sizes"],
+      "sources": []
+    },
+    {
+      "keyword": "etsy line art print sizes",
+      "slug": "etsy-line-art-sizes",
+      "intent": "informational+commercial",
+      "page_type": "niche",
+      "priority": "P1",
+      "cluster": "niches",
+      "sections": [
+        "Why Line Art Has Unique Print Size Challenges — Thin lines are the most resolution-sensitive art style: at sub-300 DPI they blur, blob, or break. Also explain that aspect ratio matters more for line art than other styles because cropping changes the composition balance of negative space around lines. Line art is one of Etsy's top-selling digital categories.",
+        "Best Sizes for Line Art on Etsy — Table with columns: Size, Pixels at 300 DPI, Aspect Ratio, Notes. Rows: 5x7 (1500x2100, 5:7, popular accent size), 8x10 (2400x3000, 4:5, US standard), 8x12 (2400x3600, 2:3, portraits/botanical), 11x14 (3300x4200, 11:14, gallery standard), A4 (2480x3508, 1:√2, EU/international), A3 (3508x4961, 1:√2, large EU format), 16x20 (4800x6000, 4:5, statement pieces)",
+        "Line Art Sub-Styles and Format Fit — Botanical line art: tall portrait 2:3 (8x12, A4) for stems and leaves; Figure/portrait line art: 4:5 or 8x10 for face framing, 2:3 for full figure; Geometric line art: often works square or 4:5 for balanced symmetry; Abstract continuous line: flexible — 4:5 or 2:3 depending on composition flow",
+        "DPI and Resolution for Thin Lines — 300 DPI is the minimum for clean line art reproduction. Below 300 DPI thin strokes blur at print. Recommended: provide files at 300 DPI minimum; for very fine-line work, 350-400 DPI is safer. Explain pixel math: 8x10 at 300 DPI = 2400x3000px. Warn that downscaling from a large canvas is safe but upscaling from a small file will ruin thin lines.",
+        "Portrait vs Landscape Line Art: Which Sizes to Offer — Most line art sells vertically (portrait). Recommend leading with portrait sizes (5x7, 8x10, 8x12, A4, A3). Add 11x14 for gallery-wall buyers. Landscape line art (panoramic botanicals, abstract sweeps) should include horizontal variants of 8x10 and 16x20. Explain that buyers rarely rotate — provide both if the art works both ways.",
+        "How SnapToSize Keeps Line Art Sharp Across All Sizes — SnapToSize outputs all sizes at 300 DPI with correct aspect ratios, no upscaling from undersized source. Progressive quality fallback keeps ZIP under 20MB (Etsy limit) without degrading thin-line sharpness. One upload → 5x7, 8x10, 8x12, 11x14, A4, A3, 16x20 — all print-ready."
+      ],
+      "faqs": [
+        "What size should line art prints be on Etsy?",
+        "Does line art need 300 DPI?",
+        "What aspect ratio is best for line art?",
+        "Should line art be printed on white or off-white?",
+        "How do I size botanical line art for Etsy?",
+        "How many sizes should I offer for line art?"
+      ],
+      "competitor_gaps": "Blue ocean — SERP results are generic YouTube tutorials, Reddit threads, and etsy.com marketplace listings. No niche-specific seller guide exists covering the DPI-sensitivity of thin lines or the portrait/landscape split for line art styles.",
+      "conversion_angle": "Thin lines look sharp at 300 DPI with the right ratio — SnapToSize exports all sizes in one click, print-ready at 300 DPI.",
+      "link_to": ["etsy-print-sizes", "etsy-botanical-print-sizes", "etsy-minimalist-wall-art-sizes", "best-resolution-for-etsy-printables", "etsy-print-ratios"],
+      "link_from": ["etsy-botanical-print-sizes", "etsy-minimalist-wall-art-sizes", "etsy-print-sizes"],
+      "sources": []
+    }
+  ]
+}

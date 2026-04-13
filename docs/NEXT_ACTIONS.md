@@ -84,7 +84,9 @@
 - [x] Cross-links added: backlinks from vintage, photography, boho, watercolor pages
 - [x] `etsy-celestial-wall-art-sizes` — deployed (2026-04-12)
 - [x] `etsy-floral-print-sizes` — deployed (2026-04-12)
-- [ ] **Next opportunities:** etsy photography sub-niches, etsy digital planner sizes, etsy mid-century modern art sizes
+- [x] `etsy-japandi-art-sizes` — deployed (2026-04-13), blue ocean SERP, ISO sizing + international angle
+- [x] `etsy-line-art-sizes` — deployed (2026-04-13), blue ocean SERP, DPI/thin-lines angle
+- [ ] **Next opportunities:** photography sub-niches (black & white, fine art), typography art sizes, map art sizes
 
 ### 6. Guide Pages — Add Real Mockup Images (opportunity)
 **Why:** Highest-traffic guide pages are text-heavy. Adding real Etsy shop mockup images as visual examples would strengthen credibility and engagement. Images available in `etsy/` folder.

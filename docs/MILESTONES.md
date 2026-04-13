@@ -4,10 +4,10 @@
 ---
 
 ## Current State
-- **Paying users:** 4 (3 monthly, 1 yearly)
-- **MRR:** $44 (3× $11.99 monthly + $97/year amortized)
-- **Total revenue collected:** $120.98 (1× $97 yearly + 3× $11.99 monthly = $132.96 gross)
-- **SEO pages live:** 60 (63 total incl. non-SEO)
+- **Paying users:** 5 (4 monthly, 1 yearly)
+- **MRR:** $56 (4× $11.99 monthly + $97/year amortized)
+- **Total revenue collected:** $144.96 (1× $97 yearly + 4× $11.99 monthly)
+- **SEO pages live:** 62 (65 total incl. non-SEO)
 - **First paying customer:** 2026-03-03
 - **Target:** $1M ARR (~7,500 paying users)
 
@@ -50,6 +50,7 @@ $1M ARR requires:
 
 ### Marketing Infrastructure
 - ✅ Marketing site (snaptosize.com, Cloudflare Pages)
+- ✅ 62 SEO pages live (2 new pages deployed 2026-04-13: etsy-japandi-art-sizes + etsy-line-art-sizes)
 - ✅ 60 SEO pages live (2 new pages deployed 2026-04-12: etsy-celestial-wall-art-sizes + etsy-floral-print-sizes)
 - ✅ 58 SEO pages live (2 new pages deployed 2026-04-10)
 - ✅ 3-email nurture sequence live for free app signups (Worker /app-signup + Resend, day 0/2/5)
