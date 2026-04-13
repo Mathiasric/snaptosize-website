@@ -209,27 +209,44 @@ export default function EtsyJapandiArtSizesPage() {
 
         <div className="relative z-10 w-full max-w-[1200px] mx-auto px-4 md:px-8">
           <div className="max-w-3xl">
-            {/* Breadcrumb */}
-            <nav className="flex items-center gap-2 text-xs text-white/40 mb-5">
-              <Link href="/" className="hover:text-white/60 transition-colors">Home</Link>
-              <span>/</span>
-              <span className="text-white/60">Japandi Art Sizes</span>
-            </nav>
+            {/* Badge */}
+            <div
+              className="inline-flex items-center gap-2 mb-5 px-3 py-1.5 rounded-full text-xs font-medium"
+              style={{
+                background: "rgba(120,140,100,0.15)",
+                border: "1px solid rgba(140,160,100,0.3)",
+                color: "rgba(180,200,160,0.95)",
+              }}
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-green-400/70" />
+              Etsy Seller Guide — Japandi Art
+            </div>
+
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5">
+              Japandi Art Sizes for Etsy
+            </h1>
+            <p className="text-lg text-white/70 leading-relaxed mb-6 max-w-2xl">
+              Japandi blends Japanese minimalism and Scandinavian design — and its buyers are spread across the US, EU, UK, and Japan. That means you need both US standard sizes and ISO A-series to reach your full market. This guide covers every size across{" "}
+              <Link href="/etsy-print-sizes" className="text-green-300 hover:text-green-200 underline underline-offset-2">
+                all Etsy print formats
+              </Link>{" "}
+              so you never lose an international sale to a missing size.
+            </p>
 
             {/* Trust pills */}
             <div className="flex flex-wrap gap-2 mb-6">
               {[
                 "Wabi-sabi, sumi-e & ikebana",
                 "US + EU ISO sizes covered",
-                "Covers international buyers",
+                "Up to 70 files per upload",
               ].map((pill) => (
                 <span
                   key={pill}
                   className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full"
                   style={{
-                    background: "rgba(120,140,100,0.12)",
-                    border: "1px solid rgba(120,140,100,0.28)",
-                    color: "rgba(200,210,180,0.9)",
+                    background: "rgba(255,255,255,0.06)",
+                    border: "1px solid rgba(255,255,255,0.12)",
+                    color: "rgba(255,255,255,0.75)",
                   }}
                 >
                   <Check className="w-3 h-3" />
@@ -237,17 +254,6 @@ export default function EtsyJapandiArtSizesPage() {
                 </span>
               ))}
             </div>
-
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5">
-              Japandi Art Sizes for Etsy
-            </h1>
-            <p className="text-lg text-white/70 leading-relaxed mb-8 max-w-2xl">
-              Japandi blends Japanese minimalism and Scandinavian design — and its buyers are spread across the US, EU, UK, and Japan. That means you need both US standard sizes and ISO A-series to reach your full market. This guide covers every size across{" "}
-              <Link href="/etsy-print-sizes" className="text-green-300 hover:text-green-200 underline underline-offset-2">
-                all Etsy print formats
-              </Link>{" "}
-              so you never lose an international sale to a missing size.
-            </p>
 
             <a href="https://app.snaptosize.com?source=seo_etsy-japandi-art-sizes&kind=guide">
               <Button className="text-sm px-6 py-2.5">
