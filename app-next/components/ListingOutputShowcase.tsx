@@ -266,6 +266,7 @@ export function ListingOutputShowcase({
                   style={{ objectFit: "cover" }}
                   loading="lazy"
                 />
+                <span style={{ position: "absolute", bottom: 4, left: 5, fontFamily: "ui-monospace, monospace", color: "#f1f5f9", fontSize: 10, fontWeight: 700, lineHeight: 1, background: "rgba(0,0,0,0.55)", borderRadius: 3, padding: "2px 4px" }}>{size.label}</span>
               </div>
               <span
                 style={{
@@ -305,6 +306,7 @@ export function ListingOutputShowcase({
                   style={{ objectFit: "cover" }}
                   loading="lazy"
                 />
+                <span style={{ position: "absolute", bottom: 4, left: 5, fontFamily: "ui-monospace, monospace", color: "#f1f5f9", fontSize: 10, fontWeight: 700, lineHeight: 1, background: "rgba(0,0,0,0.55)", borderRadius: 3, padding: "2px 4px" }}>{size.label}</span>
               </div>
               <span
                 style={{
