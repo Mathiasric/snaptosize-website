@@ -116,6 +116,11 @@ export default function EtsyTypographyWallArtSizesPage() {
       answer:
         "Yes, but only if both orientations genuinely suit your design. Most typography art is portrait (tall quotes, vertical affirmation stacks). If a design truly works in landscape — a wide horizontal banner quote, for instance — add 10×8 and 12×9 variants. Never include a landscape version just to pad the listing; mismatched previews lead to buyer confusion and returns.",
     },
+    {
+      question: "What is the easiest way to resize typography wall art for all Etsy print sizes?",
+      answer:
+        "SnapToSize lets you upload your typography artwork once and instantly generates every standard print size — 5×7, 8×10, 8×12, A4, A3, 16×20, 18×24 and more — as a ZIP file under 20MB. No manual resizing, no Photoshop needed.",
+    },
   ];
 
   const faqJsonLd = {
