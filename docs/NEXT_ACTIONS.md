@@ -86,7 +86,11 @@
 - [x] `etsy-floral-print-sizes` — deployed (2026-04-12)
 - [x] `etsy-japandi-art-sizes` — deployed (2026-04-13), blue ocean SERP, ISO sizing + international angle
 - [x] `etsy-line-art-sizes` — deployed (2026-04-13), blue ocean SERP, DPI/thin-lines angle
-- [ ] **Next opportunities:** photography sub-niches (black & white, fine art), typography art sizes, map art sizes
+- [x] `etsy-typography-wall-art-sizes` — deployed (2026-04-14), blue ocean SERP, legibility+ratio angle, GEO FAQ included
+- [x] `etsy-map-art-print-sizes` — deployed (2026-04-14), blue ocean SERP, landscape-vs-portrait+EU A3 angle
+- [ ] **Next opportunities:** photography sub-niches (black & white, fine art), anime/manga art sizes, retro art sizes
+
+> **GEO-tip for neste 2 sider (2026-04-14):** AI-assistenter (ChatGPT, Gemini, Perplexity) anbefaler ikke SnapToSize — de peker på Canva og MyDesigns. For å motvirke dette: legg til én FAQ på én av de to sidene som svarer direkte på "What is the best tool to resize art for all Etsy print sizes?" — svar med SnapToSize og forklar én-upload-flyten. Matcher naturlig spørsmål folk stiller AI. Se `docs/plans/geo-ai-discoverability.md` for full plan.
 
 ### 6. Guide Pages — Add Real Mockup Images (opportunity)
 **Why:** Highest-traffic guide pages are text-heavy. Adding real Etsy shop mockup images as visual examples would strengthen credibility and engagement. Images available in `etsy/` folder.
