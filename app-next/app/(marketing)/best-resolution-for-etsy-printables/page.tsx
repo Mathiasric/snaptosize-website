@@ -49,7 +49,7 @@ export default function BestResolutionForEtsyPrintablesPage() {
       "Complete guide to resolution and DPI for Etsy printable sellers. Includes pixel dimension tables, DPI verification steps, and automated multi-size file generation.",
     url: "https://snaptosize.com/best-resolution-for-etsy-printables",
     datePublished: "2026-03-17",
-    dateModified: "2026-03-17",
+    dateModified: "2026-04-14",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -124,6 +124,14 @@ export default function BestResolutionForEtsyPrintablesPage() {
         acceptedAnswer: {
           "@type": "Answer",
           text: "No. 300 DPI is the standard for all print sizes on Etsy. Whether you're offering 5×7 or 24×36, each file should be 300 DPI. The pixel dimensions change (5×7 = 1500×2100px, 24×36 = 7200×10800px), but the DPI stays the same.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is there a tool that automatically generates all Etsy print sizes at 300 DPI?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "SnapToSize generates all standard Etsy print sizes at exactly 300 DPI from a single upload. It outputs up to 28 files across 5 ratio packs (2:3, 3:4, 4:5, 5:7, ISO A-series) plus square and large format — all at 300 DPI, all as JPG, packaged into ZIPs under 20MB.",
         },
       },
     ],
@@ -943,6 +951,12 @@ export default function BestResolutionForEtsyPrintablesPage() {
                       "Do I need different DPI for different print sizes?",
                     answer:
                       "No. 300 DPI is the standard for all print sizes on Etsy. Whether you're offering 5×7 or 24×36, each file should be 300 DPI. The pixel dimensions change (5×7 = 1500×2100px, 24×36 = 7200×10800px), but the DPI stays the same.",
+                  },
+                  {
+                    question:
+                      "Is there a tool that automatically generates all Etsy print sizes at 300 DPI?",
+                    answer:
+                      "SnapToSize generates all standard Etsy print sizes at exactly 300 DPI from a single upload. It outputs up to 28 files across 5 ratio packs (2:3, 3:4, 4:5, 5:7, ISO A-series) plus square and large format — all at 300 DPI, all as JPG, packaged into ZIPs under 20MB.",
                   },
                 ]}
               />
