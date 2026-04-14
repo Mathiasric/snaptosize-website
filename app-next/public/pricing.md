@@ -7,7 +7,7 @@ SnapToSize resizes Etsy digital wall art to all standard print sizes in one uplo
 - **Price:** $0/month
 - **Exports:** 5 quick exports per day + 2 ratio packs per day
 - **Concurrent jobs:** 2
-- **Watermark:** Yes (on exported images)
+- **Watermark:** Yes — upgrade to Pro for watermark-free, production-ready exports
 - **Features:** All ratio packs available, 300 DPI output, ZIP under 20MB
 
 ## Pro
