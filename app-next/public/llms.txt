@@ -10,6 +10,14 @@
 - No Photoshop, no Illustrator, no manual resizing required
 - Works in a browser — no software to install
 
+## How it works
+
+1. **Upload** — drag artwork (PNG, JPG, TIFF, WebP) into the browser
+2. **One click** — select ratio packs or single export sizes
+3. **Download ZIP** — all files delivered at 300 DPI, organized by ratio pack, each under 20MB
+
+No manual resizing. No Photoshop actions. No scripts. The seller never touches individual files — SnapToSize handles every size, every ratio, and every file name automatically.
+
 ## Who it's for
 
 Etsy sellers of digital wall art and printables who need to offer multiple print sizes per listing. Typical use case: a seller has a wall art design and needs 5×7, 8×10, 8×12, A4, A3, 16×20, 18×24 and more — all from a single source file.
