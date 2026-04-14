@@ -49,7 +49,7 @@ export default function SnapToSizeVsCanvaPage() {
       "Compare SnapToSize and Canva for resizing Etsy printable wall art. Design in Canva, produce all print sizes in seconds with SnapToSize.",
     url: "https://snaptosize.com/snaptosize-vs-canva",
     datePublished: "2026-03-28",
-    dateModified: "2026-03-28",
+    dateModified: "2026-04-14",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
