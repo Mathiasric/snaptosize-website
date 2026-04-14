@@ -325,6 +325,26 @@ export default function BestResolutionForEtsyPrintablesPage() {
       <section className="py-12 md:py-16">
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
+            {/* --- Calculator Callout --- */}
+            <div className="rounded-xl border border-[#2DD4BF]/25 bg-[#2DD4BF]/5 p-5">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                <div className="flex-1">
+                  <p className="font-semibold text-[#2DD4BF] mb-1 text-sm">
+                    Don&apos;t know your exact pixel dimensions?
+                  </p>
+                  <p className="text-foreground-60 text-sm">
+                    Enter your image size to see DPI quality, crop analysis,
+                    and exact pixel requirements for all 30 Etsy print sizes.
+                  </p>
+                </div>
+                <Link href="/etsy-print-size-calculator" className="flex-shrink-0">
+                  <Button variant="secondary" className="whitespace-nowrap text-sm">
+                    Use free calculator →
+                  </Button>
+                </Link>
+              </div>
+            </div>
+
             {/* --- What Is DPI --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">

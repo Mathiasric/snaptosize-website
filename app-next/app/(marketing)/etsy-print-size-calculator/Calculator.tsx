@@ -803,31 +803,46 @@ export function Calculator() {
                   );
                 })}
 
-                {/* Product CTA */}
-                <div
-                  className="rounded-xl border border-white/[0.08] bg-surface/60 p-4 sm:p-5 group-card flex items-start gap-4"
-                  style={{ animationDelay: `${analysisResults.groups.length * 60}ms` }}
-                >
-                  <div className="flex-shrink-0 mt-0.5">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="text-[#2DD4BF]">
-                      <path d="M11 3L5 11h4l-1 6 6-8h-4l1-6z" fill="currentColor" fillOpacity="0.2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <p className="font-display font-semibold text-sm text-white mb-1">Generate all sizes instantly</p>
-                    <p className="text-xs text-foreground-60 mb-2">
-                      SnapToSize creates every ratio and size automatically. Upload once, download organized ZIP packs.
-                    </p>
-                    <a
-                      href="https://app.snaptosize.com?source=seo_calculator&kind=tool"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm font-medium text-[#2DD4BF] hover:underline"
+                {/* Product CTA — contextual based on best result */}
+                {(() => {
+                  const bestCrop = analysisResults.groups[0]?.cropPercent ?? 1;
+                  const isPerfect = bestCrop === 0;
+                  const isHeavy = bestCrop >= 0.15;
+                  const headline = isPerfect
+                    ? `Perfect ratio — export all ${analysisResults.bestGroupSizeCount} sizes automatically`
+                    : isHeavy
+                    ? "Your image crops heavily across most sizes"
+                    : "Generate ratio-optimized files for every size";
+                  const body = isPerfect
+                    ? "All sizes in this ratio print without any cropping. SnapToSize exports them as organized ZIP packs in one click."
+                    : isHeavy
+                    ? "SnapToSize creates separate files per ratio group — so every size prints cleanly without unwanted cropping."
+                    : "Minor crop on some sizes. SnapToSize generates optimized versions for each ratio automatically.";
+                  return (
+                    <div
+                      className="rounded-xl border border-white/[0.08] bg-surface/60 p-4 sm:p-5 group-card flex items-start gap-4"
+                      style={{ animationDelay: `${analysisResults.groups.length * 60}ms` }}
                     >
-                      Try SnapToSize Free &rarr;
-                    </a>
-                  </div>
-                </div>
+                      <div className="flex-shrink-0 mt-0.5">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="text-[#2DD4BF]">
+                          <path d="M11 3L5 11h4l-1 6 6-8h-4l1-6z" fill="currentColor" fillOpacity="0.2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <p className="font-display font-semibold text-sm text-white mb-1">{headline}</p>
+                        <p className="text-xs text-foreground-60 mb-2">{body}</p>
+                        <a
+                          href="https://app.snaptosize.com?source=seo_calculator&kind=tool"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm font-medium text-[#2DD4BF] hover:underline"
+                        >
+                          Try SnapToSize Free &rarr;
+                        </a>
+                      </div>
+                    </div>
+                  );
+                })()}
               </div>
             </div>
           ) : (
