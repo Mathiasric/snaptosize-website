@@ -372,7 +372,7 @@ export default function EtsyQuoteWallArtSizesPage() {
               className="text-sm md:text-base mb-8 max-w-lg leading-relaxed"
               style={{ color: "rgba(245,240,235,0.5)" }}
             >
-              Quote and typography art is one of Etsy&apos;s largest digital
+              Quote and <Link href="/etsy-typography-wall-art-sizes" className="text-accent-light hover:underline">typography art</Link> is one of Etsy&apos;s largest digital
               download categories. This guide covers the must-have sizes,
               sub-niche breakdowns, and how to generate every size from a
               single upload.

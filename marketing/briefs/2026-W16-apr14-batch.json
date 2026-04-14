@@ -1,0 +1,120 @@
+{
+  "week": "W16",
+  "date": "2026-04-14",
+  "created_at": "2026-04-14T00:00:00Z",
+  "keywords": [
+    {
+      "keyword": "etsy typography wall art sizes",
+      "slug": "etsy-typography-wall-art-sizes",
+      "intent": "informational+commercial",
+      "page_type": "niche",
+      "priority": "P1",
+      "cluster": "niches",
+      "sections": [
+        "Why Typography Wall Art Has Unique Sizing Challenges — Typography prints are text-first: aspect ratio and white space directly affect legibility. A wide quote forced into a 4:5 frame loses padding and visual hierarchy. Explain the three main typography sub-styles (single-word accent, multi-line quote, poster lettering) and how each favors a different format.",
+        "Best Print Sizes for Typography and Word Art on Etsy — Table with columns: Size, Pixels at 300 DPI, Aspect Ratio, Best for. Rows: 5x7 (1500x2100, 5:7, accent words/short phrases), 8x10 (2400x3000, 4:5, wide multi-line quotes), 8x12 (2400x3600, 2:3, tall single-column lettering), A4 (2480x3508, ~1:√2, EU/UK quote prints), A3 (3508x4961, ~1:√2, statement poster text), 16x20 (4800x6000, 4:5, gallery wall featured piece), 18x24 (5400x7200, 3:4, large affirmation poster).",
+        "Typography Sub-Styles and Their Ideal Aspect Ratios — Single keyword/word art: square or 4:5 tends to center impact; Script/calligraphy quotes: tall 2:3 or A4 allows flowing lines to breathe; Block lettering / poster style: wide 4:5 or 8x10 for impact; Stacked multi-line affirmations: 2:3 vertical column reads naturally. Warn that sellers who offer only one size lose buyers whose walls need the other ratio.",
+        "Resolution and Font Rendering for Typography Prints — Fine serif fonts and script lettering require 300 DPI minimum. At 150 DPI, thin strokes alias and look pixelated when printed. Recommend 300 DPI for all text-based art. Note that vector-sourced designs (Illustrator, Affinity) can export at any resolution — raster-only tools (Canva basic) need careful setup.",
+        "US vs. EU Sizing for Word Art — A4 and A3 are the dominant print standards outside North America. Quote prints are disproportionately popular gift items in the UK, Germany, and Scandinavia. Sellers who skip ISO sizes miss ~30–40% of international buyers. Show the size overlap: A4 is close to but NOT the same as 8.5x11 — buyers trying to print A4 files on US paper get cut-off edges.",
+        "How to Package Typography Prints for Etsy Without Hitting the 20MB Limit — Typography files are typically smaller than photo art (text on white background = low file size). But listing photos that include all size variants can approach the limit. Practical tips: JPEG at 300 DPI, RGB color mode, keep ICC profiles consistent. Explain SnapToSize auto-packages all sizes in one ZIP under 20MB.",
+        "How SnapToSize Handles Typography Multi-Pack Exports — One upload, all sizes output: 5x7, 8x10, 8x12, A4, A3, 16x20, 18x24 plus extras. SnapToSize maintains text sharpness across all exports by anchoring at 300 DPI. No manual resizing or Canva workarounds needed."
+      ],
+      "faqs": [
+        "What print sizes should I offer for typography wall art on Etsy?",
+        "What aspect ratio is best for quote prints?",
+        "What resolution do I need for typography prints to look sharp?",
+        "Should I offer A4 size for word art if I sell on Etsy?",
+        "Why does my quote print look blurry when customers print it?",
+        "What is the easiest way to resize typography wall art for all Etsy print sizes?",
+        "Can I sell both portrait and landscape typography prints in the same listing?"
+      ],
+      "competitor_gaps": "Blue ocean — all 8 SERP results are Etsy.com marketplace pages (product listings) and generic YouTube tutorials covering all wall art types. No dedicated seller guide exists for typography/word art sizing specifically. Competitors miss: the legibility-to-aspect-ratio connection, the EU A-series gap for quote prints (huge gift market), resolution requirements for thin serif/script fonts, and the distinction between sub-styles (word accent vs. calligraphy vs. poster lettering).",
+      "conversion_angle": "Quote prints and word art are among Etsy's top gift categories — but only if they print crisply at the right size. SnapToSize exports every standard size at 300 DPI in one upload, covering US and EU buyers without manual resizing.",
+      "link_to": [
+        "etsy-quote-wall-art-sizes",
+        "etsy-print-sizes",
+        "etsy-print-ratios",
+        "etsy-minimalist-wall-art-sizes",
+        "etsy-a4-print-size"
+      ],
+      "link_from": [
+        "etsy-quote-wall-art-sizes",
+        "etsy-minimalist-wall-art-sizes",
+        "etsy-line-art-sizes"
+      ],
+      "sources": [
+        {
+          "claim": "Typography Wall Art Digital Download is a high-volume Etsy market category",
+          "url": "https://www.etsy.com/market/typography_wall_art_digital_download"
+        },
+        {
+          "claim": "Digital Download Typography Print is a dedicated Etsy market segment",
+          "url": "https://www.etsy.com/market/digital_download_typography_print"
+        },
+        {
+          "claim": "SERP for 'etsy typography wall art print sizes' returns only Etsy marketplace pages and generic YouTube tutorials — no dedicated size guide",
+          "url": "https://www.etsy.com/market/typography_art_prints_download"
+        }
+      ]
+    },
+    {
+      "keyword": "etsy map art print sizes",
+      "slug": "etsy-map-art-print-sizes",
+      "intent": "informational+commercial",
+      "page_type": "niche",
+      "priority": "P1",
+      "cluster": "niches",
+      "sections": [
+        "Why Map Art Has Unique Print Size Requirements — City maps are detail-dense: street names, transit lines, and landmarks must remain legible at print size. Unlike abstract art, map prints fail if cropped incorrectly or printed too small. Explain the three main map sub-types: minimalist city outline maps, detailed street-grid maps, and travel/location marker maps — and why each demands different sizing.",
+        "Best Print Sizes for City and Travel Map Art on Etsy — Table: Size, Pixels at 300 DPI, Aspect Ratio, Best for. Rows: 8x10 (2400x3000, 4:5, city neighborhood focus), 8x12 (2400x3600, 2:3, standard city portrait), 11x14 (3300x4200, ~3:4, mid-size gallery wall map), A3 (3508x4961, ~1:√2, EU standard city poster), 16x20 (4800x6000, 4:5, large format detailed map), 18x24 (5400x7200, 3:4, statement wall map), 24x36 (7200x10800, 2:3, large poster format).",
+        "Map Sub-Styles and Their Ideal Formats — Minimalist city outlines: 8x10 or 8x12 portrait, clean white space needed around perimeter; Detailed street-grid maps: 16x20 or 18x24 minimum to keep street labels readable; Travel pin / 'I've been here' maps: wide landscape 4:5 or 3:4 to spread geography; Neighborhood close-up maps: square or 4:5 for tight focus. Show how forcing a wide map into a tall ratio cuts off geographic context.",
+        "Resolution Requirements for Map Art — Street labels and fine grid lines require 300 DPI minimum. Maps generated from vector sources (GIS data, Illustrator) can export cleanly at any size. Warn sellers: if sourcing map raster images from the web, 72 DPI screen resolution will produce blurry prints. Minimum recommended source resolution for a 16x20 print: 4800x6000 px.",
+        "US vs. EU Print Sizes for Map Posters — A3 (EU) and 16x20 (US) are both popular for city map poster gifting. A3 is the standard in UK, Germany, and Scandinavia — and city map prints are a top gift category in those markets. Sellers who offer only US sizes lose international buyers who print at home on A3. Show dimension comparison: A3 (11.7x16.5 in) vs. 11x14 — close but not interchangeable.",
+        "How to Price and Package Map Art Listings — Map prints are premium gifts (housewarming, wedding anniversary, marathon finish line). Sellers often charge $5–15 for digital. Packaging tips: include multiple sizes in one ZIP to justify price and reduce buyer questions. Etsy's 20MB ZIP limit matters here — large 24x36 at 300 DPI can be 15–20MB alone. Progressive JPEG quality fallback strategy.",
+        "How SnapToSize Handles Map Art Multi-Pack Exports — One upload exports all standard sizes: 8x10, 8x12, 11x14, A3, 16x20, 18x24, 24x36. SnapToSize anchors at 300 DPI across all exports and keeps the ZIP under 20MB automatically. Sellers avoid manual resizing in Canva or Photoshop for every size variant.",
+        "What is the easiest way to resize map art for all Etsy print sizes? — This FAQ targets GEO/AI discoverability. Answer: upload the map design once to SnapToSize and receive all standard print sizes (8x10 through 24x36 plus EU A-series) in a single ZIP, print-ready at 300 DPI."
+      ],
+      "faqs": [
+        "What print sizes should I offer for city map art on Etsy?",
+        "What resolution do I need for map prints to keep street labels sharp?",
+        "What is the easiest way to resize map art for all Etsy print sizes?",
+        "Should I offer A3 size for city map prints sold on Etsy?",
+        "What aspect ratio is best for city map posters?",
+        "Why do map prints look blurry when customers print them at home?",
+        "How do I fit a wide city map into a portrait print without cutting off geography?"
+      ],
+      "competitor_gaps": "Complete blue ocean — all 8 SERP results for 'etsy map art print sizes' are Etsy.com marketplace pages (city map product listings). No informational seller guide exists anywhere in the top results. Competitors miss: the legibility threshold for street labels (why map art needs higher resolution than abstract), the landscape-vs-portrait ratio problem specific to geographic shapes, the EU A3 market for city map gifts, and packaging strategy for large-format map ZIPs near the 20MB Etsy limit.",
+      "conversion_angle": "City map prints are a top Etsy gift category — but they require more sizes and higher resolution than typical art. SnapToSize exports all map sizes (8x10 through 24x36) at 300 DPI in one upload, including A3 for EU buyers, keeping the ZIP under Etsy's 20MB limit automatically.",
+      "link_to": [
+        "etsy-print-sizes",
+        "etsy-print-ratios",
+        "etsy-landscape-print-sizes",
+        "etsy-24x36-print-size",
+        "etsy-20mb-file-limit"
+      ],
+      "link_from": [
+        "etsy-landscape-print-sizes",
+        "etsy-photography-print-sizes",
+        "etsy-print-sizes"
+      ],
+      "sources": [
+        {
+          "claim": "City Map Print is a major Etsy category with personalized and digital download variants",
+          "url": "https://www.etsy.com/market/city_map_print"
+        },
+        {
+          "claim": "City Map Digital Prints is a dedicated Etsy market with multiple sub-categories",
+          "url": "https://www.etsy.com/market/city_map_digital_prints"
+        },
+        {
+          "claim": "Wall Art Prints City Maps has dedicated Etsy digital prints market segment",
+          "url": "https://www.etsy.com/market/wall_art_prints_city_maps"
+        },
+        {
+          "claim": "Custom City Map Printable with multiple sizes listed — sellers offering multi-size packs at $3.50–$6.85",
+          "url": "https://www.etsy.com/market/city_maps_poster"
+        }
+      ]
+    }
+  ]
+}

@@ -669,6 +669,7 @@
     ],
     "cluster": "niches",
     "relatedSlugs": [
+      "etsy-typography-wall-art-sizes",
       "etsy-print-sizes",
       "etsy-print-ratios",
       "etsy-print-size-calculator",
@@ -1060,6 +1061,7 @@
     ],
     "cluster": "niches",
     "relatedSlugs": [
+      "etsy-map-art-print-sizes",
       "etsy-landscape-print-sizes",
       "2-3-vs-4-5-ratio",
       "etsy-print-ratios",
@@ -1478,6 +1480,58 @@
       "etsy-minimalist-wall-art-sizes",
       "best-resolution-for-etsy-printables",
       "etsy-print-ratios"
+    ]
+  },
+  {
+    "slug": "etsy-typography-wall-art-sizes",
+    "title": "Etsy Typography Wall Art Sizes",
+    "pageType": "niche",
+    "keywords": [
+      "etsy typography wall art sizes",
+      "quote print sizes etsy",
+      "word art print sizes etsy",
+      "affirmation print sizes etsy",
+      "typography wall art dimensions"
+    ],
+    "cluster": "niches",
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-quote-wall-art-sizes",
+      "etsy-minimalist-wall-art-sizes",
+      "etsy-a4-print-size",
+      "etsy-a3-print-size",
+      "etsy-8x10-print-size",
+      "etsy-8x12-print-size",
+      "how-many-sizes-etsy-printable",
+      "best-resolution-for-etsy-printables",
+      "how-to-package-digital-wall-art-for-etsy"
+    ]
+  },
+  {
+    "slug": "etsy-map-art-print-sizes",
+    "title": "Etsy Map Art Print Sizes",
+    "pageType": "niche",
+    "keywords": [
+      "etsy map art print sizes",
+      "city map print sizes etsy",
+      "map art dimensions etsy",
+      "custom map print sizes",
+      "travel art print sizes etsy"
+    ],
+    "cluster": "niches",
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-gallery-wall-print-sizes",
+      "etsy-photography-print-sizes",
+      "etsy-landscape-print-sizes",
+      "etsy-24x36-print-size",
+      "etsy-a3-print-size",
+      "etsy-18x24-print-size",
+      "how-many-sizes-etsy-printable",
+      "etsy-20mb-file-limit",
+      "how-to-package-digital-wall-art-for-etsy"
     ]
   }
 ]

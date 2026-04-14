@@ -861,7 +861,7 @@ export default function EtsyPhotographyPrintSizesPage() {
                         Mix of gift-sized and statement prints. 8x12 and
                         12x18 sell well as gifts. 16x24 and 20x30 for
                         travelers decorating with their own adventures.
-                        Include both 2:3 and 4:5 packs to cover all buyers.
+                        Include both 2:3 and 4:5 packs to cover all buyers. Also pairs well with <Link href="/etsy-map-art-print-sizes" className="text-accent-light hover:underline">map art print sizes</Link> for travel-themed bundles.
                       </p>
                       <div className="flex flex-wrap gap-2">
                         <span className="px-2.5 py-0.5 rounded-full text-xs font-medium bg-accent/10 text-accent-light">
