@@ -118,6 +118,14 @@ export default function EtsyPrintRatiosPage() {
           text: "Creating ratio packs manually takes 1-3 hours per artwork. You need to resize the same artwork many times, calculate pixel dimensions correctly, export files individually, organize into folders, and ensure ZIPs stay under Etsy's 20MB limit. This workflow doesn't scale for multiple listings.",
         },
       },
+      {
+        "@type": "Question",
+        name: "Is there a tool that automatically handles all Etsy print ratios?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "SnapToSize generates ratio-correct files for all standard Etsy packs — 2:3, 3:4, 4:5, 5:7, square, and ISO A-series — from a single upload. Each file is cropped to the correct ratio at 300 DPI and packed into a ZIP under 20MB.",
+        },
+      },
     ],
   };
 

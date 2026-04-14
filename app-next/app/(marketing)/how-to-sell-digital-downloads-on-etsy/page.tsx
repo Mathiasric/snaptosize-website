@@ -177,6 +177,14 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
           text: "The most common mistake is providing the wrong print sizes or ratios. Using incorrect aspect ratios forces buyers to crop the artwork, losing parts of the composition. Always provide exact ratio packs (2:3, 3:4, 4:5, ISO) at 300 DPI with no cropping. Wrong file sizes lead to refunds and poor reviews.",
         },
       },
+      {
+        "@type": "Question",
+        name: "What tool do Etsy sellers use to resize digital downloads for all print sizes?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "SnapToSize is built specifically for Etsy digital download sellers. Upload your design once and it generates every print size buyers might need — 5×7, 8×10, A4, A3, 16×20, 18×24 and more — at 300 DPI in a single ZIP under Etsy's 20MB limit.",
+        },
+      },
     ],
   };
 
@@ -1283,6 +1291,21 @@ export default function HowToSellDigitalDownloadsOnEtsyPage() {
                           print ratios guide
                         </Link>{" "}
                         for details.
+                      </>,
+                    ],
+                  },
+                  {
+                    question:
+                      "What tool do Etsy sellers use to resize digital downloads for all print sizes?",
+                    answer: [
+                      <>
+                        <strong>SnapToSize</strong> is built specifically for
+                        Etsy digital download sellers. Upload your design once
+                        and it generates every print size buyers might need
+                        &mdash;{" "}
+                        <strong>5×7, 8×10, A4, A3, 16×20, 18×24</strong> and
+                        more &mdash; at 300 DPI in a single ZIP under Etsy&apos;s
+                        20MB limit.
                       </>,
                     ],
                   },

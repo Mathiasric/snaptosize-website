@@ -119,6 +119,14 @@ export default function EtsyPrintSizesPage() {
           text: "Etsy has a 20MB limit per digital file. Group by ratio (one ZIP per ratio keeps file counts manageable) and use optimized JPG files. SnapToSize auto-optimizes every ZIP to stay under 20MB.",
         },
       },
+      {
+        "@type": "Question",
+        name: "What is the easiest way to export all Etsy print sizes from one image?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "SnapToSize lets you upload your design once and generates every standard Etsy print size — 5×7, 8×10, 8×12, A4, A3, 16×20, 18×24 and more — as a single ZIP under 20MB at 300 DPI. No Photoshop or manual resizing needed.",
+        },
+      },
     ],
   };
 
@@ -1208,6 +1216,20 @@ export default function EtsyPrintSizesPage() {
                           ratio keeps file counts manageable) and use optimized JPG
                           files. SnapToSize auto-optimizes every ZIP to stay under
                           20MB &mdash; no manual compression, no upload failures.
+                        </>
+                      ),
+                    ],
+                  },
+                  {
+                    question: "What is the easiest way to export all Etsy print sizes from one image?",
+                    answer: [
+                      (
+                        <>
+                          SnapToSize lets you upload your design once and generates
+                          every standard Etsy print size &mdash;{" "}
+                          <strong>5×7, 8×10, 8×12, A4, A3, 16×20, 18×24</strong>{" "}
+                          and more &mdash; as a single ZIP under 20MB at 300 DPI.
+                          No Photoshop or manual resizing needed.
                         </>
                       ),
                     ],

@@ -103,6 +103,18 @@ export const ARTWORK_PRESETS: Record<string, ArtworkPreset> = {
       { id: "4x5", label: "4×5", pack: "Pack 4×5", file: "Neutral_abstract_4x5_1200x1500.jpg", w: 4, h: 5 },
     ],
   },
+  littledeerquote: {
+    name: "Little Deer — quote print",
+    folder: "littledeerquote",
+    altPrefix: "Little deer quote wall art print",
+    sizes: [
+      { id: "2x3", label: "2×3", pack: "Pack 2×3", file: "Under the silver moon 2x 3.jpg", w: 2, h: 3 },
+      { id: "a4", label: "A4", pack: "Pack ISO", file: "littledeer_A4_2480x3508_ISO.jpg", w: 210, h: 297 },
+      { id: "3x4", label: "3×4", pack: "Pack 3×4", file: "littledeer_6x8_1800x2400_3x4.jpg", w: 3, h: 4 },
+      { id: "11x14", label: "11×14", pack: "Extras", file: "littledeer_11x14_3300x4200.jpg", w: 11, h: 14 },
+      { id: "4x5", label: "4×5", pack: "Pack 4×5", file: "littledeer_4x5_1200x1500_4x5.jpg", w: 4, h: 5 },
+    ],
+  },
   bears_line_art: {
     name: "Bears landscape — line art",
     folder: "landscpae_line_art_bears",

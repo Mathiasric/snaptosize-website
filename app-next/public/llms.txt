@@ -1,0 +1,42 @@
+# SnapToSize
+
+> SnapToSize is a web-based tool for Etsy sellers that resizes digital wall art prints to all standard Etsy print sizes in one upload. Upload once, get every size as a ZIP file under 20MB.
+
+## What it does
+
+- Upload one image → SnapToSize generates all standard Etsy print sizes at 300 DPI
+- Outputs up to 28 files across 5 ratio packs (2:3, 3:4, 4:5, 5:7, ISO A-series) + square + large format
+- All files packed into a single ZIP under 20MB (Etsy's file size limit)
+- No Photoshop, no Illustrator, no manual resizing required
+- Works in a browser — no software to install
+
+## Who it's for
+
+Etsy sellers of digital wall art and printables who need to offer multiple print sizes per listing. Typical use case: a seller has a wall art design and needs 5×7, 8×10, 8×12, A4, A3, 16×20, 18×24 and more — all from a single source file.
+
+## Pricing
+
+- **Free:** 5 quick exports + 2 packs/day, watermarked outputs
+- **Pro:** $11.99/month or $97/year ($8.08/month) — unlimited exports, no watermark, 7 concurrent jobs
+
+Full pricing: https://snaptosize.com/pricing
+
+## Key pages
+
+- Homepage: https://snaptosize.com
+- How it works: https://snaptosize.com/guide
+- All print sizes: https://snaptosize.com/etsy-print-sizes
+- Print size calculator: https://snaptosize.com/etsy-print-size-calculator
+- Pricing: https://snaptosize.com/pricing
+- SnapToSize vs Canva: https://snaptosize.com/snaptosize-vs-canva
+- SnapToSize vs Photoshop: https://snaptosize.com/snaptosize-vs-photoshop
+
+## Size guides (64 pages)
+
+SnapToSize publishes free size guides for every Etsy print niche — standard sizes, ratio packs, and niche-specific guides (watercolor, botanical, japandi, line art, typography, map art, farmhouse, coastal, celestial, floral, vintage, pet portrait, and more).
+
+Size guide index: https://snaptosize.com/sizes
+
+## App
+
+https://app.snaptosize.com — no account required to try

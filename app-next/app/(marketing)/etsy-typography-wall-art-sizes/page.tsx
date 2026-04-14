@@ -413,6 +413,11 @@ export default function EtsyTypographyWallArtSizesPage() {
           </p>
         </section>
 
+        {/* ===== LISTING OUTPUT SHOWCASE ===== */}
+        <div className="mb-14">
+          <ListingOutputShowcase artwork="littledeerquote" />
+        </div>
+
         {/* ===== CTA 1 ===== */}
         <div className="mb-14">
           <ContextualCTA
@@ -543,10 +548,6 @@ export default function EtsyTypographyWallArtSizesPage() {
           </p>
         </section>
 
-        {/* ===== LISTING OUTPUT SHOWCASE ===== */}
-        <div className="mb-14">
-          <ListingOutputShowcase artwork="neutral_abstract" />
-        </div>
 
         {/* ===== SECTION 7: How SnapToSize Handles Typography Exports ===== */}
         <section className="mb-14">

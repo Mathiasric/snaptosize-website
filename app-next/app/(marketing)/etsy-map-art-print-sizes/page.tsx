@@ -116,11 +116,6 @@ export default function EtsyMapArtPrintSizesPage() {
       answer:
         "Map prints are premium gift items — housewarming, anniversary, marathon finish line. Sellers typically charge $5–$15 for a digital download. Including multiple sizes in one ZIP justifies the price and reduces buyer questions about whether their frame size is included. A listing with 6+ sizes at $8 outperforms a single-size listing at $3 on perceived value.",
     },
-    {
-      question: "What is the easiest way to resize map art for all Etsy print sizes?",
-      answer:
-        "SnapToSize handles the full multi-format export in one upload — portrait sizes (8×10, 11×14, 18×24), landscape sizes (16×20, 24×36), and EU A3 all in one ZIP under 20MB. Upload once, download all sizes instantly.",
-    },
   ];
 
   const faqJsonLd = {
@@ -420,6 +415,11 @@ export default function EtsyMapArtPrintSizesPage() {
           </p>
         </section>
 
+        {/* ===== LISTING OUTPUT SHOWCASE ===== */}
+        <div className="mb-14">
+          <ListingOutputShowcase artwork="misty_lake" />
+        </div>
+
         {/* ===== CTA 1 ===== */}
         <div className="mb-14">
           <ContextualCTA
@@ -538,10 +538,6 @@ export default function EtsyMapArtPrintSizesPage() {
           </p>
         </section>
 
-        {/* ===== LISTING OUTPUT SHOWCASE ===== */}
-        <div className="mb-14">
-          <ListingOutputShowcase artwork="misty_lake" />
-        </div>
 
         {/* ===== SECTION 7: How SnapToSize Handles Map Exports ===== */}
         <section className="mb-14">
