@@ -116,6 +116,16 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-black-and-white-art-sizes" className="transition-colors hover:text-accent-light">
+                  Black &amp; White Art Sizes
+                </Link>
+              </li>
+              <li>
+                <Link href="/etsy-anime-manga-art-sizes" className="transition-colors hover:text-accent-light">
+                  Anime &amp; Manga Art Sizes
+                </Link>
+              </li>
+              <li>
                 <Link href="/etsy-map-art-print-sizes" className="transition-colors hover:text-accent-light">
                   Map Art Print Sizes
                 </Link>

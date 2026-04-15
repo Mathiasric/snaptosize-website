@@ -995,7 +995,9 @@ export default function EtsyPhotographyPrintSizesPage() {
                         <Link href="/etsy-pet-portrait-sizes" className="text-accent-light hover:underline">
                           pet portrait
                         </Link>{" "}
-                        sub-niche, these same sizes apply.
+                        sub-niche, these same sizes apply. For{" "}
+                        <Link href="/etsy-black-and-white-art-sizes" className="text-accent-light hover:underline">black and white photography prints</Link>,{" "}
+                        prioritize 4:5 and 2:3 ratios at 300+ DPI for sharp contrast.
                       </p>
                       <div className="flex flex-wrap gap-2">
                         <span className="px-2.5 py-0.5 rounded-full text-xs font-medium bg-accent/10 text-accent-light">

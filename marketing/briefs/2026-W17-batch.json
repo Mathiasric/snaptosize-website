@@ -1,0 +1,142 @@
+{
+  "week": "W17",
+  "created_at": "2026-04-15T09:00:00Z",
+  "keywords": [
+    {
+      "keyword": "etsy black and white art print sizes",
+      "slug": "etsy-black-and-white-art-sizes",
+      "intent": "informational+commercial",
+      "page_type": "niche",
+      "priority": "P1",
+      "h1": "Etsy Black and White Art Print Sizes: The Complete Seller Guide",
+      "quick_answer": "The most popular black and white art print sizes on Etsy are 5×7, 8×10, 11×14, 16×20, and 18×24 — covering the 2:3, 4:5, and 3:4 ratios that fit standard frames and gallery walls in North America, with A4/A3 added for international buyers.",
+      "sections": [
+        {
+          "h2": "Most Popular Black and White Print Sizes on Etsy",
+          "content_notes": "Cover the core five sizes (5×7, 8×10, 11×14, 16×20, 18×24) with their pixel dimensions at 300 DPI and which ratio group each belongs to. Explain why these sizes dominate: they match widely stocked ready-made frames at major retailers, giving buyers the easiest path to framing. Note that 8×10 and 11×14 are the top two bestsellers for B&W specifically because the high contrast shows well in standard matte frames.",
+          "has_table": true
+        },
+        {
+          "h2": "Why Black and White Art Has Unique Sizing Challenges",
+          "content_notes": "B&W art is uniquely sensitive to two issues generic size guides ignore: (1) thin linework at the wrong DPI loses contrast and appears grey/muddy at print time — 300 DPI minimum is non-negotiable, and 600 DPI is recommended for fine-line illustration; (2) color profile mismatches cause muddy blacks — always export as sRGB, not Grayscale ICC or Adobe RGB, because most home printers and print-on-demand labs interpret sRGB correctly.",
+          "has_table": false
+        },
+        {
+          "h2": "Aspect Ratios for Black and White Prints — Which Ones to Cover",
+          "content_notes": "Map the key ratios (2:3, 3:4, 4:5) to specific B&W print sizes with a table. Explain the gallery-wall problem: mixing aspect ratios in a B&W gallery wall set looks visually inconsistent. Recommend 4:5 for a classic formal look; 2:3 for photography and poster-style prints; 3:4 for mid-size framed art.",
+          "has_table": true
+        },
+        {
+          "h2": "International Sizes: Adding A4 and A3 for UK and EU Buyers",
+          "content_notes": "B&W minimalist and line-art prints have a strong international market. Cover A5 (1748×2480 px), A4 (2480×3508 px), A3 (3508×4961 px), and A2 (4961×7016 px) at 300 DPI. Note that including A4 and A3 can meaningfully expand reach without extra design work.",
+          "has_table": true
+        },
+        {
+          "h2": "How Many Sizes Should You Include in a B&W Art Listing?",
+          "content_notes": "Most successful B&W sellers offer 8–14 files covering 2–3 ratio groups. Start with the largest intended size and scale down to preserve quality — never upscale. Include at least one size per major ratio group so buyers aren't locked out by framing constraints.",
+          "has_table": false
+        },
+        {
+          "h2": "File Format and Export Settings for Black and White Etsy Prints",
+          "content_notes": "Best format for B&W art: high-res JPG for most listings; PNG for fine-line artwork where compression artifacts are visible. Always embed sRGB color profile. Mention the 20MB per-file Etsy limit and how large B&W files at 300 DPI can exceed this when uncompressed.",
+          "has_table": false
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the best size for black and white art prints on Etsy?",
+          "a": "The best-selling sizes for black and white art on Etsy are 8×10 and 11×14, which match the most widely available ready-made frames in North America. For a complete listing, also include 5×7, 16×20, and 18×24 to cover buyers with larger walls."
+        },
+        {
+          "q": "What DPI should I use for black and white Etsy prints?",
+          "a": "Use 300 DPI as the minimum for all black and white art. For fine-line illustration or thin linework, 600 DPI is recommended — thin lines at 300 DPI can appear grey or muddy when printed, losing the crisp contrast that makes B&W art impactful."
+        },
+        {
+          "q": "Should I export black and white art as sRGB or Grayscale for Etsy?",
+          "a": "Export as sRGB, not Grayscale. Most home printers and print-on-demand services interpret sRGB correctly and will reproduce true blacks. Exporting as a Grayscale ICC profile can cause muddy or slightly tinted output on many consumer printers."
+        },
+        {
+          "q": "What aspect ratio is best for a black and white gallery wall set on Etsy?",
+          "a": "For cohesive B&W gallery wall sets, stick to one dominant aspect ratio — 4:5 for a classic formal look, or 2:3 for photography and poster-style prints."
+        },
+        {
+          "q": "Do I need to include A4 and A3 sizes in my black and white Etsy listing?",
+          "a": "Yes, if you want to reach UK and EU buyers. A4 (2480×3508 px) and A3 (3508×4961 px) at 300 DPI are the standard framing sizes for international customers."
+        },
+        {
+          "q": "What is the best tool to resize black and white art for all Etsy print sizes at once?",
+          "a": "SnapToSize lets you upload your black and white artwork once and instantly generates all standard Etsy sizes — 5×7, 8×10, 11×14, 16×20, 18×24, A4, A3, and more — as print-ready files at 300 DPI. There's no manual resizing or Photoshop needed; the tool handles all ratio groups in one export, packaged as a single ZIP ready to upload to your Etsy listing."
+        }
+      ],
+      "conversion_angle": "After covering the sizing complexity (multiple ratios, international sizes, DPI requirements), introduce SnapToSize as the solution that eliminates the manual resize work: upload once, get every standard B&W print size in one ZIP. Place CTA after the 'How Many Sizes' section and again in the conclusion.",
+      "link_to": ["etsy-print-sizes", "best-resolution-for-etsy-printables", "etsy-gallery-wall-print-sizes"],
+      "link_from": ["etsy-minimalist-wall-art-sizes", "etsy-photography-print-sizes"]
+    },
+    {
+      "keyword": "etsy anime art print sizes",
+      "slug": "etsy-anime-manga-art-sizes",
+      "intent": "informational+commercial",
+      "page_type": "niche",
+      "priority": "P1",
+      "h1": "Anime & Manga Art Print Sizes for Etsy: The Complete Seller Guide",
+      "quick_answer": "The most popular anime art print sizes on Etsy are 8×12, 11×17, 12×18, and 18×24 (all 2:3 ratio portrait), plus A4 and A3 for international buyers — matching the tall portrait format that character art demands.",
+      "sections": [
+        {
+          "h2": "Most Popular Anime Art Print Sizes for Etsy",
+          "content_notes": "Cover the top-selling portrait sizes: 8×12, 11×17, 12×18, 18×24 (2:3 ratio) and 8×10, 11×14, 16×20 (4:5 ratio). Explain why portrait orientation dominates anime/manga — character art, full-figure poses, and panel-style compositions all favor tall formats. Include a quick-reference table of sizes with pixels at 300 DPI.",
+          "has_table": true
+        },
+        {
+          "h2": "Japanese B-Series Poster Formats: B2 and B3 Explained",
+          "content_notes": "Explain the JIS B-series used in official Japanese anime merchandise — B3 (364×515mm ≈ 14×20in) and B2 (515×728mm ≈ 20×28in). Clarify that these are different from ISO B-series. Advise sellers to include 11×17 and 12×18 as practical Western equivalents.",
+          "has_table": true
+        },
+        {
+          "h2": "ISO A-Series Sizes for International Anime Buyers",
+          "content_notes": "UK, EU, Australian, and Japanese buyers default to metric A-sizes. Cover A4 (210×297mm), A3 (297×420mm), and A2 (420×594mm). Emphasize that international sales represent a large share of anime fandom.",
+          "has_table": true
+        },
+        {
+          "h2": "DPI and Resolution Requirements for Anime Art Prints",
+          "content_notes": "Anime and manga art has fine linework, gradients, and screentone patterns that expose blurriness when under-resolved. Stress 300 DPI minimum. Note that print-on-demand platforms like INPRNT require minimum 150 DPI but recommend 300 DPI.",
+          "has_table": false
+        },
+        {
+          "h2": "Set of 3 Gallery Wall Sizing for Anime Prints",
+          "content_notes": "Gallery wall triptychs are a top-performing Etsy listing format for anime art. Cover how to size a coordinated set: same ratio across all three, recommended sizes (3×5×7, 3×8×12, or mixed 8×10 center + 5×7 flanks).",
+          "has_table": false
+        },
+        {
+          "h2": "What Sizes to Include in Your Etsy Anime Print Listing",
+          "content_notes": "Recommend a minimum size bundle: 5×7, 8×10, 8×12, 11×17, A4, A3. Explain that listings offering more sizes get more saves and conversions. Natural bridge to SnapToSize CTA.",
+          "has_table": true
+        }
+      ],
+      "faq": [
+        {
+          "q": "What size are most anime posters?",
+          "a": "Most anime posters sold on Etsy are 11×17 inches (close to B3 format) or 12×18 inches — both use the 2:3 portrait ratio that suits character art. Official Japanese merchandise commonly uses B2 (approx 20×28in) and B3 (approx 14×20in) formats."
+        },
+        {
+          "q": "What DPI should anime prints be for Etsy?",
+          "a": "300 DPI is the standard for print-quality anime art. Anime line art and screentone patterns are especially sensitive to low resolution — a 8×10 file needs to be at least 2400×3000 pixels to print sharply."
+        },
+        {
+          "q": "What size should I offer for international anime buyers on Etsy?",
+          "a": "Include A4 (210×297mm) and A3 (297×420mm) alongside your US inch sizes. UK, EU, and Japanese buyers use metric paper and often can't easily frame non-A-series sizes."
+        },
+        {
+          "q": "How do I size a set of 3 anime prints for a gallery wall?",
+          "a": "Use the same aspect ratio across all three prints so they can be framed consistently. Popular combos are three 8×12s, three 5×7s, or a mixed set with an 8×10 center piece flanked by two 5×7s."
+        },
+        {
+          "q": "Can I sell anime fan art prints on Etsy?",
+          "a": "Fan art of copyrighted characters exists in a grey area on Etsy — many sellers do it, but it carries IP risk. Original anime-inspired art (original characters, original compositions) is fully safe to sell as digital downloads."
+        }
+      ],
+      "conversion_angle": "The page ends with a size checklist showing 8+ sizes an anime seller should include. After building that list, the natural CTA is: manually exporting each size from Photoshop takes 30+ minutes per artwork — SnapToSize generates all sizes from one upload in under 60 seconds, organized into ZIP packs by ratio.",
+      "link_to": ["etsy-a3-print-size", "etsy-11x17-print-size", "etsy-gallery-wall-print-sizes"],
+      "link_from": ["etsy-ai-art-print-sizes", "etsy-gallery-wall-print-sizes"]
+    }
+  ]
+}

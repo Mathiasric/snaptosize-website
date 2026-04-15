@@ -1533,5 +1533,46 @@
       "etsy-20mb-file-limit",
       "how-to-package-digital-wall-art-for-etsy"
     ]
+  },
+  {
+    "slug": "etsy-black-and-white-art-sizes",
+    "title": "Etsy Black and White Art Print Sizes — Complete Seller Guide",
+    "description": "Best print sizes for black and white art on Etsy. DPI requirements, aspect ratios, sRGB vs grayscale, and A4/A3 for international buyers.",
+    "pageType": "niche",
+    "keywords": [
+      "etsy black and white art print sizes",
+      "black and white print sizes etsy",
+      "b&w art print dimensions etsy",
+      "black and white wall art sizes etsy"
+    ],
+    "cluster": "niches",
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "best-resolution-for-etsy-printables",
+      "etsy-gallery-wall-print-sizes",
+      "etsy-minimalist-wall-art-sizes",
+      "etsy-line-art-sizes",
+      "etsy-photography-print-sizes"
+    ]
+  },
+  {
+    "slug": "etsy-anime-manga-art-sizes",
+    "title": "Anime & Manga Art Print Sizes for Etsy — Seller Guide",
+    "description": "Best print sizes for anime and manga art on Etsy. Portrait ratios, Japanese B-series formats, A4/A3 for international buyers, and gallery wall sets.",
+    "pageType": "niche",
+    "keywords": [
+      "etsy anime art print sizes",
+      "anime print sizes etsy",
+      "manga art print dimensions etsy",
+      "anime poster sizes etsy sellers"
+    ],
+    "cluster": "niches",
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-a3-print-size",
+      "etsy-11x17-print-size",
+      "etsy-gallery-wall-print-sizes",
+      "etsy-ai-art-print-sizes"
+    ]
   }
 ]

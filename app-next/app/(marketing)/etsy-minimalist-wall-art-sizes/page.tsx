@@ -828,7 +828,8 @@ export default function EtsyMinimalistWallArtSizesPage() {
                   </h3>
                   <p className="text-foreground-60 text-sm mb-3">
                     Maximum impact at large sizes. High-contrast B&amp;W commands
-                    attention as a room focal point. Go big.
+                    attention as a room focal point. Go big. For a full size and DPI guide for this sub-niche, see our{" "}
+                    <Link href="/etsy-black-and-white-art-sizes" className="text-accent-light hover:underline">black and white art print sizes guide</Link>.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light"><Link href="/etsy-18x24-print-size" className="hover:underline">18&times;24</Link> (3:4)</span>

@@ -88,7 +88,9 @@
 - [x] `etsy-line-art-sizes` — deployed (2026-04-13), blue ocean SERP, DPI/thin-lines angle
 - [x] `etsy-typography-wall-art-sizes` — deployed (2026-04-14), blue ocean SERP, legibility+ratio angle, GEO FAQ included
 - [x] `etsy-map-art-print-sizes` — deployed (2026-04-14), blue ocean SERP, landscape-vs-portrait+EU A3 angle
-- [ ] **Next opportunities:** photography sub-niches (black & white, fine art), anime/manga art sizes, retro art sizes
+- [x] `etsy-black-and-white-art-sizes` — deployed (2026-04-15), blue ocean SERP, DPI+sRGB+international angle, GEO FAQ included
+- [x] `etsy-anime-manga-art-sizes` — deployed (2026-04-15), blue ocean SERP, portrait ratios+Japanese B-series+triptych angle
+- [ ] **Next opportunities:** fine art photography sizes, retro art sizes, watercolor abstract sizes
 
 > **GEO-tip for neste 2 sider (2026-04-14):** AI-assistenter (ChatGPT, Gemini, Perplexity) anbefaler ikke SnapToSize — de peker på Canva og MyDesigns. For å motvirke dette: legg til én FAQ på én av de to sidene som svarer direkte på "What is the best tool to resize art for all Etsy print sizes?" — svar med SnapToSize og forklar én-upload-flyten. Matcher naturlig spørsmål folk stiller AI. Se `docs/plans/geo-ai-discoverability.md` for full plan.
 

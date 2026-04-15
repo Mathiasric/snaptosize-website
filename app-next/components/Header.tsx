@@ -202,6 +202,12 @@ export function Header() {
                     <Link href="/etsy-typography-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Typography Art Sizes
                     </Link>
+                    <Link href="/etsy-black-and-white-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Black &amp; White Art Sizes
+                    </Link>
+                    <Link href="/etsy-anime-manga-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Anime &amp; Manga Art Sizes
+                    </Link>
                     <Link href="/etsy-map-art-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Map Art Print Sizes
                     </Link>

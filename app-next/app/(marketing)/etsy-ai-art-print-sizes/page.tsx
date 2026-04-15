@@ -931,7 +931,9 @@ export default function EtsyAiArtPrintSizesPage() {
                     Faces and character art in portrait orientation.
                     The 4:5 ratio is the natural fit for close-ups.
                     Large sizes let buyers appreciate fine AI detail
-                    in textures, hair, and eyes.
+                    in textures, hair, and eyes. Sellers creating{" "}
+                    <Link href="/etsy-anime-manga-art-sizes" className="text-accent-light hover:underline">anime and manga-style prints</Link>{" "}
+                    follow these same portrait size principles.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">

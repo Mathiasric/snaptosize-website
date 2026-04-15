@@ -549,7 +549,9 @@ export default function EtsyGalleryWallPrintSizesPage() {
                       </div>
                       <p className="text-foreground-60 text-sm mb-3">
                         The most popular gallery wall arrangement on Etsy. Works
-                        above sofas, beds, and console tables.
+                        above sofas, beds, and console tables. Portrait triptychs are especially popular for character art &mdash; see our{" "}
+                        <Link href="/etsy-anime-manga-art-sizes" className="text-accent-light hover:underline">anime art print sizes guide</Link>{" "}
+                        for portrait-ratio sizing.
                       </p>
                       <div className="flex flex-wrap gap-2">
                         <span className="px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-light">

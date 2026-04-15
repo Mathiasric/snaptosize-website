@@ -1,19 +1,31 @@
 {
-  "current_week": "W26",
-  "batch_id": "2026-W26",
-  "started_at": "2026-04-12T00:00:00+00:00",
+  "current_week": "W17",
+  "batch_id": "2026-W17",
+  "started_at": "2026-04-15T09:00:00+00:00",
   "target": { "pages": 2 },
   "stages": {
-    "researcher": { "status": "completed", "output": "marketing/briefs/etsy-celestial-wall-art-sizes-brief.md + etsy-floral-print-sizes-brief.md" },
+    "researcher": { "status": "completed", "output": "marketing/briefs/2026-W17-batch.json (2 keywords)" },
     "writer": { "status": "completed", "output": "Both pages written by parallel seo-writer subagents" },
-    "review": { "status": "completed", "output": "npx next build passes (79 routes, exit 0)" },
+    "review": { "status": "completed", "output": "npx next build passes (85 routes, exit 0)" },
     "deploy": { "status": "completed", "output": "git push to main — Cloudflare Pages auto-deploy triggered" },
-    "verify": { "status": "completed", "output": "Playwright QA passed desktop+mobile. SEO QA: both pages PASS (schema, CTAs, content depth, internal links OK)." }
+    "verify": { "status": "pending", "output": "" }
   },
   "content_items": [
-    { "slug": "etsy-celestial-wall-art-sizes", "keyword": "etsy celestial wall art sizes", "type": "new-page", "status": "deployed" },
-    { "slug": "etsy-floral-print-sizes", "keyword": "etsy floral print sizes", "type": "new-page", "status": "deployed" }
+    {
+      "slug": "etsy-black-and-white-art-sizes",
+      "keyword": "etsy black and white art print sizes",
+      "type": "new-page",
+      "status": "deployed",
+      "notes": "GEO FAQ included, B&W monochrome hero, DPI+sRGB+international angle"
+    },
+    {
+      "slug": "etsy-anime-manga-art-sizes",
+      "keyword": "etsy anime art print sizes",
+      "type": "new-page",
+      "status": "deployed",
+      "notes": "Manga panel hero, Japanese B-series + A-series + portrait ratios"
+    }
   ],
   "metrics": { "total": 2, "completed": 2, "failed": 0, "success_rate": 1.0 },
-  "updated_at": "2026-04-12T00:00:00+00:00"
+  "updated_at": "2026-04-15T11:00:00+00:00"
 }
