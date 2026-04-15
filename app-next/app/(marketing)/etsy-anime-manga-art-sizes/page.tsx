@@ -393,6 +393,24 @@ export default function EtsyAnimeMangaArtSizesPage() {
             </p>
           </section>
 
+          {/* Lifestyle mockup */}
+          <section>
+            <div className="rounded-xl overflow-hidden">
+              <img
+                src="/assets/visuals/etsy-anime-manga-art-sizes-mockup.jpg"
+                alt="Anime art prints in matching dark frames on a teenager's bedroom wall with decorative lighting"
+                width={1200}
+                height={900}
+                className="w-full h-auto object-cover"
+                loading="lazy"
+              />
+            </div>
+            <p className="text-xs text-slate-500 mt-2 text-center">
+              Three coordinating anime prints — 8×12, 11×17, and A3 — in matching
+              dark frames for a gallery wall display.
+            </p>
+          </section>
+
           {/* Section 2 — Japanese B-Series */}
           <section>
             <h2 className="text-2xl font-bold text-white mb-4">
@@ -719,24 +737,6 @@ export default function EtsyAnimeMangaArtSizesPage() {
                 </a>
               </div>
             </Card>
-          </section>
-
-          {/* Lifestyle mockup */}
-          <section>
-            <div className="rounded-xl overflow-hidden">
-              <img
-                src="/assets/visuals/etsy-anime-manga-art-sizes-mockup.jpg"
-                alt="Anime art prints in matching dark frames on a teenager's bedroom wall with decorative lighting"
-                width={1200}
-                height={900}
-                className="w-full h-auto object-cover"
-                loading="lazy"
-              />
-            </div>
-            <p className="text-xs text-slate-500 mt-2 text-center">
-              Three coordinating anime prints — 8×12, 11×17, and A3 — in matching
-              dark frames for a gallery wall display.
-            </p>
           </section>
 
           {/* FinalCTA — CTA 3 */}

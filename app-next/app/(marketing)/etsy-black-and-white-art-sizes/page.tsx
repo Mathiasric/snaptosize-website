@@ -333,6 +333,23 @@ export default function EtsyBlackAndWhiteArtSizesPage() {
               </p>
             </section>
 
+            {/* Lifestyle mockup */}
+            <section className="mb-14">
+              <div className="rounded-xl overflow-hidden border border-border">
+                <img
+                  src="/assets/visuals/etsy-black-and-white-art-sizes-mockup.jpg"
+                  alt="Gallery wall with black and white fine art prints in matching black frames and matte white mounts — mixed sizes including 8x10 and 11x14"
+                  className="w-full object-cover"
+                  loading="lazy"
+                  width={900}
+                  height={675}
+                />
+              </div>
+              <p className="mt-2 text-xs text-center text-foreground-40">
+                B&amp;W prints in a Scandinavian-style gallery wall — 8×10 and 11×14 are the dominant sizes.
+              </p>
+            </section>
+
             {/* Section 2: Unique Sizing Challenges */}
             <section className="mb-14">
               <h2 className="mb-4 text-2xl font-bold text-foreground">
@@ -551,23 +568,6 @@ export default function EtsyBlackAndWhiteArtSizesPage() {
 
               <p className="text-foreground-70">
                 Export settings summary: sRGB color space, 300 DPI (600 DPI for fine-line), JPEG quality 90+, file names like <code className="text-xs bg-muted px-1.5 py-0.5 rounded">artwork_8x10_300dpi.jpg</code>. This matches the naming convention buyers expect and makes ZIP organisation straightforward.
-              </p>
-            </section>
-
-            {/* Lifestyle mockup */}
-            <section className="mb-14">
-              <div className="rounded-xl overflow-hidden border border-border">
-                <img
-                  src="/assets/visuals/etsy-black-and-white-art-sizes-mockup.jpg"
-                  alt="Gallery wall with black and white fine art prints in matching black frames and matte white mounts — mixed sizes including 8x10 and 11x14"
-                  className="w-full object-cover"
-                  loading="lazy"
-                  width={900}
-                  height={675}
-                />
-              </div>
-              <p className="mt-2 text-xs text-center text-foreground-40">
-                B&amp;W prints in a Scandinavian-style gallery wall — 8×10 and 11×14 are the dominant sizes.
               </p>
             </section>
 
