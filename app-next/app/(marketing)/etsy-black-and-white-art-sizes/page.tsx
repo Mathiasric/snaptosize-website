@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
@@ -165,115 +166,47 @@ export default function EtsyBlackAndWhiteArtSizesPage() {
         style={{ background: "#0A0A0A" }}
         className="pt-10 pb-16 md:pt-14 md:pb-24 relative overflow-hidden"
       >
-        {/* B&W gallery wall CSS composition */}
+        {/* B&W art prints — real artwork with grayscale filter */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 flex items-center justify-end pr-8 md:pr-16"
+          className="pointer-events-none absolute inset-0 flex items-center justify-end pr-6 md:pr-14"
         >
-          <div className="relative w-72 h-80 md:w-96 md:h-[420px] opacity-20">
-            {/* Large portrait frame */}
+          <div className="flex gap-5 items-end">
+            {/* Portrait frame — bird sketch */}
             <div
               style={{
-                position: "absolute",
-                top: "0",
-                left: "0",
-                width: "55%",
-                height: "70%",
-                border: "2px solid #E5E5E5",
-                background: "#1A1A1A",
+                flexShrink: 0,
+                border: "7px solid #fff",
+                boxShadow: "0 8px 40px rgba(0,0,0,0.7), 0 2px 8px rgba(0,0,0,0.5)",
+                filter: "grayscale(100%) contrast(1.1)",
+                lineHeight: 0,
               }}
             >
-              <div
-                style={{
-                  position: "absolute",
-                  inset: "8px",
-                  border: "1px solid #333",
-                  background: "#111",
-                }}
+              <Image
+                src="/assets/listings/songbirds/Vintage_bird.jpg"
+                alt="Vintage bird pencil sketch print"
+                width={150}
+                height={200}
+                style={{ display: "block", objectFit: "cover", width: "150px", height: "200px" }}
               />
             </div>
-            {/* Small square frame top right */}
+            {/* Taller portrait frame — owl, offset upward */}
             <div
               style={{
-                position: "absolute",
-                top: "0",
-                right: "0",
-                width: "38%",
-                height: "32%",
-                border: "2px solid #CCCCCC",
-                background: "#1E1E1E",
+                flexShrink: 0,
+                border: "7px solid #fff",
+                boxShadow: "0 8px 40px rgba(0,0,0,0.7), 0 2px 8px rgba(0,0,0,0.5)",
+                filter: "grayscale(100%) contrast(1.1)",
+                lineHeight: 0,
+                marginBottom: "40px",
               }}
             >
-              <div
-                style={{
-                  position: "absolute",
-                  inset: "6px",
-                  border: "1px solid #2A2A2A",
-                  background: "#161616",
-                }}
-              />
-            </div>
-            {/* Wide landscape frame middle right */}
-            <div
-              style={{
-                position: "absolute",
-                top: "38%",
-                right: "0",
-                width: "42%",
-                height: "28%",
-                border: "2px solid #AAAAAA",
-                background: "#181818",
-              }}
-            >
-              <div
-                style={{
-                  position: "absolute",
-                  inset: "5px",
-                  border: "1px solid #252525",
-                  background: "#121212",
-                }}
-              />
-            </div>
-            {/* Tall narrow frame bottom left */}
-            <div
-              style={{
-                position: "absolute",
-                bottom: "0",
-                left: "10%",
-                width: "30%",
-                height: "38%",
-                border: "2px solid #888888",
-                background: "#151515",
-              }}
-            >
-              <div
-                style={{
-                  position: "absolute",
-                  inset: "5px",
-                  border: "1px solid #222",
-                  background: "#0E0E0E",
-                }}
-              />
-            </div>
-            {/* Bottom right wider frame */}
-            <div
-              style={{
-                position: "absolute",
-                bottom: "0",
-                right: "0",
-                width: "45%",
-                height: "26%",
-                border: "2px solid #777777",
-                background: "#141414",
-              }}
-            >
-              <div
-                style={{
-                  position: "absolute",
-                  inset: "5px",
-                  border: "1px solid #1F1F1F",
-                  background: "#0D0D0D",
-                }}
+              <Image
+                src="/assets/listings/owl/Whimscal owl print.jpg"
+                alt="Whimsical owl folk art print"
+                width={170}
+                height={227}
+                style={{ display: "block", objectFit: "cover", width: "170px", height: "227px" }}
               />
             </div>
           </div>

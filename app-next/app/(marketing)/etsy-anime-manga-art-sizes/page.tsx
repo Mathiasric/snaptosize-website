@@ -187,9 +187,9 @@ export default function EtsyAnimeMangaArtSizesPage() {
               left: "12px",
               width: "180px",
               height: "260px",
-              border: "3px solid #4A1D96",
+              border: "3px solid #7C3AED",
               borderRadius: "2px",
-              opacity: 0.55,
+              opacity: 0.75,
             }}
           />
           {/* Offset inner panel — top left */}
@@ -200,9 +200,9 @@ export default function EtsyAnimeMangaArtSizesPage() {
               left: "28px",
               width: "140px",
               height: "200px",
-              border: "2px solid #6D28D9",
+              border: "2px solid #8B5CF6",
               borderRadius: "1px",
-              opacity: 0.35,
+              opacity: 0.55,
             }}
           />
           {/* Bottom-right large panel */}
@@ -213,9 +213,9 @@ export default function EtsyAnimeMangaArtSizesPage() {
               right: "16px",
               width: "220px",
               height: "320px",
-              border: "3px solid #1E3A5F",
+              border: "3px solid #2563EB",
               borderRadius: "2px",
-              opacity: 0.5,
+              opacity: 0.65,
             }}
           />
           {/* Offset inner panel — bottom right */}
@@ -226,9 +226,9 @@ export default function EtsyAnimeMangaArtSizesPage() {
               right: "32px",
               width: "170px",
               height: "250px",
-              border: "2px solid #2563EB",
+              border: "2px solid #3B82F6",
               borderRadius: "1px",
-              opacity: 0.3,
+              opacity: 0.45,
             }}
           />
           {/* Mid glow orb — purple */}
@@ -273,7 +273,7 @@ export default function EtsyAnimeMangaArtSizesPage() {
         </div>
 
         <Container>
-          <div className="relative z-10 py-20 md:py-28 max-w-3xl mx-auto text-center">
+          <div className="relative z-10 py-12 md:py-16 max-w-3xl mx-auto text-center">
             {/* Trust pills */}
             <div className="flex flex-wrap justify-center gap-3 mb-8">
               {[
@@ -301,7 +301,7 @@ export default function EtsyAnimeMangaArtSizesPage() {
               <span style={{ color: "#A78BFA" }}>The Complete Seller Guide</span>
             </h1>
 
-            <p className="text-lg md:text-xl mb-8" style={{ color: "#CBD5E1" }}>
+            <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto" style={{ color: "#CBD5E1" }}>
               Character art demands tall portrait formats — here are every size,
               pixel dimension, and ratio you need for a complete anime print
               listing.
