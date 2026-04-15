@@ -15,7 +15,7 @@ const appUrl =
 export const metadata: Metadata = {
   title: "Anime Art Print Sizes for Etsy — Seller Guide",
   description:
-    "Best anime & manga print sizes for Etsy: 8×12, 11×17, 12×18, A4, A3 and more. Pixel dimensions at 300 DPI, Japanese B-series formats, and how to export them all.",
+    "Best anime & manga print sizes for Etsy: 8×12, 11×17, 12×18, A4, A3 and more. Pixel dimensions at 300 DPI and Japanese B-series formats included.",
   alternates: {
     canonical: "https://snaptosize.com/etsy-anime-manga-art-sizes",
   },
