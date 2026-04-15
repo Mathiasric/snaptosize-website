@@ -569,7 +569,7 @@ export default function EtsyPrintSizesPage() {
                     Used by serious Etsy digital sellers.
                   </p>
                   <p className="text-xs text-foreground-60">
-                    Over 18,000 size packs generated.
+                    Trusted by Etsy sellers to get every size right, every time.
                   </p>
                 </div>
 

@@ -22,7 +22,7 @@ export function PainSection() {
                 <li>• Re-upload when you miss a size</li>
               </ul>
               <p className="mt-4 text-lg font-semibold text-error">
-                20–40 min per listing
+                1–2 hours per listing
               </p>
             </Card>
 

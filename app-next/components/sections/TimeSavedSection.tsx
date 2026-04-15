@@ -38,7 +38,7 @@ export function TimeSavedSection() {
                 </li>
               </ul>
               <div className="mt-5 pt-4 border-t border-white/[0.06]">
-                <p className="text-2xl font-bold text-red-400">20–40 min</p>
+                <p className="text-2xl font-bold text-red-400">1–2 hours</p>
                 <p className="text-xs text-foreground-40">per listing</p>
               </div>
             </div>
