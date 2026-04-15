@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
-import { Check } from "lucide-react";
+import { Check, AlertTriangle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
@@ -382,7 +382,14 @@ export default function EtsyAnimeMangaArtSizesPage() {
               >
                 11×17 print size guide
               </Link>{" "}
-              for full pixel specs and framing details.
+              for full pixel specs and framing details. Portrait-heavy listings also benefit from the{" "}
+              <Link
+                href="/2-3-vs-4-5-ratio"
+                className="text-violet-400 hover:text-violet-300 underline"
+              >
+                2:3 vs 4:5 ratio comparison
+              </Link>{" "}
+              — anime art almost always favors 2:3.
             </p>
           </section>
 
@@ -451,11 +458,24 @@ export default function EtsyAnimeMangaArtSizesPage() {
               </table>
             </div>
 
-            <p className="text-slate-400 text-sm">
-              Important: ISO B3 (353×500 mm) and JIS B3 (364×515 mm) are not the
-              same. Listing sizes in inches and mm — rather than &ldquo;B3&rdquo;
-              — avoids buyer confusion.
-            </p>
+            <div
+              className="rounded-lg p-4 mt-2"
+              style={{
+                background: "rgba(109,40,217,0.1)",
+                border: "1px solid rgba(109,40,217,0.35)",
+              }}
+            >
+              <div className="flex gap-3">
+                <AlertTriangle size={16} className="text-amber-400 shrink-0 mt-0.5" />
+                <p className="text-sm text-slate-300">
+                  <strong className="text-white">JIS B3 ≠ ISO B3.</strong>{" "}
+                  ISO B3 is 353×500 mm; JIS B3 is 364×515 mm — different sizes
+                  with the same label. Always list dimensions in inches and mm in
+                  your Etsy listing, not just the format name, to avoid buyer
+                  confusion and refund requests.
+                </p>
+              </div>
+            </div>
           </section>
 
           {/* Section 3 — A-Series for International Buyers */}
@@ -534,12 +554,46 @@ export default function EtsyAnimeMangaArtSizesPage() {
               home or through services like Costco or Walmart Photo — where thin
               lines will look muddy below 300 DPI.
             </p>
+            <div className="space-y-3 mb-5">
+              <Card className="p-5">
+                <div className="flex gap-3">
+                  <AlertTriangle size={18} className="text-amber-400 shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-semibold text-white mb-1">
+                      Screentone patterns fail hard at 150 DPI
+                    </p>
+                    <p className="text-sm text-slate-300">
+                      The dot patterns used in manga shading look fine on screen at
+                      150 DPI but print as blurry grey smears. 300 DPI is the hard
+                      minimum — and for screentone-heavy work, 600 DPI gives
+                      noticeably crisper results. Home printers and Costco/Walmart
+                      Photo both expose this issue.
+                    </p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-5">
+                <div className="flex gap-3">
+                  <AlertTriangle size={18} className="text-amber-400 shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-semibold text-white mb-1">
+                      Never upscale a low-resolution source file
+                    </p>
+                    <p className="text-sm text-slate-300">
+                      Upscaling a 72 DPI digital artwork to 300 DPI does not add
+                      detail — it just makes the blur bigger. For 12×18 at 300 DPI
+                      you need a <strong>3600×5400 px</strong> source. Always work
+                      from the original high-res export from your art software.
+                    </p>
+                  </div>
+                </div>
+              </Card>
+            </div>
             <ul className="space-y-2 mb-4">
               {[
-                "Work from the highest-resolution original file — never upscale a low-res source",
-                "300 DPI = resolution × physical size. For 12×18 at 300 DPI: 3600×5400px source",
-                "Screentone patterns are especially sensitive — at 150 DPI they print as blurry grey",
                 "Check your export at 100% zoom in your art software before uploading",
+                "300 DPI = pixels ÷ physical size. For 8×12: source must be 2400×3600 px",
               ].map((tip) => (
                 <li key={tip} className="flex gap-2 text-slate-300">
                   <Check size={16} className="text-violet-400 shrink-0 mt-0.5" />
@@ -547,6 +601,16 @@ export default function EtsyAnimeMangaArtSizesPage() {
                 </li>
               ))}
             </ul>
+            <p className="text-slate-400 text-sm">
+              Black and white anime and manga art has additional export requirements around color profiles — see the{" "}
+              <Link
+                href="/etsy-black-and-white-art-sizes"
+                className="text-violet-400 hover:text-violet-300 underline"
+              >
+                black and white art print sizes guide
+              </Link>{" "}
+              for sRGB vs Grayscale ICC guidance specific to high-contrast monochrome prints.
+            </p>
           </section>
 
           {/* Section 5 — Gallery Wall Triptychs */}

@@ -484,7 +484,11 @@ export default function EtsyBlackAndWhiteArtSizesPage() {
 
               <div className="rounded-lg border border-[#2DD4BF]/20 bg-[#2DD4BF]/5 p-4">
                 <p className="text-sm text-foreground-70">
-                  <strong className="text-foreground">Recommendation:</strong> Lead with 4:5 for a formal B&amp;W look. Add 2:3 if your style leans editorial or photographic. Avoid mixing all three ratios in a single gallery set — it reads as disorganized.
+                  <strong className="text-foreground">Recommendation:</strong> Lead with 4:5 for a formal B&amp;W look. Add 2:3 if your style leans editorial or photographic. Avoid mixing all three ratios in a single gallery set — it reads as disorganized. Selling manga-style or character art alongside your B&amp;W work?{" "}
+                  <Link href="/etsy-anime-manga-art-sizes" className="text-[#2DD4BF] underline underline-offset-2 hover:text-[#2DD4BF]/80">
+                    Anime &amp; manga art print sizes
+                  </Link>{" "}
+                  covers the portrait-heavy 2:3 formats that dominate that niche.
                 </p>
               </div>
             </section>
@@ -537,6 +541,13 @@ export default function EtsyBlackAndWhiteArtSizesPage() {
                 </table>
               </div>
               <p className="mt-3 text-xs text-foreground-50">★ A4 and A3 are the highest-priority ISO sizes for most Etsy B&amp;W listings. See the full <Link href="/etsy-print-sizes" className="text-[#2DD4BF] underline underline-offset-2">Etsy print sizes reference</Link> for all ratios.</p>
+
+              <div className="mt-5 rounded-lg border border-[#2DD4BF]/20 bg-[#2DD4BF]/5 p-4">
+                <p className="text-sm text-foreground-70">
+                  <strong className="text-foreground">Why this matters for B&amp;W specifically:</strong>{" "}
+                  Minimalist and line-art prints have a disproportionately strong UK, German, and Scandinavian following — markets where A4 and A3 are the default frame sizes sold in IKEA, H&amp;M Home, and local retailers. Not including them in your listing means those buyers move on to the next result.
+                </p>
+              </div>
             </section>
 
             {/* Section 5: How Many Sizes */}
