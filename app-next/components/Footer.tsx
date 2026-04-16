@@ -182,6 +182,16 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-vs-gumroad-vs-creative-market" className="transition-colors hover:text-accent-light">
+                  Etsy vs Gumroad vs Creative Market
+                </Link>
+              </li>
+              <li>
+                <Link href="/etsy-star-seller-digital-downloads" className="transition-colors hover:text-accent-light">
+                  Star Seller for Digital Downloads
+                </Link>
+              </li>
+              <li>
                 <Link href="/guide" className="transition-colors hover:text-accent-light font-medium">
                   All guides →
                 </Link>

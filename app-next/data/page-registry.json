@@ -1574,5 +1574,21 @@
       "etsy-gallery-wall-print-sizes",
       "etsy-ai-art-print-sizes"
     ]
+  },
+  {
+    "slug": "etsy-vs-gumroad-vs-creative-market",
+    "title": "Etsy vs Gumroad vs Creative Market for Digital Art",
+    "pageType": "comparison",
+    "keywords": ["etsy vs gumroad vs creative market", "where to sell digital art", "best platform for digital art 2026"],
+    "cluster": "guides",
+    "relatedSlugs": ["how-to-sell-digital-downloads-on-etsy", "etsy-20mb-file-limit", "what-files-to-include-etsy-digital-download", "etsy-print-sizes", "how-to-price-etsy-printables", "how-to-resize-images-for-etsy"]
+  },
+  {
+    "slug": "etsy-star-seller-digital-downloads",
+    "title": "Etsy Star Seller for Digital Downloads Guide",
+    "pageType": "guide",
+    "keywords": ["etsy star seller digital downloads", "star seller requirements digital", "etsy star seller badge"],
+    "cluster": "guides",
+    "relatedSlugs": ["how-to-sell-digital-downloads-on-etsy", "etsy-print-sizes", "best-resolution-for-etsy-printables", "how-many-sizes-etsy-printable", "etsy-digital-download-not-selling", "etsy-20mb-file-limit", "how-to-package-digital-wall-art-for-etsy"]
   }
 ]

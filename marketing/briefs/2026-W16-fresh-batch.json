@@ -1,0 +1,172 @@
+{
+  "week": "W16-fresh",
+  "created_at": "2026-04-16T09:36:00Z",
+  "keywords": [
+    {
+      "keyword": "etsy vs gumroad vs creative market for digital art",
+      "slug": "etsy-vs-gumroad-vs-creative-market",
+      "intent": "commercial+informational",
+      "page_type": "comparison",
+      "priority": "P1",
+      "h1": "Etsy vs Gumroad vs Creative Market: Where to Sell Digital Art in 2026",
+      "quick_answer": "Etsy gives you built-in traffic and discovery (but charges listing fees + 6.5% per sale), Gumroad gives you brand control and audience ownership (10% fee, no marketplace traffic), and Creative Market targets designers specifically (50-70% revenue share). Most successful sellers use 2-3 platforms — but each has different file size limits, image requirements, and buyer expectations for print sizes.",
+      "sections": [
+        {
+          "h2": "Platform Overview: Etsy, Gumroad, and Creative Market at a Glance",
+          "content_notes": "Comparison table with columns: Platform, Monthly Fee, Transaction Fee, Built-in Traffic, File Limits, Best For. Etsy: $0 + $0.20/listing + 6.5% tx, 5 files × 20MB, built-in marketplace. Gumroad: free plan 10% fee, unlimited files, no marketplace. Creative Market: free shop, 50-70% rev share, design-focused audience. Emphasize the tradeoff: marketplace traffic vs. brand ownership vs. niche audience.",
+          "has_table": true
+        },
+        {
+          "h2": "File Size Limits and Delivery: What Each Platform Allows",
+          "content_notes": "Critical practical difference: Etsy caps at 5 files × 20MB each, Gumroad allows much larger files, Creative Market has its own specs. This directly impacts how many print sizes you can include per listing. On Etsy you need to be strategic about which sizes to bundle in your ZIP; on Gumroad you can include everything. Explain ZIP packaging strategies for each platform.",
+          "has_table": true
+        },
+        {
+          "h2": "Print Size Expectations by Platform",
+          "content_notes": "Etsy buyers expect specific frame-ready sizes (8×10, 5×7, 16×20, etc.) because they're buying for their walls. Gumroad buyers are often other creators or print-on-demand sellers who want maximum resolution files. Creative Market buyers are designers who need specific asset formats. Cover what sizes/formats each audience expects and how this affects your file preparation workflow.",
+          "has_table": false
+        },
+        {
+          "h2": "Traffic and Discovery: Marketplace vs. Self-Driven",
+          "content_notes": "Etsy's search algorithm drives organic discovery — new sellers can get sales without an audience. Gumroad requires you to bring your own traffic via social media, email list, or blog. Creative Market has curated discovery but smaller volume. Include data: Etsy has 90M+ active buyers, Creative Market has 10M+ members. Discuss Etsy SEO vs. building your own audience.",
+          "has_table": false
+        },
+        {
+          "h2": "Fees and Profit Margins Compared",
+          "content_notes": "Detailed fee breakdown with worked example: selling a $9.99 digital art pack on each platform. Etsy: $0.20 listing + $0.65 tx + $0.25 payment processing ≈ $1.10 in fees. Gumroad: $1.00 (10%). Creative Market: $3.00-$5.00 (30-50% platform cut). Show net profit per sale on each. Note Etsy's offsite ads can take an additional 15%.",
+          "has_table": true
+        },
+        {
+          "h2": "Selling on Multiple Platforms: The Multi-Channel Strategy",
+          "content_notes": "Most successful digital art sellers use 2-3 platforms simultaneously. The challenge: each platform has different file requirements, size expectations, and packaging conventions. Cover the workflow of maintaining listings across platforms — this is where the sizing/packaging pain point is strongest. A single high-res master file needs to be exported differently for each platform.",
+          "has_table": false
+        },
+        {
+          "h2": "Which Platform Should You Start With?",
+          "content_notes": "Decision framework based on seller situation: No audience → start Etsy. Existing audience → Gumroad. Design assets → Creative Market. Growing brand → Etsy + Gumroad together. Include a simple flowchart-style decision guide in text form.",
+          "has_table": false
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can I sell the same digital art on Etsy, Gumroad, and Creative Market?",
+          "a": "Yes — none of these platforms require exclusivity for digital products. You can list the same art on all three simultaneously, though you may want to adjust file packaging and sizes for each platform's audience expectations."
+        },
+        {
+          "q": "Which platform has the lowest fees for digital art?",
+          "a": "For most price points under $15, Etsy has the lowest effective fee rate at roughly 10-11% all-in. Gumroad charges a flat 10% on the free plan. Creative Market takes 30-50%, making it the most expensive — but its targeted design audience often justifies higher prices."
+        },
+        {
+          "q": "Do I need different file sizes for each platform?",
+          "a": "Yes. Etsy buyers expect frame-ready sizes like 8×10, 5×7, and 16×20 in organized ZIPs under 20MB. Gumroad buyers often want maximum resolution files. Creative Market buyers expect design-ready assets. Starting from one high-res master file and resizing for each platform is the most efficient workflow."
+        },
+        {
+          "q": "Is Gumroad better than Etsy for digital downloads?",
+          "a": "It depends on your situation. Etsy is better if you need marketplace discovery and have no existing audience. Gumroad is better if you have a following and want to own your customer relationships and email list. Many sellers use both."
+        },
+        {
+          "q": "How do I manage listings across multiple platforms?",
+          "a": "Start with one master design at the highest resolution you need (at least 300 DPI at your largest size). Create platform-specific ZIP packages: compact packs for Etsy's 20MB limit, full-resolution bundles for Gumroad, and asset-formatted files for Creative Market."
+        }
+      ],
+      "internalLinks": [
+        { "slug": "etsy-print-sizes", "anchor": "Etsy print size guide", "context": "Reference for Etsy-specific sizing" },
+        { "slug": "etsy-20mb-file-limit", "anchor": "Etsy's 20MB file size limit", "context": "Key constraint for Etsy packaging" },
+        { "slug": "what-files-to-include-etsy-digital-download", "anchor": "what files to include in Etsy downloads", "context": "Packaging strategy" },
+        { "slug": "how-to-package-digital-wall-art-for-etsy", "anchor": "packaging digital wall art", "context": "ZIP structure guidance" },
+        { "slug": "how-many-sizes-etsy-printable", "anchor": "how many sizes to include", "context": "Size count strategy" },
+        { "slug": "best-file-format-etsy-printables", "anchor": "best file format for printables", "context": "Format decisions" }
+      ],
+      "serpSources": [
+        "https://proacademia.medium.com/etsy-vs-gumroad-in-2026-the-best-platform-for-beginners-selling-digital-products-1b32595c7c25",
+        "https://sellfy.com/blog/gumroad-vs-etsy/",
+        "https://easydigitaldownloads.com/blog/best-etsy-alternatives-for-selling-digital-products/",
+        "https://profitfounders.com/etsy-vs-gumroad-for-selling-digital-products/",
+        "https://www.makeuseof.com/what-is-creative-market/"
+      ],
+      "conversionAngle": "Multi-platform sellers face a painful resizing workflow — different size expectations per platform from one master file. SnapToSize solves this: upload once, get all standard sizes in organized ZIPs ready for any platform.",
+      "targetWordCount": 2500
+    },
+    {
+      "keyword": "etsy star seller digital downloads",
+      "slug": "etsy-star-seller-digital-downloads",
+      "intent": "informational+commercial",
+      "page_type": "guide",
+      "priority": "P1",
+      "h1": "Etsy Star Seller for Digital Downloads: Complete Guide for 2026",
+      "quick_answer": "Digital download sellers ARE eligible for Etsy Star Seller status. You need a 95%+ message response rate (within 24 hours), 4.8+ star review average, and at least 5 orders or $300 in sales over a rolling 90-day period. Since digital products deliver instantly, shipping metrics don't apply — but product quality (especially correct print sizes and clear file organization) directly impacts your review scores.",
+      "sections": [
+        {
+          "h2": "Star Seller Requirements for Digital Download Shops",
+          "content_notes": "Break down all three metrics with specific numbers. (1) Message response rate: 95%+ within 24 hours on first messages. (2) Review rating: 4.8+ average. (3) Order threshold: 5 orders OR $300 in sales in rolling 90 days (reduced from 10 orders in July 2025). Digital sellers skip the shipping/tracking metric entirely. Include the official criteria in a clean table.",
+          "has_table": true
+        },
+        {
+          "h2": "How Digital Downloads Are Scored Differently",
+          "content_notes": "Explain the key difference: digital sellers don't need tracking numbers or on-time shipping scores. Etsy calculates your Star Seller status on the remaining metrics only. However, custom digital items (introduced Feb 2025) DO have shipping-like requirements. Clarify which digital products are truly exempt vs. which need to meet fulfillment timing.",
+          "has_table": false
+        },
+        {
+          "h2": "The #1 Review Killer for Digital Art Sellers (And How to Fix It)",
+          "content_notes": "The most common negative review for digital art: 'prints came out blurry' or 'wrong size for my frame.' This happens when sellers provide too few sizes, wrong DPI, or no clear instructions. Cover the fix: include all common frame sizes at 300 DPI with a clear size guide in your listing. A single 1-star review about blurry prints can tank your 4.8 average for months.",
+          "has_table": false
+        },
+        {
+          "h2": "Message Response Rate: Automation Tips for Digital Sellers",
+          "content_notes": "Most buyer messages for digital downloads are the same 5 questions: 'How do I download?', 'Can I get a different size?', 'Is this the right resolution for printing?', 'Can I use this commercially?', 'The file won't open.' Cover auto-reply setup, saved replies, and FAQ strategies. Responding within 24 hours is the requirement but faster responses correlate with better reviews.",
+          "has_table": false
+        },
+        {
+          "h2": "How Print Quality Affects Your Star Seller Reviews",
+          "content_notes": "Connect file quality to review scores. Sellers who include 8+ sizes across major ratios get fewer 'wrong size' complaints. Sellers who use 300 DPI get fewer 'blurry' complaints. Sellers who include clear download instructions and a size chart get fewer confused messages (which helps response rate too). This is the conversion section — quality file preparation is the foundation of Star Seller for digital shops.",
+          "has_table": false
+        },
+        {
+          "h2": "Is Etsy Star Seller Worth It for Digital Download Shops?",
+          "content_notes": "Cover the benefits: Star Seller badge in search results, priority placement in some categories, increased buyer trust. Also cover the honest limitations: the badge alone doesn't guarantee more sales, and some sellers report minimal impact. Include Etsy's own data that Star Sellers earn more on average. The real value is that the practices required for Star Seller (fast responses, quality files, good reviews) are the same practices that drive organic sales growth.",
+          "has_table": false
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can digital download sellers get Etsy Star Seller?",
+          "a": "Yes. Digital download sellers are fully eligible for Star Seller. Since instant downloads don't require shipping, Etsy evaluates you on message response rate (95%+ within 24 hours) and review rating (4.8+ stars) only, with a minimum of 5 orders or $300 in sales per 90-day period."
+        },
+        {
+          "q": "What is the minimum order requirement for Etsy Star Seller in 2026?",
+          "a": "As of July 2025, the minimum is 5 orders OR $300 in sales within the rolling 90-day review period. This was reduced from the previous 10-order minimum, making it easier for newer digital shops to qualify."
+        },
+        {
+          "q": "How do I avoid negative reviews on digital art downloads?",
+          "a": "The top causes of negative reviews are blurry prints (wrong DPI), wrong sizes for buyers' frames, and confusion about how to download files. Include all common print sizes at 300 DPI, add a clear size chart to your listing, and include download instructions in your listing description and as a separate PDF in your files."
+        },
+        {
+          "q": "Does Star Seller actually increase Etsy sales?",
+          "a": "Etsy reports that Star Sellers earn more in sales and get more listing views on average compared to similar non-Star Sellers. However, the badge alone isn't a magic bullet — the real benefit is that meeting Star Seller criteria (quality files, fast responses, great reviews) naturally improves your shop's organic performance."
+        },
+        {
+          "q": "How quickly do I need to respond to messages for Star Seller?",
+          "a": "You must respond to the first message in a conversation thread within 24 hours at least 95% of the time. Setting up auto-replies for common questions (download help, size requests, usage rights) helps maintain this rate even when you're unavailable."
+        }
+      ],
+      "internalLinks": [
+        { "slug": "best-resolution-for-etsy-printables", "anchor": "best resolution for Etsy printables", "context": "DPI guidance for quality prints" },
+        { "slug": "how-many-sizes-etsy-printable", "anchor": "how many sizes to include", "context": "Size count for comprehensive listings" },
+        { "slug": "etsy-print-sizes", "anchor": "Etsy print size guide", "context": "Complete size reference" },
+        { "slug": "etsy-20mb-file-limit", "anchor": "Etsy 20MB file limit", "context": "File packaging constraints" },
+        { "slug": "etsy-digital-download-blurry-prints", "anchor": "fixing blurry Etsy prints", "context": "Quality troubleshooting" },
+        { "slug": "how-to-package-digital-wall-art-for-etsy", "anchor": "packaging digital wall art", "context": "Professional file organization" },
+        { "slug": "etsy-digital-download-not-selling", "anchor": "digital downloads not selling", "context": "Troubleshooting low sales" }
+      ],
+      "serpSources": [
+        "https://printify.com/blog/etsy-star-seller/",
+        "https://www.listing-forge.com/blog/etsy-star-seller",
+        "https://www.etsy.com/starseller",
+        "https://www.outfy.com/blog/how-to-become-an-etsy-star-seller/",
+        "https://help.erank.com/blog/etsys-star-seller-badges-so-far/"
+      ],
+      "conversionAngle": "Star Seller hinges on review quality. The #1 cause of bad reviews for digital art is wrong sizes/blurry prints. SnapToSize eliminates this by generating all standard sizes at 300 DPI from one upload — directly protecting your Star Seller rating.",
+      "targetWordCount": 2200
+    }
+  ]
+}
