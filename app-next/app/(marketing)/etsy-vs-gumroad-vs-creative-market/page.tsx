@@ -115,7 +115,7 @@ export default function EtsyVsGumroadVsCreativeMarketPage() {
     {
       question: "Which platform has the lowest fees for digital art?",
       answer:
-        "Gumroad on the free plan charges 10% per sale with no listing fees. Etsy charges $0.20 per listing plus 6.5% per transaction. Creative Market takes 30–50% of each sale. For low-volume sellers, Gumroad is cheapest. For high-volume sellers, Etsy's percentage-based fee can be lower per-sale than Creative Market's revenue share.",
+        "Gumroad charges 10% + $0.50 per sale with no listing fees, plus separate card processing fees (~2.9% + $0.30). Etsy charges $0.20 per listing plus 6.5% per transaction plus payment processing (3% + $0.25). Creative Market takes a flat 50% commission on each sale. For most sellers, Etsy offers the lowest effective fee rate, especially at higher price points.",
     },
     {
       question:
@@ -252,13 +252,13 @@ export default function EtsyVsGumroadVsCreativeMarketPage() {
                   name: "Gumroad",
                   color: "#FF90E8",
                   pros: ["16GB file limit", "Own your audience"],
-                  cons: ["No marketplace", "10% fee"],
+                  cons: ["No marketplace", "10% + $0.50/sale"],
                 },
                 {
                   name: "Creative Market",
                   color: "#71C285",
                   pros: ["Design-focused", "10M+ members"],
-                  cons: ["30–50% rev share", "Curated approval"],
+                  cons: ["50% rev share", "Curated approval"],
                 },
               ].map((p) => (
                 <div
@@ -303,8 +303,8 @@ export default function EtsyVsGumroadVsCreativeMarketPage() {
           <QuickAnswer question="Which platform is best for selling digital art — Etsy, Gumroad, or Creative Market?">
             Etsy gives you built-in traffic and discovery (but charges listing
             fees + 6.5% per sale), Gumroad gives you brand control and audience
-            ownership (10% fee, no marketplace traffic), and Creative Market
-            targets designers specifically (30–50% revenue share). Most
+            ownership (10% + $0.50/sale fee, no marketplace traffic), and Creative Market
+            targets designers specifically (50% revenue share). Most
             successful sellers use 2–3 platforms — but each has different{" "}
             <Link
               href="/etsy-20mb-file-limit"
@@ -365,8 +365,8 @@ export default function EtsyVsGumroadVsCreativeMarketPage() {
                     Transaction Fee
                   </td>
                   <td className="py-3 px-4">6.5%</td>
-                  <td className="py-3 px-4">10%</td>
-                  <td className="py-3 px-4">30–50% rev share</td>
+                  <td className="py-3 px-4">10% + $0.50</td>
+                  <td className="py-3 px-4">50% rev share</td>
                 </tr>
                 <tr className="border-b border-white/[0.06]">
                   <td className="py-3 px-4 font-medium text-foreground">
@@ -776,15 +776,15 @@ export default function EtsyVsGumroadVsCreativeMarketPage() {
                     Transaction Fee
                   </td>
                   <td className="py-3 px-4">−$0.65 (6.5%)</td>
-                  <td className="py-3 px-4">−$1.00 (10%)</td>
-                  <td className="py-3 px-4">−$4.00 to −$5.00 (40–50%)</td>
+                  <td className="py-3 px-4">−$1.50 (10% + $0.50)</td>
+                  <td className="py-3 px-4">−$5.00 (50%)</td>
                 </tr>
                 <tr className="border-b border-white/[0.06]">
                   <td className="py-3 px-4 font-medium text-foreground">
                     Payment Processing
                   </td>
                   <td className="py-3 px-4">−$0.25 + 3%</td>
-                  <td className="py-3 px-4">Included in 10%</td>
+                  <td className="py-3 px-4">−$0.59 (2.9% + $0.30)</td>
                   <td className="py-3 px-4">Included</td>
                 </tr>
                 <tr className="bg-white/[0.03]">
@@ -795,10 +795,10 @@ export default function EtsyVsGumroadVsCreativeMarketPage() {
                     ~$8.59 (86%)
                   </td>
                   <td className="py-3 px-4 font-semibold text-[#2DD4BF]">
-                    ~$8.99 (90%)
+                    ~$7.91 (79%)
                   </td>
                   <td className="py-3 px-4 font-semibold text-[#2DD4BF]">
-                    ~$5.00–$6.00 (50–60%)
+                    ~$5.00 (50%)
                   </td>
                 </tr>
               </tbody>
@@ -806,10 +806,8 @@ export default function EtsyVsGumroadVsCreativeMarketPage() {
           </div>
 
           <p className="text-foreground-60 max-w-3xl">
-            Gumroad gives you the highest per-sale margin, but remember: you
-            need to drive every visitor yourself. Etsy takes a smaller cut than
-            most people assume, and its built-in traffic often makes it the most
-            profitable overall. Creative Market&apos;s revenue share is steep,
+            Etsy actually gives you the highest per-sale margin (~86% on a $10 item) thanks to its low percentage-based fees, plus built-in traffic from 90M+ buyers. Gumroad&apos;s 10% + $0.50 fee plus separate card processing means you keep ~79% — but you
+            need to drive every visitor yourself. Creative Market&apos;s revenue share is steep,
             but their audience pays premium prices — your average sale price may
             be higher there. If you want to{" "}
             <Link
