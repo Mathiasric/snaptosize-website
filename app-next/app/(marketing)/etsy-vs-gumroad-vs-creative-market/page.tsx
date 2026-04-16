@@ -115,7 +115,7 @@ export default function EtsyVsGumroadVsCreativeMarketPage() {
     {
       question: "Which platform has the lowest fees for digital art?",
       answer:
-        "Gumroad charges 10% + $0.50 per sale with no listing fees, plus separate card processing fees (~2.9% + $0.30). Etsy charges $0.20 per listing plus 6.5% per transaction plus payment processing (3% + $0.25). Creative Market takes a flat 50% commission on each sale. For most sellers, Etsy offers the lowest effective fee rate, especially at higher price points.",
+        "Gumroad charges a flat 10% + $0.50 per sale with no listing fees — payment processing is included. Etsy charges $0.20 per listing plus 6.5% per transaction plus payment processing (3% + $0.25 in the US, varies by country). Creative Market takes a flat 50% commission on each sale. On a $10 item, you keep ~$8.60 on Etsy (86%), ~$8.50 on Gumroad (85%), and ~$5.00 on Creative Market (50%).",
     },
     {
       question:
@@ -784,7 +784,7 @@ export default function EtsyVsGumroadVsCreativeMarketPage() {
                     Payment Processing
                   </td>
                   <td className="py-3 px-4">−$0.25 + 3%</td>
-                  <td className="py-3 px-4">−$0.59 (2.9% + $0.30)</td>
+                  <td className="py-3 px-4">Included</td>
                   <td className="py-3 px-4">Included</td>
                 </tr>
                 <tr className="bg-white/[0.03]">
@@ -795,7 +795,7 @@ export default function EtsyVsGumroadVsCreativeMarketPage() {
                     ~$8.59 (86%)
                   </td>
                   <td className="py-3 px-4 font-semibold text-[#2DD4BF]">
-                    ~$7.91 (79%)
+                    ~$8.50 (85%)
                   </td>
                   <td className="py-3 px-4 font-semibold text-[#2DD4BF]">
                     ~$5.00 (50%)
@@ -806,7 +806,7 @@ export default function EtsyVsGumroadVsCreativeMarketPage() {
           </div>
 
           <p className="text-foreground-60 max-w-3xl">
-            Etsy actually gives you the highest per-sale margin (~86% on a $10 item) thanks to its low percentage-based fees, plus built-in traffic from 90M+ buyers. Gumroad&apos;s 10% + $0.50 fee plus separate card processing means you keep ~79% — but you
+            Etsy and Gumroad are surprisingly close on fees — ~86% vs ~85% kept on a $10 item. Etsy&apos;s edge is built-in traffic from 90M+ buyers. Gumroad&apos;s 10% + $0.50 flat fee (processing included) is simpler, but you
             need to drive every visitor yourself. Creative Market&apos;s revenue share is steep,
             but their audience pays premium prices — your average sale price may
             be higher there. If you want to{" "}

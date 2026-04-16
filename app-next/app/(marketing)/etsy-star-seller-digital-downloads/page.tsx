@@ -9,7 +9,7 @@ import {
   Star,
   ShoppingCart,
   AlertTriangle,
-  Image,
+  ImageIcon,
 } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { FinalCTA } from "@/components/FinalCTA";
@@ -163,7 +163,7 @@ export default function EtsyStarSellerDigitalDownloadsPage() {
 
       {/* ===== HERO ===== */}
       <section
-        className="relative pt-10 pb-16 md:pt-14 md:pb-24 overflow-hidden"
+        className="relative pt-16 pb-24 md:pt-20 md:pb-32 overflow-hidden"
         style={{
           background:
             "linear-gradient(145deg, #030712 0%, #0c0a1e 35%, #110d20 70%, #030712 100%)",
@@ -360,6 +360,16 @@ export default function EtsyStarSellerDigitalDownloadsPage() {
               </p>
             </div>
 
+            {/* Lifestyle mockup */}
+            <div className="my-12 rounded-xl overflow-hidden border border-white/[0.08]">
+              <img
+                src="/assets/visuals/etsy-star-seller-digital-downloads-mockup.jpg"
+                alt="Digital art prints displayed in a styled home setting — achieving Star Seller status helps your listings stand out"
+                className="w-full h-auto"
+                loading="lazy"
+              />
+            </div>
+
             {/* ===== SECTION 2: How Digital Downloads Are Scored Differently ===== */}
             <div className="mt-12">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
@@ -476,7 +486,7 @@ export default function EtsyStarSellerDigitalDownloadsPage() {
             {/* ===== CTA 1: Print quality angle ===== */}
             <Card accent className="my-12">
               <div className="flex items-start gap-3">
-                <Image className="h-5 w-5 text-purple-400 flex-shrink-0 mt-0.5" />
+                <ImageIcon className="h-5 w-5 text-purple-400 flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="font-medium mb-1">
                     Protect your Star Seller rating with complete size coverage
