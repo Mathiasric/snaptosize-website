@@ -49,7 +49,7 @@ export function VideoModal({ isOpen, onClose, videoSrc }: VideoModalProps) {
         if (e.target === overlayRef.current) handleClose();
       }}
     >
-      <div className="relative w-full max-w-4xl mx-4">
+      <div className="relative w-full max-w-5xl mx-4">
         <button
           onClick={handleClose}
           className="absolute -top-10 right-0 text-white/70 hover:text-accent-light transition-colors text-2xl font-light cursor-pointer"
@@ -57,15 +57,17 @@ export function VideoModal({ isOpen, onClose, videoSrc }: VideoModalProps) {
         >
           ✕
         </button>
-        <video
-          ref={videoRef}
-          src={videoSrc}
-          controls
-          autoPlay
-          muted
-          playsInline
-          className="w-full rounded-xl border border-border"
-        />
+        <div className="relative overflow-hidden aspect-[16/8] rounded-xl border border-border">
+          <video
+            ref={videoRef}
+            src={videoSrc}
+            controls
+            autoPlay
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+          />
+        </div>
       </div>
     </div>
   );
