@@ -76,6 +76,16 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/print-size-for-frame-guide" className="transition-colors hover:text-accent-light">
+                  Print-to-Frame Guide
+                </Link>
+              </li>
+              <li>
+                <Link href="/etsy-wedding-printable-sizes" className="transition-colors hover:text-accent-light">
+                  Wedding Printable Sizes
+                </Link>
+              </li>
+              <li>
                 <Link href="/etsy-sticker-sheet-size" className="transition-colors hover:text-accent-light">
                   Sticker Sheet Size
                 </Link>

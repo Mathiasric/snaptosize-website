@@ -135,6 +135,12 @@ export function Header() {
                     <Link href="/etsy-gallery-wall-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Gallery Wall Print Sizes
                     </Link>
+                    <Link href="/etsy-wedding-printable-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Wedding Printable Sizes
+                    </Link>
+                    <Link href="/print-size-for-frame-guide" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Print-to-Frame Guide
+                    </Link>
                     <Link href="/etsy-square-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Square Print Sizes
                     </Link>

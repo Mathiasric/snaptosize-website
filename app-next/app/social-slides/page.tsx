@@ -1,19 +1,22 @@
 import type { Metadata } from "next";
 import PackSpotlight from "./_components/PackSpotlight";
 import BeforeAfter from "./_components/BeforeAfter";
-import StatsCard from "./_components/StatsCard";
-import Checklist from "./_components/Checklist";
-import SizeComparison from "./_components/SizeComparison";
 import WorkflowSteps from "./_components/WorkflowSteps";
-import NumberHighlight from "./_components/NumberHighlight";
 import BrightPackShowcase from "./_components/BrightPackShowcase";
 import W15GalleryWall from "./_components/W15GalleryWall";
 import W15FoxPackShowcase from "./_components/W15FoxPackShowcase";
 import NeonPackShowcase from "./_components/NeonPackShowcase";
+import NeonStatsHero from "./_components/NeonStatsHero";
 import RatioProofShowcase from "./_components/RatioProofShowcase";
+import RatioSplitShowcase from "./_components/RatioSplitShowcase";
 import PainSolutionSlide from "./_components/PainSolutionSlide";
 import W15BeforeAfterWorkflow from "./_components/W15BeforeAfterWorkflow";
 import W15DpiCheatSheet from "./_components/W15DpiCheatSheet";
+import StatsCard from "./_components/StatsCard";
+import Checklist from "./_components/Checklist";
+import FrameMatrixVisual from "./_components/FrameMatrixVisual";
+import PopularFrameBrands from "./_components/PopularFrameBrands";
+import WeddingSuiteSizes from "./_components/WeddingSuiteSizes";
 import {
   W15I01Slide01,
   W15I01Slide02,
@@ -42,6 +45,11 @@ export default function SocialSlidesPage() {
   return (
     <main className="bg-[#0B0B12]">
       <div className="flex flex-col items-center gap-16 py-16">
+        {/* ═══ Frame guide visuals ═══ */}
+        <FrameMatrixVisual />
+        <PopularFrameBrands />
+        <WeddingSuiteSizes />
+
         {/* ═══ Template 1: Pack Spotlight ═══ */}
         <PackSpotlight ratio="pinterest" />
         <PackSpotlight ratio="instagram" />
@@ -50,49 +58,11 @@ export default function SocialSlidesPage() {
         <BeforeAfter ratio="pinterest" />
         <BeforeAfter ratio="instagram" />
 
-        {/* ═══ Template 3: Stats Card ═══ */}
-        <StatsCard ratio="pinterest" />
-        <StatsCard ratio="instagram" />
-
-        {/* ═══ Template 4: Checklist ═══ */}
-        <Checklist ratio="pinterest" />
-        <Checklist ratio="instagram" />
-
-        {/* ═══ Template 5: Size Comparison ═══ */}
-        <SizeComparison ratio="pinterest" />
-        <SizeComparison ratio="instagram" />
-
-        {/* ═══ Template 6: Workflow Steps ═══ */}
+        {/* ═══ Template 3: Workflow Steps ═══ */}
         <WorkflowSteps ratio="pinterest" />
         <WorkflowSteps ratio="instagram" />
 
-        {/* ═══ Template 7: Number Highlight (70 files) ═══ */}
-        <NumberHighlight ratio="pinterest" />
-        <NumberHighlight ratio="instagram" />
-
-        {/* ═══ Template 7b: Number Highlight (30+ sizes, purple) ═══ */}
-        <NumberHighlight
-          ratio="pinterest"
-          number="30+"
-          label="unique print sizes"
-          subtitle="all standard frame ratios covered"
-          topBadge="Stop missing sales"
-          bullets={["2:3 · 3:4 · 4:5 · ISO · Extras", "Every size in portrait + landscape", "Under 20MB — Etsy compliant"]}
-          accentColor="purple"
-        />
-
-        {/* ═══ Template 7c: Number Highlight (5 packs, coral) ═══ */}
-        <NumberHighlight
-          ratio="pinterest"
-          number="5"
-          label="organized ZIP packs"
-          subtitle="one for each frame ratio"
-          topBadge="Professional file delivery"
-          bullets={["2:3 Wall Art · 3:4 Photo · 4:5 Classic", "ISO A-Series · Extras (5×7, 11×14...)", "Named, sorted, ready to list"]}
-          accentColor="coral"
-        />
-
-        {/* ═══ Template 8: Bright Pack Showcase (light bg, real artwork) ═══ */}
+        {/* ═══ Template 4: Bright Pack Showcase (light bg, real artwork) ═══ */}
         <BrightPackShowcase ratio="pinterest" />
         <BrightPackShowcase ratio="instagram" />
 
@@ -109,6 +79,25 @@ export default function SocialSlidesPage() {
         <NeonPackShowcase artwork="misty_lake" name="Misty Lake" ratio="instagram" />
         <NeonPackShowcase artwork="fox" name="Fox Illustration" ratio="instagram" />
         <NeonPackShowcase artwork="landscape_abstract" name="Landscape Abstract" ratio="instagram" />
+
+        {/* ═══ W16 Batch ═══ */}
+        {/* W16-P03: Floral Vase Art — fresh artwork, Pinterest */}
+        <NeonPackShowcase artwork="floral_vase" name="Floral Vase Art" ratio="pinterest" />
+        <NeonPackShowcase artwork="minimalist_abstract" name="Minimalist Abstract" ratio="pinterest" />
+        <NeonPackShowcase artwork="into_the_light_abstarct" name="Into the Light" ratio="pinterest" />
+        <NeonPackShowcase artwork="salmon" name="Salmon" ratio="instagram" />
+        {/* ═══ W16 This-batch ═══ */}
+        {/* W16-P01: floral_vase NeonPackShowcase — already rendered above */}
+        {/* W16-I01: NeonStatsHero candidates */}
+        <NeonStatsHero artwork="landscape_abstract" name="Landscape Abstract" ratio="instagram" />
+        <NeonStatsHero artwork="neutral_abstract" name="Neutral Abstract" ratio="instagram" />
+        <NeonStatsHero artwork="into_the_light_abstarct" name="Into the Light" ratio="instagram" />
+
+        {/* ═══ Ratio Split Showcase — "One upload. Every ratio." ═══ */}
+        <RatioSplitShowcase artwork="fox" name="Fox Illustration" ratio="pinterest" />
+        <RatioSplitShowcase artwork="misty_lake" name="Misty Lake" ratio="pinterest" />
+        <RatioSplitShowcase artwork="fox" name="Fox Illustration" ratio="instagram" />
+        <RatioSplitShowcase artwork="landscape_abstract" name="Landscape Abstract" ratio="instagram" />
 
         {/* ═══ Ratio Proof Showcase — "Same file. Every frame." ═══ */}
         <RatioProofShowcase artwork="fox" name="Fox Illustration" ratio="pinterest" />
