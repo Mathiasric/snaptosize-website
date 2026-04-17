@@ -1,31 +1,31 @@
 {
   "current_week": "W17",
   "batch_id": "2026-W17",
-  "started_at": "2026-04-15T09:00:00+00:00",
+  "started_at": "2026-04-17T10:00:00+00:00",
   "target": { "pages": 2 },
   "stages": {
-    "researcher": { "status": "completed", "output": "marketing/briefs/2026-W17-batch.json (2 keywords)" },
+    "researcher": { "status": "completed", "output": "marketing/drafts/2026-W17-*/brief.md (2 briefs)" },
     "writer": { "status": "completed", "output": "Both pages written by parallel seo-writer subagents" },
-    "review": { "status": "completed", "output": "npx next build passes (85 routes, exit 0)" },
-    "deploy": { "status": "completed", "output": "git push to main — Cloudflare Pages auto-deploy triggered" },
+    "review": { "status": "completed", "output": "npx next build passes" },
+    "deploy": { "status": "completed", "output": "commit 20158d2 pushed to main — Cloudflare Pages auto-deploy triggered" },
     "verify": { "status": "pending", "output": "" }
   },
   "content_items": [
     {
-      "slug": "etsy-black-and-white-art-sizes",
-      "keyword": "etsy black and white art print sizes",
+      "slug": "etsy-wedding-printable-sizes",
+      "keyword": "etsy wedding printable sizes",
       "type": "new-page",
       "status": "deployed",
-      "notes": "GEO FAQ included, B&W monochrome hero, DPI+sRGB+international angle"
+      "notes": "Wedding suite vertical — invite/RSVP/menu/sign/chart sizes. ListingOutputShowcase (abstract_wedding preset) + Gemini reception-table lifestyle. OG image generated."
     },
     {
-      "slug": "etsy-anime-manga-art-sizes",
-      "keyword": "etsy anime art print sizes",
+      "slug": "print-size-for-frame-guide",
+      "keyword": "what size print fits what frame",
       "type": "new-page",
       "status": "deployed",
-      "notes": "Manga panel hero, Japanese B-series + A-series + portrait ratios"
+      "notes": "Dual-intent (buyer + seller) print-to-frame matrix. ListingOutputShowcase (geometric preset) + Gemini gallery wall lifestyle. OG image generated."
     }
   ],
   "metrics": { "total": 2, "completed": 2, "failed": 0, "success_rate": 1.0 },
-  "updated_at": "2026-04-15T11:00:00+00:00"
+  "updated_at": "2026-04-17T15:45:00+00:00"
 }
