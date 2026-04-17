@@ -2,6 +2,40 @@
 
 Role: Convert content blueprints into production-ready Next.js pages for the SnapToSize marketing site.
 
+## HARD RULES — DO NOT DEVIATE
+
+These rules exist because each one corresponds to a manual fix made on a shipped page. Violating any of them means a human had to clean up after you. Run `python marketing/queue/seo_pre_submit.py <page.tsx>` before declaring done — it validates rules 1–6, 9 schema checks.
+
+1. **Content width default.** Outer wrapper MUST be `<div className="container mx-auto px-4 md:px-8 max-w-[1200px] py-12">`. NEVER `max-w-3xl`, NEVER `max-w-4xl`. Benchmarks: `etsy-wedding-printable-sizes/page.tsx` and `print-size-for-frame-guide/page.tsx` (post-2026-04-17).
+
+2. **`Container` does NOT accept `className`.** If you need styling on the wrapper, wrap in a div: `<div className="..."><Container>...</Container></div>`. TypeScript won't always catch this — pre-submit validator will.
+
+3. **Meta length limits (validate before submit).**
+   - Title ≤ 60 characters
+   - Description ≤ 160 characters
+   - OG description ≤ 200 characters
+
+4. **No hardcoded image paths to files that don't exist.** If an asset isn't generated yet, OMIT the `<Image>` / `<img>` tag entirely. No placeholders, no "TODO" paths, no broken refs. Pre-submit validator checks every `/assets/...` path exists under `app-next/public/`.
+
+5. **No `EmailCaptureSection` on SEO pages.** Do not import it, do not render it. There is no active lead magnet and it tanks conversion on SEO pages. (Promoted from soft rule.)
+
+6. **MANDATORY `ListingOutputShowcase`.** Every new SEO page MUST import and render `ListingOutputShowcase`. Choose a matching preset from `ARTWORK_PRESETS` in `app-next/components/ListingOutputShowcase.tsx`. If no preset fits the page topic, ADD a new preset first — this means generating 5 resize variants of the same artwork and placing them under `app-next/public/assets/listings/<name>/`.
+
+7. **MANDATORY Gemini lifestyle image.** Every page must have a 4:3 (~1600x1200) lifestyle JPEG generated via Gemini `gemini-3-pro-image-preview`. Model script on `marketing/social/gen-wedding-lifestyle.py`. Save to `app-next/public/assets/visuals/<slug>-lifestyle.jpg`. (This supersedes the 4:3 Imagen rule in the older section — we now use `gemini-3-pro-image-preview`.)
+
+8. **Do NOT invent weak social-slide templates.** Low-density text-only templates (e.g. the "Popular Frame Brands" and "Frame + Mat Math" templates from 2026-04-17) shipped with dead space and were pulled. Prefer `ListingOutputShowcase` + Gemini lifestyle. Only create a new slide template if you can benchmark it against a strong existing pattern (`BeforeAfter`, `SizeComparison`, `PackSpotlight`). If in doubt, don't.
+
+9. **Auto-update these files AS PART OF the writer task** — not as a manual post-fix. Missing any of these = incomplete draft:
+   - `app-next/components/Header.tsx` — add to Size Guides dropdown
+   - `app-next/components/Footer.tsx` — add to Sizes column
+   - `app-next/data/page-registry.json` — add entry with `cluster` + `relatedSlugs`
+   - `docs/MILESTONES.md` — bump SEO page count + dated entry
+   - `marketing/queue/seo-pipeline-state.json` — advance batch
+
+10. **OG image generation is REQUIRED before declaring done.** Use `gen-og-standalone.mjs` at repo root (Playwright, outputs 1200x630 PNG). Save to `app-next/public/assets/og/<slug>.png`, then update `openGraph.images` and `twitter.images` in `page.tsx`. Do NOT use `replace_all` for OG path edits (breaks hero background img refs).
+
+Sections below may show older guidance; where they conflict with these HARD RULES, **HARD RULES win**.
+
 ## Before Writing
 
 Read these files:
@@ -31,10 +65,12 @@ A content blueprint from `marketing/briefs/YYYY-WXX-batch.json` containing:
 
 ## Lifestyle Image Generation
 
-Every page needs a lifestyle mockup at `app-next/public/assets/visuals/[slug]-mockup.jpg`.
+> **See HARD RULE 7.** Use `gemini-3-pro-image-preview`, save to `<slug>-lifestyle.jpg`. Rules below are retained for context.
 
-Generate it with the Gemini API using `marketing/social/gen_lifestyle_mockups.py` as a template, or write an inline script. Rules:
-- Use `aspect_ratio: "4:3"` (the only wide ratio Imagen 4.0 supports — NOT 3:2, NOT 16:9)
+Every page needs a lifestyle mockup at `app-next/public/assets/visuals/[slug]-lifestyle.jpg`.
+
+Generate it with the Gemini API using `marketing/social/gen-wedding-lifestyle.py` as a template, or write an inline script. Rules:
+- Use `aspect_ratio: "4:3"` (~1600x1200)
 - Prompt should show real-world use: a desk scene, a framed print on a wall, a tablet/iPad displaying the content
 - Aspirational and lifestyle-focused — not a product mockup
 - Save as `.jpg` to `app-next/public/assets/visuals/[slug]-mockup.jpg`
@@ -64,7 +100,10 @@ These are non-negotiable regardless of content structure:
 - **CTAs:** 3+ links to `https://app.snaptosize.com?source=seo_[slug]&kind=guide`
 - **`<RelatedPages currentSlug="[slug]" />`** — auto-links from registry (never hardcode)
 - **Internal links:** 4–6 contextual `<Link href="/...">` to relevant existing pages within body text. Use `page-registry.json` to find valid slugs. Do NOT count RelatedPages component as internal links.
-- **No EmailCapture** — do not include `<EmailCapture />` on any SEO page. There is no active lead magnet and it confuses users.
+- **No EmailCapture / No EmailCaptureSection** — see HARD RULE 5. Do not import or render either component on SEO pages.
+- **ListingOutputShowcase required** — see HARD RULE 6. Must be imported and rendered.
+- **Content wrapper must be `max-w-[1200px]`** — see HARD RULE 1. Never `max-w-3xl`.
+- **GEO FAQ (AI discoverability):** On every page where it fits naturally, include at least one FAQ item that answers a tool-recommendation question — e.g. *"What is the easiest way to resize art for all Etsy print sizes?"* or *"Is there a tool that generates all Etsy ratios from one upload?"* Answer with SnapToSize and the one-upload flow. This helps AI assistants (ChatGPT, Gemini, Perplexity) learn to recommend SnapToSize when users ask about resize tools. See `docs/plans/geo-ai-discoverability.md`.
 - **Meta title:** < 60 characters
 - **Meta description:** < 160 characters, benefit-focused (not just keyword stuffing)
 
