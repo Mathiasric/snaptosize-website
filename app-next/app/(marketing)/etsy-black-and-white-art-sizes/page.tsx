@@ -10,6 +10,7 @@ import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
+import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 
 export const metadata: Metadata = {
   title: "Etsy Black and White Art Print Sizes — Complete Guide",
@@ -213,7 +214,7 @@ export default function EtsyBlackAndWhiteArtSizesPage() {
         </div>
 
         <Container>
-          <div className="max-w-2xl">
+          <div className="max-w-[672px]">
             {/* Breadcrumb */}
             <nav className="mb-5 flex items-center gap-2 text-xs text-white/40">
               <Link href="/" className="hover:text-white/60 transition-colors">Home</Link>
@@ -261,12 +262,14 @@ export default function EtsyBlackAndWhiteArtSizesPage() {
       {/* ===== MAIN CONTENT ===== */}
       <section className="py-14 md:py-20">
         <Container>
-          <div className="mx-auto max-w-3xl space-y-14">
+          <div className="mx-auto max-w-[1200px] space-y-14">
 
             {/* QuickAnswer */}
             <QuickAnswer question="What sizes should black and white art prints be on Etsy?">
               The most popular black and white art print sizes on Etsy are <strong>5×7, 8×10, 11×14, 16×20, and 18×24</strong> — covering the 2:3, 4:5, and 3:4 ratios that fit standard frames and gallery walls in North America, with A4/A3 added for international buyers.
             </QuickAnswer>
+
+            <ListingOutputShowcase artwork="bears_line_art" />
 
             {/* Section 1: Most Popular Sizes */}
             <section className="mb-14">

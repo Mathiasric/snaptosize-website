@@ -138,6 +138,9 @@ export function Header() {
                     <Link href="/etsy-wedding-printable-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Wedding Printable Sizes
                     </Link>
+                    <Link href="/etsy-digital-download-size-variations" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Digital Download Size Variations
+                    </Link>
                     <Link href="/print-size-for-frame-guide" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Print-to-Frame Guide
                     </Link>
@@ -213,6 +216,9 @@ export function Header() {
                     </Link>
                     <Link href="/etsy-anime-manga-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Anime &amp; Manga Art Sizes
+                    </Link>
+                    <Link href="/etsy-black-and-white-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Black &amp; White Art Sizes
                     </Link>
                     <Link href="/etsy-map-art-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Map Art Print Sizes
@@ -317,6 +323,9 @@ export function Header() {
                   </Link>
                   <Link href="/how-to-package-digital-wall-art-for-etsy" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                     Package Digital Wall Art
+                  </Link>
+                  <Link href="/how-to-upload-more-than-5-files-etsy" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    Upload 5+ Files to Etsy
                   </Link>
                   <Link href="/best-file-format-etsy-printables" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                     Best File Format
@@ -429,6 +438,9 @@ export function Header() {
                         </Link>
                         <Link href="/etsy-bookmark-size" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Bookmark Size
+                        </Link>
+                        <Link href="/etsy-digital-download-size-variations" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Digital Download Size Variations
                         </Link>
                         <Link href="/etsy-8x10-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           8&times;10 Print Size
@@ -587,6 +599,9 @@ export function Header() {
                         </Link>
                         <Link href="/how-to-package-digital-wall-art-for-etsy" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Package Digital Wall Art
+                        </Link>
+                        <Link href="/how-to-upload-more-than-5-files-etsy" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Upload 5+ Files to Etsy
                         </Link>
                         <Link href="/best-file-format-etsy-printables" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Best File Format

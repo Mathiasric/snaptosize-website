@@ -86,6 +86,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-digital-download-size-variations" className="transition-colors hover:text-accent-light">
+                  Digital Download Size Variations
+                </Link>
+              </li>
+              <li>
                 <Link href="/etsy-sticker-sheet-size" className="transition-colors hover:text-accent-light">
                   Sticker Sheet Size
                 </Link>
@@ -136,6 +141,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-black-and-white-art-sizes" className="transition-colors hover:text-accent-light">
+                  Black &amp; White Art Sizes
+                </Link>
+              </li>
+              <li>
                 <Link href="/etsy-map-art-print-sizes" className="transition-colors hover:text-accent-light">
                   Map Art Print Sizes
                 </Link>
@@ -159,6 +169,11 @@ export function Footer() {
               <li>
                 <Link href="/how-to-sell-digital-downloads-on-etsy" className="transition-colors hover:text-accent-light">
                   How to Sell on Etsy
+                </Link>
+              </li>
+              <li>
+                <Link href="/how-to-upload-more-than-5-files-etsy" className="transition-colors hover:text-accent-light">
+                  Upload 5+ Files to Etsy
                 </Link>
               </li>
               <li>

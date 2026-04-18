@@ -3,11 +3,12 @@ import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
-import { Check, AlertTriangle } from "lucide-react";
+import { Check } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
+import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 
 const appUrl =
   "https://app.snaptosize.com?source=seo_etsy-anime-manga-art-sizes&kind=guide";
@@ -15,7 +16,7 @@ const appUrl =
 export const metadata: Metadata = {
   title: "Anime Art Print Sizes for Etsy — Seller Guide",
   description:
-    "Best anime & manga print sizes for Etsy: 8×12, 11×17, 12×18, A4, A3 and more. Pixel dimensions at 300 DPI and Japanese B-series formats included.",
+    "Best anime & manga print sizes for Etsy: 8×12, 11×17, 12×18, A4, A3 and more. Pixel dimensions at 300 DPI, Japanese B-series formats, and batch export.",
   alternates: {
     canonical: "https://snaptosize.com/etsy-anime-manga-art-sizes",
   },
@@ -187,9 +188,9 @@ export default function EtsyAnimeMangaArtSizesPage() {
               left: "12px",
               width: "180px",
               height: "260px",
-              border: "3px solid #7C3AED",
+              border: "3px solid #4A1D96",
               borderRadius: "2px",
-              opacity: 0.75,
+              opacity: 0.55,
             }}
           />
           {/* Offset inner panel — top left */}
@@ -200,9 +201,9 @@ export default function EtsyAnimeMangaArtSizesPage() {
               left: "28px",
               width: "140px",
               height: "200px",
-              border: "2px solid #8B5CF6",
+              border: "2px solid #6D28D9",
               borderRadius: "1px",
-              opacity: 0.55,
+              opacity: 0.35,
             }}
           />
           {/* Bottom-right large panel */}
@@ -213,9 +214,9 @@ export default function EtsyAnimeMangaArtSizesPage() {
               right: "16px",
               width: "220px",
               height: "320px",
-              border: "3px solid #2563EB",
+              border: "3px solid #1E3A5F",
               borderRadius: "2px",
-              opacity: 0.65,
+              opacity: 0.5,
             }}
           />
           {/* Offset inner panel — bottom right */}
@@ -226,9 +227,9 @@ export default function EtsyAnimeMangaArtSizesPage() {
               right: "32px",
               width: "170px",
               height: "250px",
-              border: "2px solid #3B82F6",
+              border: "2px solid #2563EB",
               borderRadius: "1px",
-              opacity: 0.45,
+              opacity: 0.3,
             }}
           />
           {/* Mid glow orb — purple */}
@@ -273,7 +274,7 @@ export default function EtsyAnimeMangaArtSizesPage() {
         </div>
 
         <Container>
-          <div className="relative z-10 py-12 md:py-16 max-w-3xl mx-auto text-center">
+          <div className="relative z-10 py-20 md:py-28 max-w-[1200px] mx-auto text-center">
             {/* Trust pills */}
             <div className="flex flex-wrap justify-center gap-3 mb-8">
               {[
@@ -301,7 +302,7 @@ export default function EtsyAnimeMangaArtSizesPage() {
               <span style={{ color: "#A78BFA" }}>The Complete Seller Guide</span>
             </h1>
 
-            <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto" style={{ color: "#CBD5E1" }}>
+            <p className="text-lg md:text-xl mb-8" style={{ color: "#CBD5E1" }}>
               Character art demands tall portrait formats — here are every size,
               pixel dimension, and ratio you need for a complete anime print
               listing.
@@ -316,7 +317,7 @@ export default function EtsyAnimeMangaArtSizesPage() {
       </section>
 
       <Container>
-        <div className="max-w-3xl mx-auto py-14 space-y-16">
+        <div className="container mx-auto px-4 md:px-8 max-w-[1200px] py-12 space-y-16">
 
           {/* Quick Answer */}
           <QuickAnswer question="What sizes should anime art prints be on Etsy?">
@@ -326,6 +327,8 @@ export default function EtsyAnimeMangaArtSizesPage() {
             — matching the tall portrait format that character art and full-figure
             poses demand.
           </QuickAnswer>
+
+          <ListingOutputShowcase artwork="mysthical_portal" />
 
           {/* Section 1 — Most Popular Sizes */}
           <section>
@@ -382,32 +385,7 @@ export default function EtsyAnimeMangaArtSizesPage() {
               >
                 11×17 print size guide
               </Link>{" "}
-              for full pixel specs and framing details. Portrait-heavy listings also benefit from the{" "}
-              <Link
-                href="/2-3-vs-4-5-ratio"
-                className="text-violet-400 hover:text-violet-300 underline"
-              >
-                2:3 vs 4:5 ratio comparison
-              </Link>{" "}
-              — anime art almost always favors 2:3.
-            </p>
-          </section>
-
-          {/* Lifestyle mockup */}
-          <section>
-            <div className="rounded-xl overflow-hidden">
-              <img
-                src="/assets/visuals/etsy-anime-manga-art-sizes-mockup.jpg"
-                alt="Anime art prints in matching dark frames on a teenager's bedroom wall with decorative lighting"
-                width={1200}
-                height={900}
-                className="w-full h-auto object-cover"
-                loading="lazy"
-              />
-            </div>
-            <p className="text-xs text-slate-500 mt-2 text-center">
-              Three coordinating anime prints — 8×12, 11×17, and A3 — in matching
-              dark frames for a gallery wall display.
+              for full pixel specs and framing details.
             </p>
           </section>
 
@@ -476,24 +454,11 @@ export default function EtsyAnimeMangaArtSizesPage() {
               </table>
             </div>
 
-            <div
-              className="rounded-lg p-4 mt-2"
-              style={{
-                background: "rgba(109,40,217,0.1)",
-                border: "1px solid rgba(109,40,217,0.35)",
-              }}
-            >
-              <div className="flex gap-3">
-                <AlertTriangle size={16} className="text-amber-400 shrink-0 mt-0.5" />
-                <p className="text-sm text-slate-300">
-                  <strong className="text-white">JIS B3 ≠ ISO B3.</strong>{" "}
-                  ISO B3 is 353×500 mm; JIS B3 is 364×515 mm — different sizes
-                  with the same label. Always list dimensions in inches and mm in
-                  your Etsy listing, not just the format name, to avoid buyer
-                  confusion and refund requests.
-                </p>
-              </div>
-            </div>
+            <p className="text-slate-400 text-sm">
+              Important: ISO B3 (353×500 mm) and JIS B3 (364×515 mm) are not the
+              same. Listing sizes in inches and mm — rather than &ldquo;B3&rdquo;
+              — avoids buyer confusion.
+            </p>
           </section>
 
           {/* Section 3 — A-Series for International Buyers */}
@@ -572,46 +537,12 @@ export default function EtsyAnimeMangaArtSizesPage() {
               home or through services like Costco or Walmart Photo — where thin
               lines will look muddy below 300 DPI.
             </p>
-            <div className="space-y-3 mb-5">
-              <Card className="p-5">
-                <div className="flex gap-3">
-                  <AlertTriangle size={18} className="text-amber-400 shrink-0 mt-0.5" />
-                  <div>
-                    <p className="font-semibold text-white mb-1">
-                      Screentone patterns fail hard at 150 DPI
-                    </p>
-                    <p className="text-sm text-slate-300">
-                      The dot patterns used in manga shading look fine on screen at
-                      150 DPI but print as blurry grey smears. 300 DPI is the hard
-                      minimum — and for screentone-heavy work, 600 DPI gives
-                      noticeably crisper results. Home printers and Costco/Walmart
-                      Photo both expose this issue.
-                    </p>
-                  </div>
-                </div>
-              </Card>
-
-              <Card className="p-5">
-                <div className="flex gap-3">
-                  <AlertTriangle size={18} className="text-amber-400 shrink-0 mt-0.5" />
-                  <div>
-                    <p className="font-semibold text-white mb-1">
-                      Never upscale a low-resolution source file
-                    </p>
-                    <p className="text-sm text-slate-300">
-                      Upscaling a 72 DPI digital artwork to 300 DPI does not add
-                      detail — it just makes the blur bigger. For 12×18 at 300 DPI
-                      you need a <strong>3600×5400 px</strong> source. Always work
-                      from the original high-res export from your art software.
-                    </p>
-                  </div>
-                </div>
-              </Card>
-            </div>
             <ul className="space-y-2 mb-4">
               {[
+                "Work from the highest-resolution original file — never upscale a low-res source",
+                "300 DPI = resolution × physical size. For 12×18 at 300 DPI: 3600×5400px source",
+                "Screentone patterns are especially sensitive — at 150 DPI they print as blurry grey",
                 "Check your export at 100% zoom in your art software before uploading",
-                "300 DPI = pixels ÷ physical size. For 8×12: source must be 2400×3600 px",
               ].map((tip) => (
                 <li key={tip} className="flex gap-2 text-slate-300">
                   <Check size={16} className="text-violet-400 shrink-0 mt-0.5" />
@@ -619,16 +550,6 @@ export default function EtsyAnimeMangaArtSizesPage() {
                 </li>
               ))}
             </ul>
-            <p className="text-slate-400 text-sm">
-              Black and white anime and manga art has additional export requirements around color profiles — see the{" "}
-              <Link
-                href="/etsy-black-and-white-art-sizes"
-                className="text-violet-400 hover:text-violet-300 underline"
-              >
-                black and white art print sizes guide
-              </Link>{" "}
-              for sRGB vs Grayscale ICC guidance specific to high-contrast monochrome prints.
-            </p>
           </section>
 
           {/* Section 5 — Gallery Wall Triptychs */}
@@ -739,13 +660,31 @@ export default function EtsyAnimeMangaArtSizesPage() {
             </Card>
           </section>
 
+          {/* Lifestyle mockup */}
+          <section>
+            <div className="rounded-xl overflow-hidden">
+              <img
+                src="/assets/visuals/etsy-anime-manga-art-sizes-mockup.jpg"
+                alt="Anime art prints in matching dark frames on a teenager's bedroom wall with decorative lighting"
+                width={1200}
+                height={900}
+                className="w-full h-auto object-cover"
+                loading="lazy"
+              />
+            </div>
+            <p className="text-xs text-slate-500 mt-2 text-center">
+              Three coordinating anime prints — 8×12, 11×17, and A3 — in matching
+              dark frames for a gallery wall display.
+            </p>
+          </section>
+
           {/* FinalCTA — CTA 3 */}
           <FinalCTA
-            heading="Stop exporting anime sizes one by one."
-            stat="8+ sizes. One upload."
-            description="Upload your anime or manga artwork once — SnapToSize generates every size your buyers need: US portrait, A-series for international fans, and Japanese B-equivalents. All at 300 DPI, zipped and ready."
+            heading="Ship every anime print size in one upload."
+            stat="28 sizes. One pack."
+            description="Upload your design once — SnapToSize delivers every ratio at 300 DPI in a ZIP under Etsy's 20MB limit. No manual resizing."
             appUrl={appUrl}
-            buttonText="Package all your anime print sizes →"
+            buttonText="Resize your anime art free →"
           />
 
           {/* FAQ */}

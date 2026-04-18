@@ -7,7 +7,7 @@
 - **Paying users:** 6 (5 monthly, 1 yearly)
 - **MRR:** $68 (5× $11.99 monthly + $97/year amortized)
 - **Total revenue collected:** $156.95 (1× $97 yearly + 5× $11.99 monthly)
-- **SEO pages live:** 68 (71 total incl. non-SEO)
+- **SEO pages live:** 70 (73 total incl. non-SEO)
 - **First paying customer:** 2026-03-03
 - **Target:** $1M ARR (~7,500 paying users)
 
@@ -50,6 +50,8 @@ $1M ARR requires:
 
 ### Marketing Infrastructure
 - ✅ Marketing site (snaptosize.com, Cloudflare Pages)
+- ✅ 69 SEO pages live (1 new page deployed 2026-04-18: how-to-upload-more-than-5-files-etsy)
+- ✅ 70 SEO pages live (1 new page deployed 2026-04-18: etsy-digital-download-size-variations)
 - ✅ 68 SEO pages live (2 new pages deployed 2026-04-17: etsy-wedding-printable-sizes + print-size-for-frame-guide)
 - ✅ 66 SEO pages live (2 new pages deployed 2026-04-15: etsy-black-and-white-art-sizes + etsy-anime-manga-art-sizes)
 - ✅ 64 SEO pages live (2 new pages deployed 2026-04-14: etsy-typography-wall-art-sizes + etsy-map-art-print-sizes)
