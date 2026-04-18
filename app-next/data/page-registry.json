@@ -1700,5 +1700,24 @@
       "etsy-wedding-printable-sizes",
       "how-to-sell-digital-downloads-on-etsy"
     ]
+  },
+  {
+    "slug": "how-to-upload-more-than-5-files-etsy",
+    "title": "How to Upload More Than 5 Files to Etsy",
+    "pageType": "guide",
+    "keywords": [
+      "how to upload more than 5 files to etsy",
+      "etsy 5 file limit workaround",
+      "etsy digital download file limit",
+      "etsy zip file upload"
+    ],
+    "cluster": "guides",
+    "relatedSlugs": [
+      "etsy-20mb-file-limit",
+      "etsy-digital-download-size-variations",
+      "what-files-to-include-etsy-digital-download",
+      "etsy-print-ratios",
+      "how-to-sell-digital-downloads-on-etsy"
+    ]
   }
 ]

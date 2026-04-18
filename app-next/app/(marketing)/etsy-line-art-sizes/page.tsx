@@ -186,57 +186,41 @@ export default function EtsyLineArtSizesPage() {
         <div className="line-art-bg absolute inset-0" />
 
         <div className="relative z-10 max-w-[1200px] mx-auto px-4 md:px-8">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 mb-5 px-3 py-1.5 rounded-full text-xs font-medium"
-            style={{
-              background: "rgba(45,212,191,0.1)",
-              border: "1px solid rgba(45,212,191,0.2)",
-              color: "rgba(94,234,212,0.9)",
-            }}
-          >
-            <span className="w-1.5 h-1.5 rounded-full bg-teal-400" />
-            Etsy Seller Guide — Line Art
-          </div>
-
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5">
-            Line Art Print Sizes for Etsy
-          </h1>
-          <p className="text-lg text-white/70 leading-relaxed mb-8 max-w-2xl">
-            Line art is the most resolution-sensitive digital art style on Etsy — thin strokes blur below 300 DPI and the wrong aspect ratio crops the composition. This guide covers every size and ratio your line art buyers expect, across{" "}
-            <Link href="/etsy-print-sizes" className="text-teal-300 hover:text-teal-200 underline underline-offset-2">
-              all Etsy print formats
-            </Link>
-            .
-          </p>
-
-          {/* Trust pills */}
-          <div className="flex flex-wrap gap-2 mb-6">
-            {[
-              "Botanical, figure & geometric line art",
-              "300 DPI requirements explained",
-              "Up to 70 files per upload",
-            ].map((pill) => (
-              <span
-                key={pill}
-                className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full"
-                style={{
-                  background: "rgba(255,255,255,0.06)",
-                  border: "1px solid rgba(255,255,255,0.12)",
-                  color: "rgba(255,255,255,0.75)",
-                }}
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            {/* Left: text */}
+            <div>
+              <div className="inline-flex items-center gap-2 mb-5 px-3 py-1.5 rounded-full text-xs font-medium"
+                style={{ background: "rgba(45,212,191,0.1)", border: "1px solid rgba(45,212,191,0.2)", color: "rgba(94,234,212,0.9)" }}
               >
-                <Check className="w-3 h-3" />
-                {pill}
-              </span>
-            ))}
+                <span className="w-1.5 h-1.5 rounded-full bg-teal-400" />
+                Etsy Seller Guide — Line Art
+              </div>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5">
+                Line Art Print Sizes for Etsy
+              </h1>
+              <p className="text-lg text-white/70 leading-relaxed mb-8">
+                Line art is the most resolution-sensitive digital art style on Etsy — thin strokes blur below 300 DPI and the wrong aspect ratio crops the composition. This guide covers every size and ratio your line art buyers expect, across{" "}
+                <Link href="/etsy-print-sizes" className="text-teal-300 hover:text-teal-200 underline underline-offset-2">all Etsy print formats</Link>.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                {["Botanical, figure & geometric line art", "300 DPI requirements explained", "Up to 70 files per upload"].map((pill) => (
+                  <span key={pill} className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full"
+                    style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.12)", color: "rgba(255,255,255,0.75)" }}
+                  >
+                    <Check className="w-3 h-3" />
+                    {pill}
+                  </span>
+                ))}
+              </div>
+              <a href="https://app.snaptosize.com?source=seo_etsy-line-art-sizes&kind=guide">
+                <Button className="text-sm px-6 py-2.5">Resize your line art free →</Button>
+              </a>
+            </div>
+            {/* Right: bears line art artwork */}
+            <div className="hidden md:block">
+              <ListingOutputShowcase artwork="bears_line_art" />
+            </div>
           </div>
-
-          {/* Hero CTA */}
-          <a href="https://app.snaptosize.com?source=seo_etsy-line-art-sizes&kind=guide">
-            <Button className="text-sm px-6 py-2.5">
-              Resize your line art free →
-            </Button>
-          </a>
         </div>
       </section>
 
@@ -353,6 +337,18 @@ export default function EtsyLineArtSizesPage() {
                   <td className="py-3 pr-6 text-muted-foreground">4800×6000</td>
                   <td className="py-3 pr-6 text-muted-foreground">4:5</td>
                   <td className="py-3 text-muted-foreground">Large statement pieces</td>
+                </tr>
+                <tr>
+                  <td className="py-3 pr-6 text-foreground font-medium">A1</td>
+                  <td className="py-3 pr-6 text-muted-foreground">7016×9933</td>
+                  <td className="py-3 pr-6 text-muted-foreground">1:√2 (ISO)</td>
+                  <td className="py-3 text-muted-foreground">Oversized gallery pieces</td>
+                </tr>
+                <tr>
+                  <td className="py-3 pr-6 text-foreground font-medium">A0</td>
+                  <td className="py-3 pr-6 text-muted-foreground">9933×14043</td>
+                  <td className="py-3 pr-6 text-muted-foreground">1:√2 (ISO)</td>
+                  <td className="py-3 text-muted-foreground">Large-format statement art</td>
                 </tr>
               </tbody>
             </table>

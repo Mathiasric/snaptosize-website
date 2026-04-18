@@ -8,14 +8,14 @@ import { Button } from "@/components/Button";
 import { Check, AlertTriangle, ArrowRight, Package, Folder, FileArchive } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "How to Upload More Than 5 Files to Etsy (2026)",
+  title: "How to Upload More Than 5 Files to Etsy — ZIP Guide (2026)",
   description:
-    "Etsy limits digital listings to 5 files. Here's how print sellers use ratio-organized ZIPs to deliver 28 sizes in one listing — no workarounds needed.",
+    "Etsy limits digital listings to 5 files. Here's how print sellers use ratio-organized ZIPs to deliver up to 70 files in one listing — no workarounds needed.",
   alternates: {
     canonical: "https://snaptosize.com/how-to-upload-more-than-5-files-etsy",
   },
   openGraph: {
-    title: "How to Upload More Than 5 Files to Etsy (2026)",
+    title: "How to Upload More Than 5 Files to Etsy — ZIP Guide (2026)",
     description:
       "Etsy limits digital listings to 5 files. Here's how print sellers use ratio-organized ZIPs to deliver 28 sizes in one listing — no workarounds needed.",
     url: "https://snaptosize.com/how-to-upload-more-than-5-files-etsy",
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "How to Upload More Than 5 Files to Etsy (2026)",
+    title: "How to Upload More Than 5 Files to Etsy — ZIP Guide (2026)",
     description:
-      "Etsy limits digital listings to 5 files. Use ratio ZIPs to deliver 28 sizes in one listing.",
+      "Etsy limits digital listings to 5 files. Use ratio ZIPs to deliver up to 70 files in one listing.",
     images: ["/assets/og/how-to-upload-more-than-5-files-etsy.png"],
   },
 };
@@ -55,7 +55,7 @@ const faqItems = [
   {
     question: "How to organize print size files for Etsy?",
     answer:
-      "Organize by print ratio rather than by size. Group 8×10 and 16×20 together (4:5 ratio), group 5×7 and 10×14 together (5:7 ratio), and so on. This keeps each ZIP logically consistent and makes it easy for buyers to find the size they need.",
+      "Organize by print ratio rather than by size. Group 4×6, 8×12, and 12×18 together (2:3 ratio), group 8×10 and 16×20 together (4:5 ratio), group A4 and A3 together (ISO), and put common frames like 5×7 and 11×14 in an Extras pack. This keeps each ZIP logically consistent and makes it easy for buyers to find the size they need.",
   },
 ];
 
@@ -71,13 +71,13 @@ export default function HowToUploadMoreThan5FilesEtsyPage() {
         "@type": "HowToStep",
         position: 1,
         name: "Group your sizes by print ratio",
-        text: "Sort all your print sizes into ratio groups: 4:5 (8×10, 16×20), 2:3 (4×6, 8×12, 12×18, 24×36), 5:7 (5×7, 10×14), 3:4 (6×8, 9×12, 12×16, 18×24), and 1:1 or A-series for international.",
+        text: "Sort all your print sizes into ratio groups: 2:3 (4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30), 3:4 (6×8, 9×12, 12×16, 15×20, 18×24), 4:5 (8×10, 12×15, 16×20, 20×25, 24×30), ISO A-series (A5, A4, A3, A2, A1), and Extras (5×7, 8.5×11, 11×14, 11×17, 13×19, 20×24).",
       },
       {
         "@type": "HowToStep",
         position: 2,
         name: "Create one ZIP per ratio group",
-        text: "Compress each ratio group into a single ZIP file. Name them clearly: ratio-4x5.zip, ratio-2x3.zip, etc. Each ZIP counts as one of your 5 Etsy file slots.",
+        text: "Compress each ratio group into a single ZIP file. Name them clearly: ratio-2x3.zip, ratio-3x4.zip, ratio-4x5.zip, ratio-iso.zip, ratio-extras.zip. Each ZIP counts as one of your 5 Etsy file slots.",
       },
       {
         "@type": "HowToStep",
@@ -157,48 +157,115 @@ export default function HowToUploadMoreThan5FilesEtsyPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLdSchema) }}
       />
 
-      <div className="container mx-auto px-4 md:px-8 max-w-[1200px] py-12">
-        {/* Breadcrumb */}
-        <nav className="mb-8 text-sm text-foreground-60" aria-label="Breadcrumb">
-          <ol className="flex items-center gap-2">
-            <li>
-              <Link href="/" className="hover:text-foreground transition-colors">
-                Home
-              </Link>
-            </li>
-            <li>/</li>
-            <li className="text-foreground">How to Upload More Than 5 Files to Etsy</li>
-          </ol>
-        </nav>
+      {/* ===== HERO ===== */}
+      <section
+        className="relative pt-10 pb-16 md:pt-14 md:pb-24 overflow-hidden"
+        style={{
+          background:
+            "linear-gradient(135deg, #0B0B12 0%, #121022 40%, #0F0D1A 100%)",
+        }}
+      >
+        {/* Gradient orbs */}
+        <div
+          className="absolute top-[-10%] left-[8%] w-[520px] h-[520px] rounded-full opacity-[0.08]"
+          style={{
+            background:
+              "radial-gradient(circle, rgba(167,139,250,0.5) 0%, transparent 70%)",
+          }}
+        />
+        <div
+          className="absolute bottom-[-12%] right-[-6%] w-[460px] h-[460px] rounded-full opacity-[0.06]"
+          style={{
+            background:
+              "radial-gradient(circle, rgba(45,212,191,0.5) 0%, transparent 70%)",
+          }}
+        />
 
-        {/* Hero */}
-        <header className="mb-12">
-          <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-foreground-60 mb-4">
-            <FileArchive className="h-3.5 w-3.5" />
-            Etsy Workflow Guide
+        <div className="container mx-auto px-4 max-w-[1200px]">
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            {/* Left: copy */}
+            <div>
+              <nav className="flex items-center gap-2 text-xs text-white/40 mb-5">
+                <Link href="/" className="hover:text-white/60">Home</Link>
+                <span>/</span>
+                <span className="text-white/60">Upload More Than 5 Files to Etsy</span>
+              </nav>
+
+              <p className="text-[10px] font-mono tracking-[0.2em] text-purple-400/70 uppercase mb-3">
+                ETSY WORKFLOW GUIDE
+              </p>
+
+              <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
+                How to Upload More Than 5 Files to Etsy
+              </h1>
+              <p className="text-white/60 text-base mb-6 leading-relaxed">
+                Etsy caps digital listings at 5 files — but your buyers need portrait, landscape,
+                and international sizes. The ZIP strategy lets you deliver up to 70 files from one
+                listing. Here&apos;s exactly how it works.
+              </p>
+
+              {/* Trust pills */}
+              <div className="flex flex-wrap gap-2 mb-7">
+                {[
+                  "Up to 70 files",
+                  "5 ratio-organized ZIPs",
+                  "Portrait & landscape",
+                  "Under 20MB each",
+                ].map((pill) => (
+                  <span
+                    key={pill}
+                    className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full bg-white/[0.06] text-white/70 border border-white/[0.08]"
+                  >
+                    <Check className="w-3 h-3 text-teal-400" />
+                    {pill}
+                  </span>
+                ))}
+              </div>
+
+              <a href="https://app.snaptosize.com" target="_blank" rel="noopener noreferrer">
+                <Button className="text-sm px-6 py-2.5">
+                  Generate your 5 ZIP packs free →
+                </Button>
+              </a>
+            </div>
+
+            {/* Right: ZIP pack diagram */}
+            <div className="hidden md:flex flex-col items-center justify-center gap-4">
+              <div className="text-xs font-mono text-white/30 uppercase tracking-widest mb-1">
+                5 ZIPs · 28 portrait sizes · 300 DPI
+              </div>
+              <div className="flex flex-col gap-2 w-full max-w-[280px]">
+                {[
+                  { label: "ZIP 1", desc: "2:3  ·  4×6, 6×9, 8×12, 10×15, 12×18 + 2", color: "purple" },
+                  { label: "ZIP 2", desc: "3:4  ·  6×8, 9×12, 12×16, 15×20, 18×24", color: "teal" },
+                  { label: "ZIP 3", desc: "4:5  ·  8×10, 12×15, 16×20, 20×25, 24×30", color: "purple" },
+                  { label: "ZIP 4", desc: "ISO  ·  A5, A4, A3, A2, A1", color: "teal" },
+                  { label: "ZIP 5", desc: "Extras  ·  5×7, 8.5×11, 11×14, 11×17 + 2", color: "purple" },
+                ].map((zip) => (
+                  <div
+                    key={zip.label}
+                    className={`flex items-center gap-3 rounded-lg border px-4 py-2.5 ${
+                      zip.color === "purple"
+                        ? "border-purple-500/30 bg-purple-500/[0.07]"
+                        : "border-teal-500/30 bg-teal-500/[0.07]"
+                    }`}
+                  >
+                    <span className={`text-[10px] font-mono font-bold ${zip.color === "purple" ? "text-purple-300" : "text-teal-300"}`}>
+                      {zip.label}
+                    </span>
+                    <span className="text-[11px] text-white/50">{zip.desc}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="text-[9px] text-white/20 text-center max-w-[240px] mt-1">
+                Quick Export adds landscape + square + oversized = up to 70 files total
+              </p>
+            </div>
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4">
-            How to Upload More Than 5 Files to Etsy
-          </h1>
-          <p className="text-lg text-foreground-60 leading-relaxed">
-            Etsy caps digital listings at 5 files — but your buyers need 20+ sizes. Here's the
-            exact ZIP strategy that solves the 5-file limit, plus the tool that does it automatically.
-          </p>
-          <div className="flex flex-wrap gap-3 mt-6">
-            <div className="flex items-center gap-1.5 text-sm text-foreground-60">
-              <Check className="h-4 w-4 text-teal-400" />
-              28 sizes in 5 files
-            </div>
-            <div className="flex items-center gap-1.5 text-sm text-foreground-60">
-              <Check className="h-4 w-4 text-teal-400" />
-              Ratio-organized ZIPs
-            </div>
-            <div className="flex items-center gap-1.5 text-sm text-foreground-60">
-              <Check className="h-4 w-4 text-teal-400" />
-              Under 20MB each
-            </div>
-          </div>
-        </header>
+        </div>
+      </section>
+
+      <div className="container mx-auto px-4 md:px-8 max-w-[1200px] py-12">
 
         {/* Problem section */}
         <section className="mb-12">
@@ -232,46 +299,12 @@ export default function HowToUploadMoreThan5FilesEtsyPage() {
           </div>
         </section>
 
-        {/* The real problem for print sellers */}
-        <section className="mb-14">
-          <h2 className="text-2xl font-bold tracking-tight mb-4">
-            The print seller problem: 20+ sizes, only 5 slots
-          </h2>
-          <p className="text-foreground-60 mb-6 leading-relaxed">
-            A serious Etsy print shop offers full size coverage. That means at minimum:
-          </p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 mb-6">
-            {[
-              "4×6", "5×7", "8×10", "8×12",
-              "11×14", "12×16", "12×18", "16×20",
-              "18×24", "24×36", "A4", "A3",
-            ].map((size) => (
-              <div
-                key={size}
-                className="rounded-lg border border-border bg-surface px-3 py-2 text-sm text-center font-mono"
-              >
-                {size}
-              </div>
-            ))}
-          </div>
-          <p className="text-foreground-60 leading-relaxed mb-4">
-            That's 12 sizes just for the basics. Add international formats, square variants, and
-            panoramic sizes and you're easily at 20+. You can't upload 20 individual JPGs to a
-            single Etsy listing — the platform won't allow it.
-          </p>
-          <p className="text-foreground-60 leading-relaxed">
-            Most sellers either under-deliver (offering only 3–4 sizes and losing sales) or
-            over-list (creating separate listings per size, fracturing their shop). Neither is the
-            right answer.
-          </p>
-        </section>
-
-        {/* ListingOutputShowcase — after problem section, CTA #1 */}
+        {/* ListingOutputShowcase — immediately after problem section, CTA #1 */}
         <section className="mb-14">
           <ListingOutputShowcase
             artwork="fox"
-            heading="5 files. 28 sizes. One listing."
-            subtext="SnapToSize bundles every size into ratio-organized ZIPs — exactly 5 files, each under 20MB. Upload once, cover every buyer."
+            heading="5 files. Up to 70 sizes. One listing."
+            subtext="SnapToSize bundles portrait, landscape, and international sizes into ratio-organized ZIPs — exactly 5 files, each under 20MB. Upload once, cover every buyer."
           />
           <div className="mt-6 text-center">
             <a href="https://app.snaptosize.com" target="_blank" rel="noopener noreferrer">
@@ -282,6 +315,41 @@ export default function HowToUploadMoreThan5FilesEtsyPage() {
             </a>
             <p className="text-xs text-foreground-60 mt-2">No account required to try</p>
           </div>
+        </section>
+
+        {/* The real problem for print sellers */}
+        <section className="mb-14">
+          <h2 className="text-2xl font-bold tracking-tight mb-4">
+            The print seller problem: 70+ sizes, only 5 slots
+          </h2>
+          <p className="text-foreground-60 mb-6 leading-relaxed">
+            A serious Etsy print shop offers full size coverage. That means portrait and landscape
+            variants across every standard ratio. At minimum:
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 mb-6">
+            {[
+              "4×6", "5×7", "8×10", "8×12",
+              "11×14", "12×16", "12×18", "16×20",
+              "18×24", "A4", "A3", "A2",
+            ].map((size) => (
+              <div
+                key={size}
+                className="rounded-lg border border-border bg-surface px-3 py-2 text-sm text-center font-mono"
+              >
+                {size}
+              </div>
+            ))}
+          </div>
+          <p className="text-foreground-60 leading-relaxed mb-4">
+            That's 12 sizes just for the basics. Add landscape variants, international A-series,
+            and oversized formats and you're at 70+ files. You can't upload 70 individual JPGs to
+            a single Etsy listing — the platform won't allow it.
+          </p>
+          <p className="text-foreground-60 leading-relaxed">
+            Most sellers either under-deliver (offering only 3–4 sizes and losing sales) or
+            over-list (creating separate listings per size, fracturing their shop). Neither is the
+            right answer.
+          </p>
         </section>
 
         {/* Option 1: ZIP workaround */}
@@ -321,34 +389,29 @@ export default function HowToUploadMoreThan5FilesEtsyPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {[
               {
-                ratio: "4:5",
-                icon: "📦",
-                sizes: ["8×10", "11×14 (approx)", "16×20", "24×30"],
-                note: "Most popular US sizes",
-              },
-              {
                 ratio: "2:3",
-                icon: "📦",
-                sizes: ["4×6", "6×9", "8×12", "12×18", "24×36"],
-                note: "Photography standard",
-              },
-              {
-                ratio: "5:7",
-                icon: "📦",
-                sizes: ["5×7", "10×14", "15×21"],
-                note: "Common frame size",
+                sizes: ["4×6", "6×9", "8×12", "10×15", "12×18", "16×24", "20×30"],
+                note: "Photography standard — 7 sizes",
               },
               {
                 ratio: "3:4",
-                icon: "📦",
-                sizes: ["6×8", "9×12", "12×16", "18×24"],
-                note: "Classic print ratio",
+                sizes: ["6×8", "9×12", "12×16", "15×20", "18×24"],
+                note: "Classic print ratio — 5 sizes",
               },
               {
-                ratio: "A-series",
-                icon: "📦",
-                sizes: ["A5", "A4", "A3", "A2"],
-                note: "Europe + international",
+                ratio: "4:5",
+                sizes: ["8×10", "12×15", "16×20", "20×25", "24×30"],
+                note: "Most popular US sizes — 5 sizes",
+              },
+              {
+                ratio: "ISO / A-series",
+                sizes: ["A5", "A4", "A3", "A2", "A1"],
+                note: "Europe + international — 5 sizes",
+              },
+              {
+                ratio: "Extras",
+                sizes: ["5×7", "8.5×11", "11×14", "11×17", "13×19", "20×24"],
+                note: "Common frame sizes — 6 sizes",
               },
             ].map((pack) => (
               <div
@@ -357,7 +420,7 @@ export default function HowToUploadMoreThan5FilesEtsyPage() {
               >
                 <div className="flex items-center gap-2 mb-3">
                   <Folder className="h-4 w-4 text-teal-400" />
-                  <span className="font-semibold text-sm">ratio-{pack.ratio.replace(":", "x")}.zip</span>
+                  <span className="font-semibold text-sm">{pack.ratio}</span>
                 </div>
                 <ul className="space-y-1 mb-2">
                   {pack.sizes.map((s) => (
@@ -436,15 +499,15 @@ export default function HowToUploadMoreThan5FilesEtsyPage() {
           </p>
           <p className="text-foreground-60 mb-6 leading-relaxed">
             SnapToSize does this in one step. Upload your original file (any size, any ratio),
-            and the tool generates all 28 standard print sizes — already sorted by ratio pack,
-            already zipped, already under 20MB. You get exactly 5 ZIPs, ready to upload directly
-            to Etsy.
+            and the tool generates 28 portrait sizes across 5 ratio packs — already sorted,
+            already zipped, already under 20MB. Add Quick Export for landscape and oversized sizes
+            and you get up to 70 files total, ready to upload directly to Etsy.
           </p>
           <div className="grid sm:grid-cols-3 gap-4 mb-8">
             {[
               { step: "1", label: "Upload your artwork", desc: "Any resolution, any ratio. PNG or JPG." },
-              { step: "2", label: "SnapToSize resizes", desc: "28 sizes at 300 DPI, Lanczos resampling, sRGB color." },
-              { step: "3", label: "Download 5 ZIPs", desc: "One per ratio pack. Under 20MB each. Upload directly to Etsy." },
+              { step: "2", label: "SnapToSize resizes", desc: "28 portrait sizes at 300 DPI, Lanczos resampling, sRGB color. Quick Export adds landscape + oversized." },
+              { step: "3", label: "Download 5 ZIPs", desc: "One per ratio pack. Under 20MB each. Up to 70 files total. Upload directly to Etsy." },
             ].map((item) => (
               <div key={item.step} className="rounded-lg border border-border bg-surface p-5 text-center">
                 <div
@@ -470,8 +533,7 @@ export default function HowToUploadMoreThan5FilesEtsyPage() {
             <div className="flex-1">
               <p className="font-semibold mb-1">Stop resizing files manually</p>
               <p className="text-sm text-foreground-60">
-                SnapToSize generates all 28 sizes and 5 ratio ZIPs from a single upload. Free to
-                try — no account needed.
+                SnapToSize generates 28 portrait sizes + landscape + international from a single upload — 5 ratio ZIPs, ready for Etsy. Free to try, no account needed.
               </p>
             </div>
             <a href="https://app.snaptosize.com/app/quick-export" target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
@@ -503,7 +565,7 @@ export default function HowToUploadMoreThan5FilesEtsyPage() {
               {
                 n: 3,
                 title: "Upload each ratio ZIP",
-                desc: "Upload ratio-4x5.zip, ratio-2x3.zip, ratio-5x7.zip, ratio-3x4.zip, and ratio-aseries.zip one by one. Each should be under 20MB.",
+                desc: "Upload ratio-2x3.zip, ratio-3x4.zip, ratio-4x5.zip, ratio-iso.zip, and ratio-extras.zip one by one. Each should be under 20MB.",
               },
               {
                 n: 4,
@@ -559,10 +621,10 @@ export default function HowToUploadMoreThan5FilesEtsyPage() {
         {/* FinalCTA #3 — conversion before FAQ */}
         <FinalCTA
           heading="Your 5 Etsy ZIPs, ready in minutes"
-          description="Upload your artwork once. SnapToSize generates 28 sizes sorted into 5 ratio-organized ZIPs — exactly what Etsy's listing allows."
+          description="Upload your artwork once. SnapToSize generates portrait, landscape, and international sizes — 5 ratio-organized ZIPs, exactly what Etsy's listing allows."
           buttonText="Generate sizes free →"
           appUrl="https://app.snaptosize.com?source=seo_how-to-upload-more-than-5-files-etsy&kind=guide"
-          stat="28 sizes · 5 ZIPs · 0 manual resizing"
+          stat="Up to 70 files · 5 ZIPs · 0 manual resizing"
         />
 
         {/* FAQ */}

@@ -207,15 +207,15 @@ export default function EtsyDigitalDownloadSizeVariationsPage() {
             {/* Right: visual — 5-ZIP pack diagram */}
             <div className="hidden md:flex flex-col items-center justify-center gap-4">
               <div className="text-xs font-mono text-white/30 uppercase tracking-widest mb-1">
-                5 ZIPs · all sizes covered
+                5 ZIPs · 28 sizes · 300 DPI
               </div>
               <div className="flex flex-col gap-2 w-full max-w-[260px]">
                 {[
-                  { label: "ZIP 1", desc: "2:3 ratio  ·  4×6, 8×12, 24×36", color: "purple" },
-                  { label: "ZIP 2", desc: "3:4 ratio  ·  6×8, 12×16, 18×24", color: "teal" },
-                  { label: "ZIP 3", desc: "4:5 ratio  ·  8×10, 16×20", color: "purple" },
-                  { label: "ZIP 4", desc: "ISO  ·  A5, A4, A3", color: "teal" },
-                  { label: "ZIP 5", desc: "Extras  ·  11×14, square", color: "purple" },
+                  { label: "ZIP 1", desc: "2:3 ratio  ·  4×6, 8×12, 16×24 + 4 more", color: "purple" },
+                  { label: "ZIP 2", desc: "3:4 ratio  ·  6×8, 9×12, 12×16, 18×24 + 1", color: "teal" },
+                  { label: "ZIP 3", desc: "4:5 ratio  ·  8×10, 12×15, 16×20 + 2 more", color: "purple" },
+                  { label: "ZIP 4", desc: "ISO  ·  A5, A4, A3, A2, A1", color: "teal" },
+                  { label: "ZIP 5", desc: "Extras  ·  5×7, 8.5×11, 11×14, 13×19 + 2", color: "purple" },
                 ].map((zip) => (
                   <div
                     key={zip.label}
@@ -233,7 +233,7 @@ export default function EtsyDigitalDownloadSizeVariationsPage() {
                 ))}
               </div>
               <p className="text-[9px] text-white/20 text-center max-w-[220px] mt-1">
-                One upload per design → SnapToSize outputs all 5 ZIPs
+                One upload → 5 ZIPs + square &amp; landscape in Quick Export
               </p>
             </div>
           </div>
@@ -376,32 +376,32 @@ export default function EtsyDigitalDownloadSizeVariationsPage() {
                 <tr>
                   <td className="py-3 px-4 font-medium text-foreground">ZIP 1</td>
                   <td className="py-3 px-4 text-muted-foreground">2:3</td>
-                  <td className="py-3 px-4 text-muted-foreground">4×6, 8×12, 12×18, 24×36</td>
-                  <td className="py-3 px-4 text-muted-foreground">Buyers printing large posters</td>
+                  <td className="py-3 px-4 text-muted-foreground">4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30</td>
+                  <td className="py-3 px-4 text-muted-foreground">Most common US wall art sizes</td>
                 </tr>
                 <tr>
                   <td className="py-3 px-4 font-medium text-foreground">ZIP 2</td>
                   <td className="py-3 px-4 text-muted-foreground">3:4</td>
-                  <td className="py-3 px-4 text-muted-foreground">6×8, 9×12, 12×16, 18×24</td>
+                  <td className="py-3 px-4 text-muted-foreground">6×8, 9×12, 12×16, 15×20, 18×24</td>
                   <td className="py-3 px-4 text-muted-foreground">Gallery-wall and mid-size frames</td>
                 </tr>
                 <tr>
                   <td className="py-3 px-4 font-medium text-foreground">ZIP 3</td>
                   <td className="py-3 px-4 text-muted-foreground">4:5</td>
-                  <td className="py-3 px-4 text-muted-foreground">8×10, 16×20, 20×25</td>
+                  <td className="py-3 px-4 text-muted-foreground">8×10, 12×15, 16×20, 20×25, 24×30</td>
                   <td className="py-3 px-4 text-muted-foreground">Standard US frame buyers</td>
                 </tr>
                 <tr>
                   <td className="py-3 px-4 font-medium text-foreground">ZIP 4</td>
                   <td className="py-3 px-4 text-muted-foreground">ISO (A-series)</td>
-                  <td className="py-3 px-4 text-muted-foreground">A5, A4, A3, A2</td>
+                  <td className="py-3 px-4 text-muted-foreground">A5, A4, A3, A2, A1</td>
                   <td className="py-3 px-4 text-muted-foreground">UK, EU, and AU buyers</td>
                 </tr>
                 <tr>
                   <td className="py-3 px-4 font-medium text-foreground">ZIP 5</td>
                   <td className="py-3 px-4 text-muted-foreground">Extras</td>
-                  <td className="py-3 px-4 text-muted-foreground">11×14, 5×7, square variants</td>
-                  <td className="py-3 px-4 text-muted-foreground">IKEA-frame and niche buyers</td>
+                  <td className="py-3 px-4 text-muted-foreground">5×7, 8.5×11, 11×14, 11×17, 13×19, 20×24</td>
+                  <td className="py-3 px-4 text-muted-foreground">IKEA-frame, tabloid, and large-format buyers</td>
                 </tr>
               </tbody>
             </table>

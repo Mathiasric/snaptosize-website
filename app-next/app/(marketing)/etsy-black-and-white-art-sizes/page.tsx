@@ -490,6 +490,18 @@ export default function EtsyBlackAndWhiteArtSizesPage() {
                       <td className="px-4 py-3 text-foreground-70">420×594 mm</td>
                       <td className="px-4 py-3 text-foreground-60">Large format / gallery prints</td>
                     </tr>
+                    <tr className="hover:bg-muted/30">
+                      <td className="px-4 py-3 font-medium">A1</td>
+                      <td className="px-4 py-3 font-mono text-xs">7016×9933</td>
+                      <td className="px-4 py-3 text-foreground-70">594×841 mm</td>
+                      <td className="px-4 py-3 text-foreground-60">Oversized gallery pieces</td>
+                    </tr>
+                    <tr className="hover:bg-muted/30 bg-muted/10">
+                      <td className="px-4 py-3 font-medium">A0</td>
+                      <td className="px-4 py-3 font-mono text-xs">9933×14043</td>
+                      <td className="px-4 py-3 text-foreground-70">841×1189 mm</td>
+                      <td className="px-4 py-3 text-foreground-60">Large-format statement art</td>
+                    </tr>
                   </tbody>
                 </table>
               </div>

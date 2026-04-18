@@ -180,58 +180,6 @@ export default function EtsyAnimeMangaArtSizesPage() {
             pointerEvents: "none",
           }}
         >
-          {/* Top-left panel block */}
-          <div
-            style={{
-              position: "absolute",
-              top: "12px",
-              left: "12px",
-              width: "180px",
-              height: "260px",
-              border: "3px solid #4A1D96",
-              borderRadius: "2px",
-              opacity: 0.55,
-            }}
-          />
-          {/* Offset inner panel — top left */}
-          <div
-            style={{
-              position: "absolute",
-              top: "28px",
-              left: "28px",
-              width: "140px",
-              height: "200px",
-              border: "2px solid #6D28D9",
-              borderRadius: "1px",
-              opacity: 0.35,
-            }}
-          />
-          {/* Bottom-right large panel */}
-          <div
-            style={{
-              position: "absolute",
-              bottom: "16px",
-              right: "16px",
-              width: "220px",
-              height: "320px",
-              border: "3px solid #1E3A5F",
-              borderRadius: "2px",
-              opacity: 0.5,
-            }}
-          />
-          {/* Offset inner panel — bottom right */}
-          <div
-            style={{
-              position: "absolute",
-              bottom: "32px",
-              right: "32px",
-              width: "170px",
-              height: "250px",
-              border: "2px solid #2563EB",
-              borderRadius: "1px",
-              opacity: 0.3,
-            }}
-          />
           {/* Mid glow orb — purple */}
           <div
             style={{
@@ -274,44 +222,38 @@ export default function EtsyAnimeMangaArtSizesPage() {
         </div>
 
         <Container>
-          <div className="relative z-10 py-20 md:py-28 max-w-[1200px] mx-auto text-center">
-            {/* Trust pills */}
-            <div className="flex flex-wrap justify-center gap-3 mb-8">
-              {[
-                "2:3 Portrait Formats",
-                "Japanese B-Series Covered",
-                "300 DPI Specs",
-              ].map((pill) => (
-                <span
-                  key={pill}
-                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium"
-                  style={{
-                    background: "rgba(109,40,217,0.2)",
-                    border: "1px solid rgba(109,40,217,0.5)",
-                    color: "#C4B5FD",
-                  }}
-                >
-                  <Check size={11} />
-                  {pill}
-                </span>
-              ))}
+          <div className="relative z-10 py-16 md:py-24 max-w-[1200px] mx-auto">
+            <div className="grid md:grid-cols-2 gap-10 items-center">
+              {/* Left: text */}
+              <div>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {["2:3 Portrait Formats", "Japanese B-Series Covered", "300 DPI Specs"].map((pill) => (
+                    <span
+                      key={pill}
+                      className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium"
+                      style={{ background: "rgba(109,40,217,0.2)", border: "1px solid rgba(109,40,217,0.5)", color: "#C4B5FD" }}
+                    >
+                      <Check size={11} />
+                      {pill}
+                    </span>
+                  ))}
+                </div>
+                <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-5">
+                  Anime &amp; Manga Art Print Sizes for Etsy:{" "}
+                  <span style={{ color: "#A78BFA" }}>The Complete Seller Guide</span>
+                </h1>
+                <p className="text-lg mb-8" style={{ color: "#CBD5E1" }}>
+                  Character art demands tall portrait formats — here are every size, pixel dimension, and ratio you need for a complete anime print listing.
+                </p>
+                <a href={appUrl}>
+                  <Button>Package all your anime print sizes at once</Button>
+                </a>
+              </div>
+              {/* Right: artwork */}
+              <div className="hidden md:block">
+                <ListingOutputShowcase artwork="mysthical_portal" />
+              </div>
             </div>
-
-            <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-5">
-              Anime &amp; Manga Art Print Sizes for Etsy:{" "}
-              <span style={{ color: "#A78BFA" }}>The Complete Seller Guide</span>
-            </h1>
-
-            <p className="text-lg md:text-xl mb-8" style={{ color: "#CBD5E1" }}>
-              Character art demands tall portrait formats — here are every size,
-              pixel dimension, and ratio you need for a complete anime print
-              listing.
-            </p>
-
-            {/* CTA 1 — Package all your anime print sizes at once */}
-            <a href={appUrl}>
-              <Button>Package all your anime print sizes at once</Button>
-            </a>
           </div>
         </Container>
       </section>
@@ -328,7 +270,23 @@ export default function EtsyAnimeMangaArtSizesPage() {
             poses demand.
           </QuickAnswer>
 
-          <ListingOutputShowcase artwork="mysthical_portal" />
+          {/* Lifestyle mockup — moved here from below for visual variety early in page */}
+          <section>
+            <div className="rounded-xl overflow-hidden">
+              <img
+                src="/assets/visuals/etsy-anime-manga-art-sizes-mockup.jpg"
+                alt="Anime art prints in matching dark frames on a teenager's bedroom wall with decorative lighting"
+                width={1200}
+                height={900}
+                className="w-full h-auto object-cover"
+                loading="lazy"
+              />
+            </div>
+            <p className="text-xs text-slate-500 mt-2 text-center">
+              Three coordinating anime prints — 8×12, 11×17, and A3 — in matching
+              dark frames for a gallery wall display.
+            </p>
+          </section>
 
           {/* Section 1 — Most Popular Sizes */}
           <section>
@@ -493,6 +451,8 @@ export default function EtsyAnimeMangaArtSizesPage() {
                     ["A4", "210×297 mm", "2480 × 3508 px", "UK, EU, AU, Japan — must-have"],
                     ["A3", "297×420 mm", "3508 × 4961 px", "Gallery-worthy, high demand"],
                     ["A2", "420×594 mm", "4961 × 7016 px", "Large statement pieces"],
+                    ["A1", "594×841 mm", "7016 × 9933 px", "Oversized gallery pieces"],
+                    ["A0", "841×1189 mm", "9933 × 14043 px", "Large-format statement art"],
                   ].map(([size, mm, px, market]) => (
                     <tr key={size} className="border-b border-slate-800">
                       <td className="py-2 pr-4 font-medium text-white">{size}</td>
@@ -658,24 +618,6 @@ export default function EtsyAnimeMangaArtSizesPage() {
                 </a>
               </div>
             </Card>
-          </section>
-
-          {/* Lifestyle mockup */}
-          <section>
-            <div className="rounded-xl overflow-hidden">
-              <img
-                src="/assets/visuals/etsy-anime-manga-art-sizes-mockup.jpg"
-                alt="Anime art prints in matching dark frames on a teenager's bedroom wall with decorative lighting"
-                width={1200}
-                height={900}
-                className="w-full h-auto object-cover"
-                loading="lazy"
-              />
-            </div>
-            <p className="text-xs text-slate-500 mt-2 text-center">
-              Three coordinating anime prints — 8×12, 11×17, and A3 — in matching
-              dark frames for a gallery wall display.
-            </p>
           </section>
 
           {/* FinalCTA — CTA 3 */}

@@ -85,6 +85,8 @@ These are hard rules, not guidelines. Violating them wastes tokens and shortens 
 
 **Screenshots:** Default to viewport-only screenshots (1440×900 desktop, 390×844 mobile). Never use `fullPage: true` unless a specific full-page QA review is requested. Use `clip` to capture specific sections when only part of the page is relevant.
 
+**Playwright:** NEVER use `browser_snapshot` — dumps entire DOM tree (3000–5000 tokens). Use `browser_take_screenshot` + read the image instead. Only use `browser_snapshot` when you need element refs for interactive actions (click, fill).
+
 **Token & repo hygiene (check periodically):**
 - `app-next/*.png/jpg`: delete after use — never let QA screenshots accumulate (now gitignored)
 - `tasks/lessons.md`: cap at ~50 lessons — archive to `tasks/lessons-archive.md` when adding new ones
@@ -129,11 +131,8 @@ We are in Growth + Conversion phase. Backend is hardened and stable.
 |------------|---------|-----------|
 | **Playwright** | Screenshots, visual QA, social slide capture | **Primary visual tool.** Section clips via `chromium.launch()` in `app-next/`. |
 | **Gemini** | Lifestyle image gen, text analysis, captions | `gemini-generate-image` for aspirational pins only. Social slides preferred for branded visuals. |
-| **n8n-mcp** | Workflow automation docs/templates | Docs-only mode. 1396 nodes, 2709 templates. Connect N8N_API_URL later for automation. |
 | **Firecrawl** | Web scraping for SEO research | 500 free credits. Scrape SERP results for content briefs. |
 | **NotebookLM** | Strategic brain, project context queries | Notebook ID: `4853724d-ed87-4546-963a-e84665b869f5`. Refresh auth first. |
-| **Canva** | Design creation/editing | Unreliable auth — use as fallback |
-| **Figma** | Design-to-code extraction | `get_design_context` for component code |
 | **Sentry** | Error monitoring, issue search | `search_issues`, `get_issue_details` |
 | **Cloudflare** | Workers inspection, R2, KV, D1 | `workers_get_worker_code`, `accounts_list` |
 | **claude-mem** | Cross-session memory | Automatic — no manual action needed |
@@ -188,7 +187,6 @@ Interactive (dropdowns, modals): use `node -e` with `chromium.launch()` — clic
 
 | Component | Usage |
 |-----------|-------|
-| `EmailCaptureSection` | Teal top accent, document icon, elevated card. One per page near bottom. |
 | `FinalCTA` | Teal left accent bar, stat line, app link. Last CTA before FAQ. |
 | `Button` | Always wrap in `<a>`, never give `href` prop to Button itself. |
 | `Card` | With `accent` prop for purple mid-content CTAs. |
