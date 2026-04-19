@@ -511,6 +511,18 @@ export default function EtsyKidsWallArtSizesPage() {
           />
         </section>
 
+        {/* Lifestyle mockup */}
+        <section className="mb-20 md:mb-24 rounded-2xl overflow-hidden">
+          <img
+            src="/assets/visuals/etsy-kids-wall-art-sizes-lifestyle.jpg"
+            alt="Bright Scandinavian children's bedroom with white walls featuring a whimsical animal illustration in a wooden frame above a bookshelf"
+            width={1200}
+            height={900}
+            className="w-full h-auto"
+            loading="lazy"
+          />
+        </section>
+
         {/* ===== CTA 2: FinalCTA — automation angle ===== */}
         <div className="mb-20 md:mb-24">
           <FinalCTA
