@@ -193,6 +193,12 @@ export function Header() {
                     <Link href="/etsy-farmhouse-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Farmhouse Wall Art Sizes
                     </Link>
+                    <Link href="/etsy-kids-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Kids Wall Art Sizes
+                    </Link>
+                    <Link href="/etsy-bathroom-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Bathroom Wall Art Sizes
+                    </Link>
                     <Link href="/etsy-mid-century-modern-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Mid Century Modern Sizes
                     </Link>
@@ -559,6 +565,12 @@ export function Header() {
                         </Link>
                         <Link href="/etsy-farmhouse-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Farmhouse Wall Art Sizes
+                        </Link>
+                        <Link href="/etsy-kids-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Kids Wall Art Sizes
+                        </Link>
+                        <Link href="/etsy-bathroom-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Bathroom Wall Art Sizes
                         </Link>
                         <Link href="/etsy-mid-century-modern-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Mid Century Modern Sizes

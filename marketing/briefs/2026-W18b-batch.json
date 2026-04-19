@@ -1,0 +1,158 @@
+{
+  "week": "W18b",
+  "created_at": "2026-04-19T19:51:00+02:00",
+  "keywords": [
+    {
+      "keyword": "etsy kids wall art sizes",
+      "slug": "etsy-kids-wall-art-sizes",
+      "intent": "informational",
+      "page_type": "size-reference",
+      "priority": "P1",
+      "cluster": "niche-vertical",
+      "sections": [
+        "What sizes sell best for kids wall art on Etsy",
+        "Kids room size guide by ratio (2:3, 3:4, 4:5, ISO)",
+        "Common frame sizes for nursery and playroom",
+        "How many sizes should you offer for children's prints",
+        "Pixel dimensions for kids wall art at 300 DPI",
+        "Why offering all ratios wins more sales",
+        "How to generate all kids wall art sizes instantly with SnapToSize"
+      ],
+      "faqs": [
+        {
+          "q": "What sizes should I offer for kids wall art on Etsy?",
+          "a": "The most popular sizes for children's room and nursery prints are 8x10, 11x14, and 16x20 (4:5 ratio), plus 8x12 and 12x18 (2:3 ratio) and A4/A3 for international buyers. Offering all ratios in one listing maximises reach."
+        },
+        {
+          "q": "What is the best size for a nursery wall art print?",
+          "a": "8x10 and 11x14 are the most common nursery print sizes in the US. For gallery walls, buyers often mix 5x7, 8x10, and 11x14 in the same display."
+        },
+        {
+          "q": "Should I include A4 and A3 for kids wall art?",
+          "a": "Yes. International buyers — especially in Europe and Australia — almost always print on ISO paper sizes. Including A4 and A3 alongside inch-based sizes significantly increases your potential market."
+        },
+        {
+          "q": "What pixel dimensions do I need for a 16x20 kids print at 300 DPI?",
+          "a": "A 16x20 inch print at 300 DPI requires a file that is 4,800 x 6,000 pixels. SnapToSize generates this automatically when you upload your artwork."
+        },
+        {
+          "q": "Can I sell kids wall art prints in square sizes on Etsy?",
+          "a": "Square sizes (8x8, 10x10, 12x12) are less common for framed prints but popular for canvas. Most sellers prioritise 4:5 and 2:3 ratio files first, then add square if demand warrants it."
+        }
+      ],
+      "competitor_gaps": "No dedicated competitor page exists for 'etsy kids wall art sizes' as a seller-focused size guide. Top results are Etsy marketplace listings and generic size charts — not actionable guides for sellers. Gap: a page that maps all ratios (2:3, 3:4, 4:5, ISO) to kids room frame sizes with pixel dimensions, written for the Etsy digital seller, not the buyer.",
+      "conversion_angle": "Kids/nursery is one of Etsy's largest printable wall art categories. Sellers in this niche face the same problem as all printable sellers — resizing 1 artwork into 20+ sizes manually. The pain is identical; the niche framing increases relevance. CTA: 'Upload your kids art once — get all sizes instantly.'",
+      "link_to": [
+        "etsy-nursery-wall-art-sizes",
+        "etsy-print-sizes",
+        "etsy-print-ratios",
+        "etsy-8x10-print-size",
+        "etsy-11x14-print-size",
+        "etsy-16x20-print-size",
+        "etsy-a4-print-size",
+        "etsy-a3-print-size",
+        "print-sizes-at-300-dpi"
+      ],
+      "link_from": [
+        "etsy-nursery-wall-art-sizes",
+        "etsy-print-sizes",
+        "etsy-gallery-wall-print-sizes"
+      ],
+      "visual_plan": {
+        "listing_output_showcase": true,
+        "gemini_lifestyle": "A bright, cheerful children's bedroom with white walls. A whimsical animal illustration art print in a wooden frame hangs above a small white bookshelf with colorful books. Natural light through sheer curtains. No text, no words, no labels, no watermarks. Scandinavian nursery aesthetic.",
+        "gemini_scene_category": "niche-mockup"
+      },
+      "sources": [
+        {
+          "claim": "8x10, 11x14, and 16x20 are the most popular sizes for US printable wall art buyers",
+          "url": "https://goldcityventures.com/art-print-sizes/"
+        },
+        {
+          "claim": "Kids wall art size chart listing on Etsy includes A4, A3, 2:3 ratio frame options",
+          "url": "https://www.etsy.com/listing/1466493182/wall-art-size-chart-kids-room-frame-size"
+        },
+        {
+          "claim": "Sellers offer kids prints in 2:3, 3:4, 4:5, and ISO ratios to cover all frame sizes",
+          "url": "https://www.etsy.com/listing/1807250735/110-kids-room-prints-playroom-nursery"
+        }
+      ]
+    },
+    {
+      "keyword": "etsy bathroom wall art sizes",
+      "slug": "etsy-bathroom-wall-art-sizes",
+      "intent": "informational",
+      "page_type": "size-reference",
+      "priority": "P1",
+      "cluster": "niche-vertical",
+      "sections": [
+        "What sizes work best for bathroom wall art on Etsy",
+        "Portrait vs landscape: what sells in bathroom spaces",
+        "Bathroom print size guide by ratio (2:3, 3:4, 4:5, ISO)",
+        "Common frame sizes for bathroom walls",
+        "Small bathroom vs large bathroom — sizing considerations",
+        "Pixel dimensions for bathroom prints at 300 DPI",
+        "How to offer all bathroom wall art sizes without manual resizing"
+      ],
+      "faqs": [
+        {
+          "q": "What sizes sell best for bathroom wall art on Etsy?",
+          "a": "For bathrooms, smaller prints tend to dominate: 5x7, 8x10, and 11x14 are the top sellers. Vertical (portrait) orientation suits narrow bathroom walls. A4 is the top international size."
+        },
+        {
+          "q": "Should bathroom wall art prints be portrait or landscape?",
+          "a": "Portrait (vertical) prints are preferred for bathroom walls because most bathroom wall spaces are taller than wide. 2:3 ratio (e.g. 8x12, 12x18) and 4:5 ratio (e.g. 8x10, 16x20) are the best fits."
+        },
+        {
+          "q": "What pixel dimensions do I need for an 8x10 bathroom print at 300 DPI?",
+          "a": "An 8x10 inch print at 300 DPI requires a file of 2,400 x 3,000 pixels. SnapToSize generates this and all other standard sizes automatically."
+        },
+        {
+          "q": "Do buyers want A4 prints for bathroom wall art?",
+          "a": "Yes — A4 (210 x 297mm) is the most common international print size and slots perfectly into standard IKEA frames, making it extremely popular with European buyers of bathroom printables."
+        },
+        {
+          "q": "How many file sizes should I include in my bathroom wall art Etsy listing?",
+          "a": "Offer at minimum: 5x7, 8x10, 11x14 (4:5 ratio), 8x12, 12x18 (2:3 ratio), and A4 (ISO). Covering all major ratios in one listing prevents lost sales from buyers who only have a specific frame size."
+        }
+      ],
+      "competitor_gaps": "No dedicated competitor page exists for 'etsy bathroom wall art sizes' as a seller-focused size reference. Top SERP results are Etsy marketplace listings, styling guides for buyers, and generic trend roundups — none are seller-oriented size guides with pixel dimensions and ratio breakdowns. Clear gap for SnapToSize.",
+      "conversion_angle": "Bathroom printables is one of Etsy's top-selling niches for digital downloads (funny bathroom signs, spa quotes, minimalist line art). Sellers in this niche need all the same ratios as any printable seller — the niche framing just makes the page highly specific and therefore more relevant to searchers. CTA: 'Upload your bathroom art once — get all sizes at 300 DPI instantly.'",
+      "link_to": [
+        "etsy-print-sizes",
+        "etsy-print-ratios",
+        "etsy-8x10-print-size",
+        "etsy-5x7-print-size",
+        "etsy-11x14-print-size",
+        "etsy-a4-print-size",
+        "etsy-quote-wall-art-sizes",
+        "etsy-minimalist-wall-art-sizes",
+        "print-sizes-at-300-dpi"
+      ],
+      "link_from": [
+        "etsy-quote-wall-art-sizes",
+        "etsy-minimalist-wall-art-sizes",
+        "etsy-print-sizes"
+      ],
+      "visual_plan": {
+        "listing_output_showcase": true,
+        "gemini_lifestyle": "A clean, bright minimalist bathroom with white subway tiles. A framed art print with a simple botanical illustration hangs on the wall above a small wooden shelf. Soft natural light. No text, no words, no labels, no watermarks. Spa-like, calming aesthetic.",
+        "gemini_scene_category": "niche-mockup"
+      },
+      "sources": [
+        {
+          "claim": "Bathroom wall art printables are a top-selling digital download niche on Etsy",
+          "url": "https://www.printkk.com/blog/articles/best-selling-digital-art-on-etsy"
+        },
+        {
+          "claim": "Bathroom print market page on Etsy shows high seller volume for printable bathroom art",
+          "url": "https://www.etsy.com/market/printable_bathroom_prints"
+        },
+        {
+          "claim": "5x7, 8x10, and A4 are the dominant sizes offered across bathroom printable listings",
+          "url": "https://www.etsy.com/listing/223424815/bathroom-printable-wall-art-bathroom-art"
+        }
+      ]
+    }
+  ]
+}

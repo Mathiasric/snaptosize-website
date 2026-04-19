@@ -1740,5 +1740,17 @@
       "etsy-print-ratios",
       "how-to-sell-digital-downloads-on-etsy"
     ]
+  },
+  {
+    "slug": "etsy-kids-wall-art-sizes",
+    "title": "Etsy Kids Wall Art Sizes",
+    "cluster": "niche-vertical",
+    "relatedSlugs": ["etsy-nursery-wall-art-sizes", "etsy-print-sizes", "etsy-print-ratios", "etsy-8x10-print-size", "etsy-11x14-print-size", "etsy-16x20-print-size", "etsy-a4-print-size", "etsy-a3-print-size", "print-sizes-at-300-dpi"]
+  },
+  {
+    "slug": "etsy-bathroom-wall-art-sizes",
+    "title": "Etsy Bathroom Wall Art Sizes",
+    "cluster": "niche-vertical",
+    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-8x10-print-size", "etsy-5x7-print-size", "etsy-11x14-print-size", "etsy-a4-print-size", "etsy-quote-wall-art-sizes", "etsy-minimalist-wall-art-sizes", "print-sizes-at-300-dpi"]
   }
 ]
