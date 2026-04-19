@@ -321,6 +321,12 @@ export function Header() {
                   <Link href="/best-resolution-for-etsy-printables" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                     Best Resolution
                   </Link>
+                  <Link href="/print-sizes-at-300-dpi" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    300 DPI Print Sizes
+                  </Link>
+                  <Link href="/etsy-digital-download-file-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    Etsy File Size Guide
+                  </Link>
                   <Link href="/how-to-package-digital-wall-art-for-etsy" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                     Package Digital Wall Art
                   </Link>
@@ -597,7 +603,13 @@ export function Header() {
                         <Link href="/best-resolution-for-etsy-printables" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Best Resolution for Printables
                         </Link>
-                        <Link href="/how-to-package-digital-wall-art-for-etsy" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                        <Link href="/print-sizes-at-300-dpi" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          300 DPI Print Sizes
+                        </Link>
+                        <Link href="/etsy-digital-download-file-size" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Etsy File Size Guide
+                        </Link>
+                   <Link href="/how-to-package-digital-wall-art-for-etsy" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Package Digital Wall Art
                         </Link>
                         <Link href="/how-to-upload-more-than-5-files-etsy" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">

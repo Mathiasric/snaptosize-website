@@ -1,5 +1,26 @@
 [
   {
+    "slug": "print-sizes-at-300-dpi",
+    "title": "Print Sizes at 300 DPI — Complete Pixel Chart",
+    "pageType": "reference",
+    "keywords": [
+      "print sizes at 300 dpi",
+      "300 dpi pixel dimensions",
+      "etsy print sizes 300 dpi"
+    ],
+    "cluster": "resolution-dpi",
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-20mb-file-limit",
+      "best-resolution-for-etsy-printables",
+      "best-file-format-etsy-printables",
+      "etsy-8x10-print-size",
+      "etsy-a4-print-size",
+      "what-files-to-include-etsy-digital-download"
+    ]
+  },
+  {
     "slug": "etsy-print-sizes",
     "title": "Etsy Print Sizes Guide",
     "pageType": "pillar",

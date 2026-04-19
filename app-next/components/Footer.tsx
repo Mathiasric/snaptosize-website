@@ -187,6 +187,16 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/print-sizes-at-300-dpi" className="transition-colors hover:text-accent-light">
+                  300 DPI Print Sizes
+                </Link>
+              </li>
+              <li>
+                <Link href="/etsy-digital-download-file-size" className="transition-colors hover:text-accent-light">
+                  Etsy File Size Guide
+                </Link>
+              </li>
+              <li>
                 <Link href="/what-files-to-include-etsy-digital-download" className="transition-colors hover:text-accent-light">
                   What Files to Include
                 </Link>
