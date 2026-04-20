@@ -15,8 +15,8 @@
     "en-upload-enkelheten"
   ],
   "used_react_templates": [
-    "WorkflowSteps/pinterest",
-    "NeonPackShowcase/bunny-instagram",
+    "NeonPackShowcase/mysthical_portal-pinterest",
+    "RatioProofShowcase/misty_lake-instagram",
     "NeonPackShowcase/fox",
     "NeonPackShowcase/bunny",
     "NeonPackShowcase/deer",
@@ -48,7 +48,8 @@
     "into_the_light_abstarct",
     "salmon",
     "wildflower_botanical_art",
-    "owl"
+    "owl",
+    "mysthical_portal"
   ],
   "rotation_policy": {
     "gemini_cooldown_weeks": 4,
@@ -121,11 +122,12 @@
         "en-upload-enkelheten"
       ],
       "react_templates": [
-        "WorkflowSteps/pinterest",
-        "NeonPackShowcase/bunny-instagram"
+        "NeonPackShowcase/mysthical_portal-pinterest",
+        "RatioProofShowcase/misty_lake-instagram"
       ],
       "artworks": [
-        "bunny"
+        "mysthical_portal",
+        "misty_lake"
       ]
     },
     {

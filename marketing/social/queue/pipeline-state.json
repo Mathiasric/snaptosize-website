@@ -2,7 +2,7 @@
   "current_week": "W18",
   "batch_id": "2026-W18",
   "started_at": "2026-04-19T06:58:06.658280+00:00",
-  "updated_at": "2026-04-20T06:45:05.196092+00:00",
+  "updated_at": "2026-04-20T08:08:32.429197+00:00",
   "creator_completed_at": "2026-04-15T09:54:00.000000+00:00",
   "target": {
     "pinterest": 21,
@@ -156,8 +156,8 @@
       "priority": "P1",
       "stage": "creation",
       "tool_used": "playwright-slide",
-      "content_type": "how-it-works",
-      "layout": "playwright-workflow-steps",
+      "content_type": "product-showcase",
+      "layout": "playwright-neon-mysthical",
       "buffer_post_id": null,
       "tool_attempts": [],
       "files": {
@@ -167,7 +167,7 @@
       "metadata": {},
       "linked_item": null,
       "created_at": "2026-04-19T06:58:06.658280+00:00",
-      "updated_at": "2026-04-20T06:45:05.196092+00:00",
+      "updated_at": "2026-04-20T08:08:32.429197+00:00",
       "error": null
     },
     {
@@ -469,7 +469,7 @@
       "stage": "creation",
       "tool_used": "playwright-slide",
       "content_type": "product-showcase",
-      "layout": "playwright-neon-pack",
+      "layout": "playwright-ratio-misty_lake",
       "buffer_post_id": null,
       "tool_attempts": [],
       "files": {
@@ -479,7 +479,7 @@
       "metadata": {},
       "linked_item": "W18-T02",
       "created_at": "2026-04-19T06:58:06.658280+00:00",
-      "updated_at": "2026-04-20T06:45:05.196092+00:00",
+      "updated_at": "2026-04-20T08:08:32.429197+00:00",
       "error": null
     },
     {

@@ -89,6 +89,27 @@ function getSrcs(artwork: string) {
       "ISO":    `${base}/A4_2480x3508_ISO%20(5).jpg`,
       "Extras": `${base}/Landscape_Art_11x14_3300x4200.jpg`,
     },
+    floral_vase: {
+      "2:3":    `${base}/Floral%20vase%20art%20.jpg`,
+      "3:4":    `${base}/Floral%20vase%20art%20_6x8_1800x2400.jpg`,
+      "4:5":    `${base}/Floral%20vase%20art%20_4x5_1200x1500.jpg`,
+      "ISO":    `${base}/A4_2480x3508_ISO%20(12).jpg`,
+      "Extras": `${base}/Floral%20vase%20art%20_11x14_3300x4200.jpg`,
+    },
+    owl: {
+      "2:3":    `${base}/Whimscal%20owl%20print.jpg`,
+      "3:4":    `${base}/folk_art-Owl%203%20x%204.jpg`,
+      "4:5":    `${base}/owl_folk_art_4x5.jpg`,
+      "ISO":    `${base}/A4_2480x3508_ISO%20(10).jpg`,
+      "Extras": `${base}/owl_folk_art_11x14.jpg`,
+    },
+    mysthical_portal: {
+      "2:3":    `${base}/Mystical%20portal%20abstract.jpeg`,
+      "3:4":    `${base}/mysticalportal_3x4_6x8_1800x2400.jpg`,
+      "4:5":    `${base}/mysticalportal_4x5_1200x1500.jpg`,
+      "ISO":    `${base}/mysticalportal_A4_2480x3508px.jpg`,
+      "Extras": `${base}/mysticalportal_11x14_3300x4200px.jpg`,
+    },
   };
 
   return srcs[artwork] ?? {
@@ -194,7 +215,7 @@ export default function NeonPackShowcase({ artwork, name, ratio }: Props) {
           marginTop: isPinterest ? 14 : 10,
           lineHeight: 1.5,
         }}>
-          {name} · 5 ratio packs · 28 print sizes · 300 DPI · Etsy-ready
+          {name} · 5 ratio packs · up to 70 sizes · 300 DPI · Etsy-ready
         </p>
       </div>
 
@@ -276,7 +297,7 @@ export default function NeonPackShowcase({ artwork, name, ratio }: Props) {
         <div style={{ display: "flex", gap: isPinterest ? 52 : 40, marginTop: 4 }}>
           {[
             { val: "5", unit: "ratio packs", color: teal },
-            { val: "28", unit: "print sizes", color: "#fff" },
+            { val: "70", unit: "sizes", color: "#fff" },
             { val: "300", unit: "DPI", color: purple },
           ].map(({ val, unit, color }) => (
             <div key={unit} style={{ textAlign: "center" }}>

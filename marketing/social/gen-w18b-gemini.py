@@ -1,5 +1,6 @@
 """W18b Gemini batch — 2026-04-20
 Pinterest pins: 300-dpi-makrokvalitet + en-upload-enkelheten
+Pain→solution forankret i Etsy-selger ICP. 70 files (ikke 28).
 """
 import os
 import io
@@ -22,14 +23,17 @@ PINS = [
         "folder": "2026-04-20-300dpi-quality",
         "aspect_ratio": "9:16",
         "prompt": (
-            "Extreme macro photorealistic photo, vertical portrait format. "
-            "Close-up of a freshly printed botanical art print held against bright soft light. "
-            "Visible fine ink texture, crisp botanical line details, vibrant true colors — exceptional quality. "
-            "Print fills 65% of frame. Two fingers visible holding top corners. "
-            "Small elegant badge in print corner: '300 DPI' in teal text on white background. "
-            "TOP 30%: soft blurred bright studio background — clean, text-safe. "
-            "No additional text on print. 100mm macro lens aesthetic, ultra-sharp. "
-            "Photorealistic, studio lighting."
+            "Photorealistic split-panel comparison photo, vertical portrait format, soft studio lighting. "
+            "Two printed botanical wall art prints taped side-by-side on a clean light wall. "
+            "LEFT PANEL — labeled 'Before': The print looks visibly pixelated and blurry — "
+            "jagged edges on flower petals, muddy washed-out colors, visible pixel blocks. "
+            "A small red sticky note attached reads: 'Print shop rejected — too low res'. Dim, flat lighting. "
+            "RIGHT PANEL — labeled 'After': Exact same botanical artwork, razor-sharp and vibrant — "
+            "every petal edge crisp, ink texture visible, colors rich and true. "
+            "A small teal badge in the corner reads: '300 DPI'. Bright, clean, confident. "
+            "A thin teal vertical line divides the two panels in the center. "
+            "TOP 25% of image: plain clean white wall, completely empty — text-safe zone. "
+            "No people, no logos. Photorealistic DSLR photo aesthetic."
         ),
     },
     {
@@ -37,15 +41,17 @@ PINS = [
         "folder": "2026-04-20-one-upload-everywhere",
         "aspect_ratio": "9:16",
         "prompt": (
-            "Photorealistic minimalist flat-lay, vertical portrait format. "
-            "Clean matte white desk. MacBook Air showing a simple web app interface in browser — "
-            "file named 'botanical_artwork.png' in a drag-drop zone, "
-            "progress bar showing '100%' with green checkmark. "
-            "Fanning outward from laptop in semi-circle: 5 white cards with teal ZIP icons labeled "
-            "'2:3 Pack', '3:4 Pack', '4:5 Pack', 'ISO Pack', 'Extras'. "
-            "Small text label below fan: '28 files · 300 DPI · Etsy-ready'. "
-            "TOP 30%: plain white wall — uncluttered, text-safe zone. "
-            "No people. Apple product-shoot minimal aesthetic. Photorealistic, soft diffused lighting."
+            "Photorealistic minimalist flat-lay, vertical portrait format, soft even studio lighting. "
+            "Center of frame: open MacBook Air on a clean matte white desk. "
+            "Browser shows app.snaptosize.com — a simple drag-and-drop interface with "
+            "a file named 'botanical_print.png' uploaded. "
+            "Green progress bar reads '100%' with a checkmark. Screen text: '70 files ready'. "
+            "Fanning outward from the laptop in a clean semi-circle: 5 crisp white cards with teal ZIP folder icons. "
+            "Card 1: '2:3 Pack — 7 files'. Card 2: '3:4 Pack — 5 files'. Card 3: '4:5 Pack — 5 files'. "
+            "Card 4: 'ISO Pack — 5 files'. Card 5: 'Extras — 6 files'. "
+            "Small clean text label below the card fan: '70 files · 300 DPI · Etsy-ready'. "
+            "TOP 30%: plain white wall — completely empty, text-safe. "
+            "No people, no clutter. Apple product-shoot minimal aesthetic. Photorealistic."
         ),
     },
 ]

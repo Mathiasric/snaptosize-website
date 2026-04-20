@@ -110,8 +110,10 @@ export default function SocialSlidesPage() {
         <RatioProofShowcase artwork="owl" name="Owl Folk Art" ratio="instagram" />
         {/* W18-I01: Deer Portrait — RatioProofShowcase Instagram */}
         <RatioProofShowcase artwork="deer" name="Deer Portrait" ratio="instagram" />
-        {/* W18-I02: Bunny Sketch — NeonPackShowcase Instagram */}
-        <NeonPackShowcase artwork="bunny" name="Bunny Sketch" ratio="instagram" />
+        {/* W18-I02: Misty Lake — RatioProofShowcase Instagram */}
+        <RatioProofShowcase artwork="misty_lake" name="Misty Lake" ratio="instagram" />
+        {/* W18-P06: Mystical Portal — NeonPackShowcase Pinterest */}
+        <NeonPackShowcase artwork="mysthical_portal" name="Mystical Portal" ratio="pinterest" />
 
         {/* ═══ Pain Solution Slide — before/after split panel ═══ */}
         <PainSolutionSlide pain="missing-size" ratio="pinterest" />
