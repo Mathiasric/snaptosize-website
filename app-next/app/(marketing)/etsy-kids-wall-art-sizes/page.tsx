@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
+import { ContextualCTA } from "@/components/ContextualCTA";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { FinalCTA } from "@/components/FinalCTA";
 import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import RelatedPages from "@/components/RelatedPages";
 import { Check } from "lucide-react";
 
@@ -144,111 +146,188 @@ export default function EtsyKidsWallArtSizesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
-      <div className="container mx-auto px-4 md:px-8 max-w-[1200px] py-12">
+      {/* ===== HERO — Pastel Playroom ===== */}
+      <section
+        className="relative pt-12 pb-20 md:pt-16 md:pb-28 overflow-hidden"
+        style={{
+          background:
+            "linear-gradient(145deg, #fef3e8 0%, #f7ebe0 30%, #e8f0e5 60%, #e0ede8 100%)",
+        }}
+      >
+        {/* Playful dot pattern */}
+        <div
+          className="absolute inset-0 opacity-[0.14]"
+          style={{
+            backgroundImage: "radial-gradient(circle, #c97b63 1px, transparent 1px)",
+            backgroundSize: "30px 30px",
+          }}
+        />
+        {/* Peach blob top-right */}
+        <div
+          className="absolute top-[-12%] right-[-8%] w-[520px] h-[520px] rounded-full opacity-[0.18]"
+          style={{ background: "radial-gradient(circle, #ffc7a1, transparent 70%)" }}
+        />
+        {/* Mint blob bottom-left */}
+        <div
+          className="absolute bottom-[-18%] left-[-6%] w-[420px] h-[420px] rounded-full opacity-[0.14]"
+          style={{ background: "radial-gradient(circle, #9cc9b0, transparent 70%)" }}
+        />
 
-        {/* ===== HERO ===== */}
-        <section className="pt-10 pb-16 md:pt-14 md:pb-24">
-          <nav className="text-xs text-muted-foreground mb-5">
-            <Link href="/" className="hover:text-foreground transition-colors">Home</Link>
+        {/* Lifestyle hero image — right side */}
+        <div className="absolute right-[4%] top-1/2 -translate-y-1/2 hidden lg:block pointer-events-none">
+          <div
+            className="relative rounded-2xl overflow-hidden"
+            style={{
+              width: "440px",
+              height: "340px",
+              boxShadow: "0 28px 60px -28px rgba(201,123,99,0.45), 0 10px 30px -12px rgba(107,130,112,0.25)",
+              border: "1px solid rgba(255,255,255,0.5)",
+            }}
+          >
+            <img
+              src="/assets/visuals/etsy-kids-wall-art-sizes-lifestyle.jpg"
+              alt="Scandinavian children's bedroom with a framed nursery art print on a white wall"
+              className="w-full h-full object-cover"
+              loading="eager"
+            />
+            {/* Caption badge */}
+            <div
+              className="absolute bottom-3 left-3 flex items-center gap-2 px-3 py-1.5 rounded-lg backdrop-blur-md"
+              style={{
+                background: "rgba(255,255,255,0.82)",
+                border: "1px solid rgba(201,123,99,0.25)",
+              }}
+            >
+              <span
+                className="text-[10px] font-mono tracking-[0.15em] uppercase"
+                style={{ color: "#c97b63" }}
+              >
+                Nursery · 11×14 print
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Content */}
+        <div className="container mx-auto px-4 md:px-8 max-w-[1200px] relative z-10">
+          <nav className="text-xs mb-6" style={{ color: "#8a7d72" }}>
+            <Link href="/" className="hover:opacity-80 transition-opacity" style={{ color: "#8a7d72" }}>Home</Link>
             <span className="mx-1.5">/</span>
-            <Link href="/etsy-print-sizes" className="hover:text-foreground transition-colors">Etsy Print Sizes</Link>
+            <Link href="/etsy-print-sizes" className="hover:opacity-80 transition-opacity" style={{ color: "#8a7d72" }}>Etsy Print Sizes</Link>
             <span className="mx-1.5">/</span>
-            <span className="text-foreground">Kids Wall Art Sizes</span>
+            <span style={{ color: "#2d2926" }}>Kids Wall Art Sizes</span>
           </nav>
 
-          <div className="flex flex-col lg:flex-row lg:items-start lg:gap-16">
-            <div className="flex-1 min-w-0">
-              <div
-                className="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold mb-5"
-                style={{
-                  background: "rgba(45,212,191,0.1)",
-                  border: "1px solid rgba(45,212,191,0.25)",
-                  color: "#2DD4BF",
-                }}
+          <div className="max-w-[620px]">
+            <div className="flex items-center gap-2 mb-5">
+              <div className="h-px w-8" style={{ background: "#c97b6380" }} />
+              <span
+                className="text-xs font-mono tracking-[0.15em] uppercase"
+                style={{ color: "#c97b63" }}
               >
-                Kids &amp; Nursery Prints · Size Guide
-              </div>
-
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-5 leading-tight">
-                Etsy Kids Wall Art Sizes
-              </h1>
-
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed" style={{ maxWidth: "42rem" }}>
-                The sizes that sell for nursery and children&apos;s room prints — 8x10, 11x14, 16x20, A4, A3 and more — with exact pixel dimensions at 300 DPI and the ratio packs buyers expect.
-              </p>
-
-              <div className="mb-10">
-                <a
-                  href={appUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button className="text-base px-8 py-3">
-                    Generate All Kids Art Sizes Free →
-                  </Button>
-                </a>
-              </div>
-
-              {/* Trust pills */}
-              <div className="flex flex-wrap gap-1.5 sm:gap-2">
-                {[
-                  "Up to 70 print-ready files",
-                  "All 5 ratio packs",
-                  "Portrait, landscape & square",
-                ].map((pill) => (
-                  <span
-                    key={pill}
-                    className="inline-flex items-center gap-1 rounded-full border border-border bg-surface px-2 text-[11px] sm:text-xs sm:px-2.5 py-1 text-muted-foreground"
-                  >
-                    <Check className="w-3 h-3 text-accent-light flex-shrink-0" />
-                    {pill}
-                  </span>
-                ))}
-              </div>
+                Niche Guide · Kids &amp; Nursery
+              </span>
             </div>
 
-            {/* Hero visual — CSS size diagram */}
-            <div className="hidden lg:flex flex-col items-center justify-start pt-2 flex-shrink-0 gap-3" style={{ width: 300 }}>
+            <h1 className="font-bold tracking-tight mb-5">
+              <span className="block text-3xl md:text-4xl lg:text-5xl mb-1.5" style={{ color: "#2d2926" }}>
+                Etsy Kids Wall Art Sizes
+              </span>
+              <span className="block text-xl md:text-2xl lg:text-[1.7rem] font-semibold" style={{ color: "#5a4f48" }}>
+                8×10, 11×14, 16×20 &amp; every ratio pack buyers expect
+              </span>
+            </h1>
+
+            <p className="text-base mb-6 max-w-lg leading-relaxed" style={{ color: "#6b5e54" }}>
+              The sizes that sell for nursery and children&apos;s room prints &mdash; with exact pixel dimensions at 300 DPI and the ratio packs Etsy buyers expect.
+            </p>
+
+            <div className="mb-5">
+              <a href={appUrl} target="_blank" rel="noopener noreferrer">
+                <Button className="text-sm px-6 py-2.5">
+                  Generate All Kids Art Sizes Free &rarr;
+                </Button>
+              </a>
+              <p className="text-sm mt-2" style={{ color: "#8a7d72" }}>
+                Free &rarr; upload once, get every kids size at 300&nbsp;DPI.
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-2">
+              {[
+                "Up to 70 print-ready files",
+                "All 5 ratio packs",
+                "Portrait, landscape & square",
+                "300 DPI pixel dimensions",
+              ].map((pill) => (
+                <div
+                  key={pill}
+                  className="flex items-center gap-1.5 px-2.5 py-1 rounded-md backdrop-blur-sm border"
+                  style={{
+                    background: "rgba(255,255,255,0.55)",
+                    borderColor: "rgba(201,123,99,0.3)",
+                  }}
+                >
+                  <Check className="h-3 w-3 flex-shrink-0" style={{ color: "#6b8270" }} />
+                  <span className="text-xs font-medium" style={{ color: "#5a4f48" }}>
+                    {pill}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            {/* Mobile-only lifestyle image — stacks below hero text */}
+            <div className="lg:hidden mt-8">
               <div
-                className="rounded-2xl p-6 w-full"
+                className="relative rounded-2xl overflow-hidden"
                 style={{
-                  background: "linear-gradient(160deg, #0c0d14 0%, #080910 100%)",
-                  border: "1px solid rgba(255,255,255,0.07)",
+                  boxShadow: "0 18px 40px -20px rgba(201,123,99,0.4), 0 8px 22px -10px rgba(107,130,112,0.2)",
+                  border: "1px solid rgba(255,255,255,0.5)",
+                  aspectRatio: "4 / 3",
                 }}
               >
-                <p className="text-xs font-semibold uppercase mb-4" style={{ color: "#2DD4BF", letterSpacing: "0.14em", fontFamily: "ui-monospace, monospace" }}>
-                  Most-bought kids sizes
-                </p>
-                <div className="flex flex-col gap-3">
-                  {[
-                    { label: "16×20", ratio: "4:5", w: 200, h: 250 },
-                    { label: "11×14", ratio: "4:5", w: 176, h: 220 },
-                    { label: "8×10",  ratio: "4:5", w: 152, h: 190 },
-                  ].map((s) => (
-                    <div key={s.label} className="flex items-center gap-3">
-                      <div
-                        className="rounded flex items-center justify-center flex-shrink-0"
-                        style={{
-                          width: 36,
-                          height: Math.round(36 * (s.h / s.w)),
-                          background: "rgba(45,212,191,0.12)",
-                          border: "1px solid rgba(45,212,191,0.3)",
-                        }}
-                      />
-                      <div>
-                        <span className="text-sm font-semibold text-white/90">{s.label}&Prime;</span>
-                        <span className="text-xs text-white/40 ml-2">{s.ratio}</span>
-                      </div>
-                    </div>
-                  ))}
-                  <div className="border-t border-white/10 pt-3 mt-1">
-                    <span className="text-xs text-white/40">+ A4, A3, 8×12, 12×18 &amp; more</span>
-                  </div>
+                <img
+                  src="/assets/visuals/etsy-kids-wall-art-sizes-lifestyle.jpg"
+                  alt="Scandinavian children's bedroom with a framed nursery art print on a white wall"
+                  className="w-full h-full object-cover"
+                  loading="eager"
+                />
+                <div
+                  className="absolute bottom-3 left-3 flex items-center gap-2 px-3 py-1.5 rounded-lg backdrop-blur-md"
+                  style={{
+                    background: "rgba(255,255,255,0.82)",
+                    border: "1px solid rgba(201,123,99,0.25)",
+                  }}
+                >
+                  <span
+                    className="text-[10px] font-mono tracking-[0.15em] uppercase"
+                    style={{ color: "#c97b63" }}
+                  >
+                    Nursery · 11×14 print
+                  </span>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+
+        {/* Soft transition gradient — pastel hero to darker below */}
+        <div
+          className="absolute bottom-0 left-0 right-0 h-24 pointer-events-none"
+          style={{
+            background: "linear-gradient(to bottom, transparent 0%, rgba(232,240,229,0.4) 50%, var(--background) 100%)",
+          }}
+        />
+      </section>
+
+      <div className="container mx-auto px-4 md:px-8 max-w-[1200px] pt-16 pb-12 md:pt-20">
+
+        {/* ===== QUICK ANSWER ===== */}
+        <div className="mb-16 md:mb-20">
+          <QuickAnswer question="What sizes should I offer for kids wall art on Etsy?">
+            The top-selling kids wall art sizes are <strong>8×10, 11×14, and 16×20</strong> (4:5 ratio) for US buyers, plus <strong>A4 and A3</strong> for international markets. Offering both 4:5 and 2:3 ratio files in one listing doubles your buyer pool with zero extra design work — nursery gallery walls commonly mix both ratios.
+          </QuickAnswer>
+        </div>
 
         {/* ===== SECTION 1: What sizes sell best ===== */}
         <section className="mb-20 md:mb-24">
@@ -364,18 +443,13 @@ export default function EtsyKidsWallArtSizesPage() {
         </section>
 
         {/* ===== CTA 1: Mid-content — ratio coverage angle ===== */}
-        <div className="mb-20 md:mb-24">
-          <Card accent className="p-6 md:p-8 text-center">
-            <h3 className="text-lg font-bold text-foreground mb-2">
-              Stop leaving ratio packs half-done
-            </h3>
-            <p className="text-muted-foreground mb-5 mx-auto text-sm" style={{ maxWidth: "36rem" }}>
-              Upload your kids art once. SnapToSize delivers 4:5, 2:3, 3:4, ISO and square files simultaneously — all at 300 DPI, all under Etsy&apos;s 20MB limit, ready to attach to your listing.
-            </p>
-            <a href={appUrl} target="_blank" rel="noopener noreferrer">
-              <Button className="text-sm px-6 py-2.5">Cover Every Ratio Free →</Button>
-            </a>
-          </Card>
+        <div className="-mt-8 mb-14 md:mb-16">
+          <ContextualCTA
+            problem="Most kids art listings only cover 8×10 — and lose every buyer with a different frame."
+            solution="Upload once. SnapToSize delivers all 4:5, 2:3, 3:4, ISO and square files simultaneously — 300 DPI, under Etsy's 20MB limit."
+            appUrl={appUrl}
+            buttonText="Cover Every Ratio Free"
+          />
         </div>
 
         {/* ===== SECTION 3: Common frame sizes ===== */}
@@ -508,18 +582,6 @@ export default function EtsyKidsWallArtSizesPage() {
             artwork="littledeerquote"
             heading="One upload. Every kids art size your buyers need."
             subtext="SnapToSize generates 4:5, 2:3, 3:4, ISO and square files simultaneously — all at 300 DPI, all under Etsy's 20MB limit."
-          />
-        </section>
-
-        {/* Lifestyle mockup */}
-        <section className="mb-20 md:mb-24 rounded-2xl overflow-hidden">
-          <img
-            src="/assets/visuals/etsy-kids-wall-art-sizes-lifestyle.jpg"
-            alt="Bright Scandinavian children's bedroom with white walls featuring a whimsical animal illustration in a wooden frame above a bookshelf"
-            width={1200}
-            height={900}
-            className="w-full h-auto"
-            loading="lazy"
           />
         </section>
 

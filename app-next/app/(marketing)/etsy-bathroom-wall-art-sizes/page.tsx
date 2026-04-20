@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
+import { Button } from "@/components/Button";
+import { ContextualCTA } from "@/components/ContextualCTA";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { FinalCTA } from "@/components/FinalCTA";
+import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import RelatedPages from "@/components/RelatedPages";
-import { Button } from "@/components/Button";
-import { Check, ArrowRight, Ruler, Frame, Image as ImageIcon } from "lucide-react";
+import { Check, ArrowRight, Frame, Image as ImageIcon } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Etsy Bathroom Wall Art Sizes — Print Guide",
@@ -22,6 +24,7 @@ export const metadata: Metadata = {
         url: "/assets/og/etsy-bathroom-wall-art-sizes.png",
         width: 1200,
         height: 630,
+        alt: "Etsy Bathroom Wall Art Sizes — 5×7, 8×10, 11×14, A4 print guide",
       },
     ],
   },
@@ -142,6 +145,8 @@ const faqItems = [
   },
 ];
 
+const appUrl = "https://app.snaptosize.com?source=seo_etsy-bathroom-wall-art-sizes&kind=niche";
+
 export default function EtsyBathroomWallArtSizesPage() {
   return (
     <>
@@ -150,122 +155,269 @@ export default function EtsyBathroomWallArtSizesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <div className="container mx-auto px-4 md:px-8 max-w-[1200px] py-12">
-        {/* Breadcrumb */}
-        <nav className="mb-8 text-sm text-foreground-60" aria-label="Breadcrumb">
-          <ol className="flex items-center gap-2 flex-wrap">
-            <li>
-              <Link href="/" className="hover:text-foreground transition-colors">
-                Home
-              </Link>
-            </li>
-            <li>/</li>
-            <li>
-              <Link href="/etsy-print-sizes" className="hover:text-foreground transition-colors">
-                Etsy Print Sizes
-              </Link>
-            </li>
-            <li>/</li>
-            <li className="text-foreground">Bathroom Wall Art Sizes</li>
-          </ol>
-        </nav>
+      {/* ===== HERO — Calm Tile Spa ===== */}
+      <section
+        className="relative pt-12 pb-20 md:pt-16 md:pb-28 overflow-hidden"
+        style={{
+          background:
+            "linear-gradient(145deg, #eef2ed 0%, #e6ede6 30%, #f0ede6 65%, #e8ebe5 100%)",
+        }}
+      >
+        {/* Soft tile grid pattern */}
+        <div
+          className="absolute inset-0 opacity-[0.18]"
+          style={{
+            backgroundImage:
+              "linear-gradient(#6b827033 1px, transparent 1px), linear-gradient(90deg, #6b827033 1px, transparent 1px)",
+            backgroundSize: "42px 42px",
+          }}
+        />
+        {/* Sage blob top-right */}
+        <div
+          className="absolute top-[-14%] right-[-8%] w-[520px] h-[520px] rounded-full opacity-[0.18]"
+          style={{ background: "radial-gradient(circle, #a8c2ad, transparent 70%)" }}
+        />
+        {/* Warm cream blob bottom-left */}
+        <div
+          className="absolute bottom-[-18%] left-[-6%] w-[420px] h-[420px] rounded-full opacity-[0.14]"
+          style={{ background: "radial-gradient(circle, #d8cab3, transparent 70%)" }}
+        />
 
-        {/* Hero */}
-        <section className="pt-10 pb-16 md:pt-14 md:pb-24">
-          <div className="flex flex-col lg:flex-row lg:items-start lg:gap-16">
-            <div className="flex-1 min-w-0">
+        {/* CSS Bathroom Wall Mockup — portrait frame + mirror */}
+        <div className="absolute right-[6%] top-1/2 -translate-y-1/2 hidden lg:block pointer-events-none">
+          <div className="relative" style={{ width: "300px", height: "340px" }}>
+            {/* Mirror silhouette — rounded rect */}
+            <div
+              className="absolute"
+              style={{
+                width: "110px",
+                height: "160px",
+                top: "40px",
+                left: "0",
+                background: "linear-gradient(160deg, #f4f1ea 0%, #e0d9c8 100%)",
+                border: "3px solid #c9bfa8",
+                borderRadius: "55px",
+                boxShadow: "0 14px 36px -18px rgba(107,130,112,0.35)",
+              }}
+            >
+              {/* Mirror highlight */}
               <div
-                className="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold mb-5"
+                className="absolute"
                 style={{
-                  background: "rgba(45,212,191,0.1)",
-                  border: "1px solid rgba(45,212,191,0.25)",
-                  color: "#2DD4BF",
+                  top: "14px",
+                  left: "14px",
+                  width: "32px",
+                  height: "60px",
+                  background: "linear-gradient(160deg, rgba(255,255,255,0.6), transparent)",
+                  borderRadius: "20px",
                 }}
+              />
+            </div>
+
+            {/* Portrait frame — 8×10 (4:5), main */}
+            <div
+              className="absolute shadow-[0_18px_40px_-20px_rgba(107,130,112,0.4)]"
+              style={{
+                width: "128px",
+                height: "160px",
+                top: "20px",
+                left: "140px",
+                background: "#fff",
+                border: "7px solid #e0d9c8",
+                borderRadius: "2px",
+              }}
+            >
+              <div
+                className="w-full h-full flex items-center justify-center"
+                style={{ background: "#f7f3ea" }}
               >
-                Bathroom Art · Size Guide
-              </div>
-
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-5 leading-tight">
-                Etsy Bathroom Wall Art Sizes
-              </h1>
-
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed" style={{ maxWidth: "42rem" }}>
-                Bathroom walls are small, narrow, and unforgiving. Get the size wrong and your print
-                won&apos;t fit the buyer&apos;s frame. Every print size that sells for bathroom wall
-                art on Etsy — 5×7, 8×10, 11×14, A4, portrait ratios — with exact pixel dimensions
-                at 300 DPI.
-              </p>
-
-              <div className="mb-10">
-                <a href="https://app.snaptosize.com">
-                  <Button className="gap-2">
-                    Generate All Bathroom Sizes
-                    <ArrowRight className="w-4 h-4" />
-                  </Button>
-                </a>
-              </div>
-
-              {/* Trust pills */}
-              <div className="flex flex-wrap gap-1.5 sm:gap-2">
-                {[
-                  "Portrait-first sizing",
-                  "All major ratios covered",
-                  "300 DPI pixel dimensions",
-                  "International + US frames",
-                ].map((pill) => (
+                <div className="text-center px-3">
+                  {/* Botanical stem */}
+                  <svg viewBox="0 0 60 100" className="w-10 mx-auto mb-2" fill="none" stroke="#6b8270" strokeWidth="1.5">
+                    <path d="M30 95 L30 20" />
+                    <path d="M30 70 Q15 60 10 45" />
+                    <path d="M30 55 Q45 45 50 30" />
+                    <path d="M30 40 Q20 30 18 18" />
+                    <ellipse cx="10" cy="45" rx="6" ry="3" fill="#a8c2ad" stroke="none" transform="rotate(-30 10 45)" />
+                    <ellipse cx="50" cy="30" rx="6" ry="3" fill="#a8c2ad" stroke="none" transform="rotate(30 50 30)" />
+                    <ellipse cx="18" cy="18" rx="5" ry="2.5" fill="#a8c2ad" stroke="none" transform="rotate(-20 18 18)" />
+                  </svg>
                   <span
-                    key={pill}
-                    className="inline-flex items-center gap-1 rounded-full border border-border bg-surface px-2 text-[11px] sm:text-xs sm:px-2.5 py-1 text-muted-foreground"
+                    className="text-[9px] font-mono tracking-[0.18em] uppercase block"
+                    style={{ color: "#6b8270" }}
                   >
-                    <Check className="w-3 h-3 text-accent-light flex-shrink-0" />
-                    {pill}
+                    8×10
                   </span>
-                ))}
+                </div>
               </div>
             </div>
 
-            {/* Hero visual — CSS size diagram */}
-            <div className="hidden lg:flex flex-col items-center justify-start pt-2 flex-shrink-0 gap-3" style={{ width: 300 }}>
+            {/* Small square frame — 5×7 */}
+            <div
+              className="absolute shadow-[0_12px_28px_-16px_rgba(107,130,112,0.35)]"
+              style={{
+                width: "70px",
+                height: "98px",
+                top: "210px",
+                left: "170px",
+                background: "#fff",
+                border: "5px solid #d8cab3",
+                borderRadius: "2px",
+              }}
+            >
               <div
-                className="rounded-2xl p-6 w-full"
+                className="w-full h-full flex items-center justify-center"
+                style={{ background: "#fdfaf3" }}
+              >
+                <div className="text-center">
+                  <span className="text-base block leading-none" style={{ color: "#8a7d5c" }}>&#x1F33F;</span>
+                  <span
+                    className="text-[7px] font-mono tracking-[0.18em] uppercase block mt-1"
+                    style={{ color: "#8a7d5c" }}
+                  >
+                    5×7
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Towel rail hint — ground line */}
+            <div
+              className="absolute"
+              style={{
+                top: "308px",
+                left: "0",
+                width: "280px",
+                height: "2px",
+                background: "linear-gradient(90deg, transparent, #c9bfa880 20%, #c9bfa880 80%, transparent)",
+              }}
+            />
+          </div>
+        </div>
+
+        {/* Content */}
+        <div className="container mx-auto px-4 md:px-8 max-w-[1200px] relative z-10">
+          <nav className="text-xs mb-6" style={{ color: "#6b7268" }} aria-label="Breadcrumb">
+            <ol className="flex items-center gap-1.5 flex-wrap">
+              <li>
+                <Link href="/" className="hover:opacity-80 transition-opacity" style={{ color: "#6b7268" }}>
+                  Home
+                </Link>
+              </li>
+              <li>/</li>
+              <li>
+                <Link href="/etsy-print-sizes" className="hover:opacity-80 transition-opacity" style={{ color: "#6b7268" }}>
+                  Etsy Print Sizes
+                </Link>
+              </li>
+              <li>/</li>
+              <li style={{ color: "#2d2e2a" }}>Etsy Bathroom Wall Art Sizes</li>
+            </ol>
+          </nav>
+
+          <div className="max-w-[620px]">
+            <div className="flex items-center gap-2 mb-5">
+              <div className="h-px w-8" style={{ background: "#6b827080" }} />
+              <span
+                className="text-xs font-mono tracking-[0.15em] uppercase"
+                style={{ color: "#6b8270" }}
+              >
+                Niche Guide · Bathroom
+              </span>
+            </div>
+
+            <h1 className="font-bold tracking-tight mb-5">
+              <span className="block text-3xl md:text-4xl lg:text-5xl mb-1.5" style={{ color: "#2d2e2a" }}>
+                Etsy Bathroom Wall Art Sizes
+              </span>
+              <span className="block text-xl md:text-2xl lg:text-[1.65rem] font-semibold" style={{ color: "#525751" }}>
+                Portrait-first sizing for narrow, unforgiving walls
+              </span>
+            </h1>
+
+            <p className="text-base mb-6 max-w-lg leading-relaxed" style={{ color: "#5e635b" }}>
+              Bathroom walls are small, narrow, and unforgiving. Every print size that sells for bathroom wall art on Etsy &mdash; 5×7, 8×10, 11×14, A4, portrait ratios &mdash; with exact pixel dimensions at 300&nbsp;DPI.
+            </p>
+
+            <div className="mb-5">
+              <a href={appUrl} target="_blank" rel="noopener noreferrer">
+                <Button className="gap-2 text-sm px-6 py-2.5">
+                  Generate All Bathroom Sizes Free
+                  <ArrowRight className="w-4 h-4" />
+                </Button>
+              </a>
+              <p className="text-sm mt-2" style={{ color: "#7a7f76" }}>
+                Free &rarr; upload once, get every bathroom size at 300&nbsp;DPI.
+              </p>
+            </div>
+
+            <div className="flex flex-wrap gap-2">
+              {[
+                "Portrait-first sizing",
+                "All major ratios covered",
+                "300 DPI pixel dimensions",
+                "International + US frames",
+              ].map((pill) => (
+                <div
+                  key={pill}
+                  className="flex items-center gap-1.5 px-2.5 py-1 rounded-md backdrop-blur-sm border"
+                  style={{
+                    background: "rgba(255,255,255,0.55)",
+                    borderColor: "rgba(107,130,112,0.28)",
+                  }}
+                >
+                  <Check className="h-3 w-3 flex-shrink-0" style={{ color: "#6b8270" }} />
+                  <span className="text-xs font-medium" style={{ color: "#525751" }}>
+                    {pill}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            {/* Mobile-only lifestyle image — stacks below hero text */}
+            <div className="lg:hidden mt-8">
+              <div
+                className="relative rounded-2xl overflow-hidden"
                 style={{
-                  background: "linear-gradient(160deg, #0c0d14 0%, #080910 100%)",
-                  border: "1px solid rgba(255,255,255,0.07)",
+                  boxShadow: "0 18px 40px -20px rgba(107,130,112,0.4), 0 8px 22px -10px rgba(107,130,112,0.2)",
+                  border: "1px solid rgba(255,255,255,0.5)",
+                  aspectRatio: "4 / 3",
                 }}
               >
-                <p className="text-xs font-semibold uppercase mb-4" style={{ color: "#2DD4BF", letterSpacing: "0.14em", fontFamily: "ui-monospace, monospace" }}>
-                  Best bathroom sizes
-                </p>
-                <div className="flex flex-col gap-3">
-                  {[
-                    { label: "8×10", ratio: "4:5", w: 4, h: 5 },
-                    { label: "5×7",  ratio: "5:7", w: 5, h: 7 },
-                    { label: "11×14", ratio: "4:5", w: 11, h: 14 },
-                  ].map((s) => (
-                    <div key={s.label} className="flex items-center gap-3">
-                      <div
-                        className="rounded flex items-center justify-center flex-shrink-0"
-                        style={{
-                          width: 36,
-                          height: Math.round(36 * (s.h / s.w)),
-                          background: "rgba(45,212,191,0.12)",
-                          border: "1px solid rgba(45,212,191,0.3)",
-                        }}
-                      />
-                      <div>
-                        <span className="text-sm font-semibold text-white/90">{s.label}&Prime;</span>
-                        <span className="text-xs text-white/40 ml-2">{s.ratio}</span>
-                      </div>
-                    </div>
-                  ))}
-                  <div className="border-t border-white/10 pt-3 mt-1">
-                    <span className="text-xs text-white/40">+ A4, 8×12, 12×18 &amp; more</span>
-                  </div>
+                <img
+                  src="/assets/visuals/etsy-bathroom-wall-art-sizes-lifestyle.jpg"
+                  alt="Calm bathroom wall with a framed botanical art print in portrait orientation"
+                  className="w-full h-full object-cover"
+                  loading="eager"
+                />
+                <div
+                  className="absolute bottom-3 left-3 flex items-center gap-2 px-3 py-1.5 rounded-lg backdrop-blur-md"
+                  style={{
+                    background: "rgba(255,255,255,0.82)",
+                    border: "1px solid rgba(107,130,112,0.25)",
+                  }}
+                >
+                  <span
+                    className="text-[10px] font-mono tracking-[0.15em] uppercase"
+                    style={{ color: "#6b8270" }}
+                  >
+                    Bathroom · 8×10 portrait
+                  </span>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
+
+      <div className="container mx-auto px-4 md:px-8 max-w-[1200px] pt-16 pb-12 md:pt-20">
+
+        {/* ===== QUICK ANSWER ===== */}
+        <div className="mb-16 md:mb-20">
+          <QuickAnswer question="What sizes sell best for bathroom wall art on Etsy?">
+            <strong>5×7, 8×10, and 11×14</strong> are the top-selling bathroom wall art sizes in the US. Portrait (vertical) orientation dominates because most bathroom walls are taller than wide. For international buyers, <strong>A4</strong> is essential — it fits standard IKEA frames popular across the UK, EU, and Australia.
+          </QuickAnswer>
+        </div>
 
         {/* Section 1: What sizes work best */}
         <section className="mb-16">
@@ -367,6 +519,49 @@ export default function EtsyBathroomWallArtSizesPage() {
           </p>
         </section>
 
+        {/* Inline violet CTA — mid-content, bathroom-niche angle */}
+        <div className="mb-16">
+          <div
+            className="rounded-xl p-7 md:p-8 max-w-2xl mx-auto"
+            style={{
+              background: "rgba(167,139,250,0.10)",
+              border: "1px solid rgba(167,139,250,0.30)",
+              borderBottom: "2px solid rgba(167,139,250,0.55)",
+            }}
+          >
+            <p className="text-foreground-60 text-sm mb-3">
+              Spa-ready prints only convert when the buyer&apos;s exact frame is covered — portrait 2:3, 4:5, and A4 all in one listing.
+            </p>
+            <p className="text-lg font-medium mb-6 text-foreground">
+              Resize bathroom art for every Etsy ratio in one upload — 300 DPI, under 20MB, zero Photoshop.
+            </p>
+            <a
+              href={appUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-white bg-violet-400 hover:bg-violet-300 transition-colors"
+            >
+              Cover Every Bathroom Size Free
+              <ArrowRight className="h-4 w-4" />
+            </a>
+            <p className="text-xs text-foreground-60 mt-3">
+              No account needed · No credit card required
+            </p>
+          </div>
+        </div>
+
+        {/* Lifestyle mockup — visual break after orientation section */}
+        <section className="mb-16 rounded-2xl overflow-hidden">
+          <img
+            src="/assets/visuals/etsy-bathroom-wall-art-sizes-lifestyle.jpg"
+            alt="Clean minimalist bathroom with white subway tiles featuring a framed botanical art print above a wooden shelf — spa-like aesthetic"
+            width={1200}
+            height={900}
+            className="w-full h-auto"
+            loading="lazy"
+          />
+        </section>
+
         {/* Section 3: Size guide by ratio */}
         <section className="mb-16">
           <h2 className="text-2xl md:text-3xl font-bold mb-6 text-foreground">
@@ -415,23 +610,15 @@ export default function EtsyBathroomWallArtSizesPage() {
           </p>
         </section>
 
-        {/* CTA 1 — angle: cover every ratio without extra work */}
-        <section className="mb-16 rounded-2xl px-8 py-10 text-center"
-          style={{ background: "linear-gradient(135deg, rgba(45,212,191,0.08) 0%, rgba(167,139,250,0.08) 100%)", border: "1px solid rgba(45,212,191,0.2)" }}>
-          <h3 className="text-xl font-bold text-foreground mb-3">
-            One upload. All bathroom wall art ratios.
-          </h3>
-          <p className="text-foreground-70 mb-6 max-w-[580px] mx-auto">
-            Upload your design once and SnapToSize generates every ratio-correct file — 2:3, 4:5,
-            3:4, A4 — all at print-ready 300 DPI. No Photoshop, no manual resizing.
-          </p>
-          <a href="https://app.snaptosize.com">
-            <Button className="gap-2">
-              Try Free — No Account Needed
-              <ArrowRight className="w-4 h-4" />
-            </Button>
-          </a>
-        </section>
+        {/* CTA 1 — ratio coverage */}
+        <div className="mb-16">
+          <ContextualCTA
+            problem="Most bathroom listings only offer 8×10 — and lose every buyer with a 5×7 shelf or an A4 IKEA frame."
+            solution="Upload once. SnapToSize generates 2:3, 4:5, 3:4, and A4 files automatically — all at 300 DPI, no Photoshop."
+            appUrl={appUrl}
+            buttonText="Try Free — No Account Needed"
+          />
+        </div>
 
         {/* Section 4: Common frame sizes */}
         <section className="mb-16">
@@ -560,23 +747,23 @@ export default function EtsyBathroomWallArtSizesPage() {
             </table>
           </div>
 
-          {/* CTA 2 — angle: skip the pixel math entirely */}
-          <div className="rounded-xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
-            style={{ background: "rgba(167,139,250,0.08)", border: "1px solid rgba(167,139,250,0.2)" }}>
-            <div>
-              <p className="font-semibold text-foreground mb-1">Skip the pixel math entirely</p>
-              <p className="text-sm text-foreground-60">
-                Upload once and SnapToSize calculates every dimension and outputs all sizes at 300 DPI.
-              </p>
-            </div>
-            <a href="https://app.snaptosize.com" className="shrink-0">
-              <Button variant="secondary" className="gap-1.5 whitespace-nowrap">
-                Try SnapToSize Free
-                <ArrowRight className="w-3.5 h-3.5" />
-              </Button>
+          <p className="text-sm text-muted-foreground mt-4">
+            No pixel calculations needed — SnapToSize generates every size automatically at 300 DPI.{" "}
+            <a href={appUrl} target="_blank" rel="noopener noreferrer" className="text-accent-light underline underline-offset-2 hover:text-foreground transition-colors">
+              Try it free →
             </a>
-          </div>
+          </p>
         </section>
+
+        {/* CTA 2 — before ListingOutputShowcase */}
+        <div className="mb-16">
+          <ContextualCTA
+            problem="Bathroom buyers grab the first listing where the size fits their frame — missing sizes mean lost sales."
+            solution="SnapToSize generates every bathroom size from one upload — 5×7, 8×10, 11×14, A4 — ready to attach to your Etsy listing."
+            appUrl={appUrl}
+            buttonText="Generate All Sizes Free"
+          />
+        </div>
 
         {/* ListingOutputShowcase */}
         <section className="mb-16">
@@ -584,18 +771,6 @@ export default function EtsyBathroomWallArtSizesPage() {
             artwork="floral_vase"
             heading="One botanical print. Every bathroom size."
             subtext="SnapToSize takes your floral illustration and generates 5×7, 8×10, 11×14, A4, and every other ratio your buyer might need — automatically, at print-ready quality."
-          />
-        </section>
-
-        {/* Lifestyle mockup */}
-        <section className="mb-16 rounded-2xl overflow-hidden">
-          <img
-            src="/assets/visuals/etsy-bathroom-wall-art-sizes-lifestyle.jpg"
-            alt="Clean minimalist bathroom with white subway tiles featuring a framed botanical art print above a wooden shelf — spa-like aesthetic"
-            width={1200}
-            height={900}
-            className="w-full h-auto"
-            loading="lazy"
           />
         </section>
 
@@ -653,7 +828,7 @@ export default function EtsyBathroomWallArtSizesPage() {
           heading="Never lose a bathroom wall art sale to the wrong frame size"
           stat="Every ratio. Every frame size. One upload."
           description="SnapToSize generates every size your buyer might need — 5×7, 8×10, 11×14, A4, and more — from a single upload. Cover every bathroom, every frame, every buyer."
-          appUrl="https://app.snaptosize.com"
+          appUrl={appUrl}
         />
       </div>
     </>
