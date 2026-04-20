@@ -1,192 +1,251 @@
 # SnapToSize — Gemini Prompt Library
 
-**Lest av:** Social Media Content Creator, Ideator
-**Regel:** Bruk kun prompts fra dette biblioteket. Aldri improvisér Gemini-prompts uten ICP-forankring og SnapToSize-marketing.
+**Lest av:** Social Media Content Creator Agent, Ideator Agent
+**Autoritet:** Dette er primærkilden for alle Gemini-prompts. PINTEREST_VISUAL_GUIDE.md gjelder fortsatt for konseptvalg og QA. Denne filen gir de ferdige promptene.
 
 ---
 
-## OBLIGATORISKE KRAV — ALLE GEMINI-BILDER
+## FILOSOFI — Direct Marketing Generation
 
-Disse 5 elementene MÅ være med i ALLE prompts. Mangler noen av dem = kast og regen.
+Gemini skal generere **ferdig marketingmateriell** — ikke lifestyle-foto som trenger overlay etterpå.
 
-| Krav | Sjekk |
-|------|-------|
-| **SnapToSize-URL synlig** | `app.snaptosize.com` i nettleser, badge, eller kort i bildet |
-| **Pain→solution-arc** | Venstre/øverst = smertepunkt, høyre/under = løsning |
-| **Etsy-selger-kontekst** | Konkrete detaljer: ZIP-mapper, ratio-navn (2:3, 4:5), filnavn, ordreantall |
-| **Tekst-safe topp 30%** | Øverste 30% av bildet = rent, uten elementer — for overlay-tekst |
-| **70 files, ikke 28** | Alltid "70 files" som verdiforslag — dette er det fulle tilbudet |
+**Feil tilnærming (overlay-avhengig):**
+> "Woman at desk with laptop" → legg på tekst etterpå
 
-**Tommelfingerregelen:** Dekk teksten i bildet. Skjønner du fortsatt at det handler om SnapToSize og løser et Etsy-selger-problem? Nei = regen.
+**Riktig tilnærming (alt bakt inn):**
+> Generer et bilde der SnapToSize-branding, produkttall, og hook-tekst er en naturlig del av komposisjonen — som om en profesjonell designer lagde det.
+
+Gemini håndterer bold typografi, farger, UI-mockups, og compositing. Begrensningen er bare prompten.
+
+---
+
+## OBLIGATORISKE KRAV — ALLE PROMPTS
+
+Alle Gemini-bilder MÅ inneholde disse elementene **bakt direkte inn i bildet**:
+
+| Element | Krav |
+|---------|------|
+| **Hook-tekst** | Bold, stor, teal (#2DD4BF) eller hvit — øverste 20% av bildet |
+| **SnapToSize-URL** | `app.snaptosize.com` synlig — i nettleser, teal pill, eller badge |
+| **Produkttall** | "70 files", "300 DPI", "5 packs" — alltid "70 files", aldri "28" |
+| **Etsy-selger-kontekst** | Konkret detalj: ZIP-pakkenavn, ratio-navn, filnavn, ordreantall |
+| **Tekst-safe bunn** | Bunn 10% kan ha en teal pill: `snaptosize.com · Free to start` |
+
+**QA-test:** Dekk all tekst i bildet. Skjønner du at det er SnapToSize og hva det løser? Nei = regen.
 
 ---
 
 ## TEKNISKE INNSTILLINGER
 
 ```python
+# Alltid bruk imagen-4.0-generate-001 (ikke gemini-3-pro-image-preview — utgått)
 client.models.generate_images(
     model="imagen-4.0-generate-001",
     prompt=PROMPT,
     config=types.GenerateImagesConfig(
         number_of_images=1,
-        aspect_ratio="9:16",   # Pinterest
-        # aspect_ratio="4:5",  # Instagram
+        aspect_ratio="9:16",   # Pinterest: 1000×1500
+        # aspect_ratio="4:5",  # Instagram: 1080×1350
     ),
 )
-# Resize til 1000x1500 (Pinterest) eller 1080x1350 (Instagram) med PIL
+# Alltid resize med PIL etter generering
+img = img.resize((1000, 1500), Image.LANCZOS)  # Pinterest
 ```
+
+**Ikke bruk overlay-script etterpå** — prompten skal gi et ferdig bilde.
 
 ---
 
-## KONSEPT 1 — DPI-angsten (300-dpi-makrokvalitet) ⭐⭐⭐⭐
+## PROMPT 1 — DPI-angsten: Before/After split (300-dpi-makrokvalitet)
 
 **Hook:** "Print shop rejected it. Again."
-**Pain:** Etsy-selger sender blurry/pixelert fil til trykkeriet → avvist → dårlig anmeldelse
-**Solution:** SnapToSize leverer 300 DPI på alle 70 filer automatisk
+**Scroll-stopp:** Etsy-selgere gjenkjenner umiddelbart avvisningsfrykt
 
 ```
-Photorealistic split-panel comparison photo, vertical portrait format, soft studio lighting.
-Two printed botanical wall art prints taped side-by-side on a clean white wall.
+Photorealistic marketing image, vertical portrait format, 9:16.
 
-LEFT PANEL — labeled 'Before':
-The print looks visibly pixelated and blurry — jagged edges on flower petals,
-muddy washed-out colors, visible pixel blocks.
-A small red sticky note reads: 'Print shop rejected — too low res'.
-Dim, flat lighting on this side.
+LAYOUT: Clean split-panel composition on a light cream background.
+TOP 20%: Dark navy bar (#0B0B12). Bold teal text (#2DD4BF), large:
+  "Gallery quality. Every single size."
+Smaller white text below: "300 DPI · 70 files · Etsy-ready"
 
-RIGHT PANEL — labeled 'After':
-Exact same botanical artwork, razor-sharp and vibrant —
-every petal edge crisp, ink texture visible, colors rich and true.
-A small teal badge in the corner reads: '300 DPI ✓ — app.snaptosize.com'.
-Bright, confident lighting on this side.
+MIDDLE 70%: Two printed botanical wall art prints side by side, slight drop shadow.
+LEFT PANEL — label "Before" in small red text above:
+  The print appears visibly pixelated — jagged flower petal edges, muddy colors,
+  visible pixel blocks. A red sticky note reads: "Print shop rejected — too low res".
+RIGHT PANEL — label "After" in small teal text above:
+  Same artwork, razor-sharp, vibrant true colors, crisp ink texture visible.
+  Small teal badge in corner: "300 DPI ✓"
+Thin teal vertical line (#2DD4BF) between panels.
 
-A thin teal vertical line divides the two panels in the center.
-TOP 25% of image: plain clean white wall, completely empty — text-safe zone.
-No people, no logos except the teal badge. Photorealistic DSLR photo aesthetic.
-```
+BOTTOM 10%: Rounded teal pill button, white text: "app.snaptosize.com · Free to start"
 
-**QA-sjekk:**
-- [ ] Pixelering er synlig på venstre side (ikke bare "slightly blurry")
-- [ ] "app.snaptosize.com" er i teal badge på høyre side
-- [ ] Topp 25% er helt rent
-- [ ] "300 DPI ✓" tekst er lesbar
-
----
-
-## KONSEPT 2 — En-upload-enkelheten (en-upload-enkelheten) ⭐⭐⭐
-
-**Hook:** "Upload once. Sell everywhere."
-**Pain:** Etsy-selger eksporterer manuelt til 10+ størrelser → timer med arbeid
-**Solution:** Ett upload → 70 filer i 5 ZIP-pakker, klare for Etsy
-
-```
-Photorealistic minimalist flat-lay, vertical portrait format, soft even studio lighting.
-Center of frame: open MacBook Air on a clean matte white desk.
-
-Browser shows app.snaptosize.com — simple drag-and-drop interface.
-File named 'botanical_print.png' in the upload zone.
-Green progress bar reads '100% complete' with checkmark.
-Screen text clearly readable: '70 files ready to download'.
-
-Fanning outward from the laptop in a clean upward semi-circle:
-5 crisp white ZIP folder cards with teal icons:
-  Card 1: '2:3 Pack — 7 files'
-  Card 2: '3:4 Pack — 5 files'
-  Card 3: '4:5 Pack — 5 files'
-  Card 4: 'ISO Pack — 5 files'
-  Card 5: 'Extras — 6 files'
-Below the fan, clean text label: '70 files · 300 DPI · Etsy-ready'
-
-TOP 30%: plain white wall — completely empty, text-safe.
-No people, no clutter. Apple product-shoot minimal aesthetic. Photorealistic.
-```
-
-**QA-sjekk:**
-- [ ] `app.snaptosize.com` synlig i nettleser-URL
-- [ ] "70 files ready" lesbar på skjermen
-- [ ] ZIP-kortene er synlige og lesbare
-- [ ] Laptop er prominent (min 40% av framen)
-
----
-
-## KONSEPT 3 — Mappekaos-kontrasten (folder-chaos) ⭐⭐⭐⭐⭐
-
-**Hook:** "47 files. Still missing 8x10."
-**Pain:** Etsy-selger har et kaotisk Downloads-mappe med 50 ustrukturerte filer
-**Solution:** SnapToSize leverer organiserte ZIP-mapper
-
-```
-Photorealistic split image, vertical portrait format, dramatic contrast lighting.
-
-LEFT HALF (before): Cluttered MacBook desktop screenshot close-up.
-Downloads folder showing files named:
-'8x10_FINAL_v3_copy.jpg', '12x18_maybe.psd', 'print_attempt2.jpg', 'FINAL_REAL_final.jpg'
-47 files visible, overwhelming, chaotic.
-A red error badge: 'Missing 8×10 — buyer complained'.
-Warm dim frustrated lighting.
-
-RIGHT HALF (after): Clean, organized Finder window.
-Three neat ZIP folders:
-  '2:3 Pack — 7 files ✓'
-  '4:5 Pack — 5 files ✓'
-  'ISO Pack — 5 files ✓'
-Small teal text: 'app.snaptosize.com · 70 files · organized'
-Bright, clean, satisfying lighting.
-
-A teal vertical divider line in the center.
-TOP 25%: plain clean background, empty — text-safe zone.
-Photorealistic screen photography, DSLR macro aesthetic.
+Photorealistic, DSLR studio lighting, no people.
 ```
 
 ---
 
-## KONSEPT 4 — Livsstil: den tidrike selgeren (livsstil-den-tidrike-selgeren) ⭐⭐⭐⭐
+## PROMPT 2 — En-upload-enkelheten: UI mockup (en-upload-enkelheten)
+
+**Hook:** "Upload once. 70 files ready."
+**Scroll-stopp:** Konkret produkt-demonstrasjon — folk ser nøyaktig hva de får
+
+```
+Photorealistic product marketing image, vertical portrait format, 9:16.
+
+LAYOUT: Clean white/light grey gradient background, minimalist Apple aesthetic.
+
+TOP 20%: Dark navy bar (#0B0B12). Bold white text, large:
+  "Upload once."
+  Bold teal text (#2DD4BF), same size: "70 files ready."
+Smaller grey text: "5 ratio packs · 300 DPI · Etsy-ready"
+
+MIDDLE 65%: Centered MacBook Air mockup (60% of frame width).
+  Browser open to app.snaptosize.com.
+  Interface shows: file "botanical_print.png" uploaded, green progress bar 100%.
+  Screen text clearly readable: "Your 70 files are ready to download".
+  5 white ZIP folder cards fan upward from the laptop top edge:
+    "2:3 Pack — 7 files", "3:4 Pack — 5 files", "4:5 Pack — 5 files",
+    "ISO Pack — 5 files", "Extras — 6 files"
+  Each card has a teal ZIP icon.
+
+BOTTOM 15%: Small clean text: "28 sizes portrait · plus landscape & square · 70 files total"
+  Rounded teal pill: "app.snaptosize.com · Free to start"
+
+No people. Soft studio lighting. Photorealistic.
+```
+
+---
+
+## PROMPT 3 — Mappekaos: Chaos vs Organization (folder-chaos)
+
+**Hook:** "47 files. Still missing 8×10."
+**Scroll-stopp:** Universell smerte for alle Etsy-selgere
+
+```
+Photorealistic marketing split image, vertical portrait format, 9:16.
+
+TOP 18%: Dark navy bar. Bold text:
+  White: "47 files."
+  Teal (#2DD4BF): "Still missing 8×10."
+  Smaller grey: "Sound familiar?"
+
+LEFT HALF — "Before" label top left in red:
+  MacBook screenshot, dark frustrated mood.
+  Downloads folder showing file names:
+    "8x10_FINAL_v3_copy.jpg"
+    "12x18_maybe.psd"
+    "print_REAL_final.jpg"
+    "FINAL_copy2.jpg"
+  47 files total visible. Red warning badge: "Buyer complained — missing size"
+  Cluttered, overwhelming, dim lighting.
+
+RIGHT HALF — "After" label top right in teal:
+  Clean bright Finder window.
+  Three organized folders with teal ZIP icons:
+    "2:3 Pack — 7 files ✓"
+    "4:5 Pack — 5 files ✓"
+    "ISO Pack — 5 files ✓"
+  Clean, satisfying, bright lighting.
+  Small text: "Generated by app.snaptosize.com"
+
+BOTTOM 10%: Teal pill: "app.snaptosize.com · Organize everything · Free"
+
+Teal vertical divider line between halves.
+Photorealistic screen mockup aesthetic, DSLR.
+```
+
+---
+
+## PROMPT 4 — Livsstil: Tidrike selgeren (livsstil-den-tidrike-selgeren)
 
 **Hook:** "She uploads once. Gets paid 47 times."
-**Pain:** Selger bruker timer på manuell resizing i stedet for å lage mer kunst
-**Solution:** SnapToSize frigjør tid → mer salg
+**Scroll-stopp:** Aspirational + konkret resultat
 
 ```
-Photorealistic lifestyle photo, vertical portrait format, warm morning light.
-A woman in her early 30s at a clean wooden desk in a bright home studio.
-She is relaxed, leaning back slightly in her chair, smiling at her laptop.
-The laptop screen shows app.snaptosize.com — a clean dashboard with:
-  'Botanical Series: 70 files ready · 4 packs downloaded today'
-On the wall behind her: 3 framed art prints in different sizes (5x7, 8x10, 11x14).
-On the desk: a coffee mug, a sketchbook, and a small plant.
-Natural morning light from a window, Scandinavian interior, white walls.
+Photorealistic lifestyle marketing photo, vertical portrait format, 9:16.
 
-TOP 30%: clean white wall above her head — empty, text-safe.
-Photorealistic, warm and aspirational lifestyle aesthetic.
-No text overlays on image itself except what's on the laptop screen.
+TOP 22%: Soft dark navy gradient overlay on photo background. Bold text:
+  White large: "She uploads once."
+  Teal large (#2DD4BF): "Gets paid 47 times."
+  Smaller grey: "SnapToSize · app.snaptosize.com"
+
+SCENE (remaining 78%): Bright Scandinavian home studio, warm morning light.
+  Woman in early 30s, relaxed, leaning back in chair, smiling.
+  Laptop screen clearly shows app.snaptosize.com dashboard:
+    Text visible: "Botanical Series — 70 files ready"
+    Stats row visible: "4 packs downloaded today · $247 earned"
+  Behind her: wall with 3 framed art prints (5×7, 8×10, 11×14).
+  On desk: coffee, sketchbook, small plant. White walls, wood tones.
+
+Bottom of image, subtle teal pill: "app.snaptosize.com · Free to start"
+
+Photorealistic, warm aspirational lifestyle aesthetic. No stock-photo feel.
+The SnapToSize dashboard text must be legible at full image size.
 ```
 
 ---
 
-## KONSEPT 5 — Kjøperen som forsvant (missing-buyer) ⭐⭐⭐⭐⭐
+## PROMPT 5 — Kjøperen som forsvant: Etsy listing (missing-buyer)
 
-**Hook:** "They wanted 8x10. You only had 5x7."
-**Pain:** Etsy-listing mangler populære størrelser → mister salg
-**Solution:** SnapToSize dekker alle 5 ratioes → ingen størrelser mangler
+**Hook:** "They wanted 8×10. You only had 5×7."
+**Scroll-stopp:** Direct pain — mister salg de ikke vet om
 
 ```
-Photorealistic mockup of an Etsy product listing page on a laptop screen,
-vertical portrait format, clean studio light.
+Photorealistic marketing mockup, vertical portrait format, 9:16.
 
-The listing shows a beautiful botanical wall art print.
-The 'Select size' dropdown is open, showing ONLY:
-  '5×7' and '8×12' — visibly missing 8×10, 11×14, A4.
-A chat bubble from 'Buyer': 'Do you have this in 8×10?'
-No reply visible — the seller is offline.
-A small sad-face or warning icon near the dropdown.
+TOP 20%: Dark navy bar. Bold text:
+  White: "They wanted 8×10."
+  Teal (#2DD4BF): "You only had 5×7."
+  Small grey: "Etsy sellers lose sales they never see"
 
-Second panel or overlay (bottom third):
-Same listing, now showing full size menu:
-  '5×7 · 8×10 · 11×14 · 12×18 · A4 · A3 · +22 more'
-Small teal text: 'app.snaptosize.com — all sizes, one upload'
+MIDDLE 50%: Laptop screen, depth-of-field photography.
+  Etsy product listing page for a botanical wall art print.
+  "Select size" dropdown OPEN, showing only: "5×7" and "8×12"
+  Red highlight around missing sizes. Chat bubble from "Buyer123":
+    "Do you have this in 8×10? Or A4?"
+  No reply visible — notification badge says "2 unanswered"
 
-TOP 25%: clean light background — text-safe.
-Photorealistic UI mockup, DSLR depth-of-field aesthetic.
+LOWER 25%: Same listing, transformed.
+  Size dropdown now shows full list:
+    "5×7 · 8×10 · 11×14 · 12×18 · A4 · A3 · +22 more sizes"
+  Small teal text overlay: "Fixed with app.snaptosize.com · 1 upload"
+  Green "In stock" badge visible.
+
+BOTTOM 5%: Teal pill: "app.snaptosize.com · All sizes · Free to start"
+
+Photorealistic UI mockup, shallow depth of field.
+```
+
+---
+
+## PROMPT 6 — Statistikk-hero: Tall som stopper (stats-visual)
+
+**Hook:** "1 file. 5 packs. 70 files."
+**Scroll-stopp:** Enkle tall kommuniserer umiddelbar verdi
+
+```
+Clean graphic design image, vertical portrait format, 9:16. Dark background (#0B0B12).
+
+TOP 15%: Small teal text (#2DD4BF), monospace: "app.snaptosize.com"
+  Thin teal line underneath.
+
+CENTER 55%: Bold typographic hierarchy, centered:
+  Very large white text: "1 file"
+  Teal arrow pointing down: "↓"
+  Very large teal text: "70 files"
+  Smaller grey text below: "5 ratio packs · 300 DPI · Etsy-ready · No Photoshop"
+
+LOWER 20%: Three stat cards side by side (dark cards, teal accent):
+  Card 1: "5" large teal, small grey: "ratio packs"
+  Card 2: "70" large white, small grey: "total files"
+  Card 3: "300" large teal, small grey: "DPI guaranteed"
+
+BOTTOM 10%: Teal rounded pill, white text: "Try free · app.snaptosize.com"
+  Subtle teal glow behind pill.
+
+Clean, bold, graphic design aesthetic. No photos. No people.
+Typography-driven, high contrast. Looks like a premium SaaS ad.
 ```
 
 ---
@@ -208,7 +267,4 @@ Photorealistic UI mockup, DSLR depth-of-field aesthetic.
 | 300-dpi-makrokvalitet | 4 uker | W18b |
 | en-upload-enkelheten | 4 uker | W18b |
 
-**Nye konsepter klare:**
-- `livsstil-den-tidrike-selgeren` — tilgjengelig igjen W20+
-- `bestseller-butikken` — tilgjengelig igjen W20+
-- `20mb-grensen-løst` — NY, ikke brukt
+**Klare nå:** `folder-chaos`, `missing-buyer` (W20+) · `stats-visual` (NY, aldri brukt)

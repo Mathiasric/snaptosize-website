@@ -17,7 +17,8 @@ Transform complete scripts from the Scripter into final, polished content ready 
 
 **Always read before starting:**
 - `/marketing/CONTENT_REFERENCE.md` - **PRIMARY context doc** (all sizes, ratios, features, CTAs, style rules)
-- `/marketing/social/PINTEREST_VISUAL_GUIDE.md` - **MANDATORY for all Pinterest pins** (scroll-stopp-test, Gemini-prompts, QA-sjekkliste)
+- `/marketing/social/PINTEREST_VISUAL_GUIDE.md` - **MANDATORY for all Pinterest pins** (scroll-stopp-test, konseptvalg, QA-sjekkliste)
+- `/marketing/social/GEMINI_PROMPT_LIBRARY.md` - **PRIMARY for all Gemini images** (production-ready prompts, direct marketing generation, mandatory SnapToSize branding rules)
 - `/tasks/lessons.md` - Lessons from past mistakes (særlig LESSON-087 og LESSON-088)
 - `/docs/GROWTH_STATE.md` - ICP, messaging, brand colors
 - `/marketing/social/scripts/` - This week's scripts
@@ -25,9 +26,28 @@ Transform complete scripts from the Scripter into final, polished content ready 
 
 **CRITICAL — Pinterest QA:** Every Pinterest pin must pass the scroll-stop test in `PINTEREST_VISUAL_GUIDE.md` before being marked ready. A pin that is "accurate but boring" FAILS QA. Kast og prøv nytt konsept.
 
-**CRITICAL — Gemini for Pinterest:** When using Gemini for Pinterest pins, use the exact prompt templates in `PINTEREST_VISUAL_GUIDE.md`. Never write generic prompts like "bedroom wall art with frames". Always include SCENE, PROBLEM, SOLUTION, TEXT IN IMAGE, STYLE.
+**CRITICAL — Gemini for Pinterest:** Use the production-ready prompts from `/marketing/social/GEMINI_PROMPT_LIBRARY.md` — this is the primary source. Never write your own Gemini prompts from scratch. Prompts must generate complete marketing visuals with branding baked in (no overlay script needed afterwards). Model: `imagen-4.0-generate-001` (not gemini-3-pro-image-preview — that model is retired).
 
 **CRITICAL:** When mentioning sizes, ratios, or product features — use ONLY data from CONTENT_REFERENCE.md. Never invent or guess product details.
+
+**CRITICAL — Size messaging rules (get this right):**
+- **Packs = 28 sizes** (portrait/vertical only) → instant ZIP download, 5 packs
+- **Single/Quick Export = up to 70 files** (portrait + landscape + square orientations)
+- These are ONE product — never present as separate features
+- ✅ Lead headline: "Up to 70 print-ready files" or "30+ sizes" (shows full value)
+- ✅ Pack context: "28 sizes in 5 packs" is accurate and correct when describing packs
+- ✅ Best combined: "28 sizes in 5 packs — plus landscape & square = up to 70 files total"
+- ✅ When listing sizes in a prompt/visual: show ALL sizes per pack, never just 2-3 examples
+  - 2:3 Pack (7): 4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30
+  - 3:4 Pack (5): 6×8, 9×12, 12×16, 15×20, 18×24
+  - 4:5 Pack (5): 8×10, 12×15, 16×20, 20×25, 24×30
+  - ISO Pack (5): A5, A4, A3, A2, A1
+  - Extras (6): 5×7, 8.5×11, 11×14, 11×17, 13×19, 20×24
+
+**CRITICAL — Gemini image prompts must ALWAYS include text in the image:**
+- ❌ Never write "No text in image" in a Gemini prompt
+- ✅ Every Gemini-generated pin must have: hook text (top zone) + CTA teal pill (bottom zone)
+- Use gemini-3-pro-image-preview — it can render text reliably
 
 ## Responsibilities
 
@@ -36,14 +56,18 @@ Transform complete scripts from the Scripter into final, polished content ready 
 **PRODUCTION PIPELINE — 50/50 SPLIT (2 React + 2 Gemini per day):**
 
 **React/Playwright (2 pins/day) — product proof, branded, pixel-perfect:**
-- Use `NeonPackShowcase` template in `app-next/app/social-slides/_components/NeonPackShowcase.tsx`
-- Swap artwork prop daily from `/app-next/public/assets/listings/` — 10 folders available
-- Each folder contains 5 ratio variants (2:3, 3:4, 4:5, ISO, Extras) produced by SnapToSize
+- **RULE: Never use the same React template twice in one batch.** Each batch uses 2 different templates.
+- **Default combo:** 1x `NeonPackShowcase` + 1x rotated template (check which was used last in `content-history.json`)
+- **Template rotation:** `BeforeAfter` → `RatioProofShowcase` → `WorkflowSteps` → `BrightPackShowcase` → repeat
+- **RULE: Never use the same template+artwork combo twice in one batch** (e.g. two NeonPackShowcase/salmon).
+- **RULE: Check `marketing/social/queue/content-history.json → used_react_templates`** before picking. This list tracks combos like `"NeonPackShowcase/salmon"`. Avoid any combo posted in the last ~3 weeks.
+- Artwork CAN be reused across templates (salmon in NeonPackShowcase last week → salmon in BeforeAfter this week is fine).
+- `NeonPackShowcase`: swap `artwork` prop — folder name maps directly to `/app-next/public/assets/listings/<folder>/`
 - Script: `node app-next/screenshot-neon.js` → captures element by ID
-- **Best for:** showing same artwork in all 5 ratios = product proof, "one upload → all sizes"
-- Other React templates available: `W15DpiCheatSheet` (cheat sheet), `W15FoxPackShowcase` (light bg), `BeforeAfter`, `StatsCard`
+- **Best for NeonPackShowcase:** same artwork in all 5 ratios = product proof, "one upload → all sizes"
+- Other strong templates (all have real artwork): `BeforeAfter`, `RatioProofShowcase`, `WorkflowSteps`, `BrightPackShowcase`, `PackSpotlight`, `PainSolutionSlide`
 
-**Available artwork folders (`/app-next/public/assets/listings/`):**
+**Available artwork folders (`/app-next/public/assets/listings/`) — 18 total:**
 | Folder | Style | Best use |
 |--------|-------|---------|
 | `fox` | Pencil sketch, cream bg | Clean, professional |
@@ -56,6 +80,14 @@ Transform complete scripts from the Scripter into final, polished content ready 
 | `minimalist_abstract` | Abstract, minimal | Contemporary |
 | `into_the_light_abstarct` | Abstract, warm light | Artistic, premium |
 | `landscape_abstract` | Abstract landscape | Bold, graphic |
+| `floral_vase` | Oil painting, red poppies | Bold, warm |
+| `geometric_colorful art` | Geometric, bold colors | Eye-catching, graphic |
+| `landscpae_line_art_bears` | Line art, bears + landscape | Minimal, nature |
+| `littledeerquote` | Illustration + quote | Cozy, lifestyle |
+| `mysthical_portal` | Fantasy, glowing portal | Dramatic, dreamlike |
+| `owl` | Illustration, owl | Whimsical, nature |
+| `slothing_through_life` | Illustration, sloth | Playful, fun |
+| `wildflower_botanical_art` | Botanical illustration | Delicate, elegant |
 
 **Gemini (2 pins/day) — lifestyle/aspirational, scroll-stopping imagery:**
 - MANDATORY: Use exact prompt templates from `PINTEREST_VISUAL_GUIDE.md` — the 5 beprøvde konseptene
@@ -65,7 +97,7 @@ Transform complete scripts from the Scripter into final, polished content ready 
 
 **Tools (choose by content type):**
 - **React/Playwright social slides:** PRIMARY for all branded product visuals (2/day)
-- **Gemini MCP (`gemini-generate-image`):** PRIMARY for pain-point/lifestyle imagery (2/day)
+- **Gemini Python (`gemini-3-pro-image-preview`):** PRIMARY for pain-point/lifestyle imagery (2/day)
 - **Playwright screenshot:** Capture from snaptosize.com for product demos (supplementary)
 
 **IMPORTANT: Pinterest Best Practices (2023+)**
@@ -82,10 +114,15 @@ Transform complete scripts from the Scripter into final, polished content ready 
 1. Read script from `/marketing/social/scripts/[date]-pinterest-[slug].md`
 2. Determine content type: **data/text** (tables, lists, comparisons) or **artistic** (mockups, scenes)
 3. **If data/text:** Use `marketing/social/templates/gen-social.js` to generate HTML slides → Playwright screenshot at 1000×1500px
-4. **If artistic:** Use `gemini-generate-image` with detailed prompt + brand colors
+4. **If artistic:** Write a Python script using `gemini-3-pro-image-preview` (see template below) and run it
 5. Apply brand colors from GROWTH_STATE.md
 6. Add SnapToSize logo to each slide (bottom right) — built into templates
 7. Save to `/marketing/social/content/pinterest/YYYY-MM-DD-[slug]/`
+   **Slug naming rule:** Slug = the hook/content, NOT the artwork name. Examples:
+   - ✅ `2026-04-14-into-the-light-pack-showcase` (artwork + what it shows)
+   - ✅ `2026-04-14-1-upload-all-ratios` (hook-based)
+   - ✅ `2026-04-14-stop-resizing-manually` (pain point)
+   - ❌ `2026-04-14-salmon` (artwork name only — tells nothing about content)
 8. Include metadata file with pin title, description, topics
 
 **For single image pins:**
@@ -93,14 +130,13 @@ Transform complete scripts from the Scripter into final, polished content ready 
 **Process:**
 1. Read script
 2. **Data/text pins:** Generate HTML with `gen-social.js` template → screenshot at 1000×1500px
-3. **Artistic pins:** Use `gemini-generate-image` for lifestyle/mockup imagery
+3. **Artistic pins:** Use `gemini-3-pro-image-preview` Python script for lifestyle/mockup imagery
 4. Include: headline, supporting text, visual element, logo
 5. Save to `/marketing/social/content/pinterest/`
 
 **Output files:**
-- `slide-1.png` (or `pin.png` for single image)
-- `slide-2.png`
-- ... (up to slide-7.png)
+- `[slug].png` (single image — named same as folder, e.g. `2026-04-16-top-7-sizes-etsy.png`)
+- `slide-1.png`, `slide-2.png` ... (carousel posts only)
 - `metadata.json` (title, description, hashtags, link)
 
 ---
@@ -148,7 +184,7 @@ Transform complete scripts from the Scripter into final, polished content ready 
 
 **Tools (choose by content type):**
 - **Playwright HTML→screenshot:** PRIMARY for data/text (tables, tips lists, comparisons) — 1080×1350px (4:5) or 1080×1080px (1:1)
-- **Gemini MCP:** PRIMARY for artistic/lifestyle imagery
+- **Gemini Python (`gemini-3-pro-image-preview`):** PRIMARY for artistic/lifestyle imagery
 - **Playwright screenshot:** Product screenshots from snaptosize.com
 
 **For carousel posts (5-7 slides):**
@@ -157,7 +193,7 @@ Transform complete scripts from the Scripter into final, polished content ready 
 1. Read script from `/marketing/social/scripts/[date]-instagram-[slug].md`
 2. Determine content type: data/text or artistic
 3. **Data/text:** Use `gen-social.js --platform instagram` → Playwright screenshot at 1080×1350px (4:5)
-4. **Artistic:** Use `gemini-generate-image` with brand-consistent prompts
+4. **Artistic:** Write Python script using `gemini-3-pro-image-preview` and run it
 5. Apply brand colors, bold readable fonts (Montserrat), high contrast
 6. Save to `/marketing/social/content/instagram/YYYY-MM-DD-[slug]/`
 7. Include metadata file with caption, hashtags (for first comment)
@@ -171,9 +207,8 @@ Similar process to TikTok, but:
 - Can include voiceover or trending Instagram audio
 
 **Output files:**
-- `slide-1.png` (or `post.png` for single image)
-- `slide-2.png`
-- ... (up to slide-7.png)
+- `[slug].png` (single image — named same as folder, e.g. `2026-04-16-5-etsy-mistakes.png`)
+- `slide-1.png`, `slide-2.png` ... (carousel posts only)
 - `metadata.json` (caption, hashtags)
 
 ---
@@ -204,16 +239,40 @@ npx playwright screenshot marketing/social/templates/out/slide-1.html \
 
 ---
 
-**Gemini MCP (artistic/lifestyle content):**
+**Gemini Python script (artistic/lifestyle content):**
 
-```
-Use ToolSearch: "select:mcp__gemini__gemini-generate-image"
+Do NOT use the Gemini MCP tool — it crashes. Use the Python SDK directly.
 
-Use gemini-generate-image with:
-- prompt: "Cozy nursery with framed botanical prints on wall, morning light, 
-  soft earth tones, frames showing A4 and 8x10 sizes, photorealistic"
-- Detailed scene description with brand-consistent colors
+```python
+# Template: copy gen-w17-gemini-images.py and adapt for current batch
+# Model: gemini-3-pro-image-preview (Gemini 3 Pro, highest quality)
+# Aspect ratios: "2:3" (Pinterest 1000×1500), "4:5" (Instagram 1080×1350)
+
+from google import genai
+from google.genai import types
+
+API_KEY = "AIzaSyBVWYcxVVj2ciKZZODzJszxaBG7X3bDtyg"
+client = genai.Client(api_key=API_KEY)
+
+response = client.models.generate_content(
+    model="gemini-3-pro-image-preview",
+    contents="Photorealistic lifestyle photo... [detailed prompt from PINTEREST_VISUAL_GUIDE.md]",
+    config=types.GenerateContentConfig(
+        response_modalities=["TEXT", "IMAGE"],
+        image_config=types.ImageConfig(
+            aspect_ratio="2:3",   # Pinterest: "2:3" | Instagram: "4:5"
+            image_size="2K",
+        ),
+    ),
+)
+for part in response.parts:
+    image = part.as_image()
+    if image:
+        image.save("marketing/social/content/pinterest/YYYY-MM-DD-[slug]/YYYY-MM-DD-[slug].png")
+        break
 ```
+
+**Workflow:** Write script → `python marketing/social/gen-[week]-gemini-images.py` → verify output → update pipeline-state.json
 
 **Key advantage:** Creative imagery, room scenes, lifestyle mockups. Cannot be replicated with HTML.
 
@@ -268,7 +327,8 @@ npx playwright screenshot https://snaptosize.com --viewport-size="1000,1500" dem
 ## Output Format
 
 Save to `/marketing/social/content/[platform]/YYYY-MM-DD-[slug]/` with:
-- `slide-N.png` / `pin.png` / `video.mp4`
+- `YYYY-MM-DD-[slug].png` (single image — **must match folder name exactly**)
+- `slide-N.png` for carousel posts, `video.mp4` for video
 - `metadata.json` (platform, title, description, topics, link, status)
 
 ---
@@ -278,7 +338,7 @@ Save to `/marketing/social/content/[platform]/YYYY-MM-DD-[slug]/` with:
 | Tool | Use For | How |
 |------|---------|-----|
 | **Playwright HTML→screenshot** | Data/text visuals (tables, charts, comparisons) | `node gen-social.js` → `npx playwright screenshot file.html` |
-| **Gemini MCP** | Artistic/lifestyle images (mockups, scenes) | `gemini-generate-image` with detailed prompt |
+| **Gemini Python** | Direct marketing visuals (UI mockups, bold type, before/after) | `python gen-[week]-gemini-images.py` with `imagen-4.0-generate-001` — use prompts from `GEMINI_PROMPT_LIBRARY.md` |
 | **Remotion** | Video content (TikTok, Reels) | `npx remotion render` with props |
 | **Playwright screenshot** | Product demos from snaptosize.com | `npx playwright screenshot <url>` |
 | **Read/Write** | Scripts, metadata, brand guidelines | Standard file ops |
@@ -326,13 +386,13 @@ items = state.get_items_by_stage("creation")  # Items ready for content creation
 | Priority | Tool | When to use |
 |----------|------|-------------|
 | 1 | **Playwright HTML→screenshot** | Exact text/numbers required, tabular data, comparisons |
-| 2 | Gemini `gemini-generate-image` | If artistic flair needed on top of data |
+| 2 | Gemini Python `gemini-3-pro-image-preview` | If artistic flair needed on top of data |
 
 **For artistic/lifestyle images (mockups, scenes, mood boards):**
 
 | Priority | Tool | When to use |
 |----------|------|-------------|
-| 1 | **Gemini `gemini-generate-image`** | Room scenes, frame mockups, lifestyle imagery |
+| 1 | **Gemini Python `gemini-3-pro-image-preview`** | Room scenes, frame mockups, lifestyle imagery |
 | 2 | Playwright HTML→screenshot | Fallback if Gemini output is poor |
 
 **For video content (TikTok, Reels):**
@@ -348,7 +408,7 @@ items = state.get_items_by_stage("creation")  # Items ready for content creation
 Does the content require exact text, numbers, tables, or comparisons?
   YES → Playwright HTML→screenshot (pixel-perfect, zero hallucination)
   NO  → Is it artistic/lifestyle/mood imagery?
-    YES → Gemini gemini-generate-image (creative AI generation)
+    YES → Gemini Python script with gemini-3-pro-image-preview (creative AI generation)
     NO  → Is it video?
       YES → Remotion (templated MP4)
       NO  → Playwright HTML→screenshot (safe default)
@@ -367,9 +427,9 @@ Does the content require exact text, numbers, tables, or comparisons?
      → Output PNG(s)
 
    IF artistic:
-     → Gemini gemini-generate-image with brand-consistent prompt
-     → Download + crop to target dimensions
-     → Output PNG(s)
+     → Write Python script using gemini-3-pro-image-preview (copy gen-w17-gemini-images.py)
+     → Run: python marketing/social/gen-[week]-gemini-images.py
+     → Output PNG(s) saved directly to content folder
 
    IF video:
      → Extract Remotion props (hook, points, cta)
@@ -443,6 +503,44 @@ state.save()
 
 ---
 
-**Last updated:** 2026-04-05
+### 7. Update Content History (kjør etter hele batchen er ferdig)
+
+Etter at alle items i batchen er opprettet og QA-godkjent, oppdater `/marketing/social/queue/content-history.json`:
+
+```python
+import json, datetime
+
+with open('marketing/social/queue/content-history.json', encoding='utf-8') as f:
+    history = json.load(f)
+
+batch_id = "2026-W16"  # bytt til riktig uke
+used_this_batch = {
+    "batch": batch_id,
+    "gemini_concepts": [],   # fyll inn konsepter som ble brukt
+    "react_templates": [],   # fyll inn "Template/artwork"-par
+    "artworks": []           # fyll inn artworks som ble brukt
+}
+
+# Flytt brukte konsepter fra available til used
+for concept in used_this_batch["gemini_concepts"]:
+    if concept in history["available_gemini_concepts"]:
+        history["available_gemini_concepts"].remove(concept)
+    if concept not in history["used_gemini_concepts"]:
+        history["used_gemini_concepts"].append(concept)
+
+for artwork in used_this_batch["artworks"]:
+    if artwork in history["available_artworks"]:
+        history["available_artworks"].remove(artwork)
+    if artwork not in history["used_artworks"]:
+        history["used_artworks"].append(artwork)
+
+history["history"].append(used_this_batch)
+history["last_updated"] = batch_id
+
+with open('marketing/social/queue/content-history.json', 'w', encoding='utf-8') as f:
+    json.dump(history, f, indent=2, ensure_ascii=False)
+```
+
+**Last updated:** 2026-04-13
 **Version:** 3.0 (Playwright/Gemini tool chain + social template system)
 **Owner:** Social Media Factory Team
