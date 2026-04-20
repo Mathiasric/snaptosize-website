@@ -85,6 +85,9 @@ export default function SocialSlidesPage() {
         <NeonPackShowcase artwork="floral_vase" name="Floral Vase Art" ratio="pinterest" />
         <NeonPackShowcase artwork="minimalist_abstract" name="Minimalist Abstract" ratio="pinterest" />
         <NeonPackShowcase artwork="into_the_light_abstarct" name="Into the Light" ratio="pinterest" />
+        {/* ═══ W17 Batch — Day 2 ═══ */}
+        {/* W17-P07: Owl Folk Art — NeonPackShowcase Pinterest */}
+        <NeonPackShowcase artwork="owl" name="Owl Folk Art" ratio="pinterest" />
         <NeonPackShowcase artwork="salmon" name="Salmon" ratio="instagram" />
         {/* ═══ W16 This-batch ═══ */}
         {/* W16-P01: floral_vase NeonPackShowcase — already rendered above */}
@@ -103,6 +106,12 @@ export default function SocialSlidesPage() {
         <RatioProofShowcase artwork="fox" name="Fox Illustration" ratio="pinterest" />
         <RatioProofShowcase artwork="misty_lake" name="Misty Lake" ratio="pinterest" />
         <RatioProofShowcase artwork="landscape_abstract" name="Landscape Abstract" ratio="instagram" />
+        {/* W17-I04: Owl Folk Art — RatioProofShowcase Instagram */}
+        <RatioProofShowcase artwork="owl" name="Owl Folk Art" ratio="instagram" />
+        {/* W18-I01: Deer Portrait — RatioProofShowcase Instagram */}
+        <RatioProofShowcase artwork="deer" name="Deer Portrait" ratio="instagram" />
+        {/* W18-I02: Bunny Sketch — NeonPackShowcase Instagram */}
+        <NeonPackShowcase artwork="bunny" name="Bunny Sketch" ratio="instagram" />
 
         {/* ═══ Pain Solution Slide — before/after split panel ═══ */}
         <PainSolutionSlide pain="missing-size" ratio="pinterest" />

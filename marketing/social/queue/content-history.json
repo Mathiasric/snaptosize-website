@@ -1,0 +1,160 @@
+{
+  "_comment": "Tracks used concepts/templates/artworks across batches. Ideator reads this to avoid repetition. Creator updates after each batch.",
+  "used_gemini_concepts": [
+    "folder-chaos",
+    "missing-buyer",
+    "dpi-comparison",
+    "en-til-mange-multiplikasjonen",
+    "galleryvegg-ratioene",
+    "de-5-premium-pakkene",
+    "livsstil-den-tidrike-selgeren",
+    "bestseller-butikken",
+    "quote-selgeren-i-produksjon",
+    "det-globale-rekkevidden-iso",
+    "300-dpi-makrokvalitet",
+    "en-upload-enkelheten"
+  ],
+  "used_react_templates": [
+    "WorkflowSteps/pinterest",
+    "NeonPackShowcase/bunny-instagram",
+    "NeonPackShowcase/fox",
+    "NeonPackShowcase/bunny",
+    "NeonPackShowcase/deer",
+    "NeonPackShowcase/songbirds",
+    "NeonPackShowcase/misty_lake",
+    "NeonPackShowcase/floral_vase",
+    "BeforeAfter",
+    "RatioProofShowcase/fox",
+    "RatioProofShowcase/misty_lake",
+    "W15FoxPackShowcase",
+    "PainSolutionSlide/missing-size",
+    "PainSolutionSlide/folder-chaos",
+    "PainSolutionSlide/manual-resize",
+    "StatsCard/wildflower_botanical_art",
+    "Checklist/5-etsy-mistakes",
+    "NeonPackShowcase/owl",
+    "RatioProofShowcase/owl"
+  ],
+  "used_artworks": [
+    "fox",
+    "bunny",
+    "deer",
+    "songbirds",
+    "misty_lake",
+    "floral_vase",
+    "landscape_abstract",
+    "neutral_abstract",
+    "minimalist_abstract",
+    "into_the_light_abstarct",
+    "salmon",
+    "wildflower_botanical_art",
+    "owl"
+  ],
+  "rotation_policy": {
+    "gemini_cooldown_weeks": 4,
+    "react_template_cooldown_weeks": 3,
+    "artwork_cooldown_weeks": 2
+  },
+  "history": [
+    {
+      "batch": "2026-W13",
+      "gemini_concepts": [
+        "folder-chaos",
+        "missing-buyer"
+      ],
+      "react_templates": [
+        "NeonPackShowcase/fox",
+        "NeonPackShowcase/bunny",
+        "BeforeAfter"
+      ],
+      "artworks": [
+        "fox",
+        "bunny"
+      ]
+    },
+    {
+      "batch": "2026-W15",
+      "gemini_concepts": [
+        "dpi-comparison"
+      ],
+      "react_templates": [
+        "NeonPackShowcase/deer",
+        "NeonPackShowcase/songbirds",
+        "NeonPackShowcase/misty_lake",
+        "W15FoxPackShowcase",
+        "PainSolutionSlide/missing-size",
+        "PainSolutionSlide/folder-chaos",
+        "PainSolutionSlide/manual-resize",
+        "RatioProofShowcase/fox",
+        "RatioProofShowcase/misty_lake"
+      ],
+      "artworks": [
+        "deer",
+        "songbirds",
+        "misty_lake"
+      ]
+    },
+    {
+      "batch": "2026-W16",
+      "gemini_concepts": [
+        "en-til-mange-multiplikasjonen",
+        "galleryvegg-ratioene",
+        "livsstil-den-tidrike-selgeren",
+        "bestseller-butikken"
+      ],
+      "react_templates": [
+        "NeonPackShowcase/floral_vase",
+        "StatsCard/wildflower_botanical_art",
+        "Checklist/5-etsy-mistakes"
+      ],
+      "artworks": [
+        "floral_vase",
+        "landscape_abstract",
+        "neutral_abstract",
+        "wildflower_botanical_art"
+      ]
+    },
+    {
+      "batch": "2026-W18b",
+      "gemini_concepts": [
+        "300-dpi-makrokvalitet",
+        "en-upload-enkelheten"
+      ],
+      "react_templates": [
+        "WorkflowSteps/pinterest",
+        "NeonPackShowcase/bunny-instagram"
+      ],
+      "artworks": [
+        "bunny"
+      ]
+    },
+    {
+      "batch": "2026-W17",
+      "gemini_concepts": [
+        "de-5-premium-pakkene",
+        "quote-selgeren-i-produksjon",
+        "det-globale-rekkevidden-iso"
+      ],
+      "react_templates": [
+        "NeonPackShowcase/minimalist_abstract",
+        "NeonPackShowcase/into_the_light_abstarct",
+        "NeonPackShowcase/salmon",
+        "NeonPackShowcase/owl",
+        "RatioProofShowcase/owl"
+      ],
+      "artworks": [
+        "minimalist_abstract",
+        "into_the_light_abstarct",
+        "salmon",
+        "owl"
+      ]
+    }
+  ],
+  "available_gemini_concepts": [
+    "livsstil-den-tidrike-selgeren",
+    "bestseller-butikken",
+    "quote-selgeren-i-produksjon"
+  ],
+  "_artwork_note": "All 18 artwork folders can be reused. Avoid same template+artwork combo within ~3 weeks. Check used_react_templates for recent combos.",
+  "last_updated": "2026-W18b"
+}
