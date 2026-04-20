@@ -38,21 +38,26 @@ Alle Gemini-bilder MÅ inneholde disse elementene **bakt direkte inn i bildet**:
 ## TEKNISKE INNSTILLINGER
 
 ```python
-# Alltid bruk imagen-4.0-generate-001 (ikke gemini-3-pro-image-preview — utgått)
-client.models.generate_images(
-    model="imagen-4.0-generate-001",
-    prompt=PROMPT,
-    config=types.GenerateImagesConfig(
-        number_of_images=1,
-        aspect_ratio="9:16",   # Pinterest: 1000×1500
-        # aspect_ratio="4:5",  # Instagram: 1080×1350
+# Bruk gemini-3-pro-image-preview (høyeste kvalitet, tenker før generering)
+# Fallback: gemini-3.1-flash-image-preview (raskere, litt billigere)
+# IKKE bruk imagen-4.0-generate-001 — gir svakere resultater
+response = client.models.generate_content(
+    model="gemini-3-pro-image-preview",
+    contents=PROMPT,
+    config=types.GenerateContentConfig(
+        response_modalities=["TEXT", "IMAGE"],
     ),
 )
-# Alltid resize med PIL etter generering
-img = img.resize((1000, 1500), Image.LANCZOS)  # Pinterest
+# Hent bilde fra response
+for part in response.candidates[0].content.parts:
+    if hasattr(part, "inline_data") and part.inline_data and part.inline_data.mime_type.startswith("image/"):
+        img = Image.open(io.BytesIO(part.inline_data.data))
+        img = img.resize((1000, 1500), Image.LANCZOS)  # Pinterest
+        # img = img.resize((1080, 1350), Image.LANCZOS)  # Instagram
+        img.save("output.png", "PNG")
 ```
 
-**Ikke bruk overlay-script etterpå** — prompten skal gi et ferdig bilde.
+**Ikke bruk overlay-script etterpå** — prompten genererer ferdig marketingmateriell med branding bakt inn.
 
 ---
 

@@ -26,7 +26,7 @@ Transform complete scripts from the Scripter into final, polished content ready 
 
 **CRITICAL — Pinterest QA:** Every Pinterest pin must pass the scroll-stop test in `PINTEREST_VISUAL_GUIDE.md` before being marked ready. A pin that is "accurate but boring" FAILS QA. Kast og prøv nytt konsept.
 
-**CRITICAL — Gemini for Pinterest:** Use the production-ready prompts from `/marketing/social/GEMINI_PROMPT_LIBRARY.md` — this is the primary source. Never write your own Gemini prompts from scratch. Prompts must generate complete marketing visuals with branding baked in (no overlay script needed afterwards). Model: `imagen-4.0-generate-001` (not gemini-3-pro-image-preview — that model is retired).
+**CRITICAL — Gemini for Pinterest:** Use the production-ready prompts from `/marketing/social/GEMINI_PROMPT_LIBRARY.md` — this is the primary source. Never write your own Gemini prompts from scratch. Prompts must generate complete marketing visuals with branding baked in (no overlay script needed afterwards). Model: `gemini-3-pro-image-preview` with `generate_content` + `response_modalities=["TEXT","IMAGE"]`. Do NOT use imagen-4.0-generate-001.
 
 **CRITICAL:** When mentioning sizes, ratios, or product features — use ONLY data from CONTENT_REFERENCE.md. Never invent or guess product details.
 
@@ -338,7 +338,7 @@ Save to `/marketing/social/content/[platform]/YYYY-MM-DD-[slug]/` with:
 | Tool | Use For | How |
 |------|---------|-----|
 | **Playwright HTML→screenshot** | Data/text visuals (tables, charts, comparisons) | `node gen-social.js` → `npx playwright screenshot file.html` |
-| **Gemini Python** | Direct marketing visuals (UI mockups, bold type, before/after) | `python gen-[week]-gemini-images.py` with `imagen-4.0-generate-001` — use prompts from `GEMINI_PROMPT_LIBRARY.md` |
+| **Gemini Python** | Direct marketing visuals (UI mockups, bold type, before/after) | `python gen-[week]-gemini-images.py` with `gemini-3-pro-image-preview` + `generate_content` — use prompts from `GEMINI_PROMPT_LIBRARY.md` |
 | **Remotion** | Video content (TikTok, Reels) | `npx remotion render` with props |
 | **Playwright screenshot** | Product demos from snaptosize.com | `npx playwright screenshot <url>` |
 | **Read/Write** | Scripts, metadata, brand guidelines | Standard file ops |
