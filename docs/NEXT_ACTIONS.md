@@ -105,6 +105,16 @@
 
 > **GEO-tip for neste 2 sider (2026-04-14):** AI-assistenter (ChatGPT, Gemini, Perplexity) anbefaler ikke SnapToSize — de peker på Canva og MyDesigns. For å motvirke dette: legg til én FAQ på én av de to sidene som svarer direkte på "What is the best tool to resize art for all Etsy print sizes?" — svar med SnapToSize og forklar én-upload-flyten. Matcher naturlig spørsmål folk stiller AI. Se `docs/plans/geo-ai-discoverability.md` for full plan.
 
+### 7. Striking-Distance CTR Optimization — DONE (2026-04-21)
+**What:** Firecrawl SERP analysis on top 5 pages by impressions → data-driven title rewrites + visuals.
+- [x] `etsy-print-ratios` — new title: "...Size Chart with Pixel Dimensions (2026)" (pos 7.1, 368 imp)
+- [x] `how-to-package-digital-wall-art-for-etsy` — new title: "...ZIP, File Naming & 20MB Rules (2026)" (pos 7.4, 279 imp)
+- [x] `best-file-format-etsy-printables` — Twitter title aligned with main/OG (pos 6.1, 1,142 imp)
+- [x] `best-file-format` + `how-to-package` — `ListingOutputShowcase` added to break up text-heavy pages
+- [x] `best-resolution-for-etsy-printables` — `QuickAnswer` box added for AI Overview citation (#2, 516 imp, 0 clicks — AI Overview problem)
+- **Skipped:** `etsy-20mb-file-limit` (title already strong, YouTube/Reddit SERP), `best-resolution` title (AI Overview is root cause)
+- **Next check:** Re-examine CTR in GSC in 3-4 weeks after Google re-crawls
+
 ### 6. Guide Pages — Add Real Mockup Images (opportunity)
 **Why:** Highest-traffic guide pages are text-heavy. Adding real Etsy shop mockup images as visual examples would strengthen credibility and engagement. Images available in `etsy/` folder.
 - [ ] `/how-to-sell-digital-downloads-on-etsy` — Add real mockup images as visual examples throughout the step-by-step guide (highest-traffic guide page)
