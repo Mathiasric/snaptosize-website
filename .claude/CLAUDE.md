@@ -83,6 +83,8 @@ These are hard rules, not guidelines. Violating them wastes tokens and shortens 
 
 **File reads:** Never read a file in full if you only need part of it. For files >200 lines, always use `offset` + `limit` to target the section needed. Never read a file to analyze it — use `ctx_execute_file` instead. Read is only for files you are about to Edit.
 
+**Read before edit:** Always read (or grep for) the exact section before editing. Before modifying a function, grep for all callers. Research before you edit — editing without reading causes retries and wastes tokens.
+
 **Screenshots:** Default to viewport-only screenshots (1440×900 desktop, 390×844 mobile). Never use `fullPage: true` unless a specific full-page QA review is requested. Use `clip` to capture specific sections when only part of the page is relevant.
 
 **Playwright:** NEVER use `browser_snapshot` — dumps entire DOM tree (3000–5000 tokens). Use `browser_take_screenshot` + read the image instead. Only use `browser_snapshot` when you need element refs for interactive actions (click, fill).
@@ -106,7 +108,12 @@ These are hard rules, not guidelines. Violating them wastes tokens and shortens 
 
 **No Secrets in Committed Files** — Secrets go only in `.env.local` (gitignored) or Cloudflare env vars. Use `YOUR_API_KEY_HERE` placeholders in docs.
 
-**No Fake Social Proof** — Never fabricate testimonials, reviews, quotes, or user counts. Only use real metrics from production data or approved testimonials. Violates FTC guidelines.
+**Social Proof — Tiered Rules**
+- ❌ Never fabricate named testimonials with avatars, company names, or clickable profiles that imply a real identifiable person endorsed us. That's FTC-violation territory.
+- ❌ Never invent user counts, MRR, or revenue metrics.
+- ✅ Unnamed value-statement quotes (e.g. "Perfect for Etsy sellers" without attribution) are acceptable — they read as aspirational copy, not endorsements. Many scaled SaaS products use this pattern (Olovka.ai, etc.).
+- ✅ Approved named testimonials from real customers are always fine.
+- ✅ Real production metrics ("400+ sellers", "10K+ exports") are fine once the number is accurate.
 
 **When Uncertain** — Ask for clarification. Never guess about Worker contract, plan enforcement, quota behavior, or whether a feature exists.
 
@@ -125,56 +132,13 @@ We are in Growth + Conversion phase. Backend is hardened and stable.
 
 ## TOOLS & INTEGRATIONS
 
-### MCP Servers
+→ Full reference: `.claude/docs/tools-reference.md` (MCP servers, CLI tools, Playwright QA, Key Services, Active Plugins)
 
-| MCP Server | Use For | Key Notes |
-|------------|---------|-----------|
-| **Playwright** | Screenshots, visual QA, social slide capture | **Primary visual tool.** Section clips via `chromium.launch()` in `app-next/`. |
-| **Gemini** | Lifestyle image gen, text analysis, captions | `gemini-generate-image` for aspirational pins only. Social slides preferred for branded visuals. |
-| **Firecrawl** | Web scraping for SEO research | 500 free credits. Scrape SERP results for content briefs. |
-| **NotebookLM** | Strategic brain, project context queries | Notebook ID: `4853724d-ed87-4546-963a-e84665b869f5`. Refresh auth first. |
-| **Sentry** | Error monitoring, issue search | `search_issues`, `get_issue_details` |
-| **Cloudflare** | Workers inspection, R2, KV, D1 | `workers_get_worker_code`, `accounts_list` |
-| **claude-mem** | Cross-session memory | Automatic — no manual action needed |
-| **context-mode** | Context window optimization | Use `ctx_execute` instead of Bash for large outputs. `ctx_batch_execute` for multi-command research. `/ctx-stats` shows savings. |
-
-### CLI Tools
-
-| Tool | Command | Use For |
-|------|---------|---------|
-| **Playwright** | `npx playwright screenshot --viewport-size="1440,900" <url> <out.png>` | Static page screenshots |
-| **Playwright (node)** | `node -e "..."` with `chromium.launch()` | Interactive screenshots, section clips, social slide capture |
-| **Remotion** | `cd marketing/remotion && npx tsx render-slideshow-videos.ts` | Render SlideshowVertical videos from social slide screenshots |
-| **gh** | `gh pr create`, `gh issue view` | GitHub operations |
-| **nlm** | `PYTHONIOENCODING=utf-8 nlm <cmd> \| cat` | NotebookLM CLI (pipe through `\| cat` on Windows to avoid Unicode crash) |
-| **Buffer** | `python marketing/social/schedule-batch.py` | Social media scheduling |
-| **GSC** | `python marketing/gsc-analytics/pull_gsc.py` | Google Search Console API data pull + analysis |
-| **Weekly Brief** | `python marketing/intelligence/weekly-brief.py` | GSC + social + pipeline report → `marketing/intelligence/YYYY-MM-DD-brief.md` |
-| **SEO tools** | `python marketing/seo-optimizer/<tool>.py` | link-builder, title-optimizer, content-gap-detector, striking-distance |
-
-
-### Playwright Visual QA
-
-Static: `npx playwright screenshot --viewport-size="1440,900" <url> <out.png>`
-Interactive (dropdowns, modals): use `node -e` with `chromium.launch()` — click, waitForTimeout(300), screenshot.
-
-### Key Services
-
-| Service | Purpose |
-|---------|---------|
-| **PostHog** | Analytics tracking (client + server-side events) |
-| **Resend** | Transactional email, alerts, drip sequence, lead capture |
-| **Stripe** | Subscriptions, checkout, customer portal |
-| **Pushover** | Real-time mobile alerts for critical failures |
-| **Cloudflare R2** | `snaptosize-social` bucket for social media images (social.snaptosize.com) |
-
-### Active Plugins (Claude.ai)
-
-- **frontend-design** + **ui-ux-pro-max** — UI/UX, component design, visual layouts (activate either for design work)
-- **superpowers** — Structured dev workflow: planning, subagent coordination, verification
-- **claude-mem** — Cross-session memory (automatic)
-- **context-mode** — Context window optimization (always active)
-
+Key tools at a glance:
+- **Playwright** — screenshots + visual QA (primary visual tool)
+- **Remotion** — `cd marketing/remotion && npx tsx render-next-video.ts` (auto-rotation: PortraitSlideshow → InfoReveal → TikTokVertical)
+- **context-mode** — always active; use `ctx_execute`/`ctx_batch_execute` for large outputs
+- **Gemini** — lifestyle image gen only (aspirational pins, room mockups)
 
 ---
 
@@ -183,42 +147,9 @@ Interactive (dropdowns, modals): use `node -e` with `chromium.launch()` — clic
 **Colors:** Teal (#2DD4BF) for conversion elements, purple (#A78BFA) for mid-content inline CTAs
 **shadcn/ui:** Reference only — fetch from `ui.shadcn.com/docs/components/<name>` and adapt. Don't install.
 
-### Shared Components
+→ Shared components table + Social Slide System details: `.claude/docs/design-reference.md`
 
-| Component | Usage |
-|-----------|-------|
-| `FinalCTA` | Teal left accent bar, stat line, app link. Last CTA before FAQ. |
-| `Button` | Always wrap in `<a>`, never give `href` prop to Button itself. |
-| `Card` | With `accent` prop for purple mid-content CTAs. |
-| `FAQAccordion` | FAQ section — items must match FAQPage schema exactly. |
-| `Container` | Page-width wrapper. |
-| `Badge` | Status indicators. |
-| `RelatedPages` | Cross-links at page bottom. |
-
-### Social Slide System (Primary Visual Pipeline)
-
-All branded visuals (pins, posts, video slides) are built as React components and screenshotted with Playwright. This is the **default tool** for all visual content.
-
-**Source:** `app-next/app/social-slides/_components/`
-**Page:** `app-next/app/social-slides/page.tsx` (noindex, screenshot-only)
-**Wrapper:** `SlideWrapper` → Pinterest 1000×1500, Instagram 1080×1350
-**Design:** Dark gradients (#0B0B12), purple/teal glow orbs, real artwork from `/assets/Composition_Pictures/`
-
-**Templates:** BeforeAfter, PackSpotlight, StatsCard, Checklist, SizeComparison, WorkflowSteps, NumberHighlight
-
-**Flow:**
-1. React component in `_components/` using `SlideWrapper`
-2. Rendered on `/social-slides` (noindex)
-3. Playwright screenshot with `clip` on element ID
-4. Used directly as pin/post, OR placed in `remotion/public/` for SlideshowVertical video slides
-
-**Rules:**
-- Social slide components are the DEFAULT for all branded visuals
-- Gemini only for lifestyle/aspirational content (room mockups, styled scenes)
-- Never use raw page screenshots or text-only Remotion for social content
-- New visual concepts → build a new `_components/` template, reference `BeforeAfter.tsx`
-
-See `docs/PIPELINE_OPERATIONS.md` for full workflow and screenshot commands.
+Social slides are the **default** for all branded visuals. Gemini only for lifestyle/aspirational content.
 
 ---
 
@@ -253,22 +184,10 @@ Rules:
 
 ## AGENTS
 
-Agent definitions live in `.claude/agents/`. Active content agents:
-
-| Agent | Role |
-|-------|------|
-| `content-researcher` | SEO keyword research + content briefs with internal link discovery |
-| `seo-writer` | Converts brief into complete Next.js page with pre-submit checklist |
-
-Social pipeline agents (used by `/pipeline-run-week`): see `.claude/agents/` directory.
-
-### Standard SEO Content Workflow
-
-Full 10-step workflow: `docs/seo-workflow.md`
-
-Every page requires: Article + BreadcrumbList + FAQPage schema, 3+ CTAs, CSS-only hero, trust pills, internal links, OG image.
-
+Active agents: `content-researcher`, `seo-writer`. Definitions in `.claude/agents/`.
 Do not instantiate agents unless explicitly instructed.
+
+→ Full agent workflow, NotebookLM sync, Email/Resend: `.claude/docs/pipeline-reference.md`
 
 ---
 
@@ -284,27 +203,6 @@ Update relevant docs automatically after completing work. Do NOT wait to be aske
 | User corrections | `tasks/lessons.md` + check if `CONTENT_REFERENCE.md` needs update |
 | Scaling plan changes | `docs/plans/scaling-to-1m-arr.md` |
 | Running pipelines (weekly) | `NEXT_ACTIONS.md` |
-
----
-
-## NOTEBOOKLM INTEGRATION
-
-Active notebook: "SnapToSize — 1M ARR Scaling Playbook" (ID: `4853724d-ed87-4546-963a-e84665b869f5`)
-
-**How to sync** (auth expires frequently):
-1. MCP: `mcp__notebooklm-mcp__refresh_auth` then `source_add` with type=text
-2. CLI fallback: `PYTHONIOENCODING=utf-8 nlm source add <id> --type text --title "<name>" --text "$(cat <file>)" | cat`
-
-**When to sync:** After major milestones, 10+ new SEO pages, or strategic review. Key sources: PROJECT_STATE, GROWTH_STATE, MILESTONES, CONTENT_PLAYBOOK.
-
----
-
-## EMAIL / RESEND
-
-- Resend integrated for alerts (support@snaptosize.com verified)
-- Resend Audience for email list storage
-- Lead capture uses Resend API
-- Do not introduce new email providers
 
 ---
 

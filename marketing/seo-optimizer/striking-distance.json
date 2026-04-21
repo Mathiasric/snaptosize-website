@@ -1,131 +1,101 @@
 {
-  "generated": "2026-04-09T08:02:28.432938+00:00",
-  "source": "2026-04-04_pages.json",
+  "generated": "2026-04-18T06:46:55.187137+00:00",
+  "source": "2026-04-11_pages.json",
   "position_range": "5.0-15.0",
-  "total_striking_pages": 32,
-  "total_potential_extra_clicks": 94,
+  "total_striking_pages": 41,
+  "total_potential_extra_clicks": 78,
   "pages": [
-    {
-      "slug": "best-file-format-etsy-printables",
-      "url": "https://snaptosize.com/best-file-format-etsy-printables",
-      "impressions": 819,
-      "clicks": 1,
-      "ctr_pct": 0.12,
-      "position": 6.0,
-      "expected_ctr": 5.0,
-      "ctr_gap": 4.88,
-      "top_queries": [],
-      "actions": [
-        "TITLE: CTR is 0.1% vs 5.0% expected -- run title-optimizer.py or manually rewrite title/description",
-        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
-        "CONTENT: Close to top 5 --add FAQ section, expand key sections, ensure comprehensive coverage vs competitors",
-        "URGENT: 819 impressions but only 0.1% CTR -- title/description is not compelling enough for searchers"
-      ],
-      "link_opportunities": 0,
-      "impact_score": 3597.0
-    },
     {
       "slug": "etsy-20mb-file-limit",
       "url": "https://snaptosize.com/etsy-20mb-file-limit",
-      "impressions": 1547,
-      "clicks": 2,
-      "ctr_pct": 0.13,
+      "impressions": 1653,
+      "clicks": 3,
+      "ctr_pct": 0.18,
       "position": 8.1,
       "expected_ctr": 2.0,
-      "ctr_gap": 1.87,
+      "ctr_gap": 1.82,
       "top_queries": [
         {
           "query": "etsy file size limit",
-          "impressions": 13,
-          "position": 14
+          "impressions": 22,
+          "position": 11.5
         },
         {
           "query": "etsy digital download file size limit 20mb 5 files",
-          "impressions": 11,
-          "position": 7.4
-        },
-        {
-          "query": "etsy digital download file size limit 2026",
-          "impressions": 10,
-          "position": 8.2
-        },
-        {
-          "query": "etsy digital download file size limit per file 2026",
-          "impressions": 10,
+          "impressions": 15,
           "position": 7.6
+        },
+        {
+          "query": "etsy maximum file size for digital downloads 2026",
+          "impressions": 9,
+          "position": 5
         },
         {
           "query": "etsy digital download file size limit 20 mb",
           "impressions": 7,
           "position": 8.4
-        }
-      ],
-      "actions": [
-        "TITLE: CTR is 0.1% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
-        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
-        "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables",
-        "URGENT: 1547 impressions but only 0.1% CTR -- title/description is not compelling enough for searchers",
-        "ALIGNMENT: Top query \"etsy file size limit\" (13 imp) doesn't match slug --consider whether title addresses this query directly"
-      ],
-      "link_opportunities": 0,
-      "impact_score": 1996.1
-    },
-    {
-      "slug": "etsy-print-ratios",
-      "url": "https://snaptosize.com/etsy-print-ratios",
-      "impressions": 334,
-      "clicks": 1,
-      "ctr_pct": 0.3,
-      "position": 7.4,
-      "expected_ctr": 2.0,
-      "ctr_gap": 1.7,
-      "top_queries": [
-        {
-          "query": "etsy aspect ratio",
-          "impressions": 1,
-          "position": 71
         },
         {
-          "query": "etsy photo ratio",
-          "impressions": 1,
-          "position": 63
+          "query": "etsy digital download file size limit 20 mb 5 files",
+          "impressions": 7,
+          "position": 8.1
         }
       ],
       "actions": [
-        "TITLE: CTR is 0.3% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
+        "TITLE: CTR is 0.2% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
         "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
         "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables",
-        "URGENT: 334 impressions but only 0.3% CTR -- title/description is not compelling enough for searchers",
-        "ALIGNMENT: Top query \"etsy aspect ratio\" (1 imp) doesn't match slug --consider whether title addresses this query directly"
+        "URGENT: 1653 impressions but only 0.2% CTR -- title/description is not compelling enough for searchers",
+        "ALIGNMENT: Top query \"etsy file size limit\" (22 imp) doesn't match slug --consider whether title addresses this query directly"
       ],
       "link_opportunities": 0,
-      "impact_score": 431.5
+      "impact_score": 2075.8
     },
     {
       "slug": "how-many-sizes-etsy-printable",
       "url": "https://snaptosize.com/how-many-sizes-etsy-printable",
-      "impressions": 89,
+      "impressions": 121,
       "clicks": 0,
       "ctr_pct": 0,
-      "position": 5.8,
+      "position": 5.5,
       "expected_ctr": 5.0,
       "ctr_gap": 5.0,
       "top_queries": [],
       "actions": [
         "TITLE: CTR is 0.0% vs 5.0% expected -- run title-optimizer.py or manually rewrite title/description",
         "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
-        "CONTENT: Close to top 5 --add FAQ section, expand key sections, ensure comprehensive coverage vs competitors"
+        "CONTENT: Close to top 5 --add FAQ section, expand key sections, ensure comprehensive coverage vs competitors",
+        "URGENT: 121 impressions but only 0.0% CTR -- title/description is not compelling enough for searchers"
       ],
       "link_opportunities": 0,
-      "impact_score": 409.4
+      "impact_score": 574.8
+    },
+    {
+      "slug": "etsy-print-ratios",
+      "url": "https://snaptosize.com/etsy-print-ratios",
+      "impressions": 368,
+      "clicks": 1,
+      "ctr_pct": 0.27,
+      "position": 7.1,
+      "expected_ctr": 2.0,
+      "ctr_gap": 1.73,
+      "top_queries": [],
+      "actions": [
+        "TITLE: CTR is 0.3% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
+        "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables",
+        "URGENT: 368 impressions but only 0.3% CTR -- title/description is not compelling enough for searchers"
+      ],
+      "link_opportunities": 0,
+      "impact_score": 502.9
     },
     {
       "slug": "how-to-package-digital-wall-art-for-etsy",
       "url": "https://snaptosize.com/how-to-package-digital-wall-art-for-etsy",
-      "impressions": 166,
+      "impressions": 279,
       "clicks": 0,
       "ctr_pct": 0,
-      "position": 7.6,
+      "position": 7.4,
       "expected_ctr": 2.0,
       "ctr_gap": 2.0,
       "top_queries": [],
@@ -133,21 +103,76 @@
         "TITLE: CTR is 0.0% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
         "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
         "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables",
-        "URGENT: 166 impressions but only 0.0% CTR -- title/description is not compelling enough for searchers"
+        "URGENT: 279 impressions but only 0.0% CTR -- title/description is not compelling enough for searchers"
       ],
       "link_opportunities": 0,
-      "impact_score": 245.7
+      "impact_score": 424.1
+    },
+    {
+      "slug": "best-file-format-etsy-printables",
+      "url": "https://snaptosize.com/best-file-format-etsy-printables",
+      "impressions": 1142,
+      "clicks": 1,
+      "ctr_pct": 0.09,
+      "position": 6.1,
+      "expected_ctr": 0.5,
+      "ctr_gap": 0.41,
+      "top_queries": [
+        {
+          "query": "etsy digital download file size limit pdf 2026",
+          "impressions": 1,
+          "position": 9
+        }
+      ],
+      "actions": [
+        "TITLE: CTR is 0.1% vs 0.5% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
+        "CONTENT: Close to top 5 --add FAQ section, expand key sections, ensure comprehensive coverage vs competitors",
+        "URGENT: 1142 impressions but only 0.1% CTR -- title/description is not compelling enough for searchers",
+        "ALIGNMENT: Top query \"etsy digital download file size limit pdf 2026\" (1 imp) doesn't match slug --consider whether title addresses this query directly"
+      ],
+      "link_opportunities": 0,
+      "impact_score": 416.7
+    },
+    {
+      "slug": "etsy-digital-planner-sizes",
+      "url": "https://snaptosize.com/etsy-digital-planner-sizes",
+      "impressions": 74,
+      "clicks": 0,
+      "ctr_pct": 0,
+      "position": 5.9,
+      "expected_ctr": 5.0,
+      "ctr_gap": 5.0,
+      "top_queries": [
+        {
+          "query": "digital planner size",
+          "impressions": 2,
+          "position": 9.5
+        }
+      ],
+      "actions": [
+        "TITLE: CTR is 0.0% vs 5.0% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
+        "CONTENT: Close to top 5 --add FAQ section, expand key sections, ensure comprehensive coverage vs competitors"
+      ],
+      "link_opportunities": 0,
+      "impact_score": 336.7
     },
     {
       "slug": "how-to-price-etsy-printables",
       "url": "https://snaptosize.com/how-to-price-etsy-printables",
-      "impressions": 131,
+      "impressions": 187,
       "clicks": 0,
       "ctr_pct": 0,
-      "position": 7.3,
+      "position": 7.2,
       "expected_ctr": 2.0,
       "ctr_gap": 2.0,
       "top_queries": [
+        {
+          "query": "average price digital printables etsy",
+          "impressions": 1,
+          "position": 8
+        },
         {
           "query": "how to price digital downloads on etsy",
           "impressions": 1,
@@ -157,51 +182,30 @@
           "query": "price range for digital printables on etsy",
           "impressions": 1,
           "position": 8
+        },
+        {
+          "query": "typical pricing for digital printables on etsy",
+          "impressions": 1,
+          "position": 10
         }
       ],
       "actions": [
         "TITLE: CTR is 0.0% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
         "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
         "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables",
-        "URGENT: 131 impressions but only 0.0% CTR -- title/description is not compelling enough for searchers",
-        "ALIGNMENT: Top query \"how to price digital downloads on etsy\" (1 imp) doesn't match slug --consider whether title addresses this query directly"
+        "URGENT: 187 impressions but only 0.0% CTR -- title/description is not compelling enough for searchers",
+        "ALIGNMENT: Top query \"average price digital printables etsy\" (1 imp) doesn't match slug --consider whether title addresses this query directly"
       ],
       "link_opportunities": 0,
-      "impact_score": 201.7
-    },
-    {
-      "slug": "etsy-print-sizes",
-      "url": "https://snaptosize.com/etsy-print-sizes",
-      "impressions": 147,
-      "clicks": 0,
-      "ctr_pct": 0,
-      "position": 8.3,
-      "expected_ctr": 2.0,
-      "ctr_gap": 2.0,
-      "top_queries": [
-        {
-          "query": "etsy aspect ratio",
-          "impressions": 1,
-          "position": 60
-        }
-      ],
-      "actions": [
-        "TITLE: CTR is 0.0% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
-        "LINKS: 1 internal link opportunities found --run link-builder.py and add links from other pages",
-        "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables",
-        "URGENT: 147 impressions but only 0.0% CTR -- title/description is not compelling enough for searchers",
-        "ALIGNMENT: Top query \"etsy aspect ratio\" (1 imp) doesn't match slug --consider whether title addresses this query directly"
-      ],
-      "link_opportunities": 1,
-      "impact_score": 197.0
+      "impact_score": 291.7
     },
     {
       "slug": "best-resolution-for-etsy-printables",
       "url": "https://snaptosize.com/best-resolution-for-etsy-printables",
-      "impressions": 353,
+      "impressions": 516,
       "clicks": 0,
       "ctr_pct": 0,
-      "position": 6.9,
+      "position": 6.7,
       "expected_ctr": 0.5,
       "ctr_gap": 0.5,
       "top_queries": [],
@@ -209,14 +213,238 @@
         "TITLE: CTR is 0.0% vs 0.5% expected -- run title-optimizer.py or manually rewrite title/description",
         "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
         "CONTENT: Close to top 5 --add FAQ section, expand key sections, ensure comprehensive coverage vs competitors",
-        "URGENT: 353 impressions but only 0.0% CTR -- title/description is not compelling enough for searchers"
+        "URGENT: 516 impressions but only 0.0% CTR -- title/description is not compelling enough for searchers"
       ],
       "link_opportunities": 0,
-      "impact_score": 143.0
+      "impact_score": 214.1
     },
     {
-      "slug": "how-to-sell-printables-on-etsy-without-photoshop",
-      "url": "https://snaptosize.com/how-to-sell-printables-on-etsy-without-photoshop",
+      "slug": "etsy-pet-portrait-sizes",
+      "url": "https://snaptosize.com/etsy-pet-portrait-sizes",
+      "impressions": 29,
+      "clicks": 0,
+      "ctr_pct": 0,
+      "position": 5.8,
+      "expected_ctr": 5.0,
+      "ctr_gap": 5.0,
+      "top_queries": [
+        {
+          "query": "best print sizes for pet photos",
+          "impressions": 1,
+          "position": 17
+        }
+      ],
+      "actions": [
+        "TITLE: CTR is 0.0% vs 5.0% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
+        "CONTENT: Close to top 5 --add FAQ section, expand key sections, ensure comprehensive coverage vs competitors",
+        "ALIGNMENT: Top query \"best print sizes for pet photos\" (1 imp) doesn't match slug --consider whether title addresses this query directly"
+      ],
+      "link_opportunities": 0,
+      "impact_score": 133.4
+    },
+    {
+      "slug": "etsy-print-sizes",
+      "url": "https://snaptosize.com/etsy-print-sizes",
+      "impressions": 137,
+      "clicks": 1,
+      "ctr_pct": 0.73,
+      "position": 8.4,
+      "expected_ctr": 2.0,
+      "ctr_gap": 1.27,
+      "top_queries": [],
+      "actions": [
+        "TITLE: CTR is 0.7% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: 1 internal link opportunities found --run link-builder.py and add links from other pages",
+        "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables",
+        "URGENT: 137 impressions but only 0.7% CTR -- title/description is not compelling enough for searchers"
+      ],
+      "link_opportunities": 1,
+      "impact_score": 114.8
+    },
+    {
+      "slug": "2-3-vs-4-5-ratio",
+      "url": "https://snaptosize.com/2-3-vs-4-5-ratio",
+      "impressions": 88,
+      "clicks": 0,
+      "ctr_pct": 0,
+      "position": 8.5,
+      "expected_ctr": 2.0,
+      "ctr_gap": 2.0,
+      "top_queries": [
+        {
+          "query": "2:3 vs 4:5",
+          "impressions": 7,
+          "position": 8.9
+        },
+        {
+          "query": "4:5 vs 2:3",
+          "impressions": 4,
+          "position": 9.5
+        },
+        {
+          "query": "4/5 vs 2/3",
+          "impressions": 1,
+          "position": 11
+        }
+      ],
+      "actions": [
+        "TITLE: CTR is 0.0% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: 10 internal link opportunities found --run link-builder.py and add links from other pages",
+        "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables",
+        "ALIGNMENT: Top query \"2:3 vs 4:5\" (7 imp) doesn't match slug --consider whether title addresses this query directly"
+      ],
+      "link_opportunities": 10,
+      "impact_score": 114.4
+    },
+    {
+      "slug": "etsy-ai-art-print-sizes",
+      "url": "https://snaptosize.com/etsy-ai-art-print-sizes",
+      "impressions": 56,
+      "clicks": 0,
+      "ctr_pct": 0,
+      "position": 7.7,
+      "expected_ctr": 2.0,
+      "ctr_gap": 2.0,
+      "top_queries": [],
+      "actions": [
+        "TITLE: CTR is 0.0% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
+        "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables"
+      ],
+      "link_opportunities": 0,
+      "impact_score": 81.8
+    },
+    {
+      "slug": "etsy-a5-print-size",
+      "url": "https://snaptosize.com/etsy-a5-print-size",
+      "impressions": 17,
+      "clicks": 0,
+      "ctr_pct": 0,
+      "position": 5.8,
+      "expected_ctr": 5.0,
+      "ctr_gap": 5.0,
+      "top_queries": [],
+      "actions": [
+        "TITLE: CTR is 0.0% vs 5.0% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: 8 internal link opportunities found --run link-builder.py and add links from other pages",
+        "CONTENT: Close to top 5 --add FAQ section, expand key sections, ensure comprehensive coverage vs competitors"
+      ],
+      "link_opportunities": 8,
+      "impact_score": 78.2
+    },
+    {
+      "slug": "etsy-quote-wall-art-sizes",
+      "url": "https://snaptosize.com/etsy-quote-wall-art-sizes",
+      "impressions": 13,
+      "clicks": 0,
+      "ctr_pct": 0,
+      "position": 5.7,
+      "expected_ctr": 5.0,
+      "ctr_gap": 5.0,
+      "top_queries": [],
+      "actions": [
+        "TITLE: CTR is 0.0% vs 5.0% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
+        "CONTENT: Close to top 5 --add FAQ section, expand key sections, ensure comprehensive coverage vs competitors"
+      ],
+      "link_opportunities": 0,
+      "impact_score": 60.5
+    },
+    {
+      "slug": "etsy-a4-print-size",
+      "url": "https://snaptosize.com/etsy-a4-print-size",
+      "impressions": 263,
+      "clicks": 0,
+      "ctr_pct": 0,
+      "position": 10.5,
+      "expected_ctr": 0.5,
+      "ctr_gap": 0.5,
+      "top_queries": [
+        {
+          "query": "\"a4 at 300 dpi\" pixels",
+          "impressions": 34,
+          "position": 9.6
+        },
+        {
+          "query": "a4 300 dpi pixels",
+          "impressions": 2,
+          "position": 66
+        },
+        {
+          "query": "300 dpi a4",
+          "impressions": 1,
+          "position": 71
+        },
+        {
+          "query": "a4 300 dpi",
+          "impressions": 1,
+          "position": 82
+        },
+        {
+          "query": "a4 300dpi",
+          "impressions": 1,
+          "position": 67
+        }
+      ],
+      "actions": [
+        "TITLE: CTR is 0.0% vs 0.5% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
+        "CONTENT: Page 2 --needs significant content expansion, fresh examples, and more internal links to break onto page 1",
+        "URGENT: 263 impressions but only 0.0% CTR -- title/description is not compelling enough for searchers",
+        "ALIGNMENT: Top query \"\"a4 at 300 dpi\" pixels\" (34 imp) doesn't match slug --consider whether title addresses this query directly"
+      ],
+      "link_opportunities": 0,
+      "impact_score": 59.2
+    },
+    {
+      "slug": "etsy-13x19-print-size",
+      "url": "https://snaptosize.com/etsy-13x19-print-size",
+      "impressions": 52,
+      "clicks": 0,
+      "ctr_pct": 0,
+      "position": 9.4,
+      "expected_ctr": 2.0,
+      "ctr_gap": 2.0,
+      "top_queries": [
+        {
+          "query": "13:19 aspect ratio",
+          "impressions": 2,
+          "position": 10.5
+        },
+        {
+          "query": "13x19 aspect ratio",
+          "impressions": 2,
+          "position": 10.5
+        },
+        {
+          "query": "13 x 19 aspect ratio",
+          "impressions": 1,
+          "position": 11
+        },
+        {
+          "query": "13*19 poster size",
+          "impressions": 1,
+          "position": 44
+        },
+        {
+          "query": "13x19 poster size comparison",
+          "impressions": 1,
+          "position": 10
+        }
+      ],
+      "actions": [
+        "TITLE: CTR is 0.0% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: 9 internal link opportunities found --run link-builder.py and add links from other pages",
+        "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables",
+        "ALIGNMENT: Top query \"13:19 aspect ratio\" (2 imp) doesn't match slug --consider whether title addresses this query directly"
+      ],
+      "link_opportunities": 9,
+      "impact_score": 58.2
+    },
+    {
+      "slug": "partners",
+      "url": "https://snaptosize.com/partners",
       "impressions": 12,
       "clicks": 0,
       "ctr_pct": 0,
@@ -233,178 +461,12 @@
       "impact_score": 55.2
     },
     {
-      "slug": "etsy-quote-wall-art-sizes",
-      "url": "https://snaptosize.com/etsy-quote-wall-art-sizes",
-      "impressions": 11,
-      "clicks": 0,
-      "ctr_pct": 0,
-      "position": 5.8,
-      "expected_ctr": 5.0,
-      "ctr_gap": 5.0,
-      "top_queries": [],
-      "actions": [
-        "TITLE: CTR is 0.0% vs 5.0% expected -- run title-optimizer.py or manually rewrite title/description",
-        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
-        "CONTENT: Close to top 5 --add FAQ section, expand key sections, ensure comprehensive coverage vs competitors"
-      ],
-      "link_opportunities": 0,
-      "impact_score": 50.6
-    },
-    {
-      "slug": "2-3-vs-4-5-ratio",
-      "url": "https://snaptosize.com/2-3-vs-4-5-ratio",
-      "impressions": 48,
-      "clicks": 0,
-      "ctr_pct": 0,
-      "position": 9.9,
-      "expected_ctr": 2.0,
-      "ctr_gap": 2.0,
-      "top_queries": [
-        {
-          "query": "2:3 vs 4:5",
-          "impressions": 5,
-          "position": 8
-        },
-        {
-          "query": "4:5 vs 2:3",
-          "impressions": 1,
-          "position": 12
-        }
-      ],
-      "actions": [
-        "TITLE: CTR is 0.0% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
-        "LINKS: 10 internal link opportunities found --run link-builder.py and add links from other pages",
-        "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables",
-        "ALIGNMENT: Top query \"2:3 vs 4:5\" (5 imp) doesn't match slug --consider whether title addresses this query directly"
-      ],
-      "link_opportunities": 10,
-      "impact_score": 49.0
-    },
-    {
-      "slug": "partners",
-      "url": "https://snaptosize.com/partners",
-      "impressions": 10,
-      "clicks": 0,
-      "ctr_pct": 0,
-      "position": 5.2,
-      "expected_ctr": 5.0,
-      "ctr_gap": 5.0,
-      "top_queries": [],
-      "actions": [
-        "TITLE: CTR is 0.0% vs 5.0% expected -- run title-optimizer.py or manually rewrite title/description",
-        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
-        "CONTENT: Close to top 5 --add FAQ section, expand key sections, ensure comprehensive coverage vs competitors"
-      ],
-      "link_opportunities": 0,
-      "impact_score": 49.0
-    },
-    {
-      "slug": "etsy-a5-print-size",
-      "url": "https://snaptosize.com/etsy-a5-print-size",
-      "impressions": 10,
-      "clicks": 0,
-      "ctr_pct": 0,
-      "position": 5.4,
-      "expected_ctr": 5.0,
-      "ctr_gap": 5.0,
-      "top_queries": [],
-      "actions": [
-        "TITLE: CTR is 0.0% vs 5.0% expected -- run title-optimizer.py or manually rewrite title/description",
-        "LINKS: 8 internal link opportunities found --run link-builder.py and add links from other pages",
-        "CONTENT: Close to top 5 --add FAQ section, expand key sections, ensure comprehensive coverage vs competitors"
-      ],
-      "link_opportunities": 8,
-      "impact_score": 48.0
-    },
-    {
-      "slug": "etsy-a4-print-size",
-      "url": "https://snaptosize.com/etsy-a4-print-size",
-      "impressions": 202,
-      "clicks": 0,
-      "ctr_pct": 0,
-      "position": 10.5,
-      "expected_ctr": 0.5,
-      "ctr_gap": 0.5,
-      "top_queries": [
-        {
-          "query": "\"a4 at 300 dpi\" pixels",
-          "impressions": 29,
-          "position": 9.2
-        },
-        {
-          "query": "300 dpi a4",
-          "impressions": 1,
-          "position": 71
-        },
-        {
-          "query": "a4 300 dpi",
-          "impressions": 1,
-          "position": 82
-        },
-        {
-          "query": "a4 300 dpi pixels",
-          "impressions": 1,
-          "position": 70
-        },
-        {
-          "query": "a4 dpi",
-          "impressions": 1,
-          "position": 65
-        }
-      ],
-      "actions": [
-        "TITLE: CTR is 0.0% vs 0.5% expected -- run title-optimizer.py or manually rewrite title/description",
-        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
-        "CONTENT: Page 2 --needs significant content expansion, fresh examples, and more internal links to break onto page 1",
-        "URGENT: 202 impressions but only 0.0% CTR -- title/description is not compelling enough for searchers",
-        "ALIGNMENT: Top query \"\"a4 at 300 dpi\" pixels\" (29 imp) doesn't match slug --consider whether title addresses this query directly"
-      ],
-      "link_opportunities": 0,
-      "impact_score": 45.5
-    },
-    {
-      "slug": "etsy-gallery-wall-print-sizes",
-      "url": "https://snaptosize.com/etsy-gallery-wall-print-sizes",
-      "impressions": 24,
-      "clicks": 0,
-      "ctr_pct": 0,
-      "position": 8.7,
-      "expected_ctr": 2.0,
-      "ctr_gap": 2.0,
-      "top_queries": [],
-      "actions": [
-        "TITLE: CTR is 0.0% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
-        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
-        "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables"
-      ],
-      "link_opportunities": 0,
-      "impact_score": 30.2
-    },
-    {
-      "slug": "etsy-ai-art-print-sizes",
-      "url": "https://snaptosize.com/etsy-ai-art-print-sizes",
-      "impressions": 23,
-      "clicks": 0,
-      "ctr_pct": 0,
-      "position": 8.6,
-      "expected_ctr": 2.0,
-      "ctr_gap": 2.0,
-      "top_queries": [],
-      "actions": [
-        "TITLE: CTR is 0.0% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
-        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
-        "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables"
-      ],
-      "link_opportunities": 0,
-      "impact_score": 29.4
-    },
-    {
       "slug": "etsy-12x16-print-size",
       "url": "https://snaptosize.com/etsy-12x16-print-size",
-      "impressions": 20,
+      "impressions": 36,
       "clicks": 0,
       "ctr_pct": 0,
-      "position": 7.9,
+      "position": 7.5,
       "expected_ctr": 2.0,
       "ctr_gap": 2.0,
       "top_queries": [],
@@ -414,15 +476,33 @@
         "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables"
       ],
       "link_opportunities": 12,
-      "impact_score": 28.4
+      "impact_score": 54.0
     },
     {
-      "slug": "snaptosize-vs-canva",
-      "url": "https://snaptosize.com/snaptosize-vs-canva",
-      "impressions": 17,
+      "slug": "etsy-5x7-print-size",
+      "url": "https://snaptosize.com/etsy-5x7-print-size",
+      "impressions": 45,
       "clicks": 0,
       "ctr_pct": 0,
-      "position": 7.2,
+      "position": 9.6,
+      "expected_ctr": 2.0,
+      "ctr_gap": 2.0,
+      "top_queries": [],
+      "actions": [
+        "TITLE: CTR is 0.0% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: 12 internal link opportunities found --run link-builder.py and add links from other pages",
+        "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables"
+      ],
+      "link_opportunities": 12,
+      "impact_score": 48.6
+    },
+    {
+      "slug": "etsy-watercolor-print-sizes",
+      "url": "https://snaptosize.com/etsy-watercolor-print-sizes",
+      "impressions": 28,
+      "clicks": 0,
+      "ctr_pct": 0,
+      "position": 7.1,
       "expected_ctr": 2.0,
       "ctr_gap": 2.0,
       "top_queries": [],
@@ -432,30 +512,12 @@
         "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables"
       ],
       "link_opportunities": 0,
-      "impact_score": 26.5
+      "impact_score": 44.2
     },
     {
-      "slug": "sizes",
-      "url": "https://snaptosize.com/sizes",
-      "impressions": 42,
-      "clicks": 0,
-      "ctr_pct": 0,
-      "position": 6.2,
-      "expected_ctr": 0.5,
-      "ctr_gap": 0.5,
-      "top_queries": [],
-      "actions": [
-        "TITLE: CTR is 0.0% vs 0.5% expected -- run title-optimizer.py or manually rewrite title/description",
-        "LINKS: 53 internal link opportunities found --run link-builder.py and add links from other pages",
-        "CONTENT: Close to top 5 --add FAQ section, expand key sections, ensure comprehensive coverage vs competitors"
-      ],
-      "link_opportunities": 53,
-      "impact_score": 18.5
-    },
-    {
-      "slug": "etsy-20x24-print-size",
-      "url": "https://snaptosize.com/etsy-20x24-print-size",
-      "impressions": 12,
+      "slug": "snaptosize-vs-canva",
+      "url": "https://snaptosize.com/snaptosize-vs-canva",
+      "impressions": 25,
       "clicks": 0,
       "ctr_pct": 0,
       "position": 7.6,
@@ -464,16 +526,16 @@
       "top_queries": [],
       "actions": [
         "TITLE: CTR is 0.0% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
-        "LINKS: 9 internal link opportunities found --run link-builder.py and add links from other pages",
+        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
         "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables"
       ],
-      "link_opportunities": 9,
-      "impact_score": 17.8
+      "link_opportunities": 0,
+      "impact_score": 37.0
     },
     {
-      "slug": "etsy-8x10-print-size",
-      "url": "https://snaptosize.com/etsy-8x10-print-size",
-      "impressions": 12,
+      "slug": "etsy-20x24-print-size",
+      "url": "https://snaptosize.com/etsy-20x24-print-size",
+      "impressions": 24,
       "clicks": 0,
       "ctr_pct": 0,
       "position": 7.9,
@@ -482,238 +544,21 @@
       "top_queries": [],
       "actions": [
         "TITLE: CTR is 0.0% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
-        "LINKS: 13 internal link opportunities found --run link-builder.py and add links from other pages",
-        "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables"
-      ],
-      "link_opportunities": 13,
-      "impact_score": 17.0
-    },
-    {
-      "slug": "etsy-square-print-sizes",
-      "url": "https://snaptosize.com/etsy-square-print-sizes",
-      "impressions": 11,
-      "clicks": 0,
-      "ctr_pct": 0,
-      "position": 8.5,
-      "expected_ctr": 2.0,
-      "ctr_gap": 2.0,
-      "top_queries": [
-        {
-          "query": "common square print sizes",
-          "impressions": 1,
-          "position": 44
-        }
-      ],
-      "actions": [
-        "TITLE: CTR is 0.0% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
-        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
-        "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables",
-        "ALIGNMENT: Top query \"common square print sizes\" (1 imp) doesn't match slug --consider whether title addresses this query directly"
-      ],
-      "link_opportunities": 0,
-      "impact_score": 14.3
-    },
-    {
-      "slug": "etsy-minimalist-wall-art-sizes",
-      "url": "https://snaptosize.com/etsy-minimalist-wall-art-sizes",
-      "impressions": 10,
-      "clicks": 0,
-      "ctr_pct": 0,
-      "position": 8.6,
-      "expected_ctr": 2.0,
-      "ctr_gap": 2.0,
-      "top_queries": [],
-      "actions": [
-        "TITLE: CTR is 0.0% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
-        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
-        "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables"
-      ],
-      "link_opportunities": 0,
-      "impact_score": 12.8
-    },
-    {
-      "slug": "etsy-nursery-wall-art-sizes",
-      "url": "https://snaptosize.com/etsy-nursery-wall-art-sizes",
-      "impressions": 28,
-      "clicks": 0,
-      "ctr_pct": 0,
-      "position": 6.7,
-      "expected_ctr": 0.5,
-      "ctr_gap": 0.5,
-      "top_queries": [],
-      "actions": [
-        "TITLE: CTR is 0.0% vs 0.5% expected -- run title-optimizer.py or manually rewrite title/description",
-        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
-        "CONTENT: Close to top 5 --add FAQ section, expand key sections, ensure comprehensive coverage vs competitors"
-      ],
-      "link_opportunities": 0,
-      "impact_score": 11.6
-    },
-    {
-      "slug": "etsy-5x7-print-size",
-      "url": "https://snaptosize.com/etsy-5x7-print-size",
-      "impressions": 31,
-      "clicks": 0,
-      "ctr_pct": 0,
-      "position": 10.7,
-      "expected_ctr": 0.5,
-      "ctr_gap": 0.5,
-      "top_queries": [],
-      "actions": [
-        "TITLE: CTR is 0.0% vs 0.5% expected -- run title-optimizer.py or manually rewrite title/description",
-        "LINKS: 12 internal link opportunities found --run link-builder.py and add links from other pages",
-        "CONTENT: Page 2 --needs significant content expansion, fresh examples, and more internal links to break onto page 1"
-      ],
-      "link_opportunities": 12,
-      "impact_score": 6.7
-    },
-    {
-      "slug": "etsy-11x17-print-size",
-      "url": "https://snaptosize.com/etsy-11x17-print-size",
-      "impressions": 23,
-      "clicks": 0,
-      "ctr_pct": 0,
-      "position": 10.2,
-      "expected_ctr": 0.5,
-      "ctr_gap": 0.5,
-      "top_queries": [
-        {
-          "query": "11:17 aspect ratio",
-          "impressions": 1,
-          "position": 11
-        },
-        {
-          "query": "11x17 resolution",
-          "impressions": 1,
-          "position": 26
-        },
-        {
-          "query": "pixels for 11x17",
-          "impressions": 1,
-          "position": 32
-        }
-      ],
-      "actions": [
-        "TITLE: CTR is 0.0% vs 0.5% expected -- run title-optimizer.py or manually rewrite title/description",
         "LINKS: 9 internal link opportunities found --run link-builder.py and add links from other pages",
-        "CONTENT: Page 2 --needs significant content expansion, fresh examples, and more internal links to break onto page 1",
-        "ALIGNMENT: Top query \"11:17 aspect ratio\" (1 imp) doesn't match slug --consider whether title addresses this query directly"
+        "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables"
       ],
       "link_opportunities": 9,
-      "impact_score": 5.5
-    },
-    {
-      "slug": "etsy-8-5x11-print-size",
-      "url": "https://snaptosize.com/etsy-8-5x11-print-size",
-      "impressions": 4,
-      "clicks": 0,
-      "ctr_pct": 0,
-      "position": 9,
-      "expected_ctr": 2.0,
-      "ctr_gap": 2.0,
-      "top_queries": [],
-      "actions": [
-        "TITLE: CTR is 0.0% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
-        "LINKS: 13 internal link opportunities found --run link-builder.py and add links from other pages",
-        "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables"
-      ],
-      "link_opportunities": 13,
-      "impact_score": 4.8
-    },
-    {
-      "slug": "etsy-12x18-print-size",
-      "url": "https://snaptosize.com/etsy-12x18-print-size",
-      "impressions": 15,
-      "clicks": 0,
-      "ctr_pct": 0,
-      "position": 10.2,
-      "expected_ctr": 0.5,
-      "ctr_gap": 0.5,
-      "top_queries": [
-        {
-          "query": "12 18 pixel size",
-          "impressions": 3,
-          "position": 10.7
-        }
-      ],
-      "actions": [
-        "TITLE: CTR is 0.0% vs 0.5% expected -- run title-optimizer.py or manually rewrite title/description",
-        "LINKS: 6 internal link opportunities found --run link-builder.py and add links from other pages",
-        "CONTENT: Page 2 --needs significant content expansion, fresh examples, and more internal links to break onto page 1",
-        "ALIGNMENT: Top query \"12 18 pixel size\" (3 imp) doesn't match slug --consider whether title addresses this query directly"
-      ],
-      "link_opportunities": 6,
-      "impact_score": 3.6
-    },
-    {
-      "slug": "etsy-digital-planner-sizes",
-      "url": "https://snaptosize.com/etsy-digital-planner-sizes",
-      "impressions": 1,
-      "clicks": 0,
-      "ctr_pct": 0,
-      "position": 7,
-      "expected_ctr": 2.0,
-      "ctr_gap": 2.0,
-      "top_queries": [],
-      "actions": [
-        "TITLE: CTR is 0.0% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
-        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
-        "CONTENT: Close to top 5 --add FAQ section, expand key sections, ensure comprehensive coverage vs competitors"
-      ],
-      "link_opportunities": 0,
-      "impact_score": 1.6
-    },
-    {
-      "slug": "etsy-20x30-print-size",
-      "url": "https://snaptosize.com/etsy-20x30-print-size",
-      "impressions": 12,
-      "clicks": 0,
-      "ctr_pct": 0,
-      "position": 14.9,
-      "expected_ctr": 1.0,
-      "ctr_gap": 1.0,
-      "top_queries": [
-        {
-          "query": "what size frame for a 20x30 print",
-          "impressions": 1,
-          "position": 85
-        }
-      ],
-      "actions": [
-        "TITLE: CTR is 0.0% vs 1.0% expected -- run title-optimizer.py or manually rewrite title/description",
-        "LINKS: 10 internal link opportunities found --run link-builder.py and add links from other pages",
-        "CONTENT: Page 2 --needs significant content expansion, fresh examples, and more internal links to break onto page 1",
-        "ALIGNMENT: Top query \"what size frame for a 20x30 print\" (1 imp) doesn't match slug --consider whether title addresses this query directly"
-      ],
-      "link_opportunities": 10,
-      "impact_score": 1.2
-    },
-    {
-      "slug": "etsy-4x6-print-size",
-      "url": "https://snaptosize.com/etsy-4x6-print-size",
-      "impressions": 17,
-      "clicks": 1,
-      "ctr_pct": 5.88,
-      "position": 6.4,
-      "expected_ctr": 0.5,
-      "ctr_gap": -5.38,
-      "top_queries": [],
-      "actions": [
-        "LINKS: 12 internal link opportunities found --run link-builder.py and add links from other pages",
-        "CONTENT: Close to top 5 --add FAQ section, expand key sections, ensure comprehensive coverage vs competitors"
-      ],
-      "link_opportunities": 12,
-      "impact_score": 0.0
+      "impact_score": 34.1
     },
     {
       "slug": "etsy-botanical-print-sizes",
       "url": "https://snaptosize.com/etsy-botanical-print-sizes",
-      "impressions": 39,
+      "impressions": 73,
       "clicks": 1,
-      "ctr_pct": 2.56,
-      "position": 7.4,
+      "ctr_pct": 1.37,
+      "position": 7.6,
       "expected_ctr": 2.0,
-      "ctr_gap": -0.56,
+      "ctr_gap": 0.63,
       "top_queries": [
         {
           "query": "instant download botanical prints etsy price comparison",
@@ -725,6 +570,435 @@
         "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
         "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables",
         "ALIGNMENT: Top query \"instant download botanical prints etsy price comparison\" (2 imp) doesn't match slug --consider whether title addresses this query directly"
+      ],
+      "link_opportunities": 0,
+      "impact_score": 34.0
+    },
+    {
+      "slug": "etsy-nursery-wall-art-sizes",
+      "url": "https://snaptosize.com/etsy-nursery-wall-art-sizes",
+      "impressions": 54,
+      "clicks": 0,
+      "ctr_pct": 0,
+      "position": 6.6,
+      "expected_ctr": 0.5,
+      "ctr_gap": 0.5,
+      "top_queries": [],
+      "actions": [
+        "TITLE: CTR is 0.0% vs 0.5% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
+        "CONTENT: Close to top 5 --add FAQ section, expand key sections, ensure comprehensive coverage vs competitors"
+      ],
+      "link_opportunities": 0,
+      "impact_score": 22.7
+    },
+    {
+      "slug": "etsy-minimalist-wall-art-sizes",
+      "url": "https://snaptosize.com/etsy-minimalist-wall-art-sizes",
+      "impressions": 17,
+      "clicks": 0,
+      "ctr_pct": 0,
+      "position": 8.4,
+      "expected_ctr": 2.0,
+      "ctr_gap": 2.0,
+      "top_queries": [],
+      "actions": [
+        "TITLE: CTR is 0.0% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
+        "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables"
+      ],
+      "link_opportunities": 0,
+      "impact_score": 22.4
+    },
+    {
+      "slug": "etsy-a1-print-size",
+      "url": "https://snaptosize.com/etsy-a1-print-size",
+      "impressions": 16,
+      "clicks": 0,
+      "ctr_pct": 0,
+      "position": 8.2,
+      "expected_ctr": 2.0,
+      "ctr_gap": 2.0,
+      "top_queries": [],
+      "actions": [
+        "TITLE: CTR is 0.0% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
+        "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables"
+      ],
+      "link_opportunities": 0,
+      "impact_score": 21.8
+    },
+    {
+      "slug": "sizes",
+      "url": "https://snaptosize.com/sizes",
+      "impressions": 45,
+      "clicks": 0,
+      "ctr_pct": 0,
+      "position": 6.5,
+      "expected_ctr": 0.5,
+      "ctr_gap": 0.5,
+      "top_queries": [],
+      "actions": [
+        "TITLE: CTR is 0.0% vs 0.5% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: 53 internal link opportunities found --run link-builder.py and add links from other pages",
+        "CONTENT: Close to top 5 --add FAQ section, expand key sections, ensure comprehensive coverage vs competitors"
+      ],
+      "link_opportunities": 53,
+      "impact_score": 19.1
+    },
+    {
+      "slug": "etsy-8-5x11-print-size",
+      "url": "https://snaptosize.com/etsy-8-5x11-print-size",
+      "impressions": 10,
+      "clicks": 0,
+      "ctr_pct": 0,
+      "position": 7.2,
+      "expected_ctr": 2.0,
+      "ctr_gap": 2.0,
+      "top_queries": [],
+      "actions": [
+        "TITLE: CTR is 0.0% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: 13 internal link opportunities found --run link-builder.py and add links from other pages",
+        "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables"
+      ],
+      "link_opportunities": 13,
+      "impact_score": 15.6
+    },
+    {
+      "slug": "etsy-8x10-print-size",
+      "url": "https://snaptosize.com/etsy-8x10-print-size",
+      "impressions": 13,
+      "clicks": 0,
+      "ctr_pct": 0,
+      "position": 9.3,
+      "expected_ctr": 2.0,
+      "ctr_gap": 2.0,
+      "top_queries": [],
+      "actions": [
+        "TITLE: CTR is 0.0% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: 13 internal link opportunities found --run link-builder.py and add links from other pages",
+        "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables"
+      ],
+      "link_opportunities": 13,
+      "impact_score": 14.8
+    },
+    {
+      "slug": "etsy-11x17-print-size",
+      "url": "https://snaptosize.com/etsy-11x17-print-size",
+      "impressions": 58,
+      "clicks": 0,
+      "ctr_pct": 0,
+      "position": 10.9,
+      "expected_ctr": 0.5,
+      "ctr_gap": 0.5,
+      "top_queries": [
+        {
+          "query": "pixels for 11x17",
+          "impressions": 2,
+          "position": 30
+        },
+        {
+          "query": "11:17 aspect ratio",
+          "impressions": 1,
+          "position": 11
+        },
+        {
+          "query": "11x17 aspect ratio pixels",
+          "impressions": 1,
+          "position": 12
+        },
+        {
+          "query": "11x17 resolution",
+          "impressions": 1,
+          "position": 26
+        },
+        {
+          "query": "pixel size for 11x17",
+          "impressions": 1,
+          "position": 33
+        }
+      ],
+      "actions": [
+        "TITLE: CTR is 0.0% vs 0.5% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: 9 internal link opportunities found --run link-builder.py and add links from other pages",
+        "CONTENT: Page 2 --needs significant content expansion, fresh examples, and more internal links to break onto page 1",
+        "ALIGNMENT: Top query \"pixels for 11x17\" (2 imp) doesn't match slug --consider whether title addresses this query directly"
+      ],
+      "link_opportunities": 9,
+      "impact_score": 11.9
+    },
+    {
+      "slug": "etsy-vintage-art-print-sizes",
+      "url": "https://snaptosize.com/etsy-vintage-art-print-sizes",
+      "impressions": 7,
+      "clicks": 0,
+      "ctr_pct": 0,
+      "position": 7.3,
+      "expected_ctr": 2.0,
+      "ctr_gap": 2.0,
+      "top_queries": [],
+      "actions": [
+        "TITLE: CTR is 0.0% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
+        "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables"
+      ],
+      "link_opportunities": 0,
+      "impact_score": 10.8
+    },
+    {
+      "slug": "etsy-20x30-print-size",
+      "url": "https://snaptosize.com/etsy-20x30-print-size",
+      "impressions": 27,
+      "clicks": 0,
+      "ctr_pct": 0,
+      "position": 11.7,
+      "expected_ctr": 1.0,
+      "ctr_gap": 1.0,
+      "top_queries": [
+        {
+          "query": "20x30 in pixels",
+          "impressions": 6,
+          "position": 3
+        },
+        {
+          "query": "resolution for 20x30 print",
+          "impressions": 2,
+          "position": 30.5
+        },
+        {
+          "query": "what size frame for a 20x30 print",
+          "impressions": 1,
+          "position": 85
+        }
+      ],
+      "actions": [
+        "TITLE: CTR is 0.0% vs 1.0% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: 10 internal link opportunities found --run link-builder.py and add links from other pages",
+        "CONTENT: Page 2 --needs significant content expansion, fresh examples, and more internal links to break onto page 1",
+        "ALIGNMENT: Top query \"20x30 in pixels\" (6 imp) doesn't match slug --consider whether title addresses this query directly"
+      ],
+      "link_opportunities": 10,
+      "impact_score": 8.9
+    },
+    {
+      "slug": "etsy-photography-print-sizes",
+      "url": "https://snaptosize.com/etsy-photography-print-sizes",
+      "impressions": 6,
+      "clicks": 0,
+      "ctr_pct": 0,
+      "position": 8.2,
+      "expected_ctr": 2.0,
+      "ctr_gap": 2.0,
+      "top_queries": [],
+      "actions": [
+        "TITLE: CTR is 0.0% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
+        "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables"
+      ],
+      "link_opportunities": 0,
+      "impact_score": 8.2
+    },
+    {
+      "slug": "how-to-sell-printables-on-etsy-without-photoshop",
+      "url": "https://snaptosize.com/how-to-sell-printables-on-etsy-without-photoshop",
+      "impressions": 18,
+      "clicks": 0,
+      "ctr_pct": 0,
+      "position": 6.8,
+      "expected_ctr": 0.5,
+      "ctr_gap": 0.5,
+      "top_queries": [],
+      "actions": [
+        "TITLE: CTR is 0.0% vs 0.5% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
+        "CONTENT: Close to top 5 --add FAQ section, expand key sections, ensure comprehensive coverage vs competitors"
+      ],
+      "link_opportunities": 0,
+      "impact_score": 7.4
+    },
+    {
+      "slug": "etsy-gallery-wall-print-sizes",
+      "url": "https://snaptosize.com/etsy-gallery-wall-print-sizes",
+      "impressions": 35,
+      "clicks": 0,
+      "ctr_pct": 0,
+      "position": 12.9,
+      "expected_ctr": 1.0,
+      "ctr_gap": 1.0,
+      "top_queries": [
+        {
+          "query": "small gallery wall layout with sizes",
+          "impressions": 1,
+          "position": 86
+        },
+        {
+          "query": "what size photos for gallery wall",
+          "impressions": 1,
+          "position": 96
+        }
+      ],
+      "actions": [
+        "TITLE: CTR is 0.0% vs 1.0% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
+        "CONTENT: Page 2 --needs significant content expansion, fresh examples, and more internal links to break onto page 1",
+        "ALIGNMENT: Top query \"small gallery wall layout with sizes\" (1 imp) doesn't match slug --consider whether title addresses this query directly"
+      ],
+      "link_opportunities": 0,
+      "impact_score": 7.3
+    },
+    {
+      "slug": "etsy-square-print-sizes",
+      "url": "https://snaptosize.com/etsy-square-print-sizes",
+      "impressions": 24,
+      "clicks": 0,
+      "ctr_pct": 0,
+      "position": 12.8,
+      "expected_ctr": 1.0,
+      "ctr_gap": 1.0,
+      "top_queries": [
+        {
+          "query": "standard square print sizes",
+          "impressions": 4,
+          "position": 28.5
+        },
+        {
+          "query": "common square print sizes",
+          "impressions": 1,
+          "position": 44
+        },
+        {
+          "query": "square print sizes",
+          "impressions": 1,
+          "position": 48
+        }
+      ],
+      "actions": [
+        "TITLE: CTR is 0.0% vs 1.0% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
+        "CONTENT: Page 2 --needs significant content expansion, fresh examples, and more internal links to break onto page 1",
+        "ALIGNMENT: Top query \"standard square print sizes\" (4 imp) doesn't match slug --consider whether title addresses this query directly"
+      ],
+      "link_opportunities": 0,
+      "impact_score": 5.3
+    },
+    {
+      "slug": "how-to-resize-images-for-etsy",
+      "url": "https://snaptosize.com/how-to-resize-images-for-etsy",
+      "impressions": 124,
+      "clicks": 1,
+      "ctr_pct": 0.81,
+      "position": 13.1,
+      "expected_ctr": 1.0,
+      "ctr_gap": 0.19,
+      "top_queries": [
+        {
+          "query": "etsy image size",
+          "impressions": 2,
+          "position": 77
+        },
+        {
+          "query": "etsy pic size",
+          "impressions": 2,
+          "position": 62
+        },
+        {
+          "query": "best image size for etsy",
+          "impressions": 1,
+          "position": 74
+        },
+        {
+          "query": "what size should etsy photos be",
+          "impressions": 1,
+          "position": 61
+        }
+      ],
+      "actions": [
+        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
+        "CONTENT: Page 2 --needs significant content expansion, fresh examples, and more internal links to break onto page 1",
+        "URGENT: 124 impressions but only 0.8% CTR -- title/description is not compelling enough for searchers",
+        "ALIGNMENT: Top query \"etsy image size\" (2 imp) doesn't match slug --consider whether title addresses this query directly"
+      ],
+      "link_opportunities": 0,
+      "impact_score": 4.5
+    },
+    {
+      "slug": "etsy-coastal-wall-art-sizes",
+      "url": "https://snaptosize.com/etsy-coastal-wall-art-sizes",
+      "impressions": 4,
+      "clicks": 0,
+      "ctr_pct": 0,
+      "position": 6.8,
+      "expected_ctr": 0.5,
+      "ctr_gap": 0.5,
+      "top_queries": [],
+      "actions": [
+        "TITLE: CTR is 0.0% vs 0.5% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
+        "CONTENT: Close to top 5 --add FAQ section, expand key sections, ensure comprehensive coverage vs competitors"
+      ],
+      "link_opportunities": 0,
+      "impact_score": 1.6
+    },
+    {
+      "slug": "etsy-6x9-print-size",
+      "url": "https://snaptosize.com/etsy-6x9-print-size",
+      "impressions": 1,
+      "clicks": 0,
+      "ctr_pct": 0,
+      "position": 9,
+      "expected_ctr": 2.0,
+      "ctr_gap": 2.0,
+      "top_queries": [],
+      "actions": [
+        "TITLE: CTR is 0.0% vs 2.0% expected -- run title-optimizer.py or manually rewrite title/description",
+        "LINKS: 11 internal link opportunities found --run link-builder.py and add links from other pages",
+        "CONTENT: Bottom of page 1 --add unique data/examples, improve content depth, add comparison tables"
+      ],
+      "link_opportunities": 11,
+      "impact_score": 1.2
+    },
+    {
+      "slug": "etsy-4x6-print-size",
+      "url": "https://snaptosize.com/etsy-4x6-print-size",
+      "impressions": 29,
+      "clicks": 1,
+      "ctr_pct": 3.45,
+      "position": 14.9,
+      "expected_ctr": 1.0,
+      "ctr_gap": -2.45,
+      "top_queries": [
+        {
+          "query": "pixels required for 4x6 print at 300 dpi",
+          "impressions": 2,
+          "position": 10
+        },
+        {
+          "query": "resolution for 4x6 print",
+          "impressions": 1,
+          "position": 67
+        }
+      ],
+      "actions": [
+        "LINKS: 12 internal link opportunities found --run link-builder.py and add links from other pages",
+        "CONTENT: Page 2 --needs significant content expansion, fresh examples, and more internal links to break onto page 1",
+        "ALIGNMENT: Top query \"pixels required for 4x6 print at 300 dpi\" (2 imp) doesn't match slug --consider whether title addresses this query directly"
+      ],
+      "link_opportunities": 12,
+      "impact_score": 0.0
+    },
+    {
+      "slug": "etsy-print-size-calculator",
+      "url": "https://snaptosize.com/etsy-print-size-calculator",
+      "impressions": 16,
+      "clicks": 1,
+      "ctr_pct": 6.25,
+      "position": 5.8,
+      "expected_ctr": 5.0,
+      "ctr_gap": -1.25,
+      "top_queries": [],
+      "actions": [
+        "LINKS: No internal link opportunities detected --consider mentioning this topic in related blog posts",
+        "CONTENT: Close to top 5 --add FAQ section, expand key sections, ensure comprehensive coverage vs competitors"
       ],
       "link_opportunities": 0,
       "impact_score": 0.0

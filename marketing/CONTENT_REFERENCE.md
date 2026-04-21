@@ -55,6 +55,10 @@ Upload one high-resolution image → receive ready-to-sell print size ZIP packs 
 | Size | Pixels | Use Case |
 |---|---|---|
 | 5×7 | 1500×2100 | Greeting cards, small frames |
+| 8.5×11 | 2550×3300 | US Letter / standard home print |
+| 11×17 | 3300×5100 | Tabloid / poster size |
+| 13×19 | 3900×5700 | Large format / pro print |
+| 20×24 | 6000×7200 | Gallery / statement size |
 | 8.5×11 | 2550×3300 | US Letter, home printing |
 | 11×14 | 3300×4200 | Photo mat standard |
 | 11×17 | 3300×5100 | Tabloid, large format home printing |

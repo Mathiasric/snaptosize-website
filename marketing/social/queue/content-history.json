@@ -12,7 +12,8 @@
     "quote-selgeren-i-produksjon",
     "det-globale-rekkevidden-iso",
     "300-dpi-makrokvalitet",
-    "en-upload-enkelheten"
+    "en-upload-enkelheten",
+    "stats-visual"
   ],
   "used_react_templates": [
     "NeonPackShowcase/mysthical_portal-pinterest",
@@ -33,7 +34,9 @@
     "StatsCard/wildflower_botanical_art",
     "Checklist/5-etsy-mistakes",
     "NeonPackShowcase/owl",
-    "RatioProofShowcase/owl"
+    "RatioProofShowcase/owl",
+    "NeonPackShowcase/abstract_wedding-pinterest",
+    "WorkflowSteps-instagram"
   ],
   "used_artworks": [
     "fox",
@@ -49,7 +52,8 @@
     "salmon",
     "wildflower_botanical_art",
     "owl",
-    "mysthical_portal"
+    "mysthical_portal",
+    "abstract_wedding"
   ],
   "rotation_policy": {
     "gemini_cooldown_weeks": 4,
@@ -131,6 +135,20 @@
       ]
     },
     {
+      "batch": "2026-W19",
+      "gemini_concepts": [
+        "stats-visual",
+        "folder-chaos"
+      ],
+      "react_templates": [
+        "NeonPackShowcase/abstract_wedding-pinterest",
+        "WorkflowSteps-instagram"
+      ],
+      "artworks": [
+        "abstract_wedding"
+      ]
+    },
+    {
       "batch": "2026-W17",
       "gemini_concepts": [
         "de-5-premium-pakkene",
@@ -158,5 +176,5 @@
     "quote-selgeren-i-produksjon"
   ],
   "_artwork_note": "All 18 artwork folders can be reused. Avoid same template+artwork combo within ~3 weeks. Check used_react_templates for recent combos.",
-  "last_updated": "2026-W18b"
+  "last_updated": "2026-W19"
 }

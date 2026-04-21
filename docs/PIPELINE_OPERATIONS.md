@@ -137,9 +137,9 @@ Flow:
 | Content type | Primary tool | When to use |
 |-------------|-------------|-------------|
 | **Pinterest/IG (primary)** | Social slide components → Playwright | **Default for all branded visuals.** Before/after, ratios, stats, checklists, size comparisons |
-| Pinterest pin (lifestyle) | `gemini-generate-image` (2:3) | Aspirational/artistic content only — bedroom mockups, styled gallery walls |
-| **Video (primary)** | Social slides → Remotion `SlideshowVertical` | **Default for all videos.** Screenshot social slide components, compose into animated slideshow |
-| Video (text-only) | Remotion `TikTokVertical` | Last resort — only when no visual asset exists |
+| Pinterest pin (lifestyle) | `gemini-3-pro-image-preview` Python script (2:3) | Aspirational/artistic content only — bedroom mockups, styled gallery walls. Copy `marketing/social/gen-w17-gemini-images.py` as template. |
+| **Video (primary)** | `render-next-video.ts` — auto pool selection | **Default for all videos.** Alternates PortraitSlideshow (lifestyle photos) → InfoReveal (infographics) → TikTokVertical (text hook). Uses `image-pool.json` to track usage and always pick freshest images. |
+| Video (manual) | Individual render scripts in `marketing/remotion/` | Use when you want a specific narrative or theme |
 
 ### Social Slide System (Primary Visual Pipeline)
 
@@ -244,7 +244,9 @@ Screenshot social slide components → save to `marketing/remotion/public/` → 
 
 For video slides, the 920×550 display area crops wide images. Best source: pinterest ratio slides (1000×1500) cropped to the key visual area, or purpose-built 920×550 images.
 
-**Render script:** `cd marketing/remotion && npx tsx render-slideshow-videos.ts`
+**Default render command:** `cd marketing/remotion && npx tsx render-next-video.ts`
+
+Pool system: `marketing/remotion/image-pool.json` tracks all available images, usage counts, and last template used. Add new images to the pool with `"times_used": 0` and they will be auto-selected on next run.
 
 #### When to Use Gemini Instead
 

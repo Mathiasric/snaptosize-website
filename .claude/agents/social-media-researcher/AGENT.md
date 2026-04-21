@@ -398,6 +398,11 @@ Read the most recent Analytics Report:
 - What patterns did Analyst identify?
 - What did we learn from failures?
 
+Read `previous_insights` from `/marketing/social/queue/pipeline-state.json`:
+- Prioritize research topics that align with last week's "do_more" recommendations
+- Deprioritize topics similar to last week's "do_less" items
+- Use `best_content_types` and `best_layouts` to focus research on proven formats
+
 Use these insights to inform research priorities.
 
 ### Step 2: TikTok Sound Research

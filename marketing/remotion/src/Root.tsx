@@ -16,6 +16,21 @@ import {
   SlideshowVerticalProps,
   calculateSlideshowDuration,
 } from "./compositions/SlideshowVertical";
+import {
+  PortraitSlideshow,
+  PortraitSlideshowProps,
+  calculatePortraitDuration,
+} from "./compositions/PortraitSlideshow";
+import {
+  InfoReveal,
+  InfoRevealProps,
+  calculateInfoRevealDuration,
+} from "./compositions/InfoReveal";
+import {
+  HybridPunch,
+  HybridPunchProps,
+  HYBRID_PUNCH_DURATION,
+} from "./compositions/HybridPunch";
 
 const DEFAULT_PROPS: TikTokVerticalProps = {
   hook: "Stop Guessing\nPrint Sizes",
@@ -164,12 +179,76 @@ export const RemotionRoot: React.FC = () => (
       } satisfies SlideshowVerticalProps}
     />
     <Composition
+      id="PortraitSlideshow"
+      component={PortraitSlideshow}
+      calculateMetadata={({ props }) => ({
+        durationInFrames: calculatePortraitDuration(props.slides.length),
+      })}
+      fps={30}
+      width={1080}
+      height={1920}
+      defaultProps={{
+        hook: "Every Frame Size\nFrom One Upload",
+        hookSub: "Stop resizing manually.",
+        slides: [
+          { image: "slide-gallery-wall.jpg", label: "Gallery Wall", text: "16x24, 11x14, 8x10, 5x7 -- all from one artwork" },
+          { image: "slide-home-office.jpg", label: "Home Office", text: "12x16 center, 8x10 sides -- clean and professional" },
+        ],
+        cta: "Try Free Today",
+        ctaSub: "One upload. 70 files. snaptosize.com",
+        theme: "emerald",
+        tag: "Etsy Seller Tips",
+      } satisfies PortraitSlideshowProps}
+    />
+    <Composition
       id="PHLaunchSlideshow"
       component={PHLaunchSlideshow}
       durationInFrames={PH_LAUNCH_DURATION}
       fps={30}
       width={1080}
       height={1920}
+    />
+    <Composition
+      id="HybridPunch"
+      component={HybridPunch}
+      durationInFrames={HYBRID_PUNCH_DURATION}
+      fps={30}
+      width={1080}
+      height={1920}
+      defaultProps={{
+        hook: "You're Only\nOffering One Size.",
+        hookSub: "Your buyers want three. You're losing the others.",
+        proofImage: "slide-before-after.jpg",
+        proofLabel: "8×10 · 11×14 · 16×20\nAll from one upload.",
+        mechanism: "One Upload.\n70 Files.",
+        cta: "Fix It Free",
+        ctaSub: "60 seconds · 300 DPI · snaptosize.com",
+        theme: "emerald" as const,
+        tag: "Etsy Seller Tips",
+      } satisfies HybridPunchProps}
+    />
+    <Composition
+      id="InfoReveal"
+      component={InfoReveal}
+      calculateMetadata={({ props }) => ({
+        durationInFrames: calculateInfoRevealDuration(props.slides.length),
+      })}
+      fps={30}
+      width={1080}
+      height={1920}
+      defaultProps={{
+        hook: "Sizes Your Buyers\nActually Search For",
+        hookSub: "Etsy sellers — stop guessing.",
+        slides: [
+          "slide-landscape-sizes.jpg",
+          "slide-living-room-sizes.jpg",
+          "slide-nursery-sizes.jpg",
+        ],
+        cta: "Every Size.\nOne Upload.",
+        ctaSub: "70 files · 60 seconds · 300 DPI",
+        theme: "emerald" as const,
+        tag: "Etsy Seller Tips",
+      } satisfies InfoRevealProps}
     />
   </>
 );

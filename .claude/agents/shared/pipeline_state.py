@@ -106,6 +106,9 @@ class PipelineState:
             "priority": priority,
             "stage": "ideation",
             "tool_used": None,
+            "content_type": None,
+            "layout": None,
+            "buffer_post_id": None,
             "tool_attempts": [],
             "files": {},
             "metadata": {},
@@ -187,5 +190,7 @@ def _empty_state() -> Dict[str, Any]:
         "target": DEFAULT_TARGETS,
         "stages": {s: {"status": "pending", "output": None} for s in PIPELINE_STAGES},
         "content_items": [],
+        "insights": None,
+        "previous_insights": None,
         "metrics": {"total": 0, "completed": 0, "failed": 0, "success_rate": 1.0},
     }

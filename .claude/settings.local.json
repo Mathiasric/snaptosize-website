@@ -18,7 +18,25 @@
       "mcp__claude_ai_Cloudflare_Developer_Platform__set_active_account",
       "mcp__claude_ai_Cloudflare_Developer_Platform__workers_get_worker",
       "mcp__claude_ai_Cloudflare_Developer_Platform__workers_get_worker_code",
-      "mcp__firecrawl__firecrawl_search"
+      "mcp__firecrawl__firecrawl_search",
+      "mcp__plugin_context-mode_context-mode__ctx_batch_execute",
+      "mcp__plugin_context-mode_context-mode__ctx_search",
+      "mcp__plugin_context-mode_context-mode__ctx_execute",
+      "mcp__plugin_context-mode_context-mode__ctx_execute_file",
+      "Skill(firecrawl-search)",
+      "mcp__context-mode__ctx_batch_execute",
+      "mcp__plugin_context-mode_context-mode__ctx_stats",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3099/social-slides)",
+      "mcp__plugin_context-mode_context-mode__ctx_fetch_and_index",
+      "Skill(statusline)",
+      "Skill(firecrawl-scrape)",
+      "mcp__plugin_context-mode_context-mode__ctx_upgrade",
+      "Bash(mkdir -p ~/.claude/skills/.archived)",
+      "Bash(mv ~/.claude/skills/firecrawl* ~/.claude/skills/.archived/)"
     ]
-  }
+  },
+  "enabledMcpjsonServers": [
+    "gemini",
+    "playwright"
+  ]
 }

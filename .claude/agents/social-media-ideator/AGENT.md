@@ -14,15 +14,37 @@ Take insights from last week's performance (Analyst) and current trends (Researc
 - `/docs/PROJECT_STATE.md` - Product context
 - `/docs/GROWTH_STATE.md` - ICP, messaging, positioning
 - `/marketing/CONTENT_REFERENCE.md` - Product data, sizes, ratios, CTAs, style rules
+- `/marketing/social/PINTEREST_VISUAL_GUIDE.md` - **MANDATORY for Pinterest ideas** — de 5 beste konseptene, scroll-stopp-krav, hva som IKKE fungerer
+- `/marketing/social/queue/content-history.json` - **MANDATORY** — hvilke Gemini-konsepter, React-templates og artworks som har blitt brukt. Les `available_gemini_concepts` og `available_artworks` for hva som er klart til bruk. Aldri gjenbruk noe som er i `used_gemini_concepts` (cooldown: 4 uker) eller `used_artworks` (cooldown: 2 uker).
 - `/marketing/social/analytics/[latest].md` - Last week's performance
 - `/marketing/social/research/[latest].md` - Current trends
 - `/marketing/state.md` - Current priorities
-- `/tasks/lessons.md` - Lessons from past mistakes
+- `/tasks/lessons.md` - Lessons from past mistakes (særlig LESSON-087 og LESSON-088)
+
+**CRITICAL — Pinterest ideation:** Alle Pinterest-idéer MÅ ha en klar pain→solution-arc og bestå scroll-stopp-testen beskrevet i `PINTEREST_VISUAL_GUIDE.md`. Aldri foreslå "størrelsesoversikt" eller "ratio guide" uten en spesifikk visuell hook og Etsy-selger-smertepunkt. Velg konsept fra de 5 beprøvde i Visual Guide FØR du finner opp nye.
+
+**CRITICAL — Variasjon og rotasjon:** Les `content-history.json` FØR du foreslår konsepter. Regler:
+1. **Gemini-konsepter:** Velg KUN fra `available_gemini_concepts`. Har du brukt alle, start fra toppen igjen (minst 4 uker siden sist).
+2. **React-templates/artworks:** Velg KUN fra `available_artworks`. Aldri samme artwork to uker på rad.
+3. **Etter kreation:** Creator-agenten skal legge til brukte konsepter/artworks i `history`-arrayet og flytte dem fra `available_*` til `used_*` i `content-history.json`.
+
+**CRITICAL — Tool-mix (50/50 Pinterest):** Pinterest-batchen MÅ alltid inneholde begge verktøy-typer. For en batch med 3 Pinterest-pins:
+- **Maks 1 NeonPackShowcase** (React/Playwright) — produktbevis-pin med ekte artwork i 5 ratio-rammer
+- **Min 1 Gemini lifestyle-bilde** — aspirasjonelt/lifestyle-innhold fra `available_gemini_concepts`
+- **Resterende slot(s):** Bruk en ANNEN React-template (BeforeAfter, PainSolutionSlide, W15DpiCheatSheet osv.) ELLER en ekstra Gemini
+- **Aldri** 2+ NeonPackShowcase i samme batch — det ser ut som spam i feeden
+- Regelen gjelder Pinterest-pins. Instagram-posten kan bruke NeonPackShowcase uavhengig.
 
 ## Responsibilities
 
 ### 1. Synthesize Inputs
-Combine insights from two sources:
+Combine insights from three sources:
+
+**From Previous Insights (`previous_insights` in `/marketing/social/queue/pipeline-state.json`):**
+- Weight idea generation toward content_types and layouts in "do_more"
+- Avoid content_types in "do_less" unless you have strong reason to retry
+- Reference specific `best_content_types` and `best_layouts` from previous insights
+- If `previous_insights` is null (first run), skip this source
 
 **From Analyst Report:**
 - What content formats performed best? (carousel, video, single image)
@@ -66,6 +88,14 @@ For each of the 25 ideas, provide:
 - **ID:** Unique identifier (W10-P01, W10-T01, W10-I01)
 - **Platform:** Pinterest / TikTok / Instagram
 - **Format:** Carousel / Single Image / Video / Reel
+- **Content Type:** One of the following classifications (used by analytics engine):
+  - `comparison` — Before/after, side-by-side, vs content
+  - `before-after` — Transformation showcases
+  - `tips-list` — Tips, checklists, how-to lists
+  - `product-showcase` — Feature highlights, tool demos
+  - `educational` — Teaching concepts, explaining sizes/ratios
+  - `lifestyle` — Room mockups, styled scenes
+  - `stats-highlight` — Numbers, data, statistics
 - **Hook:** First line or opening 3 seconds
 - **Topic:** 1-2 sentence description
 - **Why it will work:** Reference to analytics or trends

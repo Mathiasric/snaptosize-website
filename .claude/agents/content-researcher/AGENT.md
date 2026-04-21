@@ -60,14 +60,22 @@ Find high-value content opportunities for SnapToSize's SEO growth. Output resear
 2. Read `marketing/CONTENT_REFERENCE.md` — all sizes/ratios available
 3. Identify sizes, ratios, problems, and niches without pages
 
-### Step 2: Research Each Candidate via WebSearch
+### Step 2: Research Each Candidate via WebSearch + Firecrawl
 For each candidate keyword:
-1. **Search the keyword** — analyze top 3 ranking pages
-2. **Note what they cover:** sections, word count, depth, schema
-3. **Pull "People Also Ask"** questions and related searches
-4. **Identify gaps:** what competitors miss or do poorly
-5. **Assess intent:** informational → guide, transactional → CTA-heavy, emergency → problem-first
-6. **Source external claims** — if the page will reference non-SnapToSize data (third-party dimensions, platform specs, industry standards), record the source URL so the writer can verify. Add these to the blueprint as `sources`
+1. **Search the keyword** — `WebSearch(keyword)` → get top 3 URLs, PAA questions, related searches (Google-native features)
+2. **Scrape top 3 competitor pages** — run via Bash (not skill, guaranteed available in subagent):
+   ```bash
+   npx firecrawl-cli scrape <url1> --only-main-content > /tmp/comp1.md
+   npx firecrawl-cli scrape <url2> --only-main-content > /tmp/comp2.md
+   npx firecrawl-cli scrape <url3> --only-main-content > /tmp/comp3.md
+   ```
+3. **Extract from scraped content:** H2/H3 structure, tables, FAQ sections, word count, schema presence, page title, meta description
+4. **Pull "People Also Ask"** questions from WebSearch results
+5. **Identify gaps:** sections competitors have that we're missing, FAQs they answer that we don't, tables/tools they include
+6. **Assess intent:** informational → guide, transactional → CTA-heavy, emergency → problem-first
+7. **Source external claims** — if the page will reference non-SnapToSize data (third-party dimensions, platform specs, industry standards), record the source URL so the writer can verify. Add these to the blueprint as `sources`
+
+**Credit cost:** ~3 credits per keyword (3 scrapes). WebSearch is free.
 
 ### Step 3: Cluster and Interlink
 Group keywords into clusters of 2-3 that should interlink:

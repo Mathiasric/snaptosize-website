@@ -18,6 +18,30 @@ const pages = [
     subtitle: 'COMPLETE GUIDE',
     tagline: 'Match prints to IKEA, Michaels & standard frames',
   },
+  {
+    filename: 'print-sizes-at-300-dpi.png',
+    title: 'Print Sizes at 300 DPI',
+    subtitle: 'COMPLETE PIXEL CHART',
+    tagline: '28 sizes · 5 ratio packs · all at 300 DPI',
+  },
+  {
+    filename: 'etsy-digital-download-file-size.png',
+    title: 'Etsy Digital Download File Size',
+    subtitle: 'COMPLETE GUIDE',
+    tagline: '20MB limit · JPEG vs PNG · ZIP pack strategy',
+  },
+  {
+    filename: 'etsy-bathroom-wall-art-sizes.png',
+    title: 'Etsy Bathroom Wall Art Sizes',
+    subtitle: 'PRINT SIZE GUIDE',
+    tagline: '5×7 · 8×10 · 11×14 · A4 · portrait-first sizing',
+  },
+  {
+    filename: 'etsy-kids-wall-art-sizes.png',
+    title: 'Etsy Kids Wall Art Sizes',
+    subtitle: 'NURSERY PRINT SIZE GUIDE',
+    tagline: '8×10 · 11×14 · 16×20 · A4 · A3 · all ratio packs',
+  },
 ];
 
 const html = ({ title, subtitle, tagline }) => `<!doctype html>

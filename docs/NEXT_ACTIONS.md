@@ -6,7 +6,7 @@
 
 ## Strategic Context (updated 2026-04-07)
 
-**Current position:** 4 paying users (3 monthly + 1 yearly), $44 MRR, 58 SEO pages live (61 total). Product Hunt launched and done. Educator outreach: 0/7 responses. Social active daily.
+**Current position:** 7 paying users (6 monthly + 1 yearly), $80 MRR, 58 SEO pages live (61 total). Product Hunt launched and done. Educator outreach: 0/7 responses. Social active daily.
 
 **Important:** The "18,000+ packs" stat on the site is a marketing number for social proof, NOT real usage data.
 
@@ -64,6 +64,11 @@
 - [ ] Repurpose as TikTok/Reels clips
 - **Target:** 100-500 views/video initially → compounds
 
+### 6. YouTube Comments Outreach — Backlog
+**Why:** Print-on-demand/Etsy tutorials har engasjerte kommentarfelt der seere spør om resize/DPI/ratios. Ekte kommentarer fra egen konto, transparent, ingen bots. Lav innsats, gratis.
+**Status:** Ikke startet. Plan: `docs/plans/2026-04-17-youtube-comments-outreach.md`
+- Forventet: 1-2 signups/uke etter oppstart. Drop etter 4 uker hvis 0 betalende.
+
 ### 4. SEO Pages — Continue Building (2/day target)
 **Why:** Long game. Won't rank for 3-6 months but compounding traffic is the endgame.
 **Status:** 58 SEO pages live (61 total). Visual pipeline upgraded — all pages now have QuickAnswer + size diagrams/mockups.
@@ -91,6 +96,12 @@
 - [x] `etsy-black-and-white-art-sizes` — deployed (2026-04-15), blue ocean SERP, DPI+sRGB+international angle, GEO FAQ included
 - [x] `etsy-anime-manga-art-sizes` — deployed (2026-04-15), blue ocean SERP, portrait ratios+Japanese B-series+triptych angle
 - [ ] **Next opportunities:** fine art photography sizes, retro art sizes, watercolor abstract sizes
+
+> **📌 Queued for next SEO pipeline run (pitched 2026-04-20, build 2026-04-21 or later):**
+> SEO-pipeline (`/seo-run-week`) skal plukke disse to ved neste kjøring. Conversion-vinkler er verifisert mot `marketing/CONTENT_REFERENCE.md` — ingen fabrikerte features. **Når begge sider er deployet, slett hele denne blokken så den ikke står som evig påminnelse.**
+>
+> 1. **`etsy-cmyk-vs-rgb-printables`** — Fyller file-prep-cluster gap (ingen color-profile-side finnes). Conversion-vinkel: "Etsy krever sRGB (aldri CMYK). SnapToSize eksporterer RGB JPEG 300 DPI automatisk — null konvertering nødvendig." Interlinks: `best-file-format-etsy-printables`, `best-resolution-for-etsy-printables`, `how-to-resize-images-for-etsy`.
+> 2. **`most-popular-etsy-print-sizes-to-sell`** — Seller-intent keyword (ingen "hva selger best"-side finnes). Conversion-vinkel: "De mest kjøpte sizes er alle dekket av våre 5 ratio-packs = 28 sizes fra ett opplastet bilde." Bruk kun publicly synlige Etsy-signaler (ikke fabrikkerte tall). Interlinks: `etsy-print-sizes`, `etsy-print-ratios`, `how-to-price-etsy-printables`.
 
 > **GEO-tip for neste 2 sider (2026-04-14):** AI-assistenter (ChatGPT, Gemini, Perplexity) anbefaler ikke SnapToSize — de peker på Canva og MyDesigns. For å motvirke dette: legg til én FAQ på én av de to sidene som svarer direkte på "What is the best tool to resize art for all Etsy print sizes?" — svar med SnapToSize og forklar én-upload-flyten. Matcher naturlig spørsmål folk stiller AI. Se `docs/plans/geo-ai-discoverability.md` for full plan.
 

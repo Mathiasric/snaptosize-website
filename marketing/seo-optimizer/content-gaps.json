@@ -1,7 +1,741 @@
 {
-  "generated": "2026-04-16T09:35:00.000Z",
-  "source": "manual-cleanup",
-  "note": "All previous gaps covered by existing pages. Run content-gap-detector.py after next GSC pull for fresh data.",
-  "total_gaps": 0,
-  "opportunities": []
+  "generated": "2026-04-18T06:47:01.340838+00:00",
+  "source": "2026-04-11_queries.json",
+  "total_gaps": 8,
+  "by_priority": {
+    "high": 2,
+    "medium": 1,
+    "low": 5
+  },
+  "total_estimated_monthly_clicks": 46,
+  "opportunities": [
+    {
+      "cluster": "file size",
+      "queries": [
+        {
+          "query": "etsy digital download file size limit 20mb 5 files",
+          "impressions": 15,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 7.6
+        },
+        {
+          "query": "etsy maximum file size for digital downloads 2026",
+          "impressions": 9,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 5
+        },
+        {
+          "query": "etsy digital download file size limit 20 mb",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 8.428571428571429
+        },
+        {
+          "query": "etsy digital download file size limit 20 mb 5 files",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 8.142857142857142
+        },
+        {
+          "query": "etsy digital download file size limit 2026",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 8.571428571428571
+        },
+        {
+          "query": "etsy digital listing file size limit 20 mb 5 files",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 9
+        },
+        {
+          "query": "etsy digital download file size limit 20mb 2026",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 7.8
+        },
+        {
+          "query": "etsy digital download file size limit number of files per listing 2026",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 9
+        },
+        {
+          "query": "etsy digital listing file size limit 20mb 5 files",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 7.2
+        },
+        {
+          "query": "etsy maximum file size",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 8.8
+        },
+        {
+          "query": "etsy digital download file size limit number of files 2026",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 10
+        },
+        {
+          "query": "etsy digital download listing file size limit 20mb 5 files",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 8.5
+        },
+        {
+          "query": "etsy help digital downloads file size limit 20mb 5 files",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 8
+        },
+        {
+          "query": "etsy digital download file size limit 20 mb per file",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 7
+        },
+        {
+          "query": "etsy digital download file size limit 2026 20mb 5 files",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 6.333333333333333
+        },
+        {
+          "query": "etsy digital download file size limit per file 2026",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 8.333333333333332
+        },
+        {
+          "query": "etsy digital downloads file size limit 20mb 5 files",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 8
+        },
+        {
+          "query": "etsy digital listing maximum file size 20mb 5 files",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 9
+        },
+        {
+          "query": "etsy digital download file size limit 20mb",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 7
+        },
+        {
+          "query": "etsy digital download listing maximum file size 20mb 5 files",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 8
+        },
+        {
+          "query": "etsy digital file size limit",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 11.5
+        },
+        {
+          "query": "etsy help digital downloads maximum file size 20mb 5 files",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 7.5
+        },
+        {
+          "query": "etsy help digital item file size limit 20mb 5 files",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 7
+        },
+        {
+          "query": "etsy max file size",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 9.5
+        },
+        {
+          "query": "etsy digital download file size limit 20mb 2025",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 5
+        },
+        {
+          "query": "etsy digital download file size limit 20mb 5 files listing",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 8
+        },
+        {
+          "query": "etsy digital download file size limit 20mb five files",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 8
+        },
+        {
+          "query": "etsy digital download file size limit number of files per listing",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 9
+        },
+        {
+          "query": "etsy digital download file size limit pdf 2026",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 9
+        },
+        {
+          "query": "etsy digital download listing file size limit number of files 2026",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 9
+        },
+        {
+          "query": "etsy digital download maximum file size 2026",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 7
+        },
+        {
+          "query": "etsy digital downloads file size limit 2026",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 8
+        },
+        {
+          "query": "etsy digital file size limit 2026",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 8
+        },
+        {
+          "query": "etsy digital file size limit per file 2026",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 6
+        },
+        {
+          "query": "etsy file size limit for digital downloads 2026",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 10
+        }
+      ],
+      "total_impressions": 121,
+      "total_clicks": 0,
+      "avg_position": 8.0,
+      "query_count": 35,
+      "suggested_slug": "etsy-digital-download-file-size-limit-20mb-5-files",
+      "page_type": "size-reference",
+      "primary_keyword": "etsy digital download file size limit 20mb 5 files",
+      "secondary_keywords": [
+        "etsy maximum file size for digital downloads 2026",
+        "etsy digital download file size limit 20 mb",
+        "etsy digital download file size limit 20 mb 5 files",
+        "etsy digital download file size limit 2026"
+      ],
+      "estimated_monthly_clicks_top3": 18,
+      "priority": "high"
+    },
+    {
+      "cluster": "300 dpi",
+      "queries": [
+        {
+          "query": "\"a4 at 300 dpi\" pixels",
+          "impressions": 34,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 9.617647058823529
+        },
+        {
+          "query": "24x36 in pixels 300 dpi",
+          "impressions": 17,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 19.176470588235293
+        },
+        {
+          "query": "a3 300 dpi pixels",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 59.25
+        },
+        {
+          "query": "24x36 poster 300 dpi pixel dimensions 7200 10800",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 9.5
+        },
+        {
+          "query": "a3 300 dpi",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 50
+        },
+        {
+          "query": "a3 300 dpi resolution",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 42.5
+        },
+        {
+          "query": "a3 in pixels 300 dpi",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 31
+        },
+        {
+          "query": "a3 pixel size 300 dpi",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 33
+        },
+        {
+          "query": "a4 300 dpi pixels",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 66
+        },
+        {
+          "query": "pixels required for 4x6 print at 300 dpi",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 10
+        },
+        {
+          "query": "300 dpi a4",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 71
+        },
+        {
+          "query": "a3 pixels 300 dpi",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 42
+        },
+        {
+          "query": "a4 300 dpi",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 82
+        },
+        {
+          "query": "a4 pixel size 300 dpi",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 61
+        },
+        {
+          "query": "a4 size 300 dpi",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 76
+        },
+        {
+          "query": "a4 size in 300 dpi",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 68
+        },
+        {
+          "query": "pixels needed for 16x20 print at 300 dpi",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 10
+        }
+      ],
+      "total_impressions": 76,
+      "total_clicks": 0,
+      "avg_position": 23.5,
+      "query_count": 17,
+      "suggested_slug": "a4-at-300-dpi-pixels",
+      "page_type": "size-reference",
+      "primary_keyword": "\"a4 at 300 dpi\" pixels",
+      "secondary_keywords": [
+        "24x36 in pixels 300 dpi",
+        "a3 300 dpi pixels",
+        "24x36 poster 300 dpi pixel dimensions 7200 10800",
+        "a3 300 dpi"
+      ],
+      "estimated_monthly_clicks_top3": 11,
+      "priority": "high"
+    },
+    {
+      "cluster": "24x36 print",
+      "queries": [
+        {
+          "query": "resolution needed for 24x36 print",
+          "impressions": 16,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 66.25
+        },
+        {
+          "query": "what resolution is needed for 24x36 print",
+          "impressions": 15,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 72.26666666666667
+        },
+        {
+          "query": "what resolution do i need for a 24x36 print",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 82.83333333333333
+        }
+      ],
+      "total_impressions": 37,
+      "total_clicks": 0,
+      "avg_position": 71.4,
+      "query_count": 3,
+      "suggested_slug": "resolution-needed-for-24x36-print",
+      "page_type": "reference",
+      "primary_keyword": "resolution needed for 24x36 print",
+      "secondary_keywords": [
+        "what resolution is needed for 24x36 print",
+        "what resolution do i need for a 24x36 print"
+      ],
+      "estimated_monthly_clicks_top3": 6,
+      "priority": "medium"
+    },
+    {
+      "cluster": "a3 pixels",
+      "queries": [
+        {
+          "query": "a3 in pixels",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 60.42857142857143
+        },
+        {
+          "query": "a3 pixels",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 53.285714285714285
+        },
+        {
+          "query": "dimensions of a3 in pixels",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 54
+        },
+        {
+          "query": "how big is a3 in pixels",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 46
+        },
+        {
+          "query": "what is a3 in pixels",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 77
+        }
+      ],
+      "total_impressions": 17,
+      "total_clicks": 0,
+      "avg_position": 57.2,
+      "query_count": 5,
+      "suggested_slug": "a3-in-pixels",
+      "page_type": "size-reference",
+      "primary_keyword": "a3 in pixels",
+      "secondary_keywords": [
+        "a3 pixels",
+        "dimensions of a3 in pixels",
+        "how big is a3 in pixels",
+        "what is a3 in pixels"
+      ],
+      "estimated_monthly_clicks_top3": 3,
+      "priority": "low"
+    },
+    {
+      "cluster": "18x24 pixels",
+      "queries": [
+        {
+          "query": "18x24 in pixels",
+          "impressions": 10,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 44.3
+        },
+        {
+          "query": "18x24 pixels",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 36
+        },
+        {
+          "query": "what is 18x24 in pixels",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 57
+        }
+      ],
+      "total_impressions": 15,
+      "total_clicks": 0,
+      "avg_position": 44.3,
+      "query_count": 3,
+      "suggested_slug": "18x24-in-pixels",
+      "page_type": "size-reference",
+      "primary_keyword": "18x24 in pixels",
+      "secondary_keywords": [
+        "18x24 pixels",
+        "what is 18x24 in pixels"
+      ],
+      "estimated_monthly_clicks_top3": 2,
+      "priority": "low"
+    },
+    {
+      "cluster": "aspect ratio",
+      "queries": [
+        {
+          "query": "13:19 aspect ratio",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 10.5
+        },
+        {
+          "query": "13x19 aspect ratio",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 10.5
+        },
+        {
+          "query": "18 x 24 aspect ratio",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 45.5
+        },
+        {
+          "query": "11:17 aspect ratio",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 11
+        },
+        {
+          "query": "12x18 aspect ratio",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 37
+        },
+        {
+          "query": "13 x 19 aspect ratio",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 11
+        },
+        {
+          "query": "aspect ratio for 11x14 print",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 84
+        },
+        {
+          "query": "what aspect ratio is 13x19",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 11
+        },
+        {
+          "query": "what aspect ratio is 18x24",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 45
+        }
+      ],
+      "total_impressions": 12,
+      "total_clicks": 0,
+      "avg_position": 27.7,
+      "query_count": 9,
+      "suggested_slug": "13-19-aspect-ratio",
+      "page_type": "reference",
+      "primary_keyword": "13:19 aspect ratio",
+      "secondary_keywords": [
+        "13x19 aspect ratio",
+        "18 x 24 aspect ratio",
+        "11:17 aspect ratio",
+        "12x18 aspect ratio"
+      ],
+      "estimated_monthly_clicks_top3": 2,
+      "priority": "low"
+    },
+    {
+      "cluster": "etsy digital",
+      "queries": [
+        {
+          "query": "etsy digital download file limit 5 files 20mb each",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 7
+        },
+        {
+          "query": "etsy digital download listing file limit 5 files 20mb each",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 7.5
+        },
+        {
+          "query": "etsy digital download file limit 20mb 5 files",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 5
+        },
+        {
+          "query": "etsy digital download file limit 5 files 20mb",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 9
+        },
+        {
+          "query": "etsy digital download listing file limit 5 files 20mb",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 8
+        },
+        {
+          "query": "etsy digital listing file limit 5 files 20mb",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 11
+        },
+        {
+          "query": "etsy digital listing file limit 5 files 20mb each",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 7
+        }
+      ],
+      "total_impressions": 11,
+      "total_clicks": 0,
+      "avg_position": 7.5,
+      "query_count": 7,
+      "suggested_slug": "etsy-digital-download-file-limit-5-files-20mb-each",
+      "page_type": "reference",
+      "primary_keyword": "etsy digital download file limit 5 files 20mb each",
+      "secondary_keywords": [
+        "etsy digital download listing file limit 5 files 20mb each",
+        "etsy digital download file limit 20mb 5 files",
+        "etsy digital download file limit 5 files 20mb",
+        "etsy digital download listing file limit 5 files 20mb"
+      ],
+      "estimated_monthly_clicks_top3": 2,
+      "priority": "low"
+    },
+    {
+      "cluster": "24x36 poster",
+      "queries": [
+        {
+          "query": "resolution for 24x36 poster",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 62.2
+        },
+        {
+          "query": "pixel size for 24x36 poster",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 45
+        },
+        {
+          "query": "dpi for 24x36 poster",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr": 0,
+          "position": 31
+        }
+      ],
+      "total_impressions": 10,
+      "total_clicks": 0,
+      "avg_position": 50.8,
+      "query_count": 3,
+      "suggested_slug": "resolution-for-24x36-poster",
+      "page_type": "reference",
+      "primary_keyword": "resolution for 24x36 poster",
+      "secondary_keywords": [
+        "pixel size for 24x36 poster",
+        "dpi for 24x36 poster"
+      ],
+      "estimated_monthly_clicks_top3": 2,
+      "priority": "low"
+    }
+  ]
 }

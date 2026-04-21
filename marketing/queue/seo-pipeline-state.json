@@ -29,6 +29,24 @@
   },
   "content_items": [
     {
+      "slug": "print-sizes-at-300-dpi",
+      "keyword": "print sizes at 300 dpi",
+      "type": "new-page",
+      "cluster": "resolution-dpi",
+      "status": "deployed",
+      "published_at": "2026-04-19",
+      "notes": "Complete 300 DPI pixel reference — 28 sizes in 5 ratio packs. ListingOutputShowcase (misty_lake preset) + Gemini wall-art lifestyle. OG image generated. Build PASS."
+    },
+    {
+      "slug": "how-to-upload-more-than-5-files-etsy",
+      "keyword": "how to upload more than 5 files to etsy",
+      "type": "new-page",
+      "cluster": "etsy-file-management",
+      "status": "deployed",
+      "published_at": "2026-04-18",
+      "notes": "Problem/solution guide — Etsy 5-file limit + ZIP-per-ratio strategy. ListingOutputShowcase (fox preset) + OG image generated. Validator PASS."
+    },
+    {
       "slug": "etsy-wedding-printable-sizes",
       "keyword": "etsy wedding printable sizes",
       "type": "new-page",

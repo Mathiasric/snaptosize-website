@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Weekly batch initialization — creates directories and archives previous state."""
 
-import json
 import shutil
 from datetime import datetime, timezone
 from pathlib import Path
@@ -64,9 +63,20 @@ def init_batch(week: Optional[str] = None, targets: Optional[dict] = None) -> Pi
     for d in WEEK_DIRS:
         d.mkdir(parents=True, exist_ok=True)
 
+    # Carry forward insights from the current (outgoing) batch.
+    # run-pipeline.py writes insights to state._data["insights"] after the analyst stage.
+    # We copy those into "previous_insights" so next week's agents can read them.
+    previous_insights = current.raw.get("insights")
+    if previous_insights:
+        print(f"Carried forward insights from batch {current.raw.get('batch_id')}")
+
     # Initialize new state
     state = PipelineState.load()
     state.start_batch(week, targets)
+
+    # Carry forward previous insights
+    if previous_insights:
+        state._data["previous_insights"] = previous_insights
 
     # Pre-create content items with correct formats.
     # Video items: TikTok is primary, Instagram Reels is linked (same video file).

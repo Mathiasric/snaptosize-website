@@ -117,28 +117,72 @@ These are non-negotiable regardless of content structure:
 
 Study existing pages for **quality and style**, not for structural copying:
 - `app-next/app/(marketing)/etsy-print-sizes/page.tsx` — pillar page with hero background image
-- `app-next/app/(marketing)/etsy-8x10-print-size/page.tsx` — **CSS-only hero reference** (blueprint frame, dot grid, gradient mesh)
+- `app-next/app/(marketing)/etsy-8x10-print-size/page.tsx` — **CSS-only hero reference** (blueprint frame, dot grid, gradient mesh) — for SIZE/technical pages
+- `app-next/app/(marketing)/etsy-nursery-wall-art-sizes/page.tsx` — **Niche-page hero reference** (full-bleed pastel gradient, dot pattern, 2 radial blobs, 3-frame CSS gallery-wall mockup) — for NICHE/category pages
+- `app-next/app/(marketing)/etsy-kids-wall-art-sizes/page.tsx` & `etsy-bathroom-wall-art-sizes/page.tsx` — additional niche-hero examples (playroom pastel, spa tile)
 
 ### Hero Design — MANDATORY
 
-**Activate the `frontend-design` skill before writing any page.**
+**Activate the `frontend-design` skill before writing any page.** Do NOT skip this.
 
 Every page MUST have a unique, visually distinctive CSS-only hero. No plain gradient + text heroes. The hero is also the OG image source (1200×630 crop from top).
 
-**Design approach by page type:**
-- **Size pages**: blueprint/technical drawing (frame outlines, dimension callouts, tick marks, dot grid). Reference: `etsy-8x10-print-size/page.tsx`
-- **Ratio pages**: overlapping ratio rectangles showing proportions, comparison visual
-- **Problem pages**: warning/diagnostic aesthetic (caution patterns, before/after visual metaphor)
-- **Guide pages**: editorial layout with typographic hierarchy, section preview elements
-- **Niche pages**: softer gradients, category-specific visual cues (e.g., nursery = organic shapes)
+**The hero MUST be full-bleed** — it must break out of the page's `container` wrapper and span edge-to-edge with its own themed background. Pattern:
 
-**Required hero elements:**
-- CSS-only background (dot grids, gradient mesh blobs, geometric shapes — no images)
-- Visual element on the right side that communicates the page topic
-- Monospace label above H1 (e.g., "PRINT SIZE REFERENCE")
-- Accent line or decorative element connecting label to content
-- Purple accent colors consistent with brand
-- Trust pills with purple check marks
+```tsx
+return (
+  <>
+    {/* JSON-LD scripts */}
+
+    {/* ===== HERO — full-bleed, themed ===== */}
+    <section className="relative pt-12 pb-20 md:pt-16 md:pb-28 overflow-hidden"
+      style={{ background: "linear-gradient(145deg, ...)" }}>
+      {/* Pattern layer (dots/grid) */}
+      {/* 2x radial blob layers (corners) */}
+      {/* CSS mockup composition — right side, absolute, hidden lg:block */}
+
+      <div className="container mx-auto px-4 md:px-8 max-w-[1200px] relative z-10">
+        {/* breadcrumb + kicker + H1 + subhead + body + CTA + pills */}
+      </div>
+    </section>
+
+    {/* Rest of page inside regular container */}
+    <div className="container mx-auto px-4 md:px-8 max-w-[1200px] pt-16 pb-12 md:pt-20">
+      {/* QuickAnswer, sections, FAQ, FinalCTA */}
+    </div>
+  </>
+);
+```
+
+**Design approach by page type:**
+- **Size pages**: blueprint/technical drawing on dark bg (frame outlines, dimension callouts, tick marks, dot grid). Reference: `etsy-8x10-print-size/page.tsx`. Purple accent.
+- **Ratio pages**: overlapping ratio rectangles showing proportions, comparison visual. Dark bg, teal/purple accent.
+- **Problem pages**: warning/diagnostic aesthetic on dark bg (caution patterns, before/after visual metaphor).
+- **Guide pages**: editorial layout with typographic hierarchy, section preview elements.
+- **Niche pages** (nursery, kids, bathroom, bedroom, kitchen, etc.): **LIGHT themed bg + 3+ CSS mockup frames**. Palette must match niche, NOT default brand purple. See palette menu below.
+
+**Niche palette menu** (pick one per page, never reuse the exact same palette across two niche pages):
+- Nursery: warm cream + blush + sage — `#fdf2f0 → #f0ede6`, accent `#c9a89c` (taken)
+- Kids: peach + mint — `#fef3e8 → #e0ede8`, accent `#c97b63` (taken)
+- Bathroom: sage + cream spa — `#eef2ed → #e8ebe5`, accent `#6b8270` (taken)
+- Bedroom: dusty lavender + oat — `#f0ecf2 → #efe8dd`, accent `#8a7aa0`
+- Kitchen: terracotta + wheat — `#f7eadf → #ede0c9`, accent `#b07152`
+- Living room: sand + deep olive — `#f1ebe0 → #e3e4d5`, accent `#6d7a4f`
+- Quote/typography: ink black + cream — `#fbf7ef → #f0e9db`, accent `#2d2926`
+
+**Required hero elements (niche pages) — CHECKLIST BEFORE MARKING DONE:**
+- [ ] Full-bleed section with themed gradient background (light, not dark surface)
+- [ ] Subtle pattern layer (dots for soft niches, tile grid for bathroom/kitchen)
+- [ ] 2 radial blob layers at opposite corners using the niche accent + complement
+- [ ] CSS mockup composition on the right (absolute, `hidden lg:block`, 300-340px wide): **minimum 3 overlapping elements** — frames with distinct sizes & labels (e.g. "16×20", "11×14", "8×10"), or category-appropriate props (mirror silhouette for bathroom, rainbow bars for kids, botanical stem SVG for bathroom)
+- [ ] Mono-font kicker with short horizontal rule (e.g. `Niche Guide · Bathroom`) above H1
+- [ ] Two-line H1: primary title + semantic subhead (different sizes, same line-height)
+- [ ] CTA with microcopy line below ("Free → upload once, get every size at 300 DPI")
+- [ ] Trust pills as backdrop-blur glass chips with niche-accent borders (NOT default dark surface pills)
+- [ ] Breadcrumb inline-color matched to niche palette (not default muted-foreground)
+- [ ] Mobile: CSS mockup hidden, content max-w-[620px]
+
+**Failure mode to avoid:** A dark card on the default dark site background with a tiny "most-bought sizes" text box as the "visual". This is not a hero — this is a list. Rebuild as above.
 
 **CTA pattern** (match existing pages exactly):
 ```tsx
@@ -190,7 +234,7 @@ Import from existing codebase:
 - `FinalCTA` — final conversion block (props: `heading`, `stat`, `description`, `buttonText`, `appUrl`)
 - `RelatedPages` — internal linking (from `@/components/RelatedPages`)
 
-Use same visual patterns: dark background, purple CTA buttons, trust pills under hero CTA.
+Use same visual patterns: purple CTA buttons, trust pills under hero CTA. Background: dark for technical/size/ratio/problem pages; **light themed gradient for niche pages** (see Hero Design section).
 
 ### Registry Entry Format
 

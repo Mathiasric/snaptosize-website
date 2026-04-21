@@ -40,7 +40,7 @@ SnapToSize is a SaaS tool for Etsy sellers selling digital wall art / printables
 
 - **Product:** Live and production-stable as of 2026-03-03
 - **First paying customer:** 2026-03-03
-- **Paying users:** 4 — MRR $44 (3 monthly + 1 yearly)
+- **Paying users:** 7 — MRR $80 (6 monthly + 1 yearly) — updated 2026-04-20
 - **SEO pages live:** 48 (19 size, 8 guide, 5 hub/problem, 14 niche, 1 interactive tool, 1 comparison)
 - **Pack system:** 28 sizes across 5 ratio packs + 8 square + 3 large via single export = up to 70 files from one upload
 - **Interactive tools:** Print Size Calculator live (`/etsy-print-size-calculator`) — crop analysis, DPI checker, size reference

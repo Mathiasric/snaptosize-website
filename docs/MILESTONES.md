@@ -5,7 +5,7 @@
 
 ## Current State
 - **Paying users:** 6 (5 monthly, 1 yearly)
-- **MRR:** $68 (5× $11.99 monthly + $97/year amortized)
+- **MRR:** $80 (6× $11.99 monthly + $97/year amortized) — +1 Pro monthly 2026-04-20
 - **Total revenue collected:** $156.95 (1× $97 yearly + 5× $11.99 monthly)
 - **SEO pages live:** 73 (76 total incl. non-SEO)
 - **First paying customer:** 2026-03-03

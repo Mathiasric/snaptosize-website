@@ -3,11 +3,15 @@
 1. etsy-black-and-white-art-sizes: Gallery wall with B&W framed prints
 2. etsy-anime-manga-art-sizes: Bedroom wall with anime art prints
 """
+import os
 import pathlib
+from pathlib import Path
+from dotenv import load_dotenv
+load_dotenv(Path(__file__).resolve().parents[2] / ".env.local")
 from google import genai
 from google.genai import types
 
-API_KEY = "AIzaSyBVWYcxVVj2ciKZZODzJszxaBG7X3bDtyg"
+API_KEY = os.environ.get("GOOGLE_API_KEY")
 client = genai.Client(api_key=API_KEY)
 
 OUT_DIR = pathlib.Path("C:/dev/snaptosize-website/app-next/public/assets/visuals")

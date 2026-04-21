@@ -15,6 +15,10 @@ Analyze last week's social media posts to identify patterns in what drives views
 - `/docs/GROWTH_STATE.md` - ICP, positioning, messaging
 - `/marketing/social/published/` - Last week's posts
 - `/marketing/state.md` - Current marketing priorities
+- `/marketing/social/queue/pipeline-state.json` → check `previous_insights` field
+  - If present, use as context for your analysis: "Last week's top performers were X, recommended doing more of Y"
+  - Compare this week's patterns against last week's recommendations
+  - Note whether the pipeline followed last week's advice
 
 ## Responsibilities
 

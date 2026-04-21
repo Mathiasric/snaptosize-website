@@ -10,8 +10,49 @@ You are activating the **Pipeline Orchestrator** — the single entry point for 
 ## Commands
 
 - **`/pipeline-run-week`** — Run the full weekly cycle (inline, 1-2 user touchpoints)
+- **`/pipeline-run-day`** — Run a daily batch: 3 Pinterest + 1 Instagram (see Daily Mode below)
 - **`/pipeline-status`** — Show current pipeline state summary
 - **`/pipeline-retry-failed`** — Retry all failed content items
+
+## Daily Batch Mode (MANDATORY when user asks for daily content)
+
+**Target per day: 3 Pinterest + 1 Instagram = 4 items total.**
+
+### Tool mix (hard rule)
+- **2 Gemini lifestyle pins** (Pinterest only, 2:3) — aspirational, styled scenes, app visible on screen when relevant
+- **2 React social-slide screenshots** — 1 Pinterest + 1 Instagram, must use strong templates
+
+### Artwork uniqueness (hard rule)
+Before picking a template + artwork combo for a React slide, scan existing content folders:
+```bash
+grep -r '"artwork"' marketing/social/content/ marketing/social/archive/ | grep '"<candidate>"'
+```
+Never reuse the same `template + artwork` combo that has already shipped. Rotate through fresh artwork from `app-next/public/assets/listings/` (owl, mysthical_portal, littledeerquote, slothing_through_life, landscpae_line_art_bears, anime-hero, wildflower_botanical_art, geometric_colorful art — check archive before picking).
+
+### Template strength rules
+- **Strong (use freely):** `NeonPackShowcase`, `RatioSplitShowcase`, `RatioProofShowcase`, `BrightPackShowcase`, `StatsCard`, `Checklist`
+- **WorkflowSteps — CAUTION:** Has hardcoded poppies artwork (`/assets/Composition_Pictures/poppies_orginal_2x3.jpg`). Do NOT use as standalone post — it's been used multiple times. Only valid for Remotion video source.
+- **Weak (do NOT ship alone):** `PainSolutionSlide` — text-heavy, no real artwork. Skip unless paired with a product demo or real visual.
+- Every React slide MUST show real product artwork from `/assets/listings/` or teach specific data. No text-only panels.
+
+### File naming (hard rule)
+Content file name MUST match the folder slug, not `pin.png`/`post.png`.
+Example: `content/pinterest/2026-04-17-deer-pack-showcase/2026-04-17-deer-pack-showcase.png`
+QA accepts any `*.png/.jpg/.webp` in the folder, but the scheduler relies on `metadata.image` pointing to the slug name. Gen scripts and screenshot scripts MUST write to `{slug}.png`.
+
+### Daily flow
+1. Initialize or reuse current week batch (`--init --week W{current}`)
+2. Pick 4 topics following LESSON-087 angles (Pain→Solution, Contrast, Benefit-first, Data-hook)
+3. Generate 2 Gemini lifestyle pins using Mal A/B/C from the prompt templates below
+4. Screenshot 2 React slides with verified-unused template+artwork combos
+5. Write `metadata.json` for each (id format: `W{WW}-P01..P03`, `W{WW}-I01`)
+6. Register items in pipeline state, advance to `qa`
+7. **Pre-QA checklist (mandatory before showing user):**
+   - Count packs visible in each Gemini image — must show ALL 5 (2:3, 3:4, 4:5, ISO, Extras)
+   - Verify `snaptosize.com` or `app.snaptosize.com` is legible in every image
+   - Compare visually against last 7 days of published content (check `content/` + `archive/`) — no near-duplicate images
+   - Every React slide must show actual product artwork (not hardcoded placeholder)
+8. Pause for user QA review → schedule on approval
 
 ## Before Starting
 

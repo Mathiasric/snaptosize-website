@@ -175,16 +175,49 @@ def run_render_videos(dry_run: bool = False):
         print("Remotion render failed.")
 
 
+def run_tracker(week: str = None, dry_run: bool = False):
+    """Run the tracker stage: pull performance, correlate, generate insights."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location(
+        "pull_performance",
+        PROJECT_ROOT / "marketing" / "social" / "pull-performance.py"
+    )
+    perf_mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(perf_mod)
+    pull_and_correlate = perf_mod.pull_and_correlate
+
+    state = PipelineState.load()
+    state.set_stage_status("tracker", "in_progress")
+    state.save()
+
+    try:
+        analytics = pull_and_correlate(week=week, dry_run=dry_run)
+
+        if not dry_run:
+            # Store insights on pipeline state
+            state = PipelineState.load()
+            insights = analytics.get("insights", {})
+            state._data["insights"] = insights
+            state.set_stage_status(
+                "tracker", "completed",
+                f"Matched {analytics['summary']['matched']}/{analytics['summary']['total_posts']} posts"
+            )
+            state.save()
+            print(f"\nTracker stage completed. Insights saved to pipeline state.")
+        else:
+            print(f"\n[DRY RUN] Tracker stage preview complete.")
+
+    except Exception as e:
+        state = PipelineState.load()
+        state.set_stage_status("tracker", "failed")
+        state.save()
+        print(f"\nTracker failed: {e}")
+        raise
+
+
 def run_pull_performance():
-    """Pull post performance analytics."""
-    perf_script = PROJECT_ROOT / "marketing" / "social" / "pull-performance.py"
-    if not perf_script.exists():
-        print("pull-performance.py not found.")
-        return
-    import subprocess
-    result = subprocess.run([sys.executable, str(perf_script)], cwd=str(PROJECT_ROOT))
-    if result.returncode != 0:
-        print("Performance pull failed.")
+    """Pull post performance analytics (legacy wrapper)."""
+    run_tracker()
 
 
 def run_next_stage():
@@ -208,18 +241,16 @@ def run_next_stage():
         "creator": "social-media-content-creator",
         "qa": "python marketing/social/run-pipeline.py --stage qa",
         "publisher": "python marketing/social/run-pipeline.py --stage scheduler",
-        "tracker": "(auto-updated by publisher)",
+        "tracker": "python marketing/social/run-pipeline.py --stage tracker",
     }
 
     print(f"Next stage: {next_stage}")
     print(f"Invoke: {skill_map.get(next_stage, next_stage)}")
 
-    if next_stage in ("qa", "publisher"):
+    if next_stage in ("qa", "publisher", "tracker"):
         print(f"\nRun directly:")
         print(f"  {skill_map[next_stage]}")
         print(f"  {skill_map[next_stage]} --dry-run")
-    elif next_stage == "tracker":
-        print(f"\n{next_stage} is handled automatically.")
     else:
         print(f"\nIn Claude Code, activate the '{skill_map[next_stage]}' skill.")
         print("The skill will read/write pipeline-state.json automatically.")
@@ -251,6 +282,8 @@ def main():
             run_scheduler(dry_run=args.dry_run)
         elif args.stage == "publisher":
             run_publisher(dry_run=args.dry_run)
+        elif args.stage == "tracker":
+            run_tracker(week=args.week, dry_run=args.dry_run)
         else:
             print(f"Stage '{args.stage}' must be run as a Claude Code skill.")
             print(f"Use the '{args.stage}' skill in Claude Code.")
