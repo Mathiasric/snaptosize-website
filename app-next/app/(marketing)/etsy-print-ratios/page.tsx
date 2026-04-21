@@ -11,14 +11,14 @@ import RelatedPages from "@/components/RelatedPages";
 import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 
 export const metadata: Metadata = {
-  title: "Etsy Print Aspect Ratios Explained: 2:3, 3:4, 4:5",
+  title: "Etsy Print Ratios: 2:3, 3:4, 4:5 — Size Chart with Pixel Dimensions (2026)",
   description:
-    "Offering the wrong ratio? Buyers won't buy. Get the 4 Etsy print ratios with exact pixel dimensions at 300 DPI — every ratio explained.",
+    "Offering the wrong ratio? Buyers won't buy. Exact pixel dimensions for 2:3, 3:4, 4:5, and 5:7 at 300 DPI — plus the complete size chart Etsy sellers actually use.",
   alternates: { canonical: "https://snaptosize.com/etsy-print-ratios" },
   openGraph: {
-    title: "Etsy Print Aspect Ratios Explained: 2:3, 3:4, 4:5",
+    title: "Etsy Print Ratios: 2:3, 3:4, 4:5 — Size Chart with Pixel Dimensions (2026)",
     description:
-      "Offering the wrong ratio? Buyers won't buy. Get the 4 Etsy print ratios with exact pixel dimensions at 300 DPI.",
+      "Offering the wrong ratio? Buyers won't buy. Exact pixel dimensions for 2:3, 3:4, 4:5, and 5:7 at 300 DPI — the complete size chart.",
     url: "https://snaptosize.com/etsy-print-ratios",
     images: [
       {
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Etsy Print Aspect Ratios Explained: 2:3, 3:4, 4:5",
+    title: "Etsy Print Ratios: 2:3, 3:4, 4:5 — Size Chart with Pixel Dimensions (2026)",
     description:
-      "Most sellers offer the wrong ratios. Learn the 4 exact print ratios Etsy buyers expect.",
+      "Exact pixel dimensions for 2:3, 3:4, 4:5, and 5:7 at 300 DPI — the complete size chart Etsy sellers actually use.",
     images: ["/assets/og/etsy-print-ratios.png"],
   },
 };

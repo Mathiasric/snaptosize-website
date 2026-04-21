@@ -17,6 +17,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 
 export const metadata: Metadata = {
   title: "PNG vs PDF vs JPG for Etsy Printables: Which Format Sells Best? (2026)",
@@ -41,9 +42,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best File Format for Etsy Printables: PNG vs PDF vs JPG (2026)",
+    title: "PNG vs PDF vs JPG for Etsy Printables: Which Format Sells Best? (2026)",
     description:
-      "PDF, PNG, or JPG? One format avoids Etsy's 20MB limit AND prints perfectly. See the comparison.",
+      "Wrong file format = blurry prints and refund requests. See the exact format top Etsy sellers use for printables, wall art, and digital downloads.",
     images: ["/assets/og/best-file-format-etsy-printables.png"],
   },
 };
@@ -559,6 +560,15 @@ export default function BestFileFormatEtsyPrintablesPage() {
                   </Button>
                 </a>
               </Card>
+            </div>
+
+            {/* --- Listing Output Showcase --- */}
+            <div>
+              <ListingOutputShowcase
+                artwork="neutral_abstract"
+                heading="One upload. All sizes as 300 DPI JPG — automatically."
+                subtext="Upload your artwork in any format (PNG, TIFF, WebP). SnapToSize converts to optimized JPG, generates all print sizes, and packages them into ratio ZIPs under 20MB."
+              />
             </div>
 
             {/* --- Section 3: Why JPG is the Professional Standard --- */}

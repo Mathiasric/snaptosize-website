@@ -8,19 +8,20 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 
 export const metadata: Metadata = {
-  title: "How to Package Digital Wall Art for Etsy",
+  title: "How to Package Digital Wall Art for Etsy: ZIP, File Naming & 20MB Rules (2026)",
   description:
-    "Avoid the 5 packaging mistakes that cause refund requests. ZIP structure, naming, and file format checklist — resize all sizes at once with SnapToSize.",
+    "The exact ZIP structure, file naming format, and 20MB rules Etsy buyers expect — plus the 5 packaging mistakes that trigger refund requests.",
   alternates: {
     canonical:
       "https://snaptosize.com/how-to-package-digital-wall-art-for-etsy",
   },
   openGraph: {
-    title: "How to Package Digital Wall Art for Etsy",
+    title: "How to Package Digital Wall Art for Etsy: ZIP, File Naming & 20MB Rules (2026)",
     description:
-      "Avoid the 5 packaging mistakes that cause refund requests. ZIP structure, naming, and file format checklist.",
+      "The exact ZIP structure, file naming format, and 20MB rules Etsy buyers expect — plus the 5 packaging mistakes that trigger refund requests.",
     url: "https://snaptosize.com/how-to-package-digital-wall-art-for-etsy",
     images: [
       {
@@ -33,9 +34,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "How to Package Digital Wall Art for Etsy",
+    title: "How to Package Digital Wall Art for Etsy: ZIP, File Naming & 20MB Rules (2026)",
     description:
-      "Avoid the 5 packaging mistakes that cause refund requests. Complete ZIP structure and naming checklist.",
+      "The exact ZIP structure, file naming format, and 20MB rules Etsy buyers expect — plus 5 mistakes that trigger refund requests.",
     images: ["/assets/og/how-to-package-digital-wall-art-for-etsy.png"],
   },
 };
@@ -899,6 +900,15 @@ export default function HowToPackageDigitalWallArtForEtsyPage() {
                 </Link>
                 .
               </p>
+            </div>
+
+            {/* --- Listing Output Showcase --- */}
+            <div>
+              <ListingOutputShowcase
+                artwork="wildflower"
+                heading="This is what SnapToSize packages for you."
+                subtext="One upload → 5 ratio packs, 30 files, professionally named ZIPs under 20MB. Ready to upload to Etsy in seconds."
+              />
             </div>
 
             {/* --- CTA 2: Primary --- */}
