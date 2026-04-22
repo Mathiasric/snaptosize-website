@@ -115,7 +115,33 @@ TOUCHPOINT 3: User confirms deploy (build verified, sitemap updated)
   "conversion_angle": "Reference page with calculator feel → CTA after dimensions table",
   "link_to": ["etsy-print-sizes", "etsy-print-ratios"],
   "link_from": ["etsy-print-sizes"],
-  "cluster": "sizes"
+  "cluster": "sizes",
+  "page_type": "size-reference | tool-bridge | niche-vertical | problem-solver",
+  "sources": {
+    "canva-pdf-print-300dpi": "https://www.canva.com/help/download-file-types/",
+    "iso-a3-dimensions": "https://www.iso.org/standard/36631.html"
+  }
+}
+```
+
+**`page_type` drives downstream behavior:**
+- `tool-bridge` → writer must use solution-first H1 pattern + "30-Second Shortcut" callout after QuickAnswer
+- `niche-vertical` → deploy stage auto-generates a Gemini lifestyle image
+- `size-reference` → writer must math-verify every W×H px claim
+- `problem-solver` → writer emphasizes pain → SnapToSize fix early
+
+**`sources` is mandatory** for any non-SnapToSize factual claim (tool DPI, feature limits, API caps, external metrics). Writer quotes these sources inline and the fact-spot-check gate verifies at least one source per external claim.
+
+### Extra content blueprint for tool-bridge pages:
+
+```json
+{
+  "h1_pattern": "[Tool-action]. [SnapToSize-action].",
+  "shortcut_callout": {
+    "label": "The 30-Second Shortcut",
+    "headline": "You don't have to [pain verb] [...]",
+    "cta": "Try SnapToSize free — [specific value]"
+  }
 }
 ```
 
@@ -181,6 +207,29 @@ TOUCHPOINT 3: User confirms deploy (build verified, sitemap updated)
 - Match design quality of live pages
 - Read `marketing/CONTENT_REFERENCE.md` for product data accuracy
 
+### Mandatory Patterns (W19 retrospective):
+
+- **Tool-bridge / comparison pages** (Canva, Photoshop, Illustrator, etc):
+  - Hero H1 pattern: `"[Tool-verb]. [SnapToSize-verb]."` — e.g. "Design in Canva. Ship every Etsy ratio with SnapToSize." Never use the bare keyword phrase as H1.
+  - Add a **"30-Second Shortcut"** callout immediately after QuickAnswer — teal/violet gradient card, names SnapToSize as the one-click answer, has its own CTA button + pricing line.
+  - Hero CTA copy: `"Skip the [pain verb] — try SnapToSize free"` (not "Resize Your Canva Export").
+  - Workflow sections that end with "use SnapToSize" as step N of N are too weak; SnapToSize must be front-loaded in hero + shortcut callout.
+
+- **Niche-vertical pages** (kitchen, bathroom, nursery, kids, etc):
+  - MUST have a Gemini lifestyle image placed after QuickAnswer (matches bathroom/kids/wedding pattern). Skip only if no relevant image exists.
+  - Generation script path: `marketing/social/gen-[slug]-lifestyle.py`. Copy structure from `gen-bathroom-lifestyle.py`. Prompt must include "no text, no words, no labels, no watermarks, no people" (LESSON-008/019).
+  - Output path: `app-next/public/assets/visuals/[slug]-lifestyle.jpg`. Load with `<img>` + figcaption that ties scene to sizing copy.
+
+- **All pages with dimensions:**
+  - Every "X×Y px" claim must be verified: reduce X:Y to lowest terms and confirm it matches the labelled ratio. Every "N inches at 300 DPI" must satisfy N*300 == pixel count.
+  - ListingOutputShowcase: verify `ARTWORK_PRESETS[chosen].sizes.length === 5` before picking. If the only thematically-matching preset is incomplete, pick a complete adjacent one and reword the copy; don't silently ship a 4-image showcase.
+
+- **No fabricated metrics, ever:**
+  - Do not invent "% of buyers", "% of orders", "%+ conversion", dollar amounts, or user counts. If the claim feels rhetorically necessary, rephrase qualitatively ("missing ISO blocks EU/UK orders at checkout" instead of "lose 25% of international orders").
+
+- **Pricing discipline:**
+  - Pro is **$11.99/mo or $97/year**. Free is **5 Quick Exports + 2 Packs/day**. Never invent other prices. Source of truth: `app-next/app/(marketing)/pricing/page.tsx`.
+
 ---
 
 ## TOUCHPOINT 3 — DEPLOY
@@ -192,10 +241,19 @@ TOUCHPOINT 3: User confirms deploy (build verified, sitemap updated)
 1. **For each reviewed item:**
    - Copy `marketing/drafts/YYYY-WXX-[slug]/page.tsx` → `app-next/app/(marketing)/[slug]/page.tsx`
    - Add entry to `app-next/data/page-registry.json` (auto-updates sitemap + internal links)
-2. **Run `npm run build`** in app-next to verify all pages compile
-3. **Generate OG image** using `og-screenshot` skill (build static → serve → Playwright screenshot → save to `app-next/public/assets/og/[slug].png` → update metadata with `openGraph.images` and `twitter.images`)
-4. **Run `seo-audit` skill** for post-deploy check
-4. **Present results:**
+2. **Run `npx next build`** in app-next to verify all pages compile
+3. **Generate lifestyle image** (niche-vertical pages only): if the brief's `page_type` is `niche-vertical`, copy `marketing/social/gen-bathroom-lifestyle.py` to `gen-[slug]-lifestyle.py`, swap prompt + output path, run it. Insert `<img>` block after QuickAnswer with figcaption tying scene to sizing copy.
+4. **Generate OG image** — use the `og-screenshot.mjs` at repo root:
+   - Update the `pages` array in `og-screenshot.mjs` to the new slugs
+   - Serve the static export: `cd app-next && npx serve out -p 3333` (background) — NOT `next start` (fails on static-export builds)
+   - Wait for server ready, then `node og-screenshot.mjs` from repo root
+   - Verify OG png exists at `app-next/public/assets/og/[slug].png`
+   - Verify page metadata references `/assets/og/[slug].png` in both `openGraph.images` and `twitter.images`
+5. **Run footer + inbound-link update:**
+   - Add new slugs to `app-next/components/Footer.tsx` (follow existing section)
+   - Grep for 2-3 semantically-related existing pages and add inline links to the new slugs in their related-pages or first-section paragraph
+6. **Run `seo-audit` skill** for post-deploy check
+7. **Present results:**
 
 ```
 | # | Slug | Build | URL |
@@ -222,6 +280,11 @@ Run automatically after draft generation, before Touchpoint 2 review.
 | Visuals | Visual plan from brief executed, images exist in /assets/visuals/ | File existence check + draft img tag count |
 | QuickAnswer | QuickAnswer component present after hero, before first H2 | Import + JSX check |
 | Build | Draft compiles without errors | `npm run build` (run once for all drafts) |
+| **Math validation** (W19-add) | Every "W×H px" or "N:M ratio" claim math-checks | Parse dimensions from draft; verify W/H reduces to claimed ratio; verify pixel counts match inch-size × 300 DPI. Fail on any mismatch. |
+| **No fabricated stats** (W19-add) | Zero unsourced numeric claims about buyers/orders/percent/revenue | Regex scan for `\d+%`, `\$\d+`, `\d+[,.]?\d*\s*(orders\|buyers\|sellers\|users)`. Every hit must have a citation or be a verified SnapToSize metric (400+ sellers, 10K+ exports). Hard block otherwise. |
+| **Preset completeness** (W19-add) | If ListingOutputShowcase is used, the chosen `ARTWORK_PRESETS[key]` must include all 5 ratio sizes (2x3, 3x4, 4x5, 11x14, ISO) | Lookup key in `app-next/components/ListingOutputShowcase.tsx`; count sizes array. Fail if <5. |
+| **Solution-first hero for tool-bridge pages** (W19-add) | For pages tagged `cluster: "tool-workflows"` or `page_type: "tool-bridge"`, H1 must name SnapToSize as the solution | Pattern: `[Tool-action]. [SnapToSize-action].` — e.g. "Design in Canva. Ship every Etsy ratio with SnapToSize." Reject generic "[Topic name]" H1s. |
+| **Firecrawl fact-spot-check** (W19-add) | For any non-SnapToSize factual claim (tool DPI, feature limits, API caps), brief must cite a Firecrawl source URL | Brief JSON field `sources: {claim: url}` required for each external claim. Writer prompt includes these for grounding. |
 
 Store gate results via `state.set_gate(item_id, gate_name, passed, detail)`.
 
