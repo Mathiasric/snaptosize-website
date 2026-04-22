@@ -276,11 +276,11 @@ export default function SnapToSizeVsCanvaPage() {
 
               {/* 5 ratio-pack stacks — each represents one ZIP */}
               {[
-                { label: "2:3", sub: "4\u00d76 \u2192 24\u00d736", w: 40, h: 60, left: 0 },
-                { label: "3:4", sub: "6\u00d78 \u2192 18\u00d724", w: 42, h: 56, left: 50 },
-                { label: "4:5", sub: "8\u00d710 \u2192 16\u00d720", w: 44, h: 55, left: 102 },
-                { label: "11\u00d714", sub: "Extras", w: 44, h: 56, left: 156 },
-                { label: "ISO", sub: "A5 \u2192 A3", w: 40, h: 57, left: 210 },
+                { label: "2:3", w: 42, h: 58, left: 0 },
+                { label: "3:4", w: 42, h: 58, left: 52 },
+                { label: "4:5", w: 42, h: 58, left: 104 },
+                { label: "Extras", w: 46, h: 58, left: 156 },
+                { label: "ISO", w: 42, h: 58, left: 210 },
               ].map((pack) => (
                 <div
                   key={pack.label}
@@ -326,17 +326,6 @@ export default function SnapToSizeVsCanvaPage() {
                     >
                       {pack.label}
                     </span>
-                  </div>
-                  {/* pack range label under stack */}
-                  <div
-                    className="text-[7px] font-mono tracking-wide whitespace-nowrap"
-                    style={{
-                      marginTop: `${pack.h + 14}px`,
-                      marginLeft: "-4px",
-                      color: "rgba(45,212,191,0.40)",
-                    }}
-                  >
-                    {pack.sub}
                   </div>
                 </div>
               ))}
