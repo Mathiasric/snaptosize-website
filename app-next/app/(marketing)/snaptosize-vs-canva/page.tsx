@@ -9,6 +9,7 @@ import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
+import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 
 export const metadata: Metadata = {
   title: "SnapToSize vs Canva for Etsy Print Resizing",
@@ -80,7 +81,7 @@ export default function SnapToSizeVsCanvaPage() {
     {
       question: "Can I resize prints for Etsy in Canva for free?",
       answer:
-        "Yes, Canva Free lets you create custom-sized canvases, but you must manually create and export each size individually. There is no batch export for multiple print sizes.",
+        "Yes, Canva Free lets you create custom-sized canvases and export each size as PDF Print (300 DPI on all plans). Canva has no one-click batch export for all Etsy ratio packs. Canva Sheets Bulk Resize exists but caps at 5 output sizes per run and requires manual setup per size \u2014 still not a ratio-pack workflow.",
     },
     {
       question:
@@ -91,7 +92,7 @@ export default function SnapToSizeVsCanvaPage() {
     {
       question: "Does Canva export at 300 DPI?",
       answer:
-        "Canva Pro allows PDF export at 300 DPI. Free accounts are limited to lower-quality exports. For JPG/PNG, Canva does not guarantee 300 DPI at specific print dimensions — you need to manually calculate pixel dimensions.",
+        "Canva’s PDF Print export is 300 DPI on all plans (Free and Pro). PNG/JPG exports don’t embed a print DPI — they’re pixel rasters, so print resolution depends on canvas pixel count. Canva Pro offers a higher-resolution PNG/JPG export slider; Canva Free caps PNG/JPG at the canvas pixel dimensions.",
     },
     {
       question:
@@ -186,147 +187,182 @@ export default function SnapToSizeVsCanvaPage() {
           }}
         />
 
-        {/* CSS-only Design → Production visual — right side */}
-        <div className="absolute right-[4%] top-1/2 -translate-y-1/2 hidden lg:block">
+        {/* CSS-only Design → 5 Ratio Packs visual — right side */}
+        <div className="absolute right-[3%] top-1/2 -translate-y-1/2 hidden lg:block">
           <div
             className="relative"
-            style={{ width: "340px", height: "340px" }}
+            style={{ width: "460px", height: "340px" }}
           >
-            {/* "Design" canvas — upper left */}
+            {/* "Canva Design" canvas — left side */}
             <div
-              className="absolute rounded-lg border"
+              className="absolute rounded-lg border overflow-hidden"
               style={{
-                width: "140px",
-                height: "175px",
-                top: "0px",
+                width: "150px",
+                height: "188px",
+                top: "60px",
                 left: "0px",
-                borderColor: "rgba(167,139,250,0.2)",
-                background: "rgba(167,139,250,0.04)",
+                borderColor: "rgba(167,139,250,0.28)",
+                background: "rgba(167,139,250,0.05)",
+                boxShadow: "0 0 24px rgba(167,139,250,0.08)",
               }}
             >
               {/* Simulated design elements */}
               <div
                 className="absolute rounded"
                 style={{
-                  width: "80px",
-                  height: "8px",
-                  top: "30px",
-                  left: "30px",
-                  background: "rgba(167,139,250,0.15)",
+                  width: "86px",
+                  height: "9px",
+                  top: "34px",
+                  left: "32px",
+                  background: "rgba(167,139,250,0.20)",
                 }}
               />
               <div
                 className="absolute rounded"
                 style={{
-                  width: "60px",
-                  height: "6px",
-                  top: "48px",
-                  left: "40px",
-                  background: "rgba(167,139,250,0.10)",
+                  width: "64px",
+                  height: "7px",
+                  top: "52px",
+                  left: "43px",
+                  background: "rgba(167,139,250,0.12)",
                 }}
               />
               <div
                 className="absolute rounded-full"
                 style={{
-                  width: "35px",
-                  height: "35px",
-                  top: "70px",
-                  left: "52px",
-                  background: "rgba(167,139,250,0.08)",
-                  border: "1px solid rgba(167,139,250,0.12)",
+                  width: "42px",
+                  height: "42px",
+                  top: "78px",
+                  left: "54px",
+                  background: "rgba(167,139,250,0.10)",
+                  border: "1px solid rgba(167,139,250,0.16)",
                 }}
               />
               {/* Label */}
               <div
-                className="absolute text-[9px] font-mono tracking-wider text-center w-full"
-                style={{ bottom: "12px", color: "rgba(167,139,250,0.4)" }}
+                className="absolute text-[9px] font-mono tracking-[0.14em] text-center w-full"
+                style={{ bottom: "12px", color: "rgba(167,139,250,0.55)" }}
               >
-                DESIGN
+                CANVA DESIGN
               </div>
             </div>
 
-            {/* Arrow */}
+            {/* Arrow connector */}
             <div
               className="absolute"
-              style={{ top: "80px", left: "155px" }}
+              style={{ top: "146px", left: "158px" }}
             >
               <div
-                className="flex items-center gap-1"
-                style={{ color: "rgba(255,255,255,0.15)" }}
+                className="flex items-center gap-1.5"
+                style={{ color: "rgba(255,255,255,0.22)" }}
               >
-                <div className="w-8 h-px bg-white/10" />
+                <div className="w-10 h-px bg-white/15" />
                 <ArrowRight className="w-4 h-4" />
               </div>
             </div>
 
-            {/* "Production" output — upper right: multiple small frames */}
+            {/* 5 RATIO PACKS — right side */}
             <div
               className="absolute"
-              style={{ top: "0px", right: "0px", width: "120px" }}
+              style={{ top: "16px", left: "220px", width: "240px", height: "300px" }}
             >
-              {/* Stack of output files */}
+              {/* Section label */}
+              <div
+                className="absolute text-[9px] font-mono tracking-[0.14em] uppercase"
+                style={{ top: "0px", left: "0px", color: "rgba(45,212,191,0.65)" }}
+              >
+                SnapToSize output
+              </div>
+
+              {/* 5 ratio-pack stacks — each represents one ZIP */}
               {[
-                { w: "48px", h: "60px", label: "4\u00d76", top: "0px", left: "0px", color: "rgba(45,212,191,0.15)", border: "rgba(45,212,191,0.25)" },
-                { w: "52px", h: "65px", label: "8\u00d710", top: "0px", left: "60px", color: "rgba(45,212,191,0.12)", border: "rgba(45,212,191,0.20)" },
-                { w: "48px", h: "64px", label: "A4", top: "72px", left: "0px", color: "rgba(45,212,191,0.10)", border: "rgba(45,212,191,0.18)" },
-                { w: "52px", h: "64px", label: "16\u00d720", top: "72px", left: "60px", color: "rgba(45,212,191,0.08)", border: "rgba(45,212,191,0.15)" },
-              ].map((f, i) => (
+                { label: "2:3", sub: "4\u00d76 \u2192 24\u00d736", w: 40, h: 60, left: 0 },
+                { label: "3:4", sub: "6\u00d78 \u2192 18\u00d724", w: 42, h: 56, left: 50 },
+                { label: "4:5", sub: "8\u00d710 \u2192 16\u00d720", w: 44, h: 55, left: 102 },
+                { label: "11\u00d714", sub: "Extras", w: 44, h: 56, left: 156 },
+                { label: "ISO", sub: "A5 \u2192 A3", w: 40, h: 57, left: 210 },
+              ].map((pack) => (
                 <div
-                  key={i}
-                  className="absolute rounded border flex items-center justify-center"
-                  style={{
-                    width: f.w,
-                    height: f.h,
-                    top: f.top,
-                    left: f.left,
-                    background: f.color,
-                    borderColor: f.border,
-                  }}
+                  key={pack.label}
+                  className="absolute"
+                  style={{ top: "22px", left: `${pack.left}px` }}
                 >
-                  <span
-                    className="text-[8px] font-mono"
-                    style={{ color: "rgba(45,212,191,0.5)" }}
+                  {/* Stacked shadows to suggest a multi-file ZIP pack */}
+                  <div
+                    className="absolute rounded"
+                    style={{
+                      width: `${pack.w}px`,
+                      height: `${pack.h}px`,
+                      top: "6px",
+                      left: "6px",
+                      background: "rgba(45,212,191,0.06)",
+                      border: "1px solid rgba(45,212,191,0.12)",
+                    }}
+                  />
+                  <div
+                    className="absolute rounded"
+                    style={{
+                      width: `${pack.w}px`,
+                      height: `${pack.h}px`,
+                      top: "3px",
+                      left: "3px",
+                      background: "rgba(45,212,191,0.10)",
+                      border: "1px solid rgba(45,212,191,0.18)",
+                    }}
+                  />
+                  <div
+                    className="relative rounded flex items-center justify-center"
+                    style={{
+                      width: `${pack.w}px`,
+                      height: `${pack.h}px`,
+                      background: "rgba(45,212,191,0.16)",
+                      border: "1px solid rgba(45,212,191,0.32)",
+                      boxShadow: "0 0 10px rgba(45,212,191,0.08)",
+                    }}
                   >
-                    {f.label}
-                  </span>
+                    <span
+                      className="text-[10px] font-mono font-semibold"
+                      style={{ color: "rgba(134,239,222,0.95)" }}
+                    >
+                      {pack.label}
+                    </span>
+                  </div>
+                  {/* pack range label under stack */}
+                  <div
+                    className="text-[7px] font-mono tracking-wide whitespace-nowrap"
+                    style={{
+                      marginTop: `${pack.h + 14}px`,
+                      marginLeft: "-4px",
+                      color: "rgba(45,212,191,0.40)",
+                    }}
+                  >
+                    {pack.sub}
+                  </div>
                 </div>
               ))}
-              {/* "+ more" label */}
+              {/* PACKS label */}
               <div
-                className="absolute text-[8px] font-mono"
+                className="absolute text-[9px] font-mono tracking-[0.14em] text-center"
+                style={{ top: "112px", left: "0px", width: "250px", color: "rgba(45,212,191,0.50)" }}
+              >
+                5 RATIO PACKS
+              </div>
+              {/* Caption under production side */}
+              <div
+                className="absolute flex items-center justify-center px-3 py-2"
                 style={{
-                  bottom: "155px",
-                  left: "35px",
-                  color: "rgba(45,212,191,0.35)",
+                  top: "148px",
+                  left: "0px",
+                  width: "250px",
+                  borderTop: "1px solid rgba(255,255,255,0.08)",
                 }}
               >
-                + 26 more
-              </div>
-              {/* Label */}
-              <div
-                className="absolute text-[9px] font-mono tracking-wider text-center w-full"
-                style={{ top: "150px", color: "rgba(45,212,191,0.4)" }}
-              >
-                PRODUCTION
-              </div>
-            </div>
-
-            {/* ZIP icon area — bottom */}
-            <div
-              className="absolute rounded border flex items-center gap-2 px-3 py-2"
-              style={{
-                bottom: "0px",
-                left: "50%",
-                transform: "translateX(-50%)",
-                borderColor: "rgba(255,255,255,0.08)",
-                background: "rgba(255,255,255,0.02)",
-              }}
-            >
-              <div
-                className="text-[8px] font-mono tracking-wider"
-                style={{ color: "rgba(255,255,255,0.25)" }}
-              >
-                5 ZIPs &bull; 300 DPI &bull; &lt;20 MB
+                <div
+                  className="text-[9px] font-mono tracking-[0.08em] text-center"
+                  style={{ color: "rgba(255,255,255,0.42)" }}
+                >
+                  5 packs &middot; up to 70 files &middot; ready for Etsy
+                </div>
               </div>
             </div>
           </div>
@@ -434,6 +470,12 @@ export default function SnapToSizeVsCanvaPage() {
                 Production
               </h2>
               <p className="text-foreground-60 mb-4">
+                <strong className="text-foreground">Canva is the best design tool for Etsy printables.</strong>{" "}
+                Its template library, drag-and-drop editor, brand kits, and
+                team collaboration are genuinely best-in-class — and nothing
+                in SnapToSize replaces that. The gap is downstream of design.
+              </p>
+              <p className="text-foreground-60 mb-4">
                 Creating wall art in Canva is fast. But once your design is
                 finished, the production step begins. One artwork needs to
                 ship in multiple ratios &mdash; 2:3, 3:4, 4:5, ISO, and
@@ -532,11 +574,11 @@ export default function SnapToSizeVsCanvaPage() {
                         Batch resize
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
-                        <X className="w-4 h-4 text-red-400/60 inline" /> No
+                        <X className="w-4 h-4 text-red-400/60 inline" /> No one-click; Bulk Resize caps at 5 sizes
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
                         <Check className="w-4 h-4 text-teal-400 inline" /> Yes
-                        &mdash; all ratios at once
+                        &mdash; all 5 ratio packs at once
                       </td>
                     </tr>
                     <tr className="border-b border-white/10">
@@ -567,7 +609,7 @@ export default function SnapToSizeVsCanvaPage() {
                         300 DPI guarantee
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
-                        Pro only (PDF export). Not on JPG/PNG.
+                        PDF Print: 300 DPI all plans. PNG/JPG: canvas-pixel dependent.
                       </td>
                       <td className="py-3 px-4 text-foreground-60">
                         <Check className="w-4 h-4 text-teal-400 inline" /> Every
@@ -625,10 +667,10 @@ export default function SnapToSizeVsCanvaPage() {
                 {[
                   { feature: "Primary purpose", canva: "Design creation", snap: "Print production" },
                   { feature: "Output sizes", canva: "One at a time", snap: "30+ from one upload" },
-                  { feature: "Batch resize", canva: "No", snap: "Yes \u2014 all ratios" },
+                  { feature: "Batch all ratio packs", canva: "No one-click; Bulk Resize caps at 5", snap: "Yes \u2014 all 5 ratios" },
                   { feature: "Ratio awareness", canva: "Manual", snap: "Built-in (5 ratios)" },
                   { feature: "ZIP packaging", canva: "No", snap: "Organized by ratio" },
-                  { feature: "300 DPI guarantee", canva: "Pro PDF only", snap: "Every file" },
+                  { feature: "300 DPI output", canva: "PDF Print (all plans); PNG depends on canvas px", snap: "Every file" },
                   { feature: "File naming", canva: "No", snap: "Professional naming" },
                   { feature: "20 MB compliance", canva: "Manual check", snap: "Auto-optimized" },
                   { feature: "Time per artwork", canva: "1\u20133 hours", snap: "Under 30 seconds" },
@@ -673,6 +715,15 @@ export default function SnapToSizeVsCanvaPage() {
 
             <div className="rounded-xl overflow-hidden border border-white/[0.08]">
               <img src="/assets/visuals/snaptosize-vs-canva-chart.png" alt="Feature comparison chart — SnapToSize vs Canva for Etsy print resizing" width={1200} height={520} className="w-full h-auto" loading="lazy" />
+            </div>
+
+            {/* --- ListingOutputShowcase: what SnapToSize actually ships --- */}
+            <div>
+              <ListingOutputShowcase
+                artwork="misty_lake"
+                heading="What SnapToSize actually ships from a single Canva PDF."
+                subtext="Upload one design in any ratio. Get 2:3, 3:4, 4:5, 11×14, and ISO packs — every size at 300 DPI, under 20 MB."
+              />
             </div>
 
             {/* --- CTA 1: After comparison table --- */}
@@ -917,8 +968,10 @@ export default function SnapToSizeVsCanvaPage() {
               </h2>
               <p className="text-foreground-60 mb-6">
                 These tools aren&apos;t competitors &mdash; they solve
-                different problems in the same workflow. Many Etsy sellers
-                use both.
+                different problems in the same workflow. Canva owns design;
+                SnapToSize owns the production step Canva&apos;s design-first
+                UX doesn&apos;t serve well for Etsy sellers specifically. Many
+                sellers use both.
               </p>
 
               <div className="grid md:grid-cols-2 gap-4 mb-6">
