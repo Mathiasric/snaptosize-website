@@ -49,6 +49,18 @@ TOUCHPOINT 3: User confirms deploy (build verified, sitemap updated)
 4. **Execute the stage** (see below)
 5. **Save state after each stage**
 
+### Agent orchestration rule (W19-add):
+
+**Do NOT dispatch a single agent for all three touchpoints.** Each touchpoint is a separate agent invocation with its own self-contained prompt. A monolithic "do research → drafts → deploy → QA" agent will hit turn limits mid-flow (we saw this twice in W19) and leave the batch in an inconsistent state.
+
+Correct pattern:
+- Touchpoint 1 (research) → one agent, returns brief + sources
+- Touchpoint 2 (drafts) → parallel seo-writer subagents, one per slug
+- Touchpoint 3 (deploy) → one agent for deploy + OG + footer + inbound-linking
+- Post-deploy QA → separate agent with explicit Playwright instructions if visual walkthrough needed
+
+The main orchestrator (this skill) coordinates between stages and holds the state. Agents should finish their slice and return; they should not try to advance the pipeline to the next touchpoint.
+
 ---
 
 ## TOUCHPOINT 1 — APPROVE KEYWORDS + CONTENT BLUEPRINTS
