@@ -64,12 +64,12 @@ const jsonLd = {
       mainEntity: [
         { "@type": "Question", name: "What size canvas should I use in Canva for Etsy printables?", acceptedAnswer: { "@type": "Answer", text: "Start with a 4800×6000 pixel custom canvas in Canva — this is a 4:5 master at 300 DPI (16×20 in) that scales down cleanly to 8×10, 11×14, and other 4:5 sizes. For 2:3 Etsy prints, use 4800×7200 px (16×24 in). For A-series (ISO), use 3508×4961 px (A3 at 300 DPI). Always export as PDF Print for true 300 DPI." } },
         { "@type": "Question", name: "Is Canva 300 DPI by default?", acceptedAnswer: { "@type": "Answer", text: "Not directly. Canva PNG/JPG exports don't embed a print DPI — they're raster files sized in pixels. If your canvas is small (e.g., 1080×1350 px), a 16×20 print from that file comes out pixelated regardless of what PDF reader says the DPI is. For guaranteed 300 DPI output, export as PDF Print (all plans) or design at full pixel dimensions (4800×6000 px for 16×20). Canva Pro offers higher-resolution PNG/JPG export, which is how sellers effectively get 300 DPI rasters." } },
-        { "@type": "Question", name: "Can you make all Etsy print sizes in Canva?", acceptedAnswer: { "@type": "Answer", text: "Not efficiently. Canva uses a single fixed canvas per design — you'd need to duplicate and resize the design for every ratio (2:3, 3:4, 4:5, ISO), which multiplies your work. Most sellers design once in Canva at a 4:5 master, then use a sizing tool like SnapToSize to auto-generate the rest." } },
+        { "@type": "Question", name: "Can you make all Etsy print sizes in Canva?", acceptedAnswer: { "@type": "Answer", text: "Not efficiently. Canva uses a single fixed canvas per design — you'd need to duplicate and resize the design for every ratio (2:3, 3:4, 4:5, ISO, plus Extras like 11×14 and 11×17), which multiplies your work. Most sellers design once in Canva at a 4:5 master, then use a sizing tool like SnapToSize to auto-generate the rest." } },
         { "@type": "Question", name: "What DPI does Canva export PNG at?", acceptedAnswer: { "@type": "Answer", text: "Canva PNG/JPG exports aren't tagged with a print DPI — they're pixel rasters. Canva Free exports at canvas pixel dimensions (capped ~8000 px per side); Canva Pro offers a higher-resolution slider that lets you export PNG at larger pixel counts, which is how sellers achieve 300 DPI effectively. For guaranteed 300 DPI labelled output, use PDF Print export — available on all plans." } },
         { "@type": "Question", name: "Can I sell Canva designs on Etsy?", acceptedAnswer: { "@type": "Answer", text: "Yes, if the design is your own creation. Canva's content license allows selling finished designs, but you cannot resell Canva's stock templates or elements as-is. Your own illustrations, quotes, or layouts made in Canva are fine to sell as printables." } },
         { "@type": "Question", name: "Why do my Canva prints look pixelated when buyers print them?", acceptedAnswer: { "@type": "Answer", text: "Two common causes: (1) you exported as PNG at 96 DPI instead of PDF Print at 300 DPI; (2) your Canva canvas was too small — if you designed at 2000×2500 px and a buyer prints at 16×20, that's only 125 DPI, which looks fuzzy. Always design at minimum 4800×6000 px for 16×20 prints." } },
-        { "@type": "Question", name: "Can Canva create all 5 ratio packs automatically for Etsy?", acceptedAnswer: { "@type": "Answer", text: "Not in a way that works for Etsy ratio-pack sellers. Canva Sheets Bulk Resize exists but tops out at 5 output sizes per run and requires you to pre-list every size manually — and Magic Resize (Pro) handles canvas-ratio changes but not batch per-size export. For a true one-click all-ratio workflow, you still need to manually duplicate for 2:3, 3:4, 4:5, and ISO. SnapToSize takes a single Canva PDF Print export and generates every ratio pack automatically in one upload." } },
-        { "@type": "Question", name: "What's the Canva PDF Print export size limit for Etsy?", acceptedAnswer: { "@type": "Answer", text: "Canva PDF Print exports have no hard size limit, but Etsy listings cap each file at 20MB. A Canva PDF at 300 DPI for a 24×36 print can easily exceed 20MB — export to JPEG at 90% quality, or use a sizing tool that auto-compresses to stay under the Etsy limit." } }
+        { "@type": "Question", name: "Can Canva create all 5 ratio packs automatically for Etsy?", acceptedAnswer: { "@type": "Answer", text: "Not in a way that works for Etsy ratio-pack sellers. Canva Sheets Bulk Resize exists but tops out at 5 output sizes per run and requires you to pre-list every size manually — and Magic Resize (Pro) handles canvas-ratio changes but not batch per-size export. For a true one-click all-ratio workflow, you still need to manually duplicate for 2:3, 3:4, 4:5, ISO, and Extras. SnapToSize takes a single high-res PNG or JPG export from Canva and generates every ratio pack automatically in one upload." } },
+        { "@type": "Question", name: "What's the Canva PDF Print export size limit for Etsy?", acceptedAnswer: { "@type": "Answer", text: "Canva PDF Print exports have no hard size limit, but Etsy listings cap each file at 20MB and sellers typically attach JPG or PNG files (not PDFs) to printable listings. A Canva PDF at 300 DPI for a 24×36 print can easily exceed 20MB — export to JPG at 90% quality instead, or upload your high-res Canva export to SnapToSize, which outputs JPG files auto-compressed under the Etsy limit." } }
       ],
     },
   ],
@@ -78,12 +78,12 @@ const jsonLd = {
 const faqItems = [
   { question: "What size canvas should I use in Canva for Etsy printables?", answer: "Start with a 4800×6000 pixel custom canvas in Canva — this is a 4:5 master at 300 DPI (16×20 in) that scales down cleanly to 8×10, 11×14, and other 4:5 sizes. For 2:3 Etsy prints, use 4800×7200 px (16×24 in). For A-series (ISO), use 3508×4961 px (A3 at 300 DPI). Always export as PDF Print for true 300 DPI." },
   { question: "Is Canva 300 DPI by default?", answer: "Not directly. Canva PNG/JPG exports don't embed a print DPI — they're raster files sized in pixels. If your canvas is small (e.g., 1080×1350 px), a 16×20 print from that file comes out pixelated regardless of what PDF reader says the DPI is. For guaranteed 300 DPI output, export as PDF Print (all plans) or design at full pixel dimensions (4800×6000 px for 16×20). Canva Pro offers higher-resolution PNG/JPG export, which is how sellers effectively get 300 DPI rasters." },
-  { question: "Can you make all Etsy print sizes in Canva?", answer: "Not efficiently. Canva uses a single fixed canvas per design — you'd need to duplicate and resize the design for every ratio (2:3, 3:4, 4:5, ISO), which multiplies your work. Most sellers design once in Canva at a 4:5 master, then use a sizing tool like SnapToSize to auto-generate the rest." },
+  { question: "Can you make all Etsy print sizes in Canva?", answer: "Not efficiently. Canva uses a single fixed canvas per design — you'd need to duplicate and resize the design for every ratio (2:3, 3:4, 4:5, ISO, plus Extras like 11×14 and 11×17), which multiplies your work. Most sellers design once in Canva at a 4:5 master, then use a sizing tool like SnapToSize to auto-generate the rest." },
   { question: "What DPI does Canva export PNG at?", answer: "Canva PNG/JPG exports aren't tagged with a print DPI — they're pixel rasters. Canva Free exports at canvas pixel dimensions (capped ~8000 px per side); Canva Pro offers a higher-resolution slider that lets you export PNG at larger pixel counts, which is how sellers achieve 300 DPI effectively. For guaranteed 300 DPI labelled output, use PDF Print export — available on all plans." },
   { question: "Can I sell Canva designs on Etsy?", answer: "Yes, if the design is your own creation. Canva's content license allows selling finished designs, but you cannot resell Canva's stock templates or elements as-is. Your own illustrations, quotes, or layouts made in Canva are fine to sell as printables." },
   { question: "Why do my Canva prints look pixelated when buyers print them?", answer: "Two common causes: (1) you exported as PNG at 96 DPI instead of PDF Print at 300 DPI; (2) your Canva canvas was too small — if you designed at 2000×2500 px and a buyer prints at 16×20, that's only 125 DPI, which looks fuzzy. Always design at minimum 4800×6000 px for 16×20 prints." },
-  { question: "Can Canva create all 5 ratio packs automatically for Etsy?", answer: "Not in a way that works for Etsy ratio-pack sellers. Canva Sheets Bulk Resize exists but tops out at 5 output sizes per run and requires you to pre-list every size manually — and Magic Resize (Pro) handles canvas-ratio changes but not batch per-size export. For a true one-click all-ratio workflow, you still need to manually duplicate for 2:3, 3:4, 4:5, and ISO. SnapToSize takes a single Canva PDF Print export and generates every ratio pack automatically in one upload." },
-  { question: "What's the Canva PDF Print export size limit for Etsy?", answer: "Canva PDF Print exports have no hard size limit, but Etsy listings cap each file at 20MB. A Canva PDF at 300 DPI for a 24×36 print can easily exceed 20MB — export to JPEG at 90% quality, or use a sizing tool that auto-compresses to stay under the Etsy limit." },
+  { question: "Can Canva create all 5 ratio packs automatically for Etsy?", answer: "Not in a way that works for Etsy ratio-pack sellers. Canva Sheets Bulk Resize exists but tops out at 5 output sizes per run and requires you to pre-list every size manually — and Magic Resize (Pro) handles canvas-ratio changes but not batch per-size export. For a true one-click all-ratio workflow, you still need to manually duplicate for 2:3, 3:4, 4:5, ISO, and Extras. SnapToSize takes a single high-res PNG or JPG export from Canva and generates every ratio pack automatically in one upload." },
+  { question: "What's the Canva PDF Print export size limit for Etsy?", answer: "Canva PDF Print exports have no hard size limit, but Etsy listings cap each file at 20MB and sellers typically attach JPG or PNG files (not PDFs) to printable listings. A Canva PDF at 300 DPI for a 24×36 print can easily exceed 20MB — export to JPG at 90% quality instead, or upload your high-res Canva export to SnapToSize, which outputs JPG files auto-compressed under the Etsy limit." },
 ];
 
 const appUrl = "https://app.snaptosize.com?source=seo_canva-print-size-for-etsy&kind=tool-bridge";
@@ -280,7 +280,7 @@ export default function CanvaPrintSizeForEtsyPage() {
                 </Button>
               </a>
               <p className="text-sm mt-2 text-foreground-60">
-                Upload one Canva PDF Print export &rarr; get 2:3, 3:4, 4:5, and ISO ratio packs in a single ZIP.
+                Export from Canva as high-res PNG or JPG &rarr; upload to SnapToSize &rarr; get 2:3, 3:4, 4:5, ISO, and Extras ratio packs back.
               </p>
             </div>
 
@@ -328,7 +328,7 @@ export default function CanvaPrintSizeForEtsyPage() {
                 You don&apos;t have to duplicate your Canva design for every ratio.
               </h2>
               <p className="text-foreground-70 leading-relaxed mb-5">
-                Canva is brilliant for designing one master. But Etsy sellers need the <em>same design</em> in 2:3, 3:4, 4:5, <em>and</em> ISO — and Canva has no one-click way to do that. SnapToSize takes a single Canva PDF Print export and outputs every Etsy ratio pack, sized to 300 DPI, compressed under Etsy&apos;s 20 MB cap, ready to upload. <strong>Design once. Deliver everywhere.</strong>
+                Canva is brilliant for designing one master. But Etsy sellers need the <em>same design</em> in 2:3, 3:4, 4:5, ISO, <em>and</em> Extras — and Canva has no one-click way to do that. Export your Canva design as a high-resolution PNG or JPG, upload it to SnapToSize, and get every Etsy ratio pack back — sized to 300 DPI, compressed under Etsy&apos;s 20 MB cap, ready to attach. <strong>Design once. Deliver everywhere.</strong>
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-3">
                 <a href={appUrl} target="_blank" rel="noopener noreferrer">
@@ -375,7 +375,7 @@ export default function CanvaPrintSizeForEtsyPage() {
                   { ratio: "2:3", size: "4800 × 7200 px", covers: "4×6, 8×12, 12×18, 20×30, 24×36" },
                   { ratio: "3:4", size: "4500 × 6000 px", covers: "6×8, 9×12, 12×16, 18×24" },
                   { ratio: "ISO (A3)", size: "3508 × 4961 px", covers: "A5, A4, A3 (scales up to A2/A1 with quality loss)" },
-                  { ratio: "Square", size: "5400 × 5400 px", covers: "8×8, 10×10, 12×12, 18×18" },
+                  { ratio: "Extras", size: "Varies per size", covers: "11×14, 11×17, 13×19, 5×5 — common non-ratio sizes US buyers ask for" },
                 ].map(({ ratio, size, covers }, i) => (
                   <tr
                     key={ratio}
@@ -467,7 +467,7 @@ export default function CanvaPrintSizeForEtsyPage() {
               Canva is fantastic for designing. It is painful for sizing.
             </p>
             <p className="text-lg font-medium mb-6 text-foreground">
-              Upload your Canva PDF export &mdash; SnapToSize delivers every Etsy ratio pack at 300 DPI, under 20 MB, zero Photoshop.
+              Export your Canva design as a high-res PNG or JPG — SnapToSize delivers every Etsy ratio pack (2:3, 3:4, 4:5, ISO, Extras) at 300 DPI, under 20 MB, zero Photoshop.
             </p>
             <a
               href={appUrl}
@@ -488,7 +488,7 @@ export default function CanvaPrintSizeForEtsyPage() {
             How to Set Up a Canva Canvas That Works for Every Etsy Ratio Pack
           </h2>
           <p className="text-foreground-70 mb-5 leading-relaxed">
-            Because Canva uses one fixed canvas per design, covering every Etsy ratio (2:3, 3:4, 4:5, ISO)
+            Because Canva uses one fixed canvas per design, covering every Etsy ratio (2:3, 3:4, 4:5, ISO, plus the Extras pack for sizes like 11×14 and 11×17)
             technically requires four separate Canva files. The practical workflow most sellers use:
           </p>
           <ol className="space-y-4 mb-6">
@@ -497,7 +497,7 @@ export default function CanvaPrintSizeForEtsyPage() {
               { step: "2", title: "Duplicate the Canva design and resize to 2:3 (4800×7200 px — 16×24 in)", desc: "Extend your background, shift key elements so nothing gets cropped. This covers 8×12, 12×18, 24×36." },
               { step: "3", title: "Duplicate again for ISO A-series (3508×4961 px — A3 at 300 DPI)", desc: "Required for European A4/A3/A5 buyers — missing ISO sizes blocks EU/UK orders at checkout." },
               { step: "4", title: "Export all three as PDF Print (300 DPI)", desc: "Save locally. Now you have three master files that cover every buyer frame combination." },
-              { step: "5", title: "Upload to SnapToSize to auto-generate every size inside each ratio", desc: "One PDF in, 5 ratio-pack ZIPs out. Skip manual resizing inside Canva." },
+              { step: "5", title: "Upload your high-res PNG or JPG to SnapToSize to auto-generate every size inside each ratio", desc: "One image in, 5 ratio-pack ZIPs out (2:3, 3:4, 4:5, ISO, Extras). Skip manual resizing inside Canva." },
             ].map(({ step, title, desc }) => (
               <li key={step} className="flex gap-4 items-start">
                 <span className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold bg-teal-400/15 text-teal-400 border border-teal-400/30">
@@ -523,7 +523,7 @@ export default function CanvaPrintSizeForEtsyPage() {
           <ListingOutputShowcase
             artwork="abstract_wedding"
             heading="One Canva design. Every Etsy ratio pack."
-            subtext="Upload your Canva PDF Print export — SnapToSize generates 2:3, 3:4, 4:5, and ISO packs automatically, ready to attach to your Etsy listing."
+            subtext="Export your Canva design as a high-res PNG or JPG, upload to SnapToSize, and get 2:3, 3:4, 4:5, ISO, and Extras packs automatically — ready to attach to your Etsy listing."
           />
         </section>
 
@@ -578,7 +578,7 @@ export default function CanvaPrintSizeForEtsyPage() {
         <div className="mb-16">
           <ContextualCTA
             problem="Canva designs one canvas at a time — Etsy buyers need 2:3, 3:4, 4:5, AND ISO all in one listing."
-            solution="SnapToSize takes your Canva PDF and outputs every ratio pack automatically, at 300 DPI, compressed under the 20MB Etsy limit."
+            solution="Export from Canva as high-res PNG or JPG, upload to SnapToSize, and get every ratio pack back automatically — 300 DPI, compressed under the 20MB Etsy limit."
             appUrl={appUrl}
             buttonText="Upload Canva Export — Free"
           />
@@ -682,7 +682,7 @@ export default function CanvaPrintSizeForEtsyPage() {
         <FinalCTA
           heading="Design in Canva, finish in SnapToSize"
           stat="One Canva export. Every Etsy ratio pack."
-          description="Upload your Canva PDF Print export once and get 2:3, 3:4, 4:5, and ISO packs back — every size, at 300 DPI, under the Etsy 20MB file limit, ready to attach to your listing."
+          description="Export your Canva design as a high-res PNG or JPG, upload to SnapToSize once, and get 2:3, 3:4, 4:5, ISO, and Extras packs back — every size, at 300 DPI, under the Etsy 20MB file limit, ready to attach to your listing."
           appUrl={appUrl}
         />
       </div>
