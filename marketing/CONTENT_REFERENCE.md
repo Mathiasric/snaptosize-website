@@ -117,7 +117,8 @@ Available in Quick Export mode, not in ratio packs:
 ## Key Product Facts (use in content)
 
 - **300 DPI** on every output (professional print standard)
-- **JPEG format** (optimized for Etsy's 20MB limit)
+- **Accepted input formats:** PNG, JPG/JPEG, WebP (and similar common image formats). **PDF input is not supported** — users exporting from Canva should use PNG/JPG/WebP at high resolution, not PDF. Never claim "upload your PDF" as a SnapToSize workflow.
+- **Output format:** JPG/JPEG on every file (optimized for Etsy's 20MB limit — auto-compressed per file)
 - **Stretch-only resize** — NO cropping, full composition preserved
 - **Under 20MB** per ZIP guaranteed (Etsy compliance)
 - **Professional file naming** (e.g., `artwork_8x10_300dpi.jpg`)
