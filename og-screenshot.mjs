@@ -5,8 +5,8 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const pages = [
-  { slug: 'etsy-black-and-white-art-sizes', filename: 'etsy-black-and-white-art-sizes.png' },
-  { slug: 'etsy-anime-manga-art-sizes', filename: 'etsy-anime-manga-art-sizes.png' },
+  { slug: 'canva-print-size-for-etsy', filename: 'canva-print-size-for-etsy.png' },
+  { slug: 'etsy-kitchen-wall-art-sizes', filename: 'etsy-kitchen-wall-art-sizes.png' },
 ];
 
 const baseUrl = 'http://localhost:3333';

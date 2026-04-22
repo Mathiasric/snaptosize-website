@@ -694,9 +694,10 @@ export default function EtsyBathroomWallArtSizesPage() {
             The safest strategy: include <em>all six sizes</em> in every listing. A buyer with a
             powder room self-selects the 5×7; a buyer with a spa bathroom grabs the 11×14. You make
             one sale either way. This also relates to how{" "}
-            <Link href="/etsy-quote-wall-art-sizes" className="text-teal-400 hover:underline">quote wall art sizes</Link> and{" "}
-            <Link href="/etsy-minimalist-wall-art-sizes" className="text-teal-400 hover:underline">minimalist wall art sizes</Link> work —
-            the same multi-size logic applies across all bathroom-friendly styles.
+            <Link href="/etsy-quote-wall-art-sizes" className="text-teal-400 hover:underline">quote wall art sizes</Link>,{" "}
+            <Link href="/etsy-minimalist-wall-art-sizes" className="text-teal-400 hover:underline">minimalist wall art sizes</Link>, and{" "}
+            <Link href="/etsy-kitchen-wall-art-sizes" className="text-teal-400 hover:underline">kitchen wall art sizes</Link> work —
+            the same multi-size logic applies across all small-room styles.
           </p>
         </section>
 

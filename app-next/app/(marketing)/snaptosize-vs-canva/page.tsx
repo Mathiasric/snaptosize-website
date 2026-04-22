@@ -454,7 +454,14 @@ export default function SnapToSizeVsCanvaPage() {
                 >
                   resizing workflows for Etsy
                 </Link>
-                .
+                , or jump straight to our{" "}
+                <Link
+                  href="/canva-print-size-for-etsy"
+                  className="text-accent-light hover:underline"
+                >
+                  Canva print size for Etsy guide
+                </Link>{" "}
+                for exact canvas dimensions and the DPI export trap.
               </p>
               <p className="text-foreground-60">
                 This bottleneck is why many Etsy sellers limit their

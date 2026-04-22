@@ -1752,5 +1752,51 @@
     "title": "Etsy Bathroom Wall Art Sizes",
     "cluster": "niche-vertical",
     "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-8x10-print-size", "etsy-5x7-print-size", "etsy-11x14-print-size", "etsy-a4-print-size", "etsy-quote-wall-art-sizes", "etsy-minimalist-wall-art-sizes", "print-sizes-at-300-dpi"]
+  },
+  {
+    "slug": "canva-print-size-for-etsy",
+    "title": "Canva Print Size for Etsy",
+    "pageType": "tool-bridge",
+    "keywords": [
+      "canva print size for etsy",
+      "canva canvas size etsy",
+      "canva 300 dpi etsy",
+      "canva etsy printables"
+    ],
+    "cluster": "tool-workflows",
+    "relatedSlugs": [
+      "snaptosize-vs-canva",
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "print-sizes-at-300-dpi",
+      "etsy-20mb-file-limit",
+      "best-file-format-etsy-printables",
+      "how-to-resize-images-for-etsy",
+      "how-to-sell-digital-downloads-on-etsy"
+    ]
+  },
+  {
+    "slug": "etsy-kitchen-wall-art-sizes",
+    "title": "Etsy Kitchen Wall Art Sizes",
+    "pageType": "size-reference",
+    "keywords": [
+      "etsy kitchen wall art sizes",
+      "kitchen wall art size guide",
+      "kitchen print sizes etsy",
+      "kitchen printable sizes"
+    ],
+    "cluster": "niche-vertical",
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-8x10-print-size",
+      "etsy-11x14-print-size",
+      "etsy-16x20-print-size",
+      "etsy-5x7-print-size",
+      "etsy-a4-print-size",
+      "etsy-quote-wall-art-sizes",
+      "etsy-botanical-print-sizes",
+      "print-sizes-at-300-dpi"
+    ]
   }
 ]

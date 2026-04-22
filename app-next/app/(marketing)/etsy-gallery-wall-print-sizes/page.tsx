@@ -1078,7 +1078,14 @@ export default function EtsyGalleryWallPrintSizesPage() {
                     >
                       nursery wall art sizes guide
                     </Link>{" "}
-                    for detailed nursery sizing.
+                    for detailed nursery sizing, or our{" "}
+                    <Link
+                      href="/etsy-kids-wall-art-sizes"
+                      className="text-accent-light hover:underline"
+                    >
+                      kids wall art sizes guide
+                    </Link>{" "}
+                    for playroom and children&apos;s room gallery walls.
                   </p>
                   <p className="text-sm text-foreground-60">
                     <strong className="text-foreground">Best sizes:</strong> Three{" "}

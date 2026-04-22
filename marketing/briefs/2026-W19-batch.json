@@ -1,0 +1,224 @@
+{
+  "week": "W19",
+  "created_at": "2026-04-22T18:30:00+02:00",
+  "note": "W19 — 2 pages. Tool-bridge (Canva→Etsy size workflow) + niche vertical (Kitchen wall art). Both target clear gaps: no dedicated Canva→Etsy-size page exists in the 80-entry registry despite Canva being the dominant beginner tool, and kitchen is a top-5 printable niche with no seller-focused size-guide in the registry.",
+  "keywords": [
+    {
+      "keyword": "canva print size for etsy",
+      "slug": "canva-print-size-for-etsy",
+      "intent": "informational+commercial",
+      "page_type": "tool-bridge",
+      "priority": "P1",
+      "cluster": "tool-workflows",
+      "why": "Canva is the #1 beginner design tool for new Etsy printable sellers. Searchers are stuck in Canva and don't know what canvas dimensions map to Etsy frame sizes, what DPI Canva actually exports at, or why their prints come out pixelated. No dedicated page in the registry covers this tool-bridge — snaptosize-vs-canva is a comparison page, not a workflow guide. Clear conversion angle: Canva's fixed single-canvas workflow cannot generate all ratio-packs Etsy sellers need; SnapToSize finishes the job Canva can't.",
+      "serp_evidence": [
+        "canva.com/sizes/etsy — covers listing banner, not printable art sizes",
+        "medium.com/@jesusmoraweb — 'How To Make Printable Wall Art Using Canva' — tutorial but generic, no size math",
+        "busymomsidehustle.com — 'How to Create Digital Downloads for Etsy' — Canva-specific but beginner-level",
+        "sellerstable.com — 'First Digital Download to Sell on Etsy Using Canva' — workflow guide",
+        "PAA: 'What size canvas for Etsy printables in Canva?', 'Is Canva 300 DPI?', 'What DPI does Canva export at?', 'Can you sell Canva designs on Etsy?'"
+      ],
+      "competitor_gaps": [
+        "No competitor page gives exact Canva custom-canvas pixel dimensions mapped to every Etsy ratio-pack (2:3, 3:4, 4:5, ISO)",
+        "No one explains that Canva's PDF Print export is 300 DPI but PNG export defaults to 96 DPI — a common confusion that kills print quality",
+        "No one covers the 'design once in Canva at 6000×4500 px, export PDF, then resize for all ratios' workflow end-to-end",
+        "No one connects Canva's 5-design free-tier limit + Etsy's 5-file listing limit + ratio-pack strategy",
+        "Competitor tutorials teach one-size-at-a-time in Canva — painful and slow for 10+ sizes"
+      ],
+      "sections": [
+        "Canva canvas size for Etsy printable wall art — exact dimensions (start at 6000×4500 px for 4:5 master, then derive all ratios)",
+        "Is Canva 300 DPI? The export-format truth (PDF Print = 300 DPI; PNG/JPG = 96 DPI default; how to fix)",
+        "How to set up a Canva canvas that works for every Etsy ratio pack (2:3, 3:4, 4:5, ISO)",
+        "The Canva + Etsy size mismatch problem (why your 2000×2500 Canva export looks pixelated when a buyer prints it at 16×20)",
+        "Step-by-step: design in Canva → export correctly → resize for all Etsy sizes",
+        "Why Canva alone can't cover all Etsy printable sizes (fixed canvas, no batch ratio-export, no automatic ISO conversion)",
+        "Canva Pro vs Canva Free for Etsy sellers — what changes, what doesn't",
+        "Finish the job Canva can't — automatic all-ratio export with SnapToSize"
+      ],
+      "faqs": [
+        {
+          "q": "What size canvas should I use in Canva for Etsy printables?",
+          "a": "Start with a 6000×4500 pixel custom canvas in Canva — this is a 4:5 master at 300 DPI that scales down cleanly to 8×10, 16×20, 11×14, and other 4:5 sizes. For 2:3 Etsy prints, use 6000×4000 px. For A-series (ISO), use 6250×8839 px (A3 at 300 DPI). Always export as PDF Print for true 300 DPI."
+        },
+        {
+          "q": "Is Canva 300 DPI by default?",
+          "a": "No. Canva's PNG and JPG exports default to 96 DPI — fine for screens but pixelated when printed. You have to export as PDF Print to get true 300 DPI output. Canva Pro lets you toggle PNG at higher resolutions, but PDF Print is the safest 300 DPI path for Etsy printables."
+        },
+        {
+          "q": "Can you make all Etsy print sizes in Canva?",
+          "a": "Not efficiently. Canva uses a single fixed canvas per design — you'd need to duplicate and resize the design for every ratio (2:3, 3:4, 4:5, ISO), which multiplies your work. Most sellers design once in Canva at a 4:5 master, then use a sizing tool like SnapToSize to auto-generate the rest."
+        },
+        {
+          "q": "What DPI does Canva export PNG at?",
+          "a": "Canva Free exports PNG at 96 DPI (screen resolution). Canva Pro allows PNG export at custom DPI up to 300. For Etsy printables, either upgrade to Pro or use PDF Print export — which is 300 DPI on all plans."
+        },
+        {
+          "q": "Can I sell Canva designs on Etsy?",
+          "a": "Yes, if the design is your own creation. Canva's content license allows selling finished designs, but you cannot resell Canva's stock templates or elements as-is. Your own illustrations, quotes, or layouts made in Canva are fine to sell as printables."
+        },
+        {
+          "q": "Why do my Canva prints look pixelated when buyers print them?",
+          "a": "Two common causes: (1) you exported as PNG at 96 DPI instead of PDF Print at 300 DPI; (2) your Canva canvas was too small — if you designed at 2000×2500 px and a buyer prints at 16×20, that's only 125 DPI, which looks fuzzy. Always design at minimum 4800×6000 px for 16×20 prints."
+        },
+        {
+          "q": "Can Canva create all 5 ratio packs automatically for Etsy?",
+          "a": "No. Canva has no batch-export-by-ratio feature. You'd need to manually resize the canvas for every ratio (2:3, 3:4, 4:5, ISO) and re-export each one. SnapToSize takes a single Canva export and generates all five ratio packs in one upload."
+        },
+        {
+          "q": "What's the Canva PDF Print export size limit for Etsy?",
+          "a": "Canva PDF Print exports have no hard size limit, but Etsy listings cap each file at 20MB. A Canva PDF at 300 DPI for a 24×36 print can easily exceed 20MB — export to JPEG at 90% quality, or use a sizing tool that auto-compresses to stay under the Etsy limit."
+        }
+      ],
+      "cta_placements": [
+        "Hero CTA: 'Take your Canva design → get every Etsy size automatically.'",
+        "After DPI-truth section: 'Skip the Canva PNG trap — SnapToSize takes your Canva PDF export and delivers print-ready 300 DPI files.'",
+        "Violet inline mid-content CTA: 'Canva for design, SnapToSize for sizing. Upload your Canva export — get every ratio pack for Etsy in one click.'",
+        "Final CTA: 'Design in Canva, finish in SnapToSize. One upload, every Etsy size, under 20MB.'"
+      ],
+      "visual_plan": {
+        "listing_output_showcase": true,
+        "showcase_artwork": "abstract_wedding",
+        "hero_visual": "CSS-only Canva-to-Etsy workflow diagram — stylised Canva canvas on the left morphing into a row of ratio-pack thumbnails on the right with dimension labels"
+      },
+      "differentiation_angle": "Canva is great for design but blind to Etsy's file structure (5 files, 20MB each, 5 ratio packs). SnapToSize is the only tool that starts from a Canva export and outputs exactly the file structure Etsy expects.",
+      "link_to": [
+        "snaptosize-vs-canva",
+        "etsy-print-sizes",
+        "etsy-print-ratios",
+        "print-sizes-at-300-dpi",
+        "etsy-20mb-file-limit",
+        "best-file-format-etsy-printables",
+        "how-to-sell-digital-downloads-on-etsy",
+        "etsy-8x10-print-size"
+      ],
+      "link_from": [
+        "snaptosize-vs-canva",
+        "how-to-sell-printables-on-etsy-without-photoshop",
+        "how-to-resize-images-for-etsy",
+        "best-file-format-etsy-printables"
+      ],
+      "sources": [
+        {
+          "claim": "Canva recommends exporting PDF Print for 300 DPI output",
+          "url": "https://www.canva.com/sizes/etsy/"
+        },
+        {
+          "claim": "Typical Etsy printable sellers use 5×7, 8×10, 11×14, 16×20 as core sizes",
+          "url": "https://goldcityventures.com/art-print-sizes/"
+        },
+        {
+          "claim": "Full Canva-to-Etsy tutorial workflow",
+          "url": "https://medium.com/@jesusmoraweb/guide-how-to-make-printable-wall-art-using-canva-creating-sizing-and-listing-digital-wall-art-79d8413986b8"
+        }
+      ]
+    },
+    {
+      "keyword": "etsy kitchen wall art sizes",
+      "slug": "etsy-kitchen-wall-art-sizes",
+      "intent": "informational",
+      "page_type": "size-reference",
+      "priority": "P1",
+      "cluster": "niche-vertical",
+      "why": "Kitchen printables is one of Etsy's largest wall-art subcategories (foodie quotes, recipe cards, herb illustrations, coffee bar art). No dedicated seller-focused size-guide exists in the registry — only bathroom, kids, nursery, quote, and minimalist. Kitchen fills the obvious gap in the niche-vertical cluster and matches the proven bathroom/kids template pattern.",
+      "serp_evidence": [
+        "etsy.com/market/wall_art_size_guide — generic size charts, not kitchen-specific",
+        "goldcityventures.com/art-print-sizes — generic guide, no kitchen framing",
+        "shootingstarsvg.com — generic 'how to size printable wall art' guide",
+        "Top Etsy kitchen wall art listings offer 8×10, 11×14, 5×7 and A4",
+        "PAA: 'What size wall art for kitchen?', 'What size print above kitchen table?', 'Best size wall art for small kitchen?'"
+      ],
+      "competitor_gaps": [
+        "No competitor has a dedicated kitchen-niche size guide for Etsy sellers — only buyer-facing styling guides and marketplace listings",
+        "No one explains the kitchen-specific orientation rules (landscape over dining table, portrait in galley kitchens)",
+        "No one maps recipe-card / coffee-bar / foodie-quote subcategories to the right ratio packs",
+        "No one addresses the small-kitchen vs open-plan kitchen sizing split",
+        "No one references how kitchen buyers often want multi-print sets (e.g., 3-piece herb illustrations) that require consistent ratios"
+      ],
+      "sections": [
+        "What sizes sell best for kitchen wall art on Etsy",
+        "Portrait vs landscape: which orientation wins in kitchens",
+        "Kitchen print size guide by ratio (2:3, 3:4, 4:5, ISO)",
+        "Common kitchen frame placements — above table, coffee bar, galley wall",
+        "Small kitchen vs open-plan kitchen sizing considerations",
+        "Multi-print sets: why kitchen buyers want 2-piece and 3-piece bundles",
+        "Pixel dimensions for kitchen prints at 300 DPI",
+        "How to offer every kitchen wall art size without manual resizing"
+      ],
+      "faqs": [
+        {
+          "q": "What sizes sell best for kitchen wall art on Etsy?",
+          "a": "8×10, 11×14, and 5×7 are the top-selling kitchen sizes in the US. For galley kitchens and coffee bars, 8×10 portrait dominates. For above-the-table placement in open-plan kitchens, 16×20 and 11×14 landscape sell well. A4 is essential for international kitchens."
+        },
+        {
+          "q": "Should kitchen wall art be portrait or landscape?",
+          "a": "Both — kitchen placement varies more than other rooms. Portrait prints suit narrow walls beside the fridge, coffee bars, and galley kitchens. Landscape prints work above dining tables, kitchen islands, and stove backsplashes. Offering both ratios in every listing prevents lost sales."
+        },
+        {
+          "q": "What size print works above a kitchen table?",
+          "a": "16×20 and 11×14 landscape are the most common sizes above kitchen tables — large enough to anchor the space without overwhelming it. For a three-piece set above a wider table, 8×10 landscape prints work best. Avoid smaller than 8×10 for above-table placement; they look lost."
+        },
+        {
+          "q": "What pixel dimensions do I need for an 11×14 kitchen print at 300 DPI?",
+          "a": "11×14 at 300 DPI requires a file that is 3,300 × 4,200 pixels. This is a common coffee-bar and above-shelf size — design at least this resolution so it stays crisp when a buyer prints it."
+        },
+        {
+          "q": "Do kitchen buyers want A4 prints?",
+          "a": "Yes — A4 (210×297mm) is the standard print size across Europe, the UK, and Australia. Every major IKEA RIBBA/KNOPPÄNG frame matches A4. Including A4 alongside your US sizes typically adds 20–30% more international orders for kitchen-printable listings."
+        },
+        {
+          "q": "What sizes should I offer for a 3-piece kitchen art set?",
+          "a": "Most 3-piece kitchen sets sell in 8×10 or 11×14 — consistent size across all three pieces so buyers can frame them identically. Offer each piece in multiple ratios (4:5 and 2:3) so the buyer picks what fits their frames. Never mix sizes within a single 3-piece listing."
+        },
+        {
+          "q": "Can I sell square kitchen wall art on Etsy?",
+          "a": "Yes — 12×12 and 8×8 square prints are popular for kitchen coffee bars and shelf displays, especially for minimalist or geometric designs. Offer square alongside standard ratios, not instead of them — most buyers still want portrait 4:5 for framing."
+        }
+      ],
+      "cta_placements": [
+        "Hero CTA: 'Generate every kitchen wall art size free'",
+        "After ratio-guide section: 'Cover every kitchen placement — every ratio, every frame.'",
+        "Violet inline mid-content CTA: 'One upload. 8×10, 11×14, 16×20, A4, and every ratio a kitchen buyer could need.'",
+        "Final CTA: 'Never lose a kitchen wall art sale to the wrong frame size.'"
+      ],
+      "visual_plan": {
+        "listing_output_showcase": true,
+        "showcase_artwork": "botanical",
+        "hero_visual": "CSS-only kitchen wall mockup — two small frames stacked beside a coffee-bar silhouette and a shelf line, warm-cream/sage palette"
+      },
+      "differentiation_angle": "Kitchen is the only top-5 Etsy printable niche without a dedicated seller-focused size guide. Kitchen buyers' placement variety (galley / coffee bar / above-table / 3-piece sets) means sellers need every ratio — exactly what SnapToSize generates automatically.",
+      "link_to": [
+        "etsy-print-sizes",
+        "etsy-print-ratios",
+        "etsy-8x10-print-size",
+        "etsy-11x14-print-size",
+        "etsy-16x20-print-size",
+        "etsy-5x7-print-size",
+        "etsy-a4-print-size",
+        "etsy-quote-wall-art-sizes",
+        "etsy-botanical-print-sizes",
+        "print-sizes-at-300-dpi"
+      ],
+      "link_from": [
+        "etsy-print-sizes",
+        "etsy-quote-wall-art-sizes",
+        "etsy-botanical-print-sizes",
+        "etsy-farmhouse-wall-art-sizes",
+        "etsy-typography-wall-art-sizes"
+      ],
+      "sources": [
+        {
+          "claim": "8×10, 11×14, and 16×20 are top-selling Etsy printable wall art sizes",
+          "url": "https://goldcityventures.com/art-print-sizes/"
+        },
+        {
+          "claim": "Kitchen wall art on Etsy commonly offers 11×14, 8×10, and 5×7 at 300 DPI",
+          "url": "https://www.etsy.com/listing/515460292/flatware-printable-kitchen-wall-art"
+        },
+        {
+          "claim": "Kitchen wall art is a consistent top-selling digital download niche",
+          "url": "https://www.etsy.com/market/wall_art_size_guide"
+        }
+      ]
+    }
+  ]
+}

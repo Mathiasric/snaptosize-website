@@ -1302,6 +1302,15 @@ export default function EtsyQuoteWallArtSizesPage() {
               />
             </div>
 
+            {/* --- See Also --- */}
+            <p className="text-sm text-muted-foreground mb-8">
+              Quote prints are a natural fit for bathroom walls — see our{" "}
+              <Link href="/etsy-bathroom-wall-art-sizes" className="text-accent-light underline underline-offset-2 hover:text-foreground transition-colors">
+                Etsy bathroom wall art sizes guide
+              </Link>{" "}
+              for the portrait-first sizing that works best in smaller spaces.
+            </p>
+
             {/* --- Related Pages --- */}
             <RelatedPages currentSlug="etsy-quote-wall-art-sizes" />
           </div>

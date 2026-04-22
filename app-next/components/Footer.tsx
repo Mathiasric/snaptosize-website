@@ -156,6 +156,21 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-kids-wall-art-sizes" className="transition-colors hover:text-accent-light">
+                  Kids Wall Art Sizes
+                </Link>
+              </li>
+              <li>
+                <Link href="/etsy-bathroom-wall-art-sizes" className="transition-colors hover:text-accent-light">
+                  Bathroom Wall Art Sizes
+                </Link>
+              </li>
+              <li>
+                <Link href="/etsy-kitchen-wall-art-sizes" className="transition-colors hover:text-accent-light">
+                  Kitchen Wall Art Sizes
+                </Link>
+              </li>
+              <li>
                 <Link href="/sizes" className="transition-colors hover:text-accent-light font-medium">
                   All size guides →
                 </Link>
@@ -209,6 +224,11 @@ export function Footer() {
               <li>
                 <Link href="/snaptosize-vs-canva" className="transition-colors hover:text-accent-light">
                   SnapToSize vs Canva
+                </Link>
+              </li>
+              <li>
+                <Link href="/canva-print-size-for-etsy" className="transition-colors hover:text-accent-light">
+                  Canva Print Size for Etsy
                 </Link>
               </li>
               <li>

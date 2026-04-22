@@ -977,6 +977,10 @@ export default function EtsyPrintSizesPage() {
                   <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
                   <span><Link href="/etsy-photography-print-sizes" className="text-accent-light hover:underline">Photography print sizes</Link> &mdash; sizing for photo prints and DSLR-sourced artwork</span>
                 </li>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
+                  <span><Link href="/etsy-kitchen-wall-art-sizes" className="text-accent-light hover:underline">Kitchen wall art sizes</Link> &mdash; portrait + landscape sizing for coffee bars, galley walls, and above-table hangs</span>
+                </li>
               </ul>
             </div>
 

@@ -1075,6 +1075,15 @@ export default function EtsyNurseryWallArtSizesPage() {
               />
             </div>
 
+            {/* --- See Also --- */}
+            <p className="text-sm text-muted-foreground mb-8">
+              Planning a children&apos;s room beyond the nursery?{" "}
+              <Link href="/etsy-kids-wall-art-sizes" className="text-accent-light underline underline-offset-2 hover:text-foreground transition-colors">
+                Etsy kids wall art sizes guide
+              </Link>{" "}
+              covers playroom and older children&apos;s room sizing, gallery wall sets, and ratio packs for every buyer.
+            </p>
+
             {/* --- Related Pages --- */}
             <RelatedPages currentSlug="etsy-nursery-wall-art-sizes" />
           </div>

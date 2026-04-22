@@ -1,71 +1,50 @@
 {
-  "current_week": "W17",
-  "batch_id": "2026-W17",
-  "started_at": "2026-04-17T10:00:00+00:00",
+  "current_week": "W19",
+  "batch_id": "2026-W19",
+  "started_at": "2026-04-22T18:30:00+02:00",
   "target": {
     "pages": 2
   },
   "stages": {
     "researcher": {
       "status": "completed",
-      "output": "marketing/drafts/2026-W17-*/brief.md (2 briefs)"
+      "output": "marketing/briefs/2026-W19-batch.json (2 keywords: canva-print-size-for-etsy, etsy-kitchen-wall-art-sizes). Firecrawl competitor analysis + PAA pulled per keyword."
     },
     "writer": {
       "status": "completed",
-      "output": "Both pages written by parallel seo-writer subagents"
+      "output": "2 drafts written by parallel seo-writer subagents at marketing/drafts/2026-W19-*/"
     },
     "review": {
       "status": "completed",
-      "output": "npx next build passes"
+      "output": "npx next build passes locally"
     },
     "deploy": {
       "status": "completed",
-      "output": "commit 20158d2 pushed to main — Cloudflare Pages auto-deploy triggered"
+      "output": "Copied to app-next/app/(marketing)/. Registry updated. Uncommitted — user to review before push."
     },
     "verify": {
       "status": "completed",
-      "output": "QA pass (title/desc/schema/CTAs/links ok). Playwright hero viewport verified 2026-04-18."
+      "output": "OG images generated via og-screenshot.mjs (1200x630). Metadata openGraph/twitter images wired. Build PASS. Awaiting user visual QA + commit."
     }
   },
   "content_items": [
     {
-      "slug": "print-sizes-at-300-dpi",
-      "keyword": "print sizes at 300 dpi",
+      "slug": "canva-print-size-for-etsy",
+      "keyword": "canva print size for etsy",
       "type": "new-page",
-      "cluster": "resolution-dpi",
+      "cluster": "tool-workflows",
       "status": "deployed",
-      "published_at": "2026-04-19",
-      "notes": "Complete 300 DPI pixel reference — 28 sizes in 5 ratio packs. ListingOutputShowcase (misty_lake preset) + Gemini wall-art lifestyle. OG image generated. Build PASS."
+      "published_at": "2026-04-22",
+      "notes": "Tool-bridge page: Canva custom canvas dims mapped to Etsy ratio-packs. ~4,068 words. Registry entry added. OG image generated."
     },
     {
-      "slug": "how-to-upload-more-than-5-files-etsy",
-      "keyword": "how to upload more than 5 files to etsy",
+      "slug": "etsy-kitchen-wall-art-sizes",
+      "keyword": "etsy kitchen wall art sizes",
       "type": "new-page",
-      "cluster": "etsy-file-management",
+      "cluster": "niche-verticals",
       "status": "deployed",
-      "published_at": "2026-04-18",
-      "notes": "Problem/solution guide — Etsy 5-file limit + ZIP-per-ratio strategy. ListingOutputShowcase (fox preset) + OG image generated. Validator PASS."
-    },
-    {
-      "slug": "etsy-wedding-printable-sizes",
-      "keyword": "etsy wedding printable sizes",
-      "type": "new-page",
-      "status": "deployed",
-      "notes": "Wedding suite vertical — invite/RSVP/menu/sign/chart sizes. ListingOutputShowcase (abstract_wedding preset) + Gemini reception-table lifestyle. OG image generated."
-    },
-    {
-      "slug": "print-size-for-frame-guide",
-      "keyword": "what size print fits what frame",
-      "type": "new-page",
-      "status": "deployed",
-      "notes": "Dual-intent (buyer + seller) print-to-frame matrix. ListingOutputShowcase (geometric preset) + Gemini gallery wall lifestyle. OG image generated."
-    },
-    {
-      "slug": "etsy-digital-download-size-variations",
-      "keyword": "etsy digital download size variations",
-      "cluster": "guides",
-      "status": "published",
-      "published_at": "2026-04-18"
+      "published_at": "2026-04-22",
+      "notes": "Niche vertical: kitchen wall art sizes for Etsy sellers. ~4,271 words. Registry entry added. OG image generated."
     }
   ],
   "metrics": {
@@ -74,5 +53,5 @@
     "failed": 0,
     "success_rate": 1
   },
-  "updated_at": "2026-04-18T07:16:05.422Z"
+  "updated_at": "2026-04-22T20:42:00+02:00"
 }
