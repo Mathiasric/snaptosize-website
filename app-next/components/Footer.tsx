@@ -171,6 +171,16 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-living-room-wall-art-sizes" className="transition-colors hover:text-accent-light">
+                  Living Room Wall Art Sizes
+                </Link>
+              </li>
+              <li>
+                <Link href="/etsy-bedroom-wall-art-sizes" className="transition-colors hover:text-accent-light">
+                  Bedroom Wall Art Sizes
+                </Link>
+              </li>
+              <li>
                 <Link href="/sizes" className="transition-colors hover:text-accent-light font-medium">
                   All size guides →
                 </Link>

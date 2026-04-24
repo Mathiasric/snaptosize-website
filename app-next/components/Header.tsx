@@ -202,6 +202,12 @@ export function Header() {
                     <Link href="/etsy-kitchen-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Kitchen Wall Art Sizes
                     </Link>
+                    <Link href="/etsy-living-room-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Living Room Wall Art Sizes
+                    </Link>
+                    <Link href="/etsy-bedroom-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Bedroom Wall Art Sizes
+                    </Link>
                     <Link href="/etsy-mid-century-modern-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Mid Century Modern Sizes
                     </Link>
@@ -580,6 +586,12 @@ export function Header() {
                         </Link>
                         <Link href="/etsy-kitchen-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Kitchen Wall Art Sizes
+                        </Link>
+                        <Link href="/etsy-living-room-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Living Room Wall Art Sizes
+                        </Link>
+                        <Link href="/etsy-bedroom-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Bedroom Wall Art Sizes
                         </Link>
                         <Link href="/etsy-mid-century-modern-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Mid Century Modern Sizes
