@@ -1798,5 +1798,48 @@
       "etsy-botanical-print-sizes",
       "print-sizes-at-300-dpi"
     ]
+  },
+  {
+    "slug": "etsy-living-room-wall-art-sizes",
+    "title": "Etsy Living Room Wall Art Sizes",
+    "pageType": "niche",
+    "keywords": [
+      "etsy living room wall art sizes",
+      "living room wall art size guide",
+      "living room print sizes etsy",
+      "above sofa art size"
+    ],
+    "cluster": "niche-vertical",
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-gallery-wall-print-sizes",
+      "etsy-landscape-print-sizes",
+      "etsy-16x20-print-size",
+      "etsy-18x24-print-size",
+      "print-sizes-at-300-dpi"
+    ]
+  },
+  {
+    "slug": "etsy-bedroom-wall-art-sizes",
+    "title": "Etsy Bedroom Wall Art Sizes",
+    "pageType": "niche",
+    "keywords": [
+      "etsy bedroom wall art sizes",
+      "bedroom wall art size guide",
+      "above headboard art size",
+      "bedroom print sizes etsy"
+    ],
+    "cluster": "niche-vertical",
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-8x10-print-size",
+      "etsy-16x20-print-size",
+      "etsy-11x14-print-size",
+      "etsy-5x7-print-size",
+      "etsy-nursery-wall-art-sizes",
+      "print-sizes-at-300-dpi"
+    ]
   }
 ]

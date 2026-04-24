@@ -10,12 +10,12 @@ import RelatedPages from "@/components/RelatedPages";
 import { Check, ArrowRight, Frame, Image as ImageIcon } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Etsy Kitchen Wall Art Sizes — Print Size Guide",
+  title: "Etsy Kitchen Wall Art Sizes — Print Size Guide for Sellers",
   description:
     "Best kitchen wall art sizes for Etsy: 8x10, 11x14, 16x20, A4. Portrait vs landscape, 3-piece sets, pixel dimensions at 300 DPI, every ratio covered.",
   alternates: { canonical: "https://snaptosize.com/etsy-kitchen-wall-art-sizes" },
   openGraph: {
-    title: "Etsy Kitchen Wall Art Sizes — Print Size Guide",
+    title: "Etsy Kitchen Wall Art Sizes — Print Size Guide for Sellers",
     description:
       "Best kitchen wall art sizes for Etsy: 8x10, 11x14, 16x20, A4. Portrait vs landscape, 3-piece sets, pixel dimensions at 300 DPI, every ratio covered.",
     url: "https://snaptosize.com/etsy-kitchen-wall-art-sizes",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Etsy Kitchen Wall Art Sizes — Print Size Guide",
+    title: "Etsy Kitchen Wall Art Sizes — Print Size Guide for Sellers",
     description:
       "Best kitchen wall art sizes for Etsy: 8x10, 11x14, 16x20, A4. Portrait vs landscape, 3-piece sets, pixel dimensions at 300 DPI, every ratio covered.",
     images: ["/assets/og/etsy-kitchen-wall-art-sizes.png"],
@@ -297,7 +297,7 @@ export default function EtsyKitchenWallArtSizesPage() {
                 </Button>
               </a>
               <p className="text-sm mt-2" style={{ color: "#7a6948" }}>
-                Free &rarr; upload once, get every kitchen size at 300&nbsp;DPI.
+                Free: 5 Quick Exports · Pro: $11.99/mo for unlimited · no card required
               </p>
             </div>
 

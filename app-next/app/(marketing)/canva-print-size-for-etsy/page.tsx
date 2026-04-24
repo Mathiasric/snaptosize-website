@@ -324,9 +324,9 @@ export default function CanvaPrintSizeForEtsyPage() {
                   The 30-Second Shortcut
                 </span>
               </div>
-              <h2 className="text-xl md:text-2xl font-bold text-foreground mb-3">
+              <p className="text-xl md:text-2xl font-bold text-foreground mb-3">
                 You don&apos;t have to duplicate your Canva design for every ratio.
-              </h2>
+              </p>
               <p className="text-foreground-70 leading-relaxed mb-5">
                 Canva is brilliant for designing one master. But Etsy sellers need the <em>same design</em> in 2:3, 3:4, 4:5, ISO, <em>and</em> Extras — and Canva has no one-click way to do that. Export your Canva design as a high-resolution PNG, JPG, or WebP, upload it to SnapToSize, and get every Etsy ratio pack back — sized to 300 DPI, compressed under Etsy&apos;s 20 MB cap, ready to attach. <strong>Design once. Deliver everywhere.</strong>
               </p>
