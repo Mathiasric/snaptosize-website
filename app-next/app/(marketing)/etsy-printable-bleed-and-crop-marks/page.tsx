@@ -315,6 +315,14 @@ export default function EtsyPrintableBleedAndCropMarksPage() {
             surface these as export options — even when selling digital downloads for home printing.
             Seeing the toggle and not knowing whether to enable it creates unnecessary anxiety.
           </p>
+          <p className="text-foreground-60 mb-4 leading-relaxed">
+            The fastest way to avoid bleed confusion entirely: use a tool that outputs exact print
+            dimensions with no extra settings.{" "}
+            <a href="https://app.snaptosize.com?source=seo_etsy-printable-bleed-and-crop-marks&kind=guide" className="text-teal-400 hover:text-teal-300 underline underline-offset-2">
+              SnapToSize
+            </a>{" "}
+            does exactly that — clean files at the right size, no bleed toggles, no crop mark decisions.
+          </p>
 
           <div className="grid md:grid-cols-2 gap-4 mt-6">
             <Card className="p-5 border border-amber-500/20 bg-amber-500/5">
@@ -566,6 +574,9 @@ export default function EtsyPrintableBleedAndCropMarksPage() {
             you add bleed. This is why 5×7 at 300 DPI is 1500×2100px, but 5×7 with bleed is
             1575×2175px.
           </p>
+          <p className="text-foreground-60 text-sm mt-3">
+            If you use SnapToSize, you never calculate any of this — outputs are always exact print dimensions at 300 DPI, no bleed canvas added.
+          </p>
         </section>
 
         {/* Section 7: CMYK vs RGB */}
@@ -596,7 +607,7 @@ export default function EtsyPrintableBleedAndCropMarksPage() {
           </div>
           <p className="text-foreground-60 text-sm">
             Wrong color mode is a much more common complaint than missing bleed. Stick with RGB
-            unless you have a specific reason to switch.
+            unless you have a specific reason to switch. SnapToSize exports in RGB by default — correct for virtually every Etsy buyer.
           </p>
         </section>
 
@@ -698,7 +709,7 @@ export default function EtsyPrintableBleedAndCropMarksPage() {
               {
                 question: "How do I add crop marks in Canva for Etsy?",
                 answer:
-                  "In Canva, go to Share → Download → PDF Print, then enable the 'Crop marks and bleed' toggle. Canva will add 0.125\" bleed and crop marks automatically. Note: this option is only available in Canva Pro.",
+                  "In Canva, go to Share → Download → PDF Print, then enable the 'Crop marks and bleed' toggle. Canva will add 0.125\" bleed and crop marks automatically. Note: this option is only available in Canva Pro. For most Etsy sellers, the simpler path is to skip bleed entirely — SnapToSize outputs exact-dimension files with no bleed settings or Canva Pro required.",
               },
               {
                 question: "Will buyers complain if I don't include bleed on my Etsy print files?",
