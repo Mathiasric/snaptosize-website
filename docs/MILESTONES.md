@@ -50,6 +50,7 @@ $1M ARR requires:
 
 ### Marketing Infrastructure
 - ✅ Marketing site (snaptosize.com, Cloudflare Pages)
+- ✅ 86 SEO pages live (2 new pages deployed 2026-04-25: etsy-office-wall-art-sizes + etsy-printable-bleed-and-crop-marks)
 - ✅ 73 SEO pages live (2 new pages deployed 2026-04-19: etsy-kids-wall-art-sizes + etsy-bathroom-wall-art-sizes)
 - ✅ 71 SEO pages live (1 new page deployed 2026-04-19: print-sizes-at-300-dpi)
 - ✅ 69 SEO pages live (1 new page deployed 2026-04-18: how-to-upload-more-than-5-files-etsy)

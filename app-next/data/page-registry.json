@@ -1841,5 +1841,46 @@
       "etsy-nursery-wall-art-sizes",
       "print-sizes-at-300-dpi"
     ]
+  },
+  {
+    "slug": "etsy-office-wall-art-sizes",
+    "title": "Etsy Office Wall Art Sizes — WFH Print Size Guide",
+    "pageType": "niche-vertical",
+    "keywords": [
+      "etsy office wall art sizes",
+      "office wall art sizes for etsy",
+      "wfh wall art print sizes",
+      "home office art sizes etsy"
+    ],
+    "cluster": "niche-vertical",
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-16x20-print-size",
+      "etsy-18x24-print-size",
+      "print-sizes-at-300-dpi",
+      "how-to-package-digital-wall-art-for-etsy",
+      "how-many-sizes-etsy-printable"
+    ]
+  },
+  {
+    "slug": "etsy-printable-bleed-and-crop-marks",
+    "title": "Etsy Printable Bleed & Crop Marks Guide (2026)",
+    "pageType": "problem-solver",
+    "keywords": [
+      "etsy printable bleed and crop marks",
+      "do etsy printables need bleed",
+      "bleed marks etsy digital download",
+      "crop marks etsy printable"
+    ],
+    "cluster": "problem-solver",
+    "relatedSlugs": [
+      "etsy-20mb-file-limit",
+      "etsy-print-ratios",
+      "print-sizes-at-300-dpi",
+      "how-to-resize-images-for-etsy",
+      "etsy-digital-download-blurry-prints",
+      "how-many-sizes-etsy-printable"
+    ]
   }
 ]

@@ -181,6 +181,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/etsy-office-wall-art-sizes" className="transition-colors hover:text-accent-light">
+                  Office Wall Art Sizes
+                </Link>
+              </li>
+              <li>
                 <Link href="/sizes" className="transition-colors hover:text-accent-light font-medium">
                   All size guides →
                 </Link>
@@ -229,6 +234,11 @@ export function Footer() {
               <li>
                 <Link href="/best-file-format-etsy-printables" className="transition-colors hover:text-accent-light">
                   Best File Format
+                </Link>
+              </li>
+              <li>
+                <Link href="/etsy-printable-bleed-and-crop-marks" className="transition-colors hover:text-accent-light">
+                  Bleed & Crop Marks Guide
                 </Link>
               </li>
               <li>

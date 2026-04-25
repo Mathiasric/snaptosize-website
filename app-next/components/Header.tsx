@@ -208,6 +208,9 @@ export function Header() {
                     <Link href="/etsy-bedroom-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Bedroom Wall Art Sizes
                     </Link>
+                    <Link href="/etsy-office-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Office Wall Art Sizes
+                    </Link>
                     <Link href="/etsy-mid-century-modern-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Mid Century Modern Sizes
                     </Link>
@@ -593,6 +596,9 @@ export function Header() {
                         <Link href="/etsy-bedroom-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Bedroom Wall Art Sizes
                         </Link>
+                        <Link href="/etsy-office-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Office Wall Art Sizes
+                        </Link>
                         <Link href="/etsy-mid-century-modern-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Mid Century Modern Sizes
                         </Link>
@@ -632,6 +638,9 @@ export function Header() {
                         </Link>
                         <Link href="/how-to-resize-images-for-etsy" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           How to Resize Images
+                        </Link>
+                        <Link href="/etsy-printable-bleed-and-crop-marks" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Bleed & Crop Marks Guide
                         </Link>
                         <Link href="/best-resolution-for-etsy-printables" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Best Resolution for Printables

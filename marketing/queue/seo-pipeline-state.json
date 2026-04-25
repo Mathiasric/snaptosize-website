@@ -1,7 +1,7 @@
 {
-  "current_week": "W19",
-  "batch_id": "2026-W19",
-  "started_at": "2026-04-22T18:30:00+02:00",
+  "current_week": "W21",
+  "batch_id": "2026-W21",
+  "started_at": "2026-04-25T09:00:00+02:00",
   "target": {
     "pages": 2
   },
@@ -29,22 +29,22 @@
   },
   "content_items": [
     {
-      "slug": "canva-print-size-for-etsy",
-      "keyword": "canva print size for etsy",
+      "slug": "etsy-office-wall-art-sizes",
+      "keyword": "etsy office wall art sizes",
       "type": "new-page",
-      "cluster": "tool-workflows",
+      "cluster": "niche-vertical",
       "status": "deployed",
-      "published_at": "2026-04-22",
-      "notes": "Tool-bridge page: Canva custom canvas dims mapped to Etsy ratio-packs. ~4,068 words. Registry entry added. OG image generated."
+      "published_at": "2026-04-25",
+      "notes": "Niche vertical: office/WFH wall art sizes. Portrait + landscape + ISO ratios. Firecrawl-researched. OG image generated. Nav/footer added."
     },
     {
-      "slug": "etsy-kitchen-wall-art-sizes",
-      "keyword": "etsy kitchen wall art sizes",
+      "slug": "etsy-printable-bleed-and-crop-marks",
+      "keyword": "etsy printable bleed and crop marks",
       "type": "new-page",
-      "cluster": "niche-verticals",
+      "cluster": "problem-solver",
       "status": "deployed",
-      "published_at": "2026-04-22",
-      "notes": "Niche vertical: kitchen wall art sizes for Etsy sellers. ~4,271 words. Registry entry added. OG image generated."
+      "published_at": "2026-04-25",
+      "notes": "Problem-solver: bleed/crop marks confusion for Etsy digital sellers. SnapToSize as auto-solution. Firecrawl-researched. OG image generated. Nav/footer added."
     }
   ],
   "metrics": {
@@ -53,5 +53,5 @@
     "failed": 0,
     "success_rate": 1
   },
-  "updated_at": "2026-04-22T20:42:00+02:00"
+  "updated_at": "2026-04-25T14:00:00+02:00"
 }

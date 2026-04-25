@@ -42,6 +42,18 @@ const pages = [
     subtitle: 'NURSERY PRINT SIZE GUIDE',
     tagline: '8×10 · 11×14 · 16×20 · A4 · A3 · all ratio packs',
   },
+  {
+    filename: 'etsy-office-wall-art-sizes.png',
+    title: 'Etsy Office Wall Art Sizes',
+    subtitle: 'WFH PRINT SIZE GUIDE',
+    tagline: 'Portrait · landscape · ISO — every ratio for office listings',
+  },
+  {
+    filename: 'etsy-printable-bleed-and-crop-marks.png',
+    title: 'Etsy Printable Bleed & Crop Marks',
+    subtitle: 'PRINT SETUP GUIDE',
+    tagline: 'Do Etsy printables need bleed? The definitive answer',
+  },
 ];
 
 const html = ({ title, subtitle, tagline }) => `<!doctype html>

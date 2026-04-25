@@ -1,0 +1,121 @@
+{
+  "week": "W21",
+  "created_at": "2026-04-25T12:00:00Z",
+  "keywords": [
+    {
+      "keyword": "etsy office wall art sizes",
+      "slug": "etsy-office-wall-art-sizes",
+      "intent": "informational+commercial",
+      "page_type": "niche-vertical",
+      "priority": "P1",
+      "cluster": "niche-vertical",
+      "sections": [
+        "What Sizes Work Best for Office Wall Art on Etsy",
+        "Most Popular Office Print Ratios (2:3, 4:5, 16:9 wide)",
+        "Motivational & Quote Prints: Size Recommendations",
+        "WFH & Home Office: Landscape vs Portrait Sizing",
+        "How to Offer Multiple Sizes Without Redesigning",
+        "Office Wall Art Size Chart (8x10 through 24x36)"
+      ],
+      "faqs": [
+        "What is the most popular size for office wall art on Etsy?",
+        "Should office prints be landscape or portrait orientation?",
+        "What sizes do customers expect in an Etsy office art listing?",
+        "Do I need different files for US and European office frames?",
+        "What aspect ratio is best for motivational posters on Etsy?"
+      ],
+      "competitor_gaps": "No competitor has a dedicated 'etsy office wall art sizes' guide. Etsy market pages for 'office wall art digital downloads' exist but lack size guidance. YouTube video 'Printable Wall Art on Etsy SIZES & File Formats EXPLAINED' gets views but is generic — not office-specific. ShootingStarSVG covers general sizing but not office niche.",
+      "conversion_angle": "Office/WFH wall art sellers need to cover both portrait (motivational quotes, 4:5 ratio) and landscape (wide desk-level art, 16:9/3:2) orientations simultaneously — exactly the multi-ratio problem SnapToSize solves in one upload. CTA: 'Upload once, get all office sizes instantly.'",
+      "link_to": [
+        "etsy-living-room-wall-art-sizes",
+        "etsy-bedroom-wall-art-sizes",
+        "etsy-typography-wall-art-sizes",
+        "etsy-quote-wall-art-sizes",
+        "etsy-print-sizes",
+        "2-3-vs-4-5-ratio"
+      ],
+      "link_from": [
+        "etsy-living-room-wall-art-sizes",
+        "etsy-quote-wall-art-sizes",
+        "etsy-typography-wall-art-sizes",
+        "etsy-print-sizes"
+      ],
+      "sources": [
+        {
+          "claim": "Etsy market 'office wall art digital downloads' is active with many listings",
+          "url": "https://www.etsy.com/market/office_wall_art_digital_downloads"
+        },
+        {
+          "claim": "YouTube guide on Etsy wall art sizes covers general use, not office-specific",
+          "url": "https://www.youtube.com/watch?v=ZxH-x9qOlVw"
+        },
+        {
+          "claim": "Most popular sizes guide on Etsy shows demand for size education among sellers",
+          "url": "https://www.etsy.com/listing/1003492104/most-popular-sizes-wall-art-size-guide"
+        }
+      ]
+    },
+    {
+      "keyword": "etsy printable bleed and crop marks",
+      "slug": "etsy-printable-bleed-and-crop-marks",
+      "intent": "informational+commercial",
+      "page_type": "problem-solver",
+      "priority": "P1",
+      "cluster": "problem-solver",
+      "sections": [
+        "What Are Bleed and Crop Marks (and Why Etsy Sellers Need Them)",
+        "Do Etsy Buyers Actually Need Bleed Marks on Digital Downloads?",
+        "How to Add Bleed in Canva for Etsy Printables",
+        "How to Add Bleed in Illustrator and InDesign",
+        "Should You Include Crop Marks in Your Etsy Listing Files?",
+        "Recommended Bleed Size for Etsy Printables (0.125\" Standard)",
+        "CMYK vs RGB: What Color Mode to Use for Etsy Print Files"
+      ],
+      "faqs": [
+        "Do I need bleed marks for Etsy digital downloads?",
+        "What bleed size should I use for Etsy printables?",
+        "Should I export Etsy printables as RGB or CMYK?",
+        "How do I add crop marks in Canva for Etsy?",
+        "Will buyers complain if I don't include bleed on my Etsy print files?",
+        "Does Etsy have a file size limit for PDFs with bleed?"
+      ],
+      "competitor_gaps": "Reddit thread (r/EtsySellers) confirms real seller confusion around bleed marks with 50+ comments. Primoprint blog covers bleed for Etsy but is a print-service sales page. Templett blog covers trim marks generally. No SnapToSize competitor has an Etsy-seller-specific bleed guide. Canva Help covers bleed but not in an Etsy context. This is a clear gap: high intent, no authoritative Etsy-focused guide exists.",
+      "conversion_angle": "Bleed confusion stems from sellers managing multiple export settings per file and per size. SnapToSize eliminates this by auto-handling correct file dimensions — sellers upload one source file and get print-ready files for all sizes. Angle: 'Stop worrying about bleed — get print-ready files for every size automatically.' Links to free trial.",
+      "link_to": [
+        "etsy-20mb-file-limit",
+        "best-file-format-etsy-printables",
+        "best-resolution-for-etsy-printables",
+        "what-files-to-include-etsy-digital-download",
+        "canva-print-size-for-etsy"
+      ],
+      "link_from": [
+        "best-file-format-etsy-printables",
+        "what-files-to-include-etsy-digital-download",
+        "etsy-20mb-file-limit",
+        "canva-print-size-for-etsy"
+      ],
+      "sources": [
+        {
+          "claim": "Etsy sellers actively ask about bleed marks on Reddit with significant engagement",
+          "url": "https://www.reddit.com/r/EtsySellers/comments/y1im72/people_who_sell_art_as_printable_digital_files_do/"
+        },
+        {
+          "claim": "Etsy market page for 'crop marks and bleed' products exists, showing demand",
+          "url": "https://www.etsy.com/market/crop_marks_and_bleed"
+        },
+        {
+          "claim": "Primoprint covers print-ready files for Etsy, including bleed, as a print vendor",
+          "url": "https://www.primoprint.com/blog/making-files-print-ready-for-etsy/"
+        },
+        {
+          "claim": "Canva's help docs cover bleed but not in an Etsy-seller-specific context",
+          "url": "https://www.canva.com/help/margins-bleed-crop-marks/"
+        },
+        {
+          "claim": "Templett covers trim marks generally for home prints",
+          "url": "https://templett.com/blog/trim-marks-and-bleed/"
+        }
+      ]
+    }
+  ]
+}
