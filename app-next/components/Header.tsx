@@ -111,11 +111,11 @@ export function Header() {
       {guidesOpen && (
         <div className="hidden md:block absolute left-0 right-0 top-full z-50 border-b border-border bg-background shadow-lg" data-guides-dropdown>
           <Container>
-            <div className="grid grid-cols-4 gap-6 py-6">
+            <div className="grid grid-cols-6 gap-6 py-6">
               {/* Size Guides — col spans wider with 3-col sub-grid for niche guides */}
-              <div className="col-span-2">
+              <div className="col-span-4">
                 <p className="pb-2.5 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">Size Guides</p>
-                <div className="grid grid-cols-3 gap-x-6">
+                <div className="grid grid-cols-4 gap-x-6">
                   <div className="space-y-0.5">
                     <Link href="/etsy-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Etsy Print Sizes
@@ -176,14 +176,14 @@ export function Header() {
                     <Link href="/etsy-photography-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Photography Print Sizes
                     </Link>
-                  </div>
-                  <div className="space-y-0.5">
-                    <Link href="/etsy-vintage-art-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Vintage Art Print Sizes
-                    </Link>
                     <Link href="/etsy-watercolor-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Watercolor Print Sizes
                     </Link>
+                    <Link href="/etsy-vintage-art-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Vintage Art Print Sizes
+                    </Link>
+                  </div>
+                  <div className="space-y-0.5">
                     <Link href="/etsy-boho-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Boho Wall Art Sizes
                     </Link>
@@ -192,24 +192,6 @@ export function Header() {
                     </Link>
                     <Link href="/etsy-farmhouse-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Farmhouse Wall Art Sizes
-                    </Link>
-                    <Link href="/etsy-kids-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Kids Wall Art Sizes
-                    </Link>
-                    <Link href="/etsy-bathroom-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Bathroom Wall Art Sizes
-                    </Link>
-                    <Link href="/etsy-kitchen-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Kitchen Wall Art Sizes
-                    </Link>
-                    <Link href="/etsy-living-room-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Living Room Wall Art Sizes
-                    </Link>
-                    <Link href="/etsy-bedroom-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Bedroom Wall Art Sizes
-                    </Link>
-                    <Link href="/etsy-office-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Office Wall Art Sizes
                     </Link>
                     <Link href="/etsy-mid-century-modern-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Mid Century Modern Sizes
@@ -229,14 +211,31 @@ export function Header() {
                     <Link href="/etsy-typography-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Typography Art Sizes
                     </Link>
+                  </div>
+                  <div className="space-y-0.5">
+                    <Link href="/etsy-kids-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Kids Wall Art Sizes
+                    </Link>
+                    <Link href="/etsy-bathroom-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Bathroom Wall Art Sizes
+                    </Link>
+                    <Link href="/etsy-kitchen-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Kitchen Wall Art Sizes
+                    </Link>
+                    <Link href="/etsy-living-room-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Living Room Wall Art Sizes
+                    </Link>
+                    <Link href="/etsy-bedroom-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Bedroom Wall Art Sizes
+                    </Link>
+                    <Link href="/etsy-office-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Office Wall Art Sizes
+                    </Link>
                     <Link href="/etsy-black-and-white-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Black &amp; White Art Sizes
                     </Link>
                     <Link href="/etsy-anime-manga-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Anime &amp; Manga Art Sizes
-                    </Link>
-                    <Link href="/etsy-black-and-white-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Black &amp; White Art Sizes
                     </Link>
                     <Link href="/etsy-map-art-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Map Art Print Sizes
@@ -320,83 +319,85 @@ export function Header() {
                 </div>
               </div>
 
-              {/* Seller Guides */}
-              <div>
+              {/* Seller Guides + Troubleshooting — 2-col split */}
+              <div className="col-span-2">
                 <p className="pb-2.5 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">Seller Guides</p>
-                <div className="space-y-0.5">
-                  <Link href="/how-to-sell-digital-downloads-on-etsy" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                    How to Sell on Etsy
-                  </Link>
-                  <Link href="/how-to-sell-printables-on-etsy-without-photoshop" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                    Sell Without Photoshop
-                  </Link>
-                  <Link href="/what-files-to-include-etsy-digital-download" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                    What Files to Include
-                  </Link>
-                  <Link href="/how-to-resize-images-for-etsy" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                    How to Resize Images
-                  </Link>
-                  <Link href="/best-resolution-for-etsy-printables" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                    Best Resolution
-                  </Link>
-                  <Link href="/print-sizes-at-300-dpi" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                    300 DPI Print Sizes
-                  </Link>
-                  <Link href="/etsy-digital-download-file-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                    Etsy File Size Guide
-                  </Link>
-                  <Link href="/how-to-package-digital-wall-art-for-etsy" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                    Package Digital Wall Art
-                  </Link>
-                  <Link href="/how-to-upload-more-than-5-files-etsy" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                    Upload 5+ Files to Etsy
-                  </Link>
-                  <Link href="/best-file-format-etsy-printables" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                    Best File Format
-                  </Link>
-                  <Link href="/how-to-price-etsy-printables" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                    How to Price Printables
-                  </Link>
-                  <Link href="/snaptosize-vs-canva" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                    SnapToSize vs Canva
-                  </Link>
-                  <Link href="/canva-print-size-for-etsy" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                    Canva Print Size for Etsy
-                  </Link>
-                  <Link href="/snaptosize-vs-photoshop" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                    SnapToSize vs Photoshop
-                  </Link>
-                  <Link href="/etsy-print-on-demand-vs-digital-download" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                    POD vs Digital Downloads
-                  </Link>
-                  <Link href="/etsy-listing-photo-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                    Listing Photo Size Guide
-                  </Link>
-                  <Link href="/etsy-digital-planner-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                    Digital Planner Sizes
-                  </Link>
-                  <Link href="/etsy-vs-gumroad-vs-creative-market" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                    Etsy vs Gumroad vs Creative Market
-                  </Link>
-                  <Link href="/etsy-star-seller-digital-downloads" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                    Star Seller for Digital Downloads
-                  </Link>
-                </div>
-              </div>
-
-              {/* Troubleshooting */}
-              <div>
-                <p className="pb-2.5 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">Troubleshooting</p>
-                <div className="space-y-0.5">
-                  <Link href="/etsy-20mb-file-limit" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                    Etsy 20MB File Limit
-                  </Link>
-                  <Link href="/etsy-digital-download-not-selling" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                    Not Selling? 7 Fixes
-                  </Link>
-                  <Link href="/etsy-digital-download-blurry-prints" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                    Blurry Prints? Fix Resolution
-                  </Link>
+                <div className="grid grid-cols-2 gap-x-6">
+                  <div className="space-y-0.5">
+                    <Link href="/how-to-sell-digital-downloads-on-etsy" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      How to Sell on Etsy
+                    </Link>
+                    <Link href="/how-to-sell-printables-on-etsy-without-photoshop" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Sell Without Photoshop
+                    </Link>
+                    <Link href="/what-files-to-include-etsy-digital-download" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      What Files to Include
+                    </Link>
+                    <Link href="/how-to-resize-images-for-etsy" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      How to Resize Images
+                    </Link>
+                    <Link href="/best-resolution-for-etsy-printables" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Best Resolution
+                    </Link>
+                    <Link href="/print-sizes-at-300-dpi" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      300 DPI Print Sizes
+                    </Link>
+                    <Link href="/etsy-digital-download-file-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Etsy File Size Guide
+                    </Link>
+                    <Link href="/how-to-package-digital-wall-art-for-etsy" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Package Digital Wall Art
+                    </Link>
+                    <Link href="/how-to-upload-more-than-5-files-etsy" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Upload 5+ Files to Etsy
+                    </Link>
+                    <Link href="/best-file-format-etsy-printables" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Best File Format
+                    </Link>
+                    <Link href="/how-to-price-etsy-printables" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      How to Price Printables
+                    </Link>
+                  </div>
+                  <div className="space-y-0.5">
+                    <Link href="/snaptosize-vs-canva" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      SnapToSize vs Canva
+                    </Link>
+                    <Link href="/canva-print-size-for-etsy" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Canva Print Size for Etsy
+                    </Link>
+                    <Link href="/snaptosize-vs-photoshop" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      SnapToSize vs Photoshop
+                    </Link>
+                    <Link href="/etsy-print-on-demand-vs-digital-download" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      POD vs Digital Downloads
+                    </Link>
+                    <Link href="/etsy-listing-photo-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Listing Photo Size Guide
+                    </Link>
+                    <Link href="/etsy-digital-planner-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Digital Planner Sizes
+                    </Link>
+                    <Link href="/etsy-vs-gumroad-vs-creative-market" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Etsy vs Gumroad vs Creative Market
+                    </Link>
+                    <Link href="/etsy-star-seller-digital-downloads" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Star Seller for Digital Downloads
+                    </Link>
+                    <div className="pt-2 mt-2 border-t border-border/50">
+                      <p className="pb-1.5 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">Troubleshooting</p>
+                      <div className="space-y-0.5">
+                        <Link href="/etsy-20mb-file-limit" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                          Etsy 20MB File Limit
+                        </Link>
+                        <Link href="/etsy-digital-download-not-selling" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                          Not Selling? 7 Fixes
+                        </Link>
+                        <Link href="/etsy-digital-download-blurry-prints" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                          Blurry Prints? Fix Resolution
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
