@@ -404,21 +404,6 @@ export default function EtsyOfficeWallArtSizesPage() {
         </div>
       </section>
 
-      {/* Lifestyle photo — full-bleed below hero */}
-      <div className="w-full max-w-[1200px] mx-auto px-4 md:px-8 pt-8 pb-2">
-        <div className="rounded-2xl overflow-hidden" style={{ border: "1px solid rgba(74,111,165,0.12)" }}>
-          <Image
-            src="/assets/visuals/etsy-office-wall-art-sizes-lifestyle.jpg"
-            alt="Home office with framed wall art prints in various sizes on the wall — large motivational quote, medium landscape, small botanical accent"
-            width={1600}
-            height={1200}
-            className="w-full object-cover"
-            style={{ maxHeight: "480px" }}
-            priority
-          />
-        </div>
-      </div>
-
       {/* ===== MAIN CONTENT ===== */}
       <div className="container mx-auto px-4 md:px-8 max-w-[1200px] py-12">
 
@@ -675,6 +660,18 @@ export default function EtsyOfficeWallArtSizesPage() {
             cover all three — buyers will know exactly which file to download.
           </p>
         </section>
+
+        {/* Lifestyle photo — before product conversion */}
+        <div className="mb-10 rounded-2xl overflow-hidden" style={{ border: "1px solid rgba(74,111,165,0.12)" }}>
+          <Image
+            src="/assets/visuals/etsy-office-wall-art-sizes-lifestyle.jpg"
+            alt="Home office with framed wall art prints in various sizes on the wall — large motivational quote, medium landscape, small botanical accent"
+            width={1600}
+            height={1200}
+            className="w-full object-cover"
+            style={{ maxHeight: "480px" }}
+          />
+        </div>
 
         {/* Section 6: ListingOutputShowcase */}
         <section className="mb-16">
