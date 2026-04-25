@@ -395,6 +395,9 @@ export function Header() {
                         <Link href="/etsy-digital-download-blurry-prints" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                           Blurry Prints? Fix Resolution
                         </Link>
+                        <Link href="/etsy-printable-bleed-and-crop-marks" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                          Bleed & Crop Marks Guide
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -700,6 +703,9 @@ export function Header() {
                         </Link>
                         <Link href="/etsy-digital-download-blurry-prints" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Blurry Prints? Fix Resolution
+                        </Link>
+                        <Link href="/etsy-printable-bleed-and-crop-marks" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Bleed & Crop Marks Guide
                         </Link>
                       </div>
                     )}
