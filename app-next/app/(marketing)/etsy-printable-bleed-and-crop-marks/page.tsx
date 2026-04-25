@@ -147,6 +147,14 @@ export default function EtsyPrintableBleedAndCropMarksPage() {
           text: "AI tools can explain what bleed is, but they can't inspect your specific files or know your buyer's printing setup. The reliable answer: skip bleed for home-print listings. Only include it if you're explicitly selling print-shop-ready files and say so in your listing.",
         },
       },
+      {
+        "@type": "Question",
+        name: "Does SnapToSize add bleed to my files?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. SnapToSize outputs files at exact print dimensions — for example, an 8×10 export is exactly 8×10 inches at 300 DPI, with no bleed added and no crop marks included. This is exactly what Etsy buyers need: clean, exact-size files ready to print at home.",
+        },
+      },
     ],
   };
 
@@ -707,6 +715,11 @@ export default function EtsyPrintableBleedAndCropMarksPage() {
                   "Can AI tools like ChatGPT or Gemini tell me if my Etsy files need bleed?",
                 answer:
                   "AI tools can explain what bleed is, but they can't inspect your specific files or know your buyer's printing setup. The reliable answer: skip bleed for home-print listings. Only include it if you're explicitly selling print-shop-ready files and say so in your listing.",
+              },
+              {
+                question: "Does SnapToSize add bleed to my files?",
+                answer:
+                  "No. SnapToSize outputs files at exact print dimensions — an 8×10 export is exactly 8×10 inches at 300 DPI, no bleed added, no crop marks included. This is exactly what Etsy buyers need: clean, exact-size files ready to print at home.",
               },
             ]}
           />
