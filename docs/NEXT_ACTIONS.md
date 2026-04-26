@@ -1,27 +1,77 @@
 # NEXT_ACTIONS.md — This Week's Priorities
-**Week of:** 2026-04-07
-**Updated by:** Claude Code — 2026-04-07
+**Week of:** 2026-04-21
+**Updated by:** Claude Code — 2026-04-21
 
 ---
 
 ## Strategic Context (updated 2026-04-07)
 
-**Current position:** 7 paying users (6 monthly + 1 yearly), $80 MRR, 58 SEO pages live (61 total). Product Hunt launched and done. Educator outreach: 0/7 responses. Social active daily.
+**Current position:** 7 paying users ($80 MRR). 3 canceling end of May — churn incoming. 71 SEO pages live. Social active daily. PostHog: 1,270 exports total, ~400 pageviews/week and growing.
 
-**Important:** The "18,000+ packs" stat on the site is a marketing number for social proof, NOT real usage data.
+**Key discovery (2026-04-21):** Free-to-paid conversion is ~37% (SaaS standard: 2–5%). Product works. Problem is 100% distribution — not conversion, not product, not pricing.
 
-**Diagnosis (confirmed by NotebookLM 2026-04-07):** This is a **pure distribution problem**.
-1. **Discovery:** Near-zero organic traffic. SEO is ~6 weeks old — won't rank meaningfully for 2-4 more months.
-2. **Conversion:** Can't measure yet. 4 paying users from near-zero traffic is a strong WTP signal.
-3. **Product:** Stable, working, validated by paying customers. No new features needed until 10+ users.
+**PostHog signals:**
+- 34 rate_limit_hit events in one week → 0 upgrades. Paywall moment is broken.
+- 16 rage clicks — something in app UX frustrates users
+- `signed_up` tracking now live (added 2026-04-21)
 
-**NotebookLM verdict:** "You are 6 weeks in with a working engine and no fuel. Stop tinkering with the engine (product/pricing) and start pouring fuel (outreach/partnerships)."
+**This week's focus:** Fix rate limit paywall (app) + start cold outreach (manual).
 
-**This week's focus:** DISTRIBUTION — cold email at scale, educator follow-ups, AppSumo submission, founder story positioning.
+---
+
+## ⚓ Re-anchor (read this if you're feeling lost)
+
+If you're not sure where to put energy, the answer is **always**:
+
+1. **Priority #0** — rate limit paywall (app repo). 34 wasted upgrade-moments per week. Fixing this is the single highest-ROI thing in the entire project.
+2. **Priority #1** — cold email outreach. You cannot delegate this. 50-100 emails/day is the path to 10 paying users.
+
+**SEO is not the bottleneck.** It is producing 8021 imp / 32 clicks/month, but at 37% free→paid conversion the bottleneck is not traffic, it's distribution + paywall. Don't let SEO eat the day unless those two are blocked.
+
+---
+
+## 📅 Scheduled check-ins
+
+- **~2026-05-06** — Run `/gsc-review` to measure CTR effect of 2 title rewrites shipped 2026-04-26 (commit d78ceb2): `/etsy-20mb-file-limit` and `/etsy-bookmark-size`. Baseline: pos 8.0 / 0.1% CTR (20mb), pos 14.8 / 0% CTR (bookmark). If CTR moved up, replicate pattern on 3-5 more pages.
+
+---
+
+## What Claude Can Do vs. What You Must Do Manually
+
+### Claude (this repo + MCP tools)
+- SEO page builds via `/seo-run-week`
+- Hero copy rewrite ("No Photoshop" positioning)
+- "Full canvas scaling" one-liner on pricing page
+- Weekly GSC/intelligence pipeline
+- Social content pipeline
+- PostHog analysis + reporting
+
+### Claude (app repo — brief app-Claude)
+- Rate limit paywall UX → upgrade moment
+- Rage click investigation via PostHog session recordings
+
+### You (manual — cannot be delegated)
+- Cold email outreach to power sellers
+- Educator follow-up emails
+- Any personal response to customers/support
 
 ---
 
 ## Priority Stack
+
+### 0. Rate Limit Paywall → Upgrade Moment — TOP PRODUCT PRIORITY (app repo)
+
+**Hvorfor:** 34 brukere traff gratis-grensen i én uke (apr 12–18). Null oppgraderte. De forsvant. Folk som treffer rate limit har *bevist* at de bruker produktet — det er det beste tidspunktet å selge Pro. I dag vises sannsynligvis bare en feilmelding.
+
+**Hva det skal bli:**
+> "Du har brukt alle 5 eksportene dine i dag. Oppgrader til Pro for ubegrenset eksport."
+> [Oppgrader — $11.99/mnd] [Ikke nå]
+
+**Brief til app-Claude:** Finn hvor `rate_limit_hit` PostHog-eventet fires i appen. Erstatt error-tilstanden med en inline upgrade-prompt: verdi + pris + CTA-knapp som sender til `/billing`. Legg til `rate_limit_upgrade_shown` PostHog-event.
+
+**Suksesskriterium:** ≥10% av rate_limit_hit → upgrade_clicked innen 30 dager.
+
+---
 
 ### 1. Cold Email to Power Sellers — TOP PRIORITY (manual — you do this)
 **Why:** Fastest path to 10 paying users. Direct outreach to validated ICP. NotebookLM: "Look specifically for high-volume quote/typography sellers with 100+ listings — validated as ideal Pro candidates."
@@ -44,14 +94,12 @@
 - [ ] If any respond → Free Pro forever + 25% recurring commission + /ref/[name] link
 - [ ] Update `marketing/outreach/outreach-tracker.json` with dates
 
-### 3. AppSumo Submission — Next Burst Channel
-**Why:** PH is done. AppSumo is the next big burst lever — 200-2000 users in 30 days. Use for reviews/social proof, not MRR.
-**Decision (updated 2026-04-07):** Submit now. PH is complete.
-- [ ] Research AppSumo submission process and requirements
-- [ ] Prepare listing: screenshots, description, feature list
-- [ ] Set lifetime deal: $29 one-time, capped at 500 codes
-- [ ] Submit application
-- **Target:** 200-500 lifetime users, 50+ reviews, social proof for landing page
+### 3. Hero Copy Rewrite — "No Photoshop" Positioning (Claude — this repo)
+
+**Hvorfor:** Firecrawl-research bekreftet at konkurrenten er Photoshop/Canva-kompleksitet, ikke et annet SaaS. Hero kommuniserer ikke dette. ICP har aldri åpnet Photoshop og vil aldri gjøre det.
+
+- [ ] Oppdater hero-subheadline på homepage: "No Photoshop. No Canva. One upload — every print size, ready for Etsy."
+- [ ] Legg til én setning på `/pricing`: "SnapToSize scales your full canvas — no cropping, no lost corner details."
 
 ### 4. Founder Story on Landing Page — DONE
 **Status:** Completed 2026-04-07. Rewritten as "Loved by Etsy buyers" social proof section with 6 real reviews + artwork strip. No NordicCrafters promotion. Full homepage overhaul deployed (hero, timesaved, authority, how-it-works, trust, pricing, footer all polished).
