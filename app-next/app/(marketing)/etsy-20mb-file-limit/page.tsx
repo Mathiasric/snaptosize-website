@@ -11,29 +11,29 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "Etsy 20MB File Limit: Fix It in 2 Minutes (Free Tool Inside)",
+  title: "Etsy File Size Limit 2026: 20 MB × 5 Files Per Listing (Fix Guide)",
   description:
-    "Etsy rejects files over 20MB. Here are 3 fixes that work instantly — compress, resize, or split. No Photoshop needed. Used by 1,000+ sellers.",
+    "Etsy's 2026 limit: 20 MB per file, 5 files per listing. Three proven fixes for files that won't upload — compress, resize, or split into ratio packs. No Photoshop needed.",
   alternates: { canonical: "https://snaptosize.com/etsy-20mb-file-limit" },
   openGraph: {
-    title: "Etsy 20MB File Limit: Fix It in 2 Minutes (Free Tool Inside)",
+    title: "Etsy File Size Limit 2026: 20 MB × 5 Files Per Listing (Fix Guide)",
     description:
-      "Etsy rejects files over 20MB. Here are 3 fixes that work instantly — compress, resize, or split. No Photoshop needed.",
+      "Etsy's 2026 limit: 20 MB per file, 5 files per listing. Three proven fixes for files that won't upload — compress, resize, or split into ratio packs.",
     url: "https://snaptosize.com/etsy-20mb-file-limit",
     images: [
       {
         url: "/assets/og/etsy-20mb-file-limit.png",
         width: 1200,
         height: 630,
-        alt: "Etsy 20MB file size limit guide — Complete solution",
+        alt: "Etsy file size limit 2026 — 20 MB × 5 files guide",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Etsy 20MB File Limit: Fix It in 2 Minutes (Free Tool Inside)",
+    title: "Etsy File Size Limit 2026: 20 MB × 5 Files Per Listing",
     description:
-      "Hit Etsy's 20MB upload limit? These 3 proven fixes shrink your files instantly without losing print quality.",
+      "Etsy's 2026 limit: 20 MB per file, 5 files per listing. Three proven fixes when your file won't upload.",
     images: ["/assets/og/etsy-20mb-file-limit.png"],
   },
 };

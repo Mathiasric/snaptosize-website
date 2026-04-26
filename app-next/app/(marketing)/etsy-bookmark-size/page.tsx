@@ -11,29 +11,29 @@ import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
-  title: "Etsy Bookmark Size: Exact Dimensions & Pixels (2026)",
+  title: "Standard Bookmark Size in Pixels: 600 × 1800 px (2 × 6 in / 51 × 152 mm)",
   description:
-    'Standard Etsy bookmark sizes: 2×6" (600×1800px at 300 DPI), 2×7", 2×8.5". Print-ready guide for Etsy sellers — pixels, DPI, file format, and layout tips.',
+    'Standard bookmark size is 2 × 6 in (600 × 1800 px at 300 DPI / 51 × 152 mm). Full chart for 2×7", 2×8.5", and oversized — print-ready specs for Etsy, Canva, and home printing.',
   alternates: { canonical: "https://snaptosize.com/etsy-bookmark-size" },
   openGraph: {
-    title: "Etsy Bookmark Size: Exact Dimensions & Pixels | SnapToSize",
+    title: "Standard Bookmark Size in Pixels: 600 × 1800 px (2 × 6 in)",
     description:
-      'Standard Etsy bookmark sizes: 2×6" (600×1800px at 300 DPI), 2×7", 2×8.5". Print-ready guide for Etsy sellers.',
+      'Standard bookmark size is 2 × 6 in (600 × 1800 px at 300 DPI / 51 × 152 mm). Full chart for 2×7", 2×8.5", plus print-ready specs for Etsy and Canva.',
     url: "https://snaptosize.com/etsy-bookmark-size",
     images: [
       {
         url: "/assets/og/etsy-bookmark-size.png",
         width: 1200,
         height: 630,
-        alt: "Etsy Bookmark Size — Exact Dimensions & Pixels at 300 DPI",
+        alt: "Standard bookmark size in pixels — 600 × 1800 px at 300 DPI",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Etsy Bookmark Size: Exact Dimensions & Pixels (2026)",
+    title: "Standard Bookmark Size: 600 × 1800 px (2 × 6 in / 51 × 152 mm)",
     description:
-      'Standard Etsy bookmark sizes: 2×6" (600×1800px), 2×7", 2×8.5". Print-ready guide for Etsy sellers.',
+      'Standard bookmark is 2 × 6 in (600 × 1800 px at 300 DPI). Full chart in pixels, mm, and inches.',
     images: ["/assets/og/etsy-bookmark-size.png"],
   },
 };
@@ -259,11 +259,14 @@ export default function EtsyBookmarkSizePage() {
       {/* ===== MAIN CONTENT ===== */}
       <div className="py-16 md:py-20"><Container><div className="space-y-16">
         {/* Quick Answer */}
-        <QuickAnswer question="What size should Etsy bookmarks be?">
-          The standard Etsy bookmark size is <strong>2×6 inches</strong> (600×1800 px at
-          300 DPI). For longer bookmarks, use 2×7&quot; (600×2100 px) or 2×8.5&quot; (600×2550 px).
-          Save as JPG at 300 DPI for print-ready files. If you need die-cut shapes with
-          transparent backgrounds, create those in your design software before exporting.
+        <QuickAnswer question="What is the standard bookmark size?">
+          The standard bookmark size is <strong>2 × 6 inches</strong> —
+          that&apos;s <strong>600 × 1800 pixels</strong> at 300 DPI, or{" "}
+          <strong>51 × 152 mm</strong>. Longer formats:{" "}
+          2 × 7&quot; (600 × 2100 px / 51 × 178 mm) and{" "}
+          2 × 8.5&quot; (600 × 2550 px / 51 × 216 mm). Save as JPG at 300 DPI
+          for print-ready files. For die-cut shapes with transparent backgrounds,
+          create those in your design software before exporting.
         </QuickAnswer>
 
         {/* Intro */}
