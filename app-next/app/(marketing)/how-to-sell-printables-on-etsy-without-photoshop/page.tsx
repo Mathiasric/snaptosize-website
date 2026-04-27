@@ -20,17 +20,17 @@ import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
   title:
-    "How to Sell Printables on Etsy Without Photoshop | SnapToSize",
+    "Sell Etsy Printables Without Photoshop: Step-by-Step (2026)",
   description:
-    "You don't need Photoshop to sell professional digital wall art on Etsy. Learn the complete workflow — from Canva or Procreate to 30 print sizes in seconds with SnapToSize.",
+    "You don't need Photoshop to sell printables on Etsy. Here's how to create, resize, and package all 30 print sizes — free tools, no design skills required.",
   alternates: {
     canonical:
       "https://snaptosize.com/how-to-sell-printables-on-etsy-without-photoshop",
   },
   openGraph: {
-    title: "How to Sell Printables on Etsy Without Photoshop",
+    title: "Sell Etsy Printables Without Photoshop: Step-by-Step (2026)",
     description:
-      "You don't need Photoshop to sell professional digital wall art on Etsy. Learn the complete workflow — from Canva or Procreate to 30 print sizes in seconds.",
+      "You don't need Photoshop to sell printables on Etsy. Here's how to create, resize, and package all 30 print sizes — free tools, no design skills required.",
     url: "https://snaptosize.com/how-to-sell-printables-on-etsy-without-photoshop",
     images: [
       {
@@ -43,9 +43,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "How to Sell Printables on Etsy Without Photoshop",
+    title: "Sell Etsy Printables Without Photoshop: Step-by-Step (2026)",
     description:
-      "You don't need Photoshop to sell professional digital wall art on Etsy. Learn the complete workflow — from Canva or Procreate to 30 print sizes in seconds.",
+      "You don't need Photoshop to sell printables on Etsy. Here's how to create, resize, and package all 30 print sizes — free tools, no design skills required.",
     images: [
       "/assets/og/how-to-sell-printables-on-etsy-without-photoshop.png",
     ],
@@ -63,7 +63,7 @@ export default function HowToSellPrintablesWithoutPhotoshopPage() {
     image:
       "https://snaptosize.com/assets/og/how-to-sell-printables-on-etsy-without-photoshop.png",
     datePublished: "2026-03-15",
-    dateModified: "2026-03-15",
+    dateModified: "2026-04-27",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -147,7 +147,7 @@ export default function HowToSellPrintablesWithoutPhotoshopPage() {
   };
 
   const appUrl =
-    "https://app.snaptosize.com?source=seo_no_photoshop&kind=guide";
+    "https://app.snaptosize.com?source=seo_without-photoshop&kind=guide";
 
   return (
     <>
