@@ -12,16 +12,16 @@ import { QuickAnswer } from "@/components/QuickAnswer";
 import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 
 export const metadata: Metadata = {
-  title: "SnapToSize vs Canva for Etsy Print Resizing",
+  title: "SnapToSize vs Canva for Etsy Printables: All 30 Sizes from One Upload (2026)",
   description:
-    "Compare SnapToSize and Canva for resizing Etsy printable art. See why sellers use both — design in Canva, produce all print sizes in seconds.",
+    "Canva resizes one image at a time and auto-crops your artwork. SnapToSize generates all 30 Etsy print sizes from one upload — no cropping, no manual work.",
   alternates: {
     canonical: "https://snaptosize.com/snaptosize-vs-canva",
   },
   openGraph: {
-    title: "SnapToSize vs Canva for Etsy Print Resizing",
+    title: "SnapToSize vs Canva for Etsy Printables: All 30 Sizes from One Upload (2026)",
     description:
-      "Design in Canva, produce in SnapToSize. Compare the two tools Etsy sellers use to create and resize printable wall art.",
+      "Canva resizes one image at a time and auto-crops your artwork. SnapToSize generates all 30 Etsy print sizes from one upload — no cropping, no manual work.",
     url: "https://snaptosize.com/snaptosize-vs-canva",
     images: [
       {
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SnapToSize vs Canva for Etsy Print Resizing",
+    title: "SnapToSize vs Canva for Etsy Printables: All 30 Sizes from One Upload (2026)",
     description:
-      "Design in Canva, produce in SnapToSize. Compare the two tools for Etsy printable wall art.",
+      "Canva resizes one image at a time and auto-crops your artwork. SnapToSize generates all 30 Etsy print sizes from one upload — no cropping, no manual work.",
     images: ["/assets/og/snaptosize-vs-canva.png"],
   },
 };
@@ -45,12 +45,12 @@ export default function SnapToSizeVsCanvaPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "SnapToSize vs Canva for Etsy Print Resizing",
+    headline: "SnapToSize vs Canva for Etsy Printables: All 30 Sizes from One Upload",
     description:
-      "Compare SnapToSize and Canva for resizing Etsy printable wall art. Design in Canva, produce all print sizes in seconds with SnapToSize.",
+      "Canva resizes one image at a time and auto-crops your artwork. SnapToSize generates all 30 Etsy print sizes from one upload — no cropping, no manual work.",
     url: "https://snaptosize.com/snaptosize-vs-canva",
     datePublished: "2026-03-28",
-    dateModified: "2026-04-14",
+    dateModified: "2026-04-27",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
