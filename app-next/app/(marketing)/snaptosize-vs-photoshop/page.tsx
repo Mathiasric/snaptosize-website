@@ -13,14 +13,14 @@ import { QuickAnswer } from "@/components/QuickAnswer";
 export const metadata: Metadata = {
   title: "Resize Etsy Prints Without Photoshop — SnapToSize (2026)",
   description:
-    "Photoshop costs $55/month and takes hours to learn. SnapToSize resizes your artwork to all 30 Etsy print sizes in seconds — no software, no design skills, 300 DPI guaranteed.",
+    "Photoshop costs $55/month and takes years to learn. SnapToSize generates all 30 Etsy print sizes from one upload — no software, no design skills, 300 DPI.",
   alternates: {
     canonical: "https://snaptosize.com/snaptosize-vs-photoshop",
   },
   openGraph: {
     title: "Resize Etsy Prints Without Photoshop — SnapToSize (2026)",
     description:
-      "Photoshop costs $55/month and takes hours to learn. SnapToSize resizes your artwork to all 30 Etsy print sizes in seconds — no software, no design skills, 300 DPI guaranteed.",
+      "Photoshop costs $55/month and takes years to learn. SnapToSize generates all 30 Etsy print sizes from one upload — no software, no design skills, 300 DPI.",
     url: "https://snaptosize.com/snaptosize-vs-photoshop",
     images: [
       {
@@ -46,7 +46,7 @@ export default function SnapToSizeVsPhotoshopPage() {
     "@type": "Article",
     headline: "Resize Etsy Prints Without Photoshop — SnapToSize vs Photoshop",
     description:
-      "Photoshop costs $55/month and takes hours to learn. SnapToSize resizes your artwork to all 30 Etsy print sizes in seconds — no software, no design skills, 300 DPI guaranteed.",
+      "Photoshop costs $55/month and takes years to learn. SnapToSize generates all 30 Etsy print sizes from one upload — no software, no design skills, 300 DPI.",
     url: "https://snaptosize.com/snaptosize-vs-photoshop",
     datePublished: "2026-03-29",
     dateModified: "2026-04-27",
