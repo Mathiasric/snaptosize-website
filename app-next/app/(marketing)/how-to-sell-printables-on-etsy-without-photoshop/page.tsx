@@ -431,6 +431,38 @@ export default function HowToSellPrintablesWithoutPhotoshopPage() {
               </p>
             </div>
 
+            {/* --- 3-Step Workflow Visual --- */}
+            <div>
+              <p className="text-sm font-semibold text-accent-light uppercase tracking-wider mb-4">
+                The no-Photoshop workflow
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                {[
+                  {
+                    step: "1",
+                    label: "Create your artwork",
+                    detail: "Use any tool — Canva, Procreate, Illustrator, or AI art generators. Export as PNG or JPG at high resolution.",
+                  },
+                  {
+                    step: "2",
+                    label: "Upload to SnapToSize",
+                    detail: "One upload generates all 30 Etsy print sizes at 300 DPI — across 5 ratio packs, no cropping, no manual work.",
+                  },
+                  {
+                    step: "3",
+                    label: "Upload ZIPs to Etsy",
+                    detail: "Download 5 professionally named ratio ZIPs, each under 20MB. Upload directly to your Etsy listing and start selling.",
+                  },
+                ].map(({ step, label, detail }) => (
+                  <div key={step} className="rounded-xl border border-border bg-card p-5">
+                    <div className="text-3xl font-bold text-accent-light mb-3">{step}</div>
+                    <p className="font-semibold text-foreground text-sm mb-2">{label}</p>
+                    <p className="text-xs text-foreground-60 leading-relaxed">{detail}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
             {/* --- Section 2: Start With Any Design Tool --- */}
             <div>
               <div className="flex items-center gap-3 mb-4">

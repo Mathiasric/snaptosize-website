@@ -818,6 +818,43 @@ export default function SnapToSizeVsPhotoshopPage() {
               </div>
             </div>
 
+            {/* --- Before/After Workflow Visual --- */}
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6">
+                The Workflow Difference
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="rounded-xl border border-red-500/20 bg-red-500/5 p-6">
+                  <p className="font-semibold text-foreground mb-4 flex items-center gap-2">
+                    <span className="text-red-400">✗</span> With Photoshop
+                  </p>
+                  <ol className="text-sm text-foreground-60 space-y-2 list-decimal list-inside">
+                    <li>Open image in Photoshop ($55/mo subscription)</li>
+                    <li>Manually resize to each of 30 sizes, one by one</li>
+                    <li>Export each file individually (30 exports)</li>
+                    <li>Rename every file to match Etsy conventions</li>
+                    <li>Manually create ZIP files for each ratio group</li>
+                    <li>Verify each ZIP stays under 20MB</li>
+                    <li>Repeat for every new design — 45–90 min each</li>
+                  </ol>
+                </div>
+                <div className="rounded-xl border border-accent/30 bg-accent/5 p-6">
+                  <p className="font-semibold text-accent-light mb-4 flex items-center gap-2">
+                    <span>✓</span> With SnapToSize
+                  </p>
+                  <ol className="text-sm text-foreground-60 space-y-2 list-decimal list-inside">
+                    <li>Upload one high-resolution image (free plan available)</li>
+                    <li>SnapToSize generates all 30 sizes — no cropping, ever</li>
+                    <li>Download 5 ratio ZIPs, each under 20MB</li>
+                    <li>Professional file naming included automatically</li>
+                    <li>300 DPI guaranteed on every file</li>
+                    <li>Upload directly to Etsy — done</li>
+                    <li>Total time: under 30 seconds</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
             {/* --- Section 4: Where Photoshop Wins --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
