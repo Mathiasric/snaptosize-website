@@ -12,14 +12,14 @@ import { QuickAnswer } from "@/components/QuickAnswer";
 import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 
 export const metadata: Metadata = {
-  title: "SnapToSize vs Canva for Etsy Printables: All 30 Sizes from One Upload (2026)",
+  title: "SnapToSize vs Canva for Etsy: 30 Sizes from One Upload (2026)",
   description:
     "Canva resizes one image at a time and auto-crops your artwork. SnapToSize generates all 30 Etsy print sizes from one upload — no cropping, no manual work.",
   alternates: {
     canonical: "https://snaptosize.com/snaptosize-vs-canva",
   },
   openGraph: {
-    title: "SnapToSize vs Canva for Etsy Printables: All 30 Sizes from One Upload (2026)",
+    title: "SnapToSize vs Canva for Etsy: 30 Sizes from One Upload (2026)",
     description:
       "Canva resizes one image at a time and auto-crops your artwork. SnapToSize generates all 30 Etsy print sizes from one upload — no cropping, no manual work.",
     url: "https://snaptosize.com/snaptosize-vs-canva",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SnapToSize vs Canva for Etsy Printables: All 30 Sizes from One Upload (2026)",
+    title: "SnapToSize vs Canva for Etsy: 30 Sizes from One Upload (2026)",
     description:
       "Canva resizes one image at a time and auto-crops your artwork. SnapToSize generates all 30 Etsy print sizes from one upload — no cropping, no manual work.",
     images: ["/assets/og/snaptosize-vs-canva.png"],
