@@ -44,13 +44,14 @@ export function calculateSlideshowDuration(slideCount: number): number {
 }
 
 /* ─── Intro ─── */
-const IntroScene: React.FC<{ hook: string; hookSub: string }> = ({
-  hook,
-  hookSub,
-}) => {
+const IntroScene: React.FC<{
+  hook: string;
+  hookSub: string;
+  colors: (typeof THEMES)[keyof typeof THEMES];
+  hookImage?: string;
+}> = ({ hook, hookSub, colors, hookImage }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const colors = THEMES.emerald;
 
   const textY = spring({
     frame,
@@ -71,52 +72,66 @@ const IntroScene: React.FC<{ hook: string; hookSub: string }> = ({
   );
 
   return (
-    <AbsoluteFill
-      style={{
-        justifyContent: "center",
-        alignItems: "center",
-        opacity: exitOpacity,
-      }}
-    >
-      <Img
-        src={staticFile("logo-240x240.png")}
+    <AbsoluteFill style={{ opacity: exitOpacity }}>
+      {hookImage && (
+        <Img
+          src={staticFile(hookImage)}
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+        />
+      )}
+      <AbsoluteFill
         style={{
-          width: 72,
-          height: 72,
-          borderRadius: 16,
-          marginBottom: 40,
-          transform: `scale(${textY})`,
-        }}
-      />
-      <div
-        style={{
-          fontFamily: BRAND.fonts.heading,
-          fontSize: 72,
-          fontWeight: 800,
-          color: colors.textWhite,
-          textAlign: "center",
-          lineHeight: 1.15,
-          opacity: textOpacity,
-          transform: `translateY(${interpolate(textY, [0, 1], [40, 0])}px)`,
-          maxWidth: 900,
-          padding: "0 48px",
-          whiteSpace: "pre-line",
+          background: hookImage
+            ? "linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.25) 50%, rgba(0,0,0,0.75) 100%)"
+            : undefined,
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
-        {hook}
-      </div>
-      <div
-        style={{
-          fontFamily: BRAND.fonts.body,
-          fontSize: 32,
-          color: colors.textMuted,
-          textAlign: "center",
-          marginTop: 28,
-          opacity: subOpacity,
-        }}
-      >
-        {hookSub}
-      </div>
+        {!hookImage && (
+          <Img
+            src={staticFile("logo-240x240.png")}
+            style={{
+              width: 72,
+              height: 72,
+              borderRadius: 16,
+              marginBottom: 40,
+              transform: `scale(${textY})`,
+            }}
+          />
+        )}
+        <div
+          style={{
+            fontFamily: BRAND.fonts.heading,
+            fontSize: hookImage ? 80 : 72,
+            fontWeight: 800,
+            color: colors.textWhite,
+            textAlign: "center",
+            lineHeight: 1.15,
+            opacity: textOpacity,
+            transform: `translateY(${interpolate(textY, [0, 1], [40, 0])}px)`,
+            maxWidth: 900,
+            padding: "0 48px",
+            whiteSpace: "pre-line",
+            textShadow: hookImage ? "0 2px 20px rgba(0,0,0,0.8)" : undefined,
+          }}
+        >
+          {hook}
+        </div>
+        <div
+          style={{
+            fontFamily: BRAND.fonts.body,
+            fontSize: 32,
+            color: hookImage ? "rgba(255,255,255,0.85)" : colors.textMuted,
+            textAlign: "center",
+            marginTop: 28,
+            opacity: subOpacity,
+            textShadow: hookImage ? "0 1px 10px rgba(0,0,0,0.7)" : undefined,
+          }}
+        >
+          {hookSub}
+        </div>
+      </AbsoluteFill>
     </AbsoluteFill>
   );
 };
@@ -372,7 +387,7 @@ export const SlideshowVertical: React.FC<SlideshowVerticalProps> = ({
       />
 
       <Sequence from={0} durationInFrames={INTRO_DURATION}>
-        <IntroScene hook={hook} hookSub={hookSub} />
+        <IntroScene hook={hook} hookSub={hookSub} colors={colors} hookImage={slides[0]?.image} />
       </Sequence>
 
       {slides.map((slide, i) => {
