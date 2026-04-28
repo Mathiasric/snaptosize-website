@@ -19,8 +19,11 @@ You are activating the **Pipeline Orchestrator** — the single entry point for 
 **Target per day: 3 Pinterest + 1 Instagram = 4 items total.**
 
 ### Tool mix (hard rule)
-- **2 Gemini lifestyle pins** (Pinterest only, 2:3) — aspirational, styled scenes, app visible on screen when relevant
+- **1 Gemini lifestyle pin** (Pinterest only, 2:3) — aspirational, styled scenes, app visible on screen when relevant
+- **1 size-reference pin** (Pinterest, 2:3) — React strong template preferred (NeonPackShowcase, BrightPackShowcase) showing explicit sizes/packs. Use Gemini only if no fresh template+artwork combo is available.
 - **2 React social-slide screenshots** — 1 Pinterest + 1 Instagram, must use strong templates
+
+> **Why the mix:** Analytics show "Complete Guide + explicit size list" Pinterest pins earn 5–10x more impressions than lifestyle-only content. Size-reference content earns algorithmic distribution; lifestyle earns saves. Pain/before-after: max 1 per 3-day window — do NOT ban, but don't let it dominate.
 
 ### Artwork uniqueness (hard rule)
 Before picking a template + artwork combo for a React slide, scan existing content folders:
@@ -30,10 +33,11 @@ grep -r '"artwork"' marketing/social/content/ marketing/social/archive/ | grep '
 Never reuse the same `template + artwork` combo that has already shipped. Rotate through fresh artwork from `app-next/public/assets/listings/` (owl, mysthical_portal, littledeerquote, slothing_through_life, landscpae_line_art_bears, anime-hero, wildflower_botanical_art, geometric_colorful art — check archive before picking).
 
 ### Template strength rules
-- **Strong (use freely):** `NeonPackShowcase`, `RatioSplitShowcase`, `RatioProofShowcase`, `BrightPackShowcase`, `StatsCard`, `Checklist`
+- **Strong (use freely):** `NeonPackShowcase`, `RatioSplitShowcase`, `RatioProofShowcase`, `BrightPackShowcase`, `StatsCard`
 - **WorkflowSteps — CAUTION:** Has hardcoded poppies artwork (`/assets/Composition_Pictures/poppies_orginal_2x3.jpg`). Do NOT use as standalone post — it's been used multiple times. Only valid for Remotion video source.
-- **Weak (do NOT ship alone):** `PainSolutionSlide` — text-heavy, no real artwork. Skip unless paired with a product demo or real visual.
-- Every React slide MUST show real product artwork from `/assets/listings/` or teach specific data. No text-only panels.
+- **❌ NEVER SHIP (text-only, no artwork):** `PainSolutionSlide`, `Checklist` — these have no product images and will NOT convert. Use Gemini prompt library instead for any concept that would go on these templates.
+- Every React slide MUST show real product artwork from `/assets/listings/`. No exceptions. If you can't pair a concept with real artwork, generate a Gemini image instead.
+- **Self-rate before shipping:** Score each item 1–10. Only ship items you rate ≥8. If unsure, score it 6 and use Gemini from prompt library instead.
 
 ### File naming (hard rule)
 Content file name MUST match the folder slug, not `pin.png`/`post.png`.
@@ -43,7 +47,7 @@ QA accepts any `*.png/.jpg/.webp` in the folder, but the scheduler relies on `me
 ### Daily flow
 1. Initialize or reuse current week batch (`--init --week W{current}`)
 2. Pick 4 topics following LESSON-087 angles (Pain→Solution, Contrast, Benefit-first, Data-hook)
-3. Generate 2 Gemini lifestyle pins using Mal A/B/C from the prompt templates below
+3. Generate 2 Gemini images using prompts from `marketing/social/GEMINI_PROMPT_LIBRARY.md` — check cooldown table at bottom of that file before picking. Never use inline prompt templates below when library has an available option.
 4. Screenshot 2 React slides with verified-unused template+artwork combos
 5. Write `metadata.json` for each (id format: `W{WW}-P01..P03`, `W{WW}-I01`)
 6. Register items in pipeline state, advance to `qa`
@@ -52,6 +56,8 @@ QA accepts any `*.png/.jpg/.webp` in the folder, but the scheduler relies on `me
    - Verify `snaptosize.com` or `app.snaptosize.com` is legible in every image
    - Compare visually against last 7 days of published content (check `content/` + `archive/`) — no near-duplicate images
    - Every React slide must show actual product artwork (not hardcoded placeholder)
+   - **Rate every item 1–10 before showing to user.** Items below 8/10 must be regenerated. Be honest: text-only = 3/10, lifestyle without branding = 4/10, good React with artwork = 8/10, great Gemini from prompt library = 9/10.
+   - **Zero text-only slides.** If a React slide has no `/assets/listings/` artwork visible, discard it and use a Gemini prompt library image instead.
 8. Pause for user QA review → schedule on approval
 
 ## Before Starting
@@ -278,14 +284,58 @@ python marketing/social/run-pipeline.py --status
 4. Re-run creation step with alternative tool
 5. Re-run QA
 
+## Metadata — Pinterest & Instagram
+
+**Pinterest and Instagram use DIFFERENT metadata strategies. Never copy-paste between them.**
+
+### Pinterest description formula (apply to ALL new pins)
+
+Pinterest is a search engine — descriptions are indexed as keywords. Always use this structure:
+
+```
+Line 1: [Value statement — what specific sizes/data this pin covers]
+Line 2: [Explicit sizes listed: 24×36, 20×30, 18×24, 16×20, 12×16, 11×14, 8×12, 8×10, 5×7, A4, A3, A2 ...]
+Line 3: [Etsy relevance — why these sizes matter for digital download sellers]
+Line 4: [SnapToSize connection — 1 sentence max]
+Line 5: [CTA: "Save this guide →" or "Try free → app.snaptosize.com"]
+```
+
+**Title formula for size-reference pins:** Lead with "Complete Guide" or "All [N] Sizes" when the pin contains size/ratio data.
+- "Complete Guide: Etsy Print Sizes for Wall Art Sellers"
+- "All 28 Print Sizes for Your Etsy Digital Downloads"
+- "Every Print Ratio Etsy Buyers Request (Full Size List)"
+
+For lifestyle pins: keep punchy benefit title. "One Upload → 70 Print-Ready Files"
+
+**Tags:** Always include at least 2 size-specific tags for size-reference pins: `etsy print sizes`, `print size guide`, `digital download sizes`, `wall art sizes`, and specific size tags like `8x10 print`, `A4 print`.
+
+### Instagram caption formula
+
+Instagram is discovery + social. Different format:
+
+```
+Line 1: [Hook — punchy, appears in feed preview before "more"]
+
+[2-3 lines of value, line breaks for readability]
+
+#etsyseller #digitaldownloads #printsizes #wallart #etsydigital
+```
+
+- Max 5 hashtags (always at end)
+- CTA: "Link in bio → snaptosize.com"
+- Pain/before-after framing works well here
+- First line must stand alone as a scroll-stopper
+
+---
+
 ## Board Mapping (Pinterest)
 
-| Board | ID |
-|---|---|
-| Print Size Guides | `1088463872381113663` |
-| Seller Tools | `1088463872381113672` |
-| Digital Prints | `1088463872381113667` |
-| Wall Art Business | `1088463872381113671` |
+| Board | ID | Best for |
+|---|---|---|
+| Print Size Guides | `1088463872381113663` | Size charts, ratio guides, pack overviews |
+| Seller Tools | `1088463872381113672` | Lifestyle, aspirational seller content |
+| Digital Prints | `1088463872381113667` | Workflow demos, tool comparisons |
+| Wall Art Business | `1088463872381113671` | Business tips, seller workflows |
 
 ## Important Notes
 

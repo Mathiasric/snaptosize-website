@@ -3,6 +3,51 @@
 **Lest av:** Social Media Content Creator Agent, Ideator Agent
 **Autoritet:** Dette er primærkilden for alle Gemini-prompts. PINTEREST_VISUAL_GUIDE.md gjelder fortsatt for konseptvalg og QA. Denne filen gir de ferdige promptene.
 
+## ⚠️ BRUKSREGEL — PROMPTS ER TEMPLATES, IKKE FERDIGE PROMPTS
+
+Hver prompt i dette biblioteket er et **konsept-template**, ikke en ferdig gjenbrukbar prompt.
+Samme prompt brukt to ganger gir nesten identiske bilder — det er ikke akseptabelt.
+
+**Hver batch MÅ endre:**
+- Artwork-tema (botanical → abstract → coastal → geometric → etc.)
+- Komposisjonsvariasjon (split-screen → fan → step-flow → infographic → etc.)
+- Fargeaksentuering (teal dominant → white dominant → dark dominant)
+- Spesifikk hook-tekst og headlines (aldri kopier eksakt fra en tidligere batch)
+
+**Cooldown:** Hvert konsept bør ha minst 4 ukers pause før det brukes igjen.
+Se cooldown-tabellen under GJENBRUKSREGLER for sporet historikk.
+
+---
+
+## FAKTA-REGEL — Hent alle tall fra CONTENT_REFERENCE.md (LESSON-091)
+
+**Alle produkt-tall i Gemini-bilder og metadata MÅ matche `marketing/CONTENT_REFERENCE.md` ordrett. Aldri improviser.**
+
+Før du skriver eller redigerer en prompt, verifiser disse kanoniske tallene:
+
+| Fakta | Korrekt verdi | Aldri bruk |
+|-------|---------------|------------|
+| Pris månedlig | `$11.99/mo` | `$9/mo`, `$10/mo` |
+| Pris årlig | `$97/year` eller `$8.08/mo yearly` | andre tall |
+| Rabatt yearly vs monthly | `save 33%` | `save 50%`, `save 20%` |
+| Total files fra 1 upload | `up to 70 files` | `100 files`, `50 files` |
+| Sizes i packs (total) | `28 sizes in packs` | `30 sizes`, `25 sizes` |
+| 2:3 Ratio Pack | 7 sizes | ikke oppdikt per-pack tall |
+| 3:4 Ratio Pack | 5 sizes | — |
+| 4:5 Ratio Pack | 5 sizes | — |
+| ISO Pack (A-series) | `A5, A4, A3, A2, A1, A0` (6 sizes) | `A4-A0`, `+18 sizes` |
+| Extras Pack | 6 sizes | — |
+| DPI | `300 DPI` | `72 DPI`, `150 DPI` på output |
+| Input formats | `PNG · JPG · WebP` | `PDF` (ikke støttet) |
+| Output format | `JPG/JPEG` (auto under 20MB ZIP) | — |
+
+**Marketing-språk (CONTENT_REFERENCE rule):**
+- Led med "70 files" eller "30+ sizes" — aldri "28 sizes" som hovedtall (undersells)
+- Nevn "portrait & landscape" når relevant (verdi-multiplier)
+- "Packs + Quick Export = ett produkt, én upload" — aldri split som to features
+
+**Hver ny prompt MÅ ha en `CRITICAL FACTS`-seksjon bakt i prompt-teksten** som låser tallene for Gemini-modellen. Se PROMPT 7 og 8 for mønster.
+
 ---
 
 ## FILOSOFI — Direct Marketing Generation
@@ -58,6 +103,58 @@ for part in response.candidates[0].content.parts:
 ```
 
 **Ikke bruk overlay-script etterpå** — prompten genererer ferdig marketingmateriell med branding bakt inn.
+
+---
+
+## METADATA-BESKRIVELSE — Pinterest & Instagram
+
+### Pinterest description (søkeoptimalisert — ALLE pins)
+
+Pinterest er en søkemotor. Beskrivelsen er indexert som keywords. Bruk alltid denne strukturen:
+
+```
+[Linje 1: Verdi-setning — hva spesifike størrelser/data pinnen dekker]
+[Linje 2: Eksplisitte størrelser listet: 24×36, 20×30, 18×24, 16×20, 12×16, 11×14, 8×12, 8×10, 5×7, A4, A3, A2 ...]
+[Linje 3: Etsy-relevans — hvorfor disse størrelsene betyr noe for digital download-selgere]
+[Linje 4: SnapToSize-kobling — 1 setning maks]
+[Linje 5: CTA: "Save this guide →" eller "Try free → app.snaptosize.com"]
+```
+
+**Eksempel (fra best-performing pin):**
+```
+Everything Etsy wall art sellers need to know about print sizes and ratios.
+Sizes covered: 24×36, 20×30, 18×24, 16×20, 12×16, 11×14, 8×12, 8×10, 5×7, A4, A3, A2, A1 — all at 300 DPI.
+These are the exact sizes Etsy buyers search for. Include all of them to avoid refund requests.
+SnapToSize generates all 5 ratio packs from a single upload — no Photoshop needed.
+Try free → app.snaptosize.com
+```
+
+**Tittel-formula for størrelses-pins:** "Complete Guide: ..." eller "All [N] Sizes ..."
+- "Complete Guide: Etsy Print Sizes for Wall Art Sellers"
+- "All 28 Print Sizes for Your Etsy Digital Downloads"
+
+**Tittel for lifestyle-pins:** Fordel-first, kort. "One Upload → 70 Print-Ready Files"
+
+**Tags:** Alltid minst 2 størrelses-spesifikke tags: `etsy print sizes`, `print size guide`, `digital download sizes`, `wall art sizes`, og spesifikke som `8x10 print`, `A4 print`.
+
+**Lengde:** 150–300 tegn (Pinterest viser ~150 før "mer").
+
+---
+
+### Instagram caption (discovery + social)
+
+```
+[Linje 1: Hook — vises i feed-preview FØR "mer" — må stå alene som scroll-stopper]
+
+[2-3 linjer med verdi, linjeskift for lesbarhet]
+
+#etsyseller #digitaldownloads #printsizes #wallart #etsydigital
+```
+
+- Maks 5 hashtags (alltid på slutten)
+- CTA: "Link in bio → snaptosize.com"
+- Pain/before-after fungerer bra her
+- Aldri kopier Pinterest-beskrivelsen direkte — Instagram er ikke søk
 
 ---
 
@@ -257,21 +354,216 @@ Typography-driven, high contrast. Looks like a premium SaaS ad.
 
 ---
 
+## PROMPT 7 — Photoshop-fella: "$60/mo you don't need" (photoshop-trap)
+
+**Hook:** "Never opened Photoshop? Never have to."
+**Scroll-stopp:** Tar bort intimideringen — direkte på ICP-insight (2026-04-21: "Primary ICP has likely never opened Photoshop and never will")
+**Konverteringsvinkel:** Konkurrent-positioning + prisanker — $60/mo Photoshop vs $11.99/mo (eller $8.08/mo yearly) SnapToSize
+**FAKTA (fra CONTENT_REFERENCE — må brukes eksakt):** $11.99/mo eller $97/year ($8.08/mo) · 28 sizes i packs (2:3=7, 3:4=5, 4:5=5, ISO=5, Extras=6) · opp til 70 files totalt med Quick Export
+
+```
+Clean split-screen marketing graphic, vertical portrait format, 2:3 ratio (1000×1500 canvas).
+Dark premium background (#0B0B12) with subtle teal glow orbs in top-left and bottom-right corners.
+
+TOP 10%: Bold editorial headline across full width, centered:
+  Line 1 (white, large sans-serif, 96pt): "Never opened Photoshop?"
+  Line 2 (teal #2DD4BF, italic, 96pt): "Never have to."
+
+LEFT HALF (45% width, starts 12% from top):
+  Panel tilted 2° clockwise, slightly desaturated, cold blue grading.
+  Top red bar (#DC2626), white text: "$60/month · steep learning curve"
+  Center: Realistic Photoshop desktop UI fragment — dark grey interface with
+    Tools panel on left (lasso, magic wand, etc), Layers panel on right showing
+    8 stacked layers, Image Size dialog box OPEN with fields:
+      "Resolution: 72 pixels/inch" (highlighted red)
+      "Resample: Bicubic Automatic" (highlighted red)
+      "Constrain Proportions" checkbox (uncertain hover state)
+    3 yellow sticky notes stuck to screen edge:
+      "what's bicubic??"
+      "300 vs 72 DPI?"
+      "aspect ratio — LOCKED or not??"
+    Cursor hovering nervously over OK button.
+  Bottom: Grey clock icon + text "1–3 hours per artwork"
+
+RIGHT HALF (55% width, starts 12% from top):
+  Panel upright, crisp, with teal glow border (2px #2DD4BF at 40% opacity).
+  Top teal bar (#2DD4BF), white text: "$11.99/month · drag and drop"
+  Small grey caption under bar: "or $97/year · save 33%"
+  Center: SnapToSize app mockup — clean minimal UI, dark card background:
+    Large drop-zone with dashed teal border, centered icon of upload arrow:
+      "Drop your artwork here" (white, 28pt)
+      "PNG · JPG · WebP" (teal, 14pt)
+    Below drop-zone, vertical list of 5 pack rows, all with teal checkmark:
+      ✓ 2:3 Ratio Pack
+      ✓ 3:4 Ratio Pack
+      ✓ 4:5 Ratio Pack
+      ✓ ISO Pack (A-series)
+      ✓ Extras Pack
+    Thin divider, then small teal caption centered:
+      "28 sizes in packs · up to 70 files with Quick Export"
+    Solid teal button at bottom: "Resize All · 30 seconds"
+  Bottom: Teal checkmark + "70 print-ready files · Etsy-ready · No Photoshop needed"
+
+BOTTOM 7%: Centered teal rounded pill (border-radius 999px), white text:
+  "app.snaptosize.com · Free to start"
+  Subtle teal glow behind pill.
+
+Style: Premium editorial SaaS ad. Graphic design aesthetic.
+NO stock photo people. NO generic icons — real UI elements only.
+NO invented size counts per pack (real counts only if any are shown).
+Typography: Inter or similar modern sans-serif, bold for headlines, monospace for technical terms.
+High contrast, sharp edges, no gradients except on teal accents.
+```
+
+---
+
+## PROMPT 8 — Internasjonal oppvåkning: A-series unlocked (international-unlock)
+
+**Hook:** "Your Etsy shop just went global."
+**Scroll-stopp:** Growth-vinkel — ISO-sizes låser opp EU/UK/AU/APAC-kjøpere selgere ikke visste de mistet
+**Konverteringsvinkel:** Scale/revenue (ikke bare time-save) — ISO Pack = nye markeder
+**FAKTA (fra CONTENT_REFERENCE):** ISO Pack = 5 sizes (A4, A3, A2, A1, A0) · alle 300 DPI · del av pakken man får med 1 upload · opp til 70 files totalt med Quick Export
+
+```
+Photorealistic marketing composition, vertical portrait format, 2:3 ratio (1000×1500 canvas).
+Premium deep navy background (#0A0F1E) with soft warm gold accent lighting from upper-right.
+
+TOP 15%: Bold editorial headline, centered:
+  Line 1 (white, serif or modern sans, 88pt): "Your Etsy shop"
+  Line 2 (teal-to-gold gradient, italic bold, 88pt): "just went global."
+  Small grey subtitle (20pt): "ISO paper sizes unlocked · A4 · A3 · A2 · A1 · A0"
+
+CENTER 58%: Layered isometric composition, three zones.
+
+  LEFT ZONE (30% width): Floating stack of printed posters rising diagonally.
+    Each poster shows a real-looking botanical or abstract art print, with
+    crisp size label visible in lower corner of each:
+      Bottom: A4 (210×297 mm) — cream textured paper
+      Middle-bottom: A3 (297×420 mm) — bright white
+      Middle-top: A2 (420×594 mm) — warm white
+      Top: A1 (594×841 mm) — slight shadow falling off
+    Posters float upward with subtle parallax, rotated 2-4° each.
+    Soft shallow depth of field — bottom poster crisp, top slightly soft.
+
+  CENTER ZONE (40% width): Teal/gold dotted world map silhouette (flat, graphic).
+    Arcing dotted lines connect pulsing teal dots at these cities:
+      New York → London → Paris → Berlin → Stockholm → Sydney → Tokyo
+    Above Europe, small italic text (grey, 16pt):
+      "A-series: standard in 150+ countries"
+    Small gold pulse rings expanding from each city dot.
+
+  RIGHT ZONE (30% width): Realistic Etsy listing card mockup (bright white).
+    Product thumbnail: same botanical print shown in posters.
+    "Select size" dropdown OPEN with clear hierarchy:
+      ▢ 5×7 in (US standard)
+      ▢ 8×10 in (US standard)
+      ✓ A4 (EU · UK · AU · APAC)  ← highlighted teal row
+      ✓ A3 (EU · UK · AU · APAC)  ← highlighted teal row
+      ✓ A2 (EU · UK · AU · APAC)  ← highlighted teal row
+    Below dropdown, green success chip: "✓ Now shipping worldwide"
+    Small grey text below: "ISO Pack added — same upload, same file"
+
+LOWER 20%: Three stat cards, equal width, dark cards (#151A26) with teal top border:
+  Card 1 (large teal number): "A5–A0" / small white: "ISO sizes" / small grey: "built in"
+  Card 2 (large white number): "150+" / small teal: "countries" / small grey: "use A-series"
+  Card 3 (large teal number): "70" / small white: "print-ready files" / small grey: "from 1 upload"
+
+BOTTOM 7%: Centered teal rounded pill with soft gold glow behind:
+  White text: "app.snaptosize.com · ISO Pack · Unlock global buyers"
+
+Style: Premium business magazine aesthetic, editorial photography quality.
+NO people, NO emoji globes — real flat-graphic world map silhouette only.
+Typography: modern serif for main headline, clean sans-serif for data and stats.
+Color palette: deep navy base, teal (#2DD4BF) primary, warm gold (#F5C97A) accent only.
+Subtle grain texture for premium print-magazine feel.
+```
+
+---
+
+## PROMPT 9 — Søndagshelvete: 3 timer du aldri får igjen (sunday-afternoon)
+
+**Hook:** "3 hours of your Sunday. Gone. Again."
+**Scroll-stopp:** Visceral tidssmerte — Etsy-selgere bruker helg på manuelt arbeid og vet det
+**Konverteringsvinkel:** Emosjonell tidsreturn — "get your life back" er sterkere enn "faster tool"
+
+```
+Cinematic photorealistic marketing image, vertical portrait format, 2:3 ratio (1000×1500 canvas).
+Diagonal split composition: cold blue (upper-left) transitioning to warm golden (lower-right).
+Feels like a premium brand campaign, not a stock photo.
+
+TOP 13%: Bold headline on semi-transparent dark bar across full width:
+  Line 1 (white, large bold sans, 78pt): "3 hours of your Sunday."
+  Line 2 (teal #2DD4BF, italic, 78pt, with thin teal underline): "Gone. Again."
+
+CENTER 60%: Two-panel cinematic diagonal split.
+
+  UPPER-LEFT PANEL (the pain — ~55% of center zone):
+    Overhead top-down shot of a home office desk at late Sunday afternoon.
+    Cold blue color grading, overcast window light.
+    Laptop open showing file manager: chaotic folder grid with 40+ folders labeled:
+      "5x7_final", "5x7_FINAL_use_this", "8x10_v2", "8x10_v3_fixed",
+      "11x14", "print_ready_MAYBE", "16x20_needs_check", "A4_EU", "ratios_old"...
+    Half-drunk coffee mug (cold), a few crumpled post-it notes with crossed-out
+    size dimensions. Edge of a wall clock visible, hands at 4:47 PM.
+    Subtle motion blur on a hand moving the mouse cursor.
+    Small red overlay pill, top-right of panel: "Still resizing..."
+    Desk surface cool blue-grey.
+
+  LOWER-RIGHT PANEL (the fix — ~45% of center zone):
+    Same desk, sunlit golden warmth. Clean, uncluttered.
+    Laptop shows SnapToSize confirmation screen (clean dark UI):
+      Large teal checkmark icon at top
+      "Done · 2:24 PM" (teal, bold)
+      "70 files · 5 packs · Etsy-ready" (white)
+      Download button glowing teal at bottom
+    Fresh full coffee mug steaming softly.
+    Open book face-down beside laptop (implying: user moved on with their day).
+    Warm golden afternoon light streaming from right edge.
+    Small teal pill, top-right of panel: "Sunday reclaimed."
+    Desk surface warm honey tone.
+
+  DIAGONAL DIVIDER: Sharp but organic — like a light edge, with
+    subtle teal-gold pixel shimmer along the seam.
+
+LOWER 20%: Bold centered positioning statement on teal-tinted dark card:
+  Large teal serif quote-mark ornament "
+  White text, italic serif (54pt): "Upload once. Get your Sunday back."
+  Small grey italic caption below (16pt): "That's the whole point of SnapToSize."
+  Subtle teal underline across the statement.
+
+BOTTOM 7%: Centered teal rounded pill, white text:
+  "app.snaptosize.com · 30 seconds · free to start"
+  Soft teal glow behind pill.
+
+Style: Cinematic color grading (cold blue → warm gold diagonal).
+Premium ad campaign quality, editorial storytelling.
+Photorealistic with shallow depth of field and subtle film grain.
+NO visible human faces (keeps it universal — focus on objects and environment).
+NO testimonial attribution — "Upload once, get your Sunday back" reads as a brand promise, not a customer quote.
+Typography: bold sans-serif for headline, elegant italic serif for positioning statement.
+```
+
+---
+
 ## GJENBRUKSREGLER
 
 | Konsept | Cooldown | Sist brukt |
 |---------|----------|------------|
-| folder-chaos | 4 uker | W13 |
-| missing-buyer | 4 uker | W13 |
+| folder-chaos | 4 uker | W19 (22.04) |
+| missing-buyer | 4 uker | W19 (22.04) |
 | dpi-comparison (gammel) | 4 uker | W15 |
 | en-til-mange | 4 uker | W16 |
-| galleryvegg-ratioene | 4 uker | W16 |
+| galleryvegg-ratioene | 4 uker | W20 (27.04) |
 | livsstil-den-tidrike-selgeren | 4 uker | W16 |
-| bestseller-butikken | 4 uker | W16 |
+| bestseller-butikken | 4 uker | W20 (27.04) |
 | de-5-premium-pakkene | 4 uker | W17 |
 | quote-selgeren | 4 uker | W17 |
 | det-globale-rekkevidden-iso | 4 uker | W17 |
 | 300-dpi-makrokvalitet | 4 uker | W18b |
 | en-upload-enkelheten | 4 uker | W18b |
+| stats-visual | 4 uker | W19 (21.04) |
+| photoshop-trap | 4 uker | W19 (23.04) |
+| international-unlock | 4 uker | W19 (23.04) |
+| sunday-afternoon | 4 uker | W19 (24.04) |
 
-**Klare nå:** `folder-chaos`, `missing-buyer` (W20+) · `stats-visual` (NY, aldri brukt)
+**Klare nå:** `dpi-comparison`, `en-til-mange` (W16 og eldre, cooldown utløpt) — NB: `livsstil-den-tidrike-selgeren` brukt W19 (24.04), klar igjen ~22.05 | `galleryvegg-ratioene` brukt W20 (27.04), klar igjen ~25.05 | `bestseller-butikken` brukt W20 (27.04), klar igjen ~25.05
