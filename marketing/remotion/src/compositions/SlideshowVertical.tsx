@@ -214,7 +214,7 @@ const SlideCard: React.FC<{
         >
           <Img
             src={staticFile(slide.image)}
-            style={{ width: 920, height: 550, objectFit: "cover" }}
+            style={{ width: 840, height: 500, objectFit: "cover" }}
           />
         </div>
       </div>
@@ -373,7 +373,7 @@ export const SlideshowVertical: React.FC<SlideshowVerticalProps> = ({
   return (
     <AbsoluteFill
       style={{
-        background: `linear-gradient(170deg, ${colors.bgDark} 0%, #0a1a14 50%, ${colors.bgMid} 100%)`,
+        background: `linear-gradient(170deg, ${colors.bgDark} 0%, ${colors.bgAccent} 50%, ${colors.bgMid} 100%)`,
       }}
     >
       <div

@@ -1,0 +1,377 @@
+{
+  "last_rendered": "2026-04-28",
+  "last_template": "portrait_slideshow",
+  "last_hook_indices": {
+    "portrait_slideshow": 0,
+    "info_reveal": -1,
+    "hybrid_punch": -1
+  },
+  "images": [
+    {
+      "file": "slide-missing-sizes.jpg",
+      "category": "pain",
+      "template_type": "portrait_slideshow",
+      "times_used": 3,
+      "last_used": "2026-04-18",
+      "source": "missingsizes_missingsales(11.04).jpg"
+    },
+    {
+      "file": "slide-before-after-workspace.jpg",
+      "category": "pain",
+      "template_type": "portrait_slideshow",
+      "times_used": 2,
+      "last_used": "2026-04-18",
+      "source": "2026_04_17_before_after_workspace_(17.04).jpg"
+    },
+    {
+      "file": "slide-seller-calm.jpg",
+      "category": "product",
+      "template_type": "portrait_slideshow",
+      "times_used": 4,
+      "last_used": "2026-04-18",
+      "source": "2026_04_17_seller_calm_morning(17.04).jpg"
+    },
+    {
+      "file": "slide-gallery-wall-guide.jpg",
+      "category": "aspirational",
+      "template_type": "portrait_slideshow",
+      "times_used": 3,
+      "last_used": "2026-04-18",
+      "source": "gallery-wall-sizes_(09.04).jpg"
+    },
+    {
+      "file": "slide-home-office-sizes.jpg",
+      "category": "lifestyle",
+      "template_type": "portrait_slideshow",
+      "times_used": 2,
+      "last_used": "2026-04-18",
+      "source": "home-office-art-sizes_(09.04).jpg"
+    },
+    {
+      "file": "slide-iso-global.jpg",
+      "category": "lifestyle",
+      "template_type": "portrait_slideshow",
+      "times_used": 2,
+      "last_used": "2026-04-18",
+      "source": "2026_04_18_iso_global_reach(18.04).jpg"
+    },
+    {
+      "file": "slide-landscape-sizes.jpg",
+      "category": "educational",
+      "template_type": "info_reveal",
+      "times_used": 2,
+      "last_used": "2026-04-26",
+      "source": "landscape-print-sizes_(06.04).jpg"
+    },
+    {
+      "file": "slide-living-room-sizes.jpg",
+      "category": "educational",
+      "template_type": "info_reveal",
+      "times_used": 1,
+      "last_used": "2026-04-18",
+      "source": "living_room_wall_art_sizes_buers_want(27.03).jpg"
+    },
+    {
+      "file": "slide-nursery-sizes.jpg",
+      "category": "educational",
+      "template_type": "info_reveal",
+      "times_used": 1,
+      "last_used": "2026-04-18",
+      "source": "nursery-sizes_8x10in(05.04).jpg"
+    },
+    {
+      "file": "slide-manual-vs-snap.jpg",
+      "category": "pain",
+      "template_type": "info_reveal",
+      "times_used": 2,
+      "last_used": "2026-04-26",
+      "source": "manual-vs-snaptosize_(06.04).jpg"
+    },
+    {
+      "file": "slide-one-design-5-packs.jpg",
+      "category": "product",
+      "template_type": "hybrid_punch",
+      "times_used": 2,
+      "last_used": "2026-04-28",
+      "source": "one_design_5_packs_every_buyer_covered(15.04).jpg"
+    },
+    {
+      "file": "slide-before-after.jpg",
+      "category": "pain",
+      "template_type": "hybrid_punch",
+      "times_used": 1,
+      "last_used": "2026-04-18",
+      "source": "before_after(23.03).jpg"
+    },
+    {
+      "file": "slide-manual-vs-oneclick.jpg",
+      "category": "pain",
+      "template_type": "hybrid_punch",
+      "times_used": 1,
+      "last_used": "2026-04-18",
+      "source": "manual-vs-oneclick_(08.04).jpg"
+    },
+    {
+      "file": "slide-folder-chaos.jpg",
+      "category": "pain",
+      "template_type": "hybrid_punch",
+      "times_used": 1,
+      "last_used": "2026-04-18",
+      "source": "folder_chaos(12.04).jpg"
+    },
+    {
+      "file": "slide-stop-chaos.jpg",
+      "category": "pain",
+      "template_type": "hybrid_punch",
+      "times_used": 1,
+      "last_used": "2026-04-18",
+      "source": "stop_the_chaos(14.04).jpg"
+    },
+    {
+      "file": "slide-upload-once-every-size.jpg",
+      "category": "product",
+      "template_type": "hybrid_punch",
+      "times_used": 1,
+      "last_used": "2026-04-18",
+      "source": "upload_once_sell_every_size(15.04).jpg"
+    },
+    {
+      "file": "slide-5packs-70files.jpg",
+      "category": "product",
+      "template_type": "hybrid_punch",
+      "times_used": 1,
+      "last_used": "2026-04-18",
+      "source": "5packs_70files(25.03).jpg"
+    },
+    {
+      "file": "slide-more-sizes-more-sales.jpg",
+      "category": "product",
+      "template_type": "hybrid_punch",
+      "times_used": 1,
+      "last_used": "2026-04-18",
+      "source": "more_sizes_more_sales(27.03).jpg"
+    },
+    {
+      "file": "slide-same-file-every-frame.jpg",
+      "category": "product",
+      "template_type": "hybrid_punch",
+      "times_used": 1,
+      "last_used": "2026-04-18",
+      "source": "2026_04_21_same_file_every_frame_(15.04).jpg"
+    },
+    {
+      "file": "slide-buyer-left-missing-size.png",
+      "category": "pain",
+      "template_type": "portrait_slideshow",
+      "times_used": 2,
+      "last_used": "2026-04-28",
+      "source": "pinterest 2026-04-22 buyer-left-missing-size"
+    },
+    {
+      "file": "slide-sunday-reclaimed.png",
+      "category": "lifestyle",
+      "template_type": "portrait_slideshow",
+      "times_used": 2,
+      "last_used": "2026-04-28",
+      "source": "pinterest 2026-04-24 sunday-afternoon"
+    },
+    {
+      "file": "slide-international-unlock.png",
+      "category": "aspirational",
+      "template_type": "portrait_slideshow",
+      "times_used": 2,
+      "last_used": "2026-04-28",
+      "source": "pinterest 2026-04-23 international-unlock"
+    },
+    {
+      "file": "slide-misty-lake-ratios.jpg",
+      "category": "product",
+      "template_type": "portrait_slideshow",
+      "times_used": 1,
+      "last_used": "2026-04-24",
+      "source": "pinterest 2026-04-24 bright-minimalist (Misty Lake ratio proof)"
+    },
+    {
+      "file": "slide-photoshop-trap.png",
+      "category": "pain",
+      "template_type": "portrait_slideshow",
+      "times_used": 1,
+      "last_used": "2026-04-28",
+      "source": "pinterest/2026-04-23-photoshop-trap"
+    },
+    {
+      "file": "slide-bohemian-studio-5packs.png",
+      "category": "product",
+      "template_type": "portrait_slideshow",
+      "times_used": 1,
+      "last_used": "2026-04-28",
+      "source": "pinterest/2026-04-22-bohemian-studio-5packs"
+    },
+    {
+      "file": "slide-sunday-afternoon.png",
+      "category": "lifestyle",
+      "template_type": "portrait_slideshow",
+      "times_used": 1,
+      "last_used": "2026-04-28",
+      "source": "pinterest/2026-04-24-sunday-afternoon"
+    },
+    {
+      "file": "slide-stop-losing-buyers.png",
+      "category": "pain",
+      "template_type": "portrait_slideshow",
+      "times_used": 1,
+      "last_used": "2026-04-28",
+      "source": "instagram/2026-04-21-stop-losing-buyers"
+    },
+    {
+      "file": "slide-canva-etsy-flow.png",
+      "category": "educational",
+      "template_type": "info_reveal",
+      "times_used": 1,
+      "last_used": "2026-04-26",
+      "source": "pinterest/2026-04-26-canva-to-etsy-flow"
+    },
+    {
+      "file": "slide-gallery-wall-sizes.png",
+      "category": "educational",
+      "template_type": "info_reveal",
+      "times_used": 1,
+      "last_used": "2026-04-26",
+      "source": "pinterest/2026-04-26-gallery-wall-sizes"
+    },
+    {
+      "file": "slide-pack-fan-reveal.png",
+      "category": "product",
+      "template_type": "hybrid_punch",
+      "times_used": 1,
+      "last_used": "2026-04-28",
+      "source": "pinterest/2026-04-26-pack-fan-reveal"
+    },
+    {
+      "file": "slide-wildflower-neon-pack.png",
+      "category": "product",
+      "template_type": "portrait_slideshow",
+      "times_used": 1,
+      "last_used": "2026-04-28",
+      "source": "pinterest/2026-04-27-wildflower-neon-pack-pinterest"
+    },
+    {
+      "file": "slide-five-packs-premium.png",
+      "category": "product",
+      "template_type": "portrait_slideshow",
+      "times_used": 1,
+      "last_used": "2026-04-28",
+      "source": "pinterest/2026-04-28-five-packs-premium-pinterest"
+    },
+    {
+      "file": "slide-ratio-proof-wildflower.png",
+      "category": "product",
+      "template_type": "hybrid_punch",
+      "times_used": 1,
+      "last_used": "2026-04-28",
+      "source": "pinterest/2026-04-28-ratio-proof-wildflower-pinterest"
+    },
+    {
+      "file": "slide-bestseller-28sizes.jpg",
+      "category": "aspirational",
+      "template_type": "portrait_slideshow",
+      "times_used": 1,
+      "last_used": "2026-04-28",
+      "source": "instagram/2026-04-28-bestseller-28sizes-instagram"
+    },
+    {
+      "file": "slide-gallery-wall-dream.jpg",
+      "category": "lifestyle",
+      "template_type": "portrait_slideshow",
+      "times_used": 1,
+      "last_used": "2026-04-28",
+      "source": "instagram/2026-04-28-gallery-wall-dream-instagram"
+    },
+    {
+      "file": "slide-all-sizes-guide.png",
+      "category": "educational",
+      "template_type": "info_reveal",
+      "times_used": 0,
+      "last_used": null,
+      "source": "pinterest/2026-04-28-all-sizes-guide-pinterest"
+    },
+    {
+      "file": "slide-8x10-stats-card.jpg",
+      "category": "educational",
+      "template_type": "info_reveal",
+      "times_used": 0,
+      "last_used": null,
+      "source": "instagram/2026-04-26-8x10-stats-card"
+    },
+    {
+      "file": "slide-folder-chaos-5packs.png",
+      "category": "pain",
+      "template_type": "portrait_slideshow",
+      "times_used": 1,
+      "last_used": "2026-04-28",
+      "source": "pinterest/2026-04-21-folder-chaos-5packs"
+    },
+    {
+      "file": "slide-one-upload-every-ratio.png",
+      "category": "product",
+      "template_type": "portrait_slideshow",
+      "times_used": 1,
+      "last_used": "2026-04-28",
+      "source": "pinterest/2026-04-22-one-upload-every-ratio"
+    },
+    {
+      "file": "slide-bestseller-butikken.png",
+      "category": "aspirational",
+      "template_type": "portrait_slideshow",
+      "times_used": 1,
+      "last_used": "2026-04-28",
+      "source": "pinterest/2026-04-25-bestseller-butikken"
+    },
+    {
+      "file": "slide-tidrike-selgeren.png",
+      "category": "lifestyle",
+      "template_type": "portrait_slideshow",
+      "times_used": 1,
+      "last_used": "2026-04-28",
+      "source": "pinterest/2026-04-24-tidrike-selgeren"
+    },
+    {
+      "file": "slide-floral-vase-ratio-proof.jpg",
+      "category": "product",
+      "template_type": "hybrid_punch",
+      "times_used": 1,
+      "last_used": "2026-04-28",
+      "source": "pinterest/2026-04-23-floral-vase-ratio-proof-xp"
+    },
+    {
+      "file": "slide-stats-1-to-70.png",
+      "category": "educational",
+      "template_type": "info_reveal",
+      "times_used": 0,
+      "last_used": null,
+      "source": "pinterest/2026-04-21-stats-visual-1-to-70"
+    },
+    {
+      "file": "slide-upload-70files-60s.jpg",
+      "category": "educational",
+      "template_type": "info_reveal",
+      "times_used": 0,
+      "last_used": null,
+      "source": "pinterest/2026-04-27-upload-once-70files-60seconds"
+    }
+  ],
+  "available_to_add": [
+    {
+      "source": "most_sellers_vs_smart_sellers(27.03).jpg",
+      "suggested_file": "slide-most-vs-smart.jpg",
+      "category": "educational",
+      "template_type": "info_reveal"
+    },
+    {
+      "source": "stop_leaving_money_on_the_table(25.03).jpg",
+      "suggested_file": "slide-stop-leaving-money.jpg",
+      "category": "pain",
+      "template_type": "info_reveal"
+    }
+  ]
+}
