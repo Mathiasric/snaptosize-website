@@ -267,8 +267,13 @@ export function EC02Slide02() {
 
 // ── Slide 3 — SCALE ─────────────────────────────────────────────
 export function EC02Slide03() {
-  const mostSellers = ["4×6\"", "5×7\"", "8×10\"", "11×14\"", "16×20\""];
-  const withSnapToSize = ["4×6\"", "5×7\"", "8×10\"", "A5", "A4", "A3"];
+  const packs = [
+    { label: "2:3 Ratio",     sizes: "4×6, 5×7, 8×12…",    sellers: true  },
+    { label: "3:4 Ratio",     sizes: "6×8, 9×12, 12×16…",  sellers: false },
+    { label: "4:5 Ratio",     sizes: "8×10, 10×12…",        sellers: false },
+    { label: "ISO A-Series",  sizes: "A5, A4, A3",           sellers: false },
+    { label: "Large Format",  sizes: "11×17, 13×19, 20×24", sellers: false },
+  ];
 
   return (
     <section id="ec02-slide-03" style={{
@@ -284,94 +289,69 @@ export function EC02Slide03() {
         <Badge text="The coverage gap" />
 
         <div style={{
-          marginTop: 40,
-          fontSize: 56,
+          marginTop: 36,
+          fontSize: 54,
           fontWeight: 900,
           color: "white",
           lineHeight: 1.1,
           letterSpacing: "-0.02em",
         }}>
-          Most sellers stop<br />
-          at US sizes.{" "}
+          Most sellers offer<br />
+          <span style={{ color: RED }}>1 ratio.</span>{" "}
           <span style={{ color: TEAL }}>SnapToSize</span><br />
-          covers both.
+          gives you all 5.
         </div>
 
-        {/* Two-column comparison */}
-        <div style={{
-          marginTop: 40,
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gap: 14,
-        }}>
-          {/* Left: most sellers */}
-          <div>
-            <div style={{
-              fontSize: 24, fontWeight: 700, color: RED,
-              marginBottom: 14, letterSpacing: "0.05em", textTransform: "uppercase" as const,
-            }}>
-              Most sellers
+        {/* Pack list — sellers column vs SnapToSize column */}
+        <div style={{ marginTop: 36, display: "flex", flexDirection: "column", gap: 10 }}>
+          {/* Header row */}
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 88px 88px", gap: 8, paddingBottom: 4 }}>
+            <div style={{ fontSize: 22, color: "rgba(255,255,255,0.30)", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase" as const }}>
+              Pack
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 9 }}>
-              {mostSellers.map((s) => (
-                <div key={s} style={{
-                  background: "rgba(248,113,113,0.06)",
-                  border: "1px solid rgba(248,113,113,0.18)",
-                  borderRadius: 10,
-                  padding: "12px 16px",
-                  fontSize: 28,
-                  fontWeight: 400,
-                  color: "rgba(255,255,255,0.45)",
-                }}>
-                  {s}
-                </div>
-              ))}
+            <div style={{ fontSize: 22, color: "rgba(248,113,113,0.70)", fontWeight: 700, textAlign: "center" as const, letterSpacing: "0.04em", textTransform: "uppercase" as const }}>
+              Typical
+            </div>
+            <div style={{ fontSize: 22, color: TEAL, fontWeight: 700, textAlign: "center" as const, letterSpacing: "0.04em", textTransform: "uppercase" as const }}>
+              STS
             </div>
           </div>
 
-          {/* Right: with SnapToSize */}
-          <div>
-            <div style={{
-              fontSize: 24, fontWeight: 700, color: TEAL,
-              marginBottom: 14, letterSpacing: "0.05em", textTransform: "uppercase" as const,
+          {packs.map((p) => (
+            <div key={p.label} style={{
+              display: "grid",
+              gridTemplateColumns: "1fr 88px 88px",
+              gap: 8,
+              alignItems: "center",
+              background: p.sellers ? "rgba(255,255,255,0.03)" : "rgba(45,212,191,0.06)",
+              border: p.sellers ? "1px solid rgba(255,255,255,0.07)" : "1px solid rgba(45,212,191,0.20)",
+              borderRadius: 12,
+              padding: "14px 16px",
             }}>
-              With SnapToSize
-            </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 9 }}>
-              {withSnapToSize.map((s) => (
-                <div key={s} style={{
-                  background: "rgba(45,212,191,0.09)",
-                  border: "1px solid rgba(45,212,191,0.26)",
-                  borderRadius: 10,
-                  padding: "12px 16px",
-                  fontSize: 28,
-                  fontWeight: 600,
-                  color: TEAL,
-                }}>
-                  {s}
+              <div>
+                <div style={{ fontSize: 28, fontWeight: 700, color: p.sellers ? "rgba(255,255,255,0.60)" : "white" }}>
+                  {p.label}
                 </div>
-              ))}
-              {/* More sizes indicator */}
-              <div style={{
-                background: `rgba(167,139,250,0.12)`,
-                border: `1px solid rgba(167,139,250,0.35)`,
-                borderRadius: 10,
-                padding: "12px 16px",
-                fontSize: 26,
-                fontWeight: 700,
-                color: PURPLE,
-                textAlign: "center",
-              }}>
-                + 20 more sizes
+                <div style={{ fontSize: 22, color: "rgba(255,255,255,0.28)", marginTop: 3 }}>
+                  {p.sizes}
+                </div>
+              </div>
+              {/* Typical seller checkmark */}
+              <div style={{ textAlign: "center" as const, fontSize: 28 }}>
+                {p.sellers ? "✓" : <span style={{ color: "rgba(248,113,113,0.50)", fontSize: 24 }}>—</span>}
+              </div>
+              {/* SnapToSize checkmark */}
+              <div style={{ textAlign: "center" as const, fontSize: 28, color: TEAL, fontWeight: 700 }}>
+                ✓
               </div>
             </div>
-          </div>
+          ))}
         </div>
 
         <div style={{
           marginTop: 20,
           fontSize: 30,
-          color: "rgba(255,255,255,0.38)",
+          color: "rgba(255,255,255,0.40)",
           lineHeight: 1.4,
         }}>
           30+ sizes · portrait &amp; landscape · one upload.
