@@ -268,7 +268,7 @@ export function EC02Slide02() {
 // ── Slide 3 — SCALE ─────────────────────────────────────────────
 export function EC02Slide03() {
   const mostSellers = ["4×6\"", "5×7\"", "8×10\"", "11×14\"", "16×20\""];
-  const withSnapToSize = ["4×6\"", "5×7\"", "8×10\"", "A5", "A4", "A3", "11×17\"", "13×19\"", "20×24\""];
+  const withSnapToSize = ["4×6\"", "5×7\"", "8×10\"", "A5", "A4", "A3"];
 
   return (
     <section id="ec02-slide-03" style={{
@@ -351,17 +351,30 @@ export function EC02Slide03() {
                   {s}
                 </div>
               ))}
+              {/* More sizes indicator */}
+              <div style={{
+                background: `rgba(167,139,250,0.12)`,
+                border: `1px solid rgba(167,139,250,0.35)`,
+                borderRadius: 10,
+                padding: "12px 16px",
+                fontSize: 26,
+                fontWeight: 700,
+                color: PURPLE,
+                textAlign: "center",
+              }}>
+                + 20 more sizes
+              </div>
             </div>
           </div>
         </div>
 
         <div style={{
-          marginTop: 24,
+          marginTop: 20,
           fontSize: 30,
           color: "rgba(255,255,255,0.38)",
           lineHeight: 1.4,
         }}>
-          US + ISO A-series + large format — one upload.
+          30+ sizes · portrait &amp; landscape · one upload.
         </div>
       </div>
 
