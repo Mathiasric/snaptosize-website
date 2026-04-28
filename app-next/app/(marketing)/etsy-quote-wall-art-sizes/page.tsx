@@ -11,9 +11,9 @@ import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
-  title: "Quote Wall Art Sizes for Etsy \u2014 Sizing Guide",
+  title: "Etsy Quote Print Sizes: Typography Wall Art Guide (2026)",
   description:
-    "Quote wall art sizing guide for Etsy sellers. 30+ sizes across 5 ratio packs, sub-niche breakdowns, and how to generate all sizes from one upload.",
+    "Best quote and typography print sizes for Etsy: 8\u00d710, 5\u00d77, 11\u00d714, A4 at 300 DPI. Portrait vs landscape sizing guide \u2014 all 30+ sizes from one upload.",
   alternates: {
     canonical: "https://snaptosize.com/etsy-quote-wall-art-sizes",
   },
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Quote Wall Art Sizes for Etsy \u2014 Sizing Guide",
+    title: "Etsy Quote Print Sizes: Typography Wall Art Guide (2026)",
     description:
-      "30+ sizes for quote and typography wall art. Sub-niche breakdowns, ratio packs, and batch sizing for Etsy sellers.",
+      "Best quote and typography print sizes for Etsy: 8\u00d710, 5\u00d77, 11\u00d714, A4 at 300 DPI. Portrait vs landscape sizing guide \u2014 all 30+ sizes from one upload.",
     images: ["/assets/og/etsy-quote-wall-art-sizes.png"],
   },
 };
@@ -50,7 +50,7 @@ export default function EtsyQuoteWallArtSizesPage() {
       "Complete quote and typography wall art sizing guide for Etsy sellers. Covers the 8 must-have sizes, 6 sub-niche breakdowns, all 5 ratio packs, typography-specific sizing tips, and how to generate every size from one upload.",
     url: "https://snaptosize.com/etsy-quote-wall-art-sizes",
     datePublished: "2026-03-27",
-    dateModified: "2026-03-27",
+    dateModified: "2026-04-28",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -459,6 +459,17 @@ export default function EtsyQuoteWallArtSizesPage() {
             <QuickAnswer question="What sizes should I offer for quote wall art on Etsy?">
               <strong>8×10, 11×14, and 5×7</strong> are the top sellers for typography and quote prints. Portrait orientation works best — the narrow format keeps text readable and balanced.
             </QuickAnswer>
+
+            <p className="text-sm text-foreground-60 mt-4">
+              Selling quote prints in multiple sizes?{" "}
+              <a
+                href="https://app.snaptosize.com/app/quick-export?source=seo_quote-wall-art-sizes&kind=guide"
+                className="text-accent-light hover:underline"
+              >
+                SnapToSize generates every print size from one upload — 300 DPI, ready for Etsy.
+              </a>
+            </p>
+
             {/* --- H2 1: Why Quote and Typography Wall Art Needs Every Size --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
