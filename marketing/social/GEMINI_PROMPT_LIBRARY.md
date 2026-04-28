@@ -545,6 +545,87 @@ Typography: bold sans-serif for headline, elegant italic serif for positioning s
 
 ---
 
+## PROMPT 10 — Størrelses-guiden: Pack breakdown infographic (size-guide-infographic)
+
+**Hook:** Varieres per kjøring — se alternativer under
+**Scroll-stopp:** Etsy-selgere som ikke vet hvilke størrelser de mangler — konkret, actionbar data
+
+**KRITISK: Hvert kjøring MÅ endre følgende (ellers identiske resultater):**
+- **Artwork-tema:** Velg ETT: `[botanical-prints]` / `[geometric-abstract]` / `[coastal-landscape]` / `[celestial-night-sky]` / `[minimalist-line-art]` / `[anime-illustration]` / `[watercolor-florals]` / `[vintage-map-art]`
+- **Komposisjon:** Velg ETT alternativ fra listen i prompten
+- **Fargeaksentuering:** `[teal-dominant]` / `[white-dominant]` / `[dark-card-contrast]` / `[warm-amber-accent]`
+- **Hook-tekst:** Velg ETT fra disse (IKKE kopier fra tidligere kjøringer):
+  - "28 sizes. 5 packs. 1 upload."
+  - "Every print size your buyers will ever ask for."
+  - "Stop losing sales to missing sizes."
+  - "Your buyers want 8×10. And A4. And 20×30. Here's all of them."
+  - "The complete Etsy print size list — all 28."
+  - "One ZIP. Five ratios. Every size covered."
+
+```
+Photorealistic marketing infographic, vertical portrait format, 9:16, 1000×1500px.
+Artwork context: [SUBSTITUTE: artwork-theme from list above — the art shown is [ARTWORK_THEME] style digital art. Show it as background texture, subtle watermark, or small preview panels]
+
+COMPOSITION (choose ONE and execute it fully — rotate each run):
+  Option A — Five Pack Cards: Five vertical cards side by side, one per ratio pack. Each card shows pack name, ratio badge, and bullet list of sizes. Cards overlap slightly, teal top-edge glow on the "active" card.
+  Option B — Grid infographic: Clean 5-row table, alternating dark/light rows. Columns: PACK NAME | RATIO | SIZES | FILES. Artwork thumbnail preview in rightmost column.
+  Option C — Stacked reveal: Vertical stack of 5 horizontal "shelf" panels, collapsing from top. Pack name on left, sizes listed horizontally on right. Visual impression of organized ZIPs stacking.
+  Option D — Radial hub: Center circle shows "1 upload → 70 files". Five spokes radiate outward, each ending in a pack card showing its sizes. Clean, minimal lines.
+  Option E — Before/after column split: LEFT column shows chaotic filename list (artwork_resized_v3_FINAL.jpg etc). RIGHT column shows clean pack structure: 2-3-ratio/, 4-5-ratio/, iso-a-series/ with file counts. Hook text divides the two sides.
+
+HOOK TEXT (top 20% of image, bold sans-serif, [COLOR_ACCENT]):
+  "[SUBSTITUTE: hook text chosen above]"
+  Subline (smaller, white/grey): "Included in every SnapToSize export. 300 DPI. Etsy-ready."
+
+FIVE PACK DATA — render ALL of these exactly (never invent sizes):
+
+  ┌─ 2:3 RATIO — Most Common Wall Art (7 sizes) ─────────────────┐
+  │  4×6 · 6×9 · 8×12 · 10×15 · 12×18 · 16×24 · 20×30          │
+  └──────────────────────────────────────────────────────────────┘
+
+  ┌─ 3:4 RATIO — Classic Photo Frame (5 sizes) ──────────────────┐
+  │  6×8 · 9×12 · 12×16 · 15×20 · 18×24                         │
+  └──────────────────────────────────────────────────────────────┘
+
+  ┌─ 4:5 RATIO — Traditional Art / 8×10 (5 sizes) ──────────────┐
+  │  8×10 · 12×15 · 16×20 · 20×25 · 24×30                       │
+  └──────────────────────────────────────────────────────────────┘
+
+  ┌─ ISO A-SERIES — International Standard (5 sizes) ────────────┐
+  │  A5 · A4 · A3 · A2 · A1                                      │
+  └──────────────────────────────────────────────────────────────┘
+
+  ┌─ EXTRAS — Common Sizes (6 sizes) ────────────────────────────┐
+  │  5×7 · 8.5×11 · 11×14 · 11×17 · 13×19 · 20×24               │
+  └──────────────────────────────────────────────────────────────┘
+
+BELOW THE PACK DATA — value summary panel (teal or dark card):
+  Bold white stat: "Up to 70 files from 1 upload"
+  Subtext (smaller): "Portrait · Landscape · Square · Large Format — all at 300 DPI"
+  Note: 70 files = 28 pack sizes × portrait + landscape, plus square and oversized via Quick Export
+
+BOTTOM 8%: Teal rounded pill, white text:
+  "app.snaptosize.com · Free to start"
+
+CRITICAL FACTS (never deviate):
+  - Pack count: exactly 5 packs
+  - Total pack sizes: exactly 28
+  - Marketing number: "up to 70 files" (portrait + landscape + square + large format)
+  - "30+ sizes" acceptable shorthand
+  - NEVER say "100 files", "50 files", "29 sizes"
+  - DPI: 300 DPI (never 72, never 150)
+  - Output format: JPG/JPEG
+  - URL: app.snaptosize.com
+
+Style: [SUBSTITUTE: color accent from list above].
+Clean, editorial infographic aesthetic — think Canva Pro meets Dribbble data visualization.
+High contrast, legible at thumbnail size (Pinterest grid).
+No human faces.
+Typography: bold condensed sans-serif for headlines, monospace or clean sans for size listings.
+```
+
+---
+
 ## GJENBRUKSREGLER
 
 | Konsept | Cooldown | Sist brukt |
@@ -565,5 +646,6 @@ Typography: bold sans-serif for headline, elegant italic serif for positioning s
 | photoshop-trap | 4 uker | W19 (23.04) |
 | international-unlock | 4 uker | W19 (23.04) |
 | sunday-afternoon | 4 uker | W19 (24.04) |
+| size-guide-infographic | 4 uker | — (aldri brukt) |
 
 **Klare nå:** `dpi-comparison`, `en-til-mange` (W16 og eldre, cooldown utløpt) — NB: `livsstil-den-tidrike-selgeren` brukt W19 (24.04), klar igjen ~22.05 | `galleryvegg-ratioene` brukt W20 (27.04), klar igjen ~25.05 | `bestseller-butikken` brukt W20 (27.04), klar igjen ~25.05

@@ -19,11 +19,11 @@ You are activating the **Pipeline Orchestrator** — the single entry point for 
 **Target per day: 3 Pinterest + 1 Instagram = 4 items total.**
 
 ### Tool mix (hard rule)
-- **1 Gemini lifestyle pin** (Pinterest only, 2:3) — aspirational, styled scenes, app visible on screen when relevant
-- **1 size-reference pin** (Pinterest, 2:3) — React strong template preferred (NeonPackShowcase, BrightPackShowcase) showing explicit sizes/packs. Use Gemini only if no fresh template+artwork combo is available.
-- **2 React social-slide screenshots** — 1 Pinterest + 1 Instagram, must use strong templates
+- **Gemini Pin 1 — Lifestyle** (Pinterest, 2:3): aspirational, styled scenes, app visible on screen. Use prompts 1, 2, 4, 7, 8, 9 from prompt library.
+- **Gemini Pin 2 — Size-reference** (Pinterest, 2:3): infographic showing explicit pack sizes and 70-files value. Use **PROMPT 10** (`size-guide-infographic`) — vary composition, artwork theme, color accent, and hook text every run (see prompt for option lists). NEVER run the same combination twice.
+- **React slide** (1 Pinterest + 1 Instagram = 2 items): strong templates only (NeonPackShowcase, BrightPackShowcase, RatioProofShowcase, StatsCard, RatioSplitShowcase). Rotate fresh template+artwork combos — 5 templates × ~8 artworks = 40 unique combos.
 
-> **Why the mix:** Analytics show "Complete Guide + explicit size list" Pinterest pins earn 5–10x more impressions than lifestyle-only content. Size-reference content earns algorithmic distribution; lifestyle earns saves. Pain/before-after: max 1 per 3-day window — do NOT ban, but don't let it dominate.
+> **Why the mix:** Analytics show size-reference content earns 5–10x more Pinterest impressions than lifestyle-only. Gemini handles both angles with infinite variation. React covers Instagram. Pain/before-after: max 1 per 3-day window — reduce, not ban.
 
 ### Artwork uniqueness (hard rule)
 Before picking a template + artwork combo for a React slide, scan existing content folders:
