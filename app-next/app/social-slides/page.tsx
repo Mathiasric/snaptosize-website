@@ -13,6 +13,20 @@ import PainSolutionSlide from "./_components/PainSolutionSlide";
 import W15BeforeAfterWorkflow from "./_components/W15BeforeAfterWorkflow";
 import W15DpiCheatSheet from "./_components/W15DpiCheatSheet";
 import StatsCard from "./_components/StatsCard";
+import {
+  EC01Slide01,
+  EC01Slide02,
+  EC01Slide03,
+  EC01Slide04,
+  EC01Slide05,
+} from "./_components/EtsyCarousel01";
+import {
+  EC02Slide01,
+  EC02Slide02,
+  EC02Slide03,
+  EC02Slide04,
+  EC02Slide05,
+} from "./_components/EtsyCarousel02";
 import Checklist from "./_components/Checklist";
 import FrameMatrixVisual from "./_components/FrameMatrixVisual";
 import PopularFrameBrands from "./_components/PopularFrameBrands";
@@ -112,8 +126,29 @@ export default function SocialSlidesPage() {
         <RatioProofShowcase artwork="deer" name="Deer Portrait" ratio="instagram" />
         {/* W18-I02: Misty Lake — RatioProofShowcase Instagram */}
         <RatioProofShowcase artwork="misty_lake" name="Misty Lake" ratio="instagram" />
+
+        {/* W19-I01: Little Deer Quote — RatioProofShowcase Instagram */}
+        <RatioProofShowcase artwork="littledeerquote" name="Little Deer Quote" ratio="instagram" />
+
+        {/* W19-I02 (23.04 v2): Floral Vase — RatioProofShowcase Instagram (FRESH artwork, complete files) */}
+        <RatioProofShowcase artwork="floral_vase" name="Floral Vase Art" ratio="instagram" />
+
+        {/* W19-P06 (23.04 v3): Slothing Through Life — NeonPackShowcase Pinterest */}
+        <NeonPackShowcase artwork="slothing_through_life" name="Slothing Through Life" ratio="pinterest" />
         {/* W18-P06: Mystical Portal — NeonPackShowcase Pinterest */}
         <NeonPackShowcase artwork="mysthical_portal" name="Mystical Portal" ratio="pinterest" />
+
+        {/* W19-P03: Abstract Wedding — NeonPackShowcase Pinterest */}
+        <NeonPackShowcase artwork="abstract_wedding" name="Abstract Wedding" ratio="pinterest" />
+
+        {/* W19-P06: Neutral Abstract — NeonPackShowcase Pinterest */}
+        <NeonPackShowcase artwork="neutral_abstract" name="Neutral Abstract" ratio="pinterest" />
+
+        {/* W19-I02: Checklist — Instagram */}
+        <Checklist ratio="instagram" />
+
+        {/* W19-I19: StatsCard — Instagram */}
+        <StatsCard ratio="instagram" />
 
         {/* ═══ Pain Solution Slide — before/after split panel ═══ */}
         <PainSolutionSlide pain="missing-size" ratio="pinterest" />
@@ -130,6 +165,21 @@ export default function SocialSlidesPage() {
 
         {/* W15-P03: 300 DPI Cheat Sheet */}
         <W15DpiCheatSheet />
+
+        {/* W20-P01: Wildflower Botanical — NeonPackShowcase Pinterest */}
+        <NeonPackShowcase artwork="wildflower_botanical_art" name="Wildflower Botanical" ratio="pinterest" />
+
+        {/* ═══ W20-I01: Etsy Carousel — "Buyers leave when size isn't listed" ═══ */}
+        <EC01Slide01 />
+        <EC01Slide02 />
+        <EC01Slide03 />
+        <EC01Slide04 />
+        <EC01Slide05 />
+        <EC02Slide01 />
+        <EC02Slide02 />
+        <EC02Slide03 />
+        <EC02Slide04 />
+        <EC02Slide05 />
 
         {/* ═══ W15 Batch — Instagram Carousel (W15-I01) ═══ */}
         <W15I01Slide01 />
