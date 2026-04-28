@@ -11,10 +11,9 @@ import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
-  title:
-    "Nursery Wall Art Sizes for Etsy — What Sizes to Offer & How to Bundle",
+  title: "Nursery Wall Art Sizes for Etsy: What to Offer (2026)",
   description:
-    "Complete guide to nursery wall art sizes for Etsy sellers. The 6 must-have sizes, gallery wall bundles, listing strategy, and how to generate all sizes from one upload.",
+    "The 6 must-have nursery print sizes for Etsy: 5×7, 8×10, 11×14, A4, 16×20. Gallery wall bundles and listing strategy to sell more.",
   alternates: {
     canonical: "https://snaptosize.com/etsy-nursery-wall-art-sizes",
   },
@@ -34,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nursery Wall Art Sizes for Etsy — What Sizes to Offer & Bundle",
+    title: "Nursery Wall Art Sizes for Etsy: What to Offer (2026)",
     description:
-      "6 must-have sizes, gallery wall combos, and listing tips for nursery art sellers on Etsy.",
+      "The 6 must-have nursery print sizes: 5×7, 8×10, 11×14, A4, 16×20. Gallery wall bundles and listing strategy to sell more on Etsy.",
     images: ["/assets/og/etsy-nursery-wall-art-sizes.png"],
   },
 };
@@ -51,7 +50,7 @@ export default function EtsyNurseryWallArtSizesPage() {
       "Complete guide to nursery wall art sizes for Etsy sellers. Covers the 6 must-have sizes, gallery wall bundles, listing strategy, ratio packs, and common mistakes.",
     url: "https://snaptosize.com/etsy-nursery-wall-art-sizes",
     datePublished: "2026-03-20",
-    dateModified: "2026-03-20",
+    dateModified: "2026-04-28",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -386,6 +385,17 @@ export default function EtsyNurseryWallArtSizesPage() {
             <QuickAnswer question="What are the best print sizes for nursery wall art on Etsy?">
               <strong>8×10, 11×14, and 16×20</strong> are the top nursery sizes — they fit standard frames from IKEA, Target, and Amazon. Offer all sizes in the 4:5 and 3:4 ratio packs for full nursery wall coverage.
             </QuickAnswer>
+
+            <p className="text-sm text-foreground-60 mt-4">
+              Need all nursery sizes at once?{" "}
+              <a
+                href="https://app.snaptosize.com/app/quick-export?source=seo_nursery-wall-art-sizes&kind=guide"
+                className="text-accent-light hover:underline"
+              >
+                SnapToSize generates every size from one upload — framed-ready at 300 DPI.
+              </a>
+            </p>
+
             {/* --- Why Nursery Art Needs Multiple Sizes --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
