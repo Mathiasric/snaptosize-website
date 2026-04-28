@@ -193,12 +193,17 @@ export function EC0XSlide01() {
 Base on `screenshot-ec01.js`. Update IDs and filenames:
 
 ```js
+await page.goto(BASE, { waitUntil: "networkidle", timeout: 30000 });
+await page.waitForSelector('#ec0X-slide-01', { timeout: 15000 }); // required — hot reload delay
+
 await shot('ec0X-slide-01', 'slide-01-hook.png',    'Slide 1 — Hook');
 await shot('ec0X-slide-02', 'slide-02-[name].png',  'Slide 2 — [Name]');
 // ...
 ```
 
 Run: `node screenshot-ec0X.js` — requires dev server on port 3033.
+
+**Critical:** Without `waitForSelector`, all slides show MISSING if hot reload hasn't completed.
 
 ---
 
@@ -217,7 +222,15 @@ import { EC0XSlide01, EC0XSlide02, ... } from "./_components/EtsyCarousel0X";
 
 ## Step 9 — Quality Gate
 
-Before screenshotting, answer:
+**Product data check (run before building):**
+- [ ] All sizes, pack names, and counts are from `marketing/CONTENT_REFERENCE.md` — never invent
+- [ ] Pack names are exact: "2:3 Ratio", "3:4 Ratio", "4:5 Ratio", "ISO A-Series", "Extras" — not "Large Format" or similar
+- [ ] If showing a partial size list, add a "+ X more sizes" indicator
+- [ ] If showing portrait sizes only, note "Landscape + square also available via Quick Export"
+
+**Default CTA:** "Comment FREE → 30 days Pro" (DM mockup with promo code). Only deviate if a real lead magnet exists.
+
+**Visual check:**
 - [ ] Slide 1: does the headline land in < 5 seconds without context?
 - [ ] Slide 2–3: is the pain *felt*, not just stated?
 - [ ] Slide 4: is there a real product screenshot (not text mockup)?
