@@ -11,9 +11,9 @@ import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
-  title: "Watercolor Print Sizes for Etsy — Complete Guide",
+  title: "Watercolor Print Sizes for Etsy: Exact Pixels (2026)",
   description:
-    "Watercolor print sizing guide for Etsy sellers. Best sizes for florals, landscapes, animals, abstract, and nursery watercolors at 300 DPI.",
+    "Best watercolor print sizes for Etsy at 300 DPI — exact pixels for 5×7, 8×10, 11×14, A4. Sub-niche breakdowns for florals, landscapes, and abstract.",
   alternates: {
     canonical: "https://snaptosize.com/etsy-watercolor-print-sizes",
   },
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Watercolor Print Sizes for Etsy — Complete Guide",
+    title: "Watercolor Print Sizes for Etsy: Exact Pixels (2026)",
     description:
-      "Best sizes for watercolor prints on Etsy. Sub-niche breakdowns, resolution guide, file organization, and batch resizing from one upload.",
+      "Best watercolor print sizes for Etsy at 300 DPI — exact pixels for 5×7, 8×10, 11×14, A4. Sub-niche breakdowns for florals, landscapes, and abstract.",
     images: ["/assets/og/etsy-watercolor-print-sizes.png"],
   },
 };
@@ -50,7 +50,7 @@ export default function EtsyWatercolorPrintSizesPage() {
       "Complete watercolor print sizing guide for Etsy sellers. Covers best-selling sizes, sub-niche breakdowns (florals, landscapes, animals, abstract, nursery), resolution requirements, file organization, and how to generate every size from one upload.",
     url: "https://snaptosize.com/etsy-watercolor-print-sizes",
     datePublished: "2026-04-04",
-    dateModified: "2026-04-04",
+    dateModified: "2026-04-28",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -462,6 +462,16 @@ export default function EtsyWatercolorPrintSizesPage() {
               small frames and 24&times;36 for statement pieces covers the
               full range of buyer demand.
             </QuickAnswer>
+
+            <p className="text-sm text-foreground-60 mt-4">
+              Need all watercolor sizes at once?{" "}
+              <a
+                href="https://app.snaptosize.com/app/quick-export?source=seo_watercolor-print-sizes&kind=guide"
+                className="text-accent-light hover:underline"
+              >
+                SnapToSize generates all 30 print sizes from one upload — 300 DPI, organized ZIPs.
+              </a>
+            </p>
 
             {/* --- H2 1: Why Watercolor Sellers Need Multiple Print Sizes --- */}
             <div>
