@@ -354,7 +354,7 @@ export function EC02Slide03() {
           color: "rgba(255,255,255,0.40)",
           lineHeight: 1.4,
         }}>
-          30+ sizes · portrait &amp; landscape · one upload.
+          All portrait. Landscape + square also available via Quick Export.
         </div>
       </div>
 
