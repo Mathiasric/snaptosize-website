@@ -268,11 +268,11 @@ export function EC02Slide02() {
 // ── Slide 3 — SCALE ─────────────────────────────────────────────
 export function EC02Slide03() {
   const packs = [
-    { label: "2:3 Ratio",     sizes: "4×6, 5×7, 8×12…",    sellers: true  },
-    { label: "3:4 Ratio",     sizes: "6×8, 9×12, 12×16…",  sellers: false },
-    { label: "4:5 Ratio",     sizes: "8×10, 10×12…",        sellers: false },
-    { label: "ISO A-Series",  sizes: "A5, A4, A3",           sellers: false },
-    { label: "Large Format",  sizes: "11×17, 13×19, 20×24", sellers: false },
+    { label: "2:3 Ratio",    sizes: "4×6, 6×9, 8×12, 10×15, 12×18, 16×24, 20×30",  sellers: true  },
+    { label: "3:4 Ratio",    sizes: "6×8, 9×12, 12×16, 15×20, 18×24",               sellers: false },
+    { label: "4:5 Ratio",    sizes: "8×10, 12×15, 16×20, 20×25, 24×30",             sellers: false },
+    { label: "ISO A-Series", sizes: "A5, A4, A3, A2, A1",                            sellers: false },
+    { label: "Extras",       sizes: "5×7, 8.5×11, 11×14, 11×17, 13×19, 20×24",     sellers: false },
   ];
 
   return (
