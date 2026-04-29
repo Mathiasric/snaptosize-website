@@ -11,13 +11,13 @@ import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
-  title: "A5 Print Size for Etsy — Dimensions, Pixels & International Sizing",
+  title: "A5 Print Size for Etsy: 1748×2480 px at 300 DPI + ISO Chart (2026)",
   description:
-    "A5 is 1748×2480 pixels at 300 DPI (148×210 mm). Get exact dimensions, A5 vs 5×7 comparison, A-series sizing table, and file setup for Etsy digital downloads.",
+    "A5 is 1748×2480 pixels at 300 DPI. Perfect for greeting cards and small prints. Full ISO size chart — A6, A5, A4, A3 — for Etsy sellers.",
   alternates: { canonical: "https://snaptosize.com/etsy-a5-print-size" },
   openGraph: {
     title:
-      "A5 Print Size for Etsy — Pixel Dimensions at 300 DPI | SnapToSize",
+      "A5 Print Size for Etsy: 1748×2480 px at 300 DPI + ISO Chart (2026)",
     description:
       "Complete A5 print guide for Etsy sellers. 1748×2480 pixels at 300 DPI, ISO A-series ratio, A5 vs 5×7, and international sizing for cards, planners, and small prints.",
     url: "https://snaptosize.com/etsy-a5-print-size",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "A5 Print Size for Etsy — Pixel Dimensions at 300 DPI",
+    title: "A5 Print Size for Etsy: 1748×2480 px at 300 DPI + ISO Chart (2026)",
     description:
       "Complete A5 print guide for Etsy sellers. 1748×2480 pixels at 300 DPI, ISO A-series ratio, and international file setup for cards and planners.",
     images: ["/assets/og/etsy-a5-print-size.png"],
@@ -43,12 +43,12 @@ export default function EtsyA5PrintSizePage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "A5 Print Size for Etsy — Dimensions, Pixels & International Sizing",
+    headline: "A5 Print Size for Etsy: 1748×2480 px at 300 DPI + ISO Chart (2026)",
     description:
       "Complete technical guide to A5 print dimensions for Etsy sellers, including exact pixel dimensions at 300 DPI, A5 vs 5×7 comparison, and A-series sizing for greeting cards, planners, and small prints.",
     url: "https://snaptosize.com/etsy-a5-print-size",
     datePublished: "2026-03-29",
-    dateModified: "2026-03-29",
+    dateModified: "2026-04-29",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
