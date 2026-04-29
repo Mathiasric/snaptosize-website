@@ -11,14 +11,14 @@ import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
-  title: "Vintage Art Print Sizes for Etsy — Art Deco to Mid-Century Modern",
+  title: "Etsy Vintage Art Print Sizes: Best Dimensions for Antique & Retro Prints (2026)",
   description:
-    "Vintage art print sizes for Etsy sellers. Best sizes for art deco, mid-century modern, retro travel posters, and vintage botanicals.",
+    "Vintage prints sell best in 8×10, 11×14, and 16×20. Discover exact pixel dimensions, paper ratios, and how to package vintage art packs for Etsy buyers.",
   alternates: {
     canonical: "https://snaptosize.com/etsy-vintage-art-print-sizes",
   },
   openGraph: {
-    title: "Vintage Art Print Sizes for Etsy | SnapToSize",
+    title: "Etsy Vintage Art Print Sizes: Best Dimensions for Antique & Retro Prints (2026)",
     description:
       "Best sizes for vintage art on Etsy. Sub-style breakdowns, original vs modern dimensions, gallery wall sets, and batch resizing from one upload.",
     url: "https://snaptosize.com/etsy-vintage-art-print-sizes",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vintage Art Print Sizes for Etsy — Art Deco to Mid-Century Modern",
+    title: "Etsy Vintage Art Print Sizes: Best Dimensions for Antique & Retro Prints (2026)",
     description:
       "Best sizes for vintage art on Etsy. Sub-style breakdowns, original vs modern dimensions, gallery wall sets, and batch resizing from one upload.",
     images: ["/assets/og/etsy-vintage-art-print-sizes.png"],
@@ -45,12 +45,12 @@ export default function EtsyVintageArtPrintSizesPage() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "Vintage Art Print Sizes for Etsy — Art Deco to Mid-Century Modern, One Upload",
+      "Etsy Vintage Art Print Sizes: Best Dimensions for Antique & Retro Prints (2026)",
     description:
       "Complete vintage art print sizing guide for Etsy sellers. Covers best-selling sizes, sub-style breakdowns (art deco, mid-century modern, retro travel, vintage botanical, antique maps, retro kitchen, art nouveau), original vs modern dimensions, gallery wall sets, and how to generate every size from one upload.",
     url: "https://snaptosize.com/etsy-vintage-art-print-sizes",
     datePublished: "2026-04-07",
-    dateModified: "2026-04-07",
+    dateModified: "2026-04-29",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
