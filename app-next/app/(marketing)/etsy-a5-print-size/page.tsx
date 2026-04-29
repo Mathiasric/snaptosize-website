@@ -261,7 +261,7 @@ export default function EtsyA5PrintSizePage() {
                 A5 Print Size for Etsy
               </span>
               <span className="block text-xl md:text-2xl lg:text-3xl font-semibold text-white/80">
-                Dimensions, pixels &amp; international sizing for cards, planners &amp; small prints
+                1748&times;2480 px at 300 DPI &mdash; full ISO A-series chart
               </span>
             </h1>
             <p className="text-base text-white/60 mb-5 max-w-lg">
