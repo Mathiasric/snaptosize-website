@@ -12,14 +12,14 @@ import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title:
-    "Photography Print Sizes for Etsy — Camera Ratio to Print Size Guide",
+    "Etsy Photography Print Sizes: 3:2 Ratio Guide for Camera Images (2026)",
   description:
-    "Complete guide to photography print sizes for Etsy sellers. Map your camera's 3:2 sensor ratio to print dimensions, find the best sizes for landscape, travel, nature, and aerial photography, and learn how to avoid cropping when resizing for different frame sizes.",
+    "Camera photos are 3:2 ratio — most Etsy print sizes aren't. Learn exact pixel dimensions and how to adapt your photography for 8×10, 11×14, A4, and more.",
   alternates: {
     canonical: "https://snaptosize.com/etsy-photography-print-sizes",
   },
   openGraph: {
-    title: "Photography Print Sizes for Etsy | SnapToSize",
+    title: "Etsy Photography Print Sizes: 3:2 Ratio Guide for Camera Images (2026)",
     description:
       "Map camera sensor ratios (3:2, 4:3) to Etsy print sizes. Zero-crop sizing for DSLR, mirrorless, drone, and phone photography.",
     url: "https://snaptosize.com/etsy-photography-print-sizes",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Photography Print Sizes for Etsy — Sensor Ratio to Print Guide",
+    title: "Etsy Photography Print Sizes: 3:2 Ratio Guide for Camera Images (2026)",
     description:
       "Your camera shoots 3:2. Here are the exact print sizes that match — zero cropping needed. Plus best sizes for every photography niche.",
     images: ["/assets/og/etsy-photography-print-sizes.png"],
@@ -46,12 +46,12 @@ export default function EtsyPhotographyPrintSizesPage() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "Photography Print Sizes for Etsy — Camera Ratio to Print Size Guide",
+      "Etsy Photography Print Sizes: 3:2 Ratio Guide for Camera Images (2026)",
     description:
       "Complete guide to photography print sizes for Etsy sellers. Covers camera sensor ratios mapped to print dimensions, best sizes by photography niche, gallery wall sets, and the cropping problem with non-native ratios.",
     url: "https://snaptosize.com/etsy-photography-print-sizes",
     datePublished: "2026-04-03",
-    dateModified: "2026-04-03",
+    dateModified: "2026-04-29",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -1122,6 +1122,17 @@ export default function EtsyPhotographyPrintSizesPage() {
                 all at exactly that ratio. Zero cropping. Full composition
                 preserved.
               </p>
+
+              <div className="rounded-xl overflow-hidden border border-white/[0.08] mb-8">
+                <img
+                  src="/assets/photography-ratio-split.png"
+                  alt="One photo upload generates all ratio packs — 3:4, 4:5, ISO, and Extras — via SnapToSize"
+                  width={1000}
+                  height={1500}
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
+              </div>
 
               <div className="space-y-3 mb-8">
                 <div className="flex items-start gap-2">
