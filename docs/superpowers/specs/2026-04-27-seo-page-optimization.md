@@ -161,9 +161,9 @@ Etter deploy (4-8 uker):
 | `/etsy-watercolor-print-sizes` | 2 | ✅ Ferdig | 2026-04-28 |
 | `/etsy-nursery-wall-art-sizes` | 2 | ✅ Ferdig | 2026-04-28 |
 | `/etsy-quote-wall-art-sizes` | 2 | ✅ Ferdig | 2026-04-28 |
-| `/etsy-a5-print-size` | 3 | ⏳ Ikke startet | — |
-| `/etsy-vintage-art-print-sizes` | 3 | ⏳ Ikke startet | — |
-| `/etsy-photography-print-sizes` | 3 | ⏳ Ikke startet | — |
-| `/etsy-gallery-wall-print-sizes` | 4 | ⏳ Ikke startet | — |
-| `/etsy-square-print-sizes` | 4 | ⏳ Ikke startet | — |
-| `/print-sizes-at-300-dpi` | 4 | ⏳ Ikke startet | — |
+| `/etsy-a5-print-size` | 3 | ✅ Ferdig | 2026-04-29 |
+| `/etsy-vintage-art-print-sizes` | 3 | ✅ Ferdig | 2026-04-29 |
+| `/etsy-photography-print-sizes` | 3 | ✅ Ferdig | 2026-04-29 |
+| `/etsy-gallery-wall-print-sizes` | 4 | ✅ Ferdig | 2026-04-30 |
+| `/etsy-square-print-sizes` | 4 | ✅ Ferdig | 2026-04-30 |
+| `/print-sizes-at-300-dpi` | 4 | ✅ Ferdig | 2026-04-30 |
