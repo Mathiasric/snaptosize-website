@@ -10,17 +10,15 @@ import { Button } from "@/components/Button";
 import { Check, ArrowRight } from "lucide-react";
 import { ContextualCTA } from "@/components/ContextualCTA";
 
-// Title: 48 chars ✓
-// Description: 153 chars ✓
 export const metadata: Metadata = {
-  title: "Print Sizes at 300 DPI — Complete Pixel Chart",
+  title: "Print Sizes at 300 DPI for Etsy — Complete Pixel Chart (2026)",
   description:
-    "Every Etsy print size at 300 DPI with exact pixel dimensions, grouped by ratio pack. The complete reference for digital wall art sellers.",
+    "Exact pixels for every Etsy print size at 300 DPI: 8×10 = 2400×3000px, 5×7 = 1500×2100px, 11×14 = 3300×4200px. All sizes grouped by ratio pack — the complete reference for digital sellers.",
   alternates: { canonical: "https://snaptosize.com/print-sizes-at-300-dpi" },
   openGraph: {
-    title: "Print Sizes at 300 DPI — Complete Pixel Chart",
+    title: "Print Sizes at 300 DPI for Etsy — Complete Pixel Chart | SnapToSize",
     description:
-      "Every Etsy print size at 300 DPI with exact pixel dimensions, grouped by ratio pack. The complete reference for digital wall art sellers.",
+      "Exact pixels for every Etsy print size at 300 DPI: 8×10 = 2400×3000px, 5×7 = 1500×2100px, 11×14 = 3300×4200px. Grouped by ratio pack.",
     url: "https://snaptosize.com/print-sizes-at-300-dpi",
     images: [
       {
@@ -33,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Print Sizes at 300 DPI — Complete Pixel Chart",
+    title: "Print Sizes at 300 DPI for Etsy — Complete Pixel Chart (2026)",
     description:
-      "Every Etsy print size at 300 DPI with exact pixel dimensions, grouped by ratio pack.",
+      "8×10 = 2400×3000px, 5×7 = 1500×2100px, 11×14 = 3300×4200px. Every Etsy print size at 300 DPI grouped by ratio pack.",
     images: ["/assets/og/print-sizes-at-300-dpi.png"],
   },
 };
@@ -49,7 +47,7 @@ export default function PrintSizesAt300DpiPage() {
       "Every Etsy print size at 300 DPI with exact pixel dimensions, grouped by ratio pack. The complete reference for digital wall art sellers.",
     url: "https://snaptosize.com/print-sizes-at-300-dpi",
     datePublished: "2026-04-19",
-    dateModified: "2026-04-19",
+    dateModified: "2026-04-30",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
