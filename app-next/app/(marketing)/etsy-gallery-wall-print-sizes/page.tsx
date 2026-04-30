@@ -9,34 +9,35 @@ import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
+import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 
 export const metadata: Metadata = {
   title:
-    "Gallery Wall Print Sizes for Etsy — Arrangements & Sizing",
+    "Gallery Wall Print Sizes for Etsy: How to Mix 8×10, 5×7, and 4×6 (2026)",
   description:
-    "Gallery wall sizing guide for Etsy sellers. 5 arrangements with exact sizes, room-by-room combos, ratio packs, and how to generate every size from one upload.",
+    "The best gallery wall mix on Etsy: one large (16×20), two medium (8×10), two small (5×7). Exact pixel dimensions for every size and how to generate them all from one upload.",
   alternates: {
     canonical: "https://snaptosize.com/etsy-gallery-wall-print-sizes",
   },
   openGraph: {
-    title: "Gallery Wall Print Sizes for Etsy | SnapToSize",
+    title: "Gallery Wall Print Sizes for Etsy: Mix 8×10, 5×7, and 4×6 | SnapToSize",
     description:
-      "5 gallery wall arrangements with exact sizes, room recommendations, ratio packs, and batch sizing for Etsy sellers.",
+      "The best gallery wall mix on Etsy: one large (16×20), two medium (8×10), two small (5×7). Exact pixel dimensions plus frame-matching tips.",
     url: "https://snaptosize.com/etsy-gallery-wall-print-sizes",
     images: [
       {
         url: "/assets/og/etsy-gallery-wall-print-sizes.png",
         width: 1200,
         height: 630,
-        alt: "Gallery Wall Print Sizes for Etsy — Arrangements & Sizing Guide",
+        alt: "Gallery Wall Print Sizes for Etsy — How to Mix 8×10, 5×7, and 4×6",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gallery Wall Print Sizes for Etsy — Arrangement Guide",
+    title: "Gallery Wall Print Sizes for Etsy: Mix 8×10, 5×7, and 4×6",
     description:
-      "5 gallery wall arrangements with exact sizes, room combos, and how to generate all sizes from one upload.",
+      "The best gallery wall mix: one large (16×20), two medium (8×10), two small (5×7). Pixel dimensions and frame tips for Etsy sellers.",
     images: ["/assets/og/etsy-gallery-wall-print-sizes.png"],
   },
 };
@@ -51,7 +52,7 @@ export default function EtsyGalleryWallPrintSizesPage() {
       "Complete gallery wall sizing guide for Etsy sellers. Covers the 5 most popular arrangements with exact sizes, room-by-room recommendations, ratio pack mapping, common mistakes, and how to generate every size from one upload.",
     url: "https://snaptosize.com/etsy-gallery-wall-print-sizes",
     datePublished: "2026-03-25",
-    dateModified: "2026-03-25",
+    dateModified: "2026-04-30",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -476,6 +477,12 @@ export default function EtsyGalleryWallPrintSizesPage() {
             <QuickAnswer question="What print sizes do I need for gallery wall sets on Etsy?">
               <strong>8×10, 11×14, 5×7, 12×16, and 16×20</strong> cover most gallery wall arrangements. Mix sizes from at least 2 ratio families and offer both portrait and landscape for maximum flexibility.
             </QuickAnswer>
+            <ListingOutputShowcase
+              artwork="geometric"
+              heading="Every gallery wall size — generated from one upload."
+              subtext="SnapToSize outputs all your ratio-correct sizes at 300 DPI. No Photoshop, no manual resizing — upload once, download every size your buyers need."
+            />
+
             {/* --- H2 1: Why Gallery Wall Sizing Is Hard --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
