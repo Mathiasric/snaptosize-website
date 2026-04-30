@@ -407,14 +407,14 @@ export default function EtsyGalleryWallPrintSizesPage() {
                 className="block text-lg md:text-xl lg:text-2xl font-semibold"
                 style={{ color: "rgba(245,240,235,0.6)" }}
               >
-                Every arrangement, every size, every room&nbsp;&mdash; one&nbsp;upload
+                Mix 8&times;10, 5&times;7, and 4&times;6 into any room&nbsp;&mdash; from one&nbsp;upload
               </span>
             </h1>
             <p className="text-sm md:text-base mb-4 max-w-lg" style={{ color: "rgba(245,240,235,0.5)" }}>
-              Gallery wall sets are Etsy&apos;s highest-value digital download
-              format. This guide covers the 5 most popular arrangements with
-              exact sizes, room-by-room recommendations, and how to generate
-              every size from a single upload.
+              The classic mix: one large (16&times;20), two medium (8&times;10 or 11&times;14),
+              two small (5&times;7 or 4&times;6). This guide covers all 5 arrangement
+              types with exact sizes per room and how to generate every file
+              from a single upload.
             </p>
 
             <div className="mb-3">

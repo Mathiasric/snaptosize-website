@@ -7,6 +7,7 @@ import { Check, Square } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { FinalCTA } from "@/components/FinalCTA";
 import { QuickAnswer } from "@/components/QuickAnswer";
+import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
@@ -495,6 +496,12 @@ export default function EtsySquarePrintSizesPage() {
               frames at IKEA, Target, and Amazon. Include all 8 sizes (5&times;5
               through 24&times;24) for maximum buyer coverage.
             </QuickAnswer>
+
+            <ListingOutputShowcase
+              artwork="geometric"
+              heading="All 8 square sizes — generated from one upload."
+              subtext="SnapToSize outputs every 1:1 size at 300 DPI. Upload your square art once, download 5×5 through 24×24 — ready to list on Etsy."
+            />
 
             {/* --- Section 1: Why Square Prints Sell on Etsy --- */}
             <div>
