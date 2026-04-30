@@ -10,31 +10,31 @@ import { QuickAnswer } from "@/components/QuickAnswer";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "Etsy Square Print Sizes — 1:1 Ratio Guide",
+  title: "Square Print Sizes for Etsy — 5×5 to 24×24: Which Sizes Sell Best (2026)",
   description:
-    "The 8 standard square print sizes for Etsy: 5×5 to 24×24 at 300 DPI. Pixel dimensions, frame sizes, and which sizes sell best.",
+    "8 square print sizes for Etsy: 5×5 through 24×24 at 300 DPI. Instagram and canvas buyers request 8×8 and 12×12 most — pixel dimensions, matching frame sizes, and how to generate them all.",
   alternates: {
     canonical: "https://snaptosize.com/etsy-square-print-sizes",
   },
   openGraph: {
-    title: "Etsy Square Print Sizes — 1:1 Ratio Guide | SnapToSize",
+    title: "Square Print Sizes for Etsy: Which 8 Sizes Sell Best | SnapToSize",
     description:
-      "The 8 standard square print sizes for Etsy: 5×5 to 24×24 at 300 DPI. Pixel dimensions, frame sizes, and which sizes sell best.",
+      "8 square print sizes for Etsy: 5×5 through 24×24 at 300 DPI. Instagram and canvas buyers request 8×8 and 12×12 most — pixel chart and frame-matching guide.",
     url: "https://snaptosize.com/etsy-square-print-sizes",
     images: [
       {
         url: "/assets/og/etsy-square-print-sizes.png",
         width: 1200,
         height: 630,
-        alt: "Etsy Square Print Sizes — 1:1 Ratio Guide",
+        alt: "Square Print Sizes for Etsy — 5×5 to 24×24 at 300 DPI",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Etsy Square Print Sizes — 1:1 Ratio Guide",
+    title: "Square Print Sizes for Etsy: 5×5 to 24×24 — Which Sizes Sell Best",
     description:
-      "The 8 standard square print sizes for Etsy: 5×5 to 24×24 at 300 DPI. Pixel dimensions, frame sizes, and which sizes sell best.",
+      "8 square print sizes for Etsy at 300 DPI. Instagram and canvas buyers request 8×8 and 12×12 most — pixel dimensions and frame-matching tips.",
     images: ["/assets/og/etsy-square-print-sizes.png"],
   },
 };
@@ -48,7 +48,7 @@ export default function EtsySquarePrintSizesPage() {
       "The 8 standard square print sizes for Etsy digital sellers: 5×5 through 24×24 at 300 DPI. Covers pixel dimensions, which sizes sell best, frame availability, and how to use square prints in gallery wall listings.",
     url: "https://snaptosize.com/etsy-square-print-sizes",
     datePublished: "2026-04-01",
-    dateModified: "2026-04-01",
+    dateModified: "2026-04-30",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
