@@ -147,6 +147,9 @@ export function Header() {
                     <Link href="/etsy-square-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Square Print Sizes
                     </Link>
+                    <Link href="/canvas-print-sizes-for-etsy" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Canvas Print Sizes
+                    </Link>
                     <Link href="/etsy-sticker-sheet-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Sticker Sheet Size
                     </Link>
@@ -398,6 +401,9 @@ export function Header() {
                         <Link href="/etsy-printable-bleed-and-crop-marks" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                           Bleed & Crop Marks Guide
                         </Link>
+                        <Link href="/cmyk-vs-rgb-for-etsy-printables" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                          CMYK vs RGB
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -548,6 +554,9 @@ export function Header() {
                         </Link>
                         <Link href="/etsy-square-print-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Square Print Sizes
+                        </Link>
+                        <Link href="/canvas-print-sizes-for-etsy" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Canvas Print Sizes
                         </Link>
                         <Link href="/etsy-quote-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Quote Wall Art Sizes
@@ -706,6 +715,9 @@ export function Header() {
                         </Link>
                         <Link href="/etsy-printable-bleed-and-crop-marks" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Bleed & Crop Marks Guide
+                        </Link>
+                        <Link href="/cmyk-vs-rgb-for-etsy-printables" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          CMYK vs RGB
                         </Link>
                       </div>
                     )}

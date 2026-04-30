@@ -1882,5 +1882,49 @@
       "etsy-digital-download-blurry-prints",
       "how-many-sizes-etsy-printable"
     ]
+  },
+  {
+    "slug": "canvas-print-sizes-for-etsy",
+    "title": "Canvas Print Sizes for Etsy — Complete Guide (2026)",
+    "pageType": "guide",
+    "keywords": [
+      "canvas print sizes for etsy",
+      "etsy canvas size guide",
+      "canvas wall art sizes etsy",
+      "best canvas size to sell on etsy",
+      "canvas print dimensions"
+    ],
+    "cluster": "size-format",
+    "relatedSlugs": [
+      "print-sizes-at-300-dpi",
+      "etsy-square-print-sizes",
+      "etsy-print-on-demand-vs-digital-download",
+      "2-3-vs-4-5-ratio",
+      "etsy-printable-bleed-and-crop-marks",
+      "cmyk-vs-rgb-for-etsy-printables",
+      "etsy-print-size-calculator",
+      "snaptosize-vs-canva"
+    ]
+  },
+  {
+    "slug": "cmyk-vs-rgb-for-etsy-printables",
+    "title": "CMYK vs RGB for Etsy Printables — Color Mode Guide (2026)",
+    "pageType": "problem-solver",
+    "keywords": [
+      "cmyk vs rgb etsy printables",
+      "color mode for etsy printables",
+      "rgb or cmyk for digital downloads",
+      "etsy printable color profile",
+      "srgb for etsy printables"
+    ],
+    "cluster": "problem-solver",
+    "relatedSlugs": [
+      "best-resolution-for-etsy-printables",
+      "etsy-digital-download-blurry-prints",
+      "best-file-format-etsy-printables",
+      "what-files-to-include-etsy-digital-download",
+      "etsy-printable-bleed-and-crop-marks",
+      "canvas-print-sizes-for-etsy"
+    ]
   }
 ]

@@ -1,0 +1,145 @@
+{
+  "batch_id": "2026-W22",
+  "created_at": "2026-04-30",
+  "research_method": "Firecrawl-driven (map 4 competitors → diff against 85 slugs → search top SERP per finalist → scrape top 5 for blueprint depth)",
+  "competitors_mapped": ["printful.com (70 URLs)", "gelato.com (62 URLs)", "printify.com (50 URLs)", "printmeposter.com — excluded as stock photos"],
+  "items": [
+    {
+      "slug": "canvas-print-sizes-for-etsy",
+      "keyword": "canvas print sizes for etsy",
+      "secondary_keywords": [
+        "etsy canvas size guide",
+        "canvas wall art sizes etsy",
+        "best canvas size to sell on etsy",
+        "canvas print dimensions"
+      ],
+      "intent": "transactional + informational (Etsy seller preparing canvas POD listings; secondary: buyer comparing sizes)",
+      "cluster": "size-format / POD",
+      "search_competition": "shallow — top SERP is YouTube + qprints + Etsy market page + Reddit. Gelato canvas-sizes blog is closest direct competitor.",
+      "differentiation_vs_existing_pages": "We have Canva (the design tool) pages — this is canvas (the print substrate). Distinct topic, distinct slug. No cannibalization.",
+      "target_word_count": [1800, 2200],
+      "h2_outline": [
+        "The most-requested canvas sizes on Etsy (buyer demand snapshot)",
+        "Standard canvas print sizes — inches, cm, and pixels at 300 DPI",
+        "Canvas aspect ratios Etsy buyers expect (square, portrait, landscape, panoramic)",
+        "How to prepare a canvas master file (DPI, bleed wrap, color mode)",
+        "Canvas vs paper print: what changes in your file",
+        "POD canvas providers Etsy sellers use (Printful, Printify, Gelato — neutral overview)",
+        "Common canvas-print mistakes that ruin a sale",
+        "How SnapToSize prepares canvas-ready masters from one upload",
+        "Canvas print sizes for Etsy — FAQ"
+      ],
+      "size_table_required": true,
+      "size_table_rows": [
+        ["8×10", "20×25", "2400×3000", "4:5", "Small accent / desk"],
+        ["11×14", "28×36", "3300×4200", "~4:5", "Bedside / nook"],
+        ["12×12", "30×30", "3600×3600", "1:1", "Square gallery"],
+        ["16×20", "40×50", "4800×6000", "4:5", "Living-room hero"],
+        ["18×24", "45×60", "5400×7200", "3:4", "Portrait statement"],
+        ["20×30", "50×75", "6000×9000", "2:3", "Landscape feature"],
+        ["24×36", "60×90", "7200×10800", "2:3", "Oversized statement"],
+        ["30×40", "75×100", "9000×12000", "3:4", "Gallery wall anchor"]
+      ],
+      "faq": [
+        {"q": "What canvas size sells best on Etsy?", "a_outline": "16×20 and 12×18 dominate mid-priced canvas POD; 24×36 wins on AOV. Reference buyer search patterns."},
+        {"q": "Do canvas prints need bleed?", "a_outline": "Yes — most POD providers wrap 0.75″–1.5″. Recommend 1″ bleed safety margin in master."},
+        {"q": "What DPI should canvas prints be?", "a_outline": "300 DPI at the final canvas size. 240 DPI acceptable above 24×36 for POD."},
+        {"q": "Can I use the same file for paper and canvas?", "a_outline": "If aspect ratio matches AND you've added bleed, yes. SnapToSize exports both with one upload."},
+        {"q": "What aspect ratio is canvas?", "a_outline": "Most common: 4:5, 2:3, 3:4, 1:1. Panoramic 1:2 is niche."},
+        {"q": "RGB or CMYK for canvas?", "a_outline": "RGB sRGB. POD canvas printers convert internally. Cross-link to /cmyk-vs-rgb-for-etsy-printables."}
+      ],
+      "internal_links": [
+        "/print-sizes-at-300-dpi",
+        "/etsy-square-print-sizes",
+        "/etsy-landscape-print-sizes",
+        "/etsy-print-on-demand-vs-digital-download",
+        "/2-3-vs-4-5-ratio",
+        "/etsy-printable-bleed-and-crop-marks",
+        "/cmyk-vs-rgb-for-etsy-printables",
+        "/etsy-print-size-calculator",
+        "/snaptosize-vs-canva"
+      ],
+      "schema": ["Article", "BreadcrumbList", "FAQPage"],
+      "snap_angle": "POD canvas sellers need a master that works across canvas + paper + framed. Snap = one upload, all ratios + sizes in 1 ZIP. CTA after H2#3 (ratios) and after H2#8 (Snap angle).",
+      "cta_placements": ["above-fold (after intro)", "mid-content (after ratios H2)", "after Snap-angle H2", "in FAQ closer"]
+    },
+    {
+      "slug": "cmyk-vs-rgb-for-etsy-printables",
+      "keyword": "cmyk vs rgb etsy printables",
+      "secondary_keywords": [
+        "color mode for etsy printables",
+        "rgb or cmyk for digital downloads",
+        "etsy printable color profile",
+        "srgb for etsy printables"
+      ],
+      "intent": "problem-solver (seller confused about color mode — high frustration query)",
+      "cluster": "problem-solver",
+      "search_competition": "weak — Reddit + Facebook in top 2; only Gold City Ventures (7 H2) and Printify (15 H2) are structured competitors. Direct gap.",
+      "differentiation_vs_existing_pages": "No existing page covers color mode. Pairs with bleed/crop, blurry-prints, file-format pages.",
+      "target_word_count": [1700, 2100],
+      "h2_outline": [
+        "The short answer for Etsy printable sellers",
+        "Why the CMYK confusion exists (and who started it)",
+        "RGB vs CMYK in plain English (no design-school jargon)",
+        "Why home printers handle RGB just fine",
+        "When CMYK actually matters (commercial print runs only)",
+        "How to verify your file is RGB — Photoshop, Canva, Illustrator, Affinity",
+        "Etsy printable color problems and how to fix them (washed-out, dark, wrong color)",
+        "The simplest color-safe workflow for digital downloads",
+        "How SnapToSize keeps your color profile correct on every export",
+        "CMYK vs RGB for Etsy printables — FAQ"
+      ],
+      "verification_steps": [
+        "Photoshop: Image → Mode → check RGB Color is selected",
+        "Canva: Download → File type PNG/JPG (Canva exports RGB by default)",
+        "Illustrator: File → Document Color Mode → RGB Color",
+        "Affinity Photo: Document → Convert Format / Color Profile → sRGB",
+        "Preview a JPG: macOS Preview → Tools → Inspector → ICC profile reads sRGB"
+      ],
+      "color_problem_table": [
+        ["Print looks washed out", "File downscaled below 300 DPI"],
+        ["Print looks dark", "Screen brighter than paper; soft-proof recommended"],
+        ["Color shift on canvas", "POD provider auto-converts to CMYK; nothing to fix"],
+        ["Yellow tint", "Wrong color profile (Adobe RGB instead of sRGB)"],
+        ["Customer prints muddy", "Home printer ink mix; not the file's fault"]
+      ],
+      "faq": [
+        {"q": "Should Etsy printables be CMYK or RGB?", "a_outline": "RGB (sRGB). Buyers print on home printers, which expect RGB. CMYK conversion is the printer driver's job."},
+        {"q": "What color profile is best for digital downloads?", "a_outline": "sRGB IEC61966-2.1. Universal default; every printer/screen handles it."},
+        {"q": "Will CMYK print better at home?", "a_outline": "No. Home printers receive RGB and convert internally. CMYK files often print muddier."},
+        {"q": "Why does my print look different from the screen?", "a_outline": "Monitors emit light, paper reflects it. Soft-proof in Photoshop or accept ~10% shift as normal."},
+        {"q": "What is sRGB?", "a_outline": "The standard RGB color space for screens, web, and consumer printers."},
+        {"q": "How do I check my file's color mode?", "a_outline": "Photoshop → Image → Mode. Cross-reference verification steps section."},
+        {"q": "Does Etsy convert my file's color profile?", "a_outline": "No. Etsy delivers the file you upload, untouched."}
+      ],
+      "internal_links": [
+        "/best-resolution-for-etsy-printables",
+        "/etsy-digital-download-blurry-prints",
+        "/best-file-format-etsy-printables",
+        "/what-files-to-include-etsy-digital-download",
+        "/etsy-printable-bleed-and-crop-marks",
+        "/how-to-resize-images-for-etsy",
+        "/canvas-print-sizes-for-etsy",
+        "/print-sizes-at-300-dpi"
+      ],
+      "schema": ["Article", "BreadcrumbList", "FAQPage", "HowTo (verification)"],
+      "snap_angle": "Snap exports sRGB-tagged JPG/PNG by default — no color mode juggling for sellers. CTA after verification H2 + after Snap-angle H2.",
+      "cta_placements": ["above-fold (after short answer)", "after verification H2", "after Snap-angle H2", "FAQ closer"]
+    }
+  ],
+  "shared_quality_gates": {
+    "design_template": "Match etsy-printable-bleed-and-crop-marks (problem-solver) for cmyk; etsy-square-print-sizes (size-format) for canvas",
+    "components": "Reuse existing — RatioProofShowcase, NeonPackShowcase, etc. Do NOT invent new components.",
+    "schema_required": ["Article", "BreadcrumbList", "FAQPage"],
+    "og_image": "Generate via og-screenshot.mjs (1200×630, viewport screenshot of hero)",
+    "internal_links_min": 6,
+    "internal_links_max": 10,
+    "cta_required": ["above-fold", "mid-content", "footer"],
+    "build_must_pass": "npx next build (no errors, no new warnings)",
+    "playwright_qa": "viewport screenshot desktop 1440×900 + mobile 390×844",
+    "registry_update_required": true,
+    "sitemap_update_required": true,
+    "footer_link_required": true,
+    "nav_link_required": false
+  }
+}

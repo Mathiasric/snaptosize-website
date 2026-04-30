@@ -5,11 +5,11 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const pages = [
-  { slug: 'etsy-living-room-wall-art-sizes', filename: 'etsy-living-room-wall-art-sizes.png' },
-  { slug: 'etsy-bedroom-wall-art-sizes', filename: 'etsy-bedroom-wall-art-sizes.png' },
+  { slug: 'canvas-print-sizes-for-etsy', filename: 'canvas-print-sizes-for-etsy.png' },
+  { slug: 'cmyk-vs-rgb-for-etsy-printables', filename: 'cmyk-vs-rgb-for-etsy-printables.png' },
 ];
 
-const baseUrl = 'http://localhost:3333';
+const baseUrl = 'http://localhost:3789';
 const outDir = join(__dirname, 'app-next/public/assets/og');
 
 const browser = await chromium.launch();

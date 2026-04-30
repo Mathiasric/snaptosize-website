@@ -63,6 +63,7 @@ export const ARTWORK_PRESETS: Record<string, ArtworkPreset> = {
     sizes: [
       { id: "2x3", label: "2×3", pack: "Pack 2×3", file: "Wildflower botanical art.jpg", w: 2, h: 3 },
       { id: "a4", label: "A4", pack: "Pack ISO", file: "A4_2480x3508_ISO (11).jpg", w: 210, h: 297 },
+      { id: "3x4", label: "3×4", pack: "Pack 3×4", file: "Wildflower botanical art_11x14_3300x4200 (1).jpg", w: 3, h: 4 },
       { id: "11x14", label: "11×14", pack: "Extras", file: "Wildflower botanical art_11x14_3300x4200.jpg", w: 11, h: 14 },
       { id: "4x5", label: "4×5", pack: "Pack 4×5", file: "Wildflower botanical art_4x5_1200x1500.jpg", w: 4, h: 5 },
     ],
@@ -198,7 +199,7 @@ export function ListingOutputShowcase({
       </div>
 
       {/* Desktop image grid: 3 top + 2 bottom */}
-      <div className="hidden md:block px-3 sm:px-4">
+      <div className="hidden md:block px-3 sm:px-4 max-w-[760px] mx-auto">
         <div className="grid grid-cols-3 gap-3 mb-3">
           {preset.sizes.slice(0, 3).map((size) => {
             const isHov = hovered === size.id;

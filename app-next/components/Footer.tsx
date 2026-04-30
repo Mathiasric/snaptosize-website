@@ -186,6 +186,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/canvas-print-sizes-for-etsy" className="transition-colors hover:text-accent-light">
+                  Canvas Print Sizes
+                </Link>
+              </li>
+              <li>
                 <Link href="/sizes" className="transition-colors hover:text-accent-light font-medium">
                   All size guides →
                 </Link>
@@ -239,6 +244,11 @@ export function Footer() {
               <li>
                 <Link href="/etsy-printable-bleed-and-crop-marks" className="transition-colors hover:text-accent-light">
                   Bleed & Crop Marks Guide
+                </Link>
+              </li>
+              <li>
+                <Link href="/cmyk-vs-rgb-for-etsy-printables" className="transition-colors hover:text-accent-light">
+                  CMYK vs RGB Color Mode
                 </Link>
               </li>
               <li>

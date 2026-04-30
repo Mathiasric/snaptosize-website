@@ -1,50 +1,50 @@
 {
-  "current_week": "W21",
-  "batch_id": "2026-W21",
-  "started_at": "2026-04-25T09:00:00+02:00",
+  "current_week": "W22",
+  "batch_id": "2026-W22",
+  "started_at": "2026-04-30T15:01:23",
   "target": {
     "pages": 2
   },
   "stages": {
     "researcher": {
       "status": "completed",
-      "output": "marketing/briefs/2026-W19-batch.json (2 keywords: canva-print-size-for-etsy, etsy-kitchen-wall-art-sizes). Firecrawl competitor analysis + PAA pulled per keyword."
+      "output": "marketing/briefs/2026-W22-batch.json (canvas-print-sizes-for-etsy + cmyk-vs-rgb-for-etsy-printables). Firecrawl: mapped 4 competitors, scraped top 5 SERP per finalist."
     },
     "writer": {
       "status": "completed",
-      "output": "2 drafts written by parallel seo-writer subagents at marketing/drafts/2026-W19-*/"
+      "output": "2 drafts written by parallel seo-writer subagents at marketing/drafts/2026-W22-*/. Canvas: 1950w, 9 H2, 9 internal links, 3 schemas. CMYK: 1723w, 10 H2, 8 links, 4 schemas (Article+BC+FAQ+HowTo)."
     },
     "review": {
       "status": "completed",
-      "output": "npx next build passes locally"
+      "output": "Build PASS after fixing artwork preset (botanical\u2192wildflower) and OG image path (/og\u2192/assets/og)"
     },
     "deploy": {
       "status": "completed",
-      "output": "Copied to app-next/app/(marketing)/. Registry updated. Uncommitted — user to review before push."
+      "output": "Both pages copied to app-next/app/(marketing)/, registry +2 (88 total), Footer.tsx already had links, sitemap auto-updated, OG images at app-next/public/assets/og/"
     },
     "verify": {
       "status": "completed",
-      "output": "OG images generated via og-screenshot.mjs (1200x630). Metadata openGraph/twitter images wired. Build PASS. Awaiting user visual QA + commit."
+      "output": "npx next build PASS, both pages prerendered (.html/.rsc/.meta in .next/server/app/). User to commit."
     }
   },
   "content_items": [
     {
-      "slug": "etsy-office-wall-art-sizes",
-      "keyword": "etsy office wall art sizes",
+      "slug": "canvas-print-sizes-for-etsy",
+      "keyword": "canvas print sizes for etsy",
       "type": "new-page",
-      "cluster": "niche-vertical",
+      "cluster": "size-format/POD",
       "status": "deployed",
-      "published_at": "2026-04-25",
-      "notes": "Niche vertical: office/WFH wall art sizes. Portrait + landscape + ISO ratios. Firecrawl-researched. OG image generated. Nav/footer added."
+      "published_at": "2026-04-30",
+      "notes": "Firecrawl-researched (mapped 4 competitors). 1950w, 9 H2, 9 internal links, 3 schemas (Article+BC+FAQ). artwork=wildflower preset. OG at /assets/og/canvas-print-sizes-for-etsy.png"
     },
     {
-      "slug": "etsy-printable-bleed-and-crop-marks",
-      "keyword": "etsy printable bleed and crop marks",
+      "slug": "cmyk-vs-rgb-for-etsy-printables",
+      "keyword": "cmyk vs rgb etsy printables",
       "type": "new-page",
       "cluster": "problem-solver",
       "status": "deployed",
-      "published_at": "2026-04-25",
-      "notes": "Problem-solver: bleed/crop marks confusion for Etsy digital sellers. SnapToSize as auto-solution. Firecrawl-researched. OG image generated. Nav/footer added."
+      "published_at": "2026-04-30",
+      "notes": "Firecrawl-researched. 1723w, 10 H2, 8 internal links, 4 schemas (Article+BC+FAQ+HowTo). OG at /assets/og/cmyk-vs-rgb-for-etsy-printables.png"
     }
   ],
   "metrics": {
@@ -53,5 +53,15 @@
     "failed": 0,
     "success_rate": 1
   },
-  "updated_at": "2026-04-25T14:00:00+02:00"
+  "updated_at": "2026-04-30T20:01:48",
+  "batch_history": [
+    {
+      "batch_id": "2026-W21",
+      "completed_at": "2026-04-25T14:00:00+02:00",
+      "items": [
+        "etsy-office-wall-art-sizes",
+        "etsy-printable-bleed-and-crop-marks"
+      ]
+    }
+  ]
 }
