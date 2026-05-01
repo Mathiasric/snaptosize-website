@@ -143,9 +143,25 @@ export default function TermsPage() {
                   9. Refunds
                 </h2>
                 <p>
-                  We recommend trying the free plan before upgrading. Refunds are
-                  considered on a case-by-case basis for technical issues within
-                  7 days of purchase.
+                  <strong>14-day money-back guarantee on first Pro purchase.</strong>{" "}
+                  If SnapToSize doesn&apos;t work for you, contact us within 14 days
+                  of your first Pro charge for a full refund. No questions asked
+                  on first-time purchases.
+                </p>
+                <p className="mt-2">
+                  Subsequent renewals (monthly or annual) are non-refundable for
+                  unused time, but you can cancel anytime via the Stripe Customer
+                  Portal and retain access through the end of the billing period.
+                </p>
+                <p className="mt-2">
+                  Refunds for technical issues outside the 14-day window are
+                  considered on a case-by-case basis. We reserve the right to
+                  decline refunds in cases of clear abuse (e.g., bulk-generating
+                  output and immediately requesting a refund).
+                </p>
+                <p className="mt-2">
+                  We recommend trying the free plan before upgrading to ensure
+                  the tool fits your workflow.
                 </p>
               </div>
 

@@ -297,12 +297,27 @@ export function Footer() {
                   Terms of Service
                 </Link>
               </li>
+              <li>
+                <Link href="/refund" className="transition-colors hover:text-accent-light">
+                  Refund Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/cookies" className="transition-colors hover:text-accent-light">
+                  Cookie Policy
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-semibold mb-3">Company</h3>
             <ul className="space-y-2 text-sm text-foreground-60">
+              <li>
+                <Link href="/about" className="transition-colors hover:text-accent-light">
+                  About
+                </Link>
+              </li>
               <li>
                 <Link href="/partners" className="transition-colors hover:text-accent-light">
                   Partner Program
@@ -313,7 +328,7 @@ export function Footer() {
                   href="mailto:support@snaptosize.com"
                   className="transition-colors hover:text-accent-light"
                 >
-                  support@snaptosize.com
+                  Contact
                 </a>
               </li>
             </ul>

@@ -102,9 +102,12 @@ export function HeroSection() {
                 No credit card required.
               </p>
               {/* Social proof counter */}
-              <p className="text-xs text-white/55 mb-5 flex items-center justify-center gap-1.5">
+              <p className="text-xs text-white/55 mb-1 flex items-center justify-center gap-1.5">
                 <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400/80 animate-pulse" />
                 Used by Etsy sellers worldwide
+              </p>
+              <p className="text-xs text-white/55 mb-5">
+                30+ Etsy print sizes in under 60 seconds. Manually in Photoshop: 1+ hour.
               </p>
 
               {/* Video Thumbnail — primary visual hook */}
