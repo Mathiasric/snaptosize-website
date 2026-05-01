@@ -31,7 +31,7 @@ export function FinalCTASection() {
           </a>
           <p className="text-xs text-foreground-40 mt-4 flex items-center justify-center gap-1.5">
             <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400/80 animate-pulse" />
-            Built by an Etsy seller — because manual resizing is a waste of your time.
+            By Etsy sellers, for Etsy sellers — because manual resizing is a waste of your time.
           </p>
         </div>
       </Container>

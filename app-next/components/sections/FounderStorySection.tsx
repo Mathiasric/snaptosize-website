@@ -58,7 +58,7 @@ export function FounderStorySection() {
               style={{ background: "rgba(45,212,191,0.5)" }}
             />
             <span className="text-xs font-mono tracking-[0.15em] uppercase text-foreground-60">
-              Built by an Etsy seller
+              By Etsy sellers, for Etsy sellers
             </span>
             <div
               className="h-px w-8"
@@ -71,8 +71,8 @@ export function FounderStorySection() {
           </h2>
 
           <p className="text-foreground-60 text-sm md:text-base max-w-2xl mx-auto">
-            SnapToSize was built by an active Etsy seller with 100+
-            listings&mdash;every feature comes from real shop experience.
+            SnapToSize is built by Etsy sellers who got tired of manual
+            resizing&mdash;every feature comes from real shop experience.
           </p>
         </div>
 
