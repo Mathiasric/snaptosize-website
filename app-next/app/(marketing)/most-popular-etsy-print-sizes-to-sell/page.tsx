@@ -407,27 +407,70 @@ export default function MostPopularEtsyPrintSizesPage() {
           {/* Ratio insight */}
           <div className="max-w-3xl mx-auto mb-14">
             <div className="bg-muted/10 rounded-2xl p-8 border border-border/40">
-            <h2 className="text-2xl font-bold mb-4">
-              All top sizes map to just 4 aspect ratios
+            <h2 className="text-2xl font-bold mb-3">
+              One upload covers every popular size — and then some
             </h2>
-            <p className="text-muted-foreground mb-6">
-              You don&apos;t need a separate design file for every size. The top Etsy print sizes share only 4 aspect ratios, which means you only need 4 crops of your original artwork.
+            <p className="text-muted-foreground mb-1 text-sm font-medium">
+              Up to 70 print-ready files from a single artwork. 5 organized packs, all at 300 DPI.
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+            <p className="text-muted-foreground mb-6 text-sm">
+              SnapToSize organizes sizes into 5 ratio packs. Upload once: each pack is auto-cropped to the correct ratio, named, and zipped — ready to attach to your Etsy listing.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-6">
               {[
-                { ratio: "4:5", sizes: "8×10, 16×20", color: "border-accent/30 bg-accent/10 text-accent" },
-                { ratio: "2:3", sizes: "4×6, 12×18, 20×30", color: "border-accent/20 bg-accent/5 text-accent" },
-                { ratio: "3:4", sizes: "9×12, 18×24", color: "border-accent/30 bg-accent/10 text-accent" },
-                { ratio: "5:7", sizes: "5×7", color: "border-border bg-muted/30 text-foreground" },
-              ].map((r) => (
-                <div key={r.ratio} className={`p-4 rounded-lg border-2 ${r.color} text-center`}>
-                  <p className="text-2xl font-bold mb-1">{r.ratio}</p>
-                  <p className="text-xs font-medium opacity-80">{r.sizes}</p>
+                {
+                  pack: "2:3 Pack",
+                  desc: "Wall art standard",
+                  sizes: "4×6, 8×12, 12×18, 16×24, 20×30",
+                  color: "border-accent/30 bg-accent/5 text-accent",
+                  badge: "7 sizes",
+                },
+                {
+                  pack: "3:4 Pack",
+                  desc: "Classic photo frames",
+                  sizes: "6×8, 9×12, 12×16, 15×20, 18×24",
+                  color: "border-purple-500/30 bg-purple-500/5 text-purple-400",
+                  badge: "5 sizes",
+                },
+                {
+                  pack: "4:5 Pack",
+                  desc: "Home of the 8×10",
+                  sizes: "8×10, 12×15, 16×20, 20×25, 24×30",
+                  color: "border-emerald-500/30 bg-emerald-500/5 text-emerald-400",
+                  badge: "5 sizes",
+                },
+                {
+                  pack: "ISO A-Series",
+                  desc: "UK, EU & international",
+                  sizes: "A5, A4, A3, A2, A1",
+                  color: "border-sky-500/30 bg-sky-500/5 text-sky-400",
+                  badge: "5 sizes",
+                },
+                {
+                  pack: "Extras Pack",
+                  desc: "Common sizes that don't fit a single ratio",
+                  sizes: "5×7, 8.5×11, 11×14, 11×17, 13×19, 20×24",
+                  color: "border-amber-500/30 bg-amber-500/5 text-amber-400",
+                  badge: "6 sizes",
+                },
+              ].map((p) => (
+                <div key={p.pack} className={`p-4 rounded-lg border ${p.color}`}>
+                  <div className="flex items-center justify-between mb-1">
+                    <p className="font-semibold text-sm">{p.pack}</p>
+                    <span className={`text-xs font-mono px-1.5 py-0.5 rounded ${p.color} opacity-80`}>{p.badge}</span>
+                  </div>
+                  <p className="text-xs text-muted-foreground mb-2">{p.desc}</p>
+                  <p className="text-xs font-mono text-foreground/60">{p.sizes}</p>
                 </div>
               ))}
+              <div className="p-4 rounded-lg border border-border/40 bg-muted/10 flex flex-col justify-center">
+                <p className="text-xs text-muted-foreground mb-1">Plus Quick Export</p>
+                <p className="text-sm font-medium">Square sizes + oversized prints</p>
+                <p className="text-xs font-mono text-foreground/60 mt-1">5×5 → 24×24, 24×36, A0</p>
+              </div>
             </div>
             <p className="text-sm text-muted-foreground">
-              SnapToSize generates all sizes from a single upload: automatically cropped to each ratio, at 300 DPI, ready to attach to your Etsy listing.
+              Every pack is generated in both <strong>portrait and landscape</strong> — that&apos;s up to 70 files from a single upload. All 300 DPI JPEG, organized by ratio.
             </p>
             </div>
           </div>
