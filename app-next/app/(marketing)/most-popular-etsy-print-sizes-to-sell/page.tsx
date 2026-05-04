@@ -345,6 +345,18 @@ export default function MostPopularEtsyPrintSizesPage() {
             </div>
           </div>
 
+          {/* Lifestyle image — gallery wall showing multiple frame sizes */}
+          <div className="max-w-4xl mx-auto mb-6 rounded-2xl overflow-hidden">
+            <img
+              src="/assets/most-popular-sizes-room.jpg"
+              alt="Gallery wall with 6 framed botanical prints in different sizes — 5×7, 8×10, 11×14, 16×20 and 18×24 — in a Scandinavian living room with natural light"
+              className="w-full h-auto object-cover"
+              loading="lazy"
+              width={1600}
+              height={900}
+            />
+          </div>
+
           {/* Room-by-room guide — subtle background */}
           <div className="max-w-4xl mx-auto mb-14">
             <div className="py-14 bg-muted/20 rounded-2xl px-6">
