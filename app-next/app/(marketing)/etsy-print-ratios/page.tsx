@@ -299,7 +299,8 @@ export default function EtsyPrintRatiosPage() {
               </h2>
               <p className="text-foreground-60 mb-6">
                 Most Etsy printable wall art sellers provide these four ratio families.
-                Together, they cover virtually every standard frame size.
+                Together, they cover virtually every standard frame size. If you want to know which specific sizes within these ratios drive the most sales, see the{" "}
+                <Link href="/most-popular-etsy-print-sizes-to-sell" className="text-accent-light hover:underline">most popular Etsy print sizes to sell</Link>.
               </p>
 
               <div className="space-y-6">

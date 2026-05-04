@@ -418,7 +418,8 @@ export default function Etsy8x10PrintSizePage() {
                     <Link href="/etsy-pet-portrait-sizes" className="text-accent-light hover:underline">
                       pet portrait
                     </Link>{" "}
-                    sellers, where 8×10 is the #1 requested size.
+                    sellers, where 8×10 is the #1 requested size. For a full breakdown of demand across all sizes, see the{" "}
+                    <Link href="/most-popular-etsy-print-sizes-to-sell" className="text-accent-light hover:underline">most popular Etsy print sizes to sell</Link>.
                   </p>
                 </Card>
               </div>

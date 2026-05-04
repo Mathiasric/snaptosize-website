@@ -309,7 +309,9 @@ export default function EtsyPrintSizesPage() {
                 </Link>{" "}
                 &mdash; each with exact pixel dimensions at 300&nbsp;DPI. Use our{" "}
                 <Link href="/etsy-print-size-calculator" className="text-accent-light hover:underline">print size calculator</Link>{" "}
-                to check which sizes your image can print without cropping.
+                to check which sizes your image can print without cropping. Not sure where to start? See which are the{" "}
+                <Link href="/most-popular-etsy-print-sizes-to-sell" className="text-accent-light hover:underline">most popular Etsy print sizes</Link>{" "}
+                among buyers.
               </p>
               <Card accent>
                 <p className="text-sm text-foreground-60">
