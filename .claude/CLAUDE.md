@@ -172,13 +172,18 @@ Activate the relevant skill BEFORE starting work in that domain.
 | Positioning, ICP, product marketing | `product-marketing-context` |
 | Video, Remotion, animation, TikTok, Reels | `remotion` |
 | Marketing images, social graphics, campaign slides, PH/launch visuals | `marketing-visuals` |
+| Instagram carousels, slide series, EC0x components, carousel copy | `instagram-carousel` |
 | Strategy, priorities, session start, decisions | `strategic-advisor` |
 | GSC review, search performance, CTR optimization | `gsc-review` |
+| New pages (polish/audit/shape), component redesign, typography, color pass | `impeccable` |
 
 Rules:
 - If a task touches any domain above, activate the skill first
 - Run `/strategy` at session start when unsure what to work on (queries NotebookLM)
 - When building NEW UI components, fetch shadcn/ui docs as pattern reference
+
+**New page pipeline:** `frontend-design` → `impeccable` (skips teach if PRODUCT.md exists) → build → `/impeccable polish` before shipping.
+**impeccable is NOT for:** regular chat, bug fixes, SEO edits, pipeline/Worker tasks.
 
 ---
 
