@@ -187,21 +187,92 @@ export default function MostPopularEtsyPrintSizesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
+
+      {/* ===== HERO ===== */}
+      <section
+        className="relative py-20 md:py-28 overflow-hidden"
+        style={{ background: "linear-gradient(135deg, #030712 0%, #0a0f1e 40%, #0d1117 100%)" }}
+      >
+        {/* Dot grid background */}
+        <div
+          className="absolute inset-0 opacity-[0.07]"
+          style={{
+            backgroundImage: "radial-gradient(circle, #a78bfa 1px, transparent 1px)",
+            backgroundSize: "24px 24px",
+          }}
+        />
+        {/* Gradient mesh blobs */}
+        <div
+          className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] rounded-full opacity-[0.08]"
+          style={{ background: "radial-gradient(circle, #7c3aed, transparent 70%)" }}
+        />
+        <div
+          className="absolute bottom-[-30%] left-[-5%] w-[500px] h-[500px] rounded-full opacity-[0.05]"
+          style={{ background: "radial-gradient(circle, #6366f1, transparent 70%)" }}
+        />
+
+        <Container>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left: text */}
+            <div>
+              {/* Eyebrow pill */}
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-5">
+                <span className="text-xs font-semibold text-accent tracking-wide">
+                  Etsy Seller Guide · 2026
+                </span>
+              </div>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-5 text-white">
+                Most Popular Etsy Print Sizes to Sell
+              </h1>
+              <p className="text-lg text-white/60 mb-8 max-w-lg">
+                8×10 is the top seller — but listings with only one size miss buyers with different frames. Here are the exact sizes to offer, and how to cover all of them from one upload.
+              </p>
+              {/* CTA buttons */}
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href={appUrl}
+                  className="inline-flex items-center gap-2 px-5 py-2.5 bg-accent text-[#030712] font-semibold rounded-lg text-sm hover:bg-accent/90 transition-colors"
+                >
+                  Try Free — Generate All Sizes
+                </a>
+                <a
+                  href="#top-sizes"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 border border-white/20 text-white/80 font-medium rounded-lg text-sm hover:border-white/40 transition-colors"
+                >
+                  See Top 5 Sizes
+                </a>
+              </div>
+            </div>
+
+            {/* Right: CSS-only size proportion visual */}
+            <div className="hidden lg:flex items-end justify-center gap-4 h-72">
+              {[
+                { label: "8×10", w: 64, h: 80, color: "bg-accent/20 border-accent/40", rank: "#1" },
+                { label: "5×7", w: 56, h: 78, color: "bg-purple-500/20 border-purple-500/40", rank: "#2" },
+                { label: "11×14", w: 62, h: 80, color: "bg-emerald-500/20 border-emerald-500/40", rank: "#3" },
+                { label: "16×20", w: 64, h: 80, color: "bg-accent/20 border-accent/40", rank: "#4" },
+                { label: "18×24", w: 60, h: 80, color: "bg-amber-500/20 border-amber-500/40", rank: "#5" },
+              ].map((block) => (
+                <div key={block.label} className="flex flex-col items-center gap-2 flex-shrink-0">
+                  <span className="text-[10px] font-mono text-white/40">{block.rank}</span>
+                  <div
+                    className={`border-2 rounded-lg ${block.color} flex flex-col items-center justify-end pb-2`}
+                    style={{ width: `${block.w}px`, height: `${block.h * 2.5}px` }}
+                  >
+                    <span className="text-xs font-mono font-semibold text-white/80">{block.label}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* ===== MAIN CONTENT ===== */}
       <main className="py-12 md:py-16">
         <Container>
-          {/* Hero */}
+          {/* QuickAnswer */}
           <div className="max-w-3xl mx-auto mb-12">
-            <p className="text-sm font-medium text-accent mb-3 uppercase tracking-wide">
-              Etsy Seller Guide · 2026
-            </p>
-            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-5">
-              Most Popular Etsy Print Sizes to Sell
-            </h1>
-            <p className="text-lg text-muted-foreground mb-6">
-              Not all print sizes sell equally. 8×10 accounts for the largest share of Etsy print sales, but if you only offer one or two sizes, you&apos;re leaving buyers (and revenue) behind. Here&apos;s exactly which sizes to offer, why they sell, and how to cover all of them without manual resizing.
-            </p>
-
-            {/* QuickAnswer */}
             <QuickAnswer question="What are the most popular Etsy print sizes to sell?">
               The top 5 most popular Etsy print sizes are: 8×10 (4:5 ratio), 5×7, 11×14, 16×20 (4:5 ratio), and 18×24 (3:4 ratio). 8×10 dominates because it fits standard frames available everywhere. Together, these 5 sizes cover the full range of buyer demand for wall art, gifts, and gallery walls.
             </QuickAnswer>
@@ -209,23 +280,27 @@ export default function MostPopularEtsyPrintSizesPage() {
 
           {/* Top 5 sizes */}
           <div className="max-w-4xl mx-auto mb-14">
-            <h2 className="text-2xl font-bold mb-6">
+            <h2 id="top-sizes" className="text-2xl font-bold mb-6">
               Top 5 Print Sizes Ranked by Popularity
             </h2>
 
-            {/* Ratio visual blocks */}
-            <div role="img" aria-label="Visual comparison of top 5 Etsy print size proportions" className="flex gap-4 mb-8 overflow-x-auto pb-2">
+            {/* Ratio visual blocks — taller for visibility */}
+            <div
+              role="img"
+              aria-label="Visual comparison of top 5 Etsy print size proportions"
+              className="flex gap-6 mb-8 overflow-x-auto pb-2 items-end"
+            >
               {[
-                { size: "8×10", w: 80, h: 100, color: "bg-accent-15 border-accent-30" },
-                { size: "5×7", w: 70, h: 98, color: "bg-accent-5 border-accent-15" },
-                { size: "11×14", w: 77, h: 98, color: "bg-accent-15 border-accent-30" },
-                { size: "16×20", w: 80, h: 100, color: "bg-accent-15 border-accent-30" },
-                { size: "18×24", w: 75, h: 100, color: "bg-accent-5 border-accent-15" },
+                { size: "8×10", wPx: 48, hPx: 60, color: "bg-accent/15 border-accent/30" },
+                { size: "5×7", wPx: 43, hPx: 60, color: "bg-purple-500/15 border-purple-500/30" },
+                { size: "11×14", wPx: 46, hPx: 58, color: "bg-emerald-500/15 border-emerald-500/30" },
+                { size: "16×20", wPx: 48, hPx: 60, color: "bg-accent/15 border-accent/30" },
+                { size: "18×24", wPx: 45, hPx: 60, color: "bg-amber-500/15 border-amber-500/30" },
               ].map((block) => (
                 <div key={block.size} className="flex flex-col items-center flex-shrink-0">
                   <div
-                    className={`w-12 border-2 rounded ${block.color} flex items-center justify-center`}
-                    style={{ aspectRatio: `${block.w} / ${block.h}` }}
+                    className={`border-2 rounded-lg ${block.color} flex items-end justify-center pb-2`}
+                    style={{ width: `${block.wPx * 2}px`, height: `${Math.max(block.hPx * 2, 80)}px` }}
                   >
                     <span className="text-xs font-mono font-semibold">{block.size}</span>
                   </div>
@@ -265,29 +340,31 @@ export default function MostPopularEtsyPrintSizesPage() {
             </div>
           </div>
 
-          {/* Room-by-room guide */}
-          <div className="max-w-3xl mx-auto mb-14">
-            <h2 className="text-2xl font-bold mb-4">
-              Best Print Size by Room and Use Case
-            </h2>
-            <p className="text-muted-foreground mb-6">
-              Buyers shop by room. Listing your prints in multiple sizes lets buyers find the right fit for their space, which increases the chance they purchase.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {[
-                { room: "Living Room", sizes: "16×20, 18×24, 20×30", note: "Statement sizes. Buyers want impact. Price higher." },
-                { room: "Bedroom", sizes: "8×10, 11×14, 5×7 sets", note: "Single focal point or gallery wall pairs." },
-                { room: "Nursery / Kids Room", sizes: "5×7, 8×10, A4", note: "Smaller frames are common. Sets of 2 to 3 prints popular." },
-                { room: "Home Office / Desk", sizes: "5×7, 4×6, 8×10", note: "Compact frames. Motivational and minimal styles." },
-                { room: "Kitchen / Hallway", sizes: "5×7, 4×6, A5", note: "Small accent pieces. Often sold in matching sets." },
-                { room: "Gallery Wall", sizes: "Mix of 5×7 + 8×10 + 11×14", note: "Buyers want size variety. Bundle listings convert well." },
-              ].map((item) => (
-                <div key={item.room} className="p-4 rounded-lg border border-border bg-card">
-                  <p className="font-semibold mb-1">{item.room}</p>
-                  <p className="text-sm text-accent font-medium mb-1">{item.sizes}</p>
-                  <p className="text-sm text-muted-foreground">{item.note}</p>
-                </div>
-              ))}
+          {/* Room-by-room guide — subtle background */}
+          <div className="max-w-4xl mx-auto mb-14">
+            <div className="py-14 bg-muted/20 rounded-2xl px-6">
+              <h2 className="text-2xl font-bold mb-4">
+                Best Print Size by Room and Use Case
+              </h2>
+              <p className="text-muted-foreground mb-6">
+                Buyers shop by room. Listing your prints in multiple sizes lets buyers find the right fit for their space, which increases the chance they purchase.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {[
+                  { room: "Living Room", sizes: "16×20, 18×24, 20×30", note: "Statement sizes. Buyers want impact. Price higher." },
+                  { room: "Bedroom", sizes: "8×10, 11×14, 5×7 sets", note: "Single focal point or gallery wall pairs." },
+                  { room: "Nursery / Kids Room", sizes: "5×7, 8×10, A4", note: "Smaller frames are common. Sets of 2 to 3 prints popular." },
+                  { room: "Home Office / Desk", sizes: "5×7, 4×6, 8×10", note: "Compact frames. Motivational and minimal styles." },
+                  { room: "Kitchen / Hallway", sizes: "5×7, 4×6, A5", note: "Small accent pieces. Often sold in matching sets." },
+                  { room: "Gallery Wall", sizes: "Mix of 5×7 + 8×10 + 11×14", note: "Buyers want size variety. Bundle listings convert well." },
+                ].map((item) => (
+                  <div key={item.room} className="p-4 rounded-lg border border-border bg-card">
+                    <p className="font-semibold mb-1">{item.room}</p>
+                    <p className="text-sm text-accent font-medium mb-1">{item.sizes}</p>
+                    <p className="text-sm text-muted-foreground">{item.note}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
@@ -325,10 +402,10 @@ export default function MostPopularEtsyPrintSizesPage() {
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
               {[
-                { ratio: "4:5", sizes: "8×10, 16×20", color: "border-accent-30 bg-accent-15 text-accent-light" },
-                { ratio: "2:3", sizes: "4×6, 12×18, 20×30", color: "border-accent-15 bg-accent-5 text-accent-light" },
-                { ratio: "3:4", sizes: "9×12, 18×24", color: "border-accent-30 bg-accent-15 text-accent-light" },
-                { ratio: "5:7", sizes: "5×7", color: "border-border bg-surface text-foreground" },
+                { ratio: "4:5", sizes: "8×10, 16×20", color: "border-accent/30 bg-accent/10 text-accent" },
+                { ratio: "2:3", sizes: "4×6, 12×18, 20×30", color: "border-accent/20 bg-accent/5 text-accent" },
+                { ratio: "3:4", sizes: "9×12, 18×24", color: "border-accent/30 bg-accent/10 text-accent" },
+                { ratio: "5:7", sizes: "5×7", color: "border-border bg-muted/30 text-foreground" },
               ].map((r) => (
                 <div key={r.ratio} className={`p-4 rounded-lg border-2 ${r.color} text-center`}>
                   <p className="text-2xl font-bold mb-1">{r.ratio}</p>
@@ -351,43 +428,45 @@ export default function MostPopularEtsyPrintSizesPage() {
             />
           </div>
 
-          {/* International sizes */}
-          <div className="max-w-3xl mx-auto mb-14">
-            <h2 className="text-2xl font-bold mb-4">
-              International print sizes (UK &amp; EU buyers)
-            </h2>
-            <p className="text-muted-foreground mb-5">
-              Adding ISO A-series sizes opens your shop to UK and European buyers who shop in millimetres and own standard European frames.
-            </p>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm border-collapse">
-                <thead>
-                  <tr className="border-b border-border">
-                    <th scope="col" className="text-left py-3 pr-4 font-semibold">Size</th>
-                    <th scope="col" className="text-left py-3 pr-4 font-semibold">mm</th>
-                    <th scope="col" className="text-left py-3 pr-4 font-semibold">Pixels (300 DPI)</th>
-                    <th scope="col" className="text-left py-3 font-semibold">US equivalent</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    { size: "A4", mm: "210×297 mm", px: "2480×3508 px", eq: "≈ 8×11" },
-                    { size: "A3", mm: "297×420 mm", px: "3508×4961 px", eq: "≈ 11×16" },
-                    { size: "A5", mm: "148×210 mm", px: "1748×2480 px", eq: "≈ 5×8" },
-                  ].map((r) => (
-                    <tr key={r.size} className="border-b border-border/50 hover:bg-muted/30 transition-colors">
-                      <td className="py-3 pr-4 font-semibold">{r.size}</td>
-                      <td className="py-3 pr-4 text-muted-foreground">{r.mm}</td>
-                      <td className="py-3 pr-4 font-mono text-xs text-muted-foreground">{r.px}</td>
-                      <td className="py-3 text-muted-foreground">{r.eq}</td>
+          {/* International sizes — subtle background */}
+          <div className="max-w-4xl mx-auto mb-14">
+            <div className="py-14 bg-muted/20 rounded-2xl px-6">
+              <h2 className="text-2xl font-bold mb-4">
+                International print sizes (UK &amp; EU buyers)
+              </h2>
+              <p className="text-muted-foreground mb-5">
+                Adding ISO A-series sizes opens your shop to UK and European buyers who shop in millimetres and own standard European frames.
+              </p>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm border-collapse">
+                  <thead>
+                    <tr className="border-b border-border">
+                      <th scope="col" className="text-left py-3 pr-4 font-semibold">Size</th>
+                      <th scope="col" className="text-left py-3 pr-4 font-semibold">mm</th>
+                      <th scope="col" className="text-left py-3 pr-4 font-semibold">Pixels (300 DPI)</th>
+                      <th scope="col" className="text-left py-3 font-semibold">US equivalent</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {[
+                      { size: "A4", mm: "210×297 mm", px: "2480×3508 px", eq: "≈ 8×11" },
+                      { size: "A3", mm: "297×420 mm", px: "3508×4961 px", eq: "≈ 11×16" },
+                      { size: "A5", mm: "148×210 mm", px: "1748×2480 px", eq: "≈ 5×8" },
+                    ].map((r) => (
+                      <tr key={r.size} className="border-b border-border/50 hover:bg-muted/30 transition-colors">
+                        <td className="py-3 pr-4 font-semibold">{r.size}</td>
+                        <td className="py-3 pr-4 text-muted-foreground">{r.mm}</td>
+                        <td className="py-3 pr-4 font-mono text-xs text-muted-foreground">{r.px}</td>
+                        <td className="py-3 text-muted-foreground">{r.eq}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-sm text-muted-foreground mt-6 p-4 rounded-lg bg-muted/40 border border-border">
+                <strong>International note:</strong> Add the <strong>ISO A-series</strong> (A4, A3) to reach UK and EU buyers who shop in millimetres. A4 (2480×3508 px) is the European equivalent of US Letter and is the most-requested international size on Etsy.
+              </p>
             </div>
-            <p className="text-sm text-muted-foreground mt-6 p-4 rounded-lg bg-muted/40 border border-border">
-              <strong>International note:</strong> Add the <strong>ISO A-series</strong> (A4, A3) to reach UK and EU buyers who shop in millimetres. A4 (2480×3508 px) is the European equivalent of US Letter and is the most-requested international size on Etsy.
-            </p>
           </div>
 
           {/* FAQ */}
