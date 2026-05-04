@@ -19,6 +19,21 @@ export const metadata: Metadata = {
       "8×10, 5×7, 11×14 — the sizes Etsy buyers actually purchase. A complete seller guide with aspect ratios, room-by-room sizing, and how to cover all sizes from one upload.",
     url: "https://snaptosize.com/most-popular-etsy-print-sizes-to-sell",
     type: "article",
+    images: [
+      {
+        url: "/assets/og/etsy-print-sizes.png",
+        width: 1200,
+        height: 630,
+        alt: "Most Popular Etsy Print Sizes to Sell — 2026 Seller Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Most Popular Etsy Print Sizes to Sell (2026 Seller Guide)",
+    description:
+      "8×10, 5×7, 11×14 — the sizes Etsy buyers actually purchase. A complete seller guide with aspect ratios, room-by-room sizing, and how to cover all sizes from one upload.",
+    images: ["/assets/og/etsy-print-sizes.png"],
   },
 };
 
@@ -95,6 +110,19 @@ const faqItems = [
   },
 ];
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answer,
+    },
+  })),
+};
+
 export default function MostPopularEtsyPrintSizesPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -143,19 +171,6 @@ export default function MostPopularEtsyPrintSizesPage() {
         item: "https://snaptosize.com/most-popular-etsy-print-sizes-to-sell",
       },
     ],
-  };
-
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqItems.map((item) => ({
-      "@type": "Question",
-      name: item.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.answer,
-      },
-    })),
   };
 
   return (
@@ -209,8 +224,8 @@ export default function MostPopularEtsyPrintSizesPage() {
               ].map((block) => (
                 <div key={block.size} className="flex flex-col items-center flex-shrink-0">
                   <div
-                    className={`border-2 rounded ${block.color} flex items-center justify-center`}
-                    style={{ width: `${block.w * 0.6}px`, height: `${block.h * 0.6}px` }}
+                    className={`w-12 border-2 rounded ${block.color} flex items-center justify-center`}
+                    style={{ aspectRatio: `${block.w} / ${block.h}` }}
                   >
                     <span className="text-xs font-mono font-semibold">{block.size}</span>
                   </div>
