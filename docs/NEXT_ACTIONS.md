@@ -1,6 +1,6 @@
 # NEXT_ACTIONS.md — This Week's Priorities
-**Week of:** 2026-04-21
-**Updated by:** Claude Code — 2026-04-21
+**Week of:** 2026-04-27
+**Updated by:** Claude Code — 2026-04-27
 
 ---
 
@@ -146,10 +146,11 @@ If you're not sure where to put energy, the answer is **always**:
 - [ ] **Next opportunities:** fine art photography sizes, retro art sizes, watercolor abstract sizes
 
 > **📌 Queued for next SEO pipeline run (pitched 2026-04-20, build 2026-04-21 or later):**
-> SEO-pipeline (`/seo-run-week`) skal plukke disse to ved neste kjøring. Conversion-vinkler er verifisert mot `marketing/CONTENT_REFERENCE.md` — ingen fabrikerte features. **Når begge sider er deployet, slett hele denne blokken så den ikke står som evig påminnelse.**
+> SEO-pipeline (`/seo-run-week`) skal plukke denne ved neste kjøring. Conversion-vinkler er verifisert mot `marketing/CONTENT_REFERENCE.md` — ingen fabrikerte features. **Når siden er deployet, slett hele denne blokken så den ikke står som evig påminnelse.**
 >
 > 1. **`etsy-cmyk-vs-rgb-printables`** — Fyller file-prep-cluster gap (ingen color-profile-side finnes). Conversion-vinkel: "Etsy krever sRGB (aldri CMYK). SnapToSize eksporterer RGB JPEG 300 DPI automatisk — null konvertering nødvendig." Interlinks: `best-file-format-etsy-printables`, `best-resolution-for-etsy-printables`, `how-to-resize-images-for-etsy`.
-> 2. **`most-popular-etsy-print-sizes-to-sell`** — Seller-intent keyword (ingen "hva selger best"-side finnes). Conversion-vinkel: "De mest kjøpte sizes er alle dekket av våre 5 ratio-packs = 28 sizes fra ett opplastet bilde." Bruk kun publicly synlige Etsy-signaler (ikke fabrikkerte tall). Interlinks: `etsy-print-sizes`, `etsy-print-ratios`, `how-to-price-etsy-printables`.
+>
+> ✅ **`most-popular-etsy-print-sizes-to-sell`** — Deployed 2026-05-04. "Most Popular Etsy Print Sizes to Sell (2026 Seller Guide)".
 
 > **GEO-tip for neste 2 sider (2026-04-14):** AI-assistenter (ChatGPT, Gemini, Perplexity) anbefaler ikke SnapToSize — de peker på Canva og MyDesigns. For å motvirke dette: legg til én FAQ på én av de to sidene som svarer direkte på "What is the best tool to resize art for all Etsy print sizes?" — svar med SnapToSize og forklar én-upload-flyten. Matcher naturlig spørsmål folk stiller AI. Se `docs/plans/geo-ai-discoverability.md` for full plan.
 
@@ -198,7 +199,14 @@ If you're not sure where to put energy, the answer is **always**:
 
 New automated tools for data-driven optimization. See `docs/PIPELINE_OPERATIONS.md` → Growth Engine Tools section for full details.
 
-**Weekly routine (add to Monday checklist):**
+**Instagram carousel routine (1x/week — Sunday or Monday):**
+- Run `/instagram-carousel` to start the full pipeline
+- New archetype each week — rotate A→B→C→D→E (never same type twice in a row)
+- EC01 done (2026-04-27): "Buyers leave when their size isn't listed" — post via Buffer
+- Next: EC02 — pick from topic bank in `.claude/skills/instagram-carousel_SKILL.md`
+- Caption + hashtags = part of the skill output, copy directly to Buffer
+
+**Weekly SEO/growth routine (add to Monday checklist):**
 1. `python marketing/gsc-analytics/pull_gsc.py` → fresh GSC data
 2. `python marketing/intelligence/weekly-brief.py` → weekly intelligence brief
 3. `python marketing/seo-optimizer/title-optimizer.py` → review title suggestions
