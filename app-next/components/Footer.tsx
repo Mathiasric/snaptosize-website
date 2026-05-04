@@ -207,6 +207,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/most-popular-etsy-print-sizes-to-sell" className="transition-colors hover:text-accent-light">
+                  Most Popular Sizes to Sell
+                </Link>
+              </li>
+              <li>
                 <Link href="/how-to-upload-more-than-5-files-etsy" className="transition-colors hover:text-accent-light">
                   Upload 5+ Files to Etsy
                 </Link>
