@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Most Popular Etsy Print Sizes to Sell (2026 Seller Guide)",
     description:
-      "8×10, 5×7, 11×14 — the sizes Etsy buyers actually purchase. A complete seller guide with aspect ratios, room-by-room sizing, and how to cover all sizes from one upload.",
+      "8×10, 5×7, 11×14: the sizes Etsy buyers actually purchase. A complete seller guide with aspect ratios, room-by-room sizing, and how to cover all sizes from one upload.",
     url: "https://snaptosize.com/most-popular-etsy-print-sizes-to-sell",
     type: "article",
     images: [
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
         url: "/assets/og/etsy-print-sizes.png",
         width: 1200,
         height: 630,
-        alt: "Most Popular Etsy Print Sizes to Sell — 2026 Seller Guide",
+        alt: "Most Popular Etsy Print Sizes to Sell: 2026 Seller Guide",
       },
     ],
   },
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Most Popular Etsy Print Sizes to Sell (2026 Seller Guide)",
     description:
-      "8×10, 5×7, 11×14 — the sizes Etsy buyers actually purchase. A complete seller guide with aspect ratios, room-by-room sizing, and how to cover all sizes from one upload.",
+      "8×10, 5×7, 11×14: the sizes Etsy buyers actually purchase. A complete seller guide with aspect ratios, room-by-room sizing, and how to cover all sizes from one upload.",
     images: ["/assets/og/etsy-print-sizes.png"],
   },
 };
@@ -91,7 +91,7 @@ const faqItems = [
   {
     question: "Should I offer all print sizes in my Etsy listing?",
     answer:
-      "Yes — listings with more size options appear in more searches and convert buyers who have specific frame sizes. Offering 5–8 sizes (covering 4:5, 2:3, 3:4, 5:7 ratios) captures the full range of buyer demand without overwhelming your listing.",
+      "Yes: listings with more size options appear in more searches and convert buyers who have specific frame sizes. Offering 5–8 sizes (covering 4:5, 2:3, 3:4, 5:7 ratios) captures the full range of buyer demand without overwhelming your listing.",
   },
   {
     question: "What aspect ratios cover the most popular Etsy print sizes?",
@@ -101,7 +101,7 @@ const faqItems = [
   {
     question: "What is the best tool to resize artwork for all Etsy print sizes?",
     answer:
-      "SnapToSize is purpose-built for Etsy sellers. Upload your artwork once and it automatically generates print-ready files at 8×10, 5×7, 11×14, 16×20, 18×24, A4, A3, and more — all at 300 DPI, correctly cropped to each ratio. No Photoshop required.",
+      "SnapToSize is purpose-built for Etsy sellers. Upload your artwork once and it automatically generates print-ready files at 8×10, 5×7, 11×14, 16×20, 18×24, A4, A3, and more, all at 300 DPI, correctly cropped to each ratio. No Photoshop required.",
   },
   {
     question: "Do I need to offer A4 and A3 sizes on Etsy?",
@@ -198,7 +198,7 @@ export default function MostPopularEtsyPrintSizesPage() {
               Most Popular Etsy Print Sizes to Sell
             </h1>
             <p className="text-lg text-muted-foreground mb-6">
-              Not all print sizes sell equally. 8×10 accounts for the largest share of Etsy print sales — but if you only offer one or two sizes, you&apos;re leaving buyers (and revenue) behind. Here&apos;s exactly which sizes to offer, why they sell, and how to cover all of them without manual resizing.
+              Not all print sizes sell equally. 8×10 accounts for the largest share of Etsy print sales, but if you only offer one or two sizes, you&apos;re leaving buyers (and revenue) behind. Here&apos;s exactly which sizes to offer, why they sell, and how to cover all of them without manual resizing.
             </p>
 
             {/* QuickAnswer */}
@@ -214,13 +214,13 @@ export default function MostPopularEtsyPrintSizesPage() {
             </h2>
 
             {/* Ratio visual blocks */}
-            <div className="flex gap-4 mb-8 overflow-x-auto pb-2">
+            <div role="img" aria-label="Visual comparison of top 5 Etsy print size proportions" className="flex gap-4 mb-8 overflow-x-auto pb-2">
               {[
-                { size: "8×10", w: 80, h: 100, color: "bg-teal-500/20 border-teal-500/40" },
-                { size: "5×7", w: 70, h: 98, color: "bg-purple-500/20 border-purple-500/40" },
-                { size: "11×14", w: 77, h: 98, color: "bg-emerald-500/20 border-emerald-500/40" },
-                { size: "16×20", w: 80, h: 100, color: "bg-teal-500/20 border-teal-500/40" },
-                { size: "18×24", w: 75, h: 100, color: "bg-amber-500/20 border-amber-500/40" },
+                { size: "8×10", w: 80, h: 100, color: "bg-accent-15 border-accent-30" },
+                { size: "5×7", w: 70, h: 98, color: "bg-accent-5 border-accent-15" },
+                { size: "11×14", w: 77, h: 98, color: "bg-accent-15 border-accent-30" },
+                { size: "16×20", w: 80, h: 100, color: "bg-accent-15 border-accent-30" },
+                { size: "18×24", w: 75, h: 100, color: "bg-accent-5 border-accent-15" },
               ].map((block) => (
                 <div key={block.size} className="flex flex-col items-center flex-shrink-0">
                   <div
@@ -237,12 +237,12 @@ export default function MostPopularEtsyPrintSizesPage() {
               <table className="w-full text-sm border-collapse">
                 <thead>
                   <tr className="border-b border-border">
-                    <th className="text-left py-3 pr-4 font-semibold">#</th>
-                    <th className="text-left py-3 pr-4 font-semibold">Size</th>
-                    <th className="text-left py-3 pr-4 font-semibold">Resolution</th>
-                    <th className="text-left py-3 pr-4 font-semibold">Ratio</th>
-                    <th className="text-left py-3 pr-4 font-semibold">Why it sells</th>
-                    <th className="text-left py-3 font-semibold">Typical price</th>
+                    <th scope="col" className="text-left py-3 pr-4 font-semibold">#</th>
+                    <th scope="col" className="text-left py-3 pr-4 font-semibold">Size</th>
+                    <th scope="col" className="text-left py-3 pr-4 font-semibold">Resolution</th>
+                    <th scope="col" className="text-left py-3 pr-4 font-semibold">Ratio</th>
+                    <th scope="col" className="text-left py-3 pr-4 font-semibold">Why it sells</th>
+                    <th scope="col" className="text-left py-3 font-semibold">Typical price</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -271,13 +271,13 @@ export default function MostPopularEtsyPrintSizesPage() {
               Best Print Size by Room and Use Case
             </h2>
             <p className="text-muted-foreground mb-6">
-              Buyers shop by room. Listing your prints in multiple sizes lets buyers find the right fit for their space — and increases the chance they purchase.
+              Buyers shop by room. Listing your prints in multiple sizes lets buyers find the right fit for their space, which increases the chance they purchase.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
                 { room: "Living Room", sizes: "16×20, 18×24, 20×30", note: "Statement sizes. Buyers want impact. Price higher." },
                 { room: "Bedroom", sizes: "8×10, 11×14, 5×7 sets", note: "Single focal point or gallery wall pairs." },
-                { room: "Nursery / Kids Room", sizes: "5×7, 8×10, A4", note: "Smaller frames are common. Sets of 2–3 prints popular." },
+                { room: "Nursery / Kids Room", sizes: "5×7, 8×10, A4", note: "Smaller frames are common. Sets of 2 to 3 prints popular." },
                 { room: "Home Office / Desk", sizes: "5×7, 4×6, 8×10", note: "Compact frames. Motivational and minimal styles." },
                 { room: "Kitchen / Hallway", sizes: "5×7, 4×6, A5", note: "Small accent pieces. Often sold in matching sets." },
                 { room: "Gallery Wall", sizes: "Mix of 5×7 + 8×10 + 11×14", note: "Buyers want size variety. Bundle listings convert well." },
@@ -297,7 +297,7 @@ export default function MostPopularEtsyPrintSizesPage() {
               Why offering fewer sizes costs you sales
             </h2>
             <p className="text-muted-foreground mb-4">
-              Etsy search shows listings that match the buyer&apos;s intent. If a buyer searches for &quot;11×14 botanical print&quot; and your listing only offers 8×10, you won&apos;t appear — even if your art is exactly what they want.
+              Etsy search shows listings that match the buyer&apos;s intent. If a buyer searches for &quot;11×14 botanical print&quot; and your listing only offers 8×10, you won&apos;t appear, even if your art is exactly what they want.
             </p>
             <ul className="space-y-2 text-sm">
               <li className="flex gap-2">
@@ -310,7 +310,7 @@ export default function MostPopularEtsyPrintSizesPage() {
               </li>
               <li className="flex gap-2">
                 <span className="text-amber-500 font-bold mt-0.5">→</span>
-                <span>International buyers (UK, EU) search for A4/A3 — missing these loses a whole market segment</span>
+                <span>International buyers (UK, EU) search for A4/A3; missing these loses a whole market segment</span>
               </li>
             </ul>
           </div>
@@ -321,14 +321,14 @@ export default function MostPopularEtsyPrintSizesPage() {
               All top sizes map to just 4 aspect ratios
             </h2>
             <p className="text-muted-foreground mb-6">
-              You don&apos;t need a separate design file for every size. The top Etsy print sizes share only 4 aspect ratios — which means you only need 4 crops of your original artwork.
+              You don&apos;t need a separate design file for every size. The top Etsy print sizes share only 4 aspect ratios, which means you only need 4 crops of your original artwork.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
               {[
-                { ratio: "4:5", sizes: "8×10, 16×20", color: "border-teal-500 bg-teal-500/10 text-teal-600 dark:text-teal-400" },
-                { ratio: "2:3", sizes: "4×6, 12×18, 20×30", color: "border-purple-500 bg-purple-500/10 text-purple-600 dark:text-purple-400" },
-                { ratio: "3:4", sizes: "9×12, 18×24", color: "border-emerald-500 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400" },
-                { ratio: "5:7", sizes: "5×7", color: "border-amber-500 bg-amber-500/10 text-amber-600 dark:text-amber-400" },
+                { ratio: "4:5", sizes: "8×10, 16×20", color: "border-accent-30 bg-accent-15 text-accent-light" },
+                { ratio: "2:3", sizes: "4×6, 12×18, 20×30", color: "border-accent-15 bg-accent-5 text-accent-light" },
+                { ratio: "3:4", sizes: "9×12, 18×24", color: "border-accent-30 bg-accent-15 text-accent-light" },
+                { ratio: "5:7", sizes: "5×7", color: "border-border bg-surface text-foreground" },
               ].map((r) => (
                 <div key={r.ratio} className={`p-4 rounded-lg border-2 ${r.color} text-center`}>
                   <p className="text-2xl font-bold mb-1">{r.ratio}</p>
@@ -337,7 +337,7 @@ export default function MostPopularEtsyPrintSizesPage() {
               ))}
             </div>
             <p className="text-sm text-muted-foreground">
-              SnapToSize generates all sizes from a single upload — automatically cropped to each ratio, at 300 DPI, ready to attach to your Etsy listing.
+              SnapToSize generates all sizes from a single upload: automatically cropped to each ratio, at 300 DPI, ready to attach to your Etsy listing.
             </p>
           </div>
 
@@ -345,8 +345,8 @@ export default function MostPopularEtsyPrintSizesPage() {
           <div className="max-w-3xl mx-auto mb-14">
             <ContextualCTA
               problem="Still resizing your artwork separately for each size?"
-              solution="Upload once → SnapToSize generates 8×10, 5×7, 11×14, 16×20, 18×24, A4, A3 and more — all print-ready at 300 DPI."
-              buttonText="Try Free — Generate All Sizes"
+              solution="Upload once: SnapToSize generates 8×10, 5×7, 11×14, 16×20, 18×24, A4, A3 and more, all print-ready at 300 DPI."
+              buttonText="Try Free: Generate All Sizes"
               appUrl={appUrl}
             />
           </div>
@@ -363,10 +363,10 @@ export default function MostPopularEtsyPrintSizesPage() {
               <table className="w-full text-sm border-collapse">
                 <thead>
                   <tr className="border-b border-border">
-                    <th className="text-left py-3 pr-4 font-semibold">Size</th>
-                    <th className="text-left py-3 pr-4 font-semibold">mm</th>
-                    <th className="text-left py-3 pr-4 font-semibold">Pixels (300 DPI)</th>
-                    <th className="text-left py-3 font-semibold">US equivalent</th>
+                    <th scope="col" className="text-left py-3 pr-4 font-semibold">Size</th>
+                    <th scope="col" className="text-left py-3 pr-4 font-semibold">mm</th>
+                    <th scope="col" className="text-left py-3 pr-4 font-semibold">Pixels (300 DPI)</th>
+                    <th scope="col" className="text-left py-3 font-semibold">US equivalent</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -401,7 +401,7 @@ export default function MostPopularEtsyPrintSizesPage() {
           {/* Final CTA */}
           <div className="max-w-3xl mx-auto mb-14">
             <FinalCTA
-              heading="Cover Every Popular Print Size — From One Upload"
+              heading="Cover Every Popular Print Size, From One Upload"
               stat="8×10, 5×7, 11×14, 16×20, 18×24, A4, A3 and more"
               description="Stop manually resizing. Upload your artwork once and get every standard Etsy print size at 300 DPI, organized in ratio packs and ready to list."
               buttonText="Try SnapToSize Free"
