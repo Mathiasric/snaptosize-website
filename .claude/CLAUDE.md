@@ -181,6 +181,7 @@ Rules:
 - If a task touches any domain above, activate the skill first
 - Run `/strategy` at session start when unsure what to work on (queries NotebookLM)
 - When building NEW UI components, fetch shadcn/ui docs as pattern reference
+- When building a Pinterest React template (photo + data pin), read `marketing/social/REACT_TEMPLATE_PATTERN.md` first and follow the 5-block recipe + QA checklist
 
 **New page pipeline:** `frontend-design` → `impeccable` (skips teach if PRODUCT.md exists) → build → `/impeccable polish` before shipping.
 **impeccable is NOT for:** regular chat, bug fixes, SEO edits, pipeline/Worker tasks.
