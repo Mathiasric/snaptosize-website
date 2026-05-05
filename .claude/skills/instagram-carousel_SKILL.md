@@ -78,6 +78,37 @@ Write 3 hook candidates for slide 1 before committing. Test the strongest.
 - First 125 characters = what Instagram shows before "more" — hook must land there
 - No questions as hooks ("Do you know how many sizes...") — statements outperform
 - The pain word (leave, lose, miss, wrong) carries the emotional weight
+- **Never use "That's why X" as a hook** — it assumes the viewer already understands the causal chain. Instead, state the chain explicitly: "You can't fit 30 sizes in one ZIP file. So most sellers just list 3." The connection must be *in* the copy, not implied.
+- **Make the mechanism visible**: the hook should answer "WHY does this happen?" not just state "this happens"
+- **Cold audience test**: read slide 1 as if you know nothing about Etsy or SnapToSize. If it's unclear what "she listed 30" means without context — rewrite. No pronouns ("she", "they") without an anchoring identity. No assumed knowledge about Etsy seller workflows.
+- **Identity-gap hook (strongest for solution-led carousels)**: "Most [audience] do X. Top [audience] do Y. The difference is Z." — works cold, creates aspiration, no context required. Example: "Most Etsy sellers list 3 sizes. Top sellers list 30. The difference is 4 minutes."
+
+### Human Voice Rules — Never Sound Like AI
+
+Write like a founder texting an Etsy seller friend, not a copywriter filling a template.
+
+**Forbidden words — never use in slide copy or captions:**
+- unlock, transform, game-changer, seamless, effortless, streamline, elevate
+- powerful, robust, leverage, maximize, optimize
+- "Are you tired of...", "Imagine if...", "Say goodbye to...", "Whether you're..."
+- Any abstract noun as a subject: "Success comes from...", "Growth requires..."
+
+**Instead of feature statements, use consequences:**
+- ❌ "One upload. Every ratio." → ✅ "Your listing has 1 size. Top sellers list 30."
+- ❌ "Effortlessly resize your artwork." → ✅ "She delivered 30 sizes. Spent 4 minutes."
+- ❌ "Transform your Etsy shop." → ✅ "Buyers asked for A4. She only had 8x10. They left."
+
+**Story hook structure (slide 1):**
+1. Name a specific person, moment, or situation — never abstract
+2. State what happened — one concrete sentence, past tense
+3. Land the unexpected outcome (number, time, or silent consequence)
+
+Examples:
+- *"She sold 847 prints last month. Uploaded her artwork once."*
+- *"Buyer downloaded it. Printed it. Got the wrong size. Left no review."*
+- *"Her listing had 1 size. The top result had 30. Same artwork."*
+
+**Caption voice test:** Read it aloud. If it sounds like a press release, rewrite it. If you'd send it as a text message to a friend who sells on Etsy, it's ready.
 
 ---
 
@@ -85,23 +116,40 @@ Write 3 hook candidates for slide 1 before committing. Test the strongest.
 
 Use Gemini for slide 1 background when the topic benefits from imagery. Text overlay goes in React.
 
+**Match the light to the emotion of the carousel:**
+- Teal/cyan `#2DD4BF` backlighting → product/solution theme (aspirational)
+- Amber/orange `#F59E0B` raking light → constraint/warning theme (tension, frustration)
+- No light mixing — pick one dominant color and commit
+
 **Prompt structure:**
 ```
 [Subject relevant to the pain]. [Setting/mood description].
 
 Multiple [relevant objects at dramatically different scales] — [small example], [medium], [large].
 [Material/style description of objects].
-Strong teal/cyan backlighting (#2DD4BF) creating dramatic edge glow on 2-3 [objects].
-80% of the scene is deep shadow and darkness.
+[TEAL: Strong teal/cyan backlighting (#2DD4BF) OR AMBER: Warm amber/orange raking light from upper left]
+creating dramatic edge highlights on 2-3 [objects].
+70-80% of the scene is deep shadow and darkness.
 
 CRITICAL: No text anywhere. No people. No hands. No logos.
 Aspect ratio: 4:5 portrait (taller than wide).
 Background: near-black (#07070E).
-Mood: premium dark editorial photography, dramatic, mysterious.
-Quality: hyper-detailed, photorealistic, professional commercial photography.
+[TEAL: Mood: premium dark editorial, mysterious, aspirational.]
+[AMBER: Mood: cinematic, tense, slightly ominous — right before discovering a problem.]
+Quality: hyper-detailed, photorealistic, professional commercial photography, 8K.
 ```
 
+**EC03 amber prompt worked well:** dark desk scene, laptop + art prints + USB cable, warm amber glow from upper left. Generated a 574KB image that blended seamlessly with the AMBER accent color in the slides.
+
 **Model:** `gemini-3-pro-image-preview` via REST API (see `generate-slide1-bg.js` for reference script pattern)
+
+**Image quality bar — EC05 was too safe:** The desk+prints scene was technically correct but lacked drama. Target: cinematic tension, not "nice dark photo". Push the prompt harder:
+- Add a **single point of extreme contrast** (e.g. one print glowing impossibly bright against pitch black)
+- Specify **scale dissonance** explicitly: "A4 next to a print 10× its size — same image, impossibly different scale"
+- Use **lighting drama rules**: "Only 10% of the scene is lit. The rest is absolute black."
+- End prompt with: "Reference: Gregory Crewdson photography. Commercial product shot for Apple."
+
+**Always use the latest available model** — check for newer than `gemini-3-pro-image-preview` before each carousel. If a newer model exists, use it.
 
 **After generation:**
 1. Copy image to `app-next/public/assets/[slug]-slide01-bg.png`
@@ -175,6 +223,20 @@ export function EC0XSlide01() {
 | DM mockup | Styled chat bubble | CTA slide |
 | Big stat | 180px+ number, color accent | Data bomb slide |
 | Glow orbs | `GlowOrb` component | Depth, atmosphere on all slides |
+| Pain chain list (EC03 slide 2) | Icon + title + sub per row, one highlighted | Multi-symptom pain reveals |
+| Format comparison (EC03 slide 3) | Full-width stacked cards + progress bar | Any "A vs B" data slide |
+| Dots progress indicator | `Dots current={N}` component | All carousels — swipe signal |
+
+**Layout rule — portrait format (1080×1350 is tall):**
+- Two side-by-side cards = too much empty space. Use full-width stacked cards for "comparison" slides.
+- If a slide feels half-empty, increase: top padding, card padding, font sizes, inter-card gaps — in that order.
+
+**Accent color per theme:**
+- TEAL `#2DD4BF` — product/solution (always)
+- RED `#F87171` — pain/loss
+- PURPLE `#A78BFA` — mystery/unknown
+- AMBER `#F59E0B` — constraint/warning (introduced EC03)
+- Each carousel should have a dominant accent that signals its emotional tone. Rotate to avoid sameness.
 
 ### Typography scale (1080px canvas)
 
@@ -230,6 +292,11 @@ import { EC0XSlide01, EC0XSlide02, ... } from "./_components/EtsyCarousel0X";
 
 **Default CTA:** "Comment FREE → 30 days Pro" (DM mockup with promo code). Only deviate if a real lead magnet exists.
 
+**Human voice check:**
+- [ ] Cover slide hook: names a person, situation, or loss — not a feature
+- [ ] No forbidden words (unlock, transform, seamless, effortless, game-changer, leverage, elevate)
+- [ ] Caption passes the "text to a friend" test — read it aloud
+
 **Visual check:**
 - [ ] Slide 1: does the headline land in < 5 seconds without context?
 - [ ] Slide 2–3: is the pain *felt*, not just stated?
@@ -267,12 +334,20 @@ Comment [WORD] below and I'll DM you [the offer].
 
 ## Active Carousels
 
-| ID | Slug | Topic | Status |
-|----|------|-------|--------|
-| EC01 | `2026-04-27-etsy-carousel-01` | Buyers leave when size isn't listed | Done — ready to post |
-| EC02 | `2026-04-28-frame-sizes` | A4 ≠ 8×10 — international frame size mismatch | Done — ready to post |
+| ID | Slug | Topic | Archetype | Accent | Status |
+|----|------|-------|-----------|--------|--------|
+| EC01 | `2026-04-27-etsy-carousel-01` | Buyers leave when size isn't listed | A — Pain/Hook | TEAL/RED | Done — ready to post |
+| EC02 | `2026-04-28-frame-sizes` | A4 ≠ 8×10 — international frame size mismatch | D — Data bomb | TEAL/RED | Done — ready to post |
+| EC03 | `2026-04-29-etsy-20mb-limit` | Etsy 20MB limit forces sellers to list fewer sizes | A — Constraint reveal | AMBER/RED | Done — ready to post |
+| EC04 | `2026-04-30-buyer-blind-spot` | "It looks blurry" — 1★ visible + 26 silent buyers behind it | A — Buyer-side silent loss reveal | PURPLE/RED | Done — ready to post |
+| EC05 | `2026-05-01-process-walkthrough` | "Her Canva file was one size. She listed 30. Spent 4 minutes." | B — Process walkthrough / product demo | TEAL | Done — ready to post |
+| EC06 | `2026-05-02-five-star-ratio` | "Her last 30 reviews are all 5★. The ratio matched their frame every time." | A — Story/Result hook (positive) | AMBER + TEAL | Done — ready to post |
+| EC07 | `2026-05-03-dpi-myth` | "Your file is 300 DPI. Your buyer still got a blurry print." | B — Educational myth-bust | RED + TEAL | Done — ready to post |
+| EC08 | `2026-05-04-international-buyers` | "She listed '8×10'. They searched '20×25 cm'. Her listing never showed up." | A — Pain/Hook (invisible listing) | TEAL + PURPLE | Done — ready to post |
+| EC09 | `2026-05-05-only-2-3` | "73 of every 100 buyers want 4:5. You only list 2:3." | D — Data bomb | AMBER + TEAL | Done — ready to post |
 
-Next ID: **EC03**
+**Next ID: EC10**
+**Rotation rule:** EC09 was D (Data bomb) with Gemini amber bg, AMBER + TEAL. EC10 should rotate archetype — try E (Process walkthrough with app screenshots) or B (Educational numbered "5 things"). Avoid AMBER-dominant — bring back TEAL/PURPLE or introduce a fresh accent. Topic ideas: "5 size mistakes that kill Etsy print listings" (B archetype, no Gemini bg, bold typography) or "From upload to 30 sizes in 4 minutes — exactly what to click" (E archetype, app screenshots on slides 2–4). Reuse listings/ artwork on data/fix slides where possible.
 
 ---
 

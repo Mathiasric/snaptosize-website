@@ -71,6 +71,13 @@ import {
   EC08Slide04,
   EC08Slide05,
 } from "./_components/EtsyCarousel08";
+import {
+  EC09Slide01,
+  EC09Slide02,
+  EC09Slide03,
+  EC09Slide04,
+  EC09Slide05,
+} from "./_components/EtsyCarousel09";
 import Checklist from "./_components/Checklist";
 import Top5SizesShowcase from "./_components/Top5SizesShowcase";
 import FrameMatrixVisual from "./_components/FrameMatrixVisual";
@@ -274,6 +281,13 @@ export default function SocialSlidesPage() {
         <EC08Slide03 />
         <EC08Slide04 />
         <EC08Slide05 />
+
+        {/* ═══ W20-I12 (2026-05-05): EtsyCarousel09 — 73% want 4:5, you only list 2:3 ═══ */}
+        <EC09Slide01 />
+        <EC09Slide02 />
+        <EC09Slide03 />
+        <EC09Slide04 />
+        <EC09Slide05 />
 
         {/* ═══ W20-P03: Anime Hero — NeonPackShowcase Pinterest ═══ */}
         <NeonPackShowcase artwork="anime-hero" name="Anime Hero" ratio="pinterest" />
