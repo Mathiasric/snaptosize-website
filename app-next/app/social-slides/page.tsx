@@ -8,11 +8,13 @@ import W15FoxPackShowcase from "./_components/W15FoxPackShowcase";
 import NeonPackShowcase from "./_components/NeonPackShowcase";
 import NeonStatsHero from "./_components/NeonStatsHero";
 import RatioProofShowcase from "./_components/RatioProofShowcase";
+import RatioCropProof from "./_components/RatioCropProof";
 import RatioSplitShowcase from "./_components/RatioSplitShowcase";
 import PainSolutionSlide from "./_components/PainSolutionSlide";
 import W15BeforeAfterWorkflow from "./_components/W15BeforeAfterWorkflow";
 import W15DpiCheatSheet from "./_components/W15DpiCheatSheet";
 import StatsCard from "./_components/StatsCard";
+import ChecklistPinP03 from "./_components/ChecklistPinP03";
 import {
   EC01Slide01,
   EC01Slide02,
@@ -27,7 +29,50 @@ import {
   EC02Slide04,
   EC02Slide05,
 } from "./_components/EtsyCarousel02";
+import {
+  EC03Slide01,
+  EC03Slide02,
+  EC03Slide03,
+  EC03Slide04,
+  EC03Slide05,
+} from "./_components/EtsyCarousel03";
+import {
+  EC04Slide01,
+  EC04Slide02,
+  EC04Slide03,
+  EC04Slide04,
+  EC04Slide05,
+} from "./_components/EtsyCarousel04";
+import {
+  EC05Slide01,
+  EC05Slide02,
+  EC05Slide03,
+  EC05Slide04,
+  EC05Slide05,
+} from "./_components/EtsyCarousel05";
+import {
+  EC06Slide01,
+  EC06Slide02,
+  EC06Slide03,
+  EC06Slide04,
+  EC06Slide05,
+} from "./_components/EtsyCarousel06";
+import {
+  EC07Slide01,
+  EC07Slide02,
+  EC07Slide03,
+  EC07Slide04,
+  EC07Slide05,
+} from "./_components/EtsyCarousel07";
+import {
+  EC08Slide01,
+  EC08Slide02,
+  EC08Slide03,
+  EC08Slide04,
+  EC08Slide05,
+} from "./_components/EtsyCarousel08";
 import Checklist from "./_components/Checklist";
+import Top5SizesShowcase from "./_components/Top5SizesShowcase";
 import FrameMatrixVisual from "./_components/FrameMatrixVisual";
 import PopularFrameBrands from "./_components/PopularFrameBrands";
 import WeddingSuiteSizes from "./_components/WeddingSuiteSizes";
@@ -62,6 +107,11 @@ export default function SocialSlidesPage() {
         {/* ═══ Frame guide visuals ═══ */}
         <FrameMatrixVisual />
         <PopularFrameBrands />
+
+        {/* W20-P16 Top 5 Etsy print sizes */}
+        <div id="top5-sizes-showcase" data-testid="top5-sizes-showcase">
+          <Top5SizesShowcase />
+        </div>
         <WeddingSuiteSizes />
 
         {/* ═══ Template 1: Pack Spotlight ═══ */}
@@ -113,12 +163,16 @@ export default function SocialSlidesPage() {
         {/* ═══ Ratio Split Showcase — "One upload. Every ratio." ═══ */}
         <RatioSplitShowcase artwork="fox" name="Fox Illustration" ratio="pinterest" />
         <RatioSplitShowcase artwork="misty_lake" name="Misty Lake" ratio="pinterest" />
+        {/* W20-P10: Bunny Sketch — RatioSplitShowcase Pinterest (2026-05-02) */}
+        <RatioSplitShowcase artwork="bunny" name="Bunny Sketch" ratio="pinterest" />
         <RatioSplitShowcase artwork="fox" name="Fox Illustration" ratio="instagram" />
         <RatioSplitShowcase artwork="landscape_abstract" name="Landscape Abstract" ratio="instagram" />
 
         {/* ═══ Ratio Proof Showcase — "Same file. Every frame." ═══ */}
         <RatioProofShowcase artwork="fox" name="Fox Illustration" ratio="pinterest" />
         <RatioProofShowcase artwork="misty_lake" name="Misty Lake" ratio="pinterest" />
+        {/* W20-P03 (May 02): Into the Light — RatioProofShowcase Pinterest */}
+        <RatioProofShowcase artwork="into_the_light_abstarct" name="Into the Light" ratio="pinterest" />
         <RatioProofShowcase artwork="landscape_abstract" name="Landscape Abstract" ratio="instagram" />
         {/* W17-I04: Owl Folk Art — RatioProofShowcase Instagram */}
         <RatioProofShowcase artwork="owl" name="Owl Folk Art" ratio="instagram" />
@@ -180,6 +234,65 @@ export default function SocialSlidesPage() {
         <EC02Slide03 />
         <EC02Slide04 />
         <EC02Slide05 />
+
+        {/* ═══ W22-I01: Etsy Carousel — "Etsy has a 20 MB limit. Most sellers find out when upload fails." ═══ */}
+        <EC03Slide01 />
+        <EC03Slide02 />
+        <EC03Slide03 />
+        <EC03Slide04 />
+        <EC03Slide05 />
+
+        {/* ═══ W22-I02: Etsy Carousel — "Most disappointed buyers don't leave 1★. They just don't come back." ═══ */}
+        <EC04Slide01 />
+        <EC04Slide02 />
+        <EC04Slide03 />
+        <EC04Slide04 />
+        <EC04Slide05 />
+
+        {/* ═══ EC05: 4-minute process walkthrough ═══ */}
+        <EC05Slide01 />
+        <EC05Slide02 />
+        <EC05Slide03 />
+        <EC05Slide04 />
+        <EC05Slide05 />
+        <EC06Slide01 />
+        <EC06Slide02 />
+        <EC06Slide03 />
+        <EC06Slide04 />
+        <EC06Slide05 />
+
+        {/* ═══ W20-I11: EtsyCarousel07 — DPI myth-bust ═══ */}
+        <EC07Slide01 />
+        <EC07Slide02 />
+        <EC07Slide03 />
+        <EC07Slide04 />
+        <EC07Slide05 />
+
+        {/* ═══ W20-I08: EtsyCarousel08 — International buyers / metric search ═══ */}
+        <EC08Slide01 />
+        <EC08Slide02 />
+        <EC08Slide03 />
+        <EC08Slide04 />
+        <EC08Slide05 />
+
+        {/* ═══ W20-P03: Anime Hero — NeonPackShowcase Pinterest ═══ */}
+        <NeonPackShowcase artwork="anime-hero" name="Anime Hero" ratio="pinterest" />
+
+        {/* ═══ W18-P03 (2026-04-30): Floral Vase — RatioCropProof Pinterest (NEW TEMPLATE) ═══ */}
+        <RatioCropProof artwork="floral_vase" name="Floral Vase" ratio="pinterest" />
+
+        {/* ═══ W20-P13 (2026-05-03): Landscape Abstract — RatioCropProof Pinterest ═══ */}
+        <RatioCropProof artwork="landscape_abstract" name="Landscape Abstract" ratio="pinterest" />
+
+        {/* ═══ W20-P03 (2026-05-04): Fox in the Forest — RatioCropProof Pinterest ═══ */}
+        <div id="p03-ratio-crop-fox">
+          <RatioCropProof artwork="fox" name="Fox in the Forest" ratio="pinterest" />
+        </div>
+
+        {/* ═══ W20-P03 (2026-05-04): Bright Pack Showcase — Pinterest ═══ */}
+        <div id="p03-bright-pack" style={{ width: 1000, height: 1500 }}>
+          <BrightPackShowcase ratio="pinterest" />
+        </div>
 
         {/* ═══ W15 Batch — Instagram Carousel (W15-I01) ═══ */}
         <W15I01Slide01 />
