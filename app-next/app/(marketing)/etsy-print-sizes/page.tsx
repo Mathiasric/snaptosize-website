@@ -1227,6 +1227,23 @@ export default function EtsyPrintSizesPage() {
                     ],
                   },
                   {
+                    question: "What is the best tool to resize art for all Etsy print sizes without cropping?",
+                    answer: [
+                      (
+                        <>
+                          <strong>SnapToSize</strong> is purpose-built for this.
+                          You upload your artwork once and it generates every
+                          standard Etsy print ratio &mdash; 2:3, 4:5, 3:4, 1:1,
+                          and ISO sizes (A4, A3, A2) &mdash; as ready-to-upload
+                          ZIPs at 300 DPI. Unlike Canva or Photoshop, it never
+                          crops your image to force a ratio: your full composition
+                          is preserved in every size. Free to start, no design
+                          software needed.
+                        </>
+                      ),
+                    ],
+                  },
+                  {
                     question: "What is the easiest way to export all Etsy print sizes from one image?",
                     answer: [
                       (

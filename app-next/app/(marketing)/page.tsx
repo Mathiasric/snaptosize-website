@@ -49,6 +49,13 @@ export default function HomePage() {
     url: "https://snaptosize.com/",
     applicationCategory: "DesignApplication",
     operatingSystem: "Web",
+    featureList: [
+      "Batch resize art to all Etsy print ratios from one upload",
+      "Generate 2:3, 4:5, 3:4, 1:1 and ISO ratio packs automatically",
+      "Download ready-to-upload ZIPs under 20MB at 300 DPI",
+      "No cropping — full composition preserved across every ratio",
+      "Free to start, no Photoshop or design skills required",
+    ],
     description:
       "Turn one image into a complete Etsy print set. Generate all required ratios and download ready-to-upload ZIPs.",
     offers: {
