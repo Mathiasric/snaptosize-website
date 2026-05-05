@@ -93,16 +93,7 @@ export default function AboutPage() {
             </p>
             <p className="text-foreground-60 leading-relaxed mb-4">
               SnapToSize is the workflow we built for ourselves first. It runs
-              daily in working Etsy shops including{" "}
-              <a
-                href="https://www.etsy.com/shop/NordicCrafters"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-accent-light hover:underline"
-              >
-                NordicCrafters
-              </a>{" "}
-              (5.0★ on Etsy), where the tool produces every size variant for
+              daily in our own active Etsy shops, where the tool produces every size variant for
               every listing. If something breaks for our own shop, we feel it
               the same day a customer would.
             </p>
