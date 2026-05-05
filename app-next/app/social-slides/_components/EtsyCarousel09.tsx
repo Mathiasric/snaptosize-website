@@ -262,7 +262,7 @@ export function EC09Slide02() {
           lineHeight: 1.4,
           maxWidth: 700,
         }}>
-          Smart-crop preserves the focal point. The vase stays centered in both.
+          Smart resize preserves the focal point. The vase stays centered in both.
         </div>
       </div>
 
@@ -406,7 +406,7 @@ export function EC09Slide04() {
         }}>
           One upload.
           <br />
-          <span style={{ color: TEAL }}>Every ratio.</span> Auto-cropped.
+          <span style={{ color: TEAL }}>Every ratio.</span> Auto-resized.
         </div>
 
         <div style={{
@@ -418,7 +418,7 @@ export function EC09Slide04() {
           marginTop: -6,
         }}>
           SnapToSize generates 5 ratio packs from your 2:3 file —
-          smart-crop keeps the focal point centered in 4:5, 3:4, and 1:1.
+          smart resize keeps the focal point centered in 4:5, 3:4, and 1:1.
         </div>
 
         <div style={{
@@ -557,7 +557,7 @@ export function EC09Slide05() {
             lineHeight: 1.4,
             maxWidth: "82%",
           }}>
-            Here's your code: <span style={{ color: AMBER, fontWeight: 800 }}>SNAP30</span> — 30 days Pro on snaptosize.com 🎯
+            Here's your code: <span style={{ color: AMBER, fontWeight: 800 }}>ETSYSELLER</span> — 30 days Pro on snaptosize.com 🎯
           </div>
         </div>
 
@@ -567,7 +567,7 @@ export function EC09Slide05() {
           marginTop: 8,
           letterSpacing: "0.04em",
         }}>
-          50 codes only · expires 2026-05-12
+          50 codes total · 100% off once
         </div>
       </div>
 
