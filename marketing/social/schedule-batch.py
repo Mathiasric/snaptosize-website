@@ -7,6 +7,7 @@ import requests, json, os, sys, subprocess
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from dotenv import load_dotenv
+from PIL import Image
 
 load_dotenv('.env.buffer')
 
@@ -68,11 +69,37 @@ CHANNEL_IDS = {
 CONTENT_DIR = PROJECT_ROOT / "marketing" / "social" / "content"
 
 
+def ensure_jpeg_for_image_post(asset_file: Path, platform: str, item_format: str) -> Path:
+    """Buffer's Pinterest/Instagram fetcher rejects PNG ("Failed to fetch image dimensions").
+    Convert PNG → JPEG (q92) once, alongside the original. Returns the path to send to Buffer.
+    See LESSON-092.
+    """
+    if item_format == "video":
+        return asset_file
+    if platform not in ("pinterest", "instagram"):
+        return asset_file
+    if asset_file.suffix.lower() != ".png":
+        return asset_file
+    jpg_path = asset_file.with_suffix(".jpg")
+    if jpg_path.exists() and jpg_path.stat().st_mtime >= asset_file.stat().st_mtime:
+        return jpg_path
+    img = Image.open(asset_file).convert("RGB")
+    img.save(jpg_path, "JPEG", quality=92, optimize=True)
+    print(f"    Converted PNG → JPEG: {jpg_path.name}")
+    return jpg_path
+
+
 def upload_to_r2(local_path: Path, r2_key: str) -> str:
     """Upload file to R2 and return public URL. Uses wrangler CLI."""
     bucket = "snaptosize-social"
-    cmd = ["npx", "wrangler", "r2", "object", "put", f"{bucket}/{r2_key}", "--file", str(local_path), "--remote"]
-    result = subprocess.run(cmd, capture_output=True, text=True, cwd=str(PROJECT_ROOT), shell=True)
+    # Detect correct MIME type — wrangler defaults to application/octet-stream for .png
+    _mime = {".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg",
+             ".webp": "image/webp", ".mp4": "video/mp4"}
+    content_type = _mime.get(local_path.suffix.lower(), "application/octet-stream")
+    cmd = ["npx", "wrangler", "r2", "object", "put", f"{bucket}/{r2_key}",
+           "--file", str(local_path), "--content-type", content_type, "--remote"]
+    result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8",
+                            errors="replace", cwd=str(PROJECT_ROOT), shell=True)
     if result.returncode != 0:
         raise RuntimeError(f"R2 upload failed: {result.stderr}")
     return f"{R2_URL}/{r2_key}"
@@ -262,6 +289,9 @@ def schedule_from_pipeline(dry_run: bool = False) -> dict:
             print(f"  FAIL {item['id']}: no content file")
             continue
 
+        # LESSON-092: Buffer rejects PNG for Pinterest/Instagram — convert to JPEG before upload
+        asset_file = ensure_jpeg_for_image_post(asset_file, item["platform"], item.get("format", "image"))
+
         # Upload to R2 (or use existing URL from metadata)
         asset_url = meta.get("r2_url", "")
         if not asset_url and not dry_run:
@@ -280,8 +310,19 @@ def schedule_from_pipeline(dry_run: bool = False) -> dict:
         elif not asset_url:
             asset_url = f"{R2_URL}/content/{item['platform']}/{item_dir.name}/{asset_file.name}"
 
-        # Schedule with staggered times
-        sched_time = (base_time + timedelta(hours=i * 2)).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+        # Schedule time: respect per-item `scheduled_for` if present (LESSON-093),
+        # otherwise stagger 2h apart starting now+1h.
+        explicit = item.get("scheduled_for") or meta.get("scheduled_for")
+        if explicit:
+            try:
+                # Normalize to "...000Z" Buffer format
+                dt = datetime.fromisoformat(explicit.replace("Z", "+00:00"))
+                sched_time = dt.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+            except (ValueError, TypeError):
+                sched_time = (base_time + timedelta(hours=i * 2)).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+                print(f"    WARN {item['id']}: bad scheduled_for {explicit!r}, falling back to stagger")
+        else:
+            sched_time = (base_time + timedelta(hours=i * 2)).strftime("%Y-%m-%dT%H:%M:%S.000Z")
         result = schedule_item(item, meta, asset_url, sched_time, dry_run=dry_run, slug=item_dir.name)
 
         if result["success"]:
