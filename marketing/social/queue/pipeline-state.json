@@ -2,7 +2,7 @@
   "current_week": "W20",
   "batch_id": "2026-W20",
   "started_at": "2026-05-01T12:26:03.667928+00:00",
-  "updated_at": "2026-05-05T10:37:43.750203+00:00",
+  "updated_at": "2026-05-05T12:16:09.030882+00:00",
   "creator_completed_at": "2026-04-15T09:54:00.000000+00:00",
   "target": {
     "pinterest": 21,
@@ -115,7 +115,7 @@
       "error": null,
       "r2_url": "https://social.snaptosize.com/content/pinterest/2026-05-04-ratio-proof-showcase-pinterest/2026-05-04-ratio-proof-showcase-pinterest.png",
       "scheduled_for": "2026-05-04T12:15:31.000Z",
-      "title": "Stop the Crop \u00e2\u20ac\u201d How to Keep Your Art Intact in Every Print Size"
+      "title": "Stop the Crop â€” How to Keep Your Art Intact in Every Print Size"
     },
     {
       "id": "W20-P04",
@@ -325,72 +325,108 @@
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "created",
+      "stage": "published",
       "tool_used": "gemini-generate-image",
       "content_type": "editorial-room-guide",
       "layout": "gemini-room-vignettes",
-      "buffer_post_id": null,
+      "buffer_post_id": "69f9df7f298263cbd6798bc2",
       "tool_attempts": [],
       "files": {
-        "image": "content/pinterest/2026-05-05-room-by-room-etsy-sizes-pinterest/2026-05-05-room-by-room-etsy-sizes-pinterest.png"
+        "image": "marketing/social/content/pinterest/2026-05-05-room-by-room-etsy-sizes-pinterest/2026-05-05-room-by-room-etsy-sizes-pinterest.jpg"
       },
       "metadata": {
         "r2_url": "https://social.snaptosize.com/content/pinterest/2026-05-05-room-by-room-etsy-sizes-pinterest/2026-05-05-room-by-room-etsy-sizes-pinterest.png",
-        "slug": "2026-05-05-room-by-room-etsy-sizes-pinterest"
+        "slug": "2026-05-05-room-by-room-etsy-sizes-pinterest",
+        "title": "Etsy Print Sizes by Room: What Size Sells in Bedrooms, Living Rooms & Nurseries",
+        "description": "A room-by-room guide to the Etsy print sizes that actually sell. 16x20 over a bed, 24x36 above a sofa, 8x10 for the nursery best-seller, and the 5x7 + 8x10 + 11x14 gallery wall combo buyers ask for most. Plan your Etsy listings, then resize one design into every size buyers want.",
+        "link": "https://snaptosize.com/most-popular-etsy-print-sizes-to-sell",
+        "board": "print-size-guides",
+        "tags": [
+          "etsy print sizes",
+          "wall art sizes",
+          "etsy seller tips",
+          "printable wall art",
+          "gallery wall"
+        ]
       },
       "linked_item": null,
       "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-05T10:37:43.750203+00:00",
+      "updated_at": "2026-05-05T12:16:00.299006+00:00",
       "error": null,
-      "title": "Room-by-room Etsy print sizes: where each size actually fits"
+      "title": "Room-by-room Etsy print sizes: where each size actually fits",
+      "scheduled_for": "2026-05-05T13:15:00.000Z"
     },
     {
       "id": "W20-P15",
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "created",
+      "stage": "published",
       "tool_used": "gemini-generate-image",
       "content_type": "educational",
       "layout": "gemini-editorial-comparison",
-      "buffer_post_id": null,
+      "buffer_post_id": "69f9df84298263cbd6798c13",
       "tool_attempts": [],
       "files": {
-        "image": "content/pinterest/2026-05-05-aspect-ratio-trap-pinterest/2026-05-05-aspect-ratio-trap-pinterest.png"
+        "image": "marketing/social/content/pinterest/2026-05-05-aspect-ratio-trap-pinterest/2026-05-05-aspect-ratio-trap-pinterest.jpg"
       },
       "metadata": {
         "r2_url": "https://social.snaptosize.com/content/pinterest/2026-05-05-aspect-ratio-trap-pinterest/2026-05-05-aspect-ratio-trap-pinterest.png",
-        "slug": "2026-05-05-aspect-ratio-trap-pinterest"
+        "slug": "2026-05-05-aspect-ratio-trap-pinterest",
+        "title": "The Etsy Aspect Ratio Trap: Why 73% of Buyers Print 4:5, Not 2:3",
+        "description": "Most digital art on Etsy is exported as 2:3, but 73% of Etsy buyers print 4:5 or 1:1. The result: cropped heads, lost text, refund requests. See the same illustration in 2:3, 4:5 and 1:1 side by side, and learn how to ship every Etsy aspect ratio from one source file.",
+        "link": "https://snaptosize.com/etsy-print-ratios",
+        "board": "seller-tools",
+        "tags": [
+          "aspect ratio",
+          "etsy digital prints",
+          "printable art",
+          "etsy seller",
+          "wall art ratios"
+        ]
       },
       "linked_item": null,
       "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-05T10:37:43.750203+00:00",
+      "updated_at": "2026-05-05T12:16:04.777434+00:00",
       "error": null,
-      "title": "The Aspect Ratio Trap: same art, three Etsy ratios, three different prints"
+      "title": "The Aspect Ratio Trap: same art, three Etsy ratios, three different prints",
+      "scheduled_for": "2026-05-05T16:15:00.000Z"
     },
     {
       "id": "W20-P16",
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "created",
+      "stage": "published",
       "tool_used": "react-template-screenshot",
       "content_type": "editorial-data",
       "layout": "top5-sizes-showcase",
-      "buffer_post_id": null,
+      "buffer_post_id": "69f9df88389ce4741d3cf7cf",
       "tool_attempts": [],
       "files": {
-        "image": "content/pinterest/2026-05-05-top-5-etsy-print-sizes-pinterest/2026-05-05-top-5-etsy-print-sizes-pinterest.png"
+        "image": "marketing/social/content/pinterest/2026-05-05-top-5-etsy-print-sizes-pinterest/2026-05-05-top-5-etsy-print-sizes-pinterest.jpg"
       },
       "metadata": {
         "r2_url": "https://social.snaptosize.com/content/pinterest/2026-05-05-top-5-etsy-print-sizes-pinterest/2026-05-05-top-5-etsy-print-sizes-pinterest.png",
-        "slug": "2026-05-05-top-5-etsy-print-sizes-pinterest"
+        "slug": "2026-05-05-top-5-etsy-print-sizes-pinterest",
+        "title": "Top 5 Best-Selling Etsy Print Sizes (Ranked by What Buyers Actually Order)",
+        "description": "The 5 Etsy print sizes that actually sell, ranked: 8x10, 5x7, 11x14, 16x20 and 18x24. See the aspect ratio, typical price point and where each size lives on a wall. The shortlist every Etsy printable shop should offer before adding anything else.",
+        "link": "https://snaptosize.com/most-popular-etsy-print-sizes-to-sell",
+        "board": "digital-prints",
+        "tags": [
+          "best selling etsy prints",
+          "etsy print sizes",
+          "printable wall art",
+          "etsy shop tips",
+          "digital download"
+        ]
       },
       "linked_item": null,
       "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-05T10:37:43.750203+00:00",
+      "updated_at": "2026-05-05T12:16:09.030882+00:00",
       "error": null,
-      "title": "The 5 Etsy print sizes that actually sell \u2014 ranked"
+      "title": "The 5 Etsy print sizes that actually sell — ranked",
+      "scheduled_for": "2026-05-05T19:15:00.000Z"
     },
     {
       "id": "W20-P17",
@@ -799,9 +835,9 @@
     }
   ],
   "metrics": {
-    "total": 35,
-    "completed": 3,
+    "total": 38,
+    "completed": 18,
     "failed": 0,
-    "success_rate": 0.086
+    "success_rate": 0.474
   }
 }

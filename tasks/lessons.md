@@ -628,3 +628,78 @@ Før en pin godkjennes, svar JA på minst 3 av 5:
 - Generiske size-oversikter uten visuell hook
 - React-slides som bare viser data i rader og kolonner
 - Gemini-prompts uten Etsy-selger-kontekst og pain-point
+
+---
+
+### LESSON-090: React-slides uten artwork skal aldri sendes — bruk Gemini prompt library i stedet (2026-04-22)
+
+**Problem:** `Checklist` og `PainSolutionSlide` er text-only templates uten produktbilder. De ble sendt til QA og ble korrekt avvist fordi de ikke konverterer. Disse templatene scorer 3/10 — for svake til å sende.
+
+**Regel:**
+- `Checklist` og `PainSolutionSlide` er **ALDRI** klare til å sende alene — de er bygd uten `artwork`-prop og viser ingen listing-bilder
+- Dersom et konsept ikke kan parres med `app-next/public/assets/listings/`-artwork i et sterkt template (`NeonPackShowcase`, `RatioProofShowcase`, `BrightPackShowcase`, `RatioSplitShowcase`), bruk **Gemini prompt library** i stedet
+- Les `marketing/social/GEMINI_PROMPT_LIBRARY.md` og sjekk cooldown-tabellen — `stats-visual` er ny og aldri brukt, `folder-chaos` er tilgjengelig etter 4 uker
+- **Self-rate før QA:** Sett karakter 1–10 på hvert item. Send aldri noe under 8/10 til brukeren.
+
+**Konsekvens:** Svake slides vasker ut feeden og skader merkevaren. Alt som ikke ville stoppet scrolling hos en Etsy-selger er under 8/10.
+
+---
+
+## LESSON-091 — Aldri dikt produkt-fakta i bildeprompts (2026-04-23)
+
+**Regel:** Alle tall i Gemini-bilder (pris, antall sizes, antall files, plan-detaljer) skal hentes fra `marketing/CONTENT_REFERENCE.md`. Aldri improviser.
+
+**Kanoniske tall per 2026-04-23:**
+- **Pris:** $11.99/mo ELLER $97/year ($8.08/mo, save 33%) — aldri "$9/mo"
+- **Pack sizes:** 28 totalt fordelt som 2:3=7, 3:4=5, 4:5=5, ISO=5, Extras=6
+- **Total files fra 1 upload:** Opp til 70 (packs + Quick Export)
+- **Headline-regel:** Led med "70 files" eller "30+ sizes" — aldri "28 sizes" som hovedtall (undersells)
+
+**Hvorfor:** Diktede tall i Gemini-bilder (opplevd i W19-P04 gen 1: "$9/month", "2:3 Pack — 14 sizes", osv.) gir feilaktige reklamebilder som misrepresenterer produktet. Brukere så det, ga nei.
+
+**Hvordan bruke:** Før enhver Gemini-prompt skrives, sjekk CONTENT_REFERENCE.md Pricing + "The 5 Ratio Packs" + "Marketing Language — How to Present Sizes". Kopier tall ordrett inn i prompten som "CRITICAL FACTS" bakt i prompten, sånn at modellen ikke improviserer. Gjelder også metadata-beskrivelser og social captions.
+
+
+## Performance Insights -2026-W18
+
+### Top Performers
+1. [pinterest] W19-P38 "" (score: 0, impressions: 0, clicks: 0, saves: 0, type: None)
+2. [pinterest] W19-P37 "" (score: 0, impressions: 0, clicks: 0, saves: 0, type: pain-solution)
+3. [pinterest] W19-P36 "" (score: 0, impressions: 0, clicks: 0, saves: 0, type: product-education)
+
+### Low Performers
+1. [instagram] None "1 upload → up to 70 print-ready files at 300 DPI. All 5 rati" (score: 0, impressions: 0)
+2. [instagram] None "Missing sizes = missing sales. If a buyer asks "do you have " (score: 0, impressions: 0)
+3. [instagram] None "Stop the chaos. If your Downloads folder looks like a war zo" (score: 0, impressions: 0)
+
+### Do More
+- Koble til Pinterest API: legg til PINTEREST_TOKEN i .env.buffer for engasjements-data
+
+### Notes
+- ⚠️ Ingen platform-data tilgjengelig (Buffer API returnerer 0 stats). Koble til Pinterest Business API eller Instagram Graph API for reell engasjements-data.
+
+---
+
+## LESSON-091 — 2026-04-29
+
+**Gemini prompt layout-annotasjoner lekker inn som tekst i genererte bilder**
+
+Hvis Gemini-prompten inneholder seksjonstitler med prosentverdier på egne linjer (f.eks. `HEADLINE (11-21%):` eller `TOP 10%:`), vil Gemini noen ganger gjengi disse som synlig tekst i bildet.
+
+**Regel:** Aldri bruk `XX%` eller `(XX-YY%)` i Gemini image-prompts. Beskriv layout med ord: `upper third`, `center section`, `bottom quarter`. Reserver prosenttall for interne kommentarer i Python-koden — aldri i selve prompt-strengen.
+
+## LESSON-092 — 2026-05-05
+
+**Buffer rejekterer Pinterest PNG-bilder — alltid konverter til JPEG før scheduling**
+
+Ved scheduling av W20-P14/P15/P16 returnerte Buffer "Failed to fetch image dimensions: Not Found" på alle 3 PNG-filer selv om R2-URLene returnerte HTTP 200 med `image/png`. Konvertering til JPEG (`Pillow.save(quality=92)`) løste det umiddelbart for alle 3 pins. Dette er sannsynligvis en Buffer-side regresjon i Pinterest-fetcheren.
+
+**Regel:** Pinterest-pins som schedules via Buffer må være `.jpg` (kvalitet ≥90), ikke `.png`. Behold gjerne PNG i `content/<slug>/` for arkivverdi, men `files.image` i pipeline-state.json skal peke på `.jpg`-versjonen før `schedule-batch.py` kjøres. Bør automatiseres i creator-stage eller i schedule-batch.py.
+
+## LESSON-093 — 2026-05-05
+
+**`schedule-batch.py` ignorerer per-item `scheduled_for` og auto-staggrer alltid**
+
+Selv om `pipeline-state.json` items har et eksplisitt `scheduled_for` ISO-felt, bruker `schedule-batch.py` sin egen now+Nh staggerring i stedet (~2h apart). Dette er ikke en bug akkurat — feltet er bare ikke koblet inn.
+
+**Regel:** Stol ikke på `scheduled_for` i state-filen som autoritativ tid. Hvis en pin må publiseres på et spesifikt klokkeslett, enten patch `schedule-batch.py` til å lese feltet, eller bruk Buffer-UI etter scheduling for å justere tiden manuelt. Verifiser publish-tider direkte i Buffer-køen, ikke fra state-filen.
