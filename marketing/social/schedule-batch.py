@@ -50,6 +50,76 @@ BOARDS = {
     'default': '1088463872381113663',
 }
 
+# Pinterest keyword bank — long-tail terms per board (Pinterest = search engine)
+PINTEREST_KEYWORDS = {
+    'print-size-guides': [
+        'etsy print sizes guide', 'digital download sizes', 'printable art dimensions',
+        'etsy file size chart', 'print size chart for etsy sellers',
+    ],
+    'seller-tools': [
+        'etsy seller tips', 'etsy digital download tips', 'etsy shop workflow',
+        'sell digital art on etsy', 'etsy printable files tips',
+    ],
+    'digital-prints': [
+        'digital prints for etsy', 'etsy digital download', 'instant download printable art',
+        'printable wall art etsy', 'sell printables on etsy',
+    ],
+    'wall-art-business': [
+        'printable wall art business', 'sell wall art printables etsy',
+        'etsy wall art seller tips', 'grow etsy printable shop',
+    ],
+    'default': [
+        'etsy print sizes', 'digital download', 'printable wall art',
+        'etsy seller tips', 'etsy digital products',
+    ],
+}
+
+# Board ID → slug mapping for keyword lookup
+_BOARD_ID_TO_SLUG = {v: k for k, v in BOARDS.items()}
+
+
+def clean_title(title: str, slug: str = "") -> str:
+    """Return a usable pin title — fix 'undefined' and empty values."""
+    if not title or title.strip().lower() in ("undefined", "none", "null", ""):
+        if slug:
+            import re
+            clean = re.sub(r"^\d{4}-\d{2}-\d{2}-", "", slug)
+            return clean.replace("-", " ").title()
+        return ""
+    return title.strip()
+
+
+def enrich_description(description: str, board_slug: str = "default") -> str:
+    """Append keyword phrases to a Pinterest description (max 500 chars total)."""
+    base = (description or "").strip()
+    keywords = PINTEREST_KEYWORDS.get(board_slug, PINTEREST_KEYWORDS["default"])
+    keyword_suffix = " | " + " | ".join(keywords)
+    # Trim base if needed to stay under 500 chars
+    max_base = 500 - len(keyword_suffix)
+    if len(base) > max_base:
+        base = base[:max_base - 1].rstrip()
+    return base + keyword_suffix
+
+
+def next_pinterest_slot(from_time: "datetime", index: int) -> "datetime":
+    """Return the next optimal Pinterest posting time (9am or 8pm CET = UTC+2).
+
+    Alternates between morning and evening slots so consecutive pins
+    don't stack in the same hour.
+    """
+    # Preferred UTC hours for CET (UTC+2): 07:00 and 18:00
+    slots_utc = [7, 18]
+    candidate = from_time.replace(minute=0, second=0, microsecond=0)
+    # Walk forward from from_time to find 'index'-th slot
+    slots_found = 0
+    while True:
+        if candidate >= from_time and candidate.hour in slots_utc:
+            if slots_found == index:
+                return candidate
+            slots_found += 1
+        candidate = candidate + timedelta(hours=1)
+
+
 MUTATION = """mutation CreatePost($input: CreatePostInput!) {
   createPost(input: $input) {
     ... on PostActionSuccess { post { id } }
@@ -148,16 +218,18 @@ def schedule_item(item: dict, meta: dict, asset_url: str, schedule_time: str, dr
 
     # Platform-specific text and metadata
     if platform == "pinterest":
-        inp["text"] = meta.get("description", "")
+        board_id = resolve_board(item, meta)
+        board_slug = _BOARD_ID_TO_SLUG.get(board_id, "default")
+        inp["text"] = enrich_description(meta.get("description", ""), board_slug)
         inp["metadata"] = {
             "pinterest": {
-                "title": meta.get("title", ""),
+                "title": clean_title(meta.get("title", ""), slug),
                 "url": add_utm(meta.get("link", "https://snaptosize.com/"), "pinterest", slug),
-                "boardServiceId": resolve_board(item, meta),
+                "boardServiceId": board_id,
             }
         }
     elif platform == "instagram":
-        inp["text"] = meta.get("caption", "")
+        inp["text"] = meta.get("caption") or meta.get("description", "")
         inp["metadata"] = {
             "instagram": {
                 "type": "reel" if item.get("format") == "video" else "post",
@@ -165,7 +237,7 @@ def schedule_item(item: dict, meta: dict, asset_url: str, schedule_time: str, dr
             }
         }
     elif platform == "tiktok":
-        inp["text"] = meta.get("caption", "")
+        inp["text"] = meta.get("caption") or meta.get("description", "")
 
     if dry_run:
         return {"success": True, "response": f"[DRY RUN] Would schedule {item['id']} to {platform}"}
@@ -322,7 +394,7 @@ def schedule_from_pipeline(dry_run: bool = False) -> dict:
                 sched_time = (base_time + timedelta(hours=i * 2)).strftime("%Y-%m-%dT%H:%M:%S.000Z")
                 print(f"    WARN {item['id']}: bad scheduled_for {explicit!r}, falling back to stagger")
         else:
-            sched_time = (base_time + timedelta(hours=i * 2)).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+            sched_time = next_pinterest_slot(base_time, i).strftime("%Y-%m-%dT%H:%M:%S.000Z")
         result = schedule_item(item, meta, asset_url, sched_time, dry_run=dry_run, slug=item_dir.name)
 
         if result["success"]:
