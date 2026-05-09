@@ -66,10 +66,11 @@
 [2026-05-07 14:00] Plan opprettet. Research-fase ferdig. Tools verifisert.
 [2026-05-07 17:30] Plan strammet inn etter churn-data. Frame-Fit AI flyttet opp. Studio/Chrome/sister-sites fjernet fra plan. Klar til evaluering per batch.
 [2026-05-08 21:00] A1 audit ferdig. Konklusjon: ikke UTM-problem — genuint lavt volum (86 imp/dag) + Pinterest mobil stripper UTMs. Pipeline optimalisert (keyword-bank, clean_title, smarte tidspunkter). Pinterest Standard Access søknad sendt — venter 1–3 dager på pins:write/boards:write for å oppdatere eksisterende pins.
+[2026-05-09 11:20] Batch 1B ferdig. PostHog feature flag `homepage_hero_v2` (ID: 183654) live med 50/50 split. Variant B: seller-quote + "We do all of that in 8 seconds." + "Try Free — No Signup". CTA tracking med send_instantly. TS clean, visual QA OK.
 
 ACTIVE BATCHES:
 [~] Batch 1A — in progress — A2 ✅ done | A1 ✅ audit done + pipeline optimalisert | ⏳ BLOKKERT: update-existing-pins.py venter Pinterest Standard Access (pins:write scope)
-[ ] Batch 1B — not started — Homepage hero rewrite + PostHog A/B
+[x] Batch 1B — ✅ DONE — PostHog flag `homepage_hero_v2` live, HeroSection A/B wired, cta_clicked tracking
 [ ] Batch 1C — not started — 3 lead-magnet micro-tools
 [ ] Batch 1D — not started — App-UX-audit (krever test-creds OK fra deg)
 [ ] Batch 1E — not started (NY) — Email drip for free-users (Resend drafts)
@@ -197,7 +198,7 @@ GJENSTÅR:
 - [x] Konklusjon: ikke UTM-gap, men lavt volum + Pinterest stripping ✅
 - [x] Pipeline optimalisert med keywords, clean title, smarte tidspunkter ✅
 - [x] Event-spec har 6+ events med komplette property-skjemaer ✅ (A2)
-- [ ] Board-beskrivelser oppdatert (manuelt på pinterest.com — 5 min)
+- [x] Board-beskrivelser oppdatert (manuelt på pinterest.com) ✅ 2026-05-08
 - [ ] Eksisterende pins PATCHet med keywords (venter Standard Access)
 
 ### Post-conditions / handoff

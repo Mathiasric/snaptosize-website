@@ -1,13 +1,16 @@
 "use client";
 
 import { useState } from "react";
+import posthog from "posthog-js";
+import { useFeatureFlagVariantKey } from "posthog-js/react";
 import { Button } from "@/components/Button";
-
 import { VideoModal } from "@/components/VideoModal";
 
 
 export function HeroSection() {
   const [modalOpen, setModalOpen] = useState(false);
+  const heroVariant = useFeatureFlagVariantKey('homepage_hero_v2');
+  const isVariantB = heroVariant === 'variant_b';
 
   return (
     <section className="relative w-full overflow-hidden min-h-[calc(100vh-80px)]">
@@ -79,14 +82,31 @@ export function HeroSection() {
         <div className="max-w-7xl mx-auto px-6 py-8 md:py-10 w-full">
           <div className="max-w-3xl mx-auto text-center">
             <div>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight mb-3" style={{ textShadow: '0 8px 40px rgba(0,0,0,0.45), 0 2px 20px rgba(11, 11, 18, 0.9)' }}>
-                Launch a complete, professional Etsy print set from a single image —{" "}
-                <span style={{ background: 'linear-gradient(90deg, #2DD4BF, #7C3AED)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>in seconds.</span>
-              </h1>
-
-              <p className="text-base md:text-lg text-white/85 mb-5 max-w-lg mx-auto leading-snug" style={{ textShadow: '0 2px 15px rgba(11, 11, 18, 0.9), 0 0 30px rgba(11, 11, 18, 0.7)' }}>
-                Upload once. Get every Etsy ratio at 300 DPI — organized, named, and ready to list.
-              </p>
+              {isVariantB ? (
+                <>
+                  <p className="text-sm text-white/50 italic mb-4 max-w-lg mx-auto leading-relaxed border-l-2 border-white/20 pl-4 text-left">
+                    "I manually resize every artwork into 2:3, 4:5, square, A-sizes, check DPI, rename files, zip folders…"
+                    <span className="block text-white/35 not-italic mt-1">— Etsy seller</span>
+                  </p>
+                  <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight mb-3" style={{ textShadow: '0 8px 40px rgba(0,0,0,0.45), 0 2px 20px rgba(11, 11, 18, 0.9)' }}>
+                    We do all of that in{" "}
+                    <span style={{ background: 'linear-gradient(90deg, #2DD4BF, #7C3AED)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>8 seconds.</span>
+                  </h1>
+                  <p className="text-base md:text-lg text-white/85 mb-5 max-w-lg mx-auto leading-snug" style={{ textShadow: '0 2px 15px rgba(11, 11, 18, 0.9), 0 0 30px rgba(11, 11, 18, 0.7)' }}>
+                    Upload your design once — get 30+ Etsy-ready sizes at 300 DPI, organized, named, and zipped.
+                  </p>
+                </>
+              ) : (
+                <>
+                  <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight mb-3" style={{ textShadow: '0 8px 40px rgba(0,0,0,0.45), 0 2px 20px rgba(11, 11, 18, 0.9)' }}>
+                    Launch a complete, professional Etsy print set from a single image —{" "}
+                    <span style={{ background: 'linear-gradient(90deg, #2DD4BF, #7C3AED)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>in seconds.</span>
+                  </h1>
+                  <p className="text-base md:text-lg text-white/85 mb-5 max-w-lg mx-auto leading-snug" style={{ textShadow: '0 2px 15px rgba(11, 11, 18, 0.9), 0 0 30px rgba(11, 11, 18, 0.7)' }}>
+                    Upload once. Get every Etsy ratio at 300 DPI — organized, named, and ready to list.
+                  </p>
+                </>
+              )}
 
               {/* CTA */}
               <div className="flex flex-wrap gap-3 mb-2 justify-center">
@@ -94,8 +114,11 @@ export function HeroSection() {
                   href="https://app.snaptosize.com"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => posthog.capture('cta_clicked', { hero_variant: heroVariant ?? 'control', location: 'hero' }, { send_instantly: true })}
                 >
-                  <Button className="text-base px-7 py-3">Create Your First Print Pack — Free</Button>
+                  <Button className="text-base px-7 py-3">
+                    {isVariantB ? "Try Free — No Signup" : "Create Your First Print Pack — Free"}
+                  </Button>
                 </a>
               </div>
               <p className="text-xs text-white/60 mb-1.5">
