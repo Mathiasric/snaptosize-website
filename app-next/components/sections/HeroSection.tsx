@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import posthog from "posthog-js";
 import { useFeatureFlagVariantKey } from "posthog-js/react";
 import { Button } from "@/components/Button";
@@ -9,8 +9,10 @@ import { VideoModal } from "@/components/VideoModal";
 
 export function HeroSection() {
   const [modalOpen, setModalOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const heroVariant = useFeatureFlagVariantKey('homepage_hero_v2');
-  const isVariantB = heroVariant === 'variant_b';
+  useEffect(() => setMounted(true), []);
+  const isVariantB = mounted && heroVariant === 'variant_b';
 
   return (
     <section className="relative w-full overflow-hidden min-h-[calc(100vh-80px)]">
@@ -85,12 +87,12 @@ export function HeroSection() {
               {isVariantB ? (
                 <>
                   <p className="text-sm text-white/50 italic mb-4 max-w-lg mx-auto leading-relaxed border-l-2 border-white/20 pl-4 text-left">
-                    "I manually resize every artwork into 2:3, 4:5, square, A-sizes, check DPI, rename files, zip folders…"
+                    "I manually resize every artwork into 2:3, 4:5, 3:4, A-sizes, 5×7, 11×14 — check DPI, rename files, zip folders…"
                     <span className="block text-white/35 not-italic mt-1">— Etsy seller</span>
                   </p>
                   <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight mb-3" style={{ textShadow: '0 8px 40px rgba(0,0,0,0.45), 0 2px 20px rgba(11, 11, 18, 0.9)' }}>
                     We do all of that in{" "}
-                    <span style={{ background: 'linear-gradient(90deg, #2DD4BF, #7C3AED)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>8 seconds.</span>
+                    <span style={{ background: 'linear-gradient(90deg, #2DD4BF, #7C3AED)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>45 seconds.</span>
                   </h1>
                   <p className="text-base md:text-lg text-white/85 mb-5 max-w-lg mx-auto leading-snug" style={{ textShadow: '0 2px 15px rgba(11, 11, 18, 0.9), 0 0 30px rgba(11, 11, 18, 0.7)' }}>
                     Upload your design once — get 30+ Etsy-ready sizes at 300 DPI, organized, named, and zipped.
