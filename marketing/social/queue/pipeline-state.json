@@ -1,8 +1,8 @@
 {
-  "current_week": "W20",
+  "current_week": "W22",
   "batch_id": "2026-W20",
-  "started_at": "2026-05-01T12:26:03.667928+00:00",
-  "updated_at": "2026-05-05T12:16:09.030882+00:00",
+  "started_at": "2026-05-06T08:36:47.568613+00:00",
+  "updated_at": "2026-05-09T12:00:00+00:00",
   "creator_completed_at": "2026-04-15T09:54:00.000000+00:00",
   "target": {
     "pinterest": 21,
@@ -49,46 +49,35 @@
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "published",
-      "tool_used": "gemini-generate-image",
-      "content_type": "workflow-guide",
-      "layout": "gemini-step-by-step-infographic",
-      "buffer_post_id": "69f86528b2bf116e3e5cc823",
+      "stage": "ideation",
+      "tool_used": null,
+      "content_type": null,
+      "layout": null,
+      "buffer_post_id": null,
       "tool_attempts": [],
-      "files": {
-        "image": "content/pinterest/2026-05-04-etsy-print-workflow-guide-pinterest/2026-05-04-etsy-print-workflow-guide-pinterest.png"
-      },
-      "metadata": {
-        "r2_url": "https://social.snaptosize.com/content/pinterest/2026-05-04-etsy-print-workflow-guide-pinterest/2026-05-04-etsy-print-workflow-guide-pinterest.png",
-        "slug": "2026-05-04-etsy-print-workflow-guide-pinterest"
-      },
+      "files": {},
+      "metadata": {},
       "linked_item": null,
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-04T09:21:44.762764+00:00",
-      "error": null,
-      "title": "How to Sell Art Prints on Etsy in 3 Steps (No Tech Skills Needed)"
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
+      "error": null
     },
     {
       "id": "W20-P02",
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "published",
-      "tool_used": "gemini-generate-image",
-      "content_type": "educational",
-      "layout": "gemini-editorial-infographic",
-      "buffer_post_id": "69f86290766f329adc2d69d8",
+      "stage": "ideation",
+      "tool_used": null,
+      "content_type": null,
+      "layout": null,
+      "buffer_post_id": null,
       "tool_attempts": [],
-      "files": {
-        "image": "content/pinterest/2026-05-04-blurry-print-dpi-fix-pinterest/2026-05-04-blurry-print-dpi-fix-pinterest.png"
-      },
-      "metadata": {
-        "r2_url": "https://social.snaptosize.com/content/pinterest/2026-05-04-blurry-print-dpi-fix-pinterest/2026-05-04-blurry-print-dpi-fix-pinterest.png",
-        "slug": "2026-05-04-blurry-print-dpi-fix-pinterest"
-      },
+      "files": {},
+      "metadata": {},
       "linked_item": null,
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-04T09:10:40.312311+00:00",
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
       "error": null
     },
     {
@@ -96,26 +85,18 @@
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "published",
-      "tool_used": "react-template-screenshot",
-      "content_type": "ratio-proof",
-      "layout": "ratio-crop-proof-fox",
-      "buffer_post_id": "69f8b364766f329adc307d9f",
+      "stage": "ideation",
+      "tool_used": null,
+      "content_type": null,
+      "layout": null,
+      "buffer_post_id": null,
       "tool_attempts": [],
-      "files": {
-        "image": "content/pinterest/2026-05-04-fox-ratio-crop-proof-pinterest/2026-05-04-fox-ratio-crop-proof-pinterest.png"
-      },
-      "metadata": {
-        "r2_url": "https://social.snaptosize.com/content/pinterest/2026-05-04-fox-ratio-crop-proof-pinterest/2026-05-04-fox-ratio-crop-proof-pinterest.png",
-        "slug": "2026-05-04-fox-ratio-crop-proof-pinterest"
-      },
+      "files": {},
+      "metadata": {},
       "linked_item": null,
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-04T14:55:33.428010+00:00",
-      "error": null,
-      "r2_url": "https://social.snaptosize.com/content/pinterest/2026-05-04-ratio-proof-showcase-pinterest/2026-05-04-ratio-proof-showcase-pinterest.png",
-      "scheduled_for": "2026-05-04T12:15:31.000Z",
-      "title": "Stop the Crop â€” How to Keep Your Art Intact in Every Print Size"
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
+      "error": null
     },
     {
       "id": "W20-P04",
@@ -131,8 +112,8 @@
       "files": {},
       "metadata": {},
       "linked_item": null,
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-01T12:26:03.667928+00:00",
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
       "error": null
     },
     {
@@ -140,20 +121,17 @@
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "published",
-      "tool_used": "gemini-generate-image",
-      "content_type": "size-guide",
-      "layout": "gemini-editorial-infographic",
-      "buffer_post_id": "69f4a850c6db0adef3768b83",
+      "stage": "ideation",
+      "tool_used": null,
+      "content_type": null,
+      "layout": null,
+      "buffer_post_id": null,
       "tool_attempts": [],
-      "files": {
-        "image": "marketing/social/content/pinterest/2026-05-02-etsy-print-size-guide-pinterest/2026-05-02-etsy-print-size-guide-pinterest.png",
-        "metadata": "marketing/social/content/pinterest/2026-05-02-etsy-print-size-guide-pinterest/metadata.json"
-      },
+      "files": {},
       "metadata": {},
       "linked_item": null,
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-01T13:19:13.183595+00:00",
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
       "error": null
     },
     {
@@ -161,20 +139,17 @@
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "published",
-      "tool_used": "gemini-generate-image",
-      "content_type": "seller-education",
-      "layout": "gemini-comparison-pin",
-      "buffer_post_id": "69f4a851c6db0adef3768baa",
+      "stage": "ideation",
+      "tool_used": null,
+      "content_type": null,
+      "layout": null,
+      "buffer_post_id": null,
       "tool_attempts": [],
-      "files": {
-        "image": "marketing/social/content/pinterest/2026-05-02-listing-title-fix-pinterest/2026-05-02-listing-title-fix-pinterest.png",
-        "metadata": "marketing/social/content/pinterest/2026-05-02-listing-title-fix-pinterest/metadata.json"
-      },
+      "files": {},
       "metadata": {},
       "linked_item": null,
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-01T13:19:14.381443+00:00",
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
       "error": null
     },
     {
@@ -182,20 +157,17 @@
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "published",
-      "tool_used": "playwright-screenshot",
-      "content_type": "product-proof",
-      "layout": "react-ratio-proof-showcase",
-      "buffer_post_id": "69f4a852b2bf116e3e39b4fa",
+      "stage": "ideation",
+      "tool_used": null,
+      "content_type": null,
+      "layout": null,
+      "buffer_post_id": null,
       "tool_attempts": [],
-      "files": {
-        "image": "marketing/social/content/pinterest/2026-05-02-into-the-light-ratio-proof/2026-05-02-into-the-light-ratio-proof.png",
-        "metadata": "marketing/social/content/pinterest/2026-05-02-into-the-light-ratio-proof/metadata.json"
-      },
+      "files": {},
       "metadata": {},
       "linked_item": null,
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-01T13:19:15.446658+00:00",
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
       "error": null
     },
     {
@@ -203,77 +175,71 @@
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "published",
+      "stage": "ideation",
       "tool_used": null,
       "content_type": null,
       "layout": null,
-      "buffer_post_id": "69f5c7fab2bf116e3e446353",
+      "buffer_post_id": null,
       "tool_attempts": [],
       "files": {},
       "metadata": {},
       "linked_item": null,
-      "created_at": "2026-05-02",
-      "updated_at": "2026-05-02T09:46:34.468492+00:00",
-      "error": null,
-      "slug": "2026-05-02-uploads-once-paid-every-time-pinterest"
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
+      "error": null
     },
     {
       "id": "W20-P09",
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "published",
+      "stage": "ideation",
       "tool_used": null,
       "content_type": null,
       "layout": null,
-      "buffer_post_id": "69f5c818ebb6d538a0d6dab3",
+      "buffer_post_id": null,
       "tool_attempts": [],
       "files": {},
       "metadata": {},
       "linked_item": null,
-      "created_at": "2026-05-02",
-      "updated_at": "2026-05-02T09:47:04.251982+00:00",
-      "error": null,
-      "slug": "2026-05-02-70-sizes-orientations-pinterest"
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
+      "error": null
     },
     {
       "id": "W20-P10",
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "published",
+      "stage": "ideation",
       "tool_used": null,
       "content_type": null,
       "layout": null,
-      "buffer_post_id": "69f5c835ebb6d538a0d6de13",
+      "buffer_post_id": null,
       "tool_attempts": [],
       "files": {},
       "metadata": {},
       "linked_item": null,
-      "created_at": "2026-05-02",
-      "updated_at": "2026-05-02T09:47:34.171726+00:00",
-      "error": null,
-      "slug": "2026-05-02-bunny-ratio-split-pinterest"
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
+      "error": null
     },
     {
       "id": "W20-P11",
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "published",
-      "tool_used": "gemini-generate-image",
-      "content_type": "lifestyle-aspirational",
-      "layout": "gemini-room-mockup",
-      "buffer_post_id": "69f7298e766f329adc216200",
+      "stage": "ideation",
+      "tool_used": null,
+      "content_type": null,
+      "layout": null,
+      "buffer_post_id": null,
       "tool_attempts": [],
-      "files": {
-        "image": "marketing/social/content/pinterest/2026-05-03-bedroom-gallery-mixed-sizes-pinterest/2026-05-03-bedroom-gallery-mixed-sizes-pinterest.png",
-        "metadata": "marketing/social/content/pinterest/2026-05-03-bedroom-gallery-mixed-sizes-pinterest/metadata.json"
-      },
+      "files": {},
       "metadata": {},
       "linked_item": null,
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-03T10:55:19.263625+00:00",
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
       "error": null
     },
     {
@@ -281,20 +247,17 @@
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "published",
-      "tool_used": "gemini-generate-image",
-      "content_type": "product-proof",
-      "layout": "gemini-flatlay",
-      "buffer_post_id": "69f72992b2bf116e3e50c515",
+      "stage": "ideation",
+      "tool_used": null,
+      "content_type": null,
+      "layout": null,
+      "buffer_post_id": null,
       "tool_attempts": [],
-      "files": {
-        "image": "marketing/social/content/pinterest/2026-05-03-craft-flatlay-export-ready-pinterest/2026-05-03-craft-flatlay-export-ready-pinterest.png",
-        "metadata": "marketing/social/content/pinterest/2026-05-03-craft-flatlay-export-ready-pinterest/metadata.json"
-      },
+      "files": {},
       "metadata": {},
       "linked_item": null,
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-03T10:55:19.263625+00:00",
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
       "error": null
     },
     {
@@ -302,185 +265,150 @@
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "published",
-      "tool_used": "playwright-screenshot",
-      "content_type": "pain-solution",
-      "layout": "react-pain-solution-slide",
-      "buffer_post_id": "69f74b54b2bf116e3e522c03",
+      "stage": "ideation",
+      "tool_used": null,
+      "content_type": null,
+      "layout": null,
+      "buffer_post_id": null,
       "tool_attempts": [],
-      "files": {
-        "image": "marketing/social/content/pinterest/2026-05-03-landscape-crop-proof-pinterest/2026-05-03-landscape-crop-proof-pinterest.png",
-        "metadata": "marketing/social/content/pinterest/2026-05-03-landscape-crop-proof-pinterest/metadata.json"
-      },
+      "files": {},
       "metadata": {},
       "linked_item": null,
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-03T13:19:17.003456+00:00",
-      "error": null,
-      "folder": "2026-05-03-landscape-crop-proof-pinterest",
-      "r2_url": "https://social.snaptosize.com/content/pinterest/2026-05-03-landscape-crop-proof-pinterest/2026-05-03-landscape-crop-proof-pinterest.png"
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
+      "error": null
     },
     {
       "id": "W20-P14",
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "published",
-      "tool_used": "gemini-generate-image",
-      "content_type": "editorial-room-guide",
-      "layout": "gemini-room-vignettes",
-      "buffer_post_id": "69f9df7f298263cbd6798bc2",
+      "stage": "ideation",
+      "tool_used": null,
+      "content_type": null,
+      "layout": null,
+      "buffer_post_id": null,
       "tool_attempts": [],
-      "files": {
-        "image": "marketing/social/content/pinterest/2026-05-05-room-by-room-etsy-sizes-pinterest/2026-05-05-room-by-room-etsy-sizes-pinterest.jpg"
-      },
-      "metadata": {
-        "r2_url": "https://social.snaptosize.com/content/pinterest/2026-05-05-room-by-room-etsy-sizes-pinterest/2026-05-05-room-by-room-etsy-sizes-pinterest.png",
-        "slug": "2026-05-05-room-by-room-etsy-sizes-pinterest",
-        "title": "Etsy Print Sizes by Room: What Size Sells in Bedrooms, Living Rooms & Nurseries",
-        "description": "A room-by-room guide to the Etsy print sizes that actually sell. 16x20 over a bed, 24x36 above a sofa, 8x10 for the nursery best-seller, and the 5x7 + 8x10 + 11x14 gallery wall combo buyers ask for most. Plan your Etsy listings, then resize one design into every size buyers want.",
-        "link": "https://snaptosize.com/most-popular-etsy-print-sizes-to-sell",
-        "board": "print-size-guides",
-        "tags": [
-          "etsy print sizes",
-          "wall art sizes",
-          "etsy seller tips",
-          "printable wall art",
-          "gallery wall"
-        ]
-      },
+      "files": {},
+      "metadata": {},
       "linked_item": null,
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-05T12:16:00.299006+00:00",
-      "error": null,
-      "title": "Room-by-room Etsy print sizes: where each size actually fits",
-      "scheduled_for": "2026-05-05T13:15:00.000Z"
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
+      "error": null
     },
     {
       "id": "W20-P15",
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "published",
-      "tool_used": "gemini-generate-image",
-      "content_type": "educational",
-      "layout": "gemini-editorial-comparison",
-      "buffer_post_id": "69f9df84298263cbd6798c13",
+      "stage": "ideation",
+      "tool_used": null,
+      "content_type": null,
+      "layout": null,
+      "buffer_post_id": null,
       "tool_attempts": [],
-      "files": {
-        "image": "marketing/social/content/pinterest/2026-05-05-aspect-ratio-trap-pinterest/2026-05-05-aspect-ratio-trap-pinterest.jpg"
-      },
-      "metadata": {
-        "r2_url": "https://social.snaptosize.com/content/pinterest/2026-05-05-aspect-ratio-trap-pinterest/2026-05-05-aspect-ratio-trap-pinterest.png",
-        "slug": "2026-05-05-aspect-ratio-trap-pinterest",
-        "title": "The Etsy Aspect Ratio Trap: Why 73% of Buyers Print 4:5, Not 2:3",
-        "description": "Most digital art on Etsy is exported as 2:3, but 73% of Etsy buyers print 4:5 or 1:1. The result: cropped heads, lost text, refund requests. See the same illustration in 2:3, 4:5 and 1:1 side by side, and learn how to ship every Etsy aspect ratio from one source file.",
-        "link": "https://snaptosize.com/etsy-print-ratios",
-        "board": "seller-tools",
-        "tags": [
-          "aspect ratio",
-          "etsy digital prints",
-          "printable art",
-          "etsy seller",
-          "wall art ratios"
-        ]
-      },
+      "files": {},
+      "metadata": {},
       "linked_item": null,
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-05T12:16:04.777434+00:00",
-      "error": null,
-      "title": "The Aspect Ratio Trap: same art, three Etsy ratios, three different prints",
-      "scheduled_for": "2026-05-05T16:15:00.000Z"
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
+      "error": null
     },
     {
       "id": "W20-P16",
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "published",
-      "tool_used": "react-template-screenshot",
-      "content_type": "editorial-data",
-      "layout": "top5-sizes-showcase",
-      "buffer_post_id": "69f9df88389ce4741d3cf7cf",
+      "stage": "ideation",
+      "tool_used": null,
+      "content_type": null,
+      "layout": null,
+      "buffer_post_id": null,
       "tool_attempts": [],
-      "files": {
-        "image": "marketing/social/content/pinterest/2026-05-05-top-5-etsy-print-sizes-pinterest/2026-05-05-top-5-etsy-print-sizes-pinterest.jpg"
-      },
-      "metadata": {
-        "r2_url": "https://social.snaptosize.com/content/pinterest/2026-05-05-top-5-etsy-print-sizes-pinterest/2026-05-05-top-5-etsy-print-sizes-pinterest.png",
-        "slug": "2026-05-05-top-5-etsy-print-sizes-pinterest",
-        "title": "Top 5 Best-Selling Etsy Print Sizes (Ranked by What Buyers Actually Order)",
-        "description": "The 5 Etsy print sizes that actually sell, ranked: 8x10, 5x7, 11x14, 16x20 and 18x24. See the aspect ratio, typical price point and where each size lives on a wall. The shortlist every Etsy printable shop should offer before adding anything else.",
-        "link": "https://snaptosize.com/most-popular-etsy-print-sizes-to-sell",
-        "board": "digital-prints",
-        "tags": [
-          "best selling etsy prints",
-          "etsy print sizes",
-          "printable wall art",
-          "etsy shop tips",
-          "digital download"
-        ]
-      },
+      "files": {},
+      "metadata": {},
       "linked_item": null,
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-05T12:16:09.030882+00:00",
-      "error": null,
-      "title": "The 5 Etsy print sizes that actually sell — ranked",
-      "scheduled_for": "2026-05-05T19:15:00.000Z"
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
+      "error": null
     },
     {
       "id": "W20-P17",
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "ideation",
-      "tool_used": null,
-      "content_type": null,
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "content_type": "comparison-graphic",
       "layout": null,
-      "buffer_post_id": null,
+      "buffer_post_id": "69fb2bfe0b8dba6c39db78aa",
       "tool_attempts": [],
-      "files": {},
-      "metadata": {},
+      "files": {
+        "image": "content/pinterest/2026-05-06-half-the-price-pinterest/2026-05-06-half-the-price-pinterest.png"
+      },
+      "metadata": {
+        "r2_url": "https://social.snaptosize.com/content/pinterest/2026-05-06-half-the-price-pinterest/2026-05-06-half-the-price-pinterest.png",
+        "slug": "2026-05-06-half-the-price-pinterest"
+      },
       "linked_item": null,
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-01T12:26:03.667928+00:00",
-      "error": null
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T11:54:46.890740+00:00",
+      "error": null,
+      "status": "published",
+      "slug": "2026-05-06-half-the-price-pinterest",
+      "title": "Photoshop vs SnapToSize for Etsy Print Sellers: Half the Price, Zero Learning Curve"
     },
     {
       "id": "W20-P18",
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "ideation",
-      "tool_used": null,
-      "content_type": null,
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "content_type": "size-reference-card",
       "layout": null,
-      "buffer_post_id": null,
+      "buffer_post_id": "69fb2bfa554649d16ff3454a",
       "tool_attempts": [],
-      "files": {},
-      "metadata": {},
+      "files": {
+        "image": "content/pinterest/2026-05-06-six-sizes-no-ratio-pinterest/2026-05-06-six-sizes-no-ratio-pinterest.png"
+      },
+      "metadata": {
+        "r2_url": "https://social.snaptosize.com/content/pinterest/2026-05-06-six-sizes-no-ratio-pinterest/2026-05-06-six-sizes-no-ratio-pinterest.png",
+        "slug": "2026-05-06-six-sizes-no-ratio-pinterest"
+      },
       "linked_item": null,
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-01T12:26:03.667928+00:00",
-      "error": null
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T11:54:46.890740+00:00",
+      "error": null,
+      "status": "published",
+      "slug": "2026-05-06-six-sizes-no-ratio-pinterest",
+      "title": "6 Etsy Print Sizes That Don't Fit Any Ratio (And Why Buyers Want Them Anyway)"
     },
     {
       "id": "W20-P19",
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "ideation",
-      "tool_used": null,
-      "content_type": null,
+      "stage": "published",
+      "tool_used": "react-template-screenshot",
+      "content_type": "editorial-mistakes-fixes",
       "layout": null,
-      "buffer_post_id": null,
+      "buffer_post_id": "69fb2c320b8dba6c39db79b7",
       "tool_attempts": [],
-      "files": {},
-      "metadata": {},
+      "files": {
+        "image": "content/pinterest/2026-05-06-five-size-mistakes-pinterest/2026-05-06-five-size-mistakes-pinterest.png"
+      },
+      "metadata": {
+        "r2_url": "https://social.snaptosize.com/content/pinterest/2026-05-06-five-size-mistakes-pinterest/2026-05-06-five-size-mistakes-pinterest.png",
+        "slug": "2026-05-06-five-size-mistakes-pinterest"
+      },
       "linked_item": null,
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-01T12:26:03.667928+00:00",
-      "error": null
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T11:55:31.593523+00:00",
+      "error": null,
+      "status": "published",
+      "slug": "2026-05-06-five-size-mistakes-pinterest",
+      "title": "5 Print Size Mistakes Etsy Sellers Make (And the Exact Fix for Each)"
     },
     {
       "id": "W20-P20",
@@ -496,8 +424,8 @@
       "files": {},
       "metadata": {},
       "linked_item": null,
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-01T12:26:03.667928+00:00",
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
       "error": null
     },
     {
@@ -514,8 +442,8 @@
       "files": {},
       "metadata": {},
       "linked_item": null,
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-01T12:26:03.667928+00:00",
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
       "error": null
     },
     {
@@ -532,8 +460,8 @@
       "files": {},
       "metadata": {},
       "linked_item": "W20-T01",
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-01T12:26:03.667928+00:00",
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
       "error": null
     },
     {
@@ -550,8 +478,8 @@
       "files": {},
       "metadata": {},
       "linked_item": "W20-T02",
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-01T12:26:03.667928+00:00",
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
       "error": null
     },
     {
@@ -568,8 +496,8 @@
       "files": {},
       "metadata": {},
       "linked_item": "W20-T03",
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-01T12:26:03.667928+00:00",
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
       "error": null
     },
     {
@@ -586,8 +514,8 @@
       "files": {},
       "metadata": {},
       "linked_item": "W20-T04",
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-01T12:26:03.667928+00:00",
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
       "error": null
     },
     {
@@ -604,8 +532,8 @@
       "files": {},
       "metadata": {},
       "linked_item": "W20-T05",
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-01T12:26:03.667928+00:00",
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
       "error": null
     },
     {
@@ -622,8 +550,8 @@
       "files": {},
       "metadata": {},
       "linked_item": "W20-T06",
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-01T12:26:03.667928+00:00",
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
       "error": null
     },
     {
@@ -640,8 +568,8 @@
       "files": {},
       "metadata": {},
       "linked_item": "W20-T07",
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-01T12:26:03.667928+00:00",
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
       "error": null
     },
     {
@@ -658,8 +586,8 @@
       "files": {},
       "metadata": {},
       "linked_item": null,
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-01T12:26:03.667928+00:00",
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
       "error": null
     },
     {
@@ -676,8 +604,8 @@
       "files": {},
       "metadata": {},
       "linked_item": null,
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-01T12:26:03.667928+00:00",
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
       "error": null
     },
     {
@@ -694,8 +622,8 @@
       "files": {},
       "metadata": {},
       "linked_item": null,
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-01T12:26:03.667928+00:00",
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
       "error": null
     },
     {
@@ -712,8 +640,8 @@
       "files": {},
       "metadata": {},
       "linked_item": null,
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-01T12:26:03.667928+00:00",
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
       "error": null
     },
     {
@@ -730,8 +658,8 @@
       "files": {},
       "metadata": {},
       "linked_item": null,
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-01T12:26:03.667928+00:00",
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
       "error": null
     },
     {
@@ -748,8 +676,8 @@
       "files": {},
       "metadata": {},
       "linked_item": null,
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-01T12:26:03.667928+00:00",
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
       "error": null
     },
     {
@@ -766,78 +694,265 @@
       "files": {},
       "metadata": {},
       "linked_item": null,
-      "created_at": "2026-05-01T12:26:03.667928+00:00",
-      "updated_at": "2026-05-01T12:26:03.667928+00:00",
+      "created_at": "2026-05-06T08:36:47.568613+00:00",
+      "updated_at": "2026-05-06T08:36:47.568613+00:00",
       "error": null
     },
     {
-      "id": "W20-I08",
-      "platform": "instagram",
-      "format": "image",
-      "priority": "P1",
-      "stage": "published",
-      "tool_used": "gemini-generate-image",
-      "content_type": "seller-education",
-      "layout": "gemini-comparison-pin",
-      "buffer_post_id": "69f4aabcc6db0adef3769882",
-      "tool_attempts": [],
-      "files": {
-        "image": "marketing/social/content/instagram/2026-05-01-listing-title-fix-instagram/2026-05-01-listing-title-fix-instagram.jpg",
-        "metadata": "marketing/social/content/instagram/2026-05-01-listing-title-fix-instagram/metadata.json"
-      },
-      "metadata": {},
-      "linked_item": "W20-P06",
-      "created_at": "2026-05-01T13:28:11.770644+00:00",
-      "updated_at": "2026-05-01T13:29:33.293724+00:00",
-      "error": null
-    },
-    {
-      "id": "W20-I09",
-      "platform": "instagram",
-      "format": "image",
-      "priority": "P1",
-      "stage": "published",
-      "tool_used": "gemini-generate-image",
-      "content_type": "size-reference-infographic",
-      "layout": "gemini-radial-hub",
-      "buffer_post_id": "69f5c9aeebb6d538a0d6f63f",
-      "tool_attempts": [],
-      "files": {
-        "image": "marketing/social/content/instagram/2026-05-02-70-sizes-orientations-instagram/2026-05-02-70-sizes-orientations-instagram.jpg",
-        "metadata": "marketing/social/content/instagram/2026-05-02-70-sizes-orientations-instagram/metadata.json"
-      },
-      "metadata": {},
-      "linked_item": "W20-P09",
-      "created_at": "2026-05-02T09:52:22.496792+00:00",
-      "updated_at": "2026-05-02T09:53:50.906096+00:00",
-      "error": null
-    },
-    {
-      "id": "W20-I10",
+      "id": "W20-I12",
       "platform": "instagram",
       "format": "image",
       "priority": "P1",
       "stage": "published",
       "tool_used": "snaptosize-resize",
-      "content_type": "lifestyle-mockup",
-      "layout": "bedroom-gallery-mixed-sizes",
-      "buffer_post_id": "69f74d90766f329adc22e663",
+      "content_type": "size-reference-card",
+      "layout": null,
+      "buffer_post_id": "69fb2d980b8dba6c39db8aa6",
       "tool_attempts": [],
       "files": {
-        "image": "marketing/social/content/instagram/2026-05-03-bedroom-gallery-mixed-sizes-instagram/2026-05-03-bedroom-gallery-mixed-sizes-instagram.jpg",
-        "metadata": "marketing/social/content/instagram/2026-05-03-bedroom-gallery-mixed-sizes-instagram/metadata.json"
+        "image": "content/instagram/2026-05-06-six-sizes-no-ratio-instagram/2026-05-06-six-sizes-no-ratio-instagram.jpg"
+      },
+      "metadata": {
+        "r2_url": "https://social.snaptosize.com/content/instagram/2026-05-06-six-sizes-no-ratio-instagram/2026-05-06-six-sizes-no-ratio-instagram.jpg",
+        "slug": "2026-05-06-six-sizes-no-ratio-instagram"
+      },
+      "linked_item": "W20-P18",
+      "created_at": "2026-05-06T12:01:40.075065+00:00",
+      "updated_at": "2026-05-06T12:01:40.075065+00:00",
+      "error": null,
+      "status": "published",
+      "slug": "2026-05-06-six-sizes-no-ratio-instagram",
+      "title": "6 Etsy print sizes that don't fit any ratio (and buyers want them anyway)",
+      "scheduled_at": "2026-05-06T18:00:00.000Z"
+    },
+    {
+      "id": "W21-P01",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "content_type": null,
+      "buffer_post_id": "69fda2c23472576e7ffcf1c7",
+      "files": {
+        "image": "content/pinterest/2026-05-07-70-files-one-upload-pinterest/2026-05-07-70-files-one-upload-pinterest.png"
       },
       "metadata": {},
-      "linked_item": "W20-P11",
-      "created_at": "2026-05-03T13:28:48.432146+00:00",
-      "updated_at": "2026-05-03T13:28:48.432146+00:00",
+      "linked_item": null,
+      "created_at": "2026-05-07T11:44:58.853947+00:00",
+      "updated_at": "2026-05-08T08:45:54.594718+00:00",
+      "error": null
+    },
+    {
+      "id": "W21-P02",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "publishing",
+      "tool_used": "gemini-generate-image",
+      "content_type": null,
+      "buffer_post_id": null,
+      "files": {
+        "image": "content/pinterest/2026-05-07-zip-rejected-fix-pinterest/2026-05-07-zip-rejected-fix-pinterest.png"
+      },
+      "metadata": {},
+      "linked_item": null,
+      "created_at": "2026-05-07T11:44:58.853947+00:00",
+      "updated_at": "2026-05-08T08:47:36.007913+00:00",
+      "error": "Invalid post: Whoops, it looks like you've posted that one recently. Unfortunately, we're not able to post the same thing again so soon!"
+    },
+    {
+      "id": "W21-P03",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "publishing",
+      "tool_used": "react-playwright",
+      "content_type": null,
+      "buffer_post_id": null,
+      "files": {
+        "image": "content/pinterest/2026-05-07-print-price-ladder-pinterest/2026-05-07-print-price-ladder-pinterest.png"
+      },
+      "metadata": {},
+      "linked_item": null,
+      "created_at": "2026-05-07T11:44:58.853947+00:00",
+      "updated_at": "2026-05-08T08:47:36.504479+00:00",
+      "error": "Invalid post: Whoops, it looks like you've posted that one recently. Unfortunately, we're not able to post the same thing again so soon!"
+    },
+    {
+      "id": "W22-P01",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "content_type": "pain-point-editorial",
+      "buffer_post_id": "69fde830d9a968a1f5ee7c31",
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-08-buyer-dm-pain-pinterest/2026-05-08-buyer-dm-pain-pinterest.jpg"
+      },
+      "metadata": {
+        "title": "Do you have this in 11x14? buyer DM pain",
+        "week": "W22"
+      },
+      "linked_item": null,
+      "created_at": "2026-05-08T08:15:25.478391+00:00",
+      "updated_at": "2026-05-08T13:42:09.631682+00:00",
+      "error": "Invalid post: Whoops, it looks like you've posted that one recently. Unfortunately, we're not able to post the same thing again so soon!"
+    },
+    {
+      "id": "W22-P02",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "content_type": "opportunity-editorial",
+      "buffer_post_id": "69fde8359bd8a9412180dfc7",
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-08-intl-sizes-unlock-pinterest/2026-05-08-intl-sizes-unlock-pinterest.jpg"
+      },
+      "metadata": {
+        "title": "A4 unlocks buyers in 32 countries",
+        "week": "W22"
+      },
+      "linked_item": null,
+      "created_at": "2026-05-08T08:15:25.478391+00:00",
+      "updated_at": "2026-05-08T13:42:14.321612+00:00",
+      "error": "Invalid post: Whoops, it looks like you've posted that one recently. Unfortunately, we're not able to post the same thing again so soon!"
+    },
+    {
+      "id": "W22-P03",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "react-playwright",
+      "content_type": "reference-card",
+      "buffer_post_id": "69fde83a9bd8a9412180dfed",
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-08-intl-size-guide-pinterest/2026-05-08-intl-size-guide-pinterest.jpg"
+      },
+      "metadata": {
+        "title": "Print Sizes by Region intl cheat sheet",
+        "week": "W22"
+      },
+      "linked_item": null,
+      "created_at": "2026-05-08T08:15:25.478391+00:00",
+      "updated_at": "2026-05-08T13:42:18.903622+00:00",
+      "error": "Invalid post: Whoops, it looks like you've posted that one recently. Unfortunately, we're not able to post the same thing again so soon!"
+    },
+    {
+      "id": "W22-IG01",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "snaptosize-resize",
+      "content_type": "pain-point-editorial",
+      "buffer_post_id": "69fdea43d9a968a1f5ee8929",
+      "files": {
+        "image": "marketing/social/content/instagram/2026-05-08-buyer-dm-pain-instagram/post.jpg"
+      },
+      "metadata": {
+        "title": "Buyer DM pain — 11x14 lost sale",
+        "week": "W22"
+      },
+      "linked_item": "W22-P01",
+      "created_at": "2026-05-08T13:50:00.000000+00:00",
+      "updated_at": "2026-05-08T13:51:00.158650+00:00",
+      "error": null
+    },
+    {
+      "id": "W22-IG02",
+      "platform": "instagram",
+      "format": "carousel",
+      "priority": "P1",
+      "stage": "done",
+      "tool_used": "social-slides",
+      "content_type": "process-walkthrough",
+      "files": {
+        "slides": [
+          "marketing/social/content/instagram/2026-05-08-45-seconds-30-files/ec12-slide-01.jpg",
+          "marketing/social/content/instagram/2026-05-08-45-seconds-30-files/ec12-slide-02.jpg",
+          "marketing/social/content/instagram/2026-05-08-45-seconds-30-files/ec12-slide-03.jpg",
+          "marketing/social/content/instagram/2026-05-08-45-seconds-30-files/ec12-slide-04.jpg",
+          "marketing/social/content/instagram/2026-05-08-45-seconds-30-files/ec12-slide-05.jpg"
+        ],
+        "caption": "marketing/social/content/instagram/2026-05-08-45-seconds-30-files/instagram-post.txt"
+      },
+      "metadata": {
+        "title": "45 seconds. 1 file. 30 print-ready sizes.",
+        "hook": "45 seconds. That's how long it takes to go from 1 file to 30 print-ready sizes.",
+        "cta": "Comment SIZES → ETSYSELLER promo code (30 days Pro)",
+        "archetype": "E",
+        "accent": "AMBER",
+        "component": "EtsyCarousel12",
+        "week": "W22"
+      },
+      "created_at": "2026-05-08T20:00:00.000000+00:00",
+      "updated_at": "2026-05-08T20:30:00.000000+00:00",
+      "error": null
+    },
+    {
+      "id": "W22-P04",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "content_type": null,
+      "buffer_post_id": "69ff01cf2789e816c90ddb1a",
+      "files": {
+        "image": "content/pinterest/2026-05-09-gallery-wall-sizes-pinterest/2026-05-09-gallery-wall-sizes-pinterest.jpg"
+      },
+      "metadata": {},
+      "linked_item": null,
+      "created_at": "2026-05-09T09:25:03.375932+00:00",
+      "updated_at": "2026-05-09T09:43:50.691831+00:00",
+      "error": null
+    },
+    {
+      "id": "W22-P05",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "content_type": null,
+      "buffer_post_id": "69fefd672789e816c90db354",
+      "files": {
+        "image": "content/pinterest/2026-05-09-buyer-search-data-pinterest/2026-05-09-buyer-search-data-pinterest.jpg"
+      },
+      "metadata": {},
+      "linked_item": null,
+      "created_at": "2026-05-09T09:25:03.375932+00:00",
+      "updated_at": "2026-05-09T09:25:03.375932+00:00",
+      "error": null
+    },
+    {
+      "id": "W22-P06",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "react-playwright",
+      "content_type": null,
+      "buffer_post_id": "69ff01d48c697e6b3c19836d",
+      "files": {
+        "image": "content/pinterest/2026-05-09-ratio-packs-breakdown-pinterest/2026-05-09-ratio-packs-breakdown-pinterest.jpg"
+      },
+      "metadata": {},
+      "linked_item": null,
+      "created_at": "2026-05-09T09:25:03.375932+00:00",
+      "updated_at": "2026-05-09T09:43:50.691831+00:00",
       "error": null
     }
   ],
   "metrics": {
-    "total": 38,
-    "completed": 18,
+    "total": 44,
+    "completed": 10,
     "failed": 0,
-    "success_rate": 0.474
+    "success_rate": 0.227
   }
 }
