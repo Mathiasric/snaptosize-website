@@ -2,7 +2,7 @@
   "current_week": "W22",
   "batch_id": "2026-W20",
   "started_at": "2026-05-06T08:36:47.568613+00:00",
-  "updated_at": "2026-05-09T12:00:00+00:00",
+  "updated_at": "2026-05-10T12:45:57.141880+00:00",
   "creator_completed_at": "2026-04-15T09:54:00.000000+00:00",
   "target": {
     "pinterest": 21,
@@ -35,8 +35,8 @@
       "output": null
     },
     "publisher": {
-      "status": "pending",
-      "output": null
+      "status": "completed",
+      "output": "4 items failed to schedule"
     },
     "tracker": {
       "status": "pending",
@@ -748,17 +748,17 @@
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "publishing",
+      "stage": "published",
       "tool_used": "gemini-generate-image",
       "content_type": null,
-      "buffer_post_id": null,
+      "buffer_post_id": "6a007e022789e816c91a8b1e",
       "files": {
         "image": "content/pinterest/2026-05-07-zip-rejected-fix-pinterest/2026-05-07-zip-rejected-fix-pinterest.png"
       },
       "metadata": {},
       "linked_item": null,
       "created_at": "2026-05-07T11:44:58.853947+00:00",
-      "updated_at": "2026-05-08T08:47:36.007913+00:00",
+      "updated_at": "2026-05-10T12:45:54.776760+00:00",
       "error": "Invalid post: Whoops, it looks like you've posted that one recently. Unfortunately, we're not able to post the same thing again so soon!"
     },
     {
@@ -776,7 +776,7 @@
       "metadata": {},
       "linked_item": null,
       "created_at": "2026-05-07T11:44:58.853947+00:00",
-      "updated_at": "2026-05-08T08:47:36.504479+00:00",
+      "updated_at": "2026-05-10T12:45:55.702652+00:00",
       "error": "Invalid post: Whoops, it looks like you've posted that one recently. Unfortunately, we're not able to post the same thing again so soon!"
     },
     {
@@ -902,14 +902,14 @@
       "stage": "published",
       "tool_used": "gemini-generate-image",
       "content_type": null,
-      "buffer_post_id": "69ff01cf2789e816c90ddb1a",
+      "buffer_post_id": "69ff43722789e816c9102601",
       "files": {
         "image": "content/pinterest/2026-05-09-gallery-wall-sizes-pinterest/2026-05-09-gallery-wall-sizes-pinterest.jpg"
       },
       "metadata": {},
       "linked_item": null,
       "created_at": "2026-05-09T09:25:03.375932+00:00",
-      "updated_at": "2026-05-09T09:43:50.691831+00:00",
+      "updated_at": "2026-05-09T14:23:54.751856+00:00",
       "error": null
     },
     {
@@ -938,21 +938,84 @@
       "stage": "published",
       "tool_used": "react-playwright",
       "content_type": null,
-      "buffer_post_id": "69ff01d48c697e6b3c19836d",
+      "buffer_post_id": "69ff43788c697e6b3c1bbbcd",
       "files": {
         "image": "content/pinterest/2026-05-09-ratio-packs-breakdown-pinterest/2026-05-09-ratio-packs-breakdown-pinterest.jpg"
       },
       "metadata": {},
       "linked_item": null,
       "created_at": "2026-05-09T09:25:03.375932+00:00",
-      "updated_at": "2026-05-09T09:43:50.691831+00:00",
+      "updated_at": "2026-05-09T14:23:54.751856+00:00",
       "error": null
+    },
+    {
+      "id": "W22-P07",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "content_type": "competitor-positioning",
+      "buffer_post_id": "6a007e618c697e6b3c26134e",
+      "files": {
+        "image": "content/pinterest/2026-05-10-photoshop-trap-pinterest/2026-05-10-photoshop-trap-pinterest.jpg"
+      },
+      "metadata": {
+        "title": "Never Opened Photoshop? Etsy Print Sellers Don't Need It",
+        "week": "W22"
+      },
+      "linked_item": null,
+      "created_at": "2026-05-10T12:45:25.259803+00:00",
+      "updated_at": "2026-05-10T12:47:48.399619+00:00",
+      "error": "Invalid post: Whoops, it looks like you've posted that one recently. Unfortunately, we're not able to post the same thing again so soon!"
+    },
+    {
+      "id": "W22-P08",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "react-playwright",
+      "content_type": "educational-mistakes",
+      "buffer_post_id": "6a007e682789e816c91a8d83",
+      "files": {
+        "image": "content/pinterest/2026-05-10-top5-mistakes-pinterest/2026-05-10-top5-mistakes-pinterest.jpg"
+      },
+      "metadata": {
+        "title": "5 Print Size Mistakes Costing Etsy Sellers Sales",
+        "week": "W22"
+      },
+      "linked_item": null,
+      "created_at": "2026-05-10T12:45:25.259803+00:00",
+      "updated_at": "2026-05-10T12:47:48.399619+00:00",
+      "error": "Invalid post: Whoops, it looks like you've posted that one recently. Unfortunately, we're not able to post the same thing again so soon!"
+    },
+    {
+      "id": "W22-P09",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "react-playwright",
+      "content_type": "pain-solution",
+      "buffer_post_id": "6a007e712789e816c91a8de3",
+      "files": {
+        "image": "content/pinterest/2026-05-10-folder-chaos-pinterest/2026-05-10-folder-chaos-pinterest.jpg"
+      },
+      "metadata": {
+        "title": "47 Chaotic Files vs 5 Organized ZIP Packs",
+        "week": "W22"
+      },
+      "linked_item": null,
+      "created_at": "2026-05-10T12:45:25.259803+00:00",
+      "updated_at": "2026-05-10T12:47:48.399619+00:00",
+      "error": "Invalid post: Whoops, it looks like you've posted that one recently. Unfortunately, we're not able to post the same thing again so soon!"
     }
   ],
   "metrics": {
-    "total": 44,
-    "completed": 10,
+    "total": 50,
+    "completed": 13,
     "failed": 0,
-    "success_rate": 0.227
+    "success_rate": 0.26
   }
 }

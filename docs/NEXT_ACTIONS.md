@@ -1,6 +1,6 @@
 # NEXT_ACTIONS.md — This Week's Priorities
-**Week of:** 2026-04-27
-**Updated by:** Claude Code — 2026-04-27
+**Week of:** 2026-05-07 (W21)
+**Updated by:** Claude Code — 2026-05-07
 
 ---
 
@@ -33,6 +33,30 @@ If you're not sure where to put energy, the answer is **always**:
 ## 📅 Scheduled check-ins
 
 - **~2026-05-06** — Run `/gsc-review` to measure CTR effect of 2 title rewrites shipped 2026-04-26 (commit d78ceb2): `/etsy-20mb-file-limit` and `/etsy-bookmark-size`. Baseline: pos 8.0 / 0.1% CTR (20mb), pos 14.8 / 0% CTR (bookmark). If CTR moved up, replicate pattern on 3-5 more pages.
+
+## ✅ W22 Social Pipeline (day 3) — 2026-05-10
+
+3 Pinterest pins scheduled to Buffer:
+- W22-P07 "Never Opened Photoshop?" — Gemini split-screen (photoshop-trap) — 18:00 UTC — seller-tools board
+- W22-P08 "5 Size Mistakes Costing Sales" — React/Playwright (Top5MistakesShowcase) — 07:00 UTC May 11 — seller-tools board
+- W22-P09 "End the File Chaos" — React/Playwright (PainSolutionSlide folder-chaos) — 18:00 UTC May 11 — seller-tools board
+pipeline-state.json updated. W22 total: 9 pins published (P01–P09).
+
+## ✅ W22 Social Pipeline (day 2) — 2026-05-09
+
+3 Pinterest pins scheduled to Buffer:
+- W22-P04 "Gallery Wall Size Guide" — Gemini reference card — 14:00 UTC — print-size-guides board
+- W22-P05 "What Buyers Actually Search For" — Gemini bar chart — 17:00 UTC — seller-tools board
+- W22-P06 "5 Ratio Packs Breakdown" — React/Playwright — 20:00 UTC — print-size-guides board
+pipeline-state.json updated. W22 total: 6 pins published (P01–P06).
+
+## ✅ W21 Social Pipeline — 2026-05-07
+
+3 Pinterest pins scheduled to Buffer:
+- W21-P01 "1 Upload, 70 Files" — Gemini editorial — 14:00 UTC — seller-tools board
+- W21-P02 "Etsy ZIP Rejected" — Gemini pain/solution — 17:00 UTC — seller-tools board
+- W21-P03 "Price Ladder" — React/Playwright — 20:00 UTC — print-size-guides board
+pipeline-state.json updated to W21.
 
 ---
 
