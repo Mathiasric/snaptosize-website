@@ -14,7 +14,13 @@ import PainSolutionSlide from "./_components/PainSolutionSlide";
 import W15BeforeAfterWorkflow from "./_components/W15BeforeAfterWorkflow";
 import W15DpiCheatSheet from "./_components/W15DpiCheatSheet";
 import StatsCard from "./_components/StatsCard";
+import Top5FrameFitShowcase from "./_components/Top5FrameFitShowcase";
+import Top5MistakesShowcase from "./_components/Top5MistakesShowcase";
 import ChecklistPinP03 from "./_components/ChecklistPinP03";
+import W21PriceLadderPin from "./_components/W21PriceLadderPin";
+import W21ResolutionGuide from "./_components/W21ResolutionGuide";
+import W22IntlSizeGuide from "./_components/W22IntlSizeGuide";
+import W22RatioPacksPin from "./_components/W22RatioPacksPin";
 import {
   EC01Slide01,
   EC01Slide02,
@@ -78,11 +84,33 @@ import {
   EC09Slide04,
   EC09Slide05,
 } from "./_components/EtsyCarousel09";
+import {
+  EC10Slide01,
+  EC10Slide02,
+  EC10Slide03,
+  EC10Slide04,
+  EC10Slide05,
+} from "./_components/EtsyCarousel10";
+import {
+  EC11Slide01,
+  EC11Slide02,
+  EC11Slide03,
+  EC11Slide04,
+  EC11Slide05,
+} from "./_components/EtsyCarousel11";
+import {
+  EC12Slide01,
+  EC12Slide02,
+  EC12Slide03,
+  EC12Slide04,
+  EC12Slide05,
+} from "./_components/EtsyCarousel12";
 import Checklist from "./_components/Checklist";
 import Top5SizesShowcase from "./_components/Top5SizesShowcase";
 import FrameMatrixVisual from "./_components/FrameMatrixVisual";
 import PopularFrameBrands from "./_components/PopularFrameBrands";
 import WeddingSuiteSizes from "./_components/WeddingSuiteSizes";
+import W22SizeDemandPin from "./_components/W22SizeDemandPin";
 import {
   W15I01Slide01,
   W15I01Slide02,
@@ -210,6 +238,12 @@ export default function SocialSlidesPage() {
 
         {/* W19-I19: StatsCard — Instagram */}
         <StatsCard ratio="instagram" />
+        {/* W20-P19: StatsCard — Pinterest (May 6) */}
+        <StatsCard ratio="pinterest" />
+        {/* W20-P19: Top5FrameFitShowcase — Pinterest (May 6) */}
+        <Top5FrameFitShowcase />
+        {/* W20-P19b: Top5MistakesShowcase — Pinterest (May 6) */}
+        <Top5MistakesShowcase />
 
         {/* ═══ Pain Solution Slide — before/after split panel ═══ */}
         <PainSolutionSlide pain="missing-size" ratio="pinterest" />
@@ -289,6 +323,27 @@ export default function SocialSlidesPage() {
         <EC09Slide04 />
         <EC09Slide05 />
 
+        {/* ═══ W20-I13 (2026-05-06): EtsyCarousel10 — 5 silent reasons Etsy prints aren't selling ═══ */}
+        <EC10Slide01 />
+        <EC10Slide02 />
+        <EC10Slide03 />
+        <EC10Slide04 />
+        <EC10Slide05 />
+
+        {/* ═══ W21-I01 (2026-05-07): EtsyCarousel11 — Same artwork. Two listings. The difference is one setting. ═══ */}
+        <EC11Slide01 />
+        <EC11Slide02 />
+        <EC11Slide03 />
+        <EC11Slide04 />
+        <EC11Slide05 />
+
+        {/* ═══ W22-I02 (2026-05-08): EtsyCarousel12 — 45 seconds. From 1 file to 30 print-ready sizes. ═══ */}
+        <EC12Slide01 />
+        <EC12Slide02 />
+        <EC12Slide03 />
+        <EC12Slide04 />
+        <EC12Slide05 />
+
         {/* ═══ W20-P03: Anime Hero — NeonPackShowcase Pinterest ═══ */}
         <NeonPackShowcase artwork="anime-hero" name="Anime Hero" ratio="pinterest" />
 
@@ -317,6 +372,27 @@ export default function SocialSlidesPage() {
         <W15I01Slide06 />
         <W15I01Slide07 />
         <W15I01Slide08 />
+
+        {/* ═══ W21-P (2026-05-07): Price Ladder — what buyers pay per print size ═══ */}
+        <W21PriceLadderPin />
+
+        {/* ═══ W21-P03v2 (2026-05-07): Resolution Guide — min pixels per print size ═══ */}
+        <W21ResolutionGuide />
+
+        {/* ═══ W22-P03 (2026-05-08): International Size Guide — A4/A3 ref card ═══ */}
+        <W22IntlSizeGuide />
+
+        {/* ═══ W22-P06 (2026-05-09): Ratio Packs Breakdown — 1 Upload → 5 Packs → 70 Files ═══ */}
+        <W22RatioPacksPin />
+
+        {/* ═══ W22-R1 (2026-05-12): Size Demand Pin — 7 sizes buyers search most ═══ */}
+        <W22SizeDemandPin />
+
+        {/* ═══ W22 CANDIDATES — visual QA before publish ═══ */}
+        <NeonStatsHero artwork="deer" name="Deer Portrait" ratio="pinterest" />
+        <NeonStatsHero artwork="salmon" name="Salmon" ratio="pinterest" />
+        <RatioCropProof artwork="salmon" name="Salmon" ratio="pinterest" />
+        <RatioCropProof artwork="deer" name="Deer Portrait" ratio="pinterest" />
       </div>
     </main>
   );
