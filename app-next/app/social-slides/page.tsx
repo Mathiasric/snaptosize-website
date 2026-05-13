@@ -111,6 +111,7 @@ import FrameMatrixVisual from "./_components/FrameMatrixVisual";
 import PopularFrameBrands from "./_components/PopularFrameBrands";
 import WeddingSuiteSizes from "./_components/WeddingSuiteSizes";
 import W22SizeDemandPin from "./_components/W22SizeDemandPin";
+import W23ListingScorePin from "./_components/W23ListingScorePin";
 import {
   W15I01Slide01,
   W15I01Slide02,
@@ -387,6 +388,9 @@ export default function SocialSlidesPage() {
 
         {/* ═══ W22-R1 (2026-05-12): Size Demand Pin — 7 sizes buyers search most ═══ */}
         <W22SizeDemandPin />
+
+        {/* ═══ W23-R1 (2026-05-13): Listing Score Pin — how complete is your listing? ═══ */}
+        <W23ListingScorePin />
 
         {/* ═══ W22 CANDIDATES — visual QA before publish ═══ */}
         <NeonStatsHero artwork="deer" name="Deer Portrait" ratio="pinterest" />
