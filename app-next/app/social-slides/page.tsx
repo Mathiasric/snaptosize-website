@@ -112,6 +112,8 @@ import PopularFrameBrands from "./_components/PopularFrameBrands";
 import WeddingSuiteSizes from "./_components/WeddingSuiteSizes";
 import W22SizeDemandPin from "./_components/W22SizeDemandPin";
 import W23ListingScorePin from "./_components/W23ListingScorePin";
+import W23A4BlindSpot from "./_components/W23A4BlindSpot";
+import W23FiveFolders from "./_components/W23FiveFolders";
 import {
   W15I01Slide01,
   W15I01Slide02,
@@ -397,6 +399,14 @@ export default function SocialSlidesPage() {
         <NeonStatsHero artwork="salmon" name="Salmon" ratio="pinterest" />
         <RatioCropProof artwork="salmon" name="Salmon" ratio="pinterest" />
         <RatioCropProof artwork="deer" name="Deer Portrait" ratio="pinterest" />
+        {/* ═══ W23-P07 (2026-05-14): Songbirds — RatioCropProof Pinterest ═══ */}
+        <RatioCropProof artwork="songbirds" name="Vintage Songbirds" ratio="pinterest" />
+        {/* ═══ W23-P10 (2026-05-15): Bunny — RatioCropProof Pinterest ═══ */}
+        <RatioCropProof artwork="bunny" name="Bunny Portrait" ratio="pinterest" />
+        {/* ═══ W23-P11 (2026-05-15): A4 Blind Spot — A4 doesn't fit US frames ═══ */}
+        <W23A4BlindSpot />
+        {/* ═══ W23-P12 (2026-05-15): Five Folders — 5 folders → 1 upload ═══ */}
+        <W23FiveFolders />
       </div>
     </main>
   );

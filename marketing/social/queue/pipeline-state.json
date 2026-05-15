@@ -2,7 +2,7 @@
   "current_week": "W22",
   "batch_id": "2026-W20",
   "started_at": "2026-05-06T08:36:47.568613+00:00",
-  "updated_at": "2026-05-10T12:45:57.141880+00:00",
+  "updated_at": "2026-05-14T09:51:28.277271+00:00",
   "creator_completed_at": "2026-04-15T09:54:00.000000+00:00",
   "target": {
     "pinterest": 21,
@@ -766,17 +766,17 @@
       "platform": "pinterest",
       "format": "image",
       "priority": "P1",
-      "stage": "publishing",
+      "stage": "published",
       "tool_used": "react-playwright",
       "content_type": null,
-      "buffer_post_id": null,
+      "buffer_post_id": "6a05959b259bbc2c8884fc97",
       "files": {
         "image": "content/pinterest/2026-05-07-print-price-ladder-pinterest/2026-05-07-print-price-ladder-pinterest.png"
       },
       "metadata": {},
       "linked_item": null,
       "created_at": "2026-05-07T11:44:58.853947+00:00",
-      "updated_at": "2026-05-10T12:45:55.702652+00:00",
+      "updated_at": "2026-05-14T09:27:55.593143+00:00",
       "error": "Invalid post: Whoops, it looks like you've posted that one recently. Unfortunately, we're not able to post the same thing again so soon!"
     },
     {
@@ -956,7 +956,7 @@
       "stage": "published",
       "tool_used": "gemini-generate-image",
       "content_type": "competitor-positioning",
-      "buffer_post_id": "6a007e618c697e6b3c26134e",
+      "buffer_post_id": "6a00bf6a8c697e6b3c285b08",
       "files": {
         "image": "content/pinterest/2026-05-10-photoshop-trap-pinterest/2026-05-10-photoshop-trap-pinterest.jpg"
       },
@@ -966,7 +966,7 @@
       },
       "linked_item": null,
       "created_at": "2026-05-10T12:45:25.259803+00:00",
-      "updated_at": "2026-05-10T12:47:48.399619+00:00",
+      "updated_at": "2026-05-10T17:25:07.792170+00:00",
       "error": "Invalid post: Whoops, it looks like you've posted that one recently. Unfortunately, we're not able to post the same thing again so soon!"
     },
     {
@@ -998,7 +998,7 @@
       "stage": "published",
       "tool_used": "react-playwright",
       "content_type": "pain-solution",
-      "buffer_post_id": "6a007e712789e816c91a8de3",
+      "buffer_post_id": "6a00cf492789e816c91d6ec7",
       "files": {
         "image": "content/pinterest/2026-05-10-folder-chaos-pinterest/2026-05-10-folder-chaos-pinterest.jpg"
       },
@@ -1008,14 +1008,261 @@
       },
       "linked_item": null,
       "created_at": "2026-05-10T12:45:25.259803+00:00",
-      "updated_at": "2026-05-10T12:47:48.399619+00:00",
+      "updated_at": "2026-05-10T18:32:42.179022+00:00",
       "error": "Invalid post: Whoops, it looks like you've posted that one recently. Unfortunately, we're not able to post the same thing again so soon!"
+    },
+    {
+      "id": "W22-I02",
+      "platform": "instagram",
+      "slug": "2026-05-10-folder-chaos-clean-zip-instagram",
+      "stage": "published",
+      "buffer_post_id": "6a00d1692789e816c91d7db9",
+      "scheduled_for": "2026-05-12T07:00:00Z",
+      "updated_at": "2026-05-10T18:41:46.152971+00:00"
+    },
+    {
+      "id": "W22-P10",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "playwright-social-slide",
+      "content_type": "before-after",
+      "buffer_post_id": "6a01c4d3b208d5ac34d84f21",
+      "slug": "2026-05-11-salmon-crop-proof-pinterest",
+      "created_at": "2026-05-11T12:00:20.037811+00:00",
+      "updated_at": "2026-05-11T12:01:05.251865+00:00",
+      "error": null,
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-11-salmon-crop-proof-pinterest/2026-05-11-salmon-crop-proof-pinterest.png"
+      },
+      "metadata": {
+        "title": "Your Etsy Art Gets Cropped — Here's the Fix",
+        "week": "W22",
+        "r2_url": "https://social.snaptosize.com/content/pinterest/2026-05-11-salmon-crop-proof-pinterest/2026-05-11-salmon-crop-proof-pinterest.png"
+      }
+    },
+    {
+      "id": "W22-P11",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "content_type": "size-guide-infographic",
+      "buffer_post_id": "6a01c506fb75ceeb68652b6e",
+      "slug": "2026-05-11-pack-breakdown-infographic-pinterest",
+      "created_at": "2026-05-11T12:01:10.433807+00:00",
+      "updated_at": "2026-05-11T12:01:10.433807+00:00",
+      "error": null,
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-11-pack-breakdown-infographic-pinterest/2026-05-11-pack-breakdown-infographic-pinterest.png"
+      },
+      "metadata": {
+        "title": "28 Sizes. 5 Packs. 1 Upload — Complete Etsy Print Size Guide",
+        "week": "W22",
+        "r2_url": "https://social.snaptosize.com/content/pinterest/2026-05-11-pack-breakdown-infographic-pinterest/2026-05-11-pack-breakdown-infographic-pinterest.png"
+      }
+    },
+    {
+      "id": "W22-P12",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "content_type": "pain-solution",
+      "buffer_post_id": "6a01c50bfb75ceeb68652c08",
+      "slug": "2026-05-11-sunday-afternoon-pinterest",
+      "created_at": "2026-05-11T12:01:15.917519+00:00",
+      "updated_at": "2026-05-11T12:01:15.917519+00:00",
+      "error": null,
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-11-sunday-afternoon-pinterest/2026-05-11-sunday-afternoon-pinterest.png"
+      },
+      "metadata": {
+        "title": "3 Hours of Your Sunday — Gone Again (And the Fix)",
+        "week": "W22",
+        "r2_url": "https://social.snaptosize.com/content/pinterest/2026-05-11-sunday-afternoon-pinterest/2026-05-11-sunday-afternoon-pinterest.png"
+      }
+    },
+    {
+      "id": "W23-P07",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "react-playwright",
+      "content_type": "ratio-crop-proof",
+      "buffer_post_id": "6a0595a2259bbc2c8884fcbd",
+      "slug": "2026-05-14-crop-proof-songbirds-pinterest",
+      "created_at": "2026-05-14T00:00:00.000000+00:00",
+      "updated_at": "2026-05-14T09:28:02.660778+00:00",
+      "error": null,
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-14-crop-proof-songbirds-pinterest/2026-05-14-crop-proof-songbirds-pinterest.png"
+      },
+      "metadata": {
+        "title": "Wrong Ratio = Lost Sale — Your Art Doesn't Fit Every Frame",
+        "week": "W23"
+      }
+    },
+    {
+      "id": "W23-G2",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "content_type": "pain-point-editorial",
+      "buffer_post_id": "6a0595a7ec0f913282b0e15a",
+      "slug": "2026-05-14-midnight-inbox-pinterest",
+      "created_at": "2026-05-14T00:00:00.000000+00:00",
+      "updated_at": "2026-05-14T09:28:08.223808+00:00",
+      "error": null,
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-14-midnight-inbox-pinterest/2026-05-14-midnight-inbox-pinterest.png"
+      },
+      "metadata": {
+        "title": "Every Unanswered Message Is a Sale You'll Never See",
+        "week": "W23"
+      }
+    },
+    {
+      "id": "W23-G3",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "gemini-generate-image",
+      "content_type": "educational-editorial",
+      "buffer_post_id": "6a0595acec0f913282b0e1cc",
+      "slug": "2026-05-14-dpi-print-disaster-pinterest",
+      "created_at": "2026-05-14T00:00:00.000000+00:00",
+      "updated_at": "2026-05-14T09:28:13.078376+00:00",
+      "error": null,
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-14-dpi-print-disaster-pinterest/2026-05-14-dpi-print-disaster-pinterest.png"
+      },
+      "metadata": {
+        "title": "Same Art. Completely Different Print. 72 DPI vs 300 DPI",
+        "week": "W23"
+      }
+    },
+    {
+      "id": "W23-IG01",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "snaptosize-resize",
+      "content_type": "ratio-crop-proof",
+      "buffer_post_id": "6a059b1af5f2b96271d9597c",
+      "tool_attempts": [],
+      "slug": "2026-05-14-crop-proof-songbirds-instagram",
+      "files": {
+        "image": "marketing/social/content/instagram/2026-05-14-crop-proof-songbirds-instagram/post.jpg"
+      },
+      "metadata": {
+        "title": "Wrong ratio = black bars. SnapToSize fixes it.",
+        "week": "W23"
+      },
+      "linked_item": "W23-P07",
+      "created_at": "2026-05-14T00:00:00.000000+00:00",
+      "updated_at": "2026-05-14T09:51:22.955420+00:00",
+      "error": null
+    },
+    {
+      "id": "W23-IG02",
+      "platform": "instagram",
+      "format": "image",
+      "priority": "P1",
+      "stage": "published",
+      "tool_used": "snaptosize-resize",
+      "content_type": "dpi-education",
+      "buffer_post_id": "6a059b20ce079405aadb1135",
+      "tool_attempts": [],
+      "slug": "2026-05-14-dpi-print-disaster-instagram",
+      "files": {
+        "image": "marketing/social/content/instagram/2026-05-14-dpi-print-disaster-instagram/post.jpg"
+      },
+      "metadata": {
+        "title": "72 DPI vs 300 DPI — what your buyer actually prints",
+        "week": "W23"
+      },
+      "linked_item": "W23-G3",
+      "created_at": "2026-05-14T00:00:00.000000+00:00",
+      "updated_at": "2026-05-14T09:51:28.275972+00:00",
+      "error": null
+    },
+    {
+      "id": "W23-P10",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "pending",
+      "tool_used": "react-playwright",
+      "content_type": "ratio-crop-proof",
+      "buffer_post_id": null,
+      "slug": "2026-05-15-crop-proof-bunny-pinterest",
+      "created_at": "2026-05-15T00:00:00.000000+00:00",
+      "updated_at": "2026-05-15T00:00:00.000000+00:00",
+      "error": null,
+      "files": {
+        "image": "app-next/marketing/social/content/pinterest/2026-05-15-crop-proof-bunny-pinterest/pin.jpg"
+      },
+      "metadata": {
+        "title": "Your Art Doesn't Fit. Until It Does. — Bunny Portrait Ratio Proof",
+        "week": "W23"
+      }
+    },
+    {
+      "id": "W23-P11",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "pending",
+      "tool_used": "react-playwright",
+      "content_type": "educational-comparison",
+      "buffer_post_id": null,
+      "slug": "2026-05-15-a4-blind-spot-pinterest",
+      "created_at": "2026-05-15T00:00:00.000000+00:00",
+      "updated_at": "2026-05-15T00:00:00.000000+00:00",
+      "error": null,
+      "files": {
+        "image": "app-next/marketing/social/content/pinterest/2026-05-15-a4-blind-spot-pinterest/pin.jpg"
+      },
+      "metadata": {
+        "title": "A4 Doesn't Fit US Frames — The Blind Spot Costing Etsy Sellers Sales",
+        "week": "W23"
+      }
+    },
+    {
+      "id": "W23-P12",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "pending",
+      "tool_used": "react-playwright",
+      "content_type": "pain-point-editorial",
+      "buffer_post_id": null,
+      "slug": "2026-05-15-five-folders-pinterest",
+      "created_at": "2026-05-15T00:00:00.000000+00:00",
+      "updated_at": "2026-05-15T00:00:00.000000+00:00",
+      "error": null,
+      "files": {
+        "image": "app-next/marketing/social/content/pinterest/2026-05-15-five-folders-pinterest/pin.jpg"
+      },
+      "metadata": {
+        "title": "5 Folders. 1 Upload. — Stop Managing Export Folders Manually",
+        "week": "W23"
+      }
     }
   ],
   "metrics": {
-    "total": 50,
-    "completed": 13,
+    "total": 62,
+    "completed": 26,
     "failed": 0,
-    "success_rate": 0.26
+    "success_rate": 0.419
   }
 }
