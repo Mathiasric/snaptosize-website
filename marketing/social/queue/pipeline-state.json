@@ -1243,18 +1243,18 @@
       "format": "image",
       "priority": "P1",
       "stage": "pending",
-      "tool_used": "react-playwright",
-      "content_type": "pain-point-editorial",
+      "tool_used": "gemini-generate-image",
+      "content_type": "product-editorial",
       "buffer_post_id": null,
-      "slug": "2026-05-15-five-folders-pinterest",
+      "slug": "2026-05-15-ratio-flat-lay-pinterest",
       "created_at": "2026-05-15T00:00:00.000000+00:00",
       "updated_at": "2026-05-15T00:00:00.000000+00:00",
       "error": null,
       "files": {
-        "image": "app-next/marketing/social/content/pinterest/2026-05-15-five-folders-pinterest/pin.jpg"
+        "image": "marketing/social/content/pinterest/2026-05-15-ratio-flat-lay-pinterest/2026-05-15-ratio-flat-lay-pinterest.png"
       },
       "metadata": {
-        "title": "5 Folders. 1 Upload. — Stop Managing Export Folders Manually",
+        "title": "Every Ratio. One Upload. — 5 Ratio Packs Flat-Lay",
         "week": "W23"
       }
     }
