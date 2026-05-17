@@ -34,7 +34,7 @@ PINS = [
     },
     {
         "item_id": "W23-P14",
-        "slug":    "2026-05-17-bright-pack-showcase-pinterest",
+        "slug":    "2026-05-17-stop-losing-buyers-pinterest",
         "board":   "digital-prints",
         "due_at":  "2026-05-18T19:00:00Z",  # 9pm GMT+2
     },
