@@ -63,7 +63,7 @@ function FrameCard({
         style={{ width, height }}
       >
         <Image
-          src="/assets/Composition_Pictures/poppies_orginal_2x3.jpg"
+          src="/assets/listings/minimalist_abstract/Minimalist_Abstract.jpg"
           alt="Artwork preview"
           fill
           className="object-cover"
@@ -113,10 +113,7 @@ export default function BrightPackShowcase({ ratio }: BrightPackShowcaseProps) {
       </div>
 
       {/* Frame showcase — 5 packs as framed artwork */}
-      <div
-        className={`flex-1 flex items-center justify-center ${s.frameGap} ${s.sectionPad}`}
-      >
-        {/* Row 1: 3 main packs */}
+      <div className={`flex justify-center pt-4 ${s.frameGap}`}>
         <div className="flex flex-col items-center gap-6">
           <div className={`flex items-end justify-center ${s.frameGap}`}>
             <FrameCard
@@ -156,6 +153,33 @@ export default function BrightPackShowcase({ ratio }: BrightPackShowcaseProps) {
             />
           </div>
         </div>
+      </div>
+
+      {/* Stats row */}
+      <div className="flex justify-center gap-4 px-12 pt-10 pb-2">
+        {[
+          { num: "5", label: "ratio packs" },
+          { num: "70", label: "files per upload" },
+          { num: "300", label: "DPI always" },
+        ].map(({ num, label }) => (
+          <div
+            key={num}
+            className="flex-1 rounded-xl bg-white border border-gray-100 shadow-sm py-5 flex flex-col items-center gap-1"
+          >
+            <span className="text-3xl font-extrabold text-teal-600">{num}</span>
+            <span className="text-xs text-gray-500 text-center">{label}</span>
+          </div>
+        ))}
+      </div>
+
+      {/* Description block */}
+      <div className="mx-12 mt-6 mb-8 rounded-2xl bg-white border border-gray-100 shadow-sm px-8 py-8">
+        <p className="text-gray-700 text-lg font-semibold leading-snug mb-2">
+          Every ratio your buyers frame.
+        </p>
+        <p className="text-gray-400 text-sm leading-relaxed">
+          Portrait prints. Square frames. A4 for European buyers. SnapToSize exports all five packs — portrait &amp; landscape — from a single upload. Etsy-ready ZIP. No Photoshop needed.
+        </p>
       </div>
 
       {/* Bottom CTA bar */}

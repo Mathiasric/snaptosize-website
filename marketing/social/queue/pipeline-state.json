@@ -1320,12 +1320,75 @@
         "title": "Whimsical Owl Print — Neon Pack Showcase",
         "week": "W23"
       }
+    },
+    {
+      "id": "W23-G6",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "scheduled",
+      "tool_used": "gemini-generate-image",
+      "content_type": "educational-intel",
+      "buffer_post_id": "6a0a14c5d893125e86ac99fb",
+      "slug": "2026-05-17-missed-buyer-pinterest",
+      "created_at": "2026-05-17T00:00:00.000000+00:00",
+      "updated_at": "2026-05-17T00:00:00.000000+00:00",
+      "error": null,
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-17-missed-buyer-pinterest/2026-05-17-missed-buyer-pinterest.png"
+      },
+      "metadata": {
+        "title": "She Needed the 11x14. Your Listing Only Had 8x10.",
+        "week": "W23"
+      }
+    },
+    {
+      "id": "W23-G7",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "scheduled",
+      "tool_used": "gemini-generate-image",
+      "content_type": "educational-intel",
+      "buffer_post_id": "6a0a14cbd893125e86ac9a5d",
+      "slug": "2026-05-17-70-files-60-seconds-pinterest",
+      "created_at": "2026-05-17T00:00:00.000000+00:00",
+      "updated_at": "2026-05-17T00:00:00.000000+00:00",
+      "error": null,
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-17-70-files-60-seconds-pinterest/2026-05-17-70-files-60-seconds-pinterest.png"
+      },
+      "metadata": {
+        "title": "70 Files. 60 Seconds. — One Upload, Every Size Your Buyers Need",
+        "week": "W23"
+      }
+    },
+    {
+      "id": "W23-P14",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "scheduled",
+      "tool_used": "react-social-slide",
+      "content_type": "product-showcase",
+      "buffer_post_id": "6a0a14d1d893125e86ac9a8b",
+      "slug": "2026-05-17-bright-pack-showcase-pinterest",
+      "created_at": "2026-05-17T00:00:00.000000+00:00",
+      "updated_at": "2026-05-17T00:00:00.000000+00:00",
+      "error": null,
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-17-bright-pack-showcase-pinterest/pin.jpg"
+      },
+      "metadata": {
+        "title": "5 Ratio Packs. One Upload. Every Size Your Buyers Frame.",
+        "week": "W23"
+      }
     }
   ],
   "metrics": {
-    "total": 65,
+    "total": 68,
     "completed": 26,
     "failed": 0,
-    "success_rate": 0.4
+    "success_rate": 0.38
   }
 }
