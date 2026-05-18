@@ -1433,17 +1433,17 @@
       "priority": "P1",
       "stage": "scheduled",
       "tool_used": "react-social-slide",
-      "content_type": "product-showcase",
-      "buffer_post_id": "6a0b3d16c3b2374044ec1472",
-      "slug": "2026-05-18-deer-neon-pack-pinterest",
+      "content_type": "educational-intel",
+      "buffer_post_id": "6a0b45b75da44c3434838c6c",
+      "slug": "2026-05-18-top5-frame-fit-pinterest",
       "created_at": "2026-05-18T00:00:00.000000+00:00",
       "updated_at": "2026-05-18T00:00:00.000000+00:00",
       "error": null,
       "files": {
-        "image": "marketing/social/content/pinterest/2026-05-18-deer-neon-pack-pinterest/pin.jpg"
+        "image": "marketing/social/content/pinterest/2026-05-18-top5-frame-fit-pinterest/pin.jpg"
       },
       "metadata": {
-        "title": "Deer Portrait Print — Neon Pack Showcase",
+        "title": "5 Print Sizes That Fit the Frames Buyers Already Own",
         "week": "W23"
       }
     }
