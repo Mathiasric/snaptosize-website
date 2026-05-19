@@ -1446,10 +1446,73 @@
         "title": "5 Print Sizes That Fit the Frames Buyers Already Own",
         "week": "W23"
       }
+    },
+    {
+      "id": "W23-G10",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "scheduled",
+      "tool_used": "gemini-generate-image",
+      "content_type": "educational-intel",
+      "buffer_post_id": "6a0cbeca88c84a0885f33f43",
+      "slug": "2026-05-19-gallery-wall-sizes-pinterest",
+      "created_at": "2026-05-19T00:00:00.000000+00:00",
+      "updated_at": "2026-05-19T00:00:00.000000+00:00",
+      "error": null,
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-19-gallery-wall-sizes-pinterest/2026-05-19-gallery-wall-sizes-pinterest.jpg"
+      },
+      "metadata": {
+        "title": "The 5 Sizes That Make Every Gallery Wall Work",
+        "week": "W23"
+      }
+    },
+    {
+      "id": "W23-G11",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "scheduled",
+      "tool_used": "gemini-generate-image",
+      "content_type": "pain-solution",
+      "buffer_post_id": "6a0cbed088c84a0885f33faa",
+      "slug": "2026-05-19-listing-gap-pinterest",
+      "created_at": "2026-05-19T00:00:00.000000+00:00",
+      "updated_at": "2026-05-19T00:00:00.000000+00:00",
+      "error": null,
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-19-listing-gap-pinterest/2026-05-19-listing-gap-pinterest.jpg"
+      },
+      "metadata": {
+        "title": "What You List vs What Buyers Can Actually Frame",
+        "week": "W23"
+      }
+    },
+    {
+      "id": "W23-P16",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "scheduled",
+      "tool_used": "react-social-slide",
+      "content_type": "educational-intel",
+      "buffer_post_id": "6a0cbed688c84a0885f34024",
+      "slug": "2026-05-19-resolution-guide-pinterest",
+      "created_at": "2026-05-19T00:00:00.000000+00:00",
+      "updated_at": "2026-05-19T00:00:00.000000+00:00",
+      "error": null,
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-19-resolution-guide-pinterest/pin.jpg"
+      },
+      "metadata": {
+        "title": "Is Your Image High-Res Enough to Print?",
+        "week": "W23"
+      }
     }
   ],
   "metrics": {
-    "total": 71,
+    "total": 74,
     "completed": 26,
     "failed": 0,
     "success_rate": 0.38
