@@ -1509,10 +1509,73 @@
         "title": "Is Your Image High-Res Enough to Print?",
         "week": "W23"
       }
+    },
+    {
+      "id": "W23-G12",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "scheduled",
+      "tool_used": "gemini-generate-image",
+      "content_type": "pain-solution",
+      "buffer_post_id": "6a0e01bacae3d38bfb9aa0b7",
+      "slug": "2026-05-20-zip-too-big-pinterest",
+      "created_at": "2026-05-20T00:00:00.000000+00:00",
+      "updated_at": "2026-05-20T00:00:00.000000+00:00",
+      "error": null,
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-20-zip-too-big-pinterest/2026-05-20-zip-too-big-pinterest.jpg"
+      },
+      "metadata": {
+        "title": "Etsy Rejects ZIPs Over 20MB — And Most Sellers Don't Know",
+        "week": "W23"
+      }
+    },
+    {
+      "id": "W23-G13",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "scheduled",
+      "tool_used": "gemini-generate-image",
+      "content_type": "tool-comparison",
+      "buffer_post_id": "6a0e01c0f693875014b31bd0",
+      "slug": "2026-05-20-canva-vs-snaptosize-pinterest",
+      "created_at": "2026-05-20T00:00:00.000000+00:00",
+      "updated_at": "2026-05-20T00:00:00.000000+00:00",
+      "error": null,
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-20-canva-vs-snaptosize-pinterest/2026-05-20-canva-vs-snaptosize-pinterest.jpg"
+      },
+      "metadata": {
+        "title": "Design Tools Export One Size. Your Buyers Need Six.",
+        "week": "W23"
+      }
+    },
+    {
+      "id": "W23-P17",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "scheduled",
+      "tool_used": "react-social-slide",
+      "content_type": "educational-intel",
+      "buffer_post_id": "6a0e01c6d04f729825b0260f",
+      "slug": "2026-05-20-price-ladder-pinterest",
+      "created_at": "2026-05-20T00:00:00.000000+00:00",
+      "updated_at": "2026-05-20T00:00:00.000000+00:00",
+      "error": null,
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-20-price-ladder-pinterest/pin.jpg"
+      },
+      "metadata": {
+        "title": "What Buyers Actually Pay Per Print Size",
+        "week": "W23"
+      }
     }
   ],
   "metrics": {
-    "total": 74,
+    "total": 77,
     "completed": 26,
     "failed": 0,
     "success_rate": 0.38
