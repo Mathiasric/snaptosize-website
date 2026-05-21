@@ -1572,10 +1572,31 @@
         "title": "What Buyers Actually Pay Per Print Size",
         "week": "W23"
       }
+    },
+    {
+      "id": "W23-P17",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "scheduled",
+      "tool_used": "react-social-slide",
+      "content_type": "pain-solution",
+      "buffer_post_id": "6a0ecf8db6e65c06e77cc62b",
+      "slug": "2026-05-20-before-after-pinterest",
+      "created_at": "2026-05-20T00:00:00.000000+00:00",
+      "updated_at": "2026-05-20T00:00:00.000000+00:00",
+      "error": null,
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-20-before-after-pinterest/pin.jpg"
+      },
+      "metadata": {
+        "title": "Manual Resizing vs One Click. Every Size.",
+        "week": "W23"
+      }
     }
   ],
   "metrics": {
-    "total": 77,
+    "total": 78,
     "completed": 26,
     "failed": 0,
     "success_rate": 0.38
