@@ -36,6 +36,10 @@ export function TimeSavedSection() {
                   <span className="text-red-400/60 mt-0.5">✕</span>
                   Re-upload when you miss a size
                 </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-400/60 mt-0.5">✕</span>
+                  Rebuild the same size set for every new design
+                </li>
               </ul>
               <div className="mt-5 pt-4 border-t border-white/[0.06]">
                 <p className="text-2xl font-bold text-red-400">1–2 hours</p>
@@ -70,6 +74,10 @@ export function TimeSavedSection() {
                 <li className="flex items-start gap-2">
                   <span className="text-teal-400 mt-0.5">✓</span>
                   Named and organized by size
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-teal-400 mt-0.5">✓</span>
+                  Save your size set, reuse it in one click next time
                 </li>
               </ul>
               <div className="mt-5 pt-4 border-t border-teal-500/10">
