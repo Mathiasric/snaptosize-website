@@ -108,6 +108,7 @@ export default function HowToUploadMoreThan5FilesEtsyPage() {
     author: { "@type": "Organization", name: "SnapToSize" },
     publisher: { "@type": "Organization", name: "SnapToSize", url: "https://snaptosize.com" },
     datePublished: "2026-04-18",
+    dateModified: "2026-05-21",
     url: "https://snaptosize.com/how-to-upload-more-than-5-files-etsy",
   };
 
@@ -199,9 +200,12 @@ export default function HowToUploadMoreThan5FilesEtsyPage() {
                 How to Upload More Than 5 Files to Etsy
               </h1>
               <p className="text-white/60 text-base mb-6 leading-relaxed">
-                Etsy caps digital listings at 5 files — but your buyers need portrait, landscape,
-                and international sizes. The ZIP strategy lets you deliver up to 70 files from one
-                listing. Here&apos;s exactly how it works.
+                <span className="font-semibold text-white/90">
+                  Etsy allows up to 5 files per listing (20&nbsp;MB each)
+                </span>{" "}
+                — but your buyers need portrait, landscape, and international sizes. Bundle them into
+                5 ratio-organized ZIPs to deliver up to 70 files from one listing. Here&apos;s exactly
+                how it works.
               </p>
 
               {/* Trust pills */}

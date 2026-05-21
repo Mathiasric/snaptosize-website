@@ -9,16 +9,17 @@ import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import RelatedPages from "@/components/RelatedPages";
+import { FileSizeChecker } from "@/components/FileSizeChecker";
 
 export const metadata: Metadata = {
-  title: "Etsy File Size Limit 2026: 20 MB × 5 Files Per Listing (Fix Guide)",
+  title: "Fix Etsy's 20 MB File Size Limit — Free Tool (2026)",
   description:
-    "Etsy's 2026 limit: 20 MB per file, 5 files per listing. Three proven fixes for files that won't upload — compress, resize, or split into ratio packs. No Photoshop needed.",
+    "Won't upload to Etsy? Check any file against the 20 MB limit instantly, then auto-fix it — convert to JPG and split into ratio packs that always fit. Free, no Photoshop.",
   alternates: { canonical: "https://snaptosize.com/etsy-20mb-file-limit" },
   openGraph: {
-    title: "Etsy File Size Limit 2026: 20 MB × 5 Files Per Listing (Fix Guide)",
+    title: "Fix Etsy's 20 MB File Size Limit — Free Tool (2026)",
     description:
-      "Etsy's 2026 limit: 20 MB per file, 5 files per listing. Three proven fixes for files that won't upload — compress, resize, or split into ratio packs.",
+      "Check any file against Etsy's 20 MB limit instantly, then auto-fix — convert to JPG and split into ratio packs that always fit. Free, no Photoshop.",
     url: "https://snaptosize.com/etsy-20mb-file-limit",
     images: [
       {
@@ -31,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Etsy File Size Limit 2026: 20 MB × 5 Files Per Listing",
+    title: "Fix Etsy's 20 MB File Size Limit — Free Tool (2026)",
     description:
-      "Etsy's 2026 limit: 20 MB per file, 5 files per listing. Three proven fixes when your file won't upload.",
+      "Check any file against Etsy's 20 MB limit instantly, then auto-fix it so every file uploads.",
     images: ["/assets/og/etsy-20mb-file-limit.png"],
   },
 };
@@ -49,7 +50,7 @@ export default function Etsy20MBFileLimitPage() {
           "Complete guide to Etsy's 20MB file size limit for digital downloads. Learn why files are too large and how to fix it.",
         url: "https://snaptosize.com/etsy-20mb-file-limit",
         datePublished: "2026-03-08",
-        dateModified: "2026-04-14",
+        dateModified: "2026-05-21",
         author: {
           "@type": "Organization",
           name: "SnapToSize",
@@ -216,35 +217,42 @@ export default function Etsy20MBFileLimitPage() {
 
         {/* Hero content — relative z-10 on inner div since Container doesn't accept className */}
         <Container>
-          <div className="relative z-10 max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-              Etsy 20MB File Size Limit — How to Fix It
-            </h1>
-            <p className="text-xl text-white/90 mb-6">
-              Your Etsy digital download is too large. Here&apos;s why it happens and how
-              professional sellers solve it permanently.
-            </p>
-            <p className="text-white/75 mb-8">
-              Etsy enforces a strict 20MB limit on every digital download file. If you&apos;re using
-              PNG files or bundling all sizes into one ZIP, you&apos;ll hit this limit on almost
-              every listing. The fix is simple: use JPG at 300 DPI and organize files into
-              separate ratio packs. Each pack stays well under 20MB.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <a href={appUrl} target="_blank" rel="noopener noreferrer">
-                <Button className="text-base px-6 py-3">
-                  Generate Etsy-Ready Files
-                </Button>
-              </a>
-              <Link href="/etsy-print-sizes">
-                <Button variant="secondary" className="text-base px-6 py-3 bg-white/10 hover:bg-white/20 text-white border border-white/25">
-                  See Complete Size Guide
-                </Button>
-              </Link>
+          <div className="relative z-10 grid md:grid-cols-2 gap-10 lg:gap-14 items-center">
+            {/* Left: copy + instant answer */}
+            <div>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white leading-tight">
+                Fix Etsy&apos;s 20MB File Size Limit — Free Tool
+              </h1>
+              {/* Instant answer — plain semantic HTML for AI Overview / snippet citability */}
+              <p className="text-white/85 mb-5 leading-relaxed">
+                <span className="font-semibold text-white">
+                  Etsy&apos;s limit is 20&nbsp;MB per file, up to 5 files per listing
+                </span>{" "}
+                (accepted types: JPG, PNG, PDF, ZIP). If a file is over 20&nbsp;MB, Etsy rejects the
+                upload. The fix: save as JPG at 300&nbsp;DPI and split your sizes into separate ratio
+                packs so every file lands well under the limit.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <a href={appUrl} target="_blank" rel="noopener noreferrer">
+                  <Button className="text-base px-6 py-3">
+                    Generate Etsy-Ready Files
+                  </Button>
+                </a>
+                <Link href="/etsy-print-sizes">
+                  <Button variant="secondary" className="text-base px-6 py-3 bg-white/10 hover:bg-white/20 text-white border border-white/25">
+                    See Complete Size Guide
+                  </Button>
+                </Link>
+              </div>
+              <p className="mt-4 text-sm text-white/50">
+                Free plan available — no credit card required. Every file guaranteed under 20MB.
+              </p>
             </div>
-            <p className="mt-4 text-sm text-white/50">
-              Free plan available — no credit card required. Every file guaranteed under 20MB.
-            </p>
+
+            {/* Right: instant client-side file-size checker */}
+            <div className="flex justify-center md:justify-end">
+              <FileSizeChecker appUrl={appUrl} />
+            </div>
           </div>
         </Container>
       </section>
