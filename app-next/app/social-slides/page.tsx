@@ -407,6 +407,8 @@ export default function SocialSlidesPage() {
         <W23A4BlindSpot />
         {/* ═══ W23-P12 (2026-05-15): Five Folders — 5 folders → 1 upload ═══ */}
         <W23FiveFolders />
+        {/* ═══ W23-P13 (2026-05-16): Owl — NeonPackShowcase Pinterest ═══ */}
+        <NeonPackShowcase artwork="owl" name="Whimsical Owl" ratio="pinterest" />
       </div>
     </main>
   );

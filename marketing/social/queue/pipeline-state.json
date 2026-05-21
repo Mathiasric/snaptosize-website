@@ -1593,12 +1593,75 @@
         "title": "Manual Resizing vs One Click. Every Size.",
         "week": "W23"
       }
+    },
+    {
+      "id": "W23-G14",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "scheduled",
+      "tool_used": "gemini",
+      "content_type": "educational",
+      "buffer_post_id": "6a0f654f07dbdb3bea5bca71",
+      "slug": "2026-05-21-a4-blind-spot-pinterest",
+      "created_at": "2026-05-21T00:00:00.000000+00:00",
+      "updated_at": "2026-05-21T00:00:00.000000+00:00",
+      "error": null,
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-21-a4-blind-spot-pinterest/2026-05-21-a4-blind-spot-pinterest.png"
+      },
+      "metadata": {
+        "title": "The A4 Blind Spot — 100 Million Buyers Search It. You Don't List It.",
+        "week": "W23"
+      }
+    },
+    {
+      "id": "W23-G15",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "scheduled",
+      "tool_used": "gemini",
+      "content_type": "educational",
+      "buffer_post_id": "6a0f655507dbdb3bea5bcb26",
+      "slug": "2026-05-21-batch-workflow-pinterest",
+      "created_at": "2026-05-21T00:00:00.000000+00:00",
+      "updated_at": "2026-05-21T00:00:00.000000+00:00",
+      "error": null,
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-21-batch-workflow-pinterest/2026-05-21-batch-workflow-pinterest.png"
+      },
+      "metadata": {
+        "title": "From 0 to 70 Print-Ready Files — One Upload. Here's How.",
+        "week": "W23"
+      }
+    },
+    {
+      "id": "W23-P18",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "scheduled",
+      "tool_used": "react-social-slide",
+      "content_type": "educational",
+      "buffer_post_id": "6a0f655b07dbdb3bea5bcb6b",
+      "slug": "2026-05-21-listing-score-pinterest",
+      "created_at": "2026-05-21T00:00:00.000000+00:00",
+      "updated_at": "2026-05-21T00:00:00.000000+00:00",
+      "error": null,
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-21-listing-score-pinterest/pin.jpg"
+      },
+      "metadata": {
+        "title": "How Complete Is Your Etsy Listing? Most Sellers Stop at 5 Files",
+        "week": "W23"
+      }
     }
   ],
   "metrics": {
-    "total": 78,
-    "completed": 26,
+    "total": 81,
+    "completed": 29,
     "failed": 0,
-    "success_rate": 0.38
+    "success_rate": 0.36
   }
 }
