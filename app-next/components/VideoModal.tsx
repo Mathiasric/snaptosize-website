@@ -57,7 +57,7 @@ export function VideoModal({ isOpen, onClose, videoSrc }: VideoModalProps) {
         >
           ✕
         </button>
-        <div className="relative overflow-hidden aspect-[16/8] rounded-xl border border-border">
+        <div className="relative overflow-hidden aspect-[1892/906] rounded-xl border border-border">
           <video
             ref={videoRef}
             src={videoSrc}
