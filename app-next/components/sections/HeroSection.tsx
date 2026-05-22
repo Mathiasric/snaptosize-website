@@ -138,10 +138,10 @@ export function HeroSection() {
               {/* Video Thumbnail — primary visual hook */}
               <button
                 onClick={() => setModalOpen(true)}
-                className="relative max-w-2xl mx-auto rounded-xl overflow-hidden border border-border block w-full group cursor-pointer mb-5 aspect-[16/8]"
+                className="relative max-w-2xl mx-auto rounded-xl overflow-hidden border border-border block w-full group cursor-pointer mb-5 aspect-[1892/906]"
               >
                 <video
-                  src="/assets/snaptosize_video_showcase.mp4"
+                  src="/assets/snaptosize-use-case.mp4"
                   poster="/assets/video_display_image.webp"
                   muted
                   playsInline
@@ -156,7 +156,7 @@ export function HeroSection() {
                   </div>
                 </div>
                 <span className="absolute bottom-3 left-1/2 -translate-x-1/2 text-xs text-white/70 bg-black/40 backdrop-blur-sm px-3 py-1 rounded-full">
-                  Watch demo · 47s
+                  Watch demo · 49s
                 </span>
               </button>
 
@@ -177,7 +177,7 @@ export function HeroSection() {
       <VideoModal
         isOpen={modalOpen}
         onClose={() => setModalOpen(false)}
-        videoSrc="/assets/snaptosize_video_showcase.mp4"
+        videoSrc="/assets/snaptosize-use-case.mp4"
       />
     </section>
   );
