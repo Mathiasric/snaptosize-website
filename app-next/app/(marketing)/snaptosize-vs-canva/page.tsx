@@ -662,7 +662,8 @@ export default function SnapToSizeVsCanvaPage() {
                   { feature: "300 DPI output", canva: "PDF Print (all plans); PNG depends on canvas px", snap: "Every file" },
                   { feature: "File naming", canva: "No", snap: "Professional naming" },
                   { feature: "20 MB compliance", canva: "Manual check", snap: "Auto-optimized" },
-                  { feature: "Time per artwork", canva: "1\u20133 hours", snap: "Under 30 seconds" },
+                  { feature: "Time per artwork", canva: "1\u20133 hours", snap: "Under a minute" },
+                  { feature: "Reusable size sets", canva: "Rebuild each time", snap: "Save once, reuse in one click (My Packs)" },
                 ].map((row, i) => (
                   <Card key={i} className="p-4">
                     <p className="text-xs font-semibold text-foreground mb-2 uppercase tracking-wider">
