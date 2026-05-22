@@ -142,7 +142,7 @@ export function HeroSection() {
               >
                 <video
                   src="/assets/snaptosize-use-case.mp4"
-                  poster="/assets/video_display_image.webp"
+                  poster="/assets/video_poster_v2.webp"
                   muted
                   playsInline
                   preload="none"
