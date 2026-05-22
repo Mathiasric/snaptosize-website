@@ -31,15 +31,15 @@ export function TrustSection() {
           <Card className="p-5">
             <h3 className="text-base font-semibold mb-2">Single Exports</h3>
             <p className="text-sm text-foreground-60 leading-relaxed">
-              Any individual size — landscape or vertical.
+              Any individual size — portrait, landscape, or square.
             </p>
           </Card>
 
-          {/* Card 3 - Square Formats */}
+          {/* Card 3 - My Packs */}
           <Card className="p-5">
-            <h3 className="text-base font-semibold mb-2">Square Formats</h3>
+            <h3 className="text-base font-semibold mb-2">My Packs</h3>
             <p className="text-sm text-foreground-60 leading-relaxed">
-              Perfect square outputs for thumbnails and social.
+              Save your own custom size sets — reuse on every new design in one click.
             </p>
           </Card>
         </div>

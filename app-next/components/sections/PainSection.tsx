@@ -37,7 +37,7 @@ export function PainSection() {
                 <li>• Done</li>
               </ul>
               <p className="mt-4 text-lg font-semibold text-success">
-                &lt; 30 seconds
+                Under a minute
               </p>
             </Card>
           </div>
