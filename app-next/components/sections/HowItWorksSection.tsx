@@ -12,7 +12,7 @@ const steps = [
     num: "2",
     icon: PackageOpen,
     title: "Pick your export mode",
-    desc: "Choose ratio packs for complete Etsy sets, or single exports for specific sizes.",
+    desc: "Ratio packs for complete Etsy sets, single exports for one size, or your own saved packs to reuse.",
   },
   {
     num: "3",
