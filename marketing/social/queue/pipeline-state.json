@@ -1656,12 +1656,75 @@
         "title": "How Complete Is Your Etsy Listing? Most Sellers Stop at 5 Files",
         "week": "W23"
       }
+    },
+    {
+      "id": "W23-G16",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "scheduled",
+      "tool_used": "gemini-image-gen",
+      "content_type": "educational",
+      "buffer_post_id": "6a11903593ec79a2e0191600",
+      "slug": "2026-05-23-my-packs-pinterest",
+      "created_at": "2026-05-23T00:00:00.000000+00:00",
+      "updated_at": "2026-05-23T00:00:00.000000+00:00",
+      "error": null,
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-23-my-packs-pinterest/2026-05-23-my-packs-pinterest.jpg"
+      },
+      "metadata": {
+        "title": "Build Your Etsy Size Set Once — Apply It to Every New Design in One Click",
+        "week": "W23"
+      }
+    },
+    {
+      "id": "W23-G17",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "scheduled",
+      "tool_used": "gemini-image-gen",
+      "content_type": "educational",
+      "buffer_post_id": "6a11903b93ec79a2e019162a",
+      "slug": "2026-05-23-8x10-buyer-pinterest",
+      "created_at": "2026-05-23T00:00:00.000000+00:00",
+      "updated_at": "2026-05-23T00:00:00.000000+00:00",
+      "error": null,
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-23-8x10-buyer-pinterest/2026-05-23-8x10-buyer-pinterest.jpg"
+      },
+      "metadata": {
+        "title": "8×10 Is the #1 Searched Frame Size on Etsy — Are You Listed?",
+        "week": "W23"
+      }
+    },
+    {
+      "id": "W23-P19",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "scheduled",
+      "tool_used": "react-social-slide",
+      "content_type": "educational",
+      "buffer_post_id": "6a1190410dc6571b69f191a3",
+      "slug": "2026-05-23-top5-frame-fit-pinterest",
+      "created_at": "2026-05-23T00:00:00.000000+00:00",
+      "updated_at": "2026-05-23T00:00:00.000000+00:00",
+      "error": null,
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-23-top5-frame-fit-pinterest/pin.jpg"
+      },
+      "metadata": {
+        "title": "5 Etsy Print Sizes That Fit the Frames Buyers Already Own",
+        "week": "W23"
+      }
     }
   ],
   "metrics": {
-    "total": 81,
-    "completed": 29,
+    "total": 84,
+    "completed": 32,
     "failed": 0,
-    "success_rate": 0.36
+    "success_rate": 0.38
   }
 }
