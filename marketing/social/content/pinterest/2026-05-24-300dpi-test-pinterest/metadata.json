@@ -1,0 +1,15 @@
+{
+  "id": "W23-G18",
+  "platform": "pinterest",
+  "type": "pin",
+  "image": "2026-05-24-300dpi-test-pinterest.png",
+  "title": "Why Your Etsy Print Looks Blurry — 72 DPI vs 300 DPI Explained",
+  "description": "Your file looks fine on screen but arrives blurry at print. The culprit: DPI. 72 DPI at 8×10 = 576×720px. 300 DPI at 8×10 = 2400×3000px. That's the minimum for a sharp print. SnapToSize always exports at 300 DPI — every size, every ratio, automatically. No guesswork.",
+  "board": "digital-prints",
+  "board_id": "1088463872381113667",
+  "link": "https://app.snaptosize.com",
+  "created": "2026-05-24",
+  "scheduled_for": "2026-05-25T13:00:00Z",
+  "r2_url": "https://social.snaptosize.com/content/pinterest/2026-05-24-300dpi-test-pinterest/2026-05-24-300dpi-test-pinterest.jpg",
+  "buffer_post_id": "6a134cf2189925716a359378"
+}

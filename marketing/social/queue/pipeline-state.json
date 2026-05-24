@@ -1719,12 +1719,75 @@
         "title": "5 Etsy Print Sizes That Fit the Frames Buyers Already Own",
         "week": "W23"
       }
+    },
+    {
+      "id": "W23-G18",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "scheduled",
+      "tool_used": "gemini-image-gen",
+      "content_type": "educational",
+      "buffer_post_id": "6a134cf2189925716a359378",
+      "slug": "2026-05-24-300dpi-test-pinterest",
+      "created_at": "2026-05-24T00:00:00.000000+00:00",
+      "updated_at": "2026-05-24T00:00:00.000000+00:00",
+      "error": null,
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-24-300dpi-test-pinterest/2026-05-24-300dpi-test-pinterest.jpg"
+      },
+      "metadata": {
+        "title": "Why Your Etsy Print Looks Blurry — 72 DPI vs 300 DPI Explained",
+        "week": "W23"
+      }
+    },
+    {
+      "id": "W23-G19",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "scheduled",
+      "tool_used": "gemini-image-gen",
+      "content_type": "educational",
+      "buffer_post_id": "6a134cf88b8c04304a476ae3",
+      "slug": "2026-05-24-quick-export-pinterest",
+      "created_at": "2026-05-24T00:00:00.000000+00:00",
+      "updated_at": "2026-05-24T00:00:00.000000+00:00",
+      "error": null,
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-24-quick-export-pinterest/2026-05-24-quick-export-pinterest.jpg"
+      },
+      "metadata": {
+        "title": "A Buyer Just Asked for 5×7 — Here's How to Fix It in 8 Seconds",
+        "week": "W23"
+      }
+    },
+    {
+      "id": "W23-P20",
+      "platform": "pinterest",
+      "format": "image",
+      "priority": "P1",
+      "stage": "scheduled",
+      "tool_used": "react-social-slide",
+      "content_type": "educational",
+      "buffer_post_id": "6a134cfecc9ff193f81a6cce",
+      "slug": "2026-05-24-dpi-cheatsheet-pinterest",
+      "created_at": "2026-05-24T00:00:00.000000+00:00",
+      "updated_at": "2026-05-24T00:00:00.000000+00:00",
+      "error": null,
+      "files": {
+        "image": "marketing/social/content/pinterest/2026-05-24-dpi-cheatsheet-pinterest/pin.jpg"
+      },
+      "metadata": {
+        "title": "300 DPI Cheat Sheet — Every Etsy Print Size and Its Pixel Dimensions",
+        "week": "W23"
+      }
     }
   ],
   "metrics": {
-    "total": 84,
-    "completed": 32,
+    "total": 87,
+    "completed": 35,
     "failed": 0,
-    "success_rate": 0.38
+    "success_rate": 0.40
   }
 }
