@@ -215,8 +215,8 @@ def schedule_item(item: dict, meta: dict, asset_url: str, schedule_time: str, dr
         "dueAt": schedule_time,
         "assets": {asset_key: [{"url": asset_url}]},
     }
-    # Instagram AssetInput uses "image" singular (Buffer API change May 2026)
-    if platform == "instagram" and not is_video:
+    # Instagram + Pinterest AssetInput uses "image" singular (Buffer API change May 2026)
+    if platform in ("instagram", "pinterest") and not is_video:
         inp["assets"] = {"image": {"url": asset_url}}
 
     # Platform-specific text and metadata

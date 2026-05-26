@@ -1782,12 +1782,61 @@
         "title": "300 DPI Cheat Sheet — Every Etsy Print Size and Its Pixel Dimensions",
         "week": "W23"
       }
+    },
+    {
+      "id": "W23-G20",
+      "platform": "pinterest",
+      "stage": "published",
+      "scheduled_for": "2026-05-25T16:00:00Z",
+      "slug": "2026-05-24-complete-listing-pinterest"
+    },
+    {
+      "id": "W23-P21",
+      "platform": "pinterest",
+      "stage": "published",
+      "scheduled_for": "2026-05-25T19:00:00Z",
+      "slug": "2026-05-24-ratio-packs-pin-pinterest"
+    },
+    {
+      "id": "W23-IG17",
+      "platform": "instagram",
+      "stage": "published",
+      "scheduled_for": "2026-05-26T16:00:00Z",
+      "slug": "2026-05-24-complete-listing-instagram"
+    },
+    {
+      "id": "W23-IG18",
+      "platform": "instagram",
+      "stage": "published",
+      "scheduled_for": "2026-05-26T19:00:00Z",
+      "slug": "2026-05-24-quick-export-instagram"
+    },
+    {
+      "id": "W23-G21",
+      "platform": "pinterest",
+      "stage": "published",
+      "scheduled_for": "2026-05-27T13:00:00Z",
+      "slug": "2026-05-26-zip-rejected-pinterest"
+    },
+    {
+      "id": "W23-G22",
+      "platform": "pinterest",
+      "stage": "published",
+      "scheduled_for": "2026-05-27T16:00:00Z",
+      "slug": "2026-05-26-landscape-portrait-pinterest"
+    },
+    {
+      "id": "W23-P22",
+      "platform": "pinterest",
+      "stage": "published",
+      "scheduled_for": "2026-05-27T19:00:00Z",
+      "slug": "2026-05-26-fox-pack-showcase-pinterest"
     }
   ],
   "metrics": {
-    "total": 87,
-    "completed": 35,
+    "total": 94,
+    "completed": 33,
     "failed": 0,
-    "success_rate": 0.40
+    "success_rate": 0.35
   }
 }
