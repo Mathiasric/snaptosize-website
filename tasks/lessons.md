@@ -703,3 +703,44 @@ Ved scheduling av W20-P14/P15/P16 returnerte Buffer "Failed to fetch image dimen
 Selv om `pipeline-state.json` items har et eksplisitt `scheduled_for` ISO-felt, bruker `schedule-batch.py` sin egen now+Nh staggerring i stedet (~2h apart). Dette er ikke en bug akkurat — feltet er bare ikke koblet inn.
 
 **Regel:** Stol ikke på `scheduled_for` i state-filen som autoritativ tid. Hvis en pin må publiseres på et spesifikt klokkeslett, enten patch `schedule-batch.py` til å lese feltet, eller bruk Buffer-UI etter scheduling for å justere tiden manuelt. Verifiser publish-tider direkte i Buffer-køen, ikke fra state-filen.
+
+## LESSON-094 — 2026-05-14
+
+**Instagram metadata.json MÅ ha nøyaktig 5 hashtags i `tags`-feltet**
+
+Agent opprettet Instagram metadata uten `tags`-feltet (eller med tomt array). Bruker måtte legge til tags manuelt etter scheduling.
+
+**Regel:** Alle Instagram `metadata.json`-filer MÅ ha `"tags": [...]` med **nøyaktig 5 hashtags** (uten `#`-prefix — Buffer legger til selv). Velg tags som treffer Etsy-selger-søk: `etsy seller tips`, `digital download etsy`, `etsy print sizes` o.l. Pinterest-items trenger IKKE tags (Pinterest fjernet hashtags). Se LESSON-065 for feltnavnkonvensjoner (`caption` vs `description`).
+
+---
+
+## LESSON-095 — Email-sekvens med cron og flag-revert-on-failure sender spam ved quota-feil
+
+**Email-sekvensen som kjorer hvert 5. minutt sendte 100+ duplikater til samme person fordi:**
+1. Resend returnerte 429 (quota exceeded) pa tidligere forsok
+2. Koden reverter da `emailN_sent = false` tilbake til KV (for a muliggjore retry)
+3. Neste cron saa flaget som false og sendte pa nytt — uendelig loop
+
+**Fix som ble implementert:**
+- Resend idempotency key (`${emailHash}:app-email2` osv.) pa alle sends — Resend deduplicerer selv uansett hva koden gjor
+- 429-responser reverter ikke lenger flaget — flaget holder seg true, neste cron hopper over
+
+**Regel:** Alle email-sends i cron-sekvenser MÅ ha `Idempotency-Key` header. Bruk `${emailHash}:${emailId}` som nokkel. Ved 429 skal aldri flagget revertes — behandle det som "skip for nå".
+
+---
+
+## LESSON-096 — Hardkodede promo-datoer i email-sekvenser rotter
+
+**Email 3 i app-sekvensen hadde `promoActive = now < new Date('2026-05-27')` hardkodet i koden.** Etter deadline ville alle nye brukere fa en epost uten promo-kode, men subject-linja lovet fortsatt rabatt.
+
+**Regel:** Aldri hardkod promo-datoer i email-sekvens-kode. Enten gjor promo always-on, eller styr det via en env-variabel som kan endres uten deploy. Subject-linja ma alltid reflektere innholdet — "this week" og "free" er tidsavhengige pastand som rotter.
+
+---
+
+## LESSON-097 — Ikke påstå at SnapToSize shipper portrait + landscape i hvert pack automatisk
+
+**G22 (W23 Day-13) ble fjernet fra Buffer fordi den påsto "SnapToSize ships portrait AND landscape in every pack" — dette stemmer ikke.**
+
+De 70 filene i et komplett Etsy-listing er portrait + landscape + square *combined* på tvers av pakkene — det er ikke slik at hver enkelt pack inneholder begge orienteringer automatisk.
+
+**Regel:** Aldri bruk "portrait AND landscape in every pack" eller lignende formuleringer i innhold om SnapToSize. Korrekt beskrivelse: "70 files total across 5 packs" eller "portrait, landscape, and square — all covered". Sjekk alltid `marketing/CONTENT_REFERENCE.md` for nøyaktige produktpåstander før Gemini-prompt skrives.
