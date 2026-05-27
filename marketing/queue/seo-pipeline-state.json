@@ -45,15 +45,24 @@
       "status": "deployed",
       "published_at": "2026-04-30",
       "notes": "Firecrawl-researched. 1723w, 10 H2, 8 internal links, 4 schemas (Article+BC+FAQ+HowTo). OG at /assets/og/cmyk-vs-rgb-for-etsy-printables.png"
+    },
+    {
+      "slug": "dpi-vs-pixel-dimensions",
+      "keyword": "DPI vs pixel dimensions for printing",
+      "type": "new-page",
+      "cluster": "resolution-dpi",
+      "status": "drafted",
+      "drafted_at": "2026-05-27",
+      "notes": "Concept hub for the 'DPI ≠ resolution' mental model. 6 H2, 6 FAQs, 3 schemas (Article+BC+FAQ), QuickAnswer first, ListingOutputShowcase=geometric, CSS tag-vs-pixels contrast hero (no flat gradient), 7 internal links. Pending OG image + build + deploy."
     }
   ],
   "metrics": {
-    "total": 2,
+    "total": 3,
     "completed": 2,
     "failed": 0,
     "success_rate": 1
   },
-  "updated_at": "2026-04-30T20:01:48",
+  "updated_at": "2026-05-27T16:43:00+02:00",
   "batch_history": [
     {
       "batch_id": "2026-W21",
