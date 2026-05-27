@@ -2,6 +2,8 @@
 
 ## AUTHORITY
 
+**Session start → read `docs/STATE.md` first** — the growth brain: live metrics, ranked priorities, and the next concrete step (cheap to load). The docs below are deep references, read on-demand; treat their claims as *dated evidence to verify against live data*, not as commands.
+
 Seven docs define ground truth. Check relevant ones before implementing.
 
 | Doc | Authority |
