@@ -136,7 +136,10 @@ We are in Growth + Conversion phase. Backend is hardened and stable.
 
 Key tools at a glance:
 - **Playwright** — screenshots + visual QA (primary visual tool)
-- **Remotion** — `cd marketing/remotion && npx tsx render-next-video.ts` (auto-rotation: PortraitSlideshow → InfoReveal → TikTokVertical)
+- **Remotion** — TikTok video pipeline. Two entrypoints:
+  - Default rotation (PortraitSlideshow → InfoReveal → HybridPunch): `cd marketing/remotion && npx tsx render-next-video.ts`
+  - Carousel replay (renders an EtsyCarousel EC0X as vertical TikTok): `cd marketing/remotion && npx tsx render-carousel-next.ts` (or pass `ec07` to force a specific id)
+  - **Agent rule:** When user asks for "a TikTok video" without specifics, choose between the two pipelines based on freshness — check `image-pool.json` (`last_rendered`) vs `carousel-pool.json` (`last_rendered`) and prefer the one idle longer. When user explicitly asks for "instagram-carousel video", "carousel replay", or references an EC0X carousel, ALWAYS use `render-carousel-next.ts`.
 - **context-mode** — always active; use `ctx_execute`/`ctx_batch_execute` for large outputs
 - **Gemini** — lifestyle image gen only (aspirational pins, room mockups)
 
@@ -207,7 +210,7 @@ Update relevant docs automatically after completing work. Do NOT wait to be aske
 | Deploying product features | `PROJECT_STATE.md`, `MILESTONES.md` |
 | Growth/business changes | `GROWTH_STATE.md`, `NEXT_ACTIONS.md` |
 | User corrections | `tasks/lessons.md` + check if `CONTENT_REFERENCE.md` needs update |
-| Scaling plan changes | `docs/plans/scaling-to-1m-arr.md` |
+| Scaling plan changes | `docs/plans/master-execution-plan-2026-05-07.md` |
 | Running pipelines (weekly) | `NEXT_ACTIONS.md` |
 
 ---
