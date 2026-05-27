@@ -4,9 +4,9 @@
 ---
 
 ## Current State
-- **Paying users:** 6 (5 monthly, 1 yearly)
-- **MRR:** $104 (8× $11.99 monthly + $97/year amortized) — +1 Pro monthly 2026-04-27
-- **Total revenue collected:** $204.91 (1× $97 yearly + 9× $11.99 monthly)
+- **Paying users:** 13 (12 monthly, 1 yearly) — Stripe-verified 2026-05-27 (excl. test accounts, 1 refund, 3 churned)
+- **MRR:** $152 (12× $11.99 monthly + $97/year amortized) — Stripe reconciliation 2026-05-27
+- **Total revenue collected:** $264.86 (1× $97 yearly + 12× $11.99 monthly first payments + 2× $11.99 renewals)
 - **SEO pages live:** 87 (77 total incl. non-SEO)
 - **First paying customer:** 2026-03-03
 - **Target:** $1M ARR (~7,500 paying users)
@@ -30,7 +30,7 @@ $1M ARR requires:
 |-----------|-------|-----|--------|-----------------|
 | First paying | 1 | $12 | ✅ Done (2026-03-03) | Ship content daily |
 | 3 paying | 3 | $32 | ✅ Done (2026-03-23) — $109 revenue today | Keep pushing distribution |
-| 10 paying | 10 | $120 | ❌ | Double content volume |
+| 10 paying | 10 | $120 | ✅ Done (2026-05-05) — 2 renewals confirmed | Double content volume |
 | 50 paying | 50 | $600 | ❌ | Launch affiliates |
 | 100 paying | 100 | $1,200 | ❌ | Test pricing changes |
 | 500 paying | 500 | $6,000 | ❌ | Scale paid ads |

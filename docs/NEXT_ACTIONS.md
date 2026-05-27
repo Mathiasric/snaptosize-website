@@ -1,6 +1,29 @@
 # NEXT_ACTIONS.md — This Week's Priorities
 **Week of:** 2026-05-07 (W21)
-**Updated by:** Claude Code — 2026-05-07
+**Updated by:** Claude Code — 2026-05-11
+
+## ✅ Magic Wand — Smart Zoom-Fill implementert (2026-05-11)
+
+**Beslutning etter konkurranseresearch (7 verktøy):** AI outpainting (fal.ai, Firefly, Canva) feiler universelt på print art — alle er trent på foto/naturlige bakgrunner. Gradient fill gir synlige seamer. Smart zoom-fill er den riktige tilnærmingen:
+
+- `_smart_fill()` i `runner/main.py` byttet fra gradient fill → **zoom-fill + center crop**
+  - `scale = max(...)` i stedet for `min(...)` — fyller hele rammen
+  - Cropper til senter — beholder motivet, mister ~8–17% av kanter
+  - Ingen AI-kall, ingen seamer, ingen importendringer
+- Alle Magic Wand-filer (Worker-gating, Pro-gate, polling UI, ZIP-flow) beholdes uendret
+
+**Neste steg for Magic Wand:**
+- [ ] Deploy runner til prod: `cd /c/dev/snaptosize-worker/services/runner && fly deploy --app snaptosize-runner2`
+- [ ] E2E test: last opp 2:3-bilde som Pro-bruker → verifiser 4:5-output visuelt
+- [ ] Legg til Magic Wand-tab i `app/app/layout.tsx` (én linje) etter verifisering
+
+## 🎯 SEO-mulighet: Bulk Mockup sin gap (2026-05-11)
+
+Bulk Mockup skriver eksplisitt i sin egen blogg at "stretching is a common mistake" og at selgere bør fikse ratio FØR de bruker Bulk Mockup — men tilbyr ikke verktøyet til å gjøre det. Dette er en direkte søkemulighet:
+
+- **Target:** "how to resize etsy print art without stretching", "etsy aspect ratio fix", "bulk mockup resize alternative"
+- **Vinkel:** SnapToSize løser problemet Bulk Mockup dokumenterer men ikke løser
+- **Format:** SEO-side eller bloggpost + Pinterest-pin fra research
 
 ---
 
