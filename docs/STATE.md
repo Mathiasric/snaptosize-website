@@ -47,3 +47,9 @@ Compete against **manual complexity** (Photoshop ~$60/mo, Canva per-size) — NO
 - **Prioritize:** rank by (ARR-impact × confidence) ÷ effort; this file holds only the current top few.
 - **Session end:** update this file (what changed · new ranking · next concrete step).
 - **Weekly:** re-pull Stripe / PostHog / GSC and re-rank from live data, challenging stale assumptions.
+
+## Prompts to start a session (copy-paste)
+- **Daily / "what now":** *"Read `docs/STATE.md` and give me today's top priority + the next concrete step."*
+- **Weekly refresh:** *"Run the brain refresh: pull Stripe + PostHog + GSC, re-rank priorities by ARR-impact ÷ effort, and update this file + the date."*
+- **Session end (keep the brain fresh):** *"Update `docs/STATE.md` — what we did, new ranking, next concrete step."*
+- **A specific build/task:** state the task + *"read `docs/STATE.md` first; use the relevant skill/pipeline."*
