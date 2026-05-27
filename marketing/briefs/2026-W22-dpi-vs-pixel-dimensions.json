@@ -1,0 +1,107 @@
+{
+  "week": "W22",
+  "created_at": "2026-05-27T00:00:00Z",
+  "keywords": [
+    {
+      "keyword": "DPI vs pixel dimensions for printing",
+      "secondary_keywords": [
+        "does 300 DPI mean high resolution",
+        "is DPI the same as resolution",
+        "why is my 300 DPI print blurry",
+        "DPI vs resolution explained"
+      ],
+      "slug": "dpi-vs-pixel-dimensions",
+      "intent": "informational (conceptual / misconception-correction)",
+      "page_type": "concept",
+      "priority": "P1",
+      "cluster": "resolution-dpi",
+      "meta_title": "DPI vs Pixel Dimensions: Why 300 DPI Isn't Enough",
+      "meta_description": "DPI alone doesn't decide print quality — pixel dimensions do. Learn why a 300 DPI file can still print blurry and how to check if yours is print-ready.",
+      "h1": "DPI vs Pixel Dimensions: What Actually Decides Print Quality",
+      "positioning_note": "This page owns the 'DPI ≠ resolution' mental model. It is the conceptual WHY, not a fix workflow and not a pixel chart. Blurry-print angle is framed as 'why this happens', then handed off to etsy-digital-download-blurry-prints for the fix steps and to print-sizes-at-300-dpi for the full chart. Do NOT reproduce the 28-size chart or a numbered troubleshooting workflow.",
+      "sections": [
+        {
+          "h2": "What DPI Actually Is (and Isn't)",
+          "covers": "Define DPI as dots-per-inch — a tag/metadata instruction telling the printer how densely to lay down the pixels it's given. Key correction: DPI is NOT a measure of how much detail an image contains. It's a setting, not data. Bust the core myth upfront: changing the DPI number in Photoshop/Preview does not add detail to a low-res file."
+        },
+        {
+          "h2": "What Pixel Dimensions Actually Are",
+          "covers": "Pixel dimensions (e.g. 2400×3000) are the real data — the actual count of pixels that make up the image. This is the ceiling on detail. More pixels = more printable detail. Frame pixels as 'the substance', DPI as 'the label'. Use a plain analogy (pixels = paint you have; DPI = how thinly you spread it across the wall)."
+        },
+        {
+          "h2": "Why a 300 DPI File Can Still Print Blurry",
+          "covers": "The crux. A file tagged 300 DPI prints blurry when its pixel dimensions are too low for the requested print size. Weave VOC: seller 'confused why the image printed blurry despite being 300 DPI', and the buyer who received a 'terribly low resolution' A1 print. Explain the mechanism: 600×750 px tagged '300 DPI' only fills a 2×2.5 inch print at true 300 DPI; stretched to 8×10 it drops to ~75 effective DPI = blur. This is the conceptual cause only — hand off the step-by-step export fix to etsy-digital-download-blurry-prints."
+        },
+        {
+          "h2": "The Formula: Inches × 300 = Required Pixels",
+          "covers": "Give the one piece of math that resolves the confusion: print width (in) × 300 and print height (in) × 300 = minimum pixel dimensions. Include ONE small example table for 3 sizes only (5×7 → 1500×2100, 8×10 → 2400×3000, 16×20 → 4800×6000). Explicitly say 'this is not the full chart' and link to print-sizes-at-300-dpi for every Etsy size. Deep-link 8×10 example to etsy-8x10-print-size."
+        },
+        {
+          "h2": "How to Check Your File's Real Resolution",
+          "covers": "Teach the reader to ignore the DPI tag and read the true pixel dimensions: right-click > Properties/Get Info (Windows/Mac), or the image-size dialog in any editor. Compare the actual pixel count against the formula output. If pixels < required, no DPI setting will save it — you need a higher-resolution source. Conceptual check only, no editing workflow."
+        },
+        {
+          "h2": "How SnapToSize Guarantees Correct Pixels at 300 DPI",
+          "covers": "Tie-in: SnapToSize outputs the exact pixel dimensions at a true 300 DPI for every Etsy size from one upload — no manual math, no guessing whether the DPI tag is honest. Note the safeguard: it works from a high-res source (the pixels have to exist first), and it never crops (stretch-only, composition preserved). Mid/late inline CTA to quick-export."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Does 300 DPI mean high resolution?",
+          "a": "Not by itself. 300 DPI is just a printing instruction — it tells the printer how tightly to pack pixels, but it doesn't say how many pixels the file has. A tiny image can be tagged '300 DPI' and still be low resolution. Real resolution lives in the pixel dimensions."
+        },
+        {
+          "q": "Is DPI the same as resolution?",
+          "a": "No. Resolution is the total pixel count (e.g. 2400×3000). DPI is how densely those pixels print onto paper. Two files can both say '300 DPI' yet have wildly different resolutions — only the pixel dimensions tell you how much detail you actually have."
+        },
+        {
+          "q": "Can I just change the DPI to make a low-res file print-ready?",
+          "a": "No — this is the single most common mistake. Bumping the DPI number in Photoshop or Preview only edits a label; it adds zero new detail. If the pixels aren't there, the print stays blurry. You need a source with enough actual pixel dimensions for the print size."
+        },
+        {
+          "q": "What pixel dimensions do I need for an 8×10 print at 300 DPI?",
+          "a": "2400×3000 pixels (8×300 by 10×300). Anything smaller will look soft when printed at 8×10, no matter what DPI value the file claims. See the full per-size chart on our Print Sizes at 300 DPI page."
+        },
+        {
+          "q": "How do I check my image's pixel dimensions?",
+          "a": "Right-click the file and open Properties (Windows) or Get Info (Mac), or check the image-size dialog in any editor. Read the width × height in pixels — ignore the DPI field. Compare that to inches × 300 for your target size to know if it's print-ready."
+        },
+        {
+          "q": "Why does my 300 DPI file still look blurry when printed?",
+          "a": "Because its pixel dimensions are too low for the size you're printing. When a small file is stretched across a larger print, the effective DPI drops far below 300 and detail breaks down. For the step-by-step export fix, see our guide on fixing blurry Etsy prints."
+        }
+      ],
+      "competitor_gaps": "SERP for these queries is dominated by generic 'use 300 DPI' pages that conflate DPI with resolution — none cleanly separate the DPI tag from pixel data, and none kill the 'just change the DPI number' misconception. Competitor framing (Bulk Mockup YouTube, 20k views) confirms the pain is live: 'What DPI should I use?... what if my art looks blurry when a customer prints it?' The concept-correction angle ('300 DPI isn't enough — pixels are what matter') is open and winnable. Reddit threads (r/EtsySellers 'sizing and quality', r/Etsy 'poor quality print') show real, unanswered confusion.",
+      "conversion_angle": "Educational concept page; intent is understanding, not emergency. Place ONE inline CTA right after the formula H2 once the reader grasps that pixels are the constraint: 'SnapToSize outputs the exact pixel dimensions at 300 DPI for all 28 Etsy sizes from one upload — no manual math.' Link to https://app.snaptosize.com/app/quick-export with 'Generate Sizes Instantly'. Reinforce in the final H2 (guarantee section).",
+      "link_to": [
+        "print-sizes-at-300-dpi",
+        "etsy-digital-download-blurry-prints",
+        "best-resolution-for-etsy-printables",
+        "etsy-8x10-print-size",
+        "etsy-print-sizes",
+        "etsy-print-ratios",
+        "how-to-resize-images-for-etsy"
+      ],
+      "link_from": [
+        "print-sizes-at-300-dpi",
+        "etsy-digital-download-blurry-prints",
+        "best-resolution-for-etsy-printables"
+      ],
+      "internal_link_notes": {
+        "print-sizes-at-300-dpi": "Chart handoff — link from the formula H2 for every size's pixels (do not reproduce the chart).",
+        "etsy-digital-download-blurry-prints": "Fix-workflow handoff — link from the 'why blurry' and the blurry FAQ (this page is the WHY, that page is the fix).",
+        "best-resolution-for-etsy-printables": "Resolution chart handoff — link from the 'check your file' H2.",
+        "etsy-8x10-print-size": "Deep-link the 8×10 row of the example formula table.",
+        "etsy-print-sizes": "Pillar link in intro/closing.",
+        "etsy-print-ratios": "Pillar link — mention ratio when discussing fitting pixels to a print size.",
+        "how-to-resize-images-for-etsy": "Action-adjacent link near the SnapToSize tie-in."
+      },
+      "sources": [
+        {"claim": "Seller 'confused why the image printed blurry despite being 300 DPI'", "url": "https://www.reddit.com/r/EtsySellers/comments/1hgz60j/selling_digital_prints_sizing_and_quality/"},
+        {"claim": "Buyer received an A1 print of 'terribly low resolution'", "url": "https://www.reddit.com/r/Etsy/comments/oka5o5/receiving_poor_quality_print/"},
+        {"claim": "'Customer claiming print is blurry' — size/resolution mismatch", "url": "https://www.reddit.com/r/EtsySellers/comments/1rkf5fu/customer_claiming_print_is_blurry/"},
+        {"claim": "Sellers ask whether low-DPI files matter for digital downloads", "url": "https://www.reddit.com/r/Etsy/comments/ysw7hv/digital_photography_dpi/"}
+      ]
+    }
+  ]
+}

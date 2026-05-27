@@ -25,6 +25,12 @@ const pages = [
     tagline: '28 sizes · 5 ratio packs · all at 300 DPI',
   },
   {
+    filename: 'dpi-vs-pixel-dimensions.png',
+    title: 'DPI vs Pixel Dimensions',
+    subtitle: 'THE 300 DPI MISCONCEPTION',
+    tagline: 'Why a 300 DPI file can still print blurry',
+  },
+  {
     filename: 'etsy-digital-download-file-size.png',
     title: 'Etsy Digital Download File Size',
     subtitle: 'COMPLETE GUIDE',

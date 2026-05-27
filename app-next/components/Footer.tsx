@@ -232,6 +232,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/dpi-vs-pixel-dimensions" className="transition-colors hover:text-accent-light">
+                  DPI vs Pixel Dimensions
+                </Link>
+              </li>
+              <li>
                 <Link href="/etsy-digital-download-file-size" className="transition-colors hover:text-accent-light">
                   Etsy File Size Guide
                 </Link>

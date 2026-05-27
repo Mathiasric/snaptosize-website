@@ -1,5 +1,26 @@
 [
   {
+    "slug": "dpi-vs-pixel-dimensions",
+    "title": "DPI vs Pixel Dimensions: What Decides Print Quality",
+    "pageType": "guide",
+    "keywords": [
+      "DPI vs pixel dimensions",
+      "does 300 dpi mean high resolution",
+      "why is my 300 dpi print blurry",
+      "is DPI the same as resolution"
+    ],
+    "cluster": "resolution-dpi",
+    "relatedSlugs": [
+      "print-sizes-at-300-dpi",
+      "etsy-digital-download-blurry-prints",
+      "best-resolution-for-etsy-printables",
+      "etsy-8x10-print-size",
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "how-to-resize-images-for-etsy"
+    ]
+  },
+  {
     "slug": "print-sizes-at-300-dpi",
     "title": "Print Sizes at 300 DPI — Complete Pixel Chart",
     "pageType": "reference",
@@ -17,7 +38,8 @@
       "best-file-format-etsy-printables",
       "etsy-8x10-print-size",
       "etsy-a4-print-size",
-      "what-files-to-include-etsy-digital-download"
+      "what-files-to-include-etsy-digital-download",
+      "dpi-vs-pixel-dimensions"
     ]
   },
   {
@@ -223,7 +245,8 @@
       "how-to-resize-images-for-etsy",
       "what-files-to-include-etsy-digital-download",
       "how-to-sell-printables-on-etsy-without-photoshop",
-      "etsy-8x10-print-size"
+      "etsy-8x10-print-size",
+      "dpi-vs-pixel-dimensions"
     ]
   },
   {
@@ -621,7 +644,8 @@
       "how-to-resize-images-for-etsy",
       "best-file-format-etsy-printables",
       "etsy-20mb-file-limit",
-      "etsy-digital-download-not-selling"
+      "etsy-digital-download-not-selling",
+      "dpi-vs-pixel-dimensions"
     ]
   },
   {
