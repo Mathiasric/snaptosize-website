@@ -42,16 +42,18 @@ SnapToSize is a SaaS tool for Etsy sellers selling digital wall art / printables
 - **First paying customer:** 2026-03-03
 - **Paying users:** 13 — MRR $152 (12 monthly + 1 yearly) — Stripe-verified 2026-05-27 (excl. Mathias test accounts + 1 refund (Lisa)). Confirmed churned (no renewal): Kirk (May 19), Dave (May 14), Jon (May 12). Watch: Alex Higgs + Subas renewal due ~May 27 — if cancelled it's 11 / $128.
 - **Free-to-paid conversion: ~37%** — discovered 2026-04-21 via Clerk + Stripe cross-reference (16 real users, 6 paying). SaaS standard is 2–5%. This confirms: problem is distribution, not conversion.
-- **SEO pages live:** 48 (19 size, 8 guide, 5 hub/problem, 14 niche, 1 interactive tool, 1 comparison)
+- **SEO pages live:** ~89 — see `app-next/data/page-registry.json` for the authoritative count/breakdown (was 48 as of Apr 2026)
 - **Pack system:** 28 sizes across 5 ratio packs + 8 square + 3 large via single export = up to 70 files from one upload
+- **My Packs (LIVE 2026-05):** save custom size sets, reuse in one click. Freemium: free 1 saved pack, Pro unlimited.
+- **Watermark:** free-tier exports watermarked (fixed + working 2026-05-27); Pro = clean.
 - **Interactive tools:** Print Size Calculator live (`/etsy-print-size-calculator`) — crop analysis, DPI checker, size reference
-- **Email list:** Lead capture live (PDF cheat sheet + 2 automated follow-up emails)
+- **Email:** Drip/nurture sequences live via Resend (dashboard-configured, not in code). On-page lead-capture form (EmailCaptureSection) REMOVED Apr 2026.
 - **Pipelines built:** SEO (10 pages/week) + Social (7 videos + 21 pins/week)
 - **Video:** Remotion rendering working (TikTokVertical template)
 - **Active distribution:** Pinterest 4/day, Instagram 2-3/day + reels, TikTok 1/day
-- **Product Hunt:** LIVE as of 2026-03-31. PRODUCTHUNT promo code active (100% off first month, 200 uses, expires Apr 30)
+- **Product Hunt:** Launched 2026-03-31. PRODUCTHUNT promo code EXPIRED (Apr 30).
 - **Partner program:** /partners landing page live, /ref/[name] referral tracking, PostHog attribution
-- **Design system:** Shared EmailCaptureSection + FinalCTA components (teal accents) across all 24 pages
+- **Design system:** Shared FinalCTA components (teal accents) across all pages. EmailCaptureSection REMOVED Apr 2026.
 - **PostHog dashboards:** Live on both webapp + marketing site (~4 weeks of data)
 - See MILESTONES.md for full build status
 - See CONTENT_PLAYBOOK.md for channel strategies and content specs

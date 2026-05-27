@@ -1,9 +1,10 @@
 # PROJECT_STATE.md
 ## SnapToSize — Technical System State
 
-Last updated: 2026-03-22
+Last updated: 2026-05-27 (partial — infra/contracts stable; feature list + email-capture refs below still need a pass)
 
 > This file is the authoritative source for infrastructure, backend, API contracts, billing implementation, and monitoring.
+> **Known-stale — verify against `docs/STATE.md` + live code:** My Packs is LIVE (freemium: free 1 saved pack / Pro unlimited); free-tier watermark fixed + working 2026-05-27; EmailCaptureSection REMOVED Apr 2026 (ignore the email-capture component + analytics refs below). Current metrics live in GROWTH_STATE §2 / STATE.md.
 > For business strategy, ICP, funnel, and growth execution, see GROWTH_STATE.md.
 
 ---
