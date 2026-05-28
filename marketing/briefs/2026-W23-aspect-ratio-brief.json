@@ -1,0 +1,102 @@
+{
+  "week": "W23",
+  "created_at": "2026-05-28T00:00:00Z",
+  "keywords": [
+    {
+      "keyword": "resize image without cropping",
+      "slug": "resize-image-without-cropping-etsy",
+      "intent": "informational+commercial",
+      "page_type": "concept",
+      "priority": "P1",
+      "cluster": "ratios",
+      "meta_title": "Resize Image Without Cropping for Etsy — Keep Your Full Composition",
+      "meta_description": "Cropping destroys your artwork when you change aspect ratios. Learn why resize-without-crop matters for Etsy printable sellers — and how SnapToSize handles it automatically.",
+      "h1": "How to Resize an Image Without Cropping for Etsy Prints",
+      "tone": "technical, dark background, concept/problem page",
+      "word_count_target": 1200,
+      "sections": [
+        "Why Resizing to a Different Aspect Ratio Usually Crops Your Image",
+        "What 'Resize Without Cropping' Actually Means (Scale vs. Crop)",
+        "The Ratio Mismatch Problem: Why 8×10 and 12×18 Can't Share One File",
+        "Three Ways to Change Aspect Ratio Without Cropping (and Their Trade-offs)",
+        "How SnapToSize Handles This: Stretch-Only Scaling, Every Ratio Preserved",
+        "Which Ratios You Need for Etsy Prints (and Why Each Needs Its Own File)"
+      ],
+      "faqs": [
+        "Can I resize an image to a different aspect ratio without cropping?",
+        "What happens if I force an 8×10 image into a 12×18 frame size?",
+        "Does SnapToSize crop my image when resizing?",
+        "What is the difference between scaling and cropping an image?",
+        "How do I sell the same design in multiple Etsy print sizes?",
+        "Why does my artwork look cut off in some frame sizes?",
+        "Can I resize a 2:3 image to 4:5 without losing edges?"
+      ],
+      "competitor_gaps": "All top-ranking pages (BeFunky, FlexClip, MiniTool, Pixelcut) focus on AI outpainting to fill missing canvas — generating new background content. None address the Etsy printable seller problem specifically: that selling prints at multiple sizes requires separate files per aspect ratio, and that scaling preserves full composition while cropping destroys it. No competitor links this concept to print-on-demand/Etsy workflows or explains ratio packs. This is a completely open niche angle.",
+      "competitor_approaches": [
+        {
+          "url": "https://www.befunky.com/learn/change-your-image-aspect-ratio-with-expand-ai/",
+          "approach": "AI outpainting (Expand AI) — extends background to fill new canvas. Consumer-focused, social media use cases. No print/Etsy coverage.",
+          "h2s": ["Why Change Image Orientation With AI?", "How to Change Image Aspect Ratio With Expand AI", "Ways to Use Expand AI for Aspect Ratio Changes"]
+        },
+        {
+          "url": "https://www.flexclip.com/learn/change-aspect-ratio-of-image-without-cropping.html",
+          "approach": "3 methods: AI extender, adding padding/borders, blurry background fill. Video/social media framing. No print/Etsy coverage.",
+          "h2s": ["Method 1: AI Image Extender", "Method 2: Adding Padding or Borders", "Method 3: Adding Blurry Background"]
+        },
+        {
+          "url": "https://moviemaker.minitool.com/moviemaker/change-aspect-ratio-of-image-without-cropping.html",
+          "approach": "Generic tools roundup (MiniTool MovieMaker, online tools). Explains what aspect ratio is. No print/Etsy coverage.",
+          "h2s": ["What Is the Aspect Ratio of an Image", "How to Change Aspect Ratio of Image Without Cropping: 2 Ways"]
+        }
+      ],
+      "search_signals": {
+        "paa_questions": [
+          "Any way to change image's aspect ratio without cropping, distorting or losing quality?",
+          "How do you resize an image without losing quality?",
+          "How to resize for Etsy printables?",
+          "What is the best aspect ratio for Etsy print downloads?"
+        ],
+        "related_searches": [
+          "resize image without cropping free",
+          "change aspect ratio without cropping ai",
+          "etsy print size aspect ratio",
+          "how to resize image for etsy printable",
+          "etsy digital download different sizes same design"
+        ],
+        "volume_signal": "High intent — Adobe Community threads on this topic show thousands of Etsy sellers actively searching for this workflow solution. SnapToSize already ranks for 'how to resize images for etsy' (position confirmed in page registry). This page captures earlier-funnel searchers who don't yet know ratio packs are the answer."
+      },
+      "conversion_angle": "Concept/problem page with mid-page CTA. Lead with the pain (cropping = lost artwork), explain why scaling is the right approach, then position SnapToSize as the only tool purpose-built for Etsy sellers that does stretch-only scaling across all 5 ratio packs automatically. CTA: 'Try Free — Upload once, get every size intact'.",
+      "page_design_notes": "Dark background, technical tone. Use a side-by-side diagram concept: cropped version vs. full composition preserved. Reference the ratio pack table to show which sizes fall in which ratio group. No AI outpainting framing — SnapToSize is deterministic scaling, not generative fill.",
+      "link_to": [
+        "etsy-print-ratios",
+        "2-3-vs-4-5-ratio",
+        "how-to-resize-images-for-etsy",
+        "etsy-print-sizes"
+      ],
+      "link_from": [
+        "etsy-print-ratios",
+        "how-to-resize-images-for-etsy",
+        "etsy-print-sizes"
+      ],
+      "sources": [
+        {
+          "claim": "Competitors use AI outpainting (generative background fill) as the primary 'resize without cropping' solution",
+          "url": "https://www.befunky.com/learn/change-your-image-aspect-ratio-with-expand-ai/"
+        },
+        {
+          "claim": "Three common approaches to aspect ratio change without cropping: AI extender, padding/borders, blurry background",
+          "url": "https://www.flexclip.com/learn/change-aspect-ratio-of-image-without-cropping.html"
+        },
+        {
+          "claim": "Reddit Etsy community actively asks: how do sellers squeeze the same painting into 4-5 different ratios without cropping?",
+          "url": "https://www.reddit.com/r/Etsy/comments/14d0e6c/anyone_selling_art_print_on_etsy_i_dont_know_how/"
+        },
+        {
+          "claim": "SnapToSize currently ranks for 'how to resize images for etsy' and 'best resolution for etsy printables'",
+          "url": "https://snaptosize.com/how-to-resize-images-for-etsy"
+        }
+      ],
+      "internal_linking_notes": "etsy-print-ratios should add a contextual link: 'Wondering why you can't just resize one file to every ratio? See how resize-without-cropping works.' how-to-resize-images-for-etsy should reference this page for the aspect ratio mismatch concept. etsy-print-sizes pillar should link here when mentioning that different sizes require different ratio files."
+    }
+  ]
+}
