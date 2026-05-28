@@ -21,7 +21,13 @@ These rules exist because each one corresponds to a manual fix made on a shipped
 
 6. **MANDATORY `ListingOutputShowcase`.** Every new SEO page MUST import and render `ListingOutputShowcase`. Choose a matching preset from `ARTWORK_PRESETS` in `app-next/components/ListingOutputShowcase.tsx`. If no preset fits the page topic, ADD a new preset first — this means generating 5 resize variants of the same artwork and placing them under `app-next/public/assets/listings/<name>/`.
 
-7. **MANDATORY Gemini lifestyle image.** Every page must have a 4:3 (~1600x1200) lifestyle JPEG generated via Gemini `gemini-3-pro-image-preview`. Model script on `marketing/social/gen-wedding-lifestyle.py`. Save to `app-next/public/assets/visuals/<slug>-lifestyle.jpg`. (This supersedes the 4:3 Imagen rule in the older section — we now use `gemini-3-pro-image-preview`.)
+7. **Gemini lifestyle image — best-effort with explicit fallback.** Strongly recommended on sizes-guide / category pages where a lifestyle photo earns its place (room mockups, frames-on-wall, finished prints in context). 4:3 (~1600x1200) JPEG generated via Gemini `gemini-3-pro-image-preview`, model script `marketing/social/gen-wedding-lifestyle.py`, saved to `app-next/public/assets/visuals/<slug>-lifestyle.jpg`.
+
+   **Operational rule (resolves rule 4 conflict):**
+   - If you can generate the image as part of this task → do it, then reference the path. Page now has a real lifestyle visual.
+   - If you cannot generate it (no Gemini access, no fitting prompt, or the page is a pure-concept page where a lifestyle photo would be decorative not pedagogical) → **OMIT the `<Image>` tag entirely per rule 4** AND add `LIFESTYLE_IMAGE_TODO: <slug>` to your report so a follow-up step can generate + add it later.
+   - **Never** reference a path that doesn't exist on disk. Rule 4 is the hard rule; this rule defers to it.
+   - For concept / explainer pages (e.g. DPI vs pixel dimensions, ratio explainers) where a generic lifestyle photo is decoration only, a stronger alternative is a CSS/React diagram that *illustrates the concept*. Document that choice in the report.
 
 8. **Do NOT invent weak social-slide templates.** Low-density text-only templates (e.g. the "Popular Frame Brands" and "Frame + Mat Math" templates from 2026-04-17) shipped with dead space and were pulled. Prefer `ListingOutputShowcase` + Gemini lifestyle. Only create a new slide template if you can benchmark it against a strong existing pattern (`BeforeAfter`, `SizeComparison`, `PackSpotlight`). If in doubt, don't.
 
@@ -59,7 +65,7 @@ A content blueprint from `marketing/briefs/YYYY-WXX-batch.json` containing:
 
 1. **Draft page:** `marketing/drafts/YYYY-WXX-[slug]/page.tsx`
 2. **Registry entry:** JSON object to add to `app-next/data/page-registry.json`
-3. **Lifestyle image:** Generate a Gemini lifestyle mockup for the page (see below)
+3. **Lifestyle image (optional, per rule 7):** Generate when it earns its place on the page. If skipped, omit the `<Image>` tag entirely and add `LIFESTYLE_IMAGE_TODO: <slug>` to your report.
 4. **OG image:** After build passes, run the `og-screenshot` skill to capture the hero at 1200×630
 5. **State update:** Advance item in `seo-pipeline-state.json` from `briefed` → `drafted`
 
@@ -67,13 +73,13 @@ A content blueprint from `marketing/briefs/YYYY-WXX-batch.json` containing:
 
 > **See HARD RULE 7.** Use `gemini-3-pro-image-preview`, save to `<slug>-lifestyle.jpg`. Rules below are retained for context.
 
-Every page needs a lifestyle mockup at `app-next/public/assets/visuals/[slug]-lifestyle.jpg`.
+When generating a lifestyle mockup (per rule 7), save it to `app-next/public/assets/visuals/[slug]-lifestyle.jpg`.
 
 Generate it with the Gemini API using `marketing/social/gen-wedding-lifestyle.py` as a template, or write an inline script. Rules:
 - Use `aspect_ratio: "4:3"` (~1600x1200)
 - Prompt should show real-world use: a desk scene, a framed print on a wall, a tablet/iPad displaying the content
 - Aspirational and lifestyle-focused — not a product mockup
-- Save as `.jpg` to `app-next/public/assets/visuals/[slug]-mockup.jpg`
+- Save as `.jpg` to `app-next/public/assets/visuals/[slug]-lifestyle.jpg` (canonical name — matches rule 7)
 - Run with `PYTHONIOENCODING=utf-8 python <script>` on Windows
 
 After generating, update the lifestyle image placeholder in the page to use the real path.
@@ -203,7 +209,7 @@ Button does NOT accept `href`, `variant="primary"`, or `size` props directly. Wr
 {/* Lifestyle image — full width */}
 <div className="px-4 md:px-8 max-w-5xl mx-auto pb-4">
   <div className="rounded-xl overflow-hidden border border-white/[0.08]">
-    <img src="/assets/visuals/etsy-[slug]-mockup.jpg" alt="..." width={1200} height={800} className="w-full h-auto" loading="lazy" />
+    <img src="/assets/visuals/[slug]-lifestyle.jpg" alt="..." width={1200} height={800} className="w-full h-auto" loading="lazy" />
   </div>
 </div>
 
@@ -217,7 +223,7 @@ Button does NOT accept `href`, `variant="primary"`, or `size` props directly. Wr
 <section className="py-14 bg-white/[0.02]">...</section>
 ```
 
-The lifestyle image placeholder should reference `/assets/visuals/etsy-[slug]-mockup.jpg` — it will be generated separately.
+If you include a lifestyle image, reference `/assets/visuals/[slug]-lifestyle.jpg`. **Never reference a path you haven't generated this task** (rule 4 wins). If the image won't be generated, OMIT the entire `{/* Lifestyle image */}` block and add `LIFESTYLE_IMAGE_TODO: <slug>` to your report.
 
 ### Trust Pills — Benefit Language
 
