@@ -1,0 +1,20 @@
+{
+  "id": "W23-IG20",
+  "platform": "instagram",
+  "type": "post",
+  "image": "post.jpg",
+  "title": "1-star: 'The print didn't fit my frame.' Here's why.",
+  "caption": "Manual resizing in Photoshop or Canva introduces rounding errors.\n\nYour 8×10 might actually deliver at 8×9.6 — just enough to misalign in a standard mat or frame.\n\nBuyer prints it. Doesn't fit. 1-star review.\n\nSnapToSize calculates every size to the exact pixel:\n→ 8×10 = always 2400×3000px\n→ A4 = always 2480×3508px\n→ 300 DPI, frame-guaranteed\n\nNo rounding. No guessing. No 1-star reviews.\n\nLink in bio → app.snaptosize.com",
+  "hashtags": [
+    "#etsyseller",
+    "#digitaldownloads",
+    "#etsydigital",
+    "#printablewallartetsy",
+    "#etsysellertools"
+  ],
+  "link": "https://app.snaptosize.com",
+  "created": "2026-05-28",
+  "scheduled_for": "2026-05-28T19:00:00Z",
+  "r2_url": "https://social.snaptosize.com/content/instagram/2026-05-28-frame-fit-review-instagram/post.jpg",
+  "buffer_post_id": "6a188fd21454ffd3eb6c2d71"
+}
