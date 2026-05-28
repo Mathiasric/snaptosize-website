@@ -11,12 +11,12 @@ import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
-  title: "Standard Bookmark Size in Pixels: 600 × 1800 px (2 × 6 in / 51 × 152 mm)",
+  title: "Standard Bookmark Size in Pixels: 600×1800 px (2026)",
   description:
-    'Standard bookmark size is 2 × 6 in (600 × 1800 px at 300 DPI / 51 × 152 mm). Full chart for 2×7", 2×8.5", and oversized — print-ready specs for Etsy, Canva, and home printing.',
+    'Standard bookmark size is 2×6 in (600×1800 px at 300 DPI / 51×152 mm). Full chart for 2×7", 2×8.5", and oversized — print-ready specs for Etsy, Canva, and home printing.',
   alternates: { canonical: "https://snaptosize.com/etsy-bookmark-size" },
   openGraph: {
-    title: "Standard Bookmark Size in Pixels: 600 × 1800 px (2 × 6 in)",
+    title: "Standard Bookmark Size in Pixels: 600×1800 px (2026)",
     description:
       'Standard bookmark size is 2 × 6 in (600 × 1800 px at 300 DPI / 51 × 152 mm). Full chart for 2×7", 2×8.5", plus print-ready specs for Etsy and Canva.',
     url: "https://snaptosize.com/etsy-bookmark-size",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Standard Bookmark Size: 600 × 1800 px (2 × 6 in / 51 × 152 mm)",
+    title: "Standard Bookmark Size: 600×1800 px (2×6 in) — 2026",
     description:
       'Standard bookmark is 2 × 6 in (600 × 1800 px at 300 DPI). Full chart in pixels, mm, and inches.',
     images: ["/assets/og/etsy-bookmark-size.png"],
@@ -44,12 +44,12 @@ export default function EtsyBookmarkSizePage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Etsy Bookmark Size: Exact Dimensions & Pixels (2026)",
+    headline: "Standard Bookmark Size: Pixels, Inches & mm (2026)",
     description:
       'Standard Etsy bookmark sizes: 2×6" (600×1800px at 300 DPI), 2×7", 2×8.5". Print-ready guide for Etsy sellers — pixels, DPI, file format, and layout tips.',
     url: "https://snaptosize.com/etsy-bookmark-size",
     datePublished: "2026-04-10",
-    dateModified: "2026-04-10",
+    dateModified: "2026-05-28",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -223,7 +223,7 @@ export default function EtsyBookmarkSizePage() {
 
             {/* H1 */}
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
-              Etsy Bookmark Size:{" "}
+              Standard Bookmark Size:{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2DD4BF] to-[#a78bfa]">
                 Exact Dimensions & Pixels
               </span>
