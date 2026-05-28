@@ -12,14 +12,14 @@ import RelatedPages from "@/components/RelatedPages";
 import { FileSizeChecker } from "@/components/FileSizeChecker";
 
 export const metadata: Metadata = {
-  title: "Fix Etsy's 20 MB File Size Limit — Free Tool (2026)",
+  title: "Etsy 20MB File Limit: Fix Files That Won't Upload (2026)",
   description:
-    "Won't upload to Etsy? Check any file against the 20 MB limit instantly, then auto-fix it — convert to JPG and split into ratio packs that always fit. Free, no Photoshop.",
+    "Etsy limits digital downloads to 20MB per file. Check if yours exceeds the limit, then fix it — convert to JPG or split into ratio ZIPs. No Photoshop.",
   alternates: { canonical: "https://snaptosize.com/etsy-20mb-file-limit" },
   openGraph: {
-    title: "Fix Etsy's 20 MB File Size Limit — Free Tool (2026)",
+    title: "Etsy 20MB File Limit: Fix Files That Won't Upload (2026)",
     description:
-      "Check any file against Etsy's 20 MB limit instantly, then auto-fix — convert to JPG and split into ratio packs that always fit. Free, no Photoshop.",
+      "Etsy limits digital downloads to 20MB per file. Check yours instantly, then fix it — convert to JPG or split into ratio ZIPs. Free, no Photoshop.",
     url: "https://snaptosize.com/etsy-20mb-file-limit",
     images: [
       {
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fix Etsy's 20 MB File Size Limit — Free Tool (2026)",
+    title: "Etsy 20MB File Limit: Fix Files That Won't Upload (2026)",
     description:
-      "Check any file against Etsy's 20 MB limit instantly, then auto-fix it so every file uploads.",
+      "Etsy limits digital downloads to 20MB per file. Check if yours is too large, then fix it — JPG conversion or ratio ZIPs. Free.",
     images: ["/assets/og/etsy-20mb-file-limit.png"],
   },
 };
@@ -45,12 +45,12 @@ export default function Etsy20MBFileLimitPage() {
     "@graph": [
       {
         "@type": "Article",
-        headline: "Etsy 20MB Limit Fix — Auto-Split Files Under 20MB (Free Tool)",
+        headline: "Etsy 20MB File Limit: Fix Files That Won't Upload",
         description:
           "Complete guide to Etsy's 20MB file size limit for digital downloads. Learn why files are too large and how to fix it.",
         url: "https://snaptosize.com/etsy-20mb-file-limit",
         datePublished: "2026-03-08",
-        dateModified: "2026-05-21",
+        dateModified: "2026-05-28",
         author: {
           "@type": "Organization",
           name: "SnapToSize",
