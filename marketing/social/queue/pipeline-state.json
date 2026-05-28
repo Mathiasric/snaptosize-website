@@ -1831,12 +1831,33 @@
       "stage": "published",
       "scheduled_for": "2026-05-27T19:00:00Z",
       "slug": "2026-05-26-fox-pack-showcase-pinterest"
+    },
+    {
+      "id": "W23-G23",
+      "platform": "pinterest",
+      "stage": "published",
+      "scheduled_for": "2026-05-29T13:00:00Z",
+      "slug": "2026-05-28-eu-blind-spot-pinterest"
+    },
+    {
+      "id": "W23-G24",
+      "platform": "pinterest",
+      "stage": "published",
+      "scheduled_for": "2026-05-29T16:00:00Z",
+      "slug": "2026-05-28-frame-fit-review-pinterest"
+    },
+    {
+      "id": "W23-P23",
+      "platform": "pinterest",
+      "stage": "published",
+      "scheduled_for": "2026-05-29T19:00:00Z",
+      "slug": "2026-05-28-price-ladder-pinterest"
     }
   ],
   "metrics": {
-    "total": 94,
-    "completed": 33,
+    "total": 97,
+    "completed": 36,
     "failed": 0,
-    "success_rate": 0.35
+    "success_rate": 0.37
   }
 }
