@@ -8,25 +8,25 @@ import { Button } from "@/components/Button";
 import { Check, AlertTriangle, ArrowRight, Package, Folder, FileArchive } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "How to Upload More Than 5 Files to Etsy — ZIP Guide (2026)",
+  title: "Etsy Digital Download Limits: 20MB & 5 Files (2026 Guide)",
   description:
-    "Etsy limits digital listings to 5 files. Here's how print sellers use ratio-organized ZIPs to deliver up to 70 files in one listing — no workarounds needed.",
+    "Etsy caps digital listings at 5 files and 20MB each. Discover how print sellers deliver 70+ sizes in one listing using ratio-organized ZIPs.",
   alternates: {
     canonical: "https://snaptosize.com/how-to-upload-more-than-5-files-etsy",
   },
   openGraph: {
-    title: "How to Upload More Than 5 Files to Etsy — ZIP Guide (2026)",
+    title: "Etsy Digital Download Limits: 20MB & 5 Files (2026 Guide)",
     description:
-      "Etsy limits digital listings to 5 files. Here's how print sellers use ratio-organized ZIPs to deliver 28 sizes in one listing — no workarounds needed.",
+      "Etsy caps digital listings at 5 files and 20MB per file. Here's how print sellers use ratio-organized ZIPs to deliver 70+ sizes in one listing — no extra accounts needed.",
     url: "https://snaptosize.com/how-to-upload-more-than-5-files-etsy",
     type: "article",
     images: ["/assets/og/how-to-upload-more-than-5-files-etsy.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "How to Upload More Than 5 Files to Etsy — ZIP Guide (2026)",
+    title: "Etsy Digital Download Limits: 20MB & 5 Files (2026 Guide)",
     description:
-      "Etsy limits digital listings to 5 files. Use ratio ZIPs to deliver up to 70 files in one listing.",
+      "Etsy limits digital downloads to 5 files and 20MB each. Use ratio ZIPs to deliver 70+ sizes in one listing.",
     images: ["/assets/og/how-to-upload-more-than-5-files-etsy.png"],
   },
 };
@@ -103,12 +103,12 @@ export default function HowToUploadMoreThan5FilesEtsyPage() {
   const articleJsonLdSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "How to Upload More Than 5 Files to Etsy",
+    headline: "Etsy Digital Download Limits: 20MB & 5 Files",
     description: "Use ratio-organized ZIP files to deliver 20+ print sizes within Etsy's 5-file limit.",
     author: { "@type": "Organization", name: "SnapToSize" },
     publisher: { "@type": "Organization", name: "SnapToSize", url: "https://snaptosize.com" },
     datePublished: "2026-04-18",
-    dateModified: "2026-05-21",
+    dateModified: "2026-05-28",
     url: "https://snaptosize.com/how-to-upload-more-than-5-files-etsy",
   };
 
@@ -197,7 +197,7 @@ export default function HowToUploadMoreThan5FilesEtsyPage() {
               </p>
 
               <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
-                How to Upload More Than 5 Files to Etsy
+                Etsy Digital Download Limits: 5 Files & 20MB Per File
               </h1>
               <p className="text-white/60 text-base mb-6 leading-relaxed">
                 <span className="font-semibold text-white/90">
