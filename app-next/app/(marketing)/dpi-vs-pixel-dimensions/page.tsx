@@ -391,7 +391,7 @@ export default function DpiVsPixelDimensionsPage() {
         <div className="mb-16">
           <ContextualCTA
             problem="Working out whether your pixels are enough for every Etsy size — then exporting each one at a true 300 DPI — is tedious and easy to get wrong."
-            solution="SnapToSize outputs the exact pixel dimensions at a true 300 DPI for all 28 Etsy sizes from one upload — no manual math, no guessing whether the DPI tag is honest."
+            solution="SnapToSize outputs the exact pixel dimensions at a true 300 DPI for up to 70 sizes from one upload — no manual math, no guessing whether the DPI tag is honest."
             appUrl={CTA_URL}
             buttonText="Generate Sizes Instantly"
           />
@@ -512,7 +512,7 @@ export default function DpiVsPixelDimensionsPage() {
         <div className="mb-16">
           <FinalCTA
             heading="Stop trusting the DPI tag. Ship the right pixels every time."
-            stat="28 Etsy sizes · true 300 DPI · one upload"
+            stat="up to 70 sizes · true 300 DPI · one upload"
             description="SnapToSize outputs the exact pixel dimensions at a true 300 DPI for every Etsy size from a single high-res upload — no manual math, no honest-DPI guesswork."
             buttonText="Generate Sizes Instantly"
             appUrl={CTA_URL}
