@@ -453,6 +453,25 @@ export default function DpiVsPixelDimensionsPage() {
           </p>
         </section>
 
+        {/* Mid-page CTA — after formula "aha" moment */}
+        <div className="mb-16 rounded-2xl border border-teal-500/30 bg-teal-500/5 p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center gap-6">
+          <div className="flex-1">
+            <p className="text-xs font-semibold uppercase tracking-widest text-teal-400 mb-2">Skip the math</p>
+            <p className="text-lg md:text-xl font-bold text-foreground mb-1">
+              SnapToSize runs this formula for every Etsy size automatically.
+            </p>
+            <p className="text-sm text-foreground-60">
+              Upload once → exact pixel dimensions for all ratios at true 300 DPI. No spreadsheet, no guessing.
+            </p>
+          </div>
+          <Link
+            href={CTA_URL}
+            className="gradient-btn shrink-0 whitespace-nowrap"
+          >
+            Try it free →
+          </Link>
+        </div>
+
         {/* SECTION 5 — How to check your file's real resolution */}
         <section className="mb-16">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
