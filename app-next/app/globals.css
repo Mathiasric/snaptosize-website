@@ -31,12 +31,12 @@ body {
 
 @layer components {
   .gradient-btn {
-    background: linear-gradient(135deg, #7C3AED 0%, #6D28D9 50%, #5B21B6 100%);
+    background: linear-gradient(135deg, #2DD4BF 0%, #0D9488 50%, #0F766E 100%);
     @apply transition-all;
   }
 
   .gradient-btn:hover:not(:disabled) {
-    background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 50%, #6D28D9 100%);
+    background: linear-gradient(135deg, #5EEAD4 0%, #2DD4BF 50%, #0D9488 100%);
     transform: translateY(-1px);
   }
 
