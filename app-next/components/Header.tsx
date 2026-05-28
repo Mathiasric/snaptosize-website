@@ -351,6 +351,9 @@ export function Header() {
                     <Link href="/dpi-vs-pixel-dimensions" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       DPI vs Pixel Dimensions
                     </Link>
+                    <Link href="/resize-image-without-cropping-etsy" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Resize Without Cropping
+                    </Link>
                     <Link href="/etsy-digital-download-file-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Etsy File Size Guide
                     </Link>
@@ -672,6 +675,9 @@ export function Header() {
                         </Link>
                         <Link href="/dpi-vs-pixel-dimensions" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           DPI vs Pixel Dimensions
+                        </Link>
+                        <Link href="/resize-image-without-cropping-etsy" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Resize Without Cropping
                         </Link>
                         <Link href="/etsy-digital-download-file-size" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Etsy File Size Guide

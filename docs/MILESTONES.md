@@ -4,10 +4,10 @@
 ---
 
 ## Current State
-- **Paying users:** 13 (12 monthly, 1 yearly) — Stripe-verified 2026-05-27 (excl. test accounts, 1 refund, 3 churned)
-- **MRR:** $152 (12× $11.99 monthly + $97/year amortized) — Stripe reconciliation 2026-05-27
+- **Paying users:** 14 (13 monthly, 1 yearly) — +1 Pro monthly 2026-05-28 on Stripe-verified 2026-05-27 baseline
+- **MRR:** $164 (13× $11.99 monthly + $97/year amortized) — +1 Pro monthly 2026-05-28
 - **Total revenue collected:** $264.86 (1× $97 yearly + 12× $11.99 monthly first payments + 2× $11.99 renewals)
-- **SEO pages live:** 88 (78 total incl. non-SEO)
+- **SEO pages live:** 89 (79 total incl. non-SEO)
 - **First paying customer:** 2026-03-03
 - **Target:** $1M ARR (~7,500 paying users)
 
@@ -50,6 +50,7 @@ $1M ARR requires:
 
 ### Marketing Infrastructure
 - ✅ Marketing site (snaptosize.com, Cloudflare Pages)
+- ✅ 89 SEO pages live (1 new page drafted 2026-05-28: resize-image-without-cropping-etsy — ratios cluster concept page)
 - ✅ 88 SEO pages live (1 new page deployed 2026-05-27: dpi-vs-pixel-dimensions — resolution-dpi cluster hub)
 - ✅ 87 SEO pages live (1 new page deployed 2026-05-04: most-popular-etsy-print-sizes-to-sell)
 - ✅ 86 SEO pages live (2 new pages deployed 2026-04-25: etsy-office-wall-art-sizes + etsy-printable-bleed-and-crop-marks)

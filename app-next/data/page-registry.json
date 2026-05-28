@@ -1971,5 +1971,27 @@
       "canvas-print-sizes-for-etsy",
       "etsy-square-print-sizes"
     ]
+  },
+  {
+    "slug": "resize-image-without-cropping-etsy",
+    "title": "Resize Image Without Cropping for Etsy — Keep Your Full Composition",
+    "pageType": "concept",
+    "keywords": [
+      "resize image without cropping",
+      "resize without cropping etsy",
+      "change aspect ratio without cropping",
+      "etsy print size aspect ratio",
+      "how to resize image for etsy printable",
+      "etsy digital download different sizes same design"
+    ],
+    "cluster": "ratios",
+    "relatedSlugs": [
+      "etsy-print-ratios",
+      "2-3-vs-4-5-ratio",
+      "how-to-resize-images-for-etsy",
+      "etsy-print-sizes",
+      "dpi-vs-pixel-dimensions",
+      "best-resolution-for-etsy-printables"
+    ]
   }
 ]

@@ -60,6 +60,12 @@ const pages = [
     subtitle: 'PRINT SETUP GUIDE',
     tagline: 'Do Etsy printables need bleed? The definitive answer',
   },
+  {
+    filename: 'resize-image-without-cropping-etsy.png',
+    title: 'Resize Without Cropping for Etsy',
+    subtitle: 'RATIO WORKFLOW GUIDE',
+    tagline: 'Scale-only · All 5 ratio packs · Full composition preserved',
+  },
 ];
 
 const html = ({ title, subtitle, tagline }) => `<!doctype html>

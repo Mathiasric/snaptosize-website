@@ -237,6 +237,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/resize-image-without-cropping-etsy" className="transition-colors hover:text-accent-light">
+                  Resize Without Cropping
+                </Link>
+              </li>
+              <li>
                 <Link href="/etsy-digital-download-file-size" className="transition-colors hover:text-accent-light">
                   Etsy File Size Guide
                 </Link>

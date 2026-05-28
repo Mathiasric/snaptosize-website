@@ -54,15 +54,24 @@
       "status": "drafted",
       "drafted_at": "2026-05-27",
       "notes": "Concept hub for the 'DPI ≠ resolution' mental model. 6 H2, 6 FAQs, 3 schemas (Article+BC+FAQ), QuickAnswer first, ListingOutputShowcase=geometric, CSS tag-vs-pixels contrast hero (no flat gradient), 7 internal links. Pending OG image + build + deploy."
+    },
+    {
+      "slug": "resize-image-without-cropping-etsy",
+      "keyword": "resize image without cropping",
+      "type": "new-page",
+      "cluster": "ratios",
+      "status": "drafted",
+      "drafted_at": "2026-05-28",
+      "notes": "Concept/problem page — ratios cluster. Differentiator: SnapToSize = stretch-only scaling, not AI outpainting. CSS scale-vs-crop diagram, ratio table (5 groups), 3-method comparison. 6 H2, 7 FAQs, 3 schemas (Article+BC+FAQ), QuickAnswer first, ListingOutputShowcase=misty_lake. 6 internal links. Pending OG image + build + deploy."
     }
   ],
   "metrics": {
-    "total": 3,
+    "total": 4,
     "completed": 2,
     "failed": 0,
     "success_rate": 1
   },
-  "updated_at": "2026-05-27T16:43:00+02:00",
+  "updated_at": "2026-05-28T21:19:00+02:00",
   "batch_history": [
     {
       "batch_id": "2026-W21",
