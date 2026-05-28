@@ -11,31 +11,31 @@ import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "Best Resolution for Etsy Printables: 300 DPI Pixel Chart (2026)",
+  title: "Best Resolution for Etsy Printables: Mistakes to Avoid",
   description:
-    "What resolution for Etsy printables? 300 DPI is the standard — exact pixel dimensions for every print size. Resize free with SnapToSize.",
+    "Best resolution for Etsy printables: common mistakes that cause blurry prints, how to check your file's DPI, and the best practices most sellers miss.",
   alternates: {
     canonical: "https://snaptosize.com/best-resolution-for-etsy-printables",
   },
   openGraph: {
-    title: "Best Resolution for Etsy Printables: 300 DPI Pixel Chart (2026)",
+    title: "Best Resolution for Etsy Printables: Mistakes to Avoid",
     description:
-      "Complete DPI guide for Etsy sellers. Exact pixel dimensions at 300 DPI for every print size, verification steps, and automated multi-size generation.",
+      "Common resolution mistakes that cause blurry Etsy prints, how to verify your file's DPI, and the best practices most sellers overlook.",
     url: "https://snaptosize.com/best-resolution-for-etsy-printables",
     images: [
       {
         url: "/assets/og/best-resolution-for-etsy-printables.png",
         width: 1200,
         height: 630,
-        alt: "Best Resolution for Etsy Printables — 300 DPI Guide",
+        alt: "Best Resolution for Etsy Printables — common mistakes & best practices",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Resolution for Etsy Printables: 300 DPI Pixel Chart (2026)",
+    title: "Best Resolution for Etsy Printables: Mistakes to Avoid",
     description:
-      "Wrong DPI = blurry prints. Get the exact pixel dimensions for every Etsy print size at 300 DPI.",
+      "Why your 300 DPI file still prints blurry — the resolution mistakes most Etsy sellers make and how to fix them.",
     images: ["/assets/og/best-resolution-for-etsy-printables.png"],
   },
 };
@@ -45,12 +45,12 @@ export default function BestResolutionForEtsyPrintablesPage() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "300 DPI for Etsy Printables — Exact Pixels for Every Print Size",
+      "Best Resolution for Etsy Printables: Common Mistakes & Best Practices",
     description:
-      "Complete guide to resolution and DPI for Etsy printable sellers. Includes pixel dimension tables, DPI verification steps, and automated multi-size file generation.",
+      "Common resolution mistakes that cause blurry Etsy prints, how to verify your file's DPI, and the best practices most sellers overlook.",
     url: "https://snaptosize.com/best-resolution-for-etsy-printables",
     datePublished: "2026-03-17",
-    dateModified: "2026-04-14",
+    dateModified: "2026-05-28",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -277,10 +277,10 @@ export default function BestResolutionForEtsyPrintablesPage() {
 
             <h1 className="font-bold tracking-tight mb-5">
               <span className="block text-3xl md:text-4xl lg:text-5xl mb-1.5 text-white">
-                Best Resolution for Etsy Printables
-              </span>
+                Best Resolution for Etsy Printables:
+              </span>{" "}
               <span className="block text-xl md:text-2xl lg:text-3xl font-semibold text-white/80">
-                300&nbsp;DPI &mdash; the only number that matters
+                Common mistakes that cause blurry prints
               </span>
             </h1>
             <p className="text-base text-white/60 mb-5 max-w-lg">
