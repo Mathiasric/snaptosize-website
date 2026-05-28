@@ -1,7 +1,7 @@
 """Schedule W23 Day-14 Pinterest pins (2026-05-29) via Buffer API.
 G23: eu-blind-spot      — EU buyers can't buy your prints. ISO sizes fix it. (Gemini)
 G24: frame-fit-review   — 1-star: Print didn't fit my frame. Here's why. (Gemini)
-P23: price-ladder       — What buyers actually pay per print size. (React)
+P23: workflow-steps     — 3 steps. 60 seconds. Every size. (React, Koi artwork)
 """
 import sys, importlib.util, json, time
 from pathlib import Path
@@ -34,7 +34,7 @@ PINS = [
     },
     {
         "item_id": "W23-P23",
-        "slug":    "2026-05-28-price-ladder-pinterest",
+        "slug":    "2026-05-28-workflow-steps-pinterest",
         "board":   "digital-prints",
         "due_at":  "2026-05-29T19:00:00Z",
     },
