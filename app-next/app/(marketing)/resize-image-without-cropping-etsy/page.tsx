@@ -87,7 +87,7 @@ export default function ResizeImageWithoutCroppingEtsyPage() {
   const faqs = [
     {
       q: "Can I resize an image to a different aspect ratio without cropping?",
-      a: "Yes — but only if the tool uses stretch-only scaling rather than auto-cropping. Most generic resize tools crop by default when the target ratio doesn't match the source. SnapToSize uses stretch-only scaling: it fits your original artwork into the new ratio dimensions without cutting any edges.",
+      a: "Yes — but only if the tool uses full-canvas resize rather than auto-cropping. Most generic resize tools crop by default when the target ratio doesn't match the source. SnapToSize uses full-canvas resize: it fits your original artwork into the new ratio dimensions without cutting any edges.",
     },
     {
       q: "What happens if I force an 8×10 image into a 12×18 frame size?",
@@ -95,7 +95,7 @@ export default function ResizeImageWithoutCroppingEtsyPage() {
     },
     {
       q: "Does SnapToSize crop my image when resizing?",
-      a: "No. SnapToSize uses stretch-only scaling. Your original composition — every edge, every detail — is preserved in every output file. The tool scales your artwork to fit each ratio's pixel dimensions without removing any part of the image.",
+      a: "No. SnapToSize uses full-canvas resize. Your original composition — every edge, every detail — is preserved in every output file. The tool scales your artwork to fit each ratio's pixel dimensions without removing any part of the image.",
     },
     {
       q: "What is the difference between scaling and cropping an image?",
@@ -111,7 +111,7 @@ export default function ResizeImageWithoutCroppingEtsyPage() {
     },
     {
       q: "Can I resize a 2:3 image to 4:5 without losing edges?",
-      a: "Yes, with stretch-only scaling. A 2:3 image is taller relative to its width than a 4:5. Scaling it to 4:5 compresses the height very slightly — no edges are removed. The composition is fully preserved. SnapToSize does this automatically when generating ratio packs.",
+      a: "Yes, with full-canvas resize. A 2:3 image is taller relative to its width than a 4:5. Scaling it to 4:5 compresses the height very slightly — no edges are removed. The composition is fully preserved. SnapToSize does this automatically when generating ratio packs.",
     },
   ];
 
@@ -158,37 +158,78 @@ export default function ResizeImageWithoutCroppingEtsyPage() {
         </nav>
 
         {/* Hero */}
-        <div className="mb-16">
-          <p
-            className="mb-4 flex items-center gap-3 text-xs font-mono font-semibold uppercase tracking-[0.18em]"
-            style={{ color: "#2DD4BF" }}
-          >
-            <span
-              className="inline-block h-px w-8"
-              style={{ background: "#2DD4BF" }}
-            />
-            Ratio Workflow · Concept Guide
-          </p>
-          <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-6" style={{ maxWidth: "780px" }}>
-            How to Resize an Image Without Cropping for Etsy Prints
-          </h1>
-          <p className="text-lg text-foreground-60 mb-8" style={{ maxWidth: "640px" }}>
-            When you change aspect ratios, most tools crop your artwork to fit.
-            That means lost edges, severed borders, and a composition that no
-            longer looks like your original. Here&apos;s why it happens — and
-            the correct way to handle it.
-          </p>
-          <a href={CTA_URL} target="_blank" rel="noopener noreferrer">
-            <Button className="text-sm px-6 py-2.5">
-              Try Free — Keep Every Edge Intact
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-          </a>
+        <div
+          className="relative mb-16 overflow-hidden rounded-2xl"
+          style={{
+            background:
+              "radial-gradient(120% 140% at 80% 0%, #0b1f1d 0%, #080d0d 55%, #060909 100%)",
+          }}
+        >
+          {/* Grid overlay */}
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              backgroundImage:
+                "linear-gradient(rgba(45,212,191,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(45,212,191,0.04) 1px, transparent 1px)",
+              backgroundSize: "44px 44px",
+            }}
+          />
+          {/* Glow orbs */}
+          <div
+            className="absolute -top-16 right-8 h-80 w-80 rounded-full blur-3xl pointer-events-none"
+            style={{ background: "radial-gradient(circle, rgba(45,212,191,0.14), transparent 70%)" }}
+          />
+          <div
+            className="absolute bottom-0 left-1/4 h-56 w-56 rounded-full blur-3xl pointer-events-none"
+            style={{ background: "radial-gradient(circle, rgba(167,139,250,0.10), transparent 70%)" }}
+          />
+          {/* Content */}
+          <div className="relative z-10 px-8 py-14 md:py-20">
+            <p
+              className="mb-4 flex items-center gap-3 text-xs font-mono font-semibold uppercase tracking-[0.18em]"
+              style={{ color: "#2DD4BF" }}
+            >
+              <span
+                className="inline-block h-px w-8"
+                style={{ background: "#2DD4BF" }}
+              />
+              Ratio Workflow · Concept Guide
+            </p>
+            <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-6" style={{ maxWidth: "780px" }}>
+              How to Resize an Image Without Cropping for Etsy Prints
+            </h1>
+            <p className="text-lg text-foreground-60 mb-8" style={{ maxWidth: "640px" }}>
+              When you change aspect ratios, most tools crop your artwork to fit.
+              That means lost edges, severed borders, and a composition that no
+              longer looks like your original. Here&apos;s why it happens — and
+              the correct way to handle it.
+            </p>
+            <a href={CTA_URL} target="_blank" rel="noopener noreferrer">
+              <Button className="text-sm px-6 py-2.5">
+                Try Free — Keep Every Edge Intact
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </a>
+            <div className="mt-6 flex flex-wrap gap-3">
+              {["Full composition preserved", "No edges cut", "All 5 Etsy ratios"].map((pill) => (
+                <span
+                  key={pill}
+                  className="flex items-center gap-1.5 rounded-full px-3 py-1 text-xs text-foreground-60"
+                  style={{ background: "rgba(45,212,191,0.08)", border: "1px solid rgba(45,212,191,0.15)" }}
+                >
+                  <svg className="h-3 w-3 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  {pill}
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* QuickAnswer */}
         <QuickAnswer question="Can you resize an image to a different aspect ratio without cropping?">
-          Yes — using stretch-only scaling instead of crop-to-fit. Scaling adjusts
+          Yes — using full-canvas resize instead of crop-to-fit. Scaling adjusts
           both dimensions to match the new ratio without removing any part of the
           image. Cropping removes content at the edges. For Etsy printable sellers,
           this means generating a separate file per ratio group (2:3, 4:5, 3:4,
@@ -250,7 +291,7 @@ export default function ResizeImageWithoutCroppingEtsyPage() {
                   className="text-xs font-mono font-semibold uppercase tracking-widest"
                   style={{ color: "#2DD4BF" }}
                 >
-                  Stretch-only scaling
+                  Full-canvas resize
                 </span>
               </div>
               {/* Visual: original 2:3 box → scaled 4:5 box, full artwork preserved */}
@@ -532,7 +573,7 @@ export default function ResizeImageWithoutCroppingEtsyPage() {
                 desc: "Add white or transparent borders to fill the new canvas shape. Preserves the original — but introduces margins the buyer may not want, and looks unfinished if the artwork was designed to bleed to the edge.",
               },
               {
-                label: "3. Stretch-only scaling",
+                label: "3. Full-canvas resize",
                 color: "#2DD4BF",
                 verdict: "Correct for Etsy",
                 desc: "Scale both dimensions to fit the new ratio. The composition is fully preserved — no content removed, no AI-generated fill. Slight geometric adjustment between close ratios (e.g. 2:3 → 4:5) is imperceptible at print scale.",
@@ -566,7 +607,7 @@ export default function ResizeImageWithoutCroppingEtsyPage() {
           <p className="text-foreground-60">
             The practical question for Etsy sellers isn&apos;t which technique
             is theoretically best — it&apos;s which one produces files buyers can
-            print without issues. Stretch-only scaling is the only deterministic
+            print without issues. Full-canvas resize is the only deterministic
             approach: same input always produces the same output, no AI variance.
           </p>
         </section>
@@ -574,19 +615,19 @@ export default function ResizeImageWithoutCroppingEtsyPage() {
         {/* SECTION 5 — SnapToSize approach + mid-page CTA */}
         <section className="mb-16">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            How SnapToSize Handles This: Stretch-Only Scaling, Every Ratio Preserved
+            How SnapToSize Handles This: Full-Canvas Resize, Every Ratio Preserved
           </h2>
           <p className="text-foreground-60 mb-4">
             SnapToSize was built specifically for this problem. Upload your
             original design once — SnapToSize generates all 5 ratio packs using
-            stretch-only scaling. No cropping. No AI fill. No borders. Your full
+            full-canvas resize. No cropping. No AI fill. No borders. Your full
             composition, at the correct pixel dimensions for every Etsy print
             size.
           </p>
 
           <ul className="mb-6 space-y-2">
             {[
-              "Stretch-only scaling — no content removed, ever",
+              "Full-canvas resize — no content removed, ever",
               "All 5 Etsy ratio groups in one upload",
               "300 DPI output, organized ZIP structure",
               "No Photoshop — no manual ratio math",
@@ -636,7 +677,7 @@ export default function ResizeImageWithoutCroppingEtsyPage() {
           <ListingOutputShowcase
             artwork="misty_lake"
             heading="One upload. Five ratio-correct files."
-            subtext="Stretch-only scaling preserves your full composition at every ratio — no cropping, no AI fill, no manual Photoshop work."
+            subtext="Full-canvas resize preserves your full composition at every ratio — no cropping, no AI fill, no manual Photoshop work."
           />
         </section>
 
@@ -676,7 +717,7 @@ export default function ResizeImageWithoutCroppingEtsyPage() {
 
           <ContextualCTA
             problem="Selling the same design in multiple Etsy sizes requires a separate file per aspect ratio."
-            solution="SnapToSize generates all 5 ratio packs from one upload — stretch-only scaling, nothing cropped."
+            solution="SnapToSize generates all 5 ratio packs from one upload — full-canvas resize, nothing cropped."
             appUrl={CTA_URL}
             buttonText="Try Free — Upload Once"
           />
@@ -695,7 +736,7 @@ export default function ResizeImageWithoutCroppingEtsyPage() {
         <FinalCTA
           heading="Upload Once. Every Ratio, Intact."
           stat="5 ratio packs"
-          description="SnapToSize generates all 5 Etsy ratio packs using stretch-only scaling — no cropping, no Photoshop, no manual ratio math."
+          description="SnapToSize generates all 5 Etsy ratio packs using full-canvas resize — no cropping, no Photoshop, no manual ratio math."
           appUrl={CTA_URL}
           buttonText="Try Free"
         />
