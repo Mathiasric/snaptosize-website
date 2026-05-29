@@ -7,6 +7,7 @@ import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Button } from "@/components/Button";
 import { Check, ArrowRight, X } from "lucide-react";
+import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import { ContextualCTA } from "@/components/ContextualCTA";
 
 export const metadata: Metadata = {
@@ -245,8 +246,11 @@ export default function ResizeImageWithoutCroppingEtsyPage() {
             Two fundamentally different operations — same target size, different results:
           </p>
 
-          {/* CSS diagram: side-by-side scale vs crop */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          {/* Interactive before/after slider: crop-to-fit vs full-canvas */}
+          <BeforeAfterSlider className="mb-8" />
+
+          {/* CSS diagram: side-by-side scale vs crop — hidden, replaced by slider above */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8" style={{ display: 'none' }}>
             {/* Scale */}
             <div
               className="rounded-xl p-6"
