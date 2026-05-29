@@ -3,10 +3,10 @@
 import { useRef, useState, useCallback } from 'react'
 
 function BotanicalPrint({ showCutZones }: { showCutZones: boolean }) {
-  const CUT_HEIGHT = 52 // px cropped from top/bottom (2:3→4:5 simulation at this scale)
+  const CUT_HEIGHT = 62 // px cropped from top/bottom (2:3→4:5 simulation at this scale)
 
   return (
-    <div className="relative" style={{ width: 200, height: 300 }}>
+    <div className="relative" style={{ width: 240, height: 360 }}>
       {/* Paper background */}
       <div className="absolute inset-0" style={{ background: '#f5efe6', borderRadius: 4 }} />
 
@@ -184,7 +184,7 @@ interface BeforeAfterSliderProps {
 }
 
 export function BeforeAfterSlider({ className = '' }: BeforeAfterSliderProps) {
-  const [position, setPosition] = useState(50)
+  const [position, setPosition] = useState(35)
   const containerRef = useRef<HTMLDivElement>(null)
   const dragging = useRef(false)
 
@@ -215,7 +215,7 @@ export function BeforeAfterSlider({ className = '' }: BeforeAfterSliderProps) {
         ref={containerRef}
         className="relative flex items-center justify-center select-none"
         style={{
-          height: 340,
+          height: 420,
           background: '#080d0d',
           cursor: 'col-resize',
           overflow: 'hidden',
@@ -228,7 +228,7 @@ export function BeforeAfterSlider({ className = '' }: BeforeAfterSliderProps) {
         onTouchMove={onTouchMove}
       >
         {/* RIGHT SIDE: full-canvas (shows behind left) */}
-        <div className="absolute inset-0 flex items-center justify-center" style={{ background: '#080d0d' }}>
+        <div className="absolute inset-0 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #061714 0%, #081210 100%)' }}>
           <BotanicalPrint showCutZones={false} />
           {/* Right label */}
           <div className="absolute bottom-4 right-4 flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold" style={{
@@ -246,7 +246,7 @@ export function BeforeAfterSlider({ className = '' }: BeforeAfterSliderProps) {
           style={{ width: `${position}%` }}
         >
           <div className="absolute inset-0 flex items-center justify-center" style={{
-            background: '#0e0808',
+            background: 'linear-gradient(135deg, #1a0808 0%, #120606 100%)',
             width: containerRef.current?.offsetWidth ?? '100vw',
           }}>
             <BotanicalPrint showCutZones={true} />
