@@ -247,7 +247,7 @@ export default function ResizeImageWithoutCroppingEtsyPage() {
           </p>
 
           {/* Interactive before/after slider: crop-to-fit vs full-canvas */}
-          <BeforeAfterSlider className="mb-8" />
+          <BeforeAfterSlider className="mb-8 max-w-sm mx-auto" />
 
           {/* CSS diagram: side-by-side scale vs crop — hidden, replaced by slider above */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8" style={{ display: 'none' }}>
