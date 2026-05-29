@@ -140,51 +140,25 @@ export default function ResizeImageWithoutCroppingEtsyPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
-      <div className="container mx-auto px-4 md:px-8 max-w-[1200px] py-12">
-        {/* Breadcrumb */}
-        <nav className="mb-8 flex items-center gap-1.5 text-xs text-foreground-60/60">
-          <Link href="/" className="hover:text-foreground transition-colors">
-            Home
-          </Link>
-          <span>/</span>
-          <Link
-            href="/etsy-print-sizes"
-            className="hover:text-foreground transition-colors"
-          >
-            Etsy Print Sizes
-          </Link>
-          <span>/</span>
-          <span className="text-foreground-60">Resize Without Cropping</span>
-        </nav>
-
-        {/* Hero */}
-        <div
-          className="relative mb-16 overflow-hidden rounded-2xl"
-          style={{
-            background:
-              "radial-gradient(120% 140% at 80% 0%, #0b1f1d 0%, #080d0d 55%, #060909 100%)",
-          }}
-        >
-          {/* Grid overlay */}
-          <div
-            className="absolute inset-0 pointer-events-none"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(45,212,191,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(45,212,191,0.04) 1px, transparent 1px)",
-              backgroundSize: "44px 44px",
-            }}
-          />
-          {/* Glow orbs */}
-          <div
-            className="absolute -top-16 right-8 h-80 w-80 rounded-full blur-3xl pointer-events-none"
-            style={{ background: "radial-gradient(circle, rgba(45,212,191,0.14), transparent 70%)" }}
-          />
-          <div
-            className="absolute bottom-0 left-1/4 h-56 w-56 rounded-full blur-3xl pointer-events-none"
-            style={{ background: "radial-gradient(circle, rgba(167,139,250,0.10), transparent 70%)" }}
-          />
-          {/* Content */}
-          <div className="relative z-10 px-8 py-14 md:py-20">
+      {/* ===== HERO — full-bleed ===== */}
+      <section
+        className="relative overflow-hidden border-b border-border"
+        style={{
+          background:
+            "radial-gradient(120% 140% at 80% 0%, #0b1f1d 0%, #080d0d 55%, #060909 100%)",
+        }}
+      >
+        <div aria-hidden className="absolute inset-0 opacity-[0.5]" style={{ backgroundImage: "linear-gradient(rgba(45,212,191,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(45,212,191,0.04) 1px, transparent 1px)", backgroundSize: "44px 44px" }} />
+        <div aria-hidden className="absolute -top-24 -right-24 h-[420px] w-[420px] rounded-full blur-3xl" style={{ background: "radial-gradient(circle, rgba(45,212,191,0.16), transparent 70%)" }} />
+        <div aria-hidden className="absolute -bottom-32 -left-24 h-[360px] w-[360px] rounded-full blur-3xl" style={{ background: "radial-gradient(circle, rgba(167,139,250,0.12), transparent 70%)" }} />
+        <div className="container mx-auto px-4 md:px-8 max-w-[1200px] relative z-10 pt-10 pb-16 md:pt-14 md:pb-24">
+          <nav className="mb-5 flex items-center gap-1.5 text-xs text-foreground-60/60">
+            <Link href="/" className="hover:text-foreground transition-colors">Home</Link>
+            <span>/</span>
+            <Link href="/etsy-print-sizes" className="hover:text-foreground transition-colors">Etsy Print Sizes</Link>
+            <span>/</span>
+            <span className="text-foreground-60">Resize Without Cropping</span>
+          </nav>
             <p
               className="mb-4 flex items-center gap-3 text-xs font-mono font-semibold uppercase tracking-[0.18em]"
               style={{ color: "#2DD4BF" }}
@@ -224,9 +198,10 @@ export default function ResizeImageWithoutCroppingEtsyPage() {
                 </span>
               ))}
             </div>
-          </div>
         </div>
+      </section>
 
+      <div className="container mx-auto px-4 md:px-8 max-w-[1200px] py-12">
         {/* QuickAnswer */}
         <QuickAnswer question="Can you resize an image to a different aspect ratio without cropping?">
           Yes — using full-canvas resize instead of crop-to-fit. Scaling adjusts
@@ -237,7 +212,7 @@ export default function ResizeImageWithoutCroppingEtsyPage() {
         </QuickAnswer>
 
         {/* SECTION 1 — Why resizing usually crops */}
-        <section className="mb-16">
+        <section className="mt-12 mb-16">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             Why Resizing to a Different Aspect Ratio Usually Crops Your Image
           </h2>
