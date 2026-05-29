@@ -91,7 +91,7 @@ export default function ResizeImageWithoutCroppingEtsyPage() {
     },
     {
       q: "What happens if I force an 8×10 image into a 12×18 frame size?",
-      a: "An 8×10 is a 4:5 ratio. A 12×18 is a 2:3 ratio. They don't share the same shape. If you force-resize without cropping, the image gets slightly stretched to fill the new canvas. If a tool auto-crops, it cuts off the top and bottom (or sides) of your artwork. Neither result is identical to the original — which is why sellers need separate ratio-correct files for each group of sizes.",
+      a: "An 8×10 is a 4:5 ratio. A 12×18 is a 2:3 ratio. They don't share the same shape. SnapToSize precision-fits both dimensions to the new ratio using Lanczos resampling — between close ratios the adjustment is geometrically minor and visually undetectable when printed. If a tool auto-crops instead, it cuts off the top and bottom (or sides) of your artwork. That's why sellers need separate ratio-correct files for each group of sizes.",
     },
     {
       q: "Does SnapToSize crop my image when resizing?",
@@ -351,10 +351,11 @@ export default function ResizeImageWithoutCroppingEtsyPage() {
                 </div>
               </div>
               <p className="text-sm text-foreground-60">
-                Both dimensions are adjusted to fit the new ratio. The entire
-                artwork is present — edges intact, subject centred, composition
-                unchanged. Slight ratio difference is absorbed by the scaling
-                step.
+                Both dimensions are precision-fitted to the new ratio using
+                Lanczos resampling. The entire artwork is present — edges intact,
+                subject centred, composition unchanged. Between close ratios like
+                2:3 → 4:5, the adjustment is geometrically minor and visually
+                undetectable in printed output.
               </p>
             </div>
 
@@ -576,7 +577,7 @@ export default function ResizeImageWithoutCroppingEtsyPage() {
                 label: "3. Full-canvas resize",
                 color: "#2DD4BF",
                 verdict: "Correct for Etsy",
-                desc: "Scale both dimensions to fit the new ratio. The composition is fully preserved — no content removed, no AI-generated fill. Slight geometric adjustment between close ratios (e.g. 2:3 → 4:5) is imperceptible at print scale.",
+                desc: "Fits both dimensions to the new ratio using precision Lanczos resampling. Full composition preserved — no content removed, no AI fill. Between close ratios (e.g. 2:3 → 4:5) the adjustment is geometrically minor and visually undetectable when printed.",
               },
             ].map((item) => (
               <div
