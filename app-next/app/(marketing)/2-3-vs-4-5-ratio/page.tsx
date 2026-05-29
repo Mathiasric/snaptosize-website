@@ -9,6 +9,7 @@ import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
+import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 
 export const metadata: Metadata = {
   title:
@@ -513,6 +514,8 @@ export default function TwoThreeVsFourFiveRatioPage() {
                 it answers the most common questions sellers ask about these two
                 ratios.
               </p>
+
+              <BeforeAfterSlider className="mb-8 max-w-sm mx-auto" />
 
               <div className="overflow-x-auto mb-8">
                 <table className="w-full border-collapse text-sm">
