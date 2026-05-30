@@ -4,10 +4,10 @@
 ---
 
 ## Current State
-- **Paying users:** 14 (13 monthly, 1 yearly) — +1 Pro monthly 2026-05-28 on Stripe-verified 2026-05-27 baseline
-- **MRR:** $164 (13× $11.99 monthly + $97/year amortized) — +1 Pro monthly 2026-05-28
+- **Paying users:** 15 (14 monthly, 1 yearly) — +1 Pro monthly 2026-05-29 (Stripe-verified 2026-05-27 baseline)
+- **MRR:** $176 (14× $11.99 monthly + $97/year amortized) — +1 Pro monthly 2026-05-29
 - **Total revenue collected:** $264.86 (1× $97 yearly + 12× $11.99 monthly first payments + 2× $11.99 renewals)
-- **SEO pages live:** 89 (79 total incl. non-SEO)
+- **SEO pages live:** 90 (80 total incl. non-SEO)
 - **First paying customer:** 2026-03-03
 - **Target:** $1M ARR (~7,500 paying users)
 
@@ -138,6 +138,14 @@ $1M ARR requires:
 ### Adjacent Markets (Post-PMF)
 - ❌ Planner/printable layout adaptation (Letter→A4→A5 re-layout)
 - ❌ Social media image sizing (secondary ICP, same technology)
+
+---
+
+## Completed W22 (2026-05-29)
+- ✅ New SEO page: ikea-ribba-frame-print-sizes (frame-sizes cluster, 1400w, 3 schemas, 7 FAQs, teal size chart table, ContextualCTA, ListingOutputShowcase, FinalCTA)
+- ✅ Header + Footer updated with IKEA Ribba page link
+- ✅ page-registry.json updated (frame-sizes cluster)
+- ✅ seo-pipeline-state.json updated (drafted 2026-05-29)
 
 ---
 

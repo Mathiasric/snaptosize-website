@@ -1993,5 +1993,26 @@
       "dpi-vs-pixel-dimensions",
       "best-resolution-for-etsy-printables"
     ]
+  },
+  {
+    "slug": "ikea-ribba-frame-print-sizes",
+    "title": "IKEA Ribba Frame Print Sizes — Exact Pixels at 300 DPI",
+    "pageType": "reference",
+    "keywords": [
+      "IKEA Ribba frame print sizes",
+      "IKEA Ribba frame pixel dimensions",
+      "IKEA Ribba 12x16 print size",
+      "IKEA Ribba 8x10 print size",
+      "IKEA Ribba 20x28 print size",
+      "what size print for IKEA Ribba frame"
+    ],
+    "cluster": "frame-sizes",
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-8x10-print-size",
+      "print-size-for-frame-guide",
+      "etsy-print-ratios",
+      "best-resolution-for-etsy-printables"
+    ]
   }
 ]
