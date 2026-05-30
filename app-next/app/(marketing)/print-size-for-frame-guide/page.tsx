@@ -112,7 +112,7 @@ export default function PrintSizeForFrameGuidePage() {
     {
       question: "What are standard IKEA Ribba frame sizes?",
       answer:
-        "IKEA Ribba frames come in metric sizes: 13x18 cm (roughly 5x7 inch), 21x30 cm (close to A4 / 8.3x11.7 inch), 30x40 cm (close to 12x16 inch), 40x50 cm (close to 16x20 inch), 50x70 cm (close to A2 / 19.7x27.6 inch), and 61x91 cm (close to 24x36 inch). They are metric-first, so US inch prints usually need a custom mat to fit cleanly.",
+        "IKEA Ribba frames come in metric sizes: 13x18 cm (roughly 5x7 inch), 21x30 cm (close to A4 / 8.3x11.7 inch), 30x40 cm (close to 12x16 inch), 40x50 cm (close to 16x20 inch), 50x70 cm (close to A2 / 19.7x27.6 inch), and 61x91 cm (close to 24x36 inch). They are metric-first, so US inch prints usually need a custom mat to fit cleanly. For exact pixel dimensions at 300 DPI for every Ribba size, see our dedicated IKEA Ribba frame print sizes guide at snaptosize.com/ikea-ribba-frame-print-sizes.",
     },
     {
       question: "Do I need a mat for a frame?",
@@ -634,7 +634,7 @@ export default function PrintSizeForFrameGuidePage() {
                 <li>
                   <div className="flex items-center gap-2 mb-1">
                     <Ruler className="w-4 h-4 text-[#a78bfa]" />
-                    <strong className="text-foreground">IKEA Ribba</strong>
+                    <Link href="/ikea-ribba-frame-print-sizes" className="font-semibold text-foreground hover:underline">IKEA Ribba</Link>
                   </div>
                   <p className="text-sm text-foreground-60">
                     Metric-first: 13x18 cm (~5x7&#8243;), 21x30 cm (~A4), 30x40

@@ -391,6 +391,16 @@ export default function Etsy8x10PrintSizePage() {
                     need to special order or pay premium prices. This removes a
                     major friction point from the purchase decision.
                   </p>
+                  <p className="text-foreground-60 mt-2 text-sm">
+                    8×10 is also the most popular size in the{" "}
+                    <Link
+                      href="/ikea-ribba-frame-print-sizes"
+                      className="underline hover:text-foreground transition-colors"
+                    >
+                      IKEA Ribba frame series
+                    </Link>{" "}
+                    &mdash; the 4:5 ratio fits perfectly without cropping.
+                  </p>
                 </Card>
 
                 <Card className="p-6">
