@@ -775,6 +775,13 @@ export default function Etsy4x6PrintSizePage() {
                 >
                   5&times;7
                 </Link>
+                , or see the full{" "}
+                <Link
+                  href="/5x7-vs-4x6-print-size"
+                  className="text-accent-light hover:underline"
+                >
+                  5×7 vs 4×6 size comparison
+                </Link>
                 .
               </p>
             </div>

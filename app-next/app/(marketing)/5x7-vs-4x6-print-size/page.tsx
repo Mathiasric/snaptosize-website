@@ -80,7 +80,7 @@ const faqs = [
   {
     question: "Is 5×7 bigger than 4×6?",
     answer:
-      "Yes. A 5×7 print is 35 square inches vs 24 square inches for 4×6 — about 46% more surface area. In practice, 5×7 is noticeably larger: it fits better on a desk stand or mid-wall display, while 4×6 is a compact snapshot size.",
+      "Yes. A 5×7 print is 35 square inches vs 24 square inches for 4×6, about 46% more surface area. In practice, 5×7 is noticeably larger: it fits better on a desk stand or mid-wall display, while 4×6 is a compact snapshot size.",
   },
   {
     question: "What are the pixel dimensions for 4×6 and 5×7 at 300 DPI?",
@@ -90,7 +90,7 @@ const faqs = [
   {
     question: "Can I use the same file for both 4×6 and 5×7?",
     answer:
-      "No. They have different aspect ratios: 4×6 is 2:3 and 5×7 is 5:7. Scaling a 2:3 file to fill a 5:7 space will either crop part of your artwork or leave white bars on the sides. You need two separate exports — one at 1200×1800 px and one at 1500×2100 px.",
+      "No. They have different aspect ratios: 4×6 is 2:3 and 5×7 is 5:7. Scaling a 2:3 file to fill a 5:7 space will either crop part of your artwork or leave white bars on the sides. You need two separate exports: one at 1200×1800 px and one at 1500×2100 px.",
   },
   {
     question: "Does SnapToSize generate 5×7 files?",
@@ -98,9 +98,9 @@ const faqs = [
       "Yes. Use the Single Export option and select 5×7, or add it to a custom pack. The 4×6 size is auto-included in the standard 2:3 ratio pack (which also generates 8×12, 12×18, 16×24, and more from one upload). For 5×7, use a single export or build a custom saved pack that includes both sizes.",
   },
   {
-    question: "Which sells better on Etsy — 4×6 or 5×7?",
+    question: "Which sells better on Etsy: 4×6 or 5×7?",
     answer:
-      "Both are consistently top-selling Etsy digital print sizes. 4×6 drives more impulse purchases due to its standard photo print size — buyers can print at any drugstore. 5×7 is popular for wall art, greeting-card-sized displays, and desk frames. Offering both in one listing maximizes reach. Most successful Etsy print sellers include 4×6, 5×7, and at least one larger size like 8×10 or 8×12.",
+      "Both are consistently top-selling Etsy digital print sizes. 4×6 drives more impulse purchases due to its standard photo print size; buyers can print at any drugstore. 5×7 is popular for wall art, greeting-card-sized displays, and desk frames. Offering both in one listing maximizes reach. Most successful Etsy print sellers include 4×6, 5×7, and at least one larger size like 8×10 or 8×12.",
   },
   {
     question: "What frame fits a 5×7 print?",
@@ -110,7 +110,7 @@ const faqs = [
   {
     question: "What is the aspect ratio of 5×7 and 4×6?",
     answer:
-      "4×6 is a 2:3 ratio (the same as most digital camera sensors — that's why 4×6 photo prints require no cropping). 5×7 is a 5:7 ratio, which doesn't match most camera sensors, so converting from a 2:3 file always requires cropping or letterboxing. For Etsy listings, always export each size at its correct native ratio.",
+      "4×6 is a 2:3 ratio (the same as most digital camera sensors, which is why 4×6 photo prints require no cropping). 5×7 is a 5:7 ratio, which doesn't match most camera sensors, so converting from a 2:3 file always requires cropping or letterboxing. For Etsy listings, always export each size at its correct native ratio.",
   },
 ];
 
@@ -269,7 +269,7 @@ export default function FiveBySevenVsFourBySixPage() {
                 className="text-lg text-slate-600 leading-relaxed mb-8"
                 style={{ maxWidth: "42rem" }}
               >
-                5×7 is 46% larger than 4×6 — but they use different aspect
+                5×7 is 46% larger than 4×6, but they use different aspect
                 ratios, so the same file doesn&apos;t work for both. Here are
                 exact pixel dimensions at 300 DPI, which sells better on Etsy,
                 and how to export both from one upload.
@@ -355,12 +355,12 @@ export default function FiveBySevenVsFourBySixPage() {
       {/* ===== CONTENT ===== */}
       <div className="container mx-auto px-4 md:px-8 max-w-[1200px] py-12">
         {/* QuickAnswer */}
-        <QuickAnswer question="Which is bigger — 5×7 or 4×6?">
+        <QuickAnswer question="Which is bigger: 5×7 or 4×6?">
           5×7 is bigger. A 5×7 print is 35 square inches; a 4×6 is 24 square
-          inches — 5×7 has 46% more surface area. At 300 DPI: 4×6 requires
+          inches, giving 5×7 46% more surface area. At 300 DPI: 4×6 requires
           1200×1800 pixels and 5×7 requires 1500×2100 pixels. They have
-          different aspect ratios (2:3 vs 5:7) so you need separate files — one
-          size cannot be cropped from the other without losing part of your
+          different aspect ratios (2:3 vs 5:7) so you need separate files;
+          one size cannot be cropped from the other without losing part of your
           artwork.
         </QuickAnswer>
 
@@ -438,7 +438,7 @@ export default function FiveBySevenVsFourBySixPage() {
           </div>
           <p className="text-xs text-slate-400 mt-3">
             300 DPI is the Etsy standard for sharp printable files. Pixel
-            dimensions scale linearly with DPI — 150 DPI = half the pixels.
+            dimensions scale linearly with DPI: 150 DPI = half the pixels.
           </p>
         </section>
 
@@ -455,8 +455,8 @@ export default function FiveBySevenVsFourBySixPage() {
             white bars on the sides.
           </p>
           <p className="text-slate-600 leading-relaxed mb-4">
-            For Etsy digital art — especially wall art, quote prints, and
-            portraits — cropping is not acceptable. A seller who uploads once
+            For Etsy digital art (wall art, quote prints, portraits especially),
+            cropping is not acceptable. A seller who uploads once
             and then crops the 5×7 version will end up with a file that cuts off
             the composition. Buyers notice, and reviews suffer.
           </p>
@@ -500,7 +500,7 @@ export default function FiveBySevenVsFourBySixPage() {
 
           <p className="text-slate-600 leading-relaxed">
             The correct approach: export each size at its own ratio from the
-            same source image. SnapToSize does this automatically — upload once,
+            same source image. SnapToSize does this automatically: upload once,
             and the tool generates both a 1200×1800 px (4×6) and a 1500×2100 px
             (5×7) file, both with the full composition preserved and zero
             cropping.
@@ -525,7 +525,7 @@ export default function FiveBySevenVsFourBySixPage() {
                 4×6 buyers
               </p>
               <p className="text-slate-600 text-sm leading-relaxed">
-                Want a compact display print — desk frames, fridge magnets,
+                Want a compact display print: desk frames, fridge magnets,
                 scrapbooking. They can print at any drugstore (Walgreens, CVS,
                 Target) for under $1. Lower price point, impulse purchase. Works
                 well for quote prints, affirmation cards, and minimalist art.
@@ -539,7 +539,7 @@ export default function FiveBySevenVsFourBySixPage() {
                 5×7 buyers
               </p>
               <p className="text-slate-600 text-sm leading-relaxed">
-                Want a more prominent display — gallery walls, desk stands,
+                Want a more prominent display: gallery walls, desk stands,
                 gift-framing. Fits standard 5×7 frames from IKEA, Target, and
                 Walmart. Popular for portraits, botanical prints, and illustrated
                 art where detail matters. Slightly higher perceived value.
@@ -567,10 +567,10 @@ export default function FiveBySevenVsFourBySixPage() {
         {/* Mid-page CTA */}
         <div className="mb-16">
           <ContextualCTA
-            problem="Listing both 4×6 and 5×7? You need two separate files — different ratios mean different exports."
-            solution="SnapToSize generates both from one upload. No cropping, no guessing — just download and list."
+            problem="Listing both 4×6 and 5×7? You need two separate files. Different ratios mean different exports."
+            solution="SnapToSize generates both from one upload. No cropping, no guessing. Just download and list."
             appUrl={CTA_URL}
-            buttonText="Try Free — Export Both Sizes"
+            buttonText="Try Free: Export Both Sizes"
           />
         </div>
 
@@ -581,9 +581,8 @@ export default function FiveBySevenVsFourBySixPage() {
           </h2>
           <p className="text-slate-600 leading-relaxed mb-6">
             The manual workflow: open Photoshop or Canva, duplicate your file,
-            resize to 4×6, save. Reopen, resize to 5×7 — note the different
-            canvas size — save. Rename both files. Zip. Repeat for every new
-            design. For a shop with 50 listings, that&apos;s hours of repetitive
+            resize to 4×6, save. Reopen, resize to 5×7 (different canvas size),
+            save. Rename both files. Zip. Repeat for every new design. For a shop with 50 listings, that&apos;s hours of repetitive
             resizing that contributes nothing to your creative work.
           </p>
 
@@ -597,7 +596,7 @@ export default function FiveBySevenVsFourBySixPage() {
               {
                 step: "2",
                 title: "Select your sizes",
-                desc: "Pick the 2:3 pack (auto-includes 4×6 portrait and landscape) and add a 5×7 Single Export. Or build a saved custom pack with both — reuse it on every new design.",
+                desc: "Pick the 2:3 pack (auto-includes 4×6 portrait and landscape) and add a 5×7 Single Export. Or build a saved custom pack with both; reuse it on every new design.",
               },
               {
                 step: "3",
@@ -659,7 +658,7 @@ export default function FiveBySevenVsFourBySixPage() {
         <div className="mb-12">
           <FinalCTA
             heading="Stop exporting 4×6 and 5×7 separately by hand"
-            stat="One upload generates both sizes at 300 DPI — correctly cropped, named, and zipped."
+            stat="One upload generates both sizes at 300 DPI, correctly cropped, named, and zipped."
             description="SnapToSize handles 4×6, 5×7, and 30+ other Etsy sizes from a single image upload. Free to try, no account needed."
             buttonText="Try SnapToSize Free"
             appUrl={CTA_URL}

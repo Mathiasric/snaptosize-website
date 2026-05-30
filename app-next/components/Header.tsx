@@ -150,6 +150,9 @@ export function Header() {
                     <Link href="/ikea-ribba-frame-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       IKEA Ribba Frame Sizes
                     </Link>
+                    <Link href="/5x7-vs-4x6-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      5×7 vs 4×6 Size Guide
+                    </Link>
                     <Link href="/etsy-square-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Square Print Sizes
                     </Link>

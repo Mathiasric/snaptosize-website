@@ -40,7 +40,7 @@ SnapToSize is a SaaS tool for Etsy sellers selling digital wall art / printables
 
 - **Product:** Live and production-stable as of 2026-03-03
 - **First paying customer:** 2026-03-03
-- **Paying users:** 13 — MRR $152 (12 monthly + 1 yearly) — Stripe-verified 2026-05-27 (excl. Mathias test accounts + 1 refund (Lisa)). Confirmed churned (no renewal): Kirk (May 19), Dave (May 14), Jon (May 12). Watch: Alex Higgs + Subas renewal due ~May 27 — if cancelled it's 11 / $128.
+- **Paying users:** 15 — MRR $176 (14 monthly + 1 yearly) — +1 Pro monthly 2026-05-29 (Stripe-verified 2026-05-27 baseline; excl. Mathias test accounts + 1 refund (Lisa)). Confirmed churned: Kirk (May 19), Dave (May 14), Jon (May 12). Watch: Alex Higgs + Subas renewal was due 2026-05-27 (2 days overdue) — verify in Stripe; if cancelled, subtract from total.
 - **Free-to-paid conversion: ~37%** — discovered 2026-04-21 via Clerk + Stripe cross-reference (16 real users, 6 paying). SaaS standard is 2–5%. This confirms: problem is distribution, not conversion.
 - **SEO pages live:** ~89 — see `app-next/data/page-registry.json` for the authoritative count/breakdown (was 48 as of Apr 2026)
 - **Pack system:** 28 sizes across 5 ratio packs + 8 square + 3 large via single export = up to 70 files from one upload
