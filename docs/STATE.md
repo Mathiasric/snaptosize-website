@@ -19,7 +19,8 @@
    - ✅ `/image-resolution-for-print` — repositioned resolution page (May 28)
    - ✅ `/resize-image-without-cropping-etsy` — with BeforeAfterSlider (May 29)
    - ✅ `/ikea-ribba-frame-print-sizes` — OG + internal links (May 30)
-   - ⬜ size-comparison cluster (5x7 vs 4x6, 4x6 vs 5x7 etc) — **NEXT**
+   - ✅ `/5x7-vs-4x6-print-size` — comparison page, CSS size visual, buyer guide, FAQ schema (May 30)
+   - ⬜ size-comparison cluster continued (4x6 vs 5x7, 8x10 vs 5x7 etc) — **NEXT**
    - ⬜ ISO vs US print sizes explainer
    - Max 2 pages/day (pacing).
 2. **Cold email to power-sellers** (quote/typography niche — 30MB+ artboards, all packs = ideal Pro). Fastest path to the next paying users.
@@ -30,12 +31,12 @@
 Compete against **manual complexity** (Photoshop ~$60/mo, Canva per-size) — NOT "a faster resize tool." ICP has likely never opened Photoshop. Message: *no Photoshop, no manual per-size work, no cropping or distorting.*
 
 ## In-flight (this session)
-- 4 Tier-1 SEO pages shipped May 28–30 (DPI, resolution, resize-without-cropping, IKEA Ribba).
+- 5 Tier-1 SEO pages shipped May 28–30 (DPI, resolution, resize-without-cropping, IKEA Ribba, 5x7 vs 4x6).
 - BeforeAfterSlider component built + added to ratio + resize-without-cropping pages.
-- Brand audit: no rebrand needed. Logo color minor mismatch noted (logo purple vs #A78BFA).
+- Homepage redesign: AuthoritySection (icon grid → feature strip), TrustSection (card grid → checklist), HowItWorksSection (card grid → typographic numbered flow).
 - 24×36 unblocked in packs; runner deployed with corrected PACK_EXCLUDED_LABELS.
 - reply_to fix on size-request emails (support replies now go to requesting user).
-- **Next:** size-comparison cluster (5x7 vs 4x6) — next Tier-1 SEO page.
+- **Next:** OG image for 5x7-vs-4x6 page + more size comparison pages (4x6 vs 5x7, 8x10 vs 5x7).
 
 ## Parked / killed (don't revisit without a reason)
 - **Magic-wand / AI-fill** — KILLED (no churn evidence, poor results).
