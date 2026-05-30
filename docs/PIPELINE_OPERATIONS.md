@@ -103,7 +103,7 @@ published (platform A) → user resizes with SnapToSize → ready/ folder → /c
 | Dimensions | ~1000×1500 | ~1080×1350 | 1080×1920 |
 | metadata.json | required | required | required |
 | Caption/description | required (10+ chars) | required (10+ chars) | required (10+ chars) |
-| Hashtags | 0 (Pinterest removed them) | ≤ 5 | ≤ 30 |
+| Hashtags | 0 (Pinterest removed them) | **exactly 5 (required)** | ≤ 30 |
 | Link URL | required | optional | optional |
 | File size | < 20MB | < 20MB | < 100MB |
 

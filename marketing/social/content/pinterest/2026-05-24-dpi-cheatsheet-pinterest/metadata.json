@@ -1,0 +1,15 @@
+{
+  "id": "W23-P20",
+  "platform": "pinterest",
+  "type": "pin",
+  "image": "pin.jpg",
+  "title": "300 DPI Cheat Sheet — Every Etsy Print Size and Its Pixel Dimensions",
+  "description": "The formula: inches × 300 = pixels needed. 4×6 = 1200×1800px (2:3). 8×10 = 2400×3000px (4:5). 12×16 = 3600×4800px (3:4). 16×20 = 4800×6000px (4:5). A4 = 2480×3508px (ISO). A3 = 3508×4961px (ISO). SnapToSize handles all of this in one upload — every ratio, every size, 300 DPI.",
+  "board": "digital-prints",
+  "board_id": "1088463872381113667",
+  "link": "https://app.snaptosize.com",
+  "created": "2026-05-24",
+  "scheduled_for": "2026-05-25T19:00:00Z",
+  "r2_url": "https://social.snaptosize.com/content/pinterest/2026-05-24-dpi-cheatsheet-pinterest/pin.jpg",
+  "buffer_post_id": "6a134cfecc9ff193f81a6cce"
+}

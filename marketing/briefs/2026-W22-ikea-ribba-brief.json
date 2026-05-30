@@ -1,0 +1,159 @@
+{
+  "week": "W22",
+  "created_at": "2026-05-29T00:00:00Z",
+  "keywords": [
+    {
+      "keyword": "IKEA Ribba frame print sizes",
+      "slug": "ikea-ribba-frame-print-sizes",
+      "intent": "informational+commercial",
+      "page_type": "concept+reference",
+      "priority": "P1",
+      "cluster": "frame-sizes",
+      "meta_title": "IKEA Ribba Frame Print Sizes — Exact Pixels at 300 DPI",
+      "meta_description": "Exact pixel dimensions for every IKEA Ribba frame size at 300 DPI. Create Etsy digital prints that fit perfectly — no guessing, no cropping, no Photoshop.",
+      "h1": "IKEA Ribba Frame Print Sizes: Exact Pixels at 300 DPI for Every Frame",
+      "tone": "authoritative reference, slightly warm, tool-forward — like a knowledgeable Etsy seller friend who happens to know the math",
+      "word_count_target": 1400,
+      "sections": [
+        "Why Ribba Frames Confuse Digital Print Sellers (The Metric vs Inch Problem)",
+        "Complete Ribba Frame Size Chart — Pixels at 300 DPI",
+        "Which Ribba Sizes Are Already In Your SnapToSize Packs",
+        "Portrait vs Landscape: How to Create Both From One Upload",
+        "The 20×28 Size: Why It Doesn't Match Standard US Print Ratios",
+        "Step-by-Step: Create a Ribba-Ready Etsy Digital Print"
+      ],
+      "faqs": [
+        "What size print do I need for an IKEA Ribba 8x10 frame?",
+        "What are the pixel dimensions for an IKEA Ribba 12x16 frame at 300 DPI?",
+        "Do I need to create a separate file for portrait and landscape Ribba frames?",
+        "What print size fits the large IKEA Ribba 20x28 frame?",
+        "Why doesn't my US letter print fit in a Ribba frame?",
+        "Can I sell one design for multiple IKEA Ribba frame sizes?",
+        "What ratio is the IKEA Ribba 16x20 frame?"
+      ],
+      "ribba_size_data": {
+        "note": "Use this exact data in the main size chart table. All pixel values are at 300 DPI. Portrait sizes listed — landscape is dimensions swapped.",
+        "sizes": [
+          {
+            "frame_label": "IKEA Ribba 5×7\"",
+            "inches": "5×7",
+            "cm": "13×18 cm",
+            "ratio": "5:7",
+            "pixels_300dpi": "1500×2100",
+            "snaptosize_pack": "Extras pack",
+            "notes": "Great for small gallery walls, bedside frames"
+          },
+          {
+            "frame_label": "IKEA Ribba 8×10\"",
+            "inches": "8×10",
+            "cm": "20×25 cm",
+            "ratio": "4:5",
+            "pixels_300dpi": "2400×3000",
+            "snaptosize_pack": "4:5 ratio pack (included automatically)",
+            "notes": "Most popular Ribba size. 4:5 ratio = same family as 16×20"
+          },
+          {
+            "frame_label": "IKEA Ribba 12×16\"",
+            "inches": "12×16",
+            "cm": "30×40 cm",
+            "ratio": "3:4",
+            "pixels_300dpi": "3600×4800",
+            "snaptosize_pack": "3:4 ratio pack (included automatically)",
+            "notes": "Widely used in European markets. 3:4 ratio."
+          },
+          {
+            "frame_label": "IKEA Ribba 16×20\"",
+            "inches": "16×20",
+            "cm": "40×50 cm",
+            "ratio": "4:5",
+            "pixels_300dpi": "4800×6000",
+            "snaptosize_pack": "4:5 ratio pack (included automatically)",
+            "notes": "Statement wall size. Same ratio family as 8×10"
+          },
+          {
+            "frame_label": "IKEA Ribba 20×28\"",
+            "inches": "20×28",
+            "cm": "50×70 cm",
+            "ratio": "5:7",
+            "pixels_300dpi": "6000×8400",
+            "snaptosize_pack": "Not in standard packs — create separately at 6000×8400 px",
+            "notes": "Poster format. 5:7 ratio — not 2:3. Closest SnapToSize size is 20×30 (2:3). Sellers must create a dedicated file or crop a small strip from a 20×30."
+          }
+        ]
+      },
+      "key_insights_for_writer": [
+        "The core pain: Ribba frames use metric sizing (cm) internally, sold in inch equivalents in the US. This confuses sellers who look up '30x40cm' and get different pixel numbers than '12x16 inch' — they're the same frame.",
+        "The SnapToSize win: 8×10, 12×16, and 16×20 are all covered by existing packs (4:5 and 3:4). One upload → all three automatically. Only 5×7 (Extras) and 20×28 (nonstandard) need special attention.",
+        "The 20×28 nuance: This is a 5:7 ratio, NOT a standard 2:3 (which would be 20×30). Sellers who upload a 2:3 file and assume it fits 20×28 will get a slightly cropped result. The page should explain this clearly — it's a genuine pain point nobody addresses.",
+        "Portrait/landscape is easy: SnapToSize generates both orientations in every pack. If your design is portrait-only, you still get landscape files in the ZIP — just note buyers will need to select the right one.",
+        "Pixel math must be clearly shown: this is a reference page. Include the table prominently, above the fold if possible. Sellers come here for the numbers — earn trust with accuracy, then convert.",
+        "Competitor gap: custommat.ca and printforfun.sg list matboard dimensions (the opening behind the frame mat), NOT the print size. This creates confusion — a seller following custommat.ca guidance will create a print too small. Our page should address this: use the full frame size, not the mat opening, for digital prints."
+      ],
+      "competitor_gaps": "No page currently answers 'what pixel dimensions do I create for IKEA Ribba frames at 300 DPI' from an Etsy seller perspective. IKEA.com lists product specs only. custommat.ca and printforfun.sg address physical matboard cutting for print shops — not digital file creation for Etsy. Reddit threads are confused and contradictory on the 12x16 vs 30x40cm equivalency. YouTube has no dedicated guide. This is a fully open niche.",
+      "competitor_approaches": [
+        {
+          "url": "https://www.ikea.com/us/en/cat/ribba-series-16456/",
+          "approach": "Product catalog only — lists frame dimensions, colors, materials. Zero guidance on what print size to create.",
+          "h2s": []
+        },
+        {
+          "url": "https://www.custommat.ca/ikea-frame-matboard-sizing-guide",
+          "approach": "Physical matboard cutting guide for print shops. Lists mat opening sizes (smaller than frame), not digital print sizes. Will mislead digital sellers.",
+          "h2s": ["IKEA Ribba Series matboard sizes"]
+        },
+        {
+          "url": "https://www.printforfun.sg/blog/your-ultimate-ikea-frame-guide/",
+          "approach": "Singapore print shop guide. Focuses on physical photo prints, cm-only sizing, no pixel dimensions or DPI guidance. No Etsy angle.",
+          "h2s": ["IKEA Frame Sizes Photo Print Guide"]
+        }
+      ],
+      "search_signals": {
+        "paa_questions": [
+          "What size print fits in IKEA Ribba frame?",
+          "What is the pixel size for 12x16 at 300 DPI?",
+          "Is IKEA Ribba 12x16 the same as 30x40 cm?",
+          "What ratio is the IKEA Ribba 16x20 frame?",
+          "Can I sell Etsy prints for IKEA frames?"
+        ],
+        "related_searches": [
+          "IKEA Ribba frame sizes chart",
+          "IKEA Ribba 12x16 print size",
+          "IKEA frame print dimensions 300 DPI",
+          "what size print for IKEA frame",
+          "IKEA Ribba 20x28 print size",
+          "Etsy printable for IKEA frames"
+        ],
+        "volume_signal": "SERP for 'IKEA Ribba frame sizes' has IKEA.com + two small print shop blogs + Reddit. No tool-focused or Etsy-seller-focused page. Low competition, high buyer intent — the searcher is actively trying to create or buy a print. Ribba is IKEA's flagship frame series, globally recognized. Traffic ceiling is solid for a niche reference page."
+      },
+      "conversion_angle": "Reference page with table-first layout. Earn trust with accurate pixel data upfront (this is what they came for). Mid-page: reveal that 3 of the 5 Ribba sizes are already in SnapToSize packs — one upload handles 8×10, 12×16, 16×20 automatically. CTA: 'Try Free — Upload once, get all Ribba sizes ready to sell.' Final CTA after FAQ. UTM: ?source=seo_ikea-ribba-frame-print-sizes&kind=guide",
+      "page_design_notes": "Clean, light background (not dark — this is a reference/info page, not a concept/problem page). Hero: bold headline + the key stat ('3 of 5 Ribba sizes covered automatically'). Main table should be visually distinct — use teal accent (#2DD4BF) to highlight the rows where SnapToSize packs auto-cover the size. Add a small SnapToSize badge/chip on those rows. After table: mid-page ContextualCTA. Then explain the 20×28 nuance section. Then FAQ. Then FinalCTA. Include ListingOutputShowcase component. Include RelatedPages component at the bottom pointing to: etsy-print-sizes, etsy-8x10-print-size, print-size-for-frame-guide, etsy-print-ratios.",
+      "link_to": [
+        "etsy-print-sizes",
+        "etsy-8x10-print-size",
+        "print-size-for-frame-guide",
+        "etsy-print-ratios",
+        "best-resolution-for-etsy-printables"
+      ],
+      "link_from": [
+        "etsy-print-sizes",
+        "print-size-for-frame-guide",
+        "etsy-8x10-print-size"
+      ],
+      "sources": [
+        {
+          "claim": "IKEA Ribba series comes in 5x7, 8x10, 12x16, 16x20, and 20x28 inch sizes (US market)",
+          "url": "https://www.ikea.com/us/en/cat/ribba-series-16456/"
+        },
+        {
+          "claim": "Matboard size reference for IKEA Ribba frames (note: these are mat opening sizes, not full frame/print sizes)",
+          "url": "https://www.custommat.ca/ikea-frame-matboard-sizing-guide"
+        },
+        {
+          "claim": "IKEA Ribba is a globally popular gallery frame series used in Etsy art display contexts",
+          "url": "https://www.reddit.com/r/IKEA/comments/bo5og9/confused_by_ikea_frame_sizing/"
+        }
+      ],
+      "internal_linking_notes": "After shipping this page, add a contextual link from print-size-for-frame-guide: 'Selling prints for IKEA Ribba frames? See our dedicated Ribba size guide.' Also add from etsy-8x10-print-size: '8×10 is the most popular IKEA Ribba frame size — perfect 4:5 ratio.' And from etsy-print-sizes pillar: mention IKEA Ribba as a common frame standard with link."
+    }
+  ]
+}

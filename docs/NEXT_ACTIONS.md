@@ -1,6 +1,29 @@
 # NEXT_ACTIONS.md — This Week's Priorities
-**Week of:** 2026-04-27
-**Updated by:** Claude Code — 2026-04-27
+**Week of:** 2026-05-07 (W21)
+**Updated by:** Claude Code — 2026-05-11
+
+## ✅ Magic Wand — Smart Zoom-Fill implementert (2026-05-11)
+
+**Beslutning etter konkurranseresearch (7 verktøy):** AI outpainting (fal.ai, Firefly, Canva) feiler universelt på print art — alle er trent på foto/naturlige bakgrunner. Gradient fill gir synlige seamer. Smart zoom-fill er den riktige tilnærmingen:
+
+- `_smart_fill()` i `runner/main.py` byttet fra gradient fill → **zoom-fill + center crop**
+  - `scale = max(...)` i stedet for `min(...)` — fyller hele rammen
+  - Cropper til senter — beholder motivet, mister ~8–17% av kanter
+  - Ingen AI-kall, ingen seamer, ingen importendringer
+- Alle Magic Wand-filer (Worker-gating, Pro-gate, polling UI, ZIP-flow) beholdes uendret
+
+**Neste steg for Magic Wand:**
+- [ ] Deploy runner til prod: `cd /c/dev/snaptosize-worker/services/runner && fly deploy --app snaptosize-runner2`
+- [ ] E2E test: last opp 2:3-bilde som Pro-bruker → verifiser 4:5-output visuelt
+- [ ] Legg til Magic Wand-tab i `app/app/layout.tsx` (én linje) etter verifisering
+
+## 🎯 SEO-mulighet: Bulk Mockup sin gap (2026-05-11)
+
+Bulk Mockup skriver eksplisitt i sin egen blogg at "stretching is a common mistake" og at selgere bør fikse ratio FØR de bruker Bulk Mockup — men tilbyr ikke verktøyet til å gjøre det. Dette er en direkte søkemulighet:
+
+- **Target:** "how to resize etsy print art without stretching", "etsy aspect ratio fix", "bulk mockup resize alternative"
+- **Vinkel:** SnapToSize løser problemet Bulk Mockup dokumenterer men ikke løser
+- **Format:** SEO-side eller bloggpost + Pinterest-pin fra research
 
 ---
 
@@ -33,6 +56,30 @@ If you're not sure where to put energy, the answer is **always**:
 ## 📅 Scheduled check-ins
 
 - **~2026-05-06** — Run `/gsc-review` to measure CTR effect of 2 title rewrites shipped 2026-04-26 (commit d78ceb2): `/etsy-20mb-file-limit` and `/etsy-bookmark-size`. Baseline: pos 8.0 / 0.1% CTR (20mb), pos 14.8 / 0% CTR (bookmark). If CTR moved up, replicate pattern on 3-5 more pages.
+
+## ✅ W22 Social Pipeline (day 3) — 2026-05-10
+
+3 Pinterest pins scheduled to Buffer:
+- W22-P07 "Never Opened Photoshop?" — Gemini split-screen (photoshop-trap) — 18:00 UTC — seller-tools board
+- W22-P08 "5 Size Mistakes Costing Sales" — React/Playwright (Top5MistakesShowcase) — 07:00 UTC May 11 — seller-tools board
+- W22-P09 "End the File Chaos" — React/Playwright (PainSolutionSlide folder-chaos) — 18:00 UTC May 11 — seller-tools board
+pipeline-state.json updated. W22 total: 9 pins published (P01–P09).
+
+## ✅ W22 Social Pipeline (day 2) — 2026-05-09
+
+3 Pinterest pins scheduled to Buffer:
+- W22-P04 "Gallery Wall Size Guide" — Gemini reference card — 14:00 UTC — print-size-guides board
+- W22-P05 "What Buyers Actually Search For" — Gemini bar chart — 17:00 UTC — seller-tools board
+- W22-P06 "5 Ratio Packs Breakdown" — React/Playwright — 20:00 UTC — print-size-guides board
+pipeline-state.json updated. W22 total: 6 pins published (P01–P06).
+
+## ✅ W21 Social Pipeline — 2026-05-07
+
+3 Pinterest pins scheduled to Buffer:
+- W21-P01 "1 Upload, 70 Files" — Gemini editorial — 14:00 UTC — seller-tools board
+- W21-P02 "Etsy ZIP Rejected" — Gemini pain/solution — 17:00 UTC — seller-tools board
+- W21-P03 "Price Ladder" — React/Playwright — 20:00 UTC — print-size-guides board
+pipeline-state.json updated to W21.
 
 ---
 

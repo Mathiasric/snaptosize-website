@@ -147,6 +147,9 @@ export function Header() {
                     <Link href="/print-size-for-frame-guide" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Print-to-Frame Guide
                     </Link>
+                    <Link href="/ikea-ribba-frame-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      IKEA Ribba Frame Sizes
+                    </Link>
                     <Link href="/etsy-square-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Square Print Sizes
                     </Link>
@@ -493,6 +496,9 @@ export function Header() {
                         </Link>
                         <Link href="/etsy-8x10-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           8&times;10 Print Size
+                        </Link>
+                        <Link href="/ikea-ribba-frame-print-sizes" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          IKEA Ribba Frame Sizes
                         </Link>
                         <Link href="/etsy-5x7-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           5&times;7 Print Size

@@ -1,4 +1,7 @@
 # SnapToSize — Scaling to $1M ARR Execution Plan
+
+> STALE (as of 2026-05-27) — the metrics and status below are from March 2026 and are outdated. Current scaling plan: `docs/plans/master-execution-plan-2026-05-07.md`. Kept for historical context only.
+
 **Created:** 2026-03-17
 **Status:** 3 paying users · $32 MRR · $109 revenue day 1 (2026-03-23) · 27 SEO pages · Calculator live · Social active · Lead capture live · Partner program live · 7 outreach emails sent · Pack system: 28 sizes in 5 packs, up to 70 files total
 **Last updated:** 2026-03-24
@@ -9,8 +12,8 @@
 
 | Metric | Now | Target | Gap |
 |--------|-----|--------|-----|
-| Paying users | 3 | 7,500 | 2,500x |
-| MRR | $32 | $83,333 | 2,604x |
+| Paying users | 10 | 7,500 | 2,500x |
+| MRR | $200 | $83,333 | 2,604x |
 | Organic traffic | ~50/mo (est.) | 90-180k/mo | 2,000-3,600x |
 | SEO pages | 27 | 200+ | ~7x |
 | Conversion rate | Unknown | 7-10% | No data |

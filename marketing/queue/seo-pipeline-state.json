@@ -63,15 +63,24 @@
       "status": "drafted",
       "drafted_at": "2026-05-28",
       "notes": "Concept/problem page — ratios cluster. Differentiator: SnapToSize = stretch-only scaling, not AI outpainting. CSS scale-vs-crop diagram, ratio table (5 groups), 3-method comparison. 6 H2, 7 FAQs, 3 schemas (Article+BC+FAQ), QuickAnswer first, ListingOutputShowcase=misty_lake. 6 internal links. Pending OG image + build + deploy."
+    },
+    {
+      "slug": "ikea-ribba-frame-print-sizes",
+      "keyword": "IKEA Ribba frame print sizes",
+      "type": "new-page",
+      "cluster": "frame-sizes",
+      "status": "drafted",
+      "drafted_at": "2026-05-29",
+      "notes": "Reference/info page — frame-sizes cluster. Light-bg hero with CSS grid pattern, teal-accented size table (5 Ribba sizes, 3 marked In Pack), ContextualCTA, 20x28 nuance section (5:7 not 2:3), step-by-step section, ListingOutputShowcase=wildflower, 7 FAQs, 3 schemas (Article+BC+FAQ), QuickAnswer first. Pending OG image + build + deploy."
     }
   ],
   "metrics": {
-    "total": 4,
+    "total": 5,
     "completed": 2,
     "failed": 0,
     "success_rate": 1
   },
-  "updated_at": "2026-05-28T21:19:00+02:00",
+  "updated_at": "2026-05-29T14:03:00+02:00",
   "batch_history": [
     {
       "batch_id": "2026-W21",

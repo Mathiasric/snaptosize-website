@@ -81,6 +81,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/ikea-ribba-frame-print-sizes" className="transition-colors hover:text-accent-light">
+                  IKEA Ribba Frame Sizes
+                </Link>
+              </li>
+              <li>
                 <Link href="/etsy-wedding-printable-sizes" className="transition-colors hover:text-accent-light">
                   Wedding Printable Sizes
                 </Link>
