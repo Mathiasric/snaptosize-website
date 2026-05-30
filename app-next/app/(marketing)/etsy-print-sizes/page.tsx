@@ -603,7 +603,11 @@ export default function EtsyPrintSizesPage() {
                   </h3>
                   <p className="text-sm text-foreground-60 mb-4">
                     The most widely used ratio for vertical wall art. Matches
-                    common frames at IKEA, Target, and Amazon.
+                    common frames at IKEA, Target, and Amazon. The{" "}
+                    <Link href="/ikea-ribba-frame-print-sizes" className="underline hover:text-foreground transition-colors">
+                      IKEA Ribba series
+                    </Link>{" "}
+                    uses this ratio family for its most popular sizes.
                   </p>
                   <Card>
                     <div className="overflow-x-auto">
