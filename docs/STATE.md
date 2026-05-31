@@ -34,9 +34,8 @@ Compete against **manual complexity** (Photoshop ~$60/mo, Canva per-size) — NO
 - 5 Tier-1 SEO pages shipped May 28–30 (DPI, resolution, resize-without-cropping, IKEA Ribba, 5x7 vs 4x6).
 - BeforeAfterSlider component built + added to ratio + resize-without-cropping pages.
 - Homepage redesign: AuthoritySection (icon grid → feature strip), TrustSection (card grid → checklist), HowItWorksSection (card grid → typographic numbered flow).
-- 24×36 unblocked in packs; runner deployed with corrected PACK_EXCLUDED_LABELS.
-- reply_to fix on size-request emails (support replies now go to requesting user).
-- **Next:** OG image for 5x7-vs-4x6 page + more size comparison pages (4x6 vs 5x7, 8x10 vs 5x7).
+- **Social pipeline rebuild (May 31):** GEMINI_PROMPT_LIBRARY.md rebuilt — 3 new seller-education-first concepts added (print-size-reference, frame-size-match, ratio-cropping-education), PROMPT 2 replaced (UI demo → size reference), PROMPT 6 replaced (stats-hero → frame-match). Analytics broken status documented. Frequency reduced 21→4 pins/week.
+- **Next:** Run first batch with new concepts (print-size-reference, frame-size-match, ratio-cropping-education) — validate seller-education angle. Check Pinterest Analytics manually after 2 weeks.
 
 ## Parked / killed (don't revisit without a reason)
 - **Magic-wand / AI-fill** — KILLED (no churn evidence, poor results).

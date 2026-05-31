@@ -78,6 +78,10 @@ Alle Gemini-bilder MÅ inneholde disse elementene **bakt direkte inn i bildet**:
 
 **QA-test:** Dekk all tekst i bildet. Skjønner du at det er SnapToSize og hva det løser? Nei = regen.
 
+**Seller-first test:** Fjern alle SnapToSize-referanser fra hooken. Løser bildet fortsatt et reelt selger-problem eller gir det konkret verdi? Nei → omskriv hooken. SnapToSize er løsningen som avsløres i caption — ikke hero i selve bildet. Unntaket: aspirational-livsstil der produktresultatet ER poenget (etsy-notifications, the-clean-zip).
+
+**Educational exception:** Reference-content (print-size-reference, frame-size-match, ratio-cropping-education) trenger ikke `app.snaptosize.com` synlig i selve bildet. URL-pill er valgfri — SnapToSize nevnes i caption/Pinterest-beskrivelse. Referanseinnhold konverterer via save → return visit, ikke direkte klikk.
+
 ---
 
 ## TEKNISKE INNSTILLINGER
@@ -187,35 +191,57 @@ Photorealistic, DSLR studio lighting, no people.
 
 ---
 
-## PROMPT 2 — En-upload-enkelheten: UI mockup (en-upload-enkelheten)
+## PROMPT 2 — Størrelses-referanse: Kanoniske Etsy print-størrelser (print-size-reference)
 
-**Hook:** "Upload once. 70 files ready."
-**Scroll-stopp:** Konkret produkt-demonstrasjon — folk ser nøyaktig hva de får
+**Konsept-ID:** `print-size-reference`
+**Hook:** "The print sizes every Etsy buyer looks for — and the exact pixels at 300 DPI."
+**Scroll-stopp:** Reference-innhold selgere bookmarker og returnerer til. Høyest save-rate på Pinterest.
+**Innholdstype:** Utdanning-first. SnapToSize nevnes bare i URL-pill og caption — ikke som produkt-hero.
+
+**Pinterest keywords:** etsy print sizes, print size guide, 300 dpi pixel dimensions, etsy digital download sizes, wall art print sizes
 
 ```
-Photorealistic product marketing image, vertical portrait format, 9:16.
+Clean educational reference poster, vertical portrait format 2:3 (1000×1500px).
 
-LAYOUT: Clean white/light grey gradient background, minimalist Apple aesthetic.
+BACKGROUND: Warm cream (#F7F3EE) — not dark SaaS aesthetic. This is a seller's reference guide.
 
-TOP 20%: Dark navy bar (#0B0B12). Bold white text, large:
-  "Upload once."
-  Bold teal text (#2DD4BF), same size: "70 files ready."
-Smaller grey text: "5 ratio packs · 300 DPI · Etsy-ready"
+TOP 15%:
+  Small teal label (#2DD4BF), monospace uppercase: "ETSY PRINT SIZE GUIDE"
+  Bold dark heading (#1A1A1A), large: "Every size your buyers search for"
+  Thin teal divider line.
 
-MIDDLE 65%: Centered MacBook Air mockup (60% of frame width).
-  Browser open to app.snaptosize.com.
-  Interface shows: file "botanical_print.png" uploaded, green progress bar 100%.
-  Screen text clearly readable: "Your 70 files are ready to download".
-  5 white ZIP folder cards fan upward from the laptop top edge:
-    "2:3 Pack — 7 files", "3:4 Pack — 5 files", "4:5 Pack — 5 files",
-    "ISO Pack — 5 files", "Extras — 6 files"
-  Each card has a teal ZIP icon.
+MAIN CHART (middle 70%):
+  Two-column table, clean minimal borders.
+  Left column header: "PRINT SIZE" (dark, bold)
+  Right column header: "PIXELS AT 300 DPI" (dark, bold)
 
-BOTTOM 15%: Small clean text: "28 sizes portrait · plus landscape & square · 70 files total"
-  Rounded teal pill: "app.snaptosize.com · Free to start"
+  Row 1:  4×6"      |  1200 × 1800 px
+  Row 2:  5×7"      |  1500 × 2100 px
+  Row 3:  8×10"     |  2400 × 3000 px
+  Row 4:  11×14"    |  3300 × 4200 px
+  Row 5:  16×20"    |  4800 × 6000 px
+  Row 6:  18×24"    |  5400 × 7200 px
+  Row 7:  24×36"    |  7200 × 10800 px
+  Thin divider line
+  Row 8:  A4         |  2480 × 3508 px
+  Row 9:  A3         |  3508 × 4961 px
+  Row 10: A2         |  4961 × 7016 px
 
-No people. Soft studio lighting. Photorealistic.
+  Each row alternates cream and very slightly warmer white. Size column left-aligned, pixel column right-aligned.
+  Small note below table, grey italic: "* Portrait. Landscape = swap width/height."
+
+BOTTOM 15%:
+  Teal highlight strip: "All at 300 DPI · JPG · Etsy-ready"
+  Small teal pill (optional): "app.snaptosize.com"
+
+Style: Reference poster aesthetic — warm, readable, like a well-designed cheat sheet. Not SaaS-dark.
+No people. No UI chrome. Clean typographic chart only.
 ```
+
+**Variasjoner (bytt per batch):**
+- Bakgrunn/tone: cream (#F7F3EE) → warm white → soft sage (#EEF2EE)
+- Chart-stil: bordered rows → lined separators → alternating card rows
+- Hook: "Save this." / "Bookmark this for your next listing." / "Your buyers are searching these exact sizes right now."
 
 ---
 
@@ -323,34 +349,55 @@ Photorealistic UI mockup, shallow depth of field.
 
 ---
 
-## PROMPT 6 — Statistikk-hero: Tall som stopper (stats-visual)
+## PROMPT 6 — Frame-match: IKEA + standard rammer (frame-size-match)
 
-**Hook:** "1 file. 5 packs. 70 files."
-**Scroll-stopp:** Enkle tall kommuniserer umiddelbar verdi
+**Konsept-ID:** `frame-size-match`
+**Hook:** "IKEA Ribba frames take these exact print sizes — and most Etsy sellers don't stock them."
+**Scroll-stopp:** Kjøpere kjøper ramme FØR de kjøper print. Selgere som vet dette konverterer bedre.
+**Innholdstype:** Utdanning-first. Konkret problem: selgere vet ikke hvilke størrelser som passer rammer.
+
+**Pinterest keywords:** ikea ribba frame print sizes, what size print fits ikea frame, standard frame sizes, etsy print sizes for frames, 12x16 print size
 
 ```
-Clean graphic design image, vertical portrait format, 9:16. Dark background (#0B0B12).
+Clean educational reference visual, vertical portrait format 2:3 (1000×1500px).
 
-TOP 15%: Small teal text (#2DD4BF), monospace: "app.snaptosize.com"
-  Thin teal line underneath.
+BACKGROUND: Warm off-white (#F5F0EB). Frame-guide editorial aesthetic — not SaaS-dark.
 
-CENTER 55%: Bold typographic hierarchy, centered:
-  Very large white text: "1 file"
-  Teal arrow pointing down: "↓"
-  Very large teal text: "70 files"
-  Smaller grey text below: "5 ratio packs · 300 DPI · Etsy-ready · No Photoshop"
+TOP 15%:
+  Teal label (#2DD4BF), monospace uppercase: "FRAME SIZING GUIDE"
+  Bold dark heading: "Which prints fit IKEA Ribba"
+  Thin teal divider.
 
-LOWER 20%: Three stat cards side by side (dark cards, teal accent):
-  Card 1: "5" large teal, small grey: "ratio packs"
-  Card 2: "70" large white, small grey: "total files"
-  Card 3: "300" large teal, small grey: "DPI guaranteed"
+SECTION A — "IKEA Ribba" (bold label, upper middle area):
+  Three simple outlined frame rectangles, proportionally sized, side by side:
+  [5×7 rectangle]    [8×10 rectangle]    [12×16 rectangle]
+  Below each frame:
+  "RIBBA 5×7"        "RIBBA 8×10"        "RIBBA 12×16"
+  Small grey text:
+  "stock 5×7 prints" "stock 8×10 prints" "stock 12×16 prints"
 
-BOTTOM 10%: Teal rounded pill, white text: "Try free · app.snaptosize.com"
-  Subtle teal glow behind pill.
+  Teal callout box, slightly below:
+  "12×16 is IKEA's most popular size — and the most missed size on Etsy."
 
-Clean, bold, graphic design aesthetic. No photos. No people.
-Typography-driven, high contrast. Looks like a premium SaaS ad.
+SECTION B — "Standard US frames" (bold label):
+  Clean two-column list:
+  "4×6 frame   →   4×6 print"
+  "5×7 frame   →   5×7 print"
+  "8×10 frame  →   8×10 print"
+  "11×14 frame →   11×14 print"
+  "16×20 frame →   16×20 print"
+
+BOTTOM 10%:
+  Small grey text: "Offer all 5 → never lose a buyer who already has the frame."
+  Optional teal pill: "app.snaptosize.com · Generate all sizes free"
+
+Style: Interior design reference guide aesthetic. Warm, readable. Frame outlines are simple line-art, not photos.
 ```
+
+**Variasjoner:**
+- Frame focus: IKEA Ribba only → IKEA Ribba + Hovsta → IKEA + Michaels US standard
+- Artwork in frames: Show a small botanical thumbnail inside each frame rectangle (variation B)
+- Hook: "12×16 is IKEA Ribba's most popular frame. Do you sell that size?" / "Buyers buy the frame first. These prints fit."
 
 ---
 
@@ -626,16 +673,75 @@ Typography: bold condensed sans-serif for headlines, monospace or clean sans for
 
 ---
 
+## PROMPT 13 — Ratio-forklaring: Samme kunst, tre beskjæringer (ratio-cropping-education)
+
+**Konsept-ID:** `ratio-cropping-education`
+**Hook:** "This is what 'ratio' actually means for your art — and why you need all three."
+**Scroll-stopp:** Ratio-forvirring er #1 spørsmål fra nye Etsy-selgere. Dette besvarer det visuelt.
+**Innholdstype:** Utdanning-first. Selgere forstår ikke hvorfor de trenger flere ratio-packs — dette viser det.
+
+**Pinterest keywords:** print ratios explained, etsy print ratios, 2x3 vs 4x5, portrait vs square print, what is print ratio
+
+```
+Clean educational split visual, vertical portrait format 2:3 (1000×1500px).
+
+BACKGROUND: Soft neutral (#F4F1ED) — warm, editorial.
+
+TOP 15%:
+  Teal label (#2DD4BF), monospace uppercase: "PRINT RATIOS EXPLAINED"
+  Bold dark heading: "Same design — three different crops"
+  Thin teal divider.
+
+MAIN VISUAL (middle 70%):
+  Three print rectangles arranged vertically with spacing, each showing the SAME botanical artwork
+  but cropped/fitted to a different ratio. Each rectangle is outlined with a thin dark border.
+
+  RECTANGLE 1 — Tall portrait (2:3 ratio):
+    Label above: "2:3 RATIO"
+    Example sizes below: "4×6 · 8×12 · 12×18 · 20×30 · 24×36"
+    Artwork crops: Shows a tall vertical slice — full height of the plant, narrow width.
+
+  RECTANGLE 2 — Square-ish portrait (4:5 ratio):
+    Label above: "4:5 RATIO"
+    Example sizes below: "4×5 · 8×10 · 16×20"
+    Artwork crops: Slightly wider — more of the composition shows.
+
+  RECTANGLE 3 — Almost square (1:1 or 5:4 landscape):
+    Label above: "SQUARE (1:1)"
+    Example sizes below: "8×8 · 10×10 · 12×12"
+    Artwork: Wide crop — shows much more horizontal space, tallest elements cut off.
+
+  Below all three, a teal callout box:
+  "Upload one file. Get all three ratios. No cropping, no distortion."
+
+BOTTOM 10%:
+  Small grey text: "Buyers frame in every ratio. Stock all three — or lose the sale."
+  Optional teal pill: "app.snaptosize.com · All 5 ratios, one upload"
+
+Style: Educational diagram aesthetic. Clean, warm. Artwork in rectangles should look like real botanical prints.
+Composition should clearly show how the SAME artwork appears different at each ratio — this is the educational point.
+```
+
+**Variasjoner:**
+- Artwork-tema: botanical → abstract geometric → landscape photo
+- Layout: Vertical stack → side-by-side three columns (for landscape ratios)
+- Hook: "Why the same design needs 5 different files on Etsy." / "Your buyers shop in every ratio. Are you stocking all three?"
+
+---
+
 ## GJENBRUKSREGLER
+
+**Analytics-notat (oppdatert W23 2026-05-31):** Buffer API returnerer 0 stats for alle poster — aldri fungert. Sjekk performance manuelt: Pinterest Analytics (pinterest.com/analytics) ukentlig for saves + impressions. Logg funnene under hvert konsept ved gjenbruk. Måleparameter for suksess: saves > 20 per pin innen 30 dager.
 
 | Konsept | Cooldown | Sist brukt |
 |---------|----------|------------|
-| folder-chaos | 4 uker | W19 (22.04) |
-| missing-buyer | 4 uker | W19 (22.04) |
-| dpi-comparison (gammel) | 4 uker | W15 |
-| en-til-mange | 4 uker | W16 |
-| galleryvegg-ratioene | 4 uker | W20 (27.04) |
-| livsstil-den-tidrike-selgeren | 4 uker | W16 |
+| folder-chaos | 4 uker | W19 (22.04) — KLAR |
+| missing-buyer | 4 uker | W19 (22.04) — KLAR |
+| dpi-comparison (gammel) | 4 uker | W18 (30.04) — KLAR |
+| en-til-mange | 4 uker | W22 (12.05) — Variation B: sage linen flat-lay, 5 ratio-pack cards fanning from MacBook Air (Midnight), wildflower botanical thumbnail on cards, "1 upload. Every size she'll ever frame." hook — KLAR ~09.06 |
+| canva-limitation | 4 uker | W22 (12.05) — Variation A: iMac split-screen Canva resize dialog (left) vs SnapToSize 5-pack export dashboard (right), "Canva resizes. SnapToSize exports every Etsy size." hook — KLAR ~09.06 |
+| galleryvegg-ratioene | 4 uker | W20 (27.04) — KLAR |
+| livsstil-den-tidrike-selgeren | 4 uker | W20 (02.05) — KLAR |
 | bestseller-butikken | 4 uker | W20 (27.04) |
 | de-5-premium-pakkene | 4 uker | W17 |
 | quote-selgeren | 4 uker | W17 |
@@ -646,6 +752,96 @@ Typography: bold condensed sans-serif for headlines, monospace or clean sans for
 | photoshop-trap | 4 uker | W19 (23.04) |
 | international-unlock | 4 uker | W19 (23.04) |
 | sunday-afternoon | 4 uker | W19 (24.04) |
-| size-guide-infographic | 4 uker | — (aldri brukt) |
+| size-guide-infographic | 4 uker | W20 (02.05) — Option D radial hub, celestial-night-sky, dark-card-contrast, "70 sizes · vertical/landscape/square" hook |
+| bedroom-gallery-mixed-sizes | 4 uker | W20 (03.05) — warm Scandi-bohemian bedroom corner, three-frame cluster (8×10/11×14/16×20) of same botanical, terracotta+cream+ochre+sage palette, "Framed in three sizes. Uploaded once." hook |
+| craft-flatlay-export-ready | 4 uker | W20 (03.05) — top-down flat-lay, sage-grey linen surface, MacBook showing SnapToSize export dashboard with 5 packs/28 sizes, three printed botanicals + eucalyptus + coffee, "From one file — every size she'll frame." hook |
+| etsy-notifications-tonight | 4 uker | W22 (10.05) — Variation A: iPhone 15 Pro on charcoal bedspread, 3 Etsy sale notifications (Portland/London/Melbourne), warm lamp 22:14, "What happens when you stock every size." hook |
+| the-clean-zip | 4 uker | W22 (10.05) — Variation A: MacBook Pro Space Black on white marble, Finder List View showing 5 clean ZIP packs (2-3/3-4/4-5/ISO/Extras), "This is what your buyers see." hook |
 
-**Klare nå:** `dpi-comparison`, `en-til-mange` (W16 og eldre, cooldown utløpt) — NB: `livsstil-den-tidrike-selgeren` brukt W19 (24.04), klar igjen ~22.05 | `galleryvegg-ratioene` brukt W20 (27.04), klar igjen ~25.05 | `bestseller-butikken` brukt W20 (27.04), klar igjen ~25.05
+**Klare nå (W23 — 2026-05-31):** `folder-chaos` · `missing-buyer` · `dpi-comparison` · `galleryvegg-ratioene` · `livsstil-den-tidrike-selgeren` · `bestseller-butikken` · `bedroom-gallery-mixed-sizes` · `craft-flatlay-export-ready` · `sunday-afternoon` · `photoshop-trap` · `international-unlock` · `size-guide-infographic` · `print-size-reference` (NY) · `frame-size-match` (NY) · `ratio-cropping-education` (NY)
+
+**Klar ~09.06:** `en-til-mange` · `canva-limitation` · `etsy-notifications-tonight` · `the-clean-zip`
+
+**Neste batch — prioritér:** Start med de 3 nye konseptene (print-size-reference, frame-size-match, ratio-cropping-education) for å validere seller-education-first-retningen. Kjør maks 4 pins/uke, ikke 7+.
+
+---
+
+## KONSEPT 11 — "Tonight's Etsy Notifications" (etsy-notifications-tonight)
+
+**Hook:** "What happens when you stock every size."
+**Scroll-stopp:** Selgere ser konkrete salgs-notifikasjoner fra UK + US + AU — direkte bevis for at ISO-støtte = internasjonal omsetning
+**Variation system:** Endre notifikasjon-tidspunkt, selger-art (pastell-botanical / abstract / geometric), og rombelysning mellom bruk
+
+### Variation A (W22 — brukt 10.05.2026)
+Setting: Mørkt soverom, iPhone på sengeteppet, varm lampebelysning fra siden (temperatur 2700K)
+Art direction: Moody, intimate — ser ut som virkelig screenshottet av en fornøyd selger klokken 22
+
+```
+Photorealistic marketing image, vertical 2:3 portrait format (1000×1500px).
+
+SCENE: A woman's hand holds an iPhone 15 Pro (Natural Titanium, black frame) against a dark charcoal bedspread. The phone screen shows iOS 17 Notification Center in Dark Mode. Time displayed at top: 22:14. Battery 73%.
+
+NOTIFICATION 1 (topmost, Etsy app icon):
+  Header: "Etsy · New order"
+  Body text: "Sarah M. ordered 2-3 Ratio Pack · Portland, OR · $7.99"
+  Timestamp: "11 min ago"
+
+NOTIFICATION 2 (middle, Etsy app icon):
+  Header: "Etsy · New order"
+  Body text: "James H. ordered ISO A-Series Pack · London, UK · £6.99"
+  Timestamp: "34 min ago"
+
+NOTIFICATION 3 (bottom, Etsy app icon):
+  Header: "Etsy · New order"
+  Body text: "Priya K. ordered Full Bundle · Melbourne, AU · A$14.99"
+  Timestamp: "1 hr ago"
+
+OVERLAY TEXT (top of image, above the hand/phone scene):
+  Bold white text, large: "What happens when you stock every size."
+  Smaller teal text (#2DD4BF) below: "3 sales. 3 countries. 0 refund requests."
+
+BOTTOM 10%: Rounded pill, dark background, white text: "app.snaptosize.com · Free to start"
+
+Lighting: Single warm bedside lamp glow from upper right (2700K, soft). Shallow depth of field — phone screen sharp, bedspread slightly soft. Real iPhone glass glare visible on screen edges.
+Photography style: Authentic lifestyle — NOT studio stock. Looks like a real seller's bedroom at night.
+No text overlaid by graphic software — all text appears ON the iPhone screen as part of the UI.
+```
+
+---
+
+## KONSEPT 12 — "The Clean ZIP" (the-clean-zip)
+
+**Hook:** "This is what your buyers see. Is yours this clean?"
+**Scroll-stopp:** Konkret Finder-vindu med eksakte ZIP-pakkenavn trigger gjenkjenning hos Etsy-selgere som ikke har strukturert sine nedlastinger
+**Variation system:** Endre overflate (tre-skrivebord / marmor / grønn matte), antall åpne Finder-paneler, og om en ZIP er utvidet/innhold synlig
+
+### Variation A (W22 — brukt 10.05.2026)
+Setting: Hvit marmor-overflate, MacBook Pro 14" (Space Black), macOS Sonoma Finder i List View, klar dagslys fra venstre
+Art direction: Clean editorial — produktivitets-estetikk, ingen clutter
+
+```
+Photorealistic marketing image, vertical 2:3 portrait format (1000×1500px).
+
+SCENE: Top-down flat-lay. MacBook Pro 14" Space Black, lid open, keyboard visible at bottom edge. macOS Sonoma Finder window open and centered on screen, List View. White marble surface underneath laptop.
+
+FINDER WINDOW — exact UI details:
+  Window title bar: "Botanical Wall Art — Etsy Digital Download"
+  Five rows, each a ZIP file, in this exact order:
+  Row 1: [ZIP icon] "2-3_Ratio_Pack.zip"  |  148 MB  |  Today 14:32
+  Row 2: [ZIP icon] "3-4_Ratio_Pack.zip"  |  112 MB  |  Today 14:32
+  Row 3: [ZIP icon] "4-5_Ratio_Pack.zip"  |  98 MB   |  Today 14:32
+  Row 4: [ZIP icon] "ISO_Pack.zip"         |  134 MB  |  Today 14:32
+  Row 5: [ZIP icon] "Extras.zip"           |  76 MB   |  Today 14:32
+  All rows alternate white/very light grey. No other files visible. Window is perfectly sized to show exactly these 5 rows.
+
+OVERLAY TEXT (top quarter of image, above MacBook):
+  Bold dark text on white/light background: "This is what your buyers see."
+  Teal subheading (#2DD4BF): "Is yours this clean?"
+  Small grey text below: "5 packs · 70 files · 300 DPI · Etsy-ready"
+
+BOTTOM 10%: Teal rounded pill: "app.snaptosize.com · Free to start"
+
+Light: Diffused natural window light from upper left. Slight specular highlight on laptop aluminum edge. No harsh shadows.
+Style: Apple product photography meets workspace flat-lay. Ultra-sharp Finder UI text, no motion blur.
+Render the macOS UI with pixel-perfect accuracy — scrollbar, traffic light buttons (red/yellow/green), column headers (Name | Size | Date Modified) all visible.
+```
