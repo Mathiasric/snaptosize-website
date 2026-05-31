@@ -8,15 +8,14 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
-import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
-  title: "Etsy Sticker Sheet Size: Exact Pixels & DPI Guide (2026)",
+  title: 'Etsy Sticker Sheet Size: 8.5×11" = 2,550×3,300 px (300 DPI Guide)',
   description:
     'Standard Etsy sticker sheet sizes: 8.5×11" (2550×3300px), A4 (2480×3508px), 6×9" for Cricut. 300 DPI guide for print-ready sheets and digital planner stickers.',
   alternates: { canonical: "https://snaptosize.com/etsy-sticker-sheet-size" },
   openGraph: {
-    title: "Etsy Sticker Sheet Size: Exact Pixels & DPI Guide | SnapToSize",
+    title: 'Etsy Sticker Sheet Size: 8.5×11" = 2,550×3,300 px | SnapToSize',
     description:
       'Standard Etsy sticker sheet sizes: 8.5×11" (2550×3300px), A4 (2480×3508px), 6×9" for Cricut. 300 DPI guide for print-ready sheets and digital planner stickers.',
     url: "https://snaptosize.com/etsy-sticker-sheet-size",
@@ -31,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Etsy Sticker Sheet Size: Exact Pixels & DPI Guide",
+    title: 'Etsy Sticker Sheet Size: 8.5×11" = 2,550×3,300 px',
     description:
       '8.5×11" (2550×3300px), A4 (2480×3508px), 6×9" Cricut-friendly. Complete 300 DPI guide for Etsy sticker sellers.',
     images: ["/assets/og/etsy-sticker-sheet-size.png"],
@@ -149,126 +148,146 @@ export default function EtSyStickerSheetSizePage() {
       />
 
       {/* ===== HERO ===== */}
-      <section
-        className="relative py-20 md:py-28 overflow-hidden"
+      <div
+        className="border-b border-border"
         style={{
-          background:
-            "linear-gradient(135deg, #030712 0%, #0a0f1e 40%, #0d1117 100%)",
+          background: "#080d0d",
+          backgroundImage:
+            "linear-gradient(rgba(45,212,191,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(45,212,191,0.035) 1px, transparent 1px)",
+          backgroundSize: "40px 40px",
         }}
       >
-        {/* Dot grid background */}
-        <div
-          className="absolute inset-0 opacity-[0.07]"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle, #a78bfa 1px, transparent 1px)",
-            backgroundSize: "24px 24px",
-          }}
-        />
+        <div className="container mx-auto px-4 md:px-8 max-w-[1200px] pt-10 pb-16 md:pt-14 md:pb-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-        {/* Gradient mesh blobs */}
-        <div
-          className="absolute top-0 left-1/4 w-96 h-96 rounded-full opacity-[0.12] blur-3xl pointer-events-none"
-          style={{
-            background:
-              "radial-gradient(circle, #2dd4bf 0%, transparent 70%)",
-          }}
-        />
-        <div
-          className="absolute bottom-0 right-1/4 w-96 h-96 rounded-full opacity-[0.10] blur-3xl pointer-events-none"
-          style={{
-            background:
-              "radial-gradient(circle, #a78bfa 0%, transparent 70%)",
-          }}
-        />
+            {/* Left: text */}
+            <div>
+              <nav className="mb-5 flex items-center gap-1.5 text-xs text-foreground-60/60">
+                <Link href="/" className="hover:text-foreground transition-colors">Home</Link>
+                <span>/</span>
+                <Link href="/etsy-print-sizes" className="hover:text-foreground transition-colors">Etsy Print Sizes</Link>
+                <span>/</span>
+                <span>Sticker Sheet Size</span>
+              </nav>
 
-        <Container>
-          <div className="relative z-10 max-w-3xl mx-auto text-center">
-            {/* Breadcrumb */}
-            <nav className="flex items-center justify-center gap-2 text-sm text-foreground-40 mb-6">
-              <Link href="/" className="hover:text-foreground-60 transition-colors">
-                Home
-              </Link>
-              <span>/</span>
-              <Link
-                href="/etsy-print-sizes"
-                className="hover:text-foreground-60 transition-colors"
+              <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "rgba(45,212,191,0.7)" }}>
+                Sticker Sellers Guide
+              </p>
+
+              <h1 className="text-[2.75rem] md:text-5xl font-bold tracking-tight leading-tight mb-6">
+                Etsy Sticker Sheet{" "}
+                <span style={{ color: "#2DD4BF" }}>Dimensions</span>
+              </h1>
+
+              <p className="text-lg text-foreground-60 mb-7 max-w-[520px]">
+                Three sheet sizes cover 95% of Etsy sticker listings — with exact pixel dimensions, 300 DPI specs, and Cricut compatibility rules for print-ready and digital planner stickers.
+              </p>
+
+              <div className="flex flex-wrap gap-2 mb-8">
+                {["300 DPI for print", "JPG print-ready files", "20 MB Etsy limit"].map((pill) => (
+                  <span
+                    key={pill}
+                    className="inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium"
+                    style={{
+                      border: "1px solid rgba(45,212,191,0.25)",
+                      background: "rgba(45,212,191,0.08)",
+                      color: "#2DD4BF",
+                    }}
+                  >
+                    <Check className="h-3 w-3" />
+                    {pill}
+                  </span>
+                ))}
+              </div>
+
+              <a href={appUrl} className="inline-block mb-7">
+                <Button>Resize Sticker Sheets Free</Button>
+              </a>
+
+              {/* Inline quick answer */}
+              <div
+                className="rounded-xl p-4"
+                style={{
+                  background: "rgba(45,212,191,0.05)",
+                  border: "1px solid rgba(45,212,191,0.12)",
+                }}
               >
-                Etsy Print Sizes
-              </Link>
-              <span>/</span>
-              <span className="text-foreground-60">Sticker Sheet Size</span>
-            </nav>
-
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-teal-400/20 bg-teal-400/5 text-teal-300 text-xs font-medium tracking-widest uppercase mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-teal-400 animate-pulse" />
-              Sticker Sellers Guide
+                <p
+                  className="text-xs font-semibold uppercase tracking-widest mb-2"
+                  style={{ color: "#2DD4BF" }}
+                >
+                  Quick Answer
+                </p>
+                <p className="text-sm text-foreground leading-relaxed">
+                  <strong>US Letter 8.5×11″ at 300 DPI = 2,550×3,300 px.</strong>{" "}
+                  A4 = 2,480×3,508 px. Cricut 6×9″ = 1,800×2,700 px. Full guide below.
+                </p>
+              </div>
             </div>
 
-            {/* H1 */}
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">
-              Etsy Sticker Sheet Size:{" "}
-              <span className="text-teal-300">Exact Pixels & DPI</span>
-            </h1>
-
-            <p className="text-lg text-foreground-60 mb-8 max-w-2xl mx-auto">
-              The three standard sticker sheet sizes for Etsy — US Letter,
-              A4, and Cricut-friendly 6×9 — with exact pixel dimensions,
-              DPI requirements, and file format rules for both print-ready
-              and digital planner stickers.
-            </p>
-
-            {/* Trust pills */}
-            <div className="flex flex-wrap items-center justify-center gap-3 mb-10">
-              {[
-                "300 DPI for print",
-                "JPG print-ready files",
-                "20 MB Etsy limit",
-                
-              ].map((pill) => (
-                <span
-                  key={pill}
-                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/[0.06] border border-white/10 text-sm text-foreground-60 whitespace-nowrap"
+            {/* Right: sticker dimensions card */}
+            <div className="hidden md:block">
+              <div
+                className="rounded-2xl p-6"
+                style={{
+                  background: "linear-gradient(145deg, #0a1f1e 0%, #061210 100%)",
+                  border: "1px solid rgba(45,212,191,0.15)",
+                  boxShadow: "0 0 40px rgba(45,212,191,0.04)",
+                }}
+              >
+                <p
+                  className="text-xs font-mono font-medium tracking-[0.2em] mb-5"
+                  style={{ color: "rgba(45,212,191,0.55)" }}
                 >
-                  <Check className="w-3.5 h-3.5 text-teal-400 flex-shrink-0" />
-                  {pill}
-                </span>
-              ))}
-            </div>
-
-            {/* Hero CTA */}
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <a href={appUrl}>
-                <Button className="w-full sm:w-auto">
-                  Resize Sticker Sheets Free
-                </Button>
-              </a>
-              <a href="#sizes">
-                <Button
-                  variant="secondary"
-                  className="w-full sm:w-auto"
+                  STICKER SHEET SIZES @ 300 DPI
+                </p>
+                <div className="space-y-1">
+                  {[
+                    { size: 'US Letter 8.5×11"', px: "2550×3300 px", note: "Most common" },
+                    { size: "A4 (210×297 mm)", px: "2480×3508 px", note: "EU sellers" },
+                    { size: 'Cricut 6×9"', px: "1800×2700 px", note: "Print & Cut" },
+                    { size: 'Half Sheet 5.5×8.5"', px: "1650×2550 px", note: "" },
+                    { size: "A5 (148×210 mm)", px: "1748×2480 px", note: "Planner size" },
+                  ].map(({ size, px, note }) => (
+                    <div
+                      key={size}
+                      className="flex items-center justify-between py-3"
+                      style={{ borderBottom: "1px solid rgba(45,212,191,0.07)" }}
+                    >
+                      <div>
+                        <span className="text-sm text-foreground-60">{size}</span>
+                        {note && (
+                          <span className="ml-2 text-xs" style={{ color: "rgba(45,212,191,0.45)" }}>
+                            {note}
+                          </span>
+                        )}
+                      </div>
+                      <span
+                        className="text-sm font-mono font-semibold"
+                        style={{ color: "#2DD4BF" }}
+                      >
+                        {px}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+                <p
+                  className="text-xs text-foreground-40 mt-4 pt-4 font-mono"
+                  style={{ borderTop: "1px solid rgba(45,212,191,0.07)" }}
                 >
-                  See All Sizes →
-                </Button>
-              </a>
+                  SnapToSize exports all sizes automatically
+                </p>
+              </div>
             </div>
           </div>
-        </Container>
-      </section>
+        </div>
+      </div>
 
       {/* ===== MAIN CONTENT ===== */}
       <section className="py-16 md:py-20">
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
 
-            {/* Quick Answer */}
-            <QuickAnswer question="What is the standard Etsy sticker sheet size in pixels?">
-              <strong>8.5×11" at 300 DPI = 2550×3300 pixels</strong> (US Letter) is the
-              most common Etsy sticker sheet size. For European buyers, use A4 at 300 DPI
-              = 2480×3508 pixels. For Cricut Print &amp; Cut, use 6×9" = 1800×2700
-              pixels to stay within the 9.25×6.75" maximum print area.
-            </QuickAnswer>
 
             {/* ===== STANDARD SIZES ===== */}
             <div id="sizes">
