@@ -12,7 +12,7 @@ Two independent pipelines produce content weekly:
 
 | Pipeline | Output | Targets/week | Entry point |
 |----------|--------|-------------|-------------|
-| **Social Media** | Pinterest pins, TikTok videos, Instagram Reels | 35 (21 pin + 7 TikTok + 7 Reels) | `/pipeline-run-week` |
+| **Social Media** | Pinterest pins, TikTok videos, Instagram Reels | 8–12/week (4 pin + 3–4 TikTok/Reels + 1 carousel) | `/pipeline-run-week` |
 | **SEO Content** | Blog/guide pages on snaptosize.com | 10 pages | `/seo-run-week` |
 
 **State files:**
@@ -46,7 +46,7 @@ That's it. The orchestrator skill handles everything else inline.
 | 5. **User review** | Shows pass/fail summary → user approves | ⏸️ PAUSE |
 | 6. Schedule | Uploads to R2, schedules via Buffer | `run-pipeline.py --stage scheduler` |
 | 7. Metrics | Auto-saved on every state save | Automatic |
-| 8. **Track performance** | Pull analytics from Buffer, correlate to items, generate insights | `run-pipeline.py --stage tracker` |
+| 8. **Track performance** | ⚠️ Buffer API returns 0 stats — broken since launch. Manual: check Pinterest Analytics (pinterest.com/analytics) for saves/impressions. Log in GEMINI_PROMPT_LIBRARY.md cooldown table. | Manual weekly |
 
 ### Manual Stage Commands
 
@@ -432,10 +432,18 @@ Three automated tools for data-driven growth optimization. Run regularly.
 7. Run `python marketing/seo-optimizer/content-gap-detector.py` → new page opportunities
 8. Run `python marketing/seo-optimizer/striking-distance.py` → optimize near-page-1 pages
 
-**Feedback loop (automated since 2026-04-09):**
-- Social pipeline now carries `previous_insights` → analyst/researcher/ideator agents use last week's performance to guide next batch
-- Content creator agent now sets `content_type` + `layout` on every item → insights engine can aggregate properly
-- PostHog tracks: `email_capture_view/submitted/success`, `cta_clicked` (with source/type), `scroll_depth` (25/50/75/100%)
+**Feedback loop — STATUS: BROKEN (documented 2026-05-31):**
+- Buffer Publish API returns 0 impressions/saves/clicks for every post — has never returned real data
+- `previous_insights` in pipeline-state.json carries forward zero-data — provides no actual signal
+- `run-pipeline.py --stage tracker` should be SKIPPED until replaced with real analytics
+
+**Manual analytics replacement (interim):**
+1. Pinterest: pinterest.com/analytics → check weekly impressions + saves per pin
+2. Instagram: Instagram Insights (app) → check reach + saves for recent posts
+3. Log results in GEMINI_PROMPT_LIBRARY.md cooldown table notes
+4. Quality target: saves > 20/pin within 30 days = keep the concept; saves < 5 = rework angle
+
+**PostHog tracks:** `cta_clicked` (with source/type), `scroll_depth` (25/50/75/100%)
 
 ---
 

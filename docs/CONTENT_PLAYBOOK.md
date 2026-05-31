@@ -115,20 +115,26 @@ Save your own size set once, then reuse it in one click on every new design — 
 ---
 
 ### 3. Pinterest (Pipeline: automated)
-**Target:** 21 pins/week (3/day)
+**Target:** 4 pins/week — quality over volume. (Reduced 2026-05-31: high volume with low engagement suppresses distribution.)
 **Format:** Static images (1000×1500, 2:3)
 **Pipeline:** Part of social pipeline
 
-**Pin types:**
-- Infographic carousels (7 slides)
-- Single image with text overlay
-- Size chart visuals
+**Pin types (priority order):**
+1. Educational reference sheets (print size charts, frame guides, ratio explainers) — highest save rate
+2. Seller-pain before/after — problem shown first, SnapToSize as solution in caption
+3. Aspirational lifestyle (Gemini) — successful seller context, warm palette
+4. Product workflow — only after seller problem is established
+
+**Seller-first rule:** Every hook must provide value if SnapToSize didn't exist. "70 files ready" fails this test. "The print sizes IKEA Ribba buyers look for" passes it.
 
 **Rules:**
 - NO custom hashtags (Pinterest removed them)
 - USE topic tags from Pinterest categories
-- Keywords in description (searchable text)
-- Board names: "Etsy Seller Tips", "Printables Business"
+- Keywords in description — Pinterest is a search engine, optimize descriptions for it
+- Description structure: value statement → specific sizes/data → Etsy relevance → SnapToSize → CTA
+- Board targeting: Print Size Guides (reference), Seller Tools (lifestyle), Digital Prints (workflow)
+
+**Analytics:** Pinterest Business Analytics (pinterest.com/analytics) manually weekly. Target: saves > 20/pin in 30 days.
 
 ---
 
