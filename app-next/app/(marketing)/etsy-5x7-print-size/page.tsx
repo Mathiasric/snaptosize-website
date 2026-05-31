@@ -454,7 +454,11 @@ export default function Etsy5x7PrintSizePage() {
                 Think of it like this: a 4×6 photo is long and narrow (like a
                 postcard), an 8×10 is almost square, and 5×7 is somewhere in
                 between. They&apos;re all slightly different shapes, so resizing
-                between them will always cut something off.
+                between them will always cut something off. See the full{" "}
+                <Link href="/5x7-vs-4x6-print-size" className="text-accent-light hover:underline">
+                  5×7 vs 4×6 size comparison
+                </Link>{" "}
+                for pixel dimensions and which sells better on Etsy.
               </p>
               <p className="text-foreground-60">
                 Because 5×7 has its own unique shape, SnapToSize includes it

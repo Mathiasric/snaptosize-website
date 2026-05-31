@@ -168,10 +168,17 @@ def upload_to_r2(local_path: Path, r2_key: str) -> str:
     content_type = _mime.get(local_path.suffix.lower(), "application/octet-stream")
     cmd = ["npx", "wrangler", "r2", "object", "put", f"{bucket}/{r2_key}",
            "--file", str(local_path), "--content-type", content_type, "--remote"]
-    result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8",
-                            errors="replace", cwd=str(PROJECT_ROOT), shell=True)
-    if result.returncode != 0:
-        raise RuntimeError(f"R2 upload failed: {result.stderr}")
+    for attempt in range(3):
+        result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8",
+                                errors="replace", cwd=str(PROJECT_ROOT), shell=True)
+        if result.returncode == 0:
+            break
+        if "429" in result.stderr and attempt < 2:
+            import time as _time
+            print(f"    R2 rate-limited, venter 20s (forsok {attempt+1}/3)...")
+            _time.sleep(20)
+        else:
+            raise RuntimeError(f"R2 upload failed: {result.stderr}")
     return f"{R2_URL}/{r2_key}"
 
 

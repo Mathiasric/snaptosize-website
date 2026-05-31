@@ -2,11 +2,11 @@
 
 **Read this first each session.** Live data (Stripe / PostHog / GSC) = truth. This file is re-derived from current reality, not inherited from older docs. Older doc claims are *dated evidence to verify*, never commands.
 
-**Last updated:** 2026-05-27 (Stripe + working session)
+**Last updated:** 2026-05-30 (session update)
 
 ## Where we are (live)
-- **13 paying Pro · ~$152 MRR** (12 monthly @ $11.99 + 1 yearly @ $97) — Stripe-verified 2026-05-27 (excl. Mathias test accounts + Lisa refund).
-- Watch: Alex Higgs + Subas renewals ~May 27 → if both cancel, ~11 / ~$128.
+- **16 paying Pro · ~$188 MRR** (15 monthly @ $11.99 + 1 yearly @ $97) — +1 Pro monthly confirmed 2026-05-29.
+- Watch: Alex Higgs + Subas renewals ~May 27 → verify in Stripe if still active.
 - **Free→paid conversion ~37%** (SaaS standard 2–5%).
 - Pricing: Monthly $11.99 · Yearly $97 (−33%). $1M-ARR model = **2,500–4,000 users @ $11.99–$29**.
 
@@ -14,7 +14,15 @@
 **The bottleneck is DISTRIBUTION — not conversion, not quality, not price.** 37% conversion is elite; we simply have too few qualified visitors. Judge every lever by: *does it bring more Etsy-printable sellers to the product?*
 
 ## Top priorities (ranked: ARR-impact ÷ effort)
-1. **SEO acquisition** — the compounding volume engine. Next: Tier-1 easy-win pages (weak SERPs, real pain): DPI explainer ("why 300 DPI isn't enough"), aspect-ratio-without-cropping, size-comparison cluster (5x7 vs 4x6…), ratio cluster, ISO vs US sizes, IKEA Ribba. Max 2 pages/day (pacing).
+1. **SEO acquisition** — the compounding volume engine. Tier-1 easy-win pages (weak SERPs, real pain):
+   - ✅ `/dpi-for-print` — DPI explainer (May 28)
+   - ✅ `/image-resolution-for-print` — repositioned resolution page (May 28)
+   - ✅ `/resize-image-without-cropping-etsy` — with BeforeAfterSlider (May 29)
+   - ✅ `/ikea-ribba-frame-print-sizes` — OG + internal links (May 30)
+   - ✅ `/5x7-vs-4x6-print-size` — comparison page, CSS size visual, buyer guide, FAQ schema (May 30)
+   - ⬜ size-comparison cluster continued (4x6 vs 5x7, 8x10 vs 5x7 etc) — **NEXT**
+   - ⬜ ISO vs US print sizes explainer
+   - Max 2 pages/day (pacing).
 2. **Cold email to power-sellers** (quote/typography niche — 30MB+ artboards, all packs = ideal Pro). Fastest path to the next paying users.
 3. **Retention via My Packs adoption** (combat "no longer need it" churn) — uses built features, no new build.
 - Later: ARPU (a $29 "Studio/Agency" tier; annual already exists). Quality/delight = post-50-users.
@@ -23,7 +31,12 @@
 Compete against **manual complexity** (Photoshop ~$60/mo, Canva per-size) — NOT "a faster resize tool." ICP has likely never opened Photoshop. Message: *no Photoshop, no manual per-size work, no cropping or distorting.*
 
 ## In-flight (this session)
-- Watermark fixed + deployed; new demo video + pain-point hero live; doc cleanup committed; this brain seeded.
+- 5 Tier-1 SEO pages shipped May 28–30 (DPI, resolution, resize-without-cropping, IKEA Ribba, 5x7 vs 4x6).
+- BeforeAfterSlider component built + added to ratio + resize-without-cropping pages.
+- Homepage redesign: AuthoritySection (icon grid → feature strip), TrustSection (card grid → checklist), HowItWorksSection (card grid → typographic numbered flow).
+- 24×36 unblocked in packs; runner deployed with corrected PACK_EXCLUDED_LABELS.
+- reply_to fix on size-request emails (support replies now go to requesting user).
+- **Next:** OG image for 5x7-vs-4x6 page + more size comparison pages (4x6 vs 5x7, 8x10 vs 5x7).
 
 ## Parked / killed (don't revisit without a reason)
 - **Magic-wand / AI-fill** — KILLED (no churn evidence, poor results).

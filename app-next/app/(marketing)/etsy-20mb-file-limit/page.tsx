@@ -8,6 +8,7 @@ import { Check, ArrowRight, AlertCircle, FileWarning } from "lucide-react";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import { FAQAccordion } from "@/components/FAQAccordion";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import RelatedPages from "@/components/RelatedPages";
 import { FileSizeChecker } from "@/components/FileSizeChecker";
 
@@ -221,7 +222,7 @@ export default function Etsy20MBFileLimitPage() {
             {/* Left: copy + instant answer */}
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white leading-tight">
-                Fix Etsy&apos;s 20MB File Size Limit — Free Tool
+                Fix Etsy&apos;s 20MB File Size Limit: Free Tool
               </h1>
               {/* Instant answer — plain semantic HTML for AI Overview / snippet citability */}
               <p className="text-white/85 mb-5 leading-relaxed">
@@ -245,7 +246,7 @@ export default function Etsy20MBFileLimitPage() {
                 </Link>
               </div>
               <p className="mt-4 text-sm text-white/50">
-                Free plan available — no credit card required. Every file guaranteed under 20MB.
+                Free plan available, no credit card required. Every file guaranteed under 20MB.
               </p>
             </div>
 
@@ -260,6 +261,11 @@ export default function Etsy20MBFileLimitPage() {
       <section className="py-8">
         <Container>
           <div className="max-w-4xl space-y-16">
+            {/* ===== QUICK ANSWER ===== */}
+            <QuickAnswer question="What is Etsy's 20MB file size limit?">
+              Etsy enforces a strict <strong>20MB limit per file</strong> on all digital downloads (up to 5 files per listing). The limit applies to each file individually, not the total. PNG files fail most often because they run 3-10x larger than JPG at print quality. The fix: save artwork as JPG at 300 DPI and split sizes into separate ratio-pack ZIPs so every file stays under 20MB.
+            </QuickAnswer>
+
             {/* ===== SECTION 1: What Is Etsy's 20MB Limit? ===== */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
@@ -311,7 +317,7 @@ export default function Etsy20MBFileLimitPage() {
                         You&apos;re using PNG files instead of JPG
                       </h3>
                       <p className="text-sm text-foreground-60 mb-3">
-                        PNG files are <strong>3-10x larger</strong> than JPG — and exceed Etsy&apos;s 20MB limit on almost every size.
+                        PNG files are <strong>3-10x larger</strong> than JPG and exceed Etsy&apos;s 20MB limit on almost every size.
                         SnapToSize automatically converts any input format (PNG, WebP, TIFF) to optimized JPG, so you never need to convert manually.
                       </p>
                       <div className="bg-background-5 p-4 rounded-lg border border-border">
@@ -348,7 +354,7 @@ export default function Etsy20MBFileLimitPage() {
                       <div className="bg-background-5 p-4 rounded-lg border border-border">
                         <p className="text-xs font-semibold mb-2">Wrong approach:</p>
                         <div className="text-sm text-foreground-60 space-y-1">
-                          <p>❌ all_sizes.zip — too large, Etsy rejects this</p>
+                          <p>❌ all_sizes.zip: too large, Etsy rejects this</p>
                         </div>
                         <p className="text-xs font-semibold mt-3 mb-2">Correct approach:</p>
                         <div className="text-sm text-green-600 space-y-1">
@@ -372,7 +378,7 @@ export default function Etsy20MBFileLimitPage() {
                 The Correct Solution: Ratio Packs as Separate ZIPs
               </h2>
               <p className="text-foreground-60 mb-6">
-                Professional Etsy sellers organize digital downloads into <strong>ratio packs</strong> — one ZIP per ratio family.
+                Professional Etsy sellers organize digital downloads into <strong>ratio packs</strong>: one ZIP per ratio family.
                 This keeps each file under 20MB and improves the buyer experience.
               </p>
 
@@ -633,7 +639,7 @@ export default function Etsy20MBFileLimitPage() {
                     {item.step === "5" && (
                       <div className="mt-4 p-5 rounded-lg bg-accent-5 border-2 border-accent-light/30">
                         <p className="text-sm font-medium mb-3">
-                          Skip all 5 steps — SnapToSize accepts any image format and automatically converts to optimized JPG, organizes by ratio, and delivers every pack under 20MB. Ready to upload to Etsy in seconds.
+                          Skip all 5 steps: SnapToSize accepts any image format and automatically converts to optimized JPG, organizes by ratio, and delivers every pack under 20MB. Ready to upload to Etsy in seconds.
                         </p>
                         <a
                           href={appUrl}
@@ -704,7 +710,7 @@ export default function Etsy20MBFileLimitPage() {
             <div className="pt-8 pb-8">
               <FinalCTA
                 heading="Never Hit Etsy's 20MB Limit Again"
-                stat="Every ZIP guaranteed under 20 MB — zero manual compression"
+                stat="Every ZIP guaranteed under 20 MB, zero manual compression"
                 description="SnapToSize automatically generates JPG files at 300 DPI, organizes them into ratio packs, and guarantees every ZIP stays under 20MB. Upload once, download Etsy-ready files."
                 buttonText="Start Free"
                 appUrl={appUrl}

@@ -1852,12 +1852,33 @@
       "stage": "published",
       "scheduled_for": "2026-05-29T19:00:00Z",
       "slug": "2026-05-28-price-ladder-pinterest"
+    },
+    {
+      "id": "W23-G25",
+      "platform": "pinterest",
+      "stage": "published",
+      "scheduled_for": "2026-05-31T13:00:00Z",
+      "slug": "2026-05-29-pixel-precision-pinterest"
+    },
+    {
+      "id": "W23-G26",
+      "platform": "pinterest",
+      "stage": "published",
+      "scheduled_for": "2026-05-31T16:00:00Z",
+      "slug": "2026-05-29-3of5-invisible-pinterest"
+    },
+    {
+      "id": "W23-P24",
+      "platform": "pinterest",
+      "stage": "published",
+      "scheduled_for": "2026-05-31T19:00:00Z",
+      "slug": "2026-05-29-bright-pack-showcase-pinterest"
     }
   ],
   "metrics": {
-    "total": 97,
-    "completed": 36,
+    "total": 100,
+    "completed": 39,
     "failed": 0,
-    "success_rate": 0.37
+    "success_rate": 0.39
   }
 }

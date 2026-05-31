@@ -2014,5 +2014,27 @@
       "etsy-print-ratios",
       "best-resolution-for-etsy-printables"
     ]
+  },
+  {
+    "slug": "5x7-vs-4x6-print-size",
+    "title": "5×7 vs 4×6 Print Size — Which Is Bigger and What Are the Pixels?",
+    "pageType": "comparison",
+    "keywords": [
+      "5x7 vs 4x6",
+      "5x7 vs 4x6 print size",
+      "is 5x7 bigger than 4x6",
+      "5x7 pixel dimensions 300 dpi",
+      "4x6 pixel dimensions 300 dpi",
+      "difference between 5x7 and 4x6 print"
+    ],
+    "cluster": "size-comparison",
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "ikea-ribba-frame-print-sizes",
+      "etsy-8x10-print-size",
+      "etsy-print-ratios",
+      "resize-image-without-cropping-etsy",
+      "best-resolution-for-etsy-printables"
+    ]
   }
 ]

@@ -63,7 +63,7 @@ function FrameCard({
         style={{ width, height }}
       >
         <Image
-          src="/assets/listings/minimalist_abstract/Minimalist_Abstract.jpg"
+          src="/assets/listings/deer/Deer.jpg"
           alt="Artwork preview"
           fill
           className="object-cover"
@@ -182,19 +182,11 @@ export default function BrightPackShowcase({ ratio }: BrightPackShowcaseProps) {
         </p>
       </div>
 
-      {/* Bottom CTA bar */}
-      <div className="bg-teal-600 py-5 text-center">
+      {/* Bottom CTA bar — mt-auto pins it to the bottom */}
+      <div className="mt-auto bg-teal-600 py-6 text-center">
         <div className={`${s.cta} text-white font-bold`}>
           70 print-ready files → snaptosize.com
         </div>
-      </div>
-
-      {/* Footer */}
-      <div
-        className="py-3 text-center text-xs text-gray-400 tracking-widest"
-        style={{ background: "#EFECE8" }}
-      >
-        snaptosize.com
       </div>
     </section>
   );
