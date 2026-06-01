@@ -4,6 +4,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
+import { AuthorByline } from "@/components/AuthorByline";
 import { Button } from "@/components/Button";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { Check, ArrowRight, Ruler } from "lucide-react";
@@ -27,6 +28,7 @@ export const metadata: Metadata = {
     url: `https://snaptosize.com/${SLUG}`,
     type: "article",
     images: [`/assets/og/${SLUG}.png`],
+    modifiedTime: "2026-06-01T00:00:00Z",
   },
   twitter: {
     card: "summary_large_image",
@@ -191,6 +193,8 @@ export default function EightByTenVsElevenByFourteenPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
+
+      <AuthorByline lastUpdated="June 1, 2026" />
 
       {/* ===== HERO ===== */}
       <section
