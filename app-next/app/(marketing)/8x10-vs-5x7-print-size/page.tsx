@@ -43,7 +43,7 @@ const sizeTable = [
     ratio: "5:7",
     pixels: "1500×2100",
     area: "35 sq in",
-    pack: "5:7 Pack",
+    pack: "Extras Pack",
     inPack: true,
   },
   {
@@ -52,7 +52,7 @@ const sizeTable = [
     ratio: "7:5",
     pixels: "2100×1500",
     area: "35 sq in",
-    pack: "5:7 Pack",
+    pack: "Extras Pack",
     inPack: true,
   },
   {
@@ -104,7 +104,7 @@ const faqs = [
   {
     question: "Does SnapToSize export 5×7 and 8×10 files?",
     answer:
-      "Yes. Upload your design once and select the 5:7 pack to get your 5×7 at 1500×2100 px, or the 4:5 pack to get your 8×10 at 2400×3000 px — both at 300 DPI with no cropping. You can run both packs in sequence from a single upload.",
+      "Yes. Upload your design once and select the Extras pack to get your 5×7 at 1500×2100 px, or the 4:5 pack to get your 8×10 at 2400×3000 px — both at 300 DPI with no cropping. You can run both packs in sequence from a single upload.",
   },
 ];
 

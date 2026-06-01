@@ -62,8 +62,8 @@ const sizeTable = [
     ratio: "11:14",
     pixels: "3300×4200",
     area: "154 sq in",
-    pack: "Single Export",
-    inPack: false,
+    pack: "Extras Pack",
+    inPack: true,
   },
   {
     label: "11×14 (landscape)",
@@ -71,8 +71,8 @@ const sizeTable = [
     ratio: "14:11",
     pixels: "4200×3300",
     area: "154 sq in",
-    pack: "Single Export",
-    inPack: false,
+    pack: "Extras Pack",
+    inPack: true,
   },
 ];
 
@@ -105,7 +105,7 @@ const faqs = [
   {
     question: "Does SnapToSize export 8×10 and 11×14 files?",
     answer:
-      "Yes. Upload your design once and the 4:5 pack automatically generates 8×10 along with 16×20 and other 4:5 sizes at 300 DPI. For 11×14, use Single Export or build a custom saved pack — SnapToSize resizes to the exact pixel dimensions without cropping or distorting your artwork.",
+      "Yes. Upload your design once and the 4:5 pack automatically generates 8×10 along with 16×20 and other 4:5 sizes at 300 DPI. For 11×14, use the Extras pack — SnapToSize resizes to the exact pixel dimensions without cropping or distorting your artwork.",
   },
 ];
 
@@ -282,8 +282,8 @@ export default function EightByTenVsElevenByFourteenPage() {
               >
                 <Check className="w-5 h-5 text-teal-500 flex-shrink-0" />
                 <span className="text-slate-700 font-medium text-sm">
-                  8×10 is auto-covered by the 4:5 pack. 11×14 exports in one
-                  click via Single Export.
+                  8×10 is auto-covered by the 4:5 pack. 11×14 is in the Extras
+                  pack — both export in one click.
                 </span>
               </div>
 
