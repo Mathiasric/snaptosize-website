@@ -234,7 +234,7 @@ export default function EtsyPrintSizeCalculatorPage() {
 
       {/* ===== HERO ===== */}
       <section
-        className="relative py-20 md:py-28 overflow-hidden"
+        className="relative pt-10 pb-12 md:pt-14 md:pb-16 overflow-hidden"
         style={{
           background:
             "linear-gradient(135deg, #030712 0%, #0a0f1e 40%, #0d1117 100%)",
@@ -264,63 +264,10 @@ export default function EtsyPrintSizeCalculatorPage() {
           }}
         />
 
-        {/* Blueprint calculator motif — right side */}
-        <div className="absolute right-[6%] top-1/2 -translate-y-1/2 hidden lg:block">
-          {/* Outer frame */}
-          <div
-            className="relative border border-white/[0.06] rounded-sm"
-            style={{ width: "200px", height: "260px" }}
-          >
-            {/* Grid lines */}
-            <div className="absolute inset-0 opacity-30">
-              {[1, 2, 3, 4].map((i) => (
-                <div
-                  key={`h${i}`}
-                  className="absolute left-0 right-0 border-t border-purple-400/10"
-                  style={{ top: `${i * 20}%` }}
-                />
-              ))}
-              {[1, 2, 3].map((i) => (
-                <div
-                  key={`v${i}`}
-                  className="absolute top-0 bottom-0 border-l border-purple-400/10"
-                  style={{ left: `${i * 25}%` }}
-                />
-              ))}
-            </div>
-
-            {/* Corner marks */}
-            <div className="absolute -top-2 -left-2 w-4 h-4 border-t border-l border-purple-400/30" />
-            <div className="absolute -top-2 -right-2 w-4 h-4 border-t border-r border-purple-400/30" />
-            <div className="absolute -bottom-2 -left-2 w-4 h-4 border-b border-l border-purple-400/30" />
-            <div className="absolute -bottom-2 -right-2 w-4 h-4 border-b border-r border-purple-400/30" />
-
-            {/* Dimension labels */}
-            <div className="absolute -top-8 left-0 right-0 flex items-center justify-center gap-2">
-              <div className="h-px flex-1 bg-white/10" />
-              <span className="text-[10px] font-mono text-purple-300/50 tracking-widest whitespace-nowrap">
-                W &times; 300
-              </span>
-              <div className="h-px flex-1 bg-white/10" />
-            </div>
-            <div className="absolute -right-20 top-0 bottom-0 flex flex-col items-center justify-center">
-              <div className="w-px flex-1 bg-white/10" />
-              <span className="text-[10px] font-mono text-purple-300/50 tracking-widest whitespace-nowrap [writing-mode:vertical-lr] mx-2">
-                H &times; 300
-              </span>
-              <div className="w-px flex-1 bg-white/10" />
-            </div>
-
-            {/* Inner accent rectangles */}
-            <div className="absolute top-4 left-4 w-12 h-16 border border-purple-500/15 rounded-sm" />
-            <div className="absolute top-4 right-4 w-20 h-10 border border-purple-500/10 rounded-sm" />
-            <div className="absolute bottom-4 left-4 right-4 h-12 border border-purple-500/10 rounded-sm" />
-          </div>
-        </div>
-
         <Container>
-          <div className="max-w-2xl relative z-10">
-            <nav className="flex items-center gap-2 text-sm text-foreground-60 mb-6">
+          <div className="relative z-10 lg:grid lg:grid-cols-[44%_56%] lg:gap-10 lg:items-start">
+            <div className="mb-8 lg:mb-0">
+              <nav className="flex items-center gap-2 text-sm text-foreground-60 mb-6">
               <Link href="/" className="hover:text-white transition-colors">
                 Home
               </Link>
@@ -368,15 +315,10 @@ export default function EtsyPrintSizeCalculatorPage() {
                 </span>
               ))}
             </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* ===== CALCULATOR ===== */}
-      <section className="py-12 md:py-16">
-        <Container>
-          <div className="max-w-4xl">
-            <Calculator />
+            </div>
+            <div>
+              <Calculator />
+            </div>
           </div>
         </Container>
       </section>

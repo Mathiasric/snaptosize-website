@@ -835,9 +835,9 @@ export function Calculator() {
                           href="https://app.snaptosize.com?source=seo_calculator&kind=tool"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-sm font-medium text-[#2DD4BF] hover:underline"
+                          className="inline-flex items-center gap-1.5 rounded-lg bg-[#2DD4BF] px-4 py-2 text-sm font-semibold text-[#030712] hover:bg-[#2DD4BF]/90 transition-colors mt-1"
                         >
-                          Try SnapToSize Free &rarr;
+                          Export All Sizes Free &rarr;
                         </a>
                       </div>
                     </div>
