@@ -109,7 +109,7 @@ export function Header() {
 
       {/* Desktop mega menu — full width, below header */}
       {guidesOpen && (
-        <div className="hidden md:block absolute left-0 right-0 top-full z-50 border-b border-border bg-background shadow-lg" data-guides-dropdown>
+        <div className="hidden md:block absolute left-0 right-0 top-full z-50 border-b border-border bg-background shadow-lg overflow-y-auto max-h-[calc(100vh-64px)]" data-guides-dropdown>
           <Container>
             <div className="grid grid-cols-6 gap-6 py-6">
               {/* Size Guides — col spans wider with 3-col sub-grid for niche guides */}
