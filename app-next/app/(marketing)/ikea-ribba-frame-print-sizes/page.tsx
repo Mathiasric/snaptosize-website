@@ -7,6 +7,7 @@ import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Button } from "@/components/Button";
 import { ContextualCTA } from "@/components/ContextualCTA";
+import { AuthorByline } from "@/components/AuthorByline";
 import { Check, ArrowRight, AlertCircle, Frame } from "lucide-react";
 
 const CTA_URL =
@@ -28,6 +29,7 @@ export const metadata: Metadata = {
     url: `https://snaptosize.com/${SLUG}`,
     type: "article",
     images: ["/assets/og/ikea-ribba-frame-print-sizes.png"],
+    modifiedTime: "2026-05-30T00:00:00Z",
   },
   twitter: {
     card: "summary_large_image",
@@ -208,6 +210,8 @@ export default function IkeaRibbaFramePrintSizesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
+
+      <AuthorByline lastUpdated="May 30, 2026" />
 
       {/* ===== HERO — full-bleed, light theme with geometric CSS accents ===== */}
       <section

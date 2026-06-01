@@ -6,6 +6,7 @@ import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Button } from "@/components/Button";
 import { ContextualCTA } from "@/components/ContextualCTA";
+import { AuthorByline } from "@/components/AuthorByline";
 import { Check, ArrowRight, Ruler } from "lucide-react";
 
 const CTA_URL =
@@ -27,6 +28,7 @@ export const metadata: Metadata = {
     url: `https://snaptosize.com/${SLUG}`,
     type: "article",
     images: ["/assets/og/5x7-vs-4x6-print-size.png"],
+    modifiedTime: "2026-05-30T00:00:00Z",
   },
   twitter: {
     card: "summary_large_image",
@@ -196,6 +198,8 @@ export default function FiveBySevenVsFourBySixPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
+
+      <AuthorByline lastUpdated="May 30, 2026" />
 
       {/* ===== HERO ===== */}
       <section
