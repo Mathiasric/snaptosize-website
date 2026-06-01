@@ -55,6 +55,17 @@ export default function RelatedPages({ currentSlug, max = 6 }: RelatedPagesProps
           </span>
         ))}
       </p>
+      {currentSlug !== "etsy-print-size-calculator" && (
+        <p>
+          <strong>Free tool:</strong>{" "}
+          <Link
+            href="/etsy-print-size-calculator"
+            className="text-accent-light hover:underline"
+          >
+            Print Size Calculator — check any image against 30 sizes instantly
+          </Link>
+        </p>
+      )}
     </div>
   );
 }
