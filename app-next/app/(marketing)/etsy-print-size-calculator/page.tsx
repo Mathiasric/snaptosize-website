@@ -234,39 +234,41 @@ export default function EtsyPrintSizeCalculatorPage() {
 
       {/* ===== HERO ===== */}
       <section
-        className="relative pt-10 pb-12 md:pt-14 md:pb-16 overflow-hidden"
+        className="relative pt-10 pb-12 md:pt-14 md:pb-16"
         style={{
           background:
             "linear-gradient(135deg, #030712 0%, #0a0f1e 40%, #0d1117 100%)",
         }}
       >
-        {/* Dot grid */}
-        <div
-          className="absolute inset-0 opacity-[0.07]"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle, #a78bfa 1px, transparent 1px)",
-            backgroundSize: "24px 24px",
-          }}
-        />
-
-        {/* Gradient blobs */}
-        <div
-          className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] rounded-full opacity-[0.08]"
-          style={{
-            background: "radial-gradient(circle, #7c3aed, transparent 70%)",
-          }}
-        />
-        <div
-          className="absolute bottom-[-30%] left-[-5%] w-[500px] h-[500px] rounded-full opacity-[0.05]"
-          style={{
-            background: "radial-gradient(circle, #6366f1, transparent 70%)",
-          }}
-        />
+        {/* Decorative layer — clipped so blobs don't overflow */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          {/* Dot grid */}
+          <div
+            className="absolute inset-0 opacity-[0.07]"
+            style={{
+              backgroundImage:
+                "radial-gradient(circle, #a78bfa 1px, transparent 1px)",
+              backgroundSize: "24px 24px",
+            }}
+          />
+          {/* Gradient blobs */}
+          <div
+            className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] rounded-full opacity-[0.08]"
+            style={{
+              background: "radial-gradient(circle, #7c3aed, transparent 70%)",
+            }}
+          />
+          <div
+            className="absolute bottom-[-30%] left-[-5%] w-[500px] h-[500px] rounded-full opacity-[0.05]"
+            style={{
+              background: "radial-gradient(circle, #6366f1, transparent 70%)",
+            }}
+          />
+        </div>
 
         <Container>
           <div className="relative z-10 lg:grid lg:grid-cols-[44%_56%] lg:gap-10 lg:items-start">
-            <div className="mb-8 lg:mb-0">
+            <div className="mb-8 lg:mb-0 lg:sticky lg:top-20">
               <nav className="flex items-center gap-2 text-sm text-foreground-60 mb-6">
               <Link href="/" className="hover:text-white transition-colors">
                 Home
