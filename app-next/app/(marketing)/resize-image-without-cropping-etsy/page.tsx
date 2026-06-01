@@ -9,6 +9,7 @@ import { Button } from "@/components/Button";
 import { Check, ArrowRight, X } from "lucide-react";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import { ContextualCTA } from "@/components/ContextualCTA";
+import { AuthorByline } from "@/components/AuthorByline";
 
 export const metadata: Metadata = {
   title: "Resize Image Without Cropping for Etsy Prints",
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
     description:
       "Cropping destroys your artwork when you change aspect ratios. Learn why resize-without-crop matters for Etsy printable sellers — and how SnapToSize handles it automatically.",
     url: "https://snaptosize.com/resize-image-without-cropping-etsy",
+    modifiedTime: "2026-05-29T00:00:00Z",
     images: [
       {
         url: "/assets/og/resize-image-without-cropping-etsy.png",
@@ -140,6 +142,8 @@ export default function ResizeImageWithoutCroppingEtsyPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
+
+      <AuthorByline lastUpdated="May 29, 2026" />
 
       {/* ===== HERO — full-bleed ===== */}
       <section

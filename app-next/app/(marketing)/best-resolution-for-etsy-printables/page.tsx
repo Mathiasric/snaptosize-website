@@ -9,6 +9,7 @@ import { QuickAnswer } from "@/components/QuickAnswer";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { AuthorByline } from "@/components/AuthorByline";
 
 export const metadata: Metadata = {
   title: "Best Resolution for Etsy Printables: Mistakes to Avoid",
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
     description:
       "Common resolution mistakes that cause blurry Etsy prints, how to verify your file's DPI, and the best practices most sellers overlook.",
     url: "https://snaptosize.com/best-resolution-for-etsy-printables",
+    modifiedTime: "2026-05-28T00:00:00Z",
     images: [
       {
         url: "/assets/og/best-resolution-for-etsy-printables.png",
@@ -166,6 +168,8 @@ export default function BestResolutionForEtsyPrintablesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
+
+      <AuthorByline lastUpdated="May 28, 2026" />
 
       {/* ===== HERO ===== */}
       <section
