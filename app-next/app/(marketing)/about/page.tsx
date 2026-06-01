@@ -26,8 +26,49 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "SnapToSize",
+    url: "https://snaptosize.com",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://snaptosize.com/logo.png",
+    },
+    description:
+      "SnapToSize is a file preparation tool for Etsy digital print sellers. Upload artwork once and get every standard print size exported at 300 DPI, ratio-correct, and guaranteed under 20MB.",
+    knowsAbout: [
+      "Etsy digital print sizing",
+      "Image aspect ratio conversion",
+      "300 DPI file preparation",
+      "Etsy seller file requirements",
+    ],
+  };
+
+  const aboutPageJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    name: "About SnapToSize",
+    url: "https://snaptosize.com/about",
+    description:
+      "SnapToSize was built by Etsy digital print sellers who needed a better way to prepare files for every print size without Photoshop.",
+    mainEntity: {
+      "@type": "Organization",
+      name: "SnapToSize",
+      url: "https://snaptosize.com",
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageJsonLd) }}
+      />
       {/* Hero */}
       <section className="pt-16 pb-8 md:pt-24">
         <Container>

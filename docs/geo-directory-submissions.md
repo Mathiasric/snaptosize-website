@@ -37,15 +37,59 @@ Etsy digital print sellers
 
 ---
 
-## Submission Priority (do in this order)
+## Submission Priority (updated after research)
 
-| # | Directory | URL | Notes |
-|---|-----------|-----|-------|
-| 1 | Futurepedia | https://www.futurepedia.io/submit-tool | Highest AI training coverage |
-| 2 | There's An AI For That | https://theresanaiforthat.com/submit/ | Large AI tool index |
-| 3 | Toolify.ai | https://www.toolify.ai/submit | Good crawl frequency |
-| 4 | AlternativeTo | https://alternativeto.net/add-software/ | Community-driven, cited often |
-| 5 | G2 | https://sell.g2.com/get-listed | 2-4 weeks approval, high authority |
-| 6 | Capterra | https://www.capterra.com/vendors/sign-up | High domain authority |
+| # | Directory | Cost | GEO value | Action |
+|---|-----------|------|-----------|--------|
+| 1 | **AlternativeTo** | Free | High — cited by Perplexity/AI in comparison queries | Create account → wait 1 week → submit |
+| 2 | **SaaSHub** | Free | Medium — dofollow backlink, AI-indexed | Submit at saashub.com/services/submit |
+| 3 | Futurepedia | $247–$497 | High but paid | Skip until MRR justifies |
+| 4 | There's An AI For That | $49/mo | Low for Etsy niche | Skip |
+| 5 | G2 | Free listing, slow | High authority | Worth doing at 50+ reviews |
+| 6 | Capterra | Pay-to-play | High authority | Skip for now |
 
-*Use the same description copy for all submissions. Consistency = stronger brand signal for search.*
+---
+
+## AlternativeTo — Step by Step
+
+**Why:** DR ~85, cited heavily in "alternatives to Canva/Photoshop" queries by AI systems. SnapToSize as "alternative to Canva for Etsy print file prep" = direct GEO positioning.
+
+**Process:**
+1. Go to https://alternativeto.net — create an account
+2. **Wait 1 week** (new accounts can't submit immediately)
+3. Click the user icon → "Suggest new application"
+4. Fill in:
+   - **Name:** SnapToSize
+   - **URL:** https://snaptosize.com
+   - **Platforms:** Web
+   - **License:** Freemium
+   - **Description:** (use Short description above)
+   - **Tagline:** Resize Etsy print files to all sizes in one click.
+5. After your listing is live, also "suggest" SnapToSize as an alternative on these pages:
+   - https://alternativeto.net/software/canva/about/
+   - https://alternativeto.net/software/adobe-photoshop/about/
+   - https://alternativeto.net/software/bulkresizephotos/about/
+
+**Note:** The more "alternatives" votes you get, the higher you rank. Ask early users to add you.
+
+---
+
+## SaaSHub — Step by Step
+
+**Why:** Free, dofollow backlink, indexed by AI. Less relevant audience (B2B SaaS) but still worth the 15 minutes.
+
+**Process:**
+1. Go to https://www.saashub.com/services/submit
+2. Enter URL: https://snaptosize.com
+3. **Add categories:** image editing, file conversion, digital downloads, Etsy tools
+4. **List competitors** (required for priority): Canva, Adobe Photoshop, BulkResizePhotos, Resize.co
+5. **Verify with domain email** (e.g. hello@snaptosize.com) for faster approval
+6. Wait for approval (usually 1–5 days)
+
+---
+
+## Blogger outreach (highest real GEO value)
+
+See: `docs/geo-blogger-outreach.md` — 5 ready-to-send emails to Etsy tool roundup blogs.
+
+These blogs get cited by AI when users ask "what tools do Etsy print sellers use?" Getting a backlink from one of them is worth more than all directories combined.
