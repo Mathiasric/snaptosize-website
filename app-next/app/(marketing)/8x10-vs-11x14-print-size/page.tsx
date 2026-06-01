@@ -383,10 +383,10 @@ export default function EightByTenVsElevenByFourteenPage() {
 
         {/* Size data table */}
         <section>
-          <h2 className="text-2xl font-bold text-slate-900 mb-2">
+          <h2 className="text-2xl font-bold mb-2">
             Pixel Dimensions for 8×10 and 11×14 at 300 DPI
           </h2>
-          <p className="text-slate-600 mb-6">
+          <p className="text-foreground/70 mb-6">
             These are the exact pixel dimensions print shops and Etsy require for high-quality output. Always export at 300 DPI — lower resolution produces blurry prints.
           </p>
           <div className="overflow-x-auto rounded-2xl border border-slate-200">
@@ -435,16 +435,16 @@ export default function EightByTenVsElevenByFourteenPage() {
 
         {/* Size difference */}
         <section>
-          <h2 className="text-2xl font-bold text-slate-900 mb-4">
+          <h2 className="text-2xl font-bold mb-4">
             How Much Bigger Is 11×14 Than 8×10?
           </h2>
-          <p className="text-slate-600 leading-relaxed mb-4">
+          <p className="text-foreground/70 leading-relaxed mb-4">
             An 11×14 print covers <strong>154 square inches</strong>, while an 8×10 covers{" "}
             <strong>80 square inches</strong>. That means 11×14 has nearly double the surface area
             — 92.5% more, to be precise. On a wall, you feel that difference immediately: 8×10 is
             a focused, refined print; 11×14 fills space and draws attention across a room.
           </p>
-          <p className="text-slate-600 leading-relaxed">
+          <p className="text-foreground/70 leading-relaxed">
             For Etsy buyers decorating a gallery wall, 11×14 is the statement piece.
             For portrait photography, desk art, or gift prints, 8×10 is the sweet spot — it fits
             the frames already sitting in most homes.
@@ -453,10 +453,10 @@ export default function EightByTenVsElevenByFourteenPage() {
 
         {/* Aspect ratio section */}
         <section>
-          <h2 className="text-2xl font-bold text-slate-900 mb-4">
+          <h2 className="text-2xl font-bold mb-4">
             Why the Same File Won&apos;t Work for Both Sizes
           </h2>
-          <p className="text-slate-600 leading-relaxed mb-6">
+          <p className="text-foreground/70 leading-relaxed mb-6">
             8×10 and 11×14 look similar — both portrait, both close to square-ish — but their
             aspect ratios are different:
           </p>
@@ -465,34 +465,34 @@ export default function EightByTenVsElevenByFourteenPage() {
           <div className="grid grid-cols-2 gap-4 mb-6">
             <div
               className="rounded-xl p-5 text-center"
-              style={{ background: "rgba(45,212,191,0.06)", border: "1px solid rgba(45,212,191,0.18)" }}
+              style={{ background: "rgba(45,212,191,0.12)", border: "1px solid rgba(45,212,191,0.18)" }}
             >
-              <div className="text-3xl font-bold text-slate-800 mb-1">4:5</div>
-              <div className="text-sm text-slate-500 mb-2">8×10 ratio</div>
-              <div className="font-mono text-xs text-slate-400">= 0.800</div>
-              <div className="mt-3 text-xs text-slate-500">
+              <div className="text-3xl font-bold mb-1">4:5</div>
+              <div className="text-sm text-foreground/60 mb-2">8×10 ratio</div>
+              <div className="font-mono text-xs text-foreground/50">= 0.800</div>
+              <div className="mt-3 text-xs text-foreground/50">
                 Same as 16×20, 20×25, Instagram square
               </div>
             </div>
             <div
               className="rounded-xl p-5 text-center"
-              style={{ background: "rgba(167,139,250,0.06)", border: "1px solid rgba(167,139,250,0.18)" }}
+              style={{ background: "rgba(167,139,250,0.12)", border: "1px solid rgba(167,139,250,0.18)" }}
             >
-              <div className="text-3xl font-bold text-slate-800 mb-1">11:14</div>
-              <div className="text-sm text-slate-500 mb-2">11×14 ratio</div>
-              <div className="font-mono text-xs text-slate-400">= 0.786</div>
-              <div className="mt-3 text-xs text-slate-500">
+              <div className="text-3xl font-bold mb-1">11:14</div>
+              <div className="text-sm text-foreground/60 mb-2">11×14 ratio</div>
+              <div className="font-mono text-xs text-foreground/50">= 0.786</div>
+              <div className="mt-3 text-xs text-foreground/50">
                 Unique ratio — needs its own export
               </div>
             </div>
           </div>
 
-          <p className="text-slate-600 leading-relaxed mb-4">
+          <p className="text-foreground/70 leading-relaxed mb-4">
             The difference is small — 0.800 vs 0.786 — but enough that scaling a 2400×3000 px
             file directly into an 11×14 frame will crop about 1.7% off each side of your artwork.
             For text-heavy designs, quotes, or detailed illustrations, that clipping is visible.
           </p>
-          <p className="text-slate-600 leading-relaxed">
+          <p className="text-foreground/70 leading-relaxed">
             The correct approach: export two separate files. One at <strong>2400×3000 px</strong>{" "}
             for 8×10 and one at <strong>3300×4200 px</strong> for 11×14. SnapToSize generates
             both from a single upload — no Photoshop, no manual resizing.
@@ -501,20 +501,20 @@ export default function EightByTenVsElevenByFourteenPage() {
 
         {/* Which sells better */}
         <section>
-          <h2 className="text-2xl font-bold text-slate-900 mb-4">
+          <h2 className="text-2xl font-bold mb-4">
             Which Size Sells Better on Etsy?
           </h2>
-          <p className="text-slate-600 leading-relaxed mb-4">
+          <p className="text-foreground/70 leading-relaxed mb-4">
             <strong>8×10 is the most popular single print size on Etsy</strong> because it fits
             standard frames buyers already own — IKEA RIBBA, Target, Amazon basics. No mat, no
             custom framing needed. Buyers add it to their cart with confidence.
           </p>
-          <p className="text-slate-600 leading-relaxed mb-4">
+          <p className="text-foreground/70 leading-relaxed mb-4">
             <strong>11×14 sells well for statement and gallery wall pieces.</strong> Buyers
             searching for 11×14 have a specific decorating goal — they want presence. Your listing
             competes in a smaller pool, but buyer intent is strong.
           </p>
-          <p className="text-slate-600 leading-relaxed">
+          <p className="text-foreground/70 leading-relaxed">
             The highest-performing Etsy print listings offer <strong>both sizes in one listing</strong>.
             A buyer searching for 8×10 finds you; if they love the design, they upgrade to 11×14.
             The extra export takes seconds with SnapToSize and doubles your potential order value.
@@ -531,7 +531,7 @@ export default function EightByTenVsElevenByFourteenPage() {
 
         {/* FAQ */}
         <section>
-          <h2 className="text-2xl font-bold text-slate-900 mb-6">
+          <h2 className="text-2xl font-bold mb-6">
             Frequently Asked Questions
           </h2>
           <FAQAccordion items={faqs} />
