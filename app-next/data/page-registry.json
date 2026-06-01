@@ -2072,6 +2072,30 @@
     "cluster": "size-comparison",
     "relatedSlugs": [
       "5x7-vs-4x6-print-size",
+      "8x10-vs-5x7-print-size",
+      "etsy-print-sizes",
+      "ikea-ribba-frame-print-sizes",
+      "print-sizes-at-300-dpi",
+      "etsy-print-ratios",
+      "resize-image-without-cropping-etsy"
+    ]
+  },
+  {
+    "slug": "8x10-vs-5x7-print-size",
+    "title": "8×10 vs 5×7 Print Size: What's the Difference? (Pixels at 300 DPI)",
+    "pageType": "comparison",
+    "keywords": [
+      "8x10 vs 5x7",
+      "8x10 vs 5x7 print size",
+      "is 8x10 bigger than 5x7",
+      "5x7 pixel dimensions 300 dpi",
+      "8x10 pixel dimensions 300 dpi",
+      "difference between 8x10 and 5x7"
+    ],
+    "cluster": "size-comparison",
+    "relatedSlugs": [
+      "5x7-vs-4x6-print-size",
+      "8x10-vs-11x14-print-size",
       "etsy-print-sizes",
       "ikea-ribba-frame-print-sizes",
       "print-sizes-at-300-dpi",

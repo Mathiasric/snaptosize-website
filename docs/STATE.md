@@ -2,10 +2,10 @@
 
 **Read this first each session.** Live data (Stripe / PostHog / GSC) = truth. This file is re-derived from current reality, not inherited from older docs. Older doc claims are *dated evidence to verify*, never commands.
 
-**Last updated:** 2026-05-30 (session update)
+**Last updated:** 2026-06-01 (MRR +1)
 
 ## Where we are (live)
-- **16 paying Pro · ~$188 MRR** (15 monthly @ $11.99 + 1 yearly @ $97) — +1 Pro monthly confirmed 2026-05-29.
+- **17 paying Pro · ~$200 MRR** (16 monthly @ $11.99 + 1 yearly @ $97) — +1 Pro monthly 2026-06-01.
 - Watch: Alex Higgs + Subas renewals ~May 27 → verify in Stripe if still active.
 - **Free→paid conversion ~37%** (SaaS standard 2–5%).
 - Pricing: Monthly $11.99 · Yearly $97 (−33%). $1M-ARR model = **2,500–4,000 users @ $11.99–$29**.
@@ -20,7 +20,9 @@
    - ✅ `/resize-image-without-cropping-etsy` — with BeforeAfterSlider (May 29)
    - ✅ `/ikea-ribba-frame-print-sizes` — OG + internal links (May 30)
    - ✅ `/5x7-vs-4x6-print-size` — comparison page, CSS size visual, buyer guide, FAQ schema (May 30)
-   - ⬜ size-comparison cluster continued (4x6 vs 5x7, 8x10 vs 5x7 etc) — **NEXT**
+   - ✅ `/8x10-vs-11x14-print-size` — weakest SERP in cluster, proportional hero visual, ratio comparison, FAQ schema (Jun 1)
+   - ✅ `/8x10-vs-5x7-print-size` — 128% area diff, 5:7 vs 4:5 ratio cards, FAQ schema (Jun 1)
+   - ⬜ `/8x10-vs-8-5x11-print-size` — **NEXT** (letter size angle, office/print-at-home intent)
    - ⬜ ISO vs US print sizes explainer
    - Max 2 pages/day (pacing).
 2. **Cold email to power-sellers** (quote/typography niche — 30MB+ artboards, all packs = ideal Pro). Fastest path to the next paying users.
@@ -30,12 +32,34 @@
 ## Positioning (don't drift)
 Compete against **manual complexity** (Photoshop ~$60/mo, Canva per-size) — NOT "a faster resize tool." ICP has likely never opened Photoshop. Message: *no Photoshop, no manual per-size work, no cropping or distorting.*
 
-## In-flight (this session)
+## In-flight / done (Jun 1 session)
+- GSC review done: 2 pages upgraded to elite — sticker sheet (split hero, px data) + best-file-format (answer-first title, Quick Answer box).
+- `/8x10-vs-11x14-print-size` built and shipped: weakest SERP in cluster, proportional size visual, ratio comparison, FAQ schema, page-registry updated.
+- **Jun 1 total: 3 pages improved/added.**
+
+## In-flight / done (May 31 session)
 - 5 Tier-1 SEO pages shipped May 28–30 (DPI, resolution, resize-without-cropping, IKEA Ribba, 5x7 vs 4x6).
-- BeforeAfterSlider component built + added to ratio + resize-without-cropping pages.
-- Homepage redesign: AuthoritySection (icon grid → feature strip), TrustSection (card grid → checklist), HowItWorksSection (card grid → typographic numbered flow).
-- **Social pipeline rebuild (May 31):** GEMINI_PROMPT_LIBRARY.md rebuilt — 3 new seller-education-first concepts added (print-size-reference, frame-size-match, ratio-cropping-education), PROMPT 2 replaced (UI demo → size reference), PROMPT 6 replaced (stats-hero → frame-match). Analytics broken status documented. Frequency reduced 21→4 pins/week.
-- **Next:** Run first batch with new concepts (print-size-reference, frame-size-match, ratio-cropping-education) — validate seller-education angle. Check Pinterest Analytics manually after 2 weeks.
+- Homepage redesign: AuthoritySection, TrustSection, HowItWorksSection all rebuilt.
+- **Social pipeline fully rebuilt (May 31):**
+  - GEMINI_PROMPT_LIBRARY.md: 3 new educational concepts, PROMPT 2+6 replaced, seller-first QA gate added
+  - run-pipeline.py: tracker stage disabled (Buffer API broken → auto-skip)
+  - 3 new pins generated + validated: print-size-reference, frame-size-match, ratio-cropping-education
+  - All 6 posts scheduled (Pinterest + Instagram) via new `schedule-ready-pins.py` + `schedule-instagram-ready.py`
+  - `fetch-pin-urls.py` built to retrieve Pinterest URLs after publishing
+  - buffer_post_id now saved to metadata.json automatically on scheduling
+- **Social on autopilot** — check Pinterest Analytics manually in 2 weeks. Target >20 saves/pin.
+
+## Next priorities (ranked: ARR-impact ÷ effort)
+1. **SEO size-comparison cluster** — `/8x10-vs-8-5x11-print-size` next (letter size angle, office/print-at-home intent). Max 2/day.
+2. **GSC review round 2** — revisit after 2 weeks; let Jun 1 pages index first before pulling new CTR data.
+3. **Social batch W24** — next week, 4 pins using remaining GEMINI_PROMPT_LIBRARY concepts. Run `schedule-ready-pins.py --since [date]` + `schedule-instagram-ready.py --since [date]`.
+
+## Social pipeline commands (save these)
+```bash
+python marketing/social/schedule-ready-pins.py --since YYYY-MM-DD        # Pinterest
+python marketing/social/schedule-instagram-ready.py --since YYYY-MM-DD   # Instagram
+python marketing/social/fetch-pin-urls.py                                 # Run day after publishing
+```
 
 ## Parked / killed (don't revisit without a reason)
 - **Magic-wand / AI-fill** — KILLED (no churn evidence, poor results).
