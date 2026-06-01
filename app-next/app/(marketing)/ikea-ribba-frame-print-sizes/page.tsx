@@ -511,6 +511,22 @@ export default function IkeaRibbaFramePrintSizesPage() {
           </p>
         </section>
 
+        {/* Output proof — show before converting */}
+        <section className="mb-16">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
+            One Upload. Every Ratio-Correct File. Nothing Cropped.
+          </h2>
+          <p className="text-slate-600 leading-relaxed mb-6">
+            SnapToSize generates ratio-correct output files for every Ribba size
+            in one upload — no manual resizing, no cropping, no distortion.
+          </p>
+          <ListingOutputShowcase
+            artwork="wildflower"
+            heading="One upload. Every Ribba-ready size."
+            subtext="Full-canvas resize preserves your full composition — no cropping, no letterboxing."
+          />
+        </section>
+
         {/* Mid-page ContextualCTA */}
         <ContextualCTA
           problem="Creating separate files for every Ribba frame size in Photoshop takes hours per listing."
@@ -675,23 +691,6 @@ export default function IkeaRibbaFramePrintSizesPage() {
               </Button>
             </a>
           </div>
-        </section>
-
-        {/* ListingOutputShowcase — MANDATORY */}
-        <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
-            One Upload. Every Ratio-Correct File. Nothing Cropped.
-          </h2>
-          <p className="text-slate-500 mb-8">
-            SnapToSize generates ratio-correct output files for each pack — your
-            full composition preserved across every size. No edges removed, no
-            AI fill, no manual Photoshop ratio work.
-          </p>
-          <ListingOutputShowcase
-            artwork="wildflower"
-            heading="One upload. Every Ribba-ready size."
-            subtext="Full-canvas resize preserves your full composition at every ratio — 8×10, 12×16, and 16×20 Ribba sizes generated automatically."
-          />
         </section>
 
         {/* FAQ Section */}
