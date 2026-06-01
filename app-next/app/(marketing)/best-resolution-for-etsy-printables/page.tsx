@@ -55,7 +55,7 @@ export default function BestResolutionForEtsyPrintablesPage() {
     dateModified: "2026-05-28",
     author: {
       "@type": "Organization",
-      name: "SnapToSize",
+      name: "The SnapToSize Team",
       url: "https://snaptosize.com",
     },
   };

@@ -124,7 +124,7 @@ export default function EightByTenVsElevenByFourteenPage() {
     dateModified: "2026-06-01",
     author: {
       "@type": "Organization",
-      name: "SnapToSize",
+      name: "The SnapToSize Team",
       url: "https://snaptosize.com",
     },
     publisher: {

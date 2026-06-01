@@ -55,7 +55,7 @@ export default function DpiVsPixelDimensionsPage() {
     dateModified: "2026-05-27",
     author: {
       "@type": "Organization",
-      name: "SnapToSize",
+      name: "The SnapToSize Team",
       url: "https://snaptosize.com",
     },
   };
@@ -122,6 +122,40 @@ export default function DpiVsPixelDimensionsPage() {
     })),
   };
 
+  const howToJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "How to Calculate the Correct Pixel Dimensions for Etsy Print Files",
+    description:
+      "Use the inches × 300 DPI formula to find the required pixel dimensions for any print size, then export print-ready files at the correct resolution.",
+    step: [
+      {
+        "@type": "HowToStep",
+        position: 1,
+        name: "Identify your target print size in inches",
+        text: "Start with the physical print dimensions — for example, 8×10 inches or 5×7 inches. DPI only matters at a specific print size.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 2,
+        name: "Apply the formula: inches × 300 = required pixels",
+        text: "Multiply each dimension by 300 to get the minimum pixel count for sharp printing. An 8×10 print needs 2400×3000 pixels. A 5×7 needs 1500×2100 pixels.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 3,
+        name: "Check your file's actual pixel dimensions",
+        text: "Open the file in any image viewer or editor and confirm the pixel dimensions match or exceed the calculated requirement. A file labelled '300 DPI' can still print blurry if the pixel count is too low.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 4,
+        name: "Export separate files for each Etsy print size",
+        text: "Each aspect ratio group (2:3, 4:5, 3:4, ISO) needs its own correctly-dimensioned file. Use SnapToSize to generate all ratio-correct files at 300 DPI from a single upload.",
+      },
+    ],
+  };
+
   const formulaRows = [
     { size: "5×7", w: 1500, h: 2100 },
     { size: "8×10", w: 2400, h: 3000 },
@@ -141,6 +175,10 @@ export default function DpiVsPixelDimensionsPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
       />
 
       <AuthorByline lastUpdated="May 28, 2026" />

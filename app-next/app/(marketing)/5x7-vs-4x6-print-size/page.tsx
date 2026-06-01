@@ -129,7 +129,7 @@ export default function FiveBySevenVsFourBySixPage() {
     dateModified: "2026-05-30",
     author: {
       "@type": "Organization",
-      name: "SnapToSize",
+      name: "The SnapToSize Team",
       url: "https://snaptosize.com",
     },
     publisher: {

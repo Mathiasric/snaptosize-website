@@ -141,7 +141,7 @@ export default function IkeaRibbaFramePrintSizesPage() {
     dateModified: "2026-05-29",
     author: {
       "@type": "Organization",
-      name: "SnapToSize",
+      name: "The SnapToSize Team",
       url: "https://snaptosize.com",
     },
     publisher: {

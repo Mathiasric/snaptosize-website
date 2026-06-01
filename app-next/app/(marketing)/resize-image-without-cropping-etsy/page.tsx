@@ -57,7 +57,7 @@ export default function ResizeImageWithoutCroppingEtsyPage() {
     dateModified: "2026-05-28",
     author: {
       "@type": "Organization",
-      name: "SnapToSize",
+      name: "The SnapToSize Team",
       url: "https://snaptosize.com",
     },
   };
@@ -128,6 +128,40 @@ export default function ResizeImageWithoutCroppingEtsyPage() {
     })),
   };
 
+  const howToJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "How to Resize Etsy Print Images Without Cropping",
+    description:
+      "Export ratio-correct files for all Etsy print sizes from a single upload, without cropping or distorting your artwork.",
+    step: [
+      {
+        "@type": "HowToStep",
+        position: 1,
+        name: "Upload your artwork",
+        text: "Upload your original design file (JPEG, PNG, or TIFF) to SnapToSize. Any size or resolution is accepted.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 2,
+        name: "SnapToSize detects your source ratio",
+        text: "The tool automatically identifies your image's aspect ratio and maps it to all 5 Etsy ratio groups: 2:3, 4:5, 3:4, ISO (A-sizes), and Extras.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 3,
+        name: "Full-canvas resize is applied to each ratio",
+        text: "Your artwork is scaled to fill each target ratio's pixel dimensions completely — no cropping, no white borders, no distortion. The full composition is preserved in every file.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 4,
+        name: "Download your print-ready ZIP",
+        text: "Get all ratio-correct files at 300 DPI, guaranteed under Etsy's 20MB file size limit, ready to upload directly to your listing.",
+      },
+    ],
+  };
+
   return (
     <>
       <script
@@ -141,6 +175,10 @@ export default function ResizeImageWithoutCroppingEtsyPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
       />
 
       <AuthorByline lastUpdated="May 29, 2026" />
