@@ -35,7 +35,12 @@ Compete against **manual complexity** (Photoshop ~$60/mo, Canva per-size) — NO
 ## In-flight / done (Jun 1 session)
 - GSC review done: 2 pages upgraded to elite — sticker sheet (split hero, px data) + best-file-format (answer-first title, Quick Answer box).
 - `/8x10-vs-11x14-print-size` built and shipped: weakest SERP in cluster, proportional size visual, ratio comparison, FAQ schema, page-registry updated.
-- **Jun 1 total: 3 pages improved/added.**
+- Fixed text-slate-* color bug across 8x10-vs-11x14 main section (invisible on dark bg).
+- `/8x10-vs-5x7-print-size` built and shipped: 128% area diff, 5:7 vs 4:5 ratio cards, FAQ schema, page-registry entry #95.
+- Fixed pack names on both pages: "5:7 Pack" → Extras Pack, "Single Export" → Extras Pack (verified vs CONTENT_REFERENCE.md).
+- Both comparison pages added to desktop mega menu, mobile menu, and footer. 5×7 vs 4×6 added to mobile (was missing).
+- Guides mega menu overflow fix: `overflow-y-auto max-h-[calc(100vh-64px)]` — links below viewport now reachable via scroll.
+- **Jun 1 total: 5 pages improved/added + nav/footer/UX fixes.**
 
 ## In-flight / done (May 31 session)
 - 5 Tier-1 SEO pages shipped May 28–30 (DPI, resolution, resize-without-cropping, IKEA Ribba, 5x7 vs 4x6).
