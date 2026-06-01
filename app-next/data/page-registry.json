@@ -1769,13 +1769,33 @@
     "slug": "etsy-kids-wall-art-sizes",
     "title": "Etsy Kids Wall Art Sizes",
     "cluster": "niche-vertical",
-    "relatedSlugs": ["etsy-nursery-wall-art-sizes", "etsy-print-sizes", "etsy-print-ratios", "etsy-8x10-print-size", "etsy-11x14-print-size", "etsy-16x20-print-size", "etsy-a4-print-size", "etsy-a3-print-size", "print-sizes-at-300-dpi"]
+    "relatedSlugs": [
+      "etsy-nursery-wall-art-sizes",
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-8x10-print-size",
+      "etsy-11x14-print-size",
+      "etsy-16x20-print-size",
+      "etsy-a4-print-size",
+      "etsy-a3-print-size",
+      "print-sizes-at-300-dpi"
+    ]
   },
   {
     "slug": "etsy-bathroom-wall-art-sizes",
     "title": "Etsy Bathroom Wall Art Sizes",
     "cluster": "niche-vertical",
-    "relatedSlugs": ["etsy-print-sizes", "etsy-print-ratios", "etsy-8x10-print-size", "etsy-5x7-print-size", "etsy-11x14-print-size", "etsy-a4-print-size", "etsy-quote-wall-art-sizes", "etsy-minimalist-wall-art-sizes", "print-sizes-at-300-dpi"]
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "etsy-8x10-print-size",
+      "etsy-5x7-print-size",
+      "etsy-11x14-print-size",
+      "etsy-a4-print-size",
+      "etsy-quote-wall-art-sizes",
+      "etsy-minimalist-wall-art-sizes",
+      "print-sizes-at-300-dpi"
+    ]
   },
   {
     "slug": "canva-print-size-for-etsy",
@@ -2035,6 +2055,28 @@
       "etsy-print-ratios",
       "resize-image-without-cropping-etsy",
       "best-resolution-for-etsy-printables"
+    ]
+  },
+  {
+    "slug": "8x10-vs-11x14-print-size",
+    "title": "8×10 vs 11×14 Print Size: Which Is Bigger? (Pixels at 300 DPI)",
+    "pageType": "comparison",
+    "keywords": [
+      "8x10 vs 11x14",
+      "8x10 vs 11x14 print size",
+      "is 11x14 bigger than 8x10",
+      "8x10 pixel dimensions 300 dpi",
+      "11x14 pixel dimensions 300 dpi",
+      "difference between 8x10 and 11x14"
+    ],
+    "cluster": "size-comparison",
+    "relatedSlugs": [
+      "5x7-vs-4x6-print-size",
+      "etsy-print-sizes",
+      "ikea-ribba-frame-print-sizes",
+      "print-sizes-at-300-dpi",
+      "etsy-print-ratios",
+      "resize-image-without-cropping-etsy"
     ]
   }
 ]
