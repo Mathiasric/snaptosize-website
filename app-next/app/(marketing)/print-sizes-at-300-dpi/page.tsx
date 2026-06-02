@@ -9,6 +9,7 @@ import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 import { Button } from "@/components/Button";
 import { Check, ArrowRight } from "lucide-react";
 import { ContextualCTA } from "@/components/ContextualCTA";
+import { AuthorByline } from "@/components/AuthorByline";
 
 export const metadata: Metadata = {
   title: "Print Sizes at 300 DPI for Etsy — Complete Pixel Chart (2026)",
@@ -20,6 +21,8 @@ export const metadata: Metadata = {
     description:
       "Exact pixels for every Etsy print size at 300 DPI: 8×10 = 2400×3000px, 5×7 = 1500×2100px, 11×14 = 3300×4200px. Grouped by ratio pack.",
     url: "https://snaptosize.com/print-sizes-at-300-dpi",
+    type: "article",
+    modifiedTime: "2026-05-28T00:00:00Z",
     images: [
       {
         url: "/assets/og/print-sizes-at-300-dpi.png",
@@ -360,6 +363,8 @@ export default function PrintSizesAt300DpiPage() {
       </div>
 
       <div className="container mx-auto px-4 md:px-8 max-w-[1200px] py-12">
+
+        <AuthorByline lastUpdated="May 28, 2026" />
 
         {/* ── SECTION 1: What does 300 DPI mean? ── */}
         <section className="mb-16">
