@@ -162,6 +162,9 @@ export function Header() {
                     <Link href="/8x10-vs-8-5x11-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       8×10 vs 8.5×11 Size Guide
                     </Link>
+                    <Link href="/11x14-vs-12x16-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      11×14 vs 12×16 Size Guide
+                    </Link>
                     <Link href="/etsy-square-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Square Print Sizes
                     </Link>
@@ -520,6 +523,9 @@ export function Header() {
                     </Link>
                     <Link href="/8x10-vs-8-5x11-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60 hover:text-foreground transition-colors">
                       8×10 vs 8.5×11
+                    </Link>
+                    <Link href="/11x14-vs-12x16-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                      11×14 vs 12×16
                     </Link>
                     <Link href="/ikea-ribba-frame-print-sizes" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           IKEA Ribba Frame Sizes
