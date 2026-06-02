@@ -22,7 +22,7 @@
    - ✅ `/5x7-vs-4x6-print-size` — comparison page, CSS size visual, buyer guide, FAQ schema (May 30)
    - ✅ `/8x10-vs-11x14-print-size` — weakest SERP in cluster, proportional hero visual, ratio comparison, FAQ schema (Jun 1)
    - ✅ `/8x10-vs-5x7-print-size` — 128% area diff, 5:7 vs 4:5 ratio cards, FAQ schema (Jun 1)
-   - ⬜ `/8x10-vs-8-5x11-print-size` — **NEXT** (letter size angle, office/print-at-home intent)
+   - ✅ `/8x10-vs-8-5x11-print-size` — frame size vs printer size angle, QuickAnswer GEO box, ratio cards, cut-down trap, FAQ schema (Jun 2)
    - ⬜ ISO vs US print sizes explainer
    - Max 2 pages/day (pacing).
 2. **Cold email to power-sellers** (quote/typography niche — 30MB+ artboards, all packs = ideal Pro). Fastest path to the next paying users.
@@ -40,7 +40,12 @@ Compete against **manual complexity** (Photoshop ~$60/mo, Canva per-size) — NO
 - Fixed pack names on both pages: "5:7 Pack" → Extras Pack, "Single Export" → Extras Pack (verified vs CONTENT_REFERENCE.md).
 - Both comparison pages added to desktop mega menu, mobile menu, and footer. 5×7 vs 4×6 added to mobile (was missing).
 - Guides mega menu overflow fix: `overflow-y-auto max-h-[calc(100vh-64px)]` — links below viewport now reachable via scroll.
-- **Jun 1 total: 5 pages improved/added + nav/footer/UX fixes.**
+- **Calculator conversion audit (Jun 1 afternoon):** PostHog showed 77% bounce at 25% scroll, 0 CTA clicks in 30d. Fixed 3 issues:
+  - Merged hero + calculator into 2-col layout — inputs now above the fold on desktop (was hidden below ~450px of hero)
+  - Sticky left column (headline/description) stays visible while scrolling through results
+  - Inline CTA upgraded from plain text link → solid teal button "Export All Sizes Free →"
+  - Calculator link added to `RelatedPages` component → appears on all ~25 size/guide pages automatically
+- **Jun 1 total: 5 pages improved/added + nav/footer/UX fixes + calculator conversion overhaul.**
 
 ## In-flight / done (May 31 session)
 - 5 Tier-1 SEO pages shipped May 28–30 (DPI, resolution, resize-without-cropping, IKEA Ribba, 5x7 vs 4x6).
@@ -55,7 +60,7 @@ Compete against **manual complexity** (Photoshop ~$60/mo, Canva per-size) — NO
 - **Social on autopilot** — check Pinterest Analytics manually in 2 weeks. Target >20 saves/pin.
 
 ## Next priorities (ranked: ARR-impact ÷ effort)
-1. **SEO size-comparison cluster** — `/8x10-vs-8-5x11-print-size` next (letter size angle, office/print-at-home intent). Max 2/day.
+1. **SEO size-comparison cluster** — `/8x10-vs-8-5x11-print-size` ✅ shipped Jun 2. Next: ISO vs US print sizes explainer, or next comparison page. Max 2/day.
 2. **GSC review round 2** — revisit after 2 weeks; let Jun 1 pages index first before pulling new CTR data.
 3. **Social batch W24** — next week, 4 pins using remaining GEMINI_PROMPT_LIBRARY concepts. Run `schedule-ready-pins.py --since [date]` + `schedule-instagram-ready.py --since [date]`.
 

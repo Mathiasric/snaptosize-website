@@ -2102,5 +2102,28 @@
       "etsy-print-ratios",
       "resize-image-without-cropping-etsy"
     ]
+  },
+  {
+    "slug": "8x10-vs-8-5x11-print-size",
+    "title": "8×10 vs 8.5×11 Print Size: What's the Difference? (Pixels at 300 DPI)",
+    "description": "8.5×11 is US Letter — it fits home printers. 8×10 fits photo frames. Different aspect ratios (4:5 vs 17:22) mean the same file won't work for both. Exact pixels at 300 DPI inside.",
+    "keywords": [
+      "8x10 vs 8.5x11",
+      "8x10 vs letter size",
+      "8.5x11 pixel dimensions 300 dpi",
+      "8x10 pixel dimensions 300 dpi",
+      "letter size vs 8x10 print",
+      "difference between 8x10 and 8.5x11",
+      "can you print 8x10 on letter paper"
+    ],
+    "cluster": "size-comparison",
+    "relatedSlugs": [
+      "8x10-vs-5x7-print-size",
+      "8x10-vs-11x14-print-size",
+      "5x7-vs-4x6-print-size",
+      "etsy-print-sizes",
+      "print-sizes-at-300-dpi",
+      "resize-image-without-cropping-etsy"
+    ]
   }
 ]

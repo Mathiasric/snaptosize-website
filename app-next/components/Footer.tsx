@@ -71,6 +71,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/8x10-vs-8-5x11-print-size" className="transition-colors hover:text-accent-light">
+                  8×10 vs 8.5×11 Size Guide
+                </Link>
+              </li>
+              <li>
                 <Link href="/etsy-16x20-print-size" className="transition-colors hover:text-accent-light">
                   16×20 Print Size
                 </Link>
