@@ -60,7 +60,7 @@ Compete against **manual complexity** (Photoshop ~$60/mo, Canva per-size) — NO
 - **Social on autopilot** — check Pinterest Analytics manually in 2 weeks. Target >20 saves/pin.
 
 ## Next priorities (ranked: ARR-impact ÷ effort)
-1. **SEO size-comparison cluster** — `/8x10-vs-8-5x11-print-size` ✅ shipped Jun 2. Next: ISO vs US print sizes explainer, or next comparison page. Max 2/day.
+1. **SEO size-comparison cluster** — `/8x10-vs-8-5x11-print-size` ✅ Jun 2, `/11x14-vs-12x16-print-size` ✅ Jun 2. Next: GEO tasks or new cluster. Max 2/day.
 2. **GSC review round 2** — revisit after 2 weeks; let Jun 1 pages index first before pulling new CTR data.
 3. **Social batch W24** — next week, 4 pins using remaining GEMINI_PROMPT_LIBRARY concepts. Run `schedule-ready-pins.py --since [date]` + `schedule-instagram-ready.py --since [date]`.
 
