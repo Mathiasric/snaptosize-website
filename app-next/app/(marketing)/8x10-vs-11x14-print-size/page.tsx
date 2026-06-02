@@ -302,7 +302,7 @@ export default function EightByTenVsElevenByFourteenPage() {
             </div>
 
             {/* Right: visual size comparison */}
-            <div className="flex items-end justify-center gap-10 pt-8 pb-4">
+            <div className="hidden md:flex items-end justify-center gap-10 pt-8 pb-4">
               {/* 8×10 block */}
               <div className="flex flex-col items-center gap-3">
                 <div

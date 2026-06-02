@@ -269,7 +269,7 @@ export default function EightByTenVsEightPointFiveByElevenPage() {
             </div>
 
             {/* Right: proportional size visual */}
-            <div className="flex items-end justify-center gap-10">
+            <div className="hidden md:flex items-end justify-center gap-10">
               {/* 8×10 */}
               <div className="flex flex-col items-center gap-3">
                 <div
