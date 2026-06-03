@@ -60,9 +60,17 @@ Compete against **manual complexity** (Photoshop ~$60/mo, Canva per-size) — NO
 - **Social on autopilot** — check Pinterest Analytics manually in 2 weeks. Target >20 saves/pin.
 
 ## Next priorities (ranked: ARR-impact ÷ effort)
-1. **SEO size-comparison cluster** — `/8x10-vs-8-5x11-print-size` ✅ Jun 2, `/11x14-vs-12x16-print-size` ✅ Jun 3, `/iso-vs-us-print-sizes` ✅ Jun 3 (A4/Letter/A3/Tabloid, pixel dims, whitespace trap). Next: GEO-oppgaver eller ny cluster. Max 2/day.
-2. **GSC review round 2** — revisit after 2 weeks; let Jun 1 pages index first before pulling new CTR data.
-3. **Social batch W24** — next week, 4 pins using remaining GEMINI_PROMPT_LIBRARY concepts. Run `schedule-ready-pins.py --since [date]` + `schedule-instagram-ready.py --since [date]`.
+1. **GEO / AI-snippet oppgaver** — QuickAnswer på sider som mangler det, FAQ-schema audit, sørge for at alle tier-1 sider er AI Overview-klare. Høy effekt, lav innsats.
+2. **GSC review round 2** — tidligst ~Jun 15; la Jun 1-sidene indeksere seg ferdig først.
+3. **Social batch W24** — 4 pins fra GEMINI_PROMPT_LIBRARY. Kjør `schedule-ready-pins.py --since [date]` + `schedule-instagram-ready.py --since [date]`.
+4. **Ny SEO-cluster** — neste size-comparison eller niche-guide (maks 2/dag).
+
+## In-flight / done (Jun 3 session)
+- `/iso-vs-us-print-sizes` bygget og skipet: A4 vs Letter, A3 vs Tabloid, pixel dims ved 300 DPI, whitespace trap-forklaring, "When to offer each"-guide, 7 FAQs, OG-bilde, nav + footer + registry oppdatert.
+- **RelatedPages** fikset (gjelder alle ~98 sider): korte titler uten verbose suffiks ("8×10 vs 11×14" ikke full SERP-tittel), sentrert på bredt skjerm med `max-w-3xl mx-auto`.
+- **page-registry.json**: 9 encoding-bugs fikset (â€" → —, Ã× → ×) — ga feil tegn i RelatedPages på produksjon.
+- **Footer redesign**: kompakt 4-kolonne layout, Size Guides med 2-col intern grid (Popular/Comparisons/Framing/Niche), ~30% kortere (506px vs ~750px).
+- **Meta-justeringer** på ISO-siden: title trimmet 76→60 chars, A4 pixelhøyde 3507→3508 fikset gjennomgående.
 
 ## Social pipeline commands (save these)
 ```bash
