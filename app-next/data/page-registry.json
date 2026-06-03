@@ -2147,5 +2147,27 @@
       "print-sizes-at-300-dpi",
       "etsy-13x19-print-size"
     ]
+  },
+  {
+    "slug": "iso-vs-us-print-sizes",
+    "title": "ISO vs US Print Sizes: A4, Letter, A3, Tabloid Explained (Pixels at 300 DPI)",
+    "description": "A4 and Letter look similar but have different aspect ratios — a file sized for one shows white borders on the other. Complete ISO and US print size chart with exact pixels at 300 DPI.",
+    "keywords": [
+      "iso vs us print sizes",
+      "a4 vs letter size print",
+      "iso paper sizes etsy",
+      "a4 vs letter pixels",
+      "a3 vs tabloid size",
+      "iso paper sizes inches"
+    ],
+    "cluster": "size-comparison",
+    "relatedSlugs": [
+      "8x10-vs-8-5x11-print-size",
+      "11x14-vs-12x16-print-size",
+      "etsy-a4-print-size",
+      "etsy-a1-print-size",
+      "print-sizes-at-300-dpi",
+      "etsy-print-sizes"
+    ]
   }
 ]
