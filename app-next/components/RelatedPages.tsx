@@ -1,6 +1,14 @@
 import Link from "next/link";
 import pageRegistry from "@/data/page-registry.json";
 
+function shortTitle(title: string): string {
+  return title
+    .split(" â€“ ")[0] // corrupted em dash (â€")
+    .split(" — ")[0]            // proper em dash
+    .split(": ")[0]                  // strip subtitle after colon
+    .trim();
+}
+
 interface RelatedPagesProps {
   currentSlug: string;
   max?: number;
@@ -50,7 +58,7 @@ export default function RelatedPages({ currentSlug, max = 6 }: RelatedPagesProps
               href={`/${page.slug}`}
               className="text-accent-light hover:underline"
             >
-              {page.title}
+              {shortTitle(page.title)}
             </Link>
           </span>
         ))}
