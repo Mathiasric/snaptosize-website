@@ -16,6 +16,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title:
@@ -362,6 +363,10 @@ export default function HowToResizeImagesForEtsyPage() {
       <section className="py-12 md:py-16">
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
+            <QuickAnswer question="How do I resize images for Etsy digital downloads?">
+              Export at 300 DPI — that&apos;s the only resize setting that matters for print quality. At 300 DPI: 8×10 = 2,400×3,000 px, 5×7 = 1,500×2,100 px, 11×14 = 3,300×4,200 px. Your listing photos (2,000×2,000 px) are separate — never resize those as digital download files.
+            </QuickAnswer>
+
             {/* --- Section 1: Listing Photos vs Digital Downloads --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">

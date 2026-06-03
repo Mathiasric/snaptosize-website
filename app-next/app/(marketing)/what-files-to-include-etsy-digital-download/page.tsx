@@ -9,6 +9,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title:
@@ -270,6 +271,10 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
       <section className="py-8">
         <Container>
           <div className="max-w-4xl space-y-16">
+            <QuickAnswer question="What files should I include in an Etsy digital download?">
+              For wall art: JPG files at 300 DPI in 3–5 standard sizes (5×7, 8×10, 11×14, A4, A3). For planners: PDF. Most top sellers include all four main print ratios (2:3, 3:4, 4:5, ISO) in one listing. Avoid PNG for large prints — 300 DPI PNGs regularly exceed Etsy&apos;s 20 MB per-file limit.
+            </QuickAnswer>
+
             {/* ===== SECTION 1: Why File Choice Determines Reviews ===== */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-4">

@@ -6,6 +6,7 @@ import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import { Button } from "@/components/Button";
 import { Check, AlertTriangle, ArrowRight, Package, Folder, FileArchive } from "lucide-react";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "Etsy Digital Download Limits: 20MB & 5 Files (2026 Guide)",
@@ -270,6 +271,12 @@ export default function HowToUploadMoreThan5FilesEtsyPage() {
       </section>
 
       <div className="container mx-auto px-4 md:px-8 max-w-[1200px] py-12">
+
+        <div className="mb-12">
+          <QuickAnswer question="How do I upload more than 5 files to an Etsy digital listing?">
+            Use ZIP files. Etsy allows 5 files per listing at 20 MB each. Bundle multiple size variants into ZIPs — one ZIP per ratio pack (e.g. 2:3 sizes, 4:5 sizes, ISO A-series) lets you deliver 20+ sizes within Etsy&apos;s limits without extra listings or accounts.
+          </QuickAnswer>
+        </div>
 
         {/* Problem section */}
         <section className="mb-12">

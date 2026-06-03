@@ -17,6 +17,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title:
@@ -353,6 +354,10 @@ export default function HowToSellPrintablesWithoutPhotoshopPage() {
       <section className="py-12 md:py-16">
         <Container>
           <div className="max-w-3xl mx-auto space-y-20">
+            <QuickAnswer question="Can I sell printables on Etsy without Photoshop?">
+              Yes. Canva (free), Affinity Designer (one-time purchase), and SnapToSize all replace Photoshop for Etsy sellers. You need a design tool for creating artwork and something that exports at 300 DPI in the correct pixel dimensions. Neither step requires Photoshop.
+            </QuickAnswer>
+
             {/* --- Section 1: The Photoshop Myth --- */}
             <div>
               <div className="flex items-center gap-3 mb-4">

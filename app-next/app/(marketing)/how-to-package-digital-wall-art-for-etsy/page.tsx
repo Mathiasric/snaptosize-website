@@ -9,6 +9,7 @@ import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "How to Package Digital Wall Art for Etsy: ZIP, File Naming & 20MB Rules (2026)",
@@ -309,6 +310,10 @@ export default function HowToPackageDigitalWallArtForEtsyPage() {
       <section className="py-12 md:py-16">
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
+            <QuickAnswer question="How should I package digital wall art for Etsy?">
+              Create ZIP files organized by ratio pack: one ZIP for 2:3 sizes, one for 4:5, one for ISO A-series. Name each file clearly (e.g. &ldquo;8x10-300dpi.jpg&rdquo;). Keep each file under 20 MB. This gives buyers exactly what they need and eliminates &ldquo;which file do I use?&rdquo; messages.
+            </QuickAnswer>
+
             {/* --- Section 1: What Packaging Means --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
