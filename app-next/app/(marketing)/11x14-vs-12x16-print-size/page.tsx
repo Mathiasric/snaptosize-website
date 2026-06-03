@@ -385,15 +385,43 @@ export default function ElevenByFourteenVsTwelveByEighteenPage() {
             slightly squashes the image width, which is visible on portraits and text-heavy designs.
           </p>
 
+          {/* 3:4 proportional family visual */}
           <div
-            className="rounded-xl p-5 border-l-4 mb-4"
-            style={{ background: "rgba(45,212,191,0.08)", borderColor: "#2DD4BF" }}
+            className="rounded-xl p-6 mb-4"
+            style={{ background: "rgba(45,212,191,0.06)", border: "1px solid rgba(45,212,191,0.18)" }}
           >
-            <p className="text-sm text-foreground/80 leading-relaxed">
-              <strong>The 3:4 family:</strong> 12×16 is proportionally identical to 6×8, 9×12,
-              and 15×20 — they all share a 3:4 ratio. If you design at any of these sizes, you
-              can scale to any other in the family without cropping. The 3:4 Pack in SnapToSize
-              generates all of them from a single upload.
+            <p className="text-xs font-semibold uppercase tracking-widest mb-5" style={{ color: "#2DD4BF" }}>
+              The 3:4 proportional family
+            </p>
+            <div className="flex items-end justify-center gap-5 mb-5">
+              {[
+                { label: "6×8", w: 42, h: 56, sub: "1800×2400 px" },
+                { label: "9×12", w: 63, h: 84, sub: "2700×3600 px" },
+                { label: "12×16", w: 84, h: 112, sub: "3600×4800 px", highlight: true },
+                { label: "15×20", w: 105, h: 140, sub: "4500×6000 px" },
+              ].map((s) => (
+                <div key={s.label} className="flex flex-col items-center gap-2">
+                  <div
+                    className="rounded-lg flex items-center justify-center text-xs font-bold relative"
+                    style={{
+                      width: s.w,
+                      height: s.h,
+                      background: s.highlight ? "rgba(45,212,191,0.20)" : "rgba(45,212,191,0.08)",
+                      border: s.highlight ? "2px solid rgba(45,212,191,0.6)" : "1px solid rgba(45,212,191,0.25)",
+                      color: s.highlight ? "#2DD4BF" : "#5eead4",
+                    }}
+                  >
+                    {s.label}
+                  </div>
+                  <span className="font-mono text-[10px] text-foreground/40 text-center leading-tight">
+                    {s.sub}
+                  </span>
+                </div>
+              ))}
+            </div>
+            <p className="text-sm text-foreground/70 text-center">
+              All share the same 3:4 ratio — same composition, different scale.{" "}
+              <strong className="text-foreground/90">The 3:4 Pack generates all four from one upload.</strong>
             </p>
           </div>
 
@@ -420,6 +448,28 @@ export default function ElevenByFourteenVsTwelveByEighteenPage() {
             their print professionally framed will specifically request 11×14. It also fits the
             IKEA RIBBA 13×18 frame with a mat.
           </p>
+
+          {/* Frame availability comparison */}
+          <div className="grid grid-cols-2 gap-3 mb-4">
+            <div className="rounded-xl p-4" style={{ background: "rgba(167,139,250,0.08)", border: "1px solid rgba(167,139,250,0.15)" }}>
+              <div className="text-sm font-bold mb-2" style={{ color: "#A78BFA" }}>11×14 frames</div>
+              <ul className="text-xs text-foreground/60 space-y-1">
+                <li>✓ IKEA RIBBA (with mat)</li>
+                <li>✓ Target, Walmart, Amazon</li>
+                <li>✓ Most print lab mat cuts</li>
+                <li>✓ Standard gallery framing</li>
+              </ul>
+            </div>
+            <div className="rounded-xl p-4" style={{ background: "rgba(45,212,191,0.08)", border: "1px solid rgba(45,212,191,0.15)" }}>
+              <div className="text-sm font-bold mb-2" style={{ color: "#2DD4BF" }}>12×16 frames</div>
+              <ul className="text-xs text-foreground/60 space-y-1">
+                <li>✓ Custom frame shops</li>
+                <li>✓ Online framers (Framebridge)</li>
+                <li>✓ POD canvas stretchers</li>
+                <li>△ Rarely in-store retail</li>
+              </ul>
+            </div>
+          </div>
           <p className="text-foreground/70 leading-relaxed mb-4">
             <strong>12×16 is for proportional scaling.</strong> If you already sell 8×10 (4:5 pack)
             and want a large-format option, 12×16 is not the right scale-up — 16×20 is. But if you
