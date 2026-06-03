@@ -14,29 +14,29 @@ import {
 } from "@/components/sections";
 
 export const metadata: Metadata = {
-  title: "Turn one image into a complete Etsy print set — in seconds",
+  title: "SnapToSize — Etsy Print Sizing Tool: One Upload, All Sizes",
   description:
-    "Generate all required ratios and download ready-to-upload ZIPs. No Photoshop. No manual resizing. Built for Etsy print sellers.",
+    "Upload once, get up to 70 print-ready files at 300 DPI — every Etsy ratio, organized and zipped. No Photoshop. No manual resizing.",
   alternates: { canonical: "https://snaptosize.com" },
   openGraph: {
-    title: "SnapToSize — Turn one image into a complete Etsy print set",
+    title: "SnapToSize — Etsy Print Sizing Tool: One Upload, All Sizes",
     description:
-      "Generate all required ratios and download ready-to-upload ZIPs. No Photoshop. No manual resizing.",
+      "Upload once, get up to 70 print-ready files at 300 DPI — every Etsy ratio, organized and zipped. No Photoshop. No manual resizing.",
     url: "https://snaptosize.com",
     images: [
       {
         url: "/assets/og/home.png",
         width: 1200,
         height: 630,
-        alt: "SnapToSize — Turn one image into a complete Etsy print set",
+        alt: "SnapToSize — Etsy Print Sizing Tool",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SnapToSize — Turn one image into a complete Etsy print set",
+    title: "SnapToSize — Etsy Print Sizing Tool: One Upload, All Sizes",
     description:
-      "Generate all required ratios and download ready-to-upload ZIPs. No Photoshop. No manual resizing.",
+      "Upload once, get up to 70 print-ready files at 300 DPI — every Etsy ratio, organized and zipped. No Photoshop. No manual resizing.",
     images: ["/assets/og/home.png"],
   },
 };

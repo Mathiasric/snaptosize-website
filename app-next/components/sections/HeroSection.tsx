@@ -79,6 +79,9 @@ export function HeroSection() {
         <div className="max-w-7xl mx-auto px-6 py-8 md:py-10 w-full">
           <div className="max-w-3xl mx-auto text-center">
             <div>
+              <p className="text-xs font-mono tracking-widest uppercase text-teal-400/70 mb-5">
+                The Etsy print sizing tool
+              </p>
               <p className="text-sm text-white/50 italic mb-4 max-w-lg mx-auto leading-relaxed border-l-2 border-white/20 pl-4 text-left">
                 "I manually resize every artwork into 2:3, 4:5, 3:4, A-sizes, 5×7, 11×14 — check DPI, rename files, zip folders…"
                 <span className="block text-white/35 not-italic mt-1">— Etsy seller</span>
@@ -88,7 +91,7 @@ export function HeroSection() {
                 <span style={{ background: 'linear-gradient(90deg, #2DD4BF, #7C3AED)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>45 seconds.</span>
               </h1>
               <p className="text-base md:text-lg text-white/85 mb-5 max-w-lg mx-auto leading-snug" style={{ textShadow: '0 2px 15px rgba(11, 11, 18, 0.9), 0 0 30px rgba(11, 11, 18, 0.7)' }}>
-                Upload your design once — get 30+ Etsy-ready sizes at 300 DPI, organized, named, and zipped.
+                Upload your design once — get up to 70 print-ready files at 300 DPI, organized, named, and zipped.
               </p>
 
               {/* CTA */}
@@ -113,7 +116,7 @@ export function HeroSection() {
                 Used by Etsy sellers worldwide
               </p>
               <p className="text-xs text-white/55 mb-5">
-                30+ Etsy print sizes in under 60 seconds. Manually in Photoshop: 1+ hour.
+                Up to 70 files in 60 seconds. Manually in Photoshop: 1+ hour.
               </p>
 
               {/* Video Thumbnail — primary visual hook */}
