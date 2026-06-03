@@ -8,6 +8,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "How Many Sizes per Etsy Printable? (2026 Answer)",
@@ -314,6 +315,10 @@ export default function HowManySizesEtsyPrintablePage() {
       <section className="py-12 md:py-16">
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
+            <QuickAnswer question="How many sizes should I include in an Etsy printable listing?">
+              Offer at least 3–5 sizes covering the main ratios: a 2:3 size (e.g. 4×6 or 12×18), a 4:5 size (e.g. 8×10 or 11×14), and an ISO A-series size (A4 or A3). Top sellers include all four standard ratios in one listing. More sizes mean fewer &ldquo;do you have this in…&rdquo; messages and fewer refund requests.
+            </QuickAnswer>
+
             {/* --- The Short Answer --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">

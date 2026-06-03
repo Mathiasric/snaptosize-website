@@ -7,6 +7,7 @@ import { AuthorByline } from "@/components/AuthorByline";
 import { Button } from "@/components/Button";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { Check, ArrowRight, Ruler } from "lucide-react";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 const CTA_URL =
   "https://app.snaptosize.com?source=seo_8x10-vs-5x7-print-size&kind=guide";
@@ -383,6 +384,9 @@ export default function EightByTenVsFiveBySevenPage() {
 
       {/* ===== MAIN CONTENT ===== */}
       <main className="max-w-3xl mx-auto px-4 sm:px-6 py-16 space-y-16">
+        <QuickAnswer question="Which is larger, 8×10 or 5×7?">
+          8×10 is larger. At 300 DPI, an 8×10 prints at 2,400×3,000 px and covers 80 sq in. A 5×7 prints at 1,500×2,100 px — less than half the area (35 sq in). Both share the 4:5 aspect ratio, so your artwork crops identically; only the output size changes.
+        </QuickAnswer>
 
         {/* Size data table */}
         <section>

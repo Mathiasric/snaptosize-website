@@ -9,6 +9,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title: "Etsy Print Sizes Explained: Size & Ratio Chart",
@@ -288,6 +289,10 @@ export default function EtsyPrintSizesPage() {
       <section className="py-8">
         <Container>
           <div className="max-w-4xl space-y-16">
+            <QuickAnswer question="What are the most common Etsy print sizes?">
+              5×7, 8×10, 11×14, and A4 cover most buyer requests. At 300 DPI: 5×7 = 1,500×2,100 px, 8×10 = 2,400×3,000 px, 11×14 = 3,300×4,200 px, A4 = 2,480×3,508 px. Top sellers include all four ratios (2:3, 3:4, 4:5, ISO) in one listing to eliminate &ldquo;do you have this in 8×10?&rdquo; messages.
+            </QuickAnswer>
+
             {/* Visual: Master size overview */}
             <div className="rounded-xl overflow-hidden border border-white/[0.08]">
               <img src="/assets/visuals/etsy-print-sizes-master.png" alt="All 28 Etsy print sizes organized by ratio pack — 2:3, 3:4, 4:5, ISO A-Series, and Extras with pixel dimensions at 300 DPI" width={1200} height={600} className="w-full h-auto" loading="lazy" />

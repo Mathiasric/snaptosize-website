@@ -8,6 +8,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title:
@@ -353,6 +354,10 @@ export default function EtsyDigitalDownloadBlurryPrintsPage() {
       <section className="py-12 md:py-16">
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
+            <QuickAnswer question="Why do Etsy digital download prints come out blurry?">
+              Almost always a resolution problem: the file was exported at 72 DPI (screen resolution) instead of 300 DPI (print resolution). A print-ready 8×10 needs to be 2,400×3,000 px. Files under that pixel count — or printed from a phone at full scale — will be blurry regardless of file format.
+            </QuickAnswer>
+
             {/* --- Why Etsy Prints Come Out Blurry --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-6">

@@ -17,6 +17,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 
 export const metadata: Metadata = {
@@ -356,6 +357,10 @@ export default function BestFileFormatEtsyPrintablesPage() {
       <section className="py-12 md:py-16">
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
+            <QuickAnswer question="What is the best file format for Etsy printables?">
+              JPG for wall art and photography (smaller file, prints sharper at scale), PDF for planners and multi-page documents. Both must be exported at 300 DPI. Avoid PNG for large prints — 300 DPI PNGs regularly exceed Etsy&apos;s 20 MB per-file limit.
+            </QuickAnswer>
+
             {/* --- Section 1: The Format Question --- */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-4">

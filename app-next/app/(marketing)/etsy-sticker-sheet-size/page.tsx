@@ -8,6 +8,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title: 'Etsy Sticker Sheet Size: 8.5×11" = 2,550×3,300 px (300 DPI Guide)',
@@ -288,6 +289,10 @@ export default function EtSyStickerSheetSizePage() {
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
 
+
+            <QuickAnswer question="What size should an Etsy sticker sheet be?">
+              The standard is 8.5×11&rdquo; (US Letter) — at 300 DPI that&apos;s 2,550×3,300 px, fits home printers, and covers most US buyers. For European buyers, use A4 (2,480×3,508 px). If targeting Cricut or Silhouette users, 6×9&rdquo; (1,800×2,700 px) is the common cutting-machine size.
+            </QuickAnswer>
 
             {/* ===== STANDARD SIZES ===== */}
             <div id="sizes">
