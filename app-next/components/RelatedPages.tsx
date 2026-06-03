@@ -48,7 +48,7 @@ export default function RelatedPages({ currentSlug, max = 6 }: RelatedPagesProps
   if (related.length === 0) return null;
 
   return (
-    <div className="text-sm text-foreground-60 space-y-2 pb-8">
+    <div className="max-w-3xl mx-auto px-4 sm:px-6 text-sm text-foreground-60 space-y-2 pb-8">
       <p>
         <strong>Related:</strong>{" "}
         {related.map((page, i) => (
