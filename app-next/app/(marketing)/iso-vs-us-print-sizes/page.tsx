@@ -25,7 +25,7 @@ const isoSizes = [
   {
     label: "A4",
     inches: "8.27×11.69",
-    pixels: "2480×3507",
+    pixels: "2480×3508",
     ratio: "1:√2",
     area: "96.7 sq in",
     use: "Standard planners, wall art, EU printers",
@@ -101,7 +101,7 @@ const faqs = [
   {
     question: "Is A4 the same as US Letter size?",
     answer:
-      "No. A4 is 8.27×11.69 inches (2480×3507 px at 300 DPI). US Letter is 8.5×11 inches (2550×3300 px at 300 DPI). A4 is 3% narrower and 6% taller. They look similar but have different aspect ratios — a file sized for one will show white borders or crop when printed on the other.",
+      "No. A4 is 8.27×11.69 inches (2480×3508 px at 300 DPI). US Letter is 8.5×11 inches (2550×3300 px at 300 DPI). A4 is 3% narrower and 6% taller. They look similar but have different aspect ratios — a file sized for one will show white borders or crop when printed on the other.",
   },
   {
     question: "What is the ISO paper size system?",
@@ -168,14 +168,14 @@ const breadcrumbJsonLd = {
 };
 
 export const metadata: Metadata = {
-  title: "ISO vs US Print Sizes: A4, Letter, A3, Tabloid Explained (Pixels at 300 DPI)",
+  title: "ISO vs US Print Sizes: A4, Letter, A3 Explained (300 DPI)",
   description:
-    "A4 and Letter look similar but have different aspect ratios — a file sized for one shows white borders on the other. Complete ISO and US print size chart with exact pixels at 300 DPI.",
+    "A4 ≠ Letter. A3 ≠ Tabloid. Same file on the wrong system shows white borders. Pixel dimensions at 300 DPI for every ISO and US print size.",
   alternates: {
     canonical: `https://snaptosize.com/${SLUG}`,
   },
   openGraph: {
-    title: "ISO vs US Print Sizes: A4, Letter, A3 Explained (Pixels at 300 DPI)",
+    title: "ISO vs US Print Sizes: A4, Letter, A3 Explained (300 DPI)",
     description:
       "A4 is not the same as Letter. A3 is not the same as Tabloid. Exact pixels for every ISO and US print size at 300 DPI — with the conversion trap explained.",
     url: `https://snaptosize.com/${SLUG}`,
@@ -297,7 +297,7 @@ export default function IsoVsUsPrintSizesPage() {
                   }}
                 >
                   <span className="font-mono text-sm font-bold text-teal-300">A4</span>
-                  <span className="font-mono text-[10px] text-slate-400 mt-1">2480×3507</span>
+                  <span className="font-mono text-[10px] text-slate-400 mt-1">2480×3508</span>
                   <span className="font-mono text-[10px] text-slate-500">px @ 300 DPI</span>
                   <span
                     className="absolute bottom-2 text-[10px] font-semibold"
@@ -540,7 +540,7 @@ export default function IsoVsUsPrintSizesPage() {
 
           <p className="text-foreground/70 leading-relaxed mt-4">
             The simple fix is to include both files: one at{" "}
-            <strong className="text-white">2480×3507 px for A4</strong> and one at{" "}
+            <strong className="text-white">2480×3508 px for A4</strong> and one at{" "}
             <strong className="text-white">2550×3300 px for Letter</strong>. For posters,
             include both <strong className="text-white">3508×4961 px for A3</strong> and{" "}
             <strong className="text-white">3300×5100 px for Tabloid</strong>.
