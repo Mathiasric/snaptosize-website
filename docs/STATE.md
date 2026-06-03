@@ -23,7 +23,7 @@
    - ✅ `/8x10-vs-11x14-print-size` — weakest SERP in cluster, proportional hero visual, ratio comparison, FAQ schema (Jun 1)
    - ✅ `/8x10-vs-5x7-print-size` — 128% area diff, 5:7 vs 4:5 ratio cards, FAQ schema (Jun 1)
    - ✅ `/8x10-vs-8-5x11-print-size` — frame size vs printer size angle, QuickAnswer GEO box, ratio cards, cut-down trap, FAQ schema (Jun 2)
-   - ⬜ ISO vs US print sizes explainer
+   - ✅ `/iso-vs-us-print-sizes` — A4 vs Letter/A3 vs Tabloid, pixel dims at 300 DPI, whitespace trap, when to offer each (Jun 3)
    - Max 2 pages/day (pacing).
 2. **Cold email to power-sellers** (quote/typography niche — 30MB+ artboards, all packs = ideal Pro). Fastest path to the next paying users.
 3. **Retention via My Packs adoption** (combat "no longer need it" churn) — uses built features, no new build.
@@ -60,7 +60,7 @@ Compete against **manual complexity** (Photoshop ~$60/mo, Canva per-size) — NO
 - **Social on autopilot** — check Pinterest Analytics manually in 2 weeks. Target >20 saves/pin.
 
 ## Next priorities (ranked: ARR-impact ÷ effort)
-1. **SEO size-comparison cluster** — `/8x10-vs-8-5x11-print-size` ✅ Jun 2, `/11x14-vs-12x16-print-size` ✅ Jun 3 (3:4 family visual, frame grid, OG-bilde, fullt ferdig). Next: ny cluster eller GEO. Max 2/day.
+1. **SEO size-comparison cluster** — `/8x10-vs-8-5x11-print-size` ✅ Jun 2, `/11x14-vs-12x16-print-size` ✅ Jun 3, `/iso-vs-us-print-sizes` ✅ Jun 3 (A4/Letter/A3/Tabloid, pixel dims, whitespace trap). Next: GEO-oppgaver eller ny cluster. Max 2/day.
 2. **GSC review round 2** — revisit after 2 weeks; let Jun 1 pages index first before pulling new CTR data.
 3. **Social batch W24** — next week, 4 pins using remaining GEMINI_PROMPT_LIBRARY concepts. Run `schedule-ready-pins.py --since [date]` + `schedule-instagram-ready.py --since [date]`.
 
