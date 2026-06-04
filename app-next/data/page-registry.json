@@ -2127,6 +2127,28 @@
     ]
   },
   {
+    "slug": "11x14-vs-11x17-print-size",
+    "title": "11×14 vs 11×17 Print Size: Exact Pixels, Ratio & Etsy Guide (2026)",
+    "description": "11×14 and 11×17 are both 11 inches wide but 11×17 is 3 inches taller and 21% larger. At 300 DPI: 11×14 = 3,300×4,200 px · 11×17 = 3,300×5,100 px. Frame guide, ratio breakdown, and Etsy tips.",
+    "keywords": [
+      "11x14 vs 11x17",
+      "11x14 vs 11x17 print size",
+      "difference between 11x14 and 11x17",
+      "11x14 pixel dimensions 300 dpi",
+      "11x17 pixel dimensions 300 dpi",
+      "11x17 tabloid print size"
+    ],
+    "cluster": "size-comparison",
+    "relatedSlugs": [
+      "11x14-vs-12x16-print-size",
+      "8x10-vs-11x14-print-size",
+      "etsy-11x14-print-size",
+      "etsy-11x17-print-size",
+      "etsy-print-sizes",
+      "print-sizes-at-300-dpi"
+    ]
+  },
+  {
     "slug": "11x14-vs-12x16-print-size",
     "title": "11×14 vs 12×16 Print Size: What's the Difference? (Pixels at 300 DPI)",
     "description": "11×14 and 12×16 look similar but have different aspect ratios (11:14 vs 3:4) — they are not interchangeable. See exact pixels at 300 DPI and which SnapToSize pack covers each.",
