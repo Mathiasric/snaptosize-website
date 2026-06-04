@@ -156,7 +156,7 @@ export default function ElevenByFourteenVsElevenBySeventeenPage() {
     {
       question: "Is 11×17 the same as tabloid paper?",
       answer:
-        "Yes — 11×17 inches is the US Tabloid paper size (also called Ledger in landscape orientation). It's a standard print shop paper size, which is why 11×17 prints are affordable to produce and widely supported at print shops like FedEx, Staples, and local printers.",
+        "Yes. 11×17 inches is the US Tabloid paper size (also called Ledger in landscape orientation). It's a standard print shop paper size, which is why 11×17 prints are affordable to produce and widely supported at print shops like FedEx, Staples, and local printers.",
     },
     {
       question: "What frame size fits an 11×14 print?",
@@ -171,7 +171,7 @@ export default function ElevenByFourteenVsElevenBySeventeenPage() {
     {
       question: "Can I print an 11×14 design on 11×17 paper?",
       answer:
-        "Yes, but the 11×14 design won't fill an 11×17 sheet — you'll get roughly 1.5 inches of blank space on the top and bottom. The image prints at full resolution but sits centered on the larger sheet. This works if buyers know to trim the paper, but providing separate 11×14 and 11×17 files gives buyers a better experience.",
+        "Yes, but the 11×14 design won't fill an 11×17 sheet: you'll get roughly 1.5 inches of blank space on the top and bottom. The image prints at full resolution but sits centered on the larger sheet. This works if buyers know to trim the paper, but providing separate 11×14 and 11×17 files gives buyers a better experience.",
     },
     {
       question: "Does SnapToSize export both 11×14 and 11×17?",
@@ -554,7 +554,7 @@ export default function ElevenByFourteenVsElevenBySeventeenPage() {
               <strong className="text-foreground/80">Best practice for Etsy sellers:</strong>{" "}
               Include both sizes in your listing. A buyer looking for large wall art might
               want 11×14 to fit their existing frame, or 11×17 because they have a poster
-              frame. Offering both — with clear file names — eliminates the most common
+              frame. Offering both, with clear file names, eliminates the most common
               &ldquo;do you have this in a different size?&rdquo; message and expands your
               listing&apos;s appeal at zero extra design cost.
             </p>
@@ -607,8 +607,8 @@ export default function ElevenByFourteenVsElevenBySeventeenPage() {
 
         {/* Mid-page CTA */}
         <ContextualCTA
-          problem="Offering 11×14 and 11×17 in your Etsy listing means two separate export workflows — different canvas sizes, different pixel counts, and hoping you didn't accidentally use the wrong one."
-          solution="Upload once. SnapToSize generates both sizes at the exact pixel dimensions — 3,300×4,200 px and 3,300×5,100 px — no Photoshop, no cropping, guaranteed under 20 MB."
+          problem="Offering 11×14 and 11×17 means two separate export workflows: different canvas sizes, different pixel counts, different files to name and check."
+          solution="Upload once. SnapToSize generates both at 3,300×4,200 px and 3,300×5,100 px. No Photoshop, no cropping, guaranteed under 20 MB."
           appUrl={CTA_URL}
           buttonText="Export Both Sizes Free"
         />
@@ -619,7 +619,7 @@ export default function ElevenByFourteenVsElevenBySeventeenPage() {
             Is 11×17 the Same as Tabloid Paper?
           </h2>
           <p className="text-foreground/70 leading-relaxed mb-4">
-            Yes — 11×17 inches is the US Tabloid paper size (also called{" "}
+            Yes. 11×17 inches is the US Tabloid paper size (also called{" "}
             <strong>Ledger</strong> when oriented landscape). It&apos;s a standard paper size
             at print shops nationwide, which means 11×17 prints are affordable to produce
             and support is universal at FedEx Office, Staples, Walgreens, and local printers.
@@ -644,7 +644,7 @@ export default function ElevenByFourteenVsElevenBySeventeenPage() {
       <FinalCTA
         heading="Export 11×14 and 11×17 in Seconds"
         stat="3,300×4,200 px · 3,300×5,100 px"
-        description="Upload your design once. SnapToSize generates both sizes at the correct pixel dimensions — no Photoshop, no cropping, guaranteed under 20 MB."
+        description="Upload your design once. SnapToSize generates both sizes at the correct pixel dimensions. No Photoshop, no cropping, guaranteed under 20 MB."
         appUrl={CTA_URL}
         buttonText="Export Both Sizes Free"
       />

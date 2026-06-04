@@ -456,16 +456,16 @@
     ],
     "cluster": "sizes",
     "relatedSlugs": [
+      "11x14-vs-11x17-print-size",
+      "8x10-vs-11x14-print-size",
       "etsy-print-sizes",
       "etsy-print-ratios",
       "etsy-8x10-print-size",
       "etsy-5x7-print-size",
       "etsy-16x20-print-size",
-      "etsy-24x36-print-size",
       "how-to-resize-images-for-etsy",
       "best-resolution-for-etsy-printables",
-      "how-many-sizes-etsy-printable",
-      "etsy-12x16-print-size"
+      "how-many-sizes-etsy-printable"
     ]
   },
   {
@@ -908,18 +908,17 @@
     ],
     "cluster": "sizes",
     "relatedSlugs": [
+      "11x14-vs-11x17-print-size",
       "etsy-print-sizes",
       "etsy-print-ratios",
       "etsy-a3-print-size",
       "etsy-8-5x11-print-size",
       "etsy-11x14-print-size",
       "etsy-18x24-print-size",
-      "etsy-print-size-calculator",
       "how-to-resize-images-for-etsy",
       "best-resolution-for-etsy-printables",
       "how-many-sizes-etsy-printable",
-      "etsy-20mb-file-limit",
-      "what-files-to-include-etsy-digital-download"
+      "etsy-20mb-file-limit"
     ]
   },
   {
@@ -2162,12 +2161,12 @@
     ],
     "cluster": "size-comparison",
     "relatedSlugs": [
+      "11x14-vs-11x17-print-size",
       "8x10-vs-11x14-print-size",
       "8x10-vs-5x7-print-size",
       "8x10-vs-8-5x11-print-size",
       "etsy-print-sizes",
-      "print-sizes-at-300-dpi",
-      "etsy-13x19-print-size"
+      "print-sizes-at-300-dpi"
     ]
   },
   {
