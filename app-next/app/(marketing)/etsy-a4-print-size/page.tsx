@@ -12,15 +12,14 @@ import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
-  title: "A4 Print Size at 300 DPI: Exact Pixels for Etsy (2026)",
+  title: "A4 at 300 DPI = 2,480 × 3,508 px — Etsy Print Size Guide (2026)",
   description:
-    "A4 is 2480 × 3508 pixels at 300 DPI. Complete ISO size chart for Etsy — A5, A3, A2 included. Resize to exact pixels instantly with SnapToSize.",
+    "A4 at 300 DPI is 2,480 × 3,508 px (portrait) or 3,508 × 2,480 px (landscape). A5 = 1,748 × 2,480 px · A3 = 3,508 × 4,961 px. ISO dimensions for Etsy digital downloads.",
   alternates: { canonical: "https://snaptosize.com/etsy-a4-print-size" },
   openGraph: {
-    title:
-      "A4 Print Size at 300 DPI: Exact Pixels for Etsy (2026)",
+    title: "A4 at 300 DPI = 2,480 × 3,508 px — Etsy Print Size Guide (2026)",
     description:
-      "Complete A4 print guide for Etsy sellers. 2480×3508 pixels at 300 DPI, ISO A-series ratio, A4 vs US Letter, and international sizing.",
+      "A4 at 300 DPI is 2,480 × 3,508 px (portrait). A5 = 1,748 × 2,480 px · A3 = 3,508 × 4,961 px. ISO dimensions for Etsy digital downloads.",
     url: "https://snaptosize.com/etsy-a4-print-size",
     images: [
       {
@@ -33,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "A4 Print Size at 300 DPI: Exact Pixels for Etsy (2026)",
+    title: "A4 at 300 DPI = 2,480 × 3,508 px — Etsy Print Size Guide (2026)",
     description:
-      "Complete A4 print guide for Etsy sellers. 2480×3508 pixels at 300 DPI, ISO A-series ratio, and international file setup.",
+      "A4 at 300 DPI is 2,480 × 3,508 px (portrait). A5 = 1,748 × 2,480 px · A3 = 3,508 × 4,961 px. ISO dimensions for Etsy digital downloads.",
     images: ["/assets/og/etsy-a4-print-size.png"],
   },
 };
