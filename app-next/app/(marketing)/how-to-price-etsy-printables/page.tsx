@@ -8,18 +8,19 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
+import { AuthorByline } from "@/components/AuthorByline";
 
 export const metadata: Metadata = {
-  title: "How to Price Etsy Printables: Cost Formula Guide",
+  title: "Etsy Printable Price Range: $3–$20 + Fee Breakdown (2026)",
   description:
-    "Most sellers underprice by 40%. Exact fee breakdown, pricing formulas, and bundle strategies — plus how to deliver all sizes instantly with SnapToSize.",
+    "Most Etsy printables sell for $3–$20. Sweet spot: $10–$15 all-size bundles — Etsy keeps ~14%, you keep ~$8.60–$13.12. Full fee table, 3 pricing strategies, and bundle tactics.",
   alternates: {
     canonical: "https://snaptosize.com/how-to-price-etsy-printables",
   },
   openGraph: {
-    title: "How to Price Etsy Printables: Cost Formula Guide",
+    title: "Etsy Printable Price Range: $3–$20 + Fee Breakdown (2026)",
     description:
-      "Price your Etsy printables for profit. Fee reality, multi-size pricing, premium tactics, and bundle strategies for digital downloads.",
+      "Etsy printable price range: $3–$20. Sweet spot $10–$15 bundles — full fee table, 3 pricing strategies, and bundle tactics.",
     url: "https://snaptosize.com/how-to-price-etsy-printables",
     images: [
       {
@@ -32,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "How to Price Etsy Printables: Cost Formula Guide",
+    title: "Etsy Printable Price Range: $3–$20 + Fee Breakdown (2026)",
     description:
-      "Most sellers underprice by 40%. See the exact fee breakdown and pricing formulas top shops use.",
+      "Etsy printables: $3–$20 range, sweet spot $10–$15 bundles. Exact fee table + 3 pricing strategies.",
     images: ["/assets/og/how-to-price-etsy-printables.png"],
   },
 };
@@ -48,7 +49,7 @@ export default function HowToPriceEtsyPrintablesPage() {
       "Complete guide to pricing Etsy printables for profit. Covers fee breakdown, multi-size bundle pricing, value-based strategies, and premium tactics for digital wall art.",
     url: "https://snaptosize.com/how-to-price-etsy-printables",
     datePublished: "2026-03-19",
-    dateModified: "2026-04-06",
+    dateModified: "2026-06-06",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -237,7 +238,7 @@ export default function HowToPriceEtsyPrintablesPage() {
                 How to Price Etsy Printables
               </span>
               <span className="block text-lg md:text-2xl lg:text-3xl font-semibold text-purple-200/80">
-                Pricing strategies that drive profit, not just sales
+                Most listings: $3–$20. Sweet spot for bundles: $10–$15.
               </span>
             </h1>
             <p className="text-base text-white/60 mb-4 max-w-lg">
@@ -285,6 +286,15 @@ export default function HowToPriceEtsyPrintablesPage() {
             <QuickAnswer question="How much should I charge for Etsy printables?">
               <strong>$10&ndash;15 for a multi-size bundle</strong> (all sizes in one download). Etsy takes ~14% in fees at this price point, leaving you ~$8.60&ndash;$13.12 per sale. Below $8, flat fees eat too much margin. Above $15, compete on value (editable files, commercial licenses, seasonal bundles).
             </QuickAnswer>
+          </div>
+        </Container>
+      </section>
+
+      {/* ===== AUTHOR ===== */}
+      <section className="pb-4">
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <AuthorByline lastUpdated="June 6, 2026" />
           </div>
         </Container>
       </section>
