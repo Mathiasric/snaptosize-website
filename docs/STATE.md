@@ -33,6 +33,17 @@
 ## Positioning (don't drift)
 Compete against **manual complexity** (Photoshop ~$60/mo, Canva per-size) — NOT "a faster resize tool." ICP has likely never opened Photoshop. Message: *no Photoshop, no manual per-size work, no cropping or distorting.*
 
+## In-flight / done (Jun 6 session)
+- **CTR-fix 5 striking-distance sider** — alle hadde 0% CTR tross pos 5-9. Kjerneproblem: titler svarte «how-to» mens queries spurte etter konkrete tall/størrelser.
+  - `how-to-price-etsy-printables`: "$3–$20 range" synlig i tittel (187 impr, 0% CTR)
+  - `etsy-digital-planner-sizes`: A4/Letter/Half Page eksplisitt i tittel (74 impr, 0% CTR)
+  - `etsy-pet-portrait-sizes`: "8×10, 11×14 & 16×20" i tittel (29 impr, 0% CTR)
+  - `etsy-12x16-print-size`: "3600×4800 px" i tittel (36 impr, 0% CTR)
+  - `etsy-13x19-print-size`: "Aspect Ratio 13:19" leder tittelen (52 impr, 0% CTR)
+- Alle 5 fikk AuthorByline (E-E-A-T) og oppdatert dateModified 2026-06-06.
+- **etsy-20mb-file-limit skippet** — data stale (apr 11), sist endret mai 30, ikke trygt å re-editere uten fersk GSC.
+- **Neste GSC-review**: ~Jun 15 — mål CTR på alle 5 sider (forventet 2-5% fra 0%).
+
 ## In-flight / done (Jun 4 session)
 - **GEO pass komplett**: 12 sider fikk QuickAnswer-bokser (7 high-priority + 5 how-to pages). Alle tier-1 sider er nå AI Overview-klare.
 - **Homepage positioning skjerpet**: "up to 70 files" (var "30+ sizes"), identity badge "The Etsy print sizing tool", meta title eier kategorien. AuthoritySection oppdatert.
