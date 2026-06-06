@@ -105,6 +105,13 @@ import {
   EC12Slide04,
   EC12Slide05,
 } from "./_components/EtsyCarousel12";
+import {
+  EC13Slide01,
+  EC13Slide02,
+  EC13Slide03,
+  EC13Slide04,
+  EC13Slide05,
+} from "./_components/EtsyCarousel13";
 import Checklist from "./_components/Checklist";
 import Top5SizesShowcase from "./_components/Top5SizesShowcase";
 import FrameMatrixVisual from "./_components/FrameMatrixVisual";
@@ -346,6 +353,13 @@ export default function SocialSlidesPage() {
         <EC12Slide03 />
         <EC12Slide04 />
         <EC12Slide05 />
+
+        {/* ═══ W23-I01 (2026-06-06): EtsyCarousel13 — "She bought the print. Tried to frame it. Left 1 star." ═══ */}
+        <EC13Slide01 />
+        <EC13Slide02 />
+        <EC13Slide03 />
+        <EC13Slide04 />
+        <EC13Slide05 />
 
         {/* ═══ W20-P03: Anime Hero — NeonPackShowcase Pinterest ═══ */}
         <NeonPackShowcase artwork="anime-hero" name="Anime Hero" ratio="pinterest" />
