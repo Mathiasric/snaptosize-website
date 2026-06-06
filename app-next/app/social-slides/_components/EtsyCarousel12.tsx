@@ -112,8 +112,8 @@ export function EC12Slide01() {
         width: "100%",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "flex-start",
-        padding: "88px 64px 0",
+        justifyContent: "center",
+        padding: "80px 64px 160px",
         gap: 20,
       }}>
         <Badge text="How it works" />
@@ -196,9 +196,9 @@ export function EC12Slide02() {
         height: "100%",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
-        padding: "60px 64px 140px",
-        gap: 40,
+        justifyContent: "space-between",
+        padding: "60px 64px 100px",
+        gap: 32,
       }}>
         <Badge text="Steps 1 – 2" />
 
@@ -218,7 +218,7 @@ export function EC12Slide02() {
               display: "flex",
               gap: 32,
               alignItems: "flex-start",
-              padding: "40px 40px",
+              padding: "44px 40px",
               borderRadius: 24,
               background: "rgba(255,255,255,0.05)",
               border: `1px solid rgba(245,158,11,0.22)`,
@@ -254,6 +254,19 @@ export function EC12Slide02() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Bottom teaser */}
+        <div style={{
+          display: "flex",
+          alignItems: "center",
+          gap: 16,
+          padding: "20px 0",
+          borderTop: "1px solid rgba(245,158,11,0.15)",
+        }}>
+          <div style={{ fontSize: 15, color: "rgba(255,255,255,0.35)", letterSpacing: "0.08em", textTransform: "uppercase" }}>Next</div>
+          <div style={{ flex: 1, height: 1, background: "rgba(255,255,255,0.08)" }} />
+          <div style={{ fontSize: 17, color: "rgba(255,255,255,0.45)", fontWeight: 500 }}>What you get 45 seconds later →</div>
         </div>
       </div>
 
@@ -308,9 +321,9 @@ export function EC12Slide03() {
         height: "100%",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
-        padding: "60px 64px 140px",
-        gap: 40,
+        justifyContent: "space-between",
+        padding: "48px 64px 100px",
+        gap: 24,
       }}>
         <Badge text="Steps 3 – 5" color={TEAL} />
 
@@ -330,7 +343,7 @@ export function EC12Slide03() {
               display: "flex",
               gap: 24,
               alignItems: "flex-start",
-              padding: "24px 32px",
+              padding: "34px 32px",
               borderRadius: 20,
               background: "rgba(255,255,255,0.05)",
               border: `1px solid rgba(45,212,191,0.22)`,
@@ -366,6 +379,19 @@ export function EC12Slide03() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Bottom teaser */}
+        <div style={{
+          display: "flex",
+          alignItems: "center",
+          gap: 16,
+          padding: "20px 0",
+          borderTop: `1px solid rgba(45,212,191,0.15)`,
+        }}>
+          <div style={{ fontSize: 15, color: "rgba(255,255,255,0.35)", letterSpacing: "0.08em", textTransform: "uppercase" }}>Next</div>
+          <div style={{ flex: 1, height: 1, background: "rgba(255,255,255,0.08)" }} />
+          <div style={{ fontSize: 17, color: "rgba(255,255,255,0.45)", fontWeight: 500 }}>See it inside SnapToSize →</div>
         </div>
       </div>
 
