@@ -9,16 +9,17 @@ import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
+import { AuthorByline } from "@/components/AuthorByline";
 
 export const metadata: Metadata = {
-  title: "Pet Portrait Sizes for Etsy Sellers — Complete Sizing Guide",
+  title: "Etsy Pet Portrait Print Sizes: 8×10, 11×14 & 16×20 Guide (2026)",
   description:
-    "Pet portrait sizing guide for Etsy sellers. Best sizes for watercolor, digital, minimalist, royal, and memorial pet portraits. All ratio packs from one upload.",
+    "Best print sizes for pet portraits on Etsy: 8×10, 11×14, and 16×20 cover most buyers. Memorial and royal styles over-index on 16×20+. Sub-style breakdowns, frame-ready dimensions, and ratio guide.",
   alternates: {
     canonical: "https://snaptosize.com/etsy-pet-portrait-sizes",
   },
   openGraph: {
-    title: "Pet Portrait Sizes for Etsy | SnapToSize",
+    title: "Etsy Pet Portrait Print Sizes: 8×10, 11×14 & 16×20 Guide (2026)",
     description:
       "Best sizes for pet portraits on Etsy. Sub-style breakdowns, single vs multi-pet sizing, frame-ready dimensions, and batch resizing from one upload.",
     url: "https://snaptosize.com/etsy-pet-portrait-sizes",
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pet Portrait Sizes for Etsy Sellers — Complete Sizing Guide",
+    title: "Etsy Pet Portrait Print Sizes: 8×10, 11×14 & 16×20 Guide (2026)",
     description:
       "Best sizes for pet portraits on Etsy. Sub-style breakdowns, single vs multi-pet sizing, frame-ready dimensions, and batch resizing from one upload.",
     images: ["/assets/og/etsy-pet-portrait-sizes.png"],
@@ -50,7 +51,7 @@ export default function EtsyPetPortraitSizesPage() {
       "Complete pet portrait sizing guide for Etsy sellers. Covers best-selling sizes, sub-style breakdowns (watercolor, digital illustration, minimalist, royal, pop art, memorial), single vs multi-pet composition sizing, frame-ready dimensions, common mistakes, and how to generate every size from one upload.",
     url: "https://snaptosize.com/etsy-pet-portrait-sizes",
     datePublished: "2026-04-07",
-    dateModified: "2026-04-07",
+    dateModified: "2026-06-06",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -483,6 +484,15 @@ export default function EtsyPetPortraitSizesPage() {
                 </span>
               </div>
             </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* ===== AUTHOR ===== */}
+      <section className="pb-4">
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <AuthorByline lastUpdated="June 6, 2026" />
           </div>
         </Container>
       </section>

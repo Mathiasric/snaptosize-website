@@ -8,15 +8,15 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
+import { AuthorByline } from "@/components/AuthorByline";
 
 export const metadata: Metadata = {
-  title: "13\u00d719 Print Size for Etsy \u2014 Pixels, DPI & Poster Guide",
+  title: "13\u00d719 Print Size: Aspect Ratio 13:19, 3900\u00d75700 px at 300 DPI",
   description:
-    "13\u00d719 (Super B / A3+) is 3900\u00d75700 pixels at 300 DPI. Pixel dimensions, 13\u00d719 vs A3 comparison, framing guide, and Etsy listing setup for fine art digital downloads.",
+    "13\u00d719 (Super B / A3+) aspect ratio is 13:19 \u2014 exactly 3900\u00d75700 pixels at 300 DPI. Ratio explained, vs A3 comparison, framing guide, and Etsy listing setup for fine art digital downloads.",
   alternates: { canonical: "https://snaptosize.com/etsy-13x19-print-size" },
   openGraph: {
-    title:
-      "13\u00d719 Print Size for Etsy \u2014 Fine Art Poster Dimensions at 300 DPI | SnapToSize",
+    title: "13\u00d719 Print Size: Aspect Ratio 13:19, 3900\u00d75700 px at 300 DPI",
     description:
       "Complete 13\u00d719 print guide for Etsy sellers. 3900\u00d75700 pixels at 300 DPI, Super B / A3+ explained, framing, and listing setup.",
     url: "https://snaptosize.com/etsy-13x19-print-size",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "13\u00d719 Print Size for Etsy \u2014 Fine Art Poster Dimensions at 300 DPI",
+    title: "13\u00d719 Print Size: Aspect Ratio 13:19, 3900\u00d75700 px at 300 DPI",
     description:
       "Complete 13\u00d719 print guide for Etsy sellers. 3900\u00d75700 pixels at 300 DPI, Super B / A3+ explained, and framing guide.",
     images: ["/assets/og/etsy-13x19-print-size.png"],
@@ -48,7 +48,7 @@ export default function Etsy13x19PrintSizePage() {
       "Complete technical guide to 13\u00d719 (Super B / A3+) print dimensions for Etsy sellers, including exact pixel dimensions at 300 DPI, 13\u00d719 vs A3 comparison, framing options, and file setup for fine art digital downloads.",
     url: "https://snaptosize.com/etsy-13x19-print-size",
     datePublished: "2026-04-06",
-    dateModified: "2026-04-06",
+    dateModified: "2026-06-06",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -342,6 +342,15 @@ export default function Etsy13x19PrintSizePage() {
                 loading="lazy"
               />
             </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* ===== AUTHOR ===== */}
+      <section className="pb-4">
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <AuthorByline lastUpdated="June 6, 2026" />
           </div>
         </Container>
       </section>

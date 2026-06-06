@@ -9,15 +9,15 @@ import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
+import { AuthorByline } from "@/components/AuthorByline";
 
 export const metadata: Metadata = {
-  title: "12×16 Print Size for Etsy — Pixels, DPI & File Setup",
+  title: "12×16 Print Size: 3600×4800 px at 300 DPI — Etsy File Guide",
   description:
     "12×16 is the sweet spot of the 3:4 ratio family. Get exact pixel dimensions at 300 DPI (3600×4800), aspect ratio specs, file format rules, and framing tips for Etsy digital downloads.",
   alternates: { canonical: "https://snaptosize.com/etsy-12x16-print-size" },
   openGraph: {
-    title:
-      "12×16 Print Size for Etsy — Pixel Dimensions at 300 DPI | SnapToSize",
+    title: "12×16 Print Size: 3600×4800 px at 300 DPI — Etsy File Guide",
     description:
       "Complete 12×16 print guide for Etsy sellers. Exact pixels at 300 DPI, 3:4 ratio family, file format rules, and framing tips.",
     url: "https://snaptosize.com/etsy-12x16-print-size",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "12×16 Print Size for Etsy — Pixel Dimensions at 300 DPI",
+    title: "12×16 Print Size: 3600×4800 px at 300 DPI — Etsy File Guide",
     description:
       "Complete 12×16 print guide for Etsy sellers. 3600×4800 pixels at 300 DPI, 3:4 ratio, and file setup.",
     images: ["/assets/og/etsy-12x16-print-size.png"],
@@ -48,7 +48,7 @@ export default function Etsy12x16PrintSizePage() {
       "Complete technical guide to 12×16 print dimensions for Etsy sellers, including exact pixel dimensions at 300 DPI, 3:4 ratio specs, and file requirements.",
     url: "https://snaptosize.com/etsy-12x16-print-size",
     datePublished: "2026-03-22",
-    dateModified: "2026-03-22",
+    dateModified: "2026-06-06",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -369,6 +369,15 @@ export default function Etsy12x16PrintSizePage() {
                 </span>
               </div>
             </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* ===== AUTHOR ===== */}
+      <section className="pb-4">
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <AuthorByline lastUpdated="June 6, 2026" />
           </div>
         </Container>
       </section>

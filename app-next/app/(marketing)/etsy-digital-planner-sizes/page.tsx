@@ -8,11 +8,12 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
+import { AuthorByline } from "@/components/AuthorByline";
 
 export const metadata: Metadata = {
-  title: "Etsy Digital Planner Sizes — Exact Pixels for Every Format",
+  title: "Digital Planner Sizes for Etsy: A4, Letter & Half Page (2026)",
   description:
-    "Exact pixel dimensions for digital planner sizes on Etsy. A4, A5, US Letter, Half Letter, GoodNotes and iPad-optimized sizes at 300 DPI.",
+    "Standard digital planner sizes for Etsy: A4 (2480×3508 px), US Letter (2550×3300 px), A5 (1748×2480 px), Half Letter (1275×1650 px). All at 300 DPI — exact pixels, GoodNotes & iPad formats included.",
   alternates: {
     canonical: "https://snaptosize.com/etsy-digital-planner-sizes",
   },
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Etsy Digital Planner Sizes — Exact Pixels for Every Format",
+    title: "Digital Planner Sizes for Etsy: A4, Letter & Half Page (2026)",
     description:
       "Exact pixel dimensions for digital planner sizes on Etsy. A4, A5, US Letter, Half Letter, GoodNotes and iPad-optimized sizes at 300 DPI.",
     images: ["/assets/og/etsy-digital-planner-sizes.png"],
@@ -49,7 +50,7 @@ export default function EtsyDigitalPlannerSizesPage() {
       "Complete digital planner size guide for Etsy sellers. Covers the 4 standard page sizes, GoodNotes and iPad-optimized sizes, planner cover vs interior pages, how to package multiple sizes without manual resizing, and hyperlinked planner considerations.",
     url: "https://snaptosize.com/etsy-digital-planner-sizes",
     datePublished: "2026-04-11",
-    dateModified: "2026-04-11",
+    dateModified: "2026-06-06",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -449,6 +450,15 @@ export default function EtsyDigitalPlannerSizesPage() {
                 Resize My Planner Files &rarr;
               </Button>
             </a>
+          </div>
+        </Container>
+      </section>
+
+      {/* ===== AUTHOR ===== */}
+      <section className="pb-4">
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <AuthorByline lastUpdated="June 6, 2026" />
           </div>
         </Container>
       </section>
