@@ -33,6 +33,12 @@
 ## Positioning (don't drift)
 Compete against **manual complexity** (Photoshop ~$60/mo, Canva per-size) — NOT "a faster resize tool." ICP has likely never opened Photoshop. Message: *no Photoshop, no manual per-size work, no cropping or distorting.*
 
+## In-flight / done (Jun 9 session)
+- **New SEO page: `/etsy-poster-sizes`** — zero editorial competition on this SERP (YouTube/Reddit/Etsy marketplace dominated). Full guide: pixel dimensions table for all 6 poster sizes at 300 DPI, per-size use-case cards, 24×36/20×30 Etsy 20 MB warning (user-side fixes only — no mention of JPEG quality compression), ratio family grouping (2:3 and 3:4), ContextualCTA, 3-tier seller decision guide, landscape table, framing guide, 7-FAQ schema + Article + Breadcrumb JSON-LD, AuthorByline, QuickAnswer GEO box.
+- Registered in page-registry.json (10 relatedSlugs), Header nav (desktop + mobile), Footer Size Guides column. Committed + pushed (c541b11).
+- SEO page count: 90 → **91**.
+- **Next GSC check**: ~Jun 15 — monitor CTR on the 5 Jun 6 pages + check if etsy-poster-sizes appears in Search Console.
+
 ## In-flight / done (Jun 6 session)
 - **CTR-fix 5 striking-distance sider** — alle hadde 0% CTR tross pos 5-9. Kjerneproblem: titler svarte «how-to» mens queries spurte etter konkrete tall/størrelser.
   - `how-to-price-etsy-printables`: "$3–$20 range" synlig i tittel (187 impr, 0% CTR)

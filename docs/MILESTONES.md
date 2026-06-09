@@ -4,10 +4,10 @@
 ---
 
 ## Current State
-- **Paying users:** 15 (14 monthly, 1 yearly) — +1 Pro monthly 2026-05-29 (Stripe-verified 2026-05-27 baseline)
-- **MRR:** $176 (14× $11.99 monthly + $97/year amortized) — +1 Pro monthly 2026-05-29
+- **Paying users:** 17 (16 monthly, 1 yearly) — +1 Pro monthly 2026-06-01 (reconciled to STATE.md baseline)
+- **MRR:** $200 (16× $11.99 monthly + $97/year amortized) — +1 Pro monthly 2026-06-01
 - **Total revenue collected:** $264.86 (1× $97 yearly + 12× $11.99 monthly first payments + 2× $11.99 renewals)
-- **SEO pages live:** 90 (80 total incl. non-SEO)
+- **SEO pages live:** 91 (80 total incl. non-SEO)
 - **First paying customer:** 2026-03-03
 - **Target:** $1M ARR (~7,500 paying users)
 
