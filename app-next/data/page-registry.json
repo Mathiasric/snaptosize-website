@@ -1,5 +1,31 @@
 [
   {
+    "slug": "etsy-poster-sizes",
+    "title": "Etsy Poster Sizes: 300 DPI Pixel Dimensions (18×24, 24×36 & More)",
+    "description": "Complete Etsy poster size guide with exact pixel dimensions at 300 DPI for all 6 standard sizes. Ratio families, 20 MB file limit explained, and which sizes to offer.",
+    "keywords": [
+      "etsy poster sizes",
+      "poster sizes for etsy",
+      "18x24 pixels 300 dpi",
+      "24x36 pixels 300 dpi",
+      "etsy poster pixel dimensions",
+      "best poster sizes to sell on etsy"
+    ],
+    "cluster": "size-guides",
+    "relatedSlugs": [
+      "etsy-18x24-print-size",
+      "etsy-24x36-print-size",
+      "etsy-20x30-print-size",
+      "etsy-13x19-print-size",
+      "etsy-11x17-print-size",
+      "etsy-12x18-print-size",
+      "etsy-20mb-file-limit",
+      "most-popular-etsy-print-sizes-to-sell",
+      "print-sizes-at-300-dpi",
+      "etsy-print-sizes"
+    ]
+  },
+  {
     "slug": "dpi-vs-pixel-dimensions",
     "title": "DPI vs Pixel Dimensions: What Decides Print Quality",
     "pageType": "guide",

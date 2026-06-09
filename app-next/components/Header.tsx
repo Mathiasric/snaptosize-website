@@ -316,6 +316,9 @@ export function Header() {
                       <Link href="/etsy-a1-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
                         A1 Print Size
                       </Link>
+                      <Link href="/etsy-poster-sizes" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                        Poster Sizes
+                      </Link>
                     </div>
                     <div className="space-y-0.5">
                       <Link href="/etsy-4x6-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
@@ -574,6 +577,9 @@ export function Header() {
                         </Link>
                         <Link href="/etsy-a1-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           A1 Print Size
+                        </Link>
+                        <Link href="/etsy-poster-sizes" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Poster Sizes
                         </Link>
                         <Link href="/etsy-4x6-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           4&times;6 Print Size

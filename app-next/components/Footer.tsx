@@ -32,6 +32,7 @@ export function Footer() {
                 <li><Link href="/etsy-a4-print-size" className="transition-colors hover:text-accent-light">A4 Print Size</Link></li>
                 <li><Link href="/etsy-16x20-print-size" className="transition-colors hover:text-accent-light">16×20 Print Size</Link></li>
                 <li><Link href="/etsy-a1-print-size" className="transition-colors hover:text-accent-light">A1 Print Size</Link></li>
+                <li><Link href="/etsy-poster-sizes" className="transition-colors hover:text-accent-light">Poster Sizes</Link></li>
                 <li className="text-[11px] font-semibold text-foreground/40 uppercase tracking-widest pt-2">Comparisons</li>
                 <li><Link href="/5x7-vs-4x6-print-size" className="transition-colors hover:text-accent-light">5×7 vs 4×6</Link></li>
                 <li><Link href="/8x10-vs-11x14-print-size" className="transition-colors hover:text-accent-light">8×10 vs 11×14</Link></li>
