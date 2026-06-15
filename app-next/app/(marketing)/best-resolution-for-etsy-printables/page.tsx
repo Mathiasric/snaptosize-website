@@ -12,14 +12,14 @@ import RelatedPages from "@/components/RelatedPages";
 import { AuthorByline } from "@/components/AuthorByline";
 
 export const metadata: Metadata = {
-  title: "Best Resolution for Etsy Printables: Mistakes to Avoid",
+  title: "Best Resolution for Etsy Printables: Always 300 DPI (2026)",
   description:
-    "Best resolution for Etsy printables: common mistakes that cause blurry prints, how to check your file's DPI, and the best practices most sellers miss.",
+    "300 DPI is the standard for all Etsy printables — every size, every format. Get the exact pixel dimensions for 5×7 through 24×36, plus why 72 DPI fails at print.",
   alternates: {
     canonical: "https://snaptosize.com/best-resolution-for-etsy-printables",
   },
   openGraph: {
-    title: "Best Resolution for Etsy Printables: Mistakes to Avoid",
+    title: "Best Resolution for Etsy Printables: Always 300 DPI (2026)",
     description:
       "Common resolution mistakes that cause blurry Etsy prints, how to verify your file's DPI, and the best practices most sellers overlook.",
     url: "https://snaptosize.com/best-resolution-for-etsy-printables",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Resolution for Etsy Printables: Mistakes to Avoid",
+    title: "Best Resolution for Etsy Printables: Always 300 DPI (2026)",
     description:
       "Why your 300 DPI file still prints blurry — the resolution mistakes most Etsy sellers make and how to fix them.",
     images: ["/assets/og/best-resolution-for-etsy-printables.png"],
@@ -52,7 +52,7 @@ export default function BestResolutionForEtsyPrintablesPage() {
       "Common resolution mistakes that cause blurry Etsy prints, how to verify your file's DPI, and the best practices most sellers overlook.",
     url: "https://snaptosize.com/best-resolution-for-etsy-printables",
     datePublished: "2026-03-17",
-    dateModified: "2026-05-28",
+    dateModified: "2026-06-15",
     author: {
       "@type": "Organization",
       name: "The SnapToSize Team",

@@ -21,14 +21,14 @@ import { QuickAnswer } from "@/components/QuickAnswer";
 import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 
 export const metadata: Metadata = {
-  title: "Best File Format for Etsy Printables: JPG for Wall Art, PDF for Planners (2026)",
+  title: "Best File Format for Etsy Printables: JPG vs PDF vs PNG (2026)",
   description:
-    "Wrong file format = blurry prints and refund requests. See the exact format top Etsy sellers use for printables, wall art, and digital downloads.",
+    "JPG for wall art. PDF for planners. PNG only when transparency matters. See which format top Etsy sellers use — and why getting it wrong causes blurry prints.",
   alternates: {
     canonical: "https://snaptosize.com/best-file-format-etsy-printables",
   },
   openGraph: {
-    title: "Best File Format for Etsy Printables: JPG for Wall Art, PDF for Planners (2026)",
+    title: "Best File Format for Etsy Printables: JPG vs PDF vs PNG (2026)",
     description:
       "Wrong file format = blurry prints and refund requests. See the exact format top Etsy sellers use for printables, wall art, and digital downloads.",
     url: "https://snaptosize.com/best-file-format-etsy-printables",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best File Format for Etsy Printables: JPG for Wall Art, PDF for Planners (2026)",
+    title: "Best File Format for Etsy Printables: JPG vs PDF vs PNG (2026)",
     description:
       "Wrong file format = blurry prints and refund requests. See the exact format top Etsy sellers use for printables, wall art, and digital downloads.",
     images: ["/assets/og/best-file-format-etsy-printables.png"],
