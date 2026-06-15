@@ -1,0 +1,100 @@
+{
+  "_comment": "Pool of EtsyCarousel sources for CarouselReplay TikTok videos. To add: copy 5 square slides to public/ec0X/, add entry here. Each entry must include 'metadata' block — used to auto-generate POST_METADATA.txt next to the rendered video.",
+  "last_rendered": "2026-06-15",
+  "carousels": [
+    {
+      "id": "ec09",
+      "slug": "aspect-ratio-trap",
+      "slides": [
+        "ec09/ec09-slide-01.jpg",
+        "ec09/ec09-slide-02.jpg",
+        "ec09/ec09-slide-03.jpg",
+        "ec09/ec09-slide-04.jpg",
+        "ec09/ec09-slide-05.jpg"
+      ],
+      "hookCaption": "73% Want 4:5\nYou Only List 2:3",
+      "ctaCaption": "Fix It Free →\nsnaptosize.com",
+      "theme": "midnight",
+      "tag": "Etsy Sellers",
+      "times_used": 2,
+      "last_used": "2026-06-05",
+      "source": "EtsyCarousel09",
+      "metadata": {
+        "videoTitle": "73% Want 4:5, You Only List 2:3",
+        "audience": "Etsy sellers",
+        "shortHook": "73% of print buyers want 4:5 — most shops only list 2:3.",
+        "outcomeStatement": "Same artwork. Wrong proportions for the frame they already own.",
+        "openQuestion": "What size do YOU list first → 2:3 or 4:5?",
+        "tiktokHashtags": [
+          "#etsyseller",
+          "#etsytips",
+          "#printsondemand",
+          "#printableart"
+        ],
+        "instagramHashtags": [
+          "#etsyseller",
+          "#etsytips",
+          "#printsondemand",
+          "#printableart",
+          "#etsybusiness",
+          "#digitaldownloads",
+          "#etsyshop"
+        ],
+        "youtubeTitle": "Why Etsy print buyers ignore your listings — the 4:5 mistake",
+        "youtubeDescription": "73% of Etsy print buyers search for 4:5 ratios — but most shops only list 2:3. Same artwork, wrong proportions for the frames buyers already own.\n\nThis 15-second breakdown shows the data, the fix, and how to generate every standard ratio from a single upload in under a minute.",
+        "pinterestTitle": "Etsy Print Sizes Mistake — Why You're Losing 73% of Buyers",
+        "pinterestDescription": "Most Etsy shops list 2:3 ratio prints. But 73% of print buyers actually want 4:5 sizes (8x10, 11x14, 16x20). Same artwork, wrong proportions for the frames they already own. Fix it free with SnapToSize → one upload, every ratio auto-resized.",
+        "hasOfferInVideo": true,
+        "offerCode": "ETSYSELLER",
+        "offerDescription": "30 days Pro on snaptosize.com (50 codes total)"
+      }
+    },
+    {
+      "id": "ec13",
+      "slug": "1-star-review",
+      "slides": [
+        "ec13/ec13-slide-01.jpg",
+        "ec13/ec13-slide-02.jpg",
+        "ec13/ec13-slide-03.jpg",
+        "ec13/ec13-slide-04.jpg",
+        "ec13/ec13-slide-05.jpg"
+      ],
+      "hookCaption": "She Tried to Frame It.\nLeft 1 Star.",
+      "ctaCaption": "Comment FREE →\nsnaptosize.com",
+      "theme": "midnight",
+      "tag": "Etsy Sellers",
+      "times_used": 1,
+      "last_used": "2026-06-15",
+      "source": "EtsyCarousel13",
+      "metadata": {
+        "videoTitle": "She Bought the Print. Tried to Frame It. Left 1 Star.",
+        "audience": "Etsy print sellers",
+        "shortHook": "She loved the print. The frame didn't fit. You got a 1-star review.",
+        "outcomeStatement": "Her frame was 4:5. Your file was 2:3. Different proportions. The print didn't fit.",
+        "openQuestion": "Have you ever had a buyer complain about sizing — or just silently leave?",
+        "tiktokHashtags": [
+          "#etsyseller",
+          "#etsytips",
+          "#printsondemand",
+          "#printableart"
+        ],
+        "instagramHashtags": [
+          "#etsyseller",
+          "#etsytips",
+          "#printsondemand",
+          "#printableart",
+          "#etsybusiness",
+          "#digitaldownloads",
+          "#etsyshop"
+        ],
+        "youtubeTitle": "The 1-star Etsy review nobody warns you about (wrong frame size)",
+        "youtubeDescription": "Your buyer ordered a print. Downloaded it. Took it to the frame store. It didn't fit. She left 1 star — not because the art was bad, but because the proportions were wrong.\n\nStandard frames come in 12 sizes. Most Etsy listings cover 3 or fewer. Here's how to fix it in one upload.",
+        "pinterestTitle": "The Silent 1-Star Review Etsy Print Sellers Don't See Coming",
+        "pinterestDescription": "Her frame was 4:5. Your file was 2:3. The print didn't fit. She left 1 star and never came back. Standard frames come in 12 sizes — most Etsy listings cover 3 or fewer. Fix it with SnapToSize: one upload, every ratio covered.",
+        "hasOfferInVideo": true,
+        "offerCode": "FREE",
+        "offerDescription": "30 days Pro on snaptosize.com"
+      }
+    }
+  ]
+}
