@@ -86,12 +86,13 @@ for pin in PINS:
     results[item_id] = res
 
     # Write buffer_post_id back to metadata.json
-    if res and res.get("id"):
-        meta_json["buffer_post_id"] = res["id"]
+    if res and res.get("success"):
+        buf_id = res.get("buffer_post_id", "")
+        meta_json["buffer_post_id"] = buf_id
         meta_json["r2_url"] = f"{os.environ.get('R2_PUBLIC_URL', '')}/{r2_key}"
         with open(CONTENT / slug / "metadata.json", "w", encoding="utf-8") as f:
             json.dump(meta_json, f, indent=2, ensure_ascii=False)
-        print(f"  ✓ Scheduled: {res['id']}")
+        print(f"  ✓ Scheduled: {buf_id}")
     else:
         print(f"  ✗ FAILED: {res}")
 
@@ -99,8 +100,8 @@ print("\n" + "=" * 60)
 if dry_run:
     print("Dry run ferdig. Kjør uten --dry-run for å poste til Buffer.")
 else:
-    ok = [k for k, v in results.items() if v and v.get("id")]
-    fail = [k for k, v in results.items() if not v or not v.get("id")]
+    ok = [k for k, v in results.items() if v and v.get("success")]
+    fail = [k for k, v in results.items() if not v or not v.get("success")]
     print(f"Scheduled: {len(ok)}/3")
     if fail:
         print(f"Failed: {fail}")
