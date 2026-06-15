@@ -1,5 +1,5 @@
 """W28 Instagram batch — schedule pre-cropped 4:5 images from instagram_ready — 2026-06-15"""
-import sys, json, shutil, os, importlib.util
+import sys, json, shutil, os, importlib.util, datetime
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -16,11 +16,12 @@ IG_CONTENT = ROOT / "marketing" / "social" / "content" / "instagram"
 R2_URL     = os.environ.get("R2_PUBLIC_URL", "https://social.snaptosize.com")
 
 dry_run = "--dry-run" in sys.argv
+TODAY = datetime.date.today().strftime("%Y-%m-%d")
 
 POSTS = [
     {
         "item_id": "W28-IG01",
-        "instagram_slug": "2026-06-30-bedroom-sizes-instagram",
+        "instagram_slug": f"{TODAY}-bedroom-sizes-instagram",
         "ready_name": "2026_06_30_bedroom_sizes_pinterest(15.06).jpg",
         "due_at": "2026-06-30T18:00:00Z",
         "title": "Bedroom Wall Art Sizes — Every Frame Covered",
@@ -38,7 +39,7 @@ POSTS = [
     },
     {
         "item_id": "W28-IG02",
-        "instagram_slug": "2026-07-01-living-room-sizes-instagram",
+        "instagram_slug": f"{TODAY}-living-room-sizes-instagram",
         "ready_name": "2026_07_01_living_room_sizes_pinterest(15.06).jpg",
         "due_at": "2026-07-01T18:00:00Z",
         "title": "Living Room Wall Art Sizes — What Buyers Actually Search For",
@@ -57,7 +58,7 @@ POSTS = [
     },
     {
         "item_id": "W28-IG03",
-        "instagram_slug": "2026-07-02-file-chaos-before-after-instagram",
+        "instagram_slug": f"{TODAY}-file-chaos-before-after-instagram",
         "ready_name": "2026_07_02_file_chaos_before_after_pint(15.06).jpg",
         "due_at": "2026-07-02T18:00:00Z",
         "title": "File Chaos vs One Upload — Before vs After SnapToSize",
