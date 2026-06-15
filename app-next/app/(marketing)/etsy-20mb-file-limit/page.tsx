@@ -639,7 +639,7 @@ export default function Etsy20MBFileLimitPage() {
                     {item.step === "5" && (
                       <div className="mt-4 p-5 rounded-lg bg-accent-5 border-2 border-accent-light/30">
                         <p className="text-sm font-medium mb-3">
-                          Skip all 5 steps: SnapToSize accepts any image format and automatically converts to optimized JPG, organizes by ratio, and delivers every pack under 20MB. Ready to upload to Etsy in seconds.
+                          Skip all 8 steps: SnapToSize accepts any image format and automatically converts to optimized JPG, organizes by ratio, and delivers every pack under 20MB. Ready to upload to Etsy in seconds.
                         </p>
                         <a
                           href={appUrl}

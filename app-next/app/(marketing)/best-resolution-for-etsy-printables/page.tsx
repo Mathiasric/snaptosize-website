@@ -169,8 +169,6 @@ export default function BestResolutionForEtsyPrintablesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
-      <AuthorByline lastUpdated="May 28, 2026" />
-
       {/* ===== HERO ===== */}
       <section
         className="relative pt-8 pb-20 md:pt-10 md:pb-28 overflow-hidden"
@@ -179,6 +177,9 @@ export default function BestResolutionForEtsyPrintablesPage() {
             "linear-gradient(160deg, #030712 0%, #0a0f1e 40%, #0d1117 100%)",
         }}
       >
+        <div className="container mx-auto px-4 pt-2 pb-0">
+          <AuthorByline lastUpdated="June 15, 2026" />
+        </div>
         {/* DPI grid — dense pixel-like pattern */}
         <div
           className="absolute inset-0 opacity-[0.04]"
@@ -284,7 +285,7 @@ export default function BestResolutionForEtsyPrintablesPage() {
                 Best Resolution for Etsy Printables:
               </span>{" "}
               <span className="block text-xl md:text-2xl lg:text-3xl font-semibold text-white/80">
-                Common mistakes that cause blurry prints
+                Always 300 DPI — every size, every format
               </span>
             </h1>
             <p className="text-base text-white/60 mb-5 max-w-lg">
