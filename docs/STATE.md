@@ -2,11 +2,12 @@
 
 **Read this first each session.** Live data (Stripe / PostHog / GSC) = truth. This file is re-derived from current reality, not inherited from older docs. Older doc claims are *dated evidence to verify*, never commands.
 
-**Last updated:** 2026-06-04 (GEO pass + new comparison page + paywall copy + strategic research)
+**Last updated:** 2026-06-15 (brain refresh — Stripe/PostHog/GSC pulled, priorities re-ranked)
 
 ## Where we are (live)
-- **17 paying Pro · ~$200 MRR** (16 monthly @ $11.99 + 1 yearly @ $97) — +1 Pro monthly 2026-06-01.
-- Watch: Alex Higgs + Subas renewals ~May 27 → verify in Stripe if still active.
+- **~19 paying Pro · ~$224 MRR** (18 monthly @ $11.99 + 1 yearly @ $97) — Jun 15 PostHog estimate: +2 checkouts Jun 9-10, -1 churn wk Jun 7 vs Jun 12 baseline of 18. Verify exact count in Stripe.
+- **GSC (3 months to Jun 14):** 38 clicks / 3,050 impr / 1.25% CTR, 35 pages with data. Biggest untapped: `/etsy-20mb-file-limit` 1,131 impr @ pos 8.1 → 0.2% CTR. 9 pages ≥20 impr with 0% CTR.
+- **PostHog (Jun 1-15):** MAU 815 (↑ from 715 prior week). DAU: 2-3 quick-export + 3-7 pack-export (steady). Rate limit hits normalized (8/day Jun 1 → 0-2/day now).
 - **Free→paid conversion ~37%** (SaaS standard 2–5%).
 - Pricing: Monthly $11.99 · Yearly $97 (−33%). $1M-ARR model = **2,500–4,000 users @ $11.99–$29**.
 
@@ -14,24 +15,30 @@
 **The bottleneck is DISTRIBUTION — not conversion, not quality, not price.** 37% conversion is elite; we simply have too few qualified visitors. Judge every lever by: *does it bring more Etsy-printable sellers to the product?*
 
 ## Top priorities (ranked: ARR-impact ÷ effort)
-1. **SEO acquisition** — the compounding volume engine. Tier-1 easy-win pages (weak SERPs, real pain):
-   - ✅ `/dpi-for-print` — DPI explainer (May 28)
-   - ✅ `/image-resolution-for-print` — repositioned resolution page (May 28)
-   - ✅ `/resize-image-without-cropping-etsy` — with BeforeAfterSlider (May 29)
-   - ✅ `/ikea-ribba-frame-print-sizes` — OG + internal links (May 30)
-   - ✅ `/5x7-vs-4x6-print-size` — comparison page, CSS size visual, buyer guide, FAQ schema (May 30)
-   - ✅ `/8x10-vs-11x14-print-size` — weakest SERP in cluster, proportional hero visual, ratio comparison, FAQ schema (Jun 1)
-   - ✅ `/8x10-vs-5x7-print-size` — 128% area diff, 5:7 vs 4:5 ratio cards, FAQ schema (Jun 1)
-   - ✅ `/8x10-vs-8-5x11-print-size` — frame size vs printer size angle, QuickAnswer GEO box, ratio cards, cut-down trap, FAQ schema (Jun 2)
-   - ✅ `/iso-vs-us-print-sizes` — A4 vs Letter/A3 vs Tabloid, pixel dims at 300 DPI, whitespace trap, when to offer each (Jun 3)
-   - ✅ `/11x14-vs-11x17-print-size` — same-width/different-height confusion, proportional CSS visual, frame guide, tabloid section, OG image (Jun 4)
-   - Max 2 pages/day (pacing).
-2. **Cold email to power-sellers** (quote/typography niche — 30MB+ artboards, all packs = ideal Pro). Fastest path to the next paying users.
-3. **Retention via My Packs adoption** (combat "no longer need it" churn) — uses built features, no new build.
-- Later: ARPU (a $29 "Studio/Agency" tier; annual already exists). Quality/delight = post-50-users.
+1. **Cold email — send batch-01** (51 contacts ready, personalized drafts written). Quote/typography niche, 100+ listings, Etsy-only = ideal Pro. File: `marketing/social/cold-email-batch-01-send-ready.md`. Non-delegatable.
+2. **CTR rescue sprint** (GSC Jun 15 data — titles aren't surfacing the answer):
+   - `/etsy-20mb-file-limit` — 1,131 impr, pos 8.1, **0.2% CTR** → biggest single lever. Fix title to show the numbers ("20 MB limit, 5 files per listing").
+   - `/best-file-format-etsy-printables` — 475 impr, pos 5.7, 0% CTR
+   - `/best-resolution-for-etsy-printables` — 188 impr, pos 6.9, 0% CTR
+   - `/etsy-print-sizes` — 115 impr, pos 7.8, 0% CTR
+   - `/how-to-package-digital-wall-art-for-etsy` — 76 impr, pos 7.4, 0% CTR
+   - `/how-many-sizes-etsy-printable` — 62 impr, pos 6.2, 0% CTR
+   - Max 2 CTR fixes/day (same pacing rule as SEO pages).
+3. **New SEO pages** — compounding volume engine, max 2/day. Candidates: `/a4-vs-letter-print-size`, `/etsy-print-size-tool`.
+   - ✅ `/dpi-for-print` (May 28) · ✅ `/image-resolution-for-print` (May 28) · ✅ `/resize-image-without-cropping-etsy` (May 29) · ✅ `/ikea-ribba-frame-print-sizes` (May 30) · ✅ `/5x7-vs-4x6-print-size` (May 30)
+   - ✅ `/8x10-vs-11x14-print-size` (Jun 1) · ✅ `/8x10-vs-5x7-print-size` (Jun 1) · ✅ `/8x10-vs-8-5x11-print-size` (Jun 2) · ✅ `/iso-vs-us-print-sizes` (Jun 3) · ✅ `/11x14-vs-11x17-print-size` (Jun 4) · ✅ `/etsy-poster-sizes` (Jun 9)
+- Later: Quick-export paywall gate (app-repo, 1-2h dev — 21 rate limit hits in 14d with no upgrade shown), ARPU tier ($29 Studio), My Packs adoption drive.
 
 ## Positioning (don't drift)
 Compete against **manual complexity** (Photoshop ~$60/mo, Canva per-size) — NOT "a faster resize tool." ICP has likely never opened Photoshop. Message: *no Photoshop, no manual per-size work, no cropping or distorting.*
+
+## In-flight / done (Jun 15 session)
+- **Brain refresh — alle tre datakilder pullet:**
+  - **PostHog:** MAU 815 (↑715). DAU stabil 2-3 quick-export + 3-7 pack-export. 2 nye betalinger Jun 9-10 (paywall funnel), 1 churn uke Jun 7. Rate limit hits normalisert (peak 8/dag Jun 1 → 0-2/dag nå).
+  - **Stripe (Link CSV):** ~19 betalende brukere estimert, ~$224 MRR. Verify nøyaktig tall direkte i Stripe.
+  - **GSC (3 måneder til Jun 14):** 38 clicks / 3,050 impr / 1.25% CTR på 35 sider. Kritisk funn: `/etsy-20mb-file-limit` har 1,131 impr på pos 8.1 men kun 0.2% CTR — dette er den største enkelt-siden CTR-muligheten vi har. 9 sider med 0% CTR og ≥20 impr.
+- **CTR-funn fra jun-6-fixes:** Tidlig GSC indikasjon — etsy-a4-print-size (119 impr, pos 12.7, 0% CTR) og how-to-price (54 impr, pos 7.9, 0% CTR) viser at tittelfikser ikke har slått inn enda (for tidlig). Etsy-poster-sizes enda ikke indexert i dette datasettet (shippa Jun 9).
+- **Prioriteter omrangert** — Cold email #1, CTR-sprint #2, nye SEO-sider #3. Se Top priorities.
 
 ## In-flight / done (Jun 9 session)
 - **New SEO page: `/etsy-poster-sizes`** — zero editorial competition on this SERP (YouTube/Reddit/Etsy marketplace dominated). Full guide: pixel dimensions table for all 6 poster sizes at 300 DPI, per-size use-case cards, 24×36/20×30 Etsy 20 MB warning (user-side fixes only — no mention of JPEG quality compression), ratio family grouping (2:3 and 3:4), ContextualCTA, 3-tier seller decision guide, landscape table, framing guide, 7-FAQ schema + Article + Breadcrumb JSON-LD, AuthorByline, QuickAnswer GEO box.
@@ -88,9 +95,9 @@ Compete against **manual complexity** (Photoshop ~$60/mo, Canva per-size) — NO
 
 ## Next priorities (ranked: ARR-impact ÷ effort)
 1. **Educator outreach** — 5 DMs til Etsy-edukatorer (ShootingStarSVG, Gold City Ventures). En nevnelse = mer distribusjon enn 20 SEO-sider. Ikke delegerbart.
-2. **GSC review round 2** — tidligst ~Jun 15; la Jun 1-sidene indeksere seg ferdig først.
-3. **Social batch W24** — 4 pins fra GEMINI_PROMPT_LIBRARY. Kjør `schedule-ready-pins.py --since [date]` + `schedule-instagram-ready.py --since [date]`.
-4. **Ny SEO-side** — neste size-comparison (maks 2/dag). Candidates: `/a4-vs-letter-print-size`, `/etsy-print-size-tool`.
+2. ✅ **GSC review round 2** — gjennomført Jun 15. Se "In-flight / done (Jun 15 session)" for funn.
+3. **Social batch W27** — neste uke. Kjør `schedule-ready-pins.py --since [date]` + `schedule-instagram-ready.py --since [date]`.
+4. **My Packs adoption** — drive awareness til free-brukere, combat "no longer need it" churn.
 
 ## In-flight / done (Jun 3 session)
 - `/iso-vs-us-print-sizes` bygget og skipet: A4 vs Letter, A3 vs Tabloid, pixel dims ved 300 DPI, whitespace trap-forklaring, "When to offer each"-guide, 7 FAQs, OG-bilde, nav + footer + registry oppdatert.
