@@ -12,12 +12,12 @@ import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
-  title: "Etsy Print Sizes Explained: Size & Ratio Chart",
+  title: "Etsy Print Sizes: Full Chart at 300 DPI — Every Size & Ratio (2026)",
   description:
     "Every Etsy print size with exact pixel dimensions at 300 DPI. Copy-paste sizes top sellers use — auto-resize to all of them free with SnapToSize.",
   alternates: { canonical: "https://snaptosize.com/etsy-print-sizes" },
   openGraph: {
-    title: "Etsy Print Sizes Explained: Size & Ratio Chart",
+    title: "Etsy Print Sizes: Full Chart at 300 DPI — Every Size & Ratio (2026)",
     description:
       "Every Etsy print size with exact pixel dimensions at 300 DPI. The sizes top sellers use to maximize sales.",
     url: "https://snaptosize.com/etsy-print-sizes",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Etsy Print Sizes Explained: Size & Ratio Chart",
+    title: "Etsy Print Sizes: Full Chart at 300 DPI — Every Size & Ratio (2026)",
     description:
       "Every Etsy print size with exact pixel dimensions at 300 DPI. The complete reference for sellers.",
     images: ["/assets/og/etsy-print-sizes.png"],

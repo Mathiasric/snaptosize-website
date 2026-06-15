@@ -11,14 +11,14 @@ import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
-  title: "How Many Sizes per Etsy Printable? (2026 Answer)",
+  title: "How Many Sizes for Etsy Printables? Include All 5 Ratio Packs (2026)",
   description:
     "Too few sizes = lost sales. Too many = confused buyers. See the exact number top Etsy sellers include and why it works.",
   alternates: {
     canonical: "https://snaptosize.com/how-many-sizes-etsy-printable",
   },
   openGraph: {
-    title: "How Many Sizes per Etsy Printable? (2026 Answer)",
+    title: "How Many Sizes for Etsy Printables? Include All 5 Ratio Packs (2026)",
     description:
       "The complete guide to sizing strategy for Etsy digital print sellers. Learn the 5 ratio pack system that eliminates buyer questions and maximizes conversions.",
     url: "https://snaptosize.com/how-many-sizes-etsy-printable",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "How Many Sizes per Etsy Printable? (2026 Answer)",
+    title: "How Many Sizes for Etsy Printables? Include All 5 Ratio Packs (2026)",
     description:
       "Too few sizes = lost sales. Too many = confused buyers. See the exact number top sellers include.",
     images: ["/assets/og/how-many-sizes-etsy-printable.png"],

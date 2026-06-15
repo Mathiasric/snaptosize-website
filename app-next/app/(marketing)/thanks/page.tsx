@@ -30,7 +30,7 @@ export default function ThanksPage() {
 
           <Link
             className="btn btn--ghost"
-            href="/etsy-print-size-guide"
+            href="/etsy-print-sizes"
             data-cta="print_size_guide"
           >
             Print Size Guide
