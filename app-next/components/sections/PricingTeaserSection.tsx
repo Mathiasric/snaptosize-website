@@ -100,9 +100,7 @@ export function PricingTeaserSection() {
               </li>
               <li className="flex items-start gap-2.5 text-foreground-60">
                 <Check className="h-4 w-4 text-teal-400 flex-shrink-0 mt-0.5" />
-                <span>
-                  <span className="font-semibold text-foreground">Unlimited</span> My Packs (saved size sets)
-                </span>
+                Saved size sets (My Packs)
               </li>
               <li className="flex items-start gap-2.5 text-foreground-60">
                 <Check className="h-4 w-4 text-teal-400 flex-shrink-0 mt-0.5" />
