@@ -2,7 +2,9 @@
 
 **Read this first each session.** Live data (Stripe / PostHog / GSC) = truth. This file is re-derived from current reality, not inherited from older docs. Older doc claims are *dated evidence to verify*, never commands.
 
-**Last updated:** 2026-06-15 (brain refresh — Stripe/PostHog/GSC pulled, priorities re-ranked)
+**Last updated:** 2026-06-16 (homepage marketing overhaul — see Jun 16 changes below)
+
+**Jun 16 changes:** Removed off-topic Etsy shop buyer reviews from homepage. Replaced FounderStorySection with product-proof demo (real filenames, pack labels, mode pills, country flags, CTA). Redesigned PricingTeaserSection — full feature lists, asymmetric visual weight, $0 forever framing, "export anytime" differentiator. My Packs Pro limit unknown — copy neutral until confirmed.
 
 ## Where we are (live)
 - **~19 paying Pro · ~$224 MRR** (18 monthly @ $11.99 + 1 yearly @ $97) — Jun 15 PostHog estimate: +2 checkouts Jun 9-10, -1 churn wk Jun 7 vs Jun 12 baseline of 18. Verify exact count in Stripe.
@@ -15,8 +17,7 @@
 **The bottleneck is DISTRIBUTION — not conversion, not quality, not price.** 37% conversion is elite; we simply have too few qualified visitors. Judge every lever by: *does it bring more Etsy-printable sellers to the product?*
 
 ## Top priorities (ranked: ARR-impact ÷ effort)
-1. **Cold email — send batch-01** (51 contacts ready, personalized drafts written). Quote/typography niche, 100+ listings, Etsy-only = ideal Pro. File: `marketing/social/cold-email-batch-01-send-ready.md`. Non-delegatable.
-2. **CTR rescue sprint** (GSC Jun 15 data — titles aren't surfacing the answer):
+1. **CTR rescue sprint** ← ACTIVE while cold email is parked (batch-01 sent Jun 15, see #3). GSC Jun 15 data — titles aren't surfacing the answer:
    - `/etsy-20mb-file-limit` — 1,131 impr, pos 8.1, **0.2% CTR** → biggest single lever. Fix title to show the numbers ("20 MB limit, 5 files per listing").
    - `/best-file-format-etsy-printables` — 475 impr, pos 5.7, 0% CTR
    - `/best-resolution-for-etsy-printables` — 188 impr, pos 6.9, 0% CTR
@@ -24,9 +25,10 @@
    - `/how-to-package-digital-wall-art-for-etsy` — 76 impr, pos 7.4, 0% CTR
    - `/how-many-sizes-etsy-printable` — 62 impr, pos 6.2, 0% CTR
    - Max 2 CTR fixes/day (same pacing rule as SEO pages).
-3. **New SEO pages** — compounding volume engine, max 2/day. Candidates: `/a4-vs-letter-print-size`, `/etsy-print-size-tool`.
+2. **New SEO pages** — compounding volume engine, max 2/day. Candidates: `/a4-vs-letter-print-size`, `/etsy-print-size-tool`.
    - ✅ `/dpi-for-print` (May 28) · ✅ `/image-resolution-for-print` (May 28) · ✅ `/resize-image-without-cropping-etsy` (May 29) · ✅ `/ikea-ribba-frame-print-sizes` (May 30) · ✅ `/5x7-vs-4x6-print-size` (May 30)
    - ✅ `/8x10-vs-11x14-print-size` (Jun 1) · ✅ `/8x10-vs-5x7-print-size` (Jun 1) · ✅ `/8x10-vs-8-5x11-print-size` (Jun 2) · ✅ `/iso-vs-us-print-sizes` (Jun 3) · ✅ `/11x14-vs-11x17-print-size` (Jun 4) · ✅ `/etsy-poster-sizes` (Jun 9)
+3. **Cold email — ⏳ SENT & AWAITING SIGNAL (parked — do NOT restart yet).** Batch 01 = 6 qualified DIGITAL sellers sent Jun 15 (`marketing/social/cold-email-batch-01-SEND-READY.txt`; tracker `cold-email-batch-01-tracker.csv`). Learning probe — judge by reply quality, NOT sales. **Trigger to act:** a reply lands, OR ~Jun 20 silence → F1 follow-up + decide scale-or-pivot. Only then re-scan the 97-email list for digital-only → batch 02. (9 of first 15 were cut as physical-print/wrong-type — qualify digital BEFORE writing copy. See [[project_cold_email_ownsite_sellers]].)
 - Later: Quick-export paywall gate (app-repo, 1-2h dev — 21 rate limit hits in 14d with no upgrade shown), ARPU tier ($29 Studio), My Packs adoption drive.
 
 ## Positioning (don't drift)
@@ -38,7 +40,8 @@ Compete against **manual complexity** (Photoshop ~$60/mo, Canva per-size) — NO
   - **Stripe (Link CSV):** ~19 betalende brukere estimert, ~$224 MRR. Verify nøyaktig tall direkte i Stripe.
   - **GSC (3 måneder til Jun 14):** 38 clicks / 3,050 impr / 1.25% CTR på 35 sider. Kritisk funn: `/etsy-20mb-file-limit` har 1,131 impr på pos 8.1 men kun 0.2% CTR — dette er den største enkelt-siden CTR-muligheten vi har. 9 sider med 0% CTR og ≥20 impr.
 - **CTR-funn fra jun-6-fixes:** Tidlig GSC indikasjon — etsy-a4-print-size (119 impr, pos 12.7, 0% CTR) og how-to-price (54 impr, pos 7.9, 0% CTR) viser at tittelfikser ikke har slått inn enda (for tidlig). Etsy-poster-sizes enda ikke indexert i dette datasettet (shippa Jun 9).
-- **Prioriteter omrangert** — Cold email #1, CTR-sprint #2, nye SEO-sider #3. Se Top priorities.
+- **Cold email batch-01 SENT Jun 15** — 6 kvalifiserte DIGITALE selgere (9 av 15 kuttet: fysiske print-shops/feil produkttype, fanget via digital-vs-fysisk scan). Frame TV-feilpåstand fanget pre-send → LESSON-098. Nå parkert i vente-modus til svar / ~Jun 20-trigger.
+- **Prioriteter omrangert (post-send)** — CTR-sprint #1 (aktiv mens cold email venter), nye SEO-sider #2, cold email #3 (parkert). Se Top priorities.
 
 ## In-flight / done (Jun 9 session)
 - **New SEO page: `/etsy-poster-sizes`** — zero editorial competition on this SERP (YouTube/Reddit/Etsy marketplace dominated). Full guide: pixel dimensions table for all 6 poster sizes at 300 DPI, per-size use-case cards, 24×36/20×30 Etsy 20 MB warning (user-side fixes only — no mention of JPEG quality compression), ratio family grouping (2:3 and 3:4), ContextualCTA, 3-tier seller decision guide, landscape table, framing guide, 7-FAQ schema + Article + Breadcrumb JSON-LD, AuthorByline, QuickAnswer GEO box.

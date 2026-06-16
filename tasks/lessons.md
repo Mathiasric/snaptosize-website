@@ -744,3 +744,23 @@ Agent opprettet Instagram metadata uten `tags`-feltet (eller med tomt array). Br
 De 70 filene i et komplett Etsy-listing er portrait + landscape + square *combined* på tvers av pakkene — det er ikke slik at hver enkelt pack inneholder begge orienteringer automatisk.
 
 **Regel:** Aldri bruk "portrait AND landscape in every pack" eller lignende formuleringer i innhold om SnapToSize. Korrekt beskrivelse: "70 files total across 5 packs" eller "portrait, landscape, and square — all covered". Sjekk alltid `marketing/CONTENT_REFERENCE.md` for nøyaktige produktpåstander før Gemini-prompt skrives.
+
+---
+
+## LESSON-098 — Verifiser produktpåstander mot CONTENT_REFERENCE FØR cold email / outreach sendes
+
+**Et utkast til cold email (Happy Cat Prints) påsto at SnapToSize "outputs Frame TV + every print ratio" — men SnapToSize støtter IKKE 16:9 / Samsung Frame TV. Brukeren fanget det før utsending.**
+
+SnapToSize sine eksakte output-ratioer: 2:3, 3:4, 4:5, ISO A-serie, Extras (inkl. 11x14), pluss 24×36 og square via single-export. INGEN 16:9 / Frame TV. Å sende en personlig "jeg kjenner nisjen din"-epost med en feil produktpåstand er verre enn ingen epost — mottakeren klikker, finner ikke funksjonen, og vi fremstår som om vi ikke kjenner eget produkt.
+
+**Regel:** Før personalisert outreach som nevner spesifikke størrelser/ratioer/funksjoner — kryss-sjekk HVER påstand mot `marketing/CONTENT_REFERENCE.md`. Personalisering basert på mottakerens nisje (f.eks. Frame TV) betyr ikke at produktet dekker den nisjen. Hvis produktet ikke dekker det, pitch det produktet faktisk gjør (printable wall art-siden), ikke det de er kjent for.
+
+---
+
+## LESSON-099 — Sjekk CONTENT_REFERENCE før produktdata skrives til homepage
+
+**En fake "5:7 pack" ble skrevet til homepage-komponenten (FounderStorySection) uten å verifisere mot CONTENT_REFERENCE. Ble oppdaget av brukeren etter push.**
+
+Faktiske pakker: 2:3, 3:4, 4:5, ISO A-serie, Common sizes. Ingen 5:7-pakke. "Unlimited My Packs" på Pro ble også antatt uten å verifisere — fjernet til riktig tall er bekreftet.
+
+**Regel:** Før produktpåstander (pakkenavn, kvoter, filnavn, størrelser) skrives til noen side som er committed — les `marketing/CONTENT_REFERENCE.md` eller sjekk app/worker-koden. Gjett aldri.
