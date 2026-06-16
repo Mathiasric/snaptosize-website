@@ -10,7 +10,7 @@ const FILES = [
   { name: "salmon_chart_6x8in_15x20cm_1800x2400px.jpg",   dims: "1800×2400px", pack: "3:4" },
   { name: "salmon_chart_9x12in_23x30cm_2700x3600px.jpg",  dims: "2700×3600px", pack: "3:4" },
   { name: "salmon_chart_8x10in_20x25cm_2400x3000px.jpg",  dims: "2400×3000px", pack: "4:5" },
-  { name: "salmon_chart_5x7in_13x18cm_1500x2100px.jpg",   dims: "1500×2100px", pack: "5:7" },
+  { name: "salmon_chart_5x7in_13x18cm_1500x2100px.jpg",   dims: "1500×2100px", pack: "Common" },
   { name: "salmon_chart_A4_21x30cm_2480x3508px.jpg",      dims: "2480×3508px", pack: "A"   },
   { name: "salmon_chart_A3_30x42cm_3508x4961px.jpg",      dims: "3508×4961px", pack: "A"   },
 ];
@@ -19,7 +19,7 @@ const PACK_COLORS: Record<string, string> = {
   "2:3": "text-teal-400",
   "3:4": "text-violet-400",
   "4:5": "text-sky-400",
-  "5:7": "text-amber-400",
+  "Common": "text-amber-400",
   "A":   "text-rose-400",
 };
 
@@ -151,7 +151,7 @@ export function FounderStorySection() {
 
             {/* Export modes */}
             <div className="mt-4 flex flex-wrap gap-1.5 justify-center md:justify-start">
-              {["Portrait packs", "Landscape packs", "Square sizes", "Single export", "My Packs"].map((mode) => (
+              {["Portrait packs", "Landscape packs", "Square sizes", "Quick Export", "My Packs"].map((mode) => (
                 <span
                   key={mode}
                   className="text-[9px] font-mono px-2 py-0.5 rounded-full border border-white/[0.08] text-foreground-40"
