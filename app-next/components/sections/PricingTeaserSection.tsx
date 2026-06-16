@@ -1,109 +1,143 @@
 import Link from "next/link";
 import { Container } from "@/components/Container";
-import { Button } from "@/components/Button";
-import { Badge } from "@/components/Badge";
-import { Check, X } from "lucide-react";
+import { Check } from "lucide-react";
 
 export function PricingTeaserSection() {
   return (
-    <section className="py-16">
+    <section className="py-20 md:py-28">
       <Container>
-        <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">
-          Free vs Pro
-        </h2>
-        <p className="text-foreground-60 text-sm text-center mb-12 max-w-lg mx-auto">
-          Start free, upgrade when you need unlimited exports.
-        </p>
+        <div className="max-w-xl mx-auto text-center mb-14">
+          <h2 className="text-2xl md:text-3xl font-bold mb-3">
+            Start free. Go unlimited when ready.
+          </h2>
+          <p className="text-foreground-60 text-sm max-w-sm mx-auto">
+            Both plans include all ratio packs. Upgrade when your shop outgrows the daily limit.
+          </p>
+        </div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto items-start">
+
           {/* Free */}
-          <div className="rounded-xl border border-white/[0.08] bg-surface/50 p-6">
-            <h3 className="text-xl font-bold mb-1">Free</h3>
-            <p className="text-foreground-60 text-sm mb-6">Try before you buy</p>
-            <ul className="space-y-3 mb-6 text-sm">
-              <li className="flex items-center gap-2.5 text-foreground-60">
-                <Check className="h-4 w-4 text-accent-light flex-shrink-0" />
+          <div className="rounded-2xl border border-white/[0.07] bg-white/[0.015] p-7">
+            <p className="text-[10px] font-mono text-foreground-40 uppercase tracking-widest mb-4">
+              Free
+            </p>
+            <div className="flex items-baseline gap-1.5 mb-1">
+              <span className="text-3xl font-bold">$0</span>
+              <span className="text-foreground-60 text-sm">forever</span>
+            </div>
+            <p className="text-foreground-40 text-xs mb-8">No credit card needed</p>
+
+            <ul className="space-y-3 mb-8 text-sm">
+              <li className="flex items-start gap-2.5 text-foreground-60">
+                <Check className="h-4 w-4 text-teal-400/60 flex-shrink-0 mt-0.5" />
                 5 Quick Exports per day
               </li>
-              <li className="flex items-center gap-2.5 text-foreground-60">
-                <Check className="h-4 w-4 text-accent-light flex-shrink-0" />
+              <li className="flex items-start gap-2.5 text-foreground-60">
+                <Check className="h-4 w-4 text-teal-400/60 flex-shrink-0 mt-0.5" />
                 2 Packs per day
               </li>
-              <li className="flex items-center gap-2.5 text-foreground-60">
-                <Check className="h-4 w-4 text-accent-light flex-shrink-0" />
-                All ratios included
+              <li className="flex items-start gap-2.5 text-foreground-60">
+                <Check className="h-4 w-4 text-teal-400/60 flex-shrink-0 mt-0.5" />
+                1 saved pack (My Packs)
               </li>
-              <li className="flex items-center gap-2.5 text-foreground-40">
-                <X className="h-4 w-4 text-foreground-40/50 flex-shrink-0" />
-                Watermark on outputs
+              <li className="flex items-start gap-2.5 text-foreground-60">
+                <Check className="h-4 w-4 text-teal-400/60 flex-shrink-0 mt-0.5" />
+                All ratio packs included
+              </li>
+              <li className="flex items-start gap-2.5 text-foreground-60">
+                <Check className="h-4 w-4 text-teal-400/60 flex-shrink-0 mt-0.5" />
+                300 DPI quality exports
+              </li>
+              <li className="flex items-start gap-2.5 text-foreground-40">
+                <Check className="h-4 w-4 text-foreground-40/40 flex-shrink-0 mt-0.5" />
+                Small watermark on exports
               </li>
             </ul>
+
             <a
               href="https://app.snaptosize.com"
               target="_blank"
               rel="noopener noreferrer"
+              className="block w-full text-center rounded-lg border border-white/[0.1] bg-white/[0.04] py-2.5 text-sm font-medium text-foreground-60 hover:bg-white/[0.07] hover:text-foreground transition-colors duration-150"
             >
-              <Button variant="secondary" className="w-full">
-                Start Free
-              </Button>
+              Start free
             </a>
-            <p className="text-xs text-foreground-40 text-center mt-3">
-              No credit card required.
-            </p>
           </div>
 
           {/* Pro */}
-          <div className="rounded-xl border border-accent-light/20 bg-accent-light/[0.03] p-6 relative">
-            <div className="absolute -top-3 left-6">
-              <Badge>Best for sellers</Badge>
+          <div
+            className="rounded-2xl border border-teal-400/25 p-7 relative"
+            style={{ background: "oklch(0.18 0.012 185)" }}
+          >
+            <div className="absolute -top-3.5 left-6">
+              <span className="text-[10px] font-mono font-semibold uppercase tracking-widest bg-teal-400 text-slate-900 px-3 py-1 rounded-full">
+                Best for sellers
+              </span>
             </div>
-            <h3 className="text-xl font-bold mb-1">Pro</h3>
-            <div className="flex items-baseline gap-2 mb-1">
-              <span className="text-2xl font-bold">$11.99</span>
+
+            <p className="text-[10px] font-mono text-teal-400/70 uppercase tracking-widest mb-4">
+              Pro
+            </p>
+            <div className="flex items-baseline gap-1.5 mb-1">
+              <span className="text-3xl font-bold">$11.99</span>
               <span className="text-foreground-60 text-sm">/month</span>
             </div>
-            <p className="text-xs text-foreground-40 mb-6">
-              or $97/year (save 33%)
-            </p>
-            <ul className="space-y-3 mb-6 text-sm">
-              <li className="flex items-center gap-2.5 text-foreground-60">
-                <Check className="h-4 w-4 text-accent-light flex-shrink-0" />
-                <strong className="text-foreground">Unlimited</strong>&nbsp;Quick Exports
+            <p className="text-foreground-40 text-xs mb-8">or $97/year — save 33%</p>
+
+            <ul className="space-y-3 mb-8 text-sm">
+              <li className="flex items-start gap-2.5 text-foreground-60">
+                <Check className="h-4 w-4 text-teal-400 flex-shrink-0 mt-0.5" />
+                <span>
+                  <span className="font-semibold text-foreground">Unlimited</span> Quick Exports
+                </span>
               </li>
-              <li className="flex items-center gap-2.5 text-foreground-60">
-                <Check className="h-4 w-4 text-accent-light flex-shrink-0" />
-                <strong className="text-foreground">Unlimited</strong>&nbsp;Packs
+              <li className="flex items-start gap-2.5 text-foreground-60">
+                <Check className="h-4 w-4 text-teal-400 flex-shrink-0 mt-0.5" />
+                <span>
+                  <span className="font-semibold text-foreground">Unlimited</span> Packs — export anytime
+                </span>
               </li>
-              <li className="flex items-center gap-2.5 text-foreground-60">
-                <Check className="h-4 w-4 text-accent-light flex-shrink-0" />
-                All ratios included
+              <li className="flex items-start gap-2.5 text-foreground-60">
+                <Check className="h-4 w-4 text-teal-400 flex-shrink-0 mt-0.5" />
+                <span>
+                  <span className="font-semibold text-foreground">Unlimited</span> My Packs (saved size sets)
+                </span>
               </li>
-              <li className="flex items-center gap-2.5 text-foreground-60">
-                <Check className="h-4 w-4 text-accent-light flex-shrink-0" />
-                No watermark
+              <li className="flex items-start gap-2.5 text-foreground-60">
+                <Check className="h-4 w-4 text-teal-400 flex-shrink-0 mt-0.5" />
+                All ratio packs included
               </li>
-              <li className="flex items-center gap-2.5 text-foreground-60">
-                <Check className="h-4 w-4 text-accent-light flex-shrink-0" />
+              <li className="flex items-start gap-2.5 text-foreground-60">
+                <Check className="h-4 w-4 text-teal-400 flex-shrink-0 mt-0.5" />
+                300 DPI quality exports
+              </li>
+              <li className="flex items-start gap-2.5 text-foreground-60">
+                <Check className="h-4 w-4 text-teal-400 flex-shrink-0 mt-0.5" />
+                No watermark — clean, sell-ready files
+              </li>
+              <li className="flex items-start gap-2.5 text-foreground-60">
+                <Check className="h-4 w-4 text-teal-400 flex-shrink-0 mt-0.5" />
                 Priority processing
               </li>
             </ul>
+
             <a
               href="https://app.snaptosize.com"
               target="_blank"
               rel="noopener noreferrer"
+              className="block w-full text-center rounded-lg bg-teal-400 text-slate-900 py-2.5 text-sm font-semibold hover:bg-teal-300 transition-colors duration-150"
             >
-              <Button className="w-full">Upgrade to Pro</Button>
+              Upgrade to Pro
             </a>
-            <p className="text-xs text-foreground-40 text-center mt-3">
-              Cancel anytime.
-            </p>
+            <p className="text-xs text-foreground-40 text-center mt-3">Cancel anytime.</p>
           </div>
         </div>
 
-        <div className="text-center mt-8">
+        <div className="text-center mt-10">
           <Link
             href="/pricing"
-            className="text-sm text-accent-light hover:underline"
+            className="text-xs font-mono text-foreground-40 hover:text-foreground-60 transition-colors duration-150"
           >
             See full pricing details →
           </Link>
