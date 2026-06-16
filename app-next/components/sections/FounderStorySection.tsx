@@ -1,51 +1,4 @@
 import { Container } from "@/components/Container";
-import { Star } from "lucide-react";
-
-const reviews = [
-  {
-    quote:
-      "Print is as picture. Lots of printing sizes which was great.",
-    name: "Sophie",
-  },
-  {
-    quote:
-      "Great art and design, easy to use files and the seller is kind and communicative!",
-    name: "Nicole",
-  },
-  {
-    quote:
-      "Cutest design ever!! And the files are excellent!! So easy to pick your size.",
-    name: "Etsy buyer",
-  },
-  {
-    quote:
-      "Bold colours and clarity came out really well and will look nice filling a space on the wall!",
-    name: "Etsy buyer",
-  },
-  {
-    quote:
-      "Thank you for the wonderful customer service and the beautiful print!",
-    name: "Christine",
-  },
-  {
-    quote:
-      "Absolutely beautiful!!! I love my new print. Seller was extremely responsive.",
-    name: "Kimberly",
-  },
-];
-
-function Stars() {
-  return (
-    <div className="flex gap-0.5">
-      {[...Array(5)].map((_, i) => (
-        <Star
-          key={i}
-          className="h-3.5 w-3.5 fill-amber-400 text-amber-400"
-        />
-      ))}
-    </div>
-  );
-}
 
 export function FounderStorySection() {
   return (
@@ -67,7 +20,7 @@ export function FounderStorySection() {
           </div>
 
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            Loved by Etsy buyers
+            Built from real shop experience
           </h2>
 
           <p className="text-foreground-60 text-sm md:text-base max-w-2xl mx-auto">
@@ -76,26 +29,8 @@ export function FounderStorySection() {
           </p>
         </div>
 
-        {/* Review cards — horizontal scroll on mobile, grid on desktop */}
-        <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory md:grid md:grid-cols-3 md:overflow-visible md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 max-w-5xl lg:mx-auto">
-          {reviews.map((review, i) => (
-            <div
-              key={i}
-              className="min-w-[280px] md:min-w-0 snap-start rounded-lg border border-white/[0.08] bg-surface/50 p-5 flex flex-col gap-3"
-            >
-              <Stars />
-              <p className="text-sm text-foreground-60 italic leading-relaxed flex-1">
-                &ldquo;{review.quote}&rdquo;
-              </p>
-              <p className="text-xs text-foreground-40">
-                {review.name} &mdash; verified Etsy buyer
-              </p>
-            </div>
-          ))}
-        </div>
-
-        {/* Compact artwork strip */}
-        <div className="mt-10 max-w-3xl mx-auto">
+        {/* Artwork strip */}
+        <div className="max-w-3xl mx-auto">
           <div className="grid grid-cols-3 gap-3">
             <div className="rounded-lg overflow-hidden border border-white/[0.08] aspect-[3/4]">
               <img
