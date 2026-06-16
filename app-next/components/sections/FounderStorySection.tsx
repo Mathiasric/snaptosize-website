@@ -110,7 +110,7 @@ export function FounderStorySection() {
           {/* File output grid */}
           <div className="flex-1 w-full">
             <span className="text-[10px] font-mono text-foreground-40 uppercase tracking-widest block mb-3 text-center md:text-left">
-              Output files
+              Output files <span className="normal-case opacity-50">— examples</span>
             </span>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
               {FILES.map((file, i) => (
@@ -149,12 +149,22 @@ export function FounderStorySection() {
               ))}
             </div>
 
-            {/* Trust badges */}
-            <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-[10px] text-foreground-40 font-mono justify-center md:justify-start">
-              <span><span className="text-teal-400">✓</span> Etsy-ready names</span>
-              <span><span className="text-teal-400">✓</span> 300 DPI guaranteed</span>
-              <span><span className="text-teal-400">✓</span> Under 20 MB ZIP</span>
+            {/* Export modes */}
+            <div className="mt-4 flex flex-wrap gap-1.5 justify-center md:justify-start">
+              {["Portrait packs", "Landscape packs", "Square sizes", "Single export", "My Packs"].map((mode) => (
+                <span
+                  key={mode}
+                  className="text-[9px] font-mono px-2 py-0.5 rounded-full border border-white/[0.08] text-foreground-40"
+                >
+                  {mode}
+                </span>
+              ))}
             </div>
+
+            {/* Delivery line */}
+            <p className="mt-3 text-[10px] font-mono text-foreground-40 text-center md:text-left">
+              All delivered as named, 300 DPI ZIP files — ready to upload to Etsy.
+            </p>
           </div>
         </div>
 
@@ -174,6 +184,20 @@ export function FounderStorySection() {
             ))}
             <span className="text-[10px] font-mono text-foreground-40 ml-1">& more</span>
           </div>
+        </div>
+
+        {/* CTA */}
+        <div className="mt-10 text-center">
+          <a
+            href="https://app.snaptosize.com"
+            className="inline-flex items-center gap-2 text-sm font-medium text-teal-400 hover:text-teal-300 transition-colors duration-200 group"
+          >
+            Create your first pack free
+            <svg className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </a>
+          <p className="mt-1 text-[10px] font-mono text-foreground-40">No account needed</p>
         </div>
       </Container>
     </section>
