@@ -4,18 +4,28 @@ import { Container } from "@/components/Container";
 import { useEffect, useRef, useState } from "react";
 
 const FILES = [
-  { name: "artwork_4x6_300dpi.jpg",   dims: "1200×1800" },
-  { name: "artwork_8x12_300dpi.jpg",  dims: "2400×3600" },
-  { name: "artwork_16x24_300dpi.jpg", dims: "4800×7200" },
-  { name: "artwork_5x7_300dpi.jpg",   dims: "1500×2100" },
-  { name: "artwork_8x10_300dpi.jpg",  dims: "2400×3000" },
-  { name: "artwork_11x14_300dpi.jpg", dims: "3300×4200" },
-  { name: "artwork_A4_300dpi.jpg",    dims: "2480×3508" },
-  { name: "artwork_16x20_300dpi.jpg", dims: "4800×6000" },
-  { name: "artwork_A3_300dpi.jpg",    dims: "3508×4961" },
+  { name: "salmon_chart_4x6in_10x15cm_1200x1800px.jpg",   dims: "1200×1800px", pack: "2:3" },
+  { name: "salmon_chart_8x12in_20x30cm_2400x3600px.jpg",  dims: "2400×3600px", pack: "2:3" },
+  { name: "salmon_chart_16x24in_41x61cm_4800x7200px.jpg", dims: "4800×7200px", pack: "2:3" },
+  { name: "salmon_chart_6x8in_15x20cm_1800x2400px.jpg",   dims: "1800×2400px", pack: "3:4" },
+  { name: "salmon_chart_9x12in_23x30cm_2700x3600px.jpg",  dims: "2700×3600px", pack: "3:4" },
+  { name: "salmon_chart_8x10in_20x25cm_2400x3000px.jpg",  dims: "2400×3000px", pack: "4:5" },
+  { name: "salmon_chart_5x7in_13x18cm_1500x2100px.jpg",   dims: "1500×2100px", pack: "5:7" },
+  { name: "salmon_chart_A4_21x30cm_2480x3508px.jpg",      dims: "2480×3508px", pack: "A"   },
+  { name: "salmon_chart_A3_30x42cm_3508x4961px.jpg",      dims: "3508×4961px", pack: "A"   },
 ];
 
-const FLAGS = ["🇺🇸", "🇬🇧", "🇳🇴", "🇦🇺", "🇩🇪", "🇨🇦", "🇸🇪", "🇳🇱", "🇫🇷", "🇨🇭"];
+const PACK_COLORS: Record<string, string> = {
+  "2:3": "text-teal-400",
+  "3:4": "text-violet-400",
+  "4:5": "text-sky-400",
+  "5:7": "text-amber-400",
+  "A":   "text-rose-400",
+};
+
+const FLAGS = [
+  "🇺🇸","🇬🇧","🇳🇴","🇦🇺","🇩🇪","🇨🇦","🇮🇹","🇮🇳","🇷🇴","🇲🇩","🇫🇷","🇪🇸",
+];
 
 export function FounderStorySection() {
   const ref = useRef<HTMLElement>(null);
@@ -67,19 +77,18 @@ export function FounderStorySection() {
             </span>
             <div className="relative w-36 md:w-40 rounded-xl overflow-hidden border border-white/10 shadow-2xl">
               <img
-                src="/assets/founder/listing-salmon.png"
-                alt="Example artwork input"
-                className="w-full h-full object-cover aspect-[3/4]"
+                src="/assets/listings/salmon/Salmon.jpg"
+                alt="Example artwork — salmon chart print"
+                className="w-full object-cover aspect-[2/3]"
                 loading="lazy"
               />
               <div className="absolute inset-0 ring-1 ring-teal-400/20 rounded-xl pointer-events-none" />
             </div>
-            <span className="text-[10px] font-mono text-foreground-40">original.png</span>
+            <span className="text-[10px] font-mono text-foreground-40">salmon_chart.jpg</span>
           </div>
 
           {/* Arrow connector */}
           <div className="flex flex-col items-center justify-center flex-shrink-0 md:pt-16">
-            {/* Mobile: down */}
             <div className="md:hidden flex flex-col items-center gap-0.5">
               <div className="h-5 w-px bg-teal-400/30" />
               <svg className="w-4 h-4 text-teal-400" fill="currentColor" viewBox="0 0 20 20">
@@ -87,7 +96,6 @@ export function FounderStorySection() {
               </svg>
               <span className="text-[9px] font-mono text-teal-400/50">60 sec</span>
             </div>
-            {/* Desktop: right */}
             <div className="hidden md:flex flex-col items-center gap-1.5">
               <div className="flex items-center gap-1">
                 <div className="w-6 h-px bg-teal-400/30" />
@@ -115,22 +123,27 @@ export function FounderStorySection() {
                     transitionDelay: `${i * 65}ms`,
                   }}
                 >
-                  <div className="flex items-start gap-1.5 mb-1">
-                    <svg
-                      className="w-3 h-3 text-teal-400 flex-shrink-0 mt-0.5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={1.5}
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-                    </svg>
-                    <span className="font-mono text-[8.5px] leading-tight text-teal-400 break-all">
-                      {file.name}
+                  <div className="flex items-start justify-between gap-1 mb-1">
+                    <div className="flex items-start gap-1.5 min-w-0">
+                      <svg
+                        className="w-3 h-3 text-teal-400 flex-shrink-0 mt-0.5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={1.5}
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                      </svg>
+                      <span className="font-mono text-[8px] leading-tight text-teal-400 break-all">
+                        {file.name}
+                      </span>
+                    </div>
+                    <span className={`text-[8px] font-mono flex-shrink-0 ${PACK_COLORS[file.pack]}`}>
+                      {file.pack}
                     </span>
                   </div>
-                  <div className="pl-[18px] font-mono text-[8.5px] text-foreground-40">
-                    {file.dims}px &middot; 300 DPI
+                  <div className="pl-[18px] font-mono text-[8px] text-foreground-40">
+                    {file.dims} · 300 DPI
                   </div>
                 </div>
               ))}
@@ -150,7 +163,7 @@ export function FounderStorySection() {
           <p className="text-[10px] font-mono text-foreground-40 uppercase tracking-widest mb-3">
             Sellers using SnapToSize
           </p>
-          <div className="flex justify-center flex-wrap gap-2.5">
+          <div className="flex justify-center flex-wrap items-center gap-2">
             {FLAGS.map((flag) => (
               <span
                 key={flag}
@@ -159,6 +172,7 @@ export function FounderStorySection() {
                 {flag}
               </span>
             ))}
+            <span className="text-[10px] font-mono text-foreground-40 ml-1">& more</span>
           </div>
         </div>
       </Container>
