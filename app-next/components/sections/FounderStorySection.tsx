@@ -151,7 +151,7 @@ export function FounderStorySection() {
 
             {/* Export modes */}
             <div className="mt-4 flex flex-wrap gap-1.5 justify-center md:justify-start">
-              {["Portrait packs", "Landscape packs", "Square sizes", "Quick Export", "My Packs"].map((mode) => (
+              {["Print packs", "Landscape sizes", "Square sizes", "Quick Export", "My Packs"].map((mode) => (
                 <span
                   key={mode}
                   className="text-[9px] font-mono px-2 py-0.5 rounded-full border border-white/[0.08] text-foreground-40"
