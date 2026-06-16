@@ -48,7 +48,7 @@ export function Header() {
             className="flex items-center gap-2 text-lg font-bold tracking-tight transition-colors hover:text-accent-light focus-ring"
           >
             <img
-              src="/assets/favicon/favicon.svg"
+              src="/assets/favicon/logo.svg"
               alt="SnapToSize"
               className="h-7 w-7"
             />
