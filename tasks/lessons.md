@@ -764,3 +764,16 @@ SnapToSize sine eksakte output-ratioer: 2:3, 3:4, 4:5, ISO A-serie, Extras (inkl
 Faktiske pakker: 2:3, 3:4, 4:5, ISO A-serie, Common sizes. Ingen 5:7-pakke. "Unlimited My Packs" på Pro ble også antatt uten å verifisere — fjernet til riktig tall er bekreftet.
 
 **Regel:** Før produktpåstander (pakkenavn, kvoter, filnavn, størrelser) skrives til noen side som er committed — les `marketing/CONTENT_REFERENCE.md` eller sjekk app/worker-koden. Gjett aldri.
+
+---
+
+## LESSON-100 — "Distortion-free" er IKKE Perfect Fit sin kile, og ordet snakker ned våre egne moduser
+
+**Bygde først Perfect Fit-landingssiden (/distortion-free-crop) med "distortion-free" som hele vinkelen + et "Stretched to fit → circles go oval"-villain-kort. Brukeren fanget det: ordet er farligere enn funksjonen.**
+
+Sannheten: Size Packs bruker `img.resize((w,h), Image.LANCZOS)` — en force-resize som STREKKER litt når input-ratio ≠ pakke-ratio (verifisert mot ekte output i `app-next/public/assets/listings/`: fox 4:5 er synlig bredere enn 2:3-kilden, men beholder all detalj og ser proff ut). Så:
+- Å påstå "distortion-free" om Size Packs er en LØGN (den strekker). Jeg gjorde den feilen i chat.
+- Å gjøre "distortion-free / stretch" til sidens hovedbudskap impliserer at distortion er aksen mellom modusene våre — det er det ikke. Begge er gode; forskjellen er **scale-to-fit (Size Packs, rask, full detalj, riktig for det meste)** vs **crop-to-frame med kontroll (Perfect Fit, for detaljert kunst + ratio-bytte)**.
+- Bryter [[feedback_warning_copy_tone]]: aldri "stretch/distort/poor results" som gjør produktet til skurken.
+
+**Regel:** Perfect Fit sin ærlige kile = **kontroll + presisjon + laget for detaljert kunst** (du velger framingen), ikke "distortion-free". Behold "distortion-free crop" KUN som SEO-søkeord (title/meta/FAQ-spørsmål/keywords — det er det folk googler, og det er sant om Perfect Fit sin crop isolert), aldri som kontrast mot egne moduser og aldri med fryktnarrativ. Løft Size Packs som default, ikke skygg den. Når en marketingside lener seg på et negativt ord — sjekk om ordet rammer eget produkt før du shipper.

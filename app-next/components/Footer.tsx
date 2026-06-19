@@ -15,6 +15,7 @@ export function Footer() {
               <li><Link href="/guide" className="transition-colors hover:text-accent-light">User Guide</Link></li>
               <li><Link href="/etsy-print-size-calculator" className="transition-colors hover:text-accent-light">Print Size Calculator</Link></li>
               <li><Link href="/sizes" className="transition-colors hover:text-accent-light">All Pack Sizes</Link></li>
+              <li><Link href="/distortion-free-crop" className="transition-colors hover:text-accent-light">Perfect Fit — Crop to Ratio</Link></li>
               <li><Link href="/pricing" className="transition-colors hover:text-accent-light">Pricing</Link></li>
               <li><Link href="/faq" className="transition-colors hover:text-accent-light">FAQ</Link></li>
             </ul>

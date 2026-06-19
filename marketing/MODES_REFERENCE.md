@@ -68,23 +68,33 @@ to fit — distortion-free — in portrait **or** landscape.
 aspect ratio by cropping around the subject you choose, so nothing is stretched or squished.
 You control what stays in frame (live preview before export).
 
-**What it brings:** *Distortion-free cross-ratio + control.* When your art needs a
+**What it brings:** *Control + precision when the shape changes.* When your art needs a
 **different shape** than the original (e.g., a 2:3 piece you also want as 4:5), Perfect Fit
-gets it there cleanly, with you deciding the framing. **No rival offers this** — it's the
-ownable wedge.
+crops to the new ratio with **you deciding the framing** (live preview). Because it crops
+rather than scales, proportions stay exact — so it's **made for highly detailed art**.
+**No rival offers this** — it's the ownable wedge.
+
+> ⚠️ **The wedge is control/precision, NOT "distortion-free."** Size Packs uses a Lanczos
+> *force-resize* that stretches slightly when input ratio ≠ pack ratio (verified vs real
+> outputs — subtle, detail-preserving, fine for most art). So "distortion-free" is NOT true
+> of the whole product, and using it as the *contrast* between modes is both false and
+> self-damaging. See `tasks/lessons.md` LESSON-100 + [[feedback_warning_copy_tone]].
 
 **Who it's for:** Sellers reframing detailed art into new ratios; cross-platform creators
 (e.g., a Pinterest 2:3 → Instagram 4:5 reframe). Anyone burned by stretched/squished output
 from generic tools.
 
 **How to talk about it (positive):**
-- "Reframe your art to any ratio — distortion-free. You choose what stays in frame."
-- "Great for detailed art you want in new shapes, framed exactly how you want it."
-- The strong **"no stretching / no manual cropping"** claim is allowed **on Perfect Fit's
-  own surfaces, aimed at the external enemy** (doing it by hand in Photoshop, or stretchy
-  generic resizers) — **never** aimed at our other modes.
-- ❌ Never imply Size Packs/Quick Export distort. The enemy is *blind auto-crop* and *manual
-  work*, not our own tools.
+- Lead with **control + precision + made-for-detailed-art**: "Reframe your art to any ratio,
+  you choose what stays in frame." / "Made for detailed work, framed exactly how you want it."
+- "distortion-free crop" is a **SEO search term only** — keep it in titles/meta/FAQ/keywords
+  (it's what people google, and it's true of Perfect Fit's crop *in isolation*). Do **not**
+  make it the loud on-page message, a fear narrative, or a contrast with our own modes.
+- ❌ Never imply Size Packs/Quick Export distort, and never run a "stretched → looks wrong"
+  villain beat. The enemy, if named at all, is *external* (a generic resizer deciding the
+  framing for you, or slow manual Photoshop), kept light, never pointed at our tools.
+- Frame the mode split as **scale-to-fit (Size Packs: fast, full detail, right for most art)**
+  vs **crop-to-frame with control (Perfect Fit: detailed art + ratio changes)** — both good.
 
 **SEO intent (highest opportunity — ownable, low competition):** "crop art to print size
 without distortion," "reframe art to different aspect ratio," "distortion-free image resize
@@ -164,6 +174,6 @@ mix — drop in new art, get the same set every time.
 ## One-line positioning per mode (for quick reuse)
 
 - **Size Packs:** Every Etsy size from one upload, full detail kept.
-- **Perfect Fit:** Reframe your art to any ratio, distortion-free, your way.
+- **Perfect Fit:** Reframe your art to any ratio with full control, made for detailed work.
 - **Quick Export:** One image, one size, in seconds.
 - **My Packs:** Your saved size set, ready in one click.

@@ -105,6 +105,7 @@
     "cluster": "ratios",
     "relatedSlugs": [
       "etsy-print-sizes",
+      "distortion-free-crop",
       "etsy-20mb-file-limit",
       "sizes"
     ]
@@ -246,6 +247,7 @@
     "relatedSlugs": [
       "etsy-print-sizes",
       "etsy-print-ratios",
+      "distortion-free-crop",
       "etsy-20mb-file-limit",
       "how-to-sell-digital-downloads-on-etsy",
       "what-files-to-include-etsy-digital-download",
@@ -615,6 +617,7 @@
     "relatedSlugs": [
       "etsy-print-sizes",
       "etsy-print-ratios",
+      "distortion-free-crop",
       "etsy-print-size-calculator",
       "etsy-8x10-print-size",
       "etsy-24x36-print-size",

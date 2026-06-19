@@ -75,7 +75,7 @@ Save your own size set once, then reuse it in one click on every new design — 
 - Hero design via `frontend-design` skill — unique CSS-only hero per page, no plain gradients
 - Page registry (`app-next/data/page-registry.json`) auto-manages sitemap + internal links
 
-**Live pages** — `app-next/data/page-registry.json` is the source of truth (89 entries as of 2026-05-23). Snapshot: etsy-print-sizes, etsy-print-ratios, etsy-20mb-file-limit, how-to-sell-digital-downloads-on-etsy, what-files-to-include-etsy-digital-download, etsy-8x10-print-size, etsy-5x7-print-size, etsy-digital-download-not-selling, how-to-sell-printables-on-etsy-without-photoshop, how-to-resize-images-for-etsy, best-resolution-for-etsy-printables, how-many-sizes-etsy-printable, how-to-package-digital-wall-art-for-etsy, sizes, etsy-16x20-print-size, best-file-format-etsy-printables, etsy-24x36-print-size, how-to-price-etsy-printables, etsy-18x24-print-size, etsy-nursery-wall-art-sizes, etsy-4x6-print-size, etsy-12x16-print-size, etsy-print-size-calculator, 2-3-vs-4-5-ratio, etsy-botanical-print-sizes, etsy-8-5x11-print-size, etsy-digital-download-blurry-prints, etsy-a3-print-size, etsy-gallery-wall-print-sizes, etsy-11x14-print-size, etsy-a4-print-size, etsy-quote-wall-art-sizes, etsy-minimalist-wall-art-sizes, snaptosize-vs-canva, etsy-20x30-print-size, etsy-a5-print-size, snaptosize-vs-photoshop, etsy-20x24-print-size, etsy-11x17-print-size, etsy-12x18-print-size, etsy-print-on-demand-vs-digital-download, etsy-landscape-print-sizes, etsy-square-print-sizes, etsy-abstract-wall-art-sizes, etsy-ai-art-print-sizes, etsy-listing-photo-size, etsy-photography-print-sizes, etsy-13x19-print-size, etsy-a1-print-size, etsy-vintage-art-print-sizes, etsy-pet-portrait-sizes, etsy-sticker-sheet-size, etsy-bookmark-size, etsy-celestial-wall-art-sizes, etsy-floral-print-sizes
+**Live pages** — `app-next/data/page-registry.json` is the source of truth (101 entries as of 2026-06-19). Snapshot: distortion-free-crop (Perfect Fit feature page), etsy-print-sizes, etsy-print-ratios, etsy-20mb-file-limit, how-to-sell-digital-downloads-on-etsy, what-files-to-include-etsy-digital-download, etsy-8x10-print-size, etsy-5x7-print-size, etsy-digital-download-not-selling, how-to-sell-printables-on-etsy-without-photoshop, how-to-resize-images-for-etsy, best-resolution-for-etsy-printables, how-many-sizes-etsy-printable, how-to-package-digital-wall-art-for-etsy, sizes, etsy-16x20-print-size, best-file-format-etsy-printables, etsy-24x36-print-size, how-to-price-etsy-printables, etsy-18x24-print-size, etsy-nursery-wall-art-sizes, etsy-4x6-print-size, etsy-12x16-print-size, etsy-print-size-calculator, 2-3-vs-4-5-ratio, etsy-botanical-print-sizes, etsy-8-5x11-print-size, etsy-digital-download-blurry-prints, etsy-a3-print-size, etsy-gallery-wall-print-sizes, etsy-11x14-print-size, etsy-a4-print-size, etsy-quote-wall-art-sizes, etsy-minimalist-wall-art-sizes, snaptosize-vs-canva, etsy-20x30-print-size, etsy-a5-print-size, snaptosize-vs-photoshop, etsy-20x24-print-size, etsy-11x17-print-size, etsy-12x18-print-size, etsy-print-on-demand-vs-digital-download, etsy-landscape-print-sizes, etsy-square-print-sizes, etsy-abstract-wall-art-sizes, etsy-ai-art-print-sizes, etsy-listing-photo-size, etsy-photography-print-sizes, etsy-13x19-print-size, etsy-a1-print-size, etsy-vintage-art-print-sizes, etsy-pet-portrait-sizes, etsy-sticker-sheet-size, etsy-bookmark-size, etsy-celestial-wall-art-sizes, etsy-floral-print-sizes
 
 **First size-specific page deployed:** etsy-8x10-print-size (CSS-only blueprint hero, 4:5 ratio family table, 6 FAQs, OG image). Use as template for future size pages.
 
@@ -134,7 +134,17 @@ Save your own size set once, then reuse it in one click on every new design — 
 - Description structure: value statement → specific sizes/data → Etsy relevance → SnapToSize → CTA
 - Board targeting: Print Size Guides (reference), Seller Tools (lifestyle), Digital Prints (workflow)
 
-**Analytics:** Pinterest Business Analytics (pinterest.com/analytics) manually weekly. Target: saves > 20/pin in 30 days.
+**Confirmed winning visual spec (W22-P04 — 953 impressions, Jun 2026):**
+- Background: Dark navy (#0A0F1C) with large bold white headline + teal accent (#2DD4BF) — NOT warm cream
+- Structure: Proportional rectangles showing relative print sizes, each labeled "[dimension] — [use case]" (e.g. "11×14 in — #1 bestseller")
+- Highlight: Teal border/accent on most-searched size
+- Footer: stats strip ("All 9 sizes · 300 DPI · Etsy-ready ZIP") + CTA block with app.snaptosize.com
+- Why it works: sellers bookmark it to reference when listing new artwork → save-intent = high
+- Template: KONSEPT 14 in `marketing/social/GEMINI_PROMPT_LIBRARY.md`
+
+**Save-intent gate:** Before publishing, ask: "Would an Etsy seller save this pin to reference later?" If no → don't publish.
+
+**Analytics:** Pinterest Business Analytics via `python marketing/social/pinterest-analytics.py`. Target: saves > 20/pin in 30 days. Primary KPI = saves (Pinterest's own algorithm signal — more saves → more distribution).
 
 ---
 

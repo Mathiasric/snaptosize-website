@@ -61,6 +61,15 @@ export function CompositionSection() {
         <p className="text-center mt-8 text-foreground-60 font-semibold">
           No cropping. Original composition preserved.
         </p>
+        <p className="text-center mt-2 text-sm text-foreground-60">
+          Need a different shape for a piece?{" "}
+          <a
+            href="/distortion-free-crop"
+            className="text-accent-light font-medium underline-offset-4 hover:underline"
+          >
+            Reframe it your way with Perfect Fit →
+          </a>
+        </p>
       </Container>
     </section>
   );
