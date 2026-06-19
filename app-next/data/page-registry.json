@@ -2216,5 +2216,27 @@
       "print-sizes-at-300-dpi",
       "etsy-print-sizes"
     ]
+  },
+  {
+    "slug": "distortion-free-crop",
+    "title": "Distortion-Free Crop — Reframe Art to Any Print Ratio",
+    "description": "Perfect Fit reframes your artwork to any Etsy print ratio without stretching. Drag to choose what stays in frame, preview it live, and export every size distortion-free.",
+    "keywords": [
+      "distortion-free crop",
+      "crop art to print size",
+      "reframe art aspect ratio",
+      "crop without stretching",
+      "change print ratio without distortion",
+      "perfect fit snaptosize"
+    ],
+    "cluster": "ratios",
+    "relatedSlugs": [
+      "etsy-print-sizes",
+      "etsy-print-ratios",
+      "2-3-vs-4-5-ratio",
+      "how-to-resize-images-for-etsy",
+      "how-to-sell-printables-on-etsy-without-photoshop",
+      "best-resolution-for-etsy-printables"
+    ]
   }
 ]
