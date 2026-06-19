@@ -9,6 +9,32 @@ Last updated: 2026-06-19.
 
 ---
 
+## Plain-English: what the Stripe "Needs attention" flags mean (read this first)
+
+**It is NOT a bill, a fine, or a deadline.** "Needs attention / Threshold exceeded" only means
+"by the book, you *could* register to collect this country's VAT." Nobody is charging you and
+there is no clock. Stripe is being thorough, not warning of trouble.
+
+**Decoding the screen:** you made a few sales in 5 countries (UK 6, Italy 3, Germany 2, India 1,
+Moldova 1). Their digital-VAT threshold for *foreign* sellers is effectively **1 transaction**
+(zero threshold), so even tiny counts trip "threshold exceeded." `% of gross volume` = share of
+total sales from each country.
+
+**The 3 choices:**
+- **A — Do nothing now (RECOMMENDED).** Tiny volume, ~zero enforcement risk; what almost every
+  early solo founder does. Revisit when bigger.
+- **B — Register everywhere.** Huge work/cost for 6 total sales. Overkill; don't.
+- **C — Merchant of Record (Paddle / Lemon Squeezy).** They handle ALL global tax; you never see
+  this screen again. The "make it vanish" option for later.
+
+**What to do on the screen right now:** click nothing, **add no registrations**, leave the 5/5
+"Add registration → Choose a location" step **blank**, and ignore the persistent "Needs
+attention" banner. Finishing only the *monitoring* config (origin address + product category =
+"digital service / electronically supplied services") is fine. That is the complete, correct
+action today.
+
+---
+
 ## Current status (Jun 2026)
 - Stripe Tax is **on and monitoring**. ~25 lifetime Pro users.
 - Stripe flagged "threshold exceeded" in **UK, Italy, Germany, India, Moldova** (1–6 tx each).
