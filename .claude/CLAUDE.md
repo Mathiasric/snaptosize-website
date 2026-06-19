@@ -19,6 +19,11 @@ Seven docs define ground truth. Check relevant ones before implementing.
 If this file conflicts with a state file, the state file wins.
 Before implementing: read the relevant state file(s). Do not assume features exist.
 
+**Reference docs (load on demand — not auto-loaded):**
+- `marketing/MODES_REFERENCE.md` — the 4 modes: what each does/brings + how to talk about it (positive framing). Seed for marketing/SEO/in-app copy.
+- `docs/COMPETITOR_LANDSCAPE.md` — competitor coverage, our moat (Perfect Fit), gaps (mockups/batch).
+- `snaptosize-app/docs/superpowers/plans/2026-06-19-launch-and-roadmap.md` — mode launch record + backlog.
+
 ---
 
 ## YOUR ROLE
@@ -74,6 +79,9 @@ Key constraints:
 ### Autonomous Bug Fixing
 - When given a bug report: just fix it, zero hand-holding required
 - Point at logs/errors/failing tests, then resolve
+
+### App/Backend Change Loop (the standard)
+Discuss/reflect on approach first → work on a BRANCH (never main) → small commits → verify on localhost with Playwright + tsc (DOM-assert, don't eyeball) → CF preview build → user verifies → merge to main only on explicit go → verify on prod immediately → keep `git revert` one command away. Validate assumptions against code/data before building; never fabricate; be honest when wrong and correct course.
 
 ---
 
