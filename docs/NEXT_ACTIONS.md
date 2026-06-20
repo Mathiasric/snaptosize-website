@@ -2,6 +2,31 @@
 **Week of:** 2026-05-07 (W21)
 **Updated by:** Claude Code — 2026-05-11
 
+## 🏠 Homepage "good→amazing" + Perfect Fit wedge (2026-06-20)
+
+Plan doc: `docs/plans/2026-06-20-homepage-good-to-amazing.md`. Memory: [[project_homepage_modes_section]].
+Revert baseline tag: `pre-homepage-redesign-2026-06-20` (90be07e). Live deploy point: `6cbaf9f`.
+
+**DONE — shipped to prod (verified live):**
+- [x] ModesSection: Size Packs "pack-spread" (5 real exports, native ratios, ratio badges, click→full detail) + Perfect Fit secondary (reuses fox reframe demo). Replaced dead CompositionSection.
+- [x] Perfect Fit surfaced in pricing value — teaser + /pricing (no price/quota/limit change).
+- [x] Perfect Fit in Guides nav (desktop + mobile) + footer ("Reframe Art to Any Ratio").
+- [x] Crop-conflict copy fix — AuthoritySection "Zero cropping" → "Full resolution. Every detail kept, 300 DPI." (contradicted adjacent Perfect Fit).
+- [x] 20 MB moat added to Without/With comparison (TimeSavedSection), balanced 6v6.
+
+**NEXT — ordered by ROI:**
+1. **SEO pages crop/resize pass** — improve pages touching cropping/resize to sell what we really deliver (Size Packs = whole image; Perfect Fit = control) + cross-link Perfect Fit. ONE-BY-ONE, max 2/day ([[feedback_seo_pacing]]). Order by GSC impressions (run /gsc-review first, highest-impression first). Candidates: `resize-image-without-cropping-etsy`, `how-to-resize-images-for-etsy`, `etsy-print-ratios`, `snaptosize-vs-photoshop`, `snaptosize-vs-canva`, `how-many-sizes-etsy-printable`, `etsy-photography-print-sizes`. NOTE: "Zero cropping / Full composition preserved" is CORRECT on these standalone pages (no Perfect Fit adjacency) — only the homepage needed the fix.
+2. **Perfect Fit app video** — worth it ONLY if reused beyond /distortion-free-crop (one-page asset = low ROI). Plan: USER screen-records Perfect Fit drag-to-reframe in app (Clerk-gated, can't automate) → I optimize for web + wire to (a) /distortion-free-crop, (b) homepage hero refresh (replaces old snaptosize-demo.mp4), (c) social clip. BLOCKED on user recording.
+3. **Phase-0 cheap wins** (plan doc) — delete dead `WhatYouGetSection` + `PainSection` (imported-but-unused), trust-chip row stating the 20 MB moat, hero restraint pass. Subtraction = the other half of good→amazing.
+
+**Decisions logged:** "No account" punch-up SKIPPED (already in 2 CTAs; Pro needs an account — don't overclaim). Perfect Fit NOT added to the speed comparison (it's a capability, not a time-saver; already surfaced in 4 places).
+
+
+## 🎨 Brand: favicon → gradient chip (2026-06-16)
+
+Ny purple gradient chip-favicon (#4C1D95→#C084FC, hvit S) deployet til prod i begge repos (website + app); bare S beholdt i nav. Se [[project_favicon_redesign]] i memory.
+- [ ] **Last opp chip som social avatar** på X / IG / LinkedIn / Pinterest (manuelt) — fil: `after/favicon-preview/SHIPPED_chip_1024.png`
+
 ## ✅ Magic Wand — Smart Zoom-Fill implementert (2026-05-11)
 
 **Beslutning etter konkurranseresearch (7 verktøy):** AI outpainting (fal.ai, Firefly, Canva) feiler universelt på print art — alle er trent på foto/naturlige bakgrunner. Gradient fill gir synlige seamer. Smart zoom-fill er den riktige tilnærmingen:
@@ -46,8 +71,43 @@ Bulk Mockup skriver eksplisitt i sin egen blogg at "stretching is a common mista
 
 If you're not sure where to put energy, the answer is **always**:
 
-1. **Priority #0** — rate limit paywall (app repo). 34 wasted upgrade-moments per week. Fixing this is the single highest-ROI thing in the entire project.
-2. **Priority #1** — cold email outreach. You cannot delegate this. 50-100 emails/day is the path to 10 paying users.
+1. ~~**Priority #0** — rate limit paywall (app repo).~~ ✅ **DONE (Jun 13)** — PostHog confirmed 100% coverage post-fix. All rate_limit_hit events now trigger paywall_view.
+2. **Priority #0** — cold email outreach. You cannot delegate this. 50-100 emails/day is the path to 10 paying users.
+
+---
+
+## Social Pipeline — Kjøreoppskrift (cold-start)
+
+Når du sier "kjør pipeline for N Pinterest-pins" i en ny session:
+
+1. **Sjekk cooldown-tabellen** i `marketing/social/GEMINI_PROMPT_LIBRARY.md` under `## GJENBRUKSREGLER` — finn konsepter med "KLAR" status
+2. **Finn siste batch-script**: `ls marketing/social/gen-w*.py | tail -5` — kopier og adapater høyeste W-nummer
+3. **Oppdater slugs og datoer** (neste mandag = neste W-nummer, start med 07:00 UTC)
+4. **Kjør generering**: `python marketing/social/gen-w{N}-batch.py`
+5. **QA bildene** med Playwright screenshot, sjekk at tekst er lesbar og KONSEPT 14-formatet er riktig
+6. **Schedule**: `python marketing/social/schedule-batch.py --dry-run` → deretter uten `--dry-run`
+
+Vinnende format: KONSEPT 14 (dark navy, proporsjons-bokser per størrelse, teal highlight) — se `marketing/social/GEMINI_PROMPT_LIBRARY.md`. Aldri genbruk konsepter med < 4 uker siden sist.
+
+---
+
+## W28 Social Content — Pinterest Pipeline (Jun 2026)
+
+**Validated formula:** KONSEPT 14 "Visual Size Reference Chart" (dark navy, proportional size boxes, teal highlight on #1 bestseller) — proven by W22-P04, 953 impressions, top performer.
+
+**W28 batch (4 pins):**
+1. `bedroom-sizes-guide` — Variation B of KONSEPT 14. Sizes: 8×10★, 11×14, 16×20, 5×7, 18×24, 24×36, 12×18. Board: `print-size-guides`.
+2. `living-room-sizes-guide` — Variation C of KONSEPT 14. New room type. Board: `print-size-guides`.
+3. Seller-pain pin — 1× from existing library (seller-first rule: problem before solution). Pick one concept with cooldown elapsed.
+4. Rotate: Gemini comparison (canva-limitation format, new angle) OR ratio explainer.
+
+**Run:** `cd marketing/social && python gen-w27-batch.py` (adapt for W28). Target schedule: 1 pin/day Mon–Thu.
+
+**Save-intent gate:** Ask "would a seller save this to reference later?" before publishing. If no — skip.
+
+**KPI target W28:** ≥3 saves per pin in first 7 days. Check: `python marketing/social/pinterest-analytics.py --days 7`
+
+---
 
 **SEO is not the bottleneck.** It is producing 8021 imp / 32 clicks/month, but at 37% free→paid conversion the bottleneck is not traffic, it's distribution + paywall. Don't let SEO eat the day unless those two are blocked.
 
