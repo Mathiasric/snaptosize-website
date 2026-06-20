@@ -123,6 +123,9 @@ export function Header() {
                     <Link href="/etsy-print-ratios" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Etsy Print Ratios
                     </Link>
+                    <Link href="/distortion-free-crop" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Reframe Art to Any Ratio
+                    </Link>
                     <Link href="/most-popular-etsy-print-sizes-to-sell" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Most Popular Sizes to Sell
                     </Link>
@@ -499,6 +502,9 @@ export function Header() {
                         </Link>
                         <Link href="/etsy-print-ratios" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Etsy Print Ratios
+                        </Link>
+                        <Link href="/distortion-free-crop" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Reframe Art to Any Ratio
                         </Link>
                         <Link href="/most-popular-etsy-print-sizes-to-sell" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Most Popular Sizes to Sell
