@@ -156,7 +156,7 @@ export default function PricingPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-success flex-shrink-0 mt-0.5" />
-                  <span className="text-foreground-60">All ratios included</span>
+                  <span className="text-foreground-60">Size Packs &amp; Perfect Fit — every ratio</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-success flex-shrink-0 mt-0.5" />
@@ -214,7 +214,7 @@ export default function PricingPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
-                  <span className="text-foreground-60">All ratios included</span>
+                  <span className="text-foreground-60">Size Packs &amp; Perfect Fit — every ratio</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />

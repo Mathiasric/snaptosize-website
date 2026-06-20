@@ -11,7 +11,7 @@ export function PricingTeaserSection() {
             Start free. Go unlimited when ready.
           </h2>
           <p className="text-foreground-60 text-sm max-w-sm mx-auto">
-            Both plans include all ratio packs. Upgrade when your shop outgrows the daily limit.
+            Both plans include both modes, Size Packs and Perfect Fit. Upgrade when your shop outgrows the daily limit.
           </p>
         </div>
 
@@ -43,7 +43,7 @@ export function PricingTeaserSection() {
               </li>
               <li className="flex items-start gap-2.5 text-foreground-60">
                 <Check className="h-4 w-4 text-teal-400/60 flex-shrink-0 mt-0.5" />
-                All ratio packs included
+                Size Packs &amp; Perfect Fit included
               </li>
               <li className="flex items-start gap-2.5 text-foreground-60">
                 <Check className="h-4 w-4 text-teal-400/60 flex-shrink-0 mt-0.5" />
@@ -104,7 +104,7 @@ export function PricingTeaserSection() {
               </li>
               <li className="flex items-start gap-2.5 text-foreground-60">
                 <Check className="h-4 w-4 text-teal-400 flex-shrink-0 mt-0.5" />
-                All ratio packs included
+                Size Packs &amp; Perfect Fit included
               </li>
               <li className="flex items-start gap-2.5 text-foreground-60">
                 <Check className="h-4 w-4 text-teal-400 flex-shrink-0 mt-0.5" />
