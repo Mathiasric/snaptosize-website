@@ -30,6 +30,10 @@ export function TimeSavedSection() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-red-400/60 mt-0.5">✕</span>
+                  Hit Etsy&apos;s 20 MB upload limit on large files
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-400/60 mt-0.5">✕</span>
                   Manually verify DPI settings
                 </li>
                 <li className="flex items-start gap-2">
@@ -70,6 +74,10 @@ export function TimeSavedSection() {
                 <li className="flex items-start gap-2">
                   <span className="text-teal-400 mt-0.5">✓</span>
                   Clean ZIP, ready for Etsy
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-teal-400 mt-0.5">✓</span>
+                  Every ZIP under 20 MB — within Etsy&apos;s limit
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-teal-400 mt-0.5">✓</span>

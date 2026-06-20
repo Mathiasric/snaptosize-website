@@ -3,7 +3,7 @@ import { Container } from "@/components/Container";
 const points = [
   { strong: "No Photoshop.", rest: " No Canva. No manual resizing." },
   { strong: "Up to 70 files", rest: " from a single upload." },
-  { strong: "Zero cropping.", rest: " Full composition preserved." },
+  { strong: "Full resolution.", rest: " Every detail kept, 300 DPI." },
   { strong: "Under 20 MB.", rest: " Always within Etsy's limit." },
 ];
 
