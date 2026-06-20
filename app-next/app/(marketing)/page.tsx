@@ -3,7 +3,7 @@ import {
   HeroSection,
   TimeSavedSection,
   AuthoritySection,
-  CompositionSection,
+  ModesSection,
   HowItWorksSection,
   TrustSection,
   PricingTeaserSection,
@@ -106,7 +106,7 @@ export default function HomePage() {
       <HeroSection />
       <TimeSavedSection />
       <AuthoritySection />
-      <CompositionSection />
+      <ModesSection />
       <HowItWorksSection />
       <TrustSection />
       <FounderStorySection />
