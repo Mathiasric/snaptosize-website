@@ -12,12 +12,12 @@ import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
-  title: "Etsy Print Ratios: 2:3, 3:4, 4:5 & 5:7 — Full Chart (2026)",
+  title: "Etsy Print Ratios Explained: Which to Use + Full Size Chart",
   description:
     "Offering the wrong ratio? Buyers won't buy. Exact pixel dimensions for 2:3, 3:4, 4:5, and 5:7 at 300 DPI — plus the complete size chart Etsy sellers actually use.",
   alternates: { canonical: "https://snaptosize.com/etsy-print-ratios" },
   openGraph: {
-    title: "Etsy Print Ratios: 2:3, 3:4, 4:5 & 5:7 — Full Chart (2026)",
+    title: "Etsy Print Ratios Explained: Which to Use + Full Size Chart",
     description:
       "Offering the wrong ratio? Buyers won't buy. Exact pixel dimensions for 2:3, 3:4, 4:5, and 5:7 at 300 DPI — the complete size chart.",
     url: "https://snaptosize.com/etsy-print-ratios",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Etsy Print Ratios: 2:3, 3:4, 4:5 & 5:7 — Full Chart (2026)",
+    title: "Etsy Print Ratios Explained: Which to Use + Full Size Chart",
     description:
       "Exact pixel dimensions for 2:3, 3:4, 4:5, and 5:7 at 300 DPI — the complete size chart Etsy sellers actually use.",
     images: ["/assets/og/etsy-print-ratios.png"],
@@ -293,6 +293,9 @@ export default function EtsyPrintRatiosPage() {
                 </p>
                 <p className="text-sm text-foreground-60">
                   This is why professional Etsy sellers organize downloads by ratio — not by individual size.
+                </p>
+                <p className="text-sm text-foreground-60 mt-3">
+                  <a href={appUrl} className="text-accent-light hover:underline">SnapToSize</a> builds every ratio pack from one upload, keeping your whole image with nothing cut off. Need a different shape than your original? <Link href="/distortion-free-crop" className="text-accent-light hover:underline">Reframe to any ratio with Perfect Fit</Link> — you choose exactly what stays in frame.
                 </p>
               </Card>
             </div>

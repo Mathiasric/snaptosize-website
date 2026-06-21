@@ -15,8 +15,14 @@ Revert baseline tag: `pre-homepage-redesign-2026-06-20` (90be07e). Live deploy p
 - [x] 20 MB moat added to Without/With comparison (TimeSavedSection), balanced 6v6.
 
 **NEXT — ordered by ROI:**
-1. **SEO pages crop/resize pass** — improve pages touching cropping/resize to sell what we really deliver (Size Packs = whole image; Perfect Fit = control) + cross-link Perfect Fit. ONE-BY-ONE, max 2/day ([[feedback_seo_pacing]]). Order by GSC impressions (run /gsc-review first, highest-impression first). Candidates: `resize-image-without-cropping-etsy`, `how-to-resize-images-for-etsy`, `etsy-print-ratios`, `snaptosize-vs-photoshop`, `snaptosize-vs-canva`, `how-many-sizes-etsy-printable`, `etsy-photography-print-sizes`. NOTE: "Zero cropping / Full composition preserved" is CORRECT on these standalone pages (no Perfect Fit adjacency) — only the homepage needed the fix.
-2. **Perfect Fit app video** — worth it ONLY if reused beyond /distortion-free-crop (one-page asset = low ROI). Plan: USER screen-records Perfect Fit drag-to-reframe in app (Clerk-gated, can't automate) → I optimize for web + wire to (a) /distortion-free-crop, (b) homepage hero refresh (replaces old snaptosize-demo.mp4), (c) social clip. BLOCKED on user recording.
+1. **SEO pages crop/resize pass** — improve pages touching cropping/resize to sell what we really deliver (Size Packs = whole image; Perfect Fit = control) + cross-link Perfect Fit. ONE-BY-ONE, max 2/day ([[feedback_seo_pacing]]). **RANKED by GSC impressions (striking-distance.json, 2026-06-21):**
+   1. `etsy-print-ratios` — 368 imp, pos 7.1 (TOP target: most traffic, ratio page = ideal for Size Packs + Perfect Fit)
+   2. `how-to-resize-images-for-etsy` — 124 imp, pos 13.1 (page-2 striking distance = biggest rank-upside)
+   3. `2-3-vs-4-5-ratio` — 88 imp, pos 8.5
+   4. `snaptosize-vs-canva` — 25 imp, pos 7.6
+   5. `how-to-sell-printables-on-etsy-without-photoshop` — 18 imp, pos 6.8
+   Do #1 + #2 first. NOTE: "Zero cropping / Full composition preserved" is CORRECT on these standalone pages (no Perfect Fit adjacency) — only the homepage needed the fix.
+2. **Perfect Fit app video** — DECIDED: do NOT reshoot the homepage hero. The hero video shows Size Packs = the HERO mode; that's correct and not outdated (Perfect Fit is the secondary wedge, already surfaced in nav/footer/pricing/ModesSection/its own page). Injecting Perfect Fit into the hero would muddy "one upload → every size". A Perfect Fit drag-to-reframe clip is a SEPARATE, optional, low-priority asset for /distortion-free-crop ONLY (the fox before/after image already covers it statically; video only adds the live-drag dimension). Record only if reused in social. BLOCKED on user recording (Clerk-gated app).
 3. **Phase-0 cheap wins** (plan doc) — delete dead `WhatYouGetSection` + `PainSection` (imported-but-unused), trust-chip row stating the 20 MB moat, hero restraint pass. Subtraction = the other half of good→amazing.
 
 **Decisions logged:** "No account" punch-up SKIPPED (already in 2 CTAs; Pro needs an account — don't overclaim). Perfect Fit NOT added to the speed comparison (it's a capability, not a time-saver; already surfaced in 4 places).
