@@ -703,14 +703,10 @@ export default function SnapToSizeVsCanvaPage() {
               </p>
             </div>
 
-            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
-              <img src="/assets/visuals/snaptosize-vs-canva-chart.png" alt="Feature comparison chart — SnapToSize vs Canva for Etsy print resizing" width={1200} height={520} className="w-full h-auto" loading="lazy" />
-            </div>
-
             {/* --- ListingOutputShowcase: what SnapToSize actually ships --- */}
             <div>
               <ListingOutputShowcase
-                artwork="misty_lake"
+                artwork="geometric"
                 heading="What SnapToSize actually ships from a single Canva PDF."
                 subtext="Upload one design in any ratio. Get 2:3, 3:4, 4:5, 11×14, and ISO packs — every size at 300 DPI, under 20 MB."
               />
@@ -1072,7 +1068,7 @@ export default function SnapToSizeVsCanvaPage() {
               <FinalCTA
                 heading="Skip the Manual Resize. Start Producing."
                 stat="Up to 70 print-ready files from one upload"
-                description="Upload your finished design once and get every standard print size your Etsy buyers need. 5 ratio packs, portrait and landscape, 300 DPI, under 20 MB per ZIP."
+                description="Upload your finished design once and get every standard print size your Etsy buyers need. 5 ratio packs — portrait, landscape, and square all covered — every file 300 DPI, under 20 MB per ZIP."
                 buttonText="Try SnapToSize Free"
                 appUrl="https://app.snaptosize.com/app/quick-export?source=seo_snaptosize-vs-canva&kind=cta"
               />
