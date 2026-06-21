@@ -270,7 +270,7 @@ export default function HowToUploadMoreThan5FilesEtsyPage() {
         </div>
       </section>
 
-      <div className="container mx-auto px-4 md:px-8 max-w-[1200px] py-12">
+      <div className="container mx-auto px-4 md:px-8 max-w-3xl py-12">
 
         <div className="mb-12">
           <QuickAnswer question="How do I upload more than 5 files to an Etsy digital listing?">
@@ -334,7 +334,7 @@ export default function HowToUploadMoreThan5FilesEtsyPage() {
             The print seller problem: 70+ sizes, only 5 slots
           </h2>
           <p className="text-foreground-60 mb-6 leading-relaxed">
-            A serious Etsy print shop offers full size coverage. That means portrait and landscape
+            A serious Etsy print shop offers full size coverage. That means portrait, landscape, and square
             variants across every standard ratio. At minimum:
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 mb-6">
