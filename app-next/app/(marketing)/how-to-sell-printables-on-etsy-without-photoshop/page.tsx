@@ -18,6 +18,7 @@ import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
+import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 
 export const metadata: Metadata = {
   title:
@@ -698,6 +699,13 @@ export default function HowToSellPrintablesWithoutPhotoshopPage() {
                 </a>
               </div>
             </div>
+
+            {/* --- Product output proof: what the no-Photoshop workflow ships --- */}
+            <ListingOutputShowcase
+              artwork="wildflower"
+              heading="No Photoshop. One upload. Every Etsy size."
+              subtext="Design in any tool, then let SnapToSize produce all 5 ratio packs — 2:3, 3:4, 4:5, 11×14, and ISO — each at 300 DPI, named, under 20 MB. No Adobe required."
+            />
 
             {/* --- Section 5: Ensuring 300 DPI Without Adobe --- */}
             <div>
