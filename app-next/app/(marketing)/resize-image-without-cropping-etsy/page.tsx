@@ -244,7 +244,7 @@ export default function ResizeImageWithoutCroppingEtsyPage() {
         </div>
       </section>
 
-      <div className="container mx-auto px-4 md:px-8 max-w-[1200px] py-12">
+      <div className="container mx-auto px-4 md:px-8 max-w-3xl py-12">
         {/* QuickAnswer */}
         <QuickAnswer question="Can you resize an image to a different aspect ratio without cropping?">
           Yes — using full-canvas resize instead of crop-to-fit. Scaling adjusts
