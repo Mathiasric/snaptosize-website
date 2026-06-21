@@ -17,7 +17,7 @@ Revert baseline tag: `pre-homepage-redesign-2026-06-20` (90be07e). Live deploy p
 **NEXT — ordered by ROI:**
 1. **SEO pages crop/resize pass** — improve pages touching cropping/resize to sell what we really deliver (Size Packs = whole image; Perfect Fit = control) + cross-link Perfect Fit. ONE-BY-ONE, max 2/day ([[feedback_seo_pacing]]). **RANKED by GSC impressions (striking-distance.json, 2026-06-21):**
    1. ~~`etsy-print-ratios`~~ ✅ DONE (2026-06-21, commit 7629603 live) — intent-align title (CTR 0.27%→target 2%) + value line + first Perfect Fit cross-link.
-   2. `how-to-resize-images-for-etsy` — 124 imp, pos 13.1 (page-2 striking distance = biggest rank-upside)
+   2. ~~`how-to-resize-images-for-etsy`~~ ✅ DONE (2026-06-21, commit 5662812 live) — full design upgrade: reusable RatioPackFan (deer exports), Section 3 reframed to present both modes positively + resolve crop/distort tension, Perfect Fit cross-link, "70 files" surfaced. Title kept (CTR gap 0.19, rank-bound).
    3. `2-3-vs-4-5-ratio` — 88 imp, pos 8.5
    4. `snaptosize-vs-canva` — 25 imp, pos 7.6
    5. `how-to-sell-printables-on-etsy-without-photoshop` — 18 imp, pos 6.8
