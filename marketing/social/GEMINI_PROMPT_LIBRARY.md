@@ -735,34 +735,39 @@ Composition should clearly show how the SAME artwork appears different at each r
 
 | Konsept | Cooldown | Sist brukt |
 |---------|----------|------------|
-| folder-chaos | 4 uker | W19 (22.04) — KLAR |
-| missing-buyer | 4 uker | W19 (22.04) — KLAR |
-| dpi-comparison (gammel) | 4 uker | W18 (30.04) — KLAR |
+| visual-size-reference | 4 uker | W28 (30.06) Var B: bedroom, Var C: living room — W29 (07.07) Var D: nursery sizes (📌Save-CTA experiment) — KLAR igjen ~04.08 |
+| folder-chaos | 4 uker | W28 (02.07) — Var C: iPad flat-lay, chaotic vs clean ZIP, "Which file do I use?" — KLAR igjen ~30.07 |
+| missing-buyer | 4 uker | W25 (07.06) — Variation B: iPhone mobile view, 11×14 missing, "They wanted 11×14. You only had 8×10." — KLAR ~05.07 |
+| dpi-comparison (gammel) | 4 uker | W24 (02.06) — Variation B: dark charcoal bg, geometric art, zoom-lupe, "The difference 300 DPI makes." — KLAR ~30.06 |
 | en-til-mange | 4 uker | W22 (12.05) — Variation B: sage linen flat-lay, 5 ratio-pack cards fanning from MacBook Air (Midnight), wildflower botanical thumbnail on cards, "1 upload. Every size she'll ever frame." hook — KLAR ~09.06 |
-| canva-limitation | 4 uker | W22 (12.05) — Variation A: iMac split-screen Canva resize dialog (left) vs SnapToSize 5-pack export dashboard (right), "Canva resizes. SnapToSize exports every Etsy size." hook — KLAR ~09.06 |
-| galleryvegg-ratioene | 4 uker | W20 (27.04) — KLAR |
-| livsstil-den-tidrike-selgeren | 4 uker | W20 (02.05) — KLAR |
-| bestseller-butikken | 4 uker | W20 (27.04) |
+| canva-limitation | 4 uker | W26 (12.06) Var B: iPhone vs MacBook — W29 (08.07) split-screen comparison grid, "Canva or SnapToSize?" — KLAR igjen ~05.08 |
+| galleryvegg-ratioene | 4 uker | W20 (27.04) — W29 (09.07) gallery-wall-ratio-guide: 4 ratio rows, 4:5 teal-highlighted, "Which ratio fits which frame?" — KLAR igjen ~06.08 |
+| livsstil-den-tidrike-selgeren | 4 uker | W24 (02.06) — Variation B: warm terracotta evening studio, amber palette, gallery wall 4 prints, "One file. Every size. Every sale." — KLAR ~30.06 |
+| bestseller-butikken | 4 uker | W25 (07.06) — Var A: MacBook Etsy dashboard, 847 sales, bestseller badge, 5 packs visible, warm linen studio, "She stocks every size." — KLAR ~05.07 |
 | de-5-premium-pakkene | 4 uker | W17 |
 | quote-selgeren | 4 uker | W17 |
 | det-globale-rekkevidden-iso | 4 uker | W17 |
 | 300-dpi-makrokvalitet | 4 uker | W18b |
 | en-upload-enkelheten | 4 uker | W18b |
 | stats-visual | 4 uker | W19 (21.04) |
-| photoshop-trap | 4 uker | W19 (23.04) |
-| international-unlock | 4 uker | W19 (23.04) |
-| sunday-afternoon | 4 uker | W19 (24.04) |
-| size-guide-infographic | 4 uker | W20 (02.05) — Option D radial hub, celestial-night-sky, dark-card-contrast, "70 sizes · vertical/landscape/square" hook |
+| photoshop-trap | 4 uker | W26 (12.06) — Var A: Photoshop dark panel (sticky notes, $60/mo) vs SnapToSize teal panel ($11.99/mo, 5 packs), "Never opened Photoshop? Never have to." — KLAR ~10.07 |
+| international-unlock | 4 uker | W25 (07.06) — Variation B: geometric abstract art, teal-dominant, iPhone Etsy listing, "150+ countries buy A4." — KLAR ~05.07 |
+| sunday-afternoon | 4 uker | W25 (07.06) — Var A: cinematic diagonal cold-blue→warm-gold split, chaotic vs clean desk, "3 hours of your Sunday. Gone. Again." — KLAR ~05.07 |
+| size-guide-infographic | 4 uker | W24 (02.06) — Variation B: watercolor-florals artwork, Option C stacked reveal, warm-amber-accent, "Every print size your buyers will ever ask for." — KLAR ~30.06 |
 | bedroom-gallery-mixed-sizes | 4 uker | W20 (03.05) — warm Scandi-bohemian bedroom corner, three-frame cluster (8×10/11×14/16×20) of same botanical, terracotta+cream+ochre+sage palette, "Framed in three sizes. Uploaded once." hook |
-| craft-flatlay-export-ready | 4 uker | W20 (03.05) — top-down flat-lay, sage-grey linen surface, MacBook showing SnapToSize export dashboard with 5 packs/28 sizes, three printed botanicals + eucalyptus + coffee, "From one file — every size she'll frame." hook |
-| etsy-notifications-tonight | 4 uker | W22 (10.05) — Variation A: iPhone 15 Pro on charcoal bedspread, 3 Etsy sale notifications (Portland/London/Melbourne), warm lamp 22:14, "What happens when you stock every size." hook |
+| craft-flatlay-export-ready | 4 uker | W26 (12.06) — Variation B: warm cream linen, iPad Pro + Magic Keyboard, abstract watercolor art + geometric print, terracotta chamomile mug, pampas grass, "From one file. Every size she'll ever frame." — KLAR ~10.07 |
+| etsy-notifications-tonight | 4 uker | W26 (12.06) — Variation B: iPad Pro on oatmeal knit throw, golden-hour dusk 19:45, Chicago/Copenhagen/Auckland, "3 sales. 3 continents. While you were living your life." — KLAR ~10.07 |
 | the-clean-zip | 4 uker | W22 (10.05) — Variation A: MacBook Pro Space Black on white marble, Finder List View showing 5 clean ZIP packs (2-3/3-4/4-5/ISO/Extras), "This is what your buyers see." hook |
 
-**Klare nå (W23 — 2026-05-31):** `folder-chaos` · `missing-buyer` · `dpi-comparison` · `galleryvegg-ratioene` · `livsstil-den-tidrike-selgeren` · `bestseller-butikken` · `bedroom-gallery-mixed-sizes` · `craft-flatlay-export-ready` · `sunday-afternoon` · `photoshop-trap` · `international-unlock` · `size-guide-infographic` · `print-size-reference` (NY) · `frame-size-match` (NY) · `ratio-cropping-education` (NY)
+**Klare nå (W27 — fra 2026-06-21):** `galleryvegg-ratioene` · `bedroom-gallery-mixed-sizes` · `en-til-mange` · `the-clean-zip`
 
-**Klar ~09.06:** `en-til-mange` · `canva-limitation` · `etsy-notifications-tonight` · `the-clean-zip`
+**Klar ~30.06:** `dpi-comparison` · `folder-chaos` · `livsstil-den-tidrike-selgeren` · `size-guide-infographic` · `print-size-reference` · `frame-size-match` · `ratio-cropping-education`
 
-**Neste batch — prioritér:** Start med de 3 nye konseptene (print-size-reference, frame-size-match, ratio-cropping-education) for å validere seller-education-first-retningen. Kjør maks 4 pins/uke, ikke 7+.
+**Klar ~05.07:** `missing-buyer` · `international-unlock` · `sunday-afternoon` · `bestseller-butikken`
+
+**Klar ~10.07:** `photoshop-trap` · `canva-limitation` · `etsy-notifications-tonight` · `craft-flatlay-export-ready`
+
+**Neste batch (W29+) — prioritér:** `size-guide-infographic` Var C (klar ~30.06) + `missing-buyer` Var C (klar ~05.07) + ny KONSEPT 14 Var D (nursery sizes). Maks 4 pins/uke.
 
 ---
 
@@ -845,3 +850,66 @@ Light: Diffused natural window light from upper left. Slight specular highlight 
 Style: Apple product photography meets workspace flat-lay. Ultra-sharp Finder UI text, no motion blur.
 Render the macOS UI with pixel-perfect accuracy — scrollbar, traffic light buttons (red/yellow/green), column headers (Name | Size | Date Modified) all visible.
 ```
+
+---
+
+## KONSEPT 14 — "Visual Size Reference Chart" (visual-size-reference)
+
+**Hook:** "[Room type] print sizes your buyers search for — at a glance."
+**Scroll-stopp:** Selgere bookmarker dette for å referere til det når de lister nytt artwork. Høyest save-rate av alle format — bekreftet av W22-P04 (953 impressions, #1 performer).
+**Innholdstype:** `educational-reference` — ingen SnapToSize-hero i bildet. URL nevnes i CTA-blokk nederst + caption.
+**Bekreftet vinner:** W22-P04 "Complete Gallery Wall Size Guide" — samme visuell spec som under.
+
+**Variation system:**
+- **Rom-type** (endre per batch): gallery wall / bedroom / living room / nursery / office / kitchen / bathroom / dining room
+- **Highlight-størrelse** (teal-ramme): den mest-søkte størrelsen for dette rommet (11×14 for gallery wall, 8×10 for bedroom osv.)
+- **Antall størrelser:** 7–10 (gallerivegg = 9, soverom = 7, stue = 8)
+- **Kunsttype i rammer** (valgfri): botanical / abstract / minimalist / typographic (endre per batch)
+
+**Cooldown:** 4 uker mellom samme rom-type. Aldri to identiske rom-type i samme uke.
+
+**Pinterest keywords:** [room] print sizes, etsy print sizes, wall art sizes guide, [room] wall art, gallery wall sizes, etsy digital downloads
+
+```
+Clean educational infographic, vertical portrait format 2:3 (1000×1500px).
+
+BACKGROUND: Deep navy (#0A0F1C) — dark, rich, professional. High contrast against white and teal text.
+
+TOP SECTION (top 20%):
+  Small uppercase label, teal (#2DD4BF), monospace: "ETSY WALL ART — SIZE REFERENCE"
+  Giant bold white heading, 2 lines: "[Room Type]" (line 1) + "Size Guide" (line 2, teal italic)
+  Thin teal divider line below heading.
+
+MAIN VISUAL (middle 60%):
+  Grid of proportional rectangles arranged in a mosaic layout — sizes visually scaled relative to each other.
+  Each rectangle:
+    - Background: dark grey (#1A2035) with subtle border (#2A3050)
+    - Inside: dimension label in large bold white text (e.g. "11×14 in")
+    - Below dimension: small grey label with use-case descriptor (e.g. "#1 bestseller" / "living room hero" / "large statement" / "classic frame" / "small accent" / "portrait accent" / "feature piece")
+  ONE rectangle highlighted in teal (#2DD4BF border, 3px) — the most-searched size for this room type.
+  Star/badge icon (★) in top-right corner of highlighted rectangle.
+  Arrangement: largest rectangle top-left, smallest bottom-right, organic mosaic (not a rigid grid).
+
+STATS STRIP (below mosaic):
+  Teal pill/badge: "All [N] sizes · 300 DPI · Etsy-ready ZIP"
+
+BOTTOM CTA SECTION (bottom 20%):
+  Dark card (#111827):
+    Bold white: "Generate all [N] sizes from 1 artwork upload."
+    Teal subtext: "[N] ratio packs · 70 files · no Photoshop"
+    Small grey: "SnapToSize — Etsy-ready in 60 seconds"
+  Small teal checkmark + "snaptosize.com" centered below card.
+  Tiny grey: "app.snaptosize.com · free to start"
+
+Typography: Clean sans-serif (Inter/Geist style). All text anti-aliased, high contrast. No decorative elements beyond the size rectangles.
+Lighting: None — flat digital design, not photography.
+Style: Minimal dark-mode infographic. Looks like high-quality product design, not a web scraper screenshot.
+```
+
+### Variation A — Gallery Wall (W22 — brukt 09.05.2026 — VINNER)
+Sizes: 24×36 (large statement), 20×30 (living room hero), 18×24 (feature piece), 16×20 (mid gallery), 12×18 (portrait accent), 11×14 ★ (#1 bestseller), 8×10 (classic frame), 5×7 (small accent), 8×12 (photo ratio)
+Teal highlight: 11×14
+
+### Variation B — Bedroom (W28 — neste)
+Sizes: 8×10 ★ (nightstand art), 11×14 (bedside wall), 16×20 (headboard feature), 5×7 (small shelf print), 18×24 (statement piece), 24×36 (full wall), 12×18 (portrait accent)
+Teal highlight: 8×10
