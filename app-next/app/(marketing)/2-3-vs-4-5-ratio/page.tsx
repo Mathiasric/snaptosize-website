@@ -12,14 +12,13 @@ import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 
 export const metadata: Metadata = {
-  title:
-    "2:3 vs 4:5 Ratio — Which Print Sizes Do Etsy Sellers Actually Need?",
+  title: "2:3 vs 4:5 Ratio: The Difference + Which Etsy Sizes to Sell",
   description:
-    "Compare 2:3 and 4:5 aspect ratios for Etsy printable wall art. Side-by-side table, pixel dimensions at 300 DPI, cropping math, and why top sellers include both.",
+    "2:3 vs 4:5 explained for Etsy printables — what makes each shape different, the exact sizes in each, and why top sellers offer both. Side-by-side table at 300 DPI.",
   alternates: { canonical: "https://snaptosize.com/2-3-vs-4-5-ratio" },
   openGraph: {
     title:
-      "2:3 vs 4:5 Ratio — Which Print Sizes Do Etsy Sellers Need? | SnapToSize",
+      "2:3 vs 4:5 Ratio: The Difference + Which Etsy Sizes to Sell | SnapToSize",
     description:
       "Head-to-head comparison of the two most important Etsy print ratios. Sizes, pixel dimensions, frame availability, and the business case for including both.",
     url: "https://snaptosize.com/2-3-vs-4-5-ratio",
@@ -34,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "2:3 vs 4:5 Ratio — Which Print Sizes Do Etsy Sellers Need?",
+    title: "2:3 vs 4:5 Ratio: The Difference + Which Etsy Sizes to Sell",
     description:
       "Side-by-side comparison of 2:3 and 4:5 print ratios with pixel dimensions, frame availability, and why you need both for Etsy.",
     images: ["/assets/og/2-3-vs-4-5-ratio.png"],
@@ -46,7 +45,7 @@ export default function TwoThreeVsFourFiveRatioPage() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "2:3 vs 4:5 Ratio — Which Print Sizes Do Etsy Sellers Actually Need?",
+      "2:3 vs 4:5 Ratio: The Difference + Which Etsy Sizes to Sell",
     description:
       "Complete comparison of 2:3 and 4:5 aspect ratios for Etsy printable wall art sellers, including pixel dimensions at 300 DPI, frame availability, and the business case for including both ratios.",
     url: "https://snaptosize.com/2-3-vs-4-5-ratio",
@@ -353,8 +352,8 @@ export default function TwoThreeVsFourFiveRatioPage() {
             {/* ===== Listing Output Showcase ===== */}
             <ListingOutputShowcase
               artwork="fox"
-              heading="Same artwork. Two ratios. See the difference."
-              subtext="The 2:3 is narrower — great for large statement prints. The 4:5 is wider — the standard for framed wall art. SnapToSize generates both from one upload."
+              heading="Size Packs: one upload, every ratio, your whole image kept"
+              subtext="The 2:3 is narrower for large statement prints; the 4:5 is wider for classic frames. SnapToSize fits your whole image to each one — both ratios delivered from a single upload, nothing cropped."
             />
           </div>
           <div className="max-w-3xl mx-auto space-y-16 mt-16">
@@ -737,6 +736,31 @@ export default function TwoThreeVsFourFiveRatioPage() {
                     </p>
                   </div>
                 </div>
+              </Card>
+
+              {/* Perfect Fit — only for art with margin to spare; routes composition-locked art back to full ratios */}
+              <Card className="p-6 mt-5 border-[#A78BFA]/20 bg-[#A78BFA]/[0.04]">
+                <span className="text-xs font-semibold uppercase tracking-[0.14em] text-[#A78BFA]">
+                  Perfect Fit
+                </span>
+                <h3 className="font-semibold mt-2 mb-1.5">
+                  What if your art has room to spare?
+                </h3>
+                <p className="text-sm text-foreground-60 mb-3">
+                  Some designs carry empty margin around the subject &mdash; open
+                  sky, grass, a plain background. For those you don&apos;t have to
+                  fit the whole frame: Perfect Fit reframes to a new ratio by
+                  trimming that spare space, keeps the subject whole, and shows you
+                  exactly what gets trimmed before you export. For
+                  composition-locked art &mdash; borders, centered text, framed
+                  whitespace &mdash; keep offering both full ratios above instead.
+                </p>
+                <Link
+                  href="/distortion-free-crop"
+                  className="text-[#A78BFA] font-medium text-sm underline-offset-4 hover:underline"
+                >
+                  See how Perfect Fit works &rarr;
+                </Link>
               </Card>
             </div>
 
