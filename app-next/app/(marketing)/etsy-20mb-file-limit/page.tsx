@@ -5,7 +5,6 @@ import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, ArrowRight, AlertCircle, FileWarning } from "lucide-react";
-import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { QuickAnswer } from "@/components/QuickAnswer";
@@ -260,7 +259,7 @@ export default function Etsy20MBFileLimitPage() {
 
       <section className="py-8">
         <Container>
-          <div className="max-w-4xl space-y-16">
+          <div className="max-w-3xl mx-auto space-y-16">
             {/* ===== QUICK ANSWER ===== */}
             <QuickAnswer question="What is Etsy's 20MB file size limit?">
               Etsy enforces a strict <strong>20MB limit per file</strong> on all digital downloads (up to 5 files per listing). The limit applies to each file individually, not the total. PNG files fail most often because they run 3-10x larger than JPG at print quality. The fix: save artwork as JPG at 300 DPI and split sizes into separate ratio-pack ZIPs so every file stays under 20MB.
@@ -713,15 +712,6 @@ export default function Etsy20MBFileLimitPage() {
                 stat="Every ZIP guaranteed under 20 MB, zero manual compression"
                 description="SnapToSize automatically generates JPG files at 300 DPI, organizes them into ratio packs, and guarantees every ZIP stays under 20MB. Upload once, download Etsy-ready files."
                 buttonText="Start Free"
-                appUrl={appUrl}
-              />
-            </div>
-
-            <div className="pb-12">
-              <ContextualCTA
-                problem="Still manually converting PNG to JPG and splitting files into ZIPs?"
-                solution="Upload one image. Every file auto-converted, split by ratio, and guaranteed under 20MB. Done in 60 seconds."
-                buttonText="Fix Your File Sizes"
                 appUrl={appUrl}
               />
             </div>
