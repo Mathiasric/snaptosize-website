@@ -16,10 +16,10 @@ Revert baseline tag: `pre-homepage-redesign-2026-06-20` (90be07e). Live deploy p
 
 **NEXT — ordered by ROI:**
 1. **SEO pages crop/resize pass** — improve pages touching cropping/resize to sell what we really deliver (Size Packs = whole image; Perfect Fit = control) + cross-link Perfect Fit. ONE-BY-ONE, max 2/day ([[feedback_seo_pacing]]). **RANKED by GSC impressions (striking-distance.json, 2026-06-21):**
-   1. ~~`etsy-print-ratios`~~ ✅ DONE (2026-06-21, commit 7629603 live) — intent-align title (CTR 0.27%→target 2%) + value line + first Perfect Fit cross-link.
+   1. ~~`etsy-print-ratios`~~ ✅ FULLY DONE (2026-06-21) — title (commit 7629603) + DEEP-VISUAL REBUILD (commit db71d8d): centered hero + full-width Misty Nordic fan + gradient bg, removed 2 duplicate visuals, centered/narrowed body, killed 3-stacked bottom CTAs. Highest-traffic page in queue (368 impr, was 0.27% CTR).
    2. ~~`how-to-resize-images-for-etsy`~~ ✅ DONE (2026-06-21, commit 5662812 live) — full design upgrade: reusable RatioPackFan (deer exports), Section 3 reframed to present both modes positively + resolve crop/distort tension, Perfect Fit cross-link, "70 files" surfaced. Title kept (CTR gap 0.19, rank-bound).
-   3. `2-3-vs-4-5-ratio` — 88 imp, pos 8.5
-   4. `snaptosize-vs-canva` — 25 imp, pos 7.6
+   3. ~~`2-3-vs-4-5-ratio`~~ ✅ DONE (2026-06-21, commit 2f01281) — CTR-fix title (gap 2.0, 0 clicks @ pos 8.5), named Size Packs on showcase, subordinate Perfect Fit block (art-axis framing, no contradiction with anti-crop thesis), /distortion-free-crop cross-link. No fan (ListingOutputShowcase already = 5-ratio proof).
+   4. ~~`snaptosize-vs-canva`~~ ✅ DONE (2026-06-21, commit ecf23c4) — removed duplicate static comparison PNG (kept crawlable HTML table), fixed LESSON-097 violation in FinalCTA copy, swapped showcase artwork misty→geometric for variety. Hero/body/title already strong.
    5. `how-to-sell-printables-on-etsy-without-photoshop` — 18 imp, pos 6.8
    Do #1 + #2 first. NOTE: "Zero cropping / Full composition preserved" is CORRECT on these standalone pages (no Perfect Fit adjacency) — only the homepage needed the fix.
 2. **Perfect Fit app video** — DECIDED: do NOT reshoot the homepage hero. The hero video shows Size Packs = the HERO mode; that's correct and not outdated (Perfect Fit is the secondary wedge, already surfaced in nav/footer/pricing/ModesSection/its own page). Injecting Perfect Fit into the hero would muddy "one upload → every size". A Perfect Fit drag-to-reframe clip is a SEPARATE, optional, low-priority asset for /distortion-free-crop ONLY (the fox before/after image already covers it statically; video only adds the live-drag dimension). Record only if reused in social. BLOCKED on user recording (Clerk-gated app).
