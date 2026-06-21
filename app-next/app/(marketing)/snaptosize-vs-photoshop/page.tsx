@@ -5,7 +5,6 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, ArrowRight, X } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
@@ -1038,10 +1037,6 @@ export default function SnapToSizeVsPhotoshopPage() {
               </div>
             </div>
 
-            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
-              <img src="/assets/visuals/snaptosize-vs-photoshop-chart.png" alt="Feature comparison chart — SnapToSize vs Photoshop for Etsy print resizing" width={1200} height={520} className="w-full h-auto" loading="lazy" />
-            </div>
-
             {/* --- CTA 1: After comparison sections --- */}
             <div>
               <Card accent className="p-6 md:p-8 text-center">
@@ -1291,19 +1286,9 @@ export default function SnapToSizeVsPhotoshopPage() {
               <FinalCTA
                 heading="Stop Resizing Manually. Start Producing."
                 stat="Up to 70 print-ready files from one upload \u2014 in 30 seconds, not 1\u20132 hours"
-                description="Upload your finished artwork once and get every standard print size your Etsy buyers need. 5 ratio packs, portrait and landscape, 300 DPI, under 20 MB per ZIP."
+                description="Upload your finished artwork once and get every standard print size your Etsy buyers need. 5 ratio packs — portrait, landscape, and square all covered — every file 300 DPI, under 20 MB per ZIP."
                 buttonText="Try SnapToSize Free"
                 appUrl="https://app.snaptosize.com/app/quick-export?source=seo_snaptosize-vs-photoshop&kind=cta"
-              />
-            </div>
-
-            {/* --- Contextual CTA --- */}
-            <div className="pb-12">
-              <ContextualCTA
-                problem="Love Photoshop for design but tired of batch-resizing actions?"
-                solution="Design in Photoshop, resize in SnapToSize. Upload your artwork and get every Etsy size in 60 seconds — no custom actions needed."
-                buttonText="Try It Free"
-                appUrl={appUrl}
               />
             </div>
 
