@@ -5,10 +5,9 @@ import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, ArrowRight } from "lucide-react";
-import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
-import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
+import { RatioPackFan, type FanPrint } from "@/components/RatioPackFan";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
@@ -132,6 +131,16 @@ export default function EtsyPrintRatiosPage() {
 
   const appUrl = "https://app.snaptosize.com?source=seo_ratios&kind=guide";
 
+  /* Size Packs fan — 5 real SnapToSize exports of one Misty Nordic upload, each
+     at its true ratio, whole image kept. Ordered so the center card is 2:3. */
+  const ratioPrints: FanPrint[] = [
+    { src: "/assets/modes-demo/ratios/misty-3x4.jpg", size: "6×8 in", tag: "3:4", ratio: 0.75 },
+    { src: "/assets/modes-demo/ratios/misty-iso.jpg", size: "A4", tag: "ISO A", ratio: 0.707 },
+    { src: "/assets/modes-demo/ratios/misty-2x3.jpg", size: "8×12 in", tag: "2:3", ratio: 0.667 },
+    { src: "/assets/modes-demo/ratios/misty-4x5.jpg", size: "8×10 in", tag: "4:5", ratio: 0.8 },
+    { src: "/assets/modes-demo/ratios/misty-extras.jpg", size: "11×14 in", tag: "Extras", ratio: 0.786 },
+  ];
+
   return (
     <>
       <script
@@ -148,22 +157,53 @@ export default function EtsyPrintRatiosPage() {
       />
 
       {/* ===== HERO ===== */}
-      <section className="py-16 md:py-20">
+      <section
+        className="relative py-16 md:py-20 overflow-hidden"
+        style={{
+          background:
+            "linear-gradient(160deg, #050a16 0%, #0a0f1e 45%, #07080f 100%)",
+        }}
+      >
+        {/* subtle dot grid */}
+        <div
+          className="absolute inset-0 opacity-[0.05]"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle, #a78bfa 1px, transparent 1px)",
+            backgroundSize: "26px 26px",
+          }}
+        />
+        {/* soft accent glow */}
+        <div
+          className="absolute top-[-15%] left-1/2 -translate-x-1/2 w-[700px] h-[500px] rounded-full opacity-[0.07]"
+          style={{
+            background: "radial-gradient(circle, #7c3aed, transparent 70%)",
+          }}
+        />
+        {/* top edge glow */}
+        <div
+          className="absolute top-0 left-0 right-0 h-px"
+          style={{
+            background:
+              "linear-gradient(90deg, transparent, rgba(168,139,250,0.3) 50%, transparent)",
+          }}
+        />
+
         <Container>
-          <div className="max-w-3xl">
+          <div className="relative z-10 max-w-2xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Etsy Print Ratios Explained
             </h1>
-            <p className="text-xl text-foreground-60 mb-6">
+            <p className="text-lg md:text-xl text-foreground-60 mb-6">
               How printable wall art sizes work — and how to prepare files correctly
             </p>
-            <p className="text-foreground-60 mb-8">
+            <p className="text-foreground-60 mb-8 max-w-xl mx-auto">
               If you sell digital printable wall art on Etsy, understanding print ratios is essential.
               Buyers have different frames and walls — some need 2:3 posters, others need 4:5 or ISO sizes.
               Professional sellers provide all standard ratios in every listing to maximize sales and eliminate
               &ldquo;do you have this in 8×10?&rdquo; messages.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap justify-center gap-4">
               <a href={appUrl} target="_blank" rel="noopener noreferrer">
                 <Button className="text-base px-6 py-3">
                   Generate All Ratios Instantly
@@ -177,30 +217,28 @@ export default function EtsyPrintRatiosPage() {
             </div>
           </div>
         </Container>
+
+        {/* Size Packs proof — one upload, every ratio (real Misty Nordic exports) */}
+        <div className="relative z-10 mt-16">
+          <Container>
+            <RatioPackFan prints={ratioPrints} subject="Misty Nordic art" />
+            <p className="text-center text-sm text-foreground-60 mt-10 max-w-2xl mx-auto">
+              One upload, every standard Etsy ratio — 2:3, 3:4, 4:5, ISO A, plus extras — your
+              whole image kept, up to{" "}
+              <span className="text-foreground font-medium">70 print-ready files</span>, each ZIP
+              under Etsy&apos;s 20&nbsp;MB limit.{" "}
+              <span className="text-foreground-40">Tap any print to enlarge.</span>
+            </p>
+          </Container>
+        </div>
       </section>
 
       <section className="py-8">
         <Container>
-          <div className="max-w-4xl space-y-16">
+          <div className="max-w-3xl mx-auto space-y-16">
             <QuickAnswer question="What are the standard print ratios for Etsy?">
               Four ratios cover nearly every buyer: 2:3 (e.g. 4×6, 12×18), 3:4 (e.g. 6×8, 12×16), 4:5 (e.g. 8×10, 16×20), and ISO A-series (A4, A3, A2). Most buyers have 4:5 frames, so prioritize that ratio. Offering all four in one listing eliminates &ldquo;do you have this in 8×10?&rdquo; messages and reduces returns.
             </QuickAnswer>
-
-            {/* Visual: 5 ratio packs comparison */}
-            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
-              <img src="/assets/visuals/etsy-print-ratios-comparison.png" alt="The 5 Etsy print ratio packs — 2:3, 3:4, 4:5, ISO, and Extras — shown with representative frame shapes at correct proportions" width={1200} height={520} className="w-full h-auto" loading="lazy" />
-            </div>
-
-          </div>
-          <div className="mt-16">
-            {/* ===== Listing Output Showcase ===== */}
-            <ListingOutputShowcase
-              artwork="fox"
-              heading="One upload. Five ratio-correct files."
-              subtext="Every ratio a buyer might need — generated automatically from your original file. No Photoshop. No manual resizing."
-            />
-          </div>
-          <div className="max-w-4xl space-y-16 mt-16">
 
             {/* ===== SECTION 1: What Are Print Ratios? ===== */}
             <div>
@@ -645,15 +683,6 @@ export default function EtsyPrintRatiosPage() {
                 stat="Every ratio optimized from one image"
                 description="Generate all Etsy print ratios in seconds. Upload once, download every ratio pack, ready to upload to your listing."
                 buttonText="Start Free"
-                appUrl={appUrl}
-              />
-            </div>
-
-            <div className="pb-12">
-              <ContextualCTA
-                problem="Manually resizing your artwork for 4 different ratio families?"
-                solution="Upload once. SnapToSize generates every ratio — 2:3, 3:4, 4:5, and ISO — organized in separate ZIPs. 60 seconds."
-                buttonText="Generate All Ratios"
                 appUrl={appUrl}
               />
             </div>
