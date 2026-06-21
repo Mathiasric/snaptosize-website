@@ -17,6 +17,7 @@ import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
+import { RatioPackFan, type FanPrint } from "@/components/RatioPackFan";
 
 export const metadata: Metadata = {
   title:
@@ -174,6 +175,16 @@ export default function HowToResizeImagesForEtsyPage() {
 
   const appUrl =
     "https://app.snaptosize.com?source=seo_resize_guide&kind=guide";
+
+  /* Size Packs fan — 5 REAL SnapToSize exports of one deer upload, each at its
+     true ratio, whole image kept. Ordered so the center card is the 2:3 original. */
+  const deerPrints: FanPrint[] = [
+    { src: "/assets/modes-demo/resize/deer-3x4.jpg", size: "6×8 in", tag: "3:4", ratio: 0.75 },
+    { src: "/assets/modes-demo/resize/deer-iso.jpg", size: "A4", tag: "ISO A", ratio: 0.707 },
+    { src: "/assets/modes-demo/resize/deer-2x3.jpg", size: "8×12 in", tag: "2:3", ratio: 0.667 },
+    { src: "/assets/modes-demo/resize/deer-4x5.jpg", size: "8×10 in", tag: "4:5", ratio: 0.8 },
+    { src: "/assets/modes-demo/resize/deer-extras.jpg", size: "11×14 in", tag: "Extras", ratio: 0.786 },
+  ];
 
   /* Size reference data — exact SnapToSize output sizes */
   const sizeTable = [
@@ -553,17 +564,61 @@ export default function HowToResizeImagesForEtsyPage() {
                 Size
               </h2>
               <p className="text-foreground-60 mb-6">
-                Different print sizes have different aspect ratios. Resizing
-                between ratios forces you to either crop (losing parts of your
-                artwork) or stretch (distorting proportions). Neither is
-                acceptable for professional printables.
+                Different print sizes have genuinely different shapes &mdash; a
+                2:3 photo and a 4:5 frame are not the same proportions. Resize
+                between them by hand and you are guessing: drag to fit and you
+                risk cropping the edges or reshaping by eye.
+              </p>
+              <p className="text-foreground-60 mb-8">
+                SnapToSize takes the guesswork out with two modes that each put
+                you in control:
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+                <Card className="p-6 border-[#2DD4BF]/20">
+                  <span className="text-xs font-semibold uppercase tracking-[0.14em] text-[#2DD4BF]">
+                    Size Packs
+                  </span>
+                  <p className="text-sm text-foreground-60 mt-2">
+                    Your{" "}
+                    <strong className="text-foreground">whole image</strong>,
+                    fitted to every standard ratio &mdash; nothing cropped out.
+                    Each file lands print-ready at 300 DPI in an organized ZIP.
+                  </p>
+                </Card>
+                <Card className="p-6 border-[#A78BFA]/20">
+                  <span className="text-xs font-semibold uppercase tracking-[0.14em] text-[#A78BFA]">
+                    Perfect Fit
+                  </span>
+                  <p className="text-sm text-foreground-60 mt-2">
+                    Want a different shape than your original?{" "}
+                    <strong className="text-foreground">You</strong> choose
+                    exactly what stays in frame with a focal crop you control
+                    &mdash; proportions exact, with a live preview before export.
+                  </p>
+                </Card>
+              </div>
+
+              {/* Size Packs proof — five real exports of one deer upload */}
+              <RatioPackFan prints={deerPrints} subject="Deer art" />
+              <p className="text-center text-sm text-foreground-60 mt-10 mb-12 max-w-2xl mx-auto">
+                One deer upload, every standard ratio, the whole image kept
+                &mdash; up to{" "}
+                <span className="text-foreground font-medium">
+                  70 print-ready files
+                </span>{" "}
+                from a single upload, each ZIP under Etsy&apos;s 20&nbsp;MB
+                limit.{" "}
+                <span className="text-foreground-40">
+                  Tap any print to enlarge.
+                </span>
               </p>
 
               <div className="space-y-4 mb-8">
                 <Card className="p-6">
                   <h3 className="text-lg font-semibold mb-3">
-                    The 30 sizes SnapToSize generates &mdash; organized into 5
-                    ratio packs
+                    Every standard ratio &mdash; organized into 5 packs from one
+                    upload
                   </h3>
                   <div className="space-y-3">
                     {[
@@ -615,10 +670,40 @@ export default function HowToResizeImagesForEtsyPage() {
                 </Card>
               </div>
 
+              {/* Perfect Fit — the controlled-crop path, cross-link */}
+              <Card className="p-6 border-[#A78BFA]/20 bg-[#A78BFA]/[0.04] mb-8">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-5">
+                  <img
+                    src="/assets/visuals/distortion-free-crop-demo.png"
+                    alt="Fox art reframed from 2:3 to 4:5 and 3:4 with Perfect Fit — the fox kept full while empty sky and grass are trimmed"
+                    className="w-full sm:w-60 flex-shrink-0 rounded-lg border border-white/10"
+                    loading="lazy"
+                  />
+                  <div>
+                    <h3 className="font-semibold mb-1.5">
+                      Need a shape your original doesn&apos;t have?
+                    </h3>
+                    <p className="text-sm text-foreground-60 mb-3">
+                      Perfect Fit reframes any artwork to a new ratio with a
+                      focal crop you control &mdash; keep the subject, trim only
+                      the empty space, proportions stay exact. No more
+                      &ldquo;Do you have this in 4:5?&rdquo; messages.
+                    </p>
+                    <Link
+                      href="/distortion-free-crop"
+                      className="text-[#A78BFA] font-medium text-sm underline-offset-4 hover:underline"
+                    >
+                      See how Perfect Fit works &rarr;
+                    </Link>
+                  </div>
+                </div>
+              </Card>
+
               <p className="text-foreground-60">
-                Each ratio requires its own source file. For one artwork across
-                all 5 ratios, that&apos;s 30 individual files. This is why
-                manual resizing takes 1-3 hours per artwork.
+                Done by hand, each ratio is its own export job &mdash; calculate,
+                resize, export, name, repeat. That&apos;s why manual resizing
+                runs 1&ndash;3 hours per artwork. SnapToSize collapses the whole
+                job into one upload.
               </p>
             </div>
 
