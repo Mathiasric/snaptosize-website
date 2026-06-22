@@ -12,12 +12,12 @@ import RelatedPages from "@/components/RelatedPages";
 import { FileSizeChecker } from "@/components/FileSizeChecker";
 
 export const metadata: Metadata = {
-  title: "Etsy File Size Limit 2026: 20 MB per file, 5 files per listing",
+  title: "Etsy File Size Limit: 20 MB Max per File — Check & Fix (2026)",
   description:
     "Etsy's limit is 20 MB per file, up to 5 files per listing (100 MB total). Check if your files exceed it — then fix them instantly. No Photoshop needed.",
   alternates: { canonical: "https://snaptosize.com/etsy-20mb-file-limit" },
   openGraph: {
-    title: "Etsy File Size Limit 2026: 20 MB per file, 5 files per listing",
+    title: "Etsy File Size Limit: 20 MB Max per File — Check & Fix (2026)",
     description:
       "Etsy's limit is 20 MB per file, up to 5 files per listing (100 MB total). Check if yours exceeds it — then fix it instantly. Free, no Photoshop.",
     url: "https://snaptosize.com/etsy-20mb-file-limit",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Etsy File Size Limit 2026: 20 MB per file, 5 files per listing",
+    title: "Etsy File Size Limit: 20 MB Max per File — Check & Fix (2026)",
     description:
       "Etsy limits digital downloads to 20MB per file. Check if yours is too large, then fix it — JPG conversion or ratio ZIPs. Free.",
     images: ["/assets/og/etsy-20mb-file-limit.png"],
