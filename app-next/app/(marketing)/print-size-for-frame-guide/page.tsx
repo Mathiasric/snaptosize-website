@@ -263,10 +263,10 @@ export default function PrintSizeForFrameGuidePage() {
             <div
               className="absolute inset-0 rounded-sm"
               style={{
-                border: "2px solid rgba(167,139,250,0.45)",
-                background: "rgba(255,255,255,0.02)",
+                border: "2px solid rgba(167,139,250,0.75)",
+                background: "rgba(255,255,255,0.03)",
                 boxShadow:
-                  "0 8px 30px rgba(0,0,0,0.3), inset 0 0 0 6px rgba(255,255,255,0.015)",
+                  "0 10px 40px rgba(0,0,0,0.45), 0 0 24px rgba(167,139,250,0.12), inset 0 0 0 6px rgba(255,255,255,0.03)",
               }}
             />
             {/* Mat area */}
@@ -277,8 +277,8 @@ export default function PrintSizeForFrameGuidePage() {
                 left: "36px",
                 right: "36px",
                 bottom: "36px",
-                border: "1px dashed rgba(45,212,191,0.35)",
-                background: "rgba(255,255,255,0.015)",
+                border: "1px dashed rgba(45,212,191,0.6)",
+                background: "rgba(255,255,255,0.025)",
               }}
             />
             {/* Inner print (8x10 opening) */}
@@ -289,18 +289,18 @@ export default function PrintSizeForFrameGuidePage() {
                 left: "70px",
                 right: "70px",
                 bottom: "70px",
-                border: "2px solid rgba(212,165,116,0.5)",
-                background: "rgba(255,255,255,0.04)",
+                border: "2px solid rgba(212,165,116,0.85)",
+                background: "rgba(255,255,255,0.06)",
               }}
             >
               <div className="text-center">
                 <Frame
                   className="w-5 h-5 mx-auto mb-1"
-                  style={{ color: "rgba(212,165,116,0.65)" }}
+                  style={{ color: "rgba(212,165,116,0.95)" }}
                 />
                 <span
                   className="text-[9px] font-mono tracking-wider block"
-                  style={{ color: "rgba(212,165,116,0.6)" }}
+                  style={{ color: "rgba(212,165,116,0.9)" }}
                 >
                   8&times;10 PRINT
                 </span>
@@ -312,7 +312,7 @@ export default function PrintSizeForFrameGuidePage() {
               style={{
                 top: "8px",
                 left: "12px",
-                color: "rgba(167,139,250,0.6)",
+                color: "rgba(167,139,250,0.9)",
               }}
             >
               FRAME 16&times;20
@@ -322,7 +322,7 @@ export default function PrintSizeForFrameGuidePage() {
               style={{
                 top: "44px",
                 left: "46px",
-                color: "rgba(45,212,191,0.55)",
+                color: "rgba(45,212,191,0.85)",
               }}
             >
               MAT 2.5&#8243;
@@ -335,8 +335,8 @@ export default function PrintSizeForFrameGuidePage() {
                 left: "-8px",
                 width: "16px",
                 height: "16px",
-                borderTop: "1px solid rgba(167,139,250,0.4)",
-                borderLeft: "1px solid rgba(167,139,250,0.4)",
+                borderTop: "1px solid rgba(167,139,250,0.65)",
+                borderLeft: "1px solid rgba(167,139,250,0.65)",
               }}
             />
             <div
@@ -346,8 +346,8 @@ export default function PrintSizeForFrameGuidePage() {
                 right: "-8px",
                 width: "16px",
                 height: "16px",
-                borderBottom: "1px solid rgba(167,139,250,0.4)",
-                borderRight: "1px solid rgba(167,139,250,0.4)",
+                borderBottom: "1px solid rgba(167,139,250,0.65)",
+                borderRight: "1px solid rgba(167,139,250,0.65)",
               }}
             />
           </div>
