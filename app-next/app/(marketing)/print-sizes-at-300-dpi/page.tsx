@@ -362,7 +362,7 @@ export default function PrintSizesAt300DpiPage() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 md:px-8 max-w-[1200px] py-12">
+      <div className="container mx-auto px-4 md:px-8 max-w-3xl py-12">
 
         <AuthorByline lastUpdated="May 28, 2026" />
 
