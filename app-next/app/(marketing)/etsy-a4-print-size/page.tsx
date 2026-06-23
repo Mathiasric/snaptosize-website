@@ -8,7 +8,7 @@ import { Check, AlertTriangle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
-import { AseriesLadder } from "@/components/AseriesLadder";
+import { SizeLadder } from "@/components/SizeLadder";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
@@ -252,7 +252,7 @@ export default function EtsyA4PrintSizePage() {
 
           {/* Real output proof — one upload rendered at A5/A4/A3, replaces the empty wireframe */}
           <div className="relative z-10 mt-12 md:mt-14 border-t border-white/[0.06] pt-10">
-            <AseriesLadder subject="Your Etsy artwork" />
+            <SizeLadder subject="Your Etsy artwork" />
           </div>
         </Container>
       </section>
