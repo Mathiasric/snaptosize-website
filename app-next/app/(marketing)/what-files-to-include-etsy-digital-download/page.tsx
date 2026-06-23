@@ -270,7 +270,7 @@ export default function WhatFilesToIncludeEtsyDigitalDownloadPage() {
 
       <section className="py-8">
         <Container>
-          <div className="max-w-4xl space-y-16">
+          <div className="max-w-3xl mx-auto space-y-16">
             <QuickAnswer question="What files should I include in an Etsy digital download?">
               For wall art: JPG files at 300 DPI in 3–5 standard sizes (5×7, 8×10, 11×14, A4, A3). For planners: PDF. Most top sellers include all four main print ratios (2:3, 3:4, 4:5, ISO) in one listing. Avoid PNG for large prints — 300 DPI PNGs regularly exceed Etsy&apos;s 20 MB per-file limit.
             </QuickAnswer>
