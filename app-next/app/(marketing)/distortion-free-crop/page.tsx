@@ -11,13 +11,13 @@ import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
-  title: "Distortion-Free Crop — Reframe Art to Any Print Ratio",
+  title: "Crop Art to Any Print Ratio Without Distortion (2026)",
   description:
-    "Perfect Fit reframes your art to any Etsy print ratio with full control. Drag to choose what stays in frame, preview it live, and export every size with proportions kept exactly.",
+    "Change your art's aspect ratio without distortion. Perfect Fit crops to any Etsy print ratio with full control — drag to choose what stays in frame, preview it live, and keep proportions exact at every size.",
   alternates: { canonical: "https://snaptosize.com/distortion-free-crop" },
   openGraph: {
     title:
-      "Distortion-Free Crop: Reframe Art to Any Print Ratio | SnapToSize",
+      "Crop Art to Any Print Ratio Without Distortion | SnapToSize",
     description:
       "Reframe a 2:3 piece to 4:5, portrait to landscape, any ratio to any ratio, with full control. You choose what stays in frame, with a live preview before export.",
     url: "https://snaptosize.com/distortion-free-crop",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Distortion-Free Crop — Reframe Art to Any Print Ratio",
+    title: "Crop Art to Any Print Ratio Without Distortion (2026)",
     description:
       "Reframe your art to any print ratio with full control. You choose what stays in frame, preview it live, and export every size.",
     images: ["/assets/og/distortion-free-crop.png"],
@@ -47,7 +47,7 @@ export default function DistortionFreeCropPage() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "Distortion-Free Crop — Reframe Your Art to Any Print Ratio",
+      "Crop Art to Any Print Ratio Without Distortion (2026)",
     description:
       "How to reframe artwork to a different print ratio with full control over the framing, using a focal crop. Covers portrait and landscape, every Etsy size, and a live preview before export.",
     url: "https://snaptosize.com/distortion-free-crop",
