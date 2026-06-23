@@ -423,8 +423,11 @@ export default function EightByTenVsEightPointFiveByElevenPage() {
             Why the Same File Won&apos;t Work for Both Sizes
           </h2>
           <p className="text-foreground/70 leading-relaxed mb-6">
-            8×10 and 8.5×11 look like near-identical rectangles, but their aspect ratios differ
-            enough to force separate exports:
+            8×10 and 8.5×11 look like near-identical rectangles, but their{" "}
+            <Link href="/etsy-print-ratios" className="text-accent-light hover:underline">
+              aspect ratios
+            </Link>{" "}
+            differ enough to force separate exports:
           </p>
 
           <div className="grid grid-cols-2 gap-4 mb-6">
@@ -492,9 +495,15 @@ export default function EightByTenVsEightPointFiveByElevenPage() {
             When to Offer Each Size on Etsy
           </h2>
           <p className="text-foreground/70 leading-relaxed mb-4">
-            <strong>8×10 dominates Etsy wall art searches.</strong> It fits the most popular
-            photo frames — IKEA RIBBA, Target, Walmart — and buyers purchasing framed wall
-            decor know this size by heart. For art prints, 8×10 is non-negotiable.
+            <strong>
+              <Link href="/etsy-8x10-print-size" className="text-accent-light hover:underline">
+                8×10
+              </Link>{" "}
+              dominates Etsy wall art searches.
+            </strong>{" "}
+            It fits the most popular photo frames — IKEA RIBBA, Target, Walmart — and buyers
+            purchasing framed wall decor know this size by heart. For art prints, 8×10 is
+            non-negotiable.
           </p>
           <p className="text-foreground/70 leading-relaxed mb-4">
             <strong>8.5×11 is the standard for printable downloads.</strong> Buyers shopping
