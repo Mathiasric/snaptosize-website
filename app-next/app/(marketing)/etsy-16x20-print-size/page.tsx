@@ -12,7 +12,7 @@ import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
-  title: "16×20 Print Size for Etsy — Pixels, DPI & File Setup",
+  title: "16×20 in Pixels: 4800×6000 at 300 DPI for Etsy Prints",
   description:
     "16×20 is a premium Etsy print size. Get exact pixel dimensions at 300 DPI (4800×6000), 4:5 ratio specs, file format rules, and framing tips for digital downloads.",
   alternates: { canonical: "https://snaptosize.com/etsy-16x20-print-size" },
