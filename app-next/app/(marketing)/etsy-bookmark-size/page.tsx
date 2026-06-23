@@ -252,6 +252,35 @@ export default function EtsyBookmarkSizePage() {
                 See all print sizes →
               </a>
             </div>
+
+            {/* Size-comparison visual — the 3 standard bookmark shapes to scale */}
+            <div className="mt-12 flex items-end justify-center gap-6 sm:gap-10">
+              {[
+                { label: "2×6\"", px: "600×1800", h: 156 },
+                { label: "2×7\"", px: "600×2100", h: 182 },
+                { label: "2×8.5\"", px: "600×2550", h: 221 },
+              ].map((b) => (
+                <div key={b.label} className="flex flex-col items-center">
+                  <div
+                    className="relative rounded-md border border-[#2DD4BF]/45 bg-gradient-to-b from-[#2DD4BF]/[0.08] to-[#a78bfa]/[0.08] shadow-lg shadow-black/40"
+                    style={{ width: 52, height: b.h }}
+                  >
+                    <span className="absolute left-1/2 -translate-x-1/2 top-2 w-1.5 h-1.5 rounded-full border border-white/40" />
+                    <span className="absolute inset-1.5 rounded border border-dashed border-white/15" />
+                  </div>
+                  <span className="mt-2 text-xs font-semibold text-foreground">
+                    {b.label}
+                  </span>
+                  <span className="text-[10px] font-mono text-foreground-40">
+                    {b.px} px
+                  </span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-6 text-sm text-foreground-60 max-w-xl mx-auto">
+              Upload your bookmark art once and get every size at 300 DPI &mdash;
+              plus a print-ready 4-up sheet. No signup, no install.
+            </p>
           </div>
         </div></Container>
       </section>
