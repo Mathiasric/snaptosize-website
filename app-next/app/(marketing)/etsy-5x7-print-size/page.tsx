@@ -11,7 +11,7 @@ import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
-  title: "5×7 Print Size for Etsy — Pixels, DPI & File Setup",
+  title: "5×7 Print Size for Etsy: 1500×2100 px at 300 DPI",
   description:
     "5×7 is the #2 most popular Etsy print size. Get exact pixel dimensions at 300 DPI (1500×2100), 5:7 ratio specs, framing tips, and file format rules for digital downloads.",
   alternates: { canonical: "https://snaptosize.com/etsy-5x7-print-size" },

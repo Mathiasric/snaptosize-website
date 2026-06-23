@@ -12,7 +12,7 @@ import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
   title:
-    "Etsy Listing Photo Size Guide (2026) — Dimensions, Specs & Best Practices",
+    "Etsy Listing Photo Size: 2000px Minimum, 3000px Best (2026)",
   description:
     "Exact Etsy listing photo dimensions for 2026: minimum 2000x2000px, recommended 3000x3000px. Covers thumbnail cropping, all 20 photo slots, listing photo vs. print file specs, and common mistakes that cost sales.",
   alternates: {
