@@ -397,8 +397,11 @@ export default function DistortionFreeCropPage() {
                 When your art needs a different shape
               </h2>
               <p className="text-foreground-60 mb-4">
-                Every print size has its own aspect ratio. So a 2:3 piece you
-                also want as a 4:5, or a portrait you need to run as a landscape,
+                Every print size has its own aspect ratio. So a{" "}
+                <Link href="/2-3-vs-4-5-ratio" className="text-accent-light hover:underline">
+                  2:3 piece you also want as a 4:5
+                </Link>
+                , or a portrait you need to run as a landscape,
                 has to change shape to fit. The real question is who decides what
                 stays in frame.
               </p>

@@ -758,7 +758,14 @@ export default function PrintSizeForFrameGuidePage() {
               measurements. A 16x20 frame (4:5) and a 16x24 frame (2:3) are
               totally different shapes — putting a 4:5 print into a 2:3 frame
               either crops the image or leaves white gaps. Always confirm
-              ratio first.
+              ratio first — or{" "}
+              <Link
+                href="/distortion-free-crop"
+                className="text-accent-light hover:underline"
+              >
+                reframe your art to the frame&apos;s exact ratio
+              </Link>{" "}
+              so it fills the opening with nothing cut by accident.
             </p>
             <ul className="space-y-2 text-foreground-70 text-sm">
               <li>
