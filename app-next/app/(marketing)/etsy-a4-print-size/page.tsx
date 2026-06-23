@@ -8,6 +8,7 @@ import { Check, AlertTriangle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
+import { AseriesLadder } from "@/components/AseriesLadder";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
@@ -106,7 +107,7 @@ export default function EtsyA4PrintSizePage() {
         name: "Can I just resize my 8×10 design to A4?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "No — the aspect ratios are different. 8×10 is 4:5, while A4 uses the ISO A-series ratio. Resizing will either crop your artwork or add white bars. You need to re-compose the design for A4 proportions, or use a tool like SnapToSize that handles ratio-aware resizing automatically.",
+          text: "No. The aspect ratios are different: 8×10 is 4:5, while A4 uses the ISO A-series ratio, so a straight resize either crops your artwork or adds white bars. Two clean fixes: re-compose at A4 proportions, or let SnapToSize handle the geometry. Size Packs keeps your whole image across sizes that share its ratio; Perfect Fit does a distortion-free crop to the A-series ratio when you specifically need A4.",
         },
       },
       {
@@ -191,65 +192,6 @@ export default function EtsyA4PrintSizePage() {
           style={{ background: "radial-gradient(circle, #6366f1, transparent 70%)" }}
         />
 
-        {/* A4 Frame blueprint — right side (210:297 ≈ 0.707 ratio) */}
-        <div className="absolute right-[8%] top-1/2 -translate-y-1/2 hidden md:block">
-          {/* Outer frame — A4 proportions: width 212px, height 300px */}
-          <div
-            className="relative border border-white/[0.08] rounded-sm"
-            style={{ width: "212px", height: "300px" }}
-          >
-            {/* Inner frame with accent border */}
-            <div className="absolute inset-3 border border-purple-500/20 rounded-sm" />
-
-            {/* Corner marks */}
-            <div className="absolute -top-2 -left-2 w-4 h-4 border-t border-l border-purple-400/30" />
-            <div className="absolute -top-2 -right-2 w-4 h-4 border-t border-r border-purple-400/30" />
-            <div className="absolute -bottom-2 -left-2 w-4 h-4 border-b border-l border-purple-400/30" />
-            <div className="absolute -bottom-2 -right-2 w-4 h-4 border-b border-r border-purple-400/30" />
-
-            {/* Dimension label — width */}
-            <div className="absolute -top-8 left-0 right-0 flex items-center justify-center gap-2">
-              <div className="h-px flex-1 bg-white/10" />
-              <span className="text-[10px] font-mono text-purple-300/50 tracking-widest whitespace-nowrap">
-                210mm &middot; 2480 px
-              </span>
-              <div className="h-px flex-1 bg-white/10" />
-            </div>
-
-            {/* Dimension label — height */}
-            <div className="absolute -right-24 top-0 bottom-0 flex flex-col items-center justify-center gap-2 w-20">
-              <div className="w-px flex-1 bg-white/10" />
-              <span className="text-[10px] font-mono text-purple-300/50 tracking-widest whitespace-nowrap -rotate-90">
-                297mm &middot; 3508 px
-              </span>
-              <div className="w-px flex-1 bg-white/10" />
-            </div>
-
-            {/* Ratio badge */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="px-3 py-1.5 rounded border border-white/[0.06] bg-white/[0.02]">
-                <span className="text-xs font-mono text-white/20 tracking-[0.2em]">
-                  ISO
-                </span>
-              </div>
-            </div>
-
-            {/* Tick marks — top edge */}
-            <div className="absolute top-0 left-0 right-0 flex justify-between px-3">
-              {[...Array(8)].map((_, i) => (
-                <div key={`tt-${i}`} className="w-px h-1.5 bg-white/[0.06]" />
-              ))}
-            </div>
-
-            {/* Tick marks — left edge */}
-            <div className="absolute top-0 bottom-0 left-0 flex flex-col justify-between py-3">
-              {[...Array(11)].map((_, i) => (
-                <div key={`tl-${i}`} className="h-px w-1.5 bg-white/[0.06]" />
-              ))}
-            </div>
-          </div>
-        </div>
-
         {/* Content */}
         <Container>
           <div className="relative z-10 max-w-[680px]">
@@ -306,6 +248,11 @@ export default function EtsyA4PrintSizePage() {
                 </span>
               </div>
             </div>
+          </div>
+
+          {/* Real output proof — one upload rendered at A5/A4/A3, replaces the empty wireframe */}
+          <div className="relative z-10 mt-12 md:mt-14 border-t border-white/[0.06] pt-10">
+            <AseriesLadder subject="Your Etsy artwork" />
           </div>
         </Container>
       </section>
@@ -638,8 +585,18 @@ export default function EtsyA4PrintSizePage() {
                   8&times;10 print
                 </Link>{" "}
                 or Letter-size file is simply cropped to A4 dimensions, your
-                buyer will get a distorted or incomplete design. Each size needs
-                its own properly composed file.
+                buyer will get an incomplete design or off margins. Each size
+                needs its own properly composed file, or a controlled crop that
+                respects the A-series ratio. That second path is{" "}
+                <Link
+                  href="/distortion-free-crop"
+                  className="text-accent-light hover:underline"
+                >
+                  Perfect Fit
+                </Link>
+                : it reframes your art to A4&apos;s proportions without
+                stretching, so nothing distorts and you decide what stays in
+                frame.
               </p>
               <p className="text-foreground-60">
                 The good news: since all A-series sizes share the same ratio,
@@ -729,7 +686,7 @@ export default function EtsyA4PrintSizePage() {
                 </p>
                 <a href={appUrl} target="_blank" rel="noopener noreferrer">
                   <Button className="text-sm px-6 py-2.5">
-                    Generate A-Series Sizes
+                    Make My A5, A4 &amp; A3 Files
                   </Button>
                 </a>
               </Card>
@@ -897,7 +854,7 @@ export default function EtsyA4PrintSizePage() {
                 </p>
                 <a href={appUrl} target="_blank" rel="noopener noreferrer">
                   <Button className="text-sm px-6 py-2.5">
-                    Generate All Sizes Now
+                    Get US + A-Series in One Upload
                   </Button>
                 </a>
               </Card>
@@ -1066,7 +1023,7 @@ export default function EtsyA4PrintSizePage() {
                     question:
                       "Can I just resize my 8×10 design to A4?",
                     answer:
-                      "No — the aspect ratios are different. 8×10 is 4:5, while A4 uses the ISO A-series ratio. Resizing will either crop your artwork or add white bars. You need to re-compose the design for A4 proportions, or use a tool like SnapToSize that handles ratio-aware resizing automatically.",
+                      "No. The aspect ratios are different: 8×10 is 4:5, while A4 uses the ISO A-series ratio, so a straight resize either crops your artwork or adds white bars. Two clean fixes: re-compose at A4 proportions, or let SnapToSize handle the geometry. Size Packs keeps your whole image across sizes that share its ratio; Perfect Fit does a distortion-free crop to the A-series ratio when you specifically need A4.",
                   },
                   {
                     question:
