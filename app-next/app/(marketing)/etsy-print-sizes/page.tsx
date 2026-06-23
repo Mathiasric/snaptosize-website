@@ -10,6 +10,7 @@ import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
+import { RatioPackFan, type FanPrint } from "@/components/RatioPackFan";
 
 export const metadata: Metadata = {
   title: "Etsy Print Sizes: Full Chart at 300 DPI — Every Size & Ratio (2026)",
@@ -132,6 +133,15 @@ export default function EtsyPrintSizesPage() {
   };
 
   const appUrl = "https://app.snaptosize.com?source=seo_pillar&kind=guide";
+
+  // Breadth proof — one upload rendered at every ratio (index 2 = 2:3 center).
+  const ratioPrints: FanPrint[] = [
+    { src: "/assets/modes-demo/ratios/misty-3x4.jpg", size: "6×8 in", tag: "3:4", ratio: 0.75 },
+    { src: "/assets/modes-demo/ratios/misty-iso.jpg", size: "A4", tag: "ISO A", ratio: 0.707 },
+    { src: "/assets/modes-demo/ratios/misty-2x3.jpg", size: "8×12 in", tag: "2:3", ratio: 0.667 },
+    { src: "/assets/modes-demo/ratios/misty-4x5.jpg", size: "8×10 in", tag: "4:5", ratio: 0.8 },
+    { src: "/assets/modes-demo/ratios/misty-extras.jpg", size: "11×14 in", tag: "Extras", ratio: 0.786 },
+  ];
   const packsUrl = "https://app.snaptosize.com/app/packs";
 
   return (
@@ -164,9 +174,9 @@ export default function EtsyPrintSizesPage() {
         <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-[600px] h-[600px] bg-accent-light/[0.06] rounded-full blur-[120px]" />
 
         <div className="relative z-10"><Container>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center py-10 md:py-14">
-            {/* Left: Text */}
-            <div>
+          <div className="flex flex-col gap-10 py-10 md:py-14">
+            {/* Text */}
+            <div className="max-w-2xl">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent-light/10 border border-accent-light/20 mb-5">
                 <span className="text-xs font-semibold text-accent-light tracking-wide">Every Etsy Print Size</span>
                 <span className="text-xs text-foreground-60">4 ratios + common sizes &middot; 30+ dimensions</span>
@@ -207,80 +217,12 @@ export default function EtsyPrintSizesPage() {
               </div>
             </div>
 
-            {/* Right: Gallery Wall — CSS-only ratio frames */}
-            <div className="hidden lg:block relative" aria-hidden="true">
-              <div className="relative w-full h-[480px]">
-                {/* 2:3 frame — tallest */}
-                <div
-                  className="absolute rounded-lg border border-accent-light/30 bg-accent-light/[0.03] shadow-[0_0_30px_-8px_rgba(139,92,246,0.15)]"
-                  style={{ width: '120px', height: '180px', top: '20px', left: '30px' }}
-                >
-                  <div className="absolute bottom-2 left-2 text-[10px] font-mono text-accent-light/60">2:3</div>
-                  <div className="absolute top-2 right-2 text-[9px] font-mono text-foreground-60/40">4&times;6</div>
-                </div>
-
-                {/* 3:4 frame */}
-                <div
-                  className="absolute rounded-lg border border-purple-400/25 bg-purple-400/[0.03] shadow-[0_0_24px_-8px_rgba(168,85,247,0.12)]"
-                  style={{ width: '130px', height: '173px', top: '50px', left: '170px' }}
-                >
-                  <div className="absolute bottom-2 left-2 text-[10px] font-mono text-purple-400/60">3:4</div>
-                  <div className="absolute top-2 right-2 text-[9px] font-mono text-foreground-60/40">9&times;12</div>
-                </div>
-
-                {/* 4:5 frame — widest */}
-                <div
-                  className="absolute rounded-lg border border-blue-400/25 bg-blue-400/[0.03] shadow-[0_0_24px_-8px_rgba(96,165,250,0.12)]"
-                  style={{ width: '140px', height: '175px', top: '0px', left: '320px' }}
-                >
-                  <div className="absolute bottom-2 left-2 text-[10px] font-mono text-blue-400/60">4:5</div>
-                  <div className="absolute top-2 right-2 text-[9px] font-mono text-foreground-60/40">8&times;10</div>
-                </div>
-
-                {/* ISO A4 frame */}
-                <div
-                  className="absolute rounded-lg border border-emerald-400/25 bg-emerald-400/[0.03] shadow-[0_0_24px_-8px_rgba(52,211,153,0.12)]"
-                  style={{ width: '115px', height: '163px', top: '220px', left: '60px' }}
-                >
-                  <div className="absolute bottom-2 left-2 text-[10px] font-mono text-emerald-400/60">ISO</div>
-                  <div className="absolute top-2 right-2 text-[9px] font-mono text-foreground-60/40">A4</div>
-                </div>
-
-                {/* 5×7 Extra */}
-                <div
-                  className="absolute rounded-lg border border-amber-400/25 bg-amber-400/[0.03] shadow-[0_0_24px_-8px_rgba(251,191,36,0.1)]"
-                  style={{ width: '100px', height: '140px', top: '250px', left: '200px' }}
-                >
-                  <div className="absolute bottom-2 left-2 text-[10px] font-mono text-amber-400/60">Extra</div>
-                  <div className="absolute top-2 right-2 text-[9px] font-mono text-foreground-60/40">5&times;7</div>
-                </div>
-
-                {/* Large 24×36 poster frame — background accent */}
-                <div
-                  className="absolute rounded-lg border border-accent-light/15 bg-accent-light/[0.02]"
-                  style={{ width: '160px', height: '240px', top: '195px', left: '320px' }}
-                >
-                  <div className="absolute bottom-2 left-2 text-[10px] font-mono text-accent-light/40">2:3</div>
-                  <div className="absolute top-2 right-2 text-[9px] font-mono text-foreground-60/30">24&times;36</div>
-                </div>
-
-                {/* Small 11×14 frame */}
-                <div
-                  className="absolute rounded-lg border border-rose-400/20 bg-rose-400/[0.02]"
-                  style={{ width: '88px', height: '112px', top: '140px', left: '0px' }}
-                >
-                  <div className="absolute bottom-2 left-2 text-[10px] font-mono text-rose-400/50">Extra</div>
-                  <div className="absolute top-2 right-2 text-[9px] font-mono text-foreground-60/30">11&times;14</div>
-                </div>
-
-                {/* Decorative: "300 DPI" badge */}
-                <div
-                  className="absolute px-3 py-1.5 rounded-md bg-surface border border-border"
-                  style={{ bottom: '20px', left: '80px' }}
-                >
-                  <span className="text-xs font-mono text-foreground-60">300 DPI &middot; JPG &middot; ZIP</span>
-                </div>
-              </div>
+            {/* Real output proof — one upload rendered at every ratio (replaces empty CSS frames) */}
+            <div className="w-full border-t border-white/[0.06] pt-8">
+              <RatioPackFan prints={ratioPrints} subject="Misty Nordic art" />
+              <p className="mt-4 text-center text-xs text-foreground-60">
+                One upload, every ratio at 300 DPI, named and ZIP-packed under 20 MB.
+              </p>
             </div>
           </div>
         </Container></div>
@@ -288,7 +230,7 @@ export default function EtsyPrintSizesPage() {
 
       <section className="py-8">
         <Container>
-          <div className="max-w-4xl space-y-16">
+          <div className="max-w-4xl mx-auto space-y-16">
             <QuickAnswer question="What are the most common Etsy print sizes?">
               5×7, 8×10, 11×14, and A4 cover most buyer requests. At 300 DPI: 5×7 = 1,500×2,100 px, 8×10 = 2,400×3,000 px, 11×14 = 3,300×4,200 px, A4 = 2,480×3,508 px. Top sellers include all four ratios (2:3, 3:4, 4:5, ISO) in one listing to eliminate &ldquo;do you have this in 8×10?&rdquo; messages.
             </QuickAnswer>
@@ -494,7 +436,7 @@ export default function EtsyPrintSizesPage() {
                 </p>
                 <a href={appUrl} target="_blank" rel="noopener noreferrer">
                   <Button className="text-base px-6 py-2.5">
-                    Generate All Etsy Sizes
+                    Skip the Manual Resizing
                   </Button>
                 </a>
               </Card>
@@ -581,8 +523,16 @@ export default function EtsyPrintSizesPage() {
                 </div>
 
                 <p className="text-sm text-foreground-60 mt-8">
-                  If you need different compositions per ratio, crop your source
-                  artwork intentionally before uploading.
+                  Need a specific ratio instead of the whole image? That is what{" "}
+                  <Link
+                    href="/distortion-free-crop"
+                    className="text-accent-light hover:underline"
+                  >
+                    Perfect Fit
+                  </Link>{" "}
+                  is for: it crops your art to any single ratio distortion-free,
+                  with you choosing the framing, no manual canvas work before
+                  uploading.
                 </p>
               </div>
             </div>
