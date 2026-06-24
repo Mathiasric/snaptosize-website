@@ -8,6 +8,7 @@ import { Check, AlertTriangle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
+import { RatioPackFan, type FanPrint } from "@/components/RatioPackFan";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
@@ -123,7 +124,7 @@ export default function Etsy11x14PrintSizePage() {
         name: "Can I use my 8×10 file for 11×14?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Not directly. 8×10 is 4:5 ratio; 11×14 is 11:14. Stretching distorts the image. You need either a separate 11:14 export or accept slight cropping from a 4:5 source.",
+          text: "Not directly. 8×10 is 4:5 ratio; 11×14 is 11:14. Only stretching distorts the image — a crop just trims the edges. You need either a separate 11:14 export or a controlled crop from the 4:5 source. SnapToSize's Perfect Fit gives you a distortion-free crop to the 11:14 ratio where you choose what stays in frame.",
         },
       },
     ],
@@ -131,6 +132,14 @@ export default function Etsy11x14PrintSizePage() {
 
   const appUrl =
     "https://app.snaptosize.com?source=seo_11x14&kind=guide";
+
+  const ratioPrints: FanPrint[] = [
+    { src: "/assets/modes-demo/ratios/misty-3x4.jpg", size: "6×8 in", tag: "3:4", ratio: 0.75 },
+    { src: "/assets/modes-demo/ratios/misty-iso.jpg", size: "A4", tag: "ISO A", ratio: 0.707 },
+    { src: "/assets/modes-demo/ratios/misty-2x3.jpg", size: "8×12 in", tag: "2:3", ratio: 0.667 },
+    { src: "/assets/modes-demo/ratios/misty-4x5.jpg", size: "8×10 in", tag: "4:5", ratio: 0.8 },
+    { src: "/assets/modes-demo/ratios/misty-extras.jpg", size: "11×14 in", tag: "11×14", ratio: 0.786 },
+  ];
 
   return (
     <>
@@ -167,65 +176,6 @@ export default function Etsy11x14PrintSizePage() {
           className="absolute bottom-[-30%] left-[-5%] w-[500px] h-[500px] rounded-full opacity-[0.05]"
           style={{ background: "radial-gradient(circle, #6366f1, transparent 70%)" }}
         />
-
-        {/* 11:14 Frame blueprint — right side */}
-        <div className="absolute right-[8%] top-1/2 -translate-y-1/2 hidden md:block">
-          {/* Outer frame — 11:14 proportions (220px × 280px) */}
-          <div
-            className="relative border border-white/[0.08] rounded-sm"
-            style={{ width: "220px", height: "280px" }}
-          >
-            {/* Inner frame with accent border */}
-            <div className="absolute inset-3 border border-purple-500/20 rounded-sm" />
-
-            {/* Corner marks */}
-            <div className="absolute -top-2 -left-2 w-4 h-4 border-t border-l border-purple-400/30" />
-            <div className="absolute -top-2 -right-2 w-4 h-4 border-t border-r border-purple-400/30" />
-            <div className="absolute -bottom-2 -left-2 w-4 h-4 border-b border-l border-purple-400/30" />
-            <div className="absolute -bottom-2 -right-2 w-4 h-4 border-b border-r border-purple-400/30" />
-
-            {/* Dimension label — width */}
-            <div className="absolute -top-8 left-0 right-0 flex items-center justify-center gap-2">
-              <div className="h-px flex-1 bg-white/10" />
-              <span className="text-[10px] font-mono text-purple-300/50 tracking-widest whitespace-nowrap">
-                11 in &middot; 3300 px
-              </span>
-              <div className="h-px flex-1 bg-white/10" />
-            </div>
-
-            {/* Dimension label — height */}
-            <div className="absolute -right-24 top-0 bottom-0 flex flex-col items-center justify-center gap-2 w-20">
-              <div className="w-px flex-1 bg-white/10" />
-              <span className="text-[10px] font-mono text-purple-300/50 tracking-widest whitespace-nowrap -rotate-90">
-                14 in &middot; 4200 px
-              </span>
-              <div className="w-px flex-1 bg-white/10" />
-            </div>
-
-            {/* Ratio badge */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="px-3 py-1.5 rounded border border-white/[0.06] bg-white/[0.02]">
-                <span className="text-xs font-mono text-white/20 tracking-[0.2em]">
-                  11 : 14
-                </span>
-              </div>
-            </div>
-
-            {/* Tick marks — top edge (12 ticks for 11 inches) */}
-            <div className="absolute top-0 left-0 right-0 flex justify-between px-3">
-              {[...Array(12)].map((_, i) => (
-                <div key={`tt-${i}`} className="w-px h-1.5 bg-white/[0.06]" />
-              ))}
-            </div>
-
-            {/* Tick marks — left edge (15 ticks for 14 inches) */}
-            <div className="absolute top-0 bottom-0 left-0 flex flex-col justify-between py-3">
-              {[...Array(15)].map((_, i) => (
-                <div key={`tl-${i}`} className="h-px w-1.5 bg-white/[0.06]" />
-              ))}
-            </div>
-          </div>
-        </div>
 
         {/* Content */}
         <Container>
@@ -285,6 +235,14 @@ export default function Etsy11x14PrintSizePage() {
                 </span>
               </div>
             </div>
+          </div>
+
+          {/* Real output proof — one upload, every ratio (11×14 plus the rest), replaces empty wireframe */}
+          <div className="relative z-10 mt-12 md:mt-14 border-t border-white/[0.06] pt-10">
+            <RatioPackFan prints={ratioPrints} subject="Misty Nordic art" />
+            <p className="mt-4 text-center text-xs text-white/50">
+              11×14 plus every other ratio, one upload, 300 DPI, named and ZIP-packed.
+            </p>
           </div>
         </Container>
       </section>
@@ -495,7 +453,11 @@ export default function Etsy11x14PrintSizePage() {
               <p className="text-foreground-60 mb-4">
                 The professional solution: create a separate 11:14 source file,
                 or use a tool that handles ratio-aware resizing automatically.
-                For a deeper dive on all Etsy ratios, see the{" "}
+                When a crop is unavoidable,{" "}
+                <Link href="/distortion-free-crop" className="text-accent-light hover:underline">Perfect Fit</Link>{" "}
+                gives you a controlled, distortion-free crop to the 11:14 ratio —
+                you choose what stays in frame instead of letting a force-fit
+                stretch the image. For a deeper dive on all Etsy ratios, see the{" "}
                 <Link
                   href="/etsy-print-ratios"
                   className="text-accent-light hover:underline"
@@ -996,7 +958,7 @@ export default function Etsy11x14PrintSizePage() {
                   {
                     question: "Can I use my 8×10 file for 11×14?",
                     answer:
-                      "Not directly. 8×10 is 4:5 ratio; 11×14 is 11:14. Stretching distorts the image. You need either a separate 11:14 export or accept slight cropping from a 4:5 source. Tools like SnapToSize handle this automatically.",
+                      "Not directly. 8×10 is 4:5 ratio; 11×14 is 11:14. Only stretching distorts the image — a crop just trims the edges. You need either a separate 11:14 export or a controlled crop from the 4:5 source. SnapToSize's Perfect Fit gives you a distortion-free crop to the 11:14 ratio where you choose what stays in frame.",
                   },
                 ]}
               />

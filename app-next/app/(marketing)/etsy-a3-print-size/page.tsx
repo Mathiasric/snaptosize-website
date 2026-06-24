@@ -7,6 +7,7 @@ import { Check, AlertTriangle, Globe } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
+import { SizeLadder } from "@/components/SizeLadder";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
@@ -191,99 +192,6 @@ export default function EtsyA3PrintSizePage() {
           style={{ background: "radial-gradient(circle, #8b5cf6, transparent 70%)" }}
         />
 
-        {/* A3 Frame blueprint — right side (297:420 ≈ 0.707 ratio, visually larger than A4) */}
-        <div className="absolute right-[6%] top-1/2 -translate-y-1/2 hidden md:block">
-          {/* Outer frame — A3 proportions: wider and taller than A4 blueprint */}
-          <div
-            className="relative border-2 border-white/[0.06] rounded-sm"
-            style={{ width: "240px", height: "340px" }}
-          >
-            {/* Inner frame with double-line accent */}
-            <div className="absolute inset-3 border border-purple-500/15 rounded-sm" />
-            <div className="absolute inset-5 border border-purple-400/10 rounded-sm" />
-
-            {/* Corner crosshair marks — larger than A4's corner marks */}
-            <div className="absolute -top-3 -left-3 w-6 h-6">
-              <div className="absolute top-0 left-0 w-6 h-px bg-purple-400/25" />
-              <div className="absolute top-0 left-0 w-px h-6 bg-purple-400/25" />
-            </div>
-            <div className="absolute -top-3 -right-3 w-6 h-6">
-              <div className="absolute top-0 right-0 w-6 h-px bg-purple-400/25" />
-              <div className="absolute top-0 right-0 w-px h-6 bg-purple-400/25" />
-            </div>
-            <div className="absolute -bottom-3 -left-3 w-6 h-6">
-              <div className="absolute bottom-0 left-0 w-6 h-px bg-purple-400/25" />
-              <div className="absolute bottom-0 left-0 w-px h-6 bg-purple-400/25" />
-            </div>
-            <div className="absolute -bottom-3 -right-3 w-6 h-6">
-              <div className="absolute bottom-0 right-0 w-6 h-px bg-purple-400/25" />
-              <div className="absolute bottom-0 right-0 w-px h-6 bg-purple-400/25" />
-            </div>
-
-            {/* Dimension callout — width (top, dashed) */}
-            <div className="absolute -top-10 left-0 right-0 flex items-center justify-center gap-1.5">
-              <div className="h-px flex-1 border-t border-dashed border-purple-300/20" />
-              <span className="text-[10px] font-mono text-purple-300/50 tracking-wider whitespace-nowrap px-1">
-                297 mm
-              </span>
-              <div className="h-px flex-1 border-t border-dashed border-purple-300/20" />
-            </div>
-
-            {/* Dimension callout — height (right, dashed) */}
-            <div className="absolute -right-[6.5rem] top-0 bottom-0 flex flex-col items-center justify-center gap-1.5 w-20">
-              <div className="w-px flex-1 border-l border-dashed border-purple-300/20" />
-              <span className="text-[10px] font-mono text-purple-300/50 tracking-wider whitespace-nowrap -rotate-90 px-1">
-                420 mm &middot; 4961 px
-              </span>
-              <div className="w-px flex-1 border-l border-dashed border-purple-300/20" />
-            </div>
-
-            {/* Central "A3" label — large and prominent */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center">
-                <span className="block text-3xl font-mono font-bold text-white/[0.08] tracking-[0.3em]">
-                  A3
-                </span>
-                <span className="block text-[9px] font-mono text-purple-300/25 tracking-[0.25em] mt-1">
-                  ISO 216
-                </span>
-              </div>
-            </div>
-
-            {/* Fold line — horizontal center line showing A4 fold point */}
-            <div className="absolute left-3 right-3 top-1/2 -translate-y-1/2 border-t border-dashed border-white/[0.04]" />
-            <div className="absolute right-5 top-1/2 translate-y-1">
-              <span className="text-[8px] font-mono text-white/[0.12] tracking-wider">
-                A4 fold
-              </span>
-            </div>
-
-            {/* Tick marks — top edge (wider spacing than A4) */}
-            <div className="absolute top-0 left-0 right-0 flex justify-between px-4">
-              {[...Array(10)].map((_, i) => (
-                <div key={`tt-${i}`} className="w-px h-2 bg-white/[0.05]" />
-              ))}
-            </div>
-
-            {/* Tick marks — left edge */}
-            <div className="absolute top-0 bottom-0 left-0 flex flex-col justify-between py-4">
-              {[...Array(14)].map((_, i) => (
-                <div key={`tl-${i}`} className="h-px w-2 bg-white/[0.05]" />
-              ))}
-            </div>
-
-            {/* Small A4 outline in bottom-right for size comparison */}
-            <div
-              className="absolute bottom-4 right-4 border border-white/[0.06] rounded-sm"
-              style={{ width: "70px", height: "99px" }}
-            >
-              <span className="absolute inset-0 flex items-center justify-center text-[7px] font-mono text-white/[0.10]">
-                A4
-              </span>
-            </div>
-          </div>
-        </div>
-
         {/* Content */}
         <Container>
           <div className="relative z-10 max-w-[680px]">
@@ -339,6 +247,23 @@ export default function EtsyA3PrintSizePage() {
                 </span>
               </div>
             </div>
+          </div>
+
+          {/* Real output proof — one upload across the ISO A-series, replaces empty wireframe */}
+          <div className="relative z-10 mt-12 md:mt-14 border-t border-white/[0.06] pt-10">
+            <SizeLadder
+              subject="Your Etsy artwork"
+              aspect="210/297"
+              src="/assets/modes-demo/ratios/misty-iso.jpg"
+              caption="One upload, every A-size at 300 DPI"
+              zipLabel="A-series.zip"
+              zipMeta="A4 · A3 · A2 · under 20 MB"
+              rungs={[
+                { id: "a4", label: "A4", px: "2480 × 3508", sub: "210 × 297 mm", h: "h-24 sm:h-32" },
+                { id: "a3", label: "A3", px: "3508 × 4961", sub: "297 × 420 mm", h: "h-32 sm:h-44", accent: true },
+                { id: "a2", label: "A2", px: "4961 × 7016", sub: "420 × 594 mm", h: "h-44 sm:h-60" },
+              ]}
+            />
           </div>
         </Container>
       </section>
@@ -1178,9 +1103,20 @@ export default function EtsyA3PrintSizePage() {
                       <p className="text-foreground-60 text-sm">
                         The ISO A-series ratio (1:1.414) is unique. It does
                         not match 4:5, 2:3, or 3:4 &mdash; the common US
-                        frame ratios. You cannot crop a 2:3 file to A3
-                        proportions without losing artwork. Each ratio family
-                        needs its own version. See{" "}
+                        frame ratios. Fitting a 2:3 file into A3 proportions
+                        means either cropping &mdash; which trims part of the
+                        edges &mdash; or stretching, which is the only thing
+                        that actually distorts the artwork. Size Packs keeps
+                        the whole image intact at each A-size; when you do
+                        want a crop, {" "}
+                        <Link
+                          href="/distortion-free-crop"
+                          className="text-accent-light hover:underline"
+                        >
+                          Perfect Fit
+                        </Link>{" "}
+                        gives you a controlled, distortion-free crop to the
+                        A-series ratio. See also{" "}
                         <Link
                           href="/etsy-print-ratios"
                           className="text-accent-light hover:underline"

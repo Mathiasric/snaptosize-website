@@ -7,6 +7,7 @@ import { Check, AlertTriangle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
+import { SizeLadder } from "@/components/SizeLadder";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
@@ -186,72 +187,6 @@ export default function Etsy6x9PrintSizePage() {
           }}
         />
 
-        {/* 2:3 Frame blueprint — right side */}
-        <div className="absolute right-[8%] top-1/2 -translate-y-1/2 hidden md:block">
-          {/* 6x9 frame at 2:3 proportions */}
-          <div
-            className="relative border border-teal-500/20 rounded-sm bg-white/[0.01]"
-            style={{ width: "160px", height: "240px" }}
-          >
-            {/* Corner marks */}
-            <div className="absolute -top-2 -left-2 w-4 h-4 border-t border-l border-teal-400/40" />
-            <div className="absolute -top-2 -right-2 w-4 h-4 border-t border-r border-teal-400/40" />
-            <div className="absolute -bottom-2 -left-2 w-4 h-4 border-b border-l border-teal-400/40" />
-            <div className="absolute -bottom-2 -right-2 w-4 h-4 border-b border-r border-teal-400/40" />
-
-            {/* Label top */}
-            <div className="absolute top-2 left-1/2 -translate-x-1/2">
-              <span className="text-[9px] font-mono text-teal-400/40 tracking-widest whitespace-nowrap">
-                6&times;9 PRINT
-              </span>
-            </div>
-
-            {/* Ratio badge */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="px-3 py-1.5 rounded border border-white/[0.06] bg-white/[0.02]">
-                <span className="text-xs font-mono text-white/20 tracking-[0.2em]">
-                  2 : 3
-                </span>
-              </div>
-            </div>
-
-            {/* Tick marks — top edge */}
-            <div className="absolute top-0 left-0 right-0 flex justify-between px-3">
-              {[...Array(6)].map((_, i) => (
-                <div key={`tt-${i}`} className="w-px h-1.5 bg-white/[0.06]" />
-              ))}
-            </div>
-
-            {/* Tick marks — left edge */}
-            <div className="absolute top-0 bottom-0 left-0 flex flex-col justify-between py-3">
-              {[...Array(9)].map((_, i) => (
-                <div key={`tl-${i}`} className="h-px w-1.5 bg-white/[0.06]" />
-              ))}
-            </div>
-
-            {/* Dimension label — width */}
-            <div
-              className="absolute flex items-center justify-center gap-2"
-              style={{ bottom: "-24px", left: "0", width: "160px" }}
-            >
-              <div className="h-px flex-1 bg-white/10" />
-              <span className="text-[10px] font-mono text-teal-300/50 tracking-widest whitespace-nowrap">
-                6 in &middot; 1800 px
-              </span>
-              <div className="h-px flex-1 bg-white/10" />
-            </div>
-
-            {/* Dimension label — height */}
-            <div className="absolute -right-28 top-0 bottom-0 flex flex-col items-center justify-center gap-2 w-24">
-              <div className="w-px flex-1 bg-white/10" />
-              <span className="text-[10px] font-mono text-teal-300/50 tracking-widest whitespace-nowrap -rotate-90">
-                9 in &middot; 2700 px
-              </span>
-              <div className="w-px flex-1 bg-white/10" />
-            </div>
-          </div>
-        </div>
-
         {/* Content */}
         <Container>
           <div className="relative z-10 max-w-[680px]">
@@ -313,6 +248,23 @@ export default function Etsy6x9PrintSizePage() {
                 </span>
               </div>
             </div>
+          </div>
+
+          {/* Real output proof — one upload across the 2:3 family, replaces empty wireframe */}
+          <div className="relative z-10 mt-12 md:mt-14 border-t border-white/[0.06] pt-10">
+            <SizeLadder
+              subject="Your Etsy artwork"
+              aspect="2/3"
+              src="/assets/modes-demo/ratios/misty-2x3.jpg"
+              caption="One upload, every 2:3 size at 300 DPI"
+              zipLabel="2x3-pack.zip"
+              zipMeta="6×9 · 12×18 · 24×36 · under 20 MB"
+              rungs={[
+                { id: "6x9", label: "6×9", px: "1800 × 2700", sub: "small print & card", h: "h-24 sm:h-32", accent: true },
+                { id: "12x18", label: "12×18", px: "3600 × 5400", sub: "gallery wall art", h: "h-32 sm:h-44" },
+                { id: "24x36", label: "24×36", px: "7200 × 10800", sub: "statement poster", h: "h-44 sm:h-60" },
+              ]}
+            />
           </div>
         </Container>
       </section>
@@ -743,9 +695,19 @@ export default function Etsy6x9PrintSizePage() {
                         >
                           8&times;10
                         </Link>
-                        ) down to 6&times;9, it will be cropped or stretched.
-                        Design at 2:3 from the start, or use a tool that
-                        generates each ratio separately without cropping.
+                        ) down to 6&times;9, the proportions don&apos;t match
+                        &mdash; a crop trims off-ratio margins, and only a
+                        stretch actually distorts the image. Design at 2:3 from
+                        the start, or use Size Packs to generate each ratio
+                        separately so the whole image stays intact. When you do
+                        need 2:3 from off-ratio art,{" "}
+                        <Link
+                          href="/distortion-free-crop"
+                          className="text-accent-light hover:underline"
+                        >
+                          Perfect Fit
+                        </Link>{" "}
+                        gives you a controlled, distortion-free crop.
                       </p>
                     </div>
                   </div>

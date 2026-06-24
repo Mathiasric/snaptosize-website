@@ -7,6 +7,7 @@ import { Check, AlertTriangle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
+import { SizeLadder } from "@/components/SizeLadder";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
@@ -176,73 +177,6 @@ export default function Etsy18x24PrintSizePage() {
           style={{ background: "radial-gradient(circle, #10b981, transparent 70%)" }}
         />
 
-        {/* 3:4 Frame blueprint — right side */}
-        <div className="absolute right-[8%] top-1/2 -translate-y-1/2 hidden md:block">
-          {/* Outer frame — 3:4 proportions */}
-          <div
-            className="relative border border-white/[0.08] rounded-sm"
-            style={{ width: "225px", height: "300px" }}
-          >
-            {/* Inner frame with accent border */}
-            <div className="absolute inset-3 border border-teal-500/20 rounded-sm" />
-
-            {/* Diagonal construction lines */}
-            <svg className="absolute inset-0 w-full h-full" viewBox="0 0 225 300" fill="none">
-              <line x1="0" y1="0" x2="225" y2="300" stroke="rgba(45,212,191,0.06)" strokeWidth="0.5" />
-              <line x1="225" y1="0" x2="0" y2="300" stroke="rgba(45,212,191,0.06)" strokeWidth="0.5" />
-              <line x1="112.5" y1="0" x2="112.5" y2="300" stroke="rgba(45,212,191,0.04)" strokeWidth="0.5" strokeDasharray="4 4" />
-              <line x1="0" y1="150" x2="225" y2="150" stroke="rgba(45,212,191,0.04)" strokeWidth="0.5" strokeDasharray="4 4" />
-            </svg>
-
-            {/* Corner marks */}
-            <div className="absolute -top-2 -left-2 w-4 h-4 border-t border-l border-teal-400/30" />
-            <div className="absolute -top-2 -right-2 w-4 h-4 border-t border-r border-teal-400/30" />
-            <div className="absolute -bottom-2 -left-2 w-4 h-4 border-b border-l border-teal-400/30" />
-            <div className="absolute -bottom-2 -right-2 w-4 h-4 border-b border-r border-teal-400/30" />
-
-            {/* Dimension label — width */}
-            <div className="absolute -top-8 left-0 right-0 flex items-center justify-center gap-2">
-              <div className="h-px flex-1 bg-white/10" />
-              <span className="text-[10px] font-mono text-teal-300/50 tracking-widest whitespace-nowrap">
-                18 in &middot; 5400 px
-              </span>
-              <div className="h-px flex-1 bg-white/10" />
-            </div>
-
-            {/* Dimension label — height */}
-            <div className="absolute -right-24 top-0 bottom-0 flex flex-col items-center justify-center gap-2 w-20">
-              <div className="w-px flex-1 bg-white/10" />
-              <span className="text-[10px] font-mono text-teal-300/50 tracking-widest whitespace-nowrap -rotate-90">
-                24 in &middot; 7200 px
-              </span>
-              <div className="w-px flex-1 bg-white/10" />
-            </div>
-
-            {/* Ratio badge */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="px-3 py-1.5 rounded border border-white/[0.06] bg-white/[0.02]">
-                <span className="text-xs font-mono text-white/20 tracking-[0.2em]">
-                  3 : 4
-                </span>
-              </div>
-            </div>
-
-            {/* Tick marks — top edge */}
-            <div className="absolute top-0 left-0 right-0 flex justify-between px-3">
-              {[...Array(7)].map((_, i) => (
-                <div key={`tt-${i}`} className="w-px h-1.5 bg-white/[0.06]" />
-              ))}
-            </div>
-
-            {/* Tick marks — left edge */}
-            <div className="absolute top-0 bottom-0 left-0 flex flex-col justify-between py-3">
-              {[...Array(9)].map((_, i) => (
-                <div key={`tl-${i}`} className="h-px w-1.5 bg-white/[0.06]" />
-              ))}
-            </div>
-          </div>
-        </div>
-
         {/* Content */}
         <Container>
           <div className="relative z-10 max-w-[680px]">
@@ -300,6 +234,23 @@ export default function Etsy18x24PrintSizePage() {
                 </span>
               </div>
             </div>
+          </div>
+
+          {/* Real output proof — one upload across the 3:4 family, replaces empty wireframe */}
+          <div className="relative z-10 mt-12 md:mt-14 border-t border-white/[0.06] pt-10">
+            <SizeLadder
+              subject="Your Etsy artwork"
+              aspect="3/4"
+              src="/assets/modes-demo/ratios/misty-3x4.jpg"
+              caption="One upload, every 3:4 size at 300 DPI"
+              zipLabel="3x4-pack.zip"
+              zipMeta="6×8 · 12×16 · 18×24 · under 20 MB"
+              rungs={[
+                { id: "6x8", label: "6×8", px: "1800 × 2400", sub: "small print", h: "h-24 sm:h-32" },
+                { id: "12x16", label: "12×16", px: "3600 × 4800", sub: "gallery wall art", h: "h-32 sm:h-44" },
+                { id: "18x24", label: "18×24", px: "5400 × 7200", sub: "statement poster", h: "h-44 sm:h-60", accent: true },
+              ]}
+            />
           </div>
         </Container>
       </section>
@@ -761,11 +712,19 @@ export default function Etsy18x24PrintSizePage() {
                         Cropping a different ratio to fit 18×24
                       </h3>
                       <p className="text-foreground-60 text-sm">
-                        Cropping a 2:3 or 4:5 design to 3:4 cuts off parts of
-                        the artwork. At 18×24, even small crops are noticeable.
-                        Buyers expect the full composition shown in your listing
-                        preview. Design at 3:4 from the start, or use a tool
-                        that generates 3:4 sizes without cropping.
+                        Cropping a 2:3 or 4:5 design to 3:4 cuts off the edges
+                        of the artwork. At 18×24, even small off-margins are
+                        noticeable. Buyers expect the full composition shown in
+                        your listing preview. Design at 3:4 from the start, or
+                        use{" "}
+                        <Link
+                          href="/distortion-free-crop"
+                          className="text-accent-light hover:underline"
+                        >
+                          Perfect Fit
+                        </Link>{" "}
+                        to crop to 3:4 with full control over what stays in
+                        frame &mdash; distortion-free, no stretching.
                       </p>
                     </div>
                   </div>

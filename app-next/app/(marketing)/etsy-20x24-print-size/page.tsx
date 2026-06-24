@@ -6,6 +6,7 @@ import { Card } from "@/components/Card";
 import { Check } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { FinalCTA } from "@/components/FinalCTA";
+import { SizeLadder } from "@/components/SizeLadder";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
@@ -186,87 +187,6 @@ export default function Etsy20x24PrintSizePage() {
           }}
         />
 
-        {/* 5:6 Frame blueprint — large format showcase — right side */}
-        <div className="absolute right-[6%] top-1/2 -translate-y-1/2 hidden md:block">
-          {/* Outer frame — 5:6 proportions (20x24) */}
-          <div
-            className="relative border border-white/[0.07] rounded-sm"
-            style={{ width: "250px", height: "300px" }}
-          >
-            {/* Inner mat border */}
-            <div className="absolute inset-4 border border-violet-500/15 rounded-sm" />
-
-            {/* Inner artwork area */}
-            <div className="absolute inset-8 border border-dashed border-white/[0.06] rounded-sm" />
-
-            {/* Corner registration marks */}
-            <div className="absolute -top-3 -left-3 w-6 h-6 border-t-2 border-l-2 border-violet-400/25" />
-            <div className="absolute -top-3 -right-3 w-6 h-6 border-t-2 border-r-2 border-violet-400/25" />
-            <div className="absolute -bottom-3 -left-3 w-6 h-6 border-b-2 border-l-2 border-violet-400/25" />
-            <div className="absolute -bottom-3 -right-3 w-6 h-6 border-b-2 border-r-2 border-violet-400/25" />
-
-            {/* Dimension label — width */}
-            <div className="absolute -top-10 left-0 right-0 flex items-center justify-center gap-2">
-              <div className="h-px flex-1 bg-white/10" />
-              <span className="text-[10px] font-mono text-violet-300/50 tracking-widest whitespace-nowrap">
-                20 in &middot; 6000 px
-              </span>
-              <div className="h-px flex-1 bg-white/10" />
-            </div>
-
-            {/* Dimension label — height */}
-            <div className="absolute -right-[6.5rem] top-0 bottom-0 flex flex-col items-center justify-center gap-2 w-20">
-              <div className="w-px flex-1 bg-white/10" />
-              <span className="text-[10px] font-mono text-violet-300/50 tracking-widest whitespace-nowrap -rotate-90">
-                24 in &middot; 7200 px
-              </span>
-              <div className="w-px flex-1 bg-white/10" />
-            </div>
-
-            {/* Ratio badge */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="px-4 py-2 rounded border border-white/[0.06] bg-white/[0.02]">
-                <span className="text-sm font-mono text-white/20 tracking-[0.25em]">
-                  5 : 6
-                </span>
-              </div>
-            </div>
-
-            {/* Measurement tick marks — top edge */}
-            <div className="absolute top-0 left-0 right-0 flex justify-between px-4">
-              {[...Array(11)].map((_, i) => (
-                <div key={`tt-${i}`} className="w-px h-2 bg-white/[0.05]" />
-              ))}
-            </div>
-
-            {/* Measurement tick marks — left edge */}
-            <div className="absolute top-0 bottom-0 left-0 flex flex-col justify-between py-4">
-              {[...Array(13)].map((_, i) => (
-                <div key={`tl-${i}`} className="h-px w-2 bg-white/[0.05]" />
-              ))}
-            </div>
-
-            {/* Small comparison ghost frame — 8x10 for scale */}
-            <div className="absolute bottom-3 right-3">
-              <div
-                className="border border-dashed border-white/[0.08] rounded-sm relative"
-                style={{ width: "52px", height: "65px" }}
-              >
-                <span className="absolute inset-0 flex items-center justify-center text-[7px] font-mono text-white/15">
-                  8&times;10
-                </span>
-              </div>
-            </div>
-          </div>
-
-          {/* "LARGE FORMAT" label below frame */}
-          <div className="mt-4 text-center">
-            <span className="text-[9px] font-mono text-violet-400/30 tracking-[0.3em] uppercase">
-              Large Format
-            </span>
-          </div>
-        </div>
-
         {/* Content */}
         <Container>
           <div className="relative z-10 max-w-[680px]">
@@ -327,6 +247,23 @@ export default function Etsy20x24PrintSizePage() {
                 </span>
               </div>
             </div>
+          </div>
+
+          {/* Real output proof — one upload across the 5:6 family, replaces empty wireframe */}
+          <div className="relative z-10 mt-12 md:mt-14 border-t border-white/[0.06] pt-10">
+            <SizeLadder
+              subject="Your Etsy artwork"
+              aspect="5/6"
+              src="/assets/modes-demo/ratios/misty-4x5.jpg"
+              caption="One upload, every 5:6 size at 300 DPI"
+              zipLabel="5x6-pack.zip"
+              zipMeta="10×12 · 20×24 · 30×36 · under 20 MB"
+              rungs={[
+                { id: "10x12", label: "10×12", px: "3000 × 3600", sub: "small print", h: "h-24 sm:h-32" },
+                { id: "20x24", label: "20×24", px: "6000 × 7200", sub: "large wall art", h: "h-32 sm:h-44", accent: true },
+                { id: "30x36", label: "30×36", px: "9000 × 10800", sub: "oversized poster", h: "h-44 sm:h-60" },
+              ]}
+            />
           </div>
         </Container>
       </section>

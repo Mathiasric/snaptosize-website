@@ -7,6 +7,7 @@ import { Check, AlertTriangle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
+import { SizeLadder } from "@/components/SizeLadder";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
@@ -187,71 +188,6 @@ export default function Etsy20x30PrintSizePage() {
           }}
         />
 
-        {/* 2:3 Frame blueprint — right side */}
-        <div className="absolute right-[8%] top-1/2 -translate-y-1/2 hidden md:block">
-          {/* Outer frame — 2:3 proportions */}
-          <div
-            className="relative border border-white/[0.08] rounded-sm"
-            style={{ width: "200px", height: "300px" }}
-          >
-            {/* Inner frame with accent border */}
-            <div className="absolute inset-3 border border-purple-500/20 rounded-sm" />
-
-            {/* Corner marks */}
-            <div className="absolute -top-2 -left-2 w-4 h-4 border-t border-l border-purple-400/30" />
-            <div className="absolute -top-2 -right-2 w-4 h-4 border-t border-r border-purple-400/30" />
-            <div className="absolute -bottom-2 -left-2 w-4 h-4 border-b border-l border-purple-400/30" />
-            <div className="absolute -bottom-2 -right-2 w-4 h-4 border-b border-r border-purple-400/30" />
-
-            {/* Dimension label — width */}
-            <div className="absolute -top-8 left-0 right-0 flex items-center justify-center gap-2">
-              <div className="h-px flex-1 bg-white/10" />
-              <span className="text-[10px] font-mono text-purple-300/50 tracking-widest whitespace-nowrap">
-                20 in &middot; 6000 px
-              </span>
-              <div className="h-px flex-1 bg-white/10" />
-            </div>
-
-            {/* Dimension label — height */}
-            <div className="absolute -right-24 top-0 bottom-0 flex flex-col items-center justify-center gap-2 w-20">
-              <div className="w-px flex-1 bg-white/10" />
-              <span className="text-[10px] font-mono text-purple-300/50 tracking-widest whitespace-nowrap -rotate-90">
-                30 in &middot; 9000 px
-              </span>
-              <div className="w-px flex-1 bg-white/10" />
-            </div>
-
-            {/* Ratio badge */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="px-3 py-1.5 rounded border border-white/[0.06] bg-white/[0.02]">
-                <span className="text-xs font-mono text-white/20 tracking-[0.2em]">
-                  2 : 3
-                </span>
-              </div>
-            </div>
-
-            {/* Tick marks — top edge */}
-            <div className="absolute top-0 left-0 right-0 flex justify-between px-3">
-              {[...Array(9)].map((_, i) => (
-                <div
-                  key={`tt-${i}`}
-                  className="w-px h-1.5 bg-white/[0.06]"
-                />
-              ))}
-            </div>
-
-            {/* Tick marks — left edge */}
-            <div className="absolute top-0 bottom-0 left-0 flex flex-col justify-between py-3">
-              {[...Array(11)].map((_, i) => (
-                <div
-                  key={`tl-${i}`}
-                  className="h-px w-1.5 bg-white/[0.06]"
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-
         {/* Content */}
         <Container>
           <div className="relative z-10 max-w-[680px]">
@@ -309,6 +245,23 @@ export default function Etsy20x30PrintSizePage() {
                 </span>
               </div>
             </div>
+          </div>
+
+          {/* Real output proof — one upload across the 2:3 family, replaces empty wireframe */}
+          <div className="relative z-10 mt-12 md:mt-14 border-t border-white/[0.06] pt-10">
+            <SizeLadder
+              subject="Your Etsy artwork"
+              aspect="2/3"
+              src="/assets/modes-demo/ratios/misty-2x3.jpg"
+              caption="One upload, every 2:3 size at 300 DPI"
+              zipLabel="2x3-pack.zip"
+              zipMeta="8×12 · 20×30 · 24×36 · under 20 MB"
+              rungs={[
+                { id: "8x12", label: "8×12", px: "2400 × 3600", sub: "standard print", h: "h-24 sm:h-32" },
+                { id: "20x30", label: "20×30", px: "6000 × 9000", sub: "large wall art", h: "h-32 sm:h-44", accent: true },
+                { id: "24x36", label: "24×36", px: "7200 × 10800", sub: "statement poster", h: "h-44 sm:h-60" },
+              ]}
+            />
           </div>
         </Container>
       </section>
@@ -982,7 +935,15 @@ export default function Etsy20x30PrintSizePage() {
                         (3:4) design to fit 20&times;30 (2:3) cuts off edges of
                         your artwork. Design at 2:3 from the start, or use a
                         tool that generates each ratio separately without
-                        cropping. See{" "}
+                        cropping. When you do need a 2:3 crop,{" "}
+                        <Link
+                          href="/distortion-free-crop"
+                          className="text-accent-light hover:underline"
+                        >
+                          Perfect Fit
+                        </Link>{" "}
+                        gives you controlled, distortion-free crop-to-2:3 so you
+                        decide exactly which margins go. See{" "}
                         <Link
                           href="/etsy-digital-download-blurry-prints"
                           className="text-accent-light hover:underline"
