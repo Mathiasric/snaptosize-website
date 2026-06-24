@@ -8,7 +8,7 @@ import { FinalCTA } from "@/components/FinalCTA";
 import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import RelatedPages from "@/components/RelatedPages";
-import { Check, ArrowRight, Monitor, Frame } from "lucide-react";
+import { Check, ArrowRight, Frame } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Etsy Office Wall Art Sizes — WFH Print Size Guide",
@@ -183,7 +183,7 @@ export default function EtsyOfficeWallArtSizesPage() {
 
       {/* ===== HERO — Office / WFH Palette ===== */}
       <section
-        className="relative pt-12 pb-20 md:pt-16 md:pb-28 overflow-hidden"
+        className="relative pt-12 pb-14 md:pt-16 md:pb-20 overflow-hidden"
         style={{
           background:
             "linear-gradient(145deg, #f0f1f2 0%, #ede9e3 40%, #e8eaed 75%, #eae8e4 100%)",
@@ -209,136 +209,6 @@ export default function EtsyOfficeWallArtSizesPage() {
           className="absolute bottom-[-22%] left-[-8%] w-[480px] h-[480px] rounded-full opacity-[0.18]"
           style={{ background: "radial-gradient(circle, #c8b89a, transparent 70%)" }}
         />
-
-        {/* CSS Office Frame Mockup */}
-        <div className="absolute right-[5%] top-1/2 -translate-y-1/2 hidden lg:block pointer-events-none">
-          <div className="relative" style={{ width: "360px", height: "340px" }}>
-
-            {/* Large portrait frame — behind desk */}
-            <div
-              className="absolute"
-              style={{
-                top: "0px",
-                left: "10px",
-                width: "140px",
-                height: "190px",
-                border: "4px solid #4a6fa5",
-                borderRadius: "2px",
-                background: "rgba(74,111,165,0.06)",
-                boxShadow: "0 0 28px -8px rgba(74,111,165,0.3), inset 0 0 30px rgba(74,111,165,0.04)",
-              }}
-            >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span
-                  className="text-[9px] font-mono tracking-[0.18em] uppercase"
-                  style={{ color: "#4a6fa5", opacity: 0.85 }}
-                >
-                  18×24
-                </span>
-              </div>
-              <div className="absolute -bottom-6 left-0 right-0 flex justify-center">
-                <span
-                  className="text-[8px] font-mono tracking-[0.15em] uppercase"
-                  style={{ color: "#4a6fa5", opacity: 0.6 }}
-                >
-                  desk backdrop
-                </span>
-              </div>
-            </div>
-
-            {/* Wide landscape frame — video call backdrop */}
-            <div
-              className="absolute"
-              style={{
-                top: "210px",
-                left: "0px",
-                width: "220px",
-                height: "100px",
-                border: "4px solid #4a6fa5",
-                borderRadius: "2px",
-                background: "rgba(74,111,165,0.04)",
-                boxShadow: "0 0 20px -6px rgba(74,111,165,0.2)",
-              }}
-            >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span
-                  className="text-[9px] font-mono tracking-[0.18em] uppercase"
-                  style={{ color: "#4a6fa5", opacity: 0.8 }}
-                >
-                  24×36 landscape
-                </span>
-              </div>
-              <div className="absolute -bottom-6 left-0 right-0 flex justify-center">
-                <span
-                  className="text-[8px] font-mono tracking-[0.13em] uppercase"
-                  style={{ color: "#4a6fa5", opacity: 0.55 }}
-                >
-                  video backdrop
-                </span>
-              </div>
-            </div>
-
-            {/* Gallery wall — small accent frames stacked right */}
-            {[
-              { top: "0px", height: "84px", label: "11×14" },
-              { top: "96px", height: "68px", label: "8×10" },
-              { top: "176px", height: "52px", label: "5×7" },
-            ].map(({ top, height, label }, idx) => (
-              <div
-                key={idx}
-                className="absolute"
-                style={{
-                  top,
-                  right: "0px",
-                  width: "84px",
-                  height,
-                  border: "3px solid rgba(74,111,165,0.5)",
-                  borderRadius: "1px",
-                  background: "rgba(74,111,165,0.03)",
-                  boxShadow: "0 0 10px -4px rgba(74,111,165,0.18)",
-                }}
-              >
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span
-                    className="text-[7px] font-mono tracking-[0.14em] uppercase"
-                    style={{ color: "#4a6fa5", opacity: 0.7 }}
-                  >
-                    {label}
-                  </span>
-                </div>
-              </div>
-            ))}
-
-            {/* Gallery wall label */}
-            <div className="absolute" style={{ top: "236px", right: "0px" }}>
-              <span
-                className="text-[8px] font-mono tracking-[0.13em] uppercase"
-                style={{ color: "#4a6fa5", opacity: 0.5 }}
-              >
-                gallery wall
-              </span>
-            </div>
-
-            {/* Badge */}
-            <div
-              className="absolute flex items-center gap-2 px-3 py-1.5 rounded-full"
-              style={{
-                bottom: "0px",
-                left: "20px",
-                background: "rgba(74,111,165,0.1)",
-                border: "1px solid rgba(74,111,165,0.25)",
-              }}
-            >
-              <Monitor size={10} style={{ color: "#4a6fa5" }} />
-              <span
-                className="text-[9px] font-mono tracking-[0.12em] uppercase"
-                style={{ color: "#4a6fa5" }}
-              >
-                WFH-ready
-              </span>
-            </div>
-          </div>
-        </div>
 
         {/* Hero content */}
         <div className="container mx-auto px-4 md:px-8 max-w-[1200px]">
@@ -400,6 +270,19 @@ export default function EtsyOfficeWallArtSizesPage() {
             <p className="mt-3 text-xs" style={{ color: "#6b7a8d" }}>
               No account required · 5 free exports · all ratios included
             </p>
+          </div>
+
+          <div className="relative z-10 mt-10 md:mt-12 max-w-2xl">
+            <div className="rounded-2xl overflow-hidden shadow-xl" style={{ border: "1px solid rgba(0,0,0,0.06)" }}>
+              <Image
+                src="/assets/visuals/etsy-office-wall-art-sizes-lifestyle.jpg"
+                alt="Home office with framed wall art prints in various sizes on the wall — large motivational quote, medium landscape, small botanical accent"
+                width={1600}
+                height={1200}
+                className="w-full object-cover"
+                style={{ maxHeight: "480px" }}
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -660,18 +543,6 @@ export default function EtsyOfficeWallArtSizesPage() {
             cover all three — buyers will know exactly which file to download.
           </p>
         </section>
-
-        {/* Lifestyle photo — before product conversion */}
-        <div className="mb-10 rounded-2xl overflow-hidden" style={{ border: "1px solid rgba(74,111,165,0.12)" }}>
-          <Image
-            src="/assets/visuals/etsy-office-wall-art-sizes-lifestyle.jpg"
-            alt="Home office with framed wall art prints in various sizes on the wall — large motivational quote, medium landscape, small botanical accent"
-            width={1600}
-            height={1200}
-            className="w-full object-cover"
-            style={{ maxHeight: "480px" }}
-          />
-        </div>
 
         {/* Section 6: ListingOutputShowcase */}
         <section className="mb-16">

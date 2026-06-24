@@ -153,7 +153,7 @@ export default function EtsyTypographyWallArtSizesPage() {
 
       {/* ===== HERO ===== */}
       <section
-        className="relative pt-10 pb-16 md:pt-14 md:pb-24 overflow-hidden"
+        className="relative pt-10 pb-14 md:pt-14 md:pb-20 overflow-hidden"
         style={{
           background:
             "linear-gradient(135deg, #0B0B12 0%, #110E1F 40%, #0F0D1A 100%)",
@@ -183,7 +183,7 @@ export default function EtsyTypographyWallArtSizesPage() {
         />
 
         <div className="container mx-auto px-4 max-w-5xl">
-          <div className="grid md:grid-cols-2 gap-10 items-center">
+          <div className="relative z-10 max-w-2xl">
             {/* Left: copy */}
             <div>
               <nav className="flex items-center gap-2 text-xs text-white/40 mb-5">
@@ -227,56 +227,14 @@ export default function EtsyTypographyWallArtSizesPage() {
               </a>
             </div>
 
-            {/* Right: visual — size ratio grid */}
-            <div className="hidden md:flex flex-col items-center justify-center gap-3">
-              <div className="text-xs font-mono text-white/30 uppercase tracking-widest mb-1">
-                Common typography ratios
+            <div className="relative z-10 mt-10 md:mt-12 max-w-2xl">
+              <div className="rounded-2xl overflow-hidden shadow-xl" style={{ border: "1px solid rgba(0,0,0,0.06)" }}>
+                <img
+                  src="/assets/visuals/etsy-typography-wall-art-sizes-mockup.jpg"
+                  alt="Typography wall art print displayed in a modern living room"
+                  className="w-full h-auto"
+                />
               </div>
-              <div className="flex items-end gap-4">
-                {/* 4:5 block */}
-                <div className="flex flex-col items-center gap-2">
-                  <div
-                    className="rounded-lg border border-purple-500/30 bg-purple-500/10 flex items-center justify-center"
-                    style={{ width: 72, height: 90 }}
-                  >
-                    <span className="text-[10px] font-mono text-purple-300/80">4:5</span>
-                  </div>
-                  <span className="text-[9px] text-white/30">8×10</span>
-                </div>
-                {/* 2:3 block */}
-                <div className="flex flex-col items-center gap-2">
-                  <div
-                    className="rounded-lg border border-teal-500/30 bg-teal-500/10 flex items-center justify-center"
-                    style={{ width: 64, height: 96 }}
-                  >
-                    <span className="text-[10px] font-mono text-teal-300/80">2:3</span>
-                  </div>
-                  <span className="text-[9px] text-white/30">8×12</span>
-                </div>
-                {/* ISO block */}
-                <div className="flex flex-col items-center gap-2">
-                  <div
-                    className="rounded-lg border border-purple-400/25 bg-purple-400/[0.07] flex items-center justify-center"
-                    style={{ width: 68, height: 96 }}
-                  >
-                    <span className="text-[10px] font-mono text-purple-200/70">ISO</span>
-                  </div>
-                  <span className="text-[9px] text-white/30">A4</span>
-                </div>
-                {/* 3:4 block */}
-                <div className="flex flex-col items-center gap-2">
-                  <div
-                    className="rounded-lg border border-teal-400/25 bg-teal-400/[0.07] flex items-center justify-center"
-                    style={{ width: 72, height: 96 }}
-                  >
-                    <span className="text-[10px] font-mono text-teal-200/70">3:4</span>
-                  </div>
-                  <span className="text-[9px] text-white/30">18×24</span>
-                </div>
-              </div>
-              <p className="text-[9px] text-white/20 mt-2 text-center max-w-[220px]">
-                Each ratio serves a different typography layout — the wrong frame squeezes white space
-              </p>
             </div>
           </div>
         </div>
@@ -582,21 +540,6 @@ export default function EtsyTypographyWallArtSizesPage() {
             buttonText="Try SnapToSize free →"
           />
         </div>
-
-        {/* ===== LIFESTYLE MOCKUP ===== */}
-        <section className="mb-14">
-          <div className="rounded-xl overflow-hidden border border-border">
-            <img
-              src="/assets/visuals/etsy-typography-wall-art-sizes-mockup.jpg"
-              alt="Typography wall art print displayed in a modern living room"
-              className="w-full object-cover"
-              style={{ maxHeight: 400 }}
-            />
-          </div>
-          <p className="text-xs text-muted-foreground mt-2 text-center">
-            Typography prints styled in a modern home — the right frame size makes the difference
-          </p>
-        </section>
 
         {/* ===== CTA 3: FinalCTA ===== */}
         <div className="mb-14">

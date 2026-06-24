@@ -96,7 +96,7 @@ export default function EtsyKitchenWallArtSizesPage() {
 
       {/* ===== HERO — Warm Kitchen Shelf ===== */}
       <section
-        className="relative pt-12 pb-20 md:pt-16 md:pb-28 overflow-hidden"
+        className="relative pt-12 pb-14 md:pt-16 md:pb-20 overflow-hidden"
         style={{
           background:
             "linear-gradient(145deg, #f5ede0 0%, #efe4d0 30%, #ede1c8 65%, #e8d9bc 100%)",
@@ -121,137 +121,6 @@ export default function EtsyKitchenWallArtSizesPage() {
           className="absolute bottom-[-20%] left-[-8%] w-[460px] h-[460px] rounded-full opacity-[0.16]"
           style={{ background: "radial-gradient(circle, #a8b996, transparent 70%)" }}
         />
-
-        {/* CSS Kitchen Shelf Mockup — 3-piece set over a shelf line */}
-        <div className="absolute right-[6%] top-1/2 -translate-y-1/2 hidden lg:block pointer-events-none">
-          <div className="relative" style={{ width: "340px", height: "340px" }}>
-            {/* 3-piece set — three 8×10 portrait frames */}
-            {[
-              { left: "0", delay: "herbs", icon: "\u{1F33F}" },
-              { left: "110px", delay: "mug", icon: "\u{2615}" },
-              { left: "220px", delay: "bread", icon: "\u{1F35E}" },
-            ].map((piece, idx) => (
-              <div
-                key={idx}
-                className="absolute shadow-[0_14px_32px_-18px_rgba(163,97,50,0.5)]"
-                style={{
-                  width: "100px",
-                  height: "125px",
-                  top: `${20 + idx * 4}px`,
-                  left: piece.left,
-                  background: "#fffbf2",
-                  border: "6px solid #8d6b42",
-                  borderRadius: "2px",
-                }}
-              >
-                <div
-                  className="w-full h-full flex items-center justify-center"
-                  style={{ background: "#faf4e6" }}
-                >
-                  <div className="text-center px-2">
-                    <span className="text-2xl block leading-none mb-1.5" style={{ color: "#8d6b42" }}>
-                      {piece.icon}
-                    </span>
-                    <span
-                      className="text-[8px] font-mono tracking-[0.18em] uppercase block"
-                      style={{ color: "#8d6b42" }}
-                    >
-                      8×10
-                    </span>
-                  </div>
-                </div>
-              </div>
-            ))}
-
-            {/* Wooden shelf line */}
-            <div
-              className="absolute"
-              style={{
-                top: "175px",
-                left: "-10px",
-                width: "340px",
-                height: "6px",
-                background: "linear-gradient(180deg, #a87c4f 0%, #7a5432 100%)",
-                borderRadius: "2px",
-                boxShadow: "0 4px 10px -4px rgba(122,84,50,0.5)",
-              }}
-            />
-
-            {/* Coffee-mug silhouette on shelf (left) */}
-            <div
-              className="absolute"
-              style={{
-                top: "140px",
-                left: "10px",
-                width: "28px",
-                height: "32px",
-                background: "linear-gradient(160deg, #d89d6c 0%, #b37849 100%)",
-                borderRadius: "2px 2px 10px 10px",
-                boxShadow: "0 4px 8px -3px rgba(163,97,50,0.4)",
-              }}
-            >
-              <div
-                className="absolute"
-                style={{
-                  top: "6px",
-                  right: "-6px",
-                  width: "10px",
-                  height: "16px",
-                  border: "3px solid #b37849",
-                  borderLeft: "none",
-                  borderRadius: "0 50% 50% 0",
-                }}
-              />
-            </div>
-
-            {/* Small potted herb on shelf (middle-right) */}
-            <div
-              className="absolute"
-              style={{
-                top: "135px",
-                left: "270px",
-                width: "26px",
-                height: "36px",
-              }}
-            >
-              <div
-                className="absolute bottom-0"
-                style={{
-                  width: "26px",
-                  height: "18px",
-                  background: "linear-gradient(160deg, #b37849 0%, #8d6b42 100%)",
-                  borderRadius: "0 0 4px 4px",
-                }}
-              />
-              <svg viewBox="0 0 40 40" className="absolute bottom-[14px] left-[-6px] w-10 h-10" fill="none">
-                <path d="M20 32 Q14 22 12 12" stroke="#6e8a52" strokeWidth="1.5" />
-                <path d="M20 32 Q26 22 28 10" stroke="#6e8a52" strokeWidth="1.5" />
-                <path d="M20 32 L20 18" stroke="#6e8a52" strokeWidth="1.5" />
-                <ellipse cx="12" cy="12" rx="4" ry="2" fill="#a8b996" transform="rotate(-25 12 12)" />
-                <ellipse cx="28" cy="10" rx="4" ry="2" fill="#a8b996" transform="rotate(25 28 10)" />
-                <ellipse cx="20" cy="16" rx="4" ry="2" fill="#a8b996" />
-              </svg>
-            </div>
-
-            {/* Label — 3-piece set */}
-            <div
-              className="absolute flex items-center gap-2 px-3 py-1.5 rounded-full"
-              style={{
-                bottom: "30px",
-                left: "60px",
-                background: "rgba(255,251,242,0.85)",
-                border: "1px solid rgba(141,107,66,0.3)",
-              }}
-            >
-              <span
-                className="text-[9px] font-mono tracking-[0.18em] uppercase"
-                style={{ color: "#8d6b42" }}
-              >
-                3-piece set &middot; 8×10
-              </span>
-            </div>
-          </div>
-        </div>
 
         {/* Content */}
         <div className="container mx-auto px-4 md:px-8 max-w-[1200px] relative z-10">
@@ -322,6 +191,20 @@ export default function EtsyKitchenWallArtSizesPage() {
               ))}
             </div>
           </div>
+
+          <div className="relative z-10 mt-10 md:mt-12 max-w-2xl">
+            <div className="rounded-2xl overflow-hidden shadow-xl" style={{ border: "1px solid rgba(0,0,0,0.06)" }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/assets/visuals/etsy-kitchen-wall-art-sizes-lifestyle.jpg"
+                alt="Two framed botanical herb prints hanging in a modern farmhouse kitchen with open wood shelves and a coffee station — example of kitchen wall art placement"
+                width={1200}
+                height={900}
+                className="w-full h-auto"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -332,24 +215,6 @@ export default function EtsyKitchenWallArtSizesPage() {
           <QuickAnswer question="What sizes sell best for kitchen wall art on Etsy?">
             <strong>8×10, 11×14, and 5×7</strong> dominate US kitchen printables. For over-the-table placement, <strong>16×20 landscape</strong> anchors the space. For international buyers, <strong>A4</strong> is essential. Because kitchen placement varies so much (coffee bar vs galley wall vs above table), sellers who offer every ratio — not just 4:5 — consistently outsell single-ratio competitors.
           </QuickAnswer>
-        </div>
-
-        {/* ===== LIFESTYLE IMAGE ===== */}
-        <div className="mb-16 md:mb-20">
-          <div className="relative rounded-2xl overflow-hidden border border-white/10 bg-slate-900/40">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/assets/visuals/etsy-kitchen-wall-art-sizes-lifestyle.jpg"
-              alt="Two framed botanical herb prints hanging in a modern farmhouse kitchen with open wood shelves and a coffee station — example of kitchen wall art placement"
-              width={1200}
-              height={900}
-              className="w-full h-auto"
-              loading="lazy"
-            />
-            <figcaption className="px-4 py-3 text-xs text-foreground-60 italic border-t border-white/10 bg-slate-900/60">
-              Two 8×10 botanical herb prints (thyme + rosemary) above a coffee station — the most common kitchen placement your Etsy buyers will frame.
-            </figcaption>
-          </div>
         </div>
 
         {/* Section 1: What sizes work best */}

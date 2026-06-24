@@ -159,7 +159,7 @@ export default function EtsyBohoWallArtSizesPage() {
 
       {/* ===== HERO ===== */}
       <section
-        className="relative pt-10 pb-16 md:pt-14 md:pb-24 overflow-hidden"
+        className="relative pt-10 pb-14 md:pt-14 md:pb-20 overflow-hidden"
         style={{
           background:
             "linear-gradient(155deg, #f7f3ee 0%, #f2ebe0 25%, #ede4d6 50%, #f0e8db 75%, #f5f0e6 100%)",
@@ -192,174 +192,6 @@ export default function EtsyBohoWallArtSizesPage() {
             filter: "blur(40px)",
           }}
         />
-
-        {/* CSS-only Boho Arch Composition — right side */}
-        <div className="absolute right-[4%] top-1/2 -translate-y-1/2 hidden lg:block">
-          <div
-            className="relative"
-            style={{ width: "300px", height: "360px" }}
-          >
-            {/* Large arch / doorway shape — terracotta */}
-            <div
-              className="absolute"
-              style={{
-                width: "140px",
-                height: "200px",
-                top: "20px",
-                left: "30px",
-                background: "rgba(194,120,86,0.12)",
-                border: "1.5px solid rgba(194,120,86,0.15)",
-                borderRadius: "70px 70px 4px 4px",
-              }}
-            />
-            {/* Inner arch — lighter sand */}
-            <div
-              className="absolute"
-              style={{
-                width: "100px",
-                height: "160px",
-                top: "40px",
-                left: "50px",
-                background: "rgba(220,195,160,0.14)",
-                border: "1px solid rgba(220,195,160,0.12)",
-                borderRadius: "50px 50px 3px 3px",
-              }}
-            />
-            {/* Moon crescent — warm gold */}
-            <div
-              className="absolute"
-              style={{
-                width: "50px",
-                height: "50px",
-                top: "15px",
-                right: "50px",
-                borderRadius: "50%",
-                boxShadow: "inset -12px -4px 0 rgba(210,175,100,0.25)",
-                border: "1px solid rgba(210,175,100,0.12)",
-              }}
-            />
-            {/* Small circle — sun symbol */}
-            <div
-              className="absolute rounded-full"
-              style={{
-                width: "28px",
-                height: "28px",
-                top: "85px",
-                right: "35px",
-                background: "rgba(210,175,100,0.15)",
-                border: "1.5px solid rgba(210,175,100,0.20)",
-              }}
-            />
-            {/* Pampas grass stem — tall vertical */}
-            <div
-              className="absolute"
-              style={{
-                width: "2px",
-                height: "130px",
-                bottom: "30px",
-                left: "75px",
-                background: "rgba(180,160,130,0.25)",
-                borderRadius: "1px",
-              }}
-            />
-            {/* Pampas plume — organic shape */}
-            <div
-              className="absolute"
-              style={{
-                width: "30px",
-                height: "55px",
-                bottom: "145px",
-                left: "60px",
-                background: "rgba(220,200,170,0.18)",
-                border: "1px solid rgba(220,200,170,0.12)",
-                borderRadius: "50% 50% 40% 40% / 60% 60% 40% 40%",
-                transform: "rotate(-5deg)",
-              }}
-            />
-            {/* Second pampas plume */}
-            <div
-              className="absolute"
-              style={{
-                width: "24px",
-                height: "45px",
-                bottom: "155px",
-                left: "82px",
-                background: "rgba(210,190,160,0.14)",
-                border: "1px solid rgba(210,190,160,0.10)",
-                borderRadius: "50% 50% 40% 40% / 60% 60% 40% 40%",
-                transform: "rotate(8deg)",
-              }}
-            />
-            {/* Horizontal desert horizon line */}
-            <div
-              className="absolute"
-              style={{
-                width: "180px",
-                height: "1.5px",
-                bottom: "80px",
-                right: "10px",
-                background:
-                  "linear-gradient(90deg, transparent, rgba(194,120,86,0.15), rgba(140,160,120,0.12), transparent)",
-              }}
-            />
-            {/* Sage leaf accent */}
-            <div
-              className="absolute"
-              style={{
-                width: "20px",
-                height: "40px",
-                bottom: "60px",
-                right: "45px",
-                background: "rgba(140,160,120,0.14)",
-                border: "1px solid rgba(140,160,120,0.10)",
-                borderRadius: "50% 50% 50% 50% / 30% 30% 70% 70%",
-                transform: "rotate(-20deg)",
-              }}
-            />
-
-            {/* Size labels — floating, monospaced */}
-            <div
-              className="absolute text-[8px] font-mono tracking-wider"
-              style={{
-                top: "95px",
-                left: "65px",
-                color: "rgba(160,120,80,0.30)",
-              }}
-            >
-              16&times;20
-            </div>
-            <div
-              className="absolute text-[7px] font-mono tracking-wider"
-              style={{
-                top: "10px",
-                right: "38px",
-                color: "rgba(194,120,86,0.25)",
-              }}
-            >
-              8&times;10
-            </div>
-            <div
-              className="absolute text-[8px] font-mono tracking-wider"
-              style={{
-                bottom: "45px",
-                right: "50px",
-                color: "rgba(140,160,120,0.28)",
-              }}
-            >
-              11&times;14
-            </div>
-            <div
-              className="absolute text-[7px] font-mono tracking-wider"
-              style={{
-                bottom: "15px",
-                left: "25px",
-                color: "rgba(180,160,130,0.25)",
-              }}
-            >
-              18&times;24
-            </div>
-          </div>
-        </div>
 
         {/* Content */}
         <Container>
@@ -476,6 +308,22 @@ export default function EtsyBohoWallArtSizesPage() {
               </div>
             </div>
           </div>
+
+          <div className="relative z-10 mt-10 md:mt-12 max-w-2xl">
+            <div
+              className="rounded-2xl overflow-hidden shadow-xl"
+              style={{ border: "1px solid rgba(0,0,0,0.06)" }}
+            >
+              <img
+                src="/assets/visuals/etsy-boho-wall-art-sizes-mockup.jpg"
+                alt="Bohemian living room with earth-tone abstract art, pampas grass prints, and celestial moon phase designs in natural wood frames"
+                width={1200}
+                height={800}
+                className="w-full h-auto"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </Container>
       </section>
 
@@ -555,18 +403,6 @@ export default function EtsyBohoWallArtSizesPage() {
                 </Link>
                 .
               </p>
-            </div>
-
-            {/* Mockup image */}
-            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
-              <img
-                src="/assets/visuals/etsy-boho-wall-art-sizes-mockup.jpg"
-                alt="Bohemian living room with earth-tone abstract art, pampas grass prints, and celestial moon phase designs in natural wood frames"
-                width={1200}
-                height={800}
-                className="w-full h-auto"
-                loading="lazy"
-              />
             </div>
 
             {/* --- H2 2: Complete Boho Print Size Reference --- */}

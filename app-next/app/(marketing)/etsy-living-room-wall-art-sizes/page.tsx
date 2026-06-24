@@ -174,7 +174,7 @@ export default function EtsyLivingRoomWallArtSizesPage() {
 
       {/* ===== HERO — Editorial / Architectural ===== */}
       <section
-        className="relative pt-12 pb-20 md:pt-16 md:pb-28 overflow-hidden"
+        className="relative pt-12 pb-14 md:pt-16 md:pb-20 overflow-hidden"
         style={{
           background:
             "linear-gradient(145deg, #1e2433 0%, #242a3a 35%, #1c2030 70%, #171c2b 100%)",
@@ -199,136 +199,6 @@ export default function EtsyLivingRoomWallArtSizesPage() {
           className="absolute bottom-[-24%] left-[-10%] w-[500px] h-[500px] rounded-full opacity-[0.10]"
           style={{ background: "radial-gradient(circle, #6b7fa3, transparent 70%)" }}
         />
-
-        {/* CSS Living Room Frame Mockup */}
-        <div className="absolute right-[5%] top-1/2 -translate-y-1/2 hidden lg:block pointer-events-none">
-          <div className="relative" style={{ width: "380px", height: "340px" }}>
-
-            {/* Large landscape frame — above sofa */}
-            <div
-              className="absolute"
-              style={{
-                top: "0px",
-                left: "0px",
-                width: "260px",
-                height: "160px",
-                border: "5px solid #c9a96e",
-                borderRadius: "2px",
-                background: "rgba(255,220,160,0.04)",
-                boxShadow: "0 0 32px -8px rgba(245,158,11,0.3), inset 0 0 40px rgba(255,220,160,0.03)",
-              }}
-            >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span
-                  className="text-[9px] font-mono tracking-[0.2em] uppercase"
-                  style={{ color: "#c9a96e", opacity: 0.85 }}
-                >
-                  24×36 landscape
-                </span>
-              </div>
-              {/* Placement label */}
-              <div
-                className="absolute -bottom-6 left-0 right-0 flex justify-center"
-              >
-                <span
-                  className="text-[8px] font-mono tracking-[0.15em] uppercase"
-                  style={{ color: "#c9a96e", opacity: 0.6 }}
-                >
-                  above sofa
-                </span>
-              </div>
-            </div>
-
-            {/* Sofa silhouette suggestion */}
-            <div
-              className="absolute"
-              style={{
-                top: "176px",
-                left: "0px",
-                width: "260px",
-                height: "28px",
-                background: "linear-gradient(180deg, #2d3548 0%, #232938 100%)",
-                borderRadius: "4px 4px 0 0",
-                border: "1px solid rgba(255,220,160,0.12)",
-              }}
-            />
-            <div
-              className="absolute"
-              style={{
-                top: "196px",
-                left: "0px",
-                width: "260px",
-                height: "12px",
-                background: "linear-gradient(180deg, #1e2433 0%, #171c2b 100%)",
-                borderRadius: "0 0 2px 2px",
-                border: "1px solid rgba(255,220,160,0.06)",
-                borderTop: "none",
-              }}
-            />
-
-            {/* Gallery wall — portrait frames stacked right */}
-            {[
-              { top: "0px", height: "100px", label: "11×14" },
-              { top: "110px", height: "80px", label: "8×10" },
-              { top: "200px", height: "60px", label: "5×7" },
-            ].map(({ top, height, label }, idx) => (
-              <div
-                key={idx}
-                className="absolute"
-                style={{
-                  top,
-                  right: "0px",
-                  width: "88px",
-                  height,
-                  border: "3px solid rgba(201,169,110,0.55)",
-                  borderRadius: "1px",
-                  background: "rgba(255,220,160,0.02)",
-                  boxShadow: "0 0 12px -4px rgba(245,158,11,0.15)",
-                }}
-              >
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span
-                    className="text-[7px] font-mono tracking-[0.15em] uppercase"
-                    style={{ color: "#c9a96e", opacity: 0.7 }}
-                  >
-                    {label}
-                  </span>
-                </div>
-              </div>
-            ))}
-
-            {/* Gallery wall label */}
-            <div
-              className="absolute"
-              style={{ top: "270px", right: "0px" }}
-            >
-              <span
-                className="text-[8px] font-mono tracking-[0.15em] uppercase"
-                style={{ color: "#c9a96e", opacity: 0.5 }}
-              >
-                gallery wall
-              </span>
-            </div>
-
-            {/* Badge */}
-            <div
-              className="absolute flex items-center gap-2 px-3 py-1.5 rounded-full"
-              style={{
-                bottom: "0px",
-                left: "30px",
-                background: "rgba(201,169,110,0.12)",
-                border: "1px solid rgba(201,169,110,0.3)",
-              }}
-            >
-              <span
-                className="text-[9px] font-mono tracking-[0.18em] uppercase"
-                style={{ color: "#c9a96e" }}
-              >
-                landscape + gallery wall
-              </span>
-            </div>
-          </div>
-        </div>
 
         {/* Content */}
         <div className="container mx-auto px-4 md:px-8 max-w-[1200px] relative z-10">
@@ -416,6 +286,20 @@ export default function EtsyLivingRoomWallArtSizesPage() {
               ))}
             </div>
           </div>
+
+          <div className="relative z-10 mt-10 md:mt-12 max-w-2xl">
+            <div className="rounded-2xl overflow-hidden shadow-xl" style={{ border: "1px solid rgba(0,0,0,0.06)" }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/assets/visuals/etsy-living-room-wall-art-sizes-lifestyle.jpg"
+                alt="Modern Scandinavian living room with a large landscape artwork above a linen sofa and a 5-frame gallery wall arrangement on the adjacent wall — example of living room wall art placement"
+                width={1200}
+                height={900}
+                className="w-full h-auto"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -438,24 +322,6 @@ export default function EtsyLivingRoomWallArtSizesPage() {
               landscape print sizes
             </Link>.
           </QuickAnswer>
-        </div>
-
-        {/* ===== LIFESTYLE IMAGE ===== */}
-        <div className="mb-16 md:mb-20">
-          <div className="relative rounded-2xl overflow-hidden border border-white/10 bg-slate-900/40">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/assets/visuals/etsy-living-room-wall-art-sizes-lifestyle.jpg"
-              alt="Modern Scandinavian living room with a large landscape artwork above a linen sofa and a 5-frame gallery wall arrangement on the adjacent wall — example of living room wall art placement"
-              width={1200}
-              height={900}
-              className="w-full h-auto"
-              loading="lazy"
-            />
-            <figcaption className="px-4 py-3 text-xs text-foreground-60 italic border-t border-white/10 bg-slate-900/60">
-              Example living room placement: landscape print above sofa + gallery wall arrangement
-            </figcaption>
-          </div>
         </div>
 
         {/* Section 1: Placements and sizes */}

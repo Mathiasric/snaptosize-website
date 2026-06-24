@@ -188,135 +188,6 @@ export default function EtsyMinimalistWallArtSizesPage() {
           }}
         />
 
-        {/* CSS-only Minimalist Frame Composition — right side */}
-        <div className="absolute right-[4%] top-1/2 -translate-y-1/2 hidden lg:block">
-          <div
-            className="relative"
-            style={{ width: "320px", height: "340px" }}
-          >
-            {/* Large frame outline — thin border, minimalist */}
-            <div
-              className="absolute rounded-sm"
-              style={{
-                width: "140px",
-                height: "180px",
-                top: "0px",
-                left: "0px",
-                border: "1px solid rgba(212,197,169,0.12)",
-              }}
-            />
-            {/* Inner content placeholder — single horizontal line */}
-            <div
-              className="absolute"
-              style={{
-                width: "80px",
-                height: "1px",
-                top: "90px",
-                left: "30px",
-                background: "rgba(212,197,169,0.15)",
-              }}
-            />
-
-            {/* Medium frame — offset right */}
-            <div
-              className="absolute rounded-sm"
-              style={{
-                width: "110px",
-                height: "140px",
-                top: "50px",
-                right: "20px",
-                border: "1px solid rgba(167,139,250,0.10)",
-              }}
-            />
-            {/* Inner content — circle */}
-            <div
-              className="absolute rounded-full"
-              style={{
-                width: "40px",
-                height: "40px",
-                top: "100px",
-                right: "55px",
-                border: "1px solid rgba(167,139,250,0.12)",
-              }}
-            />
-
-            {/* Small frame — bottom left */}
-            <div
-              className="absolute rounded-sm"
-              style={{
-                width: "80px",
-                height: "100px",
-                bottom: "10px",
-                left: "40px",
-                border: "1px solid rgba(212,197,169,0.09)",
-              }}
-            />
-            {/* Inner content — two thin lines */}
-            <div
-              className="absolute"
-              style={{
-                width: "40px",
-                height: "1px",
-                bottom: "55px",
-                left: "60px",
-                background: "rgba(212,197,169,0.10)",
-              }}
-            />
-            <div
-              className="absolute"
-              style={{
-                width: "30px",
-                height: "1px",
-                bottom: "45px",
-                left: "60px",
-                background: "rgba(212,197,169,0.07)",
-              }}
-            />
-
-            {/* Size labels — floating, monospaced */}
-            <div
-              className="absolute text-[8px] font-mono tracking-wider"
-              style={{
-                top: "-12px",
-                left: "50px",
-                color: "rgba(212,197,169,0.30)",
-              }}
-            >
-              16&times;20
-            </div>
-            <div
-              className="absolute text-[7px] font-mono tracking-wider"
-              style={{
-                top: "42px",
-                right: "48px",
-                color: "rgba(167,139,250,0.25)",
-              }}
-            >
-              8&times;10
-            </div>
-            <div
-              className="absolute text-[7px] font-mono tracking-wider"
-              style={{
-                bottom: "0px",
-                left: "60px",
-                color: "rgba(212,197,169,0.22)",
-              }}
-            >
-              A4
-            </div>
-            <div
-              className="absolute text-[8px] font-mono tracking-wider"
-              style={{
-                bottom: "100px",
-                right: "0px",
-                color: "rgba(167,139,250,0.20)",
-              }}
-            >
-              24&times;36
-            </div>
-          </div>
-        </div>
-
         {/* Content */}
         <Container>
           <div className="relative z-10 max-w-[680px]">
@@ -428,6 +299,12 @@ export default function EtsyMinimalistWallArtSizesPage() {
               </div>
             </div>
           </div>
+
+          <div className="relative z-10 mt-10 md:mt-12 max-w-2xl">
+            <div className="rounded-2xl overflow-hidden shadow-xl" style={{ border: "1px solid rgba(0,0,0,0.06)" }}>
+              <img src="/assets/visuals/etsy-minimalist-wall-art-mockup.jpg" alt="Minimalist living room with a single large line drawing portrait in a black frame above a beige sofa — Scandinavian interior" width={1200} height={800} className="w-full h-auto" loading="lazy" />
+            </div>
+          </div>
         </Container>
       </section>
 
@@ -484,10 +361,6 @@ export default function EtsyMinimalistWallArtSizesPage() {
                 </Link>{" "}
                 for the full strategy.
               </p>
-            </div>
-
-            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
-              <img src="/assets/visuals/etsy-minimalist-wall-art-mockup.jpg" alt="Minimalist living room with a single large line drawing portrait in a black frame above a beige sofa — Scandinavian interior" width={1200} height={800} className="w-full h-auto" loading="lazy" />
             </div>
 
             {/* --- H2 2: The Best-Selling Sizes for Minimalist Wall Art on Etsy --- */}

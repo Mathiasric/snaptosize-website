@@ -161,7 +161,7 @@ export default function EtsyQuoteWallArtSizesPage() {
 
       {/* ===== HERO ===== */}
       <section
-        className="relative py-20 md:py-28 overflow-hidden"
+        className="relative pt-20 md:pt-28 pb-14 md:pb-20 overflow-hidden"
         style={{
           background:
             "linear-gradient(155deg, #1a1714 0%, #1e1a16 25%, #19160f 50%, #1c1914 75%, #17140f 100%)",
@@ -193,150 +193,6 @@ export default function EtsyQuoteWallArtSizesPage() {
               "radial-gradient(circle, #8b7355, transparent 70%)",
           }}
         />
-
-        {/* CSS-only Typography/Quote Visual — right side */}
-        <div className="absolute right-[4%] top-1/2 -translate-y-1/2 hidden lg:block">
-          <div
-            className="relative"
-            style={{ width: "320px", height: "300px" }}
-          >
-            {/* Large decorative opening quotation mark */}
-            <div
-              className="absolute font-serif leading-none select-none"
-              style={{
-                fontSize: "180px",
-                top: "-30px",
-                left: "0px",
-                color: "rgba(201,168,124,0.12)",
-              }}
-            >
-              &ldquo;
-            </div>
-
-            {/* Simulated text lines at different sizes */}
-            <div className="absolute" style={{ top: "70px", left: "40px" }}>
-              {/* Large "headline" line */}
-              <div
-                className="rounded-full mb-3"
-                style={{
-                  width: "220px",
-                  height: "10px",
-                  background: "rgba(201,168,124,0.18)",
-                }}
-              />
-              <div
-                className="rounded-full mb-3"
-                style={{
-                  width: "180px",
-                  height: "10px",
-                  background: "rgba(201,168,124,0.14)",
-                }}
-              />
-              {/* Smaller "body" lines */}
-              <div
-                className="rounded-full mb-2"
-                style={{
-                  width: "200px",
-                  height: "5px",
-                  background: "rgba(201,168,124,0.10)",
-                }}
-              />
-              <div
-                className="rounded-full mb-2"
-                style={{
-                  width: "160px",
-                  height: "5px",
-                  background: "rgba(201,168,124,0.08)",
-                }}
-              />
-              <div
-                className="rounded-full"
-                style={{
-                  width: "140px",
-                  height: "5px",
-                  background: "rgba(201,168,124,0.06)",
-                }}
-              />
-            </div>
-
-            {/* Size labels floating around the quote block */}
-            <div
-              className="absolute text-[9px] font-mono tracking-wider"
-              style={{
-                top: "55px",
-                right: "10px",
-                color: "rgba(201,168,124,0.35)",
-              }}
-            >
-              8&times;10
-            </div>
-            <div
-              className="absolute text-[8px] font-mono tracking-wider"
-              style={{
-                top: "170px",
-                right: "5px",
-                color: "rgba(167,139,250,0.3)",
-              }}
-            >
-              16&times;20
-            </div>
-            <div
-              className="absolute text-[7px] font-mono tracking-wider"
-              style={{
-                bottom: "50px",
-                left: "20px",
-                color: "rgba(201,168,124,0.3)",
-              }}
-            >
-              5&times;7
-            </div>
-            <div
-              className="absolute text-[8px] font-mono tracking-wider"
-              style={{
-                bottom: "30px",
-                right: "40px",
-                color: "rgba(167,139,250,0.25)",
-              }}
-            >
-              A4
-            </div>
-
-            {/* Large decorative closing quotation mark */}
-            <div
-              className="absolute font-serif leading-none select-none"
-              style={{
-                fontSize: "180px",
-                bottom: "-70px",
-                right: "0px",
-                color: "rgba(201,168,124,0.10)",
-              }}
-            >
-              &rdquo;
-            </div>
-
-            {/* Frame outlines at different scales */}
-            <div
-              className="absolute rounded-sm"
-              style={{
-                width: "60px",
-                height: "75px",
-                bottom: "15px",
-                left: "0px",
-                border: "1.5px solid rgba(201,168,124,0.12)",
-              }}
-            />
-            <div
-              className="absolute rounded-sm"
-              style={{
-                width: "90px",
-                height: "112px",
-                top: "15px",
-                right: "-10px",
-                border: "1.5px solid rgba(167,139,250,0.10)",
-              }}
-            />
-          </div>
-        </div>
 
         {/* Content */}
         <Container>
@@ -449,6 +305,12 @@ export default function EtsyQuoteWallArtSizesPage() {
               </div>
             </div>
           </div>
+
+          <div className="relative z-10 mt-10 md:mt-12 max-w-2xl">
+            <div className="rounded-2xl overflow-hidden shadow-xl" style={{ border: "1px solid rgba(0,0,0,0.06)" }}>
+              <img src="/assets/visuals/etsy-quote-wall-art-mockup.jpg" alt="Bedroom with two framed abstract calligraphy art prints in gold frames above the headboard — warm ambient lighting" width={1200} height={800} className="w-full h-auto" loading="lazy" />
+            </div>
+          </div>
         </Container>
       </section>
 
@@ -512,10 +374,6 @@ export default function EtsyQuoteWallArtSizesPage() {
                 </Link>{" "}
                 for the full strategy.
               </p>
-            </div>
-
-            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
-              <img src="/assets/visuals/etsy-quote-wall-art-mockup.jpg" alt="Bedroom with two framed abstract calligraphy art prints in gold frames above the headboard — warm ambient lighting" width={1200} height={800} className="w-full h-auto" loading="lazy" />
             </div>
 
             {/* --- H2 2: The 8 Must-Have Sizes for Quote Wall Art --- */}

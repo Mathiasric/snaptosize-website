@@ -152,7 +152,7 @@ export default function EtsyCoastalWallArtSizesPage() {
 
       {/* ===== HERO ===== */}
       <section
-        className="relative pt-10 pb-16 md:pt-14 md:pb-24 overflow-hidden"
+        className="relative pt-10 pb-14 md:pt-14 md:pb-20 overflow-hidden"
         style={{
           background:
             "linear-gradient(155deg, #0a1628 0%, #0d2137 25%, #0b1a2e 50%, #091525 75%, #0a1220 100%)",
@@ -192,303 +192,6 @@ export default function EtsyCoastalWallArtSizesPage() {
               "linear-gradient(90deg, transparent 5%, rgba(45,212,191,0.6) 30%, rgba(14,165,233,0.4) 70%, transparent 95%)",
           }}
         />
-
-        {/* CSS-only Coastal Art Gallery — right side */}
-        <div className="absolute right-[4%] top-1/2 -translate-y-1/2 hidden lg:block">
-          <div
-            className="relative"
-            style={{ width: "360px", height: "380px" }}
-          >
-            {/* Frame 1 — Large landscape, ocean blue, slight left rotation */}
-            <div
-              className="absolute"
-              style={{
-                width: "155px",
-                height: "110px",
-                top: "30px",
-                left: "0px",
-                transform: "rotate(-2deg)",
-              }}
-            >
-              <div
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  border: "3px solid rgba(45,212,191,0.35)",
-                  boxShadow:
-                    "inset 0 0 0 1px rgba(45,212,191,0.12), 0 8px 24px rgba(0,0,0,0.3)",
-                  background:
-                    "linear-gradient(180deg, #0d3b5c 0%, #164e6e 40%, #c2b280 95%)",
-                }}
-              >
-                {/* Horizon line */}
-                <div
-                  style={{
-                    position: "absolute",
-                    top: "55%",
-                    left: "8%",
-                    width: "84%",
-                    height: "1px",
-                    background: "rgba(255,255,255,0.12)",
-                  }}
-                />
-                {/* Inner border */}
-                <div
-                  style={{
-                    position: "absolute",
-                    inset: "5px",
-                    border: "1px solid rgba(45,212,191,0.12)",
-                  }}
-                />
-              </div>
-            </div>
-
-            {/* Frame 2 — Tall portrait, deep teal-to-navy, center */}
-            <div
-              className="absolute"
-              style={{
-                width: "120px",
-                height: "170px",
-                top: "15px",
-                left: "145px",
-                transform: "rotate(0deg)",
-                zIndex: 2,
-              }}
-            >
-              <div
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  border: "3px solid rgba(45,212,191,0.40)",
-                  boxShadow:
-                    "inset 0 0 0 1px rgba(45,212,191,0.15), 0 10px 30px rgba(0,0,0,0.35)",
-                  background:
-                    "linear-gradient(170deg, #0a2e4a 0%, #0d4a5c 30%, #1a6b6b 60%, #d4c9a8 95%)",
-                }}
-              >
-                <div
-                  style={{
-                    position: "absolute",
-                    inset: "6px",
-                    border: "1px solid rgba(45,212,191,0.14)",
-                  }}
-                />
-                {/* Wave curve suggestion */}
-                <div
-                  style={{
-                    position: "absolute",
-                    bottom: "30%",
-                    left: "10%",
-                    width: "80%",
-                    height: "20px",
-                    borderBottom: "1px solid rgba(255,255,255,0.06)",
-                    borderRadius: "0 0 50% 50%",
-                  }}
-                />
-              </div>
-            </div>
-
-            {/* Frame 3 — Square, seafoam abstract, slight right rotation */}
-            <div
-              className="absolute"
-              style={{
-                width: "100px",
-                height: "100px",
-                top: "55px",
-                left: "260px",
-                transform: "rotate(3deg)",
-              }}
-            >
-              <div
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  border: "3px solid rgba(45,212,191,0.30)",
-                  boxShadow:
-                    "inset 0 0 0 1px rgba(45,212,191,0.10), 0 8px 24px rgba(0,0,0,0.3)",
-                  background:
-                    "linear-gradient(135deg, #1a5c5c 0%, #2a7a7a 50%, #c8ddd0 100%)",
-                }}
-              >
-                <div
-                  style={{
-                    position: "absolute",
-                    inset: "5px",
-                    border: "1px solid rgba(45,212,191,0.12)",
-                  }}
-                />
-              </div>
-            </div>
-
-            {/* Small accent frame — bottom left, nautical navy */}
-            <div
-              className="absolute"
-              style={{
-                width: "90px",
-                height: "115px",
-                bottom: "15px",
-                left: "15px",
-                transform: "rotate(-1deg)",
-              }}
-            >
-              <div
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  border: "2px solid rgba(45,212,191,0.25)",
-                  boxShadow: "0 4px 12px rgba(0,0,0,0.25)",
-                  background:
-                    "linear-gradient(160deg, #0f2a4a 0%, #1a3a5a 50%, #0f2a4a 100%)",
-                }}
-              >
-                <div
-                  style={{
-                    position: "absolute",
-                    inset: "4px",
-                    border: "1px solid rgba(45,212,191,0.10)",
-                  }}
-                />
-              </div>
-            </div>
-
-            {/* Small accent frame — bottom center, sandy warm */}
-            <div
-              className="absolute"
-              style={{
-                width: "100px",
-                height: "70px",
-                bottom: "25px",
-                left: "125px",
-                transform: "rotate(2deg)",
-              }}
-            >
-              <div
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  border: "2px solid rgba(194,178,128,0.35)",
-                  boxShadow: "0 4px 12px rgba(0,0,0,0.25)",
-                  background:
-                    "linear-gradient(160deg, #8a7a5a 0%, #a09070 50%, #c2b280 100%)",
-                }}
-              >
-                <div
-                  style={{
-                    position: "absolute",
-                    inset: "4px",
-                    border: "1px solid rgba(194,178,128,0.15)",
-                  }}
-                />
-              </div>
-            </div>
-
-            {/* Small accent frame — bottom right, coral reef */}
-            <div
-              className="absolute"
-              style={{
-                width: "75px",
-                height: "95px",
-                bottom: "10px",
-                left: "245px",
-                transform: "rotate(-2deg)",
-              }}
-            >
-              <div
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  border: "2px solid rgba(45,212,191,0.22)",
-                  boxShadow: "0 4px 12px rgba(0,0,0,0.25)",
-                  background:
-                    "linear-gradient(160deg, #1a4a4a 0%, #2a5a5a 50%, #1a4a4a 100%)",
-                }}
-              >
-                <div
-                  style={{
-                    position: "absolute",
-                    inset: "4px",
-                    border: "1px solid rgba(45,212,191,0.10)",
-                  }}
-                />
-              </div>
-            </div>
-
-            {/* Size labels — floating, monospaced */}
-            <div
-              className="absolute text-[8px] font-mono tracking-wider"
-              style={{
-                top: "150px",
-                left: "5px",
-                color: "rgba(45,212,191,0.28)",
-              }}
-            >
-              16&times;24
-            </div>
-            <div
-              className="absolute text-[7px] font-mono tracking-wider"
-              style={{
-                top: "0px",
-                left: "175px",
-                color: "rgba(45,212,191,0.25)",
-              }}
-            >
-              20&times;30
-            </div>
-            <div
-              className="absolute text-[8px] font-mono tracking-wider"
-              style={{
-                top: "162px",
-                right: "35px",
-                color: "rgba(45,212,191,0.25)",
-              }}
-            >
-              8&times;10
-            </div>
-            <div
-              className="absolute text-[7px] font-mono tracking-wider"
-              style={{
-                bottom: "0px",
-                left: "30px",
-                color: "rgba(45,212,191,0.22)",
-              }}
-            >
-              A3
-            </div>
-            <div
-              className="absolute text-[7px] font-mono tracking-wider"
-              style={{
-                bottom: "0px",
-                left: "150px",
-                color: "rgba(45,212,191,0.20)",
-              }}
-            >
-              12&times;18
-            </div>
-            <div
-              className="absolute text-[7px] font-mono tracking-wider"
-              style={{
-                bottom: "0px",
-                right: "55px",
-                color: "rgba(45,212,191,0.20)",
-              }}
-            >
-              5&times;7
-            </div>
-
-            {/* Decorative wave line — below frames */}
-            <div
-              className="absolute"
-              style={{
-                bottom: "0px",
-                left: "10%",
-                width: "80%",
-                height: "1px",
-                background:
-                  "linear-gradient(90deg, transparent, rgba(45,212,191,0.18), transparent)",
-              }}
-            />
-          </div>
-        </div>
 
         {/* Content */}
         <Container>
@@ -600,6 +303,12 @@ export default function EtsyCoastalWallArtSizesPage() {
               </div>
             </div>
           </div>
+
+          <div className="relative z-10 mt-10 md:mt-12 max-w-2xl">
+            <div className="rounded-2xl overflow-hidden shadow-xl" style={{ border: "1px solid rgba(0,0,0,0.06)" }}>
+              <img src="/assets/visuals/etsy-coastal-wall-art-mockup.jpg" alt="Bright coastal living room with a gallery wall of framed ocean art prints — beach sunset photography, watercolor seashells, nautical anchor illustration, and ocean waves in various sizes above a cream linen sofa" width={1200} height={800} className="w-full h-auto" loading="lazy" />
+            </div>
+          </div>
         </Container>
       </section>
 
@@ -676,10 +385,6 @@ export default function EtsyCoastalWallArtSizesPage() {
             />
           </div>
           <div className="max-w-3xl mx-auto space-y-16 mt-16">
-
-            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
-              <img src="/assets/visuals/etsy-coastal-wall-art-mockup.jpg" alt="Bright coastal living room with a gallery wall of framed ocean art prints — beach sunset photography, watercolor seashells, nautical anchor illustration, and ocean waves in various sizes above a cream linen sofa" width={1200} height={800} className="w-full h-auto" loading="lazy" />
-            </div>
 
             {/* --- H2 2: Best-Selling Coastal Wall Art Sizes on Etsy --- */}
             <div>

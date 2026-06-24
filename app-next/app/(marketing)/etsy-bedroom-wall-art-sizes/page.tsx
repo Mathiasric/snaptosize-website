@@ -173,7 +173,7 @@ export default function EtsyBedroomWallArtSizesPage() {
 
       {/* ===== HERO — Soft Bedroom Placement ===== */}
       <section
-        className="relative pt-12 pb-20 md:pt-16 md:pb-28 overflow-hidden"
+        className="relative pt-12 pb-14 md:pt-16 md:pb-20 overflow-hidden"
         style={{
           background:
             "linear-gradient(145deg, #fdf6f0 0%, #f7ede8 30%, #f2e8ec 65%, #ede5ee 100%)",
@@ -198,162 +198,6 @@ export default function EtsyBedroomWallArtSizesPage() {
           className="absolute bottom-[-18%] left-[-6%] w-[440px] h-[440px] rounded-full opacity-[0.14]"
           style={{ background: "radial-gradient(circle, #8fa3b1, transparent 70%)" }}
         />
-
-        {/* CSS Bedroom Mockup — headboard + large frame + two small nightstand frames */}
-        <div className="absolute right-[5%] top-1/2 -translate-y-1/2 hidden lg:block pointer-events-none">
-          <div className="relative" style={{ width: "360px", height: "340px" }}>
-
-            {/* Large landscape frame above headboard */}
-            <div
-              className="absolute shadow-[0_18px_40px_-20px_rgba(100,80,100,0.45)]"
-              style={{
-                width: "260px",
-                height: "140px",
-                top: "0px",
-                left: "50px",
-                background: "#faf7f5",
-                border: "7px solid #7a6e80",
-                borderRadius: "2px",
-              }}
-            >
-              <div
-                className="w-full h-full flex items-center justify-center"
-                style={{ background: "linear-gradient(135deg, #e8e0e8 0%, #ddd5e2 100%)" }}
-              >
-                <div className="text-center px-3">
-                  <span
-                    className="text-[9px] font-mono tracking-[0.2em] uppercase block"
-                    style={{ color: "#6b5f72" }}
-                  >
-                    24×36 · above headboard
-                  </span>
-                  <div
-                    className="mt-1.5 mx-auto"
-                    style={{
-                      width: "60px",
-                      height: "2px",
-                      background: "rgba(107,95,114,0.35)",
-                      borderRadius: "1px",
-                    }}
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* Headboard silhouette */}
-            <div
-              className="absolute"
-              style={{
-                top: "152px",
-                left: "20px",
-                width: "320px",
-                height: "56px",
-                background: "linear-gradient(180deg, #c9b8c2 0%, #a89aae 100%)",
-                borderRadius: "40px 40px 0 0",
-                boxShadow: "0 6px 20px -6px rgba(100,80,100,0.4)",
-              }}
-            />
-
-            {/* Nightstand left */}
-            <div
-              className="absolute"
-              style={{
-                top: "200px",
-                left: "0px",
-                width: "52px",
-                height: "44px",
-                background: "linear-gradient(160deg, #c8b89a 0%, #a89472 100%)",
-                borderRadius: "4px 4px 2px 2px",
-                boxShadow: "0 4px 10px -4px rgba(100,80,60,0.4)",
-              }}
-            />
-            {/* Small portrait frame — left nightstand */}
-            <div
-              className="absolute shadow-[0_6px_16px_-8px_rgba(100,80,100,0.5)]"
-              style={{
-                width: "38px",
-                height: "48px",
-                top: "148px",
-                left: "7px",
-                background: "#faf7f5",
-                border: "4px solid #7a6e80",
-                borderRadius: "1px",
-              }}
-            >
-              <div
-                className="w-full h-full flex items-center justify-center"
-                style={{ background: "linear-gradient(135deg, #e8e0e8, #ddd5e2)" }}
-              >
-                <span className="text-[6px] font-mono" style={{ color: "#6b5f72" }}>5×7</span>
-              </div>
-            </div>
-
-            {/* Nightstand right */}
-            <div
-              className="absolute"
-              style={{
-                top: "200px",
-                right: "0px",
-                width: "52px",
-                height: "44px",
-                background: "linear-gradient(160deg, #c8b89a 0%, #a89472 100%)",
-                borderRadius: "4px 4px 2px 2px",
-                boxShadow: "0 4px 10px -4px rgba(100,80,60,0.4)",
-              }}
-            />
-            {/* Small portrait frame — right nightstand */}
-            <div
-              className="absolute shadow-[0_6px_16px_-8px_rgba(100,80,100,0.5)]"
-              style={{
-                width: "38px",
-                height: "48px",
-                top: "148px",
-                right: "7px",
-                background: "#faf7f5",
-                border: "4px solid #7a6e80",
-                borderRadius: "1px",
-              }}
-            >
-              <div
-                className="w-full h-full flex items-center justify-center"
-                style={{ background: "linear-gradient(135deg, #e8e0e8, #ddd5e2)" }}
-              >
-                <span className="text-[6px] font-mono" style={{ color: "#6b5f72" }}>5×7</span>
-              </div>
-            </div>
-
-            {/* Bed base */}
-            <div
-              className="absolute"
-              style={{
-                top: "254px",
-                left: "10px",
-                width: "340px",
-                height: "18px",
-                background: "linear-gradient(180deg, #e8e0d0 0%, #d4c8b4 100%)",
-                borderRadius: "0 0 4px 4px",
-              }}
-            />
-
-            {/* Label */}
-            <div
-              className="absolute flex items-center gap-2 px-3 py-1.5 rounded-full"
-              style={{
-                bottom: "16px",
-                left: "90px",
-                background: "rgba(250,247,245,0.88)",
-                border: "1px solid rgba(122,110,128,0.28)",
-              }}
-            >
-              <span
-                className="text-[9px] font-mono tracking-[0.18em] uppercase"
-                style={{ color: "#6b5f72" }}
-              >
-                headboard + nightstand pair
-              </span>
-            </div>
-          </div>
-        </div>
 
         {/* Content */}
         <div className="container mx-auto px-4 md:px-8 max-w-[1200px] relative z-10">
@@ -432,6 +276,20 @@ export default function EtsyBedroomWallArtSizesPage() {
               ))}
             </div>
           </div>
+
+          <div className="relative z-10 mt-10 md:mt-12 max-w-2xl">
+            <div className="rounded-2xl overflow-hidden shadow-xl" style={{ border: "1px solid rgba(0,0,0,0.06)" }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/assets/visuals/etsy-bedroom-wall-art-sizes-lifestyle.jpg"
+                alt="Serene Scandinavian bedroom with a large botanical print above a white linen headboard and two small matching prints on wooden nightstands — example of bedroom art placement"
+                width={1200}
+                height={900}
+                className="w-full h-auto"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -442,24 +300,6 @@ export default function EtsyBedroomWallArtSizesPage() {
           <QuickAnswer question="What sizes work best for bedroom wall art on Etsy?">
             Bedroom wall art splits into two placement types. <strong>Above the headboard</strong>: use the 2/3-of-bed-width rule — twin beds call for 16×20 or 18×24, queen beds for 24×36, king beds for 24×36 or larger. <strong>Nightstand pairs</strong>: two matching <strong>5×7 or 8×10 portrait prints</strong>. A listing that covers both placements — with 2:3, 3:4, and 4:5 ratio packs — will consistently outsell listings that offer only 8×10 portrait.
           </QuickAnswer>
-        </div>
-
-        {/* ===== LIFESTYLE IMAGE ===== */}
-        <div className="mb-16 md:mb-20">
-          <div className="relative rounded-2xl overflow-hidden border border-white/10 bg-slate-900/40">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/assets/visuals/etsy-bedroom-wall-art-sizes-lifestyle.jpg"
-              alt="Serene Scandinavian bedroom with a large botanical print above a white linen headboard and two small matching prints on wooden nightstands — example of bedroom art placement"
-              width={1200}
-              height={900}
-              className="w-full h-auto"
-              loading="lazy"
-            />
-            <figcaption className="px-4 py-3 text-xs text-foreground-60 italic border-t border-white/10 bg-slate-900/60">
-              Example bedroom placement: large print above headboard + matching nightstand pair
-            </figcaption>
-          </div>
         </div>
 
         {/* Section 1: What sizes work best */}

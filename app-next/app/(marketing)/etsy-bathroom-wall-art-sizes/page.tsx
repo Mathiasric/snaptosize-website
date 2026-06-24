@@ -157,7 +157,7 @@ export default function EtsyBathroomWallArtSizesPage() {
 
       {/* ===== HERO — Calm Tile Spa ===== */}
       <section
-        className="relative pt-12 pb-20 md:pt-16 md:pb-28 overflow-hidden"
+        className="relative pt-12 pb-14 md:pt-16 md:pb-20 overflow-hidden"
         style={{
           background:
             "linear-gradient(145deg, #eef2ed 0%, #e6ede6 30%, #f0ede6 65%, #e8ebe5 100%)",
@@ -182,118 +182,6 @@ export default function EtsyBathroomWallArtSizesPage() {
           className="absolute bottom-[-18%] left-[-6%] w-[420px] h-[420px] rounded-full opacity-[0.14]"
           style={{ background: "radial-gradient(circle, #d8cab3, transparent 70%)" }}
         />
-
-        {/* CSS Bathroom Wall Mockup — portrait frame + mirror */}
-        <div className="absolute right-[6%] top-1/2 -translate-y-1/2 hidden lg:block pointer-events-none">
-          <div className="relative" style={{ width: "300px", height: "340px" }}>
-            {/* Mirror silhouette — rounded rect */}
-            <div
-              className="absolute"
-              style={{
-                width: "110px",
-                height: "160px",
-                top: "40px",
-                left: "0",
-                background: "linear-gradient(160deg, #f4f1ea 0%, #e0d9c8 100%)",
-                border: "3px solid #c9bfa8",
-                borderRadius: "55px",
-                boxShadow: "0 14px 36px -18px rgba(107,130,112,0.35)",
-              }}
-            >
-              {/* Mirror highlight */}
-              <div
-                className="absolute"
-                style={{
-                  top: "14px",
-                  left: "14px",
-                  width: "32px",
-                  height: "60px",
-                  background: "linear-gradient(160deg, rgba(255,255,255,0.6), transparent)",
-                  borderRadius: "20px",
-                }}
-              />
-            </div>
-
-            {/* Portrait frame — 8×10 (4:5), main */}
-            <div
-              className="absolute shadow-[0_18px_40px_-20px_rgba(107,130,112,0.4)]"
-              style={{
-                width: "128px",
-                height: "160px",
-                top: "20px",
-                left: "140px",
-                background: "#fff",
-                border: "7px solid #e0d9c8",
-                borderRadius: "2px",
-              }}
-            >
-              <div
-                className="w-full h-full flex items-center justify-center"
-                style={{ background: "#f7f3ea" }}
-              >
-                <div className="text-center px-3">
-                  {/* Botanical stem */}
-                  <svg viewBox="0 0 60 100" className="w-10 mx-auto mb-2" fill="none" stroke="#6b8270" strokeWidth="1.5">
-                    <path d="M30 95 L30 20" />
-                    <path d="M30 70 Q15 60 10 45" />
-                    <path d="M30 55 Q45 45 50 30" />
-                    <path d="M30 40 Q20 30 18 18" />
-                    <ellipse cx="10" cy="45" rx="6" ry="3" fill="#a8c2ad" stroke="none" transform="rotate(-30 10 45)" />
-                    <ellipse cx="50" cy="30" rx="6" ry="3" fill="#a8c2ad" stroke="none" transform="rotate(30 50 30)" />
-                    <ellipse cx="18" cy="18" rx="5" ry="2.5" fill="#a8c2ad" stroke="none" transform="rotate(-20 18 18)" />
-                  </svg>
-                  <span
-                    className="text-[9px] font-mono tracking-[0.18em] uppercase block"
-                    style={{ color: "#6b8270" }}
-                  >
-                    8×10
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Small square frame — 5×7 */}
-            <div
-              className="absolute shadow-[0_12px_28px_-16px_rgba(107,130,112,0.35)]"
-              style={{
-                width: "70px",
-                height: "98px",
-                top: "210px",
-                left: "170px",
-                background: "#fff",
-                border: "5px solid #d8cab3",
-                borderRadius: "2px",
-              }}
-            >
-              <div
-                className="w-full h-full flex items-center justify-center"
-                style={{ background: "#fdfaf3" }}
-              >
-                <div className="text-center">
-                  <span className="text-base block leading-none" style={{ color: "#8a7d5c" }}>&#x1F33F;</span>
-                  <span
-                    className="text-[7px] font-mono tracking-[0.18em] uppercase block mt-1"
-                    style={{ color: "#8a7d5c" }}
-                  >
-                    5×7
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Towel rail hint — ground line */}
-            <div
-              className="absolute"
-              style={{
-                top: "308px",
-                left: "0",
-                width: "280px",
-                height: "2px",
-                background: "linear-gradient(90deg, transparent, #c9bfa880 20%, #c9bfa880 80%, transparent)",
-              }}
-            />
-          </div>
-        </div>
 
         {/* Content */}
         <div className="container mx-auto px-4 md:px-8 max-w-[1200px] relative z-10">
@@ -374,37 +262,18 @@ export default function EtsyBathroomWallArtSizesPage() {
               ))}
             </div>
 
-            {/* Mobile-only lifestyle image — stacks below hero text */}
-            <div className="lg:hidden mt-8">
-              <div
-                className="relative rounded-2xl overflow-hidden"
-                style={{
-                  boxShadow: "0 18px 40px -20px rgba(107,130,112,0.4), 0 8px 22px -10px rgba(107,130,112,0.2)",
-                  border: "1px solid rgba(255,255,255,0.5)",
-                  aspectRatio: "4 / 3",
-                }}
-              >
-                <img
-                  src="/assets/visuals/etsy-bathroom-wall-art-sizes-lifestyle.jpg"
-                  alt="Calm bathroom wall with a framed botanical art print in portrait orientation"
-                  className="w-full h-full object-cover"
-                  loading="eager"
-                />
-                <div
-                  className="absolute bottom-3 left-3 flex items-center gap-2 px-3 py-1.5 rounded-lg backdrop-blur-md"
-                  style={{
-                    background: "rgba(255,255,255,0.82)",
-                    border: "1px solid rgba(107,130,112,0.25)",
-                  }}
-                >
-                  <span
-                    className="text-[10px] font-mono tracking-[0.15em] uppercase"
-                    style={{ color: "#6b8270" }}
-                  >
-                    Bathroom · 8×10 portrait
-                  </span>
-                </div>
-              </div>
+          </div>
+
+          <div className="relative z-10 mt-10 md:mt-12 max-w-2xl">
+            <div className="rounded-2xl overflow-hidden shadow-xl" style={{ border: "1px solid rgba(0,0,0,0.06)" }}>
+              <img
+                src="/assets/visuals/etsy-bathroom-wall-art-sizes-lifestyle.jpg"
+                alt="Clean minimalist bathroom with white subway tiles featuring a framed botanical art print above a wooden shelf — spa-like aesthetic"
+                width={1200}
+                height={900}
+                className="w-full h-auto"
+                loading="eager"
+              />
             </div>
           </div>
         </div>
@@ -549,18 +418,6 @@ export default function EtsyBathroomWallArtSizesPage() {
             </p>
           </div>
         </div>
-
-        {/* Lifestyle mockup — visual break after orientation section */}
-        <section className="mb-16 rounded-2xl overflow-hidden">
-          <img
-            src="/assets/visuals/etsy-bathroom-wall-art-sizes-lifestyle.jpg"
-            alt="Clean minimalist bathroom with white subway tiles featuring a framed botanical art print above a wooden shelf — spa-like aesthetic"
-            width={1200}
-            height={900}
-            className="w-full h-auto"
-            loading="lazy"
-          />
-        </section>
 
         {/* Section 3: Size guide by ratio */}
         <section className="mb-16">

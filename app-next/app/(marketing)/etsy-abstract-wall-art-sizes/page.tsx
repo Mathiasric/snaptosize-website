@@ -188,129 +188,6 @@ export default function EtsyAbstractWallArtSizesPage() {
           }}
         />
 
-        {/* CSS-only Abstract Composition — right side */}
-        <div className="absolute right-[4%] top-1/2 -translate-y-1/2 hidden lg:block">
-          <div
-            className="relative"
-            style={{ width: "340px", height: "360px" }}
-          >
-            {/* Large circle — warm terracotta */}
-            <div
-              className="absolute rounded-full"
-              style={{
-                width: "140px",
-                height: "140px",
-                top: "20px",
-                left: "10px",
-                background: "rgba(194,120,70,0.12)",
-                border: "1px solid rgba(194,120,70,0.08)",
-              }}
-            />
-            {/* Overlapping rectangle — amber */}
-            <div
-              className="absolute rounded-md"
-              style={{
-                width: "100px",
-                height: "160px",
-                top: "60px",
-                left: "90px",
-                background: "rgba(217,169,108,0.08)",
-                border: "1px solid rgba(217,169,108,0.10)",
-              }}
-            />
-            {/* Small circle — teal accent */}
-            <div
-              className="absolute rounded-full"
-              style={{
-                width: "60px",
-                height: "60px",
-                top: "10px",
-                right: "50px",
-                background: "rgba(45,212,191,0.08)",
-                border: "1px solid rgba(45,212,191,0.12)",
-              }}
-            />
-            {/* Tall thin rectangle — muted */}
-            <div
-              className="absolute rounded-sm"
-              style={{
-                width: "30px",
-                height: "120px",
-                bottom: "40px",
-                left: "30px",
-                background: "rgba(167,139,250,0.06)",
-                border: "1px solid rgba(167,139,250,0.10)",
-              }}
-            />
-            {/* Wide horizontal bar — warm */}
-            <div
-              className="absolute rounded-sm"
-              style={{
-                width: "160px",
-                height: "24px",
-                bottom: "70px",
-                right: "20px",
-                background: "rgba(217,169,108,0.06)",
-                border: "1px solid rgba(217,169,108,0.08)",
-              }}
-            />
-            {/* Small square — bottom right */}
-            <div
-              className="absolute rounded-sm"
-              style={{
-                width: "50px",
-                height: "50px",
-                bottom: "20px",
-                right: "60px",
-                background: "rgba(194,120,70,0.07)",
-                border: "1px solid rgba(194,120,70,0.10)",
-              }}
-            />
-
-            {/* Size labels — floating, monospaced */}
-            <div
-              className="absolute text-[8px] font-mono tracking-wider"
-              style={{
-                top: "80px",
-                left: "45px",
-                color: "rgba(217,169,108,0.30)",
-              }}
-            >
-              20&times;30
-            </div>
-            <div
-              className="absolute text-[7px] font-mono tracking-wider"
-              style={{
-                top: "0px",
-                right: "55px",
-                color: "rgba(45,212,191,0.28)",
-              }}
-            >
-              8&times;10
-            </div>
-            <div
-              className="absolute text-[8px] font-mono tracking-wider"
-              style={{
-                bottom: "55px",
-                right: "75px",
-                color: "rgba(194,120,70,0.25)",
-              }}
-            >
-              16&times;20
-            </div>
-            <div
-              className="absolute text-[7px] font-mono tracking-wider"
-              style={{
-                bottom: "10px",
-                left: "90px",
-                color: "rgba(167,139,250,0.22)",
-              }}
-            >
-              24&times;36
-            </div>
-          </div>
-        </div>
-
         {/* Content */}
         <Container>
           <div className="relative z-10 max-w-[680px]">
@@ -422,6 +299,12 @@ export default function EtsyAbstractWallArtSizesPage() {
               </div>
             </div>
           </div>
+
+          <div className="relative z-10 mt-10 md:mt-12 max-w-2xl">
+            <div className="rounded-2xl overflow-hidden shadow-xl" style={{ border: "1px solid rgba(0,0,0,0.06)" }}>
+              <img src="/assets/visuals/etsy-abstract-wall-art-mockup.jpg" alt="Living room with three framed abstract wall art prints above a cream sofa — geometric shapes in terracotta and amber, fluid organic forms, and a color field composition in warm earth tones with teal accents" width={1200} height={800} className="w-full h-auto" loading="lazy" />
+            </div>
+          </div>
         </Container>
       </section>
 
@@ -495,10 +378,6 @@ export default function EtsyAbstractWallArtSizesPage() {
             />
           </div>
           <div className="max-w-3xl mx-auto space-y-16 mt-16">
-
-            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
-              <img src="/assets/visuals/etsy-abstract-wall-art-mockup.jpg" alt="Living room with three framed abstract wall art prints above a cream sofa — geometric shapes in terracotta and amber, fluid organic forms, and a color field composition in warm earth tones with teal accents" width={1200} height={800} className="w-full h-auto" loading="lazy" />
-            </div>
 
             {/* --- H2 2: Best-Selling Abstract Wall Art Sizes on Etsy --- */}
             <div>
