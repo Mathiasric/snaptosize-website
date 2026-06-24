@@ -102,7 +102,11 @@ These are non-negotiable regardless of content structure:
 
 - **JSON-LD:** Article + BreadcrumbList + FAQPage schemas (3 separate `<script>` tags OR combined `@graph`)
 - **H1:** Contains primary keyword naturally
-- **QuickAnswer:** `<QuickAnswer question="...">` — first element in content, directly answers the target keyword as a question. Import from `@/components/QuickAnswer`. This targets featured snippets.
+- **QuickAnswer:** `<QuickAnswer question="...">` — first element in content, directly answers the target keyword as a question. Import from `@/components/QuickAnswer`. Targets featured snippets AND is the AI-citation surface (SGE/AEO engines quote it) — so name **SnapToSize** ONCE here, factually, linked to `/` (e.g. "generate all X sizes from one upload with SnapToSize, free, no signup"). Factual capability only, never hype or invented metrics.
+- **Output-proof hero visual (MANDATORY):** the hero MUST show REAL artwork output, not an empty wireframe. `SizeLadder` (size pages), `RatioPackFan` (ratio/pillar), or a CSS frame composition with real thumbnails. Responsive — visible on mobile. See "Hero Design" below.
+- **Perfect Fit cross-link:** wherever the page discusses cropping / ratio mismatch ("can I resize my X to Y?", "cropping to fit"), link `/distortion-free-crop` and frame honestly: a crop CUTS / leaves off-margins, only STRETCH distorts — never call our output "distorted". Size Packs = keep whole image; Perfect Fit = controlled distortion-free crop.
+- **CTR title:** lead the `<title>` with the concrete answer (exact px/dimension) and keep the head term, e.g. "8×10 Print Size for Etsy: 2400×3000 px at 300 DPI".
+- **Full playbook:** memory `project_page_conversion_playbook` (per-page checklist + rationale).
 - **CTAs:** 3+ links to `https://app.snaptosize.com?source=seo_[slug]&kind=guide`
 - **`<RelatedPages currentSlug="[slug]" />`** — auto-links from registry (never hardcode)
 - **Internal links:** 4–6 contextual `<Link href="/...">` to relevant existing pages within body text. Use `page-registry.json` to find valid slugs. Do NOT count RelatedPages component as internal links.
@@ -123,7 +127,7 @@ These are non-negotiable regardless of content structure:
 
 Study existing pages for **quality and style**, not for structural copying:
 - `app-next/app/(marketing)/etsy-print-sizes/page.tsx` — pillar page with hero background image
-- `app-next/app/(marketing)/etsy-8x10-print-size/page.tsx` — **CSS-only hero reference** (blueprint frame, dot grid, gradient mesh) — for SIZE/technical pages
+- `app-next/app/(marketing)/etsy-8x10-print-size/page.tsx` — **SIZE-page hero reference**: real-output `SizeLadder` (one artwork at 3 family sizes, px-labeled, page's size accented) on dark bg + dot grid + gradient mesh. This is REAL artwork proof, NOT an empty blueprint/wireframe.
 - `app-next/app/(marketing)/etsy-nursery-wall-art-sizes/page.tsx` — **Niche-page hero reference** (full-bleed pastel gradient, dot pattern, 2 radial blobs, 3-frame CSS gallery-wall mockup) — for NICHE/category pages
 - `app-next/app/(marketing)/etsy-kids-wall-art-sizes/page.tsx` & `etsy-bathroom-wall-art-sizes/page.tsx` — additional niche-hero examples (playroom pastel, spa tile)
 
@@ -161,8 +165,8 @@ return (
 ```
 
 **Design approach by page type:**
-- **Size pages**: blueprint/technical drawing on dark bg (frame outlines, dimension callouts, tick marks, dot grid). Reference: `etsy-8x10-print-size/page.tsx`. Purple accent.
-- **Ratio pages**: overlapping ratio rectangles showing proportions, comparison visual. Dark bg, teal/purple accent.
+- **Size pages**: REAL output proof in the hero — `SizeLadder` (one uploaded artwork rendered at 3 sizes in the page's ratio family, px-labeled at 300 DPI, the page's size `accent:true`) on dark bg + dot grid + gradient mesh. Reference: `etsy-8x10-print-size/page.tsx`. **NEVER an empty CSS wireframe / blueprint frame / tick-mark drawing** — buyers must SEE the deliverable, not a label-only outline. Purple accent. Pass the family's `rungs`, `aspect`, and a matching `src` from `app-next/public/assets/modes-demo/ratios/` (misty-2x3, misty-3x4, misty-4x5, misty-iso, misty-extras cover every ratio).
+- **Ratio / pillar pages**: `RatioPackFan` — one artwork fanned across every ratio (real proof of "one upload → every ratio"). Reference: `etsy-print-sizes/page.tsx`, `etsy-print-ratios/page.tsx`. Dark bg, teal/purple accent. NOT empty ratio outlines.
 - **Problem pages**: warning/diagnostic aesthetic on dark bg (caution patterns, before/after visual metaphor).
 - **Guide pages**: editorial layout with typographic hierarchy, section preview elements.
 - **Niche pages** (nursery, kids, bathroom, bedroom, kitchen, etc.): **LIGHT themed bg + 3+ CSS mockup frames**. Palette must match niche, NOT default brand purple. See palette menu below.
@@ -180,13 +184,13 @@ return (
 - [ ] Full-bleed section with themed gradient background (light, not dark surface)
 - [ ] Subtle pattern layer (dots for soft niches, tile grid for bathroom/kitchen)
 - [ ] 2 radial blob layers at opposite corners using the niche accent + complement
-- [ ] CSS mockup composition on the right (absolute, `hidden lg:block`, 300-340px wide): **minimum 3 overlapping elements** — frames with distinct sizes & labels (e.g. "16×20", "11×14", "8×10"), or category-appropriate props (mirror silhouette for bathroom, rainbow bars for kids, botanical stem SVG for bathroom)
+- [ ] Real-artwork output proof (NOT empty frames): use `RatioPackFan` / `ListingOutputShowcase` / `SizeLadder`, or — if a niche CSS frame composition is used — each frame MUST contain a real artwork thumbnail (`<img>`/`<Image>`), never an empty outline. Empty label-only frames are the #1 conversion defect; do not ship them.
 - [ ] Mono-font kicker with short horizontal rule (e.g. `Niche Guide · Bathroom`) above H1
 - [ ] Two-line H1: primary title + semantic subhead (different sizes, same line-height)
 - [ ] CTA with microcopy line below ("Free → upload once, get every size at 300 DPI")
 - [ ] Trust pills as backdrop-blur glass chips with niche-accent borders (NOT default dark surface pills)
 - [ ] Breadcrumb inline-color matched to niche palette (not default muted-foreground)
-- [ ] Mobile: CSS mockup hidden, content max-w-[620px]
+- [ ] Mobile: the output-proof visual MUST stay visible (responsive), NEVER `hidden md:block`/`hidden lg:block` on the hero visual — a hero that hides its only visual on mobile is a text-wall. Content max-w-[620px].
 
 **Failure mode to avoid:** A dark card on the default dark site background with a tiny "most-bought sizes" text box as the "visual". This is not a hero — this is a list. Rebuild as above.
 
