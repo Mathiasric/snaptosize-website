@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Container } from "@/components/Container";
 import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
-import { Check, AlertTriangle, Baby, Frame } from "lucide-react";
+import { Check, AlertTriangle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
@@ -158,7 +158,7 @@ export default function EtsyNurseryWallArtSizesPage() {
 
       {/* ===== HERO ===== */}
       <section
-        className="relative pt-12 pb-36 md:pt-20 md:pb-48 overflow-hidden"
+        className="relative pt-12 pb-14 md:pt-20 md:pb-20 overflow-hidden"
         style={{
           background:
             "linear-gradient(145deg, #fdf2f0 0%, #f5ede8 30%, #eef2ed 60%, #f0ede6 100%)",
@@ -188,108 +188,6 @@ export default function EtsyNurseryWallArtSizesPage() {
             background: "radial-gradient(circle, #a8c5a0, transparent 70%)",
           }}
         />
-
-        {/* CSS Gallery Wall Mockup — right side */}
-        <div className="absolute right-[6%] top-1/2 -translate-y-1/2 hidden md:block">
-          <div className="relative" style={{ width: "320px", height: "280px" }}>
-            {/* Large frame — 16×20 */}
-            <div
-              className="absolute rounded-sm shadow-lg"
-              style={{
-                width: "140px",
-                height: "175px",
-                top: "0",
-                left: "0",
-                background: "#fff",
-                border: "6px solid #e8ddd4",
-              }}
-            >
-              <div
-                className="w-full h-full flex items-center justify-center"
-                style={{ background: "#faf5f0" }}
-              >
-                <div className="text-center">
-                  <Baby className="w-8 h-8 mx-auto mb-1" style={{ color: "#d4a5a5" }} />
-                  <span
-                    className="text-[9px] font-mono tracking-wider block"
-                    style={{ color: "#c9a89c" }}
-                  >
-                    16×20
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Medium frame — 8×10 */}
-            <div
-              className="absolute rounded-sm shadow-lg"
-              style={{
-                width: "100px",
-                height: "125px",
-                top: "10px",
-                left: "160px",
-                background: "#fff",
-                border: "5px solid #d4cdc4",
-              }}
-            >
-              <div
-                className="w-full h-full flex items-center justify-center"
-                style={{ background: "#f0ede8" }}
-              >
-                <div className="text-center">
-                  <Frame className="w-5 h-5 mx-auto mb-1" style={{ color: "#a8c5a0" }} />
-                  <span
-                    className="text-[8px] font-mono tracking-wider block"
-                    style={{ color: "#8ba882" }}
-                  >
-                    8×10
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Small frame — 5×7 */}
-            <div
-              className="absolute rounded-sm shadow-lg"
-              style={{
-                width: "72px",
-                height: "100px",
-                top: "155px",
-                left: "185px",
-                background: "#fff",
-                border: "4px solid #e0d8d0",
-              }}
-            >
-              <div
-                className="w-full h-full flex items-center justify-center"
-                style={{ background: "#fdf2f0" }}
-              >
-                <div className="text-center">
-                  <span className="text-lg" style={{ color: "#d4a5a5" }}>
-                    &#9734;
-                  </span>
-                  <span
-                    className="text-[7px] font-mono tracking-wider block"
-                    style={{ color: "#c9a89c" }}
-                  >
-                    5×7
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Connecting line hint — gallery wall arrangement */}
-            <div
-              className="absolute border-t border-dashed"
-              style={{
-                width: "60px",
-                top: "88px",
-                left: "140px",
-                borderColor: "#c9a89c40",
-              }}
-            />
-          </div>
-        </div>
 
         {/* Content */}
         <Container>
@@ -375,6 +273,11 @@ export default function EtsyNurseryWallArtSizesPage() {
               </div>
             </div>
           </div>
+          <div className="relative z-10 mt-10 md:mt-12 max-w-2xl">
+            <div className="rounded-2xl overflow-hidden shadow-xl" style={{ border: "1px solid rgba(0,0,0,0.06)" }}>
+              <img src="/assets/visuals/etsy-nursery-wall-art-mockup.jpg" alt="Nursery room with three framed animal illustration prints above a white crib — bunny, deer, and bear in wood frames" width={1200} height={800} className="w-full h-auto" loading="lazy" />
+            </div>
+          </div>
         </Container>
       </section>
 
@@ -419,10 +322,6 @@ export default function EtsyNurseryWallArtSizesPage() {
                 cohesive look. Offering a range of sizes means you capture the
                 full gallery wall purchase &mdash; not just one piece of it.
               </p>
-            </div>
-
-            <div className="rounded-xl overflow-hidden border border-white/[0.08]">
-              <img src="/assets/visuals/etsy-nursery-wall-art-mockup.jpg" alt="Nursery room with three framed animal illustration prints above a white crib — bunny, deer, and bear in wood frames" width={1200} height={800} className="w-full h-auto" loading="lazy" />
             </div>
 
             {/* --- The 6 Must-Have Nursery Sizes --- */}
