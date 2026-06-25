@@ -2241,5 +2241,48 @@
       "how-to-sell-printables-on-etsy-without-photoshop",
       "best-resolution-for-etsy-printables"
     ]
+  },
+  {
+    "slug": "11x14-vs-16x20-print-size",
+    "title": "11×14 vs 16×20 Print Size: Which Is Bigger? (Pixels at 300 DPI)",
+    "description": "16×20 is more than double the area of 11×14 (320 vs 154 sq in). They also use different aspect ratios, so one file won't scale to both cleanly. Exact pixels at 300 DPI, frame and mat combos, and when to offer each.",
+    "keywords": [
+      "11x14 vs 16x20",
+      "16x20 vs 11x14",
+      "is 16x20 bigger than 11x14",
+      "11x14 16x20 pixel dimensions 300 dpi",
+      "16x20 frame 11x14 mat",
+      "11x14 vs 16x20 frame"
+    ],
+    "cluster": "size-comparison",
+    "relatedSlugs": [
+      "16x20-vs-18x24-print-size",
+      "11x14-vs-12x16-print-size",
+      "8x10-vs-11x14-print-size",
+      "etsy-16x20-print-size",
+      "etsy-11x14-print-size",
+      "etsy-print-sizes"
+    ]
+  },
+  {
+    "slug": "16x20-vs-18x24-print-size",
+    "title": "16×20 vs 18×24 Print Size: Which Is Bigger? (Pixels at 300 DPI)",
+    "description": "18×24 is 35% bigger than 16×20 (432 vs 320 sq in) and uses a taller 3:4 poster ratio vs 16×20's 4:5. One file won't fill both. Exact pixels at 300 DPI, frame and mat combos, and when to offer each.",
+    "keywords": [
+      "16x20 vs 18x24",
+      "18x24 vs 16x20",
+      "is 18x24 bigger than 16x20",
+      "16x20 18x24 pixel dimensions 300 dpi",
+      "18x24 frame 16x20 mat",
+      "16x20 vs 18x24 poster"
+    ],
+    "cluster": "size-comparison",
+    "relatedSlugs": [
+      "11x14-vs-16x20-print-size",
+      "11x14-vs-12x16-print-size",
+      "etsy-16x20-print-size",
+      "etsy-18x24-print-size",
+      "etsy-print-sizes"
+    ]
   }
 ]

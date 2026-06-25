@@ -168,6 +168,12 @@ export function Header() {
                     <Link href="/11x14-vs-12x16-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       11×14 vs 12×16 Size Guide
                     </Link>
+                    <Link href="/11x14-vs-16x20-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      11×14 vs 16×20 Size Guide
+                    </Link>
+                    <Link href="/16x20-vs-18x24-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      16×20 vs 18×24 Size Guide
+                    </Link>
                     <Link href="/iso-vs-us-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       ISO vs US Print Sizes
                     </Link>
