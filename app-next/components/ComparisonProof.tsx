@@ -1,10 +1,15 @@
 /**
  * ComparisonProof — real output proof for "X vs Y" comparison pages.
- * Shows ONE uploaded artwork rendered at BOTH compared sizes, each at its true ratio,
- * with exact pixels. Turns the page's text claim ("one upload, both sizes, no cropping")
- * into something the buyer can SEE — the homepage's show-don't-tell proof, recontextualized.
- * Dark band (pops as a product moment inside the light comparison content). Static.
+ * Mirrors the homepage ModesSection two-mode framing (Size Packs primary, Perfect Fit
+ * positive complement), using the same approved wording so neither mode is downtalked:
+ *   Size Packs  = your whole image kept, every ratio, up to 70 files, under 20MB.
+ *   Perfect Fit = a focal crop you control, proportions exact, you choose what stays.
+ * Shows ONE real artwork rendered at BOTH compared sizes (each at its true ratio) so the
+ * page's claim becomes something the buyer can SEE. Dark band → pops as a product moment
+ * inside the light comparison content. Static.
  */
+
+import Link from "next/link";
 
 type ProofItem = {
   /** real artwork image at this item's aspect ratio */
@@ -22,11 +27,11 @@ export function ComparisonProof({
   subject = "Your artwork",
   a,
   b,
-  note,
 }: {
   subject?: string;
   a: ProofItem;
   b: ProofItem;
+  /** deprecated — copy is now driven by the homepage two-mode framing */
   note?: string;
 }) {
   return (
@@ -41,13 +46,18 @@ export function ComparisonProof({
         }}
       />
       <div className="relative">
+        {/* ===== Size Packs ===== */}
         <div className="text-center mb-7">
-          <span className="mb-3 inline-block rounded-full border border-[#2DD4BF]/30 bg-[#2DD4BF]/10 px-3 py-1 text-xs font-semibold tracking-wide text-[#2DD4BF]">
-            One upload, both sizes
+          <span className="text-xs font-semibold uppercase tracking-[0.18em] text-[#2DD4BF]">
+            Size Packs
           </span>
-          <h3 className="text-lg md:text-xl font-bold text-white">
-            Same artwork, each at its own ratio
+          <h3 className="mt-3 mb-2 text-lg md:text-xl font-bold text-white">
+            One upload becomes both sizes
           </h3>
+          <p className="mx-auto max-w-md text-sm leading-relaxed text-white/60">
+            Drop in your art once. Get {a.label} and {b.label} back, your whole image kept,
+            each file named and 300 DPI — plus every other Etsy ratio in the same export.
+          </p>
         </div>
 
         <div className="flex items-end justify-center gap-5 sm:gap-10">
@@ -81,10 +91,28 @@ export function ComparisonProof({
           ))}
         </div>
 
-        <p className="mx-auto mt-7 max-w-md text-center text-xs leading-relaxed text-white/55">
-          {note ||
-            "Upload once. SnapToSize exports both at 300 DPI — the full image kept, no cropping, every file under 20MB."}
+        <p className="mx-auto mt-7 max-w-lg text-center text-xs leading-relaxed text-white/50">
+          Every standard Etsy ratio — 2:3, 3:4, 4:5, ISO A, plus extras — up to{" "}
+          <span className="font-medium text-white/80">70 print-ready files</span> from one
+          upload, each ZIP under Etsy&apos;s 20&nbsp;MB limit.
         </p>
+
+        {/* ===== Perfect Fit — positive complement ===== */}
+        <div className="mt-7 border-t border-white/[0.06] pt-6 text-center">
+          <span className="text-xs font-semibold uppercase tracking-[0.18em] text-[#A78BFA]">
+            Perfect Fit
+          </span>
+          <p className="mx-auto mt-2 max-w-md text-sm leading-relaxed text-white/60">
+            Want one exact ratio instead? Perfect Fit reframes with a focal crop you control —
+            your proportions stay exact, and you decide what stays in frame.{" "}
+            <Link
+              href="/distortion-free-crop"
+              className="whitespace-nowrap font-medium text-[#A78BFA] underline-offset-4 hover:underline"
+            >
+              See how it works &rarr;
+            </Link>
+          </p>
+        </div>
       </div>
     </section>
   );
