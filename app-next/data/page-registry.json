@@ -2305,5 +2305,47 @@
       "etsy-24x36-print-size",
       "etsy-print-sizes"
     ]
+  },
+  {
+    "slug": "a4-vs-8x10-print-size",
+    "title": "A4 vs 8×10 Print Size: What's the Difference? (Pixels at 300 DPI)",
+    "description": "A4 (210×297mm) is the international standard; 8×10 is the US photo-frame size. They're close — A4 is ~21% larger and taller — but use different ratios (ISO A vs 4:5), so one file won't fit both. Exact pixels at 300 DPI inside.",
+    "keywords": [
+      "a4 vs 8x10",
+      "8x10 vs a4",
+      "is a4 bigger than 8x10",
+      "a4 8x10 pixel dimensions 300 dpi",
+      "a4 paper vs 8x10",
+      "difference between a4 and 8x10"
+    ],
+    "cluster": "size-comparison",
+    "relatedSlugs": [
+      "iso-vs-us-print-sizes",
+      "8x10-vs-8-5x11-print-size",
+      "etsy-a4-print-size",
+      "etsy-8x10-print-size",
+      "etsy-print-sizes"
+    ]
+  },
+  {
+    "slug": "12x16-vs-16x20-print-size",
+    "title": "12×16 vs 16×20 Print Size: Which Is Bigger? (Pixels at 300 DPI)",
+    "description": "16×20 is 67% bigger than 12×16 (320 vs 192 sq in) and uses a different 4:5 ratio vs 12×16's 3:4. One file won't fit both. Exact pixels at 300 DPI, frame and mat combos, and when to offer each.",
+    "keywords": [
+      "12x16 vs 16x20",
+      "16x20 vs 12x16",
+      "is 16x20 bigger than 12x16",
+      "12x16 16x20 pixel dimensions 300 dpi",
+      "16x20 frame 12x16 mat",
+      "12x16 vs 16x20 frame"
+    ],
+    "cluster": "size-comparison",
+    "relatedSlugs": [
+      "16x20-vs-18x24-print-size",
+      "11x14-vs-16x20-print-size",
+      "etsy-12x16-print-size",
+      "etsy-16x20-print-size",
+      "etsy-print-sizes"
+    ]
   }
 ]
