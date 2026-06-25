@@ -5,6 +5,7 @@ import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
+import { SizePacksProof } from "@/components/SizePacksProof";
 
 export const metadata: Metadata = {
   title: "Most Popular Etsy Print Sizes to Sell (2026 Seller Guide)",
@@ -281,6 +282,11 @@ export default function MostPopularEtsyPrintSizesPage() {
             <QuickAnswer question="What are the most popular Etsy print sizes to sell?">
               The top 5 most popular Etsy print sizes are: 8×10 (4:5 ratio), 5×7, 11×14, 16×20 (4:5 ratio), and 18×24 (3:4 ratio). 8×10 dominates because it fits standard frames available everywhere. Together, these 5 sizes cover the full range of buyer demand for wall art, gifts, and gallery walls.
             </QuickAnswer>
+          </div>
+
+          {/* Product proof — one upload becomes every size (real output) */}
+          <div className="max-w-5xl mx-auto mb-14">
+            <SizePacksProof heading="Sell every popular size from one upload" />
           </div>
 
           {/* Top 5 sizes */}
