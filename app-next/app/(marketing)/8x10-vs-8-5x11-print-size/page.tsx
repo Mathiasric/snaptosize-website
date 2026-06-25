@@ -219,14 +219,7 @@ export default function EightByTenVsEightPointFiveByElevenPage() {
 
               <h1 className="text-4xl md:text-5xl font-black text-white leading-tight tracking-tight mb-5">
                 8×10 vs 8.5×11
-                <span
-                  className="block mt-1"
-                  style={{
-                    background: "linear-gradient(90deg, #2DD4BF, #A78BFA)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                  }}
-                >
+                <span className="block mt-1 text-[#2DD4BF]">
                   Frame Size vs Printer Size
                 </span>
               </h1>

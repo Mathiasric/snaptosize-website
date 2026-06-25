@@ -220,14 +220,7 @@ export default function TwelveBySixteenVsSixteenByTwentyPage() {
 
               <h1 className="text-4xl md:text-5xl font-black text-white leading-tight tracking-tight mb-5">
                 12×16 vs 16×20
-                <span
-                  className="block mt-1"
-                  style={{
-                    background: "linear-gradient(90deg, #2DD4BF, #A78BFA)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                  }}
-                >
+                <span className="block mt-1 text-[#2DD4BF]">
                   Two Big Sizes, Two Ratios
                 </span>
               </h1>

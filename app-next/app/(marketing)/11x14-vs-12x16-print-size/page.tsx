@@ -189,14 +189,7 @@ export default function ElevenByFourteenVsTwelveByEighteenPage() {
 
               <h1 className="text-4xl md:text-5xl font-black text-white leading-tight tracking-tight mb-5">
                 11×14 vs 12×16
-                <span
-                  className="block mt-1"
-                  style={{
-                    background: "linear-gradient(90deg, #2DD4BF, #A78BFA)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                  }}
-                >
+                <span className="block mt-1 text-[#2DD4BF]">
                   Not the Same Size
                 </span>
               </h1>
