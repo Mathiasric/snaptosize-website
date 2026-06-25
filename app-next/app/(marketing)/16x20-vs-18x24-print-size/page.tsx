@@ -7,6 +7,7 @@ import { QuickAnswer } from "@/components/QuickAnswer";
 import { AuthorByline } from "@/components/AuthorByline";
 import { Button } from "@/components/Button";
 import { ContextualCTA } from "@/components/ContextualCTA";
+import { ComparisonProof } from "@/components/ComparisonProof";
 import { Check, ArrowRight, Ruler } from "lucide-react";
 
 const CTA_URL =
@@ -478,6 +479,14 @@ export default function SixteenByTwentyVsEighteenByTwentyFourPage() {
             upload — no Photoshop, no manual resizing, no guessing which edge to crop.
           </p>
         </section>
+
+        {/* Real output proof — one upload, both sizes (show, don't tell) */}
+        <ComparisonProof
+          subject="Misty Nordic art"
+          a={{ src: "/assets/modes-demo/ratios/misty-4x5.jpg", label: "16×20", px: "4800 × 6000", ratio: "4:5", aspect: "4/5", h: "h-40 sm:h-52" }}
+          b={{ src: "/assets/modes-demo/ratios/misty-3x4.jpg", label: "18×24", px: "5400 × 7200", ratio: "3:4", aspect: "3/4", h: "h-44 sm:h-56" }}
+          note="Upload once. SnapToSize exports 16×20 and 18×24 at 300 DPI — the full image kept, no cropping, every file under 20MB."
+        />
 
         {/* Mid-page CTA */}
         <ContextualCTA
