@@ -42,6 +42,7 @@ export function Footer() {
                 <li><Link href="/11x14-vs-12x16-print-size" className="transition-colors hover:text-accent-light">11×14 vs 12×16</Link></li>
                 <li><Link href="/11x14-vs-16x20-print-size" className="transition-colors hover:text-accent-light">11×14 vs 16×20</Link></li>
                 <li><Link href="/16x20-vs-18x24-print-size" className="transition-colors hover:text-accent-light">16×20 vs 18×24</Link></li>
+                <li><Link href="/18x24-vs-24x36-print-size" className="transition-colors hover:text-accent-light">18×24 vs 24×36</Link></li>
                 <li><Link href="/iso-vs-us-print-sizes" className="transition-colors hover:text-accent-light">ISO vs US Sizes</Link></li>
                 <li><Link href="/sizes" className="transition-colors hover:text-accent-light font-medium text-foreground/50">All size guides →</Link></li>
               </ul>
