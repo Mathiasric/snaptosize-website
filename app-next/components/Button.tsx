@@ -1,4 +1,7 @@
+"use client";
+
 import { ReactNode } from "react";
+import posthog from "posthog-js";
 
 interface ButtonProps {
   children: ReactNode;
@@ -28,8 +31,22 @@ export function Button({
   const classes = `${baseClasses} ${variantClasses[variant]} ${className}`;
 
   if (href) {
+    const isAppCta = href.includes("app.snaptosize.com");
     return (
-      <a href={href} className={classes}>
+      <a
+        href={href}
+        className={classes}
+        {...(isAppCta ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+        onClick={() => {
+          if (isAppCta && typeof window !== "undefined") {
+            posthog.capture("cta_clicked", {
+              source: window.location.pathname,
+              cta_type: "button",
+              destination: href,
+            });
+          }
+        }}
+      >
         {children}
       </a>
     );
