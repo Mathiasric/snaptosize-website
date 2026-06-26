@@ -7,7 +7,7 @@
 - **Paying users:** 17 (16 monthly, 1 yearly) — +1 Pro monthly 2026-06-01 (reconciled to STATE.md baseline)
 - **MRR:** $200 (16× $11.99 monthly + $97/year amortized) — +1 Pro monthly 2026-06-01
 - **Total revenue collected:** $264.86 (1× $97 yearly + 12× $11.99 monthly first payments + 2× $11.99 renewals)
-- **SEO pages live:** 106 (page-registry.json = source of truth)
+- **SEO pages live:** 108 (page-registry.json = source of truth)
 - **First paying customer:** 2026-03-03
 - **Target:** $1M ARR (~7,500 paying users)
 
@@ -50,6 +50,7 @@ $1M ARR requires:
 
 ### Marketing Infrastructure
 - ✅ Marketing site (snaptosize.com, Cloudflare Pages)
+- ✅ 108 SEO pages live (2 new comparison pages 2026-06-26: 8×10-vs-16×20 (same 4:5 ratio), 8×10-vs-12×16 (4:5 vs 3:4) — size-comparison cluster, Firecrawl-validated demand 7/6)
 - ✅ 106 SEO pages live (5 new comparison pages 2026-06-25: 11×14-vs-16×20, 16×20-vs-18×24, 18×24-vs-24×36, a4-vs-8×10, 12×16-vs-16×20 — size-comparison cluster, validated demand)
 - ✅ 89 SEO pages live (1 new page drafted 2026-05-28: resize-image-without-cropping-etsy — ratios cluster concept page)
 - ✅ 88 SEO pages live (1 new page deployed 2026-05-27: dpi-vs-pixel-dimensions — resolution-dpi cluster hub)
