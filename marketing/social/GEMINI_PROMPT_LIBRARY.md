@@ -749,12 +749,12 @@ Composition should clearly show how the SAME artwork appears different at each r
 | det-globale-rekkevidden-iso | 4 uker | W17 |
 | 300-dpi-makrokvalitet | 4 uker | W18b |
 | en-upload-enkelheten | 4 uker | W18b |
-| stats-visual | 4 uker | W19 (21.04) |
+| stats-visual | 4 uker | W19 (21.04) — W30 (15.07) "4 in 5 buyers need a size you don't list" MacBook-scene — KLAR igjen ~12.08 |
 | photoshop-trap | 4 uker | W26 (12.06) — Var A: Photoshop dark panel (sticky notes, $60/mo) vs SnapToSize teal panel ($11.99/mo, 5 packs), "Never opened Photoshop? Never have to." — KLAR ~10.07 |
 | international-unlock | 4 uker | W25 (07.06) — Variation B: geometric abstract art, teal-dominant, iPhone Etsy listing, "150+ countries buy A4." — KLAR ~05.07 |
 | sunday-afternoon | 4 uker | W25 (07.06) — Var A: cinematic diagonal cold-blue→warm-gold split, chaotic vs clean desk, "3 hours of your Sunday. Gone. Again." — KLAR ~05.07 |
 | size-guide-infographic | 4 uker | W24 (02.06) — Variation B: watercolor-florals artwork, Option C stacked reveal, warm-amber-accent, "Every print size your buyers will ever ask for." — KLAR ~30.06 |
-| bedroom-gallery-mixed-sizes | 4 uker | W20 (03.05) — warm Scandi-bohemian bedroom corner, three-frame cluster (8×10/11×14/16×20) of same botanical, terracotta+cream+ochre+sage palette, "Framed in three sizes. Uploaded once." hook |
+| bedroom-gallery-mixed-sizes | 4 uker | W20 (03.05) — W30 (14.07) IKEA Ribba variant: 3 white frames on dark wall, teal size labels, tabelldata i bunn — KLAR igjen ~11.08 |
 | craft-flatlay-export-ready | 4 uker | W26 (12.06) — Variation B: warm cream linen, iPad Pro + Magic Keyboard, abstract watercolor art + geometric print, terracotta chamomile mug, pampas grass, "From one file. Every size she'll ever frame." — KLAR ~10.07 |
 | etsy-notifications-tonight | 4 uker | W26 (12.06) — Variation B: iPad Pro on oatmeal knit throw, golden-hour dusk 19:45, Chicago/Copenhagen/Auckland, "3 sales. 3 continents. While you were living your life." — KLAR ~10.07 |
 | the-clean-zip | 4 uker | W22 (10.05) — Variation A: MacBook Pro Space Black on white marble, Finder List View showing 5 clean ZIP packs (2-3/3-4/4-5/ISO/Extras), "This is what your buyers see." hook |
