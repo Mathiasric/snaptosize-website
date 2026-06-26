@@ -183,6 +183,12 @@ export function Header() {
                     <Link href="/a4-vs-8x10-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       A4 vs 8×10 Size Guide
                     </Link>
+                    <Link href="/8x10-vs-16x20-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      8×10 vs 16×20 Size Guide
+                    </Link>
+                    <Link href="/8x10-vs-12x16-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      8×10 vs 12×16 Size Guide
+                    </Link>
                     <Link href="/iso-vs-us-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       ISO vs US Print Sizes
                     </Link>

@@ -2286,6 +2286,48 @@
     ]
   },
   {
+    "slug": "8x10-vs-16x20-print-size",
+    "title": "8×10 vs 16×20 Print Size: Which Is Bigger? (Pixels at 300 DPI)",
+    "description": "8×10 and 16×20 share the same 4:5 ratio, so one design covers both with no cropping, but 16×20 is exactly 4× the area. Exact pixels at 300 DPI, frame and mat combos, and when to offer each.",
+    "keywords": [
+      "8x10 vs 16x20",
+      "16x20 vs 8x10",
+      "is 16x20 bigger than 8x10",
+      "8x10 16x20 pixel dimensions 300 dpi",
+      "16x20 frame 8x10 mat",
+      "8x10 vs 16x20 same ratio"
+    ],
+    "cluster": "size-comparison",
+    "relatedSlugs": [
+      "16x20-vs-18x24-print-size",
+      "11x14-vs-16x20-print-size",
+      "etsy-8x10-print-size",
+      "etsy-16x20-print-size",
+      "etsy-print-sizes"
+    ]
+  },
+  {
+    "slug": "8x10-vs-12x16-print-size",
+    "title": "8×10 vs 12×16 Print Size: What's the Difference? (Pixels at 300 DPI)",
+    "description": "8×10 is 4:5; 12×16 is a taller 3:4. They're different ratios, so one file won't fit both, and 12×16 is 2.4× the area. Exact pixels at 300 DPI, frame and mat combos, and when to offer each.",
+    "keywords": [
+      "8x10 vs 12x16",
+      "12x16 vs 8x10",
+      "is 12x16 bigger than 8x10",
+      "8x10 12x16 pixel dimensions 300 dpi",
+      "12x16 frame 8x10 mat",
+      "8x10 vs 12x16 ratio"
+    ],
+    "cluster": "size-comparison",
+    "relatedSlugs": [
+      "8x10-vs-16x20-print-size",
+      "11x14-vs-12x16-print-size",
+      "etsy-8x10-print-size",
+      "etsy-12x16-print-size",
+      "etsy-print-sizes"
+    ]
+  },
+  {
     "slug": "18x24-vs-24x36-print-size",
     "title": "18×24 vs 24×36 Print Size: Which Is Bigger? (Pixels at 300 DPI)",
     "description": "24×36 is exactly double the area of 18×24 (864 vs 432 sq in) and uses a different 2:3 ratio vs 18×24's 3:4. One file won't fill both. Exact pixels at 300 DPI, poster framing, and when to offer each.",
