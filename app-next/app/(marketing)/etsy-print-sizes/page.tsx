@@ -1227,6 +1227,42 @@ export default function EtsyPrintSizesPage() {
               />
             </div>
 
+            {/* ===== SECTION: Prep & deliver workflow (file-prep hub) ===== */}
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                Next: Prep &amp; Deliver Your Files
+              </h2>
+              <p className="text-foreground-60 mb-6">
+                Once you know which sizes to offer, the rest of the job is exporting and packaging them so they upload cleanly to Etsy. These guides cover each step of the seller workflow:
+              </p>
+              <ul className="space-y-2 text-foreground-60 mb-6">
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
+                  <span><Link href="/how-to-resize-images-for-etsy" className="text-accent-light hover:underline">How to resize images for Etsy</Link> &mdash; export every size without distortion or cropping</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
+                  <span><Link href="/best-resolution-for-etsy-printables" className="text-accent-light hover:underline">Best resolution for Etsy printables</Link> &mdash; why 300 DPI is the standard and how to hit it</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
+                  <span><Link href="/best-file-format-etsy-printables" className="text-accent-light hover:underline">Best file format (PDF vs PNG vs JPG)</Link> &mdash; which format keeps files small and print-sharp</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
+                  <span><Link href="/how-to-upload-more-than-5-files-etsy" className="text-accent-light hover:underline">How to deliver more than 5 files</Link> &mdash; get past Etsy&apos;s 5-file listing cap with ratio-pack ZIPs</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
+                  <span><Link href="/what-files-to-include-etsy-digital-download" className="text-accent-light hover:underline">What files to include</Link> &mdash; the exact set buyers expect in a digital download</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Check className="h-5 w-5 text-accent-light flex-shrink-0 mt-0.5" />
+                  <span><Link href="/how-to-package-digital-wall-art-for-etsy" className="text-accent-light hover:underline">How to package digital wall art</Link> &mdash; organize ratio packs so buyers never message you for a size</span>
+                </li>
+              </ul>
+            </div>
+
             {/* ===== FINAL CTA ===== */}
             <div>
               <FinalCTA

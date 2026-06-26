@@ -10,6 +10,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import RelatedPages from "@/components/RelatedPages";
 import { FileSizeChecker } from "@/components/FileSizeChecker";
+import { SizePacksProof } from "@/components/SizePacksProof";
 
 export const metadata: Metadata = {
   title: "Etsy File Size Limit: 20 MB Max per File — Check & Fix (2026)",
@@ -571,6 +572,9 @@ export default function Etsy20MBFileLimitPage() {
                 </p>
               </div>
             </div>
+
+            {/* ===== PRODUCT PROOF: every size packed under 20MB ===== */}
+            <SizePacksProof heading="Every size, packed under Etsy's 20 MB cap" />
 
             {/* ===== SECTION 6: Step-by-Step Manual Fix ===== */}
             <div>
