@@ -8,6 +8,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
+import { SizePacksProof } from "@/components/SizePacksProof";
 import { AuthorByline } from "@/components/AuthorByline";
 
 export const metadata: Metadata = {
@@ -474,8 +475,13 @@ export default function EtsyDigitalPlannerSizesPage() {
               <strong>A4 (2480&times;3508 px)</strong>,{" "}
               <strong>A5 (1748&times;2480 px)</strong>,{" "}
               <strong>US Letter (2550&times;3300 px)</strong>, and{" "}
-              <strong>Half Letter (1275&times;1650 px)</strong>. All at 300 DPI.
+              <strong>Half Letter (1275&times;1650 px)</strong>. All at 300 DPI. Generate every planner and print size from one upload with <Link href="/" className="text-accent-light hover:underline">SnapToSize</Link>, free and no signup.
             </QuickAnswer>
+
+            {/* Product proof — one upload becomes every size (real output) */}
+            <div className="max-w-5xl mx-auto mb-14">
+              <SizePacksProof heading="Every planner and print size from one upload" />
+            </div>
 
             {/* H2: The 4 Standard Sizes */}
             <div>

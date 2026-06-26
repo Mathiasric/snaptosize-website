@@ -6,6 +6,7 @@ import { Card } from "@/components/Card";
 import { Check, AlertTriangle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { QuickAnswer } from "@/components/QuickAnswer";
+import { SizePacksProof } from "@/components/SizePacksProof";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
@@ -332,8 +333,13 @@ export default function BestResolutionForEtsyPrintablesPage() {
         <Container>
           <div className="max-w-3xl mx-auto space-y-16">
             <QuickAnswer question="What resolution do I need for Etsy printables?">
-              <strong>300 DPI</strong> is the professional standard for all Etsy printables. Exact pixel dimensions for the most common sizes: <strong>8×10</strong> = 2400×3000px, <strong>11×14</strong> = 3300×4200px, <strong>5×7</strong> = 1500×2100px, <strong>4×6</strong> = 1200×1800px, <strong>A4</strong> = 2480×3508px. Files below 300 DPI produce blurry prints and refund requests.
+              <strong>300 DPI</strong> is the professional standard for all Etsy printables. Exact pixel dimensions for the most common sizes: <strong>8×10</strong> = 2400×3000px, <strong>11×14</strong> = 3300×4200px, <strong>5×7</strong> = 1500×2100px, <strong>4×6</strong> = 1200×1800px, <strong>A4</strong> = 2480×3508px. Files below 300 DPI produce blurry prints and refund requests. Export every size at 300 DPI from one upload with <Link href="/" className="text-accent-light hover:underline">SnapToSize</Link>, free and no signup.
             </QuickAnswer>
+
+            {/* Product proof — one upload becomes every size (real output) */}
+            <div className="max-w-5xl mx-auto mb-14">
+              <SizePacksProof heading="Every Etsy size at 300 DPI from one upload" />
+            </div>
 
             {/* --- Calculator Callout --- */}
             <div className="rounded-xl border border-[#2DD4BF]/25 bg-[#2DD4BF]/5 p-5">
