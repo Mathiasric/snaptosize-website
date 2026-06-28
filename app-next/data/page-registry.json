@@ -2389,5 +2389,49 @@
       "etsy-16x20-print-size",
       "etsy-print-sizes"
     ]
+  },
+  {
+    "slug": "print-mat-sizes-for-frames",
+    "title": "Print Mat Sizes for Frames — Which Mat Fits Your Print?",
+    "description": "Frame mat sizes for every standard print: 5×7 print fits 8×10 frame with mat, 8×10 fits 11×14, 11×14 fits 16×20. Mat window sizes, border widths, and pixel dimensions.",
+    "keywords": [
+      "print mat sizes",
+      "frame size for 11x14 print with mat",
+      "what size mat for 8x10 print",
+      "print mat sizes for frames",
+      "mat window dimensions",
+      "standard mat sizes"
+    ],
+    "cluster": "size-guides",
+    "relatedSlugs": [
+      "etsy-8x10-print-size",
+      "etsy-11x14-print-size",
+      "print-sizes-at-300-dpi",
+      "etsy-gallery-wall-print-sizes",
+      "etsy-print-sizes",
+      "ikea-ribba-frame-print-sizes"
+    ]
+  },
+  {
+    "slug": "a4-300-dpi-pixels",
+    "title": "A4 at 300 DPI: 2480×3508 Pixels — Full Size Chart",
+    "description": "A4 at 300 DPI is exactly 2480×3508 pixels. Pixel chart for 16 standard print sizes at 300 DPI — A3, A5, US Letter, 8×10, 5×7, and more.",
+    "keywords": [
+      "a4 at 300 dpi pixels",
+      "a4 300 dpi pixels",
+      "a4 300 dpi pixel dimensions",
+      "print sizes at 300 dpi pixels",
+      "a4 in pixels 300 dpi",
+      "300 dpi pixel dimensions"
+    ],
+    "cluster": "resolution-dpi",
+    "relatedSlugs": [
+      "print-sizes-at-300-dpi",
+      "dpi-vs-pixel-dimensions",
+      "best-resolution-for-etsy-printables",
+      "etsy-a4-print-size",
+      "etsy-print-sizes",
+      "best-file-format-etsy-printables"
+    ]
   }
 ]
