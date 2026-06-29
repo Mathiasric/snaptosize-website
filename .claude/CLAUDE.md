@@ -188,6 +188,7 @@ Activate the relevant skill BEFORE starting work in that domain.
 | Instagram carousels, slide series, EC0x components, carousel copy | `instagram-carousel` |
 | Strategy, priorities, session start, decisions | `strategic-advisor` |
 | GSC review, search performance, CTR optimization | `gsc-review` |
+| SEO pipeline refill, competitor gap analysis, what to build next | `seo-research` |
 | New pages (polish/audit/shape), component redesign, typography, color pass | `impeccable` |
 
 Rules:
