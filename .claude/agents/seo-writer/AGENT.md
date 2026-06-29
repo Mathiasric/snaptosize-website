@@ -202,6 +202,46 @@ return (
 ```
 Button does NOT accept `href`, `variant="primary"`, or `size` props directly. Wrap in `<a>` tag. Use `variant="secondary"` only for secondary buttons.
 
+### Mid-Page Product Proof Block (MANDATORY)
+
+Every SEO page MUST include a `RatioPackFan` + `ContextualCTA` block mid-page — placed after the first major data table or primary content section, before FAQ. The hero visual alone is not sufficient; users who scroll past the table have no product hook without this block.
+
+**Pattern:**
+```tsx
+import { ContextualCTA } from "@/components/ContextualCTA";
+import { RatioPackFan, type FanPrint } from "@/components/RatioPackFan";
+
+// In component function:
+const prints: FanPrint[] = [
+  { src: "/assets/modes-demo/resize/deer-3x4.jpg", size: "6×8 in", tag: "3:4", ratio: 0.75 },
+  { src: "/assets/modes-demo/resize/deer-iso.jpg", size: "A4", tag: "ISO A", ratio: 0.707 },
+  { src: "/assets/modes-demo/resize/deer-2x3.jpg", size: "8×12 in", tag: "2:3", ratio: 0.667 },
+  { src: "/assets/modes-demo/resize/deer-4x5.jpg", size: "8×10 in", tag: "4:5", ratio: 0.8 },
+  { src: "/assets/modes-demo/resize/deer-extras.jpg", size: "11×14 in", tag: "Extras", ratio: 0.786 },
+];
+// Alternate: misty-* for visual variety (misty-3x4, misty-iso, misty-2x3, misty-4x5, misty-extras)
+
+// In JSX mid-page:
+<div className="py-2">
+  <p className="text-center text-sm mb-2 uppercase tracking-widest font-mono" style={{ color: "rgba(45,212,191,0.5)" }}>
+    What SnapToSize exports from one upload
+  </p>
+  <RatioPackFan prints={prints} subject="[artwork name] at every print ratio" />
+  <p className="text-center text-sm text-foreground-60 mt-8 mb-2 max-w-xl mx-auto">
+    One upload → <span className="text-foreground font-medium">up to 70 print-ready files</span> across 5 ratio packs, all at 300 DPI, each ZIP under Etsy's 20 MB limit.
+  </p>
+  <div className="mt-6">
+    <ContextualCTA
+      problem="[user's specific pain from this page's topic]"
+      solution="SnapToSize [specific product value linking to the page topic]. [Output count and quality statement]."
+      buttonText="[Action verb] Free"
+      appUrl={appUrl}
+    />
+  </div>
+</div>
+```
+**Artwork choice:** Use `deer` or `misty` prints — never use the same set on both a4-300-dpi-pixels AND print-mat-sizes-for-frames (vary for visual diversity). Available in `/assets/modes-demo/resize/` and `/assets/modes-demo/ratios/`.
+
 ### Page Structure — Section Rhythm
 
 **Never put all content in one `<section>`**. Split content into 3–4 separate `<section>` elements with alternating backgrounds:
@@ -232,6 +272,8 @@ If you include a lifestyle image, reference `/assets/visuals/[slug]-lifestyle.jp
 ### Trust Pills — Benefit Language
 
 Trust pills in the hero must be outcome-focused, not technical specs. Bad: "7 MCM sub-styles mapped to ratios". Good: "7 MCM styles + ideal frame sizes for each". Rule: if a non-seller wouldn't understand it in 2 seconds, rewrite it.
+
+**Number-claim validation (mandatory):** Any pill containing a count (e.g. "16 sizes", "12 matchups") MUST refer to SnapToSize product output, not to page content (table rows, list items, FAQ count). Source all numbers from `marketing/CONTENT_REFERENCE.md`. Product numbers: up to 70 files per upload, 28 sizes in core packs, 5 ratio packs, 30+ sizes. Inventing counts from the page's own data is the #1 pill defect — e.g. "16 sizes covered" taken from a 16-row reference table is WRONG.
 
 ### Components to Use
 
