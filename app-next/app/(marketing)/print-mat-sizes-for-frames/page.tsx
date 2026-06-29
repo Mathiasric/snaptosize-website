@@ -8,6 +8,8 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { FinalCTA } from "@/components/FinalCTA";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import RelatedPages from "@/components/RelatedPages";
+import { ContextualCTA } from "@/components/ContextualCTA";
+import { RatioPackFan, type FanPrint } from "@/components/RatioPackFan";
 
 export const metadata: Metadata = {
   title: "Print Mat Sizes for Frames — Which Mat Fits Your Print?",
@@ -130,6 +132,14 @@ export default function PrintMatSizesForFramesPage() {
       },
     })),
   };
+
+  const mistyPrints: FanPrint[] = [
+    { src: "/assets/modes-demo/ratios/misty-3x4.jpg", size: "6×8 in", tag: "3:4", ratio: 0.75 },
+    { src: "/assets/modes-demo/ratios/misty-iso.jpg", size: "A4", tag: "ISO A", ratio: 0.707 },
+    { src: "/assets/modes-demo/ratios/misty-2x3.jpg", size: "8×12 in", tag: "2:3", ratio: 0.667 },
+    { src: "/assets/modes-demo/ratios/misty-4x5.jpg", size: "8×10 in", tag: "4:5", ratio: 0.8 },
+    { src: "/assets/modes-demo/ratios/misty-extras.jpg", size: "11×14 in", tag: "Extras", ratio: 0.786 },
+  ];
 
   return (
     <>
@@ -489,6 +499,25 @@ export default function PrintMatSizesForFramesPage() {
               8×10 at 300 DPI is 2400×3000 px; the mat window version (to fill
               the mat opening exactly) is 2325×2925 px.
             </p>
+          </section>
+
+          {/* Mid-page conversion: pack output proof */}
+          <section>
+            <p className="text-center text-sm mb-2 uppercase tracking-widest font-mono" style={{ color: "rgba(45,212,191,0.5)" }}>
+              What SnapToSize exports from one upload
+            </p>
+            <RatioPackFan prints={mistyPrints} subject="Misty Nordic art at every print ratio" />
+            <p className="text-center text-sm text-foreground-60 mt-8 mb-2 max-w-xl mx-auto">
+              5×7, 8×10, 11×14, 16×20 — every mat-compatible print size, all at <span className="text-foreground font-medium">300 DPI</span>, named and Etsy-ready in one ZIP. No pixel math, no manual resizing.
+            </p>
+            <div className="mt-6">
+              <ContextualCTA
+                problem="Exporting each frame-compatible print size separately — calculating pixels, resizing, renaming — for every listing?"
+                solution="SnapToSize exports all your mat-compatible sizes (5×7, 8×10, 11×14, 16×20 and 25 more) at 300 DPI from one upload, organized into ZIPs ready for Etsy."
+                buttonText="Export Your Print Sizes Free"
+                appUrl={appUrl}
+              />
+            </div>
           </section>
 
           {/* Section 4: How to include mat info in Etsy listings */}

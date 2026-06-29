@@ -7,6 +7,8 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { FinalCTA } from "@/components/FinalCTA";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import RelatedPages from "@/components/RelatedPages";
+import { ContextualCTA } from "@/components/ContextualCTA";
+import { RatioPackFan, type FanPrint } from "@/components/RatioPackFan";
 
 export const metadata: Metadata = {
   title: "A4 at 300 DPI: 2480×3508 Pixels — Full Size Chart",
@@ -155,6 +157,14 @@ export default function A4300DpiPixelsPage() {
     { name: "18×24", inches: "18×24", pixels: "5400×7200", ratio: "3:4" },
     { name: "20×30", inches: "20×30", pixels: "6000×9000", ratio: "2:3" },
     { name: "24×36", inches: "24×36", pixels: "7200×10800", ratio: "2:3" },
+  ];
+
+  const deerPrints: FanPrint[] = [
+    { src: "/assets/modes-demo/resize/deer-3x4.jpg", size: "6×8 in", tag: "3:4", ratio: 0.75 },
+    { src: "/assets/modes-demo/resize/deer-iso.jpg", size: "A4", tag: "ISO A", ratio: 0.707 },
+    { src: "/assets/modes-demo/resize/deer-2x3.jpg", size: "8×12 in", tag: "2:3", ratio: 0.667 },
+    { src: "/assets/modes-demo/resize/deer-4x5.jpg", size: "8×10 in", tag: "4:5", ratio: 0.8 },
+    { src: "/assets/modes-demo/resize/deer-extras.jpg", size: "11×14 in", tag: "Extras", ratio: 0.786 },
   ];
 
   return (
@@ -317,7 +327,7 @@ export default function A4300DpiPixelsPage() {
                 </Button>
               </a>
               <div className="flex flex-wrap gap-2 mt-4">
-                {["16 sizes covered", "A-series + US", "300 DPI formulas"].map((pill) => (
+                {["16-size DPI chart", "ISO A-series + US", "300 DPI formulas"].map((pill) => (
                   <span
                     key={pill}
                     className="text-xs px-3 py-1 rounded-full"
@@ -437,6 +447,25 @@ export default function A4300DpiPixelsPage() {
                 </Button>
               </a>
             </Card>
+
+            {/* Mid-page conversion: pack output proof */}
+            <div className="py-2">
+              <p className="text-center text-sm text-foreground-60 mb-2 uppercase tracking-widest font-mono" style={{ color: "rgba(45,212,191,0.5)" }}>
+                What SnapToSize exports from one upload
+              </p>
+              <RatioPackFan prints={deerPrints} subject="Deer art at every print ratio" />
+              <p className="text-center text-sm text-foreground-60 mt-8 mb-2 max-w-xl mx-auto">
+                One upload → <span className="text-foreground font-medium">up to 70 print-ready files</span> across 5 ratio packs, all at 300 DPI, each ZIP under Etsy&apos;s 20 MB limit. A4 (ISO pack) is always included.
+              </p>
+              <div className="mt-6">
+                <ContextualCTA
+                  problem="Manually calculating pixels and resizing for A4, A3, US Letter — every time you list new artwork?"
+                  solution="SnapToSize exports your full ISO A-series (A5 → A1) plus US sizes and common prints in one click — all at exactly 300 DPI, named and ready to upload to Etsy."
+                  buttonText="Export ISO + US Pack Free"
+                  appUrl={appUrl}
+                />
+              </div>
+            </div>
 
             {/* Section 3: ISO A-series */}
             <div>
