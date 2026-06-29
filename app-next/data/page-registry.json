@@ -2455,5 +2455,48 @@
       "etsy-print-sizes",
       "best-file-format-etsy-printables"
     ]
+  },
+  {
+    "slug": "etsy-vs-shopify-digital-downloads",
+    "title": "Etsy vs Shopify for Digital Downloads",
+    "description": "Etsy vs Shopify for selling digital downloads: fees, automatic file delivery, traffic, and audience ownership compared — plus how to size files for both.",
+    "pageType": "comparison",
+    "keywords": [
+      "etsy vs shopify digital downloads",
+      "etsy vs shopify for digital products",
+      "sell digital downloads etsy or shopify",
+      "etsy vs shopify fees"
+    ],
+    "cluster": "comparisons",
+    "relatedSlugs": [
+      "etsy-vs-gumroad-vs-creative-market",
+      "how-to-sell-digital-downloads-on-etsy",
+      "etsy-20mb-file-limit",
+      "how-to-price-etsy-printables",
+      "etsy-print-sizes",
+      "how-to-resize-images-for-etsy"
+    ]
+  },
+  {
+    "slug": "how-to-upscale-ai-art-for-etsy-prints",
+    "title": "How to Upscale AI Art for Etsy Prints",
+    "description": "Turn AI-generated art into print-ready files for Etsy: the resolution you need, the best AI upscalers, and how to create every frame size from one master.",
+    "pageType": "guide",
+    "keywords": [
+      "how to upscale ai art for etsy",
+      "upscale ai art for printing",
+      "ai art resolution for prints",
+      "best ai upscaler for art prints",
+      "ai art too small to print"
+    ],
+    "cluster": "resolution-dpi",
+    "relatedSlugs": [
+      "etsy-ai-art-print-sizes",
+      "print-sizes-at-300-dpi",
+      "best-resolution-for-etsy-printables",
+      "how-to-resize-images-for-etsy",
+      "etsy-digital-download-blurry-prints",
+      "etsy-print-sizes"
+    ]
   }
 ]
