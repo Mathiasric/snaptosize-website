@@ -9,7 +9,7 @@
 **Jun 16 changes:** Removed off-topic Etsy shop buyer reviews from homepage. Replaced FounderStorySection with product-proof demo (real filenames, pack labels, mode pills, country flags, CTA). Redesigned PricingTeaserSection — full feature lists, asymmetric visual weight, $0 forever framing, "export anytime" differentiator.
 
 ## Where we are (live)
-- **~20 paying Pro · ~$236 MRR** (19 monthly @ $11.99 + 1 yearly @ $97) — +1 Pro monthly 2026-06-29. Prev baseline: 19 @ $224 MRR (Jun 15). Verify exact count in Stripe.
+- **~21 paying Pro · ~$248 MRR** (20 monthly @ $11.99 + 1 yearly @ $97) — +2 Pro monthly 2026-06-29. Prev baseline: 19 @ $224 MRR (Jun 15). Verify exact count in Stripe.
 - **GSC (3 months to Jun 14):** 38 clicks / 3,050 impr / 1.25% CTR, 35 pages with data. Biggest untapped: `/etsy-20mb-file-limit` 1,131 impr @ pos 8.1 → 0.2% CTR. 9 pages ≥20 impr with 0% CTR.
 - **PostHog (Jun 1-15):** MAU 815 (↑ from 715 prior week). DAU: 2-3 quick-export + 3-7 pack-export (steady). Rate limit hits normalized (8/day Jun 1 → 0-2/day now).
 - **Free→paid conversion ~37%** (SaaS standard 2–5%).
