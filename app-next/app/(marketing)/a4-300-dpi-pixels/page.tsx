@@ -174,7 +174,7 @@ export default function A4300DpiPixelsPage() {
 
       {/* ===== HERO ===== */}
       <section
-        className="relative pt-10 pb-16 md:pt-14 md:pb-24 overflow-hidden"
+        className="relative pt-10 pb-12 md:pt-14 md:pb-16 overflow-hidden"
         style={{ background: "#080C14" }}
       >
         {/* Blueprint grid */}
@@ -204,13 +204,13 @@ export default function A4300DpiPixelsPage() {
 
         {/* CSS-only A4 diagram — right side */}
         <div className="absolute right-[6%] top-1/2 -translate-y-1/2 hidden lg:block select-none">
-          <div className="relative" style={{ width: "200px", height: "283px" }}>
+          <div className="relative" style={{ width: "260px", height: "368px" }}>
             {/* A4 rectangle outline */}
             <div
               className="absolute inset-0"
               style={{
-                border: "1.5px solid rgba(45,212,191,0.5)",
-                background: "rgba(45,212,191,0.03)",
+                border: "1.5px solid rgba(45,212,191,0.85)",
+                background: "rgba(45,212,191,0.06)",
               }}
             />
             {/* Corner ticks */}
@@ -225,7 +225,7 @@ export default function A4300DpiPixelsPage() {
                 className="absolute w-3 h-3"
                 style={{
                   ...pos,
-                  borderColor: "rgba(45,212,191,0.7)",
+                  borderColor: "rgba(45,212,191,0.95)",
                   borderStyle: "solid",
                   borderWidth: i === 0 ? "1px 0 0 1px" : i === 1 ? "1px 1px 0 0" : i === 2 ? "0 0 1px 1px" : "0 1px 1px 0",
                 }}
@@ -293,8 +293,8 @@ export default function A4300DpiPixelsPage() {
 
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 text-white">
               A4 at 300 DPI:{" "}
-              <span style={{ color: "#2DD4BF" }}>2480&times;3508 Pixels</span>
-              <br className="hidden md:block" /> (And Every Standard Size)
+              <span style={{ color: "#2DD4BF" }}>2480&times;3508</span>
+              <br /> Pixels
             </h1>
 
             <p className="text-base md:text-lg mb-6" style={{ color: "rgba(255,255,255,0.6)" }}>
@@ -316,6 +316,21 @@ export default function A4300DpiPixelsPage() {
                   Export All Sizes at 300 DPI Free
                 </Button>
               </a>
+              <div className="flex flex-wrap gap-2 mt-4">
+                {["16 sizes covered", "A-series + US", "300 DPI formulas"].map((pill) => (
+                  <span
+                    key={pill}
+                    className="text-xs px-3 py-1 rounded-full"
+                    style={{
+                      background: "rgba(45,212,191,0.08)",
+                      color: "rgba(45,212,191,0.7)",
+                      border: "1px solid rgba(45,212,191,0.2)",
+                    }}
+                  >
+                    {pill}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </Container>

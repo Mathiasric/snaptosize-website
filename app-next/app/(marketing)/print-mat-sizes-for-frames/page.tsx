@@ -209,7 +209,22 @@ export default function PrintMatSizesForFramesPage() {
                     Export the Exact Size for Your Frame
                   </Button>
                 </a>
-                <p className="text-xs text-foreground-60 mt-2">
+                <div className="flex flex-wrap gap-2 mt-4">
+                  {["12 frame matchups", "Mat window sizes", "300 DPI pixels"].map((pill) => (
+                    <span
+                      key={pill}
+                      className="text-xs px-3 py-1 rounded-full"
+                      style={{
+                        background: "rgba(45,212,191,0.08)",
+                        color: "rgba(45,212,191,0.7)",
+                        border: "1px solid rgba(45,212,191,0.2)",
+                      }}
+                    >
+                      {pill}
+                    </span>
+                  ))}
+                </div>
+                <p className="text-xs text-foreground-60 mt-3">
                   No account needed · No credit card required
                 </p>
               </div>
