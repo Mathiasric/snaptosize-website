@@ -2,12 +2,14 @@
 
 **Read this first each session.** Live data (Stripe / PostHog / GSC) = truth. This file is re-derived from current reality, not inherited from older docs. Older doc claims are *dated evidence to verify*, never commands.
 
-**Last updated:** 2026-06-16 (homepage marketing overhaul — see Jun 16 changes below)
+**Last updated:** 2026-06-24 (brain refresh — BleedAI outbound strategy doc analyzed, priorities re-ranked, competitor + AI automation opportunities mapped)
 
-**Jun 16 changes:** Removed off-topic Etsy shop buyer reviews from homepage. Replaced FounderStorySection with product-proof demo (real filenames, pack labels, mode pills, country flags, CTA). Redesigned PricingTeaserSection — full feature lists, asymmetric visual weight, $0 forever framing, "export anytime" differentiator. My Packs Pro limit unknown — copy neutral until confirmed.
+**Jun 24 changes:** BleedAI outbound strategy doc ingested. Georgiana (catopia.biz) churned → refunded → returning on WELCOMEBACK coupon. pay.snaptosize.com custom domain live. Stripe ETSYSELLERS + FRIENDS20 + WELCOMEBACK coupons created. `claude-seo` (25 skills + firecrawl extension) installed globally. 111 pages mapped — 41 gap pages identified (POD platforms highest priority). **CHANNEL AUDIT COMPLETE — see eliminated channels below.**
+
+**Jun 16 changes:** Removed off-topic Etsy shop buyer reviews from homepage. Replaced FounderStorySection with product-proof demo (real filenames, pack labels, mode pills, country flags, CTA). Redesigned PricingTeaserSection — full feature lists, asymmetric visual weight, $0 forever framing, "export anytime" differentiator.
 
 ## Where we are (live)
-- **~19 paying Pro · ~$224 MRR** (18 monthly @ $11.99 + 1 yearly @ $97) — Jun 15 PostHog estimate: +2 checkouts Jun 9-10, -1 churn wk Jun 7 vs Jun 12 baseline of 18. Verify exact count in Stripe.
+- **~20 paying Pro · ~$236 MRR** (19 monthly @ $11.99 + 1 yearly @ $97) — +1 Pro monthly 2026-06-29. Prev baseline: 19 @ $224 MRR (Jun 15). Verify exact count in Stripe.
 - **GSC (3 months to Jun 14):** 38 clicks / 3,050 impr / 1.25% CTR, 35 pages with data. Biggest untapped: `/etsy-20mb-file-limit` 1,131 impr @ pos 8.1 → 0.2% CTR. 9 pages ≥20 impr with 0% CTR.
 - **PostHog (Jun 1-15):** MAU 815 (↑ from 715 prior week). DAU: 2-3 quick-export + 3-7 pack-export (steady). Rate limit hits normalized (8/day Jun 1 → 0-2/day now).
 - **Free→paid conversion ~37%** (SaaS standard 2–5%).
@@ -16,20 +18,41 @@
 ## The one insight that sets priorities
 **The bottleneck is DISTRIBUTION — not conversion, not quality, not price.** 37% conversion is elite; we simply have too few qualified visitors. Judge every lever by: *does it bring more Etsy-printable sellers to the product?*
 
-## Top priorities (ranked: ARR-impact ÷ effort)
-1. **CTR rescue sprint** ← ACTIVE while cold email is parked (batch-01 sent Jun 15, see #3). GSC Jun 15 data — titles aren't surfacing the answer:
-   - `/etsy-20mb-file-limit` — 1,131 impr, pos 8.1, **0.2% CTR** → biggest single lever. Fix title to show the numbers ("20 MB limit, 5 files per listing").
+## $1M ARR reality check (Jun 24)
+- Need ~7,000 paying users at $11.99. Currently 19. Organic: ~1/day (30/month).
+- At current rate: 233× needed. SEO alone gets there in ~3.8 years.
+- **Two paths:** (A) massive SEO scale + time, (B) one step-change distribution event + SEO base.
+- Educator paid sponsorship breaks CAC math at $11.99 (need 125-250 users per $1500+ video). Wrong ARPU for that channel.
+- Pricing increase ($24.99-$49) would halve users-needed AND open more paid channels. Worth testing.
+
+## ❌ Eliminated channels — do not re-open without new evidence
+| Channel | Why eliminated | Re-open condition |
+|---|---|---|
+| Educator outreach (organic affiliate) | 0% reply rate, 6-7 attempts, too much work for uncertain commissions | A direct referral from paying user to their educator |
+| Educator outreach (paid sponsorship) | CAC math broken at $11.99 ARPU — $1500-3000/video needs 125-250 converts to break even | ARPU ≥ $30 |
+| Cold email (Etsy shops) | Email discovery blocked — Etsy hides seller emails | Solved discovery pipeline (own-site sellers only partial fix) |
+| Reddit/Quora community replies | Spam flagging + threads are archived by the time we find them | — |
+| Paid ads | CAC $802 confirmed vs LTV ~$144 | ARPU ≥ $50 or LTV data improves |
+
+## Top priorities (ranked: ARR-impact ÷ effort) — refreshed Jun 24
+
+**Proven engine: SEO. 1 new user/day organically. 111 pages. Every new page compounds.**
+
+1. **SEO expansion — POD platform pages (NEW audience)** — `/printify-print-sizes`, `/redbubble-print-sizes`, `/society6-print-sizes`, `/printful-print-sizes` etc. Printify/Redbubble sellers have identical pain (resize to 20+ sizes) but don't search "etsy." Zero overlap with existing 111 pages. Claude executes autonomously with `claude-seo` skills.
+
+2. **SEO expansion — size comparison pages** — 9 missing comparisons (`/11x14-vs-16x20`, `/a4-vs-letter`, `/18x24-vs-16x20` etc). Same template as 7 existing ones. Proven format, minimal effort.
+
+3. **SEO expansion — niche wall art pages** — 15 missing niches (christmas, holiday, geometric, nordic, retro etc). Copy of existing 32 niche pages. Claude executes.
+
+4. **CTR rescue sprint** — remaining high-value pages (max 2/day):
+   - `/etsy-20mb-file-limit` — 1,131 impr, pos 8.1, **0.2% CTR** → biggest single lever
    - `/best-file-format-etsy-printables` — 475 impr, pos 5.7, 0% CTR
    - `/best-resolution-for-etsy-printables` — 188 impr, pos 6.9, 0% CTR
-   - `/etsy-print-sizes` — 115 impr, pos 7.8, 0% CTR
-   - `/how-to-package-digital-wall-art-for-etsy` — 76 impr, pos 7.4, 0% CTR
-   - `/how-many-sizes-etsy-printable` — 62 impr, pos 6.2, 0% CTR
-   - Max 2 CTR fixes/day (same pacing rule as SEO pages).
-2. **New SEO pages** — compounding volume engine, max 2/day. Candidates: `/a4-vs-letter-print-size`, `/etsy-print-size-tool`.
-   - ✅ `/dpi-for-print` (May 28) · ✅ `/image-resolution-for-print` (May 28) · ✅ `/resize-image-without-cropping-etsy` (May 29) · ✅ `/ikea-ribba-frame-print-sizes` (May 30) · ✅ `/5x7-vs-4x6-print-size` (May 30)
-   - ✅ `/8x10-vs-11x14-print-size` (Jun 1) · ✅ `/8x10-vs-5x7-print-size` (Jun 1) · ✅ `/8x10-vs-8-5x11-print-size` (Jun 2) · ✅ `/iso-vs-us-print-sizes` (Jun 3) · ✅ `/11x14-vs-11x17-print-size` (Jun 4) · ✅ `/etsy-poster-sizes` (Jun 9)
-3. **Cold email — ⏳ SENT & AWAITING SIGNAL (parked — do NOT restart yet).** Batch 01 = 6 qualified DIGITAL sellers sent Jun 15 (`marketing/social/cold-email-batch-01-SEND-READY.txt`; tracker `cold-email-batch-01-tracker.csv`). Learning probe — judge by reply quality, NOT sales. **Trigger to act:** a reply lands, OR ~Jun 20 silence → F1 follow-up + decide scale-or-pivot. Only then re-scan the 97-email list for digital-only → batch 02. (9 of first 15 were cut as physical-print/wrong-type — qualify digital BEFORE writing copy. See [[project_cold_email_ownsite_sellers]].)
-- Later: Quick-export paywall gate (app-repo, 1-2h dev — 21 rate limit hits in 14d with no upgrade shown), ARPU tier ($29 Studio), My Packs adoption drive.
+
+5. **Pricing experiment** — test $19.99 or $24.99/month. At current conversion (37%), doubling ARPU halves the user target. Low effort, high leverage if it holds conversion rate.
+
+- **Tools available:** `claude-seo` 25 skills installed. Use `/seo-content-brief` before building pages, `/seo-programmatic snaptosize.com` for gap analysis, `/seo-geo` for AI discoverability.
+- **Backlog:** Product-led virality (watermark on free exports clickable to product), My Packs adoption drive, competitor vs pages (adobe-express, picmonkey).
 
 ## Positioning (don't drift)
 Compete against **manual complexity** (Photoshop ~$60/mo, Canva per-size) — NOT "a faster resize tool." ICP has likely never opened Photoshop. Message: *no Photoshop, no manual per-size work, no cropping or distorting.*

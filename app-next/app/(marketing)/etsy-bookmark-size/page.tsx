@@ -401,10 +401,10 @@ export default function EtsyBookmarkSizePage() {
 
         {/* Inline CTA #1 — ContextualCTA */}
         <ContextualCTA
-          problem="Designing at the wrong resolution means blurry prints — and unhappy buyers leaving bad reviews."
-          solution="SnapToSize resizes your bookmark artwork to exactly 600×1800 px (or any bookmark size) at 300 DPI in one click."
+          problem="Selling multiple Etsy products? Resizing each size variant manually — calculating pixels, exporting one by one — eats hours every listing."
+          solution="SnapToSize exports all your standard print sizes at 300 DPI in one click. Use Custom Sizes mode to enter any bookmark dimension directly (600×1800 px, 600×2100 px, etc.)."
           appUrl={APP_URL}
-          buttonText="Resize My Bookmark File"
+          buttonText="Export Print Sizes Free"
         />
 
         {/* DPI comparison table */}
@@ -732,7 +732,7 @@ export default function EtsyBookmarkSizePage() {
             heading="Get Your Bookmark Files Print-Ready"
             stat="600×1800 px · 300 DPI · PNG or PDF"
             description="Upload your bookmark design and SnapToSize outputs the exact pixel dimensions you need — no Photoshop required."
-            buttonText="Resize Bookmark Free"
+            buttonText="Try SnapToSize Free"
             appUrl={APP_URL}
           />
         </div>

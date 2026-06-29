@@ -9,6 +9,7 @@ import { Button } from "./Button";
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [guidesOpen, setGuidesOpen] = useState(false);
+  const [compareOpen, setCompareOpen] = useState(false);
 
   // Lock body scroll when mobile menu is open
   useEffect(() => {
@@ -22,20 +23,23 @@ export function Header() {
     };
   }, [mobileMenuOpen]);
 
-  // Close guides dropdown when clicking outside
+  // Close dropdowns when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target as HTMLElement;
       if (!target.closest('[data-guides-dropdown]')) {
         setGuidesOpen(false);
       }
+      if (!target.closest('[data-compare-dropdown]')) {
+        setCompareOpen(false);
+      }
     };
 
-    if (guidesOpen) {
+    if (guidesOpen || compareOpen) {
       document.addEventListener('click', handleClickOutside);
       return () => document.removeEventListener('click', handleClickOutside);
     }
-  }, [guidesOpen]);
+  }, [guidesOpen, compareOpen]);
 
   const closeMenu = () => setMobileMenuOpen(false);
 
@@ -61,11 +65,22 @@ export function Header() {
               {/* Guides dropdown trigger */}
               <div data-guides-dropdown>
                 <button
-                  onClick={() => setGuidesOpen(!guidesOpen)}
+                  onClick={() => { setGuidesOpen(!guidesOpen); setCompareOpen(false); }}
                   className="text-foreground-60 transition-colors hover:text-foreground focus-ring flex items-center gap-1"
                 >
                   Guides
                   <ChevronDown className={`h-4 w-4 transition-transform ${guidesOpen ? 'rotate-180' : ''}`} />
+                </button>
+              </div>
+
+              {/* Compare dropdown trigger */}
+              <div data-compare-dropdown>
+                <button
+                  onClick={() => { setCompareOpen(!compareOpen); setGuidesOpen(false); }}
+                  className="text-foreground-60 transition-colors hover:text-foreground focus-ring flex items-center gap-1"
+                >
+                  Compare
+                  <ChevronDown className={`h-4 w-4 transition-transform ${compareOpen ? 'rotate-180' : ''}`} />
                 </button>
               </div>
 
@@ -107,264 +122,54 @@ export function Header() {
         </nav>
       </Container>
 
-      {/* Desktop mega menu — full width, below header */}
+      {/* Desktop Guides mega menu */}
       {guidesOpen && (
         <div className="hidden md:block absolute left-0 right-0 top-full z-50 border-b border-border bg-background shadow-lg overflow-y-auto max-h-[calc(100vh-64px)]" data-guides-dropdown>
           <Container>
             <div className="grid grid-cols-6 gap-6 py-6">
-              {/* Size Guides — col spans wider with 3-col sub-grid for niche guides */}
-              <div className="col-span-4">
+              {/* Size Guides */}
+              <div className="col-span-2">
                 <p className="pb-2.5 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">Size Guides</p>
-                <div className="grid grid-cols-4 gap-x-6">
-                  <div className="space-y-0.5">
-                    <Link href="/etsy-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Etsy Print Sizes
-                    </Link>
-                    <Link href="/etsy-print-ratios" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Etsy Print Ratios
-                    </Link>
-                    <Link href="/distortion-free-crop" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Reframe Art to Any Ratio
-                    </Link>
-                    <Link href="/most-popular-etsy-print-sizes-to-sell" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Most Popular Sizes to Sell
-                    </Link>
-                    <Link href="/how-many-sizes-etsy-printable" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      How Many Sizes to Include
-                    </Link>
-                    <Link href="/etsy-nursery-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Nursery Wall Art Sizes
-                    </Link>
-                    <Link href="/etsy-botanical-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Botanical Print Sizes
-                    </Link>
-                    <Link href="/etsy-gallery-wall-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Gallery Wall Print Sizes
-                    </Link>
-                    <Link href="/etsy-wedding-printable-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Wedding Printable Sizes
-                    </Link>
-                    <Link href="/etsy-digital-download-size-variations" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Digital Download Size Variations
-                    </Link>
-                    <Link href="/print-size-for-frame-guide" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Print-to-Frame Guide
-                    </Link>
-                    <Link href="/ikea-ribba-frame-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      IKEA Ribba Frame Sizes
-                    </Link>
-                    <Link href="/5x7-vs-4x6-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      5×7 vs 4×6 Size Guide
-                    </Link>
-                    <Link href="/8x10-vs-11x14-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      8×10 vs 11×14 Size Guide
-                    </Link>
-                    <Link href="/8x10-vs-5x7-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      8×10 vs 5×7 Size Guide
-                    </Link>
-                    <Link href="/8x10-vs-8-5x11-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      8×10 vs 8.5×11 Size Guide
-                    </Link>
-                    <Link href="/11x14-vs-12x16-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      11×14 vs 12×16 Size Guide
-                    </Link>
-                    <Link href="/11x14-vs-16x20-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      11×14 vs 16×20 Size Guide
-                    </Link>
-                    <Link href="/16x20-vs-18x24-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      16×20 vs 18×24 Size Guide
-                    </Link>
-                    <Link href="/18x24-vs-24x36-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      18×24 vs 24×36 Size Guide
-                    </Link>
-                    <Link href="/12x16-vs-16x20-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      12×16 vs 16×20 Size Guide
-                    </Link>
-                    <Link href="/a4-vs-8x10-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      A4 vs 8×10 Size Guide
-                    </Link>
-                    <Link href="/8x10-vs-16x20-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      8×10 vs 16×20 Size Guide
-                    </Link>
-                    <Link href="/8x10-vs-12x16-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      8×10 vs 12×16 Size Guide
-                    </Link>
-                    <Link href="/iso-vs-us-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      ISO vs US Print Sizes
-                    </Link>
-                    <Link href="/etsy-square-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Square Print Sizes
-                    </Link>
-                    <Link href="/canvas-print-sizes-for-etsy" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Canvas Print Sizes
-                    </Link>
-                    <Link href="/etsy-sticker-sheet-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Sticker Sheet Size
-                    </Link>
-                    <Link href="/etsy-bookmark-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Bookmark Size
-                    </Link>
-                  </div>
-                  <div className="space-y-0.5">
-                    <Link href="/etsy-quote-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Quote Wall Art Sizes
-                    </Link>
-                    <Link href="/etsy-minimalist-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Minimalist Wall Art Sizes
-                    </Link>
-                    <Link href="/etsy-abstract-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Abstract Wall Art Sizes
-                    </Link>
-                    <Link href="/etsy-ai-art-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      AI Art Print Sizes
-                    </Link>
-                    <Link href="/etsy-landscape-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Landscape Print Sizes
-                    </Link>
-                    <Link href="/etsy-pet-portrait-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Pet Portrait Sizes
-                    </Link>
-                    <Link href="/etsy-photography-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Photography Print Sizes
-                    </Link>
-                    <Link href="/etsy-watercolor-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Watercolor Print Sizes
-                    </Link>
-                    <Link href="/etsy-vintage-art-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Vintage Art Print Sizes
-                    </Link>
-                  </div>
-                  <div className="space-y-0.5">
-                    <Link href="/etsy-boho-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Boho Wall Art Sizes
-                    </Link>
-                    <Link href="/etsy-coastal-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Coastal Wall Art Sizes
-                    </Link>
-                    <Link href="/etsy-farmhouse-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Farmhouse Wall Art Sizes
-                    </Link>
-                    <Link href="/etsy-mid-century-modern-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Mid Century Modern Sizes
-                    </Link>
-                    <Link href="/etsy-celestial-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Celestial Wall Art Sizes
-                    </Link>
-                    <Link href="/etsy-floral-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Floral Print Sizes
-                    </Link>
-                    <Link href="/etsy-japandi-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Japandi Art Sizes
-                    </Link>
-                    <Link href="/etsy-line-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Line Art Sizes
-                    </Link>
-                    <Link href="/etsy-typography-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Typography Art Sizes
-                    </Link>
-                  </div>
-                  <div className="space-y-0.5">
-                    <Link href="/etsy-kids-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Kids Wall Art Sizes
-                    </Link>
-                    <Link href="/etsy-bathroom-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Bathroom Wall Art Sizes
-                    </Link>
-                    <Link href="/etsy-kitchen-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Kitchen Wall Art Sizes
-                    </Link>
-                    <Link href="/etsy-living-room-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Living Room Wall Art Sizes
-                    </Link>
-                    <Link href="/etsy-bedroom-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Bedroom Wall Art Sizes
-                    </Link>
-                    <Link href="/etsy-office-wall-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Office Wall Art Sizes
-                    </Link>
-                    <Link href="/etsy-black-and-white-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Black &amp; White Art Sizes
-                    </Link>
-                    <Link href="/etsy-anime-manga-art-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Anime &amp; Manga Art Sizes
-                    </Link>
-                    <Link href="/etsy-map-art-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                      Map Art Print Sizes
-                    </Link>
-                  </div>
-                </div>
-                <div className="pt-2 mt-2 border-t border-border/50">
-                  <div className="grid grid-cols-3 gap-x-6">
-                    <div className="space-y-0.5">
-                      <Link href="/etsy-8x10-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                        8&times;10 Print Size
-                      </Link>
-                      <Link href="/etsy-5x7-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                        5&times;7 Print Size
-                      </Link>
-                      <Link href="/etsy-16x20-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                        16&times;20 Print Size
-                      </Link>
-                      <Link href="/etsy-24x36-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                        24&times;36 Print Size
-                      </Link>
-                      <Link href="/etsy-18x24-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                        18&times;24 Print Size
-                      </Link>
-                      <Link href="/etsy-11x14-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                        11&times;14 Print Size
-                      </Link>
-                      <Link href="/etsy-11x17-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                        11&times;17 Print Size
-                      </Link>
-                    </div>
-                    <div className="space-y-0.5">
-                      <Link href="/etsy-12x18-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                        12&times;18 Print Size
-                      </Link>
-                      <Link href="/etsy-13x19-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                        13&times;19 Print Size
-                      </Link>
-                      <Link href="/etsy-a4-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                        A4 Print Size
-                      </Link>
-                      <Link href="/etsy-a5-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                        A5 Print Size
-                      </Link>
-                      <Link href="/etsy-a3-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                        A3 Print Size
-                      </Link>
-                      <Link href="/etsy-a2-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                        A2 Print Size
-                      </Link>
-                      <Link href="/etsy-a1-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                        A1 Print Size
-                      </Link>
-                      <Link href="/etsy-poster-sizes" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                        Poster Sizes
-                      </Link>
-                    </div>
-                    <div className="space-y-0.5">
-                      <Link href="/etsy-4x6-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                        4&times;6 Print Size
-                      </Link>
-                      <Link href="/etsy-12x16-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                        12&times;16 Print Size
-                      </Link>
-                      <Link href="/etsy-8-5x11-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                        8.5&times;11 US Letter
-                      </Link>
-                      <Link href="/etsy-20x24-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                        20&times;24 Print Size
-                      </Link>
-                      <Link href="/etsy-20x30-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                        20&times;30 Print Size
-                      </Link>
-                      <Link href="/2-3-vs-4-5-ratio" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                        2:3 vs 4:5 Ratio
-                      </Link>
-                    </div>
-                  </div>
+                <div className="space-y-0.5">
+                  <Link href="/etsy-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    Etsy Print Sizes
+                  </Link>
+                  <Link href="/etsy-print-ratios" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    Etsy Print Ratios
+                  </Link>
+                  <Link href="/distortion-free-crop" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    Reframe Art to Any Ratio
+                  </Link>
+                  <Link href="/most-popular-etsy-print-sizes-to-sell" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    Most Popular Sizes to Sell
+                  </Link>
+                  <Link href="/how-many-sizes-etsy-printable" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    How Many Sizes to Include
+                  </Link>
+                  <Link href="/etsy-digital-download-size-variations" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    Digital Download Size Variations
+                  </Link>
+                  <Link href="/etsy-square-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    Square Print Sizes
+                  </Link>
+                  <Link href="/canvas-print-sizes-for-etsy" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    Canvas Print Sizes
+                  </Link>
+                  <Link href="/print-size-for-frame-guide" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    Print-to-Frame Guide
+                  </Link>
+                  <Link href="/print-mat-sizes-for-frames" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    Mat Sizes for Frames
+                  </Link>
+                  <Link href="/ikea-ribba-frame-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    IKEA Ribba Frame Sizes
+                  </Link>
+                  <Link href="/etsy-sticker-sheet-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    Sticker Sheet Size
+                  </Link>
+                  <Link href="/etsy-bookmark-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    Bookmark Size
+                  </Link>
                 </div>
                 <div className="pt-2 mt-2 border-t border-border/50">
                   <Link href="/etsy-print-size-calculator" className="block py-1.5 text-sm text-[#2DD4BF] hover:text-[#2DD4BF]/80 transition-colors font-medium">
@@ -373,8 +178,78 @@ export function Header() {
                 </div>
               </div>
 
+              {/* Individual Size Reference */}
+              <div className="col-span-1">
+                <p className="pb-2.5 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">By Size</p>
+                <div className="space-y-0.5">
+                  <Link href="/etsy-8x10-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                    8&times;10 Print Size
+                  </Link>
+                  <Link href="/etsy-5x7-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                    5&times;7 Print Size
+                  </Link>
+                  <Link href="/etsy-11x14-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                    11&times;14 Print Size
+                  </Link>
+                  <Link href="/etsy-16x20-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                    16&times;20 Print Size
+                  </Link>
+                  <Link href="/etsy-18x24-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                    18&times;24 Print Size
+                  </Link>
+                  <Link href="/etsy-24x36-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                    24&times;36 Print Size
+                  </Link>
+                  <Link href="/etsy-11x17-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                    11&times;17 Print Size
+                  </Link>
+                  <Link href="/etsy-12x18-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                    12&times;18 Print Size
+                  </Link>
+                  <Link href="/etsy-13x19-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                    13&times;19 Print Size
+                  </Link>
+                  <Link href="/etsy-4x6-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                    4&times;6 Print Size
+                  </Link>
+                  <Link href="/etsy-12x16-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                    12&times;16 Print Size
+                  </Link>
+                  <Link href="/etsy-20x24-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                    20&times;24 Print Size
+                  </Link>
+                  <Link href="/etsy-20x30-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                    20&times;30 Print Size
+                  </Link>
+                  <Link href="/etsy-poster-sizes" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                    Poster Sizes
+                  </Link>
+                  <Link href="/etsy-a4-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                    A4 Print Size
+                  </Link>
+                  <Link href="/etsy-a3-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                    A3 Print Size
+                  </Link>
+                  <Link href="/etsy-a5-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                    A5 Print Size
+                  </Link>
+                  <Link href="/etsy-a2-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                    A2 Print Size
+                  </Link>
+                  <Link href="/etsy-a1-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                    A1 Print Size
+                  </Link>
+                  <Link href="/etsy-8-5x11-print-size" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                    8.5&times;11 US Letter
+                  </Link>
+                  <Link href="/a4-300-dpi-pixels" className="block py-0.5 text-xs text-foreground-60 hover:text-foreground transition-colors">
+                    A4 at 300 DPI
+                  </Link>
+                </div>
+              </div>
+
               {/* Seller Guides + Troubleshooting — 2-col split */}
-              <div className="col-span-2">
+              <div className="col-span-3">
                 <p className="pb-2.5 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">Seller Guides</p>
                 <div className="grid grid-cols-2 gap-x-6">
                   <div className="space-y-0.5">
@@ -456,7 +331,7 @@ export function Header() {
                           Blurry Prints? Fix Resolution
                         </Link>
                         <Link href="/etsy-printable-bleed-and-crop-marks" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
-                          Bleed & Crop Marks Guide
+                          Bleed &amp; Crop Marks Guide
                         </Link>
                         <Link href="/cmyk-vs-rgb-for-etsy-printables" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                           CMYK vs RGB
@@ -464,6 +339,73 @@ export function Header() {
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </Container>
+        </div>
+      )}
+
+      {/* Desktop Compare mega menu */}
+      {compareOpen && (
+        <div className="hidden md:block absolute left-0 right-0 top-full z-50 border-b border-border bg-background shadow-lg" data-compare-dropdown>
+          <Container>
+            <div className="grid grid-cols-3 gap-6 py-6">
+              <div>
+                <p className="pb-2.5 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">Standard Sizes</p>
+                <div className="space-y-0.5">
+                  <Link href="/5x7-vs-4x6-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    5×7 vs 4×6
+                  </Link>
+                  <Link href="/8x10-vs-5x7-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    8×10 vs 5×7
+                  </Link>
+                  <Link href="/8x10-vs-11x14-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    8×10 vs 11×14
+                  </Link>
+                  <Link href="/8x10-vs-8-5x11-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    8×10 vs 8.5×11
+                  </Link>
+                  <Link href="/11x14-vs-12x16-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    11×14 vs 12×16
+                  </Link>
+                  <Link href="/11x14-vs-16x20-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    11×14 vs 16×20
+                  </Link>
+                </div>
+              </div>
+              <div>
+                <p className="pb-2.5 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">Large &amp; Poster Sizes</p>
+                <div className="space-y-0.5">
+                  <Link href="/12x16-vs-16x20-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    12×16 vs 16×20
+                  </Link>
+                  <Link href="/16x20-vs-18x24-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    16×20 vs 18×24
+                  </Link>
+                  <Link href="/18x24-vs-24x36-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    18×24 vs 24×36
+                  </Link>
+                  <Link href="/8x10-vs-16x20-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    8×10 vs 16×20
+                  </Link>
+                  <Link href="/8x10-vs-12x16-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    8×10 vs 12×16
+                  </Link>
+                </div>
+              </div>
+              <div>
+                <p className="pb-2.5 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">ISO &amp; Ratios</p>
+                <div className="space-y-0.5">
+                  <Link href="/a4-vs-8x10-print-size" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    A4 vs 8×10
+                  </Link>
+                  <Link href="/iso-vs-us-print-sizes" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    ISO vs US Print Sizes
+                  </Link>
+                  <Link href="/2-3-vs-4-5-ratio" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                    2:3 vs 4:5 Ratio
+                  </Link>
                 </div>
               </div>
             </div>
@@ -533,111 +475,8 @@ export function Header() {
                         <Link href="/how-many-sizes-etsy-printable" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           How Many Sizes to Include
                         </Link>
-                        <Link href="/etsy-sticker-sheet-size" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Sticker Sheet Size
-                        </Link>
-                        <Link href="/etsy-bookmark-size" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Bookmark Size
-                        </Link>
                         <Link href="/etsy-digital-download-size-variations" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Digital Download Size Variations
-                        </Link>
-                        <Link href="/etsy-8x10-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          8&times;10 Print Size
-                        </Link>
-                        <Link href="/5x7-vs-4x6-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                      5×7 vs 4×6
-                    </Link>
-                    <Link href="/8x10-vs-11x14-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                      8×10 vs 11×14
-                    </Link>
-                    <Link href="/8x10-vs-5x7-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                      8×10 vs 5×7
-                    </Link>
-                    <Link href="/8x10-vs-8-5x11-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                      8×10 vs 8.5×11
-                    </Link>
-                    <Link href="/11x14-vs-12x16-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                      11×14 vs 12×16
-                    </Link>
-                    <Link href="/iso-vs-us-print-sizes" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60 hover:text-foreground transition-colors">
-                      ISO vs US Print Sizes
-                    </Link>
-                    <Link href="/ikea-ribba-frame-print-sizes" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          IKEA Ribba Frame Sizes
-                        </Link>
-                        <Link href="/etsy-5x7-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          5&times;7 Print Size
-                        </Link>
-                        <Link href="/etsy-16x20-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          16×20 Print Size
-                        </Link>
-                        <Link href="/etsy-24x36-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          24&times;36 Print Size
-                        </Link>
-                        <Link href="/etsy-18x24-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          18&times;24 Print Size
-                        </Link>
-                        <Link href="/etsy-11x14-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          11&times;14 Print Size
-                        </Link>
-                        <Link href="/etsy-11x17-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          11&times;17 Print Size
-                        </Link>
-                        <Link href="/etsy-12x18-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          12&times;18 Print Size
-                        </Link>
-                        <Link href="/etsy-13x19-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          13&times;19 Print Size
-                        </Link>
-                        <Link href="/etsy-a4-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          A4 Print Size
-                        </Link>
-                        <Link href="/etsy-a5-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          A5 Print Size
-                        </Link>
-                        <Link href="/etsy-a3-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          A3 Print Size
-                        </Link>
-                        <Link href="/etsy-a2-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          A2 Print Size
-                        </Link>
-                        <Link href="/etsy-a1-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          A1 Print Size
-                        </Link>
-                        <Link href="/etsy-poster-sizes" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Poster Sizes
-                        </Link>
-                        <Link href="/etsy-4x6-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          4&times;6 Print Size
-                        </Link>
-                        <Link href="/etsy-12x16-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          12&times;16 Print Size
-                        </Link>
-                        <Link href="/etsy-8-5x11-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          8.5&times;11 US Letter
-                        </Link>
-                        <Link href="/etsy-20x24-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          20&times;24 Print Size
-                        </Link>
-                        <Link href="/etsy-20x30-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          20&times;30 Print Size
-                        </Link>
-                        <Link href="/etsy-print-size-calculator" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-[#2DD4BF] hover:text-[#2DD4BF]/80 hover:bg-surface rounded transition-colors focus-ring font-medium">
-                          Print Size Calculator
-                        </Link>
-
-                        {/* Niche Guides */}
-                        <div className="h-px bg-border my-1.5 mx-3" />
-                        <p className="px-4 pt-1 pb-1 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">Niche Guides</p>
-                        <Link href="/etsy-nursery-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Nursery Wall Art Sizes
-                        </Link>
-                        <Link href="/etsy-botanical-print-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Botanical Print Sizes
-                        </Link>
-                        <Link href="/etsy-gallery-wall-print-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Gallery Wall Print Sizes
                         </Link>
                         <Link href="/etsy-square-print-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Square Print Sizes
@@ -645,83 +484,51 @@ export function Header() {
                         <Link href="/canvas-print-sizes-for-etsy" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Canvas Print Sizes
                         </Link>
-                        <Link href="/etsy-quote-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Quote Wall Art Sizes
+                        <Link href="/print-size-for-frame-guide" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Print-to-Frame Guide
                         </Link>
-                        <Link href="/etsy-minimalist-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Minimalist Wall Art Sizes
+                        <Link href="/print-mat-sizes-for-frames" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Mat Sizes for Frames
                         </Link>
-                        <Link href="/etsy-abstract-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Abstract Wall Art Sizes
+                        <Link href="/ikea-ribba-frame-print-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          IKEA Ribba Frame Sizes
                         </Link>
-                        <Link href="/etsy-ai-art-print-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          AI Art Print Sizes
+                        <Link href="/etsy-sticker-sheet-size" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Sticker Sheet Size
                         </Link>
-                        <Link href="/etsy-landscape-print-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Landscape Print Sizes
+                        <Link href="/etsy-bookmark-size" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Bookmark Size
                         </Link>
-                        <Link href="/etsy-pet-portrait-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Pet Portrait Sizes
+                        <Link href="/etsy-print-size-calculator" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-[#2DD4BF] hover:text-[#2DD4BF]/80 hover:bg-surface rounded transition-colors focus-ring font-medium">
+                          Print Size Calculator
                         </Link>
-                        <Link href="/etsy-photography-print-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Photography Print Sizes
+
+                        {/* By Size */}
+                        <div className="h-px bg-border my-1.5 mx-3" />
+                        <p className="px-4 pt-1 pb-1 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">By Size</p>
+                        <Link href="/etsy-8x10-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          8&times;10 Print Size
                         </Link>
-                        <Link href="/etsy-vintage-art-print-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Vintage Art Print Sizes
+                        <Link href="/etsy-5x7-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          5&times;7 Print Size
                         </Link>
-                        <Link href="/etsy-watercolor-print-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Watercolor Print Sizes
+                        <Link href="/etsy-11x14-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          11&times;14 Print Size
                         </Link>
-                        <Link href="/etsy-boho-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Boho Wall Art Sizes
+                        <Link href="/etsy-16x20-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          16&times;20 Print Size
                         </Link>
-                        <Link href="/etsy-coastal-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Coastal Wall Art Sizes
+                        <Link href="/etsy-24x36-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          24&times;36 Print Size
                         </Link>
-                        <Link href="/etsy-farmhouse-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Farmhouse Wall Art Sizes
+                        <Link href="/etsy-a4-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          A4 Print Size
                         </Link>
-                        <Link href="/etsy-kids-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Kids Wall Art Sizes
+                        <Link href="/etsy-a3-print-size" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          A3 Print Size
                         </Link>
-                        <Link href="/etsy-bathroom-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Bathroom Wall Art Sizes
-                        </Link>
-                        <Link href="/etsy-kitchen-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Kitchen Wall Art Sizes
-                        </Link>
-                        <Link href="/etsy-living-room-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Living Room Wall Art Sizes
-                        </Link>
-                        <Link href="/etsy-bedroom-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Bedroom Wall Art Sizes
-                        </Link>
-                        <Link href="/etsy-office-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Office Wall Art Sizes
-                        </Link>
-                        <Link href="/etsy-mid-century-modern-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Mid Century Modern Sizes
-                        </Link>
-                        <Link href="/etsy-celestial-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Celestial Wall Art Sizes
-                        </Link>
-                        <Link href="/etsy-floral-print-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Floral Print Sizes
-                        </Link>
-                        <Link href="/etsy-japandi-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Japandi Art Sizes
-                        </Link>
-                        <Link href="/etsy-line-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Line Art Sizes
-                        </Link>
-                        <Link href="/etsy-typography-wall-art-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Typography Art Sizes
-                        </Link>
-                        <Link href="/etsy-map-art-print-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Map Art Print Sizes
-                        </Link>
-                        <Link href="/2-3-vs-4-5-ratio" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          2:3 vs 4:5 Ratio
+                        <Link href="/etsy-poster-sizes" onClick={closeMenu} className="block pl-7 pr-4 py-1 text-xs text-foreground-60/70 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Poster Sizes
                         </Link>
 
                         {/* Seller Guides */}
@@ -739,9 +546,6 @@ export function Header() {
                         <Link href="/how-to-resize-images-for-etsy" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           How to Resize Images
                         </Link>
-                        <Link href="/etsy-printable-bleed-and-crop-marks" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Bleed & Crop Marks Guide
-                        </Link>
                         <Link href="/best-resolution-for-etsy-printables" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Best Resolution for Printables
                         </Link>
@@ -757,7 +561,7 @@ export function Header() {
                         <Link href="/etsy-digital-download-file-size" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Etsy File Size Guide
                         </Link>
-                   <Link href="/how-to-package-digital-wall-art-for-etsy" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                        <Link href="/how-to-package-digital-wall-art-for-etsy" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Package Digital Wall Art
                         </Link>
                         <Link href="/how-to-upload-more-than-5-files-etsy" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
@@ -772,9 +576,6 @@ export function Header() {
                         <Link href="/snaptosize-vs-canva" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           SnapToSize vs Canva
                         </Link>
-                        <Link href="/canva-print-size-for-etsy" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Canva Print Size for Etsy
-                        </Link>
                         <Link href="/snaptosize-vs-photoshop" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           SnapToSize vs Photoshop
                         </Link>
@@ -783,9 +584,6 @@ export function Header() {
                         </Link>
                         <Link href="/etsy-listing-photo-size" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Listing Photo Size Guide
-                        </Link>
-                        <Link href="/etsy-digital-planner-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Digital Planner Sizes
                         </Link>
                         <Link href="/etsy-vs-gumroad-vs-creative-market" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Etsy vs Gumroad vs Creative Market
@@ -807,10 +605,74 @@ export function Header() {
                           Blurry Prints? Fix Resolution
                         </Link>
                         <Link href="/etsy-printable-bleed-and-crop-marks" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
-                          Bleed & Crop Marks Guide
+                          Bleed &amp; Crop Marks Guide
                         </Link>
                         <Link href="/cmyk-vs-rgb-for-etsy-printables" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           CMYK vs RGB
+                        </Link>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Compare section */}
+                  <div>
+                    <button
+                      onClick={() => setCompareOpen(!compareOpen)}
+                      className="w-full px-4 py-3 text-base text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring flex items-center justify-between"
+                    >
+                      Compare
+                      <ChevronDown
+                        className={`h-4 w-4 transition-transform ${
+                          compareOpen ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+                    {compareOpen && (
+                      <div className="ml-4 mt-1 space-y-0.5">
+                        <p className="px-4 pt-2 pb-1 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">Standard Sizes</p>
+                        <Link href="/5x7-vs-4x6-print-size" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          5×7 vs 4×6
+                        </Link>
+                        <Link href="/8x10-vs-5x7-print-size" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          8×10 vs 5×7
+                        </Link>
+                        <Link href="/8x10-vs-11x14-print-size" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          8×10 vs 11×14
+                        </Link>
+                        <Link href="/8x10-vs-8-5x11-print-size" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          8×10 vs 8.5×11
+                        </Link>
+                        <Link href="/11x14-vs-12x16-print-size" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          11×14 vs 12×16
+                        </Link>
+                        <Link href="/11x14-vs-16x20-print-size" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          11×14 vs 16×20
+                        </Link>
+                        <p className="px-4 pt-2 pb-1 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">Large &amp; Poster</p>
+                        <Link href="/12x16-vs-16x20-print-size" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          12×16 vs 16×20
+                        </Link>
+                        <Link href="/16x20-vs-18x24-print-size" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          16×20 vs 18×24
+                        </Link>
+                        <Link href="/18x24-vs-24x36-print-size" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          18×24 vs 24×36
+                        </Link>
+                        <Link href="/8x10-vs-16x20-print-size" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          8×10 vs 16×20
+                        </Link>
+                        <Link href="/8x10-vs-12x16-print-size" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          8×10 vs 12×16
+                        </Link>
+                        <p className="px-4 pt-2 pb-1 text-[10px] font-semibold uppercase tracking-widest text-foreground-60/50">ISO &amp; Ratios</p>
+                        <Link href="/a4-vs-8x10-print-size" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          A4 vs 8×10
+                        </Link>
+                        <Link href="/iso-vs-us-print-sizes" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          ISO vs US Print Sizes
+                        </Link>
+                        <Link href="/2-3-vs-4-5-ratio" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          2:3 vs 4:5 Ratio
                         </Link>
                       </div>
                     )}
