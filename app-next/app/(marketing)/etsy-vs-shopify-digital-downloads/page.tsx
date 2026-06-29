@@ -582,8 +582,14 @@ export default function EtsyVsShopifyDigitalDownloadsPage() {
             >
               how many sizes to offer
             </Link>
-            , generate them once, then package tighter for Etsy and looser for
-            Shopify.
+            , generate them once —{" "}
+            <Link
+              href="/distortion-free-crop"
+              className="text-[#A78BFA] underline"
+            >
+              cropped to each ratio without distortion
+            </Link>{" "}
+            — then package tighter for Etsy and looser for Shopify.
           </p>
         </Container>
       </section>

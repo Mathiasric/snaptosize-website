@@ -318,7 +318,7 @@ export default function HowToUpscaleAiArtForEtsyPrintsPage() {
                     Pixels at 300 DPI
                   </th>
                   <th className="text-left py-3 px-4 font-semibold">
-                    Smallest AI output that works
+                    Upscale target (long edge)
                   </th>
                 </tr>
               </thead>
@@ -330,7 +330,7 @@ export default function HowToUpscaleAiArtForEtsyPrintsPage() {
                     </td>
                     <td className="py-3 px-4 font-mono">{t.px}</td>
                     <td className="py-3 px-4">
-                      Upscale to {t.px.split(" × ")[1]} px tall
+                      {t.px.split(" × ")[1]} px or more
                     </td>
                   </tr>
                 ))}
@@ -448,9 +448,15 @@ export default function HowToUpscaleAiArtForEtsyPrintsPage() {
                 <strong className="text-foreground">Upscaling</strong> adds
                 pixels to a small image (an upscaler&apos;s job).{" "}
                 <strong className="text-foreground">Resizing</strong> takes a
-                high-resolution master and produces each exact print dimension
-                and aspect ratio (SnapToSize&apos;s job). You upscale once, then
-                resize into the full size pack. Trying to skip the upscale step
+                high-resolution master and produces each exact print dimension,{" "}
+                <Link
+                  href="/distortion-free-crop"
+                  className="text-[#A78BFA] underline"
+                >
+                  cropping to every aspect ratio without distortion
+                </Link>{" "}
+                (SnapToSize&apos;s job). You upscale once, then resize into the
+                full size pack. Trying to skip the upscale step
                 and stretch a small file instead is what leads to soft prints —
                 so do them in order.
               </p>
