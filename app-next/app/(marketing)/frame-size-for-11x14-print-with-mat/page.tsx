@@ -10,9 +10,9 @@ import { ContextualCTA } from "@/components/ContextualCTA";
 import { RatioPackFan, type FanPrint } from "@/components/RatioPackFan";
 
 export const metadata: Metadata = {
-  title: "Frame Size for 11×14 Print with Mat — 16×20 Frame Guide (2026)",
+  title: "Frame Size for 11×14 Print with Mat — 16×20 Guide (2026)",
   description:
-    "11×14 prints fit in a 16×20 frame with mat (2.5-inch borders, mat window 10.75×13.75 in). Full specs: mat window, border widths, pixel dimensions at 300 DPI for Etsy digital sellers.",
+    "11×14 prints fit in a 16×20 frame with mat — window 10.75×13.75 in, ~2.5-inch borders, 3,300×4,200 px at 300 DPI. Mat size guide for Etsy sellers.",
   alternates: {
     canonical: "https://snaptosize.com/frame-size-for-11x14-print-with-mat",
   },
