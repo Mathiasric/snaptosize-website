@@ -210,6 +210,27 @@ Do not instantiate agents unless explicitly instructed.
 
 ---
 
+## KNOWLEDGE VAULT (snaptosize-brain)
+
+A separate repo at `C:\dev\snaptosize-brain` acts as the business operating system — roles, blueprints, task queue, and wiki.
+
+**When to read the vault:**
+- Session start: check `tasks/queue.md` for next priority (or `blueprints/unknown-what-to-do.md` if unsure)
+- Before outreach: read `roles/outreach.md`
+- Before strategy decisions: read `wiki/strategy/strategic-compass.md`
+
+**When to update the vault:**
+- After completing any queued task: mark done in `tasks/queue.md` with date + result note
+- After MRR changes: update `blueprints/session-start.md` business snapshot
+- After major decisions (new channel, pricing change, ICP shift): update relevant `wiki/` file
+- After GSC/PostHog reviews: update `wiki/channels/seo/learnings.md` or `wiki/channels/pinterest-signals.md`
+
+**SEO cannibalization rule (111+ pages):** Before building any new SEO page, check `wiki/channels/seo/cluster-map.md`. New page only if query is genuinely differentiated — no page within 2 hops covers it. At this stage, improving existing pages > building new ones.
+
+**Session start template:** `C:\dev\snaptosize-brain\blueprints\session-start.md` — paste into new sessions.
+
+---
+
 ## AUTO-SYNC RULES
 
 Update relevant docs automatically after completing work. Do NOT wait to be asked.
@@ -218,7 +239,7 @@ Update relevant docs automatically after completing work. Do NOT wait to be aske
 |----------|-----------|
 | Deploying SEO pages | `page-registry.json`, `CONTENT_PLAYBOOK.md` (pages list), `MILESTONES.md` (count), `seo-pipeline-state.json` |
 | Deploying product features | `PROJECT_STATE.md`, `MILESTONES.md` |
-| Growth/business changes | `GROWTH_STATE.md`, `NEXT_ACTIONS.md` |
+| Growth/business changes | `GROWTH_STATE.md`, `NEXT_ACTIONS.md` + vault `blueprints/session-start.md` MRR snapshot |
 | User corrections | `tasks/lessons.md` + check if `CONTENT_REFERENCE.md` needs update |
 | Scaling plan changes | `docs/plans/master-execution-plan-2026-05-07.md` |
 | Running pipelines (weekly) | `NEXT_ACTIONS.md` |

@@ -586,53 +586,15 @@ export default function FrameSizeFor11x14PrintWithMatPage() {
 
       {/* ===== FINAL CTA ===== */}
       <FinalCTA
-        headline="Export Your 11×14 Print at 300 DPI"
-        subheadline="One upload → up to 70 print-ready files at every size your buyers need. 11×14, 8×10, 5×7, A4 and more — organized ZIPs, ready to upload to Etsy."
+        heading="Export Your 11×14 Print at 300 DPI"
+        stat="70 print-ready files from one upload"
+        description="SnapToSize exports your 11×14 and every other size your buyers need — 8×10, 5×7, A4 and more — organized into ZIPs at 300 DPI, ready to upload to Etsy."
         buttonText="Export 11×14 Free"
         appUrl={appUrl}
       />
 
       {/* ===== RELATED PAGES ===== */}
-      <RelatedPages
-        pages={[
-          {
-            href: "/print-mat-sizes-for-frames",
-            title: "Print Mat Sizes for All Standard Frames",
-            description:
-              "Complete mat size chart — every standard print size mapped to its frame, mat window, and border widths.",
-          },
-          {
-            href: "/etsy-11x14-print-size",
-            title: "11×14 Print Size Guide",
-            description:
-              "Full pixel spec, DPI chart, aspect ratio breakdown, and Etsy file delivery guide for 11×14.",
-          },
-          {
-            href: "/print-size-for-frame-guide",
-            title: "Print-to-Frame Size Guide",
-            description:
-              "Which print fits which frame — the complete matchup chart for all standard frame sizes.",
-          },
-          {
-            href: "/ikea-ribba-frame-print-sizes",
-            title: "IKEA Ribba Frame Print Sizes",
-            description:
-              "Exact print sizes that fit every IKEA Ribba frame, with and without mat.",
-          },
-          {
-            href: "/8x10-vs-11x14-print-size",
-            title: "8×10 vs 11×14 — Size Comparison",
-            description:
-              "Side-by-side comparison of 8×10 and 11×14 — dimensions, frames, ratios, and when to use each.",
-          },
-          {
-            href: "/etsy-print-sizes",
-            title: "All Etsy Print Sizes",
-            description:
-              "Complete reference: every standard print size with pixels at 300 DPI, aspect ratios, and frame matchups.",
-          },
-        ]}
-      />
+      <RelatedPages currentSlug="frame-size-for-11x14-print-with-mat" />
     </main>
   );
 }
