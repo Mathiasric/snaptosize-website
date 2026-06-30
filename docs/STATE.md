@@ -4,7 +4,7 @@
 
 **Last updated:** 2026-06-24 (brain refresh — BleedAI outbound strategy doc analyzed, priorities re-ranked, competitor + AI automation opportunities mapped)
 
-**Jun 24 changes:** BleedAI outbound strategy doc ingested. Georgiana (catopia.biz) churned → refunded → returning on WELCOMEBACK coupon. pay.snaptosize.com custom domain live. Stripe ETSYSELLERS + FRIENDS20 + WELCOMEBACK coupons created. `claude-seo` (25 skills + firecrawl extension) installed globally. 111 pages mapped — 41 gap pages identified (POD platforms highest priority). **CHANNEL AUDIT COMPLETE — see eliminated channels below.**
+**Jun 24 changes:** BleedAI outbound strategy doc ingested. Georgiana (catopia.biz) churned → refunded → returning on WELCOMEBACK coupon. pay.snaptosize.com custom domain live. Stripe ETSYSELLERS + FRIENDS20 + WELCOMEBACK coupons created. `claude-seo` (25 skills + firecrawl extension) installed globally. 113 pages mapped — 41 gap pages identified (POD platforms highest priority). **CHANNEL AUDIT COMPLETE — see eliminated channels below.**
 
 **Jun 16 changes:** Removed off-topic Etsy shop buyer reviews from homepage. Replaced FounderStorySection with product-proof demo (real filenames, pack labels, mode pills, country flags, CTA). Redesigned PricingTeaserSection — full feature lists, asymmetric visual weight, $0 forever framing, "export anytime" differentiator.
 
@@ -36,9 +36,9 @@
 
 ## Top priorities (ranked: ARR-impact ÷ effort) — refreshed Jun 24
 
-**Proven engine: SEO. 1 new user/day organically. 111 pages. Every new page compounds.**
+**Proven engine: SEO. 1 new user/day organically. 113 pages. Every new page compounds.**
 
-1. **SEO expansion — POD platform pages (NEW audience)** — `/printify-print-sizes`, `/redbubble-print-sizes`, `/society6-print-sizes`, `/printful-print-sizes` etc. Printify/Redbubble sellers have identical pain (resize to 20+ sizes) but don't search "etsy." Zero overlap with existing 111 pages. Claude executes autonomously with `claude-seo` skills.
+1. **SEO expansion — POD platform pages (NEW audience)** — `/printify-print-sizes`, `/redbubble-print-sizes`, `/society6-print-sizes`, `/printful-print-sizes` etc. Printify/Redbubble sellers have identical pain (resize to 20+ sizes) but don't search "etsy." Zero overlap with existing 113 pages. **⚠️ 2026-06-30: verified weak SnapToSize fit** — POD platforms take ONE high-res upload and auto-scale it to all products, so sellers don't build multi-ratio packs (the core tool pain is absent). Traffic play, not conversion play. PROBE one `/redbubble-print-sizes` page and measure CTA/conversion BEFORE committing the 41-page cluster. See vault `cluster-map.md`. Stronger refill picks shipped instead: etsy-vs-shopify + how-to-upscale-ai-art (2026-06-30). Claude executes autonomously with `claude-seo` skills.
 
 2. **SEO expansion — size comparison pages** — 9 missing comparisons (`/11x14-vs-16x20`, `/a4-vs-letter`, `/18x24-vs-16x20` etc). Same template as 7 existing ones. Proven format, minimal effort.
 
