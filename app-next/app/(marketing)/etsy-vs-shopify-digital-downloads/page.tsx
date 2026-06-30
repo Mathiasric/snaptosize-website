@@ -123,7 +123,7 @@ export default function EtsyVsShopifyDigitalDownloadsPage() {
       question:
         "What are the fees — Etsy vs Shopify on a $20 digital product?",
       answer:
-        "Etsy charges $0.20 per listing + 6.5% transaction fee + payment processing (≈3% + $0.25 in the US). On a $20 sale you keep roughly $17.30 (≈86%), with no monthly cost. Shopify's Basic plan is $29/month flat; per sale you only pay payment processing (≈2.9% + $0.30), so you keep about $19.12 (≈96%) of each $20 sale. The catch: you have to cover that $29/month before you profit, so Shopify wins on margin only once your volume is high enough.",
+        "Etsy charges $0.20 per listing + 6.5% transaction fee + payment processing (≈3% + $0.25 in the US), so on a $20 sale you keep about $17.65 (≈88%) in the best case, with no monthly cost. But the fees stack: if the sale came through Etsy's Offsite Ads you also pay 15% (or 12%, mandatory once you pass $10k/year), dropping you to roughly $14.65, and non-US sellers pay a small regulatory fee on top. Effective Etsy fees are commonly 11–15%, and 18–20% on Offsite-Ads sales. Shopify's Basic plan is $29/month flat; per sale you only pay payment processing (≈2.9% + $0.30), so you keep about $19.12 (≈96%) of each $20 sale once the monthly fee is covered. Shopify wins on margin only once your volume is high enough to absorb the $29.",
     },
     {
       question: "Can I sell the same digital downloads on Etsy and Shopify?",
@@ -345,7 +345,7 @@ export default function EtsyVsShopifyDigitalDownloadsPage() {
                   <td className="py-3 px-4 font-medium text-foreground">
                     Transaction Fee
                   </td>
-                  <td className="py-3 px-4">6.5% + payment processing</td>
+                  <td className="py-3 px-4">6.5% + processing (+12–15% offsite ads)</td>
                   <td className="py-3 px-4">
                     Payment processing only (~2.9% + $0.30)
                   </td>
@@ -686,6 +686,13 @@ export default function EtsyVsShopifyDigitalDownloadsPage() {
                 </tr>
                 <tr className="border-b border-white/[0.06]">
                   <td className="py-3 px-4 font-medium text-foreground">
+                    Offsite Ads fee †
+                  </td>
+                  <td className="py-3 px-4">−$3.00 (15%, ads-attributed sales)</td>
+                  <td className="py-3 px-4">$0</td>
+                </tr>
+                <tr className="border-b border-white/[0.06]">
+                  <td className="py-3 px-4 font-medium text-foreground">
                     Monthly Plan
                   </td>
                   <td className="py-3 px-4">$0</td>
@@ -696,7 +703,7 @@ export default function EtsyVsShopifyDigitalDownloadsPage() {
                     You Keep (per sale)
                   </td>
                   <td className="py-3 px-4 font-semibold text-[#2DD4BF]">
-                    ~$17.65 (88%)
+                    ~$17.65 best case · ~$14.65 with Offsite Ads
                   </td>
                   <td className="py-3 px-4 font-semibold text-[#2DD4BF]">
                     ~$19.12 (96%)*
@@ -715,6 +722,20 @@ export default function EtsyVsShopifyDigitalDownloadsPage() {
             <strong className="text-foreground">15–20 sales a month</strong> at
             this price point. Below that, Etsy&apos;s pay-per-sale model is
             cheaper — and it brings the traffic.
+          </p>
+
+          <p className="text-foreground-60 mb-10 max-w-3xl text-sm">
+            † Etsy&apos;s headline cut is 6.5%, but the fees stack, which is why
+            the real bill feels higher. On top of payment processing, Etsy
+            charges an <strong className="text-foreground">Offsite Ads fee</strong>{" "}
+            of 15% (or 12%, and non-optional once your shop passes $10,000 in a
+            year) on any sale that came from an Etsy offsite ad, capped at $100
+            per order. Sellers outside the US also pay a small regulatory
+            operating fee (roughly 0.3–2.3%). Add it up and the effective Etsy
+            cut is commonly <strong className="text-foreground">11–15%</strong>,
+            and <strong className="text-foreground">18–20%</strong> on
+            Offsite-Ads sales. Shopify has no marketplace-ads cut: you pay the
+            flat plan plus card processing, and you bring (and keep) the traffic.
           </p>
 
           <h2 className="text-2xl md:text-3xl font-bold mt-14 mb-6">
