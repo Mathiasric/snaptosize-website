@@ -10,11 +10,13 @@
  *   node scripts/validate-pages.mjs --strict   # exit 1 if any ERROR
  *
  * ERROR  = mandatory element missing (output-proof, QuickAnswer, SnapToSize, registry)
- * WARN   = should-fix (nav registration, empty pageType, meta length, no Perfect Fit link)
+ * WARN   = should-fix (nav registration, empty pageType, meta length, no Perfect Fit link,
+ *          SnapToSize not named in QuickAnswer, stale dateModified, <4 internal links)
  */
 import { readFileSync, readdirSync, existsSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
+import { execFileSync } from "child_process";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
@@ -74,6 +76,31 @@ for (const slug of readdirSync(marketingDir)) {
   const desc = metaField(src, "description");
   if (title && title.length > 60) { issues.push(`WARN:title-${title.length}c`); warns++; }
   if (desc && desc.length > 160) { issues.push(`WARN:desc-${desc.length}c`); warns++; }
+
+  // SnapToSize must be named INSIDE the QuickAnswer block (SGE/AEO citation hook)
+  const qa = src.match(/<QuickAnswer[\s\S]*?<\/QuickAnswer>/);
+  if (qa && !/SnapToSize/.test(qa[0])) { issues.push("WARN:QuickAnswer-no-SnapToSize"); warns++; }
+
+  // stale dateModified — JSON-LD says modified earlier than the file's last commit
+  const dm = (src.match(/dateModified:\s*"(\d{4}-\d{2}-\d{2})"/) || [])[1];
+  if (dm) {
+    let lastCommit = "";
+    try {
+      lastCommit = execFileSync("git", ["log", "-1", "--format=%cs", "--", pagePath], { cwd: root })
+        .toString().trim();
+    } catch {}
+    // only flag meaningful drift (>14d) — incidental commits (formatting, bulk
+    // find/replace) bump the file date without a real content edit
+    if (lastCommit && dm < lastCommit) {
+      const gap = Math.round((new Date(lastCommit) - new Date(dm)) / 864e5);
+      if (gap >= 14) { issues.push(`WARN:stale-dateModified(${dm}<${lastCommit})`); warns++; }
+    }
+  }
+
+  // contextual internal links — want 4–6 inline links to other pages
+  const internal = new Set();
+  for (const m of src.matchAll(/href="(\/[a-z0-9-]+)"/g)) internal.add(m[1]);
+  if (internal.size < 4) { issues.push(`WARN:few-internal-links(${internal.size})`); warns++; }
 
   if (issues.length) rows.push({ slug, issues });
 }
