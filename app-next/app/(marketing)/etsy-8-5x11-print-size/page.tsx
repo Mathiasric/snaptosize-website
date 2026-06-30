@@ -9,11 +9,12 @@ import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
+import { RatioPackFan, type FanPrint } from "@/components/RatioPackFan";
 
 export const metadata: Metadata = {
-  title: "8.5×11 Print Size for Etsy — US Letter Pixels, DPI & File Setup",
+  title: "8.5×11 Print Size for Etsy — US Letter Pixels at 300 DPI",
   description:
-    "8.5×11 is the US Letter standard — every home printer handles it. Get exact pixel dimensions at 300 DPI (2550×3300), Extras pack details, and file setup for Etsy digital downloads.",
+    "8.5×11 is US Letter — 2550×3300 px at 300 DPI. Exact pixel dimensions, the Extras pack, and file setup for Etsy digital downloads that print at home.",
   alternates: {
     canonical: "https://snaptosize.com/etsy-8-5x11-print-size",
   },
@@ -46,12 +47,12 @@ export default function Etsy85x11PrintSizePage() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "8.5×11 Print Size for Etsy — US Letter Pixels, DPI & File Setup",
+      "8.5×11 Print Size for Etsy — US Letter Pixels at 300 DPI",
     description:
       "Complete technical guide to 8.5×11 (US Letter) print dimensions for Etsy sellers, including exact pixel dimensions at 300 DPI, Extras pack contents, and file requirements.",
     url: "https://snaptosize.com/etsy-8-5x11-print-size",
     datePublished: "2026-03-24",
-    dateModified: "2026-03-24",
+    dateModified: "2026-06-30",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -141,6 +142,16 @@ export default function Etsy85x11PrintSizePage() {
 
   const appUrl =
     "https://app.snaptosize.com?source=seo_8_5x11&kind=guide";
+
+  // Output-proof fan — one upload becomes every ratio pack. Extras slot shows
+  // 8.5×11 (this page's size). Misty subject for visual variety vs recent pages.
+  const mistyPrints: FanPrint[] = [
+    { src: "/assets/modes-demo/ratios/misty-3x4.jpg", size: "6×8 in", tag: "3:4", ratio: 0.75 },
+    { src: "/assets/modes-demo/ratios/misty-iso.jpg", size: "A4", tag: "ISO A", ratio: 0.707 },
+    { src: "/assets/modes-demo/ratios/misty-2x3.jpg", size: "8×12 in", tag: "2:3", ratio: 0.667 },
+    { src: "/assets/modes-demo/ratios/misty-4x5.jpg", size: "8×10 in", tag: "4:5", ratio: 0.8 },
+    { src: "/assets/modes-demo/ratios/misty-extras.jpg", size: "8.5×11 in", tag: "Extras", ratio: 0.773 },
+  ];
 
   return (
     <>
@@ -331,7 +342,11 @@ export default function Etsy85x11PrintSizePage() {
           <div className="max-w-3xl mx-auto space-y-16">
 
             <QuickAnswer question="What pixel dimensions for 8.5×11 at 300 DPI?">
-              <strong>2550 × 3300 pixels</strong> for portrait, <strong>3300 × 2550</strong> for landscape. 8.5×11 is US Letter — the most common home-printing format. Part of the Extras pack.
+              <strong>2550 × 3300 pixels</strong> for portrait, <strong>3300 × 2550</strong> for landscape. 8.5×11 is US Letter — the most common home-printing format, part of the Extras pack.{" "}
+              <Link href="/" className="text-accent-light hover:underline">
+                SnapToSize
+              </Link>{" "}
+              exports it at exactly 300 DPI from a single upload — no resizing math.
             </QuickAnswer>
 
             {/* --- Exact Dimensions --- */}
@@ -403,8 +418,27 @@ export default function Etsy85x11PrintSizePage() {
               <p className="text-foreground-60 mb-4">
                 Unlike most print sizes, 8.5×11 doesn&apos;t belong to a
                 standard ratio family (2:3, 3:4, or 4:5). Its proportions are
-                unique &mdash; approximately 1:1.294. That&apos;s why it lives
-                in the Extras pack alongside other common non-ratio sizes.
+                unique &mdash; approximately 1:1.294, close to but not the same
+                as{" "}
+                <Link
+                  href="/a4-300-dpi-pixels"
+                  className="text-accent-light hover:underline"
+                >
+                  A4
+                </Link>
+                . That&apos;s why it lives in the Extras pack alongside other
+                common non-ratio sizes.
+              </p>
+              <p className="text-foreground-60 mb-4">
+                When you need artwork built for 2:3 or 4:5 to fit 8.5×11,{" "}
+                <Link
+                  href="/distortion-free-crop"
+                  className="text-accent-light hover:underline"
+                >
+                  Perfect Fit
+                </Link>{" "}
+                lets you choose exactly what stays in frame as it reframes to
+                Letter proportions &mdash; no stretching, no guesswork.
               </p>
               <p className="text-foreground-60">
                 For a full breakdown of how ratios work and why they matter, see
@@ -465,23 +499,35 @@ export default function Etsy85x11PrintSizePage() {
               </div>
             </div>
 
-            {/* --- CTA 1 --- */}
-            <div>
-              <Card accent className="p-6 md:p-8 text-center">
-                <h3 className="text-xl md:text-2xl font-bold mb-3">
-                  Skip the Manual Resizing
-                </h3>
-                <p className="text-sm text-foreground-60 mb-5">
-                  Upload your artwork once. Get 8.5×11 and all other Extras
-                  sizes at 300&nbsp;DPI &mdash; organized, named, and under
-                  20&nbsp;MB.
-                </p>
-                <a href={appUrl} target="_blank" rel="noopener noreferrer">
-                  <Button className="text-sm px-6 py-2.5">
-                    Generate All Extras Sizes
-                  </Button>
-                </a>
-              </Card>
+            {/* --- Output proof: one upload → every ratio pack --- */}
+            <div className="py-2">
+              <p
+                className="text-center text-sm mb-10 uppercase tracking-widest font-mono"
+                style={{ color: "rgba(45,212,191,0.5)" }}
+              >
+                What SnapToSize exports from one upload
+              </p>
+              <RatioPackFan
+                prints={mistyPrints}
+                subject="Etsy artwork exported at every print ratio"
+              />
+              <p className="text-center text-sm text-foreground-60 mt-8 mb-2 max-w-xl mx-auto">
+                One upload &rarr;{" "}
+                <span className="text-foreground font-medium">
+                  up to 70 print-ready files
+                </span>{" "}
+                across 5 ratio packs at 300&nbsp;DPI, each ZIP under
+                Etsy&apos;s 20&nbsp;MB limit. The Extras pack with 8.5×11 is
+                always included.
+              </p>
+              <div className="mt-6">
+                <ContextualCTA
+                  problem="Resizing 8.5×11 and every other size by hand for each new listing?"
+                  solution="SnapToSize exports US Letter plus the full Extras pack and all standard ratios in one click — at exactly 300 DPI, named and ready to upload to Etsy."
+                  buttonText="Generate All Extras Sizes Free"
+                  appUrl={appUrl}
+                />
+              </div>
             </div>
 
             {/* --- Extras Pack --- */}
