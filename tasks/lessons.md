@@ -1,5 +1,9 @@
 # Lessons Learned
 
+## LESSON-100 — Route new SEO pages through the seo-writer agent, not stale templates (2026-06-29)
+Built 2 SEO pages by hand-cloning the `etsy-vs-gumroad-vs-creative-market` template. That template predates the seo-writer agent's rules, so the clones shipped missing two MANDATORY elements: the RatioPackFan/ListingOutputShowcase output-proof visual (agent HARD RULE 6) and Header nav registration. Caught only on a second-pass review.
+**Fix/rule:** For any new `(marketing)` SEO page, either run the `seo-writer` agent (it encodes every rule) OR run `node app-next/scripts/validate-pages.mjs` before committing. Don't clone an arbitrary existing page as a "template" — pick a recently-shipped compliant one (a4-300-dpi-pixels, frame-size-for-11x14) and still validate. The validator flags: no-output-proof, no-QuickAnswer, no-SnapToSize, not-in-registry, empty-pageType, not-in-nav, over-length meta.
+
 ## Content Pipeline
 
 ### LESSON-001: Use real SnapToSize sizes/ratios in all content (2026-03-11)
