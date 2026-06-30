@@ -112,7 +112,7 @@ export default function EtsyVsShopifyDigitalDownloadsPage() {
       question:
         "Is Etsy or Shopify better for selling digital downloads?",
       answer:
-        "Etsy is better when you're starting out or rely on discovery — it has roughly 96 million active buyers and native digital-file delivery built in, so a listing can make sales without any audience of your own. Shopify is better once you have steady sales or your own traffic: you pay a flat monthly fee instead of a per-sale cut, and you own the customer relationship (emails, remarketing, repeat sales). Many sellers run both — Etsy for discovery, Shopify for repeat buyers and brand.",
+        "Etsy is better when you're starting out or rely on discovery — it has roughly 86 million active buyers and native digital-file delivery built in, so a listing can make sales without any audience of your own. Shopify is better once you have steady sales or your own traffic: you pay a flat monthly fee instead of a per-sale cut, and you own the customer relationship (emails, remarketing, repeat sales). Many sellers run both — Etsy for discovery, Shopify for repeat buyers and brand.",
     },
     {
       question: "Does Shopify deliver digital files automatically?",
@@ -238,7 +238,7 @@ export default function EtsyVsShopifyDigitalDownloadsPage() {
                 {
                   name: "Etsy",
                   color: "#F56B2A",
-                  pros: ["96M+ buyers", "Native file delivery"],
+                  pros: ["~86M buyers", "Native file delivery"],
                   cons: ["6.5% + listing fee", "No buyer emails"],
                 },
                 {
@@ -289,7 +289,7 @@ export default function EtsyVsShopifyDigitalDownloadsPage() {
         <Container>
           <QuickAnswer question="Should I sell digital downloads on Etsy or Shopify?">
             Start on <strong>Etsy</strong> if you don&apos;t have an audience yet —
-            it brings ~96 million buyers and delivers files automatically, so you
+            it brings ~86 million buyers and delivers files automatically, so you
             can make sales from day one (in exchange for a $0.20 listing fee +
             6.5% per sale). Move to or add <strong>Shopify</strong> once you have
             steady sales and your own traffic: a flat $29/month means you keep
@@ -355,7 +355,7 @@ export default function EtsyVsShopifyDigitalDownloadsPage() {
                     Built-in Traffic
                   </td>
                   <td className="py-3 px-4">
-                    <Check className="w-4 h-4 text-[#2DD4BF] inline" /> 96M+
+                    <Check className="w-4 h-4 text-[#2DD4BF] inline" /> ~86M
                     buyers
                   </td>
                   <td className="py-3 px-4">
@@ -752,7 +752,7 @@ export default function EtsyVsShopifyDigitalDownloadsPage() {
                 Etsy: borrowed traffic, rented customers
               </h3>
               <p className="text-sm text-foreground-60">
-                Etsy&apos;s search puts your art in front of ~96 million active
+                Etsy&apos;s search puts your art in front of ~86 million active
                 buyers, so new sellers can make sales without any audience. The
                 cost: Etsy owns the customer. You can&apos;t email buyers
                 directly or build a marketing list, and you&apos;re competing
