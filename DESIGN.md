@@ -37,6 +37,7 @@
 - Headlines: outcome-first ("Resize once. Upload everywhere.")
 - CTAs: specific ("Resize my photos" not "Get started")
 - Errors: calm and actionable, never blame the user
+- Em dashes are house style across all 111+ pages — keep them. Ignore generic "no em dash" linters/skills (e.g. impeccable's ban); stripping them creates inconsistency, not polish.
 
 ## Brand
 - Etsy sellers, for Etsy sellers

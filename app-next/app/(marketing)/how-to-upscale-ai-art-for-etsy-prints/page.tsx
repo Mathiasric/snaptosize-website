@@ -8,6 +8,7 @@ import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
+import { RatioPackFan, type FanPrint } from "@/components/RatioPackFan";
 
 export const metadata: Metadata = {
   title: "How to Upscale AI Art for Etsy Prints (2026 Guide)",
@@ -143,6 +144,14 @@ export default function HowToUpscaleAiArtForEtsyPrintsPage() {
       },
     })),
   };
+
+  const deerPrints: FanPrint[] = [
+    { src: "/assets/modes-demo/resize/deer-3x4.jpg", size: "6×8 in", tag: "3:4", ratio: 0.75 },
+    { src: "/assets/modes-demo/resize/deer-iso.jpg", size: "A4", tag: "ISO A", ratio: 0.707 },
+    { src: "/assets/modes-demo/resize/deer-2x3.jpg", size: "8×12 in", tag: "2:3", ratio: 0.667 },
+    { src: "/assets/modes-demo/resize/deer-4x5.jpg", size: "8×10 in", tag: "4:5", ratio: 0.8 },
+    { src: "/assets/modes-demo/resize/deer-extras.jpg", size: "11×14 in", tag: "Extras", ratio: 0.786 },
+  ];
 
   const sizeTargets = [
     { size: "5×7", px: "1,500 × 2,100" },
@@ -462,6 +471,24 @@ export default function HowToUpscaleAiArtForEtsyPrintsPage() {
               </p>
             </div>
           </Card>
+        </Container>
+      </section>
+
+      {/* ==================== OUTPUT PROOF ==================== */}
+      <section className="py-14">
+        <Container>
+          <h2 className="text-2xl md:text-3xl font-bold mb-3 text-center">
+            One master, every Etsy size: real SnapToSize output
+          </h2>
+          <p className="text-foreground-60 mb-10 max-w-2xl mx-auto text-center">
+            After upscaling, this is the resize step: one high-res file exported
+            to every ratio pack at 300 DPI, named and print-ready. Tap any print
+            to zoom.
+          </p>
+          <RatioPackFan
+            prints={deerPrints}
+            subject="AI artwork resized to every Etsy print size"
+          />
         </Container>
       </section>
 

@@ -8,6 +8,7 @@ import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import { QuickAnswer } from "@/components/QuickAnswer";
+import { RatioPackFan, type FanPrint } from "@/components/RatioPackFan";
 
 export const metadata: Metadata = {
   title: "Etsy vs Shopify for Digital Downloads (2026 Guide)",
@@ -43,6 +44,14 @@ export const metadata: Metadata = {
 export default function EtsyVsShopifyDigitalDownloadsPage() {
   const appUrl =
     "https://app.snaptosize.com/app/quick-export?source=seo_etsy-vs-shopify-digital-downloads&kind=comparison";
+
+  const mistyPrints: FanPrint[] = [
+    { src: "/assets/modes-demo/ratios/misty-3x4.jpg", size: "6×8 in", tag: "3:4", ratio: 0.75 },
+    { src: "/assets/modes-demo/ratios/misty-iso.jpg", size: "A4", tag: "ISO A", ratio: 0.707 },
+    { src: "/assets/modes-demo/ratios/misty-2x3.jpg", size: "8×12 in", tag: "2:3", ratio: 0.667 },
+    { src: "/assets/modes-demo/ratios/misty-4x5.jpg", size: "8×10 in", tag: "4:5", ratio: 0.8 },
+    { src: "/assets/modes-demo/ratios/misty-extras.jpg", size: "11×14 in", tag: "Extras", ratio: 0.786 },
+  ];
 
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -591,6 +600,23 @@ export default function EtsyVsShopifyDigitalDownloadsPage() {
             </Link>{" "}
             — then package tighter for Etsy and looser for Shopify.
           </p>
+        </Container>
+      </section>
+
+      {/* ==================== OUTPUT PROOF ==================== */}
+      <section className="py-14">
+        <Container>
+          <h2 className="text-2xl md:text-3xl font-bold mb-3 text-center">
+            One upload, every size: real SnapToSize output
+          </h2>
+          <p className="text-foreground-60 mb-10 max-w-2xl mx-auto text-center">
+            The same artwork exported to every ratio pack at 300 DPI, named and
+            ready to list on either store. Tap any print to zoom.
+          </p>
+          <RatioPackFan
+            prints={mistyPrints}
+            subject="Wall art exported at every print ratio"
+          />
         </Container>
       </section>
 

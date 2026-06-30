@@ -315,6 +315,12 @@ export function Header() {
                     <Link href="/etsy-vs-gumroad-vs-creative-market" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Etsy vs Gumroad vs Creative Market
                     </Link>
+                    <Link href="/etsy-vs-shopify-digital-downloads" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Etsy vs Shopify for Digital Downloads
+                    </Link>
+                    <Link href="/how-to-upscale-ai-art-for-etsy-prints" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
+                      Upscale AI Art for Etsy Prints
+                    </Link>
                     <Link href="/etsy-star-seller-digital-downloads" className="block py-1.5 text-sm text-foreground-60 hover:text-foreground transition-colors">
                       Star Seller for Digital Downloads
                     </Link>
@@ -587,6 +593,12 @@ export function Header() {
                         </Link>
                         <Link href="/etsy-vs-gumroad-vs-creative-market" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Etsy vs Gumroad vs Creative Market
+                        </Link>
+                        <Link href="/etsy-vs-shopify-digital-downloads" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Etsy vs Shopify for Digital Downloads
+                        </Link>
+                        <Link href="/how-to-upscale-ai-art-for-etsy-prints" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
+                          Upscale AI Art for Etsy Prints
                         </Link>
                         <Link href="/etsy-star-seller-digital-downloads" onClick={closeMenu} className="block px-4 py-1.5 text-sm text-foreground-60 hover:text-foreground hover:bg-surface rounded transition-colors focus-ring">
                           Star Seller for Digital Downloads
