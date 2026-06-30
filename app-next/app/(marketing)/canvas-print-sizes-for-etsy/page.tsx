@@ -11,9 +11,9 @@ import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 import RelatedPages from "@/components/RelatedPages";
 
 export const metadata: Metadata = {
-  title: "Canvas Print Sizes for Etsy — 8×10 to 30×40: Best Sellers (2026)",
+  title: "Canvas Print Sizes for Etsy — 8×10 to 30×40 (2026)",
   description:
-    "The 8 canvas print sizes Etsy buyers actually purchase: 8×10 through 30×40 at 300 DPI. Inches, cm, pixels, aspect ratios, and how to prepare a canvas-ready master.",
+    "The 8 canvas print sizes Etsy buyers purchase: 8×10 through 30×40 at 300 DPI. Inches, cm, pixels, aspect ratios, and how to prepare a canvas-ready master.",
   alternates: {
     canonical: "https://snaptosize.com/canvas-print-sizes-for-etsy",
   },
@@ -49,7 +49,7 @@ export default function CanvasPrintSizesForEtsyPage() {
       "The 8 standard canvas print sizes Etsy buyers request — 8×10 through 30×40 — with pixel dimensions at 300 DPI, aspect ratios, bleed/wrap guidance, and how to prepare one master file that prints cleanly on canvas and paper.",
     url: "https://snaptosize.com/canvas-print-sizes-for-etsy",
     datePublished: "2026-04-30",
-    dateModified: "2026-04-30",
+    dateModified: "2026-06-30",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -506,7 +506,12 @@ export default function CanvasPrintSizesForEtsyPage() {
                 Etsy canvas POD: 16&times;20 hits the affordable mid-range, 12&times;18
                 rounds out apartment-scale walls, and 24&times;36 drives average
                 order value. List all 8 standard sizes (8&times;10 through
-                30&times;40) to cover every buyer.
+                30&times;40) to cover every buyer.{" "}
+                <Link href="/" className="text-accent-light hover:underline">
+                  SnapToSize
+                </Link>{" "}
+                resizes one master into all 8 at 300 DPI &mdash; each
+                ratio-matched, no manual exports.
               </QuickAnswer>
 
               <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-foreground-60 -mt-8">
@@ -752,7 +757,16 @@ export default function CanvasPrintSizesForEtsyPage() {
                   design with a safe centre zone &mdash; nothing critical in
                   the outer 15% of the canvas. That way the same artwork can
                   produce a 4:5 16&times;20 and a 2:3 24&times;36 without
-                  losing a focal element to the crop.
+                  losing a focal element to the crop. When a ratio does force a
+                  tighter crop,{" "}
+                  <Link
+                    href="/distortion-free-crop"
+                    className="text-accent-light hover:underline"
+                  >
+                    Perfect Fit
+                  </Link>{" "}
+                  lets you set exactly what stays in frame for each size &mdash;
+                  no stretching, no lost focal point.
                 </p>
               </div>
 
