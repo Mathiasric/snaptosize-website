@@ -101,7 +101,7 @@ const jsonLd = {
         url: "https://snaptosize.com",
       },
       datePublished: "2026-04-12",
-      dateModified: "2026-04-12",
+      dateModified: "2026-07-01",
     },
     {
       "@type": "BreadcrumbList",
@@ -387,7 +387,11 @@ export default function EtsyFloralPrintSizesPage() {
               The core floral sizes are 5×7, 8×10, 11×14, and 16×20. Romantic sub-niches (peonies, roses)
               over-index on 8×10 and 11×14. Wildflower and garden art sells in tall 2:3 formats (8×12, 12×18).
               Vintage florals perform well in A4 and A3 for European buyers. Use all 5 ratio packs to cover
-              every buyer&apos;s frame.
+              every buyer&apos;s frame.{" "}
+              <Link href="/" className="text-teal-400 hover:text-teal-300 underline underline-offset-2">
+                SnapToSize
+              </Link>{" "}
+              outputs all 5 packs from one upload at 300 DPI.
             </QuickAnswer>
 
             {/* H2 1 */}
@@ -598,6 +602,14 @@ export default function EtsyFloralPrintSizesPage() {
               <p className="text-slate-300 mb-4">
                 SnapToSize organizes sizes into 5 ratio packs. For floral sellers,
                 each pack serves a different buyer segment:
+              </p>
+              <p className="text-slate-300 mb-4">
+                When a floral composition doesn&apos;t fill a pack&apos;s ratio,{" "}
+                <Link href="/distortion-free-crop" className="text-teal-400 hover:text-teal-300 underline underline-offset-2">
+                  Perfect Fit
+                </Link>{" "}
+                lets you choose what stays in frame &mdash; keep the bloom, not
+                the empty stem &mdash; instead of a blind centre-crop, no stretching.
               </p>
 
               <ul className="space-y-3 mb-5">
