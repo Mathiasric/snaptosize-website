@@ -10,7 +10,7 @@ import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
-  title: "Etsy Map Art Print Sizes — Sizing Guide",
+  title: "Etsy Map Art Print Sizes — City Maps, Ratios & DPI",
   description:
     "Best print sizes for map art on Etsy. City maps, custom map prints, travel art — DPI requirements, landscape vs portrait ratios, and US vs EU A3 sizing covered.",
   alternates: {
@@ -26,13 +26,13 @@ export const metadata: Metadata = {
         url: "/assets/og/etsy-map-art-print-sizes.png",
         width: 1200,
         height: 630,
-        alt: "Etsy Map Art Print Sizes — Sizing Guide",
+        alt: "Etsy Map Art Print Sizes — City Maps, Ratios & DPI",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Etsy Map Art Print Sizes — Sizing Guide",
+    title: "Etsy Map Art Print Sizes — City Maps, Ratios & DPI",
     description:
       "Best sizes for map art on Etsy. City maps, travel art — DPI requirements, landscape vs portrait ratios, and A3 sizing explained.",
     images: ["/assets/og/etsy-map-art-print-sizes.png"],
@@ -48,7 +48,7 @@ export default function EtsyMapArtPrintSizesPage() {
       "Best print sizes for map art on Etsy. City maps, custom map prints, travel art — DPI requirements, landscape vs portrait ratios, and US vs EU sizing explained.",
     url: "https://snaptosize.com/etsy-map-art-print-sizes",
     datePublished: "2026-04-14",
-    dateModified: "2026-04-14",
+    dateModified: "2026-07-01",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -286,7 +286,11 @@ export default function EtsyMapArtPrintSizesPage() {
         {/* ===== QUICK ANSWER ===== */}
         <div className="mb-10">
           <QuickAnswer question="What print sizes should I offer for map art on Etsy?">
-            Offer <strong>8×10, 11×14, 16×20, 18×24, 24×36, and A3</strong> as your core set. Map art needs large formats — street labels become illegible below 8×10 at 300 DPI. Always include 24×36 for statement walls and A3 for EU/UK buyers, where map prints are a top housewarming gift.
+            Offer <strong>8×10, 11×14, 16×20, 18×24, 24×36, and A3</strong> as your core set. Map art needs large formats — street labels become illegible below 8×10 at 300 DPI. Always include 24×36 for statement walls and A3 for EU/UK buyers, where map prints are a top housewarming gift.{" "}
+            <Link href="/" className="text-accent-light hover:underline">
+              SnapToSize
+            </Link>{" "}
+            resizes one map file into all six sizes at 300 DPI — labels stay crisp, every ratio correct.
           </QuickAnswer>
         </div>
 
@@ -455,6 +459,13 @@ export default function EtsyMapArtPrintSizesPage() {
               <span><strong>Country or region outlines</strong> — some countries (Spain, the US) are naturally wider than tall and suit a landscape frame.</span>
             </li>
           </ul>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            When a map&apos;s geography doesn&apos;t match a standard frame,{" "}
+            <Link href="/distortion-free-crop" className="text-accent-light hover:underline">
+              Perfect Fit
+            </Link>{" "}
+            lets you set exactly which region stays in frame for each ratio &mdash; keep the city centre or the full coastline, no stretching.
+          </p>
           <p className="text-muted-foreground leading-relaxed">
             For landscape-specific print sizes and ratios, see the{" "}
             <Link href="/etsy-landscape-print-sizes" className="text-accent-light hover:underline">
