@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         url: "/assets/og/etsy-anime-manga-art-sizes.png",
         width: 1200,
         height: 630,
-        alt: "Anime & Manga Art Print Sizes for Etsy — Seller Guide",
+        alt: "Anime & Manga Art Print Sizes for Etsy — Pixels & Ratios",
       },
     ],
   },
@@ -57,7 +57,7 @@ export default function EtsyAnimeMangaArtSizesPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Anime & Manga Art Print Sizes for Etsy: The Complete Seller Guide",
+    headline: "Anime & Manga Art Print Sizes for Etsy — Pixels, Ratios & DPI",
     description:
       "Complete anime and manga print sizing guide for Etsy sellers. Covers the best-selling 2:3 portrait sizes, Japanese B-series formats, ISO A-series for international buyers, DPI requirements for fine linework, gallery wall sets, and a full recommended size bundle.",
     url: "https://snaptosize.com/etsy-anime-manga-art-sizes",
