@@ -47,7 +47,7 @@ const jsonLd = {
         "Exact Canva canvas dimensions for Etsy printable wall art, the 96 vs 300 DPI export trap, and how to finish the job Canva can't with automatic all-ratio export.",
       url: "https://snaptosize.com/canva-print-size-for-etsy",
       datePublished: "2026-04-22",
-      dateModified: "2026-04-22",
+      dateModified: "2026-07-01",
       author: { "@type": "Organization", name: "SnapToSize" },
       publisher: { "@type": "Organization", name: "SnapToSize", url: "https://snaptosize.com" },
     },
@@ -309,7 +309,11 @@ export default function CanvaPrintSizeForEtsyPage() {
         {/* ===== QUICK ANSWER ===== */}
         <div className="mb-16 md:mb-20">
           <QuickAnswer question="What's the right Canva print size for Etsy?">
-            Start with a <strong>4800×6000 pixel custom canvas</strong> in Canva (4:5 master at 300 DPI — 16×20 in). Export as <strong>PDF Print</strong> for true 300 DPI output — PNG exports don&apos;t embed a print DPI, so they print at whatever the canvas pixel count supports. This one file scales cleanly to 8×10, 11×14, 16×20, and every other 4:5 Etsy size. For 2:3 (8×12, 12×18, 24×36), use 4800×7200 px. For ISO (A4, A3), use 3508×4961 px (A3 master).
+            Start with a <strong>4800×6000 pixel custom canvas</strong> in Canva (4:5 master at 300 DPI — 16×20 in). Export as <strong>PDF Print</strong> for true 300 DPI output — PNG exports don&apos;t embed a print DPI, so they print at whatever the canvas pixel count supports. This one file scales cleanly to 8×10, 11×14, 16×20, and every other 4:5 Etsy size. For 2:3 (8×12, 12×18, 24×36), use 4800×7200 px. For ISO (A4, A3), use 3508×4961 px (A3 master).{" "}
+            <Link href="/" className="text-accent-light hover:underline">
+              SnapToSize
+            </Link>{" "}
+            turns that one Canva export into every Etsy ratio pack automatically — no duplicating designs.
           </QuickAnswer>
         </div>
 
@@ -358,6 +362,15 @@ export default function CanvaPrintSizeForEtsyPage() {
           <p className="text-foreground-70 mb-6 leading-relaxed">
             The ideal Canva starting canvas depends on which ratio you want as your master. Most Etsy sellers
             design a 4:5 master (covers 8×10, 11×14, 16×20, 20×24) and derive other ratios from it later.
+          </p>
+          <p className="text-foreground-70 mb-6 leading-relaxed">
+            Deriving a different ratio from that 4:5 master means the extra
+            proportions have to come off somewhere.{" "}
+            <Link href="/distortion-free-crop" className="text-accent-light hover:underline">
+              Perfect Fit
+            </Link>{" "}
+            lets you choose exactly what stays in frame for each ratio instead
+            of a blind centre-crop &mdash; no stretching, no lost focal point.
           </p>
 
           <div className="overflow-x-auto mb-6">
