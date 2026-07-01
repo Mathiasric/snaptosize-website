@@ -11,7 +11,7 @@ import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
-  title: "Etsy Line Art Print Sizes — Sizing Guide",
+  title: "Etsy Line Art Print Sizes — Botanical, Figure & Geometric",
   description:
     "Best print sizes for line art on Etsy. Botanical, figure, and geometric line art — DPI requirements, aspect ratios, and portrait vs landscape breakdowns.",
   alternates: {
@@ -27,13 +27,13 @@ export const metadata: Metadata = {
         url: "/assets/og/etsy-line-art-sizes.png",
         width: 1200,
         height: 630,
-        alt: "Etsy Line Art Print Sizes — Sizing Guide",
+        alt: "Etsy Line Art Print Sizes — Botanical, Figure & Geometric",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Etsy Line Art Print Sizes — Sizing Guide",
+    title: "Etsy Line Art Print Sizes — Botanical, Figure & Geometric",
     description:
       "Best sizes for line art on Etsy. Botanical, figure, and geometric styles — DPI requirements and aspect ratios covered.",
     images: ["/assets/og/etsy-line-art-sizes.png"],
@@ -44,12 +44,12 @@ export default function EtsyLineArtSizesPage() {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Etsy Line Art Print Sizes — Complete Sizing Guide",
+    headline: "Etsy Line Art Print Sizes — Botanical, Figure & Geometric",
     description:
       "Best print sizes for line art on Etsy. Botanical, figure, and geometric line art — DPI requirements, aspect ratios, and portrait vs landscape breakdowns.",
     url: "https://snaptosize.com/etsy-line-art-sizes",
     datePublished: "2026-04-13",
-    dateModified: "2026-04-13",
+    dateModified: "2026-07-01",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -235,6 +235,12 @@ export default function EtsyLineArtSizesPage() {
             <li className="flex items-start gap-2"><Check className="w-4 h-4 text-accent-light flex-shrink-0 mt-0.5" /><span><strong>Geometric line art:</strong> 8×10 or 12×12 square for symmetrical designs; 16×20 for statement-piece buyers</span></li>
             <li className="flex items-start gap-2"><Check className="w-4 h-4 text-accent-light flex-shrink-0 mt-0.5" /><span><strong>Minimum DPI:</strong> 300 DPI for all line art; 350–400 DPI for hairline-detail work</span></li>
           </ul>
+          <p className="text-sm mt-3">
+            <Link href="/" className="text-accent-light hover:underline">
+              SnapToSize
+            </Link>{" "}
+            resizes one line-art file into all of these at 300 DPI — every ratio pack, hairline detail intact.
+          </p>
         </QuickAnswer>
 
         {/* ===== SECTION 1: Why Line Art Has Unique Size Challenges ===== */}
@@ -246,7 +252,11 @@ export default function EtsyLineArtSizesPage() {
             Line art is Etsy's most resolution-sensitive digital art category. Where a watercolor wash or abstract gradient can survive mild downscaling, thin strokes cannot — they blur, blob, or break when printed below 300 DPI. This means your source file must be large enough to output every size at 300 DPI without upscaling.
           </p>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            Aspect ratio matters more for line art than for most other styles because the negative space around lines is part of the composition. Crop a botanical stem incorrectly and you lose the breathing room that makes the art feel balanced. Crop a figure line drawing and you sever limbs or lose the negative space framing the pose.
+            Aspect ratio matters more for line art than for most other styles because the negative space around lines is part of the composition. Crop a botanical stem incorrectly and you lose the breathing room that makes the art feel balanced. Crop a figure line drawing and you sever limbs or lose the negative space framing the pose.{" "}
+            <Link href="/distortion-free-crop" className="text-accent-light hover:underline">
+              Perfect Fit
+            </Link>{" "}
+            lets you set exactly what stays in frame when a size needs a different ratio — keep the full stem or the whole figure, never a blind centre-crop.
           </p>
           <p className="text-muted-foreground leading-relaxed mb-4">
             Line art is consistently one of Etsy's top-selling digital art categories — particularly in the botanical, minimalist, and figure-drawing niches. The combination of high demand and strict technical requirements makes getting the sizing right especially important for conversion.
