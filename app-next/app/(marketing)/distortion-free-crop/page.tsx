@@ -8,6 +8,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
+import { PerfectFitDemo } from "@/components/PerfectFitDemo";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
@@ -463,6 +464,17 @@ export default function DistortionFreeCropPage() {
                 Same drawing, three print ratios. Each one framed to keep the
                 subject, at full detail.
               </p>
+              <div className="mt-8">
+                <PerfectFitDemo
+                  subject="Bear line art"
+                  original={{ src: "/assets/modes-demo/bears-landscape/bear-3x2.jpg", tag: "3:2" }}
+                  reframes={[
+                    { src: "/assets/modes-demo/bears-landscape/bear-4x3.jpg", tag: "4:3" },
+                    { src: "/assets/modes-demo/bears-landscape/bear-5x4.jpg", tag: "5:4" },
+                  ]}
+                  caption="Works the same for landscape art — the bears stay full while the empty floral margins are trimmed."
+                />
+              </div>
             </div>
 
             {/* ===== SECTION 3: How it works ===== */}

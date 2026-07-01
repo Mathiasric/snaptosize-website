@@ -4,10 +4,10 @@ import { Button } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Check, AlertTriangle } from "lucide-react";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { ContextualCTA } from "@/components/ContextualCTA";
 import { FinalCTA } from "@/components/FinalCTA";
 import RelatedPages from "@/components/RelatedPages";
 import { ListingOutputShowcase } from "@/components/ListingOutputShowcase";
+import { PerfectFitDemo } from "@/components/PerfectFitDemo";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 export const metadata: Metadata = {
@@ -186,8 +186,8 @@ export default function EtsyLineArtSizesPage() {
         <div className="line-art-bg absolute inset-0" />
 
         <div className="relative z-10 max-w-[1200px] mx-auto px-4 md:px-8">
-          <div className="grid md:grid-cols-2 gap-10 items-center">
-            {/* Left: text */}
+          <div className="max-w-2xl">
+            {/* text */}
             <div>
               <div className="inline-flex items-center gap-2 mb-5 px-3 py-1.5 rounded-full text-xs font-medium"
                 style={{ background: "rgba(45,212,191,0.1)", border: "1px solid rgba(45,212,191,0.2)", color: "rgba(94,234,212,0.9)" }}
@@ -215,10 +215,6 @@ export default function EtsyLineArtSizesPage() {
               <a href="https://app.snaptosize.com?source=seo_etsy-line-art-sizes&kind=guide">
                 <Button className="text-sm px-6 py-2.5">Resize your line art free →</Button>
               </a>
-            </div>
-            {/* Right: bears line art artwork */}
-            <div className="hidden md:block">
-              <ListingOutputShowcase artwork="bears_line_art" />
             </div>
           </div>
         </div>
@@ -258,6 +254,17 @@ export default function EtsyLineArtSizesPage() {
             </Link>{" "}
             lets you set exactly what stays in frame when a size needs a different ratio — keep the full stem or the whole figure, never a blind centre-crop.
           </p>
+          <div className="mt-6">
+            <PerfectFitDemo
+              subject="Bear line art"
+              original={{ src: "/assets/modes-demo/bears-landscape/bear-3x2.jpg", tag: "3:2" }}
+              reframes={[
+                { src: "/assets/modes-demo/bears-landscape/bear-4x3.jpg", tag: "4:3" },
+                { src: "/assets/modes-demo/bears-landscape/bear-5x4.jpg", tag: "5:4" },
+              ]}
+              caption="You choose what stays in frame — the bears stay full while the empty floral margins are trimmed."
+            />
+          </div>
           <p className="text-muted-foreground leading-relaxed mb-4">
             Line art is consistently one of Etsy's top-selling digital art categories — particularly in the botanical, minimalist, and figure-drawing niches. The combination of high demand and strict technical requirements makes getting the sizing right especially important for conversion.
           </p>
@@ -576,17 +583,7 @@ export default function EtsyLineArtSizesPage() {
           </p>
         </section>
 
-        {/* ===== CTA 3: ContextualCTA ===== */}
-        <div className="mb-14">
-          <ContextualCTA
-            problem="Selling a botanical line art collection? That's dozens of uploads × up to 70 files each."
-            solution="SnapToSize keeps it to one upload per artwork — every ratio and size is automatic at 300 DPI."
-            appUrl="https://app.snaptosize.com?source=seo_etsy-line-art-sizes&kind=guide"
-            buttonText="Batch resize your line art →"
-          />
-        </div>
-
-        {/* ===== CTA 2: FinalCTA ===== */}
+        {/* ===== FINAL CTA ===== */}
         <div className="mb-14">
           <FinalCTA
             heading="Stop exporting sizes one by one."
