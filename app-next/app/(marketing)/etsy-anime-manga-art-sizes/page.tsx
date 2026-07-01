@@ -14,7 +14,7 @@ const appUrl =
   "https://app.snaptosize.com?source=seo_etsy-anime-manga-art-sizes&kind=guide";
 
 export const metadata: Metadata = {
-  title: "Anime Art Print Sizes for Etsy — Seller Guide",
+  title: "Anime & Manga Print Sizes for Etsy — Pixels & Ratios",
   description:
     "Best anime & manga print sizes for Etsy: 8×12, 11×17, 12×18, A4, A3 and more. Pixel dimensions at 300 DPI, Japanese B-series formats, and batch export.",
   alternates: {
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Anime Art Print Sizes for Etsy — Seller Guide",
+    title: "Anime & Manga Print Sizes for Etsy — Pixels & Ratios",
     description:
       "Best anime & manga print sizes for Etsy: 8×12, 11×17, 12×18, A4, A3 and more. Pixel dimensions at 300 DPI, Japanese B-series formats, and batch export.",
     images: ["/assets/og/etsy-anime-manga-art-sizes.png"],
@@ -62,7 +62,7 @@ export default function EtsyAnimeMangaArtSizesPage() {
       "Complete anime and manga print sizing guide for Etsy sellers. Covers the best-selling 2:3 portrait sizes, Japanese B-series formats, ISO A-series for international buyers, DPI requirements for fine linework, gallery wall sets, and a full recommended size bundle.",
     url: "https://snaptosize.com/etsy-anime-manga-art-sizes",
     datePublished: "2026-04-15",
-    dateModified: "2026-04-15",
+    dateModified: "2026-07-01",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -267,7 +267,11 @@ export default function EtsyAnimeMangaArtSizesPage() {
             <strong>8×12, 11×17, 12×18, and 18×24</strong> (all 2:3 ratio
             portrait), plus <strong>A4 and A3</strong> for international buyers
             — matching the tall portrait format that character art and full-figure
-            poses demand.
+            poses demand.{" "}
+            <Link href="/" className="text-teal-400 hover:underline">
+              SnapToSize
+            </Link>{" "}
+            exports one upload into all of them at 300 DPI — every ratio pack, ready for Etsy.
           </QuickAnswer>
 
           {/* Lifestyle mockup — moved here from below for visual variety early in page */}
@@ -299,6 +303,15 @@ export default function EtsyAnimeMangaArtSizesPage() {
               formats — which is why the 2:3 ratio family drives the most
               conversions. The 4:5 ratio sizes (8×10, 11×14) appear too but are
               secondary for this niche.
+            </p>
+            <p className="text-slate-300 mb-4">
+              When a piece is built for one ratio but a buyer wants another,{" "}
+              <Link href="/distortion-free-crop" className="text-teal-400 hover:underline">
+                Perfect Fit
+              </Link>{" "}
+              lets you choose exactly what stays in frame &mdash; keep the
+              character, not the background &mdash; instead of a blind
+              centre-crop, no stretching.
             </p>
 
             <div className="overflow-x-auto mb-4">
