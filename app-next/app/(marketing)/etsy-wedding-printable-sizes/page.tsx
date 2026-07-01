@@ -49,7 +49,7 @@ export default function EtsyWeddingPrintableSizesPage() {
       "Complete print sizes for the full wedding suite: invitations, RSVPs, menus, programs, welcome signs, seating charts, and more. 300 DPI dimensions, ratios, and bundling strategy for Etsy sellers.",
     url: "https://snaptosize.com/etsy-wedding-printable-sizes",
     datePublished: "2026-04-17",
-    dateModified: "2026-04-17",
+    dateModified: "2026-07-01",
     author: {
       "@type": "Organization",
       name: "SnapToSize",
@@ -297,7 +297,11 @@ export default function EtsyWeddingPrintableSizesPage() {
         {/* ===== QUICK ANSWER ===== */}
         <div className="mb-10">
           <QuickAnswer question="What sizes does a full Etsy wedding printable suite need?">
-            The full suite is <strong>5×7 invitations, 4×6 or A6 RSVPs, 4×9 menus, 5×7 programs, 3.5×2 place cards, 4×6 table numbers, 18×24 or 24×36 welcome signs, 24×36 or 30×40 seating charts, and 5×7 thank-you cards</strong>. All at 300 DPI. Offer A4/A5 alternates for UK and EU buyers — they print at home on ISO paper.
+            The full suite is <strong>5×7 invitations, 4×6 or A6 RSVPs, 4×9 menus, 5×7 programs, 3.5×2 place cards, 4×6 table numbers, 18×24 or 24×36 welcome signs, 24×36 or 30×40 seating charts, and 5×7 thank-you cards</strong>. All at 300 DPI. Offer A4/A5 alternates for UK and EU buyers — they print at home on ISO paper.{" "}
+            <Link href="/" className="text-accent-light hover:underline">
+              SnapToSize
+            </Link>{" "}
+            resizes each design to every size and ISO alternate in the suite at 300 DPI — each ratio correct, ready to bundle.
           </QuickAnswer>
         </div>
 
@@ -308,6 +312,13 @@ export default function EtsyWeddingPrintableSizesPage() {
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-6">
             Every piece in the wedding stationery set has its own convention. The table below covers the buyer-expected sizes for each piece, including the 300 DPI pixel dimensions and the ratio family each size belongs to.
+          </p>
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            When one design has to work at both 18×24 (3:4) and 24×36 (2:3) — common for welcome signs and seating charts —{" "}
+            <Link href="/distortion-free-crop" className="text-accent-light hover:underline">
+              Perfect Fit
+            </Link>{" "}
+            lets you set exactly what stays in frame for each size instead of stretching the layout to fit.
           </p>
           <div className="overflow-x-auto rounded-xl border border-border">
             <table className="w-full text-sm">
