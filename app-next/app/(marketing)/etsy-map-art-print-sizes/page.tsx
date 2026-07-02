@@ -567,16 +567,6 @@ export default function EtsyMapArtPrintSizesPage() {
           </p>
         </section>
 
-        {/* ===== CTA 2 ===== */}
-        <div className="mb-14">
-          <ContextualCTA
-            problem="A city map collection with 10 cities × 6 sizes each = 60 manual exports."
-            solution="Upload each map once to SnapToSize — every size is generated automatically at 300 DPI in a ZIP under 20MB."
-            appUrl="https://app.snaptosize.com?source=seo_etsy-map-art-print-sizes&kind=guide"
-            buttonText="Try SnapToSize free →"
-          />
-        </div>
-
         {/* ===== LIFESTYLE MOCKUP ===== */}
         <section className="mb-14">
           <div className="rounded-xl overflow-hidden border border-border">
