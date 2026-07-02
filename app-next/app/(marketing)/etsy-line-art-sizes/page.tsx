@@ -254,17 +254,6 @@ export default function EtsyLineArtSizesPage() {
             </Link>{" "}
             lets you set exactly what stays in frame when a size needs a different ratio — keep the full stem or the whole figure, never a blind centre-crop.
           </p>
-          <div className="mt-6">
-            <PerfectFitDemo
-              subject="Bear line art"
-              original={{ src: "/assets/modes-demo/bears-landscape/bear-3x2.jpg", tag: "3:2" }}
-              reframes={[
-                { src: "/assets/modes-demo/bears-landscape/bear-4x3.jpg", tag: "4:3" },
-                { src: "/assets/modes-demo/bears-landscape/bear-5x4.jpg", tag: "5:4" },
-              ]}
-              caption="You choose what stays in frame — the bears stay full while the empty floral margins are trimmed."
-            />
-          </div>
           <p className="text-muted-foreground leading-relaxed mb-4">
             Line art is consistently one of Etsy's top-selling digital art categories — particularly in the botanical, minimalist, and figure-drawing niches. The combination of high demand and strict technical requirements makes getting the sizing right especially important for conversion.
           </p>
@@ -548,6 +537,17 @@ export default function EtsyLineArtSizesPage() {
           <p className="text-muted-foreground leading-relaxed mb-4">
             Landscape line art exists and sells, but it's a secondary market. Panoramic botanical compositions (a horizontal branch with hanging leaves), abstract sweeping line work, and architectural elevations can work in landscape. If your art genuinely looks good horizontally, add landscape variants of 10×8 (4:5) and 12×9 (4:3) — but don't force a portrait composition into landscape just to offer more options.
           </p>
+          <div className="mb-4">
+            <PerfectFitDemo
+              subject="Bear line art"
+              original={{ src: "/assets/modes-demo/bears-landscape/bear-3x2.jpg", tag: "3:2" }}
+              reframes={[
+                { src: "/assets/modes-demo/bears-landscape/bear-4x3.jpg", tag: "4:3" },
+                { src: "/assets/modes-demo/bears-landscape/bear-5x4.jpg", tag: "5:4" },
+              ]}
+              caption="A genuinely landscape composition reframes cleanly across landscape ratios — the bears stay full, only the empty floral margins are trimmed. You choose what stays in frame."
+            />
+          </div>
           <p className="text-muted-foreground leading-relaxed mb-4">
             Buyers rarely rotate prints themselves. If a landscape variant isn't already part of the original composition, don't include it. A buyer who receives a portrait image expecting a landscape print will leave a bad review.
           </p>
